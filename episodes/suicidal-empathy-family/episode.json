@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "show": "KINDLETON",
+    "episode": "S1E1",
+    "title": "Dying to Be Kind",
+    "format": "drama-skit with explainer cutaways",
+    "logline": "When Mayor Hart cranks the town's Empathy Dial to eleven, Penny Doormat has to save her too-nice dad, her fridge and her whole town by learning when kindness helps and when it backfires.",
+    "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+    "disclaimer": "Parody and commentary. Original characters. Not affiliated with any author, network or show.",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "gap": 0.28
+  },
+  "cast": {
+    "ken":    {"name": "Ken Brightside", "role": "News anchor, the exposition machine", "voice": "am_michael", "speed": 1.08,
+               "look": {"hair": "helmet", "hairColor": "#3b2a1a", "shirt": "#1f3c88", "pants": "#1f3c88", "tie": "#c62828", "height": 1.0, "smile": true}},
+    "mayor":  {"name": "Mayor Marigold Hart", "role": "Feelings-first mayor; if it feels good, it's law", "voice": "af_sarah", "speed": 1.06,
+               "look": {"hair": "bouffant", "hairColor": "#e8711c", "shirt": "#d81b60", "pants": "#d81b60", "skirt": true, "sash": "MAYOR", "pearls": true, "height": 1.0}},
+    "dale":   {"name": "Dale Doormat", "role": "Dad who cannot say no", "voice": "am_puck", "speed": 1.08,
+               "look": {"hair": "flop", "hairColor": "#6d4c2f", "shirt": "#7cb342", "vest": "#f9a825", "pants": "#5d4037", "mustache": true, "height": 1.05}},
+    "penny":  {"name": "Penny Doormat", "role": "10-year-old skeptic; asks the questions the audience is thinking", "voice": "af_nova", "speed": 1.08,
+               "look": {"hair": "pigtails", "hairColor": "#8d3b1f", "bow": "#29b6f6", "shirt": "#ab47bc", "pants": "#ab47bc", "skirt": true, "height": 0.72}},
+    "bounds": {"name": "Dr. Hal Bounds", "role": "Evolutionary behavioral scientist; carries the book's thesis", "voice": "bm_george", "speed": 1.05,
+               "look": {"hair": "bald", "hairColor": "#bdbdbd", "glasses": true, "beard": "#9e9e9e", "shirt": "#8d6e63", "pants": "#4e342e", "bowtie": "#1565c0", "height": 1.0}},
+    "kindt":  {"name": "Dr. Iris Kindt", "role": "Compassion researcher; carries the critics' counterpoint", "voice": "bf_emma", "speed": 1.06,
+               "look": {"hair": "curly", "hairColor": "#2b1b17", "glasses": true, "shirt": "#2e7d32", "pants": "#263238", "skirt": true, "height": 0.95}},
+    "rocco":  {"name": "Rocco", "role": "A raccoon who has never heard the word no", "kind": "raccoon", "sfx": "chitter"}
+  },
+  "sequence": [
+    {"type": "scene", "id": "cold-open-news", "bg": "newsroom",
+     "chars": {"ken": {"x": 640, "s": 1.05}},
+     "lines": [
+       {"who": "ken", "text": "Good evening, Kindleton! I'm Ken Brightside, and tonight the nicest town on Earth gets even nicer.", "emote": "happy", "graphic": "EMPATHY DAY"},
+       {"who": "ken", "text": "Live from Town Square, Mayor Marigold Hart unveils her greatest invention yet.", "emote": "happy", "graphic": "LIVE: TOWN SQUARE"}
+     ]},
+    {"type": "scene", "id": "cold-open-square", "bg": "townsquare",
+     "chars": {"mayor": {"x": 560, "s": 1.0}, "dale": {"x": 980, "s": 0.95, "facing": -1}, "penny": {"x": 1120, "s": 0.95, "facing": -1}},
+     "props": {"dial": {"x": 300, "value": 3}},
+     "lines": [
+       {"who": "mayor", "text": "Citizens! For too long, our kindness has been held back by one terrible thing. Thinking.", "emote": "happy", "act": "armsup"},
+       {"who": "mayor", "text": "Behold! The Municipal Empathy Dial!", "emote": "happy", "act": "point", "cam": "wide"},
+       {"who": "mayor", "text": "Today, we crank it all the way to eleven!", "emote": "happy", "dial": 11, "fx": "hearts", "sfx": "sparkle", "cam": "wide"},
+       {"who": "dale", "text": "Woo hoo! I can feel my feelings feeling things!", "emote": "happy", "act": "bounce"},
+       {"who": "penny", "text": "Dad, the dial only goes to ten. Eleven is literally labeled, uh oh.", "emote": "worried"}
+     ]},
+    {"type": "card", "id": "title", "title": "KINDLETON", "sub": "Episode 1: “Dying to Be Kind”", "dur": 4.2, "sfx": "theme"},
+
+    {"type": "scene", "id": "act1-home", "bg": "livingroom",
+     "chars": {"dale": {"x": 520, "s": 1.0}, "penny": {"x": 820, "s": 1.0, "facing": -1}, "rocco": {"x": 300, "s": 1.0}},
+     "props": {"door": true},
+     "lines": [
+       {"who": "dale", "text": "Look, Penny! A raccoon at the door! Come in, little buddy. My fridge is your fridge.", "emote": "happy", "act": "armsup"},
+       {"who": "rocco", "text": "*chitter chitter* (eats everything)", "sfx": "chomp", "dur": 1.6},
+       {"who": "penny", "text": "Dad, he just ate the lasagna, the plate, and the dog's birthday cake.", "emote": "angry", "act": "point"},
+       {"who": "dale", "text": "Penny, saying no to a raccoon is raccoon-phobic. I read it on a mug.", "emote": "sad", "act": "shrug"},
+       {"who": "rocco", "text": "*jingle jingle* (takes the car keys)", "sfx": "chitter", "dur": 1.4},
+       {"who": "penny", "text": "He's taking the car keys.", "emote": "shocked"},
+       {"who": "dale", "text": "He looks like a very responsible driver!", "emote": "happy", "act": "point"},
+       {"who": "rocco", "text": "*VROOM... CRASH*", "sfx": "crash", "dur": 1.8, "fx": "shake"},
+       {"who": "penny", "text": "Okay. I need a grown up. A smart one.", "emote": "worried", "act": "facepalm"}
+     ]},
+
+    {"type": "scene", "id": "act1-lecture", "bg": "chalkboard",
+     "chars": {"bounds": {"x": 760, "s": 1.0, "facing": -1}, "penny": {"x": 1080, "s": 1.0, "facing": -1}},
+     "lines": [
+       {"who": "bounds", "text": "Hello, Penny. Doctor Hal Bounds, evolutionary behavioral scientist, and fellow raccoon survivor.", "emote": "happy", "board": ["EMPATHY 101"]},
+       {"who": "bounds", "text": "First, let me be clear. Empathy is wonderful. It's an evolved instinct. It's why parents protect babies and strangers jump into rivers.", "emote": "happy", "act": "armsup", "board": ["EMPATHY 101", "= evolved superpower"]},
+       {"who": "bounds", "text": "But any instinct can misfire. Gad Saad's book has a name for it: suicidal empathy. A virtue misfiring so badly it hurts the very people it means to protect.", "emote": "worried", "act": "point", "board": ["EMPATHY 101", "= evolved superpower", "misfire = SUICIDAL EMPATHY"]},
+       {"who": "bounds", "text": "Aristotle saw this coming. Virtue lives in the middle. Too little empathy, you get a psychopath. Too much, you get... your father.", "emote": "happy", "act": "shrug", "board": ["ARISTOTLE'S DIAL", "0 psychopath", "5 sweet spot", "11 your dad"]},
+       {"who": "penny", "text": "So how exactly does it misfire?", "emote": "neutral"},
+       {"who": "bounds", "text": "Three ways. One, too much of it. Two, aimed at the wrong target. Three, feelings used where math belongs.", "emote": "neutral", "act": "point", "board": ["3 MISFIRES", "1. too much", "2. wrong target", "3. feelings > math"]},
+       {"who": "bounds", "text": "Picture a bridge engineer who asks the steel how it feels about holding weight.", "emote": "worried", "act": "shrug", "board": ["3 MISFIRES", "1. too much", "2. wrong target", "3. feelings > math", "(ask the steel?)"]}
+     ]},
+
+    {"type": "card", "id": "act2", "title": "MEANWHILE, AT ELEVEN...", "sub": "", "dur": 2.4, "sfx": "sting"},
+
+    {"type": "scene", "id": "act2-news", "bg": "newsroom",
+     "chars": {"ken": {"x": 640, "s": 1.05}},
+     "lines": [
+       {"who": "ken", "text": "In other news, Kindleton Elementary has abolished wrong answers. Two plus two now equals whatever makes you happy.", "emote": "happy", "graphic": "2 + 2 = ♥"}
+     ]},
+    {"type": "scene", "id": "act2-penny1", "bg": "chalkboard",
+     "chars": {"bounds": {"x": 760, "s": 1.0, "facing": -1}, "penny": {"x": 1080, "s": 1.0, "facing": -1}},
+     "lines": [
+       {"who": "penny", "text": "Feels great today. Next year, nobody can do their taxes.", "emote": "angry", "board": ["EMPATHETIC MYOPIA", "today: smiles", "next year: ???"]},
+       {"who": "bounds", "text": "Exactly. Saad calls it empathetic myopia. You only see the first domino.", "emote": "happy", "act": "point", "board": ["EMPATHETIC MYOPIA", "today: smiles", "next year: ???"]}
+     ]},
+    {"type": "scene", "id": "act2-news2", "bg": "newsroom",
+     "chars": {"ken": {"x": 640, "s": 1.05}},
+     "lines": [
+       {"who": "ken", "text": "Meanwhile, Councilman Chet Gatesworth, speaking from his gated mansion on Snob Hill, voted to remove the locks from every other house in town.", "emote": "happy", "graphic": "LOCKS: OPTIONAL*", "sub": "*not on Snob Hill"}
+     ]},
+    {"type": "scene", "id": "act2-bounds2", "bg": "chalkboard",
+     "chars": {"bounds": {"x": 760, "s": 1.0, "facing": -1}, "penny": {"x": 1080, "s": 1.0, "facing": -1}},
+     "lines": [
+       {"who": "bounds", "text": "A luxury belief. It buys you status, while the bill gets mailed to somebody else.", "emote": "angry", "act": "point", "board": ["LUXURY BELIEF", "status: me", "bill: you"]}
+     ]},
+    {"type": "scene", "id": "act2-news3", "bg": "newsroom",
+     "chars": {"ken": {"x": 640, "s": 1.05}},
+     "lines": [
+       {"who": "ken", "text": "And the Mayor announced the town's one and only goal: zero scraped knees. Sports, stairs and fun are now banned.", "emote": "happy", "graphic": "FUN: BANNED"}
+     ]},
+    {"type": "scene", "id": "act2-bounds3", "bg": "chalkboard",
+     "chars": {"bounds": {"x": 760, "s": 1.0, "facing": -1}, "penny": {"x": 1080, "s": 1.0, "facing": -1}},
+     "lines": [
+       {"who": "bounds", "text": "Single objective thinking. Measure only one thing, and you quietly trade away everything you forgot to measure.", "emote": "worried", "act": "shrug", "board": ["ONE GOAL", "knees: safe", "everything else: ?"]}
+     ]},
+    {"type": "scene", "id": "act2-mayor", "bg": "townsquare",
+     "chars": {"mayor": {"x": 640, "s": 1.05}},
+     "props": {"dial": {"x": 280, "value": 11}, "phone": {"likes": "1,000,000"}},
+     "lines": [
+       {"who": "mayor", "text": "My new post, I care more than you, just hit one million likes! Ooh, the dopamine! It feels so good, it must be good!", "emote": "happy", "act": "bounce", "fx": "hearts", "sfx": "sparkle"}
+     ]},
+    {"type": "scene", "id": "act2-bounds4", "bg": "chalkboard",
+     "chars": {"bounds": {"x": 760, "s": 1.0, "facing": -1}, "penny": {"x": 1080, "s": 1.0, "facing": -1}},
+     "lines": [
+       {"who": "bounds", "text": "That's the trap. The reward comes from looking kind, not from the results of being kind.", "emote": "neutral", "act": "point", "board": ["THE DOPAMINE TRAP", "looking kind ≠ being kind"]},
+       {"who": "bounds", "text": "Now, in the book Saad takes this into the hottest topics there are. Immigration, crime, campus speech, research people would rather not hear. That's exactly where his critics push back hardest.", "emote": "neutral", "act": "shrug", "board": ["THE HOT TAKES", "immigration", "crime", "campus speech", "→ critics: objection!"]},
+       {"who": "penny", "text": "So let's hear them out.", "emote": "happy", "act": "point"}
+     ]},
+
+    {"type": "card", "id": "act3", "title": "HEART vs HEAD", "sub": "Live from KNN Studio B", "dur": 2.6, "sfx": "sting"},
+
+    {"type": "scene", "id": "act3-debate", "bg": "tvstudio",
+     "chars": {"bounds": {"x": 330, "s": 1.0}, "ken": {"x": 640, "s": 0.95}, "kindt": {"x": 950, "s": 1.0, "facing": -1}},
+     "lines": [
+       {"who": "ken", "text": "Tonight on Heart versus Head: is empathy killing us? On my left, Doctor Hal Bounds. On my right, compassion researcher Doctor Iris Kindt.", "emote": "happy", "act": "armsup", "cam": "wide"},
+       {"who": "kindt", "text": "Hal, empathy built hospitals, helped end slavery, and feeds strangers every day. Too much kindness is hardly the West's biggest problem.", "emote": "neutral", "act": "point"},
+       {"who": "bounds", "text": "Agreed. Kindness isn't the disease. Uncalibrated kindness is. Feeling more for the arsonist than for the people in the burning building.", "emote": "neutral", "act": "shrug"},
+       {"who": "kindt", "text": "Here's my worry. Call something suicidal empathy, and you can slap that label on any policy you happen to dislike. Reviewers say the book does exactly that.", "emote": "worried", "act": "point"},
+       {"who": "kindt", "text": "And the opposite failure is real too. Cruelty dressed up as being realistic has a body count of its own.", "emote": "angry"},
+       {"who": "bounds", "text": "Fair. So don't argue about labels. Test the policy. Is it true? Who pays? And what happens next year?", "emote": "happy", "act": "point"},
+       {"who": "kindt", "text": "I can live with that. Compassion, with receipts.", "emote": "happy"},
+       {"who": "ken", "text": "Wow. Two experts agreeing on live television. Folks, this has never happened.", "emote": "shocked", "act": "armsup", "cam": "wide"}
+     ]},
+
+    {"type": "scene", "id": "act3-home", "bg": "livingroom",
+     "chars": {"dale": {"x": 520, "s": 1.0}, "penny": {"x": 820, "s": 1.0, "facing": -1}, "rocco": {"x": 300, "s": 1.0}},
+     "props": {"door": true},
+     "lines": [
+       {"who": "penny", "text": "Okay, Dad. New house rule. Three questions before every yes.", "emote": "happy", "act": "point"},
+       {"who": "dale", "text": "Is it true that Rocco is a licensed driver?", "emote": "neutral"},
+       {"who": "penny", "text": "No.", "emote": "neutral"},
+       {"who": "dale", "text": "Who pays for the car?", "emote": "worried"},
+       {"who": "penny", "text": "You do.", "emote": "neutral", "act": "point"},
+       {"who": "dale", "text": "And what happens next year?", "emote": "worried"},
+       {"who": "penny", "text": "Rocco owns a car dealership. With your credit card.", "emote": "angry", "act": "shrug"},
+       {"who": "dale", "text": "Rocco, buddy. You can stay. But you wash the dishes.", "emote": "neutral", "act": "point"},
+       {"who": "rocco", "text": "*happy chitter* (grabs a sponge)", "sfx": "chitter", "dur": 1.4},
+       {"who": "penny", "text": "That's reciprocity. Kindness that can survive contact with reality.", "emote": "happy"},
+       {"who": "dale", "text": "So I'm turning my heart down?", "emote": "sad"},
+       {"who": "penny", "text": "No, Dad. You're turning your brain up.", "emote": "happy", "act": "armsup"}
+     ]},
+
+    {"type": "scene", "id": "tag", "bg": "townsquare",
+     "chars": {"mayor": {"x": 600, "s": 1.0}, "penny": {"x": 1060, "s": 0.95, "facing": -1}},
+     "props": {"dial": {"x": 300, "value": 11}},
+     "lines": [
+       {"who": "mayor", "text": "Fine! If empathy is the problem, we'll crank it all the way down to zero!", "emote": "angry", "act": "point", "dial": 0, "fx": "drain", "cam": "wide"},
+       {"who": "mayor", "text": "Citizens. Kittens will now be taxed. By weight.", "emote": "neutral", "fx": "drain"},
+       {"who": "penny", "text": "And that's the other ditch. Somewhere, Aristotle is spinning.", "emote": "worried", "act": "facepalm", "fx": "drain"}
+     ]},
+
+    {"type": "card", "id": "end", "title": "Kindness, with a brain.", "sub": "Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary. Original characters.", "dur": 6.0, "sfx": "theme"}
+  ]
+}
