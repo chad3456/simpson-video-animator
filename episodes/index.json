@@ -112,6 +112,22 @@
     "bible": false
   },
   {
+    "slug": "suicidal-empathy-family",
+    "show": "KINDLETON",
+    "episode": "S1E1",
+    "title": "Dying to Be Kind (Family Cut)",
+    "logline": "When Mayor Hart cranks the town's Empathy Dial to eleven, Penny Doormat has to save her too-nice dad, her fridge and her whole town by learning when kindness helps and when it backfires.",
+    "rating": "all-ages",
+    "format": "drama-skit with explainer cutaways",
+    "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+    "duration": 285.472,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": true
+  },
+  {
     "slug": "suicidal-empathy",
     "show": "KINDLETON",
     "episode": "S1E1",
