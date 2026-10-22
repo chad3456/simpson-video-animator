@@ -1,0 +1,707 @@
+{
+ "meta": {
+  "show": "KINDLETON",
+  "episode": "S1E4",
+  "title": "Blank Slate Felons",
+  "rating": "adult",
+  "format": "drama-skit with explainer cutaways",
+  "logline": "Kindleton's bike thief walks free for the forty-first time, while Dale stops a robbery and gets sentenced to Masculinity Unlearning.",
+  "focus": "Book chapter 4: criminals recast as victims, recidivism, pathologizing heroic masculinity.",
+  "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+  "disclaimer": "Parody and commentary for adults. Strong language. Original characters. Not affiliated with any author, network or show.",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "gap": 0.26,
+  "music": true
+ },
+ "cast": {
+  "ken": {
+   "name": "Ken Brightside",
+   "role": "News anchor whose contractual grin hides a seething void",
+   "voice": "am_michael",
+   "speed": 1.1,
+   "look": {
+    "hair": "helmet",
+    "hairColor": "#3b2a1a",
+    "shirt": "#1f3c88",
+    "pants": "#1f3c88",
+    "tie": "#c62828",
+    "smile": true
+   }
+  },
+  "dale": {
+   "name": "Dale Doormat",
+   "role": "Dad who physically cannot say no",
+   "voice": "am_puck",
+   "speed": 1.1,
+   "look": {
+    "hair": "flop",
+    "hairColor": "#6d4c2f",
+    "shirt": "#7cb342",
+    "vest": "#f9a825",
+    "pants": "#5d4037",
+    "mustache": true,
+    "stubble": true,
+    "height": 1.05
+   }
+  },
+  "penny": {
+   "name": "Penny Doormat",
+   "role": "12-year-old skeptic and the only adult in the house",
+   "voice": "af_nova",
+   "speed": 1.1,
+   "look": {
+    "hair": "pigtails",
+    "hairColor": "#8d3b1f",
+    "bow": "#29b6f6",
+    "shirt": "#ab47bc",
+    "pants": "#ab47bc",
+    "skirt": true,
+    "height": 0.74
+   }
+  },
+  "bounds": {
+   "name": "Dr. Hal Bounds",
+   "role": "Divorced evolutionary behavioral scientist; carries the book's thesis",
+   "voice": "bm_george",
+   "speed": 1.07,
+   "look": {
+    "hair": "bald",
+    "hairColor": "#bdbdbd",
+    "glasses": true,
+    "beard": "#9e9e9e",
+    "shirt": "#8d6e63",
+    "pants": "#4e342e",
+    "bowtie": "#1565c0"
+   }
+  },
+  "kindt": {
+   "name": "Dr. Iris Kindt",
+   "role": "Compassion researcher; carries the critics' counterpoint",
+   "voice": "bf_emma",
+   "speed": 1.08,
+   "look": {
+    "hair": "curly",
+    "hairColor": "#2b1b17",
+    "glasses": true,
+    "shirt": "#2e7d32",
+    "pants": "#263238",
+    "skirt": true,
+    "lipstick": "#ad1457",
+    "height": 0.95
+   }
+  },
+  "rocco": {
+   "name": "Rocco",
+   "role": "A raccoon who has never once heard the word no",
+   "kind": "raccoon",
+   "sfx": "chitter"
+  },
+  "judge": {
+   "name": "Judge Rosalind Softheart",
+   "role": "Judge who has never met a criminal she couldn't hug",
+   "voice": "af_nicole",
+   "speed": 1.06,
+   "look": {
+    "hair": "bouffant",
+    "hairColor": "#cfd8dc",
+    "shirt": "#212121",
+    "pants": "#212121",
+    "robe": "#212121",
+    "glasses": true,
+    "lipstick": "#b71c1c"
+   }
+  },
+  "vinnie": {
+   "name": "Slick Vinnie",
+   "role": "Kindleton's 41-time bike thief",
+   "voice": "am_liam",
+   "speed": 1.1,
+   "look": {
+    "hair": "slick",
+    "hairColor": "#212121",
+    "mask": true,
+    "shirt": "#fafafa",
+    "stripes": "#212121",
+    "pants": "#37474f"
+   }
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "cold-open",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Kindleton's beloved bike thief, Slick Vinnie, was arrested today for the forty-first time. He was released for the forty-first time ten minutes later.",
+     "emote": "happy",
+     "graphic": "41 ARRESTS"
+    },
+    {
+     "who": "ken",
+     "text": "He has already stolen the judge's bike. And mine. I walked here, folks. In these shoes.",
+     "emote": "angry",
+     "graphic": "41 ARRESTS",
+     "cam": "close"
+    }
+   ],
+   "ticker": "BIKE THEFTS UP 900% • BIKE THIEF SELF-ESTEEM ALSO UP • BICYCLE OWNERS TOLD TO REFLECT ON THEIR PRIVILEGE"
+  },
+  {
+   "type": "scene",
+   "id": "cold-open-court",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "vinnie": {
+     "x": 1020,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 230,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "judge",
+     "text": "Mister Vinnie, you've stolen four hundred bicycles.",
+     "emote": "worried",
+     "react": {
+      "vinnie": "sad"
+     }
+    },
+    {
+     "who": "vinnie",
+     "text": "Your honor, I had a very difficult childhood. My dad never let me ride his bike.",
+     "emote": "sad",
+     "act": "shrug"
+    },
+    {
+     "who": "judge",
+     "text": "Oh, you poor thing. Case dismissed! Here, take my bike.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "penny": "shocked"
+     }
+    },
+    {
+     "who": "vinnie",
+     "text": "Thanks, judge. I'll take the bailiff's too.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "penny",
+     "text": "This is the dumbest courtroom on Earth.",
+     "emote": "deadpan",
+     "act": "facepalm"
+    },
+    {
+     "who": "judge",
+     "text": "Penny! That's very punitive language. Mister Vinnie is a justice-involved cyclist.",
+     "emote": "angry",
+     "act": "point"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "title": "KINDLETON",
+   "sub": "Episode 4: “Blank Slate Felons”",
+   "dur": 4.2,
+   "sfx": "theme"
+  },
+  {
+   "type": "scene",
+   "id": "act1-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Saad quotes a grim number. Nearly a third of American male prisoners had been locked up five or more times before.",
+     "emote": "worried",
+     "act": "point",
+     "board": [
+      "REPEAT OFFENDERS",
+      "1 in 3",
+      "5+ prior stints"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Treat the offender only as a victim of society, and the actual victims become a footnote. Usually a footnote without a bike.",
+     "emote": "angry",
+     "act": "shrug",
+     "board": [
+      "REPEAT OFFENDERS",
+      "offender = victim?",
+      "victim = footnote"
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "Vinnie has a punch card. Steal nine bikes, the tenth is free.",
+     "emote": "deadpan",
+     "react": {
+      "bounds": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act2",
+   "title": "MEANWHILE, A HERO RISES. BRIEFLY.",
+   "sub": "",
+   "dur": 2.4,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act2-square",
+   "bg": "townsquare",
+   "chars": {
+    "vinnie": {
+     "x": 520,
+     "s": 1.0,
+     "enter": "left"
+    },
+    "dale": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "vinnie",
+     "text": "Nice wheelchair, grandpa. I'll take it. With you in it, for resale.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "dale",
+     "text": "Hey! Not today, you slippery little creep!",
+     "emote": "angry",
+     "act": "bounce",
+     "sfx": "crash",
+     "fx": "shake",
+     "react": {
+      "vinnie": "shocked"
+     }
+    },
+    {
+     "who": "vinnie",
+     "text": "Ow! He touched me! Somebody call my therapist!",
+     "emote": "shocked",
+     "act": "armsup"
+    }
+   ],
+   "crowd": true,
+   "sign": "KINDLETON SAFE STREETS WEEK"
+  },
+  {
+   "type": "scene",
+   "id": "act2-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Local hero Dale Doormat, who stopped a robbery today, has been charged with toxic masculinity in the first degree.",
+     "emote": "happy",
+     "graphic": "HERO? ARREST HIM"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-court",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "dale": {
+     "x": 1020,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "judge",
+     "text": "Mister Doormat, you used your body to stop a crime. That's very aggressive.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "dale": "shocked"
+     }
+    },
+    {
+     "who": "dale",
+     "text": "He was stealing a wheelchair. With a guy in it!",
+     "emote": "shocked",
+     "act": "armsup"
+    },
+    {
+     "who": "judge",
+     "text": "I sentence you to six weeks of Masculinity Unlearning. You will cry on cue, apologize to furniture, stop holding doors, because that's benevolent sexism, and never, ever open a jar.",
+     "emote": "smug",
+     "act": "point",
+     "react": {
+      "dale": "sad"
+     }
+    },
+    {
+     "who": "dale",
+     "text": "Not the jars!",
+     "emote": "shocked",
+     "act": "facepalm"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-bar",
+   "bg": "bar",
+   "chars": {
+    "dale": {
+     "x": 560,
+     "s": 1.0,
+     "hold": "beer"
+    },
+    "rocco": {
+     "x": 800,
+     "y": -170,
+     "s": 0.95,
+     "facing": -1,
+     "hold": "martini"
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Three weeks of unlearning, Rocco. I cried at a parking ticket. I apologized to a hedge. The hedge did not accept.",
+     "emote": "sad",
+     "act": "shrug"
+    },
+    {
+     "who": "rocco",
+     "text": "*sympathetic chitter* (steals Dale's wallet)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "dale": "sad"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Saad's complaint: we used to cheer the man who ran toward danger. Now we pathologize him, and applaud the bloke tweeting a sad face from a safe distance.",
+     "emote": "angry",
+     "act": "point",
+     "board": [
+      "HEROIC MASCULINITY",
+      "runs toward danger",
+      "-> charged",
+      "tweets sad face",
+      "-> praised"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "His evidence is romance novels. Goodreads has a list called All Time Dominant-Alpha Romance Heroes. There is no list for sensitive betas who cry at Sleepless in Seattle.",
+     "emote": "smug",
+     "act": "shrug",
+     "board": [
+      "ROMANCE NOVELS",
+      "alpha heroes: 1000s",
+      "crying betas: 0"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "And zoology has a term for the alternative. Kleptogamy. Colloquially, the sneaky fucker. A male who mimics a female to slip past the big fellow and get at the ladies. Saad's point: performing harmlessness is a strategy, not a virtue.",
+     "emote": "happy",
+     "act": "point",
+     "board": [
+      "KLEPTOGAMY",
+      "a.k.a. the",
+      "SNEAKY F*CKER"
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "I'm eleven.",
+     "emote": "deadpan",
+     "react": {
+      "bounds": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "He leans on a real New York subway case, where a Marine restrained a man who was threatening passengers, the man died, and the Marine was charged. It's still argued about bitterly.",
+     "emote": "worried",
+     "act": "shrug",
+     "board": [
+      "THE SUBWAY CASE",
+      "contested",
+      "argued both ways"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act3",
+   "title": "HEART vs HEAD",
+   "sub": "Tonight: villains, victims and very tired juries",
+   "dur": 2.6,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act3-debate",
+   "bg": "tvstudio",
+   "chars": {
+    "bounds": {
+     "x": 330,
+     "s": 1.0
+    },
+    "ken": {
+     "x": 640,
+     "s": 0.95
+    },
+    "kindt": {
+     "x": 950,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight on Heart versus Head: who deserves our sympathy, the criminal or the victim? I'm going to say the guy whose bike got stolen. Me. I'm the victim.",
+     "emote": "angry",
+     "act": "armsup",
+     "cam": "wide"
+    },
+    {
+     "who": "kindt",
+     "text": "Hal, the heroic vigilante story has a dark side. Sometimes the hero misjudges the situation, and somebody dies. That subway case is not a cartoon.",
+     "emote": "worried",
+     "act": "point",
+     "react": {
+      "bounds": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "True, and courts should look hard at cases like it. But there's a difference between investigate the man who stepped in, and assume he's the villain.",
+     "act": "shrug"
+    },
+    {
+     "who": "kindt",
+     "text": "And rehabilitation isn't fluff. Education and job programs inside prison really do cut reoffending.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Agreed! Rehab for people who want it. Consequences for bike number forty-one.",
+     "emote": "happy",
+     "act": "point",
+     "react": {
+      "kindt": "happy"
+     }
+    },
+    {
+     "who": "kindt",
+     "text": "Compassion for offenders. But victims first.",
+     "emote": "happy"
+    },
+    {
+     "who": "ken",
+     "text": "Programming note: the courthouse sign has just been stolen by Slick Vinnie.",
+     "emote": "deadpan",
+     "cam": "wide",
+     "react": {
+      "bounds": "shocked",
+      "kindt": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act3-court",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "penny": {
+     "x": 260,
+     "s": 1.0
+    },
+    "vinnie": {
+     "x": 1020,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "Your honor, my motion is simple. Some empathy for the victims. All four hundred of them.",
+     "act": "point"
+    },
+    {
+     "who": "judge",
+     "text": "Hmm. I never considered the bikes' feelings.",
+     "emote": "worried"
+    },
+    {
+     "who": "penny",
+     "text": "The people, Judge. The people who own the bikes.",
+     "emote": "deadpan",
+     "act": "facepalm"
+    },
+    {
+     "who": "judge",
+     "text": "Mister Vinnie, you will repair every bike you stole. And there's a job at the bike shop, if you show up on time.",
+     "act": "point",
+     "react": {
+      "vinnie": "shocked"
+     }
+    },
+    {
+     "who": "vinnie",
+     "text": "A job? Like, with mornings?",
+     "emote": "shocked",
+     "act": "armsup"
+    },
+    {
+     "who": "judge",
+     "text": "Tit for tat, sweetie.",
+     "emote": "smug",
+     "react": {
+      "penny": "happy"
+     }
+    }
+   ],
+   "sign": "KINDLETON COURT OF FEELINGS (AND FACTS)"
+  },
+  {
+   "type": "scene",
+   "id": "tag",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Penny, look! I opened a jar! I am a man again!",
+     "emote": "happy",
+     "act": "armsup",
+     "hold": {
+      "dale": "beer"
+     }
+    },
+    {
+     "who": "rocco",
+     "text": "*chomp chomp* (eats the entire jar)",
+     "sfx": "chomp",
+     "dur": 1.6,
+     "react": {
+      "dale": "sad",
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Rehab is going great.",
+     "emote": "deadpan"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "title": "Kindness, with a brain.",
+   "sub": "Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary for adults. Original characters.",
+   "dur": 6.0,
+   "sfx": "theme"
+  }
+ ]
+}

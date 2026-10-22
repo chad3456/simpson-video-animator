@@ -1,0 +1,581 @@
+{
+ "meta": {
+  "show": "KINDLETON",
+  "episode": "S1E8",
+  "title": "Dial M for Moderation",
+  "rating": "adult",
+  "format": "drama-skit with explainer cutaways",
+  "logline": "Season finale. The Empathy Dial goes on trial for crimes against common sense, with Penny prosecuting, the Mayor defending, and Rocco as the key witness.",
+  "focus": "Book conclusion: the dopamine hit, empathy agnosia, Axelrod's tit for tat, truth as the highest empathy, the 'dormant virus' warning.",
+  "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+  "disclaimer": "Parody and commentary for adults. Strong language. Original characters. Not affiliated with any author, network or show.",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "gap": 0.26,
+  "music": true
+ },
+ "cast": {
+  "ken": {
+   "name": "Ken Brightside",
+   "role": "News anchor whose contractual grin hides a seething void",
+   "voice": "am_michael",
+   "speed": 1.1,
+   "look": {
+    "hair": "helmet",
+    "hairColor": "#3b2a1a",
+    "shirt": "#1f3c88",
+    "pants": "#1f3c88",
+    "tie": "#c62828",
+    "smile": true
+   }
+  },
+  "mayor": {
+   "name": "Mayor Marigold Hart",
+   "role": "Feelings-first mayor; if it feels good, it's law",
+   "voice": "af_sarah",
+   "speed": 1.08,
+   "look": {
+    "hair": "bouffant",
+    "hairColor": "#e8711c",
+    "shirt": "#d81b60",
+    "pants": "#d81b60",
+    "skirt": true,
+    "sash": "MAYOR",
+    "pearls": true,
+    "lipstick": "#c2185b"
+   }
+  },
+  "dale": {
+   "name": "Dale Doormat",
+   "role": "Dad who physically cannot say no",
+   "voice": "am_puck",
+   "speed": 1.1,
+   "look": {
+    "hair": "flop",
+    "hairColor": "#6d4c2f",
+    "shirt": "#7cb342",
+    "vest": "#f9a825",
+    "pants": "#5d4037",
+    "mustache": true,
+    "stubble": true,
+    "height": 1.05
+   }
+  },
+  "penny": {
+   "name": "Penny Doormat",
+   "role": "12-year-old skeptic and the only adult in the house",
+   "voice": "af_nova",
+   "speed": 1.1,
+   "look": {
+    "hair": "pigtails",
+    "hairColor": "#8d3b1f",
+    "bow": "#29b6f6",
+    "shirt": "#ab47bc",
+    "pants": "#ab47bc",
+    "skirt": true,
+    "height": 0.74
+   }
+  },
+  "bounds": {
+   "name": "Dr. Hal Bounds",
+   "role": "Divorced evolutionary behavioral scientist; carries the book's thesis",
+   "voice": "bm_george",
+   "speed": 1.07,
+   "look": {
+    "hair": "bald",
+    "hairColor": "#bdbdbd",
+    "glasses": true,
+    "beard": "#9e9e9e",
+    "shirt": "#8d6e63",
+    "pants": "#4e342e",
+    "bowtie": "#1565c0"
+   }
+  },
+  "kindt": {
+   "name": "Dr. Iris Kindt",
+   "role": "Compassion researcher; carries the critics' counterpoint",
+   "voice": "bf_emma",
+   "speed": 1.08,
+   "look": {
+    "hair": "curly",
+    "hairColor": "#2b1b17",
+    "glasses": true,
+    "shirt": "#2e7d32",
+    "pants": "#263238",
+    "skirt": true,
+    "lipstick": "#ad1457",
+    "height": 0.95
+   }
+  },
+  "rocco": {
+   "name": "Rocco",
+   "role": "A raccoon who has never once heard the word no",
+   "kind": "raccoon",
+   "sfx": "chitter"
+  },
+  "judge": {
+   "name": "Judge Rosalind Softheart",
+   "role": "Judge who has never met a criminal she couldn't hug",
+   "voice": "af_nicole",
+   "speed": 1.06,
+   "look": {
+    "hair": "bouffant",
+    "hairColor": "#cfd8dc",
+    "shirt": "#212121",
+    "pants": "#212121",
+    "robe": "#212121",
+    "glasses": true,
+    "lipstick": "#b71c1c"
+   }
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "cold-open",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight, a Kindleton first. The Empathy Dial itself is on trial, charged with crimes against common sense.",
+     "emote": "happy",
+     "graphic": "THE PEOPLE v. THE DIAL"
+    },
+    {
+     "who": "ken",
+     "text": "It is also charged with eating a man's car. That was Rocco, but the dial is taking the fall. It has a very good lawyer. That's a lie, it has the Mayor.",
+     "emote": "deadpan",
+     "graphic": "THE PEOPLE v. THE DIAL"
+    }
+   ],
+   "ticker": "TRIAL OF THE CENTURY • OR AT LEAST OF THE WEEK • RACCOON REFUSES TO TESTIFY WITHOUT SNACKS"
+  },
+  {
+   "type": "scene",
+   "id": "cold-open-court",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "penny": {
+     "x": 230,
+     "s": 1.0
+    },
+    "mayor": {
+     "x": 1040,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "judge",
+     "text": "Order! The People versus the Municipal Empathy Dial. How does the defendant plead?",
+     "act": "point"
+    },
+    {
+     "who": "mayor",
+     "text": "The dial pleads... sensitive.",
+     "emote": "sad",
+     "react": {
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "judge",
+     "text": "Aww. Accepted.",
+     "emote": "happy",
+     "react": {
+      "penny": "angry"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Your honor, the prosecution calls Dale Doormat.",
+     "act": "point"
+    }
+   ],
+   "sign": "THE PEOPLE v. THE EMPATHY DIAL"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "title": "KINDLETON",
+   "sub": "Episode 8: “Dial M for Moderation”",
+   "dur": 4.2,
+   "sfx": "theme"
+  },
+  {
+   "type": "scene",
+   "id": "act1-court",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "penny": {
+     "x": 230,
+     "s": 1.0
+    },
+    "dale": {
+     "x": 1040,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Every time I said yes to something dumb, I got this warm tingle. Like a hug from a hot tub.",
+     "emote": "happy",
+     "act": "armsup"
+    },
+    {
+     "who": "penny",
+     "text": "That's the dopamine hit. The reward for looking kind. Was the raccoon better off?",
+     "act": "point"
+    },
+    {
+     "who": "dale",
+     "text": "He has a Lexus now.",
+     "emote": "happy"
+    },
+    {
+     "who": "penny",
+     "text": "Were you better off?",
+     "emote": "deadpan"
+    },
+    {
+     "who": "dale",
+     "text": "I live in his Lexus.",
+     "emote": "sad",
+     "act": "shrug",
+     "react": {
+      "judge": "worried"
+     }
+    }
+   ],
+   "sign": "THE PEOPLE v. THE EMPATHY DIAL"
+  },
+  {
+   "type": "scene",
+   "id": "act1-expert",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "penny": {
+     "x": 230,
+     "s": 1.0
+    },
+    "bounds": {
+     "x": 1040,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Delighted. In the nineteen eighties a political scientist named Robert Axelrod ran a tournament. Computer programs played cooperate or betray, over and over.",
+     "emote": "happy",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "The winner was the simplest program in the room. Tit for tat. Be nice first. Then do whatever the other fellow did last.",
+     "emote": "smug",
+     "act": "shrug"
+    },
+    {
+     "who": "bounds",
+     "text": "Kind, but nobody's doormat. Sorry, Dale.",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Saad's last chapter is called Inoculation. A small dose of hard truth now, so the full infection doesn't kill you later. Like a vaccine. Sorry, like a hug with a needle in it.",
+     "emote": "smug",
+     "act": "shrug"
+    },
+    {
+     "who": "bounds",
+     "text": "And Saad has a phrase for the town's real illness. Empathy agnosia. Not being able to tell who deserves your empathy. The arsonist or the family. The bike thief or the kid with no bike.",
+     "emote": "worried",
+     "act": "point"
+    }
+   ],
+   "sign": "THE PEOPLE v. THE EMPATHY DIAL"
+  },
+  {
+   "type": "card",
+   "id": "act2",
+   "title": "THE DEFENSE RESTS. UNEASILY.",
+   "sub": "",
+   "dur": 2.4,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act2-defense",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "mayor": {
+     "x": 230,
+     "s": 1.0
+    },
+    "kindt": {
+     "x": 1040,
+     "s": 0.95,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "mayor",
+     "text": "The defense calls Doctor Iris Kindt!",
+     "emote": "happy",
+     "act": "armsup"
+    },
+    {
+     "who": "kindt",
+     "text": "I'll say this. Turn empathy down too far and you don't get wisdom. You get cruelty with a spreadsheet. Every ditch has a body in it.",
+     "act": "point"
+    },
+    {
+     "who": "mayor",
+     "text": "Ha! You see?",
+     "emote": "happy",
+     "act": "bounce"
+    },
+    {
+     "who": "kindt",
+     "text": "But eleven was stupid, Marigold.",
+     "emote": "deadpan",
+     "react": {
+      "mayor": "shocked"
+     }
+    },
+    {
+     "who": "mayor",
+     "text": "No further questions.",
+     "emote": "sad",
+     "act": "facepalm"
+    }
+   ],
+   "sign": "THE PEOPLE v. THE EMPATHY DIAL"
+  },
+  {
+   "type": "scene",
+   "id": "act2-witness",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "penny": {
+     "x": 230,
+     "s": 1.0
+    },
+    "rocco": {
+     "x": 1040,
+     "s": 1.0,
+     "facing": -1,
+     "hold": "keys"
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "And finally, the prosecution calls Rocco. Rocco, did the town's kindness ever make you a better raccoon?",
+     "act": "point"
+    },
+    {
+     "who": "rocco",
+     "text": "*long, thoughtful chitter* (jingles stolen keys)",
+     "sfx": "chitter",
+     "dur": 2.0,
+     "react": {
+      "judge": "worried",
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "judge",
+     "text": "Let the record show the witness has stolen the court stenographer's car.",
+     "emote": "deadpan",
+     "act": "facepalm"
+    }
+   ],
+   "sign": "THE PEOPLE v. THE EMPATHY DIAL"
+  },
+  {
+   "type": "scene",
+   "id": "act3-closing",
+   "bg": "courtroom",
+   "chars": {
+    "judge": {
+     "x": 640,
+     "y": -40,
+     "s": 0.95
+    },
+    "penny": {
+     "x": 230,
+     "s": 1.0
+    },
+    "mayor": {
+     "x": 1040,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "Your honor, nobody is asking Kindleton to stop caring. Just to care with its eyes open.",
+     "act": "point",
+     "react": {
+      "mayor": "worried"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Is it true? Who pays? What happens next year? Are they playing tit for tat, or just eating our lasagna? And no fence-sitting. Pick the kid with no bike over the guy with four hundred.",
+     "emote": "angry",
+     "act": "armsup"
+    },
+    {
+     "who": "penny",
+     "text": "Saad says truth is the highest form of empathy. His critics say don't let that become an excuse to stop caring. I say, why not both.",
+     "emote": "smug",
+     "act": "shrug"
+    },
+    {
+     "who": "judge",
+     "text": "The court finds the dial guilty of being turned up way too high, by a mayor who liked the tingle.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "mayor": "sad"
+     }
+    },
+    {
+     "who": "judge",
+     "text": "Sentence: the dial is set to five. And checked every year, by someone with a calculator and a heart.",
+     "emote": "happy",
+     "act": "armsup",
+     "sfx": "sting",
+     "react": {
+      "penny": "happy",
+      "mayor": "sad"
+     }
+    }
+   ],
+   "sign": "THE PEOPLE v. THE EMPATHY DIAL"
+  },
+  {
+   "type": "scene",
+   "id": "act3-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "And with that, Kindleton returns to normal. Tune in next season, when we find out what else is broken. Spoiler: everything. Goodnight!",
+     "emote": "happy",
+     "graphic": "SEASON 1: FIN"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "tag",
+   "bg": "townsquare",
+   "chars": {
+    "mayor": {
+     "x": 600,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 1060,
+     "s": 0.95,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "mayor",
+     "text": "Five. Five is fine. Five is... so boring.",
+     "emote": "sad",
+     "cam": "wide"
+    },
+    {
+     "who": "mayor",
+     "text": "Maybe just a teensy six.",
+     "emote": "smug",
+     "act": "point",
+     "dial": 6,
+     "sfx": "sparkle",
+     "cam": "wide"
+    },
+    {
+     "who": "penny",
+     "text": "Hands off the dial, Marigold.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "mayor": "shocked"
+     }
+    },
+    {
+     "who": "mayor",
+     "text": "It was the wind!",
+     "emote": "shocked",
+     "act": "armsup"
+    }
+   ],
+   "props": {
+    "dial": {
+     "x": 300,
+     "value": 5,
+     "label": "11: OH SH*T"
+    }
+   }
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "title": "Kindness, with a brain.",
+   "sub": "End of Season One. Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary for adults. Original characters.",
+   "dur": 6.0,
+   "sfx": "theme"
+  }
+ ]
+}

@@ -1,0 +1,675 @@
+{
+ "meta": {
+  "show": "KINDLETON",
+  "episode": "S1E3",
+  "title": "Hairworm Season",
+  "rating": "adult",
+  "format": "drama-skit with explainer cutaways",
+  "logline": "Kindleton assumes its brutal softball rivals secretly want participation trophies too, and Dale starts cheering for the other team so hard he jumps in the town fountain.",
+  "focus": "Book chapter 3: cultural theory of mind, false equality bias, the wood cricket parasite. Allegory is a sports rivalry; the book's real-world targets are named and argued, not acted out.",
+  "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+  "disclaimer": "Parody and commentary for adults. Strong language. Original characters. Not affiliated with any author, network or show.",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "gap": 0.26,
+  "music": true
+ },
+ "cast": {
+  "ken": {
+   "name": "Ken Brightside",
+   "role": "News anchor whose contractual grin hides a seething void",
+   "voice": "am_michael",
+   "speed": 1.1,
+   "look": {
+    "hair": "helmet",
+    "hairColor": "#3b2a1a",
+    "shirt": "#1f3c88",
+    "pants": "#1f3c88",
+    "tie": "#c62828",
+    "smile": true
+   }
+  },
+  "mayor": {
+   "name": "Mayor Marigold Hart",
+   "role": "Feelings-first mayor; if it feels good, it's law",
+   "voice": "af_sarah",
+   "speed": 1.08,
+   "look": {
+    "hair": "bouffant",
+    "hairColor": "#e8711c",
+    "shirt": "#d81b60",
+    "pants": "#d81b60",
+    "skirt": true,
+    "sash": "MAYOR",
+    "pearls": true,
+    "lipstick": "#c2185b"
+   }
+  },
+  "dale": {
+   "name": "Dale Doormat",
+   "role": "Dad who physically cannot say no",
+   "voice": "am_puck",
+   "speed": 1.1,
+   "look": {
+    "hair": "flop",
+    "hairColor": "#6d4c2f",
+    "shirt": "#7cb342",
+    "vest": "#f9a825",
+    "pants": "#5d4037",
+    "mustache": true,
+    "stubble": true,
+    "height": 1.05
+   }
+  },
+  "penny": {
+   "name": "Penny Doormat",
+   "role": "12-year-old skeptic and the only adult in the house",
+   "voice": "af_nova",
+   "speed": 1.1,
+   "look": {
+    "hair": "pigtails",
+    "hairColor": "#8d3b1f",
+    "bow": "#29b6f6",
+    "shirt": "#ab47bc",
+    "pants": "#ab47bc",
+    "skirt": true,
+    "height": 0.74
+   }
+  },
+  "bounds": {
+   "name": "Dr. Hal Bounds",
+   "role": "Divorced evolutionary behavioral scientist; carries the book's thesis",
+   "voice": "bm_george",
+   "speed": 1.07,
+   "look": {
+    "hair": "bald",
+    "hairColor": "#bdbdbd",
+    "glasses": true,
+    "beard": "#9e9e9e",
+    "shirt": "#8d6e63",
+    "pants": "#4e342e",
+    "bowtie": "#1565c0"
+   }
+  },
+  "kindt": {
+   "name": "Dr. Iris Kindt",
+   "role": "Compassion researcher; carries the critics' counterpoint",
+   "voice": "bf_emma",
+   "speed": 1.08,
+   "look": {
+    "hair": "curly",
+    "hairColor": "#2b1b17",
+    "glasses": true,
+    "shirt": "#2e7d32",
+    "pants": "#263238",
+    "skirt": true,
+    "lipstick": "#ad1457",
+    "height": 0.95
+   }
+  },
+  "rocco": {
+   "name": "Rocco",
+   "role": "A raccoon who has never once heard the word no",
+   "kind": "raccoon",
+   "sfx": "chitter"
+  },
+  "brick": {
+   "name": "Coach Brick",
+   "role": "Grimsby Grinders coach; plays to win",
+   "voice": "am_onyx",
+   "speed": 1.04,
+   "look": {
+    "hair": "cap",
+    "capColor": "#2e3b4e",
+    "capText": "G",
+    "hairColor": "#333",
+    "shirt": "#2e3b4e",
+    "pants": "#9e9e9e",
+    "stubble": true,
+    "height": 1.1
+   }
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "cold-open",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight, Kindleton plays its annual softball game against the Grimsby Grinders. Grimsby has won forty years straight, mostly because we bring orange slices and they bring bats.",
+     "emote": "happy",
+     "graphic": "KINDLETON vs GRIMSBY"
+    },
+    {
+     "who": "ken",
+     "text": "Last year's score was eighty-four to nothing, and one of our outfielders is still missing.",
+     "emote": "deadpan",
+     "graphic": "MISSING: GARY"
+    }
+   ],
+   "ticker": "GRIMSBY GRINDERS ARRIVE BY TANK • KINDLETON TEAM ARRIVES BY GROUP HUG • ORANGE SLICES: SLICED"
+  },
+  {
+   "type": "scene",
+   "id": "cold-open-square",
+   "bg": "townsquare",
+   "chars": {
+    "mayor": {
+     "x": 520,
+     "s": 1.0
+    },
+    "brick": {
+     "x": 900,
+     "s": 1.0,
+     "facing": -1,
+     "enter": "right"
+    },
+    "penny": {
+     "x": 1140,
+     "s": 0.9,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "mayor",
+     "text": "Grimsby friends! In Kindleton nobody keeps score, everybody gets a trophy, and the losers get a hug!",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "brick": "deadpan"
+     }
+    },
+    {
+     "who": "brick",
+     "text": "Cute. In Grimsby, the losers get buried under the bleachers.",
+     "emote": "smug",
+     "react": {
+      "penny": "shocked"
+     }
+    },
+    {
+     "who": "mayor",
+     "text": "Ha! Such a kidder. Deep down, everybody wants the same things!",
+     "emote": "happy",
+     "act": "point"
+    },
+    {
+     "who": "brick",
+     "text": "I want your trophy, your field, and your car.",
+     "emote": "deadpan",
+     "act": "point"
+    },
+    {
+     "who": "mayor",
+     "text": "See? Sharing!",
+     "emote": "happy",
+     "act": "bounce",
+     "fx": "hearts",
+     "sfx": "sparkle",
+     "react": {
+      "brick": "smug",
+      "penny": "deadpan"
+     }
+    }
+   ],
+   "crowd": true,
+   "sign": "WELCOME GRIMSBY! YOU'RE JUST LIKE US!"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "title": "KINDLETON",
+   "sub": "Episode 3: “Hairworm Season”",
+   "dur": 4.2,
+   "sfx": "theme"
+  },
+  {
+   "type": "scene",
+   "id": "act1-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Theory of mind is knowing your mum wants something different than you do. Saad's cultural theory of mind is knowing a whole other group might too.",
+     "act": "point",
+     "board": [
+      "CULTURAL",
+      "THEORY OF MIND",
+      "they != you"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Kindleton's error is false equality bias. Assume everyone shares your values, then act shocked when they steal your car.",
+     "emote": "smug",
+     "act": "shrug",
+     "board": [
+      "FALSE EQUALITY BIAS",
+      "assume: same values",
+      "result: no car"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Now, the book aims this at immigration and Islam. It cites the British grooming gang scandal, where Saad says officials froze for fear of being called bigots, and the rise in antisemitism after October seventh.",
+     "emote": "worried",
+     "act": "point",
+     "board": [
+      "THE BOOK'S TARGETS",
+      "immigration",
+      "grooming gangs",
+      "Oct 7"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "That's the chapter his critics hit hardest. We'll let them swing in a minute.",
+     "act": "shrug"
+    },
+    {
+     "who": "penny",
+     "text": "And meanwhile, our team is warming up by journaling.",
+     "emote": "deadpan",
+     "react": {
+      "bounds": "worried"
+     }
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act2",
+   "title": "PLAY BALL. GENTLY.",
+   "sub": "",
+   "dur": 2.4,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act2-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Live from the game. Grimsby leads one hundred and twelve to zero. Kindleton's pitcher has paused to ask the batter about his childhood.",
+     "emote": "happy",
+     "graphic": "112 - 0"
+    },
+    {
+     "who": "ken",
+     "text": "Correction. The batter has taken the pitcher's lunch money, and his childhood.",
+     "emote": "deadpan",
+     "graphic": "112 - 0"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-home",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "Dad. Why are you wearing a Grimsby jersey?",
+     "emote": "deadpan",
+     "act": "point"
+    },
+    {
+     "who": "dale",
+     "text": "Cheering for my own town is so problematic, Penny. If I hate us loudly enough, maybe Grimsby will finally like me.",
+     "emote": "happy",
+     "act": "armsup"
+    },
+    {
+     "who": "penny",
+     "text": "They tried to bury you under the bleachers.",
+     "emote": "angry"
+    },
+    {
+     "who": "dale",
+     "text": "And I respect their culture of burying.",
+     "emote": "smug",
+     "react": {
+      "penny": "shocked"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Dad. Grimsby's rulebook says fans like you get fed to the mascot.",
+     "emote": "angry",
+     "act": "point"
+    },
+    {
+     "who": "dale",
+     "text": "Then that's the way I was meant to go.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "penny": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Ah. The wood cricket. A parasitic hairworm takes over the cricket's brain and drives it to leap into water and drown, so the worm can swim off and breed.",
+     "emote": "happy",
+     "act": "point",
+     "board": [
+      "THE WOOD CRICKET",
+      "worm in brain",
+      "-> jumps in water",
+      "-> worm wins"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Saad uses it for people who turn on their own group to win applause from the very people who despise it.",
+     "act": "shrug",
+     "board": [
+      "THE WOOD CRICKET",
+      "self-sabotage",
+      "for applause"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "He quotes a street interview where someone admits the cause she's cheering would put her in danger, and shrugs. Then that's the way I was meant to go. Saad's reaction: that's the hairworm talking.",
+     "emote": "worried",
+     "act": "point",
+     "board": [
+      "HUMAN WOOD CRICKETS",
+      "\"that's the way",
+      "I was meant to go\""
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "So my dad's brain has a worm in it.",
+     "emote": "worried"
+    },
+    {
+     "who": "bounds",
+     "text": "Metaphorically. Possibly literally. Has he been eating out of the bins with Rocco?",
+     "emote": "worried",
+     "act": "shrug",
+     "react": {
+      "penny": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-news2",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Breaking. Local man Dale Doormat has jumped into the town fountain to prove how open-minded he is. He's fine. The fountain is traumatized.",
+     "emote": "happy",
+     "graphic": "SPLASH",
+     "sfx": "crash",
+     "fx": "shake"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act3",
+   "title": "HEART vs HEAD",
+   "sub": "Tonight: are they just like us?",
+   "dur": 2.6,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act3-debate",
+   "bg": "tvstudio",
+   "chars": {
+    "bounds": {
+     "x": 330,
+     "s": 1.0
+    },
+    "ken": {
+     "x": 640,
+     "s": 0.95
+    },
+    "kindt": {
+     "x": 950,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight on Heart versus Head: are other people just like us? I hope not. Have you met us?",
+     "emote": "happy",
+     "act": "armsup",
+     "cam": "wide"
+    },
+    {
+     "who": "kindt",
+     "text": "Hal, the book takes the worst extremists and paints whole faiths with them. Most immigrants assimilate just fine. Half of them run the shops on your high street.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "bounds": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "Most do, absolutely. The point is to notice the ones who don't share your values, instead of pretending nobody like that could exist.",
+     "act": "shrug"
+    },
+    {
+     "who": "kindt",
+     "text": "And theory of mind cuts both ways. If you only ever imagine the worst version of the other side, that's not insight. That's a horror movie.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Fair. So judge people by what they actually do, not by your fantasy of them. Good or bad.",
+     "act": "point",
+     "react": {
+      "kindt": "happy"
+     }
+    },
+    {
+     "who": "kindt",
+     "text": "Tit for tat. Not tat for imaginary tit.",
+     "emote": "happy"
+    },
+    {
+     "who": "ken",
+     "text": "Please do not say that on my network.",
+     "emote": "shocked",
+     "act": "armsup",
+     "cam": "wide",
+     "react": {
+      "bounds": "happy",
+      "kindt": "smug"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act3-square",
+   "bg": "townsquare",
+   "chars": {
+    "penny": {
+     "x": 600,
+     "s": 1.0
+    },
+    "mayor": {
+     "x": 900,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "Team, new rule. We play Grimsby the way Grimsby plays. Hard, fair, and we keep score.",
+     "emote": "angry",
+     "act": "armsup",
+     "react": {
+      "mayor": "worried"
+     }
+    },
+    {
+     "who": "mayor",
+     "text": "But what if they're sad when they lose?",
+     "emote": "worried"
+    },
+    {
+     "who": "penny",
+     "text": "Then we bring them orange slices. After we win.",
+     "emote": "smug",
+     "act": "point"
+    }
+   ],
+   "crowd": true,
+   "sign": "KINDLETON vs GRIMSBY (WE KEEP SCORE NOW)"
+  },
+  {
+   "type": "scene",
+   "id": "act3-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Final score. Kindleton three, Grimsby two. Grimsby has demanded a recount and a hug. Kindleton has agreed to the recount.",
+     "emote": "happy",
+     "graphic": "3 - 2 !!!"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "tag",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Penny. I think the worm's gone.",
+     "emote": "sad",
+     "act": "facepalm"
+    },
+    {
+     "who": "rocco",
+     "text": "*smug chitter* (wearing a Grimsby cap)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "penny": "shocked",
+      "dale": "shocked"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Oh no. It jumped.",
+     "emote": "shocked"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "title": "Kindness, with a brain.",
+   "sub": "Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary for adults. Original characters.",
+   "dur": 6.0,
+   "sfx": "theme"
+  }
+ ]
+}

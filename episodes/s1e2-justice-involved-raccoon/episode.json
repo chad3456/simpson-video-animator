@@ -1,0 +1,736 @@
+{
+ "meta": {
+  "show": "KINDLETON",
+  "episode": "S1E2",
+  "title": "Justice-Involved Raccoon",
+  "rating": "adult",
+  "format": "drama-skit with explainer cutaways",
+  "logline": "When Kindleton bans hurtful facts and renames every crime, Penny's science fair project gets cancelled for being true, and Dale gets convicted by the internet for a crime nobody can name.",
+  "focus": "Book chapter 2: epistemological empathy, faulty consequentialism, euphemism treadmills, external attribution.",
+  "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+  "disclaimer": "Parody and commentary for adults. Strong language. Original characters. Not affiliated with any author, network or show.",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "gap": 0.26,
+  "music": true
+ },
+ "cast": {
+  "ken": {
+   "name": "Ken Brightside",
+   "role": "News anchor whose contractual grin hides a seething void",
+   "voice": "am_michael",
+   "speed": 1.1,
+   "look": {
+    "hair": "helmet",
+    "hairColor": "#3b2a1a",
+    "shirt": "#1f3c88",
+    "pants": "#1f3c88",
+    "tie": "#c62828",
+    "smile": true
+   }
+  },
+  "mayor": {
+   "name": "Mayor Marigold Hart",
+   "role": "Feelings-first mayor; if it feels good, it's law",
+   "voice": "af_sarah",
+   "speed": 1.08,
+   "look": {
+    "hair": "bouffant",
+    "hairColor": "#e8711c",
+    "shirt": "#d81b60",
+    "pants": "#d81b60",
+    "skirt": true,
+    "sash": "MAYOR",
+    "pearls": true,
+    "lipstick": "#c2185b"
+   }
+  },
+  "dale": {
+   "name": "Dale Doormat",
+   "role": "Dad who physically cannot say no",
+   "voice": "am_puck",
+   "speed": 1.1,
+   "look": {
+    "hair": "flop",
+    "hairColor": "#6d4c2f",
+    "shirt": "#7cb342",
+    "vest": "#f9a825",
+    "pants": "#5d4037",
+    "mustache": true,
+    "stubble": true,
+    "height": 1.05
+   }
+  },
+  "penny": {
+   "name": "Penny Doormat",
+   "role": "12-year-old skeptic and the only adult in the house",
+   "voice": "af_nova",
+   "speed": 1.1,
+   "look": {
+    "hair": "pigtails",
+    "hairColor": "#8d3b1f",
+    "bow": "#29b6f6",
+    "shirt": "#ab47bc",
+    "pants": "#ab47bc",
+    "skirt": true,
+    "height": 0.74
+   }
+  },
+  "bounds": {
+   "name": "Dr. Hal Bounds",
+   "role": "Divorced evolutionary behavioral scientist; carries the book's thesis",
+   "voice": "bm_george",
+   "speed": 1.07,
+   "look": {
+    "hair": "bald",
+    "hairColor": "#bdbdbd",
+    "glasses": true,
+    "beard": "#9e9e9e",
+    "shirt": "#8d6e63",
+    "pants": "#4e342e",
+    "bowtie": "#1565c0"
+   }
+  },
+  "kindt": {
+   "name": "Dr. Iris Kindt",
+   "role": "Compassion researcher; carries the critics' counterpoint",
+   "voice": "bf_emma",
+   "speed": 1.08,
+   "look": {
+    "hair": "curly",
+    "hairColor": "#2b1b17",
+    "glasses": true,
+    "shirt": "#2e7d32",
+    "pants": "#263238",
+    "skirt": true,
+    "lipstick": "#ad1457",
+    "height": 0.95
+   }
+  },
+  "rocco": {
+   "name": "Rocco",
+   "role": "A raccoon who has never once heard the word no",
+   "kind": "raccoon",
+   "sfx": "chitter"
+  },
+  "pam": {
+   "name": "Principal Pam Pliant",
+   "role": "Principal who has never met a feeling she wouldn't protect from a fact",
+   "voice": "af_jessica",
+   "speed": 1.08,
+   "look": {
+    "hair": "ponytail",
+    "hairColor": "#7e57c2",
+    "shirt": "#26c6da",
+    "pants": "#26c6da",
+    "skirt": true,
+    "glasses": true,
+    "lipstick": "#e91e63"
+   }
+  },
+  "chet": {
+   "name": "Councilman Chet Gatesworth",
+   "role": "Snob Hill councilman with a gate for every belief",
+   "voice": "am_eric",
+   "speed": 1.06,
+   "look": {
+    "hair": "slick",
+    "hairColor": "#8d6e63",
+    "shirt": "#263238",
+    "pants": "#263238",
+    "tie": "#ffd600",
+    "smile": true
+   }
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "cold-open",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Good evening, Kindleton. Tonight's top story has been removed because it was true, and some viewers found that hurtful.",
+     "emote": "happy",
+     "graphic": "[REDACTED]"
+    },
+    {
+     "who": "ken",
+     "text": "In its place, here is a picture of a kitten. Please clap. Clap, you animals.",
+     "emote": "deadpan",
+     "graphic": "♥ KITTEN ♥"
+    }
+   ],
+   "ticker": "TRUTH TEMPORARILY SUSPENDED FOR YOUR SAFETY • FACTS NOW SOLD BEHIND THE COUNTER WITH ID • WEATHER: WHATEVER YOU FEEL IT IS"
+  },
+  {
+   "type": "scene",
+   "id": "cold-open-square",
+   "bg": "townsquare",
+   "chars": {
+    "mayor": {
+     "x": 600,
+     "s": 1.0,
+     "enter": "left"
+    },
+    "penny": {
+     "x": 1050,
+     "s": 0.95,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 880,
+     "s": 0.9,
+     "facing": -1,
+     "hold": "keys"
+    }
+   },
+   "lines": [
+    {
+     "who": "mayor",
+     "text": "Citizens! Words wound. So as of today, Kindleton's new dictionary is mandatory.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "mayor",
+     "text": "Burglars are now surprise house guests. Liars are narrative entrepreneurs. And Rocco is no longer a garbage thief. He is a justice-involved raccoon.",
+     "emote": "happy",
+     "act": "point",
+     "cam": "wide"
+    },
+    {
+     "who": "rocco",
+     "text": "*proud chitter* (jingles stolen keys)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "mayor": "happy",
+      "penny": "angry"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "He stole the bike I was sitting on. While I was sitting on it.",
+     "emote": "deadpan",
+     "act": "point"
+    },
+    {
+     "who": "mayor",
+     "text": "Penny! That's victim blaming. Of the bike.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "penny": "shocked"
+     }
+    }
+   ],
+   "crowd": true,
+   "sign": "LANGUAGE IS VIOLENCE (SOMETIMES)"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "title": "KINDLETON",
+   "sub": "Episode 2: “Justice-Involved Raccoon”",
+   "dur": 4.2,
+   "sfx": "theme"
+  },
+  {
+   "type": "scene",
+   "id": "act1-fair",
+   "bg": "sciencefair",
+   "chars": {
+    "pam": {
+     "x": 520,
+     "s": 1.0,
+     "enter": "right"
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "pam",
+     "text": "Welcome to the science fair, where every hypothesis is valid and every volcano is a safe space.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "My project tested the new no-grades policy. Reading scores fell eighty percent. Little Timmy thinks a book is a hat.",
+     "act": "point"
+    },
+    {
+     "who": "pam",
+     "text": "Penny, data like that could hurt feelings. So the committee has decided your results are... problematic.",
+     "emote": "worried",
+     "act": "shrug",
+     "react": {
+      "penny": "shocked"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "They're numbers. Numbers can't be problematic.",
+     "emote": "angry"
+    },
+    {
+     "who": "pam",
+     "text": "That is exactly what a problematic number would say. Your project is being replaced with a poster about kindness.",
+     "emote": "smug",
+     "act": "point",
+     "react": {
+      "penny": "angry"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "You're cancelling arithmetic. You absolute walnut.",
+     "emote": "angry",
+     "act": "facepalm"
+    }
+   ],
+   "sign": "KINDLETON ELEMENTARY SCIENCE FAIR"
+  },
+  {
+   "type": "scene",
+   "id": "act1-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Epistemological empathy. When protecting feelings matters more than protecting the truth.",
+     "act": "point",
+     "board": [
+      "EPISTEMOLOGICAL",
+      "EMPATHY",
+      "feelings > facts"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Saad's big example is Roland Fryer, the youngest Black economist ever tenured at Harvard. In the book's telling, his findings on schools and policing upset the wrong people, and the institution went after the man instead of the data.",
+     "emote": "worried",
+     "act": "shrug",
+     "board": [
+      "CASE STUDY",
+      "good data",
+      "wrong conclusion",
+      "-> punish the scientist"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "The trick is faulty consequentialism. Free speech, due process, honest journalism. All sacred, right up until they produce an answer you don't like.",
+     "emote": "angry",
+     "act": "point",
+     "board": [
+      "FAULTY CONSEQUENTIALISM",
+      "principles: sacred*",
+      "*until inconvenient"
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "So principles are like Dad's diet. Strict, until there's cake.",
+     "emote": "deadpan",
+     "react": {
+      "bounds": "happy"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "And Saad has a name for the place this all leads. Unicornia. The enchanted land of no risks, where every fact is gentle and nobody's bike ever gets nicked.",
+     "emote": "happy",
+     "act": "point",
+     "board": [
+      "UNICORNIA",
+      "no risks",
+      "no hard facts",
+      "no bikes, oddly"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act2",
+   "title": "MEANWHILE, IN THE COMMENTS...",
+   "sub": "",
+   "dur": 2.4,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act2-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Breaking news. Local man Dale Doormat has been accused online of saying no to a raccoon. Evidence: none. Verdict: guilty. Sentencing is in the comments.",
+     "emote": "happy",
+     "graphic": "GUILTY (PROBABLY)"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-home",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Penny, the internet says I'm a monster! I've never said no to anything! I am the yes-iest man alive!",
+     "emote": "shocked",
+     "act": "armsup",
+     "react": {
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Dad, in this town presumption of innocence got cancelled in twenty twenty. For being too presumptuous.",
+     "emote": "deadpan"
+    },
+    {
+     "who": "dale",
+     "text": "Maybe I should apologize.",
+     "emote": "worried"
+    },
+    {
+     "who": "penny",
+     "text": "For what?",
+     "emote": "angry",
+     "act": "shrug"
+    },
+    {
+     "who": "dale",
+     "text": "I don't know! But if I apologize hard enough, eventually they'll tell me.",
+     "emote": "sad",
+     "act": "facepalm"
+    },
+    {
+     "who": "rocco",
+     "text": "*chomp chomp* (eats Dad's apology letter)",
+     "sfx": "chomp",
+     "dur": 1.6,
+     "react": {
+      "dale": "sad",
+      "penny": "deadpan"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-mayor",
+   "bg": "townsquare",
+   "chars": {
+    "mayor": {
+     "x": 640,
+     "s": 1.05
+    },
+    "chet": {
+     "x": 1000,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "mayor",
+     "text": "We have found the true cause of Rocco's garbage addiction. Landlords!",
+     "emote": "angry",
+     "act": "point"
+    },
+    {
+     "who": "chet",
+     "text": "Madam Mayor, I own every rental in town.",
+     "emote": "worried"
+    },
+    {
+     "who": "mayor",
+     "text": "Then you're under arrest, Chet. You and the entire concept of rent.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "chet": "shocked"
+     }
+    },
+    {
+     "who": "chet",
+     "text": "Fine. I'll be at my other mansion. The one with no locks, for some reason.",
+     "emote": "smug",
+     "act": "shrug"
+    }
+   ],
+   "crowd": true,
+   "sign": "IT'S NEVER YOUR FAULT"
+  },
+  {
+   "type": "scene",
+   "id": "act2-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "External attribution. Blame the landlord. Never the addiction, the mental illness, or, God forbid, the raccoon. Lovely for your conscience. Useless for the raccoon.",
+     "emote": "smug",
+     "act": "point",
+     "board": [
+      "EXTERNAL ATTRIBUTION",
+      "addiction? no",
+      "illness? no",
+      "LANDLORD!!"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Same with the word games. Saad mocks swapping criminal offender for justice-involved individual. The burglar doesn't care what you call him. He's in your kitchen either way.",
+     "emote": "angry",
+     "act": "shrug",
+     "board": [
+      "EUPHEMISM TREADMILL",
+      "offender",
+      "-> justice-involved",
+      "-> still in your kitchen"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Saad's favourite fable is the scorpion and the frog. Halfway across the river, the scorpion stings him. Sorry, mate, it's my nature. Kindleton's response is to buy the scorpion arm floaties.",
+     "emote": "smug",
+     "act": "point",
+     "board": [
+      "SCORPION + FROG",
+      "sting = nature",
+      "Kindleton: floaties"
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "Rocco is the scorpion, isn't he.",
+     "emote": "deadpan",
+     "react": {
+      "bounds": "worried"
+     }
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act3",
+   "title": "HEART vs HEAD",
+   "sub": "Tonight: is the truth too dangerous for Kindleton?",
+   "dur": 2.6,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act3-debate",
+   "bg": "tvstudio",
+   "chars": {
+    "bounds": {
+     "x": 330,
+     "s": 1.0
+    },
+    "ken": {
+     "x": 640,
+     "s": 0.95
+    },
+    "kindt": {
+     "x": 950,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight on Heart versus Head: is the truth too dangerous for Kindleton? Doctors, please keep your hands where I can see them.",
+     "emote": "happy",
+     "act": "armsup",
+     "cam": "wide"
+    },
+    {
+     "who": "kindt",
+     "text": "Hal, research has been weaponized before. Eugenics was just data too. Being careful with findings isn't cowardice, it's history class.",
+     "act": "point",
+     "react": {
+      "bounds": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "Agreed, bad science does real damage. The cure is better science, not hiding the results in a drawer and calling the drawer kindness.",
+     "act": "shrug"
+    },
+    {
+     "who": "kindt",
+     "text": "And some language changes genuinely help. Call someone a person with an addiction instead of a junkie, and more of them walk into treatment.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Fine. Change the label when it helps the patient. Not when it hides the problem. A surprise house guest still has my telly.",
+     "emote": "angry",
+     "react": {
+      "kindt": "happy"
+     }
+    },
+    {
+     "who": "kindt",
+     "text": "So. Say true things, carefully. Don't say false things, kindly.",
+     "emote": "happy",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Bloody hell. Put that on a mug.",
+     "emote": "shocked",
+     "react": {
+      "kindt": "smug"
+     }
+    },
+    {
+     "who": "ken",
+     "text": "We're out of time, because the truth ran long. Folks, that has literally never happened on this network.",
+     "emote": "shocked",
+     "act": "armsup",
+     "cam": "wide"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act3-fair",
+   "bg": "sciencefair",
+   "chars": {
+    "pam": {
+     "x": 440,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "I'm presenting my real results anyway. Reading scores are down eighty percent. I know it stings. But you can't fix what you won't look at.",
+     "act": "point",
+     "react": {
+      "pam": "worried"
+     }
+    },
+    {
+     "who": "pam",
+     "text": "Penny, that's... actually, could you help Timmy? He's wearing a dictionary.",
+     "emote": "worried",
+     "act": "shrug"
+    },
+    {
+     "who": "penny",
+     "text": "Truth is the highest form of empathy. Also, Timmy, it goes in your hands. Not on your head. Hands.",
+     "emote": "happy",
+     "act": "armsup"
+    }
+   ],
+   "sign": "THE TRUTH FAIR (REINSTATED)"
+  },
+  {
+   "type": "scene",
+   "id": "tag",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "And finally, the town dictionary has been updated again. The word truth is now officially classified as a controversial opinion. Goodnight, and good luck with that.",
+     "emote": "deadpan",
+     "graphic": "TRUTH*",
+     "sub": "*opinion"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "title": "Kindness, with a brain.",
+   "sub": "Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary for adults. Original characters.",
+   "dur": 6.0,
+   "sfx": "theme"
+  }
+ ]
+}

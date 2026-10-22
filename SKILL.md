@@ -92,14 +92,16 @@ Writing rules: lines under about 30 words; a gag or visual change at least every
            "source": "...", "disclaimer": "Parody and commentary. Original characters.", "width": 1280, "height": 720, "fps": 24, "gap": 0.28},
   "cast": {
     "<id>": {"name": "Display Name", "role": "...", "voice": "am_michael", "speed": 1.05,
-             "look": {"hair": "helmet|bouffant|flop|pigtails|bald|curly", "hairColor": "#hex", "shirt": "#hex", "pants": "#hex",
+             "look": {"hair": "helmet|bouffant|flop|pigtails|bald|curly|ponytail|slick|cap", "capColor": "#hex", "capText": "G", "hairColor": "#hex", "shirt": "#hex", "pants": "#hex",
                       "skirt": false, "vest": "#hex", "tie": "#hex", "bowtie": "#hex", "sash": "TEXT", "pearls": false,
-                      "glasses": false, "mustache": false, "beard": "#hex", "smile": false, "height": 1.0}},
+                      "glasses": false, "mustache": false, "beard": "#hex", "smile": false, "height": 1.0,
+                      "stubble": false, "lipstick": "#hex", "mask": false, "badge": false, "stripes": "#hex", "robe": "#hex"}},
     "<critter>": {"name": "Rocco", "kind": "raccoon", "sfx": "chitter"}
   },
   "sequence": [
     {"type": "card", "id": "title", "title": "SHOW NAME", "sub": "Episode 1: ...", "dur": 4, "sfx": "theme|sting"},
-    {"type": "scene", "id": "unique-id", "bg": "newsroom|townsquare|livingroom|chalkboard|tvstudio|bar", "crowd": false,
+    {"type": "scene", "id": "unique-id", "bg": "newsroom|townsquare|livingroom|chalkboard|tvstudio|bar|sciencefair|courtroom|office", "crowd": false,
+     "sign": "banner / sign text for the set", "ticker": "newsroom crawl text",
      "chars": {"<id>": {"x": 640, "y": 0, "s": 1.0, "facing": 1, "enter": "left|right", "hold": "beer"}},
      "props": {"dial": {"x": 300, "value": 3, "label": "11: OH SH*T"}, "phone": {"likes": "1,000,000"}},
      "lines": [
@@ -144,14 +146,18 @@ The repo root `index.html` is a static episode gallery (no build step), so Verce
 
 Always render stills and look at them before the full render. Check: captions readable, nobody's face hidden by a prop, board text fits (5 lines max, about 22 characters each), close-ups not cutting heads.
 
-## 8. Deliverables per episode
+## 8. Seasons from a whole book
+
+For a book, plan a season before writing any episode: one episode per chapter, plus a finale built on the conclusion. Keep a fixed cast, add one or two recurring characters per chapter's world (a judge, a principal, a CEO), and track running arcs across episodes (a device that escalates and then goes on trial, a critter whose crimes keep growing, the kid's test that becomes the closing argument). Write `episodes/SEASON1.md` with the arc table, then generate the episode files from a compact builder script (`episodes/season1_build.py` is the template), so dialogue edits stay fast. Render the whole batch with `engine/render_all.sh <slug> ...`.
+
+## 9. Deliverables per episode
 
 1. `bible.md`: thesis map, counterpoints, premise choice, cast with roles and voices, beat sheet with timings.
 2. `script.md`: screenplay view generated from episode.json (scene headings, character cues, action lines).
 3. `episode.json`, `timeline.json`, `episode.wav`, `episode.mp4`.
 4. Optional: a published Artifact page with the video (re-encode to under 15 MB: `-crf 30 -b:a 80k`) and the episode guide, and 3 to 5 vertical shorts cut from the strongest gags (`ffmpeg -ss A -to B -vf "crop=405:720:X:0,scale=1080:1920"`).
 
-## 9. Quality checklist before delivering
+## 10. Quality checklist before delivering
 
 - Could a viewer explain the source's thesis in one sentence after watching? Could they name one serious criticism?
 - Is there a joke or visual change at least every 10 seconds? Does the cold open land a gag inside 20 seconds?
@@ -159,7 +165,7 @@ Always render stills and look at them before the full render. Check: captions re
 - Is every target an idea, policy or incentive rather than a group of people?
 - Original names, designs, music and logos only; source credited on the end card.
 
-## 10. Upgrade paths (all have free tiers)
+## 11. Upgrade paths (all have free tiers)
 
 - **Rive**: build rigged characters with state machines (idle, talk, point) in the Rive editor, export `.riv`, drive the `talk` input from `timeline.json` mouth envelopes with `@rive-app/canvas`. Best upgrade for smoother motion.
 - **Spline**: 3D sets and camera moves; export a scene URL and layer the 2D cast on top.

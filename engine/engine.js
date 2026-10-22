@@ -68,6 +68,8 @@
           `<circle cx="58" cy="-150" r="21" fill="${c}" stroke="${INK}" stroke-width="4"/>` +
           `<path d="M-50,-124 l-12,-14 l4,22 z M-50,-124 l14,-12 l-4,22 z" fill="${look.bow}" stroke="${INK}" stroke-width="3"/>` +
           `<path d="M44,-148 l-6,-18 l16,10 z M44,-148 l18,-2 l-12,14 z" fill="${look.bow}" stroke="${INK}" stroke-width="3"/>`;
+      case 'ponytail':
+        return `<path d="M-40,-120 Q-90,-110 -84,-40 Q-70,-70 -52,-92 Z" fill="${c}" stroke="${INK}" stroke-width="4"/>`;
       case 'curly':
         return [[-50, -132], [-30, -160], [0, -168], [30, -162], [52, -140], [-58, -98], [-56, -62], [-44, -30], [58, -110]]
           .map(([x, y], i) => `<circle cx="${x}" cy="${y}" r="${22 + (i % 3) * 3}" fill="${c}" stroke="${INK}" stroke-width="3"/>`).join('');
@@ -93,6 +95,15 @@
           .map(([x, y]) => `<circle cx="${x}" cy="${y}" r="18" fill="${c}" stroke="${INK}" stroke-width="3"/>`).join('');
       case 'bouffant':
         return `<circle cx="34" cy="-142" r="18" fill="${c}" stroke="${INK}" stroke-width="4"/>`;
+      case 'ponytail':
+        return `<path d="M-48,-86 Q-52,-164 2,-162 Q54,-160 50,-124 Q14,-146 -20,-128 Q-38,-118 -42,-84 Z" fill="${c}" stroke="${INK}" stroke-width="4"/>`;
+      case 'slick':
+        return `<path d="M-48,-70 Q-60,-160 0,-160 Q50,-162 54,-134 Q10,-146 -20,-138 Q-40,-120 -40,-70 Z" fill="${c}" stroke="${INK}" stroke-width="4"/>` +
+          `<path d="M-30,-150 Q0,-156 30,-150 M-36,-136 Q-6,-146 26,-140" stroke="#fff" stroke-opacity=".35" stroke-width="3" fill="none"/>`;
+      case 'cap':
+        return `<path d="M-50,-110 Q-52,-170 4,-168 Q56,-168 52,-112 Z" fill="${look.capColor || '#e53935'}" stroke="${INK}" stroke-width="4"/>` +
+          `<path d="M40,-116 Q80,-116 92,-104 L46,-102 Z" fill="${look.capColor || '#e53935'}" stroke="${INK}" stroke-width="4"/>` +
+          (look.capText ? `<text x="4" y="-128" font-family="Bangers" font-size="22" text-anchor="middle" fill="#fff">${esc(look.capText)}</text>` : '');
       default: return '';
     }
   }
@@ -105,6 +116,7 @@
     if (look.beard) s += `<path d="M-38,-66 Q-36,14 18,16 Q64,14 64,-34 L54,-30 Q34,-12 12,-26 L-24,-62 Z" fill="${look.beard}" stroke="${INK}" stroke-width="4"/>`;
     s += eyes(st);
     s += brows(st.emote, look.hair === 'bald' ? '#8a8a8a' : look.hairColor);
+    if (look.mask) s += `<path d="M-22,-112 Q20,-124 64,-112 L62,-88 Q20,-98 -20,-88 Z" fill="${INK}"/>`;
     if (look.glasses) s += `<g fill="#fff" fill-opacity=".12" stroke="${INK}" stroke-width="4"><circle cx="6" cy="-100" r="26"/><circle cx="38" cy="-102" r="26"/></g><path d="M-20,-100 L-36,-96" stroke="${INK}" stroke-width="4"/>`;
     s += `<ellipse cx="58" cy="-78" rx="13" ry="9" fill="${SKIN}" stroke="${INK}" stroke-width="4"/>`;
     if (look.mustache) s += `<path d="M14,-62 Q36,-72 60,-62 Q56,-48 36,-54 Q18,-48 14,-62 Z" fill="${look.hairColor}" stroke="${INK}" stroke-width="3"/>`;
@@ -157,6 +169,9 @@
     if (look.vest) body += `<path d="M-50,-246 L-14,-160 L14,-160 L50,-246 Q58,-180 46,-112 L-46,-112 Q-58,-180 -50,-246 Z" fill="${look.vest}" stroke="${INK}" stroke-width="4"/>`;
     if (look.tie) body += `<path d="M-22,-254 L0,-196 L22,-254 Z" fill="#fff" stroke="${INK}" stroke-width="3"/><path d="M-6,-250 L6,-250 L10,-176 L0,-164 L-10,-176 Z" fill="${look.tie}" stroke="${INK}" stroke-width="3"/>`;
     if (look.bowtie) body += `<path d="M0,-250 L-22,-262 L-22,-238 Z M0,-250 L22,-262 L22,-238 Z" fill="${look.bowtie}" stroke="${INK}" stroke-width="3"/><circle cx="0" cy="-250" r="5" fill="${look.bowtie}" stroke="${INK}" stroke-width="2"/>`;
+    if (look.badge) body += `<path d="M24,-220 l5,10 11,1 -8,8 2,11 -10,-6 -10,6 2,-11 -8,-8 11,-1 z" fill="#ffd600" stroke="${INK}" stroke-width="2"/>`;
+    if (look.stripes) for (let i = 0; i < 5; i++) body += `<rect x="-46" y="${-240 + i * 26}" width="92" height="11" fill="${look.stripes}" opacity=".9"/>`;
+    if (look.robe) body += `<path d="M-56,-252 L56,-252 L70,-8 L-70,-8 Z" fill="${look.robe}" stroke="${INK}" stroke-width="4"/><path d="M-14,-252 L0,-200 L14,-252 Z" fill="#fff" stroke="${INK}" stroke-width="3"/>`;
     if (look.pearls) for (let i = -4; i <= 4; i++) body += `<circle cx="${i * 6}" cy="${-252 + Math.abs(i) * -1.5 + 6}" r="4" fill="#fff" stroke="#999" stroke-width="1"/>`;
     if (look.sash) body += `<path d="M-50,-244 L-30,-252 L50,-150 L46,-122 Z" fill="#ffeb3b" stroke="${INK}" stroke-width="3"/><text x="0" y="-186" font-family="Bangers" font-size="18" fill="${INK}" transform="rotate(52 0 -186)" text-anchor="middle">${esc(look.sash)}</text>`;
     body += `<g transform="translate(46,-240)">${arm(look.shirt, -frontA, st.hold)}</g>`;
@@ -246,7 +261,7 @@
         `<rect x="190" y="505" width="900" height="30" rx="6" fill="#a1683a" stroke="${INK}" stroke-width="6"/>` +
         `<rect x="540" y="560" width="200" height="60" rx="8" fill="#ffd43b" stroke="${INK}" stroke-width="4"/><text x="640" y="602" font-family="Bangers" font-size="34" text-anchor="middle" fill="#123a7a">KNN</text>` +
         `<rect x="0" y="${H - 44}" width="${W}" height="44" fill="#e53935"/>` +
-        `<text x="${W - ((st.t * 110) % (W + 1400))}" y="${H - 12}" font-family="Bangers" font-size="28" fill="#fff">BREAKING: TOWN DECLARES ITSELF NICEST ON EARTH • RACCOON SIGHTINGS UP 400% • LOCAL MAN STILL CANNOT SAY NO • WEATHER: WARM AND FUZZY</text>`];
+        `<text x="${W - ((st.t * 110) % (W + 1400))}" y="${H - 12}" font-family="Bangers" font-size="28" fill="#fff">${esc(st.ticker || 'BREAKING: TOWN DECLARES ITSELF NICEST ON EARTH • RACCOON SIGHTINGS UP 400% • LOCAL MAN STILL CANNOT SAY NO • WEATHER: WARM AND FUZZY')}</text>`];
     },
     townsquare(st) {
       const cl = x => `<g transform="translate(${((x + st.t * 12) % 1500) - 150},0)"><ellipse cx="0" cy="110" rx="70" ry="30" fill="#fff"/><ellipse cx="45" cy="95" rx="50" ry="32" fill="#fff"/><ellipse cx="-40" cy="100" rx="40" ry="24" fill="#fff"/></g>`;
@@ -259,7 +274,7 @@
         `<circle cx="640" cy="130" r="34" fill="#fff" stroke="${INK}" stroke-width="4"/><line x1="640" y1="130" x2="640" y2="106" stroke="${INK}" stroke-width="4"/><line x1="640" y1="130" x2="658" y2="136" stroke="${INK}" stroke-width="4"/>` +
         [460, 540, 700, 780].map(x => `<rect x="${x}" y="220" width="40" height="240" fill="#e0cfa9" stroke="${INK}" stroke-width="3"/>`).join('') +
         `<text x="640" y="205" font-family="Bangers" font-size="28" text-anchor="middle" fill="${INK}">KINDLETON TOWN HALL</text></g>` +
-        `<path d="M300,300 Q640,350 980,300 L980,250 Q640,300 300,250 Z" fill="#fff" stroke="${INK}" stroke-width="4"/><text x="640" y="300" font-family="Bangers" font-size="40" text-anchor="middle" fill="#d81b60">♥ HAPPY EMPATHY DAY ♥</text>` +
+        `<path d="M300,300 Q640,350 980,300 L980,250 Q640,300 300,250 Z" fill="#fff" stroke="${INK}" stroke-width="4"/><text x="640" y="300" font-family="Bangers" font-size="40" text-anchor="middle" fill="#d81b60">♥ ${esc(st.sign || 'HAPPY EMPATHY DAY')} ♥</text>` +
         `<rect x="0" y="540" width="${W}" height="${H - 540}" fill="#bdbdbd"/><rect x="0" y="540" width="${W}" height="10" fill="#9e9e9e"/>`,
         ''];
     },
@@ -301,6 +316,45 @@
         `<rect x="0" y="560" width="${W}" height="${H - 560}" fill="#2a1b13"/>`,
         `<rect x="0" y="470" width="${W}" height="30" fill="#8d5524" stroke="${INK}" stroke-width="5"/><rect x="0" y="500" width="${W}" height="${H - 500}" fill="#5d3a1a" stroke="${INK}" stroke-width="5"/>` +
         Array.from({ length: 7 }, (_, i) => `<rect x="${i * 190 + 30}" y="520" width="120" height="${H - 520}" fill="#4e3015" stroke="${INK}" stroke-width="3"/>`).join('')];
+    },
+    sciencefair(st) {
+      const sign = st.sign || 'KINDLETON ELEMENTARY SCIENCE FAIR';
+      const board = (x, title, c) => `<g transform="translate(${x},400)"><path d="M0,10 L40,0 L140,0 L180,10 L180,130 L140,120 L40,120 L0,130 Z" fill="#fff" stroke="${INK}" stroke-width="4"/><rect x="40" y="0" width="100" height="120" fill="${c}" stroke="${INK}" stroke-width="3"/><text x="90" y="40" font-family="Bangers" font-size="18" text-anchor="middle" fill="${INK}">${esc(title)}</text><circle cx="90" cy="82" r="22" fill="#fff" stroke="${INK}" stroke-width="3"/></g>`;
+      return [
+        `<rect width="${W}" height="${H}" fill="#ffe0b2"/>` +
+        Array.from({ length: 12 }, (_, i) => `<rect x="${i * 110}" y="0" width="6" height="470" fill="#ffcc80"/>`).join('') +
+        `<path d="M140,40 Q640,110 1140,40 L1140,120 Q640,190 140,120 Z" fill="#1565c0" stroke="${INK}" stroke-width="4"/>` +
+        `<text x="640" y="118" font-family="Bangers" font-size="40" text-anchor="middle" fill="#fff">${esc(sign)}</text>` +
+        `<g transform="translate(1040,170)"><rect width="190" height="120" fill="#fff" stroke="${INK}" stroke-width="4"/><text x="95" y="40" font-family="Bangers" font-size="20" text-anchor="middle" fill="#c62828">EVERY ANSWER</text><text x="95" y="68" font-family="Bangers" font-size="20" text-anchor="middle" fill="#c62828">IS VALID!</text><text x="95" y="100" font-size="26" text-anchor="middle" fill="#e91e63">♥</text></g>` +
+        `<rect x="0" y="470" width="${W}" height="${H - 470}" fill="#c58b4f"/>` +
+        Array.from({ length: 10 }, (_, i) => `<line x1="${i * 140}" y1="470" x2="${i * 140 - 80}" y2="${H}" stroke="#a8743f" stroke-width="3"/>`).join('') +
+        board(40, 'VOLCANO', '#ffab91') + board(1060, 'MY FEELINGS', '#f8bbd0'),
+        `<rect x="0" y="540" width="250" height="24" fill="#8d6e63" stroke="${INK}" stroke-width="4"/><rect x="1030" y="540" width="250" height="24" fill="#8d6e63" stroke="${INK}" stroke-width="4"/>`];
+    },
+    courtroom(st) {
+      const sign = st.sign || 'KINDLETON COURT OF FEELINGS';
+      return [
+        `<rect width="${W}" height="${H}" fill="#d7ccc8"/>` +
+        Array.from({ length: 10 }, (_, i) => `<rect x="${i * 140 + 20}" y="60" width="100" height="420" fill="#c8b7b1" stroke="#a1887f" stroke-width="3"/>`).join('') +
+        `<circle cx="1080" cy="180" r="62" fill="#ffd54f" stroke="${INK}" stroke-width="5"/><text x="1080" y="174" font-family="Bangers" font-size="26" text-anchor="middle" fill="${INK}">♥ SEAL ♥</text><text x="1080" y="202" font-family="Bangers" font-size="16" text-anchor="middle" fill="${INK}">OF KINDLETON</text>` +
+        `<rect x="300" y="14" width="680" height="54" rx="8" fill="#4e342e" stroke="${INK}" stroke-width="4"/><text x="640" y="54" font-family="Bangers" font-size="34" text-anchor="middle" fill="#ffd54f">${esc(sign)}</text>` +
+        `<rect x="150" y="80" width="12" height="400" fill="#795548"/><rect x="162" y="90" width="90" height="60" fill="#1565c0"/><rect x="162" y="150" width="90" height="10" fill="#c62828"/>` +
+        `<rect x="0" y="480" width="${W}" height="${H - 480}" fill="#8d6e63"/>`,
+        `<path d="M470,430 L810,430 L810,${H} L470,${H} Z" fill="#6d4c41" stroke="${INK}" stroke-width="5"/><rect x="455" y="415" width="370" height="26" fill="#8d6e63" stroke="${INK}" stroke-width="5"/>` +
+        `<text x="640" y="520" font-family="Bangers" font-size="30" text-anchor="middle" fill="#ffd54f">THE HONORABLE</text>` +
+        `<g transform="translate(760,400) rotate(-20)"><rect x="-6" y="-4" width="60" height="12" rx="4" fill="#5d4037" stroke="${INK}" stroke-width="3"/><rect x="-26" y="-16" width="26" height="36" rx="6" fill="#5d4037" stroke="${INK}" stroke-width="3"/></g>`];
+    },
+    office(st) {
+      const sign = st.sign || 'BRIGHTSIDE MEGACORP';
+      let sky = '';
+      for (let i = 0; i < 9; i++) { const h = 120 + hash('b' + i) * 220; sky += `<rect x="${i * 150 + 10}" y="${460 - h}" width="110" height="${h}" fill="#90a4ae" stroke="#78909c" stroke-width="3"/>`; }
+      return [
+        `<rect width="${W}" height="${H}" fill="#eceff1"/><rect x="40" y="40" width="1200" height="430" fill="#b3e5fc" stroke="${INK}" stroke-width="5"/>` + sky +
+        Array.from({ length: 5 }, (_, i) => `<rect x="${40 + i * 300}" y="40" width="8" height="430" fill="${INK}"/>`).join('') +
+        `<rect x="420" y="70" width="440" height="80" rx="8" fill="#fff" stroke="${INK}" stroke-width="4"/><text x="640" y="124" font-family="Bangers" font-size="38" text-anchor="middle" fill="#6a1b9a">${esc(sign)}</text>` +
+        `<rect x="0" y="470" width="${W}" height="${H - 470}" fill="#546e7a"/>`,
+        `<path d="M220,520 L1060,520 L1120,600 L160,600 Z" fill="#37474f" stroke="${INK}" stroke-width="5"/><rect x="200" y="600" width="24" height="${H - 600}" fill="#263238"/><rect x="1056" y="600" width="24" height="${H - 600}" fill="#263238"/>` +
+        `<rect x="560" y="500" width="160" height="26" rx="6" fill="#ffd54f" stroke="${INK}" stroke-width="3"/><text x="640" y="519" font-family="Bangers" font-size="18" text-anchor="middle" fill="${INK}">Q3 GUILT REPORT</text>`];
     },
     tvstudio(st) {
       const pod = (x, label, c) => `<g transform="translate(${x - 90},440)"><path d="M0,0 L180,0 L160,200 L20,200 Z" fill="${c}" stroke="${INK}" stroke-width="5"/><text x="90" y="70" font-family="Bangers" font-size="34" text-anchor="middle" fill="#fff">${label}</text></g>`;
@@ -380,7 +434,7 @@
     if (!close || !speakerPlace) return { z: n > 1 ? 1 : 1.06, cx: 640, cy: 360 };
     const z = line.cam === 'close' && n === 1 ? 1.6 : n > 1 ? 1.45 : 1.3;
     const headY = GROUND - 330 * (speakerPlace.s || 1) * speakerH;
-    return { z, cx: speakerPlace.x, cy: headY + 120 };
+    return { z, cx: speakerPlace.x, cy: headY + 100 };
   }
 
   // background townsfolk for big public scenes
@@ -421,6 +475,7 @@
     const st = sceneState(seg, shot.idx);
     st.t = t;
     st.dialLabel = seg.props && seg.props.dial && seg.props.dial.label;
+    st.sign = seg.sign; st.ticker = seg.ticker;
     const [behind, front] = BG[seg.bg](st);
     let chars = '';
     const sceneLocal = shot.idx === 0 ? local : 99;
@@ -460,7 +515,7 @@
     if (seg.props && seg.props.phone) props += phone(seg.chars.mayor.x + 150, seg.props.phone.likes, clamp(k * 1.3, 0, 1));
     const extras = seg.crowd ? crowd(t, line.fx === 'hearts', line.fx === 'drain' ? 'deadpan' : 'happy') : '';
 
-    const sp = seg.chars[line.who], spH = (EP.cast[line.who].look || {}).height || 0.5;
+    const sp = seg.chars[line.who], spH = EP.cast[line.who].kind ? 0.45 : ((EP.cast[line.who].look || {}).height || 1);
     const cam = camera(seg, line, shot.idx, sp, spH);
     const z = cam.z * (1 + 0.035 * k);
     let tx = clamp(640 - cam.cx * z, W - W * z, 0), ty = clamp(360 - cam.cy * z, H - H * z, 0);

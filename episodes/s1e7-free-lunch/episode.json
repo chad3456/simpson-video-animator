@@ -1,0 +1,589 @@
+{
+ "meta": {
+  "show": "KINDLETON",
+  "episode": "S1E7",
+  "title": "Govern Me Harder, Daddy!",
+  "rating": "adult",
+  "format": "drama-skit with explainer cutaways",
+  "logline": "Mayor Hart makes everything in Kindleton free and taxes everyone at one hundred and ten percent, and Penny's lemonade stand goes bankrupt in one afternoon.",
+  "focus": "Book chapter 7: the welfare and nanny state as suicidal empathy, punishing taxes, 'nominally free' healthcare.",
+  "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+  "disclaimer": "Parody and commentary for adults. Strong language. Original characters. Not affiliated with any author, network or show.",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "gap": 0.26,
+  "music": true
+ },
+ "cast": {
+  "ken": {
+   "name": "Ken Brightside",
+   "role": "News anchor whose contractual grin hides a seething void",
+   "voice": "am_michael",
+   "speed": 1.1,
+   "look": {
+    "hair": "helmet",
+    "hairColor": "#3b2a1a",
+    "shirt": "#1f3c88",
+    "pants": "#1f3c88",
+    "tie": "#c62828",
+    "smile": true
+   }
+  },
+  "mayor": {
+   "name": "Mayor Marigold Hart",
+   "role": "Feelings-first mayor; if it feels good, it's law",
+   "voice": "af_sarah",
+   "speed": 1.08,
+   "look": {
+    "hair": "bouffant",
+    "hairColor": "#e8711c",
+    "shirt": "#d81b60",
+    "pants": "#d81b60",
+    "skirt": true,
+    "sash": "MAYOR",
+    "pearls": true,
+    "lipstick": "#c2185b"
+   }
+  },
+  "dale": {
+   "name": "Dale Doormat",
+   "role": "Dad who physically cannot say no",
+   "voice": "am_puck",
+   "speed": 1.1,
+   "look": {
+    "hair": "flop",
+    "hairColor": "#6d4c2f",
+    "shirt": "#7cb342",
+    "vest": "#f9a825",
+    "pants": "#5d4037",
+    "mustache": true,
+    "stubble": true,
+    "height": 1.05
+   }
+  },
+  "penny": {
+   "name": "Penny Doormat",
+   "role": "12-year-old skeptic and the only adult in the house",
+   "voice": "af_nova",
+   "speed": 1.1,
+   "look": {
+    "hair": "pigtails",
+    "hairColor": "#8d3b1f",
+    "bow": "#29b6f6",
+    "shirt": "#ab47bc",
+    "pants": "#ab47bc",
+    "skirt": true,
+    "height": 0.74
+   }
+  },
+  "bounds": {
+   "name": "Dr. Hal Bounds",
+   "role": "Divorced evolutionary behavioral scientist; carries the book's thesis",
+   "voice": "bm_george",
+   "speed": 1.07,
+   "look": {
+    "hair": "bald",
+    "hairColor": "#bdbdbd",
+    "glasses": true,
+    "beard": "#9e9e9e",
+    "shirt": "#8d6e63",
+    "pants": "#4e342e",
+    "bowtie": "#1565c0"
+   }
+  },
+  "kindt": {
+   "name": "Dr. Iris Kindt",
+   "role": "Compassion researcher; carries the critics' counterpoint",
+   "voice": "bf_emma",
+   "speed": 1.08,
+   "look": {
+    "hair": "curly",
+    "hairColor": "#2b1b17",
+    "glasses": true,
+    "shirt": "#2e7d32",
+    "pants": "#263238",
+    "skirt": true,
+    "lipstick": "#ad1457",
+    "height": 0.95
+   }
+  },
+  "rocco": {
+   "name": "Rocco",
+   "role": "A raccoon who has never once heard the word no",
+   "kind": "raccoon",
+   "sfx": "chitter"
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "cold-open",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Mayor Hart has made everything in Kindleton free. Free food, free housing, free healthcare.",
+     "emote": "happy",
+     "graphic": "EVERYTHING FREE*",
+     "sub": "*terms apply"
+    },
+    {
+     "who": "ken",
+     "text": "To pay for it, taxes are now one hundred and ten percent. Yes, folks. You now owe money for earning money.",
+     "emote": "deadpan",
+     "graphic": "TAX: 110%"
+    }
+   ],
+   "ticker": "FREE LUNCH NOW MANDATORY • LUNCH TAX ALSO MANDATORY • ACCOUNTANTS SEEN WEEPING IN PUBLIC"
+  },
+  {
+   "type": "scene",
+   "id": "cold-open-square",
+   "bg": "townsquare",
+   "chars": {
+    "mayor": {
+     "x": 600,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 1040,
+     "s": 0.95,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "mayor",
+     "text": "Citizens! Nobody in Kindleton should ever have to pay for anything!",
+     "emote": "happy",
+     "act": "armsup",
+     "fx": "hearts",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "penny",
+     "text": "Someone always pays. Usually the person who didn't vote for it.",
+     "emote": "deadpan",
+     "act": "point"
+    },
+    {
+     "who": "mayor",
+     "text": "That's capitalist talk, Penny. Have a free lollipop. That'll be forty dollars in tax.",
+     "emote": "smug",
+     "act": "point",
+     "react": {
+      "penny": "angry"
+     }
+    }
+   ],
+   "crowd": true,
+   "sign": "EVERYTHING IS FREE (TERMS APPLY)"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "title": "KINDLETON",
+   "sub": "Episode 7: “Govern Me Harder, Daddy!”",
+   "dur": 4.2,
+   "sfx": "theme"
+  },
+  {
+   "type": "scene",
+   "id": "act1-home",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Great news, Penny! Your lemonade stand made twelve dollars today!",
+     "emote": "happy",
+     "act": "armsup"
+    },
+    {
+     "who": "penny",
+     "text": "And?",
+     "emote": "deadpan"
+    },
+    {
+     "who": "dale",
+     "text": "The town took fourteen.",
+     "emote": "sad",
+     "act": "shrug",
+     "react": {
+      "penny": "shocked"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "I have been taxed into debt by a lemon.",
+     "emote": "angry",
+     "act": "facepalm"
+    },
+    {
+     "who": "rocco",
+     "text": "*sympathetic chitter* (hands Penny an invoice)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "penny": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act1-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Kindleton General announced free healthcare for all. The waiting list for a broken leg is now fourteen years. Doctors recommend growing a new leg in the meantime.",
+     "emote": "happy",
+     "graphic": "WAIT: 14 YEARS"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act1-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Saad describes tax day. Two boxes on his bank page, two very large numbers, press send, and a career's savings vanish. Then he waits months to see a specialist. Nominally free, he calls it.",
+     "emote": "angry",
+     "act": "point",
+     "board": [
+      "NOMINALLY FREE",
+      "you pay: 50%+",
+      "you wait: forever"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "His broader claim: the welfare state and the nanny state are suicidal empathy turned into policy. Compassion on the brochure. Bill on the doormat. Sorry, Dale.",
+     "emote": "smug",
+     "act": "shrug",
+     "board": [
+      "THE NANNY STATE",
+      "brochure: ♥",
+      "invoice: $$$"
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "And the people who build stuff just leave.",
+     "emote": "worried"
+    },
+    {
+     "who": "bounds",
+     "text": "Then there's his home province, Quebec, with an actual language police that measures shop signs, so the French is bigger than the English. Funded by you, naturally.",
+     "emote": "angry",
+     "act": "point",
+     "board": [
+      "THE LANGUAGE POLICE",
+      "French: BIG",
+      "English: small",
+      "bill: yours"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act1-news2",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Kindleton's new Office of Kind Language has fined Penny's lemonade stand, because the word LEMONADE was bigger than the word KINDNESS. The fine is also free. Plus tax.",
+     "emote": "happy",
+     "graphic": "FINED: LEMONADE"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Kindleton's richest inventor has moved to Grimsby, along with his factory, his jobs, and his taxes. He left a note. It says, L O L.",
+     "emote": "happy",
+     "graphic": "BYE",
+     "ticker": "INVENTOR MOVES TO GRIMSBY • TAKES FACTORY, JOBS, AND THE GOOD BAGELS"
+    }
+   ],
+   "ticker": "INVENTOR MOVES TO GRIMSBY • TAKES FACTORY, JOBS, AND THE GOOD BAGELS"
+  },
+  {
+   "type": "scene",
+   "id": "act2-bar",
+   "bg": "bar",
+   "chars": {
+    "dale": {
+     "x": 560,
+     "s": 1.0,
+     "hold": "beer"
+    },
+    "rocco": {
+     "x": 800,
+     "y": -170,
+     "s": 0.95,
+     "facing": -1,
+     "hold": "martini"
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Everything's free, Rocco, and I've never been this broke. My beer is free. The beer tax is nine dollars.",
+     "emote": "sad",
+     "act": "shrug"
+    },
+    {
+     "who": "rocco",
+     "text": "*knowing chitter* (orders two more on Dale's tab)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "dale": "sad"
+     }
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act3",
+   "title": "HEART vs HEAD",
+   "sub": "Tonight: who pays for kindness?",
+   "dur": 2.6,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act3-debate",
+   "bg": "tvstudio",
+   "chars": {
+    "bounds": {
+     "x": 330,
+     "s": 1.0
+    },
+    "ken": {
+     "x": 640,
+     "s": 0.95
+    },
+    "kindt": {
+     "x": 950,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight on Heart versus Head: who pays for kindness? Spoiler, it's you. It's always you.",
+     "emote": "happy",
+     "act": "armsup",
+     "cam": "wide"
+    },
+    {
+     "who": "kindt",
+     "text": "Hal, safety nets aren't suicide. Nobody in Canada goes bankrupt because they got cancer. In plenty of places, people do.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "bounds": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "A safety net, yes. A hammock that strangles the people holding it up, no.",
+     "act": "shrug"
+    },
+    {
+     "who": "kindt",
+     "text": "And the rich will leave is the oldest threat in the book. Some do. Most stay where the customers are.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Fair. Then let's argue about the rate, not pretend the rate doesn't matter.",
+     "act": "point",
+     "react": {
+      "kindt": "happy"
+     }
+    },
+    {
+     "who": "kindt",
+     "text": "Help people. And count the cost.",
+     "emote": "happy"
+    },
+    {
+     "who": "bounds",
+     "text": "Compassion, with a calculator.",
+     "emote": "happy",
+     "act": "armsup"
+    },
+    {
+     "who": "ken",
+     "text": "Both guests' appearance fees have been taxed at one hundred and ten percent. They now owe us money. Thank you for coming.",
+     "emote": "deadpan",
+     "cam": "wide",
+     "react": {
+      "bounds": "shocked",
+      "kindt": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act3-square",
+   "bg": "townsquare",
+   "chars": {
+    "penny": {
+     "x": 600,
+     "s": 1.0
+    },
+    "mayor": {
+     "x": 920,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "New budget. A safety net for people who fall. Not a hammock for the mayor's friends. And taxes low enough that people still bother to make lemonade.",
+     "act": "point",
+     "react": {
+      "mayor": "worried"
+     }
+    },
+    {
+     "who": "mayor",
+     "text": "But then how will people know I care?",
+     "emote": "sad"
+    },
+    {
+     "who": "penny",
+     "text": "By whether things work.",
+     "emote": "deadpan"
+    },
+    {
+     "who": "mayor",
+     "text": "Ugh. That's so much harder.",
+     "emote": "sad",
+     "act": "facepalm"
+    }
+   ],
+   "crowd": true,
+   "sign": "EVERYTHING COSTS SOMETHING"
+  },
+  {
+   "type": "scene",
+   "id": "tag",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "rocco",
+     "text": "*officious chitter* (presents Dale with a bill for emotional support)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "dale": "shocked",
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "dale",
+     "text": "Rocco. Did you just tax me?",
+     "emote": "shocked",
+     "act": "point"
+    },
+    {
+     "who": "penny",
+     "text": "He's been on your payroll for six episodes, Dad.",
+     "emote": "deadpan"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "title": "Kindness, with a brain.",
+   "sub": "Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary for adults. Original characters.",
+   "dur": 6.0,
+   "sfx": "theme"
+  }
+ ]
+}

@@ -1,4 +1,4 @@
-# KINDLETON S1E1: "Dying to Be Kind"
+# KINDLETON S1E1: "Dying to Be Kind (Family Cut)"
 
 *When Mayor Hart cranks the town's Empathy Dial to eleven, Penny Doormat has to save her too-nice dad, her fridge and her whole town by learning when kindness helps and when it backfires.*
 
@@ -18,7 +18,7 @@ Parody and commentary. Original characters. Not affiliated with any author, netw
 
 ## Script
 
-### [] INT/EXT. KNN NEWSROOM
+### [0:00] INT/EXT. KNN NEWSROOM
 
 _Ken Brightside._
 
@@ -28,7 +28,7 @@ _Ken Brightside._
 **KEN BRIGHTSIDE** (happy): Live from Town Square, Mayor Marigold Hart unveils her greatest invention yet.  
 <sub>GRAPHIC: LIVE: TOWN SQUARE</sub>
 
-### [] INT/EXT. TOWN SQUARE
+### [0:12] INT/EXT. TOWN SQUARE
 
 _Mayor Marigold Hart, Dale Doormat, Penny Doormat, with the giant EMPATHY-O-MATIC dial._
 
@@ -46,9 +46,9 @@ _Mayor Marigold Hart, Dale Doormat, Penny Doormat, with the giant EMPATHY-O-MATI
 
 **PENNY DOORMAT** (worried): Dad, the dial only goes to ten. Eleven is literally labeled, uh oh.
 
-**[] CARD: KINDLETON** / Episode 1: “Dying to Be Kind”
+**[0:28] CARD: KINDLETON** / Episode 1: “Dying to Be Kind”
 
-### [] INT/EXT. DOORMAT HOUSE, LIVING ROOM
+### [0:33] INT/EXT. DOORMAT HOUSE, LIVING ROOM
 
 _Dale Doormat, Penny Doormat, Rocco._
 
@@ -76,7 +76,7 @@ _Dale Doormat, Penny Doormat, Rocco._
 **PENNY DOORMAT** (worried): Okay. I need a grown up. A smart one.  
 <sub>ACTION: facepalm</sub>
 
-### [] INT/EXT. KINDLETON U. LECTURE HALL
+### [0:57] INT/EXT. KINDLETON U. LECTURE HALL
 
 _Dr. Hal Bounds, Penny Doormat._
 
@@ -100,16 +100,16 @@ _Dr. Hal Bounds, Penny Doormat._
 **DR. HAL BOUNDS** (worried): Picture a bridge engineer who asks the steel how it feels about holding weight.  
 <sub>BOARD: 3 MISFIRES / 1. too much / 2. wrong target / 3. feelings > math / (ask the steel?); ACTION: shrug</sub>
 
-**[] CARD: MEANWHILE, AT ELEVEN...**
+**[1:47] CARD: MEANWHILE, AT ELEVEN...**
 
-### [] INT/EXT. KNN NEWSROOM
+### [1:50] INT/EXT. KNN NEWSROOM
 
 _Ken Brightside._
 
 **KEN BRIGHTSIDE** (happy): In other news, Kindleton Elementary has abolished wrong answers. Two plus two now equals whatever makes you happy.  
 <sub>GRAPHIC: 2 + 2 = ♥</sub>
 
-### [] INT/EXT. KINDLETON U. LECTURE HALL
+### [1:57] INT/EXT. KINDLETON U. LECTURE HALL
 
 _Dr. Hal Bounds, Penny Doormat._
 
@@ -119,42 +119,42 @@ _Dr. Hal Bounds, Penny Doormat._
 **DR. HAL BOUNDS** (happy): Exactly. Saad calls it empathetic myopia. You only see the first domino.  
 <sub>BOARD: EMPATHETIC MYOPIA / today: smiles / next year: ???; ACTION: point</sub>
 
-### [] INT/EXT. KNN NEWSROOM
+### [2:07] INT/EXT. KNN NEWSROOM
 
 _Ken Brightside._
 
 **KEN BRIGHTSIDE** (happy): Meanwhile, Councilman Chet Gatesworth, speaking from his gated mansion on Snob Hill, voted to remove the locks from every other house in town.  
 <sub>GRAPHIC: LOCKS: OPTIONAL* *not on Snob Hill</sub>
 
-### [] INT/EXT. KINDLETON U. LECTURE HALL
+### [2:16] INT/EXT. KINDLETON U. LECTURE HALL
 
 _Dr. Hal Bounds, Penny Doormat._
 
 **DR. HAL BOUNDS** (angry): A luxury belief. It buys you status, while the bill gets mailed to somebody else.  
 <sub>BOARD: LUXURY BELIEF / status: me / bill: you; ACTION: point</sub>
 
-### [] INT/EXT. KNN NEWSROOM
+### [2:22] INT/EXT. KNN NEWSROOM
 
 _Ken Brightside._
 
 **KEN BRIGHTSIDE** (happy): And the Mayor announced the town's one and only goal: zero scraped knees. Sports, stairs and fun are now banned.  
 <sub>GRAPHIC: FUN: BANNED</sub>
 
-### [] INT/EXT. KINDLETON U. LECTURE HALL
+### [2:29] INT/EXT. KINDLETON U. LECTURE HALL
 
 _Dr. Hal Bounds, Penny Doormat._
 
 **DR. HAL BOUNDS** (worried): Single objective thinking. Measure only one thing, and you quietly trade away everything you forgot to measure.  
 <sub>BOARD: ONE GOAL / knees: safe / everything else: ?; ACTION: shrug</sub>
 
-### [] INT/EXT. TOWN SQUARE
+### [2:36] INT/EXT. TOWN SQUARE
 
 _Mayor Marigold Hart, with the giant EMPATHY-O-MATIC dial and a giant phone._
 
 **MAYOR MARIGOLD HART** (happy): My new post, I care more than you, just hit one million likes! Ooh, the dopamine! It feels so good, it must be good!  
 <sub>FX: hearts; ACTION: bounce</sub>
 
-### [] INT/EXT. KINDLETON U. LECTURE HALL
+### [2:43] INT/EXT. KINDLETON U. LECTURE HALL
 
 _Dr. Hal Bounds, Penny Doormat._
 
@@ -167,9 +167,9 @@ _Dr. Hal Bounds, Penny Doormat._
 **PENNY DOORMAT** (happy): So let's hear them out.  
 <sub>ACTION: point</sub>
 
-**[] CARD: HEART vs HEAD** / Live from KNN Studio B
+**[3:02] CARD: HEART vs HEAD** / Live from KNN Studio B
 
-### [] INT/EXT. KNN STUDIO B, 'HEART VS HEAD'
+### [3:05] INT/EXT. KNN STUDIO B, 'HEART VS HEAD'
 
 _Dr. Hal Bounds, Ken Brightside, Dr. Iris Kindt._
 
@@ -195,7 +195,7 @@ _Dr. Hal Bounds, Ken Brightside, Dr. Iris Kindt._
 **KEN BRIGHTSIDE** (shocked): Wow. Two experts agreeing on live television. Folks, this has never happened.  
 <sub>ACTION: armsup; CAM: wide</sub>
 
-### [] INT/EXT. DOORMAT HOUSE, LIVING ROOM
+### [4:01] INT/EXT. DOORMAT HOUSE, LIVING ROOM
 
 _Dale Doormat, Penny Doormat, Rocco._
 
@@ -228,7 +228,7 @@ _Dale Doormat, Penny Doormat, Rocco._
 **PENNY DOORMAT** (happy): No, Dad. You're turning your brain up.  
 <sub>ACTION: armsup</sub>
 
-### [] INT/EXT. TOWN SQUARE
+### [4:28] INT/EXT. TOWN SQUARE
 
 _Mayor Marigold Hart, Penny Doormat, with the giant EMPATHY-O-MATIC dial._
 
@@ -241,5 +241,5 @@ _Mayor Marigold Hart, Penny Doormat, with the giant EMPATHY-O-MATIC dial._
 **PENNY DOORMAT** (worried): And that's the other ditch. Somewhere, Aristotle is spinning.  
 <sub>FX: drain; ACTION: facepalm</sub>
 
-**[] CARD: Kindness, with a brain.** / Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary. Original characters.
+**[4:38] CARD: Kindness, with a brain.** / Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary. Original characters.
 

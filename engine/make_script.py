@@ -20,7 +20,7 @@ for k, c in cast.items():
     print(f"- **{c['name']}**: {c.get('role', '')}" + (f" (voice: `{c['voice']}`)" if c.get("voice") else " (sound effects only)"))
 print("\n## Script\n")
 LOC = {"newsroom": "KNN NEWSROOM", "townsquare": "TOWN SQUARE", "livingroom": "DOORMAT HOUSE, LIVING ROOM",
-       "chalkboard": "KINDLETON U. LECTURE HALL", "tvstudio": "KNN STUDIO B, 'HEART VS HEAD'", "bar": "THE MORAL HAZARD (DIVE BAR)"}
+       "chalkboard": "KINDLETON U. LECTURE HALL", "tvstudio": "KNN STUDIO B, 'HEART VS HEAD'", "bar": "THE MORAL HAZARD (DIVE BAR)", "sciencefair": "KINDLETON ELEMENTARY GYM", "courtroom": "KINDLETON COURTHOUSE", "office": "BRIGHTSIDE MEGACORP BOARDROOM"}
 for seg in ep["sequence"]:
     if seg["type"] == "card":
         print(f"**[{fmt(times.get((seg['id'], None)))}] CARD: {seg['title']}**" + (f" / {seg['sub']}" if seg.get("sub") else "") + "\n")
