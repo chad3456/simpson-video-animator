@@ -1,6 +1,8 @@
 [
   {
     "slug": "s1e2-justice-involved-raccoon",
+    "dir": "episodes/s1e2-justice-involved-raccoon/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E2",
     "title": "Justice-Involved Raccoon",
@@ -17,6 +19,8 @@
   },
   {
     "slug": "s1e3-hairworm-season",
+    "dir": "episodes/s1e3-hairworm-season/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E3",
     "title": "Hairworm Season",
@@ -33,6 +37,8 @@
   },
   {
     "slug": "s1e4-repeat-offender",
+    "dir": "episodes/s1e4-repeat-offender/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E4",
     "title": "Blank Slate Felons",
@@ -49,6 +55,8 @@
   },
   {
     "slug": "s1e5-settled-science-fair",
+    "dir": "episodes/s1e5-settled-science-fair/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E5",
     "title": "The Settled Science Fair",
@@ -65,6 +73,8 @@
   },
   {
     "slug": "s1e6-indulgence-inc",
+    "dir": "episodes/s1e6-indulgence-inc/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E6",
     "title": "Indulgence Inc.",
@@ -81,6 +91,8 @@
   },
   {
     "slug": "s1e7-free-lunch",
+    "dir": "episodes/s1e7-free-lunch/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E7",
     "title": "Govern Me Harder, Daddy!",
@@ -97,6 +109,8 @@
   },
   {
     "slug": "s1e8-dial-m-for-moderation",
+    "dir": "episodes/s1e8-dial-m-for-moderation/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E8",
     "title": "Dial M for Moderation",
@@ -113,6 +127,8 @@
   },
   {
     "slug": "suicidal-empathy-family",
+    "dir": "episodes/suicidal-empathy-family/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E1",
     "title": "Dying to Be Kind (Family Cut)",
@@ -129,6 +145,8 @@
   },
   {
     "slug": "suicidal-empathy",
+    "dir": "episodes/suicidal-empathy/",
+    "playerPage": "engine/player.html",
     "show": "KINDLETON",
     "episode": "S1E1",
     "title": "Dying to Be Kind",
@@ -137,6 +155,24 @@
     "format": "drama-skit with explainer cutaways",
     "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
     "duration": 364.502,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": true
+  },
+  {
+    "slug": "too-kind-to-survive",
+    "dir": "explainer/episodes/too-kind-to-survive/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E1",
+    "title": "Too Kind to Survive?",
+    "logline": "Can a society care itself to death? A calm, illustrated tour of Gad Saad's 'Suicidal Empathy': where empathy comes from, how it misfires, why it feels so good, what his critics say, and the habits worth keeping either way.",
+    "rating": "general",
+    "format": "explainer",
+    "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased, with published criticism (The Bulwark, Quillette). Also cited: Randolph Nesse on emotions, Robert Axelrod's tit-for-tat tournaments, Thomas Sowell and Rob Henderson on luxury beliefs.",
+    "duration": 490.985,
     "video": "episode.mp4",
     "poster": "poster.jpg",
     "player": true,

@@ -1,6 +1,11 @@
 # Parody Studio
 
-Turn any source into a yellow-toon parody episode with free, open-source tools only.
+Turn any source into a yellow-toon parody episode, or a calm flat-vector explainer, with free, open-source tools only.
+
+Two shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chromium + ffmpeg):
+
+- **KINDLETON** (root `SKILL.md`, `engine/`, `episodes/`): Simpsons-inspired parody sitcom.
+- **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; first episode: `explainer/episodes/too-kind-to-survive/`.
 
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
 - `engine/`: the renderer and pipeline.

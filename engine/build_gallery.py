@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
-"""Write episodes/index.json (the gallery manifest) from every episodes/*/episode.json.
+"""Write episodes/index.json (the gallery manifest) from every episodes/*/episode.json and explainer/episodes/*/episode.json.
 Usage: python3 engine/build_gallery.py"""
 import glob, json, os
 
 root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 items = []
-for path in sorted(glob.glob(os.path.join(root, "episodes", "*", "episode.json"))):
+SHOWS = [("episodes", "engine/player.html"), ("explainer/episodes", "explainer/engine/player.html")]
+paths = [(p, base, player) for base, player in SHOWS for p in sorted(glob.glob(os.path.join(root, base, "*", "episode.json")))]
+for path, base, player in paths:
     d = os.path.dirname(path); slug = os.path.basename(d)
+    if slug.startswith("_"):
+        continue  # scratch episodes
     m = json.load(open(path))["meta"]
     tl = os.path.join(d, "timeline.json")
     if not os.path.exists(tl):
         continue  # script-only drafts stay out of the gallery
     has = lambda f: os.path.exists(os.path.join(d, f))
     items.append({
-        "slug": slug, "show": m.get("show"), "episode": m.get("episode"), "title": m.get("title"),
+        "slug": slug, "dir": f"{base}/{slug}/", "playerPage": player, "show": m.get("show"), "episode": m.get("episode"), "title": m.get("title"),
         "logline": m.get("logline"), "rating": m.get("rating", "general"), "format": m.get("format"),
         "source": m.get("source"),
         "duration": json.load(open(tl))["duration"] if os.path.exists(tl) else None,
