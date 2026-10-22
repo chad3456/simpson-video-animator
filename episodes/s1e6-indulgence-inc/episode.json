@@ -1,0 +1,611 @@
+{
+ "meta": {
+  "show": "KINDLETON",
+  "episode": "S1E6",
+  "title": "Indulgence Inc.",
+  "rating": "adult",
+  "format": "drama-skit with explainer cutaways",
+  "logline": "Brightside MegaCorp starts selling Guilt Offsets, the hospital hires a surgeon for his energy, and Dale loses three organs to good vibes.",
+  "focus": "Book chapter 6: diversity programs as secular indulgences, merit in hiring and admissions, woke capitalism.",
+  "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), plus published criticism of the book (The Bulwark, Quillette).",
+  "disclaimer": "Parody and commentary for adults. Strong language. Original characters. Not affiliated with any author, network or show.",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "gap": 0.26,
+  "music": true
+ },
+ "cast": {
+  "ken": {
+   "name": "Ken Brightside",
+   "role": "News anchor whose contractual grin hides a seething void",
+   "voice": "am_michael",
+   "speed": 1.1,
+   "look": {
+    "hair": "helmet",
+    "hairColor": "#3b2a1a",
+    "shirt": "#1f3c88",
+    "pants": "#1f3c88",
+    "tie": "#c62828",
+    "smile": true
+   }
+  },
+  "dale": {
+   "name": "Dale Doormat",
+   "role": "Dad who physically cannot say no",
+   "voice": "am_puck",
+   "speed": 1.1,
+   "look": {
+    "hair": "flop",
+    "hairColor": "#6d4c2f",
+    "shirt": "#7cb342",
+    "vest": "#f9a825",
+    "pants": "#5d4037",
+    "mustache": true,
+    "stubble": true,
+    "height": 1.05
+   }
+  },
+  "penny": {
+   "name": "Penny Doormat",
+   "role": "12-year-old skeptic and the only adult in the house",
+   "voice": "af_nova",
+   "speed": 1.1,
+   "look": {
+    "hair": "pigtails",
+    "hairColor": "#8d3b1f",
+    "bow": "#29b6f6",
+    "shirt": "#ab47bc",
+    "pants": "#ab47bc",
+    "skirt": true,
+    "height": 0.74
+   }
+  },
+  "bounds": {
+   "name": "Dr. Hal Bounds",
+   "role": "Divorced evolutionary behavioral scientist; carries the book's thesis",
+   "voice": "bm_george",
+   "speed": 1.07,
+   "look": {
+    "hair": "bald",
+    "hairColor": "#bdbdbd",
+    "glasses": true,
+    "beard": "#9e9e9e",
+    "shirt": "#8d6e63",
+    "pants": "#4e342e",
+    "bowtie": "#1565c0"
+   }
+  },
+  "kindt": {
+   "name": "Dr. Iris Kindt",
+   "role": "Compassion researcher; carries the critics' counterpoint",
+   "voice": "bf_emma",
+   "speed": 1.08,
+   "look": {
+    "hair": "curly",
+    "hairColor": "#2b1b17",
+    "glasses": true,
+    "shirt": "#2e7d32",
+    "pants": "#263238",
+    "skirt": true,
+    "lipstick": "#ad1457",
+    "height": 0.95
+   }
+  },
+  "rocco": {
+   "name": "Rocco",
+   "role": "A raccoon who has never once heard the word no",
+   "kind": "raccoon",
+   "sfx": "chitter"
+  },
+  "tiffany": {
+   "name": "Tiffany Virtue",
+   "role": "CEO of Brightside MegaCorp, seller of Guilt Offsets",
+   "voice": "af_bella",
+   "speed": 1.08,
+   "look": {
+    "hair": "slick",
+    "hairColor": "#fdd835",
+    "shirt": "#6a1b9a",
+    "pants": "#6a1b9a",
+    "skirt": true,
+    "pearls": true,
+    "lipstick": "#8e24aa"
+   }
+  },
+  "chet": {
+   "name": "Councilman Chet Gatesworth",
+   "role": "Snob Hill councilman with a gate for every belief",
+   "voice": "am_eric",
+   "speed": 1.06,
+   "look": {
+    "hair": "slick",
+    "hairColor": "#8d6e63",
+    "shirt": "#263238",
+    "pants": "#263238",
+    "tie": "#ffd600",
+    "smile": true
+   }
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "cold-open",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Brightside MegaCorp, owner of this network and of my soul, has a new product: Guilt Offsets. Feel bad about anything? Buy a certificate. Feel better. Repeat.",
+     "emote": "happy",
+     "graphic": "GUILT OFFSETS $99"
+    },
+    {
+     "who": "ken",
+     "text": "I've bought eleven today. Mostly for things I've said off air.",
+     "emote": "deadpan",
+     "graphic": "GUILT OFFSETS $99",
+     "cam": "close"
+    }
+   ],
+   "ticker": "GUILT OFFSETS NOW IN FAMILY SIZE • BUY TWO SINS GET ONE FREE • SHAME FUTURES UP 40%"
+  },
+  {
+   "type": "scene",
+   "id": "cold-open-office",
+   "bg": "office",
+   "chars": {
+    "tiffany": {
+     "x": 460,
+     "s": 1.0
+    },
+    "chet": {
+     "x": 840,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "tiffany",
+     "text": "Guilt Offsets are flying off the shelves. Eat a steak? Offset. Own a boat? Offset. Ignore your mother? Offset, offset, offset.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "chet": "happy"
+     }
+    },
+    {
+     "who": "chet",
+     "text": "And profits?",
+     "emote": "worried"
+    },
+    {
+     "who": "tiffany",
+     "text": "Down ninety percent, Chet. But we've never felt cleaner.",
+     "emote": "smug",
+     "act": "shrug"
+    },
+    {
+     "who": "chet",
+     "text": "I bought one for the mansion. Now my mansion is humble. It told me.",
+     "emote": "happy",
+     "act": "point"
+    },
+    {
+     "who": "tiffany",
+     "text": "Plus mandatory training! Module nine: how to speak to a woman. You've only been doing it for sixty years, Chet.",
+     "emote": "smug",
+     "act": "point",
+     "react": {
+      "chet": "worried"
+     }
+    },
+    {
+     "who": "chet",
+     "text": "Sixty years in utter darkness. Thank God for HR.",
+     "emote": "sad",
+     "act": "facepalm"
+    }
+   ],
+   "sign": "BRIGHTSIDE MEGACORP"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "title": "KINDLETON",
+   "sub": "Episode 6: “Indulgence Inc.”",
+   "dur": 4.2,
+   "sfx": "theme"
+  },
+  {
+   "type": "scene",
+   "id": "act1-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "In the Middle Ages, the church sold indulgences. Pay up, and your time in purgatory got shorter.",
+     "emote": "happy",
+     "act": "point",
+     "board": [
+      "INDULGENCES",
+      "pay $$$",
+      "-> sins shrink"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "Saad argues diversity, inclusion and equity programs, which he pointedly spells D I E, work the same way. Buy the training, and the guilt goes away.",
+     "emote": "smug",
+     "act": "shrug",
+     "board": [
+      "SECULAR INDULGENCES",
+      "buy training",
+      "-> guilt shrinks",
+      "(D.I.E.)"
+     ]
+    },
+    {
+     "who": "bounds",
+     "text": "He points to diversity statements in academic hiring, dropping entrance exams, and a Canadian medical training framework that told doctors to centre social justice rather than medical expertise.",
+     "emote": "worried",
+     "act": "point",
+     "board": [
+      "EXHIBIT C",
+      "\"rather than",
+      "medical expertise\""
+     ]
+    },
+    {
+     "who": "penny",
+     "text": "Wait. Rather than medical expertise?",
+     "emote": "shocked"
+    },
+    {
+     "who": "bounds",
+     "text": "That's the quote he picks, yes. Do keep your organs on the inside.",
+     "emote": "deadpan",
+     "react": {
+      "penny": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "Saad also describes his own university's mandatory trainings, taken in his fifties, on how to behave like a civilised human being. He says he's very grateful. He is lying.",
+     "emote": "smug",
+     "act": "shrug",
+     "board": [
+      "MANDATORY TRAINING",
+      "age: 50-something",
+      "lesson: be a person"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act2",
+   "title": "MEANWHILE, AT KINDLETON GENERAL",
+   "sub": "",
+   "dur": 2.4,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act2-news",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Kindleton General has hired a new chief surgeon, Doctor Chip Vibes, chosen for his excellent energy. He skipped the Hippocratic Oath for the Woke Oath. First, do no harm to anyone's feelings. He has never seen the inside of a human.",
+     "emote": "happy",
+     "graphic": "DR. VIBES, M.D.*",
+     "sub": "*maybe"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-home",
+   "bg": "livingroom",
+   "chars": {
+    "dale": {
+     "x": 520,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 820,
+     "s": 1.0,
+     "facing": -1
+    },
+    "rocco": {
+     "x": 300,
+     "s": 1.0
+    }
+   },
+   "lines": [
+    {
+     "who": "dale",
+     "text": "Doctor Vibes took out my appendix. And my spleen. And my left kidney, because it seemed lonely.",
+     "emote": "sad",
+     "act": "shrug",
+     "react": {
+      "penny": "shocked"
+     }
+    },
+    {
+     "who": "penny",
+     "text": "Dad, you went in for a splinter.",
+     "emote": "angry",
+     "act": "point"
+    },
+    {
+     "who": "dale",
+     "text": "And he got it! Eventually. It was in my other kidney.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "penny": "deadpan"
+     }
+    },
+    {
+     "who": "rocco",
+     "text": "*worried chitter* (offers Dale a raccoon kidney)",
+     "sfx": "chitter",
+     "dur": 1.4,
+     "react": {
+      "dale": "happy",
+      "penny": "shocked"
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-office",
+   "bg": "office",
+   "chars": {
+    "tiffany": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "tiffany",
+     "text": "Our new ad campaign: Brightside Beer. The beer for people who hate beer, and the people who drink it!",
+     "emote": "happy",
+     "act": "armsup"
+    }
+   ],
+   "sign": "BRIGHTSIDE BEER: NOT FOR YOU"
+  },
+  {
+   "type": "scene",
+   "id": "act2-news2",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Brightside Beer sales are down one hundred and four percent. Analysts are unsure how that's mathematically possible.",
+     "emote": "happy",
+     "graphic": "-104%"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act2-lecture",
+   "bg": "chalkboard",
+   "chars": {
+    "bounds": {
+     "x": 760,
+     "s": 1.0,
+     "facing": -1
+    },
+    "penny": {
+     "x": 1080,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "bounds",
+     "text": "Woke capitalism. Signal to people who will never buy your product, while insulting the ones who do. Then act shocked at the quarterly report.",
+     "emote": "angry",
+     "act": "point",
+     "board": [
+      "WOKE CAPITALISM",
+      "fans: insulted",
+      "critics: still not buying",
+      "Q3: oops"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "act3",
+   "title": "HEART vs HEAD",
+   "sub": "Sponsored by Guilt Offsets",
+   "dur": 2.6,
+   "sfx": "sting"
+  },
+  {
+   "type": "scene",
+   "id": "act3-debate",
+   "bg": "tvstudio",
+   "chars": {
+    "bounds": {
+     "x": 330,
+     "s": 1.0
+    },
+    "ken": {
+     "x": 640,
+     "s": 0.95
+    },
+    "kindt": {
+     "x": 950,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "Tonight on Heart versus Head: is diversity training a cure or a con? This segment is sponsored by Guilt Offsets, so please feel bad responsibly.",
+     "emote": "happy",
+     "act": "armsup",
+     "cam": "wide"
+    },
+    {
+     "who": "kindt",
+     "text": "Hal, discrimination wasn't invented by HR. For decades talented people were shut out for who they were. A lot of these programs exist because of that.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "bounds": "worried"
+     }
+    },
+    {
+     "who": "bounds",
+     "text": "Agreed, and I'll hire the best person whatever they look like. My problem is when the training replaces the merit, not when it widens the search.",
+     "act": "shrug"
+    },
+    {
+     "who": "kindt",
+     "text": "And merit isn't as neutral as you think. Standardized tests also measure who could afford a tutor.",
+     "emote": "smug",
+     "act": "point"
+    },
+    {
+     "who": "bounds",
+     "text": "Then fix the tutoring. Don't smash the thermometer because the patient has a fever.",
+     "emote": "angry",
+     "act": "point",
+     "react": {
+      "kindt": "happy"
+     }
+    },
+    {
+     "who": "kindt",
+     "text": "Fine. Wider doors. Same bar.",
+     "emote": "happy"
+    },
+    {
+     "who": "bounds",
+     "text": "Wider doors, same bar. Bloody good, actually.",
+     "emote": "happy",
+     "act": "armsup",
+     "react": {
+      "kindt": "smug"
+     }
+    },
+    {
+     "who": "ken",
+     "text": "Brightside MegaCorp reminds viewers that agreeing is a premium feature. Please purchase a Consensus Offset.",
+     "emote": "deadpan",
+     "cam": "wide"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "act3-office",
+   "bg": "office",
+   "chars": {
+    "tiffany": {
+     "x": 420,
+     "s": 1.0
+    },
+    "penny": {
+     "x": 860,
+     "s": 1.0,
+     "facing": -1
+    }
+   },
+   "lines": [
+    {
+     "who": "penny",
+     "text": "Here's a radical business plan. Make a good product. Hire people who can actually do the job. Be decent to everyone.",
+     "act": "point",
+     "react": {
+      "tiffany": "shocked"
+     }
+    },
+    {
+     "who": "tiffany",
+     "text": "That's insane. Where does the guilt go?",
+     "emote": "shocked",
+     "act": "armsup"
+    },
+    {
+     "who": "penny",
+     "text": "You can keep the guilt. Just give my dad his kidney back.",
+     "emote": "deadpan",
+     "act": "shrug"
+    }
+   ],
+   "sign": "BRIGHTSIDE MEGACORP (UNDER NEW MANAGEMENT?)"
+  },
+  {
+   "type": "scene",
+   "id": "tag",
+   "bg": "newsroom",
+   "chars": {
+    "ken": {
+     "x": 640,
+     "s": 1.05
+    }
+   },
+   "lines": [
+    {
+     "who": "ken",
+     "text": "And finally, Doctor Chip Vibes has been promoted to Chief of Everything. In his speech, he thanked the universe, his crystals, and a spleen he found in the break room.",
+     "emote": "happy",
+     "graphic": "PROMOTED"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "title": "Kindness, with a brain.",
+   "sub": "Inspired by ideas in “Suicidal Empathy” by Gad Saad, and by his critics. Parody and commentary for adults. Original characters.",
+   "dur": 6.0,
+   "sfx": "theme"
+  }
+ ]
+}

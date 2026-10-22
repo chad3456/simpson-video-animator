@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toon Player</title>
+<style>
+  @font-face { font-family: Bangers; src: url(fonts/Bangers-Regular.ttf); }
+  @font-face { font-family: Nunito; src: url(fonts/Nunito.ttf); font-weight: 200 1000; }
+  html, body { margin: 0; background: #111; color: #eee; font-family: Nunito, sans-serif; }
+  #stage { display: block; width: 100%; max-width: 1280px; aspect-ratio: 16/9; margin: 0 auto; background: #000; }
+  .bar { max-width: 1280px; margin: 8px auto; display: flex; gap: 12px; align-items: center; padding: 0 16px; box-sizing: border-box; }
+  button { font: 800 16px Nunito, sans-serif; padding: 8px 18px; border-radius: 8px; border: 0; background: #ffd43b; cursor: pointer; }
+  input[type=range] { flex: 1; }
+  body.render .bar { display: none; }
+  body.render #stage { width: 1280px; height: 720px; max-width: none; }
+</style>
+</head>
+<body>
+<svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="bar"><button id="play">Play</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="clock">0:00</span></div>
+<audio id="audio" preload="auto"></audio>
+<script src="engine.js"></script>
+<script>
+  const q = new URLSearchParams(location.search);
+  const dir = (q.get('ep') || '../episodes/suicidal-empathy').replace(/\/$/, '');
+  const render = q.has('render');
+  if (render) document.body.classList.add('render');
+  (async () => {
+    const [ep, tl] = await Promise.all([fetch(dir + '/episode.json').then(r => r.json()), fetch(dir + '/timeline.json').then(r => r.json())]);
+    await document.fonts.load('40px Bangers'); await document.fonts.load('800 40px Nunito');
+    const svg = document.getElementById('stage');
+    Toon.load(ep, tl, svg); Toon.renderAt(0);
+    window.__ready = true;
+    if (render) return;
+    const audio = document.getElementById('audio'), seek = document.getElementById('seek'), clock = document.getElementById('clock');
+    audio.src = dir + '/' + (q.get('audio') || 'episode.mp3');
+    document.getElementById('play').onclick = e => { if (audio.paused) { audio.play(); e.target.textContent = 'Pause'; } else { audio.pause(); e.target.textContent = 'Play'; } };
+    seek.oninput = () => { audio.currentTime = seek.value / 1000 * tl.duration; Toon.renderAt(audio.currentTime); };
+    (function tick() {
+      const t = audio.currentTime; Toon.renderAt(t);
+      if (!audio.paused) seek.value = t / tl.duration * 1000;
+      clock.textContent = `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+      requestAnimationFrame(tick);
+    })();
+  })();
+</script>
+</body>
+</html>

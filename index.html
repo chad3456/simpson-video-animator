@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kindleton Episodes</title>
+<style>
+  @font-face { font-family: Bangers; src: url(engine/fonts/Bangers-Regular.ttf); }
+  @font-face { font-family: Nunito; src: url(engine/fonts/Nunito.ttf); font-weight: 200 1000; }
+  :root { --bg: #17140c; --surface: #221e13; --fg: #f4eedc; --muted: #b8ae92; --line: #3a3322; --toon: #ffd43b; --ink: #1d1d1d; --hot: #ff5c93; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 400 17px/1.55 Nunito, system-ui, sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 64px; display: grid; gap: 28px; }
+  header h1 { font: 400 clamp(48px, 10vw, 96px)/.9 Bangers, Impact, sans-serif; margin: 0; letter-spacing: .02em; }
+  header h1 span { background: var(--toon); color: var(--ink); padding: 0 .15em; border: 3px solid var(--ink); display: inline-block; transform: rotate(-2deg); }
+  header p { color: var(--muted); margin: 8px 0 0; max-width: 60ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .card { background: var(--surface); border: 2px solid var(--line); border-radius: 10px; overflow: hidden; cursor: pointer; text-align: left; color: inherit; font: inherit; padding: 0; display: grid; }
+  .card:hover, .card:focus-visible { border-color: var(--toon); outline: none; }
+  .card img, .card .ph { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: var(--toon); }
+  .card .body { padding: 14px 16px 18px; display: grid; gap: 6px; }
+  .card h2 { font: 400 28px/1 Bangers, Impact, sans-serif; margin: 0; letter-spacing: .03em; }
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--muted); align-items: center; }
+  .badge { font-weight: 800; font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--toon); color: var(--ink); }
+  .badge.adult { background: var(--hot); }
+  .logline { font-size: 15px; color: var(--fg); }
+  #watch { display: grid; gap: 14px; }
+  #watch[hidden] { display: none; }
+  video, iframe { width: 100%; aspect-ratio: 16/9; border: 4px solid var(--ink); border-radius: 6px; background: #000; box-shadow: 8px 8px 0 var(--toon); }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn { font: 800 15px Nunito, sans-serif; padding: 8px 16px; border-radius: 8px; border: 0; background: var(--toon); color: var(--ink); text-decoration: none; cursor: pointer; }
+  .btn.ghost { background: transparent; color: var(--fg); border: 2px solid var(--line); }
+  footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span>KINDLETON</span></h1>
+    <p>Animated parody episodes that turn books and big arguments into sitcoms. Original characters, open-source voices, rendered in the browser.</p>
+  </header>
+  <section id="watch" hidden>
+    <div class="row"><button class="btn ghost" id="back">&larr; All episodes</button></div>
+    <div id="screen"></div>
+    <h2 id="w-title" style="font:400 40px/1 Bangers,Impact,sans-serif;margin:0"></h2>
+    <p id="w-log" style="margin:0;max-width:70ch"></p>
+    <div class="row" id="w-links"></div>
+  </section>
+  <section class="grid" id="grid"></section>
+  <footer>Parody and commentary. Original characters, designs and music. Not affiliated with any author, network or show.</footer>
+</div>
+<script>
+  const fmt = s => s ? `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}` : '';
+  const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  let EPS = [];
+  function card(e) {
+    const dir = `episodes/${e.slug}/`;
+    return `<button class="card" data-slug="${e.slug}">` +
+      (e.poster ? `<img src="${dir}${e.poster}" alt="">` : `<div class="ph"></div>`) +
+      `<div class="body"><div class="meta"><span class="badge ${e.rating === 'adult' ? 'adult' : ''}">${e.rating === 'adult' ? '18+' : 'ALL AGES'}</span>${esc(e.show)} ${esc(e.episode)} · ${fmt(e.duration)}</div>` +
+      `<h2>${esc(e.title)}</h2><div class="logline">${esc(e.logline)}</div></div></button>`;
+  }
+  function open(slug) {
+    const e = EPS.find(x => x.slug === slug); if (!e) return;
+    const dir = `episodes/${e.slug}/`;
+    if (e.rating === 'adult') { try { if (!localStorage.getItem('age-ok') && !confirm('This episode is for adults (strong language). Continue?')) return; localStorage.setItem('age-ok', '1'); } catch (_) {} }
+    document.getElementById('screen').innerHTML = e.video
+      ? `<video src="${dir}${e.video}" ${e.poster ? `poster="${dir}${e.poster}"` : ''} controls playsinline autoplay></video>`
+      : `<iframe src="engine/player.html?ep=../${dir}" title="Episode player"></iframe>`;
+    document.getElementById('w-title').textContent = `${e.title}`;
+    document.getElementById('w-log').textContent = e.logline;
+    document.getElementById('w-links').innerHTML =
+      (e.player ? `<a class="btn" href="engine/player.html?ep=../${dir}">Interactive player</a>` : '') +
+      (e.script ? `<a class="btn ghost" href="${dir}script.md">Script</a>` : '') +
+      (e.bible ? `<a class="btn ghost" href="${dir}bible.md">Episode bible</a>` : '');
+    document.getElementById('watch').hidden = false; document.getElementById('grid').hidden = true;
+    location.hash = slug; scrollTo(0, 0);
+  }
+  document.getElementById('back').onclick = () => {
+    document.getElementById('screen').innerHTML = ''; document.getElementById('watch').hidden = true;
+    document.getElementById('grid').hidden = false; history.replaceState(null, '', location.pathname);
+  };
+  fetch('episodes/index.json').then(r => r.json()).then(list => {
+    EPS = list;
+    const grid = document.getElementById('grid');
+    grid.innerHTML = list.map(card).join('');
+    grid.onclick = ev => { const b = ev.target.closest('.card'); if (b) open(b.dataset.slug); };
+    if (location.hash) open(location.hash.slice(1));
+  });
+</script>
+</body>
+</html>

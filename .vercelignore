@@ -1,0 +1,4 @@
+*.epub
+engine/*.py
+engine/*.sh
+episodes/*.py

@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+"""Write episodes/index.json (the gallery manifest) from every episodes/*/episode.json.
+Usage: python3 engine/build_gallery.py"""
+import glob, json, os
+
+root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+items = []
+for path in sorted(glob.glob(os.path.join(root, "episodes", "*", "episode.json"))):
+    d = os.path.dirname(path); slug = os.path.basename(d)
+    m = json.load(open(path))["meta"]
+    tl = os.path.join(d, "timeline.json")
+    if not os.path.exists(tl):
+        continue  # script-only drafts stay out of the gallery
+    has = lambda f: os.path.exists(os.path.join(d, f))
+    items.append({
+        "slug": slug, "show": m.get("show"), "episode": m.get("episode"), "title": m.get("title"),
+        "logline": m.get("logline"), "rating": m.get("rating", "general"), "format": m.get("format"),
+        "source": m.get("source"),
+        "duration": json.load(open(tl))["duration"] if os.path.exists(tl) else None,
+        "video": "episode.mp4" if has("episode.mp4") else None,
+        "poster": "poster.jpg" if has("poster.jpg") else None,
+        "player": has("episode.mp3") and os.path.exists(tl),
+        "script": has("script.md"), "bible": has("bible.md"),
+    })
+json.dump(items, open(os.path.join(root, "episodes", "index.json"), "w"), indent=2)
+print(f"{len(items)} episodes in episodes/index.json")

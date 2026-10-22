@@ -1,0 +1,4 @@
+*.wav
+.voice-cache/
+node_modules/
+still-*.png
