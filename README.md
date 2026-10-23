@@ -5,7 +5,7 @@ Turn any source into a yellow-toon parody episode, or a calm flat-vector explain
 Two shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chromium + ffmpeg):
 
 - **KINDLETON** (root `SKILL.md`, `engine/`, `episodes/`): Simpsons-inspired parody sitcom.
-- **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; season 1 covers *Suicidal Empathy* in seven episodes: an overview (`too-kind-to-survive`) and one episode per case-file chapter (`the-things-we-wont-say`, `same-species-different-rules`, `second-chances`, `settled`, `buying-absolution`, `the-kindest-government`). A special, `eight-nights-of-fire`, covers the 2023 French riots through the same lens.
+- **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; season 1 covers *Suicidal Empathy* in seven episodes: an overview (`too-kind-to-survive`) and one episode per case-file chapter (`the-things-we-wont-say`, `same-species-different-rules`, `second-chances`, `settled`, `buying-absolution`, `the-kindest-government`). A special, `eight-nights-of-fire`, covers the 2023 French riots through the same lens. `who-burned-france` covers the October 2026 unrest, and the first investigation, `the-red-green-alliance`, tests Asra Nomani's Red-Green Alliance thesis claim by claim.
 
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
 - `engine/`: the renderer and pipeline.

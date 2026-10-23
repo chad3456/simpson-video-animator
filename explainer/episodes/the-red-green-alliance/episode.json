@@ -1,0 +1,2829 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "Investigation 1",
+  "title": "The Red-Green Alliance",
+  "format": "explainer",
+  "category": "Investigations",
+  "rating": "general",
+  "content_note": "Discusses terrorism financing cases, political violence in Iran and contested political labels, factually and without graphic imagery.",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "Is there a 'Red-Green Alliance' of the hard left and Islamists? A sourced investigation of Asra Nomani's case, stamping every claim as on the record, her reporting, her analysis, or disputed.",
+  "source": "Asra Q. Nomani, Woke Army (2023) and Fox News (2025-26); US v. Holy Land Foundation; UAE, Texas and US designations; US Education Dept; New York Times; House Ways and Means; Pew Research Center; CNRS. Figures as of 23 October 2026.",
+  "disclaimer": "Original animation. Figures as of 23 October 2026. Not affiliated with any channel, outlet or author.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42,
+  "captions": false
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, careful, unflinching guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-colours",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.08,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v",
+     "type": "venn",
+     "x": 640,
+     "y": 360,
+     "r": 160,
+     "join": 0,
+     "left": "RED",
+     "right": "GREEN",
+     "mid": "?",
+     "size": 34,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "join": 0.9,
+       "d": 0.6,
+       "t": 3.0
+      }
+     }
+    },
+    {
+     "id": "l1",
+     "type": "label",
+     "x": 300,
+     "y": 130,
+     "text": "the socialist and Marxist left",
+     "color": "#ff5a5a",
+     "in": 0,
+     "d": 2.4,
+     "fg": "#fff"
+    },
+    {
+     "id": "l2",
+     "type": "label",
+     "x": 980,
+     "y": 130,
+     "text": "Islamism: political Islam",
+     "color": "#3fcf8e",
+     "in": 0,
+     "d": 4.4,
+     "fg": "#06251a"
+    },
+    {
+     "id": "q",
+     "type": "text",
+     "x": 640,
+     "y": 620,
+     "text": "an alliance, or a label?",
+     "size": 40,
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Red is the colour of the revolutionary left. Green is the colour many Islamist movements chose for their flags."
+    },
+    {
+     "text": "For decades, some writers have warned that the two are merging, into what they call the Red-Green Alliance."
+    },
+    {
+     "text": "In October 2026, as France burned, that phrase was everywhere again. So is it a real coalition, a useful shorthand, or a conspiracy theory?"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-method",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "bk",
+     "type": "book",
+     "x": 300,
+     "y": 420,
+     "title": "Woke Army",
+     "author": "Asra Q. Nomani",
+     "color": "#2a6b4f",
+     "anim": "rise"
+    },
+    {
+     "id": "yr",
+     "type": "label",
+     "x": 300,
+     "y": 650,
+     "text": "2023, and Fox News Digital since",
+     "color": "#ffd166",
+     "in": 0,
+     "d": 1.6
+    },
+    {
+     "id": "s1",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 880,
+     "y": 200,
+     "in": 1,
+     "d": 0.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "s2",
+     "type": "stamp",
+     "kind": "reporting",
+     "x": 880,
+     "y": 300,
+     "in": 1,
+     "d": 3.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "s3",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 880,
+     "y": 400,
+     "in": 2,
+     "d": 0.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "s4",
+     "type": "stamp",
+     "kind": "disputed",
+     "x": 880,
+     "y": 500,
+     "in": 2,
+     "d": 3.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "text": "The best-known champion of the idea today is the journalist Asra Nomani, author of the 2023 book Woke Army, and now an investigations editor at Fox News Digital.",
+     "say": "The best-known champion of the idea today is the journalist Asra No-mah-nee, author of the twenty twenty-three book Woke Army, and now an investigations editor at Fox News Digital."
+    },
+    {
+     "text": "In this episode, every claim gets a stamp. On the record means courts, governments or data confirm it. Her reporting means documents she cites that we could not check ourselves."
+    },
+    {
+     "text": "Her analysis means her interpretation of those facts. And disputed means other credible evidence points the other way."
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "sfx": "whoosh"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "The Red-Green Alliance",
+   "sub": "What Asra Nomani alleges, and what the record shows",
+   "glyph": "chain",
+   "color": "#3fcf8e",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "The Reporter",
+   "glyph": "eye",
+   "color": "#5ec8e5",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "reporter",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tl",
+     "type": "tline",
+     "x": 640,
+     "y": 380,
+     "w": 860,
+     "shown": 0,
+     "anim": "fade",
+     "events": [
+      {
+       "year": "1965",
+       "text": "born in Bombay,\nraised in West Virginia",
+       "color": "#5ec8e5"
+      },
+      {
+       "year": "2002",
+       "text": "colleague Daniel Pearl\nkidnapped and killed",
+       "color": "#ff8fab"
+      },
+      {
+       "year": "2005",
+       "text": "helps organise a\nwoman-led mixed prayer",
+       "color": "#7bdc8c"
+      },
+      {
+       "year": "2016",
+       "text": "says she voted\nfor Donald Trump",
+       "color": "#ffb347"
+      },
+      {
+       "year": "2023",
+       "text": "publishes\nWoke Army",
+       "color": "#3fcf8e"
+      }
+     ],
+     "keys": {
+      "0": {
+       "shown": 1,
+       "d": 1.0,
+       "t": 1.0
+      },
+      "1": {
+       "shown": 2,
+       "d": 0.6,
+       "t": 1.0
+      },
+      "2": {
+       "shown": 3,
+       "d": 0.6,
+       "t": 1.0
+      },
+      "3": {
+       "shown": 5,
+       "d": 0.6,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "sf",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 140,
+     "in": 1,
+     "d": 1.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Wikipedia biography; Washington Post; CNN, 11 Nov 2016",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Nomani was born in Bombay in 1965 and grew up in Morgantown, West Virginia, the daughter of a university professor.",
+     "say": "No-mah-nee was born in Bombay in nineteen sixty-five and grew up in Morgantown, West Virginia, the daughter of a university professor."
+    },
+    {
+     "text": "As a Wall Street Journal reporter, she was hosting her colleague Daniel Pearl in Karachi in 2002 when Islamist militants kidnapped and murdered him."
+    },
+    {
+     "text": "She then fought her own mosque for women's right to pray in the main hall, and in 2005 helped organise a mixed-gender prayer led by a woman."
+    },
+    {
+     "text": "She is also openly political. She said on CNN in 2016 that she voted for Donald Trump, and she has campaigned against critical race theory in schools."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "reporter-why",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "pebble",
+     "x": 640,
+     "y": 560,
+     "size": 1.0,
+     "color": "#ffd166",
+     "mood": "calm",
+     "anim": "rise"
+    },
+    {
+     "id": "a",
+     "type": "label",
+     "x": 360,
+     "y": 260,
+     "text": "a Muslim reformer",
+     "color": "#7bdc8c",
+     "in": 0,
+     "d": 1.2
+    },
+    {
+     "id": "b",
+     "type": "label",
+     "x": 920,
+     "y": 260,
+     "text": "a critic of Islamism",
+     "color": "#5ec8e5",
+     "in": 0,
+     "d": 3.2
+    },
+    {
+     "id": "c",
+     "type": "label",
+     "x": 640,
+     "y": 170,
+     "text": "a partisan voice",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 0.6
+    },
+    {
+     "id": "d",
+     "type": "label",
+     "x": 640,
+     "y": 660,
+     "text": "both matter when you weigh her work",
+     "color": "#fff6e6",
+     "in": 1,
+     "d": 4.0
+    }
+   ],
+   "lines": [
+    {
+     "text": "So she writes as a Muslim who has spent twenty years arguing that Islamism, the political movement, is a different thing from Islam, the faith."
+    },
+    {
+     "text": "And she writes from the right of American politics. Both are worth keeping in mind as we look at what she claims."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "Where the Words Come From",
+   "glyph": "book",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "words-iran",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v",
+     "type": "venn",
+     "x": 640,
+     "y": 330,
+     "r": 140,
+     "join": 1,
+     "left": "Tudeh,\nFedaian",
+     "right": "Khomeini",
+     "mid": "vs Shah",
+     "size": 26,
+     "anim": "pop",
+     "keys": {
+      "2": {
+       "join": 0,
+       "d": 0.4,
+       "t": 2.5
+      }
+     }
+    },
+    {
+     "id": "y",
+     "type": "label",
+     "x": 640,
+     "y": 90,
+     "text": "Iran, 1978 to 1979",
+     "color": "#ffd166",
+     "in": 0,
+     "d": 0.4
+    },
+    {
+     "id": "ban",
+     "type": "label",
+     "x": 360,
+     "y": 560,
+     "text": "1983: Tudeh party banned",
+     "color": "#ff8fab",
+     "in": 2,
+     "d": 2.8
+    },
+    {
+     "id": "ex",
+     "type": "label",
+     "x": 920,
+     "y": 560,
+     "text": "1988: thousands of prisoners executed",
+     "color": "#ff5a5a",
+     "in": 3,
+     "d": 0.4,
+     "fg": "#fff"
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 640,
+     "in": 3,
+     "d": 3.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Amnesty International; Ervand Abrahamian, Tortured Confessions (1999)",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The modern story usually starts in Iran. In 1978, the Shah's regime blamed unrest on what it called Islamo-Marxists."
+    },
+    {
+     "text": "And in the revolution that followed, communist and leftist parties really did march alongside Ayatollah Khomeini's followers against the Shah.",
+     "say": "And in the revolution that followed, communist and leftist parties really did march alongside Ayatollah Ho-may-nee's followers against the Shah."
+    },
+    {
+     "text": "Once the Islamists held power, they turned on their allies. The communist Tudeh party was banned in 1983.",
+     "say": "Once the Islamists held power, they turned on their allies. The communist Too-deh party was banned in nineteen eighty-three."
+    },
+    {
+     "text": "In 1988, thousands of political prisoners, many of them leftists, were executed. Critics of today's alliance point to this as the cautionary tale."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "words-europe",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tl",
+     "type": "tline",
+     "x": 640,
+     "y": 360,
+     "w": 840,
+     "shown": 0,
+     "anim": "fade",
+     "events": [
+      {
+       "year": "1994",
+       "text": "UK socialist Chris Harman:\nwork with Islamists sometimes",
+       "color": "#ff5a5a"
+      },
+      {
+       "year": "2002",
+       "text": "France: Taguieff uses\n'islamo-gauchisme'",
+       "color": "#5ec8e5"
+      },
+      {
+       "year": "2004",
+       "text": "UK: Respect party, socialists\nand Muslim activists",
+       "color": "#3fcf8e"
+      },
+      {
+       "year": "2005",
+       "text": "George Galloway wins\na London seat for Respect",
+       "color": "#ffd166"
+      }
+     ],
+     "keys": {
+      "0": {
+       "shown": 1,
+       "d": 0.6,
+       "t": 1.0
+      },
+      "1": {
+       "shown": 2,
+       "d": 0.6,
+       "t": 1.0
+      },
+      "2": {
+       "shown": 4,
+       "d": 0.6,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 600,
+     "in": 2,
+     "d": 4.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "C. Harman, The Prophet and the Proletariat (1994); P.-A. Taguieff (2002); UK election results 2005",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In Britain in 1994, the socialist writer Chris Harman argued that the left should stand with Islamists sometimes, and with the state never."
+    },
+    {
+     "text": "In France, the philosopher Pierre-André Taguieff used the word islamo-gauchisme, Islamo-leftism, in 2002, and it spread.",
+     "say": "In France, the philosopher Pierre-André Ta-gyeff used the word eez-lah-mo go-sheez-muh, Islamo-leftism, in two thousand and two, and it spread."
+    },
+    {
+     "text": "And in 2004, British socialists and Muslim activists formed a real party, Respect. A year later, George Galloway won a London seat in Parliament for it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "words-not",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "c1",
+     "type": "card",
+     "x": 380,
+     "y": 330,
+     "w": 380,
+     "h": 220,
+     "glyph": "leaf",
+     "title": "Denmark's Red-Green Alliance",
+     "color": "#7bdc8c",
+     "anim": "pop"
+    },
+    {
+     "id": "c1l",
+     "type": "label",
+     "x": 380,
+     "y": 490,
+     "text": "socialists plus environmentalists",
+     "color": "#7bdc8c",
+     "in": 0,
+     "d": 2.0,
+     "fg": "#06251a"
+    },
+    {
+     "id": "c2",
+     "type": "card",
+     "x": 900,
+     "y": 330,
+     "w": 380,
+     "h": 220,
+     "glyph": "chain",
+     "title": "Nomani's Red-Green Alliance",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "c2l",
+     "type": "label",
+     "x": 900,
+     "y": 490,
+     "text": "the hard left plus Islamists",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 1.4
+    }
+   ],
+   "lines": [
+    {
+     "text": "One warning about the name. Denmark has a real party called the Red-Green Alliance. Its green means the environment. It has nothing to do with this story."
+    },
+    {
+     "text": "In this episode, red-green means what Nomani means: the hard left working with Islamist organisations."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "Nomani's Case",
+   "glyph": "folder",
+   "color": "#3fcf8e",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "case-thesis",
+   "bg": {
+    "kind": "deep",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "w",
+     "type": "web",
+     "x": 640,
+     "y": 360,
+     "nodes": [
+      {
+       "name": "CAIR",
+       "u": -330,
+       "v": -150,
+       "color": "#3fcf8e"
+      },
+      {
+       "name": "Students for Justice in Palestine",
+       "u": -420,
+       "v": 40,
+       "color": "#3fcf8e",
+       "fs": 16
+      },
+      {
+       "name": "American Muslims for Palestine",
+       "u": -230,
+       "v": 170,
+       "color": "#3fcf8e",
+       "fs": 16
+      },
+      {
+       "name": "Black Lives Matter",
+       "u": 260,
+       "v": -170,
+       "color": "#ff5a5a"
+      },
+      {
+       "name": "Code Pink",
+       "u": 420,
+       "v": 20,
+       "color": "#ff5a5a"
+      },
+      {
+       "name": "People's Forum",
+       "u": 250,
+       "v": 170,
+       "color": "#ff5a5a"
+      },
+      {
+       "name": "Open Society",
+       "u": 0,
+       "v": -40,
+       "color": "#ffd166",
+       "r": 30
+      },
+      {
+       "name": "Qatar",
+       "u": -40,
+       "v": 200,
+       "color": "#ffd166",
+       "r": 26
+      }
+     ],
+     "edges": [
+      [
+       0,
+       1,
+       "dash"
+      ],
+      [
+       1,
+       2,
+       "dash"
+      ],
+      [
+       0,
+       3,
+       "dash"
+      ],
+      [
+       3,
+       4,
+       "dash"
+      ],
+      [
+       4,
+       5,
+       "solid"
+      ],
+      [
+       6,
+       0,
+       "solid"
+      ],
+      [
+       6,
+       3,
+       "dash"
+      ],
+      [
+       7,
+       2,
+       "dash"
+      ],
+      [
+       2,
+       5,
+       "dash"
+      ],
+      [
+       1,
+       5,
+       "dash"
+      ]
+     ],
+     "shown": 0,
+     "draw": 0,
+     "anim": "none",
+     "keys": {
+      "0": {
+       "shown": 3,
+       "d": 0.8,
+       "t": 2.0
+      },
+      "1": {
+       "shown": 6,
+       "d": 0.4,
+       "t": 2.0
+      },
+      "2": {
+       "shown": 8,
+       "d": 0.4,
+       "t": 1.4
+      },
+      "3": {
+       "draw": 1,
+       "d": 0.4,
+       "t": 4.0
+      }
+     }
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 1080,
+     "y": 650,
+     "in": 3,
+     "d": 1.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "A. Nomani, Woke Army (2023); Middle East Forum talk, March 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Here is her argument, in her own framing. On one side are Islamist-leaning groups she names, like CAIR, the Council on American-Islamic Relations, and campus groups for Palestine.",
+     "say": "Here is her argument, in her own framing. On one side are Islamist-leaning groups she names, like Care, the Council on American-Islamic Relations, and campus groups for Palestine."
+    },
+    {
+     "text": "On the other are groups of the hard left: parts of Black Lives Matter, the anti-war group Code Pink, and a Marxist hub in New York, the People's Forum."
+    },
+    {
+     "text": "Behind them, she says, is money: from progressive foundations like Open Society, and from abroad, especially the state of Qatar.",
+     "say": "Behind them, she says, is money: from progressive foundations like Open Society, and from abroad, especially the state of Kah-tar."
+    },
+    {
+     "text": "She argues they act as one army: using the language of civil rights to shield Islamism from criticism, to smear critics, and to push anti-Israel and anti-American politics."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "case-personal",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "ph",
+     "type": "card",
+     "x": 300,
+     "y": 360,
+     "w": 300,
+     "h": 220,
+     "glyph": "gavel",
+     "title": "a defamation suit",
+     "color": "#5ec8e5",
+     "anim": "rise"
+    },
+    {
+     "id": "lw",
+     "type": "label",
+     "x": 820,
+     "y": 210,
+     "text": "an anonymous blog calls her an 'Islamophobe'",
+     "color": "#ff8fab",
+     "in": 0,
+     "d": 0.6
+    },
+    {
+     "id": "sub",
+     "type": "label",
+     "x": 820,
+     "y": 290,
+     "text": "she sues; a subpoena traces the account",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "cair",
+     "type": "label",
+     "x": 820,
+     "y": 370,
+     "text": "to a staffer at CAIR's Chicago office, she says",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 3.4
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "reporting",
+     "x": 820,
+     "y": 480,
+     "in": 1,
+     "d": 5.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "no",
+     "type": "label",
+     "x": 820,
+     "y": 580,
+     "text": "we found no court ruling on it",
+     "color": "#e6ebff",
+     "in": 2,
+     "d": 1.0
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Nomani, Middle East Forum talk (March 2023); Woke Army, ch. on LoonWatch",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Part of her case is personal. An anonymous website branded her an Islamophobe and falsely claimed Israel funded her."
+    },
+    {
+     "text": "She sued for defamation, and says a subpoena to the web host traced the site to a researcher at CAIR's Chicago chapter."
+    },
+    {
+     "text": "Those records are in her book. We could not find a court ruling that tested them, so they carry the reporting stamp, not the record stamp."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "case-money",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 400,
+     "y": 250,
+     "value": 0,
+     "prefix": "$",
+     "suffix": " million",
+     "size": 72,
+     "color": "#ffd166",
+     "label": "2008 campaign by Open Society and Atlantic Philanthropies",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "value": 20,
+       "d": 1.4,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "s1",
+     "type": "stamp",
+     "kind": "reporting",
+     "x": 400,
+     "y": 420,
+     "in": 0,
+     "d": 4.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "goal",
+     "type": "label",
+     "x": 400,
+     "y": 560,
+     "text": "aim: challenge post-9/11 counter-terror policies",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.6
+    },
+    {
+     "id": "dm",
+     "type": "icon",
+     "x": 960,
+     "y": 300,
+     "r": 70,
+     "glyph": "ballot",
+     "color": "#3fcf8e",
+     "label": "a 20-year 'takeover'",
+     "in": 2,
+     "d": 0.4
+    },
+    {
+     "id": "mam",
+     "type": "label",
+     "x": 960,
+     "y": 470,
+     "text": "ending with Mayor Zohran Mamdani, she argues",
+     "color": "#ffb347",
+     "in": 2,
+     "d": 3.6
+    },
+    {
+     "id": "s2",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 960,
+     "y": 560,
+     "in": 3,
+     "d": 0.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Nomani, Fox News Opinion, 29 June 2025; Open Society grant records as cited there",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In a long Fox News piece in June 2025, she traced grant records back to 2008, when Open Society and another foundation pledged at least twenty million dollars."
+    },
+    {
+     "text": "It was called the National Security and Human Rights Campaign, and, as she reports, it backed challenges to post-9/11 counter-terror policies the funders saw as violating civil liberties."
+    },
+    {
+     "text": "She argues that this money built a twenty-year campaign that captured the Democratic Party, ending with Zohran Mamdani's run for mayor of New York.",
+     "say": "She argues that this money built a twenty-year campaign that captured the Democratic Party, ending with Zohran Mam-dah-nee's run for mayor of New York."
+    },
+    {
+     "text": "The grants are documented. Calling them a takeover is her interpretation. Funding civil liberties work is legal, and Mamdani won his primary, and later the mayoralty, at the ballot box."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "case-france",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "map",
+     "type": "hexmap",
+     "x": 340,
+     "y": 380,
+     "r": 200,
+     "n": 60,
+     "spread": 0,
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "spread": 1,
+       "d": 0.6,
+       "t": 3
+      }
+     }
+    },
+    {
+     "id": "n50",
+     "type": "stat",
+     "x": 900,
+     "y": 220,
+     "value": 0,
+     "size": 80,
+     "color": "#ffb347",
+     "label": "groups mapped in 'Chaos Inc.'",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "value": 50,
+       "d": 1.2,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "how",
+     "type": "label",
+     "x": 900,
+     "y": 400,
+     "text": "built from likes, shares and statements",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "no",
+     "type": "label",
+     "x": 900,
+     "y": 470,
+     "text": "no money traced to the French groups",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 3.4
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "disputed",
+     "x": 900,
+     "y": 580,
+     "in": 2,
+     "d": 0.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Nomani, Fox News Digital, 9 Oct 2026; see LUMEN: Who Burned France?",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "This October she applied the frame to France's riots, mapping fifty groups, from French unions to an American outlet funded by the tech millionaire Neville Roy Singham."
+    },
+    {
+     "text": "Her map was built largely from social media likes, shares and public statements. The article did not trace any money to the French groups themselves."
+    },
+    {
+     "text": "French officials blamed the ultra-left. They did not describe an Islamist alliance. Our episode Who Burned France covers that evidence in detail."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "What the Record Shows",
+   "glyph": "gavel",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "record-cair",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tl",
+     "type": "tline",
+     "x": 640,
+     "y": 330,
+     "w": 880,
+     "shown": 0,
+     "anim": "fade",
+     "events": [
+      {
+       "year": "2007",
+       "text": "named an unindicted\nco-conspirator",
+       "color": "#ffb347"
+      },
+      {
+       "year": "2008",
+       "text": "Hamas-funding charity\nleaders convicted",
+       "color": "#ff5a5a"
+      },
+      {
+       "year": "2009",
+       "text": "judge: 'ample evidence'\nof association",
+       "color": "#ffd166"
+      },
+      {
+       "year": "2010",
+       "text": "appeals court: naming\nthem publicly was wrong",
+       "color": "#5ec8e5"
+      },
+      {
+       "year": "never",
+       "text": "CAIR itself\ncharged",
+       "color": "#7bdc8c"
+      }
+     ],
+     "keys": {
+      "0": {
+       "shown": 2,
+       "d": 0.6,
+       "t": 2.0
+      },
+      "1": {
+       "shown": 4,
+       "d": 0.6,
+       "t": 2.0
+      },
+      "2": {
+       "shown": 5,
+       "d": 0.6,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 590,
+     "in": 2,
+     "d": 3.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "US v. Holy Land Foundation (N.D. Tex.); Judge J. Solis order (2009, unsealed 2010); JTA",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now the record. In 2007, prosecutors in the trial of the Holy Land Foundation, a charity later convicted of funding Hamas, listed CAIR as an unindicted co-conspirator."
+    },
+    {
+     "text": "In 2009 the judge found ample evidence linking CAIR to the charity and to Hamas. But the appeals court agreed that naming the groups publicly, without charges, had been wrong."
+    },
+    {
+     "text": "CAIR has never been charged with a crime. The FBI ended its formal outreach with the group in 2008."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "record-designations",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "k1",
+     "type": "card",
+     "x": 250,
+     "y": 260,
+     "w": 300,
+     "h": 190,
+     "glyph": "globe",
+     "title": "UAE terror list, 2014",
+     "color": "#ffb347",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "k2",
+     "type": "card",
+     "x": 640,
+     "y": 260,
+     "w": 300,
+     "h": 190,
+     "glyph": "gavel",
+     "title": "Texas, Nov 2025",
+     "color": "#ff5a5a",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "k2l",
+     "type": "label",
+     "x": 640,
+     "y": 400,
+     "text": "CAIR sued; unresolved",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 3.6
+    },
+    {
+     "id": "k3",
+     "type": "card",
+     "x": 1030,
+     "y": 260,
+     "w": 300,
+     "h": 190,
+     "glyph": "shield",
+     "title": "US, 13 Jan 2026",
+     "color": "#5ec8e5",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "k3l",
+     "type": "label",
+     "x": 1030,
+     "y": 400,
+     "text": "three Brotherhood branches listed",
+     "color": "#5ec8e5",
+     "in": 2,
+     "d": 3.0
+    },
+    {
+     "id": "nf",
+     "type": "label",
+     "x": 640,
+     "y": 520,
+     "text": "CAIR: not federally designated",
+     "color": "#7bdc8c",
+     "in": 3,
+     "d": 0.4,
+     "fg": "#06251a"
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 610,
+     "in": 3,
+     "d": 2.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "UAE cabinet list (2014); Gov. Abbott proclamation; W.D. Tex. order, May 2026; US State and Treasury, 13 Jan 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Governments have since gone further. The United Arab Emirates put CAIR on a terrorism list in 2014. CAIR rejected the listing."
+    },
+    {
+     "text": "In November 2025, Texas Governor Greg Abbott designated CAIR and the Muslim Brotherhood as terrorist organisations under state law. CAIR sued. At the last ruling we found, in May 2026, the case was still unresolved."
+    },
+    {
+     "text": "In January 2026, the U.S. government designated three national branches of the Muslim Brotherhood, in Egypt, Jordan and Lebanon, citing support for Hamas."
+    },
+    {
+     "text": "But as of today, CAIR has not been designated by the federal government. It describes itself as a civil rights group and calls the Texas label defamatory."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "record-qatar",
+   "bg": {
+    "kind": "studio",
+    "pal": "dusk"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 640,
+     "y": 380,
+     "w": 820,
+     "h": 300,
+     "max": 7,
+     "dp": 1,
+     "unit": "bn",
+     "title": "Foreign gifts and contracts to U.S. universities, $ billions",
+     "values": [
+      6.6,
+      4.4,
+      4.3,
+      4.1
+     ],
+     "labels": [
+      "Qatar",
+      "Germany",
+      "England",
+      "China"
+     ],
+     "colors": [
+      "#ffd166",
+      "#5ec8e5",
+      "#c792ea",
+      "#ff8fab"
+     ],
+     "anim": "fade"
+    },
+    {
+     "id": "bc",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "much of it pays for branch campuses in Doha",
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.4
+    },
+    {
+     "id": "s1",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 400,
+     "y": 630,
+     "in": 1,
+     "d": 0.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "s2",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 880,
+     "y": 630,
+     "in": 3,
+     "d": 0.8,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "text": "EFFECT: CONTESTED",
+     "color": "#ff8fab"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "US Education Department foreign-gift portal, via Algemeiner, 8 Jan 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The money claims are partly on the record too. Qatar is the largest foreign funder of American universities in the Education Department's own disclosure database.",
+     "say": "The money claims are partly on the record too. Kah-tar is the largest foreign funder of American universities in the Education Department's own disclosure database."
+    },
+    {
+     "text": "About six point six billion dollars, ahead of Germany, England and China."
+    },
+    {
+     "text": "But much of that pays for branch campuses that Cornell, Carnegie Mellon, Texas A and M and Georgetown run in Doha."
+    },
+    {
+     "text": "Whether Qatari money shapes what is taught or protested in America is argued, but not proven. Studies claiming a link come mostly from advocacy groups."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "record-singham",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 400,
+     "y": 260,
+     "value": 0,
+     "prefix": "$",
+     "suffix": "M+",
+     "size": 88,
+     "color": "#ffd166",
+     "label": "to the People's Forum, say lawmakers",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "value": 20,
+       "d": 0.6,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "nyt",
+     "type": "label",
+     "x": 400,
+     "y": 120,
+     "text": "New York Times investigation, 2023",
+     "color": "#5ec8e5",
+     "in": 0,
+     "d": 0.4
+    },
+    {
+     "id": "hr",
+     "type": "label",
+     "x": 400,
+     "y": 430,
+     "text": "House hearing, 10 Feb 2026",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "ic",
+     "type": "icon",
+     "x": 940,
+     "y": 300,
+     "r": 80,
+     "glyph": "globe",
+     "color": "#ff5a5a",
+     "label": "echoes Beijing's line",
+     "in": 0,
+     "d": 4.0
+    },
+    {
+     "id": "s1",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 940,
+     "y": 470,
+     "in": 2,
+     "d": 0.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "text": "FUNDING: ON THE RECORD",
+     "color": "#7bdc8c"
+    },
+    {
+     "id": "s2",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 940,
+     "y": 550,
+     "in": 2,
+     "d": 2.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "text": "ISLAMIST LINK: HER FRAME",
+     "color": "#ffb347"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "New York Times (Aug 2023); House Ways and Means hearing, 10 Feb 2026, via Fox News",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "On the red side, one funder is well documented. In 2023 the New York Times reported that Neville Roy Singham, an American tech millionaire living in Shanghai, funds a web of left-wing groups that echo Chinese government talking points."
+    },
+    {
+     "text": "At a House hearing in February 2026, lawmakers said more than twenty million dollars had reached the People's Forum. Singham did not respond to questions."
+    },
+    {
+     "text": "That money is real. But it is a story about the communist left and China. Tying it to Islamist groups is Nomani's framing, not something the funding records show."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "record-together",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 600,
+     "n": 24,
+     "cols": 12,
+     "w": 900,
+     "rowh": 60,
+     "size": 0.45,
+     "colors": [
+      "#ff5a5a",
+      "#3fcf8e",
+      "#ffd166",
+      "#5ec8e5",
+      "#ff8fab",
+      "#c792ea"
+     ],
+     "mood": "neutral",
+     "anim": "rise"
+    },
+    {
+     "id": "a",
+     "type": "label",
+     "x": 640,
+     "y": 130,
+     "text": "post-7 October marches: left and Muslim groups together",
+     "color": "#ffd166",
+     "in": 0,
+     "d": 0.4
+    },
+    {
+     "id": "b",
+     "type": "label",
+     "x": 640,
+     "y": 210,
+     "text": "SJP chapters suspended at several universities, 2023",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 320,
+     "in": 1,
+     "d": 3.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    }
+   ],
+   "lines": [
+    {
+     "text": "And the cooperation itself is real. After the Hamas attack of the seventh of October 2023, socialist groups, Muslim groups and Jewish anti-Zionist groups marched together across America."
+    },
+    {
+     "text": "Several universities suspended Students for Justice in Palestine chapters that year, citing rule breaches or support for Hamas. Coalitions on the street are on the record."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#ff8fab",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against-bloc",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "g",
+     "type": "gbars",
+     "x": 640,
+     "y": 380,
+     "w": 760,
+     "h": 300,
+     "max": 100,
+     "groups": [
+      {
+       "label": "Muslim Americans",
+       "vals": [
+        55
+       ]
+      },
+      {
+       "label": "Republicans",
+       "vals": [
+        47
+       ]
+      },
+      {
+       "label": "Democrats",
+       "vals": [
+        13
+       ]
+      }
+     ],
+     "series": [
+      {
+       "name": "say homosexuality should be discouraged",
+       "color": "#ff8fab"
+      }
+     ],
+     "grow": 0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "grow": 1,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "pid",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "Muslims: 53% lean Democrat, 42% Republican",
+     "color": "#5ec8e5",
+     "in": 0,
+     "d": 0.4
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 1090,
+     "y": 220,
+     "in": 2,
+     "d": 0.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Pew Research Center, Religious Landscape Study 2023-24 (273 Muslim respondents, margin +/- 8.3 pts)",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The first objection: Muslims are not a political bloc. Pew's latest survey finds 53 percent of Muslim Americans lean Democrat, and 42 percent lean Republican."
+    },
+    {
+     "text": "On social issues they are often to the right of both parties. Fifty-five percent say society should discourage homosexuality, compared with thirteen percent of Democrats."
+    },
+    {
+     "text": "That is a small sample, so treat the exact numbers with care. But it is hard to merge with a movement that disagrees with you on that much."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "against-michigan",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 420,
+     "y": 400,
+     "w": 520,
+     "h": 260,
+     "max": 50,
+     "unit": "%",
+     "title": "Dearborn, Michigan, 2024",
+     "values": [
+      42,
+      36,
+      18
+     ],
+     "labels": [
+      "Trump",
+      "Harris",
+      "Stein"
+     ],
+     "colors": [
+      "#ff5a5a",
+      "#5ec8e5",
+      "#7bdc8c"
+     ],
+     "anim": "fade"
+    },
+    {
+     "id": "ic",
+     "type": "icon",
+     "x": 990,
+     "y": 300,
+     "r": 74,
+     "glyph": "building",
+     "color": "#c792ea",
+     "label": "Hamtramck, June 2023",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "pf",
+     "type": "label",
+     "x": 990,
+     "y": 470,
+     "text": "all-Muslim council bans Pride flags",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 2.4
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 640,
+     "in": 2,
+     "d": 0.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "Dearborn unofficial results via WDET, 6 Nov 2024; Michigan Advance, 14 June 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 2024, Dearborn, Michigan, the most Arab-American city in the country, voted for Donald Trump. Harris came second."
+    },
+    {
+     "text": "Next door in Hamtramck, the first all-Muslim city council in America voted to ban Pride flags from city property. That is not how an alliance with the progressive left behaves.",
+     "say": "Next door in Ham-tram-ick, the first all-Muslim city council in America voted to ban Pride flags from city property. That is not how an alliance with the progressive left behaves."
+    },
+    {
+     "text": "Nomani herself admits the limits. In June 2026 she noted that Islamist rallies draw a few hundred people, out of millions of American Muslims."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "against-france",
+   "bg": {
+    "kind": "space",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "quote",
+     "x": 640,
+     "y": 230,
+     "text": "does not correspond to\nany scientific reality",
+     "by": "CNRS, France's national research centre, Feb 2021",
+     "color": "#ff8fab",
+     "anim": "pop"
+    },
+    {
+     "id": "cp",
+     "type": "label",
+     "x": 640,
+     "y": 420,
+     "text": "university presidents: a 'pseudo-notion'",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "tw",
+     "type": "label",
+     "x": 640,
+     "y": 500,
+     "text": "online, used mostly by far-right accounts",
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.4
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 640,
+     "y": 610,
+     "in": 2,
+     "d": 3.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "text": "THE CRITIQUE: ON THE RECORD",
+     "color": "#7bdc8c"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 690,
+     "text": "CNRS statement, 17 Feb 2021; Conference des presidents d'universite; D. Chavalarias et al., CNRS",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The second objection is about the label itself. When France's government ordered an inquiry into Islamo-leftism in universities in 2021, its own national research centre refused the premise."
+    },
+    {
+     "text": "It said the term does not correspond to any scientific reality. University presidents called it a pseudo-notion."
+    },
+    {
+     "text": "A study of French political tweets found the word was used mostly by far-right accounts, against the mainstream left. Critics compare it to older smears that cast an enemy as a hidden fusion."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "against-method",
+   "bg": {
+    "kind": "deep",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "w",
+     "type": "web",
+     "x": 640,
+     "y": 330,
+     "nodes": [
+      {
+       "name": "CAIR",
+       "u": -330,
+       "v": -150,
+       "color": "#3fcf8e"
+      },
+      {
+       "name": "Students for Justice in Palestine",
+       "u": -420,
+       "v": 40,
+       "color": "#3fcf8e",
+       "fs": 16
+      },
+      {
+       "name": "American Muslims for Palestine",
+       "u": -230,
+       "v": 170,
+       "color": "#3fcf8e",
+       "fs": 16
+      },
+      {
+       "name": "Black Lives Matter",
+       "u": 260,
+       "v": -170,
+       "color": "#ff5a5a"
+      },
+      {
+       "name": "Code Pink",
+       "u": 420,
+       "v": 20,
+       "color": "#ff5a5a"
+      },
+      {
+       "name": "People's Forum",
+       "u": 250,
+       "v": 170,
+       "color": "#ff5a5a"
+      },
+      {
+       "name": "Open Society",
+       "u": 0,
+       "v": -40,
+       "color": "#ffd166",
+       "r": 30
+      },
+      {
+       "name": "Qatar",
+       "u": -40,
+       "v": 200,
+       "color": "#ffd166",
+       "r": 26
+      }
+     ],
+     "edges": [
+      [
+       0,
+       1,
+       "dash"
+      ],
+      [
+       1,
+       2,
+       "dash"
+      ],
+      [
+       0,
+       3,
+       "dash"
+      ],
+      [
+       3,
+       4,
+       "dash"
+      ],
+      [
+       4,
+       5,
+       "solid"
+      ],
+      [
+       6,
+       0,
+       "solid"
+      ],
+      [
+       6,
+       3,
+       "dash"
+      ],
+      [
+       7,
+       2,
+       "dash"
+      ],
+      [
+       2,
+       5,
+       "dash"
+      ],
+      [
+       1,
+       5,
+       "dash"
+      ]
+     ],
+     "draw": 1,
+     "anim": "fade"
+    },
+    {
+     "id": "k1",
+     "type": "label",
+     "x": 330,
+     "y": 600,
+     "text": "solid line: money or partnership on paper",
+     "color": "#e6ebff",
+     "in": 0,
+     "d": 1.0
+    },
+    {
+     "id": "k2",
+     "type": "label",
+     "x": 950,
+     "y": 600,
+     "text": "dashed line: shared causes, likes, events",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 3.0
+    },
+    {
+     "id": "q",
+     "type": "label",
+     "x": 640,
+     "y": 80,
+     "text": "a link is not a command",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 0.6
+    },
+    {
+     "id": "s",
+     "type": "stamp",
+     "kind": "disputed",
+     "x": 640,
+     "y": 160,
+     "in": 2,
+     "d": 0.4,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "text": "'ONE ARMY': DISPUTED"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The third objection is about method. Look again at her map. Only a few links are money or formal partnerships on paper. Most are shared causes, joint events and social media activity."
+    },
+    {
+     "text": "Networks like this show who agrees with whom. They do not show who gives orders. Her October article, for example, did not quote the named groups responding."
+    },
+    {
+     "text": "Groups can march together on Gaza and still split on almost everything else. That makes the idea of one coordinated army the most disputed part of her case."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapter",
+   "kicker": "Part 6",
+   "title": "Weighing It",
+   "glyph": "scales",
+   "color": "#ffd166",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "verdict",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "r0",
+     "type": "text",
+     "x": 470,
+     "y": 110,
+     "text": "Islamist and far-left groups cooperate on some causes",
+     "size": 24,
+     "weight": 800,
+     "in": 0,
+     "d": 0.3,
+     "anim": "left"
+    },
+    {
+     "id": "s0",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 1060,
+     "y": 110,
+     "in": 0,
+     "d": 1.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    },
+    {
+     "id": "r1",
+     "type": "text",
+     "x": 470,
+     "y": 188,
+     "text": "CAIR was tied to a Hamas-funding case in court records",
+     "size": 24,
+     "weight": 800,
+     "in": 0,
+     "d": 2.9,
+     "anim": "left"
+    },
+    {
+     "id": "s1",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 1060,
+     "y": 188,
+     "in": 0,
+     "d": 3.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    },
+    {
+     "id": "r2",
+     "type": "text",
+     "x": 470,
+     "y": 266,
+     "text": "Foreign money flows into U.S. campuses and activism",
+     "size": 24,
+     "weight": 800,
+     "in": 1,
+     "d": 0.3,
+     "anim": "left"
+    },
+    {
+     "id": "s2",
+     "type": "stamp",
+     "kind": "fact",
+     "x": 1060,
+     "y": 266,
+     "in": 1,
+     "d": 1.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    },
+    {
+     "id": "r3",
+     "type": "text",
+     "x": 470,
+     "y": 344,
+     "text": "That money steers protests and politics",
+     "size": 24,
+     "weight": 800,
+     "in": 1,
+     "d": 2.9,
+     "anim": "left"
+    },
+    {
+     "id": "s3",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 1060,
+     "y": 344,
+     "in": 1,
+     "d": 3.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    },
+    {
+     "id": "r4",
+     "type": "text",
+     "x": 470,
+     "y": 422,
+     "text": "A coordinated alliance captured the Democrats",
+     "size": 24,
+     "weight": 800,
+     "in": 2,
+     "d": 0.3,
+     "anim": "left"
+    },
+    {
+     "id": "s4",
+     "type": "stamp",
+     "kind": "analysis",
+     "x": 1060,
+     "y": 422,
+     "in": 2,
+     "d": 1.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    },
+    {
+     "id": "r5",
+     "type": "text",
+     "x": 470,
+     "y": 500,
+     "text": "It was behind France's 2026 riots",
+     "size": 24,
+     "weight": 800,
+     "in": 2,
+     "d": 2.9,
+     "anim": "left"
+    },
+    {
+     "id": "s5",
+     "type": "stamp",
+     "kind": "disputed",
+     "x": 1060,
+     "y": 500,
+     "in": 2,
+     "d": 3.6,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    },
+    {
+     "id": "r6",
+     "type": "text",
+     "x": 470,
+     "y": 578,
+     "text": "Muslims as a group are part of it",
+     "size": 24,
+     "weight": 800,
+     "in": 3,
+     "d": 0.3,
+     "anim": "left"
+    },
+    {
+     "id": "s6",
+     "type": "stamp",
+     "kind": "unsupported",
+     "x": 1060,
+     "y": 578,
+     "in": 3,
+     "d": 1.0,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.35,
+     "size": 18
+    }
+   ],
+   "lines": [
+    {
+     "text": "So where does that leave the Red-Green Alliance? Cooperation between Islamist groups and the far left is real. So are CAIR's documented ties in the Holy Land case."
+    },
+    {
+     "text": "Foreign money into American campuses and activism is real. Whether it steers what happens there, and whether there is one coordinated takeover, is Nomani's analysis."
+    },
+    {
+     "text": "Her claim that the alliance drove France's riots is disputed by French officials' own account."
+    },
+    {
+     "text": "And the idea that Muslims as a group belong to it is not supported. Nomani herself, a Muslim, rejects it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "toolkit",
+   "bg": {
+    "kind": "space",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "i1",
+     "type": "icon",
+     "x": 280,
+     "y": 300,
+     "r": 70,
+     "glyph": "coin",
+     "color": "#ffd166",
+     "label": "Who paid, on paper?",
+     "anim": "pop"
+    },
+    {
+     "id": "i2",
+     "type": "icon",
+     "x": 640,
+     "y": 300,
+     "r": 70,
+     "glyph": "chain",
+     "color": "#5ec8e5",
+     "label": "Payment, partner, or a like?",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "i3",
+     "type": "icon",
+     "x": 1000,
+     "y": 300,
+     "r": 70,
+     "glyph": "people",
+     "color": "#7bdc8c",
+     "label": "A group, or a whole faith?",
+     "in": 2,
+     "d": 0.4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time you meet the phrase, three questions help. Who paid whom, and is it on paper?"
+    },
+    {
+     "text": "Is the link a payment, a formal partnership, or just a shared hashtag?"
+    },
+    {
+     "text": "And is the label describing specific organisations, or quietly widening to a whole religion?"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      14,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v",
+     "type": "venn",
+     "x": 640,
+     "y": 330,
+     "r": 150,
+     "join": 0.9,
+     "left": "Islam",
+     "right": "Islamism",
+     "mid": "",
+     "lc": "#5ec8e5",
+     "rc": "#3fcf8e",
+     "size": 30,
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "join": 0.0,
+       "d": 1.0,
+       "t": 3.0
+      }
+     }
+    },
+    {
+     "id": "p",
+     "type": "pebble",
+     "x": 640,
+     "y": 600,
+     "size": 0.7,
+     "color": "#ffd166",
+     "mood": "calm",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Asra Nomani has spent two decades insisting that Islamism is not the same thing as Islam. Whatever you make of her alliance, that distinction is worth keeping."
+    },
+    {
+     "text": "It is the line that lets us criticise a movement without blaming millions of neighbours for it."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 9,
+   "credits": [
+    "Asra Q. Nomani, Woke Army (2023); Fox News (29 June 2025; 9 Oct 2026); Middle East Forum (2023; June 2026)",
+    "US v. Holy Land Foundation records (2009-10) · UAE (2014) · Texas (2025-26) · US State and Treasury (Jan 2026)",
+    "US Education Dept foreign-gift portal · New York Times (2023) · House Ways and Means (Feb 2026)",
+    "Pew Research Center (2023-24) · WDET · Michigan Advance · CNRS (2021) · Amnesty International",
+    "Figures as of 23 October 2026 · Written, animated, voiced and scored with open-source tools"
+   ]
+  }
+ ]
+}
