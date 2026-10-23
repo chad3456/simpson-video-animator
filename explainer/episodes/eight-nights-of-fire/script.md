@@ -1,4 +1,4 @@
-# LUMEN E2: "Eight Nights of Fire"
+# LUMEN Special: "Eight Nights of Fire"
 
 *In June 2023 a police officer shot 17-year-old Nahel Merzouk in Nanterre, and France burned for eight nights. A sourced, illustrated account of the riots: the damage, the attacks on police, mayors and town halls, the phones that spread it, the second riot online, who the rioters were, and whether Gad Saad's 'suicidal empathy', especially his claim about women, holds up against the data.*
 
@@ -140,7 +140,7 @@ _[9:05] Scene `profile`: studio / teal; on screen: cite, dots, label, stat._
 - `9:19` More than half had never been known to the police or the courts.
 - `9:23` The Interior Minister said nine in ten were French citizens. In the smaller sample the Senate studied in court, seventy-one percent were French, and ninety-one percent were male.
 
-_[9:34] Scene `justice`: studio / midnight; on screen: bars, cite, icon, label._
+_[9:34] Scene `justice`: studio / midnight; on screen: cite, gbars, icon, label._
 
 - `9:34` The courts moved fast. By August, more than two thousand one hundred people had been tried. Nearly two thousand were convicted, and almost eighteen hundred received sentences that included prison.
 - `9:47` French law does not let the state record religion or ethnicity, and the Interior Minister refused to start, saying that a French person is a French person.
@@ -172,13 +172,13 @@ _[11:45] Scene `lens-women`: studio / teal; on screen: icon, label, pebble._
 - `11:45` He also makes a claim about the sexes. Women, he notes, score higher than men on empathy on average, which is well documented in psychology, and he argues that this makes women more prone to suicidal empathy.
 - `11:59` That's a testable claim. So let's test it against what French men and women actually said, while the riots were happening.
 
-_[12:07] Scene `poll-violence`: studio / midnight; on screen: bars, cite, label._
+_[12:07] Scene `poll-violence`: studio / midnight; on screen: cite, gbars, label._
 
 - `12:07` In an Ifop poll taken on the third and fourth nights of the riots, seventy-two percent of men condemned the violence. So did sixty-five percent of women.
 - `12:17` Thirty-two percent of women said they understood the violence without approving of it, against twenty-four percent of men.
 - `12:25` But approval of the violence itself was tiny, and the same for both: four percent of men, three percent of women.
 
-_[12:33] Scene `poll-police`: studio / midnight; on screen: bars, cite, label._
+_[12:33] Scene `poll-police`: studio / midnight; on screen: cite, gbars, label._
 
 - `12:33` A week later, the same pollster asked how the police made people feel. Women were slightly more likely than men to say confidence, and half as likely to say hostility.
 - `12:44` So the evidence shows a modest gap in understanding, not in approval. French women were not cheering the riots, and if anything, they trusted the police a little more.
