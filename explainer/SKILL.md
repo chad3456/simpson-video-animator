@@ -52,7 +52,7 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
 - Give critics a full part with their strongest points, and name where they published.
 - Satirize nothing. The tone is curious and calm. Name hot-button chapters on cards; do not dramatize them with creatures that stand in for real groups.
 - Pebbles are "people in general". A `spiky` pebble may stand for a threat or a free-rider in the abstract, never for a nationality, religion or other group.
-- **News episodes** (a real event, like E2): every figure gets a `cite` chip on screen and a row in the bible's fact sheet. Where sources disagree, show both. Draw participants as roles (hooded rioters, capped police, bright residents), never by religion, skin or nationality. Show damage and cruelty plainly but stylised: flames, burnt cars, labels and counts, no gore. Attribute a framing author's claims to them, test any claim about a group against data, and keep a full part for critics.
+- **News episodes** (a real event, like the riots special): every figure gets a `cite` chip on screen and a row in the bible's fact sheet. Where sources disagree, show both. Draw participants as roles (hooded rioters, capped police, bright residents), never by religion, skin or nationality. Show damage and cruelty plainly but stylised: flames, burnt cars, labels and counts, no gore. Attribute a framing author's claims to them, test any claim about a group against data, and keep a full part for critics.
 
 ## 4. episode.json
 

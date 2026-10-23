@@ -1,4 +1,4 @@
-# LUMEN E2 "Eight Nights of Fire": episode bible
+# LUMEN Special "Eight Nights of Fire": episode bible
 
 **Event:** the riots that followed the police shooting of Nahel Merzouk, 17, in Nanterre on 27 June 2023 (main violence 27 June to 5 July). Chosen over the October 2026 cost-of-living unrest because the brief (radicals on the ground, the online Islamophobia storm, Saad's lens) describes 2023, and 2023 has settled official figures.
 

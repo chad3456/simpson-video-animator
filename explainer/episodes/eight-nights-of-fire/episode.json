@@ -1,7 +1,7 @@
 {
  "meta": {
   "show": "LUMEN",
-  "episode": "E2",
+  "episode": "Special",
   "title": "Eight Nights of Fire",
   "format": "explainer",
   "rating": "adult",
@@ -409,7 +409,9 @@
    "title": "Eight Nights of Fire",
    "sub": "The 2023 French riots, explained",
    "dur": 5.5,
-   "sfx": "swell"
+   "sfx": "swell",
+   "glyph": "fire",
+   "color": "#ff7a59"
   },
   {
    "type": "card",
