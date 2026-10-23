@@ -754,6 +754,12 @@
       if (on) s += glow(x, y, 26 * q + 6, '#ff7a3d', 0.7);
       s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(on ? 4 + 3 * q : 3)}" fill="${on ? '#ffd166' : '#8fa3e0'}" opacity="${on ? 1 : 0.6}"/>`;
     }
+    (p.cities || []).forEach((c, i) => {   // named cities {name, u, v, note, left} in hexagon units (Paris is about 0.12, -0.55); key `lit` to light them in order
+      const x = c.u * R, y = c.v * R, on = clamp((p.lit == null ? 99 : p.lit) - i), col = c.color || '#ff7a59';
+      if (on > 0) s += glow(x, y, 22 + 30 * on, col, 0.75 * on);
+      s += solid(circ(x, y, 6 + 4 * on), on > 0.5 ? col : '#8fa3e0', 2) + text(c.name, x + (c.left ? -14 : 14), y - 2, 17, { anchor: c.left ? 'end' : 'start', weight: 900, op: f1(0.5 + 0.5 * on) });
+      if (c.note && on > 0.5) s += text(c.note, x + (c.left ? -14 : 14), y + 18, 14, { anchor: c.left ? 'end' : 'start', weight: 700, fill: '#ffd8a8', op: f1(on) });
+    });
     s += solid(circ(paris[0], paris[1], 9), '#fffaf0', 2) + text(p.city || 'Paris', paris[0] + 16, paris[1] - 4, 18, { anchor: 'start', weight: 900 });
     if (p.pin) s += `<g transform="translate(${f1(paris[0] - 14)} ${f1(paris[1] + 14)})">${glow(0, 0, 40, '#ff5a7a', 0.8)}<circle r="7" fill="#ff5a7a"/></g>` + text(p.pin, paris[0] + 2, paris[1] + 24, 16, { anchor: 'start', weight: 800, fill: '#ffb3c1' });
     return s;

@@ -117,7 +117,7 @@ The title card shows a big glowing heart, or the badge named by `glyph` in `colo
 | `cite` | `text prefix` (a small source chip; `prefix` defaults to "Source: ") |
 | `gbars` | `groups:[{label, vals[]}] series:[{name, color}] max unit w h grow:0..1` (grouped bars; key `grow` to reveal) |
 | `feed` | `posts:[{tag, text, color, stamp}] app w ph shown stamps:0..1` (a generic social feed, no platform logos; `stamps` reveals FALSE/OLD stamps) |
-| `hexmap` | `r spread:0..1 n city pin color` (France as a soft hexagon; towns light up from Paris outwards) |
+| `hexmap` | `r spread:0..1 n city pin color cities lit` (France as a soft hexagon; towns light up from Paris outwards). `cities: [{name,u,v,note,left,color}]` places named towns in hexagon units (Paris is about 0.12, -0.55); key `lit` from 0 up to light them in order |
 
 To add a visual, write a function `(props, t, seed, age) => svgString` drawn around the origin, use `solid()` and `glow()` for the house look, and register it in `DRAW`.
 
