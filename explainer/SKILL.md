@@ -140,6 +140,9 @@ python3 explainer/engine/make_script.py $d/episode.json > $d/script.md
 python3 engine/build_gallery.py      # adds the episode to the Vercel gallery under LUMEN
 ```
 
+**Gallery rules.** The gallery only grows: always add new episodes as new folders and never delete or overwrite a past episode's folder (make a new slug for a remake). Set `meta.category` (for example `"Suicidal Empathy (book)"` or `"Current events"`); the site groups episodes by category, then by show, with filter chips. `build_gallery.py` regenerates `episodes/index.json` from every folder, so merging branches never drops an episode.
+
+
 Review stills for: text clipped at the edges, labels on top of objects, creatures floating above the ground, an empty frame longer than 6 s, and more than three accent colours. Commit everything except `*.wav`, `.voice-cache/` and `.style-study/`.
 
 ## 6. Deliverables

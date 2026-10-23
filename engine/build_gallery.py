@@ -18,7 +18,7 @@ for path, base, player in paths:
     has = lambda f: os.path.exists(os.path.join(d, f))
     items.append({
         "slug": slug, "dir": f"{base}/{slug}/", "playerPage": player, "show": m.get("show"), "episode": m.get("episode"), "title": m.get("title"),
-        "logline": m.get("logline"), "rating": m.get("rating", "general"), "format": m.get("format"), "note": m.get("content_note"),
+        "logline": m.get("logline"), "rating": m.get("rating", "general"), "format": m.get("format"), "note": m.get("content_note"), "category": m.get("category") or "Other",
         "source": m.get("source"),
         "duration": json.load(open(tl))["duration"] if os.path.exists(tl) else None,
         "video": "episode.mp4" if has("episode.mp4") else None,
@@ -26,5 +26,8 @@ for path, base, player in paths:
         "player": has("episode.mp3") and os.path.exists(tl),
         "script": has("script.md"), "bible": has("bible.md"),
     })
+import re
+nat = lambda e: [int(x) if x.isdigit() else x for x in re.split(r"(\d+)", e.get("episode") or "")]
+items.sort(key=lambda e: (e["category"], e["show"] or "", nat(e), e["slug"]))
 json.dump(items, open(os.path.join(root, "episodes", "index.json"), "w"), indent=2)
 print(f"{len(items)} episodes in episodes/index.json")
