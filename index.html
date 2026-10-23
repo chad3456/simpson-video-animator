@@ -30,6 +30,13 @@
   .show h2.sh { font: 400 40px/1 Bangers, Impact, sans-serif; margin: 0; letter-spacing: .03em; }
   .show h2.sh.lumen { font: 900 30px/1 Nunito, sans-serif; letter-spacing: .3em; color: #ffb347; }
   .show p.sp { margin: 0; color: var(--muted); }
+  .cat { display: grid; gap: 28px; }
+  .cat[hidden], #chips[hidden] { display: none; }
+  .cat > h2.ch { font: 900 15px/1 Nunito, sans-serif; letter-spacing: .25em; text-transform: uppercase; color: var(--muted); margin: 0; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .cat > h2.ch b { color: inherit; opacity: .6; font-weight: 700; letter-spacing: .1em; }
+  #chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  #chips button { font: 800 13px/1 Nunito, sans-serif; padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: inherit; cursor: pointer; }
+  #chips button[aria-pressed="true"] { background: #ffb347; color: #1a1030; border-color: #ffb347; }
   .logline { font-size: 15px; color: var(--fg); }
   #watch { display: grid; gap: 14px; }
   #watch[hidden] { display: none; }
@@ -53,6 +60,7 @@
     <p id="w-log" style="margin:0;max-width:70ch"></p>
     <div class="row" id="w-links"></div>
   </section>
+  <nav id="chips" aria-label="Categories"></nav>
   <div id="grid"></div>
   <footer>Parody, commentary and homage. Original characters, designs and music. Not affiliated with any author, network, channel or show.</footer>
 </div>
@@ -83,19 +91,27 @@
       (e.player ? `<a class="btn" href="${playerPage}?ep=${rel(playerPage, dir)}">Interactive player</a>` : '') +
       (e.script ? `<a class="btn ghost" href="${dir}script.md">Script</a>` : '') +
       (e.bible ? `<a class="btn ghost" href="${dir}bible.md">Episode bible</a>` : '');
-    document.getElementById('watch').hidden = false; document.getElementById('grid').hidden = true;
+    document.getElementById('watch').hidden = false; document.getElementById('grid').hidden = true; document.getElementById('chips').hidden = true;
     location.hash = slug; scrollTo(0, 0);
   }
   document.getElementById('back').onclick = () => {
     document.getElementById('screen').innerHTML = ''; document.getElementById('watch').hidden = true;
-    document.getElementById('grid').hidden = false; history.replaceState(null, '', location.pathname);
+    document.getElementById('grid').hidden = false; document.getElementById('chips').hidden = false; history.replaceState(null, '', location.pathname);
   };
   fetch('episodes/index.json').then(r => r.json()).then(list => {
     EPS = list;
-    const grid = document.getElementById('grid');
-    const shows = [...new Set(list.map(e => e.show))].sort((a, b) => (b === 'LUMEN') - (a === 'LUMEN'));
-    grid.innerHTML = shows.map(sh => `<section class="show"><h2 class="sh ${sh === 'LUMEN' ? 'lumen' : ''}">${esc(sh)}</h2>${SHOWS[sh] ? `<p class="sp">${esc(SHOWS[sh])}</p>` : ''}` +
-      `<div class="grid">${list.filter(e => e.show === sh).map(card).join('')}</div></section>`).join('');
+    const grid = document.getElementById('grid'), chips = document.getElementById('chips');
+    // one section per category (manifest order), split by show inside
+    const cats = [...new Set(list.map(e => e.category || 'Other'))];
+    const showsIn = c => [...new Set(list.filter(e => (e.category || 'Other') === c).map(e => e.show))].sort((a, b) => (b === 'LUMEN') - (a === 'LUMEN'));
+    const section = c => `<section class="cat" data-cat="${esc(c)}"><h2 class="ch">${esc(c)} <b>· ${list.filter(e => (e.category || 'Other') === c).length} episodes</b></h2>` +
+      showsIn(c).map(sh => `<section class="show"><h2 class="sh ${sh === 'LUMEN' ? 'lumen' : ''}">${esc(sh)}</h2>${SHOWS[sh] ? `<p class="sp">${esc(SHOWS[sh])}</p>` : ''}` +
+        `<div class="grid">${list.filter(e => (e.category || 'Other') === c && e.show === sh).map(card).join('')}</div></section>`).join('') + `</section>`;
+    grid.innerHTML = cats.map(section).join('');
+    const pick = c => { chips.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cat === c))); grid.querySelectorAll('.cat').forEach(x => x.hidden = c !== '' && x.dataset.cat !== c); };
+    chips.innerHTML = cats.length > 1 ? [['', 'All']].concat(cats.map(c => [c, c])).map(([v, l]) => `<button data-cat="${esc(v)}">${esc(l)}</button>`).join('') : '';
+    chips.onclick = ev => { const b = ev.target.closest('button'); if (b) pick(b.dataset.cat); };
+    if (cats.length > 1) pick('');
     grid.onclick = ev => { const b = ev.target.closest('.card'); if (b) open(b.dataset.slug); };
     if (location.hash) open(location.hash.slice(1));
   });
