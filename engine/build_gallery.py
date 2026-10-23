@@ -18,7 +18,7 @@ for path, base, player in paths:
     has = lambda f: os.path.exists(os.path.join(d, f))
     items.append({
         "slug": slug, "dir": f"{base}/{slug}/", "playerPage": player, "show": m.get("show"), "episode": m.get("episode"), "title": m.get("title"),
-        "logline": m.get("logline"), "rating": m.get("rating", "general"), "format": m.get("format"),
+        "logline": m.get("logline"), "rating": m.get("rating", "general"), "format": m.get("format"), "note": m.get("content_note"),
         "source": m.get("source"),
         "duration": json.load(open(tl))["duration"] if os.path.exists(tl) else None,
         "video": "episode.mp4" if has("episode.mp4") else None,

@@ -62,7 +62,7 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
            "logline": "...", "source": "...", "disclaimer": "Original animation ... Not affiliated with ..."},
   "cast": {"narrator": {"name": "Narrator", "voice": "am_michael:0.6+bm_george:0.4", "speed": 1.0}},
   "sequence": [
-    {"type": "card", "id": "title", "style": "title", "title": "...", "sub": "...", "dur": 5.5, "sfx": "swell"},
+    {"type": "card", "id": "title", "style": "title", "title": "...", "sub": "...", "glyph": "lock", "color": "#5ec8e5", "dur": 5.5, "sfx": "swell"},
     {"type": "card", "id": "ch1", "style": "chapter", "kicker": "Part 1", "title": "...", "glyph": "heart", "color": "#ff5a7a", "dur": 3.4, "sfx": "chime"},
     {"type": "scene", "id": "unique", "bg": {"kind": "space|land|city|deep|studio", "pal": "midnight|teal|plum|ember|dusk|day"},
      "cam": {"zoom": [1.0, 1.06], "pan": [[0, 0], [30, -10]]},
@@ -76,6 +76,8 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
   ]
 }
 ```
+
+The title card shows a big glowing heart, or the badge named by `glyph` in `color` if set, so each episode of a series gets its own emblem. `meta.rating` is `general`, `mature` or `adult`; add `meta.content_note` when a chapter needs it.
 
 **Timing.** `in` is the line index where an element appears (plus `d` seconds); `out` is the line where it leaves; `keys` maps a line index to new prop values, tweened from that line's start plus `d` over `t` seconds (default 0.8). Numbers, colours and `[x, y]` arrays tween; strings such as `mood` switch. A line with empty `text` is a silent beat of `dur` seconds where the score swells. `sfx` on an element plays when it appears (`vol` scales it).
 
@@ -94,8 +96,11 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
 | `curve` | `w h draw:0..1 dot:0..1 labels:{x,y,left,mid,right}` (inverted U with zones) |
 | `meter` | `r value:0..1 label` |
 | `label` / `text` | `text color fg size` / `text size color weight` (`\n` for new lines) |
-| `icon` | `glyph r color label`; glyphs: heart cross dna fruit gift target alarm fear fire calc spark folder lock globe gavel flask people building scales shield coin chain x eye bowling glove brain |
-| `card` | `glyph title color w h` (a case-file tile) |
+| `icon` | `glyph r color label`; glyphs: heart cross dna fruit gift target alarm fear fire calc spark folder lock globe gavel flask people building scales shield coin chain x eye bowling glove brain star syringe clock cap plane receipt mic leaf medal ballot book home |
+| `card` | `glyph title color w h` (a case-file tile; long titles shrink to fit) |
+| `quote` | `text by color size w` (a short attributed quote card; keep quotes short) |
+| `bars` | `values[] labels[] colors[] max unit dp fmt:"int" title w h grow` (bars grow in one by one with counting labels) |
+| `critter` | `kind:ant/frog/scorpion/cricket/hummingbird/cassowary/snake/worm color size flip` (original animals for fables and zoology asides) |
 | `phone` | `likes` (counts up when keyed) |
 | `arrow` | `x2 y2 bend color draw:0..1 width` |
 | `mirror`, `house` (`gate`), `planet` (`r color land`) | |

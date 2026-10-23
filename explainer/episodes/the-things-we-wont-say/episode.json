@@ -1,0 +1,1474 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E2",
+  "title": "The Things We Won’t Say",
+  "format": "explainer",
+  "rating": "general",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "Should a fact ever be hidden to spare feelings? Chapter 2 of Gad Saad's 'Suicidal Empathy' on forbidden knowledge, softened words, compassion without conditions, and the fable of the scorpion, with the strongest counterpoints.",
+  "source": "Chapter 2 ('Forbidden Knowledge') of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased. Public record: Fryer (2016); Harvard (2019); US DHS (2022); reporting on the 2018 Tajikistan attack.",
+  "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, curious, optimistic guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-galileo",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.1,
+     1.0
+    ]
+   },
+   "els": [
+    {
+     "id": "sun",
+     "type": "shape",
+     "x": 640,
+     "y": 250,
+     "shape": "circle",
+     "r": 70,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "grow",
+     "keys": {
+      "2": {
+       "o": 0.4
+      }
+     }
+    },
+    {
+     "id": "earth",
+     "type": "planet",
+     "x": 830,
+     "y": 250,
+     "r": 26,
+     "color": "#3f8fd6",
+     "land": "#7bdc8c",
+     "anim": "none",
+     "in": 0
+    },
+    {
+     "id": "gal",
+     "type": "pebble",
+     "x": 640,
+     "y": 600,
+     "color": "#9fb4d8",
+     "size": 1.2,
+     "mood": "calm",
+     "look": [
+      0,
+      -1
+     ],
+     "anim": "rise",
+     "keys": {
+      "1": {
+       "mood": "worried",
+       "look": [
+        0,
+        0
+       ]
+      },
+      "2": {
+       "mood": "sad",
+       "tilt": -8
+      }
+     }
+    },
+    {
+     "id": "yr",
+     "type": "label",
+     "x": 640,
+     "y": 660,
+     "text": "1633",
+     "color": "#f2c14e",
+     "d": 1.0,
+     "in": 0
+    },
+    {
+     "id": "lock",
+     "type": "icon",
+     "x": 640,
+     "y": 250,
+     "glyph": "lock",
+     "r": 56,
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "sfx": "thump",
+     "vol": 0.5,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 1633, an old astronomer was made to kneel and take back what his telescope had shown him: that the Earth moves around the Sun."
+    },
+    {
+     "text": "His judges weren't being cruel for fun. They believed the idea was dangerous, that it could unsettle ordinary people and shake their faith."
+    },
+    {
+     "text": "In other words, they were protecting people from a fact."
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "sfx": "whoosh"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-book",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ]
+   },
+   "els": [
+    {
+     "id": "book",
+     "type": "book",
+     "x": 640,
+     "y": 330,
+     "w": 230,
+     "h": 320,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "keys": {
+      "1": {
+       "x": 330,
+       "s": 0.8
+      }
+     }
+    },
+    {
+     "id": "term",
+     "type": "label",
+     "x": 860,
+     "y": 300,
+     "text": "epistemological empathy",
+     "color": "#5ec8e5",
+     "d": 1.6,
+     "sfx": "pop",
+     "size": 26,
+     "in": 1
+    },
+    {
+     "id": "def",
+     "type": "text",
+     "x": 860,
+     "y": 400,
+     "text": "hiding a truth\nto spare feelings",
+     "size": 30,
+     "d": 3.6,
+     "in": 1
+    },
+    {
+     "id": "q",
+     "type": "label",
+     "x": 640,
+     "y": 620,
+     "text": "Is he right? When is silence wise?",
+     "color": "#c792ea",
+     "d": 0.4,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "In chapter two of Suicidal Empathy, the evolutionary psychologist Gad Saad argues that we still do this. Only now, the reason given is kindness."
+    },
+    {
+     "text": "He calls it epistemological empathy: the urge to bury a finding, or soften a word, because the truth might hurt someone."
+    },
+    {
+     "text": "Is he right? And when is holding back a fact actually wise?"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "The Things We Won’t Say",
+   "sub": "LUMEN · Episode 2",
+   "glyph": "lock",
+   "color": "#5ec8e5",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "Forbidden Knowledge",
+   "glyph": "lock",
+   "color": "#5ec8e5",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "fk-folder",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "folder",
+     "type": "icon",
+     "x": 640,
+     "y": 300,
+     "glyph": "folder",
+     "r": 110,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "lk",
+     "type": "icon",
+     "x": 730,
+     "y": 380,
+     "glyph": "lock",
+     "r": 46,
+     "color": "#ff5a7a",
+     "d": 2.0,
+     "sfx": "tick",
+     "in": 0
+    },
+    {
+     "id": "fkl",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "forbidden knowledge",
+     "color": "#ffd166",
+     "d": 2.6,
+     "in": 0
+    },
+    {
+     "id": "spin",
+     "type": "card",
+     "x": 300,
+     "y": 330,
+     "glyph": "book",
+     "title": "Spinoza, 1656",
+     "color": "#c792ea",
+     "d": 0.6,
+     "s": 0.8,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "gal2",
+     "type": "card",
+     "x": 980,
+     "y": 330,
+     "glyph": "eye",
+     "title": "Galileo, 1633",
+     "color": "#f2c14e",
+     "d": 3.6,
+     "s": 0.8,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 7,
+     "cols": 7,
+     "w": 900,
+     "size": 0.7,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "d": 0.4,
+     "mood": "worried",
+     "keys": {
+      "2": {
+       "mood": "worried"
+      }
+     },
+     "in": 2
+    },
+    {
+     "id": "fear",
+     "type": "label",
+     "x": 640,
+     "y": 560,
+     "text": "not fear of heresy, fear of harm",
+     "color": "#ff5a7a",
+     "d": 2.6,
+     "size": 20,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Every society has questions it would rather not ask. Saad calls the answers forbidden knowledge."
+    },
+    {
+     "text": "Some of it is ancient. Spinoza was cast out of his community for his ideas about God. Galileo spent his last years under house arrest."
+    },
+    {
+     "text": "Saad's claim is that today's taboos are guarded by a newer emotion. Not fear of heresy, but fear of causing harm."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "fk-dominoes",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "dom",
+     "type": "dominoes",
+     "x": 640,
+     "y": 470,
+     "n": 7,
+     "gap": 110,
+     "color": "#f2c14e",
+     "anim": "rise",
+     "keys": {
+      "0": {
+       "fall": 1,
+       "d": 2.0,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "l1",
+     "type": "label",
+     "x": 310,
+     "y": 250,
+     "text": "finding",
+     "color": "#5ec8e5",
+     "d": 0.6,
+     "in": 0
+    },
+    {
+     "id": "l2",
+     "type": "label",
+     "x": 640,
+     "y": 250,
+     "text": "might be misused",
+     "color": "#ffb347",
+     "d": 2.4,
+     "in": 0
+    },
+    {
+     "id": "l3",
+     "type": "label",
+     "x": 960,
+     "y": 250,
+     "text": "so it must be harmful",
+     "color": "#ff5a7a",
+     "d": 4.2,
+     "in": 0
+    },
+    {
+     "id": "fc",
+     "type": "text",
+     "x": 640,
+     "y": 580,
+     "text": "faulty consequentialism",
+     "size": 40,
+     "d": 0.8,
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "fc2",
+     "type": "text",
+     "x": 640,
+     "y": 630,
+     "text": "judging a fact by its possible misuse, not by whether it is true",
+     "size": 22,
+     "d": 2.4,
+     "color": "#c9d3ff",
+     "weight": 700,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "The logic goes like this. If a finding could be misused, and misuse would hurt people, then the finding itself must be harmful."
+    },
+    {
+     "text": "Saad calls this faulty consequentialism. You judge a fact by what someone might do with it, not by whether it's true."
+    },
+    {
+     "text": "And once that rule is in place, almost anything can be ruled out of bounds."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "The Case Files",
+   "glyph": "folder",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "cf-fryer",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "flask",
+     "type": "icon",
+     "x": 640,
+     "y": 200,
+     "glyph": "flask",
+     "r": 60,
+     "color": "#ffb347",
+     "anim": "pop",
+     "sfx": "pop",
+     "out": 1
+    },
+    {
+     "id": "fr",
+     "type": "label",
+     "x": 640,
+     "y": 300,
+     "text": "Roland Fryer, economist, 2016",
+     "color": "#f2c14e",
+     "out": 1,
+     "d": 0.6
+    },
+    {
+     "id": "c1",
+     "type": "card",
+     "x": 420,
+     "y": 300,
+     "glyph": "glove",
+     "title": "hands-on force",
+     "color": "#ffb347",
+     "d": 1.0,
+     "sfx": "pop",
+     "out": 3,
+     "in": 1
+    },
+    {
+     "id": "c1l",
+     "type": "label",
+     "x": 420,
+     "y": 430,
+     "text": "racial gap found",
+     "color": "#ff5a7a",
+     "d": 2.4,
+     "out": 3,
+     "in": 1
+    },
+    {
+     "id": "c2",
+     "type": "card",
+     "x": 860,
+     "y": 300,
+     "glyph": "target",
+     "title": "police shootings",
+     "color": "#5ec8e5",
+     "d": 4.4,
+     "sfx": "pop",
+     "out": 3,
+     "in": 1
+    },
+    {
+     "id": "c2l",
+     "type": "label",
+     "x": 860,
+     "y": 430,
+     "text": "no racial gap in his data",
+     "color": "#7bdc8c",
+     "d": 6.0,
+     "out": 3,
+     "in": 1
+    },
+    {
+     "id": "thr",
+     "type": "particles",
+     "x": 640,
+     "y": 330,
+     "kind": "alerts",
+     "n": 8,
+     "w": 700,
+     "h": 240,
+     "d": 0.6,
+     "out": 3,
+     "in": 2
+    },
+    {
+     "id": "gav",
+     "type": "icon",
+     "x": 640,
+     "y": 260,
+     "glyph": "gavel",
+     "r": 70,
+     "color": "#c792ea",
+     "d": 0.2,
+     "sfx": "thump",
+     "vol": 0.5,
+     "in": 3
+    },
+    {
+     "id": "h1",
+     "type": "label",
+     "x": 640,
+     "y": 400,
+     "text": "Harvard, 2019: conduct toward staff",
+     "color": "#5ec8e5",
+     "d": 2.4,
+     "in": 3
+    },
+    {
+     "id": "h2",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "Saad: punished for his research",
+     "color": "#ffb347",
+     "d": 7.0,
+     "in": 3
+    },
+    {
+     "id": "h3",
+     "type": "label",
+     "x": 640,
+     "y": 560,
+     "text": "both accounts on the record",
+     "color": "#e0e6ff",
+     "d": 10.5,
+     "size": 20,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's first case is the Harvard economist Roland Fryer, who in 2016 studied how police use force."
+    },
+    {
+     "text": "He found racial gaps in lower-level force, like handcuffing and pushing people to the ground. But in the data he examined, he found no racial gap in police shootings."
+    },
+    {
+     "text": "That second result was not what many people wanted to hear, and Fryer has said he received threats."
+    },
+    {
+     "text": "In 2019, Harvard suspended him. The university said it was over complaints about his conduct toward staff, and that's the official record. Saad believes his research made him a target. Both accounts are public, so you can weigh them yourself."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "cf-board",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "eye",
+     "type": "icon",
+     "x": 640,
+     "y": 260,
+     "glyph": "eye",
+     "r": 90,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "db",
+     "type": "label",
+     "x": 640,
+     "y": 400,
+     "text": "Disinformation Governance Board, 2022",
+     "color": "#ffd166",
+     "d": 1.0
+    },
+    {
+     "id": "cr2",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 6,
+     "cols": 6,
+     "w": 760,
+     "size": 0.75,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "worried",
+     "d": 0.3,
+     "in": 1
+    },
+    {
+     "id": "pz",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "paused within weeks",
+     "color": "#ff5a7a",
+     "d": 4.0,
+     "sfx": "tick",
+     "in": 1
+    },
+    {
+     "id": "mt",
+     "type": "quote",
+     "x": 640,
+     "y": 260,
+     "text": "Every ministry of truth\nsells itself as protection.",
+     "by": "Saad, paraphrased",
+     "color": "#c792ea",
+     "d": 0.2,
+     "size": 28,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Another case is a US government body, the Disinformation Governance Board, announced in 2022 to counter false information."
+    },
+    {
+     "text": "Critics worried about a government deciding what's true. Within weeks it was paused, and it was later shut down."
+    },
+    {
+     "text": "Saad's point: censorship always arrives dressed as protection."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "Kind Words, Blurry Facts",
+   "glyph": "mic",
+   "color": "#c792ea",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "words",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "mic",
+     "type": "icon",
+     "x": 640,
+     "y": 170,
+     "glyph": "mic",
+     "r": 56,
+     "color": "#c792ea",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "w1",
+     "type": "label",
+     "x": 360,
+     "y": 330,
+     "text": "prisoner",
+     "color": "#e0e6ff",
+     "d": 0.2,
+     "in": 1
+    },
+    {
+     "id": "a1",
+     "type": "arrow",
+     "x": 450,
+     "y": 330,
+     "x2": 640,
+     "y2": 330,
+     "bend": 0,
+     "color": "#ffd166",
+     "d": 0.8,
+     "draw": 0,
+     "keys": {
+      "1": {
+       "draw": 1,
+       "d": 0.8
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "w2",
+     "type": "label",
+     "x": 880,
+     "y": 330,
+     "text": "justice-involved individual",
+     "color": "#ffd166",
+     "d": 1.8,
+     "in": 1
+    },
+    {
+     "id": "w3",
+     "type": "label",
+     "x": 360,
+     "y": 440,
+     "text": "obese",
+     "color": "#e0e6ff",
+     "d": 3.4,
+     "in": 1
+    },
+    {
+     "id": "a2",
+     "type": "arrow",
+     "x": 430,
+     "y": 440,
+     "x2": 640,
+     "y2": 440,
+     "bend": 0,
+     "color": "#ffd166",
+     "d": 3.8,
+     "draw": 0,
+     "keys": {
+      "1": {
+       "draw": 1,
+       "d": 3.8
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "w4",
+     "type": "label",
+     "x": 880,
+     "y": 440,
+     "text": "living in a larger body",
+     "color": "#ffd166",
+     "d": 4.6,
+     "in": 1
+    },
+    {
+     "id": "dig",
+     "type": "card",
+     "x": 380,
+     "y": 590,
+     "glyph": "heart",
+     "title": "words can wound",
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "s": 0.62,
+     "in": 2
+    },
+    {
+     "id": "nm",
+     "type": "card",
+     "x": 900,
+     "y": 590,
+     "glyph": "eye",
+     "title": "name it to fix it",
+     "color": "#5ec8e5",
+     "d": 4.0,
+     "s": 0.62,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "The same instinct reshapes language. Institutions keep swapping plain words for gentler ones."
+    },
+    {
+     "text": "A prisoner becomes a justice-involved individual. Obese becomes living in a larger body."
+    },
+    {
+     "text": "Supporters say words can wound, and dignity matters. Saad says a softer label can hide a hard reality, and you can't fix what you won't name."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "health",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "heart",
+     "x": 640,
+     "y": 300,
+     "size": 1.1,
+     "color": "#ff5a7a",
+     "anim": "pop",
+     "sfx": "pop",
+     "keys": {
+      "2": {
+       "heat": 0.7
+      }
+     }
+    },
+    {
+     "id": "hs",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "\"healthy at any size\"",
+     "color": "#ffd166",
+     "d": 0.8
+    },
+    {
+     "id": "sh",
+     "type": "label",
+     "x": 330,
+     "y": 200,
+     "text": "shame doesn’t help",
+     "color": "#7bdc8c",
+     "d": 0.4,
+     "in": 1
+    },
+    {
+     "id": "r1",
+     "type": "card",
+     "x": 260,
+     "y": 380,
+     "glyph": "cross",
+     "title": "diabetes",
+     "color": "#ffb347",
+     "d": 1.6,
+     "s": 0.62,
+     "in": 2
+    },
+    {
+     "id": "r2",
+     "type": "card",
+     "x": 1020,
+     "y": 380,
+     "glyph": "heart",
+     "title": "heart disease",
+     "color": "#ff5a7a",
+     "d": 2.4,
+     "s": 0.62,
+     "in": 2
+    },
+    {
+     "id": "r3",
+     "type": "card",
+     "x": 1020,
+     "y": 180,
+     "glyph": "dna",
+     "title": "some cancers",
+     "color": "#c792ea",
+     "d": 3.2,
+     "s": 0.62,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "His sharpest example is the body positivity slogan, healthy at any size."
+    },
+    {
+     "text": "Fighting shame is reasonable. Shame doesn't help people get healthier, and stigma carries its own health costs."
+    },
+    {
+     "text": "But large studies link obesity to diabetes, heart disease, and several cancers. Kindness that skips that part, Saad argues, isn't kindness at all."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "Compassion Without Conditions",
+   "glyph": "home",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "street",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "tents",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 6,
+     "cols": 6,
+     "w": 900,
+     "size": 0.8,
+     "colors": [
+      "#9fb4d8",
+      "#b49fd8",
+      "#d8b49f",
+      "#9fd8c4",
+      "#d89fb4",
+      "#c4d89f"
+     ],
+     "mood": "sad",
+     "anim": "rise"
+    },
+    {
+     "id": "pa",
+     "type": "label",
+     "x": 640,
+     "y": 200,
+     "text": "\"pathological altruism\"",
+     "color": "#ffb347",
+     "d": 1.2,
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "pa2",
+     "type": "text",
+     "x": 640,
+     "y": 260,
+     "text": "help that feels generous but feeds the problem",
+     "size": 24,
+     "d": 2.4,
+     "color": "#ffd3bd",
+     "weight": 700,
+     "in": 1
+    },
+    {
+     "id": "home",
+     "type": "icon",
+     "x": 360,
+     "y": 400,
+     "glyph": "home",
+     "r": 56,
+     "color": "#7bdc8c",
+     "d": 0.4,
+     "sfx": "pop",
+     "in": 2
+    },
+    {
+     "id": "hf",
+     "type": "label",
+     "x": 360,
+     "y": 490,
+     "text": "Housing First: more stay housed",
+     "color": "#7bdc8c",
+     "d": 1.6,
+     "size": 20,
+     "in": 2
+    },
+    {
+     "id": "cross",
+     "type": "icon",
+     "x": 920,
+     "y": 400,
+     "glyph": "cross",
+     "r": 56,
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "sfx": "pop",
+     "in": 3
+    },
+    {
+     "id": "hf2",
+     "type": "label",
+     "x": 920,
+     "y": 490,
+     "text": "addiction and illness need more",
+     "color": "#5ec8e5",
+     "d": 1.6,
+     "size": 20,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's next case is homelessness in big American cities, where tents line some streets for blocks."
+    },
+    {
+     "text": "He borrows a phrase that the writer Michael Shellenberger applied to it: pathological altruism. Help that feels generous, but enables addiction and disorder."
+    },
+    {
+     "text": "Supporters of Housing First, the policy of giving people homes without preconditions, point to studies showing that more people stay housed."
+    },
+    {
+     "text": "Critics answer that housing alone does little for addiction or severe mental illness. Nearly everyone agrees that what many cities are doing now isn't working."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "Evil Is Not Make-Believe",
+   "glyph": "fear",
+   "color": "#ff5a7a",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "fable",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.08
+    ]
+   },
+   "els": [
+    {
+     "id": "river",
+     "type": "shape",
+     "x": 640,
+     "y": 650,
+     "shape": "rect",
+     "w": 1500,
+     "h": 150,
+     "color": "#3f6fd6",
+     "anim": "fade",
+     "round": 0
+    },
+    {
+     "id": "frog",
+     "type": "critter",
+     "x": 640,
+     "y": 640,
+     "kind": "frog",
+     "color": "#7bdc8c",
+     "size": 1.3,
+     "anim": "rise",
+     "keys": {
+      "1": {
+       "y": 680,
+       "d": 3.0,
+       "t": 2.5
+      }
+     }
+    },
+    {
+     "id": "scorp",
+     "type": "critter",
+     "x": 650,
+     "y": 548,
+     "kind": "scorpion",
+     "color": "#ff7a59",
+     "size": 0.9,
+     "d": 2.4,
+     "anim": "drop",
+     "keys": {
+      "1": {
+       "y": 588,
+       "d": 3.0,
+       "t": 2.5
+      }
+     },
+     "in": 0
+    },
+    {
+     "id": "x",
+     "type": "icon",
+     "x": 640,
+     "y": 280,
+     "glyph": "x",
+     "r": 44,
+     "color": "#ff5a7a",
+     "d": 1.6,
+     "sfx": "thump",
+     "vol": 0.5,
+     "in": 1
+    },
+    {
+     "id": "nat",
+     "type": "label",
+     "x": 640,
+     "y": 380,
+     "text": "\"It’s my nature.\"",
+     "color": "#ffd166",
+     "d": 6.0,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "There's an old fable. A scorpion asks a frog to carry it across a river. The frog says, you'll sting me. The scorpion says, why would I? We'd both drown."
+    },
+    {
+     "text": "Halfway across, it stings. As they sink, the frog asks why. And the scorpion says: it's my nature."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "cyclists",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "j",
+     "type": "pebble",
+     "x": 560,
+     "y": 590,
+     "color": "#7ad3ff",
+     "size": 1.0,
+     "mood": "happy",
+     "anim": "left",
+     "keys": {
+      "2": {
+       "mood": "sad"
+      }
+     }
+    },
+    {
+     "id": "l",
+     "type": "pebble",
+     "x": 720,
+     "y": 590,
+     "color": "#ff8fab",
+     "size": 0.95,
+     "mood": "happy",
+     "anim": "right",
+     "keys": {
+      "2": {
+       "mood": "sad"
+      }
+     }
+    },
+    {
+     "id": "hearts",
+     "type": "particles",
+     "x": 640,
+     "y": 430,
+     "kind": "hearts",
+     "n": 8,
+     "w": 500,
+     "h": 200,
+     "d": 0.5,
+     "out": 1,
+     "in": 0
+    },
+    {
+     "id": "blog",
+     "type": "quote",
+     "x": 640,
+     "y": 230,
+     "text": "Evil is a make-believe concept.",
+     "by": "from their travel blog, 2018",
+     "color": "#f2c14e",
+     "d": 4.6,
+     "out": 1,
+     "size": 26,
+     "in": 0
+    },
+    {
+     "id": "tj",
+     "type": "label",
+     "x": 640,
+     "y": 230,
+     "text": "Tajikistan, July 2018",
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "in": 1
+    },
+    {
+     "id": "mem",
+     "type": "text",
+     "x": 640,
+     "y": 300,
+     "text": "four cyclists killed by attackers loyal to ISIS",
+     "size": 24,
+     "d": 2.6,
+     "color": "#ffe3c0",
+     "weight": 700,
+     "in": 1
+    },
+    {
+     "id": "pt",
+     "type": "label",
+     "x": 640,
+     "y": 380,
+     "text": "not mockery: a warning",
+     "color": "#5ec8e5",
+     "d": 1.0,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad pairs the fable with a true story. In 2018, a young American couple cycling around the world wrote that evil was a make-believe concept, and that people are overwhelmingly kind."
+    },
+    {
+     "text": "Days later, in Tajikistan, they and two other cyclists were run down and killed by attackers who had pledged loyalty to the Islamic State."
+    },
+    {
+     "text": "Saad stresses that he isn't mocking them. His point is that assuming the best about everyone can be a fatal mistake, because the world doesn't always return the favour."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapter",
+   "kicker": "Part 6",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 400,
+     "tilt": 0,
+     "left": "lock",
+     "right": "eye",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "tilt": -0.5
+      },
+      "3": {
+       "tilt": 0.4
+      },
+      "4": {
+       "tilt": 0
+      }
+     }
+    },
+    {
+     "id": "a1",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "some caution is wise: weapon recipes, research ethics",
+     "color": "#ff5a7a",
+     "d": 0.4,
+     "out": 2,
+     "size": 20,
+     "in": 1
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "a new word is not always censorship",
+     "color": "#c792ea",
+     "d": 0.2,
+     "out": 3,
+     "size": 20,
+     "in": 2
+    },
+    {
+     "id": "a3",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "his cases are contested",
+     "color": "#ffb347",
+     "d": 0.2,
+     "out": 4,
+     "size": 20,
+     "in": 3
+    },
+    {
+     "id": "a4",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "uncomfortable ≠ false",
+     "color": "#7bdc8c",
+     "d": 1.0,
+     "size": 24,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now, the other side."
+    },
+    {
+     "text": "Some caution about knowledge is wise. Scientists do withhold recipes for weapons, and research ethics exist for good reasons."
+    },
+    {
+     "text": "Language does change, and a new word isn't always censorship. Sometimes it's simply courtesy."
+    },
+    {
+     "text": "And Saad's own examples are disputed. Harvard says Fryer's case was about conduct, and Housing First has real evidence behind it."
+    },
+    {
+     "text": "Where both sides can meet: a fact doesn't become false because it's uncomfortable. You can be gentle in how you say something, without changing what's true."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.08
+    ]
+   },
+   "els": [
+    {
+     "id": "sun2",
+     "type": "shape",
+     "x": 640,
+     "y": 300,
+     "shape": "circle",
+     "r": 80,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "grow"
+    },
+    {
+     "id": "gal3",
+     "type": "pebble",
+     "x": 640,
+     "y": 620,
+     "color": "#9fb4d8",
+     "size": 1.1,
+     "mood": "happy",
+     "look": [
+      0,
+      -1
+     ],
+     "anim": "rise"
+    },
+    {
+     "id": "q1",
+     "type": "label",
+     "x": 340,
+     "y": 500,
+     "text": "Is it true?",
+     "color": "#5ec8e5",
+     "d": 3.4,
+     "in": 1
+    },
+    {
+     "id": "q2",
+     "type": "label",
+     "x": 640,
+     "y": 450,
+     "text": "Who is protected by hiding it?",
+     "color": "#c792ea",
+     "d": 4.6,
+     "in": 1
+    },
+    {
+     "id": "q3",
+     "type": "label",
+     "x": 940,
+     "y": 500,
+     "text": "Who pays if we don’t know?",
+     "color": "#ffb347",
+     "d": 6.2,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Galileo was right, and the people he upset survived the news."
+    },
+    {
+     "text": "So the next time a fact feels too dangerous to say, ask three things. Is it true? Who is protected by hiding it? And who pays if we don't know?"
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 7,
+   "credits": [
+    "Based on chapter 2 of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)",
+    "Also cited: Fryer (NBER 2016; JPE 2019); Shellenberger, 'San Fransicko'",
+    "Counterpoints: Harvard's 2019 statement; Housing First trials",
+    "Narration paraphrased; short phrases attributed on screen",
+    "Original animation, characters, voice and score"
+   ]
+  }
+ ]
+}

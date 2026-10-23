@@ -371,6 +371,18 @@
     coin: c => `<circle r="0.68" fill="#fff"/><circle r="0.5" fill="${tint(c, 0.25)}"/><path d="M0.15 -0.25h-0.22a0.12 0.12 0 0 0 0 0.25h0.14a0.12 0.12 0 0 1 0 0.25h-0.22M0 -0.35v0.7" stroke="#fff" stroke-width="0.09" fill="none" stroke-linecap="round"/>`,
     chain: c => `<g transform="rotate(-35)"><rect x="-0.75" y="-0.2" width="0.75" height="0.4" rx="0.2" stroke="#fff" stroke-width="0.13" fill="none"/><rect x="0.05" y="-0.2" width="0.75" height="0.4" rx="0.2" stroke="#fff" stroke-width="0.13" fill="none" transform="translate(0.05 0) rotate(8)"/></g><path d="M-0.05 0.15l0.1 -0.3" stroke="${c}" stroke-width="0.16"/>`,
     brain: c => `<path d="M-0.05 -0.62C-0.45 -0.75 -0.8 -0.45 -0.72 -0.1C-0.85 0.15 -0.65 0.5 -0.3 0.45C-0.2 0.62 0 0.6 -0.05 0.45ZM0.05 -0.62C0.45 -0.75 0.8 -0.45 0.72 -0.1C0.85 0.15 0.65 0.5 0.3 0.45C0.2 0.62 0 0.6 0.05 0.45Z" fill="#fff"/><path d="M-0.55 -0.2q0.2 0.05 0.3 -0.12M0.55 -0.2q-0.2 0.05 -0.3 -0.12M-0.5 0.2q0.2 -0.1 0.35 0.05M0.5 0.2q-0.2 -0.1 -0.35 0.05" stroke="${c}" stroke-width="0.07" fill="none" stroke-linecap="round"/>`,
+    star: c => `<path d="M0 -0.75L0.2 -0.25L0.72 -0.22L0.32 0.12L0.45 0.65L0 0.36L-0.45 0.65L-0.32 0.12L-0.72 -0.22L-0.2 -0.25Z" fill="#fff" stroke="#fff" stroke-width="0.06" stroke-linejoin="round"/><circle r="0.14" fill="${c}"/>`,
+    syringe: c => `<g transform="rotate(45)"><rect x="-0.16" y="-0.5" width="0.32" height="0.9" rx="0.05" fill="#fff"/><rect x="-0.1" y="-0.1" width="0.2" height="0.45" fill="${tint(c, 0.4)}"/><path d="M-0.28 -0.5h0.56M0 -0.5v-0.25M-0.15 -0.75h0.3M0 0.4v0.35" stroke="#fff" stroke-width="0.08" stroke-linecap="round"/></g>`,
+    clock: c => `<circle r="0.68" fill="#fff"/><path d="M0 -0.45V0L0.3 0.18" stroke="${c}" stroke-width="0.12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
+    cap: c => `<path d="M0 -0.5L0.85 -0.12L0 0.26L-0.85 -0.12Z" fill="#fff"/><path d="M-0.5 0.05v0.35q0.5 0.3 1 0v-0.35L0 0.26Z" fill="#fff"/><path d="M0.7 -0.05v0.45" stroke="#fff" stroke-width="0.07"/><circle cx="0.7" cy="0.45" r="0.08" fill="#fff"/>`,
+    plane: c => `<g transform="rotate(-35)"><path d="M0 -0.8q0.12 0 0.12 0.2v0.35l0.68 0.38v0.15l-0.68 -0.18v0.42l0.22 0.16v0.12l-0.34 -0.08l-0.34 0.08v-0.12l0.22 -0.16v-0.42l-0.68 0.18v-0.15l0.68 -0.38v-0.35q0 -0.2 0.12 -0.2Z" fill="#fff" transform="translate(-0.0 0.05)"/></g>`,
+    receipt: c => `<path d="M-0.45 -0.72h0.9v1.4l-0.15 -0.1l-0.15 0.1l-0.15 -0.1l-0.15 0.1l-0.15 -0.1l-0.15 0.1l-0.15 -0.1l-0.15 0.1Z" fill="#fff"/><path d="M-0.28 -0.45h0.56M-0.28 -0.22h0.56M-0.28 0.01h0.3M-0.28 0.3h0.56" stroke="${c}" stroke-width="0.08" stroke-linecap="round"/>`,
+    mic: c => `<rect x="-0.22" y="-0.72" width="0.44" height="0.8" rx="0.22" fill="#fff"/><path d="M-0.42 -0.1a0.42 0.42 0 0 0 0.84 0M0 0.32v0.3M-0.25 0.62h0.5" stroke="#fff" stroke-width="0.1" fill="none" stroke-linecap="round"/>`,
+    leaf: c => `<path d="M-0.55 0.55C-0.65 -0.2 -0.1 -0.7 0.65 -0.65C0.65 0.1 0.15 0.65 -0.55 0.55Z" fill="#fff"/><path d="M-0.55 0.55L0.35 -0.35" stroke="${c}" stroke-width="0.08" stroke-linecap="round"/>`,
+    medal: c => `<path d="M-0.35 -0.75L-0.05 -0.1M0.35 -0.75L0.05 -0.1" stroke="#fff" stroke-width="0.16" stroke-linecap="round"/><circle cy="0.25" r="0.45" fill="#fff"/><circle cy="0.25" r="0.3" fill="${tint(c, 0.35)}"/><path d="M0 0.08L0.06 0.2L0.18 0.21L0.09 0.29L0.12 0.41L0 0.34L-0.12 0.41L-0.09 0.29L-0.18 0.21L-0.06 0.2Z" fill="#fff"/>`,
+    ballot: c => `<rect x="-0.62" y="-0.05" width="1.24" height="0.72" rx="0.08" fill="#fff"/><rect x="-0.3" y="-0.75" width="0.6" height="0.8" rx="0.05" fill="${tint(c, 0.7)}" transform="rotate(8)"/><rect x="-0.35" y="0.04" width="0.7" height="0.1" rx="0.05" fill="${c}"/>`,
+    book: c => `<path d="M0 -0.45C-0.3 -0.65 -0.6 -0.6 -0.75 -0.5V0.55C-0.6 0.45 -0.3 0.42 0 0.6C0.3 0.42 0.6 0.45 0.75 0.55V-0.5C0.6 -0.6 0.3 -0.65 0 -0.45Z" fill="#fff"/><path d="M0 -0.45V0.6" stroke="${c}" stroke-width="0.07"/>`,
+    home: c => `<path d="M-0.65 -0.05L0 -0.65L0.65 -0.05" stroke="#fff" stroke-width="0.13" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-0.45 -0.1V0.6H0.45V-0.1L0 -0.5Z" fill="#fff"/><rect x="-0.12" y="0.22" width="0.24" height="0.38" rx="0.04" fill="${c}"/>`,
     x: c => `<path d="M-0.4 -0.4L0.4 0.4M0.4 -0.4L-0.4 0.4" stroke="#fff" stroke-width="0.18" stroke-linecap="round"/>`,
     eye: c => `<path d="M-0.75 0Q0 -0.65 0.75 0Q0 0.65 -0.75 0Z" fill="#fff"/><circle r="0.26" fill="${c}"/><circle r="0.11" fill="${INK}"/><circle cx="-0.08" cy="-0.08" r="0.05" fill="#fff"/>`,
     bowling: c => `<path d="M-0.2 -0.7a0.15 0.15 0 0 1 0.3 0q0.05 0.25 -0.03 0.35q0.3 0.35 0.2 0.8h-0.62q-0.1 -0.45 0.2 -0.8q-0.08 -0.1 -0.05 -0.35Z" fill="#fff" transform="translate(-0.25 0)"/><circle cx="0.35" cy="0.3" r="0.32" fill="#fff"/><circle cx="0.27" cy="0.2" r="0.05" fill="${c}"/><circle cx="0.42" cy="0.18" r="0.05" fill="${c}"/>`,
@@ -389,7 +401,8 @@
     let s = `<path d="${rrect(-w / 2 + 6, -h / 2 + 10, w, h, 22)}" fill="#050818" opacity="0.3"/>`;
     s += solid(rrect(-w / 2, -h / 2, w, h, 22), shade(c, 0.45), 6) + `<path d="${rrect(-w / 2, -h / 2, w, 10, 5)}" fill="${c}"/>`;
     s += `<g transform="translate(0 ${f1(-h * 0.17)})">${icon({ r: 42, glyph: p.glyph, color: c }, t)}</g>`;
-    s += text(p.title || '', 0, h * 0.28, 26, { weight: 900 });
+    const ts = Math.min(26, 26 * (w - 30) / Math.max(1, textW(p.title || '', 26, 900)));   // shrink long titles to fit
+    s += text(p.title || '', 0, h * 0.28, f1(ts), { weight: 900 });
     return s;
   }
   function phone(p, t, seed, age) {
@@ -515,7 +528,87 @@
     return text(p.text, 2, 3, p.size || 40, { fill: '#050818', weight: p.weight || 900, op: 0.35 }) + text(p.text, 0, 0, p.size || 40, { fill: p.color || WHITE, weight: p.weight || 900 });
   }
 
-  const DRAW = { pebble, crowd, heart, brain, book, rings, curve, meter, label, icon, card, phone, arrow, mirror, house, dominoes, dots, scale, planet, particles, shape: shapeEl, text: textEl };
+  /* Bar chart: bars grow in one after another. values[], labels[], colors[], max, unit, w, h, grow 0..1. */
+  function bars(p, t, seed, age) {
+    const v = p.values || [], n = v.length, w = p.w || 640, h = p.h || 320, mx = p.max || Math.max(...v, 1);
+    const gap = w / Math.max(1, n), bw = Math.min(140, gap * 0.62), cols = p.colors || [];
+    let s = `<path d="M${f1(-w / 2 - 10)} ${f1(h / 2)}H${f1(w / 2 + 10)}" stroke="#fff" stroke-opacity="0.6" stroke-width="4" stroke-linecap="round"/>`;
+    v.forEach((val, i) => {
+      const g = easeOut(clamp((age - 0.2 - i * 0.25) / 0.9)) * (p.grow == null ? 1 : p.grow), bh = Math.max(2, h * val / mx * g);
+      const x = -w / 2 + gap * (i + 0.5), c = cols[i] || ['#5ec8e5', '#ffd166', '#ff5a7a', '#7bdc8c', '#c792ea'][i % 5];
+      s += solid(rrect(x - bw / 2, h / 2 - bh, bw, bh, Math.min(12, bh / 2)), c, bw * 0.08);
+      const shown = p.fmt === 'int' ? Math.round(val * g).toLocaleString('en-US') : (p.dp != null ? (val * g).toFixed(p.dp) : (Math.round(val * g * 10) / 10).toString());
+      if (g > 0.05) s += text(shown + (p.unit || ''), x, h / 2 - bh - 26, 28, { weight: 900, op: f1(clamp(g * 3)) });
+      if (p.labels && p.labels[i]) s += text(p.labels[i], x, h / 2 + 34, 20, { weight: 800, fill: '#c9d3ff' });
+    });
+    if (p.title) s += text(p.title, 0, -h / 2 - 50, 24, { weight: 800, fill: '#c9d3ff' });
+    return s;
+  }
+
+  /* Small original animals for fables and zoology asides. kind: ant frog scorpion cricket hummingbird cassowary snake worm. */
+  function critter(p, t, seed) {
+    const k = p.kind || 'ant', c = p.color || '#ff7a59', sz = p.size || 1, ph = (hash(seed) % 100) / 16, d = shade(c, 0.4);
+    const eye = (x, y, r) => `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r)}" fill="#fff"/><circle cx="${f1(x + r * 0.2)}" cy="${f1(y)}" r="${f1(r * 0.55)}" fill="${INK}"/>`;
+    let s = '';
+    if (k === 'ant') {
+      const walk = Math.sin(t * 9 + ph) * 8;
+      for (let i = 0; i < 3; i++) { const x = -10 + i * 16, a = (i % 2 ? walk : -walk); s += `<path d="M${x} -30L${f1(x - 14 + a)} -14L${f1(x - 20 + a)} 0M${x} -30L${f1(x + 14 - a)} -14L${f1(x + 20 - a)} 0" stroke="${d}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`; }
+      s += solid(ell(-34, -34, 22, 16), c, 3) + solid(ell(0, -34, 14, 11), c, 2) + solid(ell(30, -40, 16, 14), c, 3) + eye(36, -44, 5);
+      s += `<path d="M38 -52Q46 -74 58 -72M32 -53Q34 -76 44 -80" stroke="${d}" stroke-width="3.5" fill="none" stroke-linecap="round"/>`;
+    } else if (k === 'frog') {
+      const breathe = 1 + 0.04 * Math.sin(t * 3 + ph);
+      s += shadow(70, 10) + `<g transform="scale(${f1(breathe * 100) / 100} 1)">` + solid(ell(0, -40, 70, 42), c, 6, [-25, -60, 22, 9]) + `</g>`;
+      s += solid(circ(-34, -78, 20), c, 3) + solid(circ(34, -78, 20), c, 3) + eye(-34, -80, 11) + eye(34, -80, 11);
+      s += `<path d="M-30 -42Q0 -26 30 -42" stroke="${d}" stroke-width="4" fill="none" stroke-linecap="round"/>`;
+      s += solid(ell(-58, -6, 24, 9), d, 2) + solid(ell(58, -6, 24, 9), d, 2);
+    } else if (k === 'scorpion') {
+      const sway = Math.sin(t * 2 + ph) * 6;
+      for (let i = 0; i < 4; i++) { const x = -30 + i * 18; s += `<path d="M${x} -24L${x - 10} -6L${x - 14} 0M${x} -24L${x + 4} -6" stroke="${d}" stroke-width="4" fill="none" stroke-linecap="round"/>`; }
+      s += solid(ell(-5, -28, 48, 18), c, 3, [-20, -36, 14, 5]);
+      const tip = [f1(-6 + sway), -122];
+      s += `<path d="M-46 -30C-90 -40 -84 -120 -40 -126S${tip[0] - 4} -128 ${tip[0]} ${tip[1]}" stroke="${d}" stroke-width="15" fill="none" stroke-linecap="round" transform="translate(3 3)"/>`;
+      s += `<path d="M-46 -30C-90 -40 -84 -120 -40 -126S${tip[0] - 4} -128 ${tip[0]} ${tip[1]}" stroke="${c}" stroke-width="14" fill="none" stroke-linecap="round"/>`;
+      for (let i = 1; i < 5; i++) { const u = i / 5, x = (1 - u) ** 3 * -46 + 3 * (1 - u) ** 2 * u * -90 + 3 * (1 - u) * u * u * -84 + u ** 3 * -40, y = (1 - u) ** 3 * -30 + 3 * (1 - u) ** 2 * u * -40 + 3 * (1 - u) * u * u * -120 + u ** 3 * -126; s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="3" fill="${tint(c, 0.3)}"/>`; }
+      s += `<path d="M${tip[0] - 4} ${tip[1] - 8}Q${tip[0] + 16} ${tip[1] - 6} ${tip[0] + 12} ${tip[1] + 14}Q${tip[0] + 4} ${tip[1] + 4} ${tip[0] - 4} ${tip[1] + 6}Z" fill="${d}"/>`;
+      for (const sy of [-1, 1]) s += `<path d="M38 -28Q60 ${-28 + sy * 14} 70 ${-28 + sy * 22}" stroke="${c}" stroke-width="7" fill="none" stroke-linecap="round"/>` + solid(ell(78, -28 + sy * 24, 14, 9), c, 2);
+      s += eye(28, -38, 4) + eye(38, -36, 4);
+    } else if (k === 'cricket') {
+      const hop = Math.max(0, Math.sin(t * 3 + ph)) * 4;
+      s += `<g transform="translate(0 ${f1(-hop)})"><path d="M-10 -34L-48 -70L-60 0M10 -30L20 -10L14 0M-4 -30L-12 -8L-18 0" stroke="${d}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+      s += solid(ell(-6, -36, 46, 16), c, 3, [-20, -44, 14, 4]) + solid(circ(40, -40, 14), c, 2) + eye(44, -44, 5);
+      s += `<path d="M48 -50Q80 -110 120 -100M44 -52Q60 -110 90 -120" stroke="${d}" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>`;
+    } else if (k === 'hummingbird') {
+      const flap = Math.sin(t * 60) ;
+      s += `<g transform="translate(0 -90)">` + `<path d="M-6 -10Q-40 ${f1(-60 * flap)} -70 ${f1(-40 * flap)}Q-40 ${f1(-10 * flap)} -6 0Z" fill="${tint(c, 0.4)}" opacity="0.75"/>`;
+      s += solid(ell(0, 0, 30, 16), c, 3, [-8, -6, 10, 4]) + `<path d="M-26 4L-52 14L-46 0Z" fill="${d}"/>` + solid(circ(26, -8, 12), c, 2) + `<path d="M36 -8L84 -4L36 -2Z" fill="${INK}"/>` + eye(28, -10, 3.5) + `</g>`;
+    } else if (k === 'cassowary') {
+      const bob = Math.sin(t * 2 + ph) * 3;
+      s += shadow(80, 12) + `<path d="M-20 -90L-30 -6L-44 0M20 -90L28 -6L42 0" stroke="#7a6a3a" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+      s += solid(ell(0, -140, 80, 66), '#1d2240', 7, [-30, -170, 26, 10]);
+      s += `<g transform="translate(0 ${f1(bob)})"><path d="M40 -170Q60 -230 56 -270" stroke="#3fa9f5" stroke-width="22" fill="none" stroke-linecap="round"/><path d="M50 -200q8 20 -2 34" stroke="#ff5a5a" stroke-width="10" fill="none" stroke-linecap="round"/>`;
+      s += solid(circ(58, -280, 18), '#3fa9f5', 3) + `<path d="M48 -296Q60 -330 74 -298Z" fill="#c9a24a"/><path d="M72 -282L100 -276L72 -270Z" fill="#2a1f10"/>` + eye(62, -284, 4.5) + `</g>`;
+    } else if (k === 'snake') {
+      let dd = ''; for (let i = 0; i <= 24; i++) { const x = -120 + i * 10, y = -16 + Math.sin(i * 0.5 - t * 3 + ph) * 12; dd += (i ? 'L' : 'M') + x + ' ' + f1(y); }
+      s += `<path d="${dd}" stroke="${d}" stroke-width="22" fill="none" stroke-linecap="round" transform="translate(3 4)"/><path d="${dd}" stroke="${c}" stroke-width="20" fill="none" stroke-linecap="round"/>`;
+      const hy = -16 + Math.sin(24 * 0.5 - t * 3 + ph) * 12; s += solid(ell(128, hy, 20, 14), c, 2) + eye(134, hy - 5, 4) + `<path d="M146 ${f1(hy)}l12 -3m-12 3l12 3" stroke="#ff5a7a" stroke-width="2"/>`;
+    } else {   // worm: a thin, wriggling hairworm
+      let dd = ''; for (let i = 0; i <= 40; i++) { const x = -100 + i * 5, y = -20 + Math.sin(i * 0.45 + t * 4 + ph) * 10; dd += (i ? 'L' : 'M') + x + ' ' + f1(y); }
+      s += `<path d="${dd}" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round"/>`;
+    }
+    return `<g transform="scale(${p.flip ? -sz : sz} ${sz})">${s}</g>`;
+  }
+
+  /* An attributed quote card: short text, who said it. */
+  function quote(p) {
+    const size = p.size || 30, lines = String(p.text).split('\n'), w = p.w || Math.max(...lines.map(l => textW(l, size, 800))) + 110, h = lines.length * size * 1.2 + (p.by ? 90 : 60), c = p.color || '#5ec8e5';
+    let s = `<path d="${rrect(-w / 2 + 6, -h / 2 + 10, w, h, 24)}" fill="#050818" opacity="0.3"/>` + solid(rrect(-w / 2, -h / 2, w, h, 24), shade(c, 0.55), 6);
+    s += `<path d="${rrect(-w / 2, -h / 2, 12, h, 6)}" fill="${c}"/>` + text('“', -w / 2 + 40, -h / 2 + 34, 64, { fill: c, weight: 900 });
+    s += text(p.text, 10, p.by ? -18 : 0, size, { weight: 800 });
+    if (p.by) s += text('— ' + p.by, 10, h / 2 - 30, 20, { weight: 700, fill: tint(c, 0.5) });
+    return s;
+  }
+
+  const DRAW = { pebble, crowd, heart, brain, book, rings, curve, meter, label, icon, card, phone, arrow, mirror, house, dominoes, dots, scale, planet, particles, shape: shapeEl, text: textEl, bars, critter, quote };
 
   // ---------- timing ----------
   function load(ep, tl, svg) {
@@ -561,7 +654,7 @@
     } else {   // title
       s += background({ kind: 'space', pal: 'plum' }, T, cam);
       const a = clamp(age / 1.2);
-      s += `<g transform="translate(640 330) scale(${f1((0.8 + 0.2 * easeOut(a)) * 100) / 100})" opacity="${f1(0.35 + 0.3 * a)}">${heart({ size: 2.4, color: '#ff5a7a' }, T)}</g>`;
+      s += `<g transform="translate(640 330) scale(${f1((0.8 + 0.2 * easeOut(a)) * 100) / 100})" opacity="${f1(0.35 + 0.3 * a)}">${c.glyph ? icon({ r: 170, glyph: c.glyph, color: c.color || '#c266ff' }, T) : heart({ size: 2.4, color: '#ff5a7a' }, T)}</g>`;
       s += text((EP.meta.show || '').split('').join(' '), 640, 200, 24, { weight: 800, fill: '#f2d0ff', ls: 6, op: f1(clamp((age - 0.3) / 0.6)) });
       const to = clamp((age - 0.6) / 0.8);
       s += `<g opacity="${f1(to)}" transform="translate(0 ${f1((1 - easeOut(to)) * 30)})">${text(c.title, 643, 345, 78, { weight: 900, fill: '#050818', op: 0.35 })}${text(c.title, 640, 340, 78, { weight: 900 })}</g>`;
