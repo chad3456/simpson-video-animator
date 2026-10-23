@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "show": "LUMEN",
+    "episode": "E1",
+    "title": "Too Kind to Survive?",
+    "category": "Suicidal Empathy (book)",
+    "format": "explainer",
+    "rating": "general",
+    "music": "ambient",
+    "narrator": "narrator",
+    "logline": "Can a society care itself to death? A calm, illustrated tour of Gad Saad's 'Suicidal Empathy': where empathy comes from, how it misfires, why it feels so good, what his critics say, and the habits worth keeping either way.",
+    "source": "Ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased, with published criticism (The Bulwark, Quillette). Also cited: Randolph Nesse on emotions, Robert Axelrod's tit-for-tat tournaments, Thomas Sowell and Rob Henderson on luxury beliefs.",
+    "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+    "width": 1280, "height": 720, "fps": 30, "gap": 0.42
+  },
+  "cast": {
+    "narrator": {"name": "Narrator", "role": "Calm, curious, optimistic guide", "voice": "am_michael:0.6+bm_george:0.4", "speed": 1.0}
+  },
+  "sequence": [
+    {"type": "scene", "id": "open-planet", "bg": {"kind": "space", "pal": "midnight"},
+     "cam": {"zoom": [1.18, 1.0], "pan": [[0, 40], [0, 0]]},
+     "els": [
+       {"id": "planet", "type": "planet", "x": 640, "y": 1420, "r": 960, "color": "#2fb39a", "land": "#7bdc8c", "anim": "none"},
+       {"id": "pip", "type": "pebble", "x": 640, "y": 462, "size": 1.3, "color": "#ffb347", "mood": "calm", "look": [0, -1], "anim": "rise",
+        "keys": {"1": {"mood": "happy", "look": [0, 0]}, "3": {"mood": "worried"}}},
+       {"id": "heart", "type": "heart", "x": 640, "y": 300, "size": 0.55, "color": "#ff5a7a", "in": 0, "d": 1.4, "sfx": "chime", "vol": 0.35,
+        "keys": {"2": {"size": 1.0, "y": 250}, "3": {"size": 1.35, "heat": 0.6, "y": 230}, "4": {"heat": 1, "crack": 1}}},
+       {"id": "friends", "type": "crowd", "x": 640, "y": 470, "n": 6, "cols": 6, "w": 900, "size": 0.75, "in": 1, "d": 1.2, "skip": 2,
+        "colors": ["#7ad3ff", "#ffd166", "#c792ea", "#7bdc8c", "#ff8fab", "#9be7c4"], "out": 3},
+       {"id": "hosp", "type": "icon", "glyph": "cross", "x": 1080, "y": 160, "r": 46, "color": "#5ec8e5", "in": 1, "d": 4.0, "sfx": "pop", "out": 3, "float": 6}
+     ],
+     "lines": [
+       {"text": "Empathy might be the most beautiful thing evolution ever built."},
+       {"text": "It lets one animal feel another's pain, and care about it. It built families, friendships, and, eventually, hospitals."},
+       {"text": "So here's an uncomfortable question."},
+       {"text": "Can you have too much of it?", "sfx": "thump"},
+       {"text": "", "dur": 1.6, "sfx": "whoosh"}
+     ]},
+
+    {"type": "scene", "id": "open-book", "bg": {"kind": "city", "pal": "plum"},
+     "cam": {"zoom": [1.0, 1.08], "pan": [[0, 0], [20, -10]]},
+     "els": [
+       {"id": "book", "type": "book", "x": 640, "y": 330, "w": 230, "h": 320, "title": "SUICIDAL\nEMPATHY", "author": "GAD SAAD", "color": "#f2c14e", "anim": "drop", "sfx": "thump", "vol": 0.4,
+        "keys": {"1": {"x": 330, "s": 0.8}}},
+       {"id": "dial", "type": "meter", "x": 860, "y": 380, "r": 170, "value": 0.15, "label": "EMPATHY", "in": 1, "d": 0.4,
+        "keys": {"1": {"value": 0.98, "d": 2.2, "t": 2.6}}},
+       {"id": "warn", "type": "label", "x": 860, "y": 470, "text": "too high, wrong target", "color": "#ff5a7a", "in": 1, "d": 4.6, "sfx": "pop"},
+       {"id": "q1", "type": "label", "x": 400, "y": 600, "text": "What is it for?", "color": "#5ec8e5", "in": 3, "d": 0.6, "out": 99},
+       {"id": "q2", "type": "label", "x": 640, "y": 600, "text": "How does it break?", "color": "#c792ea", "in": 3, "d": 1.6},
+       {"id": "q3", "type": "label", "x": 890, "y": 600, "text": "What do critics say?", "color": "#ffb347", "in": 3, "d": 2.8}
+     ],
+     "lines": [
+       {"text": "A recent book argues that you can, and that whole societies are doing it right now."},
+       {"text": "In Suicidal Empathy, the evolutionary psychologist Gad Saad claims that a virtue, turned up too high and aimed at the wrong targets, can lead a civilisation to harm itself, while feeling good about it."},
+       {"text": "It's a provocative idea, and a controversial one."},
+       {"text": "So let's take it apart. What is empathy for? How could it break? And what do his critics say?"}
+     ]},
+
+    {"type": "card", "id": "title", "style": "title", "title": "Too Kind to Survive?", "sub": "An idea, explained", "dur": 5.5, "sfx": "swell"},
+
+    {"type": "card", "id": "ch1", "style": "chapter", "kicker": "Part 1", "title": "Why We Feel for Others", "glyph": "heart", "color": "#ff5a7a", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "savanna", "bg": {"kind": "land", "pal": "dusk"},
+     "cam": {"zoom": [1.0, 1.06], "pan": [[-60, 0], [40, -10]]},
+     "els": [
+       {"id": "band", "type": "crowd", "x": 560, "y": 560, "n": 5, "cols": 5, "w": 520, "size": 0.95, "anim": "rise",
+        "colors": ["#ffb347", "#7ad3ff", "#c792ea", "#7bdc8c", "#ff8fab"], "mood": "neutral", "keys": {"1": {"mood": "happy"}}},
+       {"id": "hurt", "type": "pebble", "x": 960, "y": 566, "size": 0.9, "color": "#9be7c4", "mood": "sad", "tilt": -14, "in": 1, "d": 0.2, "anim": "right",
+        "keys": {"1": {"mood": "happy", "tilt": 0, "d": 4.2}}},
+       {"id": "fruit", "type": "icon", "glyph": "fruit", "x": 820, "y": 470, "r": 30, "color": "#ff7a59", "in": 1, "d": 1.4, "sfx": "pop", "float": 5},
+       {"id": "dna", "type": "icon", "glyph": "dna", "x": 640, "y": 210, "r": 54, "color": "#5ec8e5", "in": 2, "d": 0.4, "sfx": "chime", "vol": 0.3, "float": 8}
+     ],
+     "lines": [
+       {"text": "Imagine a band of early humans. Life is dangerous, food is scarce, and nobody survives alone."},
+       {"text": "The ones who could read each other's faces, share a meal, and help an injured friend had better odds."},
+       {"text": "Their genes stuck around. And so did the feeling."}
+     ]},
+
+    {"type": "scene", "id": "two-kinds", "bg": {"kind": "studio", "pal": "teal"},
+     "cam": {"zoom": [1.04, 1.0]},
+     "els": [
+       {"id": "brain", "type": "brain", "x": 400, "y": 320, "size": 1.0, "anim": "pop", "sfx": "pop", "d": 0.3},
+       {"id": "lb", "type": "text", "x": 400, "y": 470, "text": "Cognitive empathy", "size": 34, "d": 0.6},
+       {"id": "lb2", "type": "text", "x": 400, "y": 512, "text": "\"I understand your pain\"", "size": 24, "color": "#bfeee6", "weight": 600, "d": 0.9},
+       {"id": "heart2", "type": "heart", "x": 880, "y": 320, "size": 0.85, "color": "#ff5a7a", "in": 0, "d": 2.6, "sfx": "pop"},
+       {"id": "lh", "type": "text", "x": 880, "y": 470, "text": "Emotional empathy", "size": 34, "d": 2.9},
+       {"id": "lh2", "type": "text", "x": 880, "y": 512, "text": "\"I feel your pain\"", "size": 24, "color": "#bfeee6", "weight": 600, "d": 3.2},
+       {"id": "inh", "type": "label", "x": 640, "y": 610, "text": "partly inherited", "color": "#f2c14e", "in": 1, "d": 0.8, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "Psychologists split empathy into two parts. Cognitive empathy: I understand your pain. And emotional empathy: I feel your pain."},
+       {"text": "Both are partly inherited, both vary from person to person, and both evolved with a built-in filter."}
+     ]},
+
+    {"type": "scene", "id": "rings", "bg": {"kind": "studio", "pal": "midnight"},
+     "cam": {"zoom": [1.25, 1.0]},
+     "els": [
+       {"id": "rings", "type": "rings", "x": 640, "y": 370, "r": 300, "labels": ["you", "kids", "family", "friends", "strangers"],
+        "colors": ["#ffb347", "#ff8fab", "#c792ea", "#5ec8e5", "#2c3e7a"], "anim": "grow", "sfx": "whoosh", "vol": 0.4},
+       {"id": "gifts", "type": "icon", "glyph": "gift", "x": 1060, "y": 150, "r": 48, "color": "#ff7a59", "in": 1, "d": 0.6, "sfx": "pop", "float": 6},
+       {"id": "giftlbl", "type": "label", "x": 1040, "y": 228, "text": "gift budgets follow the rings", "color": "#ff7a59", "size": 18, "in": 1, "d": 1.2}
+     ],
+     "lines": [
+       {"text": "We care most about our children, then family, then friends, then strangers. Not because we are cruel, but because evolution budgeted our care."},
+       {"text": "Saad points to his own research on gift giving. People spend the most on partners, then close kin, then friends. The rings show up in our wallets."}
+     ]},
+
+    {"type": "card", "id": "ch2", "style": "chapter", "kicker": "Part 2", "title": "The Sweet Spot", "glyph": "target", "color": "#7bdc8c", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "curve", "bg": {"kind": "studio", "pal": "teal"},
+     "cam": {"zoom": [1.0, 1.05], "pan": [[0, 0], [0, -10]]},
+     "els": [
+       {"id": "aristotle", "type": "label", "x": 640, "y": 88, "text": "Aristotle: virtue sits between two extremes", "color": "#f2c14e", "d": 1.0, "sfx": "tick"},
+       {"id": "curve", "type": "curve", "x": 640, "y": 400, "w": 820, "h": 380, "draw": 0, "dot": null, "anim": "fade",
+        "labels": {"x": "how much empathy", "y": "how well things go", "left": "too little", "mid": "calibrated", "right": "too much"},
+        "keys": {"0": {"draw": 1, "d": 2.5, "t": 3}, "1": {"dot": 0.1, "d": 0.5}, "2": {"dot": 0.92, "d": 0.3, "t": 1.8}, "3": {"dot": 0.5, "t": 1.5}}},
+       {"id": "psy", "type": "pebble", "x": 340, "y": 588, "size": 0.6, "color": "#8892b0", "mood": "deadpan", "in": 1, "d": 1.2, "out": 2},
+       {"id": "burn", "type": "pebble", "x": 940, "y": 588, "size": 0.6, "color": "#ff8fab", "mood": "worried", "in": 2, "d": 1.8, "out": 3},
+       {"id": "burnheart", "type": "heart", "x": 940, "y": 470, "size": 0.32, "color": "#ff5a7a", "heat": 1, "in": 2, "d": 2.4, "out": 3},
+       {"id": "goal", "type": "label", "x": 640, "y": 142, "text": "not less empathy: calibrated empathy", "color": "#7bdc8c", "in": 3, "d": 1.2, "sfx": "chime", "vol": 0.3}
+     ],
+     "lines": [
+       {"text": "For Saad, the key rule is very old. Aristotle said that a virtue sits between two extremes. Plot almost anything good against how much of it you have, and you get an upside-down U."},
+       {"text": "Too little empathy, and you reach the callous end: the psychopath, who can describe cruelty and feel nothing at all."},
+       {"text": "Too much, and something else goes wrong. Nurses burn out. Helpers can't stop helping. And, Saad argues, whole societies lose the ability to say no."},
+       {"text": "So the goal is not less empathy. It's calibrated empathy."}
+     ]},
+
+    {"type": "card", "id": "ch3", "style": "chapter", "kicker": "Part 3", "title": "How a Good Feeling Misfires", "glyph": "alarm", "color": "#ffb347", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "alarms", "bg": {"kind": "deep", "pal": "plum"},
+     "cam": {"zoom": [1.0, 1.06]},
+     "els": [
+       {"id": "a1", "type": "icon", "glyph": "fear", "x": 340, "y": 290, "r": 62, "color": "#7ad3ff", "d": 0.5, "sfx": "pop", "float": 6, "label": "fear"},
+       {"id": "a2", "type": "icon", "glyph": "fire", "x": 540, "y": 290, "r": 62, "color": "#ff7a59", "d": 0.9, "sfx": "pop", "float": 6, "label": "anger"},
+       {"id": "a3", "type": "icon", "glyph": "heart", "x": 740, "y": 290, "r": 62, "color": "#ff5a7a", "d": 1.3, "sfx": "pop", "float": 6, "label": "love"},
+       {"id": "a4", "type": "icon", "glyph": "alarm", "x": 940, "y": 290, "r": 62, "color": "#ffb347", "d": 1.7, "sfx": "pop", "float": 6, "label": "empathy"},
+       {"id": "n1", "type": "label", "x": 340, "y": 520, "text": "too quiet", "color": "#5ec8e5", "in": 1, "d": 2.6, "sfx": "tick"},
+       {"id": "n2", "type": "label", "x": 640, "y": 520, "text": "too loud", "color": "#ffb347", "in": 1, "d": 3.2, "sfx": "tick"},
+       {"id": "n3", "type": "label", "x": 940, "y": 520, "text": "wrong trigger", "color": "#ff5a7a", "in": 1, "d": 3.9, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "Emotions work a bit like alarms. Fear, anger, disgust, love: each one evolved to solve a problem. And like any alarm, they can malfunction."},
+       {"text": "The psychiatrist Randolph Nesse listed the ways. An alarm can be too quiet, too loud, or set off by the wrong thing."},
+       {"text": "Saad argues that suicidal empathy fails in several of those ways at once."}
+     ]},
+
+    {"type": "scene", "id": "misfire1", "bg": {"kind": "studio", "pal": "ember"},
+     "cam": {"zoom": [1.0, 1.08]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 110, "text": "1. Too high", "size": 46},
+       {"id": "dial2", "type": "meter", "x": 640, "y": 470, "r": 210, "value": 0.5, "label": "EMPATHY", "keys": {"0": {"value": 1, "d": 1.0, "t": 1.6}}},
+       {"id": "reqs", "type": "particles", "kind": "alerts", "x": 640, "y": 360, "w": 1000, "h": 420, "n": 14, "in": 0, "d": 2.4}
+     ],
+     "lines": [
+       {"text": "One. The volume is stuck at maximum, so every request feels like an emergency, and every no feels like cruelty."}
+     ]},
+
+    {"type": "scene", "id": "misfire2", "bg": {"kind": "studio", "pal": "midnight"},
+     "cam": {"zoom": [1.0, 1.05]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 110, "text": "2. Wrong target", "size": 46},
+       {"id": "giver", "type": "pebble", "x": 640, "y": 560, "size": 1.0, "color": "#ffd166", "mood": "happy", "hold": "heart"},
+       {"id": "thorn", "type": "pebble", "x": 320, "y": 560, "size": 1.0, "color": "#c0392b", "mood": "smug", "spiky": true, "anim": "left", "d": 0.5},
+       {"id": "victim", "type": "pebble", "x": 960, "y": 560, "size": 0.9, "color": "#7ad3ff", "mood": "sad", "tilt": 10, "anim": "right", "d": 0.8},
+       {"id": "flow", "type": "particles", "kind": "hearts", "x": 480, "y": 440, "w": 260, "h": 120, "n": 10, "in": 0, "d": 2.2, "dir": -1},
+       {"id": "hook", "type": "label", "x": 320, "y": 380, "text": "kindness can be hacked", "color": "#ff5a7a", "in": 1, "d": 3.0, "sfx": "pop"}
+     ],
+     "lines": [
+       {"text": "Two. Care flows toward whoever looks most like a victim, even when that is the one causing the harm."},
+       {"text": "Predators have always known this weakness. Some serial killers posed as injured strangers so that kind people would come closer."}
+     ]},
+
+    {"type": "scene", "id": "misfire3", "bg": {"kind": "studio", "pal": "teal"},
+     "cam": {"zoom": [1.0, 1.05]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 110, "text": "3. Wrong tool", "size": 46},
+       {"id": "h3", "type": "heart", "x": 400, "y": 360, "size": 0.9, "color": "#ff5a7a", "anim": "pop"},
+       {"id": "calc", "type": "icon", "glyph": "calc", "x": 880, "y": 360, "r": 90, "color": "#5ec8e5", "d": 1.6, "sfx": "pop"},
+       {"id": "vs", "type": "text", "x": 640, "y": 375, "text": "≠", "size": 90, "d": 1.2},
+       {"id": "t1", "type": "label", "x": 400, "y": 560, "text": "budgets", "color": "#f2c14e", "d": 3.4, "sfx": "tick"},
+       {"id": "t2", "type": "label", "x": 560, "y": 610, "text": "borders", "color": "#f2c14e", "d": 3.8, "sfx": "tick"},
+       {"id": "t3", "type": "label", "x": 720, "y": 560, "text": "laws", "color": "#f2c14e", "d": 4.2, "sfx": "tick"},
+       {"id": "t4", "type": "label", "x": 880, "y": 610, "text": "medicine", "color": "#f2c14e", "d": 4.6, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "Three. Feelings get used for jobs that need arithmetic: budgets, borders, laws and medicine. The heart is a wonderful motivator, and a terrible accountant."}
+     ]},
+
+    {"type": "card", "id": "ch4", "style": "chapter", "kicker": "Part 4", "title": "Why It Feels So Good", "glyph": "spark", "color": "#c792ea", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "dopamine", "bg": {"kind": "deep", "pal": "plum"},
+     "cam": {"zoom": [1.0, 1.06]},
+     "els": [
+       {"id": "poster", "type": "pebble", "x": 360, "y": 560, "size": 1.1, "color": "#c792ea", "mood": "happy", "anim": "rise"},
+       {"id": "phone", "type": "phone", "x": 560, "y": 390, "likes": 12, "d": 0.6, "sfx": "pop", "keys": {"0": {"likes": 24800, "d": 2.5, "t": 3.5}}},
+       {"id": "now", "type": "label", "x": 560, "y": 130, "text": "NOW: applause", "color": "#7bdc8c", "in": 0, "d": 2.0},
+       {"id": "later", "type": "label", "x": 1000, "y": 120, "text": "LATER: the bill", "color": "#ff5a7a", "in": 1, "d": 0.8, "sfx": "tick"},
+       {"id": "arrow", "type": "arrow", "x": 700, "y": 160, "x2": 900, "y2": 160, "color": "#ffffff", "in": 1, "d": 0.2, "draw": 0, "keys": {"1": {"draw": 1, "d": 0.2}}},
+       {"id": "others", "type": "crowd", "x": 1000, "y": 580, "n": 4, "cols": 4, "w": 360, "size": 0.7, "colors": ["#7ad3ff", "#ffd166", "#7bdc8c", "#ff8fab"], "mood": "worried", "in": 1, "d": 3.0},
+       {"id": "bill", "type": "icon", "glyph": "coin", "x": 1000, "y": 300, "r": 46, "color": "#f2c14e", "in": 1, "d": 3.6, "anim": "drop", "sfx": "thump", "vol": 0.4,
+        "keys": {"1": {"y": 470, "d": 4.2, "t": 0.6}}}
+     ],
+     "lines": [
+       {"text": "If it causes harm, why is it so popular? Saad's answer: the reward comes now, and the bill comes later."},
+       {"text": "Showing compassion in public earns instant approval, a little dopamine hit. The consequences arrive years later, and usually land on someone else."}
+     ]},
+
+    {"type": "scene", "id": "mirror", "bg": {"kind": "deep", "pal": "midnight"},
+     "cam": {"zoom": [1.08, 1.0]},
+     "els": [
+       {"id": "mirror", "type": "mirror", "x": 760, "y": 330, "anim": "fade"},
+       {"id": "vain", "type": "pebble", "x": 430, "y": 580, "size": 1.1, "color": "#ffb347", "mood": "smug", "look": [1, -0.3]},
+       {"id": "guilt", "type": "pebble", "x": 640, "y": 580, "size": 0.7, "color": "#8892b0", "mood": "sad", "in": 1, "d": 0.6, "out": 99},
+       {"id": "debt", "type": "label", "x": 640, "y": 470, "text": "born lucky = a debt?", "color": "#c792ea", "in": 1, "d": 2.0, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "He also points to vanity. Like Narcissus at the pool, the suicidally empathetic person admires their own goodness more than they check the results."},
+       {"text": "And to guilt: the sense that being born lucky is a debt that can only be repaid by giving everything away."}
+     ]},
+
+    {"type": "scene", "id": "luxury", "bg": {"kind": "land", "pal": "dusk"},
+     "cam": {"zoom": [1.0, 1.05], "pan": [[-30, 0], [30, 0]]},
+     "els": [
+       {"id": "hill", "type": "house", "x": 330, "y": 470, "gate": true, "color": "#f2c14e", "anim": "rise"},
+       {"id": "rich", "type": "pebble", "x": 410, "y": 418, "size": 0.6, "color": "#ffd166", "mood": "smug", "hold": "heart"},
+       {"id": "lux", "type": "label", "x": 330, "y": 150, "text": "\"luxury beliefs\"", "color": "#f2c14e", "d": 2.2, "sfx": "pop"},
+       {"id": "town", "type": "crowd", "x": 900, "y": 590, "n": 5, "cols": 5, "w": 520, "size": 0.75, "colors": ["#7ad3ff", "#ff8fab", "#7bdc8c", "#c792ea", "#9be7c4"], "mood": "worried", "d": 3.6},
+       {"id": "cost", "type": "label", "x": 900, "y": 450, "text": "status up here, costs down there", "color": "#ff7a59", "d": 6.5, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "The economist Thomas Sowell, and later the writer Rob Henderson, described a related pattern. Henderson calls them luxury beliefs: positions that win status for the people who hold them, while the costs fall on people who can't afford them."}
+     ]},
+
+    {"type": "scene", "id": "contagion", "bg": {"kind": "studio", "pal": "midnight"},
+     "cam": {"zoom": [1.12, 1.0]},
+     "els": [
+       {"id": "net", "type": "crowd", "x": 640, "y": 300, "n": 40, "cols": 10, "w": 1080, "rowh": 105, "size": 0.5, "colors": ["#7ad3ff", "#5ec8e5", "#9be7c4"],
+        "infect": 0, "infectColor": "#ff5a7a", "from": "center", "keys": {"0": {"infect": 1, "d": 1.5, "t": 7}}}
+     ],
+     "lines": [
+       {"text": "And because humans copy each other, Saad argues that these feelings spread like a contagion, through social networks, faster than arguments can catch up."}
+     ]},
+
+    {"type": "card", "id": "ch5", "style": "chapter", "kicker": "Part 5", "title": "The Case Files", "glyph": "folder", "color": "#5ec8e5", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "cases", "bg": {"kind": "studio", "pal": "teal"},
+     "cam": {"zoom": [1.0, 1.04]},
+     "els": [
+       {"id": "c1", "type": "card", "glyph": "lock", "title": "Taboo facts", "x": 260, "y": 250, "color": "#5ec8e5", "in": 1, "d": 0.3, "sfx": "pop"},
+       {"id": "c2", "type": "card", "glyph": "globe", "title": "Immigration\nand Islam", "x": 640, "y": 250, "color": "#7bdc8c", "in": 1, "d": 1.4, "sfx": "pop"},
+       {"id": "c3", "type": "card", "glyph": "gavel", "title": "Crime and\njustice", "x": 1020, "y": 250, "color": "#ffb347", "in": 1, "d": 2.6, "sfx": "pop"},
+       {"id": "c4", "type": "card", "glyph": "flask", "title": "\"Settled\"\nscience", "x": 260, "y": 520, "color": "#c792ea", "in": 1, "d": 3.6, "sfx": "pop"},
+       {"id": "c5", "type": "card", "glyph": "people", "title": "Diversity\nprogrammes", "x": 640, "y": 520, "color": "#ff8fab", "in": 1, "d": 4.6, "sfx": "pop"},
+       {"id": "c6", "type": "card", "glyph": "building", "title": "Welfare and\nthe state", "x": 1020, "y": 520, "color": "#f2c14e", "in": 1, "d": 5.6, "sfx": "pop"}
+     ],
+     "lines": [
+       {"text": "Most of the book is case studies, and this is where it gets heated."},
+       {"text": "Saad applies the idea to taboo facts and language, to immigration and Islam, to crime and criminal justice, to claims of settled science, to diversity programmes, and to welfare and the state."},
+       {"text": "In each one, his diagnosis is the same: a policy chosen for how kind it feels, defended by calling objections cruel, and judged by its intentions instead of its outcomes."},
+       {"text": "These are some of the most contested questions of our time, and one short video can't settle them. But we can look at his toolkit, and at the case against him."}
+     ]},
+
+    {"type": "card", "id": "ch6", "style": "chapter", "kicker": "Part 6", "title": "The Case Against", "glyph": "scales", "color": "#ff7a59", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "critics", "bg": {"kind": "deep", "pal": "ember"},
+     "cam": {"zoom": [1.0, 1.05]},
+     "els": [
+       {"id": "scale", "type": "scale", "x": 640, "y": 330, "tilt": 0, "left": "heart", "right": "brain", "anim": "pop", "sfx": "pop",
+        "keys": {"1": {"tilt": -0.6}, "2": {"tilt": 0.2}, "3": {"tilt": -0.3}, "4": {"tilt": 0}}},
+       {"id": "rev", "type": "label", "x": 640, "y": 620, "text": "The Bulwark · Quillette", "color": "#ffb347", "d": 2.4, "out": 1},
+       {"id": "k1", "type": "icon", "glyph": "cross", "x": 230, "y": 560, "r": 50, "color": "#5ec8e5", "in": 1, "d": 1.4, "sfx": "pop", "label": "hospitals"},
+       {"id": "k2", "type": "icon", "glyph": "chain", "x": 390, "y": 560, "r": 50, "color": "#f2c14e", "in": 1, "d": 2.6, "sfx": "pop", "label": "abolition"},
+       {"id": "tag", "type": "label", "x": 1010, "y": 560, "text": "\"suicidal empathy\"", "color": "#ff5a7a", "in": 2, "d": 1.0, "sfx": "tick"},
+       {"id": "tag2", "type": "label", "x": 1040, "y": 620, "text": "...any policy you dislike?", "color": "#8892b0", "in": 2, "d": 2.6},
+       {"id": "cold", "type": "label", "x": 640, "y": 140, "text": "cruelty is a ditch too", "color": "#7ad3ff", "in": 3, "d": 1.6, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "Critics push back hard. Reviewers at The Bulwark and at Quillette found the core idea interesting, and the execution selective."},
+       {"text": "First: compassion is part of why the West succeeded. Charity, hospitals and the abolition of slavery came from people who refused to look away."},
+       {"text": "Second: the label is elastic. Almost any policy you dislike can be called suicidal empathy, which makes the claim hard to test."},
+       {"text": "Third: the opposite failure is real too. A society that mistakes coldness for realism can be cruel, and still be wrong."},
+       {"text": "Even sympathetic readers grant the core point in its narrow form: empathy that isn't checked by reason can misread a situation badly. The fight is over the sweeping claims."}
+     ]},
+
+    {"type": "card", "id": "ch7", "style": "chapter", "kicker": "Part 7", "title": "An Inoculation", "glyph": "shield", "color": "#7bdc8c", "dur": 3.4, "sfx": "chime"},
+
+    {"type": "scene", "id": "tools-intro", "bg": {"kind": "studio", "pal": "teal"},
+     "cam": {"zoom": [1.0, 1.06]},
+     "els": [
+       {"id": "shield", "type": "icon", "glyph": "shield", "x": 640, "y": 330, "r": 120, "color": "#7bdc8c", "anim": "pop", "sfx": "chime", "vol": 0.3, "float": 6},
+       {"id": "hint", "type": "label", "x": 640, "y": 540, "text": "habits that work wherever you stand", "color": "#f2c14e", "d": 3.4}
+     ],
+     "lines": [
+       {"text": "Saad ends with what he calls an inoculation: a set of mental habits. Stripped of the polemics, most of them are useful wherever you stand."}
+     ]},
+
+    {"type": "scene", "id": "dominoes", "bg": {"kind": "studio", "pal": "midnight"},
+     "cam": {"zoom": [1.0, 1.1], "pan": [[-80, 0], [80, 0]]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 110, "text": "Look past the first domino", "size": 42},
+       {"id": "dom", "type": "dominoes", "x": 640, "y": 520, "n": 9, "gap": 105, "color": "#f2c14e", "fall": 0, "keys": {"0": {"fall": 1, "d": 1.6, "t": 3.2}}},
+       {"id": "y1", "type": "label", "x": 280, "y": 600, "text": "today", "color": "#7bdc8c", "d": 2.0},
+       {"id": "y2", "type": "label", "x": 1000, "y": 600, "text": "next year", "color": "#ff7a59", "d": 4.4, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "One. Look past the first domino. Ask what a policy does next year, not just how it feels today.", "sfx": "tick"}
+     ]},
+
+    {"type": "scene", "id": "exemplar", "bg": {"kind": "studio", "pal": "plum"},
+     "cam": {"zoom": [1.0, 1.05]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 110, "text": "One story isn't the statistics", "size": 42},
+       {"id": "one", "type": "pebble", "x": 280, "y": 470, "size": 1.3, "color": "#ffb347", "mood": "sad"},
+       {"id": "dots", "type": "dots", "x": 820, "y": 400, "n": 100, "cols": 10, "size": 13, "gap": 34, "color": "#5ec8e5", "alt": 0, "altColor": "#ff5a7a", "d": 1.4,
+        "keys": {"0": {"alt": 4, "d": 3.5, "t": 1.2}}}
+     ],
+     "lines": [
+       {"text": "Two. Don't let one story outweigh the statistics. A single heartbreaking case, or a single success, rarely represents the whole picture."}
+     ]},
+
+    {"type": "scene", "id": "equal", "bg": {"kind": "studio", "pal": "teal"},
+     "cam": {"zoom": [1.0, 1.05]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 110, "text": "Equal rights, different situations", "size": 42},
+       {"id": "bowl", "type": "icon", "glyph": "bowling", "x": 430, "y": 360, "r": 90, "color": "#5ec8e5", "d": 1.6, "sfx": "pop", "label": "bowling"},
+       {"id": "box", "type": "icon", "glyph": "glove", "x": 850, "y": 360, "r": 90, "color": "#ff5a7a", "d": 2.4, "sfx": "pop", "label": "boxing"},
+       {"id": "conc", "type": "label", "x": 850, "y": 560, "text": "concussions", "color": "#ffb347", "d": 5.4, "sfx": "thump", "vol": 0.3}
+     ],
+     "lines": [
+       {"text": "Three. Equal under the law doesn't mean identical in every way. Bowling and boxing are both sports. Only one of them hands out concussions."}
+     ]},
+
+    {"type": "scene", "id": "titfortat", "bg": {"kind": "land", "pal": "day"},
+     "cam": {"zoom": [1.0, 1.05]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 100, "text": "Expect reciprocity", "size": 42, "color": "#16324f"},
+       {"id": "a", "type": "pebble", "x": 400, "y": 560, "size": 1.0, "color": "#ffb347", "mood": "happy", "look": [1, 0]},
+       {"id": "b", "type": "pebble", "x": 880, "y": 560, "size": 1.0, "color": "#7ad3ff", "mood": "happy", "look": [-1, 0], "keys": {"1": {"mood": "smug", "d": 1.5}}},
+       {"id": "coin1", "type": "icon", "glyph": "coin", "x": 460, "y": 430, "r": 30, "color": "#f2c14e", "d": 3.0, "sfx": "pop",
+        "keys": {"0": {"x": 820, "d": 3.6, "t": 1.2}}},
+       {"id": "coin2", "type": "icon", "glyph": "coin", "x": 820, "y": 380, "r": 30, "color": "#f2c14e", "d": 5.6, "sfx": "pop", "out": 1,
+        "keys": {"0": {"x": 460, "d": 6.0, "t": 1.2}}},
+       {"id": "tft", "type": "label", "x": 640, "y": 210, "text": "tit for tat: start kind, then mirror", "color": "#16324f", "fg": "#ffffff", "in": 0, "d": 4.0},
+       {"id": "x", "type": "icon", "glyph": "x", "x": 640, "y": 400, "r": 34, "color": "#ff5a7a", "in": 1, "d": 2.2, "sfx": "tick"}
+     ],
+     "lines": [
+       {"text": "Four. Expect reciprocity. In Robert Axelrod's famous game theory tournaments, the winning strategy, tit for tat, started out kind, and then simply returned whatever it received."},
+       {"text": "Generosity that's never returned, Saad warns, stops being a relationship and becomes a parasite and its host."}
+     ]},
+
+    {"type": "scene", "id": "targets", "bg": {"kind": "studio", "pal": "midnight"},
+     "cam": {"zoom": [1.1, 1.0]},
+     "els": [
+       {"id": "num", "type": "text", "x": 640, "y": 100, "text": "Choose your targets", "size": 42, "in": 0},
+       {"id": "giver", "type": "pebble", "x": 640, "y": 560, "size": 1.0, "color": "#ffd166", "mood": "calm", "hold": "heart"},
+       {"id": "beam", "type": "arrow", "x": 700, "y": 470, "x2": 960, "y2": 330, "color": "#ff8fab", "draw": 0, "keys": {"0": {"draw": 1, "d": 2.4}}},
+       {"id": "tgt", "type": "icon", "glyph": "target", "x": 1010, "y": 290, "r": 54, "color": "#ff8fab", "d": 3.2, "sfx": "pop", "float": 5},
+       {"id": "truth", "type": "icon", "glyph": "eye", "x": 330, "y": 300, "r": 80, "color": "#5ec8e5", "in": 1, "d": 0.6, "sfx": "chime", "vol": 0.3, "float": 6},
+       {"id": "tl", "type": "label", "x": 330, "y": 420, "text": "truth as a form of care", "color": "#5ec8e5", "in": 1, "d": 1.6}
+     ],
+     "lines": [
+       {"text": "Five. Choose the targets of your empathy deliberately, instead of letting them choose you."},
+       {"text": "And the one he values most: treat truth as a form of care. Comfort built on false information doesn't stay comforting for long."}
+     ]},
+
+    {"type": "scene", "id": "outro", "bg": {"kind": "space", "pal": "midnight"},
+     "cam": {"zoom": [1.0, 1.14], "pan": [[0, 0], [0, 30]]},
+     "els": [
+       {"id": "planet", "type": "planet", "x": 640, "y": 1420, "r": 960, "color": "#2fb39a", "land": "#7bdc8c", "anim": "none"},
+       {"id": "pips", "type": "crowd", "x": 640, "y": 470, "n": 5, "cols": 5, "w": 620, "size": 0.85, "colors": ["#7ad3ff", "#ffd166", "#ffb347", "#7bdc8c", "#ff8fab"], "mood": "happy", "skip": 2},
+       {"id": "pip", "type": "pebble", "x": 640, "y": 462, "size": 1.1, "color": "#ffb347", "mood": "happy"},
+       {"id": "heart", "type": "heart", "x": 640, "y": 300, "size": 0.75, "color": "#ff5a7a", "glow": true},
+       {"id": "q1", "type": "label", "x": 360, "y": 130, "text": "Is it true?", "color": "#5ec8e5", "in": 2, "d": 0.2, "sfx": "pop"},
+       {"id": "q2", "type": "label", "x": 640, "y": 130, "text": "Who pays?", "color": "#f2c14e", "in": 2, "d": 1.0, "sfx": "pop"},
+       {"id": "q3", "type": "label", "x": 920, "y": 130, "text": "What happens next?", "color": "#ff7a59", "in": 2, "d": 1.9, "sfx": "pop"}
+     ],
+     "lines": [
+       {"text": "Empathy isn't the enemy. In Saad's own framing, adaptive empathy is noble. It just has to arrive at the right time, in the right amount, for the right people."},
+       {"text": "Whether you think our dial is set too high, too low, or that a dial is the wrong picture altogether, three questions are worth keeping."},
+       {"text": "Is it true? Who pays? And what happens next?"},
+       {"text": "Caring is how we started. Thinking is how we keep it working."},
+       {"text": "", "dur": 2.0}
+     ]},
+
+    {"type": "card", "id": "end", "style": "end", "title": "LUMEN", "dur": 7,
+     "credits": ["Based on ideas from 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)", "Counterpoints: reviews in The Bulwark and Quillette", "Narration paraphrased; short phrases attributed on screen", "Original animation, characters, voice and score", "Made with open-source tools: Kokoro TTS, Chromium, ffmpeg"]}
+  ]
+}

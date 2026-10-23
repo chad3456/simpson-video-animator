@@ -1,0 +1,1093 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E5",
+  "title": "Settled?",
+  "category": "Suicidal Empathy (book)",
+  "format": "explainer",
+  "rating": "general",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "When does 'settled science' stop being science? Chapter 5 of Gad Saad's 'Suicidal Empathy' on Semmelweis, falsifiability, taboo trade-offs, COVID policy, climate anxiety and youth gender medicine, with the strongest counterpoints.",
+  "source": "Chapter 5 ('Settled Science, Taboo Trade-Offs') of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased. Public record: Cass Review (2024); New York Times (2024); Ioannidis et al. (2023); Watson et al. (2022).",
+  "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, curious, optimistic guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-vienna",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "cross",
+     "type": "icon",
+     "x": 640,
+     "y": 230,
+     "glyph": "cross",
+     "r": 80,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "vi",
+     "type": "label",
+     "x": 640,
+     "y": 350,
+     "text": "Vienna, 1847",
+     "color": "#f2c14e",
+     "d": 1.0
+    },
+    {
+     "id": "docs",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 5,
+     "cols": 5,
+     "w": 700,
+     "size": 0.85,
+     "colors": [
+      "#e0e6ff",
+      "#e0e6ff",
+      "#e0e6ff",
+      "#e0e6ff",
+      "#e0e6ff"
+     ],
+     "mood": "neutral",
+     "d": 0.3,
+     "keys": {
+      "1": {
+       "mood": "angry",
+       "d": 5.0
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "wh",
+     "type": "label",
+     "x": 640,
+     "y": 450,
+     "text": "wash your hands",
+     "color": "#7bdc8c",
+     "d": 1.8,
+     "sfx": "chime",
+     "vol": 0.3,
+     "in": 1
+    },
+    {
+     "id": "mk",
+     "type": "label",
+     "x": 640,
+     "y": 520,
+     "text": "mocked",
+     "color": "#ff5a7a",
+     "d": 5.6,
+     "in": 1
+    },
+    {
+     "id": "gt",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "germ theory: he was right",
+     "color": "#ffd166",
+     "d": 1.6,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 1847, a doctor in Vienna noticed that women in his maternity ward were dying far more often when the doctors came straight from performing autopsies."
+    },
+    {
+     "text": "Ignaz Semmelweis told his colleagues to wash their hands. Deaths plunged. And much of the medical establishment scoffed at him."
+    },
+    {
+     "text": "He died in an asylum. Germ theory later proved him right."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-marshall",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "flask",
+     "type": "icon",
+     "x": 640,
+     "y": 260,
+     "glyph": "flask",
+     "r": 90,
+     "color": "#7bdc8c",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "bm",
+     "type": "label",
+     "x": 640,
+     "y": 400,
+     "text": "Barry Marshall, 1984",
+     "color": "#f2c14e",
+     "d": 0.8
+    },
+    {
+     "id": "np",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "Nobel Prize, 2005",
+     "color": "#ffd166",
+     "d": 7.0,
+     "sfx": "chime",
+     "vol": 0.3
+    },
+    {
+     "id": "book",
+     "type": "book",
+     "x": 330,
+     "y": 360,
+     "w": 200,
+     "h": 280,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "d": 0.3,
+     "anim": "left",
+     "s": 0.8,
+     "in": 1
+    },
+    {
+     "id": "st",
+     "type": "label",
+     "x": 940,
+     "y": 300,
+     "text": "\"settled\"?",
+     "color": "#ff5a7a",
+     "d": 5.0,
+     "sfx": "tick",
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 1984, the Australian doctor Barry Marshall was so sure that bacteria, not stress, caused most stomach ulcers that he drank a culture of them to prove it. He later shared a Nobel Prize."
+    },
+    {
+     "text": "In chapter five of Suicidal Empathy, Gad Saad tells stories like these to make a point. In science, the consensus can be wrong, and the word settled should make us nervous."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "Settled?",
+   "sub": "LUMEN · Episode 5",
+   "glyph": "flask",
+   "color": "#5ec8e5",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "How Science Works",
+   "glyph": "flask",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "popper",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "t1",
+     "type": "card",
+     "x": 340,
+     "y": 330,
+     "glyph": "flask",
+     "title": "claim",
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "a",
+     "type": "arrow",
+     "x": 500,
+     "y": 330,
+     "x2": 780,
+     "y2": 330,
+     "bend": -0.2,
+     "color": "#ffd166",
+     "draw": 0,
+     "keys": {
+      "0": {
+       "draw": 1,
+       "d": 2.4,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "t2",
+     "type": "card",
+     "x": 940,
+     "y": 330,
+     "glyph": "x",
+     "title": "a test that could fail",
+     "color": "#ff5a7a",
+     "d": 3.4,
+     "sfx": "pop",
+     "in": 0
+    },
+    {
+     "id": "fl",
+     "type": "label",
+     "x": 640,
+     "y": 170,
+     "text": "falsifiable",
+     "color": "#ffd166",
+     "d": 5.0,
+     "in": 0
+    },
+    {
+     "id": "bs",
+     "type": "label",
+     "x": 640,
+     "y": 540,
+     "text": "the best so far, not the last word",
+     "color": "#7bdc8c",
+     "d": 1.4,
+     "in": 1
+    },
+    {
+     "id": "em",
+     "type": "label",
+     "x": 640,
+     "y": 620,
+     "text": "\"settled science\" as an appeal to emotion?",
+     "color": "#ffb347",
+     "d": 3.0,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "The philosopher Karl Popper argued that a scientific claim has to be falsifiable: there must be some result that could prove it wrong."
+    },
+    {
+     "text": "That makes science humble by design. Every theory is the best one so far, never the final word."
+    },
+    {
+     "text": "Saad's worry is that the phrase settled science is now used less as a summary of evidence, and more as an emotional appeal: if you question this, you must not care about people."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "tradeoffs",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 420,
+     "tilt": 0,
+     "left": "heart",
+     "right": "coin",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "tilt": 0.3
+      },
+      "2": {
+       "tilt": -0.3
+      }
+     }
+    },
+    {
+     "id": "tt",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "taboo trade-offs",
+     "color": "#ffd166",
+     "d": 1.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "sw",
+     "type": "quote",
+     "x": 640,
+     "y": 130,
+     "text": "There are no solutions.\nThere are only trade-offs.",
+     "by": "Thomas Sowell",
+     "color": "#c792ea",
+     "d": 1.4,
+     "size": 24,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "The psychologist Philip Tetlock describes taboo trade-offs: we refuse to weigh sacred values, like health or safety, against things like money or freedom, because even doing the sums feels monstrous."
+    },
+    {
+     "text": "But every policy trades something for something else."
+    },
+    {
+     "text": "As the economist Thomas Sowell put it, there are no solutions, only trade-offs."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "The Pandemic",
+   "glyph": "syringe",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "ifr",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 640,
+     "y": 400,
+     "values": [
+      0.034,
+      0.095
+     ],
+     "labels": [
+      "ages 0–59",
+      "ages 0–69"
+     ],
+     "unit": "%",
+     "w": 560,
+     "h": 300,
+     "max": 0.12,
+     "dp": 3,
+     "colors": [
+      "#5ec8e5",
+      "#7bdc8c"
+     ],
+     "anim": "fade",
+     "title": "Estimated COVID infection fatality rate before vaccines"
+    },
+    {
+     "id": "src",
+     "type": "text",
+     "x": 640,
+     "y": 640,
+     "text": "pre-vaccine global estimates (Pezzullo, Axfors, Ioannidis et al., 2023)",
+     "size": 18,
+     "d": 1.0,
+     "color": "#c9d3ff",
+     "weight": 700
+    },
+    {
+     "id": "prot",
+     "type": "label",
+     "x": 640,
+     "y": 690,
+     "text": "protect the vulnerable · count every cost",
+     "color": "#ffd166",
+     "d": 1.4,
+     "size": 20,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "COVID is Saad's main example. Before vaccines, researchers estimated that the infection fatality rate for people under sixty was about three or four in ten thousand. For older people, it was many times higher."
+    },
+    {
+     "text": "That steep age gradient, he argues, should have shaped policy: protect the vulnerable, and weigh the costs of closing schools and businesses for everyone else."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "curfew",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "clk",
+     "type": "icon",
+     "x": 640,
+     "y": 230,
+     "glyph": "clock",
+     "r": 80,
+     "color": "#7ad3ff",
+     "anim": "pop",
+     "sfx": "tick"
+    },
+    {
+     "id": "qc",
+     "type": "label",
+     "x": 640,
+     "y": 350,
+     "text": "Quebec curfew, January 2021",
+     "color": "#f2c14e",
+     "d": 0.8
+    },
+    {
+     "id": "sch",
+     "type": "card",
+     "x": 380,
+     "y": 470,
+     "glyph": "cap",
+     "title": "schools closed",
+     "color": "#ffb347",
+     "d": 3.4,
+     "s": 0.62,
+     "in": 0
+    },
+    {
+     "id": "ltr",
+     "type": "card",
+     "x": 900,
+     "y": 470,
+     "glyph": "people",
+     "title": "2020 letter: protests OK",
+     "color": "#c792ea",
+     "d": 1.0,
+     "s": 0.62,
+     "in": 1
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 670,
+     "n": 7,
+     "cols": 7,
+     "w": 900,
+     "size": 0.55,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "d": 2.4,
+     "mood": "happy",
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Instead, Quebec imposed Canada's first curfew in January 2021, and in many places schools stayed closed for months."
+    },
+    {
+     "text": "And in June 2020, more than a thousand public health professionals signed a letter supporting mass anti-racism protests, while other gatherings were still banned. Saad sees that as moral feelings deciding what counted as a health risk."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "covid-other",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 430,
+     "tilt": -0.4,
+     "left": "cross",
+     "right": "syringe",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "tilt": 0
+      }
+     }
+    },
+    {
+     "id": "o1",
+     "type": "label",
+     "x": 640,
+     "y": 100,
+     "text": "early on, no one knew the numbers",
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "size": 20
+    },
+    {
+     "id": "o2",
+     "type": "label",
+     "x": 640,
+     "y": 160,
+     "text": "vaccines: est. 14–20 million lives saved in year one",
+     "color": "#7bdc8c",
+     "d": 5.0,
+     "size": 20
+    },
+    {
+     "id": "both",
+     "type": "label",
+     "x": 640,
+     "y": 220,
+     "text": "both can be true",
+     "color": "#ffd166",
+     "d": 0.4,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Critics answer that early on, no one knew the numbers. Hospitals in places like Lombardy and New York were overwhelmed, and vaccines are estimated to have saved millions of lives in their first year."
+    },
+    {
+     "text": "Both things can be true. Emergency measures saved lives, and the costs of some of them deserved more open debate than they got."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "Climate and Children",
+   "glyph": "leaf",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "climate",
+   "bg": {
+    "kind": "land",
+    "pal": "day"
+   },
+   "els": [
+    {
+     "id": "pl",
+     "type": "planet",
+     "x": 640,
+     "y": 1300,
+     "r": 900,
+     "color": "#2fb39a",
+     "land": "#7bdc8c",
+     "anim": "none"
+    },
+    {
+     "id": "leaf",
+     "type": "icon",
+     "x": 640,
+     "y": 220,
+     "glyph": "leaf",
+     "r": 70,
+     "color": "#7bdc8c",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "p1",
+     "type": "pebble",
+     "x": 520,
+     "y": 470,
+     "color": "#ffb347",
+     "size": 1.0,
+     "mood": "neutral",
+     "anim": "rise",
+     "d": 0.6,
+     "keys": {
+      "2": {
+       "mood": "sad"
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "p2",
+     "type": "pebble",
+     "x": 760,
+     "y": 470,
+     "color": "#ff8fab",
+     "size": 1.0,
+     "mood": "neutral",
+     "anim": "rise",
+     "d": 0.9,
+     "keys": {
+      "2": {
+       "mood": "sad"
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "bs",
+     "type": "label",
+     "x": 640,
+     "y": 340,
+     "text": "BirthStrike",
+     "color": "#ff5a7a",
+     "d": 2.6,
+     "in": 1
+    },
+    {
+     "id": "cons",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "humans are warming the planet: broad consensus",
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "size": 20,
+     "in": 3
+    },
+    {
+     "id": "real",
+     "type": "label",
+     "x": 640,
+     "y": 650,
+     "text": "the real debate: how fast, what cost, who pays",
+     "color": "#ffd166",
+     "d": 4.0,
+     "size": 20,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad applies the same lens to climate change."
+    },
+    {
+     "text": "He isn't denying warming. His target is the emotional climate around it: groups like BirthStrike, whose members pledged not to have children because of the climate crisis."
+    },
+    {
+     "text": "To an evolutionary psychologist, choosing not to reproduce out of empathy for the planet is about as pure an example of suicidal empathy as there is."
+    },
+    {
+     "text": "Climate scientists broadly agree that humans are warming the planet. The real debate is about trade-offs: how fast to cut emissions, at what cost, and who pays."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "Gender Medicine",
+   "glyph": "cross",
+   "color": "#c792ea",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "cass",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "cr",
+     "type": "book",
+     "x": 380,
+     "y": 360,
+     "w": 200,
+     "h": 280,
+     "title": "CASS\nREVIEW",
+     "author": "ENGLAND, 2024",
+     "color": "#5ec8e5",
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "s": 0.85
+    },
+    {
+     "id": "wk",
+     "type": "label",
+     "x": 380,
+     "y": 560,
+     "text": "evidence for blockers: \"remarkably weak\"",
+     "color": "#ffb347",
+     "d": 4.4,
+     "size": 20
+    },
+    {
+     "id": "lock",
+     "type": "icon",
+     "x": 900,
+     "y": 300,
+     "glyph": "lock",
+     "r": 70,
+     "color": "#ff5a7a",
+     "d": 1.2,
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "ok",
+     "type": "label",
+     "x": 900,
+     "y": 410,
+     "text": "US study unpublished",
+     "color": "#ff5a7a",
+     "d": 2.6,
+     "in": 1
+    },
+    {
+     "id": "wp",
+     "type": "text",
+     "x": 900,
+     "y": 470,
+     "text": "researcher feared it would be \"weaponized\"",
+     "size": 22,
+     "d": 5.2,
+     "color": "#f2d0ff",
+     "weight": 700,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's most heated example is gender medicine for young people."
+    },
+    {
+     "text": "In 2024, England's Cass Review, a four-year independent study, concluded that the evidence for puberty blockers in children was remarkably weak."
+    },
+    {
+     "text": "That same year, the New York Times reported that the American researcher Johanna Olson-Kennedy had not published results from a large federally funded study of puberty blockers, saying she worried they could be weaponized. The results reportedly showed no improvement in mental health."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "sport",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "med",
+     "type": "icon",
+     "x": 380,
+     "y": 280,
+     "glyph": "medal",
+     "r": 70,
+     "color": "#f2c14e",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "un",
+     "type": "label",
+     "x": 380,
+     "y": 400,
+     "text": "UN report, 2024: hundreds of medals",
+     "color": "#f2c14e",
+     "d": 1.0,
+     "size": 20
+    },
+    {
+     "id": "lk2",
+     "type": "icon",
+     "x": 900,
+     "y": 280,
+     "glyph": "lock",
+     "r": 70,
+     "color": "#ffb347",
+     "d": 5.0,
+     "sfx": "pop",
+     "in": 0
+    },
+    {
+     "id": "pr",
+     "type": "label",
+     "x": 900,
+     "y": 400,
+     "text": "women’s prison: assault allegations",
+     "color": "#ffb347",
+     "d": 6.4,
+     "size": 20,
+     "in": 0
+    },
+    {
+     "id": "dig",
+     "type": "card",
+     "x": 640,
+     "y": 560,
+     "glyph": "heart",
+     "title": "real distress, real dignity",
+     "color": "#ff5a7a",
+     "d": 1.4,
+     "s": 0.7,
+     "in": 1
+    },
+    {
+     "id": "pub",
+     "type": "label",
+     "x": 640,
+     "y": 680,
+     "text": "publish the evidence, whatever it shows",
+     "color": "#7bdc8c",
+     "d": 0.6,
+     "size": 20,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "He also points to sport, where a 2024 UN report counted hundreds of medals lost by female athletes to male-born competitors, and to a California prison case, where an inmate who transferred to a women's prison was later accused of sexually assaulting women there."
+    },
+    {
+     "text": "On the other side, several major US medical bodies still support individual care, and trans people face high rates of distress and discrimination that deserve real compassion."
+    },
+    {
+     "text": "Where both sides should agree: young patients deserve the best evidence, published in full, whatever it shows."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "c1",
+     "type": "card",
+     "x": 300,
+     "y": 300,
+     "glyph": "syringe",
+     "title": "vaccines",
+     "color": "#7bdc8c",
+     "anim": "pop",
+     "s": 0.7,
+     "d": 4.0,
+     "in": 0
+    },
+    {
+     "id": "c2",
+     "type": "card",
+     "x": 640,
+     "y": 300,
+     "glyph": "fire",
+     "title": "smoking",
+     "color": "#ffb347",
+     "anim": "pop",
+     "s": 0.7,
+     "d": 4.6,
+     "in": 0
+    },
+    {
+     "id": "c3",
+     "type": "card",
+     "x": 980,
+     "y": 300,
+     "glyph": "dna",
+     "title": "evolution",
+     "color": "#c792ea",
+     "anim": "pop",
+     "s": 0.7,
+     "d": 5.2,
+     "in": 0
+    },
+    {
+     "id": "held",
+     "type": "label",
+     "x": 640,
+     "y": 450,
+     "text": "the consensus held",
+     "color": "#5ec8e5",
+     "d": 6.0,
+     "in": 0
+    },
+    {
+     "id": "bb",
+     "type": "label",
+     "x": 640,
+     "y": 530,
+     "text": "the consensus is usually the best bet",
+     "color": "#ffd166",
+     "d": 1.6,
+     "in": 1
+    },
+    {
+     "id": "sg",
+     "type": "label",
+     "x": 640,
+     "y": 610,
+     "text": "show the work · admit mistakes · let people disagree",
+     "color": "#7bdc8c",
+     "d": 0.6,
+     "size": 20,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's critics say he picks the cases where the consensus wobbled, and skips the many where it held: vaccines, smoking and cancer, evolution itself."
+    },
+    {
+     "text": "Questioning science is healthy. Treating every expert as a fraud isn't. Most of the time, the consensus is the best bet we have."
+    },
+    {
+     "text": "Shared ground: science earns trust by showing its work, admitting mistakes, and letting people disagree out loud."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "cross2",
+     "type": "icon",
+     "x": 640,
+     "y": 280,
+     "glyph": "cross",
+     "r": 90,
+     "color": "#5ec8e5",
+     "anim": "pop"
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 660,
+     "n": 7,
+     "cols": 7,
+     "w": 900,
+     "size": 0.7,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "happy",
+     "d": 0.4,
+     "in": 1
+    },
+    {
+     "id": "data",
+     "type": "label",
+     "x": 640,
+     "y": 430,
+     "text": "he had data",
+     "color": "#7bdc8c",
+     "d": 4.6
+    },
+    {
+     "id": "cuts",
+     "type": "label",
+     "x": 640,
+     "y": 520,
+     "text": "follow the evidence, especially when it’s inconvenient",
+     "color": "#ffd166",
+     "d": 1.0,
+     "size": 20,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Semmelweis wasn't right because he was a rebel. He was right because he had data, and the establishment wouldn't look at it."
+    },
+    {
+     "text": "The lesson cuts both ways. Follow the evidence, especially when it's inconvenient, and especially when someone tells you that asking questions is unkind."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 7,
+   "credits": [
+    "Based on chapter 5 of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)",
+    "Also cited: Popper; Tetlock on taboo trade-offs; Sowell; the Cass Review (2024)",
+    "Counterpoints: Watson et al., Lancet Infectious Diseases (2022); IPCC; AAP and Endocrine Society statements",
+    "Narration paraphrased; short phrases attributed on screen",
+    "Original animation, characters, voice and score"
+   ]
+  }
+ ]
+}

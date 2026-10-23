@@ -1,0 +1,1240 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E3",
+  "title": "Same Species, Different Rules",
+  "category": "Suicidal Empathy (book)",
+  "format": "explainer",
+  "rating": "mature",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "Are all cultures equal? Chapter 3 of Gad Saad's 'Suicidal Empathy' on the 'cultural theory of mind', harmful practices, Canada's postnational idea, England's grooming gang scandal and uneven empathy, with the strongest counterpoints.",
+  "source": "Chapter 3 ('Cultural Theory of Mind') of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased. Public record: Jay Report (2014), Casey Audit (2025), UNICEF (2024), ADL (2023).",
+  "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42,
+  "content_note": "Discusses child sexual exploitation, FGM and honour killings factually, without graphic detail."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, curious, optimistic guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-birds",
+   "bg": {
+    "kind": "land",
+    "pal": "day"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ]
+   },
+   "els": [
+    {
+     "id": "hum",
+     "type": "critter",
+     "x": 420,
+     "y": 520,
+     "kind": "hummingbird",
+     "color": "#5ec8e5",
+     "size": 1.8,
+     "anim": "left",
+     "float": 10
+    },
+    {
+     "id": "hl",
+     "type": "label",
+     "x": 420,
+     "y": 300,
+     "text": "lighter than a coin",
+     "color": "#5ec8e5",
+     "d": 2.0,
+     "in": 0
+    },
+    {
+     "id": "cas",
+     "type": "critter",
+     "x": 880,
+     "y": 650,
+     "kind": "cassowary",
+     "size": 1.2,
+     "d": 0.2,
+     "anim": "right",
+     "sfx": "thump",
+     "vol": 0.5,
+     "in": 1
+    },
+    {
+     "id": "cl",
+     "type": "label",
+     "x": 880,
+     "y": 230,
+     "text": "as tall as a person",
+     "color": "#ffb347",
+     "d": 1.6,
+     "in": 1
+    },
+    {
+     "id": "both",
+     "type": "label",
+     "x": 640,
+     "y": 130,
+     "text": "both are birds",
+     "color": "#ffd166",
+     "d": 0.2,
+     "sfx": "pop",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Here are two birds. One weighs less than a coin and hovers like a bee."
+    },
+    {
+     "text": "The other is as tall as a person, and has a dagger-like claw that can seriously injure anyone who corners it."
+    },
+    {
+     "text": "Both are birds. But if you treated the second one like the first, you'd be in trouble."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-book",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "book",
+     "type": "book",
+     "x": 330,
+     "y": 330,
+     "w": 230,
+     "h": 320,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "s": 0.8
+    },
+    {
+     "id": "ce",
+     "type": "label",
+     "x": 860,
+     "y": 280,
+     "text": "categorization error",
+     "color": "#5ec8e5",
+     "d": 4.0,
+     "sfx": "pop",
+     "size": 26
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 860,
+     "y": 520,
+     "n": 5,
+     "cols": 5,
+     "w": 560,
+     "size": 0.8,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "d": 0.3,
+     "mood": "happy",
+     "in": 1
+    },
+    {
+     "id": "same",
+     "type": "text",
+     "x": 860,
+     "y": 380,
+     "text": "\"everyone wants what I want\"",
+     "size": 28,
+     "d": 2.0,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "In chapter three of Suicidal Empathy, Gad Saad says we make this mistake with cultures. He calls it a categorization error."
+    },
+    {
+     "text": "Because people everywhere are human, we assume they want the same things, value the same things, and will live together the same way."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "Same Species, Different Rules",
+   "sub": "LUMEN · Episode 3",
+   "glyph": "globe",
+   "color": "#7bdc8c",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "A Theory of Other Minds",
+   "glyph": "brain",
+   "color": "#c792ea",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "tom",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "me",
+     "type": "pebble",
+     "x": 400,
+     "y": 560,
+     "color": "#ffb347",
+     "size": 1.2,
+     "mood": "happy",
+     "anim": "rise"
+    },
+    {
+     "id": "b1",
+     "type": "brain",
+     "x": 400,
+     "y": 300,
+     "size": 0.6,
+     "d": 1.0,
+     "in": 0
+    },
+    {
+     "id": "you",
+     "type": "pebble",
+     "x": 880,
+     "y": 560,
+     "color": "#7ad3ff",
+     "size": 1.2,
+     "mood": "neutral",
+     "anim": "rise",
+     "d": 0.3
+    },
+    {
+     "id": "b2",
+     "type": "brain",
+     "x": 880,
+     "y": 300,
+     "size": 0.6,
+     "d": 2.2,
+     "in": 0
+    },
+    {
+     "id": "ar",
+     "type": "arrow",
+     "x": 470,
+     "y": 280,
+     "x2": 800,
+     "y2": 280,
+     "bend": -0.25,
+     "color": "#ffd166",
+     "draw": 0,
+     "keys": {
+      "1": {
+       "draw": 1,
+       "d": 0.4,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "ctm",
+     "type": "label",
+     "x": 640,
+     "y": 140,
+     "text": "cultural theory of mind",
+     "color": "#ffd166",
+     "d": 1.6,
+     "in": 1
+    },
+    {
+     "id": "v1",
+     "type": "card",
+     "x": 640,
+     "y": 380,
+     "glyph": "lock",
+     "title": "freedom",
+     "color": "#5ec8e5",
+     "d": 1.0,
+     "s": 0.5,
+     "in": 2
+    },
+    {
+     "id": "v2",
+     "type": "card",
+     "x": 640,
+     "y": 500,
+     "glyph": "scales",
+     "title": "equality",
+     "color": "#7bdc8c",
+     "d": 1.8,
+     "s": 0.5,
+     "in": 2
+    },
+    {
+     "id": "v3",
+     "type": "card",
+     "x": 640,
+     "y": 620,
+     "glyph": "mic",
+     "title": "free speech",
+     "color": "#c792ea",
+     "d": 2.6,
+     "s": 0.5,
+     "in": 2
+    },
+    {
+     "id": "proj",
+     "type": "label",
+     "x": 880,
+     "y": 160,
+     "text": "projection?",
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "sfx": "tick",
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "Psychologists use the phrase theory of mind for our ability to imagine what someone else is thinking."
+    },
+    {
+     "text": "Saad extends it to a cultural theory of mind: we imagine that other cultures think the way ours does."
+    },
+    {
+     "text": "A secular Westerner may assume that everyone, deep down, values individual freedom, equality between the sexes, and free speech the way she does."
+    },
+    {
+     "text": "Saad argues that's a projection. Plenty of people, in plenty of places, sincerely hold very different values."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "parasite",
+   "bg": {
+    "kind": "deep",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "cri",
+     "type": "critter",
+     "x": 560,
+     "y": 470,
+     "kind": "cricket",
+     "color": "#8bc34a",
+     "size": 1.6,
+     "anim": "rise",
+     "keys": {
+      "1": {
+       "x": 760,
+       "y": 560,
+       "d": 2.6,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "worm",
+     "type": "critter",
+     "x": 560,
+     "y": 440,
+     "kind": "worm",
+     "color": "#efe2c2",
+     "size": 0.6,
+     "d": 4.0,
+     "o": 0.9,
+     "keys": {
+      "1": {
+       "x": 900,
+       "y": 620,
+       "d": 4.4,
+       "t": 1.6
+      }
+     },
+     "in": 0
+    },
+    {
+     "id": "water",
+     "type": "shape",
+     "x": 900,
+     "y": 690,
+     "shape": "rect",
+     "w": 700,
+     "h": 120,
+     "color": "#2f6fd6",
+     "d": 1.4,
+     "anim": "fade",
+     "in": 1
+    },
+    {
+     "id": "hw",
+     "type": "label",
+     "x": 560,
+     "y": 330,
+     "text": "hairworm",
+     "color": "#efe2c2",
+     "d": 4.4,
+     "in": 0
+    },
+    {
+     "id": "id",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "ideas as parasites",
+     "color": "#ffd166",
+     "d": 0.6,
+     "sfx": "pop",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "He compares bad ideas to a parasite. A hairworm grows inside a cricket, and when it's ready, it pushes the cricket to leap into water, where the worm swims free and the cricket drowns."
+    },
+    {
+     "text": "Saad's claim is that some ideas work the same way: they lead their hosts to act against their own survival, and to feel good about it."
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "sfx": "whoosh"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "Are All Cultures Equal?",
+   "glyph": "scales",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "practices",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 420,
+     "tilt": 0,
+     "left": "people",
+     "right": "scales",
+     "anim": "pop",
+     "out": 2,
+     "keys": {
+      "1": {
+       "tilt": 0.5
+      }
+     }
+    },
+    {
+     "id": "cl1",
+     "type": "label",
+     "x": 400,
+     "y": 140,
+     "text": "people are equal",
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "cl2",
+     "type": "label",
+     "x": 880,
+     "y": 140,
+     "text": "practices can be judged",
+     "color": "#ffb347",
+     "d": 2.0,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "f1",
+     "type": "card",
+     "x": 380,
+     "y": 380,
+     "glyph": "fear",
+     "title": "FGM: 230 million",
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "in": 2
+    },
+    {
+     "id": "f2",
+     "type": "card",
+     "x": 900,
+     "y": 380,
+     "glyph": "fire",
+     "title": "honour killings",
+     "color": "#ffb347",
+     "d": 7.2,
+     "in": 2
+    },
+    {
+     "id": "src",
+     "type": "text",
+     "x": 640,
+     "y": 660,
+     "text": "UNICEF, 2024 · UN estimates; likely undercounted",
+     "size": 20,
+     "d": 9.0,
+     "color": "#ffd3bd",
+     "weight": 700,
+     "in": 2
+    },
+    {
+     "id": "ag",
+     "type": "label",
+     "x": 640,
+     "y": 140,
+     "text": "here, many critics agree",
+     "color": "#7bdc8c",
+     "d": 0.4,
+     "sfx": "chime",
+     "vol": 0.3,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's most provocative line is simple: cultures are not equal."
+    },
+    {
+     "text": "He doesn't mean people aren't equal. He means that practices can be judged."
+    },
+    {
+     "text": "UNICEF estimates that more than two hundred and thirty million women and girls alive today have undergone female genital mutilation. The UN has estimated around five thousand honour killings a year, and many experts believe that's an undercount."
+    },
+    {
+     "text": "Saad says Western empathy makes people slow to condemn these practices, for fear of seeming intolerant."
+    },
+    {
+     "text": "Here, many of his critics agree with him. Human rights groups, including many founded by women from those communities, have fought these practices for decades. The disagreement is over how far that judgement should stretch."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "The Postnational State",
+   "glyph": "building",
+   "color": "#5ec8e5",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "postnational",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "jt",
+     "type": "quote",
+     "x": 640,
+     "y": 220,
+     "text": "There is no core identity,\nno mainstream in Canada.",
+     "by": "Justin Trudeau, 2015",
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop",
+     "size": 28
+    },
+    {
+     "id": "rel",
+     "type": "label",
+     "x": 640,
+     "y": 390,
+     "text": "nothing to ask newcomers to adopt?",
+     "color": "#ffb347",
+     "d": 1.6,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 8,
+     "cols": 8,
+     "w": 1000,
+     "size": 0.7,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "d": 1.0,
+     "mood": "happy",
+     "in": 0
+    },
+    {
+     "id": "s1",
+     "type": "card",
+     "x": 380,
+     "y": 420,
+     "glyph": "cap",
+     "title": "children thrive",
+     "color": "#7bdc8c",
+     "d": 1.6,
+     "s": 0.62,
+     "in": 2
+    },
+    {
+     "id": "s2",
+     "type": "card",
+     "x": 900,
+     "y": 420,
+     "glyph": "people",
+     "title": "integration matters",
+     "color": "#ffb347",
+     "d": 0.8,
+     "s": 0.62,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 2015, Canada's new prime minister, Justin Trudeau, told a magazine that Canada could be the first postnational state, a country with no core identity."
+    },
+    {
+     "text": "Saad sees this as cultural empathy taken to its limit. If no culture is better than another, there's nothing in particular to ask newcomers to adopt."
+    },
+    {
+     "text": "Supporters say Canada's openness is a success story. Its immigrants, and especially their children, tend to do well in school and at work."
+    },
+    {
+     "text": "Saad replies that success depends on what newcomers believe and whether they integrate, and he points to disputes over public prayer and religious accommodation as warning signs."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "A Scandal in Plain Sight",
+   "glyph": "shield",
+   "color": "#ff5a7a",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "rotherham",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "sh",
+     "type": "icon",
+     "x": 640,
+     "y": 220,
+     "glyph": "shield",
+     "r": 80,
+     "color": "#ff5a7a",
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "out": 2
+    },
+    {
+     "id": "ro",
+     "type": "label",
+     "x": 640,
+     "y": 330,
+     "text": "Rotherham, 1997–2013",
+     "color": "#f2c14e",
+     "d": 0.6,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "kids",
+     "type": "dots",
+     "x": 640,
+     "y": 475,
+     "n": 140,
+     "cols": 20,
+     "gap": 26,
+     "size": 7,
+     "color": "#ffb3c1",
+     "d": 3.0,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "n",
+     "type": "text",
+     "x": 640,
+     "y": 620,
+     "text": "about 1,400 children exploited",
+     "size": 30,
+     "d": 4.4,
+     "in": 1
+    },
+    {
+     "id": "t1",
+     "type": "card",
+     "x": 260,
+     "y": 330,
+     "glyph": "folder",
+     "title": "Rochdale",
+     "color": "#ffb347",
+     "d": 0.8,
+     "s": 0.7,
+     "in": 2
+    },
+    {
+     "id": "t2",
+     "type": "card",
+     "x": 520,
+     "y": 330,
+     "glyph": "folder",
+     "title": "Telford",
+     "color": "#ffb347",
+     "d": 1.3,
+     "s": 0.7,
+     "in": 2
+    },
+    {
+     "id": "t3",
+     "type": "card",
+     "x": 780,
+     "y": 330,
+     "glyph": "folder",
+     "title": "Oxford",
+     "color": "#ffb347",
+     "d": 1.8,
+     "s": 0.7,
+     "in": 2
+    },
+    {
+     "id": "t4",
+     "type": "card",
+     "x": 1040,
+     "y": 330,
+     "glyph": "folder",
+     "title": "and more",
+     "color": "#ffb347",
+     "d": 2.3,
+     "s": 0.7,
+     "in": 2
+    },
+    {
+     "id": "ph",
+     "type": "text",
+     "x": 640,
+     "y": 520,
+     "text": "many convicted men in these cases: Pakistani heritage",
+     "size": 24,
+     "d": 4.0,
+     "color": "#ffd3bd",
+     "weight": 700,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's most serious case is the grooming gang scandal in England."
+    },
+    {
+     "text": "In Rotherham, an independent inquiry led by Professor Alexis Jay estimated that about fourteen hundred children were sexually exploited between 1997 and 2013. Most were girls, some as young as eleven. They were groomed, raped, passed between men and towns, and threatened into silence."
+    },
+    {
+     "text": "Similar networks were uncovered in Rochdale, Telford, Oxford and other towns. In many of these cases, the convicted men were of Pakistani heritage."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "lookaway",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "eye",
+     "type": "icon",
+     "x": 640,
+     "y": 230,
+     "glyph": "eye",
+     "r": 80,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "o": 0.35
+      }
+     }
+    },
+    {
+     "id": "fr",
+     "type": "label",
+     "x": 640,
+     "y": 360,
+     "text": "\"fear of being thought racist\"",
+     "color": "#ffb347",
+     "d": 4.6
+    },
+    {
+     "id": "off",
+     "type": "crowd",
+     "x": 640,
+     "y": 620,
+     "n": 5,
+     "cols": 5,
+     "w": 700,
+     "size": 0.8,
+     "colors": [
+      "#9fb4d8",
+      "#9fb4d8",
+      "#9fb4d8",
+      "#9fb4d8",
+      "#9fb4d8"
+     ],
+     "mood": "worried",
+     "d": 7.0,
+     "in": 0
+    },
+    {
+     "id": "ca",
+     "type": "label",
+     "x": 640,
+     "y": 440,
+     "text": "Casey audit, 2025",
+     "color": "#c792ea",
+     "d": 0.4,
+     "sfx": "tick",
+     "in": 1
+    },
+    {
+     "id": "se",
+     "type": "label",
+     "x": 640,
+     "y": 360,
+     "text": "Saad: image ranked above children",
+     "color": "#ff5a7a",
+     "d": 0.4,
+     "in": 2
+    },
+    {
+     "id": "pr",
+     "type": "label",
+     "x": 640,
+     "y": 140,
+     "text": "crimes of particular men · condemned by British Muslim leaders",
+     "color": "#7bdc8c",
+     "d": 1.6,
+     "size": 20,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "The inquiry also found something that shamed the country. Some staff were nervous about identifying the perpetrators' ethnic origins, for fear of being thought racist. Police and social workers often dismissed the girls, or blamed them."
+    },
+    {
+     "text": "A national audit by Louise Casey in 2025 found that the issue had been avoided for years, and that poor record-keeping made it worse."
+    },
+    {
+     "text": "For Saad, this is suicidal empathy at its worst: concern for a community's image outranking the safety of children."
+    },
+    {
+     "text": "It matters to be precise. These crimes were committed by particular men, and British Muslim leaders have condemned them. The scandal is that institutions looked away."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "Whose Pain Counts?",
+   "glyph": "heart",
+   "color": "#ff8fab",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "adl",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 640,
+     "y": 380,
+     "values": [
+      3697,
+      8873
+     ],
+     "labels": [
+      "2022",
+      "2023"
+     ],
+     "fmt": "int",
+     "w": 520,
+     "h": 280,
+     "max": 9500,
+     "colors": [
+      "#c792ea",
+      "#ff5a7a"
+     ],
+     "d": 0.6,
+     "title": "Antisemitic incidents recorded in the US (ADL)",
+     "in": 1
+    },
+    {
+     "id": "o7",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "October 7, 2023",
+     "color": "#f2c14e",
+     "d": 0.3,
+     "in": 1
+    },
+    {
+     "id": "dbl",
+     "type": "label",
+     "x": 640,
+     "y": 660,
+     "text": "more than double",
+     "color": "#ff5a7a",
+     "d": 2.6,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad also argues that empathy is handed out unevenly. Some groups are always seen as victims, others almost never."
+    },
+    {
+     "text": "After the Hamas attack on Israel on October seventh, 2023, which killed around twelve hundred people, antisemitic incidents surged across the West."
+    },
+    {
+     "text": "In the United States, the Anti-Defamation League recorded nearly nine thousand incidents in 2023, more than double the year before."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "autopilot",
+   "bg": {
+    "kind": "deep",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "ht",
+     "type": "particles",
+     "x": 640,
+     "y": 330,
+     "kind": "hearts",
+     "n": 10,
+     "w": 700,
+     "h": 260,
+     "anim": "fade"
+    },
+    {
+     "id": "ap",
+     "type": "label",
+     "x": 640,
+     "y": 160,
+     "text": "empathy on autopilot?",
+     "color": "#ffd166",
+     "d": 0.6
+    },
+    {
+     "id": "sh2",
+     "type": "icon",
+     "x": 640,
+     "y": 420,
+     "glyph": "globe",
+     "r": 70,
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "dk",
+     "type": "label",
+     "x": 640,
+     "y": 540,
+     "text": "Danish navy, 2021",
+     "color": "#7ad3ff",
+     "d": 1.4,
+     "in": 1
+    },
+    {
+     "id": "ac",
+     "type": "text",
+     "x": 640,
+     "y": 610,
+     "text": "according to Saad: no prison, asylum, an integration plan",
+     "size": 24,
+     "d": 4.0,
+     "color": "#c9d3ff",
+     "weight": 700,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "He describes Western activists, including some gay activists, cheering for movements whose leaders would not tolerate them. To Saad, that's empathy that never checks where it's aimed."
+    },
+    {
+     "text": "And he tells the story of a Nigerian pirate who was wounded in a firefight with the Danish navy in 2021. According to Saad, instead of prison, the man ended up with medical care, asylum, and an integration plan in Denmark."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapter",
+   "kicker": "Part 6",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 600,
+     "n": 9,
+     "cols": 9,
+     "w": 1100,
+     "size": 0.75,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "anim": "rise",
+     "mood": "neutral",
+     "keys": {
+      "1": {
+       "mood": "happy"
+      }
+     }
+    },
+    {
+     "id": "a1",
+     "type": "label",
+     "x": 640,
+     "y": 160,
+     "text": "cultures are not monoliths",
+     "color": "#5ec8e5",
+     "d": 0.3,
+     "in": 1
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 240,
+     "text": "judge practices, not passports",
+     "color": "#c792ea",
+     "d": 0.6,
+     "in": 2
+    },
+    {
+     "id": "a3",
+     "type": "label",
+     "x": 640,
+     "y": 320,
+     "text": "the second generation integrates",
+     "color": "#7bdc8c",
+     "d": 0.4,
+     "in": 3
+    },
+    {
+     "id": "a4",
+     "type": "label",
+     "x": 640,
+     "y": 420,
+     "text": "name the harm · protect the victims · don’t demonize millions",
+     "color": "#ffd166",
+     "d": 1.0,
+     "size": 20,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Critics push back hard here."
+    },
+    {
+     "text": "Cultures aren't monoliths. Every group contains reformers, dissidents, and ordinary people who reject the worst practices, often at great personal risk."
+    },
+    {
+     "text": "Judging a practice is one thing. Suspecting millions of individuals because of where they were born is another, and history shows where that road leads."
+    },
+    {
+     "text": "And in many countries, the children of immigrants end up looking a lot like everyone else, in jobs, values and marriage."
+    },
+    {
+     "text": "Shared ground: you can name a harmful practice, and protect its victims, without demonizing everyone who shares a faith or a passport with its perpetrators. Looking away helps no one."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "land",
+    "pal": "day"
+   },
+   "els": [
+    {
+     "id": "hum2",
+     "type": "critter",
+     "x": 480,
+     "y": 480,
+     "kind": "hummingbird",
+     "color": "#5ec8e5",
+     "size": 1.5,
+     "float": 10,
+     "anim": "left"
+    },
+    {
+     "id": "cas2",
+     "type": "critter",
+     "x": 820,
+     "y": 650,
+     "kind": "cassowary",
+     "size": 1.0,
+     "anim": "right"
+    },
+    {
+     "id": "see",
+     "type": "label",
+     "x": 480,
+     "y": 260,
+     "text": "see clearly",
+     "color": "#ffd166",
+     "d": 1.6,
+     "in": 1
+    },
+    {
+     "id": "ind",
+     "type": "label",
+     "x": 820,
+     "y": 200,
+     "text": "see individuals",
+     "color": "#7bdc8c",
+     "d": 4.8,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "A hummingbird and a cassowary are both remarkable. You just need to know which one you're dealing with."
+    },
+    {
+     "text": "Saad's challenge is to see other people clearly, not as reflections of ourselves. His critics' challenge is to see them as individuals. A wise society probably needs both."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 7,
+   "credits": [
+    "Based on chapter 3 of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)",
+    "Public record: Jay Report (2014); Casey National Audit (2025); UNICEF (2024); ADL Audit (2023)",
+    "Counterpoints: research on second-generation integration; human rights groups' work on FGM",
+    "Narration paraphrased; short phrases attributed on screen",
+    "Original animation, characters, voice and score"
+   ]
+  }
+ ]
+}

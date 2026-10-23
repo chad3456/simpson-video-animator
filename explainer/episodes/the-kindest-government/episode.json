@@ -1,0 +1,1135 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E7",
+  "title": "The Kindest Government",
+  "category": "Suicidal Empathy (book)",
+  "format": "explainer",
+  "rating": "general",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "Does the welfare state run on empathy? Chapter 7 of Gad Saad's 'Suicidal Empathy' on ants and socialism, New Harmony, taxation, Canada's healthcare waits, the nanny state and the military, with the strongest counterpoints. Series finale.",
+  "source": "Chapter 7 ('Govern Me Harder, Daddy!') of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased. Public record: Fraser Institute (2023); Quebec and federal tax tables (2022).",
+  "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, curious, optimistic guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-ants",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ]
+   },
+   "els": [
+    {
+     "id": "ant0",
+     "type": "critter",
+     "x": 180,
+     "y": 600,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.0
+    },
+    {
+     "id": "ant1",
+     "type": "critter",
+     "x": 365,
+     "y": 640,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.2
+    },
+    {
+     "id": "ant2",
+     "type": "critter",
+     "x": 550,
+     "y": 600,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.4
+    },
+    {
+     "id": "ant3",
+     "type": "critter",
+     "x": 735,
+     "y": 640,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.6000000000000001
+    },
+    {
+     "id": "ant4",
+     "type": "critter",
+     "x": 920,
+     "y": 600,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.8
+    },
+    {
+     "id": "ant5",
+     "type": "critter",
+     "x": 1105,
+     "y": 640,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 1.0
+    },
+    {
+     "id": "ss",
+     "type": "label",
+     "x": 640,
+     "y": 380,
+     "text": "\"social stomach\"",
+     "color": "#ffb347",
+     "d": 3.0
+    },
+    {
+     "id": "fo",
+     "type": "label",
+     "x": 640,
+     "y": 250,
+     "text": "Auguste Forel: a model for us?",
+     "color": "#5ec8e5",
+     "d": 1.4,
+     "in": 1
+    },
+    {
+     "id": "ew",
+     "type": "quote",
+     "x": 640,
+     "y": 230,
+     "text": "Wonderful theory,\nwrong species.",
+     "by": "E. O. Wilson, on communism",
+     "color": "#c792ea",
+     "d": 1.8,
+     "size": 28,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "In an ant colony, workers share food mouth to mouth, a kind of social stomach. No ant owns anything. The colony is everything."
+    },
+    {
+     "text": "A century ago, the Swiss scientist Auguste Forel held up ants as a model for a cooperative, socialist human society."
+    },
+    {
+     "text": "The biologist E. O. Wilson, who spent his life studying ants, had a sharper line about communism: wonderful theory, wrong species."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-book",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "book",
+     "type": "book",
+     "x": 330,
+     "y": 330,
+     "w": 230,
+     "h": 320,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "s": 0.8
+    },
+    {
+     "id": "bld",
+     "type": "icon",
+     "x": 860,
+     "y": 280,
+     "glyph": "building",
+     "r": 80,
+     "color": "#c792ea",
+     "d": 3.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "ws",
+     "type": "label",
+     "x": 860,
+     "y": 410,
+     "text": "the welfare state runs on empathy",
+     "color": "#ffd166",
+     "d": 5.0
+    },
+    {
+     "id": "gm",
+     "type": "quote",
+     "x": 860,
+     "y": 560,
+     "text": "Govern Me Harder, Daddy!",
+     "by": "Saad’s chapter title, tongue in cheek",
+     "color": "#ff5a7a",
+     "d": 1.6,
+     "size": 26,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "In the last case-file chapter of Suicidal Empathy, Gad Saad argues that the welfare state runs on empathy, and that's both its appeal and its danger."
+    },
+    {
+     "text": "He gave the chapter a deliberately cheeky title: Govern Me Harder, Daddy."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "The Kindest Government",
+   "sub": "LUMEN · Episode 7",
+   "glyph": "building",
+   "color": "#c792ea",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "Why Big Government Feels Kind",
+   "glyph": "heart",
+   "color": "#ff8fab",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "folk",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "heart",
+     "x": 380,
+     "y": 300,
+     "size": 0.8,
+     "color": "#ff5a7a",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "a",
+     "type": "arrow",
+     "x": 470,
+     "y": 300,
+     "x2": 760,
+     "y2": 300,
+     "bend": -0.2,
+     "color": "#ffd166",
+     "draw": 0,
+     "keys": {
+      "0": {
+       "draw": 1,
+       "d": 2.0
+      }
+     }
+    },
+    {
+     "id": "bld",
+     "type": "icon",
+     "x": 860,
+     "y": 300,
+     "glyph": "building",
+     "r": 60,
+     "color": "#c792ea",
+     "d": 3.0,
+     "in": 0
+    },
+    {
+     "id": "rd",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "more empathy, more support for redistribution",
+     "color": "#ff5a7a",
+     "d": 4.0,
+     "size": 20,
+     "in": 0
+    },
+    {
+     "id": "band",
+     "type": "crowd",
+     "x": 640,
+     "y": 620,
+     "n": 5,
+     "cols": 5,
+     "w": 600,
+     "size": 0.8,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "d": 0.3,
+     "mood": "happy",
+     "in": 1
+    },
+    {
+     "id": "fe",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "folk economics: a fixed pie",
+     "color": "#ffb347",
+     "d": 2.0,
+     "keys": {},
+     "in": 1
+    },
+    {
+     "id": "gr",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "a modern economy can grow for everyone",
+     "color": "#7bdc8c",
+     "d": 1.6,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad cites research linking higher empathy to stronger support for government redistribution and welfare programs."
+    },
+    {
+     "text": "He also leans on the idea of folk economics. Our intuitions evolved in small bands, where food was shared, and one person's gain often was another's loss."
+    },
+    {
+     "text": "In a modern economy, wealth can grow for everyone, but our instincts still picture a fixed pie."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "harmony",
+   "bg": {
+    "kind": "land",
+    "pal": "day"
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "house",
+     "x": 640,
+     "y": 470,
+     "anim": "rise",
+     "s": 0.9
+    },
+    {
+     "id": "nh",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "New Harmony, Indiana, 1825",
+     "color": "#f2c14e",
+     "d": 1.0
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 660,
+     "n": 7,
+     "cols": 7,
+     "w": 900,
+     "size": 0.65,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "happy",
+     "d": 1.5,
+     "keys": {
+      "1": {
+       "mood": "worried"
+      }
+     },
+     "in": 0
+    },
+    {
+     "id": "col",
+     "type": "label",
+     "x": 640,
+     "y": 220,
+     "text": "collapsed within two years",
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "sfx": "thump",
+     "vol": 0.4,
+     "in": 1
+    },
+    {
+     "id": "son",
+     "type": "label",
+     "x": 640,
+     "y": 290,
+     "text": "his son: equal pay for unequal effort drives out the hardworking",
+     "color": "#e0e6ff",
+     "d": 3.0,
+     "size": 18,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "His historical example is New Harmony, Indiana, a utopian community founded by Robert Owen in 1825, where property would be shared."
+    },
+    {
+     "text": "It collapsed within about two years. Owen's own son concluded that paying the hardworking and the idle the same simply drives the hardworking away."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "Parasitic Taxation",
+   "glyph": "receipt",
+   "color": "#f2c14e",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "taxday",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "rc",
+     "type": "icon",
+     "x": 640,
+     "y": 230,
+     "glyph": "receipt",
+     "r": 80,
+     "color": "#f2c14e",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "d22",
+     "type": "label",
+     "x": 640,
+     "y": 360,
+     "text": "May 2022: Saad’s tax bill",
+     "color": "#f2c14e",
+     "d": 1.0
+    },
+    {
+     "id": "m",
+     "type": "meter",
+     "x": 640,
+     "y": 600,
+     "r": 150,
+     "value": 0,
+     "label": "TOP RATE",
+     "d": 0.3,
+     "keys": {
+      "1": {
+       "value": 0.533,
+       "d": 1.4,
+       "t": 2.0
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "qr",
+     "type": "label",
+     "x": 640,
+     "y": 420,
+     "text": "Quebec + federal: about 53%",
+     "color": "#ffb347",
+     "d": 3.4,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "third",
+     "type": "label",
+     "x": 640,
+     "y": 420,
+     "text": "all taxes in: he keeps about a third",
+     "color": "#ff5a7a",
+     "d": 0.4,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad is blunt, and personal, here. He describes the day in 2022 when he paid his bill to the Quebec and Canadian governments, and watched more than half of his best year's income disappear."
+    },
+    {
+     "text": "Quebec's top combined income tax rate is a little over fifty-three percent."
+    },
+    {
+     "text": "Add sales tax, property tax and the rest, Saad calculates, and he keeps about a third of what he earns."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "compliance",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "clk",
+     "type": "icon",
+     "x": 360,
+     "y": 280,
+     "glyph": "clock",
+     "r": 70,
+     "color": "#7ad3ff",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "t17",
+     "type": "label",
+     "x": 360,
+     "y": 400,
+     "text": "1917: a \"temporary\" wartime tax",
+     "color": "#7ad3ff",
+     "d": 1.0,
+     "size": 20
+    },
+    {
+     "id": "h2",
+     "type": "heart",
+     "x": 920,
+     "y": 280,
+     "size": 0.7,
+     "color": "#ff5a7a",
+     "d": 0.4,
+     "in": 1
+    },
+    {
+     "id": "lab",
+     "type": "label",
+     "x": 920,
+     "y": 400,
+     "text": "lab study: empathy primes tax compliance",
+     "color": "#ff5a7a",
+     "d": 1.6,
+     "size": 20,
+     "in": 1
+    },
+    {
+     "id": "roads",
+     "type": "card",
+     "x": 380,
+     "y": 560,
+     "glyph": "home",
+     "title": "roads, schools, courts",
+     "color": "#7bdc8c",
+     "d": 1.0,
+     "s": 0.62,
+     "in": 2
+    },
+    {
+     "id": "dk",
+     "type": "card",
+     "x": 900,
+     "y": 560,
+     "glyph": "heart",
+     "title": "Denmark: high tax, very happy",
+     "color": "#5ec8e5",
+     "d": 3.8,
+     "s": 0.62,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "He notes that Canada's federal income tax began in 1917, as a temporary wartime measure."
+    },
+    {
+     "text": "And he cites a lab study where people primed to feel empathy became more willing to pay their taxes. For Saad, that's the mechanism: feelings make the bill go down easier."
+    },
+    {
+     "text": "Critics answer that taxes buy roads, schools, courts and safety nets, and that high-tax countries like Denmark consistently rank among the happiest and most prosperous on Earth."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "\"Free\" Healthcare",
+   "glyph": "cross",
+   "color": "#5ec8e5",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "waits",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 640,
+     "y": 380,
+     "values": [
+      9.3,
+      27.7
+     ],
+     "labels": [
+      "1993",
+      "2023"
+     ],
+     "unit": " wks",
+     "w": 560,
+     "h": 300,
+     "max": 30,
+     "colors": [
+      "#5ec8e5",
+      "#ff5a7a"
+     ],
+     "d": 0.2,
+     "title": "Median wait, GP referral to treatment, Canada (Fraser Institute survey)",
+     "in": 1
+    },
+    {
+     "id": "cr",
+     "type": "icon",
+     "x": 640,
+     "y": 330,
+     "glyph": "cross",
+     "r": 80,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "out": 1
+    },
+    {
+     "id": "nf",
+     "type": "label",
+     "x": 640,
+     "y": 460,
+     "text": "not free: paid through taxes",
+     "color": "#ffd166",
+     "d": 1.6,
+     "out": 1
+    },
+    {
+     "id": "pi",
+     "type": "label",
+     "x": 640,
+     "y": 660,
+     "text": "Saad pays for private insurance",
+     "color": "#ffb347",
+     "d": 2.4,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next, Canada's public healthcare. Saad stresses that it isn't free. It's paid for through taxes."
+    },
+    {
+     "text": "And waits have grown. A Fraser Institute survey estimated that the median wait from a family doctor's referral to treatment was under ten weeks in 1993, and nearly twenty-eight weeks in 2023."
+    },
+    {
+     "text": "Many Quebecers wait years for a family doctor, and Saad says he pays for private insurance to get timely care."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "defend-hc",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "d1",
+     "type": "card",
+     "x": 300,
+     "y": 340,
+     "glyph": "people",
+     "title": "covers everyone",
+     "color": "#7bdc8c",
+     "anim": "pop",
+     "sfx": "pop",
+     "s": 0.75
+    },
+    {
+     "id": "d2",
+     "type": "card",
+     "x": 640,
+     "y": 340,
+     "glyph": "coin",
+     "title": "far cheaper per person than the US",
+     "color": "#f2c14e",
+     "d": 2.6,
+     "s": 0.75,
+     "in": 0
+    },
+    {
+     "id": "d3",
+     "type": "card",
+     "x": 980,
+     "y": 340,
+     "glyph": "receipt",
+     "title": "no medical bankruptcies",
+     "color": "#5ec8e5",
+     "d": 5.4,
+     "s": 0.75,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "Defenders point out that Canada covers everyone, spends far less per person than the United States, and that Canadians don't go bankrupt over hospital bills."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "The Nanny State",
+   "glyph": "alarm",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "nanny",
+   "bg": {
+    "kind": "city",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "pebble",
+     "x": 640,
+     "y": 640,
+     "color": "#ffb347",
+     "size": 1.1,
+     "mood": "neutral",
+     "anim": "rise",
+     "keys": {
+      "1": {
+       "mood": "worried"
+      }
+     }
+    },
+    {
+     "id": "j",
+     "type": "card",
+     "x": 270,
+     "y": 330,
+     "glyph": "x",
+     "title": "jaywalking fines",
+     "color": "#ff5a7a",
+     "d": 2.4,
+     "s": 0.62,
+     "in": 0
+    },
+    {
+     "id": "t",
+     "type": "card",
+     "x": 640,
+     "y": 290,
+     "glyph": "clock",
+     "title": "winter tyres by law",
+     "color": "#7ad3ff",
+     "d": 3.6,
+     "s": 0.62,
+     "in": 0
+    },
+    {
+     "id": "s",
+     "type": "card",
+     "x": 1010,
+     "y": 330,
+     "glyph": "mic",
+     "title": "French on shop signs",
+     "color": "#c792ea",
+     "d": 4.8,
+     "s": 0.62,
+     "in": 0
+    },
+    {
+     "id": "gm",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "\"Govern me harder, Daddy!\"",
+     "color": "#ff5a7a",
+     "d": 1.8,
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "def",
+     "type": "label",
+     "x": 640,
+     "y": 140,
+     "text": "defenders: real accidents, a minority language",
+     "color": "#7bdc8c",
+     "d": 0.6,
+     "size": 20,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad also mocks what he sees as petty rules: fines for crossing an empty street, a legal date for switching to winter tyres, and Quebec's language office policing the size of French on shop signs."
+    },
+    {
+     "text": "That's where his chapter title comes from. Faced with all this care, he sarcastically cries out: govern me harder, daddy."
+    },
+    {
+     "text": "Defenders say many such rules follow real accidents, and that Quebec's language laws protect a minority language on an English-speaking continent."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "military",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "sh",
+     "type": "icon",
+     "x": 640,
+     "y": 260,
+     "glyph": "shield",
+     "r": 90,
+     "color": "#7ad3ff",
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.4
+    },
+    {
+     "id": "btb",
+     "type": "label",
+     "x": 640,
+     "y": 400,
+     "text": "\"Be the Best\": reportedly dropped, then kept",
+     "color": "#f2c14e",
+     "d": 6.0,
+     "size": 20
+    },
+    {
+     "id": "det",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "Saad: deterrence first",
+     "color": "#ffb347",
+     "d": 0.6,
+     "in": 1
+    },
+    {
+     "id": "cr",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 5,
+     "cols": 5,
+     "w": 700,
+     "size": 0.75,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "calm",
+     "d": 1.0,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "Finally, he turns to the military, where he argues that recruitment has come to prioritise inclusion over readiness. He cites a reported British Army plan to drop its motto, Be the Best, which in the end it kept."
+    },
+    {
+     "text": "A military's job, he says, is to deter enemies, and empathy is no substitute for strength."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 420,
+     "tilt": 0,
+     "left": "coin",
+     "right": "heart",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "tilt": 0.4,
+       "d": 2.0
+      },
+      "2": {
+       "tilt": 0
+      }
+     }
+    },
+    {
+     "id": "a1",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "pensions, vaccines, clean water: lives saved",
+     "color": "#5ec8e5",
+     "d": 1.0,
+     "out": 1,
+     "size": 20,
+     "in": 0
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "markets need courts, contracts, property rights",
+     "color": "#c792ea",
+     "d": 0.4,
+     "out": 2,
+     "size": 20,
+     "in": 1
+    },
+    {
+     "id": "a3",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "judge help by results, not intentions",
+     "color": "#7bdc8c",
+     "d": 0.6,
+     "size": 22,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Critics say Saad underrates what government does well. Public pensions sharply cut poverty among the elderly, and vaccination, clean water and safety rules have saved millions of lives."
+    },
+    {
+     "text": "They also note that markets themselves depend on government: on courts, contracts and property rights."
+    },
+    {
+     "text": "Shared ground: help should be judged by results, not intentions, and every program should be able to answer a simple question. Is this working, and at what cost?"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "ant0",
+     "type": "critter",
+     "x": 180,
+     "y": 600,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.0
+    },
+    {
+     "id": "ant1",
+     "type": "critter",
+     "x": 365,
+     "y": 640,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.2
+    },
+    {
+     "id": "ant2",
+     "type": "critter",
+     "x": 550,
+     "y": 600,
+     "kind": "ant",
+     "color": "#ff7a59",
+     "size": 1.1,
+     "anim": "left",
+     "d": 0.4
+    },
+    {
+     "id": "hu",
+     "type": "pebble",
+     "x": 900,
+     "y": 620,
+     "color": "#ffb347",
+     "size": 1.2,
+     "mood": "happy",
+     "anim": "rise",
+     "d": 1.0
+    },
+    {
+     "id": "hu2",
+     "type": "pebble",
+     "x": 1060,
+     "y": 620,
+     "color": "#7ad3ff",
+     "size": 1.0,
+     "mood": "happy",
+     "anim": "rise",
+     "d": 1.4
+    },
+    {
+     "id": "ind",
+     "type": "label",
+     "x": 980,
+     "y": 420,
+     "text": "individuals who cooperate",
+     "color": "#ffd166",
+     "d": 3.0,
+     "in": 0
+    },
+    {
+     "id": "q",
+     "type": "label",
+     "x": 640,
+     "y": 180,
+     "text": "Is our kindness actually helping?",
+     "color": "#ff5a7a",
+     "d": 1.0,
+     "sfx": "chime",
+     "vol": 0.3,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Ants are remarkable. But humans aren't ants. We're individuals who cooperate, compete, and want our effort to count."
+    },
+    {
+     "text": "The challenge, for left and right alike, is building a society that's kind without asking people to stop being human."
+    },
+    {
+     "text": "That ends our tour through Suicidal Empathy. Agree with Saad or not, his question is worth keeping: is our kindness actually helping?"
+    },
+    {
+     "text": "",
+     "dur": 2.6,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 7,
+   "credits": [
+    "Based on chapter 7 of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)",
+    "Public record: Fraser Institute 'Waiting Your Turn' (2023); Quebec and federal tax tables (2022)",
+    "Counterpoints: World Happiness Report; OECD data on pensions and poverty",
+    "Narration paraphrased; short phrases attributed on screen",
+    "Original animation, characters, voice and score"
+   ]
+  }
+ ]
+}

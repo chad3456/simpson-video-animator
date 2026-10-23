@@ -1,0 +1,3723 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "Special",
+  "title": "Eight Nights of Fire",
+  "format": "explainer",
+  "rating": "adult",
+  "category": "Current events: France",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "In June 2023 a police officer shot 17-year-old Nahel Merzouk in Nanterre, and France burned for eight nights. A sourced, illustrated account of the riots: the damage, the attacks on police, mayors and town halls, the phones that spread it, the second riot online, who the rioters were, and whether Gad Saad's 'suicidal empathy', especially his claim about women, holds up against the data.",
+  "source": "French Senate inquiry (April 2024); Interior Ministry (G. Darmanin, July 2023); Justice Ministry (E. Dupond-Moretti, Aug 2023); France Assureurs (March 2024); Ifop polls for Le Figaro (29-30 June) and Sud Radio (4-5 July 2023); EDMO and Logically fact-checks; Reuters, AFP, NPR, The Local; Cour de cassation (12 June 2026). Framing from 'Suicidal Empathy' by Gad Saad (2026), paraphrased and attributed, with counterpoints.",
+  "disclaimer": "Original animation, characters, voice and music. Figures are official or published estimates as cited. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42,
+  "content_note": "Adult audiences: describes riot violence, arson, a death and online hate factually. Stylised imagery, no graphic content."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, careful, unflinching guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-stop",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      30,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "when",
+     "type": "label",
+     "x": 640,
+     "y": 90,
+     "text": "Nanterre, 27 June 2023",
+     "color": "#ffd166",
+     "anim": "drop"
+    },
+    {
+     "id": "car",
+     "type": "car",
+     "x": 620,
+     "y": 600,
+     "color": "#f2c14e",
+     "anim": "left",
+     "size": 1.4,
+     "keys": {
+      "2": {
+       "x": 760,
+       "d": 2.2,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "cop1",
+     "type": "pebble",
+     "x": 360,
+     "y": 604,
+     "size": 0.95,
+     "color": "#9fb4d8",
+     "cap": true,
+     "mood": "neutral",
+     "in": 0,
+     "d": 1.2,
+     "anim": "rise",
+     "look": [
+      1,
+      0
+     ],
+     "keys": {
+      "2": {
+       "mood": "shocked",
+       "d": 2.4
+      }
+     }
+    },
+    {
+     "id": "cop2",
+     "type": "pebble",
+     "x": 250,
+     "y": 610,
+     "size": 0.9,
+     "color": "#b9c6e8",
+     "cap": true,
+     "mood": "neutral",
+     "in": 0,
+     "d": 1.5,
+     "anim": "rise",
+     "look": [
+      1,
+      0
+     ]
+    },
+    {
+     "id": "age",
+     "type": "label",
+     "x": 760,
+     "y": 360,
+     "text": "Nahel Merzouk, 17",
+     "color": "#fffaf0",
+     "in": 1,
+     "d": 0.6,
+     "sfx": "pop",
+     "out": 3
+    },
+    {
+     "id": "flash",
+     "type": "shape",
+     "x": 470,
+     "y": 480,
+     "r": 30,
+     "color": "#fff6e6",
+     "glow": true,
+     "in": 2,
+     "d": 2.3,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.5,
+     "out": 3
+    },
+    {
+     "id": "shot",
+     "type": "label",
+     "x": 470,
+     "y": 400,
+     "text": "one shot",
+     "color": "#ff5a7a",
+     "in": 2,
+     "d": 2.6,
+     "out": 3
+    },
+    {
+     "id": "claim",
+     "type": "label",
+     "x": 420,
+     "y": 300,
+     "text": "First account: the car drove at the officers",
+     "color": "#c9d3ff",
+     "in": 3,
+     "d": 0.2,
+     "sfx": "pop"
+    },
+    {
+     "id": "cam",
+     "type": "icon",
+     "glyph": "camera",
+     "x": 1100,
+     "y": 300,
+     "r": 54,
+     "color": "#ff5a7a",
+     "in": 3,
+     "d": 3.2,
+     "sfx": "chime",
+     "vol": 0.4,
+     "float": 6
+    },
+    {
+     "id": "camlbl",
+     "type": "label",
+     "x": 1100,
+     "y": 400,
+     "text": "a passer-by's video",
+     "color": "#ff8fab",
+     "in": 3,
+     "d": 3.6
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Reuters, AFP, NPR",
+     "in": 0,
+     "d": 2.0,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "On a Tuesday morning in June 2023, two motorcycle police officers stopped a yellow car in Nanterre, just west of Paris.",
+     "say": "On a Tuesday morning in June 2023, two motorcycle police officers stopped a yellow car in Non-tair, just west of Paris."
+    },
+    {
+     "text": "The driver was Nahel Merzouk. He was seventeen.",
+     "say": "The driver was Nahel Mairzook. He was seventeen."
+    },
+    {
+     "text": "As the car pulled away, one officer fired a single shot through the window. Nahel was killed.",
+     "sfx": "thump"
+    },
+    {
+     "text": "Early accounts from police sources said the car had driven at the officers. Then a passer-by's video spread online, and it told a different story."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "whoosh"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-question",
+   "bg": {
+    "kind": "space",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "map",
+     "type": "hexmap",
+     "x": 420,
+     "y": 360,
+     "r": 230,
+     "spread": 0,
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "spread": 1.1,
+       "d": 0.5,
+       "t": 6
+      },
+      "2": {
+       "x": 300,
+       "s": 0.8
+      }
+     }
+    },
+    {
+     "id": "nights",
+     "type": "stat",
+     "x": 920,
+     "y": 250,
+     "value": 0,
+     "suffix": " nights",
+     "size": 80,
+     "color": "#ff7a59",
+     "in": 0,
+     "d": 1.4,
+     "out": 2,
+     "keys": {
+      "0": {
+       "value": 8,
+       "d": 1.6,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "what",
+     "type": "label",
+     "x": 920,
+     "y": 360,
+     "text": "arson, looting, attacks on police and mayors",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 4.2,
+     "out": 2
+    },
+    {
+     "id": "q1",
+     "type": "label",
+     "x": 920,
+     "y": 250,
+     "text": "a revolt against police violence?",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4,
+     "out": 2
+    },
+    {
+     "id": "q2",
+     "type": "label",
+     "x": 920,
+     "y": 330,
+     "text": "a country too kind to defend itself?",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 3.0,
+     "out": 2
+    },
+    {
+     "id": "book",
+     "type": "book",
+     "x": 760,
+     "y": 360,
+     "w": 190,
+     "h": 260,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "in": 2,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4
+    },
+    {
+     "id": "f1",
+     "type": "label",
+     "x": 1060,
+     "y": 240,
+     "text": "official figures",
+     "color": "#ffd166",
+     "in": 3,
+     "d": 1.0
+    },
+    {
+     "id": "f2",
+     "type": "label",
+     "x": 1060,
+     "y": 310,
+     "text": "court data",
+     "color": "#7bdc8c",
+     "in": 3,
+     "d": 1.6
+    },
+    {
+     "id": "f3",
+     "type": "label",
+     "x": 1060,
+     "y": 380,
+     "text": "fact-checks",
+     "color": "#5ec8e5",
+     "in": 3,
+     "d": 2.2
+    },
+    {
+     "id": "f4",
+     "type": "label",
+     "x": 1060,
+     "y": 450,
+     "text": "his critics",
+     "color": "#ff8fab",
+     "in": 3,
+     "d": 4.8
+    }
+   ],
+   "lines": [
+    {
+     "text": "What followed was the worst urban unrest France had seen in a generation: eight nights of arson, looting, and attacks on police, mayors and town halls."
+    },
+    {
+     "text": "Some saw a revolt against police violence. Others saw something darker: a country too afraid, or too kind, to defend itself."
+    },
+    {
+     "text": "The evolutionary psychologist Gad Saad has a name for that second fear. He calls it suicidal empathy."
+    },
+    {
+     "text": "So let's walk through what actually happened, using official figures, court data and fact-checks. Then let's test his idea, and hear the people who disagree with it."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "Eight Nights of Fire",
+   "sub": "The 2023 French riots, explained",
+   "dur": 5.5,
+   "sfx": "swell",
+   "glyph": "fire",
+   "color": "#ff7a59"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "The Spark",
+   "glyph": "camera",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "spark-video",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -20,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "ph",
+     "type": "icon",
+     "glyph": "phone",
+     "x": 340,
+     "y": 320,
+     "r": 110,
+     "color": "#c792ea",
+     "anim": "pop",
+     "sfx": "pop",
+     "float": 5
+    },
+    {
+     "id": "v1",
+     "type": "label",
+     "x": 340,
+     "y": 490,
+     "text": "verified by news agencies",
+     "color": "#f2d0ff",
+     "in": 0,
+     "d": 1.0
+    },
+    {
+     "id": "v2",
+     "type": "label",
+     "x": 860,
+     "y": 220,
+     "text": "officer points his gun through the window",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 2.6,
+     "sfx": "pop"
+    },
+    {
+     "id": "v3",
+     "type": "label",
+     "x": 860,
+     "y": 290,
+     "text": "the car moves off; he fires",
+     "color": "#ff5a7a",
+     "in": 0,
+     "d": 5.2,
+     "sfx": "pop"
+    },
+    {
+     "id": "g1",
+     "type": "icon",
+     "glyph": "gavel",
+     "x": 760,
+     "y": 450,
+     "r": 50,
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop",
+     "label": "charged with murder"
+    },
+    {
+     "id": "g2",
+     "type": "icon",
+     "glyph": "quote",
+     "x": 1000,
+     "y": 450,
+     "r": 50,
+     "color": "#7bdc8c",
+     "in": 1,
+     "d": 3.0,
+     "sfx": "pop",
+     "label": "\"a legitimate shot\""
+    },
+    {
+     "id": "rec",
+     "type": "label",
+     "x": 860,
+     "y": 620,
+     "text": "Nahel: no criminal record",
+     "color": "#fffaf0",
+     "in": 2,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 340,
+     "y": 668,
+     "text": "Reuters; EDMO fact-check network",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The video, later verified by news agencies, shows two officers beside the car. One points his gun through the driver's window. As the car moves off, he fires."
+    },
+    {
+     "text": "The officer was charged with murder and held in custody. His lawyer has argued from the start that the shot was legitimate."
+    },
+    {
+     "text": "Nahel had no criminal record. By the evening, the clip had been watched millions of times."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "spark-courts",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.04,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "line",
+     "type": "arrow",
+     "x": 140,
+     "y": 360,
+     "x2": 1140,
+     "y2": 360,
+     "bend": 0,
+     "color": "#c4fff5",
+     "width": 6,
+     "draw": 0,
+     "anim": "none",
+     "keys": {
+      "0": {
+       "draw": 1,
+       "d": 0.4,
+       "t": 3.5
+      }
+     }
+    },
+    {
+     "id": "t1",
+     "type": "icon",
+     "glyph": "gavel",
+     "x": 250,
+     "y": 360,
+     "r": 40,
+     "color": "#5ec8e5",
+     "in": 0,
+     "d": 0.8,
+     "sfx": "tick"
+    },
+    {
+     "id": "t1l",
+     "type": "label",
+     "x": 250,
+     "y": 270,
+     "text": "2023: charged with murder",
+     "color": "#9fe3ff",
+     "in": 0,
+     "d": 1.0
+    },
+    {
+     "id": "t2",
+     "type": "icon",
+     "glyph": "gavel",
+     "x": 500,
+     "y": 360,
+     "r": 40,
+     "color": "#7bdc8c",
+     "in": 1,
+     "d": 0.6,
+     "sfx": "tick"
+    },
+    {
+     "id": "t2l",
+     "type": "label",
+     "x": 500,
+     "y": 450,
+     "text": "2025: sent to trial for murder",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 0.8
+    },
+    {
+     "id": "t3",
+     "type": "icon",
+     "glyph": "gavel",
+     "x": 760,
+     "y": 360,
+     "r": 40,
+     "color": "#ffb347",
+     "in": 1,
+     "d": 4.0,
+     "sfx": "tick"
+    },
+    {
+     "id": "t3l",
+     "type": "label",
+     "x": 760,
+     "y": 270,
+     "text": "Mar 2026: charge lowered",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 4.2
+    },
+    {
+     "id": "t4",
+     "type": "icon",
+     "glyph": "scales",
+     "x": 1020,
+     "y": 360,
+     "r": 40,
+     "color": "#ff8fab",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "chime",
+     "vol": 0.4
+    },
+    {
+     "id": "t4l",
+     "type": "label",
+     "x": 1020,
+     "y": 450,
+     "text": "Jun 2026: ruling overturned",
+     "color": "#ffc2d1",
+     "in": 2,
+     "d": 0.6
+    },
+    {
+     "id": "next",
+     "type": "label",
+     "x": 1000,
+     "y": 540,
+     "text": "next: Versailles appeals court",
+     "color": "#fffaf0",
+     "in": 2,
+     "d": 4.2
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Reuters; Versailles Court of Appeal; Cour de cassation, 12 June 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "More than three years later, the case is still moving through the courts."
+    },
+    {
+     "text": "In 2025, judges ordered the officer to stand trial for murder. In March 2026, an appeals court lowered the charge to violence causing death, without intent to kill."
+    },
+    {
+     "text": "Then in June 2026, France's highest court overturned that ruling. Whether he faces a murder trial is back before the appeals court in Versailles."
+    },
+    {
+     "text": "That matters for everything that follows. The shooting is a real case, with a real victim, that the justice system is still weighing."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "Eight Nights",
+   "glyph": "fire",
+   "color": "#ff7a59",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "spread",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "map",
+     "type": "hexmap",
+     "x": 400,
+     "y": 370,
+     "r": 250,
+     "spread": 0,
+     "anim": "pop",
+     "pin": "Nanterre",
+     "keys": {
+      "0": {
+       "spread": 0.12,
+       "d": 0.6,
+       "t": 1.4
+      },
+      "1": {
+       "spread": 1.15,
+       "d": 0.2,
+       "t": 5
+      }
+     }
+    },
+    {
+     "id": "n1",
+     "type": "label",
+     "x": 920,
+     "y": 200,
+     "text": "night 1: Nanterre",
+     "color": "#ffd166",
+     "in": 0,
+     "d": 0.8
+    },
+    {
+     "id": "n3",
+     "type": "label",
+     "x": 920,
+     "y": 270,
+     "text": "night 3: the whole country",
+     "color": "#ff7a59",
+     "in": 1,
+     "d": 0.6
+    },
+    {
+     "id": "towns",
+     "type": "stat",
+     "x": 920,
+     "y": 420,
+     "value": 0,
+     "suffix": " towns",
+     "size": 76,
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.2,
+     "out": 3,
+     "keys": {
+      "2": {
+       "value": 672,
+       "d": 0.4,
+       "t": 2.2
+      }
+     }
+    },
+    {
+     "id": "deps",
+     "type": "label",
+     "x": 920,
+     "y": 520,
+     "text": "in 95 departements",
+     "color": "#ffd8a8",
+     "in": 2,
+     "d": 2.6,
+     "out": 3
+    },
+    {
+     "id": "cops",
+     "type": "stat",
+     "x": 920,
+     "y": 420,
+     "value": 0,
+     "suffix": "",
+     "size": 76,
+     "color": "#5ec8e5",
+     "label": "police and gendarmes a night",
+     "in": 3,
+     "d": 0.2,
+     "keys": {
+      "3": {
+       "value": 45000,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "French Senate inquiry, April 2024; Interior Ministry",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The first night, fires broke out in Nanterre.",
+     "say": "The first night, fires broke out in Non-tair."
+    },
+    {
+     "text": "By the third, unrest had spread to cities and small towns across France, and even to overseas territories."
+    },
+    {
+     "text": "In all, at least six hundred and seventy-two municipalities were hit, in ninety-five départements.",
+     "say": "In all, at least six hundred and seventy-two municipalities were hit, in ninety-five departments."
+    },
+    {
+     "text": "The government deployed up to forty-five thousand police and gendarmes a night, backed by armoured vehicles and elite units."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "damage-vehicles",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.08
+    ],
+    "pan": [
+     [
+      -20,
+      0
+     ],
+     [
+      30,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "c1",
+     "type": "car",
+     "x": 260,
+     "y": 640,
+     "color": "#5ec8e5",
+     "fire": 0,
+     "burnt": 0,
+     "anim": "none",
+     "keys": {
+      "1": {
+       "fire": 1,
+       "burnt": 0.8,
+       "d": 0.3,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "c2",
+     "type": "car",
+     "x": 560,
+     "y": 650,
+     "color": "#7bdc8c",
+     "size": 1.1,
+     "fire": 0,
+     "burnt": 0,
+     "anim": "none",
+     "keys": {
+      "1": {
+       "fire": 1,
+       "burnt": 0.8,
+       "d": 1.4,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "bus",
+     "type": "van",
+     "x": 940,
+     "y": 650,
+     "color": "#ffd166",
+     "fire": 0,
+     "burnt": 0,
+     "anim": "none",
+     "size": 1.1,
+     "keys": {
+      "1": {
+       "fire": 1,
+       "burnt": 0.8,
+       "d": 2.6,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "intro",
+     "type": "label",
+     "x": 640,
+     "y": 120,
+     "text": "the official tally",
+     "color": "#ffd8a8",
+     "anim": "drop",
+     "out": 1
+    },
+    {
+     "id": "veh",
+     "type": "stat",
+     "x": 640,
+     "y": 170,
+     "value": 0,
+     "size": 84,
+     "color": "#ffb347",
+     "label": "vehicles burned",
+     "in": 1,
+     "d": 0.2,
+     "out": 2,
+     "keys": {
+      "1": {
+       "value": 12031,
+       "d": 0.4,
+       "t": 2.6
+      }
+     }
+    },
+    {
+     "id": "bld",
+     "type": "stat",
+     "x": 640,
+     "y": 170,
+     "value": 0,
+     "size": 84,
+     "color": "#ff7a59",
+     "label": "buildings burned or damaged",
+     "in": 2,
+     "d": 0.2,
+     "keys": {
+      "2": {
+       "value": 2508,
+       "d": 0.4,
+       "t": 2.2
+      }
+     }
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Interior Ministry, 5 July 2023; Senate inquiry, April 2024",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Here is what the official tally looks like."
+    },
+    {
+     "text": "More than twelve thousand vehicles were set on fire: family cars, buses, trams, delivery vans."
+    },
+    {
+     "text": "Two and a half thousand buildings were burned or damaged. Measured by the damage to buildings, this was far more intense than the riots of 2005, in a third of the time."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "damage-state",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -20,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "hall",
+     "type": "townhall",
+     "x": 330,
+     "y": 620,
+     "size": 0.95,
+     "sign": "MAIRIE",
+     "fire": 0,
+     "burnt": 0,
+     "anim": "rise",
+     "keys": {
+      "0": {
+       "fire": 1,
+       "burnt": 0.6,
+       "d": 3.0,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "k1",
+     "type": "card",
+     "x": 760,
+     "y": 210,
+     "w": 240,
+     "h": 170,
+     "glyph": "shield",
+     "title": "273 police sites",
+     "color": "#5ec8e5",
+     "in": 0,
+     "d": 1.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "k2",
+     "type": "card",
+     "x": 1020,
+     "y": 210,
+     "w": 240,
+     "h": 170,
+     "glyph": "building",
+     "title": "105 town halls",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 3.6,
+     "sfx": "pop"
+    },
+    {
+     "id": "k3",
+     "type": "card",
+     "x": 760,
+     "y": 410,
+     "w": 240,
+     "h": 170,
+     "glyph": "folder",
+     "title": "243 schools",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "k4",
+     "type": "card",
+     "x": 1020,
+     "y": 410,
+     "w": 240,
+     "h": 170,
+     "glyph": "coin",
+     "title": "1,000+ shops",
+     "color": "#7bdc8c",
+     "in": 2,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "banks",
+     "type": "label",
+     "x": 1020,
+     "y": 530,
+     "text": "including 366 bank branches",
+     "color": "#a8f0b4",
+     "in": 2,
+     "d": 3.0
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "French Senate inquiry, April 2024",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Rioters went after the symbols of the state. Two hundred and seventy-three police and gendarmerie buildings were attacked, and so were one hundred and five town halls."
+    },
+    {
+     "text": "Two hundred and forty-three schools were damaged, often in the very neighbourhoods they served."
+    },
+    {
+     "text": "More than a thousand shops were damaged or looted, including three hundred and sixty-six bank branches. Libraries, buses and community centres burned too."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "cruelty-mayor",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -30,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "home",
+     "type": "house",
+     "x": 560,
+     "y": 560,
+     "anim": "rise"
+    },
+    {
+     "id": "ram",
+     "type": "car",
+     "x": 140,
+     "y": 640,
+     "color": "#9fb4d8",
+     "size": 0.9,
+     "fire": 0,
+     "in": 1,
+     "d": 0.4,
+     "anim": "none",
+     "keys": {
+      "1": {
+       "x": 380,
+       "fire": 1,
+       "burnt": 0.7,
+       "d": 1.4,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "where",
+     "type": "label",
+     "x": 560,
+     "y": 110,
+     "text": "L'Hay-les-Roses, night of 1-2 July 2023",
+     "color": "#ffd166",
+     "in": 1,
+     "d": 0.2
+    },
+    {
+     "id": "fam1",
+     "type": "pebble",
+     "x": 900,
+     "y": 640,
+     "size": 0.9,
+     "color": "#ff8fab",
+     "mood": "shocked",
+     "in": 2,
+     "d": 0.4,
+     "anim": "right"
+    },
+    {
+     "id": "fam2",
+     "type": "pebble",
+     "x": 990,
+     "y": 645,
+     "size": 0.55,
+     "color": "#ffd166",
+     "mood": "worried",
+     "in": 2,
+     "d": 0.6,
+     "anim": "right"
+    },
+    {
+     "id": "fam3",
+     "type": "pebble",
+     "x": 1050,
+     "y": 648,
+     "size": 0.5,
+     "color": "#7ad3ff",
+     "mood": "worried",
+     "in": 2,
+     "d": 0.8,
+     "anim": "right"
+    },
+    {
+     "id": "fw",
+     "type": "particles",
+     "kind": "sparkle",
+     "x": 860,
+     "y": 520,
+     "w": 260,
+     "h": 160,
+     "n": 14,
+     "color": "#ffb347",
+     "in": 2,
+     "d": 1.6,
+     "out": 3
+    },
+    {
+     "id": "inv",
+     "type": "label",
+     "x": 920,
+     "y": 360,
+     "text": "investigated as attempted murder",
+     "color": "#ff5a7a",
+     "in": 2,
+     "d": 5.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "amf",
+     "type": "icon",
+     "glyph": "building",
+     "x": 920,
+     "y": 230,
+     "r": 50,
+     "color": "#5ec8e5",
+     "in": 3,
+     "d": 1.0,
+     "sfx": "chime",
+     "vol": 0.35,
+     "label": "mayors rally at town halls"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "NPR; AP; Association of Mayors of France",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Some of the violence was aimed squarely at people."
+    },
+    {
+     "text": "In L'Haÿ-les-Roses, south of Paris, rioters rammed a car into the home of the mayor, Vincent Jeanbrun, in the middle of the night, and set it alight. He was at the town hall. His wife and two young children were at home.",
+     "say": "In Lay-les-Roses, south of Paris, rioters rammed a car into the home of the mayor, Vincent Zhawn-brun, in the middle of the night, and set it alight. He was at the town hall. His wife and two young children were at home."
+    },
+    {
+     "text": "As they fled, they were hit with fireworks. His wife broke her leg, and one of the children was hurt. Prosecutors opened an attempted murder investigation."
+    },
+    {
+     "text": "Mayors across the country reported threats and attacks, and their association called on citizens to gather outside every town hall in solidarity."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "front-line",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.07
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "van",
+     "type": "van",
+     "x": 330,
+     "y": 640,
+     "anim": "left"
+    },
+    {
+     "id": "p1",
+     "type": "pebble",
+     "x": 560,
+     "y": 650,
+     "size": 0.85,
+     "color": "#9fb4d8",
+     "cap": true,
+     "mood": "worried",
+     "anim": "rise",
+     "look": [
+      1,
+      0
+     ]
+    },
+    {
+     "id": "p2",
+     "type": "pebble",
+     "x": 650,
+     "y": 655,
+     "size": 0.8,
+     "color": "#b9c6e8",
+     "cap": true,
+     "mood": "worried",
+     "anim": "rise",
+     "look": [
+      1,
+      0
+     ]
+    },
+    {
+     "id": "h1",
+     "type": "pebble",
+     "x": 1040,
+     "y": 650,
+     "size": 0.85,
+     "color": "#6d7393",
+     "hood": true,
+     "mood": "deadpan",
+     "in": 0,
+     "d": 1.2,
+     "anim": "right",
+     "look": [
+      -1,
+      0
+     ]
+    },
+    {
+     "id": "h2",
+     "type": "pebble",
+     "x": 1150,
+     "y": 655,
+     "size": 0.8,
+     "color": "#7a7f9c",
+     "hood": true,
+     "mood": "deadpan",
+     "in": 0,
+     "d": 1.5,
+     "anim": "right",
+     "look": [
+      -1,
+      0
+     ]
+    },
+    {
+     "id": "mort",
+     "type": "particles",
+     "kind": "sparkle",
+     "x": 840,
+     "y": 440,
+     "w": 420,
+     "h": 220,
+     "n": 18,
+     "color": "#ffd166",
+     "in": 0,
+     "d": 2.2
+    },
+    {
+     "id": "mlbl",
+     "type": "label",
+     "x": 840,
+     "y": 300,
+     "text": "fireworks fired like mortars",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 2.6
+    },
+    {
+     "id": "inj",
+     "type": "stat",
+     "x": 640,
+     "y": 150,
+     "value": 0,
+     "suffix": "+",
+     "size": 84,
+     "color": "#5ec8e5",
+     "label": "officers injured in the first week",
+     "in": 1,
+     "d": 0.2,
+     "out": 2,
+     "keys": {
+      "1": {
+       "value": 800,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "seize",
+     "type": "stat",
+     "x": 640,
+     "y": 150,
+     "value": 0,
+     "suffix": "+",
+     "size": 84,
+     "color": "#ffd166",
+     "label": "mortar fireworks seized",
+     "in": 2,
+     "d": 0.2,
+     "keys": {
+      "2": {
+       "value": 160000,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Interior Ministry (provisional, July 2023)",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "On the front lines, police faced crowds firing commercial fireworks sideways, like mortars, along with stones and petrol bombs."
+    },
+    {
+     "text": "By the Interior Ministry's provisional count, more than eight hundred police officers and gendarmes were injured in the first week."
+    },
+    {
+     "text": "Officers later seized more than one hundred and sixty thousand of those mortar fireworks."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "both-ways",
+   "bg": {
+    "kind": "deep",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.04,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "cand",
+     "type": "shape",
+     "x": 400,
+     "y": 340,
+     "r": 16,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "fade",
+     "float": 3
+    },
+    {
+     "id": "mb",
+     "type": "label",
+     "x": 400,
+     "y": 440,
+     "text": "Mohamed Bendriss, 27, Marseille",
+     "color": "#fffaf0",
+     "in": 0,
+     "d": 0.6
+    },
+    {
+     "id": "mb2",
+     "type": "label",
+     "x": 400,
+     "y": 500,
+     "text": "3 officers charged",
+     "color": "#9fe3ff",
+     "in": 0,
+     "d": 6.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "hd",
+     "type": "label",
+     "x": 880,
+     "y": 440,
+     "text": "man, 21, lost part of his skull",
+     "color": "#fffaf0",
+     "in": 1,
+     "d": 0.6
+    },
+    {
+     "id": "hd2",
+     "type": "label",
+     "x": 880,
+     "y": 500,
+     "text": "4 officers charged",
+     "color": "#9fe3ff",
+     "in": 1,
+     "d": 3.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 300,
+     "s": 0.55,
+     "left": "shield",
+     "right": "people",
+     "tilt": 0,
+     "in": 2,
+     "d": 0.4,
+     "anim": "fade"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Marseille prosecutor via AFP and The Local, August 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The riots also cost lives. In Marseille, Mohamed Bendriss, a twenty-seven-year-old father, died after being hit in the chest, prosecutors believe, by a police projectile. Three officers were charged."
+    },
+    {
+     "text": "Another young man in Marseille lost part of his skull after a beating. Four officers were charged."
+    },
+    {
+     "text": "The violence ran in more than one direction, and the courts are dealing with both."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "cost",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "eur",
+     "type": "stat",
+     "x": 640,
+     "y": 220,
+     "value": 0,
+     "prefix": "EUR ",
+     "suffix": " million",
+     "size": 84,
+     "color": "#ffd166",
+     "label": "insured damage, 16,400 claims",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "value": 793,
+       "d": 0.4,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "x4",
+     "type": "label",
+     "x": 640,
+     "y": 360,
+     "text": "about 4x the 2005 riots",
+     "color": "#a8f0b4",
+     "in": 0,
+     "d": 5.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "bn",
+     "type": "label",
+     "x": 640,
+     "y": 430,
+     "text": "Senate: close to EUR 1 billion in all",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 0.6,
+     "sfx": "pop"
+    },
+    {
+     "id": "c1",
+     "type": "icon",
+     "glyph": "coin",
+     "x": 400,
+     "y": 530,
+     "r": 50,
+     "color": "#5ec8e5",
+     "in": 2,
+     "d": 0.4,
+     "label": "42% Paris region"
+    },
+    {
+     "id": "c2",
+     "type": "icon",
+     "glyph": "building",
+     "x": 880,
+     "y": 530,
+     "r": 50,
+     "color": "#c792ea",
+     "in": 2,
+     "d": 2.8,
+     "label": "27% paid by local councils"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "France Assureurs, March 2024; Senate inquiry, April 2024",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "When the smoke cleared, insurers counted sixteen thousand four hundred claims worth seven hundred and ninety-three million euros, about four times the bill for the riots of 2005."
+    },
+    {
+     "text": "The Senate put the true total close to one billion euros, because much of the damage was never declared."
+    },
+    {
+     "text": "More than forty percent of the cost fell on the Paris region. Local councils, which is to say taxpayers, carried more than a quarter of it."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "A Riot in Your Pocket",
+   "glyph": "phone",
+   "color": "#c792ea",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "pocket",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "fd",
+     "type": "feed",
+     "x": 360,
+     "y": 370,
+     "w": 400,
+     "app": "SHORT VIDEOS",
+     "anim": "rise",
+     "posts": [
+      {
+       "tag": "#Nanterre",
+       "text": "live from our street tonight",
+       "color": "#ffb347"
+      },
+      {
+       "tag": "#emeutes",
+       "text": "the shopping centre right now",
+       "color": "#ff5a7a"
+      },
+      {
+       "tag": "#nuit4",
+       "text": "police are coming, move to...",
+       "color": "#c792ea"
+      },
+      {
+       "tag": "#France",
+       "text": "who's out? meet at the station",
+       "color": "#5ec8e5"
+      }
+     ]
+    },
+    {
+     "id": "apps",
+     "type": "label",
+     "x": 900,
+     "y": 180,
+     "text": "Snapchat, TikTok",
+     "color": "#f2d0ff",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "film",
+     "type": "icon",
+     "glyph": "camera",
+     "x": 900,
+     "y": 290,
+     "r": 46,
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 2.6,
+     "label": "filmed by participants"
+    },
+    {
+     "id": "mac",
+     "type": "icon",
+     "glyph": "quote",
+     "x": 900,
+     "y": 470,
+     "r": 46,
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop",
+     "label": "\"a considerable role\""
+    },
+    {
+     "id": "dox",
+     "type": "label",
+     "x": 900,
+     "y": 600,
+     "text": "officer's name and address posted",
+     "color": "#ff5a7a",
+     "in": 3,
+     "d": 0.6,
+     "sfx": "pop"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "President Macron, 30 June 2023; Reuters",
+     "in": 2,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "This was a riot lived through phones."
+    },
+    {
+     "text": "Videos of burning cars, looted shops and clashes with police spread on Snapchat and TikTok, often filmed by the people taking part, and often used to say where to go next."
+    },
+    {
+     "text": "President Macron said social media had played a considerable role, and accused it of feeding copycat violence."
+    },
+    {
+     "text": "Officials also warned that the name and address of the officer who shot Nahel had been posted online, putting his family at risk."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "platforms",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 330,
+     "s": 0.8,
+     "left": "lock",
+     "right": "globe",
+     "tilt": 0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "tilt": -0.7
+      },
+      "2": {
+       "tilt": 0.2
+      }
+     }
+    },
+    {
+     "id": "l",
+     "type": "label",
+     "x": 400,
+     "y": 560,
+     "text": "public order",
+     "color": "#ff8fab",
+     "in": 0,
+     "d": 1.0
+    },
+    {
+     "id": "r",
+     "type": "label",
+     "x": 880,
+     "y": 560,
+     "text": "free expression",
+     "color": "#9fe3ff",
+     "in": 0,
+     "d": 1.4
+    },
+    {
+     "id": "snap",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "Snapchat: \"zero tolerance\" for incitement",
+     "color": "#ffd166",
+     "in": 0,
+     "d": 4.6
+    },
+    {
+     "id": "cut",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "Macron: cut networks off \"when things get out of hand\"?",
+     "color": "#ff5a7a",
+     "in": 1,
+     "d": 0.2,
+     "out": 2
+    },
+    {
+     "id": "sen",
+     "type": "label",
+     "x": 640,
+     "y": 170,
+     "text": "Senate: power to suspend some features in a crisis",
+     "color": "#a8f0b4",
+     "in": 2,
+     "d": 1.0
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Reuters; AFP; Senate inquiry, April 2024",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The government pressed the platforms to take down the most sensitive content and help identify people calling for violence. Snapchat said it had zero tolerance for incitement."
+    },
+    {
+     "text": "Macron even floated cutting off social networks when things get out of hand. Critics on the left and the right called that authoritarian, and the government quickly played it down."
+    },
+    {
+     "text": "A year later, the Senate inquiry proposed a narrower tool: the power to suspend some features of social networks during serious unrest. The tension between order and free speech hasn't gone away."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "The Second Riot",
+   "glyph": "hash",
+   "color": "#5ec8e5",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "hashtags",
+   "bg": {
+    "kind": "space",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -20,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "globe",
+     "type": "planet",
+     "x": 640,
+     "y": 1300,
+     "r": 820,
+     "color": "#3a4aa0",
+     "land": "#5a6ad0",
+     "anim": "none"
+    },
+    {
+     "id": "m1",
+     "type": "stat",
+     "x": 640,
+     "y": 210,
+     "value": 0,
+     "suffix": "+",
+     "size": 84,
+     "color": "#5ec8e5",
+     "label": "mentions of #FranceRiots on 1 July",
+     "in": 1,
+     "d": 0.2,
+     "out": 2,
+     "keys": {
+      "1": {
+       "value": 1000000,
+       "d": 0.4,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "tags",
+     "type": "label",
+     "x": 640,
+     "y": 350,
+     "text": "#FranceHasFallen   #FranceOnFire",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 4.0,
+     "out": 2
+    },
+    {
+     "id": "al",
+     "type": "particles",
+     "kind": "alerts",
+     "x": 640,
+     "y": 560,
+     "w": 1100,
+     "h": 120,
+     "n": 14,
+     "in": 2,
+     "d": 0.2,
+     "out": 3
+    },
+    {
+     "id": "v4",
+     "type": "stat",
+     "x": 640,
+     "y": 200,
+     "value": 0,
+     "suffix": " views",
+     "size": 64,
+     "color": "#ff8fab",
+     "label": "one post blaming Muslims for attacks on the state",
+     "in": 2,
+     "d": 1.4,
+     "keys": {
+      "2": {
+       "value": 4000000,
+       "d": 1.6,
+       "t": 2.2
+      }
+     }
+    },
+    {
+     "id": "ir",
+     "type": "label",
+     "x": 640,
+     "y": 380,
+     "text": "claim: France is becoming an \"Islamic republic\"",
+     "color": "#ffb347",
+     "in": 3,
+     "d": 0.4
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Logically Facts analysis of Brandwatch data, July 2023",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "While the streets burned, a second riot broke out online, on X, on Instagram and across other networks, much of it from far outside France."
+    },
+    {
+     "text": "On the first of July, the hashtag France Riots passed a million mentions in a single day. France Has Fallen and France On Fire each passed a hundred and fifty thousand."
+    },
+    {
+     "text": "Many posts blamed Muslims and immigrants as a whole. One post claiming that Muslims were targeting the French authorities drew around four million views."
+    },
+    {
+     "text": "Others announced that France was on its way to becoming an Islamic republic. Fear and anger spread faster than any fact-check."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "fakes",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "fd",
+     "type": "feed",
+     "x": 640,
+     "y": 380,
+     "w": 640,
+     "ph": 84,
+     "app": "TRENDING",
+     "anim": "rise",
+     "stamps": 0,
+     "keys": {
+      "1": {
+       "stamps": 0.5,
+       "d": 0.4,
+       "t": 3.0
+      },
+      "2": {
+       "stamps": 1.01,
+       "d": 0.4,
+       "t": 2.4
+      }
+     },
+     "posts": [
+      {
+       "tag": "Rioters throw cars off a garage!",
+       "text": "actually a scene from a Fast and Furious film",
+       "color": "#ffb347",
+       "stamp": "FILM"
+      },
+      {
+       "tag": "Car lot torched in France!",
+       "text": "actually a fire in an Australian car yard",
+       "color": "#ff7a59",
+       "stamp": "WRONG PLACE"
+      },
+      {
+       "tag": "Huge crowd in Nanterre!",
+       "text": "actually a concert in Mexico",
+       "color": "#c792ea",
+       "stamp": "WRONG PLACE"
+      },
+      {
+       "tag": "Rooftop 'terrorist' sniper!",
+       "text": "clip online since March 2022",
+       "color": "#5ec8e5",
+       "stamp": "OLD"
+      },
+      {
+       "tag": "The internet will be cut on 3 July!",
+       "text": "fake government circular",
+       "color": "#7bdc8c",
+       "stamp": "FAKE"
+      }
+     ]
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "EDMO fact-checkers (AFP, France TV, Maldita and others); Logically Facts",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "And a lot of the most viral footage was fake."
+    },
+    {
+     "text": "A car crashing out of a parking garage was a scene from a Fast and Furious film. A lot of burning cars was an Australian fire. A vast crowd in Nanterre was really a concert in Mexico.",
+     "say": "A car crashing out of a parking garage was a scene from a Fast and Furious film. A lot of burning cars was an Australian fire. A vast crowd in Non-tair was really a concert in Mexico."
+    },
+    {
+     "text": "A clip of a supposed terrorist sniper had been online since 2022. A fake government notice warned that the internet would be cut. Nahel himself was smeared with a stranger's photo and invented crimes."
+    },
+    {
+     "text": "Europe's fact-checking network concluded that much of this disinformation echoed far-right, racist and xenophobic messaging."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "camps",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "f1",
+     "type": "stat",
+     "x": 340,
+     "y": 200,
+     "value": 0,
+     "prefix": "EUR ",
+     "suffix": "",
+     "size": 64,
+     "color": "#5ec8e5",
+     "label": "for the officer's family",
+     "in": 1,
+     "d": 0.4,
+     "keys": {
+      "1": {
+       "value": 1600000,
+       "d": 1.0,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "f2",
+     "type": "stat",
+     "x": 940,
+     "y": 200,
+     "value": 0,
+     "prefix": "EUR ",
+     "suffix": "",
+     "size": 64,
+     "color": "#ff8fab",
+     "label": "for Nahel's mother",
+     "in": 1,
+     "d": 5.0,
+     "keys": {
+      "1": {
+       "value": 400000,
+       "d": 5.2,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "un",
+     "type": "icon",
+     "glyph": "quote",
+     "x": 400,
+     "y": 470,
+     "r": 50,
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop",
+     "label": "\"savage hordes\", \"we are at war\""
+    },
+    {
+     "id": "gm",
+     "type": "pebble",
+     "x": 920,
+     "y": 560,
+     "size": 1.0,
+     "color": "#c792ea",
+     "mood": "sad",
+     "hold": "heart",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "gml",
+     "type": "label",
+     "x": 920,
+     "y": 400,
+     "text": "Nahel's grandmother: \"Stop.\"",
+     "color": "#f2d0ff",
+     "in": 3,
+     "d": 1.0,
+     "sfx": "chime",
+     "vol": 0.3
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "The Local, AFP; Alliance and UNSA police statement, 30 June 2023; BFMTV, 2 July 2023",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Online, the anger sorted people into camps."
+    },
+    {
+     "text": "Jean Messiha, a far-right commentator, launched a fundraiser for the officer's family. It raised more than one point six million euros before he closed it. A fundraiser for Nahel's mother raised about four hundred thousand.",
+     "say": "Jean Messeeha, a far-right commentator, launched a fundraiser for the officer's family. It raised more than one point six million euros before he closed it. A fundraiser for Nahel's mother raised about four hundred thousand."
+    },
+    {
+     "text": "Two of France's largest police unions issued a statement calling the rioters savage hordes and pests, and declaring that police were at war. Other unions distanced themselves, and the far left accused them of calling for civil war."
+    },
+    {
+     "text": "Nahel's grandmother, meanwhile, went on television to ask the rioters to stop. Don't break windows, she said, don't attack schools or buses."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "Who Was in the Street",
+   "glyph": "people",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "profile",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "arr",
+     "type": "stat",
+     "x": 340,
+     "y": 200,
+     "value": 0,
+     "suffix": "",
+     "size": 84,
+     "color": "#ffd166",
+     "label": "arrests",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "value": 3800,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "dots",
+     "type": "dots",
+     "x": 340,
+     "y": 440,
+     "n": 100,
+     "cols": 10,
+     "gap": 26,
+     "size": 8,
+     "color": "#7fa8b8",
+     "alt": 0,
+     "altColor": "#ffb347",
+     "in": 1,
+     "d": 0.2,
+     "keys": {
+      "1": {
+       "alt": 33,
+       "d": 0.6,
+       "t": 0.1
+      }
+     }
+    },
+    {
+     "id": "min",
+     "type": "label",
+     "x": 340,
+     "y": 612,
+     "text": "about 1 in 3 were minors; average age 17 to 18",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 1.2
+    },
+    {
+     "id": "rec",
+     "type": "label",
+     "x": 900,
+     "y": 220,
+     "text": "over half unknown to police or courts",
+     "color": "#a8f0b4",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "fr1",
+     "type": "label",
+     "x": 900,
+     "y": 320,
+     "text": "Interior Ministry: 90% French citizens",
+     "color": "#9fe3ff",
+     "in": 3,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "fr2",
+     "type": "label",
+     "x": 900,
+     "y": 390,
+     "text": "Senate court sample: 71% French",
+     "color": "#9fe3ff",
+     "in": 3,
+     "d": 3.0
+    },
+    {
+     "id": "men",
+     "type": "label",
+     "x": 900,
+     "y": 460,
+     "text": "91% male",
+     "color": "#c4fff5",
+     "in": 3,
+     "d": 5.0
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "G. Darmanin to the National Assembly, 19 July 2023; Senate inquiry, April 2024",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So who were the rioters? The data is imperfect, but it isn't nothing. Police made about thirty-eight hundred arrests."
+    },
+    {
+     "text": "Roughly a third of those arrested were minors. The average age was seventeen or eighteen."
+    },
+    {
+     "text": "More than half had never been known to the police or the courts."
+    },
+    {
+     "text": "The Interior Minister said nine in ten were French citizens. In the smaller sample the Senate studied in court, seventy-one percent were French, and ninety-one percent were male."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "justice",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.04,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "g",
+     "type": "icon",
+     "glyph": "gavel",
+     "x": 640,
+     "y": 200,
+     "r": 70,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.4
+    },
+    {
+     "id": "b",
+     "type": "gbars",
+     "x": 640,
+     "y": 470,
+     "w": 640,
+     "h": 240,
+     "max": 2200,
+     "unit": "",
+     "grow": 0,
+     "in": 0,
+     "d": 0.6,
+     "series": [
+      {
+       "name": "",
+       "color": "#5ec8e5"
+      }
+     ],
+     "groups": [
+      {
+       "label": "tried",
+       "vals": [
+        2107
+       ]
+      },
+      {
+       "label": "convicted",
+       "vals": [
+        1989
+       ]
+      },
+      {
+       "label": "prison terms",
+       "vals": [
+        1787
+       ]
+      }
+     ],
+     "keys": {
+      "0": {
+       "grow": 1,
+       "d": 1.0,
+       "t": 4.0
+      }
+     }
+    },
+    {
+     "id": "nr",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "France does not record religion or ethnicity",
+     "color": "#ffd166",
+     "in": 1,
+     "d": 0.3,
+     "out": 2
+    },
+    {
+     "id": "dq",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "\"A French person is a French person.\" G. Darmanin",
+     "color": "#c9d3ff",
+     "in": 1,
+     "d": 5.2
+    },
+    {
+     "id": "mot",
+     "type": "label",
+     "x": 640,
+     "y": 630,
+     "text": "official explanations: copycat videos, absent parents, looting",
+     "color": "#ffb3c1",
+     "in": 2,
+     "d": 2.0
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Justice Minister E. Dupond-Moretti, RTL, 29 August 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade",
+     "out": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "The courts moved fast. By August, more than two thousand one hundred people had been tried. Nearly two thousand were convicted, and almost eighteen hundred received sentences that included prison."
+    },
+    {
+     "text": "French law does not let the state record religion or ethnicity, and the Interior Minister refused to start, saying that a French person is a French person."
+    },
+    {
+     "text": "None of the official reports we drew on describes a religious motive. The explanations officials offered were copycat videos, absent parents, and plain opportunistic looting."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ground-truth",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -8
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "hood",
+     "type": "crowd",
+     "x": 330,
+     "y": 640,
+     "n": 4,
+     "cols": 4,
+     "w": 300,
+     "size": 0.75,
+     "colors": [
+      "#6d7393",
+      "#7a7f9c",
+      "#5d6384",
+      "#767b99"
+     ],
+     "mood": "deadpan",
+     "hood": true,
+     "anim": "rise"
+    },
+    {
+     "id": "fl",
+     "type": "flames",
+     "x": 130,
+     "y": 650,
+     "size": 0.6,
+     "in": 0,
+     "d": 1.0
+    },
+    {
+     "id": "l1",
+     "type": "label",
+     "x": 330,
+     "y": 300,
+     "text": "some attacks were deliberate and planned",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 2.4
+    },
+    {
+     "id": "res",
+     "type": "crowd",
+     "x": 900,
+     "y": 640,
+     "n": 9,
+     "cols": 9,
+     "w": 520,
+     "size": 0.62,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166",
+      "#5ec8e5",
+      "#f2c14e"
+     ],
+     "mood": "worried",
+     "in": 2,
+     "d": 0.4
+    },
+    {
+     "id": "l2",
+     "type": "label",
+     "x": 900,
+     "y": 360,
+     "text": "most residents did not riot",
+     "color": "#a8f0b4",
+     "in": 2,
+     "d": 1.2,
+     "sfx": "pop"
+    },
+    {
+     "id": "l3",
+     "type": "label",
+     "x": 900,
+     "y": 420,
+     "text": "many were its victims",
+     "color": "#9fe3ff",
+     "in": 3,
+     "d": 1.0
+    }
+   ],
+   "lines": [
+    {
+     "text": "That doesn't mean the violence on the ground was random. Some attacks, like the one on the mayor's home, look deliberate and planned, and many were aimed at the Republic's own symbols."
+    },
+    {
+     "text": "Calling this a religious uprising goes beyond the evidence. But calling it a protest goes beyond it too: burning a school or a library is not a political argument."
+    },
+    {
+     "text": "And most people in these neighbourhoods, Muslim or not, did not riot."
+    },
+    {
+     "text": "Many were its victims: the shopkeepers, bus drivers and families whose cars, schools and town halls went up in flames."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapter",
+   "kicker": "Part 6",
+   "title": "The Suicidal Empathy Lens",
+   "glyph": "heart",
+   "color": "#ff5a7a",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "lens-idea",
+   "bg": {
+    "kind": "space",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "book",
+     "type": "book",
+     "x": 300,
+     "y": 360,
+     "w": 200,
+     "h": 280,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4
+    },
+    {
+     "id": "hrt",
+     "type": "heart",
+     "x": 820,
+     "y": 330,
+     "size": 0.9,
+     "color": "#ff5a7a",
+     "heat": 0,
+     "in": 0,
+     "d": 2.0,
+     "keys": {
+      "1": {
+       "heat": 1,
+       "d": 0.4,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "tag1",
+     "type": "label",
+     "x": 820,
+     "y": 500,
+     "text": "too high",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "tag2",
+     "type": "label",
+     "x": 820,
+     "y": 560,
+     "text": "aimed at the wrong target",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 1.4
+    },
+    {
+     "id": "attr",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "prefix": "",
+     "text": "Gad Saad's argument, paraphrased",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now to the framing. In Suicidal Empathy, Gad Saad argues that empathy is an ancient and useful emotion, but that it misfires when it runs too high, or is aimed at the wrong target."
+    },
+    {
+     "text": "When that happens, he says, a society can harm itself, and feel virtuous while it does."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "lens-france",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -20,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "icon",
+     "glyph": "quote",
+     "x": 640,
+     "y": 120,
+     "r": 50,
+     "color": "#c792ea",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "lj",
+     "type": "label",
+     "x": 640,
+     "y": 215,
+     "text": "\"les jeunes\" (the youth): a euphemism, he says",
+     "color": "#f2d0ff",
+     "in": 0,
+     "d": 1.2
+    },
+    {
+     "id": "hid",
+     "type": "label",
+     "x": 640,
+     "y": 272,
+     "text": "his claim: it hides a link to Islamic immigration",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 5.0
+    },
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 490,
+     "s": 0.6,
+     "left": "people",
+     "right": "building",
+     "tilt": 0,
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade",
+     "keys": {
+      "2": {
+       "tilt": -0.8,
+       "d": 0.4
+      }
+     }
+    },
+    {
+     "id": "ll",
+     "type": "label",
+     "x": 420,
+     "y": 620,
+     "text": "empathy for rioters",
+     "color": "#ff8fab",
+     "in": 2,
+     "d": 0.6
+    },
+    {
+     "id": "lr",
+     "type": "label",
+     "x": 860,
+     "y": 620,
+     "text": "for mayors, shopkeepers, police",
+     "color": "#9fe3ff",
+     "in": 2,
+     "d": 1.2
+    },
+    {
+     "id": "attr",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "prefix": "",
+     "text": "Saad's view, and our reading of how his lens applies to 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "France appears in his book directly. Saad argues that calling suburban offenders simply les jeunes, the youth, is a euphemism, and he claims it hides a link to Islamic immigration that people are afraid to name.",
+     "say": "France appears in his book directly. Saad argues that calling suburban offenders simply lay zhuhn, the youth, is a euphemism, and he claims it hides a link to Islamic immigration that people are afraid to name."
+    },
+    {
+     "text": "Read through his lens, the 2023 riots look like a test case: commentators explaining the violence as understandable rage, and a reluctance to name who did the damage."
+    },
+    {
+     "text": "In that reading, empathy flowed toward the rioters, and away from the mayor's family, the shopkeepers and the police."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "lens-women",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "pebble",
+     "x": 470,
+     "y": 520,
+     "size": 1.2,
+     "color": "#5ec8e5",
+     "mood": "neutral",
+     "anim": "rise"
+    },
+    {
+     "id": "w",
+     "type": "pebble",
+     "x": 810,
+     "y": 520,
+     "size": 1.2,
+     "color": "#ff8fab",
+     "mood": "neutral",
+     "anim": "rise",
+     "hold": "heart"
+    },
+    {
+     "id": "ml",
+     "type": "label",
+     "x": 470,
+     "y": 590,
+     "text": "men",
+     "color": "#9fe3ff",
+     "in": 0,
+     "d": 0.6
+    },
+    {
+     "id": "wl",
+     "type": "label",
+     "x": 810,
+     "y": 590,
+     "text": "women",
+     "color": "#ffc2d1",
+     "in": 0,
+     "d": 0.6
+    },
+    {
+     "id": "e",
+     "type": "label",
+     "x": 640,
+     "y": 170,
+     "text": "women score higher on empathy, on average",
+     "color": "#a8f0b4",
+     "in": 0,
+     "d": 3.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "c",
+     "type": "label",
+     "x": 640,
+     "y": 240,
+     "text": "Saad: so women are more prone to suicidal empathy",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 6.5
+    },
+    {
+     "id": "t",
+     "type": "icon",
+     "glyph": "flask",
+     "x": 640,
+     "y": 360,
+     "r": 46,
+     "color": "#3fd6c2",
+     "in": 1,
+     "d": 0.8,
+     "sfx": "chime",
+     "vol": 0.35,
+     "label": "a testable claim"
+    }
+   ],
+   "lines": [
+    {
+     "text": "He also makes a claim about the sexes. Women, he notes, score higher than men on empathy on average, which is well documented in psychology, and he argues that this makes women more prone to suicidal empathy."
+    },
+    {
+     "text": "That's a testable claim. So let's test it against what French men and women actually said, while the riots were happening."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "poll-violence",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.03
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "ttl",
+     "type": "label",
+     "x": 640,
+     "y": 90,
+     "text": "Ifop for Le Figaro, 29-30 June 2023: the violence?",
+     "color": "#ffd166",
+     "anim": "drop"
+    },
+    {
+     "id": "b",
+     "type": "gbars",
+     "x": 640,
+     "y": 410,
+     "w": 860,
+     "h": 360,
+     "max": 80,
+     "grow": 0,
+     "in": 0,
+     "d": 0.6,
+     "series": [
+      {
+       "name": "men",
+       "color": "#5ec8e5"
+      },
+      {
+       "name": "women",
+       "color": "#ff8fab"
+      }
+     ],
+     "groups": [
+      {
+       "label": "condemn it",
+       "vals": [
+        72,
+        65
+       ]
+      },
+      {
+       "label": "understand, don't approve",
+       "vals": [
+        24,
+        32
+       ]
+      },
+      {
+       "label": "approve",
+       "vals": [
+        4,
+        3
+       ]
+      }
+     ],
+     "keys": {
+      "0": {
+       "grow": 0.42,
+       "d": 1.0,
+       "t": 2.0
+      },
+      "1": {
+       "grow": 0.75,
+       "d": 0.4,
+       "t": 2.0
+      },
+      "2": {
+       "grow": 1.1,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Ifop, 1,005 adults, online, 29-30 June 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In an Ifop poll taken on the third and fourth nights of the riots, seventy-two percent of men condemned the violence. So did sixty-five percent of women.",
+     "say": "In an Eefop poll taken on the third and fourth nights of the riots, seventy-two percent of men condemned the violence. So did sixty-five percent of women."
+    },
+    {
+     "text": "Thirty-two percent of women said they understood the violence without approving of it, against twenty-four percent of men."
+    },
+    {
+     "text": "But approval of the violence itself was tiny, and the same for both: four percent of men, three percent of women."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "poll-police",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.03
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "ttl",
+     "type": "label",
+     "x": 640,
+     "y": 90,
+     "text": "Ifop for Sud Radio, 4-5 July 2023: the police make me feel...",
+     "color": "#ffd166",
+     "anim": "drop"
+    },
+    {
+     "id": "b",
+     "type": "gbars",
+     "x": 640,
+     "y": 370,
+     "w": 700,
+     "h": 300,
+     "max": 60,
+     "grow": 0,
+     "in": 0,
+     "d": 0.6,
+     "series": [
+      {
+       "name": "men",
+       "color": "#5ec8e5"
+      },
+      {
+       "name": "women",
+       "color": "#ff8fab"
+      }
+     ],
+     "groups": [
+      {
+       "label": "confidence",
+       "vals": [
+        44,
+        49
+       ]
+      },
+      {
+       "label": "hostility",
+       "vals": [
+        8,
+        4
+       ]
+      }
+     ],
+     "keys": {
+      "0": {
+       "grow": 1.1,
+       "d": 1.4,
+       "t": 3.0
+      }
+     }
+    },
+    {
+     "id": "k1",
+     "type": "label",
+     "x": 640,
+     "y": 615,
+     "text": "a gap in understanding, not in approval",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Ifop, 1,008 adults, online, 4-5 July 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "A week later, the same pollster asked how the police made people feel. Women were slightly more likely than men to say confidence, and half as likely to say hostility."
+    },
+    {
+     "text": "So the evidence shows a modest gap in understanding, not in approval. French women were not cheering the riots, and if anything, they trusted the police a little more."
+    },
+    {
+     "text": "Saad's lens fits the first finding. The second complicates it. And a poll can't tell us whether anyone's empathy was suicidal, only how warm it was."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "chapter",
+   "kicker": "Part 7",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "critics",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "k1",
+     "type": "card",
+     "x": 190,
+     "y": 340,
+     "w": 275,
+     "h": 190,
+     "glyph": "heart",
+     "title": "Grief isn't arson",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "k2",
+     "type": "card",
+     "x": 490,
+     "y": 340,
+     "w": 275,
+     "h": 190,
+     "glyph": "gavel",
+     "title": "The trigger was real",
+     "color": "#5ec8e5",
+     "in": 2,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "k3",
+     "type": "card",
+     "x": 790,
+     "y": 340,
+     "w": 275,
+     "h": 190,
+     "glyph": "people",
+     "title": "Millions didn't riot",
+     "color": "#7bdc8c",
+     "in": 3,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "k4",
+     "type": "card",
+     "x": 1090,
+     "y": 340,
+     "w": 275,
+     "h": 190,
+     "glyph": "quote",
+     "title": "An elastic label",
+     "color": "#c792ea",
+     "in": 4,
+     "d": 0.3,
+     "sfx": "pop"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Reviews in The Bulwark and Quillette; Senate inquiry on 'social marginality'",
+     "in": 4,
+     "d": 0.6,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "His critics push back on several fronts."
+    },
+    {
+     "text": "First, feeling for Nahel's family isn't the same as excusing arson. Many who mourned him also condemned the riots, his grandmother among them."
+    },
+    {
+     "text": "Second, the trigger was real. A teenager was shot by police, and the courts have treated it as a possible murder. The same pattern exploded in 2005, and ignoring the grievance didn't make it go away."
+    },
+    {
+     "text": "Third, tying the riots to Islam as such pulls millions of law-abiding French Muslims into the same frame as a few thousand rioters, most of whom left no religious motive on record."
+    },
+    {
+     "text": "And reviewers of Saad's book, at The Bulwark and at Quillette, found the core idea interesting but the execution selective, a label that can be pinned on almost any compassion you dislike."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "shared",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "cam": {
+    "zoom": [
+     1.06,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      10
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "band",
+     "type": "crowd",
+     "x": 640,
+     "y": 610,
+     "n": 7,
+     "cols": 7,
+     "w": 760,
+     "size": 0.85,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "calm",
+     "anim": "rise",
+     "keys": {
+      "1": {
+       "mood": "happy"
+      }
+     }
+    },
+    {
+     "id": "a1",
+     "type": "label",
+     "x": 640,
+     "y": 170,
+     "text": "the violence was real, cruel, and hit ordinary people",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 240,
+     "text": "lies online made it worse",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 3.0
+    },
+    {
+     "id": "a3",
+     "type": "label",
+     "x": 640,
+     "y": 310,
+     "text": "the shooting deserves its day in court",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 5.0
+    }
+   ],
+   "lines": [
+    {
+     "text": "But both sides can agree on more than it seems."
+    },
+    {
+     "text": "The violence was real and cruel, and it fell mostly on ordinary people. The lies online made everything worse. And the shooting deserves its full day in court."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.12
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -20
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "planet",
+     "type": "planet",
+     "x": 640,
+     "y": 1420,
+     "r": 960,
+     "color": "#2fb39a",
+     "land": "#7bdc8c",
+     "anim": "none"
+    },
+    {
+     "id": "pip",
+     "type": "pebble",
+     "x": 640,
+     "y": 462,
+     "size": 1.2,
+     "color": "#ffb347",
+     "mood": "calm",
+     "hold": "heart",
+     "anim": "rise"
+    },
+    {
+     "id": "q1",
+     "type": "label",
+     "x": 640,
+     "y": 140,
+     "text": "Can we condemn a riot without condemning a community?",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "q2",
+     "type": "label",
+     "x": 640,
+     "y": 205,
+     "text": "Can we feel for a victim without excusing the arson?",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 3.8
+    },
+    {
+     "id": "q3",
+     "type": "label",
+     "x": 640,
+     "y": 270,
+     "text": "Do we check the video before we share it?",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 7.6
+    }
+   ],
+   "lines": [
+    {
+     "text": "So here are three questions worth keeping."
+    },
+    {
+     "text": "Can we condemn a riot without condemning a whole community? Can we feel for a young man killed by police without excusing the people who burned a school? And when a video goes viral, do we check it before we share it?"
+    },
+    {
+     "text": "Empathy isn't the problem, and it isn't the solution. Aiming it well is the hard part."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 9,
+   "credits": [
+    "Sources: French Senate inquiry into the riots (April 2024) · Interior Ministry",
+    "Justice Ministry (Aug 2023) · France Assureurs (Mar 2024) · Ifop (June, July 2023)",
+    "EDMO fact-checkers · Logically Facts · Reuters, AFP, AP, NPR, The Local",
+    "Framing: 'Suicidal Empathy' by Gad Saad (2026), paraphrased · Critics: The Bulwark, Quillette",
+    "Written, animated, voiced and scored with open-source tools"
+   ]
+  }
+ ]
+}

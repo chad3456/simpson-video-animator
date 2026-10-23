@@ -1,0 +1,965 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E6",
+  "title": "Buying Absolution",
+  "category": "Suicidal Empathy (book)",
+  "format": "explainer",
+  "rating": "general",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "Is DEI a modern indulgence? Chapter 6 of Gad Saad's 'Suicidal Empathy' on opportunity versus outcome, diversity statements, dropped tests, hiring in medicine and safety, and brand backlash, with the strongest counterpoints.",
+  "source": "Chapter 6 ('Selling Indulgences') of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased. Public record: university test-policy announcements (2024); FAA litigation; AB InBev results (2023).",
+  "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, curious, optimistic guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-indulgence",
+   "bg": {
+    "kind": "deep",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "coin",
+     "type": "icon",
+     "x": 640,
+     "y": 270,
+     "glyph": "coin",
+     "r": 80,
+     "color": "#f2c14e",
+     "anim": "drop",
+     "sfx": "chime",
+     "vol": 0.4
+    },
+    {
+     "id": "chest",
+     "type": "shape",
+     "x": 640,
+     "y": 490,
+     "shape": "rect",
+     "w": 260,
+     "h": 150,
+     "color": "#8a5a2b",
+     "anim": "rise",
+     "d": 0.6
+    },
+    {
+     "id": "ind",
+     "type": "label",
+     "x": 640,
+     "y": 620,
+     "text": "an indulgence",
+     "color": "#f2c14e",
+     "d": 3.4
+    },
+    {
+     "id": "sp",
+     "type": "particles",
+     "x": 640,
+     "y": 380,
+     "kind": "sparkle",
+     "n": 12,
+     "w": 500,
+     "h": 300,
+     "color": "#ffd166",
+     "d": 0.4,
+     "in": 1
+    },
+    {
+     "id": "slog",
+     "type": "quote",
+     "x": 640,
+     "y": 95,
+     "text": "As soon as a coin in the coffer rings,\na soul from purgatory springs.",
+     "by": "a slogan of the 1510s",
+     "color": "#ffb347",
+     "d": 0.8,
+     "size": 24,
+     "out": 2,
+     "in": 1
+    },
+    {
+     "id": "lu",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "Martin Luther, 1517: forgiveness can’t be bought",
+     "color": "#5ec8e5",
+     "d": 1.4,
+     "size": 20,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Five hundred years ago, if you were worried about your sins, the Church offered a solution. You could buy an indulgence, a certificate said to shorten your punishment after death."
+    },
+    {
+     "text": "A slogan of the time went: as soon as a coin in the coffer rings, a soul from purgatory springs."
+    },
+    {
+     "text": "In 1517, a monk named Martin Luther objected. Forgiveness, he argued, could not be bought."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-book",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "book",
+     "type": "book",
+     "x": 330,
+     "y": 330,
+     "w": 230,
+     "h": 320,
+     "title": "SUICIDAL\nEMPATHY",
+     "author": "GAD SAAD",
+     "color": "#f2c14e",
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "s": 0.8
+    },
+    {
+     "id": "sin",
+     "type": "card",
+     "x": 820,
+     "y": 260,
+     "glyph": "fire",
+     "title": "the sin: privilege",
+     "color": "#ff5a7a",
+     "d": 4.0,
+     "s": 0.75
+    },
+    {
+     "id": "pay",
+     "type": "card",
+     "x": 820,
+     "y": 470,
+     "glyph": "coin",
+     "title": "the indulgence: DEI",
+     "color": "#f2c14e",
+     "d": 6.4,
+     "s": 0.75
+    },
+    {
+     "id": "die",
+     "type": "label",
+     "x": 820,
+     "y": 620,
+     "text": "Saad spells it DIE, on purpose",
+     "color": "#c792ea",
+     "d": 0.4,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "In chapter six of Suicidal Empathy, Gad Saad argues that modern institutions have revived the trade. The sin is privilege, and the indulgence is diversity, equity and inclusion."
+    },
+    {
+     "text": "He rearranges the letters to spell DIE, and he means it as a provocation."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "Buying Absolution",
+   "sub": "LUMEN · Episode 6",
+   "glyph": "coin",
+   "color": "#f2c14e",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "Opportunity or Outcome?",
+   "glyph": "target",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "race",
+   "bg": {
+    "kind": "land",
+    "pal": "day"
+   },
+   "els": [
+    {
+     "id": "start",
+     "type": "shape",
+     "x": 220,
+     "y": 560,
+     "shape": "rect",
+     "w": 10,
+     "h": 200,
+     "color": "#ffffff",
+     "anim": "fade",
+     "round": 4
+    },
+    {
+     "id": "finish",
+     "type": "shape",
+     "x": 1060,
+     "y": 560,
+     "shape": "rect",
+     "w": 10,
+     "h": 200,
+     "color": "#ff5a7a",
+     "anim": "fade",
+     "round": 4
+    },
+    {
+     "id": "r1",
+     "type": "pebble",
+     "x": 220,
+     "y": 520,
+     "color": "#ffb347",
+     "size": 0.8,
+     "mood": "happy",
+     "keys": {
+      "0": {
+       "x": 900,
+       "d": 3.0,
+       "t": 3.0
+      },
+      "1": {
+       "x": 1000,
+       "d": 3.0
+      }
+     }
+    },
+    {
+     "id": "r2",
+     "type": "pebble",
+     "x": 220,
+     "y": 580,
+     "color": "#7ad3ff",
+     "size": 0.8,
+     "mood": "happy",
+     "keys": {
+      "0": {
+       "x": 700,
+       "d": 3.0,
+       "t": 3.0
+      },
+      "1": {
+       "x": 1000,
+       "d": 3.0
+      }
+     }
+    },
+    {
+     "id": "r3",
+     "type": "pebble",
+     "x": 220,
+     "y": 640,
+     "color": "#c792ea",
+     "size": 0.8,
+     "mood": "happy",
+     "keys": {
+      "0": {
+       "x": 1000,
+       "d": 3.0,
+       "t": 3.0
+      },
+      "1": {
+       "x": 1000,
+       "d": 3.0
+      }
+     }
+    },
+    {
+     "id": "eo",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "equality of opportunity: same rules",
+     "color": "#5ec8e5",
+     "d": 1.0
+    },
+    {
+     "id": "eq",
+     "type": "label",
+     "x": 640,
+     "y": 220,
+     "text": "equality of outcome: same finish",
+     "color": "#ff5a7a",
+     "d": 0.6,
+     "keys": {},
+     "in": 1
+    },
+    {
+     "id": "start2",
+     "type": "label",
+     "x": 640,
+     "y": 290,
+     "text": "different starting lines?",
+     "color": "#7bdc8c",
+     "d": 0.4,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's argument starts with a distinction. Equality of opportunity means everyone runs the race under the same rules."
+    },
+    {
+     "text": "Equality of outcome means everyone should finish together. In 2020, Kamala Harris shared a video describing equity as treatment where everyone ends up in the same place."
+    },
+    {
+     "text": "Saad argues that because people differ in talents, interests and choices, equal outcomes can only be produced by treating people unequally."
+    },
+    {
+     "text": "Supporters reply that people don't all start from the same line either, and a little help at the start is simply fairness."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "DIE in Hiring",
+   "glyph": "folder",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "statements",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 640,
+     "y": 380,
+     "values": [
+      20,
+      97.5
+     ],
+     "labels": [
+      "US faculty job ads",
+      "Canadian faculty job ads"
+     ],
+     "unit": "%",
+     "w": 600,
+     "h": 300,
+     "max": 100,
+     "colors": [
+      "#5ec8e5",
+      "#ff5a7a"
+     ],
+     "anim": "fade",
+     "title": "Job ads asking for a diversity statement (studies Saad cites)"
+    },
+    {
+     "id": "n",
+     "type": "label",
+     "x": 800,
+     "y": 120,
+     "text": "477 of 489",
+     "color": "#ff5a7a",
+     "d": 1.0,
+     "size": 20,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Much of his evidence comes from universities. One analysis he cites found that about one in five American faculty job ads asked applicants for a diversity statement."
+    },
+    {
+     "text": "In a Canadian sample, nearly all of them did: four hundred and seventy-seven out of four hundred and eighty-nine."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "chairs",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "rc",
+     "type": "card",
+     "x": 380,
+     "y": 300,
+     "glyph": "lock",
+     "title": "restricted chairs",
+     "color": "#c792ea",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "um",
+     "type": "card",
+     "x": 900,
+     "y": 300,
+     "glyph": "building",
+     "title": "hundreds of DEI staff",
+     "color": "#ffb347",
+     "d": 4.4,
+     "sfx": "pop",
+     "in": 0
+    },
+    {
+     "id": "bill",
+     "type": "label",
+     "x": 640,
+     "y": 500,
+     "text": "the bill: students and taxpayers",
+     "color": "#ff5a7a",
+     "d": 2.4,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Some Canadian research chairs were restricted to candidates from particular groups, and the University of Michigan was reported to employ hundreds of DEI staff, at a cost of tens of millions of dollars a year."
+    },
+    {
+     "text": "Saad calls these indulgences: institutions pay to feel absolved, and students and taxpayers pick up the bill."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "cap",
+     "type": "icon",
+     "x": 640,
+     "y": 230,
+     "glyph": "cap",
+     "r": 80,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "drop",
+     "type": "label",
+     "x": 640,
+     "y": 360,
+     "text": "tests dropped \"for fairness\"",
+     "color": "#ffb347",
+     "d": 1.6
+    },
+    {
+     "id": "m",
+     "type": "card",
+     "x": 330,
+     "y": 520,
+     "glyph": "cap",
+     "title": "MIT",
+     "color": "#7bdc8c",
+     "d": 1.6,
+     "s": 0.62,
+     "in": 1
+    },
+    {
+     "id": "d",
+     "type": "card",
+     "x": 640,
+     "y": 520,
+     "glyph": "cap",
+     "title": "Dartmouth",
+     "color": "#7bdc8c",
+     "d": 2.0,
+     "s": 0.62,
+     "in": 1
+    },
+    {
+     "id": "y",
+     "type": "card",
+     "x": 950,
+     "y": 520,
+     "glyph": "cap",
+     "title": "Yale",
+     "color": "#7bdc8c",
+     "d": 2.4,
+     "s": 0.62,
+     "in": 1
+    },
+    {
+     "id": "back",
+     "type": "label",
+     "x": 640,
+     "y": 660,
+     "text": "brought them back: tests help find poor, talented students",
+     "color": "#7bdc8c",
+     "d": 4.0,
+     "size": 20,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Many universities also dropped standardized tests, in the name of fairness."
+    },
+    {
+     "text": "Interestingly, several, including MIT, Dartmouth and Yale, later brought them back, saying test scores actually helped them find talented students from poor backgrounds."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "When Lives Are at Stake",
+   "glyph": "cross",
+   "color": "#ff5a7a",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "medicine",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "cr",
+     "type": "icon",
+     "x": 640,
+     "y": 200,
+     "glyph": "cross",
+     "r": 70,
+     "color": "#ff5a7a",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "cm",
+     "type": "card",
+     "x": 380,
+     "y": 400,
+     "glyph": "book",
+     "title": "doctors’ framework",
+     "color": "#c792ea",
+     "d": 0.6,
+     "s": 0.75,
+     "in": 1
+    },
+    {
+     "id": "oath",
+     "type": "card",
+     "x": 900,
+     "y": 400,
+     "glyph": "mic",
+     "title": "2022 medical oath",
+     "color": "#ffb347",
+     "d": 6.0,
+     "s": 0.75,
+     "in": 1
+    },
+    {
+     "id": "skill",
+     "type": "label",
+     "x": 640,
+     "y": 600,
+     "text": "Saad: skill first",
+     "color": "#ffd166",
+     "d": 11.0,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad is most alarmed when this reaches medicine and safety."
+    },
+    {
+     "text": "He points to a proposed update of Canada's framework for training doctors, which he says puts values like anti-oppression ahead of medical expertise, and to a 2022 University of Minnesota medical school oath that pledged to honour Indigenous ways of healing and to fight white supremacy."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "faa",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "pl",
+     "type": "icon",
+     "x": 640,
+     "y": 220,
+     "glyph": "plane",
+     "r": 80,
+     "color": "#7ad3ff",
+     "anim": "left",
+     "sfx": "whoosh",
+     "out": 1
+    },
+    {
+     "id": "faa",
+     "type": "label",
+     "x": 640,
+     "y": 350,
+     "text": "FAA hiring questionnaire, 2014",
+     "color": "#7ad3ff",
+     "d": 1.0,
+     "out": 1
+    },
+    {
+     "id": "fl",
+     "type": "text",
+     "x": 640,
+     "y": 410,
+     "text": "screened out many top aviation graduates · lawsuits followed",
+     "size": 22,
+     "d": 4.0,
+     "color": "#c9d3ff",
+     "weight": 700,
+     "out": 1
+    },
+    {
+     "id": "fire",
+     "type": "icon",
+     "x": 640,
+     "y": 220,
+     "glyph": "fire",
+     "r": 80,
+     "color": "#ff7a59",
+     "d": 0.2,
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "la",
+     "type": "label",
+     "x": 640,
+     "y": 350,
+     "text": "Los Angeles fires, January 2025",
+     "color": "#ff7a59",
+     "d": 1.0,
+     "in": 1
+    },
+    {
+     "id": "lar",
+     "type": "quote",
+     "x": 640,
+     "y": 500,
+     "text": "He got himself in the wrong place\nif I have to carry him out of a fire.",
+     "by": "LAFD deputy chief, earlier interview",
+     "color": "#ffb347",
+     "d": 5.0,
+     "size": 20,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "He cites air traffic controller hiring at the US Federal Aviation Administration, which in 2014 introduced a questionnaire that screened out many top graduates of aviation programs. The agency was later sued over it."
+    },
+    {
+     "text": "And during the Los Angeles fires of January 2025, earlier remarks by a deputy fire chief went viral. Asked whether she could carry a man out of a fire, she had said he got himself in the wrong place if she had to carry him out."
+    },
+    {
+     "text": "Saad's point is simple: when lives are at stake, skill has to come first."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "Go Woke, Go Broke?",
+   "glyph": "coin",
+   "color": "#f2c14e",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "brands",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "bl",
+     "type": "card",
+     "x": 380,
+     "y": 320,
+     "glyph": "coin",
+     "title": "beer, 2023",
+     "color": "#f2c14e",
+     "anim": "left",
+     "sfx": "pop"
+    },
+    {
+     "id": "bl2",
+     "type": "label",
+     "x": 380,
+     "y": 460,
+     "text": "boycott: lost its #1 US spot",
+     "color": "#ff5a7a",
+     "d": 4.0,
+     "size": 20
+    },
+    {
+     "id": "jg",
+     "type": "card",
+     "x": 900,
+     "y": 320,
+     "glyph": "spark",
+     "title": "car brand, 2024",
+     "color": "#c792ea",
+     "d": 0.4,
+     "anim": "right",
+     "sfx": "pop",
+     "in": 1
+    },
+    {
+     "id": "jg2",
+     "type": "label",
+     "x": 900,
+     "y": 460,
+     "text": "a rebrand ad with no cars",
+     "color": "#c792ea",
+     "d": 2.0,
+     "size": 20,
+     "in": 1
+    },
+    {
+     "id": "v",
+     "type": "label",
+     "x": 640,
+     "y": 600,
+     "text": "sell products, not virtue?",
+     "color": "#ffd166",
+     "d": 0.4,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then there's woke capitalism. In 2023, Bud Light sent a personalised can to a transgender influencer. A boycott followed, and sales fell so far that it lost its place as America's best-selling beer."
+    },
+    {
+     "text": "In 2024, Jaguar unveiled a rebrand with a bright, stylish ad that showed no cars at all. It was widely mocked."
+    },
+    {
+     "text": "Saad's verdict: when companies sell virtue instead of products, customers notice."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 420,
+     "tilt": 0,
+     "left": "coin",
+     "right": "people",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "tilt": 0.4
+      },
+      "3": {
+       "tilt": -0.2
+      },
+      "4": {
+       "tilt": 0
+      }
+     }
+    },
+    {
+     "id": "a1",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "identical CVs, different names: callback gaps persist",
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "out": 2,
+     "size": 20,
+     "in": 1
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "wider outreach doesn’t lower the bar",
+     "color": "#c792ea",
+     "d": 0.4,
+     "out": 3,
+     "size": 20,
+     "in": 2
+    },
+    {
+     "id": "a3",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "some programs badly designed, and supporters say so",
+     "color": "#ffb347",
+     "d": 0.4,
+     "out": 4,
+     "size": 20,
+     "in": 3
+    },
+    {
+     "id": "a4",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "open the doors wide, then pick the best",
+     "color": "#7bdc8c",
+     "d": 0.6,
+     "size": 22,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Critics have answers."
+    },
+    {
+     "text": "Discrimination hasn't vanished. Studies that send out identical CVs under different names still find gaps in who gets called back."
+    },
+    {
+     "text": "Outreach that widens the pool of applicants doesn't lower the bar. And the research on diverse teams, while mixed, isn't nothing."
+    },
+    {
+     "text": "Many companies are simply responding to customers. And some DEI programs really were badly designed, which plenty of their own supporters admit."
+    },
+    {
+     "text": "Shared ground: open the doors as wide as you can, then pick the best person who walks through them."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "deep",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "coin2",
+     "type": "icon",
+     "x": 640,
+     "y": 280,
+     "glyph": "coin",
+     "r": 80,
+     "color": "#f2c14e",
+     "anim": "pop"
+    },
+    {
+     "id": "cant",
+     "type": "label",
+     "x": 640,
+     "y": 430,
+     "text": "you can’t buy your way to goodness",
+     "color": "#ffd166",
+     "d": 4.6
+    },
+    {
+     "id": "sp2",
+     "type": "particles",
+     "x": 640,
+     "y": 300,
+     "kind": "sparkle",
+     "n": 14,
+     "w": 700,
+     "h": 360,
+     "color": "#ffd166"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Luther's objection was that you can't buy your way to goodness. Saad's is that you can't train, hire, or market your way there either."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 7,
+   "credits": [
+    "Based on chapter 6 of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)",
+    "Public record: reporting on test-optional reversals (2024), the FAA questionnaire, AB InBev sales (2023)",
+    "Counterpoints: field experiments on hiring discrimination; research on team diversity",
+    "Narration paraphrased; short phrases attributed on screen",
+    "Original animation, characters, voice and score"
+   ]
+  }
+ ]
+}

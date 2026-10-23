@@ -2,3 +2,6 @@
 engine/*.py
 engine/*.sh
 episodes/*.py
+explainer/tools/
+explainer/engine/*.py
+.style-study/

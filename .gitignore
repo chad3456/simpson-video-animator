@@ -2,3 +2,5 @@
 .voice-cache/
 node_modules/
 still-*.png
+.style-study/
+explainer/episodes/_*/

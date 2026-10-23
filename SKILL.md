@@ -142,6 +142,9 @@ ffmpeg -ss 20 -i episodes/<slug>/episode.mp4 -frames:v 1 -q:v 4 episodes/<slug>/
 python3 engine/build_gallery.py                                                   # refresh episodes/index.json for the site
 ```
 
+**Gallery rules.** The gallery only grows: always add new episodes as new folders and never delete or overwrite a past episode's folder (make a new slug for a remake). Set `meta.category` (for example `"Suicidal Empathy (book)"` or `"Current events"`); the site groups episodes by category, then by show, with filter chips. `build_gallery.py` regenerates `episodes/index.json` from every folder, so merging branches never drops an episode.
+
+
 The repo root `index.html` is a static episode gallery (no build step), so Vercel deploys it as-is. Commit everything except `*.wav` and `.voice-cache/`, then open a PR.
 
 Always render stills and look at them before the full render. Check: captions readable, nobody's face hidden by a prop, board text fits (5 lines max, about 22 characters each), close-ups not cutting heads.

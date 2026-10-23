@@ -1,0 +1,1098 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E4",
+  "title": "Second Chances",
+  "category": "Suicidal Empathy (book)",
+  "format": "explainer",
+  "rating": "adult",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "Can compassion for offenders cost victims? Chapter 4 of Gad Saad's 'Suicidal Empathy' on repeat offenders, defunding the police, the Penny case, 'sneaky' signalling and lenient courts, with the strongest counterpoints. For adults.",
+  "source": "Chapter 4 ('Blank Slate Felons') of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026), paraphrased. Public record: BJS recidivism study (2021); Penny trial (2024); Freiburg trial (2018).",
+  "disclaimer": "Original animation, characters, voice and music. An homage to flat-design science explainers. Not affiliated with any channel, author or publisher.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42,
+  "content_note": "Adult audiences: discusses rape and murder factually, and one crude zoology nickname. No graphic content."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, curious, optimistic guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-door",
+   "bg": {
+    "kind": "city",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "house",
+     "x": 640,
+     "y": 470,
+     "anim": "rise",
+     "s": 0.9
+    },
+    {
+     "id": "p",
+     "type": "pebble",
+     "x": 640,
+     "y": 640,
+     "color": "#ffb347",
+     "size": 1.0,
+     "mood": "happy",
+     "anim": "left",
+     "keys": {
+      "2": {
+       "mood": "worried"
+      }
+     }
+    },
+    {
+     "id": "sp",
+     "type": "particles",
+     "x": 640,
+     "y": 300,
+     "kind": "sparkle",
+     "n": 10,
+     "w": 500,
+     "h": 200,
+     "color": "#ffd166",
+     "out": 2
+    },
+    {
+     "id": "sc",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "a second chance",
+     "color": "#7bdc8c",
+     "d": 1.0
+    },
+    {
+     "id": "bs",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "\"blank slate felon\"",
+     "color": "#ff5a7a",
+     "d": 1.4,
+     "sfx": "pop",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "Here's a hopeful idea: everyone can change. Give a person a second chance and, with enough compassion, they'll take it."
+    },
+    {
+     "text": "Often, that's true. But in chapter four of Suicidal Empathy, Gad Saad argues that we've turned a hope into a dogma."
+    },
+    {
+     "text": "He calls it the blank slate felon: the belief that a criminal's past tells us nothing about his future."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "Second Chances",
+   "sub": "LUMEN · Episode 4",
+   "glyph": "gavel",
+   "color": "#ffb347",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "The Revolving Door",
+   "glyph": "clock",
+   "color": "#f2c14e",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "recid",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "bars",
+     "x": 640,
+     "y": 400,
+     "values": [
+      44,
+      68,
+      83
+     ],
+     "labels": [
+      "within 1 year",
+      "within 3 years",
+      "within 9 years"
+     ],
+     "unit": "%",
+     "w": 720,
+     "h": 300,
+     "max": 100,
+     "colors": [
+      "#5ec8e5",
+      "#ffd166",
+      "#ff5a7a"
+     ],
+     "d": 0.2,
+     "title": "Released US state prisoners arrested again (2005 cohort, 30 states)",
+     "in": 1
+    },
+    {
+     "id": "doc",
+     "type": "icon",
+     "x": 640,
+     "y": 330,
+     "glyph": "folder",
+     "r": 70,
+     "color": "#f2c14e",
+     "anim": "pop",
+     "out": 1
+    },
+    {
+     "id": "bjs",
+     "type": "label",
+     "x": 640,
+     "y": 450,
+     "text": "US Justice Department study",
+     "color": "#f2c14e",
+     "d": 1.0,
+     "out": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Let's start with numbers. A large US Justice Department study followed prisoners released in 2005 from thirty states."
+    },
+    {
+     "text": "Within a year, about forty-four percent had been arrested again. Within three years, sixty-eight percent. Within nine years, eighty-three percent."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "few",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "els": [
+    {
+     "id": "d",
+     "type": "dots",
+     "x": 640,
+     "y": 340,
+     "n": 100,
+     "cols": 20,
+     "gap": 30,
+     "size": 8,
+     "color": "#bfeee6",
+     "alt": 12,
+     "altColor": "#ff5a7a",
+     "anim": "fade"
+    },
+    {
+     "id": "t10",
+     "type": "label",
+     "x": 640,
+     "y": 540,
+     "text": "1 in 8 male inmates: locked up 10+ times",
+     "color": "#ff5a7a",
+     "d": 0.4,
+     "sfx": "tick"
+    },
+    {
+     "id": "pr",
+     "type": "label",
+     "x": 640,
+     "y": 620,
+     "text": "predictable, not bad luck",
+     "color": "#ffd166",
+     "d": 2.6,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Crime is concentrated. A small group of repeat offenders commits a large share of it. Saad cites survey data in which about one in eight male inmates said they'd been locked up ten or more times before."
+    },
+    {
+     "text": "So when a career offender is released yet again and commits another crime, Saad says, that's not bad luck. It's predictable."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "defund",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "badge",
+     "type": "icon",
+     "x": 640,
+     "y": 240,
+     "glyph": "star",
+     "r": 80,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "df",
+     "type": "label",
+     "x": 640,
+     "y": 370,
+     "text": "\"Defund the police\", 2020",
+     "color": "#ffb347",
+     "d": 1.6
+    },
+    {
+     "id": "cut",
+     "type": "card",
+     "x": 380,
+     "y": 470,
+     "glyph": "coin",
+     "title": "budgets cut",
+     "color": "#ffb347",
+     "d": 0.4,
+     "s": 0.62,
+     "in": 1
+    },
+    {
+     "id": "back",
+     "type": "card",
+     "x": 900,
+     "y": 470,
+     "glyph": "coin",
+     "title": "some restored",
+     "color": "#7bdc8c",
+     "d": 3.0,
+     "s": 0.62,
+     "in": 1
+    },
+    {
+     "id": "deb",
+     "type": "text",
+     "x": 640,
+     "y": 570,
+     "text": "causes of the 2020 homicide rise still debated",
+     "size": 22,
+     "d": 5.0,
+     "color": "#ffd3bd",
+     "weight": 700,
+     "in": 1
+    },
+    {
+     "id": "nb",
+     "type": "crowd",
+     "x": 640,
+     "y": 660,
+     "n": 6,
+     "cols": 6,
+     "w": 900,
+     "size": 0.6,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "worried",
+     "d": 0.4,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 2020, after the murder of George Floyd, calls to defund the police spread across American cities."
+    },
+    {
+     "text": "Several cities cut police budgets, and some restored them as homicides rose. Researchers still debate how much policing changes explain that rise."
+    },
+    {
+     "text": "For Saad, it was empathy for offenders crowding out empathy for victims, who often live in the very same neighbourhoods."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "Heroes and Sneaks",
+   "glyph": "medal",
+   "color": "#c792ea",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "hero",
+   "bg": {
+    "kind": "land",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "big",
+     "type": "pebble",
+     "x": 640,
+     "y": 600,
+     "color": "#ffb347",
+     "size": 1.6,
+     "mood": "calm",
+     "anim": "rise"
+    },
+    {
+     "id": "ht",
+     "type": "particles",
+     "x": 640,
+     "y": 380,
+     "kind": "hearts",
+     "n": 8,
+     "w": 600,
+     "h": 220,
+     "d": 2.0,
+     "in": 0
+    },
+    {
+     "id": "rom",
+     "type": "book",
+     "x": 330,
+     "y": 380,
+     "w": 170,
+     "h": 240,
+     "title": "THE\nRESCUE",
+     "author": "A ROMANCE",
+     "color": "#ff8fab",
+     "d": 4.0,
+     "s": 0.9,
+     "in": 0
+    },
+    {
+     "id": "pro",
+     "type": "label",
+     "x": 640,
+     "y": 250,
+     "text": "protector",
+     "color": "#ffd166",
+     "d": 1.4,
+     "in": 0
+    },
+    {
+     "id": "sig",
+     "type": "label",
+     "x": 940,
+     "y": 300,
+     "text": "courage → loud compassion?",
+     "color": "#c792ea",
+     "d": 1.4,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad then makes an evolutionary argument. Across cultures, women tend to be drawn to men who protect, and romance novels are full of heroes who face down danger."
+    },
+    {
+     "text": "He suggests that some men now signal that same protectiveness, not through physical courage, but through loud displays of compassion."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "sneak",
+   "bg": {
+    "kind": "deep",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "guard",
+     "type": "pebble",
+     "x": 760,
+     "y": 600,
+     "color": "#ffb347",
+     "size": 1.7,
+     "mood": "calm",
+     "anim": "rise"
+    },
+    {
+     "id": "fem1",
+     "type": "pebble",
+     "x": 1040,
+     "y": 600,
+     "color": "#ff8fab",
+     "size": 0.9,
+     "mood": "happy",
+     "anim": "rise",
+     "d": 0.3
+    },
+    {
+     "id": "sneak",
+     "type": "pebble",
+     "x": 280,
+     "y": 600,
+     "color": "#7ad3ff",
+     "size": 0.85,
+     "mood": "neutral",
+     "d": 0.6,
+     "anim": "left",
+     "keys": {
+      "2": {
+       "color": "#ff8fab",
+       "mood": "happy",
+       "d": 0.8
+      },
+      "3": {
+       "x": 920,
+       "d": 0.8,
+       "t": 2.6
+      }
+     },
+     "in": 1
+    },
+    {
+     "id": "kl",
+     "type": "label",
+     "x": 640,
+     "y": 160,
+     "text": "kleptogamy",
+     "color": "#ffd166",
+     "d": 1.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "nick",
+     "type": "label",
+     "x": 640,
+     "y": 230,
+     "text": "nicknamed the \"sneaky f**ker\" strategy",
+     "color": "#ffb347",
+     "d": 3.6,
+     "size": 20
+    },
+    {
+     "id": "cf",
+     "type": "label",
+     "x": 280,
+     "y": 440,
+     "text": "e.g. cuttlefish",
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "out": 3,
+     "size": 20,
+     "in": 2
+    },
+    {
+     "id": "soc",
+     "type": "label",
+     "x": 640,
+     "y": 320,
+     "text": "Saad: a social version?",
+     "color": "#ff5a7a",
+     "d": 0.4,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Here he borrows a term from zoology: kleptogamy, which biologists once nicknamed, rather crudely, the sneaky eff-er strategy."
+    },
+    {
+     "text": "In some species, smaller males can't win fights with the big dominant male."
+    },
+    {
+     "text": "In cuttlefish, for example, a small male can disguise himself with a female's markings,"
+    },
+    {
+     "text": "slip past the big male, and mate on the sly."
+    },
+    {
+     "text": "Saad's provocative claim is that some performative male allies are running a social version of the same strategy. It's a joke with a point, and plenty of people will find it unfair."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "The Subway Car",
+   "glyph": "alarm",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "subway",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "car",
+     "type": "shape",
+     "x": 640,
+     "y": 380,
+     "shape": "rect",
+     "w": 1000,
+     "h": 300,
+     "color": "#3a4b8a",
+     "anim": "fade",
+     "round": 40
+    },
+    {
+     "id": "riders",
+     "type": "crowd",
+     "x": 640,
+     "y": 500,
+     "n": 6,
+     "cols": 6,
+     "w": 820,
+     "size": 0.7,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166"
+     ],
+     "mood": "worried",
+     "anim": "rise",
+     "d": 0.3
+    },
+    {
+     "id": "ny",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "New York, May 2023",
+     "color": "#f2c14e",
+     "d": 0.8
+    },
+    {
+     "id": "nm",
+     "type": "text",
+     "x": 640,
+     "y": 260,
+     "text": "Jordan Neely, 30, homeless and mentally ill",
+     "size": 26,
+     "d": 2.8,
+     "out": 1
+    },
+    {
+     "id": "dp",
+     "type": "text",
+     "x": 640,
+     "y": 260,
+     "text": "Daniel Penny, former Marine",
+     "size": 26,
+     "d": 0.3,
+     "o": 1,
+     "in": 1
+    },
+    {
+     "id": "acq",
+     "type": "label",
+     "x": 640,
+     "y": 620,
+     "text": "acquitted, December 2024",
+     "color": "#7bdc8c",
+     "d": 1.0,
+     "sfx": "tick",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "In May 2023, on a New York subway train, a man named Jordan Neely, who was homeless and had a history of mental illness, shouted threats at passengers."
+    },
+    {
+     "text": "A former marine, Daniel Penny, restrained him in a chokehold for several minutes, with help from other riders. Neely died."
+    },
+    {
+     "text": "Penny was charged, and in December 2024 a jury acquitted him."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "two-views",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "card",
+     "x": 380,
+     "y": 330,
+     "glyph": "shield",
+     "title": "protected the riders",
+     "color": "#5ec8e5",
+     "anim": "left",
+     "sfx": "pop"
+    },
+    {
+     "id": "v2",
+     "type": "card",
+     "x": 900,
+     "y": 330,
+     "glyph": "heart",
+     "title": "a life lost",
+     "color": "#ff5a7a",
+     "d": 3.2,
+     "anim": "right",
+     "sfx": "pop",
+     "in": 0
+    },
+    {
+     "id": "sv",
+     "type": "label",
+     "x": 640,
+     "y": 540,
+     "text": "Saad: empathy for the aggressor won",
+     "color": "#ffb347",
+     "d": 0.4,
+     "in": 1
+    },
+    {
+     "id": "cv",
+     "type": "label",
+     "x": 640,
+     "y": 610,
+     "text": "critics: he needed help, not a chokehold",
+     "color": "#c792ea",
+     "d": 4.6,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "To some, Penny was a hero who protected frightened passengers. To others, a man died who needed help, not a chokehold."
+    },
+    {
+     "text": "Saad sees the outrage against Penny as empathy for an aggressor outranking empathy for the people he threatened. His critics see a death that should never have happened. Both views were argued in court."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "When Mercy Fails Victims",
+   "glyph": "heart",
+   "color": "#ff5a7a",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "freiburg",
+   "bg": {
+    "kind": "deep",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "c1",
+     "type": "shape",
+     "x": 520,
+     "y": 480,
+     "shape": "circle",
+     "r": 14,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "fade",
+     "d": 1.0
+    },
+    {
+     "id": "c2",
+     "type": "shape",
+     "x": 600,
+     "y": 500,
+     "shape": "circle",
+     "r": 14,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "fade",
+     "d": 1.4
+    },
+    {
+     "id": "c3",
+     "type": "shape",
+     "x": 680,
+     "y": 490,
+     "shape": "circle",
+     "r": 14,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "fade",
+     "d": 1.8
+    },
+    {
+     "id": "c4",
+     "type": "shape",
+     "x": 760,
+     "y": 480,
+     "shape": "circle",
+     "r": 14,
+     "color": "#ffd166",
+     "glow": true,
+     "anim": "fade",
+     "d": 2.2
+    },
+    {
+     "id": "fb",
+     "type": "label",
+     "x": 640,
+     "y": 200,
+     "text": "Freiburg, Germany, 2016",
+     "color": "#f2c14e",
+     "d": 0.6,
+     "in": 1
+    },
+    {
+     "id": "ml",
+     "type": "text",
+     "x": 640,
+     "y": 280,
+     "text": "Maria, 19, medical student, refugee volunteer",
+     "size": 26,
+     "d": 3.0,
+     "in": 1
+    },
+    {
+     "id": "lf",
+     "type": "label",
+     "x": 640,
+     "y": 600,
+     "text": "killer sentenced to life",
+     "color": "#e0e6ff",
+     "d": 4.0,
+     "in": 2
+    },
+    {
+     "id": "ht",
+     "type": "particles",
+     "x": 640,
+     "y": 420,
+     "kind": "hearts",
+     "n": 6,
+     "w": 400,
+     "h": 160,
+     "d": 1.0,
+     "in": 3
+    },
+    {
+     "id": "gr",
+     "type": "label",
+     "x": 640,
+     "y": 660,
+     "text": "grace, or empathy on autopilot?",
+     "color": "#c792ea",
+     "d": 3.0,
+     "size": 20,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "The hardest part of this chapter is about sexual violence."
+    },
+    {
+     "text": "In 2016, in Freiburg, Germany, a nineteen-year-old medical student named Maria Ladenburger, who volunteered with refugees, was raped and murdered on her way home from a party."
+    },
+    {
+     "text": "Her killer was an asylum seeker from Afghanistan who had earlier been convicted in Greece of attacking a woman and throwing her off a cliff, and had been released early. A German court sentenced him to life in prison."
+    },
+    {
+     "text": "Her family asked mourners to give to refugee charities. Saad sees that as empathy that survives even this. Many others see it as grace."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "courts",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "els": [
+    {
+     "id": "gav",
+     "type": "icon",
+     "x": 640,
+     "y": 220,
+     "glyph": "gavel",
+     "r": 80,
+     "color": "#c792ea",
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.4,
+     "out": 1
+    },
+    {
+     "id": "uk",
+     "type": "card",
+     "x": 380,
+     "y": 420,
+     "glyph": "scales",
+     "title": "Britain",
+     "color": "#ffb347",
+     "d": 2.4,
+     "s": 0.7,
+     "out": 1,
+     "in": 0
+    },
+    {
+     "id": "at",
+     "type": "card",
+     "x": 900,
+     "y": 420,
+     "glyph": "scales",
+     "title": "Austria",
+     "color": "#ffb347",
+     "d": 3.0,
+     "s": 0.7,
+     "out": 1,
+     "in": 0
+    },
+    {
+     "id": "lt",
+     "type": "label",
+     "x": 640,
+     "y": 580,
+     "text": "sentences he calls shockingly light",
+     "color": "#ff5a7a",
+     "d": 5.0,
+     "out": 1,
+     "in": 0
+    },
+    {
+     "id": "nm",
+     "type": "quote",
+     "x": 640,
+     "y": 330,
+     "text": "Nadia Murad: Yazidi survivor of ISIS slavery,\nNobel Peace Prize 2018",
+     "by": "talk for Toronto students called off, 2021",
+     "color": "#f2c14e",
+     "d": 0.6,
+     "size": 24,
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad lists court cases in Britain and Austria where men convicted of sexual crimes against children received sentences he calls shockingly light, sometimes with their cultural background raised in mitigation."
+    },
+    {
+     "text": "And he cites Nadia Murad, a Yazidi woman enslaved and raped by ISIS, who won the Nobel Peace Prize. In 2021, a planned talk by her for Toronto students was called off, reportedly over worries it could stoke Islamophobia. After an outcry, the school board apologised."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "The Case Against",
+   "glyph": "scales",
+   "color": "#7ad3ff",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "against",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 420,
+     "tilt": 0,
+     "left": "gavel",
+     "right": "heart",
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "tilt": -0.4
+      },
+      "2": {
+       "tilt": 0.3
+      },
+      "4": {
+       "tilt": 0
+      }
+     }
+    },
+    {
+     "id": "a1",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "education and job programs cut reoffending",
+     "color": "#5ec8e5",
+     "d": 0.4,
+     "out": 2,
+     "size": 20,
+     "in": 1
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "single cases can’t judge whole groups",
+     "color": "#c792ea",
+     "d": 0.4,
+     "out": 3,
+     "size": 20,
+     "in": 2
+    },
+    {
+     "id": "a3",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "due process protects the innocent too",
+     "color": "#ffb347",
+     "d": 0.4,
+     "out": 4,
+     "size": 20,
+     "in": 3
+    },
+    {
+     "id": "a4",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "victims first · evidence-based sentencing",
+     "color": "#7bdc8c",
+     "d": 0.6,
+     "size": 22,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "Critics raise strong points."
+    },
+    {
+     "text": "Many people who leave prison never commit a violent crime, and well-run programs, like education and job training behind bars, do reduce reoffending."
+    },
+    {
+     "text": "Individual horrors, however real, can't tell us about whole groups of migrants. Crime tracks age, sex, poverty and opportunity, as well as origin."
+    },
+    {
+     "text": "And mercy and due process protect the innocent too. The system that sometimes frees a guilty man also saves the wrongly accused."
+    },
+    {
+     "text": "Shared ground: victims deserve to come first, sentences should follow the evidence on who reoffends, and a second chance works best when it isn't the seventh."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "city",
+    "pal": "dusk"
+   },
+   "els": [
+    {
+     "id": "h2",
+     "type": "house",
+     "x": 640,
+     "y": 470,
+     "s": 0.9,
+     "anim": "fade"
+    },
+    {
+     "id": "p2",
+     "type": "pebble",
+     "x": 640,
+     "y": 640,
+     "color": "#ffb347",
+     "size": 1.0,
+     "mood": "calm",
+     "anim": "rise"
+    },
+    {
+     "id": "wp",
+     "type": "label",
+     "x": 640,
+     "y": 150,
+     "text": "who pays when it fails?",
+     "color": "#ffd166",
+     "d": 4.0,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "Second chances are one of the most humane ideas we have. Saad's question is whether we've stopped asking who pays when they fail."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 7,
+   "credits": [
+    "Based on chapter 4 of 'Suicidal Empathy: Dying to Be Kind' by Gad Saad (2026)",
+    "Public record: US Bureau of Justice Statistics (2021); court reporting on the Penny trial (2024)",
+    "Counterpoints: research on prison education and reoffending",
+    "Narration paraphrased; short phrases attributed on screen",
+    "Original animation, characters, voice and score"
+   ]
+  }
+ ]
+}

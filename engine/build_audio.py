@@ -139,8 +139,87 @@ def music_bed(total):
     reps = int(np.ceil(total * SR / len(loop))) + 1
     return np.tile(loop, reps)[: int(total * SR) + SR]
 
+# ---------- explainer palette: soft, airy, cinematic ----------
+
+def _bell(f, dur=2.5, amp=0.2):
+    t = np.arange(int(dur * SR)) / SR
+    parts = ((1, 1.0, 1.2), (2.76, 0.35, 0.5), (5.4, 0.15, 0.25), (8.93, 0.06, 0.12))
+    return sum(np.sin(2 * np.pi * f * m * t) * a * np.exp(-t / d) for m, a, d in parts) * amp * np.minimum(1, t / 0.004)
+
+def _filtered_noise(n, width, seed):
+    k = np.hanning(width); k /= k.sum()
+    return np.convolve(np.random.default_rng(seed).standard_normal(n), k, "same")
+
+def sfx_whoosh():
+    n = int(SR * 0.9); t = np.arange(n) / SR
+    env = np.sin(np.pi * np.clip(t / 0.9, 0, 1)) ** 2
+    lo, hi = _filtered_noise(n, 40, 1), _filtered_noise(n, 6, 2)
+    mix = np.clip(t / 0.45, 0, 1)
+    return (lo * (1 - mix) * 3 + hi * mix) * env * 0.35
+
+def sfx_pop():
+    n = int(SR * 0.14); t = np.arange(n) / SR
+    f = 900 * np.exp(-t / 0.03) + 260
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t / 0.035) * 0.35
+
+def sfx_chime():
+    out = np.zeros(int(SR * 3))
+    for i, m in enumerate((79, 83, 86, 91)):
+        s = _bell(_note(m), 2.6, 0.12); o = int(i * 0.09 * SR); out[o:o + len(s)] += s[: len(out) - o]
+    return out
+
+def sfx_tick():
+    n = int(SR * 0.05); t = np.arange(n) / SR
+    return np.sin(2 * np.pi * 2200 * t) * np.exp(-t / 0.006) * 0.3
+
+def sfx_swell():
+    n = int(SR * 3.2); t = np.arange(n) / SR
+    env = (t / 3.2) ** 2.5 * np.exp(-np.maximum(t - 2.9, 0) / 0.08)
+    pad = sum(np.sin(2 * np.pi * _note(m) * t * (1 + d)) for m in (50, 57, 62, 69) for d in (-0.002, 0.002)) / 8
+    return (pad * 0.5 + _filtered_noise(n, 4, 7) * 0.4) * env * 0.5
+
+def sfx_thump():
+    n = int(SR * 0.7); t = np.arange(n) / SR
+    return np.sin(2 * np.pi * (45 + 60 * np.exp(-t / 0.05)) * t) * np.exp(-t / 0.18) * 0.7
+
+def ambient_bed(total, seed=11):
+    """Original slow ambient score: warm detuned pads, a soft bell arpeggio and a sub, with a cheap echo for space."""
+    rng = np.random.default_rng(seed)
+    chord_len = 7.5
+    prog = [(50, 57, 62, 65, 69), (46, 53, 58, 62, 65), (41, 48, 53, 57, 64), (48, 55, 60, 64, 67)]  # Dm9 Bbmaj7 Fmaj7 C
+    n = int((total + 2) * SR)
+    out = np.zeros(n)
+    t_ch = np.arange(int((chord_len + 2.5) * SR)) / SR
+    att = np.minimum(1, t_ch / 2.0) * np.minimum(1, np.maximum(0, (chord_len + 2.5 - t_ch)) / 2.5)
+    pads = {}
+    for ch in prog:
+        sig = np.zeros(len(t_ch))
+        for m in ch:
+            f = _note(m)
+            for det in (-0.0035, 0.0035):
+                for h, a in ((1, 1.0), (2, 0.3), (3, 0.12), (4, 0.05)):
+                    sig += np.sin(2 * np.pi * f * h * (1 + det) * t_ch + rng.uniform(0, 6.28)) * a
+        sig += np.sin(2 * np.pi * _note(ch[0] - 12) * t_ch) * 1.5   # sub
+        pads[ch] = sig * att / 30
+    i = 0
+    while i * chord_len < total + 2:
+        ch = prog[i % len(prog)]; o = int(i * chord_len * SR); s = pads[ch]
+        out[o:o + len(s)] += s[: n - o]
+        # bell arpeggio: sparse, gentle
+        for k in range(8):
+            if rng.random() < 0.55:
+                m = ch[rng.integers(1, len(ch))] + 12 * rng.integers(1, 3)
+                b = _bell(_note(m), 2.2, 0.05 * rng.uniform(0.6, 1.0)); ob = o + int(k * chord_len / 8 * SR)
+                out[ob:ob + len(b)] += b[: max(0, n - ob)]
+        i += 1
+    for d, g in ((0.33, 0.35), (0.71, 0.22), (1.13, 0.12)):   # echo tail
+        k = int(d * SR); out[k:] += out[:-k] * g
+    return out
+
 SFX = {"theme": sfx_theme, "sting": sfx_sting, "sparkle": sfx_sparkle,
-       "chitter": sfx_chitter, "chomp": sfx_chomp, "crash": sfx_crash}
+       "chitter": sfx_chitter, "chomp": sfx_chomp, "crash": sfx_crash,
+       "whoosh": sfx_whoosh, "pop": sfx_pop, "chime": sfx_chime, "tick": sfx_tick,
+       "swell": sfx_swell, "thump": sfx_thump}
 
 
 # ---------- helpers ----------
@@ -164,7 +243,12 @@ def speak(kokoro, text, voice, speed, cache_dir):
     if os.path.exists(path):
         s, _ = sf.read(path)
         return s
-    s, sr = kokoro.create(text, voice=voice, speed=speed, lang="en-us" if voice[0] in "ab" else "en-us")
+    if "+" in voice or ":" in voice:   # blended voice, e.g. "am_michael:0.65+bm_george:0.35"
+        parts = [(v.split(":") + ["1"])[:2] for v in voice.split("+")]
+        style = sum(kokoro.get_voice_style(name) * float(w) for name, w in parts)
+        s, sr = kokoro.create(text, voice=style.astype(np.float32), speed=speed, lang="en-us")
+    else:
+        s, sr = kokoro.create(text, voice=voice, speed=speed, lang="en-gb" if voice[0] == "b" else "en-us")
     assert sr == SR
     # trim leading/trailing silence so shots feel snappy
     nz = np.where(np.abs(s) > 0.01)[0]
@@ -204,14 +288,24 @@ def main():
             shots.append({"type": "card", "seg": seg["id"], "start": round(t, 3), "end": round(t + dur, 3)})
             t += dur + gap
             continue
+        line_starts = []
         for i, line in enumerate(seg["lines"]):
-            who = cast[line["who"]]
+            line_starts.append(t)
+            who = cast[line.get("who") or ep["meta"].get("narrator", "narrator")]
+            if not line.get("text") and not who.get("kind"):   # silent visual beat
+                dur = line.get("dur", 1.5)
+                if line.get("sfx"):
+                    clips.append((t, SFX[line["sfx"]]() * 0.8))
+                shots.append({"type": "line", "seg": seg["id"], "idx": i, "start": round(t, 3),
+                              "end": round(t + dur, 3), "env": [], "silent": True})
+                t += dur + line.get("pause", gap)
+                continue
             if who.get("kind"):  # non-speaking critter: sound effect drives the mouth
                 sig = SFX[line.get("sfx") or who.get("sfx", "chitter")]()
                 dur = max(line.get("dur", len(sig) / SR), len(sig) / SR)
             else:
-                print(f"  {line['who']:7s} {line['text'][:60]}", file=sys.stderr)
-                sig = speak(kokoro, line["text"], who["voice"], who.get("speed", 1.0), cache)
+                print(f"  {line.get('who', 'narr'):7s} {line['text'][:60]}", file=sys.stderr)
+                sig = speak(kokoro, line.get("say", line["text"]), who["voice"], who.get("speed", 1.0), cache)
                 dur = len(sig) / SR
                 if line.get("sfx"):
                     clips.append((t, SFX[line["sfx"]]() * 0.8))
@@ -219,19 +313,28 @@ def main():
             shots.append({"type": "line", "seg": seg["id"], "idx": i, "start": round(t, 3),
                           "end": round(t + dur, 3), "env": envelope(sig, dur)})
             t += dur + line.get("pause", gap)
+        for el in seg.get("els", []):   # explainer elements can carry their own entrance sound
+            if el.get("sfx"):
+                at = line_starts[min(el.get("in", 0), len(line_starts) - 1)] + el.get("d", 0)
+                clips.append((at, SFX[el["sfx"]]() * el.get("vol", 0.6)))
     total = t + 0.6
 
     mix = np.zeros(int(total * SR) + SR)
     for start, sig in clips:
         o = int(start * SR)
         mix[o:o + len(sig)] += sig[: len(mix) - o]
-    if ep["meta"].get("music"):
-        bed = music_bed(total)[: len(mix)]
-        gain = np.full(len(mix), 0.55)
+    music = ep["meta"].get("music")
+    if music:
+        ambient = music == "ambient"
+        bed = (ambient_bed(total) if ambient else music_bed(total))[: len(mix)]
+        gain = np.full(len(mix), 0.75 if ambient else 0.55)
         for sh in shots:
             a, b = int(sh["start"] * SR), int(sh["end"] * SR)
-            gain[a:b] = 0.0 if sh["type"] == "card" else 0.3   # duck under dialogue, rest under cards
-        k = int(0.15 * SR); c = np.cumsum(np.insert(gain, 0, 0))
+            if ambient:   # the score breathes up on cards and silent beats, sits low under narration
+                gain[a:b] = 1.1 if sh["type"] == "card" or sh.get("silent") else 0.42
+            else:
+                gain[a:b] = 0.0 if sh["type"] == "card" else 0.3   # duck under dialogue, rest under cards
+        k = int((0.8 if ambient else 0.15) * SR); c = np.cumsum(np.insert(gain, 0, 0))
         smooth = (c[k:] - c[:-k]) / k
         gain[: len(smooth)] = smooth
         mix += bed * gain * 0.5
