@@ -190,6 +190,25 @@
     "bible": true
   },
   {
+    "slug": "eight-nights-of-fire",
+    "dir": "explainer/episodes/eight-nights-of-fire/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E2",
+    "title": "Eight Nights of Fire",
+    "logline": "In June 2023 a police officer shot 17-year-old Nahel Merzouk in Nanterre, and France burned for eight nights. A sourced, illustrated account of the riots: the damage, the attacks on police, mayors and town halls, the phones that spread it, the second riot online, who the rioters were, and whether Gad Saad's 'suicidal empathy', especially his claim about women, holds up against the data.",
+    "rating": "adult",
+    "format": "explainer",
+    "note": "Adult audiences: describes riot violence, arson, a death and online hate factually. Stylised imagery, no graphic content.",
+    "source": "French Senate inquiry (April 2024); Interior Ministry (G. Darmanin, July 2023); Justice Ministry (E. Dupond-Moretti, Aug 2023); France Assureurs (March 2024); Ifop polls for Le Figaro (29-30 June) and Sud Radio (4-5 July 2023); EDMO and Logically fact-checks; Reuters, AFP, NPR, The Local; Cour de cassation (12 June 2026). Framing from 'Suicidal Empathy' by Gad Saad (2026), paraphrased and attributed, with counterpoints.",
+    "duration": 892.555,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": true
+  },
+  {
     "slug": "same-species-different-rules",
     "dir": "explainer/episodes/same-species-different-rules/",
     "playerPage": "explainer/engine/player.html",

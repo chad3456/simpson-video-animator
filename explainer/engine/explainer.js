@@ -159,9 +159,18 @@
     }
     // sprout (sways)
     const sw = Math.sin(t * 1.8 + ph) * 10;
-    s += `<g transform="translate(0 ${f1(-1.06 * r)}) rotate(${f1(sw)})"><path d="M0 0Q${f1(r * 0.08)} ${f1(-r * 0.25)} 0 ${f1(-r * 0.38)}" stroke="${shade(col, 0.25)}" stroke-width="${f1(r * 0.07)}" fill="none" stroke-linecap="round"/>` +
+    if (!p.hood && !p.cap) s += `<g transform="translate(0 ${f1(-1.06 * r)}) rotate(${f1(sw)})"><path d="M0 0Q${f1(r * 0.08)} ${f1(-r * 0.25)} 0 ${f1(-r * 0.38)}" stroke="${shade(col, 0.25)}" stroke-width="${f1(r * 0.07)}" fill="none" stroke-linecap="round"/>` +
       `<ellipse cx="${f1(r * 0.16)}" cy="${f1(-r * 0.42)}" rx="${f1(r * 0.2)}" ry="${f1(r * 0.09)}" fill="${tint(col, 0.15)}" transform="rotate(-30 ${f1(r * 0.16)} ${f1(-r * 0.42)})"/></g>`;
     s += solid(body, col, r * 0.16, [-r * 0.4, -r * 0.55, r * 0.32, r * 0.16]);
+    if (p.hood) {   // a plain dark hood: an anonymous figure, never a marker of any group
+      const hc = typeof p.hood === 'string' ? p.hood : '#2b2f45';
+      s += `<path d="M${f1(-r * 1.02)} ${f1(0.25 * r)}C${f1(-r * 1.05)} ${f1(-0.7 * r)} ${f1(-0.6 * r)} ${f1(-1.2 * r)} 0 ${f1(-1.2 * r)}C${f1(0.6 * r)} ${f1(-1.2 * r)} ${f1(r * 1.05)} ${f1(-0.7 * r)} ${f1(r * 1.02)} ${f1(0.25 * r)}L${f1(r * 0.7)} ${f1(0.25 * r)}C${f1(r * 0.7)} ${f1(-0.45 * r)} ${f1(r * 0.4)} ${f1(-0.62 * r)} 0 ${f1(-0.62 * r)}C${f1(-r * 0.4)} ${f1(-0.62 * r)} ${f1(-r * 0.7)} ${f1(-0.45 * r)} ${f1(-r * 0.7)} ${f1(0.25 * r)}Z" fill="${hc}"/>`;
+    }
+    if (p.cap) {   // a flat peaked cap with a small badge (police, gendarme, firefighter)
+      const cc = typeof p.cap === 'string' ? p.cap : '#1f3a8a';
+      s += `<path d="${rrect(-r * 0.62, -r * 1.32, r * 1.24, r * 0.36, r * 0.12)}" fill="${cc}"/><path d="M${f1(-r * 0.75)} ${f1(-r * 0.96)}h${f1(r * 1.5)}l${f1(-r * 0.12)} ${f1(r * 0.14)}h${f1(-r * 1.26)}Z" fill="${shade(cc, 0.4)}"/>` +
+        `<circle cx="0" cy="${f1(-r * 1.14)}" r="${f1(r * 0.1)}" fill="#f2c14e"/>`;
+    }
     // arms
     const armY = r * 0.25;
     if (p.hold === 'heart') {
@@ -221,7 +230,7 @@
       const pop = inf && infAge < 0.4 ? 1 + 0.25 * Math.sin(infAge / 0.4 * Math.PI) : 1;
       const col = inf ? p.infectColor : cols3[i % cols3.length];
       const mood = inf ? 'happy' : (p.mood || 'neutral');
-      s += `<g transform="translate(${f1(x)} ${f1(y)}) scale(${f1(back(a) * pop * 100) / 100})">${pebble({ size: p.size || 0.8, color: col, mood, look: [Math.sin(i * 2.1) * 0.6, 0] }, t, seed + i)}</g>`;
+      s += `<g transform="translate(${f1(x)} ${f1(y)}) scale(${f1(back(a) * pop * 100) / 100})">${pebble({ size: p.size || 0.8, color: col, mood, hood: p.hood, cap: p.cap, look: [Math.sin(i * 2.1) * 0.6, 0] }, t, seed + i)}</g>`;
       if (inf && infAge < 1) s += glow(x, y - 40 * (p.size || 0.8), 60 * (p.size || 0.8), p.infectColor, 0.5 * (1 - infAge));
     }
     return s;
@@ -386,6 +395,11 @@
     x: c => `<path d="M-0.4 -0.4L0.4 0.4M0.4 -0.4L-0.4 0.4" stroke="#fff" stroke-width="0.18" stroke-linecap="round"/>`,
     eye: c => `<path d="M-0.75 0Q0 -0.65 0.75 0Q0 0.65 -0.75 0Z" fill="#fff"/><circle r="0.26" fill="${c}"/><circle r="0.11" fill="${INK}"/><circle cx="-0.08" cy="-0.08" r="0.05" fill="#fff"/>`,
     bowling: c => `<path d="M-0.2 -0.7a0.15 0.15 0 0 1 0.3 0q0.05 0.25 -0.03 0.35q0.3 0.35 0.2 0.8h-0.62q-0.1 -0.45 0.2 -0.8q-0.08 -0.1 -0.05 -0.35Z" fill="#fff" transform="translate(-0.25 0)"/><circle cx="0.35" cy="0.3" r="0.32" fill="#fff"/><circle cx="0.27" cy="0.2" r="0.05" fill="${c}"/><circle cx="0.42" cy="0.18" r="0.05" fill="${c}"/>`,
+    hash: c => `<path d="M-0.22 -0.7L-0.38 0.7M0.3 -0.7L0.14 0.7M-0.65 -0.25H0.7M-0.72 0.25H0.62" stroke="#fff" stroke-width="0.16" stroke-linecap="round"/>`,
+    camera: c => `<rect x="-0.72" y="-0.38" width="1.0" height="0.76" rx="0.14" fill="#fff"/><path d="M0.34 -0.12L0.74 -0.36V0.36L0.34 0.12Z" fill="#fff"/><circle cx="-0.22" cy="0" r="0.18" fill="${c}"/>`,
+    car: c => `<path d="M-0.75 0.25V0.02L-0.5 -0.08L-0.32 -0.42H0.32L0.5 -0.08L0.75 0.02V0.25Z" fill="#fff"/><circle cx="-0.42" cy="0.32" r="0.17" fill="${shade(c, 0.3)}"/><circle cx="0.42" cy="0.32" r="0.17" fill="${shade(c, 0.3)}"/><path d="M-0.24 -0.32H0.24L0.36 -0.1H-0.36Z" fill="${tint(c, 0.5)}"/>`,
+    phone: c => `<rect x="-0.38" y="-0.72" width="0.76" height="1.44" rx="0.14" fill="#fff"/><rect x="-0.28" y="-0.55" width="0.56" height="1.0" rx="0.05" fill="${tint(c, 0.4)}"/><circle cy="0.58" r="0.07" fill="${c}"/>`,
+    quote: c => `<path d="M-0.62 0.45V0.02Q-0.62 -0.5 -0.15 -0.6V-0.38Q-0.36 -0.3 -0.38 -0.08H-0.12V0.45ZM0.12 0.45V0.02Q0.12 -0.5 0.6 -0.6V-0.38Q0.38 -0.3 0.36 -0.08H0.62V0.45Z" fill="#fff"/>`,
     glove: c => `<path d="M-0.45 0.15V-0.3A0.35 0.35 0 0 1 -0.1 -0.65H0.25A0.4 0.4 0 0 1 0.6 -0.25V0.2A0.35 0.35 0 0 1 0.3 0.5H-0.2A0.3 0.3 0 0 1 -0.45 0.15Z" fill="#fff"/><path d="M-0.45 -0.05h-0.15a0.15 0.15 0 0 0 0 0.3h0.2" fill="#fff"/><rect x="-0.25" y="0.5" width="0.6" height="0.25" rx="0.05" fill="${tint(c, 0.5)}"/>`,
   };
   function icon(p, t) {
@@ -608,7 +622,145 @@
     return s;
   }
 
-  const DRAW = { pebble, crowd, heart, brain, book, rings, curve, meter, label, icon, card, phone, arrow, mirror, house, dominoes, dots, scale, planet, particles, shape: shapeEl, text: textEl, bars, critter, quote };
+  // ---------- news and civic elements (stylised; no logos, no real people) ----------
+  /* Flames: soft flickering tongues with a glow and rising smoke. Origin at the base. */
+  function flames(p, t, seed) {
+    const k = p.size || 1, n = p.n || 5, w = (p.w || 120) * k, rr = rng(seed + 'fl');
+    let s = glow(0, -50 * k, 150 * k, '#ff7a3d', 0.45);
+    for (let i = 0; i < 7; i++) {   // smoke puffs drift up and fade
+      const life = (t * 0.25 + rr()) % 1, x = (rr() - 0.5) * w + Math.sin(t + i) * 10 * k + life * 30 * k, y = -90 * k - life * 220 * k, r0 = (18 + life * 46) * k;
+      s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(r0)}" fill="#3a2f4a" opacity="${f1(0.35 * Math.sin(life * Math.PI))}"/>`;
+    }
+    const tongue = (x, h, wd, c, ph) => {
+      const fl = 1 + 0.12 * Math.sin(t * 9 + ph) + 0.06 * Math.sin(t * 17 + ph * 2), hh = h * fl, sway = Math.sin(t * 5 + ph) * wd * 0.3;
+      return `<path d="M${f1(x - wd)} 0C${f1(x - wd)} ${f1(-hh * 0.45)} ${f1(x - wd * 0.2 + sway)} ${f1(-hh * 0.6)} ${f1(x + sway)} ${f1(-hh)}C${f1(x + wd * 0.35 + sway)} ${f1(-hh * 0.6)} ${f1(x + wd)} ${f1(-hh * 0.45)} ${f1(x + wd)} 0Z" fill="${c}"/>`;
+    };
+    for (let i = 0; i < n; i++) { const x = -w / 2 + (i + 0.5) * w / n; s += tongue(x, (70 + rr() * 50) * k, w / n * 0.75, '#ff5a3d', i * 1.3); }
+    for (let i = 0; i < n; i++) { const x = -w / 2 + (i + 0.5) * w / n; s += tongue(x, (45 + rr() * 30) * k, w / n * 0.5, '#ffb347', i * 2.1 + 1); }
+    for (let i = 0; i < n; i++) { const x = -w / 2 + (i + 0.5) * w / n; s += tongue(x, (22 + rr() * 16) * k, w / n * 0.28, '#fff0b8', i * 0.7 + 2); }
+    for (let i = 0; i < 10; i++) {   // sparks
+      const life = (t * (0.6 + rr()) + rr()) % 1, x = (rr() - 0.5) * w * 1.2 + Math.sin(t * 4 + i) * 8, y = -40 * k - life * 160 * k;
+      s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1((1.5 + rr() * 2.5) * k)}" fill="#ffd166" opacity="${f1(1 - life)}"/>`;
+    }
+    return s;
+  }
+  const burn = (c, b) => mix(c, '#241c30', clamp(b || 0) * 0.85);
+  function car(p, t, seed) {
+    const c = burn(p.color || '#5ec8e5', p.burnt), k = p.size || 1;
+    let s = `<g transform="scale(${k})">` + shadow(120, 14);
+    s += solid(`M-120 -22V-58Q-118 -70 -100 -72L-70 -76L-42 -116Q-36 -124 -24 -124H44Q56 -124 64 -114L90 -76L108 -72Q122 -68 122 -54V-22Z`, c, 6, [-70, -70, 30, 8]);
+    s += `<path d="M-34 -80L-14 -112H18V-80ZM28 -80V-112H48Q54 -112 58 -106L76 -80Z" fill="${p.burnt ? '#120c18' : '#bfe9ff'}" opacity="${p.burnt ? 0.9 : 0.85}"/>`;
+    s += `<rect x="96" y="-64" width="18" height="8" rx="4" fill="${p.burnt ? '#3a3040' : '#ffe6a3'}"/>`;
+    for (const x of [-72, 72]) s += `<circle cx="${x}" cy="-20" r="24" fill="#151a2e"/><circle cx="${x}" cy="-20" r="10" fill="${p.burnt ? '#3a3040' : '#9fb4d8'}"/>`;
+    s += `</g>`;
+    if (p.fire) s += `<g transform="translate(0 ${f1(-60 * k)}) scale(${f1(clamp(p.fire) * 1000) / 1000})">${flames({ size: 0.7 * k, w: 220, n: 5 }, t, seed)}</g>`;
+    return s;
+  }
+  function van(p, t, seed) {
+    const c = burn(p.color || '#eef2ff', p.burnt), k = p.size || 1;
+    let s = `<g transform="scale(${k})">` + shadow(150, 16);
+    s += solid(`M-150 -24V-150Q-150 -162 -138 -162H70Q84 -162 92 -150L130 -96L146 -88Q152 -84 152 -74V-24Z`, c, 6);
+    s += `<path d="M78 -150L114 -98H52V-150Z" fill="#14203d" opacity="0.9"/><rect x="-150" y="-80" width="302" height="18" fill="${burn('#1f3a8a', p.burnt)}"/><rect x="-150" y="-62" width="302" height="6" fill="${burn('#ff5a5a', p.burnt)}"/>`;
+    for (const x of [-96, 96]) s += `<circle cx="${x}" cy="-22" r="25" fill="#151a2e"/><circle cx="${x}" cy="-22" r="10" fill="#9fb4d8"/>`;
+    if (!p.burnt) { const on = Math.sin(t * 9) > 0; s += `<rect x="-30" y="-176" width="60" height="16" rx="6" fill="${on ? '#5ec8ff' : '#2a4a9a'}"/>` + (on ? glow(0, -170, 90, '#5ec8ff', 0.6) : ''); }
+    s += `</g>`;
+    if (p.fire) s += `<g transform="translate(0 ${f1(-90 * k)}) scale(${f1(clamp(p.fire) * 1000) / 1000})">${flames({ size: 0.75 * k, w: 280, n: 6 }, t, seed)}</g>`;
+    return s;
+  }
+  /* A town hall in the French civic style: pediment, clock, columns and a tricolour. Origin at the base. */
+  function townhall(p, t, seed) {
+    const k = p.size || 1, b = p.burnt || 0, stone = burn(p.color || '#f3e3c3', b);
+    let s = `<g transform="scale(${k})">` + shadow(230, 18);
+    s += solid(rrect(-210, -200, 420, 200, 6), stone, 7);
+    s += solid(`M-230 -196L0 -290L230 -196Z`, burn('#d9c29a', b), 6);
+    s += `<circle cx="0" cy="-232" r="26" fill="${burn('#fffaf0', b)}"/><path d="M0 -232V-250M0 -232L12 -226" stroke="${INK}" stroke-width="4" stroke-linecap="round"/>`;
+    for (let i = 0; i < 6; i++) { const x = -175 + i * 70; s += `<rect x="${x - 11}" y="-180" width="22" height="170" rx="4" fill="${burn('#fff6e0', b)}"/>`; }
+    for (let i = 0; i < 5; i++) { const x = -140 + i * 70; s += `<rect x="${x - 18}" y="-150" width="36" height="56" rx="16" fill="${b ? '#120c18' : '#ffd166'}" opacity="${b ? 0.85 : 0.75}"/>`; }
+    s += `<rect x="-28" y="-80" width="56" height="80" rx="24" fill="${burn('#6a3a2a', b)}"/>`;
+    s += `<rect x="-3" y="-370" width="6" height="84" fill="#c9d3ff"/>`;
+    const wv = Math.sin(t * 3) * 4;
+    s += `<path d="M3 -368h28q4 ${f1(wv)} 0 ${f1(36)}h-28Z" fill="#2851c6"/><path d="M31 -368h28q4 ${f1(wv)} 0 ${f1(36)}h-28q4 ${f1(-wv)} 0 ${f1(-36)}Z" fill="#fffaf0"/><path d="M59 -368h28q4 ${f1(wv)} 0 ${f1(36)}h-28q4 ${f1(-wv)} 0 ${f1(-36)}Z" fill="#e8414f"/>`;
+    if (p.sign) s += text(p.sign, 0, -186, 18, { fill: INK, weight: 900, ls: 4 });
+    s += `</g>`;
+    if (p.fire) s += `<g transform="translate(${f1(-60 * k)} ${f1(-180 * k)}) scale(${f1(clamp(p.fire) * 1000) / 1000})">${flames({ size: 1.4 * k, w: 220, n: 6 }, t, seed)}</g>`;
+    return s;
+  }
+  const fmtNum = v => Math.round(v).toLocaleString('en-US');
+  /* A big counting number with a label and an optional source line underneath. Key "value" to count up. */
+  function stat(p) {
+    const size = p.size || 96, c = p.color || '#ffd166';
+    let s = glow(0, 0, size * 2.2, c, 0.25);
+    const str = (p.prefix || '') + fmtNum(p.value || 0) + (p.suffix || '');
+    s += text(str, 3, 4, size, { fill: '#050818', weight: 900, op: 0.35 }) + text(str, 0, 0, size, { fill: c, weight: 900 });
+    if (p.label) s += text(p.label, 0, size * 0.78, Math.max(20, size * 0.26), { weight: 800 });
+    if (p.src) s += text(p.src, 0, size * 0.78 + Math.max(20, size * 0.26) * 1.25 + 4, 16, { weight: 700, fill: '#9fb4d8' });
+    return s;
+  }
+  /* Source chip: small, calm, always readable. */
+  function cite(p) {
+    const size = p.size || 16, str = (p.prefix == null ? 'Source: ' : p.prefix) + p.text, w = textW(str, size, 700) + size * 1.6, h = size * 1.9;
+    return `<path d="${rrect(-w / 2, -h / 2, w, h, h / 2)}" fill="#050818" opacity="0.55"/>` + text(str, 0, 1, size, { fill: p.color || '#c9d3ff', weight: 700 });
+  }
+  /* Grouped bar chart (men vs women and the like): groups [{label, vals:[...]}], series [{name, color}], grow 0..1. */
+  function gbars(p, t) {
+    const G2 = p.groups || [], S = p.series || [{ name: '', color: '#5ec8e5' }], w = p.w || 760, h = p.h || 300, max = p.max || 100, gr = p.grow == null ? 1 : p.grow;
+    const gw = w / Math.max(1, G2.length), bw = Math.min(70, gw * 0.7 / S.length);
+    let s = `<path d="M${-w / 2} ${h / 2}H${w / 2}" stroke="#fff" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"/>`;
+    G2.forEach((g, i) => {
+      const cx = -w / 2 + gw * (i + 0.5);
+      g.vals.forEach((v, j) => {
+        const x = cx + (j - (S.length - 1) / 2) * (bw + 10), q = easeOut(clamp(gr * 1.4 - i * 0.15 - j * 0.08)), bh = Math.max(2, h * 0.86 * v / max * q);
+        s += solid(rrect(x - bw / 2, h / 2 - bh, bw, bh, Math.min(10, bw / 3)), S[j].color, 4);
+        if (q > 0.6) s += text(fmtNum(v * q) + (p.unit == null ? '%' : p.unit), x, h / 2 - bh - 20, 24, { weight: 900, op: f1(clamp((q - 0.6) * 2.5)) });
+      });
+      s += text(g.label, cx, h / 2 + 30, 20, { weight: 800, fill: '#e6ebff' });
+    });
+    let lx = -((S.length - 1) * 150) / 2;
+    for (const se of S) { if (se.name) s += `<circle cx="${f1(lx - 40)}" cy="${f1(-h / 2 - 30)}" r="9" fill="${se.color}"/>` + text(se.name, lx + 10, -h / 2 - 30, 20, { weight: 800 }); lx += 150; }
+    return s;
+  }
+  /* A social feed panel with generic posts (no platform logos). posts [{tag, text, color, stamp}], shown = how many, stamps 0..1. */
+  function feed(p, t, seed, age) {
+    const w = p.w || 380, posts = p.posts || [], ph = p.ph || 96, gap = 14, h = p.h || (posts.length * (ph + gap) + 70);
+    const shown = p.shown == null ? posts.length : p.shown;
+    let s = `<path d="${rrect(-w / 2 + 6, -h / 2 + 10, w, h, 26)}" fill="#050818" opacity="0.35"/>` + solid(rrect(-w / 2, -h / 2, w, h, 26), '#1b2147', 5);
+    s += text(p.app || 'FEED', -w / 2 + 26, -h / 2 + 30, 18, { anchor: 'start', weight: 900, ls: 3, fill: '#9fb4d8' });
+    posts.forEach((q, i) => {
+      const a = clamp(Math.min(shown - i, (age - i * 0.45) / 0.4)); if (a <= 0) return;
+      const y = -h / 2 + 62 + i * (ph + gap), c = q.color || '#5ec8e5', dy = (1 - easeOut(a)) * 20;
+      s += `<g opacity="${f1(a)}" transform="translate(0 ${f1(dy)})"><path d="${rrect(-w / 2 + 16, y, w - 32, ph, 16)}" fill="#262d5c"/>`;
+      s += `<circle cx="${f1(-w / 2 + 44)}" cy="${f1(y + 28)}" r="14" fill="${c}"/>` + text(q.tag || '', -w / 2 + 68, y + 28, 19, { anchor: 'start', weight: 900, fill: c });
+      s += text(q.text || '', -w / 2 + 34, y + 64, 16, { anchor: 'start', weight: 700, fill: '#e6ebff', lh: 1.25 });
+      if (q.stamp && (p.stamps || 0) > i / Math.max(1, posts.length)) {
+        const sw = textW(q.stamp, 20, 900) + 26, sa = back(clamp(((p.stamps || 0) - i / posts.length) * 4));
+        s += `<g transform="translate(${f1(w / 2 - 30 - sw / 2)} ${f1(y + 30)}) rotate(-8) scale(${f1(sa * 100) / 100})"><path d="${rrect(-sw / 2, -17, sw, 34, 8)}" fill="none" stroke="#ff5a7a" stroke-width="4"/>${text(q.stamp, 0, 1, 20, { weight: 900, fill: '#ff5a7a', ls: 2 })}</g>`;
+      }
+      s += `</g>`;
+    });
+    return s;
+  }
+  /* France as a soft hexagon ("l'Hexagone") with towns that light up as unrest spreads (spread 0..1). */
+  function hexmap(p, t, seed) {
+    const R = p.r || 230, sp = p.spread || 0, rr = rng(seed + 'hx'), n = p.n || 70;
+    const pts = [[0, -1], [0.88, -0.52], [0.84, 0.48], [0.1, 1], [-0.8, 0.6], [-0.95, -0.35]].map(([x, y]) => [x * R, y * R]);
+    let d = ''; pts.forEach((q, i) => { const nx = pts[(i + 1) % 6], m = [(q[0] + nx[0]) / 2, (q[1] + nx[1]) / 2]; d += (i ? '' : `M${f1(m[0])} ${f1(m[1])}`); const n2 = pts[(i + 1) % 6], n3 = pts[(i + 2) % 6]; d += `Q${f1(n2[0])} ${f1(n2[1])} ${f1((n2[0] + n3[0]) / 2)} ${f1((n2[1] + n3[1]) / 2)}`; });
+    let s = glow(0, 0, R * 1.5, sp > 0.3 ? '#ff7a3d' : '#5ec8e5', 0.18 + 0.2 * sp) + solid(d + 'Z', p.color || '#2a3a7a', 10, [-R * 0.4, -R * 0.45, R * 0.3, R * 0.12]);
+    const paris = [R * 0.12, -R * 0.55];
+    const towns = [];
+    for (let i = 0; i < n; i++) { let x, y; do { x = (rr() * 2 - 1) * R * 0.85; y = (rr() * 2 - 1) * R * 0.85; } while (Math.hypot(x, y) > R * 0.8); towns.push([x, y, Math.hypot(x - paris[0], y - paris[1]) / (R * 1.9) + rr() * 0.25]); }
+    towns.push([paris[0], paris[1], 0]);
+    for (const [x, y, d0] of towns) {
+      const on = sp > d0, q = on ? clamp((sp - d0) * 8) : 0;
+      if (on) s += glow(x, y, 26 * q + 6, '#ff7a3d', 0.7);
+      s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(on ? 4 + 3 * q : 3)}" fill="${on ? '#ffd166' : '#8fa3e0'}" opacity="${on ? 1 : 0.6}"/>`;
+    }
+    s += solid(circ(paris[0], paris[1], 9), '#fffaf0', 2) + text(p.city || 'Paris', paris[0] + 16, paris[1] - 4, 18, { anchor: 'start', weight: 900 });
+    if (p.pin) s += `<g transform="translate(${f1(paris[0] - 14)} ${f1(paris[1] + 14)})">${glow(0, 0, 40, '#ff5a7a', 0.8)}<circle r="7" fill="#ff5a7a"/></g>` + text(p.pin, paris[0] + 2, paris[1] + 24, 16, { anchor: 'start', weight: 800, fill: '#ffb3c1' });
+    return s;
+  }
+
+  const DRAW = { pebble, crowd, heart, brain, book, rings, curve, meter, label, icon, card, phone, arrow, mirror, house, dominoes, dots, scale, planet, particles, shape: shapeEl, text: textEl, bars, critter, quote,
+    flames, car, van, townhall, stat, cite, gbars, feed, hexmap };
 
   // ---------- timing ----------
   function load(ep, tl, svg) {

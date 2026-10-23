@@ -305,7 +305,7 @@ def main():
                 dur = max(line.get("dur", len(sig) / SR), len(sig) / SR)
             else:
                 print(f"  {line.get('who', 'narr'):7s} {line['text'][:60]}", file=sys.stderr)
-                sig = speak(kokoro, line["text"], who["voice"], who.get("speed", 1.0), cache)
+                sig = speak(kokoro, line.get("say", line["text"]), who["voice"], who.get("speed", 1.0), cache)
                 dur = len(sig) / SR
                 if line.get("sfx"):
                     clips.append((t, SFX[line["sfx"]]() * 0.8))

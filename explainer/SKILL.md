@@ -52,6 +52,7 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
 - Give critics a full part with their strongest points, and name where they published.
 - Satirize nothing. The tone is curious and calm. Name hot-button chapters on cards; do not dramatize them with creatures that stand in for real groups.
 - Pebbles are "people in general". A `spiky` pebble may stand for a threat or a free-rider in the abstract, never for a nationality, religion or other group.
+- **News episodes** (a real event, like E2): every figure gets a `cite` chip on screen and a row in the bible's fact sheet. Where sources disagree, show both. Draw participants as roles (hooded rioters, capped police, bright residents), never by religion, skin or nationality. Show damage and cruelty plainly but stylised: flames, burnt cars, labels and counts, no gore. Attribute a framing author's claims to them, test any claim about a group against data, and keep a full part for critics.
 
 ## 4. episode.json
 
@@ -79,7 +80,7 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
 
 The title card shows a big glowing heart, or the badge named by `glyph` in `color` if set, so each episode of a series gets its own emblem. `meta.rating` is `general`, `mature` or `adult`; add `meta.content_note` when a chapter needs it.
 
-**Timing.** `in` is the line index where an element appears (plus `d` seconds); `out` is the line where it leaves; `keys` maps a line index to new prop values, tweened from that line's start plus `d` over `t` seconds (default 0.8). Numbers, colours and `[x, y]` arrays tween; strings such as `mood` switch. A line with empty `text` is a silent beat of `dur` seconds where the score swells. `sfx` on an element plays when it appears (`vol` scales it).
+**Timing.** `in` is the line index where an element appears (plus `d` seconds); `out` is the line where it leaves; `keys` maps a line index to new prop values, tweened from that line's start plus `d` over `t` seconds (default 0.8). Numbers, colours and `[x, y]` arrays tween; strings such as `mood` switch. A line can carry `say` with a phonetic spelling for the voice (names, French words) while `text` stays correct in the script. A line with empty `text` is a silent beat of `dur` seconds where the score swells. `sfx` on an element plays when it appears (`vol` scales it).
 
 **Common props:** `x y` (canvas 1280×720), `s` scale, `rot` degrees, `o` opacity, `anim` (`pop rise drop left right fade grow none`), `float` (idle bob in px).
 
@@ -87,8 +88,8 @@ The title card shows a big glowing heart, or the badge named by `glyph` in `colo
 
 | type | props |
 |---|---|
-| `pebble` | `size color mood look:[dx,dy] tilt hold:"heart" spiky` (origin at its feet) |
-| `crowd` | `n cols w rowh size colors[] mood skip infect:0..1 infectColor from:"center"/"left"` |
+| `pebble` | `size color mood look:[dx,dy] tilt hold:"heart" spiky hood cap` (origin at its feet; `hood` = an anonymous dark hood, `cap` = a peaked uniform cap; both take `true` or a colour) |
+| `crowd` | `n cols w rowh size colors[] mood skip infect:0..1 infectColor from:"center"/"left" hood cap` |
 | `heart` | `size color heat:0..1 crack:0..1` (beats; embers and shake when hot) |
 | `brain` | `size color` |
 | `book` | `title author color w h` (a generic cover, never the publisher's art) |
@@ -96,7 +97,7 @@ The title card shows a big glowing heart, or the badge named by `glyph` in `colo
 | `curve` | `w h draw:0..1 dot:0..1 labels:{x,y,left,mid,right}` (inverted U with zones) |
 | `meter` | `r value:0..1 label` |
 | `label` / `text` | `text color fg size` / `text size color weight` (`\n` for new lines) |
-| `icon` | `glyph r color label`; glyphs: heart cross dna fruit gift target alarm fear fire calc spark folder lock globe gavel flask people building scales shield coin chain x eye bowling glove brain star syringe clock cap plane receipt mic leaf medal ballot book home |
+| `icon` | `glyph r color label`; glyphs: heart cross dna fruit gift target alarm fear fire calc spark folder lock globe gavel flask people building scales shield coin chain x eye bowling glove brain star syringe clock cap plane receipt mic leaf medal ballot book home hash camera car phone quote |
 | `card` | `glyph title color w h` (a case-file tile; long titles shrink to fit) |
 | `quote` | `text by color size w` (a short attributed quote card; keep quotes short) |
 | `bars` | `values[] labels[] colors[] max unit dp fmt:"int" title w h grow` (bars grow in one by one with counting labels) |
@@ -109,6 +110,14 @@ The title card shows a big glowing heart, or the badge named by `glyph` in `colo
 | `scale` | `tilt:-1..1 left right` (glyph names) |
 | `particles` | `kind:"hearts"/"alerts"/"sparkle" n w h dir` |
 | `shape` | `shape:"circle"/"rect" r w h color glow` |
+| `flames` | `size w n` (stylised tongues, sparks and smoke; origin at the base) |
+| `car`, `van` | `color size fire:0..1 burnt:0..1` (`van` has a flashing blue light until burnt) |
+| `townhall` | `size color sign fire:0..1 burnt:0..1` (a generic French mairie with a tricolour) |
+| `stat` | `value prefix suffix label src size color` (a big number; key `value` to count up) |
+| `cite` | `text prefix` (a small source chip; `prefix` defaults to "Source: ") |
+| `gbars` | `groups:[{label, vals[]}] series:[{name, color}] max unit w h grow:0..1` (grouped bars; key `grow` to reveal) |
+| `feed` | `posts:[{tag, text, color, stamp}] app w ph shown stamps:0..1` (a generic social feed, no platform logos; `stamps` reveals FALSE/OLD stamps) |
+| `hexmap` | `r spread:0..1 n city pin color` (France as a soft hexagon; towns light up from Paris outwards) |
 
 To add a visual, write a function `(props, t, seed, age) => svgString` drawn around the origin, use `solid()` and `glow()` for the house look, and register it in `DRAW`.
 
