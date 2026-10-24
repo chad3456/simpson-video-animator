@@ -10,7 +10,7 @@ Two shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chrom
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
 - `engine/`: the renderer and pipeline.
 - `index.html`: the episode gallery (static, deploys to Vercel with zero config).
-- `tracker/` and `api/`: the live *Suicidal Empathy Meter* world map, an editorial index of news coverage built on GDELT, newsroom RSS, Bluesky and Reddit. See `tracker/README.md`.
+- `tracker/` and `api/`: the live *Suicidal Empathy Meter* world map, an editorial index of news coverage built on GDELT, newsroom RSS, Bluesky's Jetstream, Mastodon and Reddit. See `tracker/README.md`.
 - `episodes/suicidal-empathy/`: the pilot, "Dying to Be Kind", adult cut (bible, script, episode.json, timeline, MP3, MP4).
 - `episodes/suicidal-empathy-family/`: the original all-ages script of the same episode.
 

@@ -1,27 +1,53 @@
 {
   "name": "Suicidal Empathy Meter",
-  "version": "1.0",
+  "version": "1.1",
   "kind": "Editorial discourse index",
   "summary": "How intensely each country's own news media covers five debates that Gad Saad groups under 'suicidal empathy' in his 2026 book. It measures coverage, not whether a country or its people actually hold these beliefs, and not whether the thesis is right.",
   "source": {
     "name": "GDELT Project DOC 2.0 API",
     "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
     "mode": "timelinesourcecountry",
-    "note": "GDELT monitors online news in 65 languages and updates every 15 minutes. For each query it reports, per source country, the share of that country's monitored articles that match (volume intensity, in percent). Country means where the outlet is based, not the country the story is about."
+    "note": "GDELT monitors online news in 65 languages and updates every 15 minutes. For each query it reports, per source country, the share of that country's monitored articles that match (volume intensity, in percent). Country means where the outlet is based, not the country the story is about. Your browser queries GDELT directly (GDELT allows this for any website), so every visitor sees the live numbers, not a stored copy."
   },
   "scoring": [
     "1. For each indicator, take each country's mean volume intensity over the chosen window.",
-    "2. Divide by the 95th percentile across all countries for that indicator and cap at 1, so one outlier cannot flatten everyone else.",
-    "3. Score = 100 x the weighted sum of the five normalised values. Weights sum to 1.",
-    "4. A country that appears in no indicator series is shown as 'no data', never as zero. A country that appears in some series but not others gets 0 for the missing ones, because GDELT omits countries with no matching articles.",
-    "5. Trend compares the mean of the last third of the window with the first third."
+    "2. Only countries with at least 3 time slots containing matching articles (across all indicators) are scored. Fewer than that is listed as 'too little coverage', because one or two articles from a small media market can read as a huge percentage.",
+    "3. Divide by the 95th percentile across scored countries for that indicator and cap at 1, so one outlier cannot flatten everyone else.",
+    "4. Score = 100 x the weighted sum of the five normalised values. Weights sum to 1; if an indicator fails to load, the others are re-weighted and the page says so.",
+    "5. A country that appears in no indicator series is shown as 'no data', never as zero. A country that appears in some series but not others gets 0 for the missing ones, because GDELT omits countries with no matching articles.",
+    "6. Trend compares the mean of the last third of the window with the first third."
   ],
   "bins": [
-    { "min": 0,  "max": 20,  "label": "Low",       "color": "#fff1b8" },
-    { "min": 20, "max": 40,  "label": "Moderate",  "color": "#ffd43b" },
-    { "min": 40, "max": 60,  "label": "Elevated",  "color": "#ff9f1c" },
-    { "min": 60, "max": 80,  "label": "High",      "color": "#e8552d" },
-    { "min": 80, "max": 101, "label": "Very high", "color": "#a3161a" }
+    {
+      "min": 0,
+      "max": 20,
+      "label": "Low",
+      "color": "#fff1b8"
+    },
+    {
+      "min": 20,
+      "max": 40,
+      "label": "Moderate",
+      "color": "#ffd43b"
+    },
+    {
+      "min": 40,
+      "max": 60,
+      "label": "Elevated",
+      "color": "#ff9f1c"
+    },
+    {
+      "min": 60,
+      "max": 80,
+      "label": "High",
+      "color": "#e8552d"
+    },
+    {
+      "min": 80,
+      "max": 101,
+      "label": "Very high",
+      "color": "#a3161a"
+    }
   ],
   "noDataColor": "#3a3426",
   "indicators": [
@@ -77,5 +103,29 @@
     "Small media markets give noisy percentages. A handful of articles can swing a small country a long way.",
     "GDELT's archive for this API is a rolling three months, so longer windows are not available.",
     "Social posts in the feed are a sample of public posts that use the terms. They are not scored and are not attributed to countries, because posts carry no reliable location."
-  ]
+  ],
+  "minHits": 3,
+  "social": {
+    "extraPhrases": [
+      "suicidal empathy",
+      "luxury beliefs",
+      "red-green alliance",
+      "two-tier policing",
+      "grooming gangs"
+    ],
+    "mastodonTags": [
+      "suicidalempathy",
+      "luxurybeliefs",
+      "asylum",
+      "immigration",
+      "freespeech",
+      "hatespeech"
+    ],
+    "redditTerms": [
+      "suicidal empathy",
+      "luxury beliefs",
+      "red-green alliance",
+      "islamo-leftism"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-// Suicidal Empathy Meter: fetches /api/tracker, scores countries per methodology.json and draws the map.
+// Suicidal Empathy Meter: reads GDELT from the browser (sources.js), scores countries per methodology.json and draws the map.
 (() => {
   const $ = id => document.getElementById(id);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -23,7 +23,7 @@
   };
   const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
 
-  let METHOD, FEATURES, path, projection, DATA, SCORES = {}, selected = null, region = 'World', timer;
+  let METHOD, FEATURES, path, projection, DATA, SCORES = {}, THIN = [], selected = null, region = 'World', timer;
   const state = { win: '7d', layer: 'score', sort: ['score', -1] };
   try { Object.assign(state, JSON.parse(localStorage.getItem('sem-state') || '{}')); } catch (_) {}
   const save = () => { try { localStorage.setItem('sem-state', JSON.stringify({ win: state.win, layer: state.layer })); } catch (_) {} };
@@ -42,7 +42,11 @@
   // ---------- scoring (mirrors methodology.json "scoring") ----------
   function score(data) {
     const ok = data.indicators.filter(i => i.status === 'ok');
-    const names = new Set(ok.flatMap(i => Object.keys(i.countries)));
+    const all = new Set(ok.flatMap(i => Object.keys(i.countries)));
+    // a few stray articles from a tiny media market can read as a huge percentage, so require minimum evidence
+    const hits = n => ok.reduce((a, i) => a + (i.countries[n]?.hits || 0), 0);
+    const names = new Set([...all].filter(n => hits(n) >= METHOD.minHits));
+    THIN = [...all].filter(n => !names.has(n));
     const p95 = {}, out = {};
     for (const ind of ok) {
       const vals = [...names].map(n => ind.countries[n]?.mean || 0).sort((a, b) => a - b);
@@ -151,7 +155,7 @@
   async function select(name, mapName) {
     selected = name; paint();
     if (!name) {
-      $('panel').innerHTML = `<h3>${esc(mapName)}</h3><p class="muted" style="margin:0">No data. GDELT returned no articles from outlets in this country for any indicator in this window, or does not monitor its media. That is not a score of zero.</p><button class="seg" style="padding:8px 12px;background:none;color:inherit;cursor:pointer" id="back">← World view</button>`;
+      $('panel').innerHTML = `<h3>${esc(mapName)}</h3><p class="muted" style="margin:0">${THIN.some(n => matchFeature(n)?.properties.name === mapName) ? `Too little coverage to score: fewer than ${METHOD.minHits} time slots with matching articles in this window. Try a longer window.` : 'No data. GDELT returned no articles from outlets in this country for any indicator in this window, or does not monitor its media.'} That is not a score of zero.</p><button class="seg" style="padding:8px 12px;background:none;color:inherit;cursor:pointer" id="back">← World view</button>`;
       $('back').onclick = () => { selected = null; paint(); panelOverview(); }; return;
     }
     const c = SCORES[name], b = binOf(c.score);
@@ -160,7 +164,8 @@
       <div class="gauge"><div class="num" style="color:${b.color}">${c.score.toFixed(0)}</div><div><b>${esc(b.label)}</b> on the composite index<div class="bar" style="margin-top:6px"><i style="width:${c.score}%;background:${b.color}"></i></div><small class="muted">Trend over the window: ${c.trend >= 0 ? '+' : ''}${c.trend.toFixed(0)} points</small></div></div>
       ${METHOD.indicators.map(ind => {
         const p = c.parts[ind.id];
-        if (!okIds.has(ind.id)) return `<div class="ind"><div class="row"><b>${esc(ind.label)}</b><small>unavailable</small></div><small>This indicator failed to load, so the score is re-weighted over the others.</small></div>`;
+        const st = DATA.indicators.find(i => i.id === ind.id)?.status;
+        if (!okIds.has(ind.id)) return `<div class="ind"><div class="row"><b>${esc(ind.label)}</b><small>${st === 'pending' ? 'loading…' : 'unavailable'}</small></div><small>${st === 'pending' ? 'Still loading from GDELT.' : 'This indicator failed to load'}, so the score is re-weighted over the others for now.</small></div>`;
         return `<div class="ind"><div class="row"><b>${esc(ind.label)}</b><small>weight ${ind.weight}</small></div>
           <div class="row"><span>${pct(p.mean)} of articles · adds <b>${p.contrib.toFixed(1)}</b></span>${trendTxt(p.t0, p.t1)}</div>
           <div class="row"><span class="bar" style="flex:1"><i style="width:${p.norm * 100}%;background:var(--toon)"></i></span>${spark(p.series, '#ffd43b')}</div>
@@ -169,11 +174,10 @@
       <div><h2 style="margin:6px 0 8px">Latest from ${esc(name)}'s press</h2><ul class="list" id="cnews" style="max-height:320px"><li class="muted">Loading…</li></ul></div>`;
     $('back').onclick = () => { selected = null; paint(); panelOverview(); };
     try {
-      const r = await fetch(`/api/news?window=${state.win}&country=${encodeURIComponent(name)}`).then(r => r.json());
+      const r = await SEM.articles(ALLQ, state.win, name);
       if (selected !== name) return;
-      $('cnews').innerHTML = r.gdelt.status !== 'ok' ? `<li class="muted">GDELT did not answer (${esc(r.gdelt.error)}). <a href="${esc(gdeltList(METHOD.indicators.map(i => i.query).join(' OR '), name))}" target="_blank" rel="noopener">Open the search on GDELT</a>.</li>`
-        : r.gdelt.articles.length ? r.gdelt.articles.slice(0, 15).map(newsItem).join('') : '<li class="muted">No matching articles in this window.</li>';
-    } catch (e) { $('cnews').innerHTML = `<li class="muted">Could not load articles: ${esc(e.message)}</li>`; }
+      $('cnews').innerHTML = r.articles.length ? r.articles.slice(0, 15).map(a => newsItem({ ...a, indicators: tag(a.title) })).join('') : '<li class="muted">No matching articles in this window.</li>';
+    } catch (e) { if (selected === name) $('cnews').innerHTML = `<li class="muted">GDELT did not answer (${esc(e.message)}). <a href="${esc(gdeltList(ALLQ, name))}" target="_blank" rel="noopener">Open the search on GDELT</a>.</li>`; }
   }
 
   // ---------- ranking table ----------
@@ -189,7 +193,8 @@
     $('rank').querySelectorAll('th').forEach(th => th.onclick = () => { const id = th.dataset.k; state.sort = [id, state.sort[0] === id ? -state.sort[1] : (id === 'name' || id === 'rank' ? 1 : -1)]; table(); });
     $('rank').querySelectorAll('tbody tr').forEach(tr => tr.onclick = () => { select(tr.dataset.c); $('panel').scrollIntoView({ behavior: 'smooth', block: 'nearest' }); });
     const unm = Object.keys(SCORES).filter(n => !matchFeature(n));
-    $('unmapped').textContent = unm.length ? `Scored but too small to draw at this map scale (or named differently): ${unm.join(', ')}.` : '';
+    $('unmapped').textContent = (unm.length ? `Scored but too small to draw at this map scale: ${unm.join(', ')}. ` : '') +
+      (THIN.length ? `Too little coverage to score in this window (fewer than ${METHOD.minHits} time slots with matching articles): ${THIN.join(', ')}.` : '');
   }
 
   // ---------- feeds ----------
@@ -197,28 +202,59 @@
   const newsItem = a => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a><div class="meta"><span>${esc(a.domain || a.outlet || '')}</span>${a.country ? `<span>${esc(a.country)}</span>` : ''}${a.date ? `<span>${esc(ago(gdeltDate(a.date)))}</span>` : ''}${chips(a.indicators)}</div></li>`;
   const srcLine = (ok, name, text) => `<div><span class="dot ${ok === true ? 'live' : ok === 'off' ? '' : 'err'}"></span><span><b>${esc(name)}</b> ${text}</span></div>`;
 
+  // phrase matcher shared by the news tags and the live post filter
+  let PHRASES = [], ALLQ = '';
+  const tag = text => [...new Set(PHRASES.filter(p => p.id && p.re.test(text || '')).map(p => p.id))];
+  const matchTerm = text => { const p = PHRASES.find(p => p.re.test(text)); return p && p.phrase; };
+
   async function loadNews() {
-    try {
-      const r = await fetch(`/api/news?window=${state.win}`).then(r => r.json());
-      const okOut = r.outlets.filter(o => o.status === 'ok');
-      $('news-src').innerHTML = srcLine(r.gdelt.status === 'ok', 'GDELT', r.gdelt.status === 'ok' ? `${r.gdelt.articles.length} latest matching articles worldwide · <a href="${esc(r.gdelt.url.replace('format=json', 'format=html'))}" target="_blank" rel="noopener">query</a>` : `unavailable: ${esc(r.gdelt.error)}`) +
-        srcLine(okOut.length > 0, 'Newsroom RSS', `${okOut.length}/${r.outlets.length} feeds read, ${okOut.reduce((a, o) => a + o.scanned, 0)} stories scanned for the tracked phrases <details style="display:inline"><summary style="display:inline;cursor:pointer;color:var(--toon)">feeds</summary>${r.outlets.map(o => `<div class="meta"><span class="dot ${o.status === 'ok' ? 'live' : 'err'}"></span><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a> ${o.status === 'ok' ? `${o.items.length} match${o.items.length === 1 ? '' : 'es'}` : esc(o.error)}</div>`).join('')}</details>`);
-      const rss = r.outlets.flatMap(o => o.items.map(it => ({ ...it, outlet: o.name, country: o.country })));
-      const all = [...rss.map(a => ({ ...a, sortDate: new Date(a.date).getTime() || 0 })), ...r.gdelt.articles.map(a => ({ ...a, sortDate: new Date(gdeltDate(a.date)).getTime() || 0 }))].sort((a, b) => b.sortDate - a.sortDate);
-      $('news').innerHTML = all.length ? all.slice(0, 80).map(newsItem).join('') : '<li class="muted">No matching stories right now.</li>';
-      PULSE = r.gdelt.articles.filter(a => Date.now() - new Date(gdeltDate(a.date)) < 48 * 3600e3);
-      drawPulses();
-    } catch (e) { $('news-src').innerHTML = srcLine(false, 'News', `could not load: ${esc(e.message)}`); }
-  }
-  async function loadSocial() {
-    try {
-      const r = await fetch('/api/social').then(r => r.json());
-      $('social-src').innerHTML = r.platforms.map(p => srcLine(p.status === 'ok' ? true : p.status === 'not-connected' ? 'off' : false, p.name, p.status === 'ok' ? `${p.count} recent posts` : esc(p.error))).join('') +
-        `<div class="muted" style="font-size:12px">Searching for: ${r.terms.map(t => `“${esc(t)}”`).join(', ')}. Usernames are left out on purpose; this feed tracks the conversation, not the people in it.</div>`;
-      $('social').innerHTML = r.posts.length ? r.posts.slice(0, 60).map(p => `<li>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.text)}</a>` : esc(p.text)}<div class="meta"><span>${esc(p.platform)}${p.community ? ` · ${esc(p.community)}` : ''}</span><span>${esc(ago(p.date))}</span>${p.term ? `<span class="chip">${esc(p.term)}</span>` : ''}<span>♥ ${p.likes}</span></div></li>`).join('') : '<li class="muted">No posts available right now.</li>';
-    } catch (e) { $('social-src').innerHTML = srcLine(false, 'Social', `could not load: ${esc(e.message)}`); }
+    const [g, rss] = await Promise.all([
+      SEM.articles(ALLQ, state.win).then(r => ({ ok: true, ...r }), e => ({ ok: false, error: e.message, articles: [] })),
+      fetch('/api/news').then(r => r.json()).catch(e => ({ error: e.message, outlets: [] })),
+    ]);
+    const outlets = rss.outlets || [], okOut = outlets.filter(o => o.status === 'ok');
+    $('news-src').innerHTML = srcLine(g.ok, 'GDELT', g.ok ? `${g.articles.length} latest matching articles worldwide · <a href="${esc(gdeltList(ALLQ))}" target="_blank" rel="noopener">query</a>` : `unavailable: ${esc(g.error)}`) +
+      srcLine(okOut.length > 0, 'Newsroom RSS', outlets.length ? `${okOut.length}/${outlets.length} feeds read, ${okOut.reduce((a, o) => a + o.scanned, 0)} stories scanned for the tracked phrases <details style="display:inline"><summary style="display:inline;cursor:pointer;color:var(--toon)">feeds</summary>${outlets.map(o => `<div class="meta"><span class="dot ${o.status === 'ok' ? 'live' : 'err'}"></span><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a> ${o.status === 'ok' ? `${o.items.length} match${o.items.length === 1 ? '' : 'es'}` : esc(o.error)}</div>`).join('')}</details>` : `unavailable: ${esc(rss.error || 'no feeds')}`);
+    const items = [...okOut.flatMap(o => o.items.map(it => ({ ...it, outlet: o.name, country: o.country, sortDate: new Date(it.date).getTime() || 0 }))),
+      ...g.articles.map(a => ({ ...a, indicators: tag(a.title), sortDate: new Date(gdeltDate(a.date)).getTime() || 0 }))].sort((a, b) => b.sortDate - a.sortDate);
+    $('news').innerHTML = items.length ? items.slice(0, 80).map(newsItem).join('') : '<li class="muted">No matching stories right now.</li>';
+    PULSE = g.articles.filter(a => Date.now() - new Date(gdeltDate(a.date)) < 48 * 3600e3);
+    drawPulses();
   }
 
+  // ---------- public posts ----------
+  const POSTS = [], SOC = {};
+  const postItem = p => `<li>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.text)}</a>` : esc(p.text)}<div class="meta"><span>${esc(p.platform)}${p.community ? ` · ${esc(p.community)}` : ''}</span><span>${esc(ago(p.date))}</span>${p.term ? `<span class="chip">${esc(p.term)}</span>` : ''}${p.likes != null ? `<span>♥ ${p.likes}</span>` : ''}</div></li>`;
+  function renderSocialSrc() {
+    const line = (k, name) => { const s = SOC[k] || { ok: 'wait', text: 'loading…' }; return srcLine(s.ok, name, s.text); };
+    $('social-src').innerHTML = line('bsky', 'Bluesky') + line('mastodon', 'Mastodon') + line('reddit', 'Reddit') +
+      srcLine('off', 'X (Twitter)', 'not connected. X has no free read API, and scraping behind its login or through Nitter mirrors breaks its terms.') +
+      srcLine('off', 'Instagram', "not connected. The only lawful route is Meta's Graph API, which needs a Business account and an approved Meta app.") +
+      `<div class="muted" style="font-size:12px">Matching the tracked phrases (${PHRASES.map(p => `“${esc(p.phrase)}”`).join(', ')}). Usernames are left out on purpose; this feed tracks the conversation, not the people in it.</div>`;
+  }
+  function renderSocial() {
+    renderSocialSrc();
+    POSTS.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+    POSTS.length = Math.min(POSTS.length, 150);
+    $('social').innerHTML = POSTS.length ? POSTS.slice(0, 80).map(postItem).join('') : '<li class="muted">Waiting for matching posts…</li>';
+  }
+  const addPosts = list => { const have = new Set(POSTS.map(p => p.url)); for (const p of list) if (!have.has(p.url)) POSTS.push(p); renderSocial(); };
+  async function loadSocial() {
+    SEM.mastodon(METHOD.social.mastodonTags).then(list => { SOC.mastodon = { ok: true, text: `${list.length} recent posts from public hashtags (${METHOD.social.mastodonTags.map(t => '#' + esc(t)).join(' ')})` }; addPosts(list); },
+      e => { SOC.mastodon = { ok: false, text: `unavailable: ${esc(e.message)}` }; renderSocial(); });
+    // Reddit from the browser first; the server route only helps if the site owner added free Reddit API keys
+    SEM.reddit(METHOD.social.redditTerms).catch(be => fetch('/api/social').then(r => r.json()).then(d => { if (d.status !== 'ok') throw new Error(d.status === 'not-configured' ? `Reddit refused this browser (${be.message}) and no free Reddit API keys are set up` : d.error); return d.posts; }))
+      .then(list => { SOC.reddit = { ok: true, text: `${list.length} recent posts` }; addPosts(list); },
+        e => { SOC.reddit = { ok: false, text: `unavailable: ${esc(e.message)}. See tracker/README.md to add the keys.` }; renderSocial(); });
+  }
+  let stream, statTick = 0;
+  function startStream() {
+    stream = SEM.jetstream(matchTerm, p => { addPosts([p]); }, st => {
+      SOC.bsky = { ok: st.state === 'live' ? true : st.state === 'paused' ? 'off' : 'wait', text: `${st.state === 'live' ? 'live stream' : st.state} · ${st.seen.toLocaleString()} new posts scanned, ${st.hits} matched · <a href="#" id="bsky-toggle">${st.state === 'paused' ? 'resume' : 'pause'}</a>` };
+      if (++statTick % 2 === 0 || st.state !== 'live') renderSocialSrc();
+    });
+    $('social-src').addEventListener('click', e => { if (e.target.id === 'bsky-toggle') { e.preventDefault(); stream.toggle(); } });
+  }
   // ---------- methodology ----------
   function method() {
     $('lede').textContent = METHOD.summary;
@@ -232,32 +268,49 @@
       <p style="margin:0"><b>Bands.</b> ${METHOD.bins.map(b => `${b.min}–${Math.min(100, b.max)} ${esc(b.label)}`).join(' · ')}. Countries with no data are hatched.</p>
       <p style="margin:0"><b>Limits.</b></p><ul>${METHOD.limits.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
       <p style="margin:0"><b>What is not tracked.</b> X and Instagram posts: neither has a free, lawful read API, and this site will not scrape them behind logins or through mirrors such as Nitter. Private individuals are never scored or named; the post feed drops usernames.</p>
-      <p style="margin:0">The raw data this page scores is at <a href="/api/tracker?window=${state.win}"><code>/api/tracker?window=${state.win}</code></a>, and the definitions at <a href="methodology.json"><code>methodology.json</code></a>.</p>`;
+      <p style="margin:0">Your browser reads GDELT directly; the "by country" links above return the exact data this page scores. Definitions: <a href="methodology.json"><code>methodology.json</code></a>.</p>`;
   }
 
   // ---------- load ----------
+  const CACHE_MS = 15 * 60e3; // GDELT updates every 15 minutes
+  const readCache = win => { try { const c = JSON.parse(localStorage.getItem(`sem-data-${win}`)); return c && Date.now() - new Date(c.generated) < CACHE_MS ? c : null; } catch (_) { return null; } };
+  const writeCache = d => { try { localStorage.setItem(`sem-data-${d.window}`, JSON.stringify(d)); } catch (_) {} };
+
+  function apply(data) {
+    DATA = data;
+    const { scores } = score(data);
+    SCORES = scores;
+    for (const f of FEATURES) f.__c = null;
+    for (const c of Object.values(SCORES)) { const f = matchFeature(c.name); if (f) f.__c = c; }
+    paint(); table(); method();
+    selected && SCORES[selected] ? null : (!selected && panelOverview());
+  }
+
+  let loadId = 0;
   async function load() {
     clearTimeout(timer);
-    setStatus('wait', 'Querying GDELT… the first load of a window can take about 30 seconds (GDELT allows one query every 5 seconds).');
-    try {
-      const r = await fetch(`/api/tracker?window=${state.win}`);
-      const data = await r.json();
-      if (!data.indicators) throw new Error(data.error || `HTTP ${r.status}`);
-      DATA = data;
-      const { scores, partial } = score(data);
-      SCORES = scores;
-      for (const f of FEATURES) f.__c = null;
-      for (const c of Object.values(SCORES)) { const f = matchFeature(c.name); if (f) f.__c = c; }
-      const ok = data.indicators.filter(i => i.status === 'ok').length;
-      setStatus(ok ? (partial ? 'wait' : 'live') : 'err', ok ? `Live · GDELT data generated ${esc(ago(data.generated))} · ${ok}/${data.indicators.length} indicators${partial ? ' (score re-weighted)' : ''} · refreshes every 15 min` : `GDELT is not answering right now: ${esc(data.indicators[0]?.error || '')}. Retrying in 2 minutes.`);
-      paint(); table(); method();
-      selected && SCORES[selected] ? select(selected) : panelOverview();
-      timer = setTimeout(load, ok ? REFRESH_MS : 120e3);
-    } catch (e) {
-      setStatus('err', `Could not reach the tracker API (${esc(e.message)}). It runs as a Vercel function, so it needs the deployed site or <code>vercel dev</code>. Retrying in 2 minutes.`);
-      $('panel').innerHTML = '<h3>No data yet</h3><p class="muted">Nothing is drawn until real data arrives. This page never shows placeholder numbers.</p>';
-      timer = setTimeout(load, 120e3);
+    const id = ++loadId, win = state.win;
+    const cached = readCache(win);
+    if (cached) {
+      apply(cached);
+      setStatus('live', `Live · GDELT data from ${esc(ago(cached.generated))} · refreshes every 15 min`);
+      timer = setTimeout(load, CACHE_MS - (Date.now() - new Date(cached.generated)) + 1000);
+      return;
     }
+    const data = { generated: new Date().toISOString(), window: win, indicators: METHOD.indicators.map(i => ({ id: i.id, status: 'pending', countries: {} })) };
+    for (const [n, ind] of METHOD.indicators.entries()) {
+      setStatus('wait', `Reading GDELT live: indicator ${n + 1} of ${METHOD.indicators.length} (${esc(ind.short)}). GDELT allows one query every 5 seconds, so the map fills in over about 30 seconds.`);
+      try { data.indicators[n] = await SEM.indicator(ind, win); }
+      catch (e) { data.indicators[n] = { id: ind.id, status: 'error', error: e.message, url: e.url, countries: {} }; }
+      if (id !== loadId) return; // window changed mid-load
+      if (data.indicators.some(i => i.status === 'ok')) apply(data);
+    }
+    const ok = data.indicators.filter(i => i.status === 'ok').length;
+    if (ok === data.indicators.length) writeCache(data);
+    if (!ok) $('panel').innerHTML = '<h3>No data yet</h3><p class="muted">GDELT did not answer. Nothing is drawn until real data arrives; this page never shows placeholder numbers.</p>';
+    setStatus(ok === data.indicators.length ? 'live' : ok ? 'wait' : 'err', ok ? `Live · GDELT data from just now · ${ok}/${data.indicators.length} indicators${ok < data.indicators.length ? ' (score re-weighted, retrying soon)' : ''} · refreshes every 15 min`
+      : `GDELT is not answering right now (${esc(data.indicators[0].error)}). Retrying in 2 minutes.`);
+    timer = setTimeout(load, ok === data.indicators.length ? CACHE_MS : 120e3);
   }
 
   async function init() {
@@ -271,11 +324,15 @@
     $('regions').innerHTML = Object.keys(REGIONS).map(r => `<button aria-pressed="${r === region}">${esc(r)}</button>`).join('');
     $('regions').onclick = e => { const b = e.target.closest('button'); if (!b) return; region = b.textContent; $('regions').querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); fit(); };
     $('layer').onchange = () => { state.layer = $('layer').value; save(); paint(); if (!selected && DATA) panelOverview(); };
-    // news waits for the tracker so the two never hit GDELT's one-request-per-5-seconds limit together
-    $('win').onchange = () => { state.win = $('win').value; save(); load().then(loadNews); };
-    method(); drawMap(); fit();
-    loadSocial(); load().then(loadNews);
-    setInterval(() => { loadNews(); loadSocial(); }, 5 * 60e3);
+    // every GDELT call queues in sources.js, so news simply runs after the map's queries
+    $('win').onchange = () => { state.win = $('win').value; save(); selected = null; load().then(loadNews); };
+    PHRASES = [...METHOD.indicators.flatMap(ind => [...ind.query.matchAll(/"([^"]+)"/g)].map(m => ({ id: ind.id, phrase: m[1] }))), ...METHOD.social.extraPhrases.map(p => ({ id: null, phrase: p }))]
+      .filter((p, i, a) => a.findIndex(q => q.phrase === p.phrase) === i)
+      .map(p => ({ ...p, re: new RegExp(`\\b${p.phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/[- ]/g, '[-\\s]?')}\\b`, 'i') }));
+    ALLQ = `(${PHRASES.filter(p => p.id).map(p => `"${p.phrase}"`).join(' OR ')})`;
+    method(); drawMap(); fit(); renderSocial();
+    startStream(); loadSocial(); load().then(loadNews);
+    setInterval(() => { loadNews(); loadSocial(); }, 10 * 60e3);
   }
   init().catch(e => setStatus('err', `Failed to start: ${esc(e.message)}`));
 })();

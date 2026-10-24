@@ -5,9 +5,6 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "functions": {
-    "api/tracker.js": {
-      "maxDuration": 60
-    },
     "api/news.js": {
       "maxDuration": 30
     },

@@ -1,7 +1,7 @@
-// GET /api/news?window=7d&country=United%20Kingdom
-// Latest matching articles from GDELT (optionally one source country) plus keyword matches
-// from the public RSS feeds of established newsrooms.
-const { METHOD, TIMESPANS, gdelt, getText, cached, send, query } = require('./_lib');
+// GET /api/news
+// Keyword matches from the public RSS feeds of established newsrooms. Feeds do not send CORS headers,
+// so they are read here; GDELT is read by the browser directly (tracker/sources.js).
+const { METHOD, getText, cached, send } = require('./_lib');
 
 const OUTLETS = [
   { name: 'BBC News (World)', country: 'United Kingdom', url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
@@ -20,8 +20,6 @@ const OUTLETS = [
 // every quoted phrase in the methodology, tagged with its indicator
 const PHRASES = METHOD.indicators.flatMap(ind => [...ind.query.matchAll(/"([^"]+)"/g)].map(m => ({ id: ind.id, re: new RegExp(`\\b${m[1].replace(/[-]/g, '[- ]?')}`, 'i'), phrase: m[1] })));
 const tag = text => [...new Set(PHRASES.filter(p => p.re.test(text)).map(p => p.id))];
-const ALL = `(${PHRASES.map(p => `"${p.phrase}"`).join(' OR ')})`;
-
 const decode = s => String(s || '').replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, ' ')
   .replace(/&(amp|lt|gt|quot|#39|apos|nbsp);/g, (_, e) => ({ amp: '&', lt: '<', gt: '>', quot: '"', '#39': "'", apos: "'", nbsp: ' ' }[e]))
   .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/\s+/g, ' ').trim();
@@ -42,24 +40,10 @@ async function outlet(o) {
   } catch (e) { return { ...o, status: 'error', error: e.message, scanned: 0, items: [] }; }
 }
 
-const slug = c => c.toLowerCase().replace(/[^a-z]/g, '');
-
 module.exports = async (req, res) => {
-  const q = query(req), win = q.get('window') || '7d', country = (q.get('country') || '').slice(0, 60);
-  if (!TIMESPANS[win]) return send(res, 400, { error: 'bad window' });
-  const body = await cached(`news:${win}:${country}`, 5 * 60e3, async () => {
-    const gq = country ? `${ALL} sourcecountry:${slug(country)}` : ALL;
-    const [g, outlets] = await Promise.all([
-      gdelt({ query: gq, mode: 'artlist', maxrecords: '75', sort: 'datedesc', timespan: TIMESPANS[win] })
-        .then(({ url, data }) => ({ status: 'ok', url, articles: (data.articles || []).map(a => ({
-          title: a.title, url: a.url, domain: a.domain, country: a.sourcecountry, language: a.language, date: a.seendate, indicators: tag(a.title),
-        })) }))
-        .catch(e => ({ status: 'error', error: e.message, url: e.url, articles: [] })),
-      country ? Promise.resolve([]) : Promise.all(OUTLETS.map(outlet)),
-    ]);
-    return { generated: new Date().toISOString(), window: win, country: country || null, gdelt: g, outlets };
-  }, b => b.gdelt.status === 'ok');
-  send(res, 200, body, body.gdelt.status === 'ok' ? 600 : 60);
+  const body = await cached('news', 5 * 60e3, async () => ({ generated: new Date().toISOString(), outlets: await Promise.all(OUTLETS.map(outlet)) }),
+    b => b.outlets.some(o => o.status === 'ok'));
+  send(res, 200, body, body.outlets.some(o => o.status === 'ok') ? 600 : 60);
 };
 
 module.exports.parseFeed = parseFeed;

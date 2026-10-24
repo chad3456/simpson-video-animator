@@ -4,19 +4,24 @@ A live world map at `/tracker/` that colours each country by how intensely its o
 
 ## How it works
 
-- `api/tracker.js` runs one GDELT DOC 2.0 `timelinesourcecountry` query per indicator (5 queries, 5 seconds apart, as GDELT asks) and returns each country's volume intensity. Vercel's CDN caches the result for 15 minutes, so only the first visitor of a window waits about 30 seconds.
-- `tracker/app.js` scores countries in the browser exactly as `methodology.json` describes, draws the map (d3-geo, topojson-client and Natural Earth `world-atlas`, all vendored in `vendor/`), and links every number to the GDELT article list behind it.
-- `api/news.js` lists the latest matching articles from GDELT and keyword matches from the public RSS feeds of established newsrooms (BBC, Guardian, NPR, CBC, France 24, DW, Al Jazeera, The Hindu, Times of India, ABC Australia).
-- `api/social.js` lists recent public posts that use the tracked terms from Bluesky and Reddit, with usernames removed.
+- `tracker/sources.js` runs in the visitor's browser. It reads GDELT DOC 2.0 directly (GDELT sends `Access-Control-Allow-Origin: *`), one `timelinesourcecountry` query per indicator, 5 seconds apart as GDELT asks. The map fills in as each indicator arrives and is cached in the browser for 15 minutes. Reading GDELT from the browser avoids the shared cloud IPs that GDELT, Bluesky and Reddit often block.
+- `tracker/app.js` scores countries exactly as `methodology.json` describes, draws the map (d3-geo, topojson-client and Natural Earth `world-atlas`, all vendored in `vendor/`), and links every number to the GDELT article list behind it.
+- Live public posts, all without logins: Bluesky's open Jetstream feed of every new post (filtered in the browser for the tracked phrases), Mastodon public hashtag timelines, and Reddit's public search.
+- `api/news.js` reads the public RSS feeds of established newsrooms (BBC, Guardian, NPR, CBC, France 24, DW, Al Jazeera, The Hindu, Times of India, ABC Australia), which do not allow browser reads.
+- `api/social.js` is a Reddit backup that only works once free Reddit API keys are added.
 
 Nothing on the page is placeholder data. If a source fails, the page says so; countries without data are hatched, never shown as zero.
 
-## Optional credentials (Vercel project settings, Environment Variables)
+## Optional: Reddit keys (only if the page says Reddit is unavailable)
 
-| Variable | What it unlocks | How to get it (free) |
-| --- | --- | --- |
-| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | Reddit search. Reddit often blocks unauthenticated requests from cloud servers. | reddit.com/prefs/apps, create a "script" app. Non-commercial use is free under Reddit's Data API terms. |
-| `BSKY_IDENTIFIER`, `BSKY_APP_PASSWORD` | Bluesky search, if the public endpoint refuses anonymous search. | Bluesky Settings, Privacy and security, App passwords. Use a dedicated account. |
+Reddit sometimes refuses browser requests. To use Reddit's free API instead:
+
+1. Sign in to Reddit, open https://www.reddit.com/prefs/apps and click "create another app".
+2. Pick "script", give it any name, and set the redirect URI to `http://localhost`. Create it.
+3. Copy the code under the app name (the client ID) and the "secret".
+4. In Vercel, open the project, then Settings, Environment Variables. Add `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` with those values, then redeploy.
+
+Everything else needs no keys.
 
 ## What is not sourced, and why
 
