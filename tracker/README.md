@@ -30,4 +30,4 @@ Everything else needs no keys.
 
 ## Run locally
 
-`npx vercel dev` from the repo root, then open `http://localhost:3000/tracker/`. A plain static server shows the map but no data, because the data comes from the `/api` functions.
+`npx serve .` from the repo root and open `/tracker/`: the map, GDELT and the post feeds work from any static server. Run `npx vercel dev` instead to also get the newsroom RSS feed and the Reddit backup from `/api`.
