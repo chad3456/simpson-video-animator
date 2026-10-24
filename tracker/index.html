@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suicidal Empathy Meter</title>
+<meta name="description" content="A live, sourced world map of how intensely each country's news media covers the debates grouped under 'suicidal empathy'. An editorial index with published indicators, weights and links.">
+<style>
+  @font-face { font-family: Bangers; src: url(../engine/fonts/Bangers-Regular.ttf); }
+  @font-face { font-family: Nunito; src: url(../engine/fonts/Nunito.ttf); font-weight: 200 1000; }
+  :root { --bg: #17140c; --surface: #221e13; --surface2: #2b2618; --fg: #f4eedc; --muted: #b8ae92; --line: #3a3322; --toon: #ffd43b; --ink: #1d1d1d; --ok: #7bd88f; --warn: #ffb347; --bad: #ff6b6b; --sea: #121009; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 400 16px/1.5 Nunito, system-ui, sans-serif; }
+  a { color: var(--toon); }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 20px 16px 64px; display: grid; gap: 22px; }
+  header { display: grid; gap: 10px; }
+  header .top { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; font-size: 14px; }
+  h1 { font: 400 clamp(40px, 8vw, 76px)/.92 Bangers, Impact, sans-serif; margin: 0; letter-spacing: .02em; }
+  h1 span { background: var(--toon); color: var(--ink); padding: 0 .15em; border: 3px solid var(--ink); display: inline-block; transform: rotate(-1.5deg); }
+  h2 { font: 900 14px/1 Nunito, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+  .lede { margin: 0; max-width: 75ch; color: var(--muted); }
+  .notice { border: 1px solid var(--warn); background: #2a2210; border-radius: 10px; padding: 10px 14px; font-size: 14px; max-width: 90ch; }
+  .notice b { color: var(--warn); }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  .seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+  .seg button { font: 800 13px/1 Nunito, sans-serif; padding: 9px 12px; background: transparent; color: inherit; border: 0; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--toon); color: var(--ink); }
+  select { font: 700 14px Nunito, sans-serif; background: var(--surface); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+  .status { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); display: inline-block; flex: none; }
+  .dot.live { background: var(--ok); box-shadow: 0 0 0 0 var(--ok); animation: ping 2s infinite; }
+  .dot.err { background: var(--bad); } .dot.wait { background: var(--warn); }
+  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(123, 216, 143, .6); } 100% { box-shadow: 0 0 0 10px rgba(123, 216, 143, 0); } }
+  .main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 18px; align-items: start; }
+  @media (max-width: 960px) { .main { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; min-width: 0; }
+  .mapbox { position: relative; padding: 0; overflow: hidden; }
+  #map { display: block; width: 100%; height: auto; background: var(--sea); }
+  #map path.c { stroke: #17140c; stroke-width: .5; cursor: pointer; transition: opacity .15s; }
+  #map path.c:hover { stroke: var(--fg); stroke-width: 1.2; }
+  #map path.c.sel { stroke: #fff; stroke-width: 1.8; }
+  #map path.nodata { fill: url(#hatch); }
+  #map .pulse { fill: var(--fg); pointer-events: none; }
+  #map .pulse.ring { fill: none; stroke: var(--fg); stroke-width: 1.2; animation: ring 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes ring { from { transform: scale(.4); opacity: .9; } to { transform: scale(2.6); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .dot.live, #map .pulse.ring { animation: none; } }
+  #tip { position: absolute; pointer-events: none; background: #0d0b06ee; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 13px; white-space: nowrap; display: none; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 12px 16px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); align-items: center; }
+  .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; vertical-align: -2px; margin-right: 5px; border: 1px solid #0006; }
+  .sw.hatch { background: repeating-linear-gradient(45deg, #3a3426 0 3px, #26221a 3px 6px); }
+  .panel { display: grid; gap: 14px; }
+  @media (min-width: 961px) { .panel { max-height: 600px; overflow-y: auto; } }
+  .panel h3 { font: 400 34px/1 Bangers, Impact, sans-serif; margin: 0; letter-spacing: .03em; }
+  .gauge { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; }
+  .gauge .num { font: 400 56px/1 Bangers, Impact, sans-serif; }
+  .bar { height: 8px; background: var(--surface2); border-radius: 99px; overflow: hidden; }
+  .bar i { display: block; height: 100%; border-radius: 99px; }
+  .ind { display: grid; gap: 4px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 14px; }
+  .ind .row { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .ind small { color: var(--muted); font-size: 12px; }
+  .trend.up { color: var(--bad); } .trend.down { color: var(--ok); }
+  .muted { color: var(--muted); }
+  .feeds { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 860px) { .feeds { grid-template-columns: 1fr; } }
+  ul.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; max-height: 560px; overflow: auto; }
+  ul.list li { border-top: 1px solid var(--line); padding-top: 10px; font-size: 14px; }
+  ul.list li a { color: var(--fg); text-decoration: none; font-weight: 700; }
+  ul.list li a:hover { color: var(--toon); text-decoration: underline; }
+  .meta { font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 3px; }
+  .chip { font: 800 11px/1 Nunito, sans-serif; padding: 3px 7px; border-radius: 99px; background: var(--surface2); color: var(--fg); border: 1px solid var(--line); }
+  .srcs { display: grid; gap: 6px; font-size: 13px; margin-bottom: 12px; }
+  .srcs div { display: flex; gap: 8px; align-items: baseline; }
+  .srcs .dot { transform: translateY(1px); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-size: 12px; color: var(--muted); font-weight: 800; cursor: pointer; user-select: none; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr { cursor: pointer; } tbody tr:hover { background: var(--surface2); }
+  .scroll { overflow-x: auto; max-height: 520px; overflow-y: auto; }
+  .method { display: grid; gap: 10px; font-size: 15px; max-width: 95ch; }
+  .method ol, .method ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+  .method table td { white-space: normal; vertical-align: top; }
+  code { font-size: 12px; background: var(--surface2); padding: 1px 5px; border-radius: 4px; word-break: break-word; }
+  footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="top"><a href="../">&larr; Episodes</a><span class="status" id="status"><span class="dot wait"></span><span>Loading…</span></span></div>
+    <h1><span>Suicidal Empathy</span> Meter</h1>
+    <p class="lede" id="lede"></p>
+    <p class="notice"><b>Editorial index, not a measurement of people.</b> Each colour shows how much a country's own news media is covering five debates, using public GDELT data. High coverage can mean a country's press is criticising a policy as much as backing it. The indicators, weights, caveats and the article lists behind every number are on this page.</p>
+  </header>
+
+  <div class="controls">
+    <label class="status">Window <select id="win"><option value="24h">Last 24 hours</option><option value="7d" selected>Last 7 days</option><option value="30d">Last 30 days</option><option value="90d">Last 3 months</option></select></label>
+    <label class="status">Colour by <select id="layer"><option value="score">Composite score</option></select></label>
+    <div class="seg" id="regions" role="group" aria-label="Zoom"></div>
+  </div>
+
+  <div class="main">
+    <div class="card mapbox">
+      <svg id="map" viewBox="0 0 960 520" role="img" aria-label="World map coloured by score">
+        <defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#26221a"/><rect width="3" height="6" fill="#3a3426"/></pattern></defs>
+        <g id="countries"></g><g id="pulses"></g>
+      </svg>
+      <div id="tip"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside class="card panel" id="panel" aria-live="polite"></aside>
+  </div>
+
+  <section class="card">
+    <h2>Ranking</h2>
+    <div class="scroll"><table id="rank"></table></div>
+    <p class="muted" id="unmapped" style="font-size:13px;margin:10px 0 0"></p>
+  </section>
+
+  <div class="feeds">
+    <section class="card"><h2>Live news</h2><div class="srcs" id="news-src"></div><ul class="list" id="news"></ul></section>
+    <section class="card"><h2>Live public posts</h2><div class="srcs" id="social-src"></div><ul class="list" id="social"></ul></section>
+  </div>
+
+  <section class="card method" id="method"></section>
+
+  <footer>Data: <a href="https://www.gdeltproject.org/">The GDELT Project</a> (news), outlets' public RSS feeds, Bluesky's public Jetstream, Mastodon public hashtags and Reddit. Map: Natural Earth via <a href="https://github.com/topojson/world-atlas">world-atlas</a>. Borders are drawn as Natural Earth draws them and imply no position on disputed territory. Commentary, not affiliated with Gad Saad or any outlet.</footer>
+</div>
+<script src="vendor/d3-array.min.js"></script>
+<script src="vendor/d3-geo.min.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script src="sources.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

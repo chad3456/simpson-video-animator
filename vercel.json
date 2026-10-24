@@ -3,5 +3,13 @@
   "framework": null,
   "installCommand": "",
   "buildCommand": "",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "functions": {
+    "api/news.js": {
+      "maxDuration": 30
+    },
+    "api/social.js": {
+      "maxDuration": 30
+    }
+  }
 }
