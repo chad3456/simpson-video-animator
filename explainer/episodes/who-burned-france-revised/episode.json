@@ -1,0 +1,3148 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "Special 2 (revised cut)",
+  "title": "Who Burned France? Revised Cut",
+  "format": "explainer",
+  "category": "Current events: France",
+  "rating": "adult",
+  "content_note": "Adult audiences: describes riot violence, arson, injuries to children and police, Islamist entryism and online hate factually. Stylised imagery, no graphic content.",
+  "music": "ambient",
+  "narrator": "narrator",
+  "logline": "The revised cut of LUMEN's October 2026 riots special. Blunter about the ultra-left violence, the Palestinian flags in the riots, the State's own report on Islamist entryism, Islam's measured growth in France, and the politicians and influencers who excused the damage, while still testing every claim against the record.",
+  "source": "Interior Ministry (L. Nuñez) and Justice Ministry (G. Darmanin), Oct 2026; PM S. Lecornu; Limoges prefecture; Asra Q. Nomani, Fox News Digital (9 and 20 Oct 2026); AP Fact Focus (20 Oct); NewsGuard; The Week fact check; Reuters, AP, AFP, Al Jazeera, Le Figaro, Sud Radio, actu17, Wikipedia timeline. Figures as of 23 October 2026. Revised cut adds: INSEE TeO2 (2023); 'Frères musulmans et islamisme politique en France' report (May 2025, via Public Sénat); Ifop for Écran de veille (Nov 2025) and the CDCM complaint against it; L'Appel (20 Oct 2026); Sud Radio (27 Feb 2025); LCI via Le Tribunal du Net, i24NEWS and Townhall (20-21 Oct 2026); Le Tribunal du Net (18 Oct 2026); ICI Isère.",
+  "disclaimer": "Original animation. Figures as of 23 October 2026. Not affiliated with any channel, outlet or author.",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "gap": 0.42
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Calm, careful, unflinching guide",
+   "voice": "am_michael:0.6+bm_george:0.4",
+   "speed": 1.0
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-limoges",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.12,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      -20
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "hall",
+     "type": "townhall",
+     "x": 640,
+     "y": 640,
+     "size": 1.05,
+     "sign": "HOTEL DE VILLE",
+     "fire": 0,
+     "burnt": 0,
+     "anim": "none",
+     "keys": {
+      "0": {
+       "fire": 1,
+       "burnt": 0.5,
+       "d": 1.2,
+       "t": 2.0
+      },
+      "1": {
+       "burnt": 0.9,
+       "d": 0.5,
+       "t": 4
+      }
+     }
+    },
+    {
+     "id": "when",
+     "type": "label",
+     "x": 640,
+     "y": 80,
+     "text": "Limoges, Saturday 17 October 2026",
+     "color": "#ffd166",
+     "anim": "drop"
+    },
+    {
+     "id": "y",
+     "type": "label",
+     "x": 1040,
+     "y": 200,
+     "text": "built 1883, listed 1975",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "dmg",
+     "type": "label",
+     "x": 1040,
+     "y": 260,
+     "text": "two-thirds of the exterior destroyed",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 2.6,
+     "sfx": "pop"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Limoges prefect Maurice Barate, via Fox News and franceinfo",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "On the night of Saturday the seventeenth of October, 2026, the town hall of Limoges burned.",
+     "say": "On the night of Saturday the seventeenth of October, 2026, the town hall of Lee-mozh burned."
+    },
+    {
+     "text": "The building had stood since 1883. By morning its roof had fallen in, and two-thirds of its outer walls were gone. The prefect called it a deliberate act.",
+     "say": "The building had stood since eighteen eighty-three. By morning its roof had fallen in, and two-thirds of its outer walls were gone. The prefect called it a deliberate act."
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "sfx": "whoosh"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-question",
+   "bg": {
+    "kind": "space",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -8
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "fd",
+     "type": "feed",
+     "x": 330,
+     "y": 360,
+     "w": 420,
+     "app": "TRENDING",
+     "anim": "rise",
+     "posts": [
+      {
+       "tag": "\"Immigrants hiding behind students\"",
+       "text": "viral claim, October 2026",
+       "color": "#ff8fab"
+      },
+      {
+       "tag": "\"An ultra-left insurrection\"",
+       "text": "the French government",
+       "color": "#5ec8e5"
+      },
+      {
+       "tag": "\"A red-green alliance\"",
+       "text": "Asra Nomani, Fox News Digital",
+       "color": "#ffb347"
+      },
+      {
+       "tag": "\"Kids who want teachers\"",
+       "text": "the students' unions",
+       "color": "#7bdc8c"
+      }
+     ]
+    },
+    {
+     "id": "q",
+     "type": "text",
+     "x": 900,
+     "y": 300,
+     "text": "Who burned\nFrance?",
+     "size": 64,
+     "in": 2,
+     "d": 0.4,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.4
+    },
+    {
+     "id": "m1",
+     "type": "label",
+     "x": 900,
+     "y": 450,
+     "text": "maps",
+     "color": "#ffd166",
+     "in": 3,
+     "d": 0.8
+    },
+    {
+     "id": "m2",
+     "type": "label",
+     "x": 900,
+     "y": 510,
+     "text": "official figures",
+     "color": "#7bdc8c",
+     "in": 3,
+     "d": 1.4
+    },
+    {
+     "id": "m3",
+     "type": "label",
+     "x": 900,
+     "y": 570,
+     "text": "the reporting, tested",
+     "color": "#5ec8e5",
+     "in": 3,
+     "d": 2.0
+    }
+   ],
+   "lines": [
+    {
+     "text": "Within hours, millions of people online had been told who did it. Immigrants, hiding behind a student protest."
+    },
+    {
+     "text": "The French government blamed the ultra-left. An American investigative journalist, Asra Nomani, mapped what she calls a red-green alliance. Some rioters carried Palestinian flags. And the students said they just wanted teachers."
+    },
+    {
+     "text": "So who burned France?"
+    },
+    {
+     "text": "Let's follow the map and the official numbers, and test each story against the evidence we have, as of the twenty-third of October."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "title": "Who Burned France?",
+   "sub": "The October 2026 riots, explained",
+   "glyph": "fire",
+   "color": "#ff7a59",
+   "dur": 5.5,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapter",
+   "kicker": "Part 1",
+   "title": "A School Strike",
+   "glyph": "folder",
+   "color": "#5ec8e5",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "schools",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "cls",
+     "type": "crowd",
+     "x": 380,
+     "y": 600,
+     "n": 18,
+     "cols": 9,
+     "w": 520,
+     "rowh": 70,
+     "size": 0.5,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4"
+     ],
+     "mood": "worried",
+     "anim": "rise"
+    },
+    {
+     "id": "n36",
+     "type": "label",
+     "x": 380,
+     "y": 380,
+     "text": "32 to 36 pupils a class",
+     "color": "#ffd166",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "hot",
+     "type": "label",
+     "x": 380,
+     "y": 320,
+     "text": "portable classrooms at 40 C",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 3.0
+    },
+    {
+     "id": "pc",
+     "type": "label",
+     "x": 380,
+     "y": 260,
+     "text": "Parcoursup stress",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 5.0
+    },
+    {
+     "id": "map",
+     "type": "hexmap",
+     "x": 960,
+     "y": 380,
+     "r": 220,
+     "n": 0,
+     "spread": 0,
+     "lit": 0,
+     "in": 2,
+     "d": 0.2,
+     "cities": [
+      {
+       "name": "Creteil",
+       "u": 0.22,
+       "v": -0.42,
+       "note": "21 Sept"
+      }
+     ],
+     "keys": {
+      "2": {
+       "lit": 1,
+       "d": 0.6,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "c1000",
+     "type": "stat",
+     "x": 960,
+     "y": 130,
+     "value": 0,
+     "size": 56,
+     "color": "#7bdc8c",
+     "label": "lycees affected by 1 October",
+     "in": 3,
+     "d": 0.2,
+     "keys": {
+      "3": {
+       "value": 1027,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Le Monde; USL union; Interior Ministry, 1 Oct 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "It started with something unglamorous: a teachers' strike on the seventeenth of September over staff shortages."
+    },
+    {
+     "text": "Pupils joined in. They described classes of thirty-two to thirty-six, temporary classrooms that hit forty degrees in the summer heat, and an admissions system, Parcoursup, that many dread.",
+     "say": "Pupils joined in. They described classes of thirty-two to thirty-six, temporary classrooms that hit forty degrees in the summer heat, and an admissions system, Parcoursoop, that many dread."
+    },
+    {
+     "text": "On the twenty-first, a high school in Créteil, south-east of Paris, was blockaded. Within days, dozens of schools in Seine-Saint-Denis and Val-de-Marne followed.",
+     "say": "On the twenty-first, a high school in Cray-tay, south-east of Paris, was blockaded. Within days, dozens of schools in Sen-Saint-Denee and Val-de-Marn followed."
+    },
+    {
+     "text": "By the first of October, the Interior Ministry counted more than a thousand high schools affected, and nearly two thousand arrests."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "school-violence",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.07
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -20,
+      -8
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "k1",
+     "type": "card",
+     "x": 260,
+     "y": 220,
+     "w": 280,
+     "h": 170,
+     "glyph": "fire",
+     "title": "24 schools burned or sacked",
+     "color": "#ff7a59",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "k2",
+     "type": "card",
+     "x": 560,
+     "y": 220,
+     "w": 280,
+     "h": 170,
+     "glyph": "people",
+     "title": "65 staff injured",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 4.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "ft",
+     "type": "label",
+     "x": 410,
+     "y": 380,
+     "text": "Marseille: a woman burned by a flamethrower",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 0.6,
+     "sfx": "pop"
+    },
+    {
+     "id": "ft2",
+     "type": "label",
+     "x": 410,
+     "y": 440,
+     "text": "suspect: a 15-year-old",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 4.0
+    },
+    {
+     "id": "k3",
+     "type": "card",
+     "x": 960,
+     "y": 220,
+     "w": 300,
+     "h": 170,
+     "glyph": "shield",
+     "title": "pupils maimed by grenades",
+     "color": "#5ec8e5",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "i36",
+     "type": "label",
+     "x": 960,
+     "y": 380,
+     "text": "36 police-violence inquiries",
+     "color": "#9fe3ff",
+     "in": 2,
+     "d": 4.6
+    },
+    {
+     "id": "h1",
+     "type": "pebble",
+     "x": 300,
+     "y": 640,
+     "size": 0.7,
+     "color": "#6d7393",
+     "hood": true,
+     "mood": "deadpan",
+     "in": 0,
+     "d": 1.0,
+     "anim": "left"
+    },
+    {
+     "id": "p1",
+     "type": "pebble",
+     "x": 960,
+     "y": 640,
+     "size": 0.6,
+     "color": "#ffd166",
+     "mood": "sad",
+     "in": 2,
+     "d": 0.8,
+     "anim": "rise"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Education Minister E. Geffray; The Telegraph via The Week; IGPN figures, 13 Oct; Al Jazeera",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "And it was already violent. By early October, the Education Minister said twenty-four schools had been burned or ransacked, and sixty-five staff injured, forty of them head teachers."
+    },
+    {
+     "text": "In Marseille, a masked protester turned a flamethrower on a woman who told him to stop the vandalism. Police arrested a fifteen-year-old.",
+     "say": "In Mar-say, a masked protester turned a flamethrower on a woman who told him to stop the vandalism. Police arrested a fifteen-year-old."
+    },
+    {
+     "text": "Children were hurt too: a fifteen-year-old lost a hand to a grenade, a sixteen-year-old lost the use of an eye. By mid-October, the police watchdog had opened thirty-six inquiries."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapter",
+   "kicker": "Part 2",
+   "title": "Saturday, 17 October",
+   "glyph": "fire",
+   "color": "#ff7a59",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "map-17",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      8,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "map",
+     "type": "hexmap",
+     "x": 400,
+     "y": 380,
+     "r": 270,
+     "n": 60,
+     "spread": 0,
+     "lit": 0,
+     "anim": "pop",
+     "cities": [
+      {
+       "name": "Lille",
+       "u": 0.12,
+       "v": -0.86,
+       "note": "curfew"
+      },
+      {
+       "name": "Limoges",
+       "u": -0.22,
+       "v": 0.18,
+       "note": "town hall burned",
+       "left": true
+      },
+      {
+       "name": "Lyon",
+       "u": 0.48,
+       "v": 0.2,
+       "note": "tourist office torched"
+      },
+      {
+       "name": "Marseille",
+       "u": 0.48,
+       "v": 0.68,
+       "note": "city hall stormed"
+      },
+      {
+       "name": "Bordeaux",
+       "u": -0.58,
+       "v": 0.36,
+       "note": "prefect's home invaded",
+       "left": true
+      },
+      {
+       "name": "Strasbourg",
+       "u": 0.7,
+       "v": -0.42
+      },
+      {
+       "name": "Saint-Etienne",
+       "u": 0.36,
+       "v": 0.34,
+       "note": "teen loses a hand"
+      },
+      {
+       "name": "Perpignan",
+       "u": -0.02,
+       "v": 0.86,
+       "note": "looting"
+      }
+     ],
+     "keys": {
+      "0": {
+       "spread": 0.4,
+       "d": 0.6,
+       "t": 3
+      },
+      "1": {
+       "spread": 1.1,
+       "d": 0.2,
+       "t": 3
+      },
+      "2": {
+       "lit": 8.5,
+       "d": 0.2,
+       "t": 8
+      }
+     }
+    },
+    {
+     "id": "marches",
+     "type": "stat",
+     "x": 1000,
+     "y": 170,
+     "value": 0,
+     "size": 64,
+     "color": "#7bdc8c",
+     "label": "marchers (ministry); 800,000 (unions)",
+     "in": 0,
+     "d": 0.4,
+     "out": 2,
+     "keys": {
+      "0": {
+       "value": 550000,
+       "d": 0.6,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "peace",
+     "type": "label",
+     "x": 1000,
+     "y": 320,
+     "text": "110 marches, mostly peaceful",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 0.4,
+     "out": 2
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Interior Ministry; CGT; Reuters; AP; Al Jazeera; Fox News live coverage",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then, on the seventeenth of October, the school strike merged with a national day of action over fuel prices and the cost of living, joined by unions and the yellow vests."
+    },
+    {
+     "text": "The Interior Ministry counted five hundred and fifty thousand people in a hundred and ten marches. Unions said eight hundred thousand. Most marched peacefully."
+    },
+    {
+     "text": "But in city after city, violent groups broke away. In Lyon, a tourist office was torched. In Marseille, a crowd broke into city hall and dozens of shops were looted. In Bordeaux, a masked mob invaded the prefect's residence.",
+     "say": "But in city after city, violent groups broke away. In Lee-on, a tourist office was torched. In Mar-say, a crowd broke into city hall and dozens of shops were looted. In Bor-doh, a masked mob invaded the prefect's residence."
+    },
+    {
+     "text": "In Saint-Étienne, a seventeen-year-old lost his right hand to a crowd-control grenade. Lille, Perpignan, Strasbourg: the list kept growing.",
+     "say": "In San-Tay-tyen, a seventeen-year-old lost his right hand to a crowd-control grenade. Leel, Per-pin-yon, Strasbourg: the list kept growing."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "paris-17",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.08
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      30,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "road",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 700,
+     "w": 1800,
+     "h": 130,
+     "round": 0,
+     "color": "#1a1530",
+     "anim": "none"
+    },
+    {
+     "id": "c1",
+     "type": "car",
+     "x": 240,
+     "y": 650,
+     "color": "#5ec8e5",
+     "fire": 0,
+     "anim": "none",
+     "keys": {
+      "0": {
+       "fire": 1,
+       "burnt": 0.8,
+       "d": 1.0,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "van",
+     "type": "van",
+     "x": 1020,
+     "y": 655,
+     "anim": "right",
+     "keys": {
+      "1": {
+       "fire": 1,
+       "burnt": 0.8,
+       "d": 1.0,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "h",
+     "type": "crowd",
+     "x": 620,
+     "y": 650,
+     "n": 4,
+     "cols": 4,
+     "w": 260,
+     "size": 0.7,
+     "colors": [
+      "#2b2f45",
+      "#33374f",
+      "#2b2f45",
+      "#3a3e57"
+     ],
+     "hood": "#15182a",
+     "mood": "deadpan",
+     "in": 0,
+     "d": 0.6
+    },
+    {
+     "id": "bb",
+     "type": "label",
+     "x": 620,
+     "y": 470,
+     "text": "masked, black-clad young men",
+     "color": "#c9d3ff",
+     "in": 0,
+     "d": 2.0
+    },
+    {
+     "id": "shops",
+     "type": "stat",
+     "x": 640,
+     "y": 150,
+     "value": 0,
+     "suffix": "+",
+     "size": 80,
+     "color": "#ffb347",
+     "label": "shops damaged or looted nationwide",
+     "in": 1,
+     "d": 0.4,
+     "out": 2,
+     "keys": {
+      "1": {
+       "value": 3000,
+       "d": 0.6,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "inj",
+     "type": "stat",
+     "x": 640,
+     "y": 150,
+     "value": 0,
+     "suffix": "+",
+     "size": 80,
+     "color": "#5ec8e5",
+     "label": "police, gendarmes and firefighters injured",
+     "in": 2,
+     "d": 0.2,
+     "keys": {
+      "2": {
+       "value": 500,
+       "d": 0.4,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Al Jazeera, 18 Oct; AP; L. Nunez, Interior Minister",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In Paris, reporters watched masked, black-clad young men smash shop windows with golf clubs and run off with the goods. Banks were smashed, a Lacoste store ransacked, cars set alight."
+    },
+    {
+     "text": "Nationwide, authorities counted at least three thousand shops damaged or looted."
+    },
+    {
+     "text": "The Interior Minister said more than five hundred police officers, gendarmes and firefighters were injured. One protester died of a cardiac arrest in Paris."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "aftermath",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.04,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "gbars",
+     "x": 420,
+     "y": 430,
+     "w": 520,
+     "h": 300,
+     "max": 2600,
+     "unit": "",
+     "grow": 0,
+     "anim": "fade",
+     "series": [
+      {
+       "name": "",
+       "color": "#5ec8e5"
+      }
+     ],
+     "groups": [
+      {
+       "label": "in custody",
+       "vals": [
+        2513
+       ]
+      },
+      {
+       "label": "before a prosecutor",
+       "vals": [
+        800
+       ]
+      },
+      {
+       "label": "jailed",
+       "vals": [
+        149
+       ]
+      }
+     ],
+     "keys": {
+      "0": {
+       "grow": 1.1,
+       "d": 0.6,
+       "t": 4
+      }
+     }
+    },
+    {
+     "id": "cur",
+     "type": "icon",
+     "glyph": "lock",
+     "x": 960,
+     "y": 220,
+     "r": 50,
+     "color": "#c792ea",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop",
+     "label": "curfews: parts of Paris, Lille, Marseille"
+    },
+    {
+     "id": "fail",
+     "type": "label",
+     "x": 960,
+     "y": 400,
+     "text": "Darmanin: the State \"failed\"",
+     "color": "#ff8fab",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "cost",
+     "type": "label",
+     "x": 960,
+     "y": 480,
+     "text": "early damage estimates: EUR 0.5 to 1.2 billion",
+     "color": "#ffd166",
+     "in": 3,
+     "d": 0.4
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "G. Darmanin, 19-20 Oct; PM S. Lecornu; Sud Radio; Morningstar DBRS",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "By the twentieth, more than twenty-five hundred people had been taken into custody. Over eight hundred went before prosecutors, and a hundred and forty-nine were jailed."
+    },
+    {
+     "text": "Curfews followed in parts of Paris, Lille and Marseille, and the army was called in to support police for the next weekend.",
+     "say": "Curfews followed in parts of Paris, Leel and Mar-say, and the army was called in to support police for the next weekend."
+    },
+    {
+     "text": "The Justice Minister admitted the State had, in his word, failed. The Prime Minister admitted intelligence failures. The Interior Minister offered to resign; Macron refused."
+    },
+    {
+     "text": "There is no official damage figure yet. Early estimates run from half a billion to more than a billion euros, which would rival the riots of 2023."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapter",
+   "kicker": "Part 3",
+   "title": "Testing the Claim",
+   "glyph": "flask",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "claim",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "icon",
+     "glyph": "quote",
+     "x": 640,
+     "y": 150,
+     "r": 50,
+     "color": "#ff8fab",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "c",
+     "type": "label",
+     "x": 640,
+     "y": 250,
+     "text": "\"Immigrants burned France, under cover of a student protest\"",
+     "color": "#ffc2d1",
+     "size": 24,
+     "in": 0,
+     "d": 0.6
+    },
+    {
+     "id": "t1",
+     "type": "label",
+     "x": 640,
+     "y": 340,
+     "text": "Trump: France \"conquered, looted and burned\" by \"migrants, jihadists and communists\"",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "t2",
+     "type": "label",
+     "x": 640,
+     "y": 400,
+     "text": "Trump: \"Paris is going to be a Muslim city very soon\"",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 5.5
+    },
+    {
+     "id": "f",
+     "type": "icon",
+     "glyph": "flask",
+     "x": 640,
+     "y": 540,
+     "r": 50,
+     "color": "#3fd6c2",
+     "in": 2,
+     "d": 0.6,
+     "sfx": "chime",
+     "vol": 0.35,
+     "label": "what does the record show?"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "D. Trump, 19 Oct 2026, White House and Kansas rally, via AP and ThePrint",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now to the claim that spread fastest: that immigrants burned France, using the students as cover."
+    },
+    {
+     "text": "It wasn't only anonymous accounts. President Trump told a rally that France was being conquered, looted and burned to the ground by migrants, jihadists and communists, and said that Paris would soon be a Muslim city."
+    },
+    {
+     "text": "It's a serious claim, so let's test it the way we'd test any other: against arrests, court records and the people actually named."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "evidence",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nd",
+     "type": "card",
+     "x": 230,
+     "y": 220,
+     "w": 300,
+     "h": 170,
+     "glyph": "lock",
+     "title": "no nationality data",
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "ad",
+     "type": "card",
+     "x": 560,
+     "y": 220,
+     "w": 300,
+     "h": 170,
+     "glyph": "people",
+     "title": "70% adults",
+     "color": "#7bdc8c",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "kn",
+     "type": "label",
+     "x": 400,
+     "y": 450,
+     "text": "\"very often\" known to police (Darmanin)",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 3.4
+    },
+    {
+     "id": "kn2",
+     "type": "label",
+     "x": 400,
+     "y": 505,
+     "text": "early hearings: many first offenders (Sud Radio)",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 6.0
+    },
+    {
+     "id": "nm",
+     "type": "card",
+     "x": 960,
+     "y": 220,
+     "w": 360,
+     "h": 170,
+     "glyph": "eye",
+     "title": "the people named",
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "n1",
+     "type": "label",
+     "x": 960,
+     "y": 340,
+     "text": "Limoges arson: far-left activist, 40, on a watchlist",
+     "color": "#ffd8a8",
+     "in": 2,
+     "d": 1.4
+    },
+    {
+     "id": "n2",
+     "type": "label",
+     "x": 960,
+     "y": 395,
+     "text": "ex-LFI aide, 23, arrested in Saint-Denis",
+     "color": "#ffd8a8",
+     "in": 2,
+     "d": 4.6
+    },
+    {
+     "id": "n3",
+     "type": "label",
+     "x": 960,
+     "y": 450,
+     "text": "Lille looters, 20 to 25, no record",
+     "color": "#ffd8a8",
+     "in": 3,
+     "d": 0.4
+    },
+    {
+     "id": "n4",
+     "type": "label",
+     "x": 960,
+     "y": 505,
+     "text": "Perpignan: school supervisor, 30",
+     "color": "#ffd8a8",
+     "in": 3,
+     "d": 2.4
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "AP Fact Focus, 20 Oct; actu17; Sud Radio; Le Figaro; Europe 1; Fox News live coverage",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "First, the hard limit. France doesn't record ethnicity or religion, and the authorities have published no nationality data for the people arrested."
+    },
+    {
+     "text": "What we do have: the Justice Minister says seventy percent of those held were adults, and that very often they were known to police. Early court reports describe a more mixed picture, with many first offenders."
+    },
+    {
+     "text": "Then there are the people actually named. The man arrested over the Limoges fire is a forty-year-old far-left activist on a security watchlist. A former aide to a hard-left MP was arrested in Saint-Denis.",
+     "say": "Then there are the people actually named. The man arrested over the Lee-mozh fire is a forty-year-old far-left activist on a security watchlist. A former aide to a hard-left MP was arrested in Saint-Denee."
+    },
+    {
+     "text": "In Lille, three men in their early twenties with no criminal record got ten months for looting a video game shop. In Perpignan, a thirty-year-old school supervisor was questioned over looting a Sephora.",
+     "say": "In Leel, three men in their early twenties with no criminal record got ten months for looting a video game shop. In Per-pin-yon, a thirty-year-old school supervisor was questioned over looting a Sephora."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "officials-experts",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "g",
+     "type": "icon",
+     "glyph": "building",
+     "x": 300,
+     "y": 220,
+     "r": 56,
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "label": "government: ultra-left + criminals"
+    },
+    {
+     "id": "a",
+     "type": "icon",
+     "glyph": "x",
+     "x": 640,
+     "y": 220,
+     "r": 56,
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop",
+     "label": "AP: no evidence for immigrants"
+    },
+    {
+     "id": "r",
+     "type": "icon",
+     "glyph": "brain",
+     "x": 980,
+     "y": 220,
+     "r": 56,
+     "color": "#c792ea",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop",
+     "label": "Roche: mostly opportunist looters"
+    },
+    {
+     "id": "mc",
+     "type": "label",
+     "x": 640,
+     "y": 460,
+     "text": "Macron: \"invaded by hordes of migrants and Islamists\" is \"completely false\"",
+     "color": "#ffd166",
+     "in": 3,
+     "d": 0.4
+    },
+    {
+     "id": "mc2",
+     "type": "label",
+     "x": 640,
+     "y": 520,
+     "text": "foreign leaders' comments: \"as unacceptable as they are stupid\"",
+     "color": "#ffd8a8",
+     "in": 3,
+     "d": 4.6
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "PM Lecornu, 20 Oct; AP Fact Focus, 20 Oct; E. Macron in Doha, 21 Oct (AP)",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The French government's own account is different from the viral one. It blames an insurrectionary plan by ultra-left fringe groups, plus opportunistic criminals."
+    },
+    {
+     "text": "The Associated Press checked the immigrant claims and found that authorities had not linked immigrants to the rioting, and that no single group had been singled out."
+    },
+    {
+     "text": "The criminologist Sebastian Roché told AP the far left is too small to explain violence on this scale, and that most of the looting looks like ordinary criminals exploiting the chaos.",
+     "say": "The criminologist Sebastian Roshay told AP the far left is too small to explain violence on this scale, and that most of the looting looks like ordinary criminals exploiting the chaos."
+    },
+    {
+     "text": "Macron called claims that France had been invaded by hordes of migrants and Islamists completely false. Note that his own government ordered the 2025 report on Islamist entryism you're about to see."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "banlieue",
+   "bg": {
+    "kind": "city",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "kids",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 9,
+     "cols": 9,
+     "w": 760,
+     "size": 0.7,
+     "colors": [
+      "#ffb347",
+      "#7ad3ff",
+      "#c792ea",
+      "#7bdc8c",
+      "#ff8fab",
+      "#9be7c4",
+      "#ffd166",
+      "#5ec8e5",
+      "#f2c14e"
+     ],
+     "mood": "calm",
+     "anim": "rise"
+    },
+    {
+     "id": "s93",
+     "type": "label",
+     "x": 640,
+     "y": 170,
+     "text": "it began in France's most immigrant-heavy suburbs",
+     "color": "#f2d0ff",
+     "in": 0,
+     "d": 0.4
+    },
+    {
+     "id": "y",
+     "type": "label",
+     "x": 400,
+     "y": 300,
+     "text": "true: many pupils are from immigrant families",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "n",
+     "type": "label",
+     "x": 880,
+     "y": 380,
+     "text": "not yet shown: immigrants as a group drove the arson",
+     "color": "#ffb3c1",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "u",
+     "type": "label",
+     "x": 640,
+     "y": 460,
+     "text": "France doesn't count, so nobody can prove it either way",
+     "color": "#ffd166",
+     "in": 3,
+     "d": 0.4
+    }
+   ],
+   "lines": [
+    {
+     "text": "So where does the immigrant claim come from? Partly from geography. The blockades began in Seine-Saint-Denis and Val-de-Marne, the most immigrant-heavy suburbs in France.",
+     "say": "So where does the immigrant claim come from? Partly from geography. The blockades began in Sen-Saint-Denee and Val-de-Marn, the most immigrant-heavy suburbs in France."
+    },
+    {
+     "text": "That part is real: many of the pupils on those barricades come from immigrant families, and these are the same suburbs where the State itself has documented Islamist networks. We'll come to that."
+    },
+    {
+     "text": "But no published arrest data, court case or official has yet shown that immigrants as a group drove the arson and looting."
+    },
+    {
+     "text": "Absence of data is not innocence, either. France refuses to count. Until the courts publish profiles, nobody can prove this either way."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "flags",
+   "bg": {
+    "kind": "city",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "hood",
+     "type": "crowd",
+     "x": 640,
+     "y": 640,
+     "n": 6,
+     "cols": 6,
+     "w": 600,
+     "size": 0.7,
+     "hood": true,
+     "colors": [
+      "#59607a"
+     ],
+     "mood": "calm",
+     "anim": "rise"
+    },
+    {
+     "id": "t0",
+     "type": "text",
+     "x": 640,
+     "y": 110,
+     "text": "17 October: the flags",
+     "size": 40,
+     "weight": 900,
+     "color": "#ffffff",
+     "anim": "pop"
+    },
+    {
+     "id": "f1",
+     "type": "label",
+     "x": 640,
+     "y": 190,
+     "text": "Lyon: \"Free Palestine\" painted on a Zara; masked teen with a Palestinian flag",
+     "color": "#ffd8a8",
+     "in": 0,
+     "d": 1.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "f2",
+     "type": "label",
+     "x": 640,
+     "y": 245,
+     "text": "Marseille: rioter inside city hall carried a Palestinian flag",
+     "color": "#ffd8a8",
+     "in": 0,
+     "d": 5.0,
+     "sfx": "pop"
+    },
+    {
+     "id": "f3",
+     "type": "label",
+     "x": 640,
+     "y": 300,
+     "text": "Toulouse: Joan of Arc statue draped in a Palestinian flag",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "f4",
+     "type": "label",
+     "x": 640,
+     "y": 355,
+     "text": "Paris 19th: synagogue broken into (first findings: burglary)",
+     "color": "#ffb3c1",
+     "in": 1,
+     "d": 3.0
+    },
+    {
+     "id": "f5",
+     "type": "label",
+     "x": 640,
+     "y": 410,
+     "text": "Marseille: Jewish-owned shops damaged; targeting not yet shown (SPCJ)",
+     "color": "#ffb3c1",
+     "in": 2,
+     "d": 0.4
+    },
+    {
+     "id": "f6",
+     "type": "label",
+     "x": 640,
+     "y": 480,
+     "text": "a flag proves no motive; it does prove what some rioters chose to bring",
+     "color": "#9fe3ff",
+     "in": 3,
+     "d": 0.4,
+     "size": 20
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "L'Appel, 20 Oct 2026; SPCJ statement, 18 Oct; Paris prosecutor",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "And here's something the polite version of this story leaves out. In a protest about class sizes, Palestinian flags kept appearing at the scenes of violence."
+    },
+    {
+     "text": "Toulouse's statue of Joan of Arc was draped in one. In Paris, a synagogue was broken into, though investigators' first findings point to burglary."
+    },
+    {
+     "text": "In Marseille, the Jewish community's security service said several damaged shops had Jewish owners, but that nothing yet showed they were targeted for it, and asked people not to share unverified claims."
+    },
+    {
+     "text": "A flag proves no motive. But Gaza had nothing to do with French classrooms, and some rioters brought it anyway. That's worth saying plainly."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapter",
+   "kicker": "Part 4",
+   "title": "Chaos Inc.",
+   "glyph": "globe",
+   "color": "#ffb347",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "nomani",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -8
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "globe",
+     "type": "planet",
+     "x": 640,
+     "y": 1300,
+     "r": 820,
+     "color": "#3a4aa0",
+     "land": "#5a6ad0",
+     "anim": "none"
+    },
+    {
+     "id": "g50",
+     "type": "stat",
+     "x": 400,
+     "y": 190,
+     "value": 0,
+     "size": 72,
+     "color": "#ffb347",
+     "label": "groups, 9 Oct",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "value": 50,
+       "d": 0.6,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "g50b",
+     "type": "label",
+     "x": 400,
+     "y": 330,
+     "text": "15 youth, 35 adult: unions, parties, communist groups",
+     "color": "#ffd8a8",
+     "size": 18,
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "g101",
+     "type": "stat",
+     "x": 880,
+     "y": 190,
+     "value": 0,
+     "size": 72,
+     "color": "#ff7a59",
+     "label": "groups in 13 countries, 20 Oct",
+     "in": 2,
+     "d": 0.4,
+     "keys": {
+      "2": {
+       "value": 101,
+       "d": 0.8,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "g33",
+     "type": "label",
+     "x": 880,
+     "y": 330,
+     "text": "only 33 led by students or youth",
+     "color": "#ffd8a8",
+     "size": 18,
+     "in": 2,
+     "d": 3.6
+    },
+    {
+     "id": "bt",
+     "type": "label",
+     "x": 640,
+     "y": 420,
+     "text": "BreakThrough News video: 346,000 likes in a day",
+     "color": "#c792ea",
+     "in": 3,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "a2",
+     "type": "label",
+     "x": 640,
+     "y": 480,
+     "text": "212 rallies planned for \"Acte II\", 24 October",
+     "color": "#9fe3ff",
+     "in": 4,
+     "d": 0.4
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Asra Q. Nomani, Fox News Digital, 9 and 20 October 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Which brings us to Asra Nomani, a senior investigations editor at Fox News Digital, whose reporting has done the most to map who was behind the protests."
+    },
+    {
+     "text": "On the ninth of October, she identified fifty organisations backing the movement. Only fifteen were student or youth groups. The rest were adults: unions, communist and socialist groups, four political parties including La France Insoumise, and a Muslim student association.",
+     "say": "On the ninth of October, she identified fifty organisations backing the movement. Only fifteen were student or youth groups. The rest were adults: unions, communist and socialist groups, four political parties including La France Ansoomeez, and a Muslim student association."
+    },
+    {
+     "text": "By the twentieth, her count had grown to a hundred and one groups in thirteen countries, only thirty-three of them led by young people."
+    },
+    {
+     "text": "She traced amplification to BreakThrough News, an outlet in the network funded by the American millionaire Neville Roy Singham. One of its videos, of the Saint-Denis mayor, drew about three hundred and forty-six thousand likes in a day.",
+     "say": "She traced amplification to BreakThrough News, an outlet in the network funded by the American millionaire Neville Roy Singham. One of its videos, of the Saint-Denee mayor, drew about three hundred and forty-six thousand likes in a day."
+    },
+    {
+     "text": "And she documented plans for more: two hundred and twelve rallies for an Acte Two on the twenty-fourth of October, and a European youth strike in November.",
+     "say": "And she documented plans for more: two hundred and twelve rallies for an Act Two on the twenty-fourth of October, and a European youth strike in November."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "nomani-test",
+   "bg": {
+    "kind": "studio",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "rg",
+     "type": "label",
+     "x": 640,
+     "y": 110,
+     "text": "her frame: a \"red-green\" alliance of far-left and Islamist groups",
+     "color": "#ffd166",
+     "anim": "drop"
+    },
+    {
+     "id": "s1",
+     "type": "card",
+     "x": 330,
+     "y": 300,
+     "w": 420,
+     "h": 170,
+     "glyph": "star",
+     "title": "Shows: adult networks amplified it",
+     "color": "#7bdc8c",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "s1b",
+     "type": "label",
+     "x": 330,
+     "y": 430,
+     "text": "matches the government's ultra-left view",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 3.6
+    },
+    {
+     "id": "s2",
+     "type": "card",
+     "x": 950,
+     "y": 300,
+     "w": 420,
+     "h": 170,
+     "glyph": "x",
+     "title": "Doesn't show: who set the fires",
+     "color": "#ff8fab",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "s2b",
+     "type": "label",
+     "x": 950,
+     "y": 430,
+     "text": "nor funding of French rioters, nor an immigrant plot",
+     "color": "#ffb3c1",
+     "in": 2,
+     "d": 3.6
+    },
+    {
+     "id": "bg",
+     "type": "label",
+     "x": 330,
+     "y": 560,
+     "text": "Saint-Denis mayor: violence can \"at a given moment\" be legitimate",
+     "color": "#ffd8a8",
+     "size": 18,
+     "in": 3,
+     "d": 0.4
+    },
+    {
+     "id": "lfi",
+     "type": "label",
+     "x": 950,
+     "y": 560,
+     "text": "LFI: \"conspiracism\"",
+     "color": "#9fe3ff",
+     "size": 18,
+     "in": 4,
+     "d": 0.4
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Fox News Digital; Reuters; BFM; Paris prefecture",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "She frames it as a red-green alliance: far-left reds, and Islamist groups she identifies with green."
+    },
+    {
+     "text": "What her work does show is that this was never only a student movement. Adult organisations, many with hard-left politics, amplified it at home and abroad. That fits the French government's own intelligence, which called it an operation by La France Insoumise and its far-left proxies.",
+     "say": "What her work does show is that this was never only a student movement. Adult organisations, many with hard-left politics, amplified it at home and abroad. That fits the French government's own intelligence, which called it an operation by La France Ansoomeez and its far-left proxies."
+    },
+    {
+     "text": "What it doesn't show is who threw the petrol bombs. Her evidence is mostly the groups' own posts, websites and statements. It doesn't document funding reaching French rioters, and she doesn't claim immigrants did the burning."
+    },
+    {
+     "text": "Some in the movement didn't help their own case. The Saint-Denis mayor said violence could, at a given moment, be legitimate, and was referred to prosecutors.",
+     "say": "Some in the movement didn't help their own case. The Saint-Denee mayor said violence could, at a given moment, be legitimate, and was referred to prosecutors."
+    },
+    {
+     "text": "La France Insoumise, for its part, calls the network theory conspiracism, and says the protests were spontaneous.",
+     "say": "La France Ansoomeez, for its part, calls the network theory conspiracism, and says the protests were spontaneous."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch-islam",
+   "style": "chapter",
+   "kicker": "Part 5",
+   "title": "The Question Nobody Asks",
+   "glyph": "building",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "growth",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      8,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m10",
+     "type": "stat",
+     "x": 330,
+     "y": 210,
+     "value": 0,
+     "suffix": "%",
+     "size": 84,
+     "color": "#7bdc8c",
+     "label": "of 18 to 59-year-olds are Muslim (2019-20)",
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "value": 10,
+       "d": 1.0,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "g",
+     "type": "gbars",
+     "x": 900,
+     "y": 330,
+     "w": 420,
+     "h": 220,
+     "max": 12,
+     "unit": "%",
+     "groups": [
+      {
+       "label": "2008-09",
+       "vals": [
+        8
+       ]
+      },
+      {
+       "label": "2019-20",
+       "vals": [
+        11
+       ]
+      }
+     ],
+     "series": [
+      {
+       "name": "Muslim, ages 18-49",
+       "color": "#7bdc8c"
+      }
+     ],
+     "grow": 0,
+     "in": 1,
+     "d": 0.2,
+     "keys": {
+      "1": {
+       "grow": 1,
+       "d": 0.4,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "tr",
+     "type": "label",
+     "x": 330,
+     "y": 380,
+     "text": "91% raised Muslim stay Muslim (highest of any faith)",
+     "color": "#a8f0b4",
+     "in": 2,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "sec",
+     "type": "label",
+     "x": 330,
+     "y": 440,
+     "text": "meanwhile: 53% of 18 to 49s now have no religion",
+     "color": "#ffd8a8",
+     "in": 3,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "INSEE / INED, Trajectoires et Origines 2 (2019-20), published 2023",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The question so many French people ask, and so many explainers dodge: how much has Islam grown in France, and does it matter?",
+     "say": "The question so many French people ask, and so many explainers dodge: how much has Islam grown in France, and does it matter?"
+    },
+    {
+     "text": "The best official data is the national statistics office's survey of 2019 and 2020. Ten percent of adults aged eighteen to fifty-nine said they were Muslim. Among under-fifties, the share rose from eight to eleven percent in about a decade."
+    },
+    {
+     "text": "And it is the most durable faith in the country. Ninety-one percent of people raised Muslim stay Muslim, the highest rate of any religion measured."
+    },
+    {
+     "text": "At the same time, most of France is losing religion altogether. So Islam is growing in a country that is emptying its churches. That's a real shift, and it's fair to talk about it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "entryism",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "c1",
+     "type": "card",
+     "x": 230,
+     "y": 230,
+     "w": 300,
+     "h": 170,
+     "glyph": "building",
+     "title": "207 places of worship",
+     "color": "#5ec8e5",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "c1a",
+     "type": "label",
+     "x": 230,
+     "y": 360,
+     "text": "139 Brotherhood-linked, 68 close",
+     "color": "#9fe3ff",
+     "in": 0,
+     "d": 3.0,
+     "size": 18
+    },
+    {
+     "id": "c2",
+     "type": "card",
+     "x": 640,
+     "y": 230,
+     "w": 300,
+     "h": 170,
+     "glyph": "people",
+     "title": "280 associations",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 0.2,
+     "sfx": "pop"
+    },
+    {
+     "id": "c2a",
+     "type": "label",
+     "x": 640,
+     "y": 360,
+     "text": "21 schools, about 4,200 pupils",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 2.4,
+     "size": 18
+    },
+    {
+     "id": "c3",
+     "type": "card",
+     "x": 1050,
+     "y": 230,
+     "w": 300,
+     "h": 170,
+     "glyph": "lock",
+     "title": "741 sites closed",
+     "color": "#ff8fab",
+     "in": 2,
+     "d": 0.2,
+     "sfx": "pop"
+    },
+    {
+     "id": "c3a",
+     "type": "label",
+     "x": 1050,
+     "y": 360,
+     "text": "after 9,537 inspections",
+     "color": "#ffb3c1",
+     "in": 2,
+     "d": 1.6,
+     "size": 18
+    },
+    {
+     "id": "ent",
+     "type": "label",
+     "x": 640,
+     "y": 470,
+     "text": "\"entryism from below\": the Élysée's own words",
+     "color": "#c792ea",
+     "in": 3,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "'Les Frères musulmans et islamisme politique en France', report to the Interior Minister, May 2025 (via Public Sénat)",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then there's what the French State itself found. In May 2025, a report commissioned by the government on the Muslim Brotherhood was put before a defence council."
+    },
+    {
+     "text": "It counted a hundred and thirty-nine places of worship linked to the Brotherhood and sixty-eight close to it, about two hundred and eighty associations, and twenty-one schools teaching some forty-two hundred pupils."
+    },
+    {
+     "text": "By then, the State had closed seven hundred and forty-one establishments after more than nine and a half thousand inspections."
+    },
+    {
+     "text": "The presidency's own phrase for the strategy was entryism from below: not bombs, but slow influence through mosques, schools, sport and charities. That isn't a conspiracy theory. It's a government finding."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ifop",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -8,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v",
+     "type": "gbars",
+     "x": 360,
+     "y": 330,
+     "w": 420,
+     "h": 220,
+     "max": 50,
+     "unit": "%",
+     "groups": [
+      {
+       "label": "2003",
+       "vals": [
+        16
+       ]
+      },
+      {
+       "label": "2025",
+       "vals": [
+        45
+       ]
+      }
+     ],
+     "series": [
+      {
+       "name": "Muslim women 18-24 who wear a veil",
+       "color": "#c792ea"
+      }
+     ],
+     "grow": 0,
+     "anim": "pop",
+     "keys": {
+      "0": {
+       "grow": 1,
+       "d": 0.6,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "s46",
+     "type": "stat",
+     "x": 930,
+     "y": 200,
+     "value": 0,
+     "suffix": "%",
+     "size": 72,
+     "color": "#ffb347",
+     "label": "want Islamic law applied, fully or in part",
+     "in": 1,
+     "d": 0.2,
+     "keys": {
+      "1": {
+       "value": 46,
+       "d": 0.6,
+       "t": 1.4
+      }
+     }
+    },
+    {
+     "id": "s33",
+     "type": "label",
+     "x": 930,
+     "y": 330,
+     "text": "33% sympathise with at least one Islamist movement",
+     "color": "#ffd8a8",
+     "in": 2,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "crit",
+     "type": "label",
+     "x": 930,
+     "y": 420,
+     "text": "contested: Muslim councils filed a complaint; critics call it biased",
+     "color": "#9fe3ff",
+     "in": 3,
+     "d": 0.4,
+     "size": 17
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Ifop for Écran de veille, 1,005 Muslims aged 15+, Aug-Sept 2025; CDCM complaint, 24 Nov 2025",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Polling points the same way, though it's more contested. A 2025 Ifop survey of about a thousand French Muslims found that forty-five percent of young Muslim women wear a veil, nearly three times the share in 2003.",
+     "say": "Polling points the same way, though it's more contested. A 2025 Eefop survey of about a thousand French Muslims found that forty-five percent of young Muslim women wear a veil, nearly three times the share in 2003."
+    },
+    {
+     "text": "Forty-six percent said Islamic law should be applied where they live, fully or in part."
+    },
+    {
+     "text": "And a third said they felt sympathy for at least one Islamist movement."
+    },
+    {
+     "text": "Four Muslim councils filed a legal complaint, calling the poll biased, and some academics agree. But the trend it shows, younger and more observant, matches what the State's own report describes."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "link",
+   "bg": {
+    "kind": "space",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      6,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 330,
+     "size": 0.9,
+     "tilt": 0,
+     "left": "fire",
+     "right": "building",
+     "anim": "pop"
+    },
+    {
+     "id": "l1",
+     "type": "label",
+     "x": 330,
+     "y": 500,
+     "text": "shown: Islamist networks exist, documented by the State",
+     "color": "#a8f0b4",
+     "in": 0,
+     "d": 2.0,
+     "size": 18
+    },
+    {
+     "id": "l2",
+     "type": "label",
+     "x": 950,
+     "y": 500,
+     "text": "shown: a Muslim student union backed the movement",
+     "color": "#a8f0b4",
+     "in": 1,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "l3",
+     "type": "label",
+     "x": 640,
+     "y": 570,
+     "text": "not shown yet: that those networks lit the fires of 17 October",
+     "color": "#ffb3c1",
+     "in": 2,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Public Sénat, May 2025; A. Q. Nomani, Fox News Digital, 9 Oct 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So, does this connect to the riots? Here's where we have to be precise rather than polite, in either direction."
+    },
+    {
+     "text": "Nomani's list of groups backing the movement included a Muslim student association, alongside La France Insoumise and communist groups. That's her red-green alliance, and the overlap is real."
+    },
+    {
+     "text": "What nobody has shown yet is that Islamist networks planned or lit the fires of the seventeenth. The only person charged over the worst single fire is a French far-left activist. Two problems can be true at once."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapter",
+   "kicker": "Part 6",
+   "title": "The France That Wasn't",
+   "glyph": "eye",
+   "color": "#c792ea",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "fakes",
+   "bg": {
+    "kind": "studio",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "fd",
+     "type": "feed",
+     "x": 640,
+     "y": 380,
+     "w": 680,
+     "ph": 84,
+     "app": "TRENDING",
+     "anim": "rise",
+     "stamps": 0,
+     "keys": {
+      "1": {
+       "stamps": 0.45,
+       "d": 0.4,
+       "t": 3.0
+      },
+      "2": {
+       "stamps": 1.01,
+       "d": 0.4,
+       "t": 3.0
+      }
+     },
+     "posts": [
+      {
+       "tag": "Palestinian flag on the Eiffel Tower!",
+       "text": "AI-generated; 3.7 million views",
+       "color": "#ff7a59",
+       "stamp": "AI FAKE"
+      },
+      {
+       "tag": "The Eiffel Tower is burning!",
+       "text": "AI-generated; 11.6 million views",
+       "color": "#ffb347",
+       "stamp": "AI FAKE"
+      },
+      {
+       "tag": "Looters only hit Jewish shops!",
+       "text": "no evidence, say police and Jewish security service",
+       "color": "#c792ea",
+       "stamp": "FALSE"
+      },
+      {
+       "tag": "African men lead the protests!",
+       "text": "video from a 2017 protest",
+       "color": "#5ec8e5",
+       "stamp": "OLD"
+      },
+      {
+       "tag": "Migrant burns white woman!",
+       "text": "real attack; motive was a vandalism row",
+       "color": "#7bdc8c",
+       "stamp": "UNPROVEN"
+      }
+     ]
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "NewsGuard; The Week fact check; AP; Libération",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Online, a second France was burning, one that never existed."
+    },
+    {
+     "text": "An AI video of a Palestinian flag on the Eiffel Tower got three point seven million views. Another, of the tower on fire, got eleven point six million. A clip blaming African men for the protests was from 2017."
+    },
+    {
+     "text": "A claim that looters only targeted Jewish shops was rejected by police and by the Jewish community's own security service. And the Marseille flamethrower attack, which was real, was sold as an anti-white hate crime by a migrant. Police have confirmed neither."
+    },
+    {
+     "text": "France even summoned Iran's ambassador over what it called a state disinformation campaign. Disinformation was coming from more than one direction."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch-se",
+   "style": "chapter",
+   "kicker": "Part 7",
+   "title": "Suicidal Empathy",
+   "glyph": "heart",
+   "color": "#ff8fab",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "voices",
+   "bg": {
+    "kind": "studio",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      8,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q1",
+     "type": "quote",
+     "x": 640,
+     "y": 160,
+     "w": 820,
+     "text": "\"Hamas has a legitimate action.\"",
+     "by": "Rima Hassan, LFI MEP, Sud Radio, 27 Feb 2025",
+     "color": "#ff8fab",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "q1b",
+     "type": "label",
+     "x": 640,
+     "y": 262,
+     "text": "she also called its methods terrorist",
+     "color": "#ffb3c1",
+     "in": 1,
+     "d": 0.4,
+     "size": 17
+    },
+    {
+     "id": "q2",
+     "type": "quote",
+     "x": 640,
+     "y": 380,
+     "w": 820,
+     "text": "\"Your little shops, that's real cute.\"",
+     "by": "Lola-Fleur Whittaker, LFI municipal candidate, LCI, 20 Oct 2026",
+     "color": "#ffb347",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "q2b",
+     "type": "label",
+     "x": 640,
+     "y": 482,
+     "text": "she called the riots a response to \"decades of misery\"",
+     "color": "#ffd8a8",
+     "in": 3,
+     "d": 0.4,
+     "size": 17
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Sud Radio, 27 Feb 2025; Le Tribunal du Net and i24NEWS, 21 Oct 2026; Townhall, 21 Oct 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Which brings us back to Gad Saad's idea of suicidal empathy: compassion aimed so badly that it protects the people doing harm and abandons the people being harmed."
+    },
+    {
+     "text": "In February 2025, Rima Hassan, a French member of the European Parliament for La France Insoumise, told Sud Radio that Hamas has a legitimate action. In the same interview she called its methods terrorist."
+    },
+    {
+     "text": "On the twentieth of October, three days after the riots, Lola-Fleur Whittaker, a Sciences Po student who ran on a France Insoumise list in Paris, told LCI the violence was a response to decades of misery.",
+     "say": "On the twentieth of October, three days after the riots, Lola-Fleur Whittaker, a Science-Po student who ran on a France Ansoomeez list in Paris, told L-C-I the violence was a response to decades of misery."
+    },
+    {
+     "text": "When a shop owner pushed back, she was reported to have answered: your little shops, that's real cute."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "victims",
+   "bg": {
+    "kind": "city",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -8,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "shop",
+     "type": "house",
+     "x": 640,
+     "y": 560,
+     "size": 0.9,
+     "color": "#ff8fab",
+     "anim": "rise"
+    },
+    {
+     "id": "fl",
+     "type": "pebble",
+     "x": 820,
+     "y": 610,
+     "size": 0.75,
+     "color": "#ffd166",
+     "mood": "sad",
+     "anim": "rise"
+    },
+    {
+     "id": "q3",
+     "type": "quote",
+     "x": 640,
+     "y": 170,
+     "w": 940,
+     "text": "\"They wanted to hit us. We just want to work in peace.\"",
+     "by": "a Lyon florist whose shop was ransacked, 17 Oct (her own video)",
+     "color": "#ffd166",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "v2",
+     "type": "label",
+     "x": 640,
+     "y": 300,
+     "text": "a Congolese-born businesswoman: the shop fed her and a hundred others",
+     "color": "#ffd8a8",
+     "in": 1,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "v3",
+     "type": "label",
+     "x": 640,
+     "y": 350,
+     "text": "a Grenoble florist wrote to the PM: she won't pay her taxes",
+     "color": "#ffd8a8",
+     "in": 2,
+     "d": 0.4,
+     "size": 18
+    },
+    {
+     "id": "src",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "text": "Le Tribunal du Net, 18 Oct (video via Fdesouche); Townhall, 21 Oct; ICI Isère, Oct 2026",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now look at who paid. In Lyon, a florist filmed her smashed shop: the till ripped out, flowers trampled, her seventy-year-old mother inside. They wanted to hit us, she said. We just want to work in peace."
+    },
+    {
+     "text": "The shop owner on that television set was a woman who came to France from the Congo at nine. She said the shop fed her and around a hundred other people."
+    },
+    {
+     "text": "In Grenoble, a florist whose shop was hit wrote to the Prime Minister to say she won't pay her taxes. The empathy was spent on the rioters. The bill went to women like these."
+    },
+    {
+     "text": "That's the pattern Saad warns about, and the October riots fit it: sympathy flowing to whoever claims to be oppressed, while the actual victims, French-born and immigrant alike, are told their shops don't matter."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapter",
+   "kicker": "Part 8",
+   "title": "What We Know",
+   "glyph": "scales",
+   "color": "#7bdc8c",
+   "dur": 3.4,
+   "sfx": "chime"
+  },
+  {
+   "type": "scene",
+   "id": "verdict",
+   "bg": {
+    "kind": "studio",
+    "pal": "teal"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "card",
+     "x": 230,
+     "y": 260,
+     "w": 330,
+     "h": 200,
+     "glyph": "star",
+     "title": "Supported",
+     "color": "#7bdc8c",
+     "anim": "pop",
+     "sfx": "pop"
+    },
+    {
+     "id": "v1a",
+     "type": "label",
+     "x": 230,
+     "y": 410,
+     "text": "ultra-left violence, under cover of students",
+     "color": "#a8f0b4",
+     "size": 18,
+     "in": 0,
+     "d": 1.4
+    },
+    {
+     "id": "v1b",
+     "type": "label",
+     "x": 230,
+     "y": 460,
+     "text": "Islamist entryism, documented by the State",
+     "color": "#a8f0b4",
+     "size": 18,
+     "in": 0,
+     "d": 3.6
+    },
+    {
+     "id": "v2",
+     "type": "card",
+     "x": 640,
+     "y": 260,
+     "w": 330,
+     "h": 200,
+     "glyph": "x",
+     "title": "Not supported",
+     "color": "#ff8fab",
+     "in": 1,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "v2a",
+     "type": "label",
+     "x": 640,
+     "y": 410,
+     "text": "\"immigrants as a group burned France\"",
+     "color": "#ffb3c1",
+     "size": 18,
+     "in": 1,
+     "d": 1.4
+    },
+    {
+     "id": "v2b",
+     "type": "label",
+     "x": 640,
+     "y": 460,
+     "text": "shops picked by religion (so far)",
+     "color": "#ffb3c1",
+     "size": 18,
+     "in": 1,
+     "d": 3.4
+    },
+    {
+     "id": "v3",
+     "type": "card",
+     "x": 1050,
+     "y": 260,
+     "w": 330,
+     "h": 200,
+     "glyph": "alarm",
+     "title": "Still unknown",
+     "color": "#ffd166",
+     "in": 2,
+     "d": 0.4,
+     "sfx": "pop"
+    },
+    {
+     "id": "v3a",
+     "type": "label",
+     "x": 1050,
+     "y": 410,
+     "text": "full profile of the rioters",
+     "color": "#ffe3a8",
+     "size": 18,
+     "in": 2,
+     "d": 1.4
+    },
+    {
+     "id": "v3b",
+     "type": "label",
+     "x": 1050,
+     "y": 460,
+     "text": "who organised the arson",
+     "color": "#ffe3a8",
+     "size": 18,
+     "in": 2,
+     "d": 3.0
+    }
+   ],
+   "lines": [
+    {
+     "text": "So, as of today, the scorecard. Supported: violent ultra-left groups and criminals used a real student protest as cover, adult political networks amplified it, and the French State has itself documented Islamist entryism in the same country."
+    },
+    {
+     "text": "Not supported by any evidence published so far: that immigrants as a group burned France, or that shops were picked by religion."
+    },
+    {
+     "text": "Still unknown: the full profile of the people arrested, and who organised the worst of the arson. France should publish that data. Refusing to count only feeds the rumours."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "lens",
+   "bg": {
+    "kind": "space",
+    "pal": "plum"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "hrt",
+     "type": "heart",
+     "x": 640,
+     "y": 300,
+     "size": 0.9,
+     "color": "#ff5a7a",
+     "heat": 0.2,
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "heat": 0.9,
+       "d": 0.4,
+       "t": 2
+      },
+      "2": {
+       "heat": 0.3,
+       "d": 0.4,
+       "t": 2
+      }
+     }
+    },
+    {
+     "id": "a",
+     "type": "label",
+     "x": 330,
+     "y": 520,
+     "text": "excusing violence as \"legitimate\"",
+     "color": "#ffb347",
+     "in": 0,
+     "d": 4.0
+    },
+    {
+     "id": "b",
+     "type": "label",
+     "x": 950,
+     "y": 520,
+     "text": "naming who actually did what",
+     "color": "#9fe3ff",
+     "in": 1,
+     "d": 0.6
+    },
+    {
+     "id": "attr",
+     "type": "cite",
+     "x": 640,
+     "y": 668,
+     "prefix": "",
+     "text": "Gad Saad's 'suicidal empathy', paraphrased; see LUMEN's book season",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Saad's warning cuts deepest here. A mayor calling violence legitimate, a politician calling Hamas's action legitimate, a student shrugging at ruined shops: that is empathy aimed at the wrong target."
+    },
+    {
+     "text": "The cure isn't the opposite mistake. It's counting honestly, naming who actually did what, and refusing to look away, whoever that turns out to be."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "outro",
+   "bg": {
+    "kind": "space",
+    "pal": "midnight"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.12
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -20
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "planet",
+     "type": "planet",
+     "x": 640,
+     "y": 1420,
+     "r": 960,
+     "color": "#2fb39a",
+     "land": "#7bdc8c",
+     "anim": "none"
+    },
+    {
+     "id": "pip",
+     "type": "pebble",
+     "x": 640,
+     "y": 462,
+     "size": 1.2,
+     "color": "#ffb347",
+     "mood": "calm",
+     "hold": "heart",
+     "anim": "rise"
+    },
+    {
+     "id": "q1",
+     "type": "label",
+     "x": 640,
+     "y": 140,
+     "text": "Who was actually arrested, and for what?",
+     "color": "#5ec8e5",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "q2",
+     "type": "label",
+     "x": 640,
+     "y": 205,
+     "text": "Who is excusing it, and why?",
+     "color": "#c792ea",
+     "in": 1,
+     "d": 2.6
+    },
+    {
+     "id": "q3",
+     "type": "label",
+     "x": 640,
+     "y": 270,
+     "text": "Is this video even real?",
+     "color": "#ffb347",
+     "in": 1,
+     "d": 5.0
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time a city burns, three questions are worth asking before anything else."
+    },
+    {
+     "text": "Who was actually arrested, and for what? Who is excusing it, and why? And is this video even real?"
+    },
+    {
+     "text": "The students wanted smaller classes. France got a town hall in ashes. The least we owe both is the truth about who lit the fire.",
+     "say": "The students wanted smaller classes. France got a town hall in ashes. The least we owe both is the truth about who lit the fire."
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "end",
+   "title": "LUMEN",
+   "dur": 9,
+   "credits": [
+    "Sources: Interior and Justice Ministries · PM S. Lecornu · Limoges prefecture (Oct 2026)",
+    "Asra Q. Nomani, Fox News Digital (9 and 20 Oct 2026) · AP Fact Focus (20 Oct)",
+    "NewsGuard · The Week · Reuters, AP, AFP, Al Jazeera, Le Figaro, Sud Radio, actu17",
+    "Figures as of 23 October 2026; they will change as courts report",
+    "Written, animated, voiced and scored with open-source tools"
+   ]
+  }
+ ]
+}
