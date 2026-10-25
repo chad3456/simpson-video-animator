@@ -40,6 +40,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e03-four-anna-members",
+    "dir": "explainer/episodes/new-medina-e03-four-anna-members/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E3",
+    "title": "Four-Anna Members",
+    "logline": "Shut out of power in 1937, the Muslim League took on Nehru's campaign to win Muslims with economics. Episode 3 follows the by-elections, the war over flags, songs and schools, a Sufi scholar's telegram and a bald parrot from Rumi, as a party 'neither dead nor alive' became a mass movement.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 2; AICC Papers, the Hindustan weekly, Thanawi's collected opinions and governors' letters as quoted there.",
+    "duration": 942.083,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
