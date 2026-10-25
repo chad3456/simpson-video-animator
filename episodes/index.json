@@ -120,6 +120,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e07-letters-to-madina",
+    "dir": "explainer/episodes/new-medina-e07-letters-to-madina/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E7",
+    "title": "Letters to Madina",
+    "logline": "In 1942 a pro-Congress Urdu paper in the small town of Bijnor asked its readers what they understood by Pakistan, and printed the answers. Episode 7 follows that debate: a critic who said mass migration was impossible, a defender who promised hostages on both sides, readers from Bombay to Raichur, and letters to Jinnah asking what Pakistan would mean for those left behind.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 6; the Madina debate and letters in the Quaid-i-Azam Papers as quoted there.",
+    "duration": 575.867,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
