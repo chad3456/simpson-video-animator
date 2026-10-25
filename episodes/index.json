@@ -180,6 +180,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e10-rivers-of-blood-and-after",
+    "dir": "explainer/episodes/new-medina-e10-rivers-of-blood-and-after/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E10",
+    "title": "Rivers of Blood, and After",
+    "logline": "The final episode. Partition comes to U.P.: the leaders leave, the Muslims who stay are asked to prove their loyalty, and Pakistan's founders argue over what their new Medina should be. From a Karachi funeral to a Raja's exile to a mohajir leader's apology in Delhi in 2004, and the series' verdict on the book.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), epilogue and conclusion; official reports, memoirs and newspapers as quoted there.",
+    "duration": 829.865,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
