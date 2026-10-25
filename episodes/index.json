@@ -100,6 +100,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e06-the-other-medina",
+    "dir": "explainer/episodes/new-medina-e06-the-other-medina/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E6",
+    "title": "The Other Medina",
+    "logline": "Some of Pakistan's most determined Muslim opponents were men of religion. Episode 6 follows three critiques from the Deobandi camp and its allies: Sajjad's 'fraud of Islamic Pakistan', Manglori's sums for the Muslims left behind, and Seoharvi's warning that Islam would shrink into geography, plus the ulama's own plan for a united India.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 5; the Urdu tracts and articles quoted there; Metcalf (2009) on Madani.",
+    "duration": 625.271,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
