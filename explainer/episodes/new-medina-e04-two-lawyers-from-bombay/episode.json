@@ -1,0 +1,2012 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E4",
+  "title": "Two Lawyers from Bombay",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "In 1944 Jinnah told Gandhi to read a book on Pakistan written by Dr B. R. Ambedkar. Episode 4 follows the public argument that gave the Pakistan demand its maps, numbers and hostages, the League's answer, the failed talks on Malabar Hill, and the case against the idea that Pakistan was only a bargaining counter.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 3; Ambedkar's Thoughts on Pakistan, MRT's volumes, the Gandhi-Jinnah correspondence and Jinnah's speeches as quoted there; Jalal (1985).",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Bombay.",
+    "17 September 1944."
+   ],
+   "sub": "A READING LIST",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "letters",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.1,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "BOMBAY · SEPTEMBER 1944",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "j",
+     "type": "doc",
+     "x": 400,
+     "y": 320,
+     "w": 480,
+     "h": 228,
+     "title": "M. A. JINNAH TO M. K. GANDHI",
+     "meta": "17 September 1944 (excerpt)",
+     "lines": [
+      "For the moment I would refer you to",
+      "two publications ... Dr. Ambedkar's book",
+      "and MRT's Nationalism in Conflict in India."
+     ],
+     "in": 0,
+     "d": 0.6,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.5,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 1,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 7.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "g",
+     "type": "doc",
+     "x": 900,
+     "y": 360,
+     "w": 440,
+     "h": 228,
+     "title": "M. K. GANDHI TO M. A. JINNAH",
+     "meta": "19 September 1944 (excerpt)",
+     "lines": [
+      "Dr. Ambedkar's thesis, while it is",
+      "ably written, has carried no",
+      "conviction to me."
+     ],
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": 1.5,
+     "sfx": "type",
+     "vol": 0.4
+    },
+    {
+     "id": "src66833",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Gandhi-Jinnah Talks: Text of Correspondence (Hindustan Times, 1944); via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In September 1944 the two most powerful men in Indian politics were meeting, day after day, at Jinnah's house on Malabar Hill. Gandhi asked how Muslims, most of them descended from converts, could be a separate nation. Jinnah replied with a reading list."
+    },
+    {
+     "text": "Gandhi read the first book within two days. Ably written, he wrote back, but it had carried no conviction to him."
+    },
+    {
+     "text": "That book was not by a Muslim, and not by a Leaguer. It was by the man who would one day draft India's constitution: Dr Bhimrao Ramji Ambedkar.",
+     "say": "That book was not by a Muslim, and not by a Leaguer. It was by the man who would one day draft India's constitution: Dr Bhimrao Ramji Um-bayd-kar."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 4 · Two Lawyers from Bombay",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "A Vague Idea?",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Lahore · March 1940"
+  },
+  {
+   "type": "scene",
+   "id": "vague",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t1",
+     "type": "tome",
+     "x": 330,
+     "y": 330,
+     "w": 170,
+     "h": 230,
+     "title": "The Sole Spokesman",
+     "author": "Ayesha Jalal · 1985",
+     "color": "#3a4a5a",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "jq",
+     "type": "cquote",
+     "x": 860,
+     "y": 230,
+     "w": 520,
+     "size": 24,
+     "text": "a host of shapes and forms,\nmost of them vague",
+     "by": "Jalal on what Pakistan meant to its supporters",
+     "in": 0,
+     "d": 3.6,
+     "anim": "fade"
+    },
+    {
+     "id": "j1",
+     "type": "typer",
+     "x": 860,
+     "y": 400,
+     "text": "the bargaining-counter thesis",
+     "in": 1,
+     "d": 0.6,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "j2",
+     "type": "typer",
+     "x": 860,
+     "y": 445,
+     "text": "Pakistan as leverage for parity in a united India",
+     "in": 1,
+     "d": 2.2,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "j3",
+     "type": "typer",
+     "x": 860,
+     "y": 530,
+     "text": "Dhulipala: in public, it was argued over in detail",
+     "in": 2,
+     "d": 0.8,
+     "size": 19,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src98044",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ayesha Jalal, The Sole Spokesman (1985); Asim Roy, Modern Asian Studies (1990); via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In March 1940, at Lahore, the Muslim League resolved that the Muslim-majority areas of the north-west and east should be grouped into independent states. That much historians agree on. Almost nothing after it."
+    },
+    {
+     "text": "For forty years after independence, the story was simple: Jinnah wanted Pakistan, and Jinnah got it. Then, in 1985, the historian Ayesha Jalal turned it upside down. Pakistan, she argued, was a bargaining counter: a deliberately vague demand that Jinnah used to win Muslims equality in a united India. Its followers imagined it in a host of shapes and forms, most of them vague."
+    },
+    {
+     "text": "Dhulipala's reply in this chapter is simple. Whatever happened at the negotiating table, out in public, from 1940 on, Pakistan was argued over in remarkable detail. And no one did more to give that argument shape than a second constitutional lawyer from Bombay.",
+     "say": "Doo-lee-paa-la's reply in this chapter is simple. Whatever happened at the negotiating table, out in public, from 1940 on, Pakistan was argued over in remarkable detail. And no one did more to give that argument shape than a second constitutional lawyer from Bombay."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "Thoughts on Pakistan",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bombay · 1940"
+  },
+  {
+   "type": "scene",
+   "id": "amb",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "a",
+     "type": "dossier",
+     "x": 330,
+     "y": 360,
+     "name": "B. R. Ambedkar",
+     "role": "Independent Labour Party;\nlater, constitution-maker",
+     "years": "1891 – 1956",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "none",
+     "glasses": true,
+     "tag": "NOT A LEAGUER",
+     "tagColor": "#3a6ea5"
+    },
+    {
+     "id": "bk",
+     "type": "tome",
+     "x": 860,
+     "y": 300,
+     "w": 190,
+     "h": 250,
+     "title": "Thoughts on Pakistan",
+     "author": "B. R. Ambedkar · 1941",
+     "color": "#2f4f6f",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 860,
+     "y": 480,
+     "text": "400 pages · 14 appendices · 3 maps",
+     "in": 1,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b2",
+     "type": "typer",
+     "x": 860,
+     "y": 520,
+     "text": "written in about four months",
+     "in": 1,
+     "d": 3.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src91050",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "B. R. Ambedkar, Thoughts on Pakistan (Bombay, 1941), preface; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Ambedkar was no friend of Congress, and no friend of Gandhi. He was the leader of India's untouchables, and he trusted neither caste Hindus nor the League to speak for his people.",
+     "say": "Um-bayd-kar was no friend of Congress, and no friend of Gandhi. He was the leader of India's untouchables, and he trusted neither caste Hindus nor the League to speak for his people."
+    },
+    {
+     "text": "While Congress answered Lahore with outrage, Ambedkar sat down and wrote. Within about four months he had a four-hundred-page study, with fourteen appendices of figures and three coloured maps showing where the new borders could run.",
+     "say": "While Congress answered Lahore with outrage, Um-bayd-kar sat down and wrote. Within about four months he had a four-hundred-page study, with fourteen appendices of figures and three coloured maps showing where the new borders could run."
+    },
+    {
+     "text": "Those who fought Pakistan with similes and metaphors, he wrote, should remember that nonsense is no less nonsense because it rhymes. His own aim was to explain, not to convert. He had, he said, an open mind, though not an empty mind."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "nation",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "n1",
+     "type": "typer",
+     "x": 640,
+     "y": 220,
+     "text": "What makes a nation?",
+     "in": 0,
+     "d": 0.4,
+     "size": 40,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 22
+    },
+    {
+     "id": "n2",
+     "type": "typer",
+     "x": 640,
+     "y": 320,
+     "text": "not race · not language · not territory",
+     "in": 0,
+     "d": 3.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "nq",
+     "type": "cquote",
+     "x": 640,
+     "y": 470,
+     "w": 780,
+     "size": 25,
+     "text": "a longing to belong to one's own group\nand a longing not to belong to any other group",
+     "by": "B. R. Ambedkar, Thoughts on Pakistan (1941)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src70664",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ambedkar, Thoughts on Pakistan, after Ernest Renan; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "His first question was the only one, he said, that really mattered: were India's Muslims a nation? Following the French thinker Ernest Renan, he dismissed race, language and territory. Nationality was a feeling."
+    },
+    {
+     "text": "A longing to belong to one's own group, he wrote, and a longing not to belong to any other. By that test, he concluded, Muslims had become a nation, and the map had handed them a homeland. The case for Pakistan took him only a few pages. The rest of the book was addressed to Hindus."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "A Safe Army, Not a Safe Border",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "The case made to Hindus"
+  },
+  {
+   "type": "scene",
+   "id": "money",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 360,
+     "y": 270,
+     "value": 0,
+     "size": 100,
+     "color": "#e3a857",
+     "label": "crore a year: Hindustan (his estimate)",
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "value": 120,
+       "d": 1.6,
+       "t": 2.2
+      }
+     }
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 920,
+     "y": 270,
+     "value": 0,
+     "size": 100,
+     "color": "#5fbf9a",
+     "label": "crore a year: the two Pakistans",
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "value": 36,
+       "d": 3.8,
+       "t": 2.2
+      }
+     }
+    },
+    {
+     "id": "aq",
+     "type": "cquote",
+     "x": 640,
+     "y": 490,
+     "w": 720,
+     "size": 28,
+     "text": "a safe army was better than a safe border",
+     "by": "B. R. Ambedkar, Thoughts on Pakistan",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src10318",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ambedkar, Thoughts on Pakistan (1941), from government revenue figures; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Ambedkar told Hindus they would lose nothing they needed. By his figures, Hindustan would keep about a hundred and twenty crore rupees of revenue. The two Pakistan states would have about thirty-six.",
+     "say": "Um-bayd-kar told Hindus they would lose nothing they needed. By his figures, Hindustan would keep about a hundred and twenty crore rupees of revenue. The two Pakistan states would have about thirty-six."
+    },
+    {
+     "text": "Then came his most notorious argument. The Indian army, he pointed out, recruited heavily from the Muslims of Punjab and the Frontier. In a war with a Muslim neighbour, he doubted, in language that is hard to read today, that such an army could be relied upon. Better, he concluded, a safe army than a safe border. Years later he admitted these fears might be imaginary."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ambmap",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 470,
+     "y": 372,
+     "k": 1.05,
+     "split": 0,
+     "und": 0.4,
+     "nb": 0.6,
+     "anim": "fade",
+     "labels": [
+      {
+       "text": "PUNJAB, DIVIDED",
+       "at": [
+        74.2,
+        31.9
+       ],
+       "size": 16
+      },
+      {
+       "text": "BENGAL, DIVIDED",
+       "at": [
+        89.2,
+        25.4
+       ],
+       "size": 16
+      }
+     ],
+     "labelsOn": 0,
+     "keys": {
+      "0": {
+       "split": 1,
+       "d": 1.0,
+       "t": 4.0,
+       "labelsOn": 1
+      }
+     }
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 1010,
+     "y": 200,
+     "text": "exclude 13 Hindu-majority districts of Punjab",
+     "in": 0,
+     "d": 1.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 1010,
+     "y": 240,
+     "text": "and 15 of Bengal",
+     "in": 0,
+     "d": 3.0,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "hq",
+     "type": "cquote",
+     "x": 1010,
+     "y": 410,
+     "w": 440,
+     "size": 23,
+     "text": "a scheme of communal peace\nthrough a system of\ncommunal hostages",
+     "by": "Ambedkar on the 'hostage population' theory",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "l3",
+     "type": "typer",
+     "x": 1010,
+     "y": 580,
+     "text": "modern borders shown, for orientation",
+     "in": 0,
+     "d": 5.0,
+     "size": 14,
+     "font": "type",
+     "color": "#8a7e68",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src58760",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ambedkar, Thoughts on Pakistan (1941), appendices and maps; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "His maps did something no politician had yet dared. Pakistan on the existing provincial borders, he warned, would trap millions of Hindus and Sikhs inside a Muslim state. So Punjab and Bengal should themselves be divided, leaving their Hindu-majority districts in India. Seven years before it happened, he drew partition close to how it would fall."
+    },
+    {
+     "text": "He also named the logic behind the League's provinces: Muslim majorities in some provinces would hold their Hindu minorities as a guarantee for Muslim minorities elsewhere. He called it, with contempt, a scheme of communal peace through a system of communal hostages."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "transfer",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t1",
+     "type": "typer",
+     "x": 640,
+     "y": 210,
+     "text": "'the population involved is inconsiderable'",
+     "in": 0,
+     "d": 0.6,
+     "size": 28,
+     "font": "serif",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "t2",
+     "type": "typer",
+     "x": 640,
+     "y": 270,
+     "text": "Ambedkar, 1941, on exchanging minorities, after Greece, Turkey and Bulgaria",
+     "in": 0,
+     "d": 3.6,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 360,
+     "y": 460,
+     "w": 520,
+     "claim": "Punjab and Bengal would have\nto be divided.",
+     "level": "strong",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Ambedkar, 1941. It happened in 1947."
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 920,
+     "y": 460,
+     "w": 560,
+     "claim": "Any population transfer would be\nsmall, voluntary and orderly.",
+     "level": "weak",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "1947: perhaps 15 million uprooted; deaths estimated from 200,000 to 2 million"
+    },
+    {
+     "id": "src39746",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ambedkar, Thoughts on Pakistan (1941) and Pakistan or the Partition of India (1945); via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "What of the people on the wrong side of the new lines? Greece, Turkey and Bulgaria had exchanged their minorities, Ambedkar noted. India could do the same, voluntarily and over an agreed period. The numbers, he wrote, were inconsiderable.",
+     "say": "What of the people on the wrong side of the new lines? Greece, Turkey and Bulgaria had exchanged their minorities, Um-bayd-kar noted. India could do the same, voluntarily and over an agreed period. The numbers, he wrote, were inconsiderable."
+    },
+    {
+     "text": "On the borders, he was right. Punjab and Bengal were divided in 1947, much as he had sketched."
+    },
+    {
+     "text": "On the people, he was catastrophically wrong. The transfer was neither small nor orderly. Perhaps fifteen million people were uprooted, and estimates of the dead run from two hundred thousand to two million. As Dhulipala notes, what Ambedkar did not foresee was the complete collapse of law and order.",
+     "say": "On the people, he was catastrophically wrong. The transfer was neither small nor orderly. Perhaps fifteen million people were uprooted, and estimates of the dead run from two hundred thousand to two million. As Doo-lee-paa-la notes, what Um-bayd-kar did not foresee was the complete collapse of law and order."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "The League Answers",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Delhi and Bombay · 1942"
+  },
+  {
+   "type": "scene",
+   "id": "press",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "paper",
+     "x": 400,
+     "y": 350,
+     "w": 420,
+     "h": 460,
+     "mast": "DAWN",
+     "date": "Delhi · 1942",
+     "head": "The case for\nPakistan",
+     "headSize": 36,
+     "sub": "edited by Pothan Joseph",
+     "cols": 3,
+     "rot": -1.5,
+     "anim": "rise"
+    },
+    {
+     "id": "mrt",
+     "type": "tome",
+     "x": 900,
+     "y": 310,
+     "w": 180,
+     "h": 240,
+     "title": "Pakistan and Muslim India",
+     "author": "MRT · Home Study Circle · 1942",
+     "color": "#2f6f5a",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "m1",
+     "type": "typer",
+     "x": 900,
+     "y": 490,
+     "text": "foreword by M. A. Jinnah, 24 December 1942",
+     "in": 1,
+     "d": 2.4,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "m2",
+     "type": "typer",
+     "x": 900,
+     "y": 530,
+     "text": "published from Jinnah's own Bombay address",
+     "in": 1,
+     "d": 4.0,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src54998",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Pothan Joseph, Looking Back (1950); M. S. Toosy, My Reminiscences of Quaid-i-Azam (1976); QA Papers; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Ambedkar's book set off a demand that Jinnah explain what he meant. So the League built a propaganda machine. Jinnah founded the English daily Dawn, and hired as its editor the legendary journalist Pothan Joseph, who said his new employer, though exacting, always inspired confidence.",
+     "say": "Um-bayd-kar's book set off a demand that Jinnah explain what he meant. So the League built a propaganda machine. Jinnah founded the English daily Dawn, and hired as its editor the legendary journalist Pothan Joseph, who said his new employer, though exacting, always inspired confidence."
+    },
+    {
+     "text": "Then came the League's direct answer to Ambedkar: two volumes of essays by a Punjabi journalist, M. S. Toosy, writing as MRT. Jinnah chose their titles, wrote their foreword, and had them published from his own house in Bombay.",
+     "say": "Then came the League's direct answer to Um-bayd-kar: two volumes of essays by a Punjabi journalist, M. S. Toosy, writing as MRT. Jinnah chose their titles, wrote their foreword, and had them published from his own house in Bombay."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "geobody",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "view": "wide",
+     "x": 700,
+     "y": 400,
+     "k": 1.25,
+     "split": 1,
+     "nb": 0.7,
+     "anim": "fade",
+     "pkColor": "#2f6f5a",
+     "cities": [
+      {
+       "name": "Karachi",
+       "color": "#5fbf9a"
+      },
+      {
+       "name": "Istanbul",
+       "note": "the lost Caliphate",
+       "color": "#d9b26a",
+       "left": true
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "1": {
+       "lit": 2,
+       "d": 0.6,
+       "t": 2.5
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 250,
+     "y": 520,
+     "w": 420,
+     "h": 230,
+     "anim": "fade"
+    },
+    {
+     "id": "g1",
+     "type": "typer",
+     "x": 250,
+     "y": 440,
+     "text": "twice the size of France",
+     "in": 0,
+     "d": 1.0,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g2",
+     "type": "typer",
+     "x": 250,
+     "y": 485,
+     "text": "as populous as Italy",
+     "in": 0,
+     "d": 2.4,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g3",
+     "type": "typer",
+     "x": 250,
+     "y": 530,
+     "text": "richer than Turkey, Egypt, Iran",
+     "in": 0,
+     "d": 3.8,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g4",
+     "type": "typer",
+     "x": 250,
+     "y": 595,
+     "text": "heir to the Ottoman role?",
+     "in": 1,
+     "d": 1.0,
+     "size": 20,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src41728",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "MRT, Pakistan and Muslim India (1942); Nationalism in Conflict in India (1942); via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Where Ambedkar had hinted that Pakistan would be poor and weak, MRT insisted it would be strong: twice the size of France, as populous as Italy, with revenues greater than Turkey's or Egypt's, and the soldiers of the so-called martial races.",
+     "say": "Where Um-bayd-kar had hinted that Pakistan would be poor and weak, MRT insisted it would be strong: twice the size of France, as populous as Italy, with revenues greater than Turkey's or Egypt's, and the soldiers of the so-called martial races."
+    },
+    {
+     "text": "And something larger crept in. After the First World War, India's Muslims had campaigned to save the Ottoman Caliphate. Now League writers began to picture Pakistan as its successor: the leading power of the Islamic world. Jinnah publicly denied any pan-Islamic design. Yet one journalist recalled him at Iqbal's grave in 1942, saying that Pakistan held the key to the liberation of the entire Islamic world.",
+     "say": "And something larger crept in. After the First World War, India's Muslims had campaigned to save the Ottoman Caliphate. Now League writers began to picture Pakistan as its successor: the leading power of the Islamic world. Jinnah publicly denied any pan-Islamic design. Yet one journalist recalled him at Ik-baal's grave in 1942, saying that Pakistan held the key to the liberation of the entire Islamic world."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "minority",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.06,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "jd",
+     "type": "doc",
+     "x": 400,
+     "y": 300,
+     "w": 500,
+     "h": 280,
+     "title": "M. A. JINNAH, JALANDHAR",
+     "meta": "15 November 1942 (excerpt)",
+     "lines": [
+      "Muslims in the United Provinces are",
+      "not a national group; they are scattered...",
+      "a sub-national group who cannot expect",
+      "anything more than what is due from any",
+      "civilized government to a minority."
+     ],
+     "in": 0,
+     "d": 0.6,
+     "anim": "rise",
+     "cps": 28,
+     "rot": -1,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 2,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 9.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "gq",
+     "type": "cquote",
+     "x": 920,
+     "y": 300,
+     "w": 460,
+     "size": 22,
+     "text": "if Britain in Gladstone's time\ncould intervene in Armenia ...\nwhy should it not be right for us?",
+     "by": "M. A. Jinnah on Muslims left in Hindustan",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "k1",
+     "type": "typer",
+     "x": 920,
+     "y": 500,
+     "text": "'not a counter for bargaining'",
+     "in": 2,
+     "d": 0.6,
+     "size": 20,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src55457",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Jamiluddin Ahmad (ed.), Speeches and Writings of Mr. Jinnah, vols 1-2; Pirzada, Foundations of Pakistan; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Here the chapter lands its hardest blow on the idea of a bargaining counter. That idea assumes Jinnah would never abandon the Muslims of provinces like U.P. But in public he said, in effect, that they were not a nation at all. They were scattered, a sub-national group, entitled only to what any civilised government owed a minority."
+    },
+    {
+     "text": "Their protection would come from outside. If Muslims in Hindustan were oppressed, Jinnah asked, why should Pakistan not intervene, as Gladstone's Britain had for the Armenians? It was the hostage theory, now from the League's own side."
+    },
+    {
+     "text": "And again and again, he denied that Pakistan was a bargaining counter. It was, he said, a matter of life and death."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "Malabar Hill",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "September 1944"
+  },
+  {
+   "type": "scene",
+   "id": "talks",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "g",
+     "type": "dossier",
+     "x": 220,
+     "y": 330,
+     "name": "M. K. Gandhi",
+     "role": "for the C. R. formula",
+     "years": "1869 – 1948",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "none",
+     "glasses": true,
+     "tag": "ONE NATION",
+     "tagColor": "#8a5a2a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "j",
+     "type": "dossier",
+     "x": 1060,
+     "y": 330,
+     "name": "M. A. Jinnah",
+     "role": "for the Lahore Resolution",
+     "years": "1876 – 1948",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "TWO NATIONS",
+     "tagColor": "#2f6f5a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "c1",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "plebiscite of all inhabitants",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c2",
+     "type": "typer",
+     "x": 640,
+     "y": 240,
+     "text": "district by district",
+     "in": 1,
+     "d": 1.8,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c3",
+     "type": "typer",
+     "x": 640,
+     "y": 280,
+     "text": "defence and foreign affairs in common",
+     "in": 1,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c4",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "'maimed and mutilated'",
+     "in": 2,
+     "d": 0.6,
+     "size": 20,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c5",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "a vote for Muslims only, on whole provinces",
+     "in": 2,
+     "d": 2.4,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src47733",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Gandhi-Jinnah Talks (1944); Jinnah-Gandhi Talks, foreword by Liaquat Ali Khan (1944); via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The September talks turned on a formula drafted by the Congress leader C. Rajagopalachari. Muslim-majority districts would be marked out. All their inhabitants would vote on separation. And defence, foreign affairs and trade would stay common.",
+     "say": "The September talks turned on a formula drafted by the Congress leader C. Raa-ja-go-paa-la-chaa-ree. Muslim-majority districts would be marked out. All their inhabitants would vote on separation. And defence, foreign affairs and trade would stay common."
+    },
+    {
+     "text": "Gandhi wrote that he could find no parallel in history for a body of converts and their descendants claiming to be a nation apart from the parent stock."
+    },
+    {
+     "text": "Jinnah wanted whole provinces, and a vote of Muslims alone. The formula, he said, would leave Pakistan maimed and mutilated, the husk without the grain. Rajagopalachari answered that a new state should not begin by keeping people from the ballot box because of their religion.",
+     "say": "Jinnah wanted whole provinces, and a vote of Muslims alone. The formula, he said, would leave Pakistan maimed and mutilated, the husk without the grain. Raa-ja-go-paa-la-chaa-ree answered that a new state should not begin by keeping people from the ballot box because of their religion."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "third",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "aq",
+     "type": "cquote",
+     "x": 640,
+     "y": 250,
+     "w": 760,
+     "size": 27,
+     "text": "did not meet each other with empty minds,\nbut ... neither had an open mind",
+     "by": "Ambedkar on Gandhi and Jinnah, October 1944",
+     "in": 0,
+     "d": 0.4,
+     "anim": "fade"
+    },
+    {
+     "id": "s1",
+     "type": "typer",
+     "x": 640,
+     "y": 420,
+     "text": "and a third party nobody asked:",
+     "in": 1,
+     "d": 0.6,
+     "size": 19,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s2",
+     "type": "typer",
+     "x": 640,
+     "y": 465,
+     "text": "the Scheduled Castes, who must consent in a referendum of their own",
+     "in": 1,
+     "d": 2.6,
+     "size": 19,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src34270",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Times of India, 4 October 1944; via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The talks collapsed. Ambedkar turned his own phrase on the two men. They had not met with empty minds, he said, but neither had an open mind.",
+     "say": "The talks collapsed. Um-bayd-kar turned his own phrase on the two men. They had not met with empty minds, he said, but neither had an open mind."
+    },
+    {
+     "text": "And he reminded both that there was a third party. Neither Gandhi nor Jinnah could carry India's untouchables into Hindustan or Pakistan without their consent, freely given, in a referendum of their own."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "The Philosopher of Pakistan",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "1945 · 1955"
+  },
+  {
+   "type": "scene",
+   "id": "philosopher",
+   "bg": {
+    "kind": "room",
+    "pal": "sepia"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b2",
+     "type": "tome",
+     "x": 330,
+     "y": 320,
+     "w": 180,
+     "h": 240,
+     "title": "Pakistan or the Partition of India",
+     "author": "B. R. Ambedkar · 1945",
+     "color": "#4a3a2a",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "p1",
+     "type": "typer",
+     "x": 880,
+     "y": 210,
+     "text": "1945: Pakistan 'unnecessary' for majority-province Muslims",
+     "in": 0,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p2",
+     "type": "typer",
+     "x": 880,
+     "y": 250,
+     "text": "'worse than useless' for the rest",
+     "in": 0,
+     "d": 4.4,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p3",
+     "type": "typer",
+     "x": 880,
+     "y": 290,
+     "text": "yet, if Muslims insist, it must be conceded",
+     "in": 0,
+     "d": 6.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "pq",
+     "type": "cquote",
+     "x": 880,
+     "y": 460,
+     "w": 520,
+     "size": 28,
+     "text": "I was the philosopher,\nso to say, of Pakistan.",
+     "by": "B. R. Ambedkar, Thoughts on Linguistic States (1955)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src74087",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ambedkar, Pakistan or the Partition of India (1945); Thoughts on Linguistic States (1955); via Dhulipala, ch. 3",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "By the 1945 edition, Ambedkar sounded more doubtful. Pakistan, he now wrote, was unnecessary for Muslims of the majority provinces, and worse than useless for those left outside it. A mixed party of Hindus and Muslims would do more good. And yet, if Muslims insisted on Pakistan, it must be conceded.",
+     "say": "By the 1945 edition, Um-bayd-kar sounded more doubtful. Pakistan, he now wrote, was unnecessary for Muslims of the majority provinces, and worse than useless for those left outside it. A mixed party of Hindus and Muslims would do more good. And yet, if Muslims insisted on Pakistan, it must be conceded."
+    },
+    {
+     "text": "Ten years later, after partition, he left no doubt. I was the philosopher, so to say, of Pakistan, he wrote, and he said he was glad India had been divided."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "chapterx",
+   "kicker": "Chapter Seven",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "Ambedkar's book shaped the public\ndebate on Pakistan.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Cited by Jinnah and read by Gandhi in their 1944 letters"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "In public, Pakistan was argued over\nin detail from 1940.",
+     "level": "partial",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Books, maps, figures; Jalal stresses vagueness at the negotiating table"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "Jinnah wanted a sovereign state,\nnot a bargaining counter.",
+     "level": "debated",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "His public words say so; Jalal reads his private moves differently"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "League propaganda reflected\nJinnah's real aims.",
+     "level": "contested",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "He wrote the foreword; critics call it a public face, not policy"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That Ambedkar's book shaped the debate: well supported. Jinnah cited it, and Gandhi read it within two days.",
+     "say": "So what holds up? That Um-bayd-kar's book shaped the debate: well supported. Jinnah cited it, and Gandhi read it within two days."
+    },
+    {
+     "text": "That Pakistan was argued over in public, in detail, from 1940: supported, with caveats. The books, the maps and the figures exist. Jalal's point concerns the negotiating table, and the two claims can both be true."
+    },
+    {
+     "text": "That Jinnah wanted a sovereign state and never a bargaining counter: debated. His public words support Dhulipala. Jalal reads his private moves, above all his acceptance of the Cabinet Mission plan in 1946, quite differently.",
+     "say": "That Jinnah wanted a sovereign state and never a bargaining counter: debated. His public words support Doo-lee-paa-la. Jalal reads his private moves, above all his acceptance of the Cabinet Mission plan in 1946, quite differently."
+    },
+    {
+     "text": "And that League propaganda reveals Jinnah's real aims: contested. He wrote its foreword. But propaganda is what a party says in public, and critics say that is not the same thing as policy."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 220,
+     "text": "Minorities as hostages",
+     "in": 0,
+     "d": 0.4,
+     "size": 42,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "tq",
+     "type": "cquote",
+     "x": 640,
+     "y": 380,
+     "w": 720,
+     "size": 23,
+     "text": "you think the fourteen crore Muslims\nof Pakistan will sit like cowards\nand do nothing?",
+     "by": "Salman Taseer to Shekhar Gupta, 1993, as Gupta recalled it in 2011",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 560,
+     "text": "an idea from 1940 that outlived partition",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src16423",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Shekhar Gupta, 'This Death in Pakistan', Indian Express, 8 January 2011; cited in Dhulipala, ch. 3",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The hostage theory did not die in 1947. In a footnote, Dhulipala recalls a story told by the Indian editor Shekhar Gupta. In 1993 the liberal Pakistani politician Salman Taseer asked him what would happen if Kashmir voted for Pakistan. Gupta said Indian Muslims might be victimised.",
+     "say": "The hostage theory did not die in 1947. In a footnote, Doo-lee-paa-la recalls a story told by the Indian editor Shekhar Gupta. In 1993 the liberal Pakistani politician Salman Taseer asked him what would happen if Kashmir voted for Pakistan. Gupta said Indian Muslims might be victimised."
+    },
+    {
+     "text": "Taseer rolled up his sleeve, in mock anger, and asked whether Gupta thought Pakistan's Muslims would sit like cowards and do nothing. In 2011, Taseer was shot dead by his own bodyguard for opposing Pakistan's blasphemy law."
+    },
+    {
+     "text": "Minorities treated as hostages to a neighbour's behaviour: Ambedkar named the idea in 1940. Today it still shapes politics wherever a border divides kin. That last observation is ours.",
+     "say": "Minorities treated as hostages to a neighbour's behaviour: Um-bayd-kar named the idea in 1940. Today it still shapes politics wherever a border divides kin. That last observation is ours."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 5 · The Ideal Goal",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "U.P. · 1940 – 1945",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: back to the United Provinces, where the League's leaders and local workers had to explain Pakistan to Muslims who would never live in it. Speeches, pamphlets, students, and the promise of a new Medina.",
+     "say": "Next time: back to the United Provinces, where the League's leaders and local workers had to explain Pakistan to Muslims who would never live in it. Speeches, pamphlets, students, and the promise of a new Madeena."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "B. R. Ambedkar, Thoughts on Pakistan (1941) · Pakistan or the Partition of India (1945)",
+    "MRT (M. S. Toosy), Pakistan and Muslim India · Nationalism in Conflict in India (1942)",
+    "Gandhi-Jinnah Talks: Text of Correspondence (1944)",
+    "Speeches and Writings of Mr. Jinnah, ed. Jamiluddin Ahmad · QA Papers, ed. Z. H. Zaidi",
+    "Pothan Joseph, Looking Back (1950) · Frank Moraes, Witness to an Era (1973)",
+    "",
+    "# Scholarship and reviews",
+    "Ayesha Jalal, The Sole Spokesman (1985) · Asim Roy, Modern Asian Studies (1990)",
+    "Dhananjay Keer, Dr Ambedkar: Life and Mission (1971)",
+    "Shekhar Gupta, 'This Death in Pakistan', Indian Express (2011)",
+    "Partition displacement and death estimates: standard ranges in the historical literature",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

@@ -6,6 +6,7 @@
   const W = 1280, H = 720, FONT = 'Nunito, system-ui, sans-serif';
   const INK = '#0d1330', WHITE = '#fffaf0';
   let EP, TL, SVG, SEGS = [], uid = 0;
+  const EXT = { BG: {}, CARDS: {}, post: [], base: '' };   // extension points (see cinema.js)
   const nid = p => p + (uid++);
 
   // ---------- math ----------
@@ -37,16 +38,16 @@
 
   // ---------- text measure ----------
   let mctx;
-  function textW(s, size, weight = 800) {
+  function textW(s, size, weight = 800, font = FONT) {
     if (!mctx) mctx = document.createElement('canvas').getContext('2d');
-    mctx.font = `${weight} ${size}px ${FONT}`;
+    mctx.font = `${weight} ${size}px ${font}`;
     return mctx.measureText(s).width;
   }
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   function text(s, x, y, size, o = {}) {
     const lines = String(s).split('\n'), lh = size * (o.lh || 1.12);
     const y0 = y - (lines.length - 1) * lh / 2;
-    return lines.map((l, i) => `<text x="${f1(x)}" y="${f1(y0 + i * lh)}" font-family="${FONT}" font-size="${size}" font-weight="${o.weight || 800}" fill="${o.fill || WHITE}" text-anchor="${o.anchor || 'middle'}" dominant-baseline="central"${o.ls ? ` letter-spacing="${o.ls}"` : ''}${o.op != null ? ` opacity="${o.op}"` : ''}>${esc(l)}</text>`).join('');
+    return lines.map((l, i) => `<text x="${f1(x)}" y="${f1(y0 + i * lh)}" font-family="${o.font || FONT}" font-size="${size}" font-weight="${o.weight || 800}" fill="${o.fill || WHITE}" text-anchor="${o.anchor || 'middle'}" dominant-baseline="central"${o.ls ? ` letter-spacing="${o.ls}"` : ''}${o.op != null ? ` opacity="${o.op}"` : ''}>${esc(l)}</text>`).join('');
   }
 
   // ---------- shapes ----------
@@ -104,6 +105,7 @@
   }
   function background(bg, T, cam) {
     const kind = (bg && bg.kind) || 'studio', P = pal(bg);
+    if (EXT.BG[kind]) return EXT.BG[kind](bg, T, cam, P);
     const [fill, def] = vgrad(P.top, P.bot);
     let s = def + `<rect x="-20" y="-20" width="${W + 40}" height="${H + 40}" fill="${fill}"/>`;
     if (kind === 'space') {
@@ -358,6 +360,7 @@
   // ---------- icon glyphs (unit size ~1, drawn white inside a badge) ----------
   const G = {
     heart: c => `<path d="${heartPath(0.62)}" fill="#fff" transform="translate(0 0.05)"/>`,
+    flag: c => `<path d="M-0.5 -0.75v1.5" stroke="#fff" stroke-width="0.1" stroke-linecap="round"/><path d="M-0.45 -0.7C-0.15 -0.82 0.1 -0.55 0.55 -0.66v0.62C0.1 0.06 -0.15 -0.22 -0.45 -0.1Z" fill="#fff"/>`,
     cross: c => `<path d="M-0.22 -0.7h0.44v0.48h0.48v0.44h-0.48v0.48h-0.44v-0.48h-0.48v-0.44h0.48Z" fill="#fff"/>`,
     dna: c => { let s = ''; for (let i = 0; i <= 8; i++) { const y = -0.75 + i * 0.19, x = Math.sin(i * 0.8) * 0.45; s += `<path d="M${f1(x * 100) / 100} ${y}L${f1(-x * 100) / 100} ${y}" stroke="#fff" stroke-width="0.07" opacity="0.7"/><circle cx="${x}" cy="${y}" r="0.09" fill="#fff"/><circle cx="${-x}" cy="${y}" r="0.09" fill="${tint(c, 0.6)}"/>`; } return s; },
     fruit: c => `<circle cx="0" cy="0.12" r="0.55" fill="#fff"/><path d="M0 -0.4q0.05 -0.25 0.25 -0.35" stroke="#fff" stroke-width="0.1" fill="none" stroke-linecap="round"/><ellipse cx="0.3" cy="-0.55" rx="0.22" ry="0.1" fill="${tint(c, 0.6)}"/>`,
@@ -793,7 +796,8 @@
     const c = g.seg, age = T - g.start, dur = g.end - g.start, out = clamp((g.end - T) / 0.45);
     const cam = { px: age * 6, py: 0 };
     let s = '';
-    if (c.style === 'chapter') {
+    if (EXT.CARDS[c.style]) s += EXT.CARDS[c.style](c, T, age, dur);
+    else if (c.style === 'chapter') {
       const col = c.color || '#5ec8e5';
       const [fill, def] = vgrad(shade(col, 0.82), shade(col, 0.6));
       s += def + `<rect width="${W}" height="${H}" fill="${fill}"/>` + glow(640, 300, 520, col, 0.35) + dust(T, 60, 'card' + c.id, tint(col, 0.6), 0.3, cam) + vignette(0.5);
@@ -878,8 +882,13 @@
     uid = 0;
     let g = SEGS[0];
     for (const x of SEGS) if (T >= x.start) g = x;
-    SVG.innerHTML = g.seg.type === 'card' ? drawCard(g, T) : drawScene(g, T);
+    EXT.frame = { T, cites: [], seg: g.seg };
+    const body = g.seg.type === 'card' ? drawCard(g, T) : drawScene(g, T);
+    SVG.innerHTML = body + EXT.post.map(fn => fn(T, g)).join('');
   }
 
-  window.Toon = { load, renderAt, get duration() { return TL ? TL.duration : 0; } };
+  Object.defineProperty(EXT, 'EP', { get: () => EP });
+  Object.assign(EXT, { DRAW, PAL, W, H, FONT, clamp, lerp, ease, easeOut, back, f1, hash, rng, rgb, hex, mix, shade, tint, textW, esc, text,
+    circ, ell, rrect, solid, glow, shadow, vgrad, vignette, stars, dust, hills, background, nid, icon, pebble, crowd, quote, label, stat });
+  window.Toon = { load, renderAt, ext: EXT, get duration() { return TL ? TL.duration : 0; } };
 })();

@@ -1,0 +1,1933 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E8",
+  "title": "The Shaikhul Islam",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "Not all the Deobandi ulama stood with Congress. Episode 8 follows Shabbir Ahmad Usmani, who broke with his colleagues, founded a pro-League party of scholars, and sold Pakistan to voters as the new Medina, with Jinnah as the ship's English captain and the ulama as its pilots.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 7; Usmani's speeches and the account of the 1945 Deoband meeting as quoted there.",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Deoband.",
+    "7 December 1945."
+   ],
+   "sub": "THREE AND A HALF HOURS",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "visit",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.08,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "DEOBAND · 7 DECEMBER 1945",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "u",
+     "type": "dossier",
+     "x": 300,
+     "y": 340,
+     "name": "Shabbir Ahmad Usmani",
+     "role": "the host",
+     "years": "1887 – 1949",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "glasses": true,
+     "tag": "FOR PAKISTAN",
+     "tagColor": "#2f6f5a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "m",
+     "type": "dossier",
+     "x": 640,
+     "y": 340,
+     "name": "Husain Ahmad Madani",
+     "role": "the guest",
+     "years": "1879 – 1957",
+     "in": 0,
+     "d": 6.0,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "tag": "AGAINST",
+     "tagColor": "#8a2a2a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "s",
+     "type": "dossier",
+     "x": 980,
+     "y": 340,
+     "name": "Hifzur Rahman Seoharvi",
+     "role": "his former student",
+     "years": "1901 – 1962",
+     "in": 0,
+     "d": 13.0,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "tag": "AGAINST",
+     "tagColor": "#8a2a2a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "src27309",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Account of the meeting in Usmani's papers, via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "On the seventh of December 1945, in the town of Deoband, a delegation called at the house of an elderly scholar. Among the guests were the most powerful clerics in Muslim India: Maulana Husain Ahmad Madani, Mufti Kifayatullah, and the host's own former student, Hifzur Rahman Seoharvi.",
+     "say": "On the seventh of December 1945, in the town of Day-oh-bund, a delegation called at the house of an elderly scholar. Among the guests were the most powerful clerics in Muslim India: Maulana Hu-sain Ah-mud Ma-da-nee, Mufti Kifayatullah, and the host's own former student, Hifzur Rahman Say-oh-haar-vee."
+    },
+    {
+     "text": "They had come to ask their old colleague one thing: to take back his support for Pakistan. They argued for three and a half hours. As they left, they pleaded with him at least to stay silent."
+    },
+    {
+     "text": "He told them he could not. His name was Shabbir Ahmad Usmani, and he was about to become the most important religious voice for Pakistan.",
+     "say": "He told them he could not. His name was Shub-beer Ah-mud Oos-maa-nee, and he was about to become the most important religious voice for Pakistan."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 8 · The Shaikhul Islam",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "A Split in Deoband",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Calcutta · October 1945"
+  },
+  {
+   "type": "scene",
+   "id": "usmani",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "u",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Shabbir Ahmad Usmani",
+     "role": "scholar of hadith, Deoband",
+     "years": "born Bijnor, 1887",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "glasses": true,
+     "tag": "SHAIKHUL ISLAM",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "u1",
+     "type": "typer",
+     "x": 870,
+     "y": 200,
+     "text": "son of a Deoband founding family",
+     "in": 0,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "u2",
+     "type": "typer",
+     "x": 870,
+     "y": 240,
+     "text": "a famed commentary on Sahih Muslim",
+     "in": 0,
+     "d": 3.8,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "u3",
+     "type": "typer",
+     "x": 870,
+     "y": 280,
+     "text": "finished his teacher's Quran translation",
+     "in": 0,
+     "d": 5.6,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "u4",
+     "type": "typer",
+     "x": 870,
+     "y": 380,
+     "text": "JAMIATUL ULAMA-I-ISLAM",
+     "in": 1,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "u5",
+     "type": "typer",
+     "x": 870,
+     "y": 420,
+     "text": "Calcutta, October 1945 · some 5,000 ulama",
+     "in": 1,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "u6",
+     "type": "typer",
+     "x": 870,
+     "y": 460,
+     "text": "against 'Gandhism, Communism' and secularism",
+     "in": 1,
+     "d": 4.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src9761",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Rizvi, History of the Dar al Uloom Deoband (1981); JUI resolutions, Calcutta 1945; via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Usmani was Deoband royalty. Born in Bijnor in 1887, his father had helped found the great seminary, one brother ran it and another led its fatwa department. He wrote a celebrated commentary on the hadith, and finished his revered teacher's translation of the Quran. His supporters liked to point out that the family had chosen him for that task, and not Madani.",
+     "say": "Oos-maa-nee was Day-oh-bund royalty. Born in Bij-nor in 1887, his father had helped found the great seminary, one brother ran it and another led its fatwa department. He wrote a celebrated commentary on the hadith, and finished his revered teacher's translation of the Quran. His supporters liked to point out that the family had chosen him for that task, and not Ma-da-nee."
+    },
+    {
+     "text": "In October 1945, as elections were called, his followers broke away from the Congress-allied Jamiat and founded a rival: the Jamiatul Ulama-i-Islam. Some five thousand scholars gathered in Calcutta. They declared against Gandhism, Communism and the godless secularism of Kemal Ataturk's Turkey, and pledged their love and sympathy to Jinnah.",
+     "say": "In October 1945, as elections were called, his followers broke away from the Congress-allied Jamiat and founded a rival: the Jam-ee-at ul Oo-la-maa ee Islam. Some five thousand scholars gathered in Calcutta. They declared against Gandhism, Communism and the godless secularism of Kemal Ataturk's Turkey, and pledged their love and sympathy to Jinnah."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "demands",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "d",
+     "type": "doc",
+     "x": 400,
+     "y": 320,
+     "w": 500,
+     "h": 280,
+     "title": "JAMIATUL ULAMA-I-ISLAM",
+     "meta": "Political resolutions, Calcutta 1945 (substance)",
+     "lines": [
+      "Restore the office of Shaikhul Islam.",
+      "A Grand Mufti over Islamic Qazi courts.",
+      "A Baitul Mal to administer zakat.",
+      "A Diwan us Shariat: no bill touching",
+      "the Shariah to pass without its approval."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 28,
+     "rot": -1.2,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 4,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 9.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "src96306",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "JUI resolutions (1945); The Pioneer, 21 September 1945; via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "They also said what they wanted in return. Since Pakistan would be an Islamic state, the scholars demanded an official Shaikhul Islam to head the community, a Grand Mufti over Islamic courts, a treasury for zakat, and a council of religious experts. No law touching the Shariah could pass without that council's approval.",
+     "say": "They also said what they wanted in return. Since Pakistan would be an Islamic state, the scholars demanded an official Shaikh ul Islam to head the community, a Grand Mufti over Islamic courts, a treasury for zakat, and a council of religious experts. No law touching the Shariah could pass without that council's approval."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "tour",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 706,
+     "y": 679,
+     "k": 3.0,
+     "split": 0,
+     "und": 0,
+     "nb": 0.8,
+     "up": 0.55,
+     "upLabel": false,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Azamgarh"
+      },
+      {
+       "name": "Bijnor"
+      },
+      {
+       "name": "Lucknow"
+      },
+      {
+       "name": "Kanpur"
+      },
+      {
+       "at": [
+        78.57,
+        25.45
+       ],
+       "name": "Jhansi"
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 5,
+       "d": 4.0,
+       "t": 3.0
+      }
+     }
+    },
+    {
+     "id": "t1",
+     "type": "typer",
+     "x": 960,
+     "y": 230,
+     "text": "24 maulanas · 5 touring groups",
+     "in": 0,
+     "d": 1.0,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src42197",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "The Pioneer, 21 September 1945; via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Even before the new party existed, the League had organised twenty-four maulanas from U.P. into five touring groups, each assigned its districts, from Azamgarh in the east to Jhansi in the south. Their only instruction: preach Pakistan as Muslims' birthright, and leave local quarrels alone."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "The New Medina",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Election speeches · 1945 – 1946"
+  },
+  {
+   "type": "scene",
+   "id": "medina",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "view": "wide",
+     "x": 640,
+     "y": 380,
+     "k": 1.25,
+     "split": 1,
+     "nb": 0.7,
+     "anim": "fade",
+     "pkColor": "#2f6f5a",
+     "cities": [
+      {
+       "name": "Mecca",
+       "color": "#e8cfa0",
+       "left": true
+      },
+      {
+       "name": "Medina",
+       "color": "#5fbf9a",
+       "left": true,
+       "note": "622: the Hijra"
+      },
+      {
+       "name": "Lahore",
+       "color": "#5fbf9a",
+       "left": true
+      },
+      {
+       "name": "Lucknow",
+       "color": "#d9b26a"
+      }
+     ],
+     "arcs": [
+      {
+       "from": "Mecca",
+       "to": "Medina",
+       "bend": 0.6
+      },
+      {
+       "from": "Lucknow",
+       "to": "Lahore",
+       "bend": 0.5
+      }
+     ],
+     "arcDraw": [
+      0,
+      0
+     ],
+     "keys": {
+      "0": {
+       "arcDraw": [
+        1,
+        0
+       ],
+       "d": 3.0,
+       "t": 3.0
+      },
+      "1": {
+       "arcDraw": [
+        1,
+        1
+       ],
+       "d": 3.0,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 1040,
+     "y": 540,
+     "w": 420,
+     "h": 170,
+     "anim": "fade",
+     "in": 1,
+     "d": 6.0
+    },
+    {
+     "id": "q1",
+     "type": "typer",
+     "x": 1040,
+     "y": 510,
+     "text": "muhajirin from U.P.",
+     "in": 1,
+     "d": 6.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q2",
+     "type": "typer",
+     "x": 1040,
+     "y": 550,
+     "text": "ansar of the Pakistan provinces",
+     "in": 1,
+     "d": 7.6,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src18648",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Usmani, Hamara Pakistan (Lahore, 1946) and Khutbat-i-Usmani; via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In speech after speech Usmani used Pakistan and Medina almost as one word. The Prophet, he said, had not built the first Pakistan in his native Mecca, where he was persecuted. He migrated to Medina, where Muslims could live their faith freely. In an undivided India, where Hindus would always rule the centre, no Medina was possible.",
+     "say": "In speech after speech Oos-maa-nee used Pakistan and Madeena almost as one word. The Prophet, he said, had not built the first Pakistan in his native Mecca, where he was persecuted. He migrated to Madeena, where Muslims could live their faith freely. In an undivided India, where Hindus would always rule the centre, no Madeena was possible."
+    },
+    {
+     "text": "In Medina the migrants from Mecca, the muhajirin, built the new state with the local helpers, the ansar. Now, he said, the Muslims of U.P. were the muhajirin, working with the Muslims of Punjab and Bengal, though they knew their own homes would lie outside.",
+     "say": "In Madeena the migrants from Mecca, the mo-haa-jirin, built the new state with the local helpers, the ansar. Now, he said, the Muslims of U.P. were the mo-haa-jirin, working with the Muslims of Punjab and Bengal, though they knew their own homes would lie outside."
+    },
+    {
+     "text": "And just as Medina became the base from which Islam won all of Arabia, Pakistan, he told his listeners, would one day turn the whole of Hindustan into Pakistan.",
+     "say": "And just as Madeena became the base from which Islam won all of Arabia, Pakistan, he told his listeners, would one day turn the whole of Hindustan into Pakistan."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "Captain and Pilot",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Lucknow · June 1946"
+  },
+  {
+   "type": "scene",
+   "id": "gama",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "g0",
+     "type": "typer",
+     "x": 360,
+     "y": 190,
+     "text": "THE WRESTLER",
+     "in": 0,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "g1",
+     "type": "typer",
+     "x": 360,
+     "y": 240,
+     "text": "Zbyszko came to India.",
+     "in": 0,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g2",
+     "type": "typer",
+     "x": 360,
+     "y": 275,
+     "text": "India sent Gama, not Gandhi,",
+     "in": 0,
+     "d": 3.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g3",
+     "type": "typer",
+     "x": 360,
+     "y": 310,
+     "text": "not Madani, not me.",
+     "in": 0,
+     "d": 5.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g4",
+     "type": "typer",
+     "x": 360,
+     "y": 370,
+     "text": "Jinnah: the expert in his field",
+     "in": 0,
+     "d": 7.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p0",
+     "type": "typer",
+     "x": 920,
+     "y": 190,
+     "text": "THE PILOT",
+     "in": 1,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "p1",
+     "type": "typer",
+     "x": 920,
+     "y": 240,
+     "text": "An English captain sails the Haj ship",
+     "in": 1,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p2",
+     "type": "typer",
+     "x": 920,
+     "y": 275,
+     "text": "but stops short of Jeddah's reefs.",
+     "in": 1,
+     "d": 3.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p3",
+     "type": "typer",
+     "x": 920,
+     "y": 310,
+     "text": "An Arab pilot takes her in.",
+     "in": 1,
+     "d": 5.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p4",
+     "type": "typer",
+     "x": 920,
+     "y": 370,
+     "text": "the ulama: the pilots of Pakistan",
+     "in": 1,
+     "d": 7.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 520,
+     "w": 620,
+     "size": 23,
+     "text": "the League made us ek (one);\nnow we must become nek (virtuous)",
+     "by": "Usmani, as Dhulipala paraphrases him",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src18667",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Usmani, speech in Lucknow, Sidq, 5 June 1946; via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "But why should a pious scholar follow a westernised lawyer? Usmani answered with two images. When the European wrestler Zbyszko came to India, nobody sent Gandhi or Madani, or Usmani, to fight him. They sent the great Gama, an expert. In constitutional battles, Jinnah was the Gama of Muslim India.",
+     "say": "But why should a pious scholar follow a westernised lawyer? Oos-maa-nee answered with two images. When the European wrestler Zbyszko came to India, nobody sent Gandhi or Ma-da-nee, or Oos-maa-nee, to fight him. They sent the great Gama, an expert. In constitutional battles, Jinnah was the Gama of Muslim India."
+    },
+    {
+     "text": "The second image showed where Jinnah's role ended. Haj ships sailed from India under English captains. But near Jeddah, with its reefs and shoals, an Arab pilot came aboard to bring the ship to port. Jinnah was the English captain. When it came to building an Islamic state, the ulama would be the pilots.",
+     "say": "The second image showed where Jinnah's role ended. Haj ships sailed from India under English captains. But near Jeddah, with its reefs and shoals, an Arab pilot came aboard to bring the ship to port. Jinnah was the English captain. When it came to building an Islamic state, the oo-la-maa would be the pilots."
+    },
+    {
+     "text": "And the people had a part too. The League had made Muslims one, ek, he said, with a pun in Urdu. Now they had to become nek: virtuous."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "sinner",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 210,
+     "text": "a sinner, but incorruptible",
+     "in": 0,
+     "d": 0.6,
+     "size": 36,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 18
+    },
+    {
+     "id": "s1",
+     "type": "typer",
+     "x": 640,
+     "y": 300,
+     "text": "Usmani on Jinnah, paraphrased",
+     "in": 0,
+     "d": 3.6,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s2",
+     "type": "typer",
+     "x": 640,
+     "y": 390,
+     "text": "the Islamic state would come 'gradually'",
+     "in": 1,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s3",
+     "type": "typer",
+     "x": 640,
+     "y": 430,
+     "text": "'like the night withdraws slowly'",
+     "in": 1,
+     "d": 2.6,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s4",
+     "type": "typer",
+     "x": 640,
+     "y": 530,
+     "text": "Dhulipala: no fundamentalist, but a pragmatist",
+     "in": 2,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src81284",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Usmani, Khutbat-i-Usmani; Hamara Pakistan (1946); via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Usmani did not pretend the League's leaders were saints. He called Jinnah a fasiq, a sinner, and admitted that many League men were far from pious. He said it was a medieval jurist's ruling that settled his mind: even Muslims you condemn deserve your support when they fight unbelievers. But Jinnah, he insisted, was incorruptible. He could not be bought.",
+     "say": "Oos-maa-nee did not pretend the League's leaders were saints. He called Jinnah a fasiq, a sinner, and admitted that many League men were far from pious. He said it was a medieval jurist's ruling that settled his mind: even Muslims you condemn deserve your support when they fight unbelievers. But Jinnah, he insisted, was incorruptible. He could not be bought."
+    },
+    {
+     "text": "Nor would the Islamic state arrive overnight. It would come gradually, he said, just as night withdraws slowly and the daylight spreads."
+    },
+    {
+     "text": "Dhulipala reads this as the key to the alliance. Usmani was no literalist. He was a pragmatist, and his gradualism left room for the League's modernists and the ulama to share one cause, and argue later.",
+     "say": "Doo-lee-paa-la reads this as the key to the alliance. Oos-maa-nee was no literalist. He was a pragmatist, and his gradualism left room for the League's modernists and the oo-la-maa to share one cause, and argue later."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "The Caliph's White Horses",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Promises to the minority provinces"
+  },
+  {
+   "type": "scene",
+   "id": "horses",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h0",
+     "type": "typer",
+     "x": 640,
+     "y": 170,
+     "text": "A LEGEND USMANI TOLD",
+     "in": 0,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 220,
+     "text": "A Byzantine soldier strikes an old Muslim woman.",
+     "in": 0,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 640,
+     "y": 255,
+     "text": "'Will your Caliph come on a white horse?'",
+     "in": 0,
+     "d": 4.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 290,
+     "text": "The Caliph al-Mu'tasim buys every white horse, and comes.",
+     "in": 0,
+     "d": 6.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 450,
+     "w": 720,
+     "size": 22,
+     "text": "don't you think the Hindus are worried\nabout their 3 crore Hindu minority in Pakistan?",
+     "by": "Usmani, Hamara Pakistan (1946)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "h4",
+     "type": "typer",
+     "x": 640,
+     "y": 580,
+     "text": "the hostage theory, now with a legend attached",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src65218",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Usmani, Hamara Pakistan (1946); via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "To Muslims who would stay in Hindustan, Usmani told an old legend. When a Christian soldier in Byzantium slapped an elderly Muslim woman, he mocked her: would her Caliph come riding on a white horse to avenge her? Word reached Baghdad. The Caliph al-Mu'tasim bought up every white horse he could find, raised an army, won his war, and delivered the soldier to the old woman's feet.",
+     "say": "To Muslims who would stay in Hindustan, Oos-maa-nee told an old legend. When a Christian soldier in Byzantium slapped an elderly Muslim woman, he mocked her: would her Caliph come riding on a white horse to avenge her? Word reached Baghdad. The Caliph al-Mu'tasim bought up every white horse he could find, raised an army, won his war, and delivered the soldier to the old woman's feet."
+    },
+    {
+     "text": "A powerful Pakistan, Usmani promised, would do the same. Nobody would dare molest Muslims in Hindustan. Don't you think, he asked, that the Hindus are worried about their own three crore minority in Pakistan?",
+     "say": "A powerful Pakistan, Oos-maa-nee promised, would do the same. Nobody would dare molest Muslims in Hindustan. Don't you think, he asked, that the Hindus are worried about their own three crore minority in Pakistan?"
+    },
+    {
+     "text": "It was the hostage theory again, now dressed in the robes of Islamic history."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "boast",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 640,
+     "y": 190,
+     "text": "rivers diverted, as at Panama",
+     "in": 0,
+     "d": 1.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b2",
+     "type": "typer",
+     "x": 640,
+     "y": 230,
+     "text": "Calcutta's trade, Karachi's oil routes",
+     "in": 0,
+     "d": 3.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 360,
+     "w": 640,
+     "size": 30,
+     "text": "What will then happen to the Hindu!",
+     "by": "Usmani on Pakistan's trade, 1946",
+     "in": 0,
+     "d": 6.0,
+     "anim": "fade"
+    },
+    {
+     "id": "b3",
+     "type": "typer",
+     "x": 640,
+     "y": 500,
+     "text": "and if Russia invades? point it to the railway line to India",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src49449",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Usmani, Hamara Pakistan (1946); speech at Peshawar, 1947; via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "He also made the worldly case, and he made it big. Punjab could become the greatest wheat producer on earth. The Ganga and Yamuna could be diverted into Pakistan's rivers, as American engineers had moved rivers to build the Panama Canal. Calcutta, which he expected Pakistan to get, would carry the trade of Asia. What, he asked, will then happen to the Hindu!"
+    },
+    {
+     "text": "And when a Congress-minded friend asked how a poor Pakistan would resist a Russian invasion, Usmani said he would tell the Russians that Pakistan was poor, and point them down the railway line to India, where the money was.",
+     "say": "And when a Congress-minded friend asked how a poor Pakistan would resist a Russian invasion, Oos-maa-nee said he would tell the Russians that Pakistan was poor, and point them down the railway line to India, where the money was."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "Three and a Half Hours",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Deoband · 7 December 1945"
+  },
+  {
+   "type": "scene",
+   "id": "debate",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 360,
+     "y": 260,
+     "value": 0,
+     "suffix": "%",
+     "size": 100,
+     "color": "#5fbf9a",
+     "label": "Muslims in one Pakistan, by Usmani's sums",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "value": 70,
+       "d": 1.4,
+       "t": 6.0
+      }
+     }
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 920,
+     "y": 260,
+     "value": 0,
+     "suffix": "%",
+     "size": 100,
+     "color": "#e3a857",
+     "label": "Muslim seats under the Jamiat plan",
+     "in": 0,
+     "d": 8.0,
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "value": 45,
+       "d": 1.4,
+       "t": 8.4
+      }
+     }
+    },
+    {
+     "id": "d1",
+     "type": "typer",
+     "x": 640,
+     "y": 420,
+     "text": "'Why do Hindus oppose Pakistan, if it only hurts Muslims?'",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "d2",
+     "type": "typer",
+     "x": 640,
+     "y": 470,
+     "text": "Madani reads an Englishman's essay: Pakistan is a British idea",
+     "in": 2,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "d3",
+     "type": "typer",
+     "x": 640,
+     "y": 510,
+     "text": "Usmani: Britain divides, or unites, as it suits Britain",
+     "in": 2,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src50595",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Account of the meeting of 7 December 1945, via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Back to that afternoon in Deoband. Seoharvi argued that Hindus in Punjab and Bengal were too strong for a Muslim government. Usmani asked: would there be six Pakistans, or one? One, Seoharvi agreed. Then count it as one, said Usmani: about seventy per cent Muslim. Was that not better than the forty-five per cent of seats the Jamiat's own plan offered Muslims in a united India?",
+     "say": "Back to that afternoon in Day-oh-bund. Say-oh-haar-vee argued that Hindus in Punjab and Bengal were too strong for a Muslim government. Oos-maa-nee asked: would there be six Pakistans, or one? One, Say-oh-haar-vee agreed. Then count it as one, said Oos-maa-nee: about seventy per cent Muslim. Was that not better than the forty-five per cent of seats the Jamiat's own plan offered Muslims in a united India?"
+    },
+    {
+     "text": "Then he asked the question that, by his own account, left his guests without an answer. If Pakistan was so bad for Muslims and so good for Hindus, why were Hindus so bitterly against it?"
+    },
+    {
+     "text": "Madani, silent until then, took out an essay by an Englishman recommending partition, and read it aloud. Pakistan was a British idea. Usmani replied that Britain divided countries or stitched them together as it suited Britain. It had broken up the Ottoman lands, and was now assembling the Arab League.",
+     "say": "Ma-da-nee, silent until then, took out an essay by an Englishman recommending partition, and read it aloud. Pakistan was a British idea. Oos-maa-nee replied that Britain divided countries or stitched them together as it suited Britain. It had broken up the Ottoman lands, and was now assembling the Arab League."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "posters",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "doc",
+     "x": 420,
+     "y": 310,
+     "w": 480,
+     "h": 254,
+     "title": "ON THE WALLS OF THE DARUL ULOOM",
+     "meta": "as Usmani described it",
+     "lines": [
+      "Posters comparing him to Abu Jahal,",
+      "the Prophet's arch-enemy.",
+      "Threats to kill him.",
+      "Filthy letters left at his door."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.5,
+     "sfx": "type",
+     "vol": 0.4
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 920,
+     "y": 290,
+     "w": 440,
+     "size": 22,
+     "text": "none of us ever softened\nwhile arguing theology",
+     "by": "Usmani, as the meeting ended; everyone laughed",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 920,
+     "y": 460,
+     "text": "'stay silent' · 'I cannot'",
+     "in": 2,
+     "d": 0.6,
+     "size": 20,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src50595",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Account of the meeting of 7 December 1945, via Dhulipala, ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "It turned personal. Usmani's guests complained of Aligarh students who had insulted Madani. Usmani said he had condemned that. But at Deoband itself, he said, students taught by his own former pupils had put up posters comparing him to Abu Jahal, the Prophet's arch-enemy, sent him death threats, and left obscene letters at his door. None of his visitors had said a word.",
+     "say": "It turned personal. Oos-maa-nee's guests complained of Ali-gur students who had insulted Ma-da-nee. Oos-maa-nee said he had condemned that. But at Day-oh-bund itself, he said, students taught by his own former pupils had put up posters comparing him to Abu Jahal, the Prophet's arch-enemy, sent him death threats, and left obscene letters at his door. None of his visitors had said a word."
+    },
+    {
+     "text": "Still, the old scholars had known each other for decades. When one complained that Usmani's statements left no room for anyone else, he replied that none of them had ever softened while arguing theology. Everyone laughed.",
+     "say": "Still, the old scholars had known each other for decades. When one complained that Oos-maa-nee's statements left no room for anyone else, he replied that none of them had ever softened while arguing theology. Everyone laughed."
+    },
+    {
+     "text": "Then came the plea to stay silent, and the refusal. Within weeks Usmani was president of the new party, campaigning across India.",
+     "say": "Then came the plea to stay silent, and the refusal. Within weeks Oos-maa-nee was president of the new party, campaigning across India."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "A major group of Deobandi ulama\ncampaigned for Pakistan.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "The JUI, Usmani's speeches, the League's touring maulanas"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "The ulama were decisive in the\nLeague's 1946 victory.",
+     "level": "debated",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Dhulipala stresses them; others stress landlords, students, organisation"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "Usmani's 'pilot' foreshadowed\nKhomeini's rule of the jurist.",
+     "level": "contested",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Dhulipala floats the parallel; no evidence of direct influence"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "Pakistan would win Calcutta\nand Asia's trade.",
+     "level": "weak",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Calcutta went to India in 1947"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That a major group of Deobandi scholars campaigned for Pakistan, against the image of the ulama as Congress's natural allies: well supported.",
+     "say": "So what holds up? That a major group of Day-oh-bun-dee scholars campaigned for Pakistan, against the image of the oo-la-maa as Congress's natural allies: well supported."
+    },
+    {
+     "text": "That the ulama were decisive in the League's 1946 victory, the claim we met in episode one: debated. Dhulipala gives them real weight. Other historians put more stress on landlords, students and the League's own machine. Our next episode looks at the vote itself.",
+     "say": "That the oo-la-maa were decisive in the League's 1946 victory, the claim we met in episode one: debated. Doo-lee-paa-la gives them real weight. Other historians put more stress on landlords, students and the League's own machine. Our next episode looks at the vote itself."
+    },
+    {
+     "text": "That Usmani's captain and pilot foreshadowed the rule of the jurist in Khomeini's Iran: contested. Dhulipala floats the parallel as a question for future research, not a finding.",
+     "say": "That Oos-maa-nee's captain and pilot foreshadowed the rule of the jurist in Khomeini's Iran: contested. Doo-lee-paa-la floats the parallel as a question for future research, not a finding."
+    },
+    {
+     "text": "And that Pakistan would win Calcutta and the trade of Asia: weak. Calcutta went to India."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "Who steers the ship?",
+     "in": 0,
+     "d": 0.4,
+     "size": 42,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 340,
+     "w": 680,
+     "size": 22,
+     "text": "Pakistan wants to become the lighthouse\nshowing a beacon of light",
+     "by": "Usmani in Pakistan's Constituent Assembly, March 1949",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 640,
+     "y": 470,
+     "text": "September 1948: he leads the prayers at Jinnah's funeral",
+     "in": 2,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 510,
+     "text": "March 1949: the Objectives Resolution passes",
+     "in": 2,
+     "d": 2.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h4",
+     "type": "typer",
+     "x": 640,
+     "y": 550,
+     "text": "December 1949: Usmani dies",
+     "in": 2,
+     "d": 4.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src43851",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Usmani, Roshni ka Minar (Multan, 1950); via Dhulipala, ch. 7",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The English captain did not live long enough to be relieved. When Jinnah died in September 1948, it was Usmani who led the prayers at his funeral.",
+     "say": "The English captain did not live long enough to be relieved. When Jinnah died in September 1948, it was Oos-maa-nee who led the prayers at his funeral."
+    },
+    {
+     "text": "Six months later Pakistan's Assembly passed the Objectives Resolution, declaring that sovereignty belongs to God. Usmani hailed it as the moment Pakistan became a lighthouse for a world lost in materialism. He died at the end of that year.",
+     "say": "Six months later Pakistan's Assembly passed the Objectives Resolution, declaring that sovereignty belongs to God. Oos-maa-nee hailed it as the moment Pakistan became a lighthouse for a world lost in materialism. He died at the end of that year."
+    },
+    {
+     "text": "His question outlived him: once the politicians have won the state, who steers it, the captain or the pilot? Pakistan has argued about it ever since, and so, in their own ways, have Iran, Egypt, Turkey and many others. That observation is ours."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 9 · The Referendum",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "U.P. · 1945 – 1946",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: the vote. The elections of 1945 and 1946 become a referendum on Pakistan, and the Muslims of U.P., who would never live in it, give the League their answer."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "Shabbir Ahmad Usmani, Hamara Pakistan (1946) · Khutbat-i-Usmani, ed. Sherkoti (1972) · Roshni ka Minar (1950)",
+    "Jamiatul Ulama-i-Islam resolutions, Calcutta (1945) · The Pioneer (1945) · Sidq (1946)",
+    "Sayyid Mahboob Rizvi, History of the Dar al Uloom Deoband (1981)",
+    "",
+    "# Scholarship and reviews",
+    "M. Qasim Zaman, Modern Islamic Thought in a Radical Age (2012)",
+    "Majid Khadduri, The Islamic Law of Nations: Shaybani's Siyar (1966)",
+    "Euben and Zaman (eds), Princeton Readings in Islamist Thought (2009)",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3133 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E3",
+  "title": "Four-Anna Members",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "Shut out of power in 1937, the Muslim League took on Nehru's campaign to win Muslims with economics. Episode 3 follows the by-elections, the war over flags, songs and schools, a Sufi scholar's telegram and a bald parrot from Rumi, as a party 'neither dead nor alive' became a mass movement.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 2; AICC Papers, the Hindustan weekly, Thanawi's collected opinions and governors' letters as quoted there.",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Thana Bhawan, United Provinces.",
+    "July 1937."
+   ],
+   "sub": "A TELEGRAM FROM A SUFI LODGE",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "wire",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.1,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "THANA BHAWAN · JULY 1937",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "w",
+     "type": "doc",
+     "x": 640,
+     "y": 330,
+     "w": 460,
+     "h": 202,
+     "title": "TELEGRAM",
+     "meta": "From Thana Bhawan to the voters of Bundelkhand (substance)",
+     "lines": [
+      "DO NOT VOTE",
+      "FOR THE CONGRESS."
+     ],
+     "in": 0,
+     "d": 0.8,
+     "anim": "rise",
+     "cps": 14,
+     "rot": -1.5,
+     "sfx": "type",
+     "vol": 0.5,
+     "hl": 1,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 0.4,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "src48664",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ahmad Saeed, Maulana Ashraf Ali Thanawi aur Tehrik-i-Azadi (1972); via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In July 1937 voters in Bundelkhand wrote to the most revered Deobandi scholar of his day, Maulana Ashraf Ali Thanawi, and asked him whom they should vote for in a by-election.",
+     "say": "In July 1937 voters in Bundelkhand wrote to the most revered Day-oh-bun-dee scholar of his day, Maulana Ush-ruf Ali Tha-naa-vee, and asked him whom they should vote for in a by-election."
+    },
+    {
+     "text": "Thanawi did not trust the Muslim League. He was not sure it would stand by Islam if it ever came to power. So a disciple suggested a way out. Do not tell them whom to vote for. Tell them whom not to vote for.",
+     "say": "Tha-naa-vee did not trust the Muslim League. He was not sure it would stand by Islam if it ever came to power. So a disciple suggested a way out. Do not tell them whom to vote for. Tell them whom not to vote for."
+    },
+    {
+     "text": "The wire that went out from his lodge said only this: do not vote for the Congress."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "hook",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 400,
+     "y": 300,
+     "value": 180,
+     "size": 110,
+     "color": "#8a7e68",
+     "label": "League votes, January 1937",
+     "anim": "fade"
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 880,
+     "y": 300,
+     "value": 0,
+     "size": 110,
+     "color": "#5fbf9a",
+     "label": "League votes, July 1937",
+     "in": 1,
+     "d": 0.3,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 2652,
+       "d": 0.6,
+       "t": 2.6
+      }
+     }
+    },
+    {
+     "id": "c",
+     "type": "typer",
+     "x": 640,
+     "y": 500,
+     "text": "same seat · six months apart · 60 per cent of the vote",
+     "in": 1,
+     "d": 3.6,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src28774",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Reeves, Graham and Goodman, Handbook to Elections in U.P. (1975); via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Six months earlier, the League's man had stood in a seat here and finished last, with a hundred and eighty votes."
+    },
+    {
+     "text": "Now the League won it with two thousand six hundred and fifty-two, sixty percent of the poll. Something had changed in the United Provinces, and it had changed fast."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 3 · Four-Anna Members",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "Mass Contact",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Allahabad · 1937"
+  },
+  {
+   "type": "scene",
+   "id": "nehru",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "n",
+     "type": "dossier",
+     "x": 330,
+     "y": 360,
+     "name": "Jawaharlal Nehru",
+     "role": "Congress campaigner",
+     "years": "1889 – 1964",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "topi",
+     "tag": "9 OF 9 LOST",
+     "tagColor": "#8a3a3a"
+    },
+    {
+     "id": "nq",
+     "type": "cquote",
+     "x": 880,
+     "y": 260,
+     "w": 560,
+     "size": 23,
+     "text": "My appeal will not be to the top leaders\nbut to the masses, with whom the\neconomic reality is bound to prevail.",
+     "by": "Nehru, 1937",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade"
+    },
+    {
+     "id": "n1",
+     "type": "typer",
+     "x": 880,
+     "y": 470,
+     "text": "poverty, not religion · bread, not pacts",
+     "in": 2,
+     "d": 1.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src137",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "S. Gopal (ed.), Selected Works of Jawaharlal Nehru, vols 7-8; via Dhulipala, ch. 2",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Congress had swept the province in 1937. But every one of its nine candidates for Muslim seats in the United Provinces had lost."
+    },
+    {
+     "text": "Nehru was undaunted. Muslims, he said, had simply not been asked. He would go over the heads of their 'reactionary' leaders, straight to the masses, with whom, he said, the economic reality was bound to prevail."
+    },
+    {
+     "text": "The communal problem, as Nehru saw it, was a quarrel among the middle classes over jobs and seats. The peasant cared about hunger. Give him bread, land and freedom, and religion would take care of itself."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ashraf",
+   "bg": {
+    "kind": "room",
+    "pal": "sepia"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "k",
+     "type": "dossier",
+     "x": 330,
+     "y": 350,
+     "name": "Kunwar Mohammad Ashraf",
+     "role": "runs the Muslim Mass\nContact Programme",
+     "years": "1903 – 1962",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "none",
+     "tag": "COMMUNIST",
+     "tagColor": "#8a2a2a"
+    },
+    {
+     "id": "k1",
+     "type": "typer",
+     "x": 880,
+     "y": 200,
+     "text": "a Meo from Alwar",
+     "in": 0,
+     "d": 2.0,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "cursor": false
+    },
+    {
+     "id": "k2",
+     "type": "typer",
+     "x": 880,
+     "y": 260,
+     "text": "once a devout Sufi novice",
+     "in": 1,
+     "d": 0.4,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "cursor": false
+    },
+    {
+     "id": "k3",
+     "type": "typer",
+     "x": 880,
+     "y": 320,
+     "text": "then a PhD in London, and Marx",
+     "in": 1,
+     "d": 6.0,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "cursor": false
+    },
+    {
+     "id": "kq",
+     "type": "cquote",
+     "x": 880,
+     "y": 480,
+     "w": 520,
+     "size": 24,
+     "text": "politics is essentially dictated\nby class interests",
+     "by": "K. M. Ashraf, letter, 15 July 1938",
+     "in": 2,
+     "d": 0.8,
+     "anim": "fade"
+    },
+    {
+     "id": "src44184",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Horst Kruger (ed.), Kunwar Mohammad Ashraf (1969); AICC Papers G-68/1937-38; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "To run the campaign Nehru picked K. M. Ashraf, a communist, and set him up at Anand Bhavan, the Nehru family home in Allahabad."
+    },
+    {
+     "text": "Ashraf had been a pious young man. As a student he began a forty-day Sufi ordeal of fasting and prayer. On the thirteenth night he dreamt he was drinking cheap wine with a Hindu friend. His teacher told him that spiritual progress was not his destiny. Years later, in London, he found Marx."
+    },
+    {
+     "text": "He did not believe Muslims were a political unit at all. Politics, he wrote, is essentially dictated by class interests. A Muslim peasant and a Muslim landlord were enemies, whatever they prayed."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "hindustan",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "paper",
+     "x": 420,
+     "y": 350,
+     "w": 420,
+     "h": 460,
+     "mast": "HINDUSTAN",
+     "date": "Allahabad · weekly · 1937",
+     "head": "Join the Congress,\nfour annas a year",
+     "headSize": 34,
+     "sub": "Muslim backwardness, explained in the language of Marx",
+     "cols": 3,
+     "rot": -1.5,
+     "anim": "rise"
+    },
+    {
+     "id": "f",
+     "type": "typer",
+     "x": 930,
+     "y": 240,
+     "text": "4 annas",
+     "in": 1,
+     "d": 0.4,
+     "size": 78,
+     "font": "bebas",
+     "color": "#e3a857",
+     "anim": "none",
+     "cursor": false,
+     "cps": 10
+    },
+    {
+     "id": "f1",
+     "type": "typer",
+     "x": 930,
+     "y": 310,
+     "text": "a year's Congress membership",
+     "in": 1,
+     "d": 1.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "f2",
+     "type": "typer",
+     "x": 930,
+     "y": 420,
+     "text": "Muslim culture? only the culture",
+     "in": 2,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "f3",
+     "type": "typer",
+     "x": 930,
+     "y": 455,
+     "text": "of a tiny feudal elite, said Ashraf",
+     "in": 2,
+     "d": 1.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src16560",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Hindustan (Allahabad), 1937-38, AICC Papers; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The campaign launched an Urdu weekly, Hindustan. Its writers explained Muslim backwardness in the language of Marx: feudal lords, a missing bourgeoisie, the betrayal of Sir Syed."
+    },
+    {
+     "text": "Its practical aim was to sign Muslims up as four-anna members of Congress, a quarter of a rupee a year."
+    },
+    {
+     "text": "Ashraf even denied there was any such thing as a single Muslim culture. What passed for it, he wrote, was the culture of a tiny feudal elite, and the masses had nothing to do with it. It was a bold argument. It would prove to be a gift to his opponents."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "Massacre Contact",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "The League answers · 1937"
+  },
+  {
+   "type": "scene",
+   "id": "iqbal",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.06,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "i",
+     "type": "doc",
+     "x": 420,
+     "y": 330,
+     "w": 470,
+     "h": 254,
+     "title": "SIR MUHAMMAD IQBAL TO M. A. JINNAH",
+     "meta": "1937 (excerpt)",
+     "lines": [
+      "It is absolutely necessary to tell",
+      "the world ... that the economic",
+      "problem is not the only problem",
+      "in the country."
+     ],
+     "in": 0,
+     "d": 0.6,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 2,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 6.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "jq",
+     "type": "cquote",
+     "x": 930,
+     "y": 300,
+     "w": 460,
+     "size": 28,
+     "text": "Do not be led away\nby the cries of dal-bhat.",
+     "by": "M. A. Jinnah, 1937",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "j2",
+     "type": "typer",
+     "x": 930,
+     "y": 470,
+     "text": "Congress mass contact = 'massacre contact'",
+     "in": 1,
+     "d": 4.2,
+     "size": 18,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src62545",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Iqbal to Jinnah, in Towards Freedom 1937, vol. 1; Jinnah's speeches; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The League saw the threat at once. The poet-philosopher Muhammad Iqbal wrote to Jinnah: the world must be told that the economic problem is not the only problem in the country. For Muslims, the cultural problem mattered more.",
+     "say": "The League saw the threat at once. The poet-philosopher Muhammad Ik-baal wrote to Jinnah: the world must be told that the economic problem is not the only problem in the country. For Muslims, the cultural problem mattered more."
+    },
+    {
+     "text": "Jinnah went further. He called the Congress campaign 'massacre contact', and told Muslims not to be led away by the cries of dal-bhat, rice and lentils. Bread was being offered in exchange for identity, he implied, and Muslims should refuse the trade."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "twoanna",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "c4",
+     "type": "typer",
+     "x": 380,
+     "y": 250,
+     "text": "4 annas",
+     "in": 0,
+     "d": 0.4,
+     "size": 72,
+     "font": "bebas",
+     "color": "#8a7e68",
+     "anim": "none",
+     "cursor": false,
+     "cps": 10
+    },
+    {
+     "id": "c4l",
+     "type": "typer",
+     "x": 380,
+     "y": 315,
+     "text": "Congress",
+     "in": 0,
+     "d": 1.2,
+     "size": 18,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c2",
+     "type": "typer",
+     "x": 900,
+     "y": 250,
+     "text": "2 annas",
+     "in": 0,
+     "d": 2.6,
+     "size": 72,
+     "font": "bebas",
+     "color": "#5fbf9a",
+     "anim": "none",
+     "cursor": false,
+     "cps": 10
+    },
+    {
+     "id": "c2l",
+     "type": "typer",
+     "x": 900,
+     "y": 315,
+     "text": "Muslim League",
+     "in": 0,
+     "d": 3.4,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g1",
+     "type": "typer",
+     "x": 640,
+     "y": 420,
+     "text": "goal: 'a free and independent' India, 'with a democratic form of government'",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g2",
+     "type": "typer",
+     "x": 640,
+     "y": 465,
+     "text": "town and tehsil branches elect district, then provincial Leagues",
+     "in": 1,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g3",
+     "type": "typer",
+     "x": 640,
+     "y": 540,
+     "text": "target: a quarter of U.P.'s adult Muslims, in three months",
+     "in": 2,
+     "d": 0.8,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src3717",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "AIML constitution, 1937; AICC Papers 16/1937; Towards Freedom 1937; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then the League copied its rival, and undercut it. Congress charged four annas a year. The League charged two."
+    },
+    {
+     "text": "It rewrote its constitution with elected branches from the tehsil up, and adopted a new goal: a free and independent India with a democratic form of government. On paper it now sounded as radical as Congress."
+    },
+    {
+     "text": "Its U.P. branch set itself a target of enrolling a quarter of the province's adult Muslims within three months."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "mahmudabad",
+   "bg": {
+    "kind": "void",
+    "pal": "jade"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "r",
+     "type": "dossier",
+     "x": 330,
+     "y": 350,
+     "name": "Raja of Mahmudabad",
+     "role": "League treasurer,\nfinancier, organiser",
+     "years": "1914 – 1973",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "KHADDAR-CLAD",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 880,
+     "y": 190,
+     "text": "Islamic socialism: 'the oldest socialist creed'",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r2",
+     "type": "typer",
+     "x": 880,
+     "y": 235,
+     "text": "minimum wages · fair rents · no usury",
+     "in": 1,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "rq",
+     "type": "cquote",
+     "x": 880,
+     "y": 420,
+     "w": 600,
+     "size": 21,
+     "text": "When the slogan 'Workers of the World Unite'\nis raised, nobody has a problem. When the\nslogan 'Muslims of the World Unite' is raised,\neverybody has a problem!",
+     "by": "An unnamed League supporter, 1938",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src75919",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Khutbat-i-Raja Sahab Mahmudabad (1997); Zulqarnain, 28 July 1938; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The League's answer to socialism was not to ignore it. It was to claim it. Its chief organiser in the province was the young Raja of Mahmudabad: a great landlord who wore homespun khaddar, a pious Shia, and one of the few men close to Jinnah."
+    },
+    {
+     "text": "Islam, the Raja told audiences, was the oldest socialist creed in the world. The Prophet had been an orphan and knew poverty. The League's programme promised minimum wages, fair rents and an end to usury."
+    },
+    {
+     "text": "One supporter put the League's case in a single line: when the slogan is 'Workers of the World Unite', nobody has a problem. When it is 'Muslims of the World Unite', everybody has a problem!"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "lucknow37",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 470,
+     "y": 372,
+     "k": 1.05,
+     "split": 0,
+     "und": 0.5,
+     "nb": 0.6,
+     "up": 1,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Lucknow",
+       "note": "League session, October 1937",
+       "pin": true,
+       "color": "#5fbf9a"
+      },
+      {
+       "name": "Lahore",
+       "note": "Sikandar Hayat Khan",
+       "left": true,
+       "color": "#7fb2d9"
+      },
+      {
+       "name": "Calcutta",
+       "note": "Fazlul Haq",
+       "color": "#7fb2d9"
+      }
+     ],
+     "upLabel": false,
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 1,
+       "d": 0.8,
+       "t": 1.2
+      },
+      "1": {
+       "lit": 3,
+       "d": 0.4,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 1010,
+     "y": 250,
+     "text": "the suit gives way",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 1010,
+     "y": 290,
+     "text": "to sherwani and fur cap",
+     "in": 2,
+     "d": 1.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "lq",
+     "type": "cquote",
+     "x": 1010,
+     "y": 450,
+     "w": 440,
+     "size": 22,
+     "text": "a very strong and definite\ncommunal lead",
+     "by": "Governor Haig on Jinnah at Lucknow",
+     "in": 1,
+     "d": 4.4,
+     "anim": "fade"
+    },
+    {
+     "id": "src60845",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Haig to Linlithgow, October 1937, in Towards Freedom 1937; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In October 1937 the League met in Lucknow, and the leaders of the Muslim-majority provinces came: Sir Sikandar Hayat Khan of Punjab and Fazlul Haq of Bengal.",
+     "say": "In October 1937 the League met in Luck-now, and the leaders of the Muslim-majority provinces came: Sir Sikandar Hayat Khan of Punjab and Fazlul Haq of Bengal."
+    },
+    {
+     "text": "The Governor reported that Jinnah had given Muslims a very strong and definite communal lead, and that it had inspired great enthusiasm. Sikandar told his own Governor that a Congressman at that session would have been lynched."
+    },
+    {
+     "text": "Jinnah, the immaculate barrister in Savile Row suits, now appeared in public in a sherwani and a fur cap."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "A War of Symbols",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Congress Raj · 1937 – 1939"
+  },
+  {
+   "type": "scene",
+   "id": "wardha",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "wd",
+     "type": "doc",
+     "x": 360,
+     "y": 300,
+     "w": 480,
+     "h": 254,
+     "title": "THE WARDHA SCHEME",
+     "meta": "Basic national education, 1937-38 (summary)",
+     "lines": [
+      "Seven years of schooling through a",
+      "craft such as spinning. Mother-tongue",
+      "teaching. No religious instruction.",
+      "Committee chair: Dr Zakir Husain."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 30,
+     "rot": -1
+    },
+    {
+     "id": "pp",
+     "type": "doc",
+     "x": 920,
+     "y": 330,
+     "w": 460,
+     "h": 254,
+     "title": "THE PIRPUR REPORT",
+     "meta": "All-India Muslim League, 1938 (excerpts)",
+     "lines": [
+      "'Gandhian totalitarianism'",
+      "",
+      "'there are many essentials of Islam",
+      "which are exclusively Islamic'"
+     ],
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 30,
+     "rot": 1.5,
+     "hl": 0,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 3.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "src8179",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "K. K. Aziz, Muslims under Congress Rule (1978); CWMG vol. 66; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Out of the legislatures, the League found its sharpest weapon in the symbols of the new Congress governments. First came Gandhi's Wardha scheme: seven years of village schooling built around a craft like spinning, taught in the mother tongue, without religious instruction. Its syllabus was drafted by a committee under a Muslim educationist, Dr Zakir Husain."
+    },
+    {
+     "text": "A League committee under the Raja of Pirpur tore it apart. It called the scheme Gandhian totalitarianism, likened its teaching of non-violence to the race doctrines of fascist states, and rejected the idea that all religions teach the same truths. Muslims, it said, needed their own education boards, run by Muslims."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "symbols",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "c1",
+     "type": "card",
+     "x": 240,
+     "y": 230,
+     "w": 250,
+     "h": 170,
+     "glyph": "book",
+     "title": "Hindustani",
+     "color": "#5a4a3a",
+     "anim": "pop",
+     "sfx": "pop",
+     "vol": 0.4
+    },
+    {
+     "id": "c2",
+     "type": "card",
+     "x": 640,
+     "y": 230,
+     "w": 250,
+     "h": 170,
+     "glyph": "mic",
+     "title": "Bande Mataram",
+     "color": "#5a4a3a",
+     "in": 0,
+     "d": 2.5,
+     "anim": "pop",
+     "sfx": "pop",
+     "vol": 0.4
+    },
+    {
+     "id": "c3",
+     "type": "card",
+     "x": 1040,
+     "y": 230,
+     "w": 250,
+     "h": 170,
+     "glyph": "flag",
+     "title": "The tricolour",
+     "color": "#5a4a3a",
+     "in": 0,
+     "d": 4.5,
+     "anim": "pop",
+     "sfx": "pop",
+     "vol": 0.4
+    },
+    {
+     "id": "s1",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "Congress: the song names thirty crore Indians; the flag stands for all communities",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s2",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "March 1937: Khaliquzzaman had invited G. B. Pant to raise the tricolour in Lucknow",
+     "in": 1,
+     "d": 4.0,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s3",
+     "type": "typer",
+     "x": 640,
+     "y": 530,
+     "text": "1938: a League flag · a League anthem · 'Qaid-i-Azam'",
+     "in": 2,
+     "d": 0.6,
+     "size": 20,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src38219",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "CWC statement on Bande Mataram, 28 October 1937; Nehru to Jinnah, 6 April 1938; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then came language, song and flag. The League attacked Hindustani as a disguise for Sanskritised Hindi, and the singing of Bande Mataram and the flying of the tricolour in schools as Hindu impositions."
+    },
+    {
+     "text": "Congress was incredulous. The song spoke of thirty crore Indians, all of them. The flag stood for every community. Only months earlier Khaliquzzaman himself had invited a Congress leader to raise that tricolour over Lucknow's municipal building.",
+     "say": "Congress was incredulous. The song spoke of thirty crore Indians, all of them. The flag stood for every community. Only months earlier Kha-leek-uz-za-maan himself had invited a Congress leader to raise that tricolour over Luck-now's municipal building."
+    },
+    {
+     "text": "But the League had found its theme. In 1938 it unfurled a flag of its own, adopted an anthem of its own, and at Patna it gave Jinnah a title to set beside the Mahatma's: Qaid-i-Azam, the Great Leader.",
+     "say": "But the League had found its theme. In 1938 it unfurled a flag of its own, adopted an anthem of its own, and at Patna it gave Jinnah a title to set beside the Ma-haat-ma's: Kaa-id-ee-Aa-zam, the Great Leader."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "symverdict",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 640,
+     "y": 230,
+     "w": 620,
+     "claim": "The fight over symbols laid the ground\nfor a claim of separate nationhood.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Dhulipala, ch. 2; widely shared by historians of the period"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 640,
+     "y": 440,
+     "w": 620,
+     "claim": "Congress governments oppressed\nU.P. Muslims, 1937-39.",
+     "level": "debated",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "League reports alleged it; the Governor doubted it; local Congressmen defended Hindu rioters (Kesavan)"
+    },
+    {
+     "id": "src99785",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "AIML Pirpur Report (1938); Mukul Kesavan, NMML occasional papers; via Dhulipala, ch. 2",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Dhulipala's point is that this war of symbols did more than score points. By refusing the nation's song and flag, the League was laying the ground for a claim that Muslims were a nation of their own. On that, most historians agree.",
+     "say": "Doo-lee-paa-la's point is that this war of symbols did more than score points. By refusing the nation's song and flag, the League was laying the ground for a claim that Muslims were a nation of their own. On that, most historians agree."
+    },
+    {
+     "text": "The League's charge of Congress tyranny is a different matter. Its reports alleged atrocities. The Governor did not believe Congress had abetted them. But the historian Mukul Kesavan has shown that well-known local Congressmen did organise the legal defence of Hindus arrested in riots. The truth sits uncomfortably in between."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "Six By-Elections",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "1937 – 1938"
+  },
+  {
+   "type": "scene",
+   "id": "jhansi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 386,
+     "y": 609,
+     "k": 3.0,
+     "split": 0,
+     "und": 0,
+     "nb": 0.35,
+     "up": 0.55,
+     "upLabel": false,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Jhansi",
+       "at": [
+        78.57,
+        25.45
+       ],
+       "note": "July 1937",
+       "pin": true,
+       "color": "#5fbf9a",
+       "left": true
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 1,
+       "d": 1.0,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 930,
+     "y": 480,
+     "w": 470,
+     "h": 200,
+     "in": 1,
+     "d": 0.3,
+     "anim": "fade"
+    },
+    {
+     "id": "fs",
+     "type": "doc",
+     "x": 930,
+     "y": 260,
+     "w": 470,
+     "h": 202,
+     "title": "FIDA SHERWANI TO NEHRU",
+     "meta": "30 June 1937 (excerpt)",
+     "lines": [
+      "'heartless neglect of us by the",
+      "so-called socialist party in power'"
+     ],
+     "in": 0,
+     "d": 2.0,
+     "anim": "rise",
+     "cps": 30,
+     "rot": 1.5
+    },
+    {
+     "id": "j1",
+     "type": "typer",
+     "x": 930,
+     "y": 420,
+     "text": "Rs 700, borrowed on Nehru's own surety",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "j2",
+     "type": "typer",
+     "x": 930,
+     "y": 460,
+     "text": "'bicycles are good enough'",
+     "in": 1,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "j3",
+     "type": "typer",
+     "x": 930,
+     "y": 540,
+     "text": "Nehru's car is stoned",
+     "in": 2,
+     "d": 3.6,
+     "size": 19,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src75049",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "AICC Papers, File G-61/1937; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The test came at the ballot box. In Jhansi the Congress candidate, Nisar Sherwani, was an outsider and broke. His brother wrote to Nehru from a sickbed about the heartless neglect of the so-called socialist party in power. The party's star Muslim orators would not come."
+    },
+    {
+     "text": "Nehru took charge himself. He raised seven hundred rupees on his own surety, told the candidate that bicycles were good enough and motor cars a waste, and arranged loudspeakers and workers for all eighty polling booths."
+    },
+    {
+     "text": "The League ran on a single cry: Islam in danger. Shaukat Ali, the old Khilafat hero, spoke of a coming civil war and of making a 'Spain of India'. When Nehru came to campaign, League supporters stoned his car."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "letter",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.08,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nl",
+     "type": "doc",
+     "x": 640,
+     "y": 330,
+     "w": 480,
+     "h": 202,
+     "title": "NEHRU TO RAFI AHMAD KIDWAI",
+     "meta": "July 1937 · delivered to the wrong Rafi",
+     "lines": [
+      "... arrangements for the",
+      "maulanas' expenses ..."
+     ],
+     "in": 0,
+     "d": 0.6,
+     "anim": "rise",
+     "cps": 20,
+     "rot": -1,
+     "sfx": "type",
+     "vol": 0.4,
+     "stamp": "MISDELIVERED",
+     "stampOn": 0,
+     "keys": {
+      "1": {
+       "stampOn": 1,
+       "d": 0.6,
+       "t": 0.3
+      }
+     }
+    },
+    {
+     "id": "src23487",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Nehru to Gandhi, 13 July 1937; Hindustan, September 1937, 'Did the Congress bribe the Jamiat?'; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then fate took a hand. A letter from Nehru to the Congress manager, Rafi Ahmad Kidwai, was delivered by mistake to the League candidate, Rafiuddin Ahmad."
+    },
+    {
+     "text": "Pro-League papers printed a version of it which, they claimed, showed Congress paying the clerics who campaigned for it. Congress later published the real text to refute the charge. It made no difference. Those clerics were branded as men who had sold their community for money, a charge that followed them for the rest of British rule."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "tally",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 386,
+     "y": 609,
+     "k": 3.0,
+     "split": 0,
+     "und": 0,
+     "nb": 0.35,
+     "up": 0.55,
+     "upLabel": false,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Bahraich",
+       "at": [
+        81.6,
+        27.57
+       ],
+       "color": "#e3a857",
+       "left": false
+      },
+      {
+       "name": "Jhansi",
+       "at": [
+        78.57,
+        25.45
+       ],
+       "color": "#5fbf9a",
+       "left": true
+      },
+      {
+       "name": "Bijnor",
+       "at": [
+        78.13,
+        29.37
+       ],
+       "color": "#e3a857",
+       "left": false
+      },
+      {
+       "name": "Moradabad",
+       "at": [
+        78.78,
+        28.84
+       ],
+       "color": "#5fbf9a",
+       "left": false
+      },
+      {
+       "name": "Saharanpur",
+       "at": [
+        77.55,
+        29.97
+       ],
+       "color": "#5fbf9a",
+       "left": true
+      },
+      {
+       "name": "Bulandshahr",
+       "at": [
+        77.85,
+        28.4
+       ],
+       "color": "#5fbf9a",
+       "left": true
+      },
+      {
+       "name": "Badayun",
+       "at": [
+        79.12,
+        28.04
+       ],
+       "color": "#5fbf9a",
+       "left": false
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 3,
+       "d": 0.6,
+       "t": 6
+      },
+      "1": {
+       "lit": 7,
+       "d": 0.6,
+       "t": 4
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 1015,
+     "y": 380,
+     "w": 450,
+     "h": 480,
+     "anim": "fade"
+    },
+    {
+     "id": "r0",
+     "type": "typer",
+     "x": 820,
+     "y": 170,
+     "text": "Mar 1937   Bahraich",
+     "in": 0,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q0",
+     "type": "typer",
+     "x": 1210,
+     "y": 170,
+     "text": "Congress, unopposed",
+     "in": 0,
+     "d": 0.8999999999999999,
+     "size": 17,
+     "font": "type",
+     "color": "#e3a857",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 820,
+     "y": 214,
+     "text": "Jul 1937   Jhansi",
+     "in": 0,
+     "d": 2.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q1",
+     "type": "typer",
+     "x": 1210,
+     "y": 214,
+     "text": "League · 60%",
+     "in": 0,
+     "d": 2.9,
+     "size": 17,
+     "font": "type",
+     "color": "#5fbf9a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "r2",
+     "type": "typer",
+     "x": 820,
+     "y": 258,
+     "text": "Oct 1937   Bijnor",
+     "in": 0,
+     "d": 4.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q2",
+     "type": "typer",
+     "x": 1210,
+     "y": 258,
+     "text": "Congress · 70%",
+     "in": 0,
+     "d": 4.8999999999999995,
+     "size": 17,
+     "font": "type",
+     "color": "#e3a857",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "r3",
+     "type": "typer",
+     "x": 820,
+     "y": 302,
+     "text": "Dec 1937   Moradabad",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q3",
+     "type": "typer",
+     "x": 1210,
+     "y": 302,
+     "text": "League",
+     "in": 1,
+     "d": 0.8999999999999999,
+     "size": 17,
+     "font": "type",
+     "color": "#5fbf9a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "r4",
+     "type": "typer",
+     "x": 820,
+     "y": 346,
+     "text": "Dec 1937   Saharanpur",
+     "in": 1,
+     "d": 1.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q4",
+     "type": "typer",
+     "x": 1210,
+     "y": 346,
+     "text": "League · ~60%",
+     "in": 1,
+     "d": 1.9000000000000001,
+     "size": 17,
+     "font": "type",
+     "color": "#5fbf9a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "r5",
+     "type": "typer",
+     "x": 820,
+     "y": 390,
+     "text": "Dec 1937   Bulandshahr",
+     "in": 1,
+     "d": 2.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q5",
+     "type": "typer",
+     "x": 1210,
+     "y": 390,
+     "text": "League",
+     "in": 1,
+     "d": 2.9,
+     "size": 17,
+     "font": "type",
+     "color": "#5fbf9a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "r6",
+     "type": "typer",
+     "x": 820,
+     "y": 434,
+     "text": "Sep 1938   Badayun",
+     "in": 1,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "start"
+    },
+    {
+     "id": "q6",
+     "type": "typer",
+     "x": 1210,
+     "y": 434,
+     "text": "League · 75%",
+     "in": 1,
+     "d": 3.9,
+     "size": 17,
+     "font": "type",
+     "color": "#5fbf9a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "anchor": "end"
+    },
+    {
+     "id": "t1",
+     "type": "typer",
+     "x": 1010,
+     "y": 520,
+     "text": "Congress 1 · League 5",
+     "in": 1,
+     "d": 5.2,
+     "size": 46,
+     "font": "bebas",
+     "color": "#f4ecdc",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "t2",
+     "type": "typer",
+     "x": 1010,
+     "y": 570,
+     "text": "contested by-elections, March 1937 to September 1938",
+     "in": 1,
+     "d": 6.0,
+     "size": 15,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src87352",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Reeves, Graham and Goodman (1975); Hindustan, 1937-38; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Bijnor, in October, went the other way. The League told voters that a vote for Congress was a vote for unbelief, and accused the Congress candidate of apostasy. He won anyway, with seventy percent. One League orator who claimed the pro-Congress clerics had been bribed was taken to court by the local paper, Madina, and had to apologise.",
+     "say": "Bij-nor, in October, went the other way. The League told voters that a vote for Congress was a vote for unbelief, and accused the Congress candidate of apostasy. He won anyway, with seventy percent. One League orator who claimed the pro-Congress clerics had been bribed was taken to court by the local paper, Madina, and had to apologise."
+    },
+    {
+     "text": "But in December the League took Moradabad, Saharanpur and Bulandshahr, all rural seats where poorer Muslims had been expected to back Congress. In 1938 it took Badayun with three quarters of the vote. Of the contested by-elections, Congress won one. The League won five."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bier",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "f",
+     "type": "figures",
+     "x": 640,
+     "y": 640,
+     "n": 10,
+     "cols": 10,
+     "w": 760,
+     "rowh": 70,
+     "size": 1.0,
+     "color": "#1a140e",
+     "anim": "rise",
+     "banner": "A LEAGUE CARTOON, MORADABAD",
+     "bannerColor": "#d8c8a8"
+    },
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 640,
+     "y": 170,
+     "text": "a Congress Muslim carried on a Hindu bier to the burning ghat",
+     "in": 0,
+     "d": 1.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b2",
+     "type": "typer",
+     "x": 640,
+     "y": 220,
+     "text": "'contrast the beginning to the end'",
+     "in": 0,
+     "d": 4.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b3",
+     "type": "typer",
+     "x": 640,
+     "y": 320,
+     "text": "Congress analysis: upper-class votes, dependent tenants, and money",
+     "in": 1,
+     "d": 0.8,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src12568",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "AICC Papers G-32/1938; Hindustan, 16 January 1938; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "League posters in Moradabad showed the Congress Muslim candidate carried on a Hindu bier to the cremation ground, with the caption: contrast the beginning to the end. Join Congress, it meant, and you would die an unbeliever."
+    },
+    {
+     "text": "Congress blamed landlords who herded their tenants to the polls, and money. Some of that was surely true. But it could not explain why the gap kept widening."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "The Hakim al-Ummat",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Thana Bhawan · 1937 – 1939"
+  },
+  {
+   "type": "scene",
+   "id": "thanawi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "dossier",
+     "x": 330,
+     "y": 360,
+     "name": "Ashraf Ali Thanawi",
+     "role": "Deobandi scholar,\n'Physician of the Community'",
+     "years": "1863 – 1943",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "beard": true,
+     "tag": "FOR THE LEAGUE",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "tq",
+     "type": "cquote",
+     "x": 880,
+     "y": 230,
+     "w": 520,
+     "size": 24,
+     "text": "the League is a one-eyed man;\nthe Congress is a blind one",
+     "by": "Thanawi to his circle (paraphrase)",
+     "in": 0,
+     "d": 4.0,
+     "anim": "fade"
+    },
+    {
+     "id": "t1",
+     "type": "typer",
+     "x": 880,
+     "y": 400,
+     "text": "questionnaire to the Jamiat: no reply",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t2",
+     "type": "typer",
+     "x": 880,
+     "y": 445,
+     "text": "questionnaire to the League: answers to every question",
+     "in": 1,
+     "d": 2.6,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t3",
+     "type": "typer",
+     "x": 880,
+     "y": 520,
+     "text": "1 Muslim in 21 on Congress's Working Committee",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src89613",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Mufti Muhammad Shafi (ed.), Ifadat-i-Ashrafiya (1945); via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The man behind that telegram, Ashraf Ali Thanawi, was perhaps the most influential Islamic scholar in South Asia. His guide to women's conduct, Bihishti Zewar, was part of almost every bride's dowry in north India. He despised Gandhi. But at first he thought little better of the League. It was, he told his circle, a one-eyed man. Congress was a blind one.",
+     "say": "The man behind that telegram, Ush-ruf Ali Tha-naa-vee, was perhaps the most influential Islamic scholar in South Asia. His guide to women's conduct, Bihishti Zewar, was part of almost every bride's dowry in north India. He despised Gandhi. But at first he thought little better of the League. It was, he told his circle, a one-eyed man. Congress was a blind one."
+    },
+    {
+     "text": "He sent long questionnaires to both sides. The Congress-allied Jamiat ignored his. The League's provincial president answered every question in detail."
+    },
+    {
+     "text": "Muslims inside Congress, the League argued, would always be outvoted: one Muslim on a Working Committee of twenty-one. Only standing apart, as a nation of their own, would make the world listen."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "patna",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.06,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "PATNA · LEAGUE SESSION",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "p1",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "'religion and politics should be kept apart'",
+     "in": 0,
+     "d": 0.6,
+     "size": 24,
+     "font": "serif",
+     "color": "#b8a888",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "p2",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "'Islam is not just a religion but a total way of life'",
+     "in": 1,
+     "d": 0.6,
+     "size": 26,
+     "font": "serif",
+     "color": "#d9b26a",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "f",
+     "type": "figures",
+     "x": 640,
+     "y": 640,
+     "n": 12,
+     "cols": 12,
+     "w": 900,
+     "rowh": 70,
+     "size": 0.9,
+     "color": "#1a140e",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "v",
+     "type": "verdict",
+     "x": 640,
+     "y": 420,
+     "w": 600,
+     "claim": "Thanawi's circle changed Jinnah's language.",
+     "level": "debated",
+     "in": 2,
+     "d": 3.0,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 3.9,
+       "t": 0.8
+      }
+     },
+     "by": "Rests on Zafar Ahmad Usmani's own later account"
+    },
+    {
+     "id": "src86706",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Zafar Ahmad Usmani's recollection, in Ahmad Saeed (1972); via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Thanawi's fatwa backing the League was read out at its session in Patna by his disciple Zafar Ahmad Usmani. Usmani later left an account of what happened there. The clerics met Jinnah the night before, he said, and told him that Muslims were a religious community. Jinnah answered that religion and politics should be kept apart. That, the clerics replied, was a European idea.",
+     "say": "Tha-naa-vee's fatwa backing the League was read out at its session in Patna by his disciple Zafar Ahmad Oos-maa-nee. Oos-maa-nee later left an account of what happened there. The clerics met Jinnah the night before, he said, and told him that Muslims were a religious community. Jinnah answered that religion and politics should be kept apart. That, the clerics replied, was a European idea."
+    },
+    {
+     "text": "The next day, Usmani recalled, Jinnah told the session that Islam was not just a religion but a total way of life.",
+     "say": "The next day, Oos-maa-nee recalled, Jinnah told the session that Islam was not just a religion but a total way of life."
+    },
+    {
+     "text": "At one o'clock the session stopped for prayers. Jinnah, worried about whether a Sunni or a Shia should lead, stood behind the town's qazi, and the whole gathering stood behind him. It is a memorable scene, but it comes from one partisan memoir, written years later."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "parrot",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "md",
+     "type": "dossier",
+     "x": 250,
+     "y": 350,
+     "name": "Husain Ahmad Madani",
+     "role": "Principal, Deoband;\ncomposite nationalism",
+     "years": "1879 – 1957",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "beard": true,
+     "tag": "FOR THE CONGRESS",
+     "tagColor": "#8a5a2a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "mm",
+     "type": "samap",
+     "view": "wide",
+     "x": 780,
+     "y": 400,
+     "k": 1.25,
+     "split": 0,
+     "nb": 0.6,
+     "anim": "fade",
+     "in": 0,
+     "d": 2.0,
+     "cities": [
+      {
+       "name": "Medina",
+       "note": "the Prophet's covenant",
+       "pin": true,
+       "color": "#d9b26a"
+      }
+     ]
+    },
+    {
+     "id": "pr",
+     "type": "typer",
+     "x": 820,
+     "y": 180,
+     "text": "The grocer's parrot",
+     "in": 1,
+     "d": 1.0,
+     "size": 30,
+     "font": "serif",
+     "color": "#d9b26a",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "pr1",
+     "type": "typer",
+     "x": 820,
+     "y": 230,
+     "text": "Rumi, Masnavi, Book One",
+     "in": 1,
+     "d": 2.0,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src39519",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ifadat-i-Ashrafiya (1945); Rumi, The Masnavi, Book One, trans. Jawid Mojaddedi (2004); Barbara Metcalf, Husain Ahmad Madani (2009); via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Thanawi's real target was a fellow Deobandi, Husain Ahmad Madani. Madani taught that Hindus and Muslims of India were one nation, and found a precedent in the covenant the Prophet made with the Jews of Medina. Thanawi answered that in that covenant Muslims led and the Jews followed, and the Prophet judged their disputes. No such terms bound Congress.",
+     "say": "Tha-naa-vee's real target was a fellow Day-oh-bun-dee, Hu-sain Ah-mud Ma-da-nee. Ma-da-nee taught that Hindus and Muslims of India were one nation, and found a precedent in the covenant the Prophet made with the Jews of Madeena. Tha-naa-vee answered that in that covenant Muslims led and the Jews followed, and the Prophet judged their disputes. No such terms bound Congress."
+    },
+    {
+     "text": "Then he mocked his rival with a story from Rumi. A grocer strikes his parrot and leaves it bald. Later a bald monk walks past, and the parrot cries out: did you spill the oil too? The bird took a stranger for its equal. So, Thanawi implied, did clerics who thought themselves fit to reinterpret the tradition like the great scholars of the past. When Deoband welcomed a Hindu Congress leader at its station, Thanawi resigned as its patron, and had his resignation posted on the seminary's gates.",
+     "say": "Then he mocked his rival with a story from Rumi. A grocer strikes his parrot and leaves it bald. Later a bald monk walks past, and the parrot cries out: did you spill the oil too? The bird took a stranger for its equal. So, Tha-naa-vee implied, did clerics who thought themselves fit to reinterpret the tradition like the great scholars of the past. When Day-oh-bund welcomed a Hindu Congress leader at its station, Tha-naa-vee resigned as its patron, and had his resignation posted on the seminary's gates."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "Deliverance",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "22 December 1939"
+  },
+  {
+   "type": "scene",
+   "id": "members",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "dc",
+     "type": "dots",
+     "x": 380,
+     "y": 240,
+     "n": 10,
+     "cols": 10,
+     "size": 12,
+     "gap": 30,
+     "color": "#e3a857",
+     "anim": "fade"
+    },
+    {
+     "id": "dcl",
+     "type": "typer",
+     "x": 380,
+     "y": 300,
+     "text": "Congress: 100,000 Muslim members (its own claim)",
+     "in": 0,
+     "d": 1.2,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "dl",
+     "type": "dots",
+     "x": 900,
+     "y": 225,
+     "n": 30,
+     "cols": 10,
+     "size": 12,
+     "gap": 30,
+     "color": "#5fbf9a",
+     "in": 0,
+     "d": 3.2,
+     "anim": "fade"
+    },
+    {
+     "id": "dll",
+     "type": "typer",
+     "x": 900,
+     "y": 330,
+     "text": "League: 300,000 members (its own claim)",
+     "in": 0,
+     "d": 4.4,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "aq",
+     "type": "cquote",
+     "x": 640,
+     "y": 500,
+     "w": 520,
+     "size": 28,
+     "text": "I feel like a parasite.",
+     "by": "K. M. Ashraf to Nehru, 2 September 1938 (paraphrase)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src47887",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Towards Freedom 1938, part 1; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "By early 1938, Congress said it had enrolled a hundred thousand Muslims. The League claimed three hundred thousand. Both were party figures, but the direction was clear."
+    },
+    {
+     "text": "Riots tore through the province. By the middle of 1938 the mass contact programme had quietly been shut down. Ashraf wrote to Nehru that he was left doing routine office work, and felt like a parasite."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "deliver",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.06,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "dd",
+     "type": "doc",
+     "x": 380,
+     "y": 300,
+     "w": 470,
+     "h": 228,
+     "title": "DAY OF DELIVERANCE",
+     "meta": "M. A. Jinnah, call to Muslims, December 1939 (substance)",
+     "lines": [
+      "Give thanks for deliverance from",
+      "Congress rule, after Friday prayers.",
+      "Observe humility; give no offence."
+     ],
+     "in": 0,
+     "d": 0.6,
+     "anim": "rise",
+     "cps": 30,
+     "rot": -1
+    },
+    {
+     "id": "mq",
+     "type": "cquote",
+     "x": 920,
+     "y": 230,
+     "w": 440,
+     "size": 24,
+     "text": "not one but several\nnations in India",
+     "by": "Raja of Mahmudabad to Jinnah",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "hq",
+     "type": "cquote",
+     "x": 920,
+     "y": 450,
+     "w": 440,
+     "size": 22,
+     "text": "meetings were smaller\nthan expected",
+     "by": "Governor Hallett to the Viceroy, 1 January 1940",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src95327",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Liaquat to Jinnah, 27 November 1939; Mahmudabad to Jinnah, 29 November 1939; Hallett Papers; via Dhulipala, ch. 2",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then, in November 1939, the Congress ministries resigned in protest at India being taken into the war without its consent. Jinnah called on Muslims to celebrate a Day of Deliverance, with prayers of thanks after Friday worship."
+    },
+    {
+     "text": "The Raja of Mahmudabad told Jinnah it showed, without ambiguity, that there were not one but several nations in India."
+    },
+    {
+     "text": "Others saw less. Some League men refused to take part. Nehru called it a failure, and the new Governor reported that meetings were smaller than expected. The League had won the argument against Congress. Now it had to say what it was for. Three months later, at Lahore, it tried."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "chapterx",
+   "kicker": "Chapter Seven",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "The League out-mobilised Congress\namong U.P. Muslims, 1937-39.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "By-election results; membership figures are party claims"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "Thanawi's Deobandis were a critical,\nneglected factor in the League's rise.",
+     "level": "partial",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Fatwas and posters documented; their effect on votes is hard to measure"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "Mass contact failed because it\nignored religion and culture.",
+     "level": "debated",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Also: party neglect, riots, landlord pressure, money"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "Congress's refusal to share power\nin 1937 made Pakistan.",
+     "level": "contested",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Azad and Khaliquzzaman said so; Dhulipala looks past it"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That the League out-mobilised Congress among U.P. Muslims between 1937 and 1939: well supported, by the by-election results. The membership numbers are claims, so set them aside."
+    },
+    {
+     "text": "That the Deobandi scholars around Thanawi were a critical and neglected factor: supported, with caveats. The fatwas and posters are on record. How many votes they moved, no one can say.",
+     "say": "That the Day-oh-bun-dee scholars around Tha-naa-vee were a critical and neglected factor: supported, with caveats. The fatwas and posters are on record. How many votes they moved, no one can say."
+    },
+    {
+     "text": "That mass contact failed because it spoke only of bread and ignored faith: debated. Congress's own letters show neglect, money troubles and quarrels, and the riots did their own damage."
+    },
+    {
+     "text": "And the old claim that Congress's refusal to share power in 1937 created Pakistan: contested. It was made by men on both sides. Dhulipala's point is that what the League built after that refusal mattered more.",
+     "say": "And the old claim that Congress's refusal to share power in 1937 created Pakistan: contested. It was made by men on both sides. Doo-lee-paa-la's point is that what the League built after that refusal mattered more."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 240,
+     "text": "Bread, or belonging?",
+     "in": 0,
+     "d": 0.4,
+     "size": 44,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "class appeals against identity appeals: still the argument, everywhere",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 380,
+     "text": "(our observation, not the book's)",
+     "in": 1,
+     "d": 2.6,
+     "size": 15,
+     "font": "type",
+     "color": "#8a7e68",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    }
+   ],
+   "lines": [
+    {
+     "text": "Strip away the names and this chapter describes an argument that has never ended. One side says people vote their interests: wages, land, prices. The other says people vote who they are."
+    },
+    {
+     "text": "In 1937 Nehru bet on bread. The League bet on belonging, and won. Politicians from India to Europe to America are still placing the same bet today. That last thought is ours, not the book's."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 4 · Two Lawyers from Bombay",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "Ambedkar · Jinnah · 1940 – 1944",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: the League demands Pakistan, and a book by Dr B. R. Ambedkar becomes the guide everyone argues over. Maps, money, armies and the question no one could answer: what would Pakistan actually be?",
+     "say": "Next time: the League demands Pakistan, and a book by Dr B. R. Um-bayd-kar becomes the guide everyone argues over. Maps, money, armies and the question no one could answer: what would Pakistan actually be?"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "AICC Papers (Nehru, Ashraf, Sherwani correspondence), NMML",
+    "Hindustan (Allahabad), 1937-38 · Zulqarnain · Madina (Bijnor)",
+    "Linlithgow, Haig and Hallett Papers",
+    "AIML, Pirpur Report (1938) · Ifadat-i-Ashrafiya, ed. Mufti Muhammad Shafi (1945)",
+    "Selected Works of Jawaharlal Nehru · Towards Freedom, 1937-38",
+    "",
+    "# Scholarship and reviews",
+    "Muhammad Qasim Zaman, Ashraf Ali Thanawi (2008) · Barbara Metcalf, Husain Ahmad Madani (2009)",
+    "Salil Misra, A Narrative of Communal Politics (2001) · Mukul Kesavan, NMML papers",
+    "Horst Kruger (ed.), Kunwar Mohammad Ashraf (1969) · K. K. Aziz, Muslims under Congress Rule (1978)",
+    "Rumi, The Masnavi, Book One, trans. Jawid Mojaddedi (2004)",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

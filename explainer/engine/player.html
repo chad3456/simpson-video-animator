@@ -6,6 +6,13 @@
 <title>Lumen Player</title>
 <style>
   @font-face { font-family: Nunito; src: url(../../engine/fonts/Nunito.ttf); font-weight: 200 1000; }
+  @font-face { font-family: 'Playfair Display'; src: url(fonts/PlayfairDisplay-400-normal.woff2); font-weight: 400; }
+  @font-face { font-family: 'Playfair Display'; src: url(fonts/PlayfairDisplay-700-normal.woff2); font-weight: 700; }
+  @font-face { font-family: 'Playfair Display'; src: url(fonts/PlayfairDisplay-900-normal.woff2); font-weight: 900; }
+  @font-face { font-family: 'Playfair Display'; src: url(fonts/PlayfairDisplay-400-italic.woff2); font-weight: 400; font-style: italic; }
+  @font-face { font-family: 'Playfair Display'; src: url(fonts/PlayfairDisplay-700-italic.woff2); font-weight: 700; font-style: italic; }
+  @font-face { font-family: 'Special Elite'; src: url(fonts/SpecialElite.woff2); }
+  @font-face { font-family: 'Bebas Neue'; src: url(fonts/BebasNeue.woff2); }
   html, body { margin: 0; background: #111; color: #eee; font-family: Nunito, sans-serif; }
   #stage { display: block; width: 100%; max-width: 1280px; aspect-ratio: 16/9; margin: 0 auto; background: #000; }
   .bar { max-width: 1280px; margin: 8px auto; display: flex; gap: 12px; align-items: center; padding: 0 16px; box-sizing: border-box; }
@@ -20,6 +27,8 @@
 <div class="bar"><button id="play">Play</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="clock">0:00</span></div>
 <audio id="audio" preload="auto"></audio>
 <script src="explainer.js"></script>
+<script src="geo.js"></script>
+<script src="cinema.js"></script>
 <script>
   const q = new URLSearchParams(location.search);
   const dir = (q.get('ep') || '../episodes/too-kind-to-survive').replace(/\/$/, '');
@@ -28,6 +37,8 @@
   (async () => {
     const [ep, tl] = await Promise.all([fetch(dir + '/episode.json').then(r => r.json()), fetch(dir + '/timeline.json').then(r => r.json())]);
     await document.fonts.load('800 40px Nunito'); await document.fonts.load('900 40px Nunito');
+    if (ep.meta.look === 'cinema') await Promise.all((Toon.ext.fonts || []).map(f => document.fonts.load(f)));
+    Toon.ext.base = dir + '/';
     const svg = document.getElementById('stage');
     Toon.load(ep, tl, svg); Toon.renderAt(0);
     window.__ready = true;

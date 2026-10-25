@@ -1,5 +1,25 @@
 [
   {
+    "slug": "new-medina-e01-the-seance",
+    "dir": "explainer/episodes/new-medina-e01-the-seance/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E1",
+    "title": "The S\u00e9ance",
+    "logline": "Seven years after his death, a seance summons the founder of Pakistan, and he sees 'flashes of evil pictures'. Episode 1 of a ten-part documentary on Venkat Dhulipala's Creating a New Medina: the claim that Pakistan was not a vague accident but a plentifully imagined Islamic state, a new Medina, argued over in the towns of north India, and the critics who disagree.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India and its mass violence, and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015); reviews by F. Devji (The Wire, 2015), S. I. Khan (Marginalia Review), P. B. Mehta (Indian Express, 2015), I. Talbot (JAS, 2015); A. Jalal, The Sole Spokesman (1985).",
+    "duration": 1189.186,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
