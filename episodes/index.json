@@ -80,6 +80,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e05-the-ideal-goal",
+    "dir": "explainer/episodes/new-medina-e05-the-ideal-goal/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E5",
+    "title": "The Ideal Goal",
+    "logline": "After the Lahore Resolution, the Muslim League's leaders in the United Provinces had to explain Pakistan to Muslims who would never live in it. Episode 5 follows the pamphlets, speeches and private letters: an Islamic state, a 'laboratory', a jumping-off ground for the Muslim world, a quiet readiness to accept a smaller Pakistan, and minorities held as hostages.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 4; the pamphlets, speeches and archival letters quoted there.",
+    "duration": 747.103,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
