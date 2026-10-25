@@ -140,6 +140,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e08-the-shaikhul-islam",
+    "dir": "explainer/episodes/new-medina-e08-the-shaikhul-islam/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E8",
+    "title": "The Shaikhul Islam",
+    "logline": "Not all the Deobandi ulama stood with Congress. Episode 8 follows Shabbir Ahmad Usmani, who broke with his colleagues, founded a pro-League party of scholars, and sold Pakistan to voters as the new Medina, with Jinnah as the ship's English captain and the ulama as its pilots.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 7; Usmani's speeches and the account of the 1945 Deoband meeting as quoted there.",
+    "duration": 619.968,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
