@@ -20,6 +20,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e02-the-broken-coalition",
+    "dir": "explainer/episodes/new-medina-e02-the-broken-coalition/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E2",
+    "title": "The Broken Coalition",
+    "logline": "In 1936 a small-town paper called the Muslim League 'neither dead nor alive'. Episode 2 goes back to the 1937 elections in the United Provinces, when Congress and the League were allies against the landlords, a Deobandi cleric campaigned for Jinnah, and nobody could yet say who was a nationalist and who a communalist.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 1; Linlithgow and Haig papers, Venkatachar memoirs and the U.P. press as quoted there; Jalal and Seal (1981).",
+    "duration": 642.87,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
