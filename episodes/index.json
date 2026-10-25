@@ -60,6 +60,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e04-two-lawyers-from-bombay",
+    "dir": "explainer/episodes/new-medina-e04-two-lawyers-from-bombay/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E4",
+    "title": "Two Lawyers from Bombay",
+    "logline": "In 1944 Jinnah told Gandhi to read a book on Pakistan written by Dr B. R. Ambedkar. Episode 4 follows the public argument that gave the Pakistan demand its maps, numbers and hostages, the League's answer, the failed talks on Malabar Hill, and the case against the idea that Pakistan was only a bargaining counter.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 3; Ambedkar's Thoughts on Pakistan, MRT's volumes, the Gandhi-Jinnah correspondence and Jinnah's speeches as quoted there; Jalal (1985).",
+    "duration": 689.925,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
