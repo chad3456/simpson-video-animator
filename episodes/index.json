@@ -160,6 +160,26 @@
     "bible": false
   },
   {
+    "slug": "new-medina-e09-the-referendum",
+    "dir": "explainer/episodes/new-medina-e09-the-referendum/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "E9",
+    "title": "The Referendum",
+    "logline": "The elections of 1945 and 1946 become a referendum on Pakistan. Episode 9 follows a divided League, Aligarh's pamphlets and student foot soldiers, the songs, the cap auctioned for sixteen thousand rupees, Madani and Nehru's counter-campaign, and the result: two in three U.P. Muslim voters back a country they will never live in.",
+    "rating": "mature",
+    "format": "documentary",
+    "note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+    "category": "Creating a New Medina (book)",
+    "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 8; party papers, pamphlets, poems and the 1946 OSS report as quoted there.",
+    "duration": 789.138,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": false
+  },
+  {
     "slug": "eight-nights-of-fire",
     "dir": "explainer/episodes/eight-nights-of-fire/",
     "playerPage": "explainer/engine/player.html",
