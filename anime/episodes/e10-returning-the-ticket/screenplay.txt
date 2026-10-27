@@ -1,0 +1,192 @@
+episode: 10
+slug: e10-returning-the-ticket
+title: Returning the Ticket
+kanji: 第十話
+sub: on "The Brothers Karamazov" (I)
+book: The Brothers Karamazov (1880)
+season: winter
+linegap: 0.75
+gap: 95
+logline: January, deep snow. Mio announces, very casually, that she won't apply to the university in Tokyo after all: her mother needs help with the baby, and the local college is fine. Over Ivan Karamazov's rebellion and his poem of the Grand Inquisitor, who takes away people's freedom to make them comfortable, Itsuki argues for her freedom against his own heart, and tells her to go.
+quote: It is not God that I do not accept. I only most respectfully return Him the ticket.
+quoteBy: Fyodor Dostoevsky, "The Brothers Karamazov"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=room_her season=winter weather=snow music=unease musicVol=0.5 amb=room,snow fadeIn=1.2
+@ mio slot=desk emo=neutral look=down prop=book bookColor=#3a2a4a
+BEAT 2.5 [wide] (sfx=page)
+KAORI (vo) [wide]: Mio? The Tokyo application. The teacher rang. The deadline is Friday.
+MIO (look=front) [mcu:mio]: I know.
+KAORI (vo) [close:mio]: You don't have to go so far, you know. There's the prefectural university. It has a literature course. You could live at home. And honestly, with Sora... I'm so tired, love. I could really use you here.
+BEAT 2 [close:mio] (mio=sad, mio.look=down)
+MIO (smile, look=front) [close:mio]: It's fine, Mum. I'll stay. The local one's fine.
+KAORI (vo) [mcu:mio]: Are you sure?
+MIO (smile, look=front) [close:mio]: I'm sure. Go to sleep. I'll do the two o'clock feed.
+BEAT 2.5 [close:mio] (mio=sad, mio.look=down)
+MIO (thought) [close:mio] (sad, look=down): Gramps studied Russian in Tokyo. Waseda, nineteen sixty-eight. His department still has the same name. I've had the brochure under my mattress since I was fourteen.
+MIO (thought) [mcu:mio] (look=front): It's fine. It's fine. Everyone keeps saying things are fine. I've learned how.
+BEAT 3 [wide] (sfx=page)
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=winter weather=snow music=tease musicVol=0.65 amb=washer,snow washers=2,6 clock=22.0 | caption=Thursday, January. Heavy snow.
+@ mio slot=benchL emo=grin look=other prop=book bookColor=#3a2a4a
+@ itsuki slot=benchR emo=neutral look=other prop=can can=coffee
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+@ item can benchL dx=60 can=tea steam=true
+BEAT 2.5 [wide]
+MIO (grin, look=other) [mcu:mio]: Page six. Read it twice. The bit about Mrs. Hoshino's husband is the best thing you've written. Don't argue.
+ITSUKI (shy, look=down) [close:itsuki]: ...I wasn't going to argue.
+MIO (tease, look=other) [close:mio]: You were going to say "the second paragraph is too long." I could see it on your face.
+ITSUKI (smile, look=down) [close:itsuki]: The second paragraph is too long.
+MIO (laugh, act=laugh) [close:mio]: Leave it long!
+BEAT 2 [two]
+MIO (look=front) [close:mio]: Oh, and I've decided. About university. I'm going to stay here. The prefectural one. It's got a literature course and a very nice cafeteria. Mum needs help with Sora, and it's much cheaper, and honestly, Tokyo's so loud.
+BEAT 2.5 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+ITSUKI (look=other) [close:itsuki]: ...I see.
+MIO (smile, look=front) [close:mio]: So! Ivan Karamazov. I've been looking forward to this for weeks. Ivan is the one Gramps argued with most. His copy has more pencil than print in two chapters.
+ITSUKI (thought) [close:itsuki] (sad, look=down): She said it like a weather report. She said it the way she said "it's fine" in September.
+MIO (grin, look=book) [mcu:mio]: Quick summary, for Fyodor Mikhailovich, who hasn't read it. Three brothers. Dmitri, who feels everything. Ivan, who thinks everything. Alyosha, who loves everyone. And their father, who is the most disgusting old man in literature.
+MIO (tease, look=up): And his name is Fyodor. Fyodor Pavlovich. Sorry, Fyodor Mikhailovich. You're named after the author, not the father. I checked.
+BEAT 1.5 [insert:cat] (sfx=meow)
++INSERT cat | pose=sit
+ITSUKI (smile, look=up) [close:itsuki]: Dostoevsky gave the worst father in literature his own first name. I've always thought that was a kind of confession.
+ITSUKI (soft, look=down) [close:itsuki]: And he named the good brother after his son. Alyosha. His little boy died at three, of epilepsy, which he'd inherited from his father. Dostoevsky blamed himself. He started writing Karamazov that same year. He gave the boy's name to the best person in the book.
+MIO (soft, look=down) [close:mio]: ...I didn't know that.
+ITSUKI (look=front) [close:itsuki]: Gramps's copy probably says so. Somewhere in the pencil.
+MIO (soft, look=book) [close:mio]: It does. On the first page. I thought it was a note about someone he knew. "For Alyosha, aged three." I thought he'd lost a friend.
+BEAT 2.5 [two]
+MIO (look=book) [mcu:mio]: Ivan meets his little brother Alyosha in a tavern. Alyosha's the good one, the novice monk. And Ivan says, I want to tell you why I can't accept God's world. And then he tells him stories. True ones, out of newspapers.
+MIO (sad, look=down) [close:mio]: About children. Terrible things done to children, by ordinary people. A little girl locked in an outhouse all night in winter by her own parents. A general who sets his hunting dogs on a serf boy because the boy threw a stone and hurt the general's favourite hound. In front of the boy's mother.
+ITSUKI (sad, look=down) [close:itsuki]: He collects them. He says he collects them, like a hobby.
+MIO (look=front) [close:mio]: And then he says, even if, at the end of time, there's a great harmony, and everyone embraces, and the mother forgives the general, and everything is explained, and everyone sings, he doesn't want it. Not if it was built on one child's tear.
+INSERT book 7 | title=The Brothers Karamazov | text=Too high a price has been put on harmony. We cannot afford to pay so much for admission. | right=And so I hasten to return my ticket. It is not God that I do not accept, Alyosha. I only most respectfully return Him the ticket. | underline=2 | note=Ivan is right.\nAnd Ivan is wrong.\nThis is why I read it\nevery winter. — G. | noteBy=genzo
+MIO (look=other) [close:mio]: I agree with Ivan. I'm sorry, Gramps. I agree with him completely.
+ITSUKI (look=front) [mcu:itsuki]: So did Dostoevsky. That's the frightening thing. He wrote it so well his friends were worried he'd lost the argument with himself. He spent the whole rest of the book trying to answer it.
+MIO (look=other) [close:mio]: Did he?
+ITSUKI (look=front) [close:itsuki]: Not with an argument. He didn't think it could be answered with an argument. He answered it with people. With Alyosha. With Zosima. With some schoolboys and a dog.
+MIO (look=other) [close:mio]: And what does Alyosha say? In the tavern?
+ITSUKI (soft, look=down) [close:itsuki]: He says, very quietly, "That's rebellion." And Ivan says, I didn't want to hear you say that. And then he says, all right. Let me tell you a poem I wrote.
+BEAT 2.5 [two]
+MIO (grin, act=lean) [mcu:mio]: The Grand Inquisitor. Tell it. You tell things better.
+ITSUKI (flustered, act=hide) [close:itsuki]: You keep saying that.
+MIO (tease, look=other) [close:mio]: Because you keep proving it. Go on. Seville.
+ITSUKI (look=front) [mcu:itsuki]: Seville, in the sixteenth century, at the worst of the Inquisition. The day after they've burned a hundred heretics in the square, Christ comes back. Quietly. He just walks through the streets, and everyone knows who he is, and he heals a blind man, and raises a little girl from her coffin on the cathedral steps.
+ITSUKI (look=front) [close:itsuki]: And the Grand Inquisitor, ninety years old, sees it. And he has him arrested. And that night he comes to the cell with a lamp, and talks to him. For pages. Christ never says a word.
+MIO (look=front) [close:mio]: The Inquisitor says, you made a mistake.
+ITSUKI (look=front) [mcu:itsuki]: He says: when the devil tempted you in the desert, you refused everything. You refused to turn stones into bread. You refused miracles. You refused power. Because you wanted people to follow you freely, out of love. Not because they were fed, or amazed, or afraid.
+ITSUKI (serious, look=front) [close:itsuki]: And the Inquisitor says, that was cruel. Freedom is the heaviest thing you can give a person. Most people can't carry it. They want bread, and someone to tell them what to do, and someone to blame. So we took your freedom away from them, and gave them bread, and they thanked us. We made them happy. We corrected your work.
+MIO (look=other) [close:mio]: And then?
+ITSUKI (soft, look=down) [close:itsuki]: And then he waits for an answer. And Christ gets up, and kisses him on his old bloodless lips. That's his only answer. And the old man shudders, and opens the door, and says: go, and never come back.
+BEAT 3 [close:mio] (mio=soft, mio.look=other)
+MIO (soft, look=other) [close:mio]: And Alyosha kisses Ivan.
+ITSUKI (smile, look=down) [close:itsuki]: And Ivan laughs and says, "That's plagiarism! You stole that from my poem!"
+MIO (laugh, act=laugh) [close:mio]: It's the best joke in Russian literature.
+ITSUKI (smile) [close:itsuki]: It is.
+BEAT 3 [wide] (sfx=buzzer)
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-2 | set=laundry_int season=winter weather=snow music=sorrow musicVol=0.5 amb=washer,snow washers=6 clock=22.5
+@ mio slot=benchL emo=soft look=front
+@ itsuki slot=benchR emo=neutral look=down
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 3 [wide]
+ITSUKI (look=down) [close:itsuki]: Can I say something about the Inquisitor? Not about the book.
+MIO (look=other) [close:mio]: ...That sounds dangerous.
+ITSUKI (look=front) [mcu:itsuki]: Everyone thinks the Inquisitor is the villain. He isn't, exactly. He's tired. He loves people, in his way. He's decided that the kindest thing is to take their freedom away so they won't suffer. He does it to a whole world. Out of love.
+ITSUKI (soft, look=other) [close:itsuki]: I think you're doing it to yourself.
+BEAT 2.5 [close:mio] (mio=surprised, mio.look=other)
+MIO (surprised, look=other) [close:mio]: ...What?
+ITSUKI (look=down) [close:itsuki]: You've taken your own freedom away, so that everyone at home can be comfortable. Bread, and someone to help with the night feed. And you've told yourself it's love. It is love. It's also the Inquisitor.
+MIO (annoyed, look=other) [close:mio]: That's not fair. Mum's exhausted. Sora's tiny. Satoshi-san works until nine. Somebody has to...
+ITSUKI (look=front) [close:itsuki]: Somebody does. It doesn't have to be the only daughter who has a brochure under her mattress.
+BEAT 2 [close:mio] (mio=surprised)
+MIO (surprised, look=other) [mcu:mio]: How do you know about the brochure?
+ITSUKI (soft, look=down) [close:itsuki]: You told me in October. During the typhoon. In the dark. You said Waseda, Russian, your grandfather's department. You said it like a prayer and then you changed the subject.
+MIO (teary, look=down) [close:mio]: ...I don't remember saying it.
+ITSUKI (soft, look=front) [close:itsuki]: I'm a proofreader. I remember everything people say and wish they hadn't.
+BEAT 3 [close:mio] (mio=teary, mio.look=down)
+MIO (teary, look=other) [close:mio]: So you think I should go. To Tokyo. Four hours away.
+ITSUKI (look=down) [close:itsuki]: ...Yes.
+MIO (annoyed, look=other) [close:mio]: You want me to go?
+ITSUKI (sad, look=front) [mcu:itsuki]: I want you to be free. That's a different thing from what I want.
+MIO (teary, look=other) [close:mio]: Then what do you want?
+BEAT 4 [close:itsuki] (itsuki=sad, itsuki.look=down)
+MIO (teary, look=other) [close:mio]: You're doing the Christ thing. Being silent at me. While I talk for pages.
+ITSUKI (smile, look=down) [close:itsuki]: ...I'm not going to do the next part.
+BEAT 1.2 [close:mio] (mio=laugh, mio.act=laugh)
+MIO (laugh, act=cover) [close:mio]: Don't make me laugh. I'm trying to be angry.
+BEAT 2 [two]
+ITSUKI (look=front) [close:itsuki]: What I want doesn't belong in this. That's the line on the bridge. I'm keeping it.
+ITSUKI (soft, look=other) [mcu:itsuki]: Here's what I think instead. Sora is going to grow up. And one day she's going to be seventeen, with a brochure under her mattress. And she's going to look at her big sister to see whether that's allowed.
+ITSUKI (soft, look=other) [close:itsuki]: Give her a sister who went. Not a sister who stayed for her sake. Then she'll know she can go too. That's a better present than help with the night feed.
+BEAT 4 [close:mio] (mio=cry, mio.look=down)
+MIO (cry, act=cover) [close:mio]: That's so unfair. That's such an unfair thing to say. It's the most unfair true thing anyone's ever said to me.
+ITSUKI (soft, look=down) [close:itsuki]: ...Sorry.
+MIO (teary, look=other) [close:mio]: Don't you dare say sorry. You've never been less sorry in your life.
+BEAT 3 [two]
+MIO (teary, look=down) [close:mio]: The exam's in February. In Tokyo. I'd miss a Thursday.
+ITSUKI (soft, look=other) [close:itsuki]: I'll write in the notebook.
+MIO (teary, look=other) [close:mio]: Will you still be here? When I come back?
+ITSUKI (look=front) [close:itsuki]: Until the end of March. It's a public laundry.
+MIO (smile, look=down) [close:mio]: Proofreader's answer.
+ITSUKI (soft, look=down) [close:itsuki]: ...Yes. I'll be here.
+MIO (look=other) [close:mio]: And you have to keep writing. Even when I'm in Tokyo. Even when this place is flats. One page every Thursday. Wherever you are.
+ITSUKI (look=down) [close:itsuki]: Who'll read them?
+MIO (soft, look=other) [close:mio]: Send them. There's a thing called a post office. Dostoevsky used it constantly.
+ITSUKI (smile, look=down) [close:itsuki]: ...Mostly to ask for money.
+MIO (tease, look=other) [close:mio]: You can ask me for money. I'll be a poor student. I'll send you one yen and a long letter about lace.
+ITSUKI (laugh, act=laugh) [close:itsuki]: Varvara.
+MIO (smile, look=down) [close:mio]: Varvara. Except this time the letters get answered.
+BEAT 3 [wide] (sfx=buzzer)
+
+== SCENE bridge-1 | set=bridge season=winter weather=snow music=theme musicVol=0.7 amb=snow
+@ mio slot=railL emo=teary look=other
+@ itsuki slot=railR emo=neutral look=other
+BEAT 3 [wide] (sfx=steps)
+MIO (look=other) [two]: The deadline's Friday. Tomorrow.
+ITSUKI (look=other) [close:itsuki]: ...Then you have tonight.
+MIO (soft, look=other) [close:mio]: Say it once. Properly. Like an instruction. Like Gramps's pencil.
+BEAT 2.5 [close:itsuki] (itsuki=sad, itsuki.look=other)
+ITSUKI (soft, look=other) [close:itsuki]: Go.
+BEAT 3 [close:mio] (mio=teary)
+MIO (teary, look=other) [close:mio]: ...Okay.
+@ mio slot=farL
+BEAT 3 [wide] (sfx=steps)
+ITSUKI (thought) [close:itsuki] (sad, look=other): Ivan returned his ticket because the price was a child's tear. I've just bought her one. I'll pay for it in March. It's a fair price.
+BEAT 3 [wide]
+
+== SCENE her-room | set=room_her season=winter weather=snow music=hope musicVol=0.55 amb=room,snow
+@ mio slot=desk emo=neutral look=front
+BEAT 2.5 [wide]
+MIO (shy, look=front) [mcu:mio]: Mum. I want to apply to Tokyo. Waseda. Gramps's department. I'm sorry. I know it's a bad time.
+KAORI (vo) [close:mio]: ...Oh, thank God.
+MIO (surprised, look=front) [close:mio]: What?
+KAORI (vo) [mcu:mio]: I was so scared you'd stay. For us. For me. I'm such a coward, I couldn't bring myself to tell you to go. Your grandfather would never have forgiven me.
+SATOSHI (vo) [close:mio]: We'll be fine, Mio-chan. I've watched eleven videos about nappies. I'm practically a professional.
+MIO (thought) [close:mio] (teary, look=down): Nobody in this house was the Inquisitor. We were all just being careful. We were all under stones again.
+BEAT 3 [wide] (sfx=pencil)
+
+== SCENE room-10 | set=room_him season=winter weather=snow music=night musicVol=0.55 amb=room,snow
+@ itsuki slot=desk emo=neutral look=down
+BEAT 2.5 [wide]
+ITSUKI (thought) [close:itsuki] (look=down): Ten Thursdays left. Nine, with the exam. I told her to go. It was the only thing I've ever been completely sure of.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write  (page 6 of 16)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.\n10. Tell her to go.  (done)
+ITSUKI (thought) [mcu:itsuki] (sad, look=front): Item ten. Done. I've never crossed anything off that I wanted less to be finished.
+ITSUKI (thought) [close:itsuki] (soft, look=down): Item two next. Before she sits the exam. If she can get on a train, I can.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Forgiveness of the Birds | sub=on "The Brothers Karamazov" (II)
+MIO (vo, soft): Next time. An old monk who asks the birds to forgive him, a dying boy who says life is paradise, and a train to Tokyo. And a train to somewhere else.
+MIO (vo, smile): Episode eleven. Forgiveness of the Birds. Mrs. Hoshino tells me a secret.
+BEAT 1.5

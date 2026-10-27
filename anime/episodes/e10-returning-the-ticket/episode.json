@@ -1,0 +1,1257 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E10",
+  "title": "Returning the Ticket",
+  "book": "The Brothers Karamazov (1880)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "January, deep snow. Mio announces, very casually, that she won't apply to the university in Tokyo after all: her mother needs help with the baby, and the local college is fine. Over Ivan Karamazov's rebellion and his poem of the Grand Inquisitor, who takes away people's freedom to make them comfortable, Itsuki argues for her freedom against his own heart, and tells her to go.",
+  "season": "winter",
+  "gap_bench": 95,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Brothers Karamazov (1880); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "kaori": {
+   "name": "Kaori Ogawa",
+   "role": "Mio's mother",
+   "voice": "af_sarah",
+   "speed": 1.0
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  },
+  "satoshi": {
+   "name": "Satoshi Ogawa",
+   "role": "Mio's stepfather",
+   "voice": "am_eric",
+   "speed": 0.98
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "wide",
+     "text": "Mio? The Tokyo application. The teacher rang. The deadline is Friday."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "I know."
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "You don't have to go so far, you know. There's the prefectural university. It has a literature course. You could live at home. And honestly, with Sora... I'm so tired, love. I could really use you here."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "It's fine, Mum. I'll stay. The local one's fine."
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "Are you sure?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "I'm sure. Go to sleep. I'll do the two o'clock feed."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps studied Russian in Tokyo. Waseda, nineteen sixty-eight. His department still has the same name. I've had the brochure under my mattress since I was fourteen."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "It's fine. It's fine. Everyone keeps saying things are fine. I've learned how."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "desk",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#3a2a4a",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_her",
+   "season": "winter",
+   "weather": "snow",
+   "music": "unease",
+   "musicVol": 0.5,
+   "amb": [
+    "room",
+    "snow"
+   ],
+   "fadeIn": 1.2
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "winter"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第十話",
+   "kicker": "EPISODE 10",
+   "title": "Returning the Ticket",
+   "sub": "on \"The Brothers Karamazov\" (I)",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Page six. Read it twice. The bit about Mrs. Hoshino's husband is the best thing you've written. Don't argue."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I wasn't going to argue."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You were going to say \"the second paragraph is too long.\" I could see it on your face."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "The second paragraph is too long."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "Leave it long!"
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Oh, and I've decided. About university. I'm going to stay here. The prefectural one. It's got a literature course and a very nice cafeteria. Mum needs help with Sora, and it's much cheaper, and honestly, Tokyo's so loud."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I see."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "So! Ivan Karamazov. I've been looking forward to this for weeks. Ivan is the one Gramps argued with most. His copy has more pencil than print in two chapters."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She said it like a weather report. She said it the way she said \"it's fine\" in September."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Quick summary, for Fyodor Mikhailovich, who hasn't read it. Three brothers. Dmitri, who feels everything. Ivan, who thinks everything. Alyosha, who loves everyone. And their father, who is the most disgusting old man in literature."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "up",
+     "text": "And his name is Fyodor. Fyodor Pavlovich. Sorry, Fyodor Mikhailovich. You're named after the author, not the father. I checked."
+    },
+    {
+     "dur": 1.5,
+     "shot": "insert:cat",
+     "sfx": "meow",
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky gave the worst father in literature his own first name. I've always thought that was a kind of confession."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And he named the good brother after his son. Alyosha. His little boy died at three, of epilepsy, which he'd inherited from his father. Dostoevsky blamed himself. He started writing Karamazov that same year. He gave the boy's name to the best person in the book."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...I didn't know that."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Gramps's copy probably says so. Somewhere in the pencil."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "book",
+     "shot": "close:mio",
+     "text": "It does. On the first page. I thought it was a note about someone he knew. \"For Alyosha, aged three.\" I thought he'd lost a friend."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Ivan meets his little brother Alyosha in a tavern. Alyosha's the good one, the novice monk. And Ivan says, I want to tell you why I can't accept God's world. And then he tells him stories. True ones, out of newspapers."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "About children. Terrible things done to children, by ordinary people. A little girl locked in an outhouse all night in winter by her own parents. A general who sets his hunting dogs on a serf boy because the boy threw a stone and hurt the general's favourite hound. In front of the boy's mother."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He collects them. He says he collects them, like a hobby."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And then he says, even if, at the end of time, there's a great harmony, and everyone embraces, and the mother forgives the general, and everything is explained, and everyone sings, he doesn't want it. Not if it was built on one child's tear."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Brothers Karamazov",
+      "text": "Too high a price has been put on harmony. We cannot afford to pay so much for admission.",
+      "right": "And so I hasten to return my ticket. It is not God that I do not accept, Alyosha. I only most respectfully return Him the ticket.",
+      "underline": 2,
+      "note": "Ivan is right.\nAnd Ivan is wrong.\nThis is why I read it\nevery winter. — G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I agree with Ivan. I'm sorry, Gramps. I agree with him completely."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "So did Dostoevsky. That's the frightening thing. He wrote it so well his friends were worried he'd lost the argument with himself. He spent the whole rest of the book trying to answer it."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Did he?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Not with an argument. He didn't think it could be answered with an argument. He answered it with people. With Alyosha. With Zosima. With some schoolboys and a dog."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And what does Alyosha say? In the tavern?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He says, very quietly, \"That's rebellion.\" And Ivan says, I didn't want to hear you say that. And then he says, all right. Let me tell you a poem I wrote."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "lean",
+     "shot": "mcu:mio",
+     "text": "The Grand Inquisitor. Tell it. You tell things better."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "You keep saying that."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Because you keep proving it. Go on. Seville."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Seville, in the sixteenth century, at the worst of the Inquisition. The day after they've burned a hundred heretics in the square, Christ comes back. Quietly. He just walks through the streets, and everyone knows who he is, and he heals a blind man, and raises a little girl from her coffin on the cathedral steps."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And the Grand Inquisitor, ninety years old, sees it. And he has him arrested. And that night he comes to the cell with a lamp, and talks to him. For pages. Christ never says a word."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "The Inquisitor says, you made a mistake."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "He says: when the devil tempted you in the desert, you refused everything. You refused to turn stones into bread. You refused miracles. You refused power. Because you wanted people to follow you freely, out of love. Not because they were fed, or amazed, or afraid."
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And the Inquisitor says, that was cruel. Freedom is the heaviest thing you can give a person. Most people can't carry it. They want bread, and someone to tell them what to do, and someone to blame. So we took your freedom away from them, and gave them bread, and they thanked us. We made them happy. We corrected your work."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And then?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And then he waits for an answer. And Christ gets up, and kisses him on his old bloodless lips. That's his only answer. And the old man shudders, and opens the door, and says: go, and never come back."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And Alyosha kisses Ivan."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And Ivan laughs and says, \"That's plagiarism! You stole that from my poem!\""
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "It's the best joke in Russian literature."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "shot": "close:itsuki",
+     "text": "It is."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "grin",
+     "prop": "book",
+     "bookColor": "#3a2a4a",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "can",
+     "can": "coffee",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "tease",
+   "musicVol": 0.65,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    2,
+    6
+   ],
+   "clock": 22.0,
+   "caption": "Thursday, January. Heavy snow.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "can",
+     "slot": "benchL",
+     "dx": 60,
+     "can": "tea",
+     "steam": true
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Can I say something about the Inquisitor? Not about the book."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...That sounds dangerous."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Everyone thinks the Inquisitor is the villain. He isn't, exactly. He's tired. He loves people, in his way. He's decided that the kindest thing is to take their freedom away so they won't suffer. He does it to a whole world. Out of love."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "I think you're doing it to yourself."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...What?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "You've taken your own freedom away, so that everyone at home can be comfortable. Bread, and someone to help with the night feed. And you've told yourself it's love. It is love. It's also the Inquisitor."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's not fair. Mum's exhausted. Sora's tiny. Satoshi-san works until nine. Somebody has to..."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Somebody does. It doesn't have to be the only daughter who has a brochure under her mattress."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": "surprised"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "How do you know about the brochure?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "You told me in October. During the typhoon. In the dark. You said Waseda, Russian, your grandfather's department. You said it like a prayer and then you changed the subject."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...I don't remember saying it."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "I'm a proofreader. I remember everything people say and wish they hadn't."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So you think I should go. To Tokyo. Four hours away."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You want me to go?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "I want you to be free. That's a different thing from what I want."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Then what do you want?"
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You're doing the Christ thing. Being silent at me. While I talk for pages."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'm not going to do the next part."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "cover",
+     "shot": "close:mio",
+     "text": "Don't make me laugh. I'm trying to be angry."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "What I want doesn't belong in this. That's the line on the bridge. I'm keeping it."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:itsuki",
+     "text": "Here's what I think instead. Sora is going to grow up. And one day she's going to be seventeen, with a brochure under her mattress. And she's going to look at her big sister to see whether that's allowed."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Give her a sister who went. Not a sister who stayed for her sake. Then she'll know she can go too. That's a better present than help with the night feed."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "cry",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "cry",
+     "act": "cover",
+     "shot": "close:mio",
+     "text": "That's so unfair. That's such an unfair thing to say. It's the most unfair true thing anyone's ever said to me."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Sorry."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Don't you dare say sorry. You've never been less sorry in your life."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "The exam's in February. In Tokyo. I'd miss a Thursday."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "I'll write in the notebook."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Will you still be here? When I come back?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Until the end of March. It's a public laundry."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Proofreader's answer."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Yes. I'll be here."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And you have to keep writing. Even when I'm in Tokyo. Even when this place is flats. One page every Thursday. Wherever you are."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Who'll read them?"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Send them. There's a thing called a post office. Dostoevsky used it constantly."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Mostly to ask for money."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You can ask me for money. I'll be a poor student. I'll send you one yen and a long letter about lace."
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "Varvara."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Varvara. Except this time the letters get answered."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "idleLook": "front"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "sorrow",
+   "musicVol": 0.5,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    6
+   ],
+   "clock": 22.5,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "two",
+     "text": "The deadline's Friday. Tomorrow."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Then you have tonight."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Say it once. Properly. Like an instruction. Like Gramps's pencil."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Go."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": "teary"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...Okay."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "farL"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Ivan returned his ticket because the price was a child's tear. I've just bought her one. I'll pay for it in March. It's a fair price."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "teary",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "railR",
+     "emo": "neutral",
+     "idleLook": "other"
+    }
+   },
+   "set": "bridge",
+   "season": "winter",
+   "weather": "snow",
+   "music": "theme",
+   "musicVol": 0.7,
+   "amb": [
+    "snow"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "her-room",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "Mum. I want to apply to Tokyo. Waseda. Gramps's department. I'm sorry. I know it's a bad time."
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "...Oh, thank God."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "What?"
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "I was so scared you'd stay. For us. For me. I'm such a coward, I couldn't bring myself to tell you to go. Your grandfather would never have forgiven me."
+    },
+    {
+     "who": "satoshi",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "We'll be fine, Mio-chan. I've watched eleven videos about nappies. I'm practically a professional."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Nobody in this house was the Inquisitor. We were all just being careful. We were all under stones again."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "pencil"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "front"
+    }
+   },
+   "set": "room_her",
+   "season": "winter",
+   "weather": "snow",
+   "music": "hope",
+   "musicVol": 0.55,
+   "amb": [
+    "room",
+    "snow"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-10",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Ten Thursdays left. Nine, with the exam. I told her to go. It was the only thing I've ever been completely sure of."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write  (page 6 of 16)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.\n10. Tell her to go.  (done)"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Item ten. Done. I've never crossed anything off that I wanted less to be finished."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Item two next. Before she sits the exam. If she can get on a train, I can."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.55,
+   "amb": [
+    "room",
+    "snow"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 10: Returning the Ticket",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Kaori Ogawa",
+    "Satoshi Ogawa",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Brothers Karamazov (1880)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "It is not God that I do not accept. I only most respectfully return Him the ticket.",
+   "quoteBy": "Fyodor Dostoevsky, \"The Brothers Karamazov\"",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "text": "Next time. An old monk who asks the birds to forgive him, a dying boy who says life is paradise, and a train to Tokyo. And a train to somewhere else."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "text": "Episode eleven. Forgiveness of the Birds. Mrs. Hoshino tells me a secret."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Forgiveness of the Birds",
+   "nextSub": "on \"The Brothers Karamazov\" (II)",
+   "season": "winter"
+  }
+ ]
+}

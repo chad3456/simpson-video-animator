@@ -1,0 +1,1469 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E12",
+  "title": "Let Us Never Forget One Another",
+  "book": "The Brothers Karamazov (1880)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Late March, the last night of the Coin Laundry Hoshizora, and the thirty-first Thursday. Mio leaves for Tokyo on Saturday. Over the last chapter of Dostoevsky's last novel, Alyosha's speech to twelve schoolboys at a stone, the two of them give each other the only presents that fit, and Itsuki finally fixes the sign.",
+  "season": "spring",
+  "gap_bench": 85,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Brothers Karamazov (1880); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "genzo": {
+   "name": "Genzo Takanashi",
+   "role": "Mio's late grandfather, a translator of Russian literature",
+   "voice": "bm_george",
+   "speed": 0.86
+  },
+  "hoshino": {
+   "name": "Mrs. Hoshino",
+   "role": "owner of Coin Laundry Hoshizora",
+   "voice": "bf_emma",
+   "speed": 0.9
+  },
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "memory",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "sky"
+    },
+    {
+     "who": "genzo",
+     "memory": true,
+     "shot": "sky",
+     "text": "Listen, Mio. This is the last page. Dostoevsky died three months after he finished it. He was planning a second part. He never wrote it. So this is where he stopped."
+    },
+    {
+     "who": "genzo",
+     "memory": true,
+     "shot": "sky",
+     "text": "A young man at a stone, with twelve boys who have just buried their friend. And he tells them: whatever happens to us, let us never forget one another."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "sky",
+     "text": "I was ten. I said, that's a sad place to stop. He said, no, it's the best place to stop. It's a place you can stand."
+    },
+    {
+     "dur": 3.5,
+     "insert": {
+      "kind": "photo"
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "insert",
+     "text": "Gramps. It's the last Thursday.",
+     "insert": {
+      "kind": "photo"
+     }
+    }
+   ],
+   "chars": {},
+   "set": "sky",
+   "time": "night",
+   "season": "spring",
+   "music": "memory",
+   "amb": [
+    "crickets"
+   ],
+   "memory": true,
+   "fadeIn": 1.5
+  },
+  {
+   "type": "scene",
+   "id": "coldopen-ext",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "ext"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "ext",
+     "text": "Thursday thirty-one. The Dreamer got four nights. We got thirty-one."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "ext:bench",
+     "text": "I'm going to say goodbye properly. I'm not going to cry. I've decided. Out of spite."
+    },
+    {
+     "dur": 2.0,
+     "shot": "ext"
+    }
+   ],
+   "chars": {},
+   "set": "laundry_ext",
+   "time": "night",
+   "season": "spring",
+   "music": "memory",
+   "amb": [
+    "crickets",
+    "city"
+   ],
+   "petals": true,
+   "extCast": false
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "spring"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第十二話",
+   "kicker": "EPISODE 12",
+   "title": "Let Us Never Forget One Another",
+   "sub": "on \"The Brothers Karamazov\" (III)",
+   "season": "spring"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Last night. Midnight, I lock the door, and the keys go to a man in a suit. Thirty-one years."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Are you sad?"
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "I'm seventy-six. I'm going to sleep for a week. Ask me in April."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "emo": "neutral",
+       "prop": "manuscript",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "wave",
+     "shot": "mcu:mio",
+     "text": "Prince! You're on time! On the last night! I'm so proud."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I'm always on time."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "text": "You were late in February. By four minutes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "There was snow."
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Before you sit down. You've been suffering for three years. Go on."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     },
+     "cs": {
+      "hoshino": {
+       "prop": "none"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...The sign?"
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "The sign. I've watched you look at it every week like it insulted your mother."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "pencil",
+     "cs": {
+      "itsuki": {
+       "slot": "standR",
+       "prop": "none"
+      }
+     }
+    },
+    {
+     "dur": 4.0,
+     "insert": {
+      "kind": "sign",
+      "pencil": true
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "look": "other",
+     "shot": "two",
+     "text": "Do it! Do it! Thirty-one weeks of pain!"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "dur": 4.0,
+     "insert": {
+      "kind": "sign",
+      "fixed": true
+     }
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "smile",
+       "look": "up"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "...Dryer, ten minutes. One hundred yen."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "He's glowing! Mrs. Hoshino, look, he's actually glowing!"
+    },
+    {
+     "who": "hoshino",
+     "emo": "laugh",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Thirty-one years and nobody else ever noticed. My husband wrote that sign in nineteen ninety-three. He couldn't spell. I loved him anyway."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "hoshino": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 2.5,
+     "shot": "two",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "emo": "soft",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Did you see the notebook? On the tenth?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "\"PASSED.\" In letters three lines high. With a drawing of a hedgehog wearing a graduation hat."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "text": "It's a very good hedgehog."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Mrs. Hoshino cried. I saw her through the window. She pretended it was the steam from dryer three."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And you?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "...It was very steamy that day."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Notice something? Only the baskets between us now. In August you sat so far away I thought I had a disease."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...The bench got shorter."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "The bench did not get shorter!"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Mrs. Hoshino says it's the cold. Wood shrinks."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Okay. Last book. Last chapter. Last page. Gramps's favourite."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "The stone."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "There's a boy called Ilyusha. Nine years old. His father is a poor ex-captain, and one day Dmitri drags his father out of a tavern by his beard, in front of the whole town, in front of the schoolboys. And little Ilyusha runs after them crying, and kisses Dmitri's hand, and begs him to let his father go."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And afterwards he sits on a big stone at the edge of town with his father, and says, Papa, when I grow up I'll challenge him and kill him. And he gets ill. Consumption. And all the boys in his class who used to throw stones at him come, one by one, and sit by his bed."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Alyosha brings them. One at a time. He doesn't lecture anyone. He just keeps bringing them."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And Kolya brings the dog. Ilyusha thought he'd killed a dog, a long time ago, fed it bread with a pin in it. And it's been eating him up. And Kolya finds the dog, alive, and teaches it tricks, and brings it into the room and it does all its tricks for Ilyusha."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Zhuchka."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "Zhuchka! And Ilyusha's face. Gramps said he couldn't read that bit out loud without stopping."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And then Ilyusha dies. And after the funeral, Alyosha stops the boys by the stone. The same stone. And he gives them a speech. Twelve of them."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "He says, we'll be parting soon. And maybe we'll become bad people later. Cruel, or proud, or we'll laugh at people who suffer. But whatever happens, let's remember this. How we were all together, and how good it was, and how we loved that boy."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "He says one good memory, kept from when you were young, might be the thing that saves you one day. Even if it's only one. Even if you only remember it to laugh at it. Some part of you will say, no, I was good then. I was honest and good."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Brothers Karamazov",
+      "text": "Let us never forget one another. And whatever happens, let us remember how good it once was here, all of us together.",
+      "right": "\"Hurrah for Karamazov!\" Kolya cried once more, and all the boys joined in.",
+      "underline": 2,
+      "note": "This is the place\nyou can stand.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "\"This is the place you can stand.\" He wrote that when I was ten. After he read it to me."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...It's a good place."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And then Kolya asks Alyosha. Is it true, Karamazov, what religion says, that we'll all rise from the dead and see each other again? Even Ilyusha?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And Alyosha says, certainly we shall. And we'll tell each other everything that happened, joyfully. Half laughing, half in ecstasy."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Half laughing. I like that he says half laughing. Like even in heaven people will be a bit embarrassed."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Some people will be very embarrassed."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And then Kolya, the clever one, the show-off, shouts \"Hurrah for Karamazov!\" And all the boys shout it. And they go off to eat pancakes at the funeral lunch. That's the last line of Dostoevsky's last book. Pancakes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He finishes with lunch. After all of it. After the Inquisitor and the murder and the trial. Twelve boys going to eat pancakes."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "It's the best ending in literature."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "shot": "close:itsuki",
+     "text": "It is."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "grin",
+     "prop": "book",
+     "bookColor": "#3a2a4a",
+     "idleLook": "other"
+    },
+    "hoshino": {
+     "slot": "standR",
+     "emo": "smile",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "spring",
+   "music": "tease",
+   "musicVol": 0.7,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    1,
+    2
+   ],
+   "clock": 21.9,
+   "petals": true,
+   "caption": "Thursday, late March. The last night.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95,
+     "from": 24
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "spring"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "The nine twelve train. On Saturday. Mum's coming with me to set up the room. It's six tatami. It has a window. I checked."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...A window is important."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I know. I read a very sad novella about it."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "This is for you."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "sfx": "page",
+     "cs": {
+      "itsuki": {
+       "prop": "none"
+      },
+      "mio": {
+       "prop": "manuscript"
+      }
+     }
+    },
+    {
+     "dur": 6.0,
+     "insert": {
+      "kind": "manuscript",
+      "title": "The Laundry That Never Closes",
+      "text": "Chapter One\n\nThere is a coin laundry by the canal that never closes. That is the first thing to know about it. The second thing is that it is closing.",
+      "note": "sixteen pages. for my reader. — I.K."
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...All sixteen. Bound."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "The print shop at work. I used the good stapler. Nobody saw."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "There's a good mother in it."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "On page twelve. I promised."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And a girl."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...She's like the moon in a picture of a street. She's at the top. She's not the subject."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "She's on every page. I read them every Thursday. She's on every single page and he thinks she isn't."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I'll read it again on the train. And every winter. Like Gramps."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "My turn. Close your eyes. No. Don't close them. You'll fall asleep. You're very old."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'm twenty-nine now. In February."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You had a birthday and didn't tell me?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Mum told me. She remembered. For six minutes."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": "teary"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Gramps's Karamazov. The one with eleven winters in the back.",
+     "cs": {
+      "mio": {
+       "prop": "book",
+       "bookColor": "#3a2a4a"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I can't take that."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You're not taking it. I'm lending it. Like the leaf. You have to give it back. That means we have to meet again. That's the rule of lending."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "sfx": "page",
+     "cs": {
+      "mio": {
+       "prop": "none"
+      },
+      "itsuki": {
+       "prop": "book",
+       "bookColor": "#3a2a4a"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "There's new writing on the last page."
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Read it later."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'm going to read it now."
+    },
+    {
+     "dur": 8.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Brothers Karamazov",
+      "text": "\"Hurrah for Karamazov!\" Kolya cried once more, and all the boys joined in.",
+      "note": "Run sooner.\nRead again next winter.\nNever forget.\n— M. (the hedgehog one)",
+      "noteBy": "mio"
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Blue pencil."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps used grey. I'm not Gramps. I'm the next one."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    },
+    {
+     "dur": 2.0,
+     "shot": "insert:cat",
+     "sfx": "meow",
+     "cat": {
+      "slot": "cat_dryer",
+      "pose": "sit"
+     },
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "up",
+     "shot": "two",
+     "text": "Fyodor Mikhailovich. Where will you go? Mrs. Hoshino says you won't go to Sendai."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "...I asked her. If I could take him. My new machine runs very hot. He'll like it."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "cover",
+     "shot": "close:mio",
+     "text": "You're going to let a cat sleep on your secret washing machine."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It isn't a secret any more. It's a cat bed."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "hoshino": {
+       "slot": "standL",
+       "emo": "soft",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Ten minutes, my dears. I'm sorry. The man in the suit will be here at midnight and he's the punctual type."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Mrs. Hoshino. Thank you. For the notebook. For everything."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Take it. The notebook. The lost-and-found belongs to whoever lost the most in it, and found the most. I think that's you two. Split it down the middle."
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Come and see me in Sendai. Both of you, separately, whenever you like. Bring a book. Not a sad one. I've had enough sad ones in thirty-one years."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Thank you for being awake."
+    },
+    {
+     "who": "hoshino",
+     "emo": "teary",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Oh, don't. Don't you start. I said I wouldn't."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "hoshino": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "chime"
+    },
+    {
+     "who": "mio",
+     "look": "up",
+     "shot": "close:mio",
+     "text": "It's eleven fifty."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "manuscript",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "spring",
+   "music": "wonder",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    2
+   ],
+   "clock": 22.6,
+   "signFixed": true,
+   "petals": true,
+   "cat": {
+    "slot": "cat_bench",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "door",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "two",
+     "text": "I'm not going to cry. I decided. Out of spite."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That's a very good reason."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Thirty-one Thursdays. Four for the Dreamer. Thirty-one for us. We won."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "We won."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Mio."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:itsuki",
+     "text": "Thank you for telling me I was reading it wrong."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Thirty-one Thursdays. Once. He saved it for the last one. Like a man who's been carrying one word around in his coat pocket since August, unfolding it to check the commas."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...Itsuki-san. You're very welcome."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Goodnight. Don't walk me. I know where the line is."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "door",
+     "emo": "soft",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "standR",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#3a2a4a",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_ext",
+   "season": "spring",
+   "music": "theme",
+   "musicVol": 0.6,
+   "amb": [
+    "crickets"
+   ],
+   "petals": true,
+   "cat": null
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "The middle of the bridge. His line. I'm walking over it. On the other side is Saturday, and Tokyo, and a room with a window."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Itsuki-san! Hurrah for Karamazov!"
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "Hurrah for Karamazov!"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "cry",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He laughed. Out loud. On a bridge, at midnight. The whole canal heard it. I'm going to keep that. That's my stone."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "farL",
+     "emo": "teary",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "farR",
+     "emo": "soft",
+     "prop": "book",
+     "bookColor": "#3a2a4a",
+     "idleLook": "other"
+    }
+   },
+   "set": "bridge",
+   "season": "spring",
+   "music": "theme",
+   "musicVol": 0.8,
+   "amb": [
+    "crickets"
+   ],
+   "petals": true
+  },
+  {
+   "type": "scene",
+   "id": "epilogue",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "dur": 4.0,
+     "insert": {
+      "kind": "cat",
+      "pose": "sleep"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "shot": "insert",
+     "text": "Fedya sleeps on the washing machine. It runs very hot. He's forgiven me for everything.",
+     "insert": {
+      "kind": "cat",
+      "pose": "sleep"
+     }
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine  (cat bed)\n2. Visit Mum  (every month. Next: 20th.)\n3. Reply to Mr. Sakurai  (sent. \"Here is the next one.\")\n4. Write  (chapter 2, page 3)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.\n10. Tell her to go.  (done)\n11. Return the Karamazov. In person."
+     }
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "shot": "mcu:itsuki",
+     "text": "Dear Makar Alexeyevich. Tokyo is very loud and my window looks at another window, which has a man in it who plays the trumpet badly every morning at seven. He's my favourite person in Tokyo. I've named him Rogozhin."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "shot": "close:itsuki",
+     "text": "I've read the sixteen pages again. Four times. You need to send me page seventeen. You're late. No excuses, Prince."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "shot": "mcu:itsuki",
+     "text": "I told Mum everything. About the Thursdays, and the notebook, and the bridge, and your line in the middle of it. She was quiet for a long time. Then she said she'd like to meet the man who told me to go, so she can thank him properly. She's bringing persimmons. Be warned."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "shot": "close:itsuki",
+     "text": "P.S. Sora can hold her head up. She is the cleverest baby in Japan. P.P.S. Read again next winter. Never forget."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "smile",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "smile",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Page seventeen. There is a coin laundry by the canal that has closed. That's the first thing to know. The second thing is that nothing that happened there is finished."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "soft",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "time": "day",
+   "season": "spring",
+   "music": "hope",
+   "musicVol": 0.6,
+   "amb": [
+    "birds",
+    "room"
+   ],
+   "caption": "April."
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 12: Let Us Never Forget One Another",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Genzo Takanashi",
+    "Mrs. Hoshino",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Brothers Karamazov (1880)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Let us never forget one another. And whatever happens, even if we never meet again, let us remember how good it once was here, all of us together.",
+   "quoteBy": "Fyodor Dostoevsky, \"The Brothers Karamazov\"",
+   "season": "spring"
+  },
+  {
+   "type": "card",
+   "id": "card-11",
+   "style": "text",
+   "dur": 8,
+   "title": "Thank you for reading with us.",
+   "sub": "Dostoevsky at the Coin Laundry · The End",
+   "season": "spring"
+  }
+ ]
+}

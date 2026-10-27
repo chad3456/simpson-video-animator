@@ -1,0 +1,1111 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E9",
+  "title": "The Ridiculous Man",
+  "book": "The Dream of a Ridiculous Man (1877)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Mid-December. Mio's mother has gone into hospital three weeks early, and for two Thursdays the bench is empty. Alone with Dostoevsky's strangest short story, about a man who had decided nothing mattered until a little girl in the rain proved him wrong, Itsuki remembers the winter he wanted nothing, and keeps the notebook company until she comes back.",
+  "season": "winter",
+  "gap_bench": 104,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Dream of a Ridiculous Man (1877); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "hoshino": {
+   "name": "Mrs. Hoshino",
+   "role": "owner of Coin Laundry Hoshizora",
+   "voice": "bf_emma",
+   "speed": 0.9
+  },
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "emo": "neutral",
+       "prop": "manuscript",
+       "idleLook": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Thursday number sixteen. Page one, in my coat pocket. Folded in four. I've unfolded it twenty times on the way here to check the commas."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "The bench is empty."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "page",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "prop": "notebook",
+       "emo": "neutral",
+       "idleLook": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "shot": "insert",
+     "text": "Prince. Mum went into hospital this morning. The baby's coming three weeks early. Everyone says it's fine, so I'm not saying it, because last time everyone said it was fine I didn't believe them either.",
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "mio",
+      "rot": -2,
+      "text": "Prince —\nMum went into hospital this morning.\nThe baby is coming 3 weeks early.\nI might not come for a while."
+     }
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "shot": "close:itsuki",
+     "text": "I might not come for a while. Leave page one here. I'll read it, I promise. Read The Dream of a Ridiculous Man while I'm gone. It's only twenty pages. Even you can't take more than a week."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "shot": "mcu:itsuki",
+     "text": "And look between the pages. I've lent you something of Gramps's. Don't lose it. — A. (still the hedgehog one)"
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {},
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    3
+   ],
+   "clock": 22.0,
+   "fadeIn": 1.2,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   }
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "winter"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第九話",
+   "kicker": "EPISODE 9",
+   "title": "The Ridiculous Man",
+   "sub": "on \"The Dream of a Ridiculous Man\"",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "A leaf. A maple leaf, pressed flat, brown at the edges, still red in the veins. Taped to a slip of paper in her grandfather's pencil."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "Demons",
+      "text": "Have you seen a leaf, a leaf from a tree? Green, bright, with the veins, and the sun shining on it?",
+      "right": "Everything is good. Everything. A man is unhappy only because he does not know that he is happy.",
+      "underline": 2,
+      "note": "Kirillov. Right about\nthe leaf. Wrong about\neverything else.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "Kirillov, in Demons. The engineer who has decided to die, and who stays up all night playing with a neighbour's baby, and says everything is good. Dostoevsky put the happiest speech in the book in the mouth of the saddest man."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "She lent me her grandfather's leaf. She doesn't lend people things. She lends people nicknames."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "dur": 3.0,
+     "shot": "mcu:itsuki",
+     "sfx": "pencil",
+     "cs": {
+      "itsuki": {
+       "act": "write"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Page one goes in the notebook, between her letter and the sock notices. Folded once. The first page I've given anyone in five years, and nobody's here to read it. That's probably the right way to start."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "The Dream of a Ridiculous Man. Twenty pages. She's right. I'll read it here."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "\"I am a ridiculous man. Now they call me mad.\" It starts like the Underground Man. A man nobody listens to, talking to an audience that isn't there."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He has decided that nothing matters. Not as a mood. As a fact. Nothing in the world makes any difference. So one November night he goes home intending to end his life."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "On the way, a little girl grabs his sleeve in the rain. Eight years old, soaking, crying \"Mama, mama.\" Her mother is dying. She's looking for anyone at all. And he shouts at her and stamps his foot and walks on."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "And at home, with everything ready, he can't stop thinking about her. If nothing matters, why does he feel sorry? Why does it hurt? The little girl has ruined his whole theory."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "There was a winter when I wanted nothing. Five years ago, after the prize, after Mum's diagnosis. I didn't want to die, exactly. I just didn't want. Not food, not books, not mornings. I lay on the floor of my flat and watched the ceiling get dark at four o'clock."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "What got me up was ridiculous. A woman from the flat below knocked to say my washing machine was leaking through her ceiling. She was so angry. She was the first person in a month who'd needed me to do something."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "smile",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "That was the washing machine. That's how it broke. I never fixed it. I suppose I didn't want to throw away the thing that knocked on the door."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "memory",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    3
+   ],
+   "clock": 22.2,
+   "caption": "Thursday, mid-December.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "hoshino": {
+       "slot": "door",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Ah. Just you."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Her mother's having the baby. Early."
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "I know. She rang me. She asked me to tell you something."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...She rang you?"
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "She said, \"Make sure he eats. And make sure he doesn't fix the washing machine.\" I said I'd do my best with the first one."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "can",
+     "cs": {
+      "hoshino": {
+       "slot": "standL"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Do you remember the first night you came in here? Three years ago. Three in the morning, in November. You had a carrier bag with one shirt and one sock in it, and a face like a wet newspaper."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I didn't think anyone noticed."
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "I was doing the coin boxes. You sat at that end of the bench for two hours watching one shirt go round. I thought, that boy's either in love or in trouble."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Trouble."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "My husband and I opened this place in nineteen ninety-three. He used to say a coin laundry is the only honest room in Japan. Everybody's socks go round the same way. Company presidents and students and grandmothers, all watching the same window."
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "He died in two thousand and nine. I kept it open twenty-four hours after that because I couldn't sleep anyway. Somebody might as well get some use out of me being awake."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I'm glad you were awake."
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "I know. You were back the next week with two shirts. That's how I knew you'd be all right. It was the extra shirt."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "She told me about you in September, you know. The girl. She said, \"There's a man who reads White Nights wrong. Do you know if he's nice?\" I said I'd known you three years and you'd never once said a whole sentence. She said, \"Good. Then he's saving them.\""
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...Oh."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Eat something. There's a convenience store. I'll watch your sock."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "hoshino": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.55,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    3
+   ],
+   "clock": 23.1,
+   "cat": {
+    "slot": "cat_bench",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-3",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Thursday seventeen. Still empty. Page one is still in the notebook. Unread. Page two is in my pocket."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "In the story, the ridiculous man falls asleep in his chair and dreams. He dreams he shoots himself, and he's buried, and then something carries him through space to a star. To another Earth."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "An Earth before the Fall. Where people have never learned to lie. They sing to the trees. They love each other without jealousy. They look at him with such tenderness that he weeps."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And he ruins them. Not on purpose. He teaches them one lie, as a joke, and it spreads like a germ. Then pride, then jealousy, then cruelty, then science to explain why cruelty is natural. In the end they're just like us. And he begs them to crucify him, and they laugh at him. Ridiculous man."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "And then he wakes up. Still in his chair. The gun on the table. Morning. And he's laughing. Because he's seen it. He's seen that people could be happy, and that it's possible, and that the whole thing is very simple."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Dream of a Ridiculous Man",
+      "text": "The main thing is to love others as yourself. That is the main thing, and that is everything.",
+      "right": "And I found that little girl. And I shall go on! I shall go on!",
+      "underline": 2,
+      "note": "He does not save\nthe world. He finds\none girl. Enough.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He found the little girl. That's the whole ending. He doesn't change the world. He goes and finds the one person he walked past."
+    },
+    {
+     "dur": 2.5,
+     "shot": "mcu:itsuki",
+     "sfx": "pencil",
+     "cs": {
+      "itsuki": {
+       "act": "write"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "soft",
+     "shot": "insert",
+     "text": "Dear Varvara, dear Nastenka, dear hedgehog. I've read it. It took me twenty minutes, and then I read it three more times, and then Mrs. Hoshino made me eat a rice ball.",
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "itsuki",
+      "rot": 1,
+      "text": "Dear Varvara, dear Nastenka,\ndear hedgehog —\nI've read it."
+     }
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "shot": "close:itsuki",
+     "text": "The ridiculous man's little girl is the reason he gets up in the morning. Not because he saved her. He didn't. Because she asked him for help, and he found out it mattered to him that he said no."
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "soft",
+     "shot": "mcu:itsuki",
+     "text": "Mine was a woman with a leaking ceiling. Then a cat on a dryer. Then a girl who said I was reading White Nights wrong. I didn't go and find any of them. They all came to me. I'd like to be the one who goes, for once."
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "shy",
+     "shot": "close:itsuki",
+     "text": "So I'm going to go. Not tonight. But soon. There's a tree with no persimmons on it, two hours away on the local line. I'll tell you about it. Your leaf is safe. — Makar, Underground-san, the donkey, the Prince."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "wonder",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    2
+   ],
+   "clock": 22.5,
+   "caption": "The next Thursday.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-4",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sleepy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Ten to one. My washing finished two hours ago. It's resting."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "cry",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Takanashi-san?"
+    },
+    {
+     "who": "mio",
+     "emo": "cry",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "You're here. You're still here. It's one in the morning and you're still here."
+    },
+    {
+     "who": "itsuki",
+     "emo": "worried",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Is everyone..."
+    },
+    {
+     "who": "mio",
+     "emo": "cry",
+     "act": "cover",
+     "shot": "close:mio",
+     "text": "Everyone's fine. Everyone's fine. She's fine. She was so small, Prince. Two kilos. She was in a box with wires for nine days and I wasn't allowed to touch her and today they let me hold her and she held my finger."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I came straight from the hospital. I didn't think you'd be here. I just wanted to see the bench. I just wanted to see the place."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two",
+     "cs": {
+      "mio": {
+       "slot": "benchL",
+       "emo": "teary",
+       "idleLook": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...What's her name?"
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "They let me suggest it. I said Sora. Like the sky. Like the laundry. Hoshizora. Mum said it was perfect. She doesn't know where it's from."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Sora."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Sora Ogawa. She has Satoshi-san's ears. Poor thing."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "smile",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "The first night, they took Mum away for an operation and nobody would tell us anything. Satoshi-san was walking up and down the corridor like Dostoevsky dictating. And I sat on a plastic chair and read the Ridiculous Man on my phone, because I'd told you to."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "When I got to the little girl in the rain, I got up, and I went and found Satoshi-san, and I held his hand. The first time. He cried so much a nurse brought him a towel. A warm one."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...You found the little girl."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I found a forty-five-year-old man with Sora's ears. It counts."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Did you read it? The Ridiculous Man?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's in the notebook. I wrote you a reply. And page one. And here."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "sfx": "page",
+     "cs": {
+      "itsuki": {
+       "prop": "manuscript"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Page two. I didn't know if I should write it, without page one being read. I wrote it anyway."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "You kept going. Even with nobody reading."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I shall go on. Somebody told me to read that."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "\"On the second night of every week, the cat moves from dryer three to the bench, because dryer three is the only machine in town that runs hot enough for a cat, and on the second night of every week someone uses it.\""
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "The second night of every week. That's us. That's our laundry. Fyodor Mikhailovich gets evicted because of us!"
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It wasn't meant to be funny."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "It's the funniest sentence I've ever read. Keep it. Don't you dare proofread it."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He waited until one in the morning. On a Thursday that's technically a Friday. With his washing resting."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He's never once said my first name. Not once, in seventeen Thursdays. I've stopped minding. Some people say your name. Some people wait until one in the morning."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "sleepy",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.5,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    9
+   ],
+   "clock": 0.9,
+   "cat": {
+    "slot": "cat_bench",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ext-dawn",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "ext",
+     "text": "Thursday seventeen. Technically Friday. I'm counting it."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "shot": "ext",
+     "text": "She read both pages under the strip light, with her coat still on. She laughed at a sentence I didn't know was funny. I'm going to keep that sentence."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "ext",
+     "text": "Gramps, I held my sister today, and then I ran across town in the snow to look at a bench. I don't know what that means. I think you would have."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "shot": "ext",
+     "text": "Fourteen Thursdays left. I've written two pages. The ridiculous man said it's very simple. He's right. You go and find the person. You go on."
+    },
+    {
+     "dur": 3.0,
+     "shot": "ext",
+     "sfx": "buzzer"
+    },
+    {
+     "dur": 4.0,
+     "shot": "ext"
+    }
+   ],
+   "chars": {},
+   "set": "laundry_ext",
+   "time": "night",
+   "season": "winter",
+   "weather": "snow",
+   "music": "theme",
+   "musicVol": 0.7,
+   "amb": [
+    "snow"
+   ],
+   "cat": null
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 9: The Ridiculous Man",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Mrs. Hoshino",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Dream of a Ridiculous Man (1877)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "And I went and I found that little girl. And I shall go on. I shall go on.",
+   "quoteBy": "Fyodor Dostoevsky, \"The Dream of a Ridiculous Man\"",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "sad",
+     "text": "Next time. Ivan Karamazov, the Grand Inquisitor, and the hardest argument in literature. And a decision I've been avoiding."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "text": "Episode ten. Returning the Ticket. It's going to snow a lot."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Returning the Ticket",
+   "nextSub": "on \"The Brothers Karamazov\" (I)",
+   "season": "winter"
+  }
+ ]
+}

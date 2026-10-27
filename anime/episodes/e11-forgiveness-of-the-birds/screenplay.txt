@@ -1,0 +1,195 @@
+episode: 11
+slug: e11-forgiveness-of-the-birds
+title: Forgiveness of the Birds
+kanji: 第十一話
+sub: on "The Brothers Karamazov" (II)
+book: The Brothers Karamazov (1880)
+season: winter
+linegap: 0.75
+gap: 90
+logline: February. On the same Saturday, Mio takes the train to Tokyo for her entrance exam and Itsuki takes the local line to his mother's care home, carrying Father Zosima's story of his dying brother, who asked the birds to forgive him. That Thursday, Mrs. Hoshino tells Mio something about Itsuki's washing machine that he will never say himself.
+quote: Birds of God, joyful birds, forgive me too, for I have sinned against you as well.
+quoteBy: Fyodor Dostoevsky, "The Brothers Karamazov"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=train time=day season=winter music=memory musicVol=0.6 amb=train fadeIn=1.2
+@ itsuki slot=seatL emo=neutral look=away prop=book bookColor=#3a2a4a
+BEAT 3 [wide] (sfx=train)
+ITSUKI (thought) [mcu:itsuki] (look=away): Saturday. The local line to Tsugawa. Two hours and eleven minutes, fourteen stations. I used to know all their names. I've forgotten three.
+ITSUKI (thought) [close:itsuki] (look=down): At this moment she's on the bullet train to Tokyo with a pencil case and her grandfather's star clip. Her exam starts at ten. We're travelling in opposite directions at the same time.
+ITSUKI (thought) [close:itsuki] (soft, look=front): She wrote it in the notebook on Thursday. "You go your way, I'll go mine, and we'll compare notes. No excuses, Prince."
+BEAT 3 [wide] (sfx=train)
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE station-mio | set=station station=tokyo time=day season=winter music=hope musicVol=0.55 amb=city | caption=Saturday, February. Tokyo.
+@ mio slot=platL emo=worried look=front
+BEAT 2.5 [wide] (sfx=train)
+MIO (thought) [mcu:mio] (worried, look=front): Tokyo Station. Everyone walks like they're late for their own execution. I'm going to be crushed by a businessman before I find the right exit.
+MIO (thought) [close:mio] (look=down): Gramps came here in nineteen sixty-eight with one suitcase and a Russian dictionary. He said the first thing he did was get lost for three hours and the second was buy a book.
+MIO (thought) [close:mio] (soft, look=up): Somewhere, two hours north of home, he's on a train too. I told him to go. He told me to go. We're both going. That's the most romantic thing that's ever happened to me and nobody would understand it.
+MIO (thought) [close:mio] (look=front): Mum wanted to come with me. I said no. Somebody has to do the two o'clock feed, and Satoshi-san sleeps through it like a log. She cried at the ticket gate. Sora didn't. Sora was asleep. Sora is very cool about everything.
+MIO (thought) [mcu:mio] (smile, look=front): Okay. Exit B. Go.
+BEAT 2.5 [wide] (sfx=steps)
+
+== SCENE carehome-1 | set=carehome time=day season=winter music=memory musicVol=0.5 amb=birds,room | caption=Hikari Care Home, Tsugawa.
+@ fumiko slot=chairL emo=neutral look=away
+@ itsuki slot=chairR emo=neutral look=other
+BEAT 3 [wide]
+FUMIKO (look=other) [mcu:fumiko]: Hideo. You came. You didn't wear a coat.
+ITSUKI (soft, look=other) [close:itsuki]: ...I wore a coat, Mum. Look. It's a good one. It's been dry-cleaned.
+FUMIKO (smile, look=other) [mcu:fumiko]: You look thin. They don't feed you at that office.
+ITSUKI (smile, look=down) [close:itsuki]: They don't.
+FUMIKO (look=away) [mcu:fumiko]: Is it still the bank? You said they were going to move you to the branch by the river.
+ITSUKI (soft, look=other) [close:itsuki]: ...They moved me. It's a nice branch. You can see the river from the window.
+FUMIKO (smile, look=other) [mcu:fumiko]: Good. A man should be able to see water from where he works. Otherwise he forgets things move.
+ITSUKI (thought) [close:itsuki] (sad, look=down): My father worked at the bank by the river for twenty years. I'm lying to her in his voice, about his life. It's the only conversation she can have. I'll have it.
+BEAT 2.5 [two]
+ITSUKI (look=other) [close:itsuki]: I went past the house. The persimmon tree's still there. Bare. The crows had all of them.
+FUMIKO (laugh, look=other) [mcu:fumiko]: I told you. Every year I tell you. You never listen.
+ITSUKI (soft, look=down) [close:itsuki]: ...You were right about the crows.
+FUMIKO (smile, look=away) [mcu:fumiko]: I'm always right about crows.
+ITSUKI (thought) [close:itsuki] (teary, look=down): She liked being right about the crows. Somebody told me she would.
+BEAT 3 [two]
+ITSUKI (look=other) [close:itsuki]: Can I read you something? It's short.
+FUMIKO (look=other) [mcu:fumiko]: Read. Your father always read to me. Badly.
+@ itsuki prop=book bookColor=#3a2a4a
+BEAT 2 [close:itsuki] (sfx=page)
+ITSUKI (look=book) [close:itsuki]: There's an old monk, Father Zosima. When he was a boy, his older brother, Markel, was seventeen and dying of consumption. And Markel had been angry and proud, and didn't believe in anything. And then, in the spring, in his last weeks, he changed.
+ITSUKI (look=book) [mcu:itsuki]: He started saying things nobody understood. He told his mother not to cry. He said, life is paradise, Mama, and we are all in paradise, but we don't want to know it. If we only wanted to, tomorrow the whole world would be paradise.
+ITSUKI (soft, look=book) [close:itsuki]: And he'd open his window in the mornings and the birds would be in the garden, and he'd say: birds of God, joyful birds, forgive me too, for I have sinned against you as well.
+INSERT book 7 | title=The Brothers Karamazov | text=Birds of God, joyful birds, forgive me too, for I have sinned against you as well. | right=Each of us is guilty before everyone, for everyone and for everything. | underline=1 | note=I did not understand\nthis until I was old.\nRead it to someone.\n— G. | noteBy=genzo
+FUMIKO (look=away) [mcu:fumiko]: ...Asking the birds for forgiveness. What a strange boy.
+ITSUKI (soft, look=down) [close:itsuki]: Everyone thought he'd lost his mind. His mother cried, because she thought it was the illness. But Zosima says he was the only sane person in the house.
+FUMIKO (soft, look=other) [mcu:fumiko]: The mother cried because her boy was being kind and she couldn't keep him. That's what mothers cry about.
+BEAT 4 [close:itsuki] (itsuki=teary, itsuki.look=other)
+BEAT 3 [two]
+FUMIKO (surprised, look=other) [mcu:fumiko]: ...Itsuki?
+BEAT 3 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+FUMIKO (soft, look=other) [mcu:fumiko]: Itsuki. When did you get so old? You're wearing a coat.
+ITSUKI (teary, look=other) [close:itsuki]: ...Hello, Mum.
+FUMIKO (smile, look=other) [mcu:fumiko]: Are you eating? You look like a heron. Are you writing?
+BEAT 3 [close:itsuki] (itsuki=teary, itsuki.look=down)
+ITSUKI (teary, look=down) [close:itsuki]: I'm writing. One page a week. A friend is making me.
+FUMIKO (look=other) [mcu:fumiko]: What's it about?
+ITSUKI (soft, look=other) [close:itsuki]: A laundry. A coin laundry by a canal that's always open, and is closing.
+FUMIKO (smile, look=other) [mcu:fumiko]: That sounds nice. Ordinary. Put a good mother in it this time. That one in the first book was too harsh.
+ITSUKI (teary, act=cover) [close:itsuki]: ...I'll put a good mother in it.
+FUMIKO (soft, look=other) [mcu:fumiko]: And the friend who's making you. Put her in too. Anyone who can make you do anything deserves to be in a book.
+ITSUKI (thought) [close:itsuki] (teary, look=down): "Her." I never said her.
+BEAT 3 [wide] (sfx=chime)
+FUMIKO (look=away) [mcu:fumiko]: Hideo, is it time for lunch? The boy who comes on Saturdays always forgets the lunch.
+ITSUKI (soft, look=other) [close:itsuki]: ...I'll bring it next time.
+BEAT 4 [wide]
+ITSUKI (thought) [mcu:itsuki] (soft, look=front): She knew me for six minutes. I timed it on the clock above the door. Six minutes. It was enough. It was more than enough. It was a whole moment of bliss.
+BEAT 3 [wide]
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-1 | set=laundry_int season=winter weather=snow music=night musicVol=0.6 amb=washer,snow washers=1,4 clock=21.9 | caption=Thursday.
+@ mio slot=benchL emo=grin look=other
+@ hoshino slot=standR emo=neutral look=other
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+BEAT 2 [wide]
+MIO (grin, look=other) [mcu:mio]: I got lost for three hours and then I bought a book. Exactly like Gramps. The exam was fine. I think. I wrote about the Underground Man. I called him a spiteful little coward with a beautiful mind. I may have failed.
+HOSHINO (smile, look=other) [mcu:hoshino]: You'll have passed. You're the type. Where's your prince?
+MIO (smile, look=other) [close:mio]: Late. He's never late. He's probably proofreading the snow.
+BEAT 2 [two]
+HOSHINO (look=other) [mcu:hoshino]: Hm. Can I tell you something he'd be very cross that I told you?
+MIO (surprised, look=other) [close:mio]: ...Yes. Obviously yes.
+HOSHINO (look=down) [mcu:hoshino]: In October, the week after the typhoon, he came in on a Tuesday. He never comes on a Tuesday. He asked me which washing machine to buy. A proper one. He wrote down the model I said, very carefully, in pencil.
+MIO (surprised, look=other) [close:mio]: ...October?
+HOSHINO (soft, look=other) [mcu:hoshino]: My nephew delivers for the electrical shop. He took it up four flights of stairs. It's been in that flat since the twenty-fourth of October. Working. Plumbed in.
+HOSHINO (smile, look=other) [mcu:hoshino]: And he's been here every Thursday since. With a basket of washing he could have done at home. Some weeks it's three shirts. Last week it was one towel.
+BEAT 4 [close:mio] (mio=surprised, mio.look=down)
+MIO (thought) [close:mio] (surprised, look=down): October. The typhoon. The week I said my ugly thing out loud in the dark. He went home and bought a washing machine, and then came back the next Thursday with a basket of washing. And the next. And the next.
+MIO (thought) [close:mio] (teary, look=down): Sixteen Thursdays with nothing to wash. One towel.
+HOSHINO (soft, look=other) [mcu:hoshino]: I'm not telling you so you'll say anything. Don't you dare say anything. I'm telling you because I'm an old woman and I'm leaving in March, and somebody besides me ought to know.
+@ hoshino slot=none
+BEAT 2 [wide] (sfx=bell)
+BEAT 4 [close:mio] (mio=teary, mio.look=front)
+MIO (thought) [close:mio] (soft, look=front): Each of us is guilty before everyone, for everyone. Markel meant it as a kind of happiness. I never understood that. I think I do now. I owe him for sixteen towels.
+BEAT 2 [wide] (sfx=bell)
+@ itsuki slot=door emo=neutral look=other
+BEAT 1.5 [wide]
+
+== SCENE laundry-2 | set=laundry_int season=winter weather=snow music=wonder musicVol=0.6 amb=washer,snow washers=1,4 clock=22.1
+@ mio slot=benchL emo=soft look=other
+@ itsuki slot=benchR emo=soft look=other
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 2 [two]
+MIO (soft, look=other) [close:mio]: You went.
+ITSUKI (soft, look=down) [close:itsuki]: I went.
+MIO (look=other) [close:mio]: Tell me. Everything. I mean it. Start with the train.
+ITSUKI (look=front) [mcu:itsuki]: Fourteen stations. She called me Hideo. I told her the crows had won. She was delighted. I read her Markel. And at the part about the birds she said the mother cried because her boy was being kind and she couldn't keep him.
+ITSUKI (soft, look=front) [close:itsuki]: And then she looked at me and said my name. For six minutes. She asked if I was writing. I said yes. She said put a good mother in it.
+MIO (teary, look=other) [close:mio]: ...Six minutes.
+ITSUKI (soft, look=down) [close:itsuki]: The Dreamer got four nights. I got six minutes. I think I did better, per minute.
+MIO (laugh, act=cover) [close:mio]: Don't make jokes. I'm trying to cry properly.
+BEAT 3 [two]
+MIO (look=book) [mcu:mio]: I read the Zosima chapters on the bullet train. The duel. Zosima as a young officer, the night before a duel, hits his servant in the face. And in the morning the sun is shining and the birds are singing and he suddenly understands what he's done.
+ITSUKI (look=front) [close:itsuki]: And he goes and bows to the servant. Down to the ground.
+MIO (smile, look=front) [close:mio]: And then he goes to the duel and lets the other man shoot first, and when he misses, he throws his pistol into the trees and apologises. Everyone thinks he's a coward. And that afternoon he resigns and becomes a monk.
+ITSUKI (smile, look=down) [close:itsuki]: Dostoevsky really liked people who throw away the thing everyone's watching. The pistol. The money in the fire.
+MIO (look=front) [close:mio]: And Dmitri. Gramps loved Dmitri most. The night they arrest him for his father's murder, the one he didn't do, he falls asleep on a chest in the police station and dreams.
+MIO (sad, look=front) [mcu:mio]: He's riding through a burnt village in the snow, and there are thin women standing by the road, and one of them is holding a baby that's crying, crying, with its little arms bare and blue. And he keeps asking the driver, why is the babe crying? Why are they poor? Why don't they feed the babe?
+ITSUKI (soft, look=down) [close:itsuki]: And the driver says, it's the fire. They've been burnt out. And Dmitri says, no, tell me why. And he feels a tenderness he's never felt before. He wants to do something, right now, so that the babe stops crying.
+MIO (teary, look=front) [close:mio]: And when he wakes up, someone has put a pillow under his head. One of the clerks. He doesn't know who. And he says, "I've had a good dream, gentlemen," and he's almost crying because of the pillow.
+ITSUKI (soft, look=front) [close:itsuki]: Somebody put a pillow under his head. That's the whole of Dostoevsky. A man accused of murder, and someone he'll never know does something kind while he's sleeping.
+MIO (look=other) [close:mio]: People keep putting pillows under other people's heads in this book. In secret.
+ITSUKI (look=down) [close:itsuki]: ...They do.
+MIO (soft, look=other) [close:mio]: Like buying a washing machine.
+BEAT 3 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+ITSUKI (look=other) [close:itsuki]: ...Sorry?
+MIO (smile, look=front) [close:mio]: Your washing machine. Item one. How's it doing? Still broken?
+BEAT 4 [close:itsuki] (itsuki=blush, itsuki.look=down)
+ITSUKI (blush, look=down) [close:itsuki]: ...It's not broken.
+BEAT 4 [two] (mio=soft, mio.look=front)
+MIO (soft, look=front) [close:mio]: ...Good. Don't fix it.
+BEAT 5 [wide]
+ITSUKI (thought) [close:itsuki] (blush, look=down): She knows. Mrs. Hoshino. She knows, and she isn't going to say anything, and neither am I. That's the most honest conversation I've ever had.
+MIO (thought) [close:mio] (soft, look=front): He knows I know. Neither of us is going to say it. Some things are better as a stone nobody lifts. Not because they're ugly. Because they're finished, and they're ours.
+BEAT 3 [two]
+MIO (look=front) [close:mio]: Five Thursdays left.
+ITSUKI (look=front) [close:itsuki]: Five.
+MIO (soft, look=other) [close:mio]: Life is paradise, Markel said. We're all in paradise, but we don't want to know it.
+ITSUKI (soft, look=down) [close:itsuki]: ...I know it. Tonight I know it.
+BEAT 3 [wide] (sfx=buzzer)
+
+== SCENE bridge-1 | set=bridge season=winter weather=snow music=theme musicVol=0.65 amb=snow
+@ mio slot=railL emo=soft look=other
+@ itsuki slot=railR emo=soft look=other
+BEAT 3 [wide] (sfx=steps)
+MIO (tease, look=other) [two]: Goodnight, Prince. Do your laundry at home sometimes. It's a waste of a good machine.
+ITSUKI (flustered, act=hide) [close:itsuki]: ...Goodnight.
+MIO (look=other) [close:mio]: The results come out on the tenth of March. Online. At ten in the morning.
+ITSUKI (look=other) [close:itsuki]: ...You'll tell me?
+MIO (smile, look=other) [close:mio]: I'll write it in the notebook. Whatever it says. Pass or fail. And then I'll come and tell you on Thursday, so you have to look at my face when you read it.
+ITSUKI (soft, look=down) [close:itsuki]: ...That's cruel.
+MIO (tease, look=other) [close:mio]: I learned from the best. Nastasya Filippovna.
+@ mio slot=farL
+BEAT 3 [wide] (sfx=steps)
+ITSUKI (thought) [close:itsuki] (soft, look=other): Markel asked the birds to forgive him. I don't know who to ask. Her, maybe. For coming every Thursday with one towel. Or the towel.
+BEAT 3 [wide]
+
+== SCENE room-11 | set=room_him season=winter weather=snow music=night musicVol=0.55 amb=room,snow
+@ itsuki slot=desk emo=soft look=down
+BEAT 2.5 [wide] (sfx=pencil)
+INSERT manuscript 6 | title=11 | text=Mrs. Hoshino has kept the laundry open for thirty-one years so that no one in the town would ever have nowhere to go at three in the morning. In March she will close it, and sleep through the night, and this town will have to find somewhere else to be honest.
+ITSUKI (thought) [close:itsuki] (soft, look=down): Page eleven. A good mother is coming in page twelve. I promised.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine  (bought in October. Don't tell.)\n2. Visit Mum  (done. 6 minutes.)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write  (page 11 of 16)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.\n10. Tell her to go.  (done)
+ITSUKI (thought) [mcu:itsuki] (look=front): Item three. Mr. Sakurai, the editor who said "we look forward to the next one." Five years. I'll write to him when there's a next one.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Let Us Never Forget One Another | sub=on "The Brothers Karamazov" (III)
+MIO (vo, soft): Next time. The last chapter. A speech by a stone, twelve schoolboys, and a cheer.
+MIO (vo, smile): Episode twelve. Let Us Never Forget One Another. The last Thursday. Don't be late, Prince.
+BEAT 1.5
