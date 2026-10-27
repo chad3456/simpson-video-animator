@@ -1,0 +1,1661 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E1",
+  "title": "Four Nights",
+  "book": "White Nights (1848)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Late August. In a 24-hour coin laundry by the canal, a teasing seventeen-year-old notices that the silent man at the far end of the bench is reading her late grandfather's favourite story, about a lonely dreamer who gets four nights with a girl on a bridge.",
+  "season": "summer",
+  "gap_bench": 215,
+  "fps": 24,
+  "gap": 0.62,
+  "source": "Original story. Discusses White Nights (1848); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "genzo": {
+   "name": "Genzo Takanashi",
+   "role": "Mio's late grandfather, a translator of Russian literature",
+   "voice": "bm_george",
+   "speed": 0.86
+  },
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "memory",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "sky"
+    },
+    {
+     "who": "genzo",
+     "memory": true,
+     "shot": "sky",
+     "text": "It was a wonderful night, the kind of night that can only happen when we are young, dear reader."
+    },
+    {
+     "who": "genzo",
+     "memory": true,
+     "shot": "sky",
+     "text": "The sky was so full of stars, so bright, that looking up at it you had to ask yourself: can angry, unhappy people really live under a sky like this?"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "sky",
+     "text": "My grandfather read me that sentence so many times I could say it before I could spell it."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "sky",
+     "text": "He said every Russian novel worth reading starts on a night like this one."
+    },
+    {
+     "dur": 3.5,
+     "insert": {
+      "kind": "photo"
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "insert",
+     "text": "He died in March.",
+     "insert": {
+      "kind": "photo"
+     }
+    }
+   ],
+   "chars": {},
+   "set": "sky",
+   "time": "night",
+   "season": "summer",
+   "music": "memory",
+   "amb": [
+    "crickets"
+   ],
+   "memory": true,
+   "fadeIn": 1.5
+  },
+  {
+   "type": "scene",
+   "id": "coldopen-ext",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "ext"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "ext",
+     "text": "In August, I met a man who was reading his favourite story in a coin laundry."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "shot": "ext:bench",
+     "text": "He was reading it wrong."
+    },
+    {
+     "dur": 1.5,
+     "shot": "ext"
+    }
+   ],
+   "chars": {},
+   "set": "laundry_ext",
+   "time": "night",
+   "season": "summer",
+   "music": "memory",
+   "amb": [
+    "crickets",
+    "city"
+   ],
+   "extCast": false
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "summer"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第一話",
+   "kicker": "EPISODE 1",
+   "title": "Four Nights",
+   "sub": "on \"White Nights\"",
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "buzzer",
+     "sfxAt": 0.6,
+     "cs": {
+      "mio": {
+       "slot": "benchL",
+       "prop": "book",
+       "emo": "neutral"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "react": {
+      "mio": "neutral"
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "book",
+     "shot": "close:mio",
+     "text": "Gramps's copy. Third time this summer. I keep thinking if I read it enough, his notes will start saying new things."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "sfx": "page"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Wait. Green cover. That's..."
+    },
+    {
+     "dur": 3.5,
+     "insert": {
+      "kind": "cover",
+      "title": "White Nights",
+      "author": "F. M. Dostoevsky",
+      "color": "#3f6a4a",
+      "caption": "The man at the other end of the bench."
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's reading White Nights. In a coin laundry. On a Thursday."
+    },
+    {
+     "dur": 1.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "text": "Excuse me."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "You're reading it wrong."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Sorry?"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "shot": "close:mio",
+     "text": "White Nights. You're meant to read it outside. At night. Ideally on a bridge."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "text": "It's... a coin laundry."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Exactly. Very wrong. And you're slouching exactly like the Dreamer, which is a bit much."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "flustered",
+     "shot": "close:itsuki",
+     "text": "Who is this?"
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "down",
+     "text": "Sorry. That was rude. My grandfather used to say that. \"You're reading it wrong.\" He said it about everything."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "text": "Menus. Train timetables. My report cards."
+    },
+    {
+     "who": "itsuki",
+     "emo": "neutral",
+     "look": "front",
+     "text": "...Was he a teacher?"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "text": "A translator. Russian literature. He read to me on the veranda every summer, with a mosquito coil going, doing all the voices. His Nastenka was terrible. Very high. Very Russian."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "book",
+     "text": "This one was his."
+    },
+    {
+     "dur": 6.0,
+     "insert": {
+      "kind": "book",
+      "title": "White Nights",
+      "text": "It was a wonderful night, the kind of night that can only happen when we are young, dear reader.",
+      "underline": 2,
+      "note": "Read this one\nunder the stars, Mio.\nNot under a lamp.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Oh. I'm sorry."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "text": "Don't be. He'd love this. A stranger reading it in public. He'd have come over and corrected your posture."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "text": "Which translation is yours?"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "shot": "close:mio",
+     "text": "He asked a question."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "His own. He never published it. It's all in pencil, in the margins. Which one's yours?"
+    },
+    {
+     "who": "itsuki",
+     "look": "book",
+     "text": "The green one."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "The green one is fine. Gramps called it \"competent.\" From him, that was practically a medal."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": "smile"
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He almost smiled. Like someone who has forgotten where he put his smile and just found it in a coat pocket."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "How far are you?"
+    },
+    {
+     "who": "itsuki",
+     "look": "book",
+     "text": "The second night."
+    },
+    {
+     "who": "mio",
+     "text": "So she's just told him about her grandmother and the pin."
+    },
+    {
+     "who": "itsuki",
+     "act": "nod",
+     "text": "Yes."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "Her grandmother is blind, so she pins Nastenka's dress to her own dress with a safety pin. For years. So she can't run off."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "text": "When I was little, I thought that was the saddest thing in the book."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "...And now?"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Now I think the saddest thing in the book is him. The Dreamer. Eight years in the city and he doesn't know a single person."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "text": "He knows the houses, though. He says good morning to the buildings. One of them got painted yellow and he grieved like it was a friend."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...The buildings don't mind."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "text": "What?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "text": "Nothing."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "lean",
+     "text": "No, no. Say it again."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "Buildings are... good company. They're there every morning. They don't expect anything from you."
+    },
+    {
+     "dur": 1.5,
+     "shot": "two",
+     "react": {
+      "mio": "tease"
+     }
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "In the book, she asks him for his history. Remember? \"Tell me your history.\" And he says he hasn't got one."
+    },
+    {
+     "who": "itsuki",
+     "look": "book",
+     "text": "\"I have no history.\""
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "lean",
+     "text": "So what's yours?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "text": "...I haven't got one."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "Everybody has one."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Mine is very short. Boy reads books. Boy grows up. Boy reads books in a laundry."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "shot": "close:mio",
+     "text": "Mr. Dreamer."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "shot": "close:itsuki",
+     "text": "I'm not..."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "point",
+     "text": "You are reading White Nights, alone, in a coin laundry, at ten thirty on a Thursday night. That's practically a confession."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "other",
+     "text": "You're... also here."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "I'm doing laundry. You're doing literature at the laundry. Different crime."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "meow",
+     "sfxAt": 1
+    },
+    {
+     "dur": 2.0,
+     "shot": "insert:cat",
+     "sfx": "purr",
+     "cat": {
+      "slot": "cat_dryer",
+      "pose": "sit"
+     },
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "up",
+     "text": "Oh. You're awake. That's Fyodor."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "text": "The cat?"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "I named him just now. He looks like a man with gambling debts."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He laughed. It sounded rusty. Like a gate nobody has opened in a long time."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "...Dostoevsky really did have gambling debts."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "I know. That's why it's funny."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "text": "Fedya, then. That's what Russians would call a Fyodor at home."
+    },
+    {
+     "who": "mio",
+     "emo": "warm",
+     "text": "Fedya. Okay. Fedya when he's good, Fyodor Mikhailovich when he's on the counter."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "look": "up"
+      }
+     },
+     "cat": {
+      "slot": "cat_dryer",
+      "pose": "sleep"
+     }
+    },
+    {
+     "dur": 3.5,
+     "insert": {
+      "kind": "sign",
+      "fixed": false
+     }
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "two",
+     "text": "You keep looking at that sign."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "text": "Sorry."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "text": "\"Dryer, ten minuts.\" It's been like that for years. I think it's cute. Like little tiny minutes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "up",
+     "text": "It's wrong."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "text": "Are you an English teacher?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "Proofreader."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "Of course you are. Of course the man reading Dostoevsky in the laundry fixes other people's spelling for a living."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "shot": "close:itsuki",
+     "text": "I don't fix it. I just... notice it."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "shot": "close:mio",
+     "text": "That's what the Dreamer does too, isn't it. Notices everything. Touches nothing."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "prop": "book",
+     "bookColor": "#3f6a4a",
+     "emo": "neutral"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "night",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    3
+   ],
+   "clock": 22.3,
+   "caption": "Thursday, late August. Coin Laundry Hoshizora.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95,
+     "from": 4
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "up",
+     "shot": "close:mio",
+     "text": "Can I ask you something, Mr. Dreamer?"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "...You will anyway."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "Correct. The ending. The last line. Do you believe it?"
+    },
+    {
+     "who": "itsuki",
+     "look": "book",
+     "text": "I haven't read the ending yet."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "text": "You've never read it?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "I have. Eleven times. I just haven't read it tonight."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Eleven. That's not reading, that's a relationship."
+    },
+    {
+     "who": "mio",
+     "emo": "serious",
+     "look": "front",
+     "text": "Okay. The ending. She chooses the lodger. The man she was waiting for comes back, and she runs to him, right in front of the Dreamer. And the next morning she sends a letter, and he sits in his room and says..."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "White Nights",
+      "text": "My God, a whole moment of bliss!",
+      "right": "Is that really too little, even for the whole of a man's life?",
+      "underline": 1,
+      "note": "Yes.\n— G. (1971)\n\nNo.\n— G. (2019)",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "shot": "close:mio",
+     "text": "Gramps wrote \"yes\" in nineteen seventy-one. And then, years later, under it, \"no.\" In different pencil."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "He changed his mind."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "front",
+     "text": "He changed his mind and never told me why. I found it in April, after."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "text": "I think it's not enough. One moment? For a whole life? That's the consolation prize. That's what you tell yourself when you lost."
+    },
+    {
+     "who": "itsuki",
+     "emo": "thinking",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Or it's the opposite."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "Go on."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Most people never get the moment at all. They don't even notice when it's happening. He noticed. For four nights he was completely awake."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "He knew it was ending while it was still happening, and he didn't look away. I think that's the bravest thing anybody does in the book."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": "surprised"
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Oh. He can talk. He just needs a book to stand behind."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "Sorry. That was a lot."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "shot": "two",
+     "text": "No. It was good. You sounded like someone else for a second."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "...Someone else?"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Someone who says more than four words."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "Have you had one? A moment like that?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Once."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "And?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "away",
+     "text": "It was enough to live on for a long time."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "text": "Is it still?"
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "text": "It was a long time ago."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's not an answer. That's a door closing very politely."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "I'll tell you mine, then. To be fair."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "text": "Last summer, Gramps read me White Nights on the veranda. One night per evening. Four evenings. He was already sick, but he wouldn't skip."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "On the fourth evening he fell asleep before the end. So I read him the morning. Out loud. It's the only time I ever read to him."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "That's mine. It's enough to live on for a while."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Thank you for telling me."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "text": "Everyone hates Nastenka, you know. People say she uses him. She cries on him, she makes him help with her letter, then she runs off with the other guy."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "You don't hate her."
+    },
+    {
+     "who": "mio",
+     "emo": "serious",
+     "text": "She's been pinned to a blind old woman for years. The one person who was ever kind to her left her alone for a whole year. She's allowed to be selfish for one night."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "text": "She's seventeen. She doesn't know yet that you can hurt someone just by being happy in front of them."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...She's seventeen?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "text": "Seventeen. Same as me."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "serious",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "front",
+     "text": "...It's late. You should be home."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "shot": "close:mio",
+     "text": "The laundry's open twenty-four hours. That's the whole point of it. So people like us have somewhere to be."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "People like us?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "text": "People whose washing machines are broken."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "text": "...Mine broke three years ago."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Three years? And you just never fixed it?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "front",
+     "text": "It's on a list."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "What else is on the list?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...It's a long list."
+    },
+    {
+     "dur": 1.5,
+     "shot": "two",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That isn't what she meant, either. About the broken machines."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "prop": "book",
+     "bookColor": "#3f6a4a",
+     "emo": "neutral",
+     "idleLook": "book"
+    },
+    "mio": {
+     "slot": "benchL",
+     "prop": "book",
+     "emo": "thinking"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "night",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    3
+   ],
+   "clock": 22.6,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-3",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "These aren't mine, by the way. My stepfather's shirts. He's a nice man. He irons his socks."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "...That's very thorough."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "text": "Isn't it? We moved into his house in May. My mum's having a baby in winter. Everything's very new and very clean and very... ironed."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "text": "So on Thursdays I do the laundry. The dryer at home is broken. It's very convenient that it's broken."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Convenient."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Don't do that."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "text": "Do what?"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Notice things. It's my job tonight. You're the one who's supposed to be embarrassing."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two",
+     "sfx": "page"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "text": "Dostoevsky wrote White Nights when he was twenty-six, you know. Before anything bad happened to him. Gramps said that's why it's so gentle. It's the last thing he wrote before the world got its hands on him."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "A year later, they arrested him."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "You know that?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "I know a lot of useless things about him."
+    },
+    {
+     "who": "mio",
+     "emo": "warm",
+     "text": "It isn't useless. It's just homeless. It needs someone to tell it to."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Is that why you talk to strangers in laundries?"
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "shot": "close:mio",
+     "text": "Was that a joke? Mr. Dreamer, was that a joke?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "act": "hide",
+     "text": "No."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "It was. It was a small, dry joke. I'm writing it down."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "door"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "The Dreamer gets four nights, you know. Four nights and one morning. That's all."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Let's see how many you get."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...What?"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "Same time next Thursday, Mr. Dreamer?"
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "blush",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "mio": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "prop": "book",
+     "bookColor": "#3f6a4a",
+     "emo": "neutral",
+     "idleLook": "book"
+    },
+    "mio": {
+     "slot": "standL",
+     "emo": "neutral"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "night",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [],
+   "clock": 22.9,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "up",
+     "shot": "close:mio",
+     "text": "He said yes. I know, because I'd stopped outside the window to see if he would."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps, I think I met someone who reads the way you did. Like the book might answer back."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "warm",
+     "look": "up",
+     "shot": "mcu:mio",
+     "text": "The Dreamer got four nights. I wonder how many we get."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "pose2": "rail",
+     "idleLook": "up"
+    }
+   },
+   "set": "bridge",
+   "season": "summer",
+   "music": "theme",
+   "musicVol": 0.8,
+   "amb": [
+    "crickets"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "street-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "People like us. Somewhere to be."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "serious",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "She's seventeen. She has school, and a mother, and a whole life that starts again tomorrow morning. She doesn't need a man who talks to buildings."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "wide",
+     "text": "It's only a book. Talking about a book with someone is allowed."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "up",
+     "shot": "mcu:itsuki",
+     "text": "Same time next Thursday. Nobody has said \"next Thursday\" to me in years."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide",
+     "sfx": "crossing"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "walkR",
+     "pose": "walk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "street",
+   "season": "summer",
+   "music": "night",
+   "musicVol": 0.8,
+   "amb": [
+    "crickets",
+    "city"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "dur": 6.0,
+     "insert": {
+      "kind": "book",
+      "title": "White Nights",
+      "text": "My God, a whole moment of bliss!",
+      "right": "Is that really too little, even for the whole of a man's life?",
+      "underline": 1
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "book",
+     "shot": "close:itsuki",
+     "text": "A whole moment of bliss. Is it too little for a whole life?"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "I used to know the answer."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Same time next Thursday."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "prop": "book",
+     "bookColor": "#3f6a4a",
+     "emo": "neutral",
+     "idleLook": "book"
+    }
+   },
+   "set": "room_him",
+   "season": "summer",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "room",
+    "crickets"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 1: Four Nights",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Genzo Takanashi",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "White Nights (1848)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "My God, a whole moment of bliss! Is that really too little, even for the whole of a man's life?",
+   "quoteBy": "Fyodor Dostoevsky, \"White Nights\"",
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "text": "Next time. A man who lives under the floorboards and would rather be right than happy. Remind you of anyone, Mr. Dreamer?"
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "grin",
+     "text": "Episode two. Two Times Two Makes Five. Bring an umbrella. And your spite."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Two Times Two Makes Five",
+   "nextSub": "on \"Notes from Underground\"",
+   "season": "summer"
+  }
+ ]
+}

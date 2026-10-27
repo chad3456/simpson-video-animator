@@ -1,0 +1,1583 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E2",
+  "title": "Two Times Two Makes Five",
+  "book": "Notes from Underground (1864)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Early September. Mio has read \"Notes from Underground\" all week to understand the silent man from the laundry, and has a new name for him. They argue about spite, freedom and the man who spent years planning to bump into an officer, and both admit what keeps them underground.",
+  "season": "summer",
+  "gap_bench": 195,
+  "fps": 24,
+  "gap": 0.62,
+  "source": "Original story. Discusses Notes from Underground (1864); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  },
+  "satoshi": {
+   "name": "Satoshi Ogawa",
+   "role": "Mio's stepfather",
+   "voice": "am_eric",
+   "speed": 0.98
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "list",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "My washing machine has been broken for three years. I use it as a bookshelf now. It's a very good bookshelf. It doesn't spin."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Four items. None of them crossed out. Some lists are just a way of being honest without doing anything about it."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "On Thursday, a girl in a coin laundry called me Mr. Dreamer."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "shy",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "I've been thinking about it for six days. That's probably a symptom of something."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "summer",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "room",
+    "crickets"
+   ],
+   "fadeIn": 1.2
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "summer"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第二話",
+   "kicker": "EPISODE 2",
+   "title": "Two Times Two Makes Five",
+   "sub": "on \"Notes from Underground\"",
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "emo": "surprised",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "\"I am a sick man. I am a spiteful man. I am an unattractive man. I believe my liver is diseased.\""
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Good evening."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "shot": "two",
+     "text": "Good evening, Underground-san."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "shot": "close:itsuki",
+     "text": "Underground... san?"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "point",
+     "shot": "close:mio",
+     "text": "I read Notes from Underground this week. All of it. Because of you."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "text": "Because of me?"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "You said you'd read White Nights eleven times. I thought, a man who reads a love story eleven times must have something else on his shelf. Something darker. With a basement."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Gramps had three copies of Underground. Three. One for reading, one for throwing, and one for lending to people he didn't like."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Which one did you read?"
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "text": "The throwing one. It has a dent."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "The first line is a joke, you know. People miss it. He says his liver is diseased, and then straight away he says he doesn't know the first thing about his illness."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "text": "He's performing. He keeps saying \"gentlemen\" to people who aren't there. He's arguing with an audience in an empty room."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Like a man saying good morning to buildings."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...That was unnecessary."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "sfx": "page"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Okay. Summary. Tell me if I'm wrong. A man lives in a hole in Saint Petersburg. He says his liver hurts and he refuses to see a doctor, out of spite."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "text": "Spite against who? The doctor? The liver? He doesn't even know! He just knows it'll hurt more and he's going to do it anyway."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...That's not wrong."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Then he spends forty pages explaining that he's too intelligent to do anything. That's his whole argument. \"I'm so clever I've become a mouse.\""
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That's... also not wrong."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "shot": "close:mio",
+     "text": "You're agreeing too much. I came here for a fight."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "smile",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She came here for a fight. She came here."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "The part I actually like is the maths. Here."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "Notes from Underground",
+      "text": "I agree that two times two makes four is an excellent thing.",
+      "right": "But if we are giving everything its due, two times two makes five is sometimes a very charming thing too.",
+      "underline": 2,
+      "note": "Never trust a man\nwho is always right.\nOr one who is never.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "He's saying people aren't piano keys. If you could calculate everything a person would do, they'd go mad on purpose, just to prove they're still a person."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...To prove they're free."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "Is that freedom? Doing something stupid so nobody can predict you?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "thinking",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "It's the worst kind of freedom. But it's the only kind he has left."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Everybody around him says that if people only knew what was good for them, they'd do it. Reason will fix everything. Build a crystal palace and everyone will live in it happily."
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "front",
+     "text": "And he says no. Somebody will always stick his tongue out at the crystal palace. Somebody will always throw a stone at it. Not because it's bad. Because it's finished."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "shot": "close:mio",
+     "text": "That's... actually kind of beautiful."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's horrible. He's horrible. That's what's beautiful about it."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "shot": "two",
+     "text": "Underground-san has opinions."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "text": "Sorry."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Stop apologising. It's the only interesting thing you do."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "meow"
+    },
+    {
+     "who": "mio",
+     "look": "up",
+     "shot": "two",
+     "text": "Fyodor Mikhailovich agrees.",
+     "cat": {
+      "slot": "cat_dryer",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "up",
+     "text": "Fedya has always been a contrarian."
+    },
+    {
+     "dur": 2.0,
+     "shot": "insert:cat",
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "prop": "book",
+     "bookColor": "#5a3a5a",
+     "emo": "tease",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "tease",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    1,
+    4
+   ],
+   "clock": 22.2,
+   "caption": "Thursday, early September.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95,
+     "from": 2
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 1.5,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "point",
+     "shot": "mcu:mio",
+     "text": "But the best part. The best part is the officer."
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "...Oh no."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "shot": "mcu:mio",
+     "text": "In a tavern, an officer wants to get past him, and instead of saying excuse me, he just picks him up by the shoulders and moves him. Like furniture."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "text": "And our hero doesn't say anything. He goes home. And he spends years planning his revenge."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "Years."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "Years! He buys a new coat for it. With a beaver collar. He borrows money for the collar. He walks up and down the main street every afternoon, and every time the officer comes towards him, he steps aside at the last second."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "shot": "close:itsuki",
+     "text": "Like a fly."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "lean",
+     "text": "Like a fly! And then one day he closes his eyes and doesn't step aside."
+    },
+    {
+     "dur": 1.2,
+     "shot": "mcu:mio",
+     "sfx": "thump"
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "mcu:mio",
+     "text": "Bonk. Shoulder to shoulder. Equal. And the officer doesn't even notice. Doesn't even turn round. And our hero goes home singing."
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "He wins."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "shot": "two",
+     "text": "He wins! Against a man who never knew there was a war!"
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "react": {
+      "itsuki": "smile"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You laughed. Properly."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It's a funny book."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "text": "It's a terrible book. It's funny because it's true. I've done that."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "text": "Bumped an officer?"
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Planned a whole argument for weeks and then never said it. In the shower. On the bus. I win every argument on the bus."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Everyone wins on the bus."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "mio": {
+       "slot": "benchL",
+       "emo": "thinking",
+       "idleLook": "front"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Can I ask you something real, Underground-san?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "text": "...You will anyway."
+    },
+    {
+     "who": "mio",
+     "emo": "serious",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Do you do that? Push people away before they can get close enough to push you?"
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I don't need to push. Nobody comes close enough."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's the most Underground thing anyone has ever said to me."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "He isn't a villain, you know. People read him like a villain. He's just the first person in a book who admits how embarrassing it is to have a self."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "He thinks so much he can't move. And he knows it. And knowing it makes it worse. You can't think your way out of a basement."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "How do you get out, then?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...You walk. You just walk up the stairs. Without deciding."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's not talking about the book."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "smile",
+     "idleLook": "other"
+    },
+    "mio": {
+     "slot": "standL",
+     "emo": "grin",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "tease",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    1,
+    4
+   ],
+   "clock": 22.4,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sit"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-3",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "The second half isn't funny."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "No."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Liza. The young woman he meets on the worst night of his life. He gives her a big speech about how she deserves a better life. He's so pleased with himself. He even gives her his address."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "text": "And then she actually comes. She actually believes him. And he's horrible to her. On purpose. Because she saw him in his dirty old dressing gown."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "He presses money into her hand. Like she's a stranger. Like it was a transaction."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And she leaves the money on the table. Gramps underlined that so hard the pencil went through the page."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "Notes from Underground",
+      "text": "She had left the money on the table.",
+      "right": "I ran out after her into the snow. But she was already gone.",
+      "underline": 1,
+      "note": "Run sooner.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "shot": "close:mio",
+     "text": "\"Run sooner.\" That's all he wrote. Like an instruction."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...It's good advice."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "text": "Why does he do it? She's the only one who ever came down the stairs to him."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Because she saw him. When you're ashamed of what's there, being seen is unbearable. It feels like an attack, even when it's kindness. Especially when it's kindness."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two",
+     "react": {
+      "mio": "sad"
+     }
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Can I tell you something embarrassing?"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "...Yes."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "text": "I think I live underground too. Just a nicer one. It's a room in somebody else's house. The furniture is nicer than me. There's a towel rail that warms up. A towel rail. I'm scared of it."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps's books are still in their boxes. Six boxes, in the corner. I haven't unpacked them since May."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Why not?"
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Because if I put them on the shelf, it means I live there now. And he doesn't live anywhere."
+    },
+    {
+     "dur": 3.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...What would make it your house?"
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I... don't know. Nobody's asked me that."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He asked. He's never asked me anything about me before. He went up a whole flight of stairs to ask that."
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "down",
+     "text": "Maybe one shelf. Maybe I'll start with one shelf."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "text": "One shelf is a good start."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "When did you first read it? Underground."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Nineteen. In the university library, in one afternoon. I missed two lectures and a meal."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "text": "It felt like someone had found my diary and published it a hundred and fifty years before I wrote it."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "lean",
+     "text": "What was in the diary?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Mostly the officer."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Do you want to know how the dent happened?"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "...He threw it."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "At the wall. I was nine. I'd drawn on the kitchen table in marker, and Mum was shouting, and Gramps was reading in the corner, and suddenly the book flew across the room."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "text": "Everyone went silent. Mum stopped shouting. And Gramps said, very calmly, \"This man has just insulted a woman who loved him. I can't stay in the same room as him.\""
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Then he picked it up, smoothed the pages, and kept reading. And he winked at me. And Mum forgot about the table."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...He threw the book to save you."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He threw the book to save me. I didn't know that until this week. I read the page with the dent and it was the page about Liza."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "He sounds like someone who read books with his whole body."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "He'd shout at them. He'd laugh out loud on the train. He apologised to Raskolnikov once. Out loud. On the train."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I've never thrown a book."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "text": "You've never thrown anything. You'd apologise to the wall."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...Probably."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He listens like he's keeping the words somewhere safe. Like they're going in a box with a lid."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Your turn. The washing machine. Three years. Why?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It's the only place I go that isn't work. Here. If I fix the machine, there's no reason to go out at all."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "text": "So you keep it broken. On purpose."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "front",
+     "text": "I keep it broken... out of spite."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "Against who?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I'll let you know when I find out."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "shot": "two",
+     "text": "Two times two makes five."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "other",
+     "text": "Sometimes it's a very charming thing."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "idleLook": "down"
+    },
+    "mio": {
+     "slot": "benchL",
+     "prop": "book",
+     "bookColor": "#5a3a5a",
+     "emo": "neutral",
+     "idleLook": "book"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "night",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    1,
+    4
+   ],
+   "clock": 22.6,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ext-rain",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "ext",
+     "sfx": "bell"
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "up",
+     "shot": "two",
+     "text": "Oh, no. It's pouring."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "You don't have an umbrella."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "text": "It was sunny when I left. I'm an optimist. It's my greatest weakness."
+    },
+    {
+     "dur": 1.5,
+     "shot": "two",
+     "sfx": "umbrella"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "Take this."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Then what will you use?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "text": "I live close."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "text": "You don't. You told me last week you live by the station. That's twenty minutes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Then I'll walk home in the rain. Out of spite."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "shot": "two",
+     "text": "You made a joke. That's two. Two jokes in two weeks.",
+     "cs": {
+      "mio": {
+       "prop": "umbrella",
+       "open": true
+      },
+      "itsuki": {
+       "prop": "none"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "It wasn't a joke. It was a decision."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "itsuki": {
+       "slot": "farR"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "worried",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Underground-san! You'll get sick!"
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "smile",
+     "shot": "wide",
+     "text": "I am a sick man."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "warm",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He walked into the rain without deciding. Just walked up the stairs."
+    },
+    {
+     "dur": 3.0,
+     "shot": "ext"
+    },
+    {
+     "dur": 4.0,
+     "insert": {
+      "kind": "window"
+     }
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "standL",
+     "emo": "surprised",
+     "idleLook": "up"
+    },
+    "itsuki": {
+     "slot": "standR",
+     "emo": "neutral",
+     "prop": "umbrella",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_ext",
+   "season": "summer",
+   "weather": "rain",
+   "music": "theme",
+   "musicVol": 0.75,
+   "amb": [
+    "rain"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-rain",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "up",
+     "shot": "close:mio",
+     "text": "It's a navy umbrella with one bent spoke. It smells like old paper and coffee."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "tease",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "I have his umbrella now. Which means he has to come back next Thursday, or he'll never see it again."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "Gramps, I'm going to unpack one shelf. Just one. Don't make a big thing of it."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "prop": "umbrella",
+     "open": true,
+     "umbrellaColor": "#2e3752",
+     "idleLook": "down"
+    }
+   },
+   "set": "bridge",
+   "season": "summer",
+   "weather": "rain",
+   "music": "theme",
+   "musicVol": 0.7,
+   "amb": [
+    "rain"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "her-room",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "satoshi",
+     "vo": true,
+     "shot": "wide",
+     "text": "Mio-chan? You're soaked, aren't you. There's a towel on the rail. It's warm."
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "...Thank you, Satoshi-san."
+    },
+    {
+     "dur": 2.5,
+     "shot": "mcu:mio",
+     "react": {
+      "mio": "sad"
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "front",
+     "shot": "close:mio",
+     "text": "The towel was warm. I hate that it was nice."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "One shelf. Underground goes first. The throwing copy. He'd like that."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "desk",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#5a3a5a",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_her",
+   "season": "summer",
+   "weather": "rain",
+   "music": "night",
+   "musicVol": 0.6,
+   "amb": [
+    "rain",
+    "room"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-2",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": "surprised"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Twenty minutes in the rain. My shoes are full of canal."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She laughed. Two jokes in two weeks. She's counting."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write\n5. Get umbrella back (Thursday)"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Number five. The first thing on the list in three years that I actually want to do."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "summer",
+   "weather": "rain",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "rain",
+    "room"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 2: Two Times Two Makes Five",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Satoshi Ogawa",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "Notes from Underground (1864)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Two times two makes four is an excellent thing. But if we are giving everything its due, two times two makes five is sometimes a very charming thing too.",
+   "quoteBy": "Fyodor Dostoevsky, \"Notes from Underground\"",
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "text": "Next time. Dostoevsky's very first novel. A poor old clerk and a girl across the courtyard, who only talk in letters."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "text": "Episode three. Letters in the Lost-and-Found. I'll be late. Read my note."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Letters in the Lost-and-Found",
+   "nextSub": "on \"Poor Folk\"",
+   "season": "summer"
+  }
+ ]
+}

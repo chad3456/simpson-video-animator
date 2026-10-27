@@ -1,0 +1,251 @@
+episode: 2
+slug: e02-two-times-two
+title: Two Times Two Makes Five
+kanji: 第二話
+sub: on "Notes from Underground"
+book: Notes from Underground (1864)
+season: summer
+gap: 195
+logline: Early September. Mio has read "Notes from Underground" all week to understand the silent man from the laundry, and has a new name for him. They argue about spite, freedom and the man who spent years planning to bump into an officer, and both admit what keeps them underground.
+quote: Two times two makes four is an excellent thing. But if we are giving everything its due, two times two makes five is sometimes a very charming thing too.
+quoteBy: Fyodor Dostoevsky, "Notes from Underground"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE list | set=room_him season=summer music=night musicVol=0.7 amb=room,crickets fadeIn=1.2
+@ itsuki slot=desk emo=neutral look=down
+BEAT 3 [wide]
+ITSUKI (thought) [mcu:itsuki] (look=down): My washing machine has been broken for three years. I use it as a bookshelf now. It's a very good bookshelf. It doesn't spin.
+INSERT notebook 7 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write
+ITSUKI (thought) [close:itsuki] (sad, look=down): Four items. None of them crossed out. Some lists are just a way of being honest without doing anything about it.
+ITSUKI (thought) [close:itsuki] (look=front): On Thursday, a girl in a coin laundry called me Mr. Dreamer.
+ITSUKI (thought) [mcu:itsuki] (shy, look=down): I've been thinking about it for six days. That's probably a symptom of something.
+BEAT 2 [wide]
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=summer music=tease amb=washer,crickets washers=1,4 clock=22.2 | caption=Thursday, early September.
+@ mio slot=benchL prop=book bookColor=#5a3a5a emo=tease look=other
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+BEAT 2.5 [wide] (sfx=bell)
+@ itsuki slot=benchR emo=surprised look=other
+BEAT 1.5 [wide]
+@ item basket benchR dx=95
+MIO (tease, look=other) [close:mio]: "I am a sick man. I am a spiteful man. I am an unattractive man. I believe my liver is diseased."
+ITSUKI (blush, look=down) [close:itsuki]: ...Good evening.
+MIO (grin) [two]: Good evening, Underground-san.
+ITSUKI (flustered) [close:itsuki]: Underground... san?
+MIO (tease, act=point) [close:mio]: I read Notes from Underground this week. All of it. Because of you.
+ITSUKI (surprised, look=other): Because of me?
+MIO (grin): You said you'd read White Nights eleven times. I thought, a man who reads a love story eleven times must have something else on his shelf. Something darker. With a basement.
+MIO (tease): Gramps had three copies of Underground. Three. One for reading, one for throwing, and one for lending to people he didn't like.
+ITSUKI (smile, look=down) [close:itsuki]: ...Which one did you read?
+MIO (laugh): The throwing one. It has a dent.
+ITSUKI (look=front) [close:itsuki]: The first line is a joke, you know. People miss it. He says his liver is diseased, and then straight away he says he doesn't know the first thing about his illness.
+ITSUKI (smile, look=front): He's performing. He keeps saying "gentlemen" to people who aren't there. He's arguing with an audience in an empty room.
+MIO (tease, look=other) [close:mio]: Like a man saying good morning to buildings.
+ITSUKI (blush, act=hide) [close:itsuki]: ...That was unnecessary.
+BEAT 2 [two] (sfx=page)
+MIO (look=book) [mcu:mio]: Okay. Summary. Tell me if I'm wrong. A man lives in a hole in Saint Petersburg. He says his liver hurts and he refuses to see a doctor, out of spite.
+MIO (annoyed, look=other): Spite against who? The doctor? The liver? He doesn't even know! He just knows it'll hurt more and he's going to do it anyway.
+ITSUKI (look=front) [close:itsuki]: ...That's not wrong.
+MIO (tease): Then he spends forty pages explaining that he's too intelligent to do anything. That's his whole argument. "I'm so clever I've become a mouse."
+ITSUKI (look=other) [close:itsuki]: That's... also not wrong.
+MIO (pout) [close:mio]: You're agreeing too much. I came here for a fight.
+BEAT 1.5 [close:itsuki] (itsuki=smile, itsuki.look=down)
+ITSUKI (thought) [close:itsuki] (smile, look=down): She came here for a fight. She came here.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: The part I actually like is the maths. Here.
+INSERT book 7 | title=Notes from Underground | text=I agree that two times two makes four is an excellent thing. | right=But if we are giving everything its due, two times two makes five is sometimes a very charming thing too. | underline=2 | note=Never trust a man\nwho is always right.\nOr one who is never.\n— G. | noteBy=genzo
+MIO (smile, look=front) [close:mio]: He's saying people aren't piano keys. If you could calculate everything a person would do, they'd go mad on purpose, just to prove they're still a person.
+ITSUKI (look=front) [close:itsuki]: ...To prove they're free.
+MIO (look=other): Is that freedom? Doing something stupid so nobody can predict you?
+ITSUKI (thinking, look=front) [mcu:itsuki]: It's the worst kind of freedom. But it's the only kind he has left.
+ITSUKI (look=front) [close:itsuki]: Everybody around him says that if people only knew what was good for them, they'd do it. Reason will fix everything. Build a crystal palace and everyone will live in it happily.
+ITSUKI (serious, look=front): And he says no. Somebody will always stick his tongue out at the crystal palace. Somebody will always throw a stone at it. Not because it's bad. Because it's finished.
+MIO (surprised) [close:mio]: That's... actually kind of beautiful.
+ITSUKI (blush, look=down) [close:itsuki]: It's horrible. He's horrible. That's what's beautiful about it.
+MIO (grin) [two]: Underground-san has opinions.
+ITSUKI (flustered, act=hide): Sorry.
+MIO (tease): Stop apologising. It's the only interesting thing you do.
+BEAT 2.5 [wide] (sfx=meow)
+@ cat slot=cat_dryer pose=sit
+MIO (look=up) [two]: Fyodor Mikhailovich agrees.
+ITSUKI (smile, look=up): Fedya has always been a contrarian.
+BEAT 2 [insert:cat]
++INSERT cat | pose=sit
+
+// --- the officer
+== SCENE laundry-2 | set=laundry_int season=summer music=tease amb=washer,crickets washers=1,4 clock=22.4
+@ itsuki slot=benchR emo=smile look=other
+@ mio slot=standL emo=grin look=other
+@ cat slot=cat_dryer pose=sit
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 1.5 [wide]
+MIO (grin, act=point) [mcu:mio]: But the best part. The best part is the officer.
+ITSUKI (laugh, act=laugh) [close:itsuki]: ...Oh no.
+MIO (tease) [mcu:mio]: In a tavern, an officer wants to get past him, and instead of saying excuse me, he just picks him up by the shoulders and moves him. Like furniture.
+MIO (annoyed): And our hero doesn't say anything. He goes home. And he spends years planning his revenge.
+ITSUKI (look=other): Years.
+MIO (grin): Years! He buys a new coat for it. With a beaver collar. He borrows money for the collar. He walks up and down the main street every afternoon, and every time the officer comes towards him, he steps aside at the last second.
+ITSUKI (smile) [close:itsuki]: Like a fly.
+MIO (tease, act=lean): Like a fly! And then one day he closes his eyes and doesn't step aside.
+BEAT 1.2 [mcu:mio] (sfx=thump)
+MIO (laugh, act=laugh) [mcu:mio]: Bonk. Shoulder to shoulder. Equal. And the officer doesn't even notice. Doesn't even turn round. And our hero goes home singing.
+ITSUKI (laugh, act=laugh) [close:itsuki]: He wins.
+MIO (laugh) [two]: He wins! Against a man who never knew there was a war!
+BEAT 2 [two] (itsuki=smile)
+MIO (soft, look=other) [close:mio]: You laughed. Properly.
+ITSUKI (blush, look=down) [close:itsuki]: ...It's a funny book.
+MIO (smile): It's a terrible book. It's funny because it's true. I've done that.
+ITSUKI (surprised, look=other): Bumped an officer?
+MIO (shy, look=down) [close:mio]: Planned a whole argument for weeks and then never said it. In the shower. On the bus. I win every argument on the bus.
+ITSUKI (soft, look=front) [close:itsuki]: ...Everyone wins on the bus.
+BEAT 2.5 [wide]
+@ mio slot=benchL emo=thinking look=front
+BEAT 2 [two]
+MIO (thinking, look=other) [close:mio]: Can I ask you something real, Underground-san?
+ITSUKI (look=down): ...You will anyway.
+MIO (serious, look=other) [close:mio]: Do you do that? Push people away before they can get close enough to push you?
+BEAT 3 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (look=down) [close:itsuki]: I don't need to push. Nobody comes close enough.
+MIO (soft, look=other) [close:mio]: That's the most Underground thing anyone has ever said to me.
+ITSUKI (look=front) [mcu:itsuki]: He isn't a villain, you know. People read him like a villain. He's just the first person in a book who admits how embarrassing it is to have a self.
+ITSUKI (soft, look=front) [close:itsuki]: He thinks so much he can't move. And he knows it. And knowing it makes it worse. You can't think your way out of a basement.
+MIO (look=other): How do you get out, then?
+ITSUKI (look=down) [close:itsuki]: ...You walk. You just walk up the stairs. Without deciding.
+MIO (thought) [close:mio] (soft, look=other): He's not talking about the book.
+BEAT 2.5 [wide]
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-3 | set=laundry_int season=summer music=night amb=washer,crickets washers=1,4 clock=22.6
+@ itsuki slot=benchR emo=neutral look=down
+@ mio slot=benchL prop=book bookColor=#5a3a5a emo=neutral look=book
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 3 [wide]
+MIO (look=book) [mcu:mio]: The second half isn't funny.
+ITSUKI (look=other): No.
+MIO (sad, look=front) [close:mio]: Liza. The young woman he meets on the worst night of his life. He gives her a big speech about how she deserves a better life. He's so pleased with himself. He even gives her his address.
+MIO (sad): And then she actually comes. She actually believes him. And he's horrible to her. On purpose. Because she saw him in his dirty old dressing gown.
+ITSUKI (look=front) [close:itsuki]: He presses money into her hand. Like she's a stranger. Like it was a transaction.
+MIO (teary, look=down) [close:mio]: And she leaves the money on the table. Gramps underlined that so hard the pencil went through the page.
+INSERT book 7 | title=Notes from Underground | text=She had left the money on the table. | right=I ran out after her into the snow. But she was already gone. | underline=1 | note=Run sooner.\n— G. | noteBy=genzo
+MIO (soft) [close:mio]: "Run sooner." That's all he wrote. Like an instruction.
+ITSUKI (soft, look=other) [close:itsuki]: ...It's good advice.
+MIO (look=other): Why does he do it? She's the only one who ever came down the stairs to him.
+ITSUKI (look=front) [mcu:itsuki]: Because she saw him. When you're ashamed of what's there, being seen is unbearable. It feels like an attack, even when it's kindness. Especially when it's kindness.
+BEAT 2.5 [two] (mio=sad)
+MIO (look=front) [close:mio]: Can I tell you something embarrassing?
+ITSUKI (look=other): ...Yes.
+MIO (smile, look=front): I think I live underground too. Just a nicer one. It's a room in somebody else's house. The furniture is nicer than me. There's a towel rail that warms up. A towel rail. I'm scared of it.
+MIO (soft, look=down) [close:mio]: Gramps's books are still in their boxes. Six boxes, in the corner. I haven't unpacked them since May.
+ITSUKI (look=other) [close:itsuki]: Why not?
+MIO (sad, look=down) [close:mio]: Because if I put them on the shelf, it means I live there now. And he doesn't live anywhere.
+BEAT 3.5 [close:itsuki] (itsuki=sad, itsuki.look=other)
+ITSUKI (soft, look=other) [close:itsuki]: ...What would make it your house?
+BEAT 2 [close:mio] (mio=surprised, mio.look=other)
+MIO (surprised, look=other) [close:mio]: I... don't know. Nobody's asked me that.
+MIO (thought) [close:mio] (soft, look=other): He asked. He's never asked me anything about me before. He went up a whole flight of stairs to ask that.
+MIO (shy, look=down): Maybe one shelf. Maybe I'll start with one shelf.
+ITSUKI (smile, look=down): One shelf is a good start.
+BEAT 2 [two]
+MIO (look=other) [close:mio]: When did you first read it? Underground.
+ITSUKI (look=front) [close:itsuki]: Nineteen. In the university library, in one afternoon. I missed two lectures and a meal.
+ITSUKI (soft, look=front): It felt like someone had found my diary and published it a hundred and fifty years before I wrote it.
+MIO (tease, act=lean): What was in the diary?
+ITSUKI (shy, look=down) [close:itsuki]: ...Mostly the officer.
+BEAT 1.2 [close:mio] (mio=laugh, mio.act=laugh)
+BEAT 2.5 [two]
+MIO (soft, look=book) [mcu:mio]: Do you want to know how the dent happened?
+ITSUKI (look=other): ...He threw it.
+MIO (smile, look=front) [close:mio]: At the wall. I was nine. I'd drawn on the kitchen table in marker, and Mum was shouting, and Gramps was reading in the corner, and suddenly the book flew across the room.
+MIO (laugh, act=laugh): Everyone went silent. Mum stopped shouting. And Gramps said, very calmly, "This man has just insulted a woman who loved him. I can't stay in the same room as him."
+MIO (soft, look=down) [close:mio]: Then he picked it up, smoothed the pages, and kept reading. And he winked at me. And Mum forgot about the table.
+ITSUKI (smile, look=front) [close:itsuki]: ...He threw the book to save you.
+MIO (teary, look=down) [close:mio]: He threw the book to save me. I didn't know that until this week. I read the page with the dent and it was the page about Liza.
+BEAT 3 [close:itsuki] (itsuki=soft, itsuki.look=other)
+ITSUKI (soft, look=other) [close:itsuki]: He sounds like someone who read books with his whole body.
+MIO (smile, look=front) [close:mio]: He'd shout at them. He'd laugh out loud on the train. He apologised to Raskolnikov once. Out loud. On the train.
+ITSUKI (smile, look=down) [close:itsuki]: I've never thrown a book.
+MIO (tease, look=other): You've never thrown anything. You'd apologise to the wall.
+ITSUKI (blush, act=hide) [close:itsuki]: ...Probably.
+MIO (thought) [close:mio] (soft, look=other): He listens like he's keeping the words somewhere safe. Like they're going in a box with a lid.
+BEAT 2.5 [two]
+MIO (tease, look=other) [close:mio]: Your turn. The washing machine. Three years. Why?
+ITSUKI (look=down) [close:itsuki]: ...It's the only place I go that isn't work. Here. If I fix the machine, there's no reason to go out at all.
+MIO (thinking, look=other): So you keep it broken. On purpose.
+ITSUKI (shy, look=front): I keep it broken... out of spite.
+MIO (laugh, act=laugh) [close:mio]: Against who?
+ITSUKI (smile, look=down) [close:itsuki]: I'll let you know when I find out.
+MIO (grin) [two]: Two times two makes five.
+ITSUKI (smile, look=other): Sometimes it's a very charming thing.
+BEAT 3 [wide] (sfx=buzzer)
+
+== SCENE ext-rain | set=laundry_ext season=summer weather=rain music=theme musicVol=0.75 amb=rain
+@ mio slot=standL emo=surprised look=up
+@ itsuki slot=standR emo=neutral look=other prop=umbrella
+BEAT 3 [ext] (sfx=bell)
+MIO (surprised, look=up) [two]: Oh, no. It's pouring.
+ITSUKI (look=other): You don't have an umbrella.
+MIO (pout): It was sunny when I left. I'm an optimist. It's my greatest weakness.
+BEAT 1.5 [two] (sfx=umbrella)
+ITSUKI (shy, look=down) [mcu:itsuki]: Take this.
+MIO (surprised, look=other) [mcu:mio]: Then what will you use?
+ITSUKI (look=front): I live close.
+MIO (annoyed, look=other): You don't. You told me last week you live by the station. That's twenty minutes.
+ITSUKI (smile, look=down) [close:itsuki]: Then I'll walk home in the rain. Out of spite.
+BEAT 1.5 [close:mio] (mio=laugh, mio.act=laugh)
+@ mio prop=umbrella open=true
+@ itsuki prop=none
+MIO (laugh) [two]: You made a joke. That's two. Two jokes in two weeks.
+ITSUKI (blush, look=away) [close:itsuki]: It wasn't a joke. It was a decision.
+@ itsuki slot=farR
+BEAT 2 [wide] (sfx=steps)
+MIO (worried, look=other) [mcu:mio]: Underground-san! You'll get sick!
+ITSUKI (vo, smile) [wide]: I am a sick man.
+BEAT 2 [close:mio] (mio=laugh, mio.act=laugh)
+MIO (thought) [close:mio] (warm, look=other): He walked into the rain without deciding. Just walked up the stairs.
+BEAT 3 [ext]
+INSERT window 4
+
+== SCENE bridge-rain | set=bridge season=summer weather=rain music=theme musicVol=0.7 amb=rain
+@ mio slot=railL emo=soft look=down prop=umbrella open=true umbrellaColor=#2e3752
+BEAT 3 [wide]
+MIO (thought) [close:mio] (look=up): It's a navy umbrella with one bent spoke. It smells like old paper and coffee.
+MIO (thought) [close:mio] (tease, look=front): I have his umbrella now. Which means he has to come back next Thursday, or he'll never see it again.
+MIO (thought) [mcu:mio] (soft, look=down): Gramps, I'm going to unpack one shelf. Just one. Don't make a big thing of it.
+BEAT 3.5 [wide]
+
+== SCENE her-room | set=room_her season=summer weather=rain music=night musicVol=0.6 amb=rain,room
+@ mio slot=desk emo=neutral look=down prop=book bookColor=#5a3a5a
+BEAT 3 [wide] (sfx=page)
+SATOSHI (vo) [wide]: Mio-chan? You're soaked, aren't you. There's a towel on the rail. It's warm.
+MIO (shy, look=front) [mcu:mio]: ...Thank you, Satoshi-san.
+BEAT 2.5 [mcu:mio] (mio=sad)
+MIO (thought) [close:mio] (look=front): The towel was warm. I hate that it was nice.
+MIO (thought) [close:mio] (soft, look=down): One shelf. Underground goes first. The throwing copy. He'd like that.
+BEAT 3 [wide] (sfx=page)
+
+== SCENE room-2 | set=room_him season=summer weather=rain music=night musicVol=0.7 amb=rain,room
+@ itsuki slot=desk emo=neutral look=down
+BEAT 2.5 [wide]
+BEAT 1.5 [close:itsuki] (itsuki=surprised)
+ITSUKI (thought) [close:itsuki] (look=front): Twenty minutes in the rain. My shoes are full of canal.
+ITSUKI (thought) [close:itsuki] (smile, look=down): She laughed. Two jokes in two weeks. She's counting.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write\n5. Get umbrella back (Thursday)
+ITSUKI (thought) [mcu:itsuki] (soft, look=front): Number five. The first thing on the list in three years that I actually want to do.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Letters in the Lost-and-Found | sub=on "Poor Folk"
+MIO (vo, smile): Next time. Dostoevsky's very first novel. A poor old clerk and a girl across the courtyard, who only talk in letters.
+MIO (vo, tease): Episode three. Letters in the Lost-and-Found. I'll be late. Read my note.
+BEAT 1.5

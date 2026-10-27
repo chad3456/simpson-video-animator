@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coin Laundry Player</title>
+<style>
+  @font-face { font-family: Nunito; src: url(../../engine/fonts/Nunito.ttf); font-weight: 200 1000; }
+  @font-face { font-family: 'EB Garamond'; src: url(fonts/EBGaramond.ttf); font-weight: 400 800; }
+  @font-face { font-family: 'EB Garamond'; src: url(fonts/EBGaramond-Italic.ttf); font-weight: 400 800; font-style: italic; }
+  @font-face { font-family: Caveat; src: url(fonts/Caveat.ttf); font-weight: 400 700; }
+  @font-face { font-family: Mincho; src: url(fonts/Mincho-subset.ttf); }
+  html, body { margin: 0; background: #0c0d14; color: #eee; font-family: Nunito, sans-serif; }
+  #stage { display: block; width: 100%; max-width: 1280px; aspect-ratio: 16/9; margin: 0 auto; background: #000; }
+  .bar { max-width: 1280px; margin: 8px auto; display: flex; gap: 12px; align-items: center; padding: 0 16px; box-sizing: border-box; }
+  button { font: 800 16px Nunito, sans-serif; padding: 8px 18px; border-radius: 8px; border: 0; background: #f2c14e; cursor: pointer; }
+  input[type=range] { flex: 1; }
+  #loading { position: fixed; inset: 0; display: grid; place-items: center; font: italic 22px 'EB Garamond', serif; color: #e8dcc8; background: #0c0d14; }
+  body.render .bar, body.render #loading { display: none; }
+  body.render #stage { width: 1280px; height: 720px; max-width: none; }
+</style>
+</head>
+<body>
+<div id="loading">Painting the backgrounds…</div>
+<svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="bar"><button id="play">Play</button><input id="seek" type="range" min="0" max="1000" value="0"><span id="clock">0:00</span></div>
+<audio id="audio" preload="auto"></audio>
+<script src="sets.js"></script>
+<script src="characters.js"></script>
+<script src="anime.js"></script>
+<script>
+  const q = new URLSearchParams(location.search);
+  const dir = (q.get('ep') || '../episodes/e01-four-nights').replace(/\/$/, '');
+  const render = q.has('render');
+  if (render) document.body.classList.add('render');
+  (async () => {
+    const [ep, tl] = await Promise.all([fetch(dir + '/episode.json').then(r => r.json()), fetch(dir + '/timeline.json').then(r => r.json())]);
+    for (const f of ['800 40px Nunito', '500 40px "EB Garamond"', 'italic 500 40px "EB Garamond"', '600 40px Caveat', '40px Mincho']) await document.fonts.load(f, 'Aa第話');
+    const svg = document.getElementById('stage');
+    await Toon.load(ep, tl, svg); Toon.renderAt(0);
+    document.getElementById('loading').style.display = 'none';
+    window.__ready = true;
+    if (render) return;
+    const audio = document.getElementById('audio'), seek = document.getElementById('seek'), clock = document.getElementById('clock');
+    audio.src = dir + '/' + (q.get('audio') || 'episode.mp3');
+    document.getElementById('play').onclick = e => { if (audio.paused) { audio.play(); e.target.textContent = 'Pause'; } else { audio.pause(); e.target.textContent = 'Play'; } };
+    seek.oninput = () => { audio.currentTime = seek.value / 1000 * tl.duration; Toon.renderAt(audio.currentTime); };
+    (function tick() {
+      const t = audio.currentTime; Toon.renderAt(t);
+      if (!audio.paused) seek.value = t / tl.duration * 1000;
+      clock.textContent = `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
+      requestAnimationFrame(tick);
+    })();
+  })();
+</script>
+</body>
+</html>

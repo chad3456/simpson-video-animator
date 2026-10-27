@@ -1,0 +1,1500 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E4",
+  "title": "The Idea with an Axe",
+  "book": "Crime and Punishment (1866)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "October, and a typhoon. Mio has been carrying an ugly thought about the baby for a week. Over Raskolnikov and the theory that carried him to murder, Itsuki admits the theory he once used on himself, and when the power fails, Mio says her thought out loud in the dark.",
+  "season": "autumn",
+  "gap_bench": 162,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses Crime and Punishment (1866); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "kaori": {
+   "name": "Kaori Ogawa",
+   "role": "Mio's mother",
+   "voice": "af_sarah",
+   "speed": 1.0
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  },
+  "satoshi": {
+   "name": "Satoshi Ogawa",
+   "role": "Mio's stepfather",
+   "voice": "am_eric",
+   "speed": 0.98
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "wide",
+     "text": "We could move Mio's boxes to the garage, couldn't we? Then the cot fits under the window."
+    },
+    {
+     "who": "satoshi",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "Let's ask her first. It's her room."
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "It's only until we sort out the attic. She won't mind. She never minds anything."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Six boxes. One shelf. I'd only just started."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And just for a second, before I could stop it, I thought something."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "I'm not going to say what. I'm going to put it under a stone, like Raskolnikov did with the purse, and never look at it again."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "thunder"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "desk",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#3a3030",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_her",
+   "season": "autumn",
+   "weather": "rain",
+   "music": "unease",
+   "musicVol": 0.6,
+   "amb": [
+    "rain",
+    "room"
+   ],
+   "fadeIn": 1.2
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "autumn"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第四話",
+   "kicker": "EPISODE 4",
+   "title": "The Idea with an Axe",
+   "sub": "on \"Crime and Punishment\" (I)",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "emo": "neutral",
+       "prop": "umbrella",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "You brought the umbrella. You kept it. I'm so proud."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "It turned inside out twice on the bridge."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "And you still came. In a typhoon. For laundry."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I had a lot of laundry."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "prop": "none",
+       "emo": "neutral",
+       "idleLook": "front"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "close:mio",
+     "text": "I finished it. Crime and Punishment. Five hundred pages in eight days. I read it in the bath. The pages went wavy."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Eight days."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "text": "It's a thriller. Nobody told me it's a thriller. Gramps always made it sound like homework."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "It was printed in a magazine, in parts. People queued for the next issue. It's the first great crime novel where you know who did it on page eighty."
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "So. Rodion Romanovich Raskolnikov. Ex-student. Lives in a room so small his landlady's maid calls it a cupboard. Hasn't paid rent in months. Lies on a sofa thinking."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "text": "Sound like anyone?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "My room has a window."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "That's a low bar, Underground-san."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "The part that made me feel sick wasn't even the murder. It was the dream before it. The horse."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...The horse."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "He dreams he's seven, walking with his father past a tavern, and a crowd of drunk men are beating an old mare because she can't pull a cart full of people. They beat her until she dies. And little Rodya runs through the crowd and throws his arms around her dead head and kisses her eyes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And he wakes up and says, no, I can't do it. I won't. And for a moment he's free."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So why does he do it anyway?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Because the boy in the dream and the man on the sofa aren't speaking to each other any more. The boy is still in there, crying over the horse. The man has a theory."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps had the dream page folded down. Not underlined. Just folded. Like he couldn't bear to write on it."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "sfx": "thunder"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And he has a theory. That's the scary part. Not the axe. The theory."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "That people are divided into two kinds."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Ordinary people, who are just material. They obey the law and have children. And extraordinary people, like Napoleon, who have the right to step over anything. Even blood. Because history will say they were right."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "text": "And then he looks at a horrible old pawnbroker who cheats students, and he thinks: a hundred good deeds could be done with her money. One death, a hundred lives. It's just arithmetic."
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Two times two."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The Underground Man would hate him."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "The Underground Man would throw a stone at his crystal palace."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "But then it doesn't work. He kills her, and her sister Lizaveta walks in. Lizaveta, who was gentle and simple and mended everyone's clothes. And he kills her too. She doesn't even raise her hands to her face."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "That's the moment the arithmetic ends."
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "And he doesn't even spend the money. He hides the purse under a stone in a courtyard and never opens it. He doesn't know how much was in it."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "book",
+     "text": "Gramps wrote something next to the stone."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "Crime and Punishment",
+      "text": "He had not even looked into the purse; he did not know how much was in it.",
+      "right": "He lifted the stone and slid everything underneath.",
+      "underline": 1,
+      "note": "An idea is a guest.\nDo not give it\nthe best room.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...That's the whole book, really."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He lay in that cupboard for a month, feeding the idea. Giving it the best room. By the time he picked up the axe, the idea was the one living there, and he was the guest."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "thinking",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She says these things as if they're obvious. As if she isn't seventeen."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "sfx": "thunder"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Did you ever have a theory? A Raskolnikov one?"
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Really?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "When I was twenty-three, something I'd done was... noticed. For a while. And I decided that from then on I had to be extraordinary, or nothing. That anything ordinary I made would be a kind of crime."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "So I made nothing. Five years. It's a very tidy theory. No axe. You just use it on yourself, a little every day."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's the saddest crime I've ever heard of."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "It's not a crime. Nobody died."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Somebody did. A bit."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "thunder"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#3a3030",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "weather": "storm",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "storm",
+    "washer"
+   ],
+   "washers": [
+    1,
+    3
+   ],
+   "clock": 22.0,
+   "caption": "Thursday, October. Typhoon No. 19.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95,
+     "from": 7
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "thump"
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "up",
+     "shot": "two",
+     "text": "...Okay. The lights went out."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "The whole street's gone."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Our washing is stuck in the machines. We're hostages."
+    },
+    {
+     "dur": 2.0,
+     "shot": "insert:cat",
+     "sfx": "meow",
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "up",
+     "shot": "two",
+     "text": "Fyodor Mikhailovich is not happy. His dryer's going cold."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "He'll come to the bench. He always comes to the bench when the dryer stops."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You know his schedule."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I've been coming here for three years. He's the only one who's been here longer."
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "surprised",
+     "idleLook": "up"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "surprised",
+     "idleLook": "up"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "weather": "storm",
+   "music": "unease",
+   "musicVol": 0.5,
+   "amb": [
+    "storm"
+   ],
+   "washers": [
+    9
+   ],
+   "clock": 22.4,
+   "tint": "#141a3a",
+   "tintOp": 0.62,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sit"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-3",
+   "lines": [
+    {
+     "dur": 3.5,
+     "shot": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "It's easier in the dark. Talking."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "That's why Raskolnikov confesses to Sonya at night, isn't it. In her room, with the candle burning down."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And she doesn't run away. She says, \"What have you done to yourself?\" Not to them. To yourself."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Can I confess something? It's not an axe. It's much smaller. But it's ugly."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...You don't have to."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I want to. Before I put it under a stone."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": "teary"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Last week, Mum said they'd move Gramps's boxes to the garage. For the cot. And for one second, I thought: I wish there wasn't going to be a baby."
+    },
+    {
+     "who": "mio",
+     "emo": "cry",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "She hasn't even been born. She's a heartbeat that sounds like a horse. And I wished her away so I could keep a corner of a room that isn't even mine."
+    },
+    {
+     "who": "mio",
+     "emo": "cry",
+     "act": "cover",
+     "shot": "close:mio",
+     "text": "What kind of sister thinks that? I've hated myself all week. I thought if I said it, it would become true."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Can I say something about Raskolnikov?"
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...It had better be good."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "His crime wasn't that he had the thought. Everyone in that city had thoughts like that. There's a student in the tavern who says the exact same thing out loud, as a joke, at the start of the book."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "His crime was that he kept it. He took it home to his cupboard and fed it for a month and never told a living soul. He gave it the best room."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "You had the thought for one second. And a week later you brought it out into a coin laundry, in a typhoon, and said it out loud to a stranger."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:itsuki",
+     "text": "That's not Raskolnikov. That's the opposite. That's lifting the stone."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...You're not a stranger."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Proofreader from the laundry."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Can I ask what you'd do? If you were me."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...I'd ask if I could help paint the room. The baby's room. I'd make it partly mine that way."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "text": "And I'd put the books somewhere she can find them when she's seventeen."
+    },
+    {
+     "dur": 3.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Gramps, he said seventeen. He imagined her at seventeen. Reading your books."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So you're my Sonya."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "I'm... not Sonya."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "text": "Who, then?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Porfiry, maybe. The investigator. He knows everything and he never arrests him. He just keeps telling him to go outside. \"What you need is air. Air.\""
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "You're telling me to go outside? You?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I'm outside. It's a typhoon. I came."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And your theory? Extraordinary or nothing? Are you going to lift that stone?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I don't know where I put it."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Yes you do. Everyone keeps it in the same place. A drawer. The one that sticks."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...How did you know it sticks?"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Because Gramps had one too. His first translation got a terrible review in a newspaper in nineteen seventy-four. He kept it in a drawer that stuck for forty years. When we cleared the house, the review was on top of all his prizes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He kept the bad review on top."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He said it kept the prizes humble."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "thunder"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "neutral",
+     "idleLook": "front"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "idleLook": "front"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "weather": "storm",
+   "music": "sorrow",
+   "musicVol": 0.55,
+   "amb": [
+    "storm"
+   ],
+   "washers": [
+    9
+   ],
+   "clock": 22.5,
+   "tint": "#141a3a",
+   "tintOp": 0.62,
+   "cat": {
+    "slot": "cat_bench",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-4",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "chime"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "up",
+     "shot": "two",
+     "text": "Light."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "The machines are going again."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Fyodor Mikhailovich has reclaimed his dryer. Order is restored to the universe."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Do you know how it ends? Raskolnikov in Siberia. He doesn't even feel sorry for a long time. And then one morning, by a river, Sonya sits next to him, and he just falls at her feet, and that's it. A new story begins, the book says, but that's another story."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Seven years left of his sentence. And they think of them as seven days."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I didn't cry at the murder. I cried at that."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Me too."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Actually, my favourite person in the whole book is Razumikhin."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Razumikhin."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "look": "other",
+     "text": "Raskolnikov's friend! He's loud, he's poor, he's always broke, and he translates terrible German books for money, and he just keeps turning up. Raskolnikov is horrible to him and he turns up anyway, with soup."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Everybody needs a Razumikhin. Nobody thinks they deserve one."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "point",
+     "shot": "close:mio",
+     "text": "Then you can be my Razumikhin instead of Sonya. You keep turning up. Even in a typhoon."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I don't bring soup."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "You bring a broken umbrella. It's close enough."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "idleLook": "up"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "idleLook": "up"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "weather": "rain",
+   "music": "hope",
+   "musicVol": 0.6,
+   "amb": [
+    "rain",
+    "washer"
+   ],
+   "washers": [
+    1,
+    3
+   ],
+   "clock": 22.9,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "two",
+     "text": "This is as far as I go."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Why? My house is just there. Five minutes."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Because your house is on that side. And I'm a man from a coin laundry. Your mother should see you come home from that side."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's drawn a line in the middle of the bridge. Like a proofreader's mark. Stop here."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You're very old-fashioned, Porfiry Petrovich."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I'm a nineteenth-century man."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "two",
+     "text": "Goodnight. Thank you for lifting the stone."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "You lifted it. I just held the umbrella."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "farL"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "prop": "umbrella",
+     "open": true,
+     "umbrellaColor": "#e2a83a",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "railR",
+     "emo": "neutral",
+     "prop": "umbrella",
+     "open": true,
+     "idleLook": "other"
+    }
+   },
+   "set": "bridge",
+   "season": "autumn",
+   "weather": "rain",
+   "music": "theme",
+   "musicVol": 0.65,
+   "amb": [
+    "rain"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "her-room",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "Mum? Is it too late to ask... can I help paint the baby's room?"
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "...Mio. Of course. Of course you can. I was scared to ask you."
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "I thought you'd hate the baby. A bit. I would have, at your age. I've been so careful around you I forgot to just ask."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...I hated her a bit. For about one second. I'm finished now."
+    },
+    {
+     "who": "kaori",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "One second is allowed. Come down. There's tea."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "She was scared to ask me. We were both under stones."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Hello, little sister. Sorry. I'll make it up to you. I'll give you Gramps's books when you're seventeen. You have to read them in the bath."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "front"
+    }
+   },
+   "set": "room_her",
+   "season": "autumn",
+   "weather": "rain",
+   "music": "hope",
+   "musicVol": 0.55,
+   "amb": [
+    "rain",
+    "room"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-4",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Extraordinary or nothing. I said it out loud for the first time tonight. In a laundry, in the dark, to a girl who isn't eighteen yet."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "It sounded much stupider out loud. That's the trouble with theories."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Something ordinary. Ordinary is allowed."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "autumn",
+   "weather": "rain",
+   "music": "night",
+   "musicVol": 0.65,
+   "amb": [
+    "rain",
+    "room"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 4: The Idea with an Axe",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Kaori Ogawa",
+    "Satoshi Ogawa",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "Crime and Punishment (1866)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Pain and suffering are always necessary for a broad awareness and a deep heart.",
+   "quoteBy": "Fyodor Dostoevsky, \"Crime and Punishment\"",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "text": "Next time. A drunk in a tavern, a daughter who gave up everything for her family, and a question. Do you have somewhere to go?"
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "text": "Episode five. Somewhere to Go. Mrs. Hoshino has something to tell us."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Somewhere to Go",
+   "nextSub": "on \"Crime and Punishment\" (II)",
+   "season": "autumn"
+  }
+ ]
+}

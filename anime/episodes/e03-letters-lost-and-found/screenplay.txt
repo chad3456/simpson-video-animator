@@ -1,0 +1,228 @@
+episode: 3
+slug: e03-letters-lost-and-found
+title: Letters in the Lost-and-Found
+kanji: 第三話
+sub: on "Poor Folk"
+book: Poor Folk (1846)
+season: summer
+gap: 178
+logline: Late September. For the first time, Mio isn't there when Itsuki arrives. She has left him a letter in the laundry's lost-and-found notebook, because Dostoevsky's first novel is made of letters, and because some things are easier to say on paper. He writes back.
+quote: But what is the use of writing, my darling? The heart only aches more when you write.
+quoteBy: Fyodor Dostoevsky, "Poor Folk"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=laundry_int season=summer music=night musicVol=0.7 amb=washer,crickets washers=2 clock=22.0 fadeIn=1.2
+@ cat slot=cat_dryer pose=sleep
+BEAT 2.5 [wide] (sfx=bell)
+@ itsuki slot=door emo=neutral look=front
+BEAT 2 [wide]
+ITSUKI (thought) [mcu:itsuki] (look=front): Ten o'clock. Thursday. The bench is empty.
+@ itsuki slot=benchR emo=neutral look=other
+BEAT 2.5 [wide]
+ITSUKI (thought) [close:itsuki] (look=other): She's always here first. She sits at her end with her feet up, and she says something rude before I've got my coat off.
+ITSUKI (thought) [close:itsuki] (sad, look=down): It's fine. It's a coin laundry. People don't owe a coin laundry anything.
+BEAT 2 [close:itsuki] (itsuki=surprised, itsuki.look=up)
+ITSUKI (thought) [mcu:itsuki] (surprised, look=up): ...My umbrella. Hanging on the hook by the counter. With a piece of paper tied to the handle.
+INSERT text 3.5 | text=READ THE NOTEBOOK. (the sock one)
+BEAT 1.5 [wide]
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=summer music=tease musicVol=0.8 amb=washer,crickets washers=2 clock=22.1 | caption=Thursday, late September.
+@ itsuki slot=benchR emo=neutral look=down prop=notebook
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 2.5 [wide] (sfx=page)
+ITSUKI (thought) [close:itsuki] (look=down): The Laundry Notebook. Lost-and-found. Mrs. Hoshino keeps it on the counter for missing socks. Nobody ever finds their socks.
+INSERT notebook 6 | title=LOST & FOUND | hand=hoshino | rot=-1 | text=LOST: one grey sock. Has a hole. Sentimental value. (Room 204)\nFOUND: nothing. — Hoshino\nLOST: my will to live (dryer 2 took 300 yen)\nDryer 2 is fine. Use dryer 3. — Hoshino
+ITSUKI (smile, look=down) [close:itsuki]: ...Dryer two is not fine.
+BEAT 2 [close:itsuki] (sfx=page)
+ITSUKI (thought) [mcu:itsuki] (surprised, look=down): And then, in blue ink, a whole page. In handwriting that runs uphill.
+MIO (vo, tease) [insert]: Dear Underground-san. Also known as Mr. Dreamer. Also known as Proofreader. Also known as Fedya's other human.
++INSERT notebook | title=LOST & FOUND | hand=mio | rot=-2 | typeOn=true | text=Dear Underground-san\n(Mr. Dreamer, Proofreader,\nFedya's other human),
+MIO (vo, smile) [close:itsuki]: If you're reading this, I'm late. Don't panic. You'll panic. You'll be sitting there right now with your face doing the thing.
+BEAT 1.2 [close:itsuki] (itsuki=flustered, itsuki.act=hide)
+MIO (vo) [mcu:itsuki]: Mum has a hospital appointment tonight. It's the baby. It's fine. Everyone keeps saying it's fine, so I'm saying it too. Satoshi-san's car won't start, so I'm going with her on the bus. I'll come after. Wait for me, or don't. You will.
+MIO (vo, tease) [close:itsuki]: I'm writing you a letter because this week's book is all letters. Gramps said Poor Folk is Dostoevsky's first novel, and that he wrote it when he was twenty-four, and that everyone who read it cried, including the critic who discovered him, who woke him up at four in the morning to tell him so.
+MIO (vo, grin) [close:itsuki]: So I'm Varvara, the girl at the window across the courtyard. And you have to be Makar. Sorry. He's a poor old clerk who copies documents all day. You copy other people's words for a living. It's not my fault. It's the casting.
+BEAT 2 [close:itsuki] (itsuki=soft, itsuki.look=down)
+ITSUKI (thought) [close:itsuki] (soft, look=down): Makar Devushkin. Forty-seven, a titular councillor, the lowest rank that still has a title. His handwriting is the only beautiful thing about him.
+MIO (vo, soft) [mcu:itsuki]: P.S. The umbrella is on the hook. I dried it on the warm towel rail. It was the first time I liked the towel rail.
+MIO (vo, tease) [close:itsuki]: P.P.S. Write back. In the notebook. It's a lost-and-found. If you don't write back, I'll report you as lost.
+BEAT 3 [wide]
+@ cat slot=cat_dryer pose=sit
+BEAT 1.5 [insert:cat] (sfx=meow)
++INSERT cat | pose=sit
+ITSUKI (look=up) [close:itsuki]: ...Don't look at me like that, Fedya.
+ITSUKI (shy, look=down) [close:itsuki]: I'm not going to write back. People don't write letters in coin laundries.
+BEAT 3 [close:itsuki] (itsuki=thinking, itsuki.look=down)
+ITSUKI (thought) [close:itsuki] (look=down): Makar writes to Varvara every day. About the weather. About the tea he can't afford. About the geraniums he buys her. He tells her he's fine, while he sells his coat.
+ITSUKI (thought) [mcu:itsuki] (sad, look=front): And he's ashamed. Not of being poor. Of being seen being poor. He goes to the office in boots with holes in them and sits very still so nobody looks at his feet.
+ITSUKI (thought) [close:itsuki] (look=down): I sit very still too.
+BEAT 2.5 [wide] (sfx=pencil)
+@ itsuki act=write emo=thinking look=down
+BEAT 4 [mcu:itsuki] (sfx=pencil)
+ITSUKI (thought) [close:itsuki] (flustered, look=down): Just a short reply. Out of politeness. The notebook asks for it. It's a lost-and-found.
+BEAT 3 [wide] (sfx=pencil)
+BEAT 2.5 [wide]
+
+== SCENE laundry-2 | set=laundry_int season=summer music=night amb=washer,crickets washers=2,5 clock=23.0
+@ itsuki slot=benchR emo=sleepy look=down prop=notebook
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 2.5 [wide] (sfx=bell)
+@ mio slot=door emo=sad look=other
+BEAT 1.5 [wide]
+MIO (smile, look=other) [mcu:mio]: You waited.
+ITSUKI (surprised, act=hide) [close:itsuki]: My washing isn't finished.
+MIO (tease, look=other) [two]: Washer two finished forty minutes ago. The light's off. I can see it from here.
+ITSUKI (flustered, look=down) [close:itsuki]: ...It needs to rest.
+@ mio slot=benchL emo=soft look=front
+@ item basket benchL dx=-95
+BEAT 2 [two]
+ITSUKI (look=other) [close:itsuki]: Your mother?
+MIO (smile, look=front) [close:mio]: Fine. Really fine. They put the gel on her stomach and a little screen came on, and there was a sound like a horse galloping very far away.
+MIO (soft, look=down): It's a girl. I'm going to have a sister.
+ITSUKI (soft, look=other) [close:itsuki]: ...Congratulations.
+MIO (smile, look=down) [close:mio]: Thank you. Mum cried. Satoshi-san cried. The nurse nearly cried. I said "wow" like a normal person.
+MIO (thought) [close:mio] (sad, look=down): I said wow. And then on the bus I wanted to cry too, and I didn't know which kind of crying it was going to be, so I didn't.
+BEAT 2.5 [two] (mio=soft)
+MIO (tease, look=other) [close:mio]: So. Did you read it? My letter?
+ITSUKI (blush, look=down) [close:itsuki]: ...It was in the lost-and-found. Anyone could have read it.
+MIO (grin): Did you write back?
+BEAT 2 [close:itsuki] (itsuki=flustered, itsuki.act=hide)
+MIO (laugh, act=point) [close:mio]: You did! Give it here.
+ITSUKI (flustered) [close:itsuki]: Not now. Read it at home. Or never. Never is good.
+MIO (tease): It's a lost-and-found, Makar Alexeyevich. It belongs to the public.
+@ itsuki prop=none
+@ mio prop=notebook
+BEAT 2 [two] (sfx=page)
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-3 | set=laundry_int season=summer music=wonder musicVol=0.8 amb=washer,crickets washers=2,5 clock=23.1
+@ mio slot=benchL emo=neutral look=down prop=notebook
+@ itsuki slot=benchR emo=shy look=away
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 2.5 [wide]
+ITSUKI (vo, shy) [insert]: Dear Varvara Alexeyevna. The umbrella has been received, dry and in good health. It has never been to a towel rail before. It may be spoiled now.
++INSERT notebook | title=LOST & FOUND | hand=itsuki | rot=1 | text=Dear Varvara Alexeyevna,\nThe umbrella has been received, dry\nand in good health.
+ITSUKI (vo) [mcu:mio]: I am sorry to have been cast as Makar. But it is fair. I correct the commas of other people's sentences eight hours a day, and at night I keep my feet still so nobody looks at my shoes.
+ITSUKI (vo, soft) [close:mio]: Makar says that the worst thing about being poor is not hunger, but that people pass judgement on you, and you begin to pass it on yourself. I have read that line many times. I think it is the truest line in the book.
+ITSUKI (vo, soft) [close:mio]: I hope your mother is well. I hope the bus was warm. Fedya is asleep on dryer three and sends no regards, because he is a cat.
+ITSUKI (vo, shy) [insert]: Yours, with a good umbrella. Makar (proofreader).
++INSERT notebook | title=LOST & FOUND | hand=itsuki | rot=1 | text=...Fedya is asleep on dryer three and\nsends no regards, because he is a cat.\n\nYours, with a good umbrella,\nMakar (proofreader)
+BEAT 3 [close:mio] (mio=surprised, mio.look=down)
+MIO (thought) [close:mio] (surprised, look=down): Oh.
+MIO (thought) [close:mio] (soft, look=down): He doesn't write like a proofreader. He writes like someone who has been saving words for a long time and didn't have anyone to spend them on.
+MIO (soft, look=other) [mcu:mio]: You write beautifully.
+ITSUKI (flustered, act=hide) [close:itsuki]: I know where the commas go. That's all.
+MIO (tease, look=other) [close:mio]: Makar says that too. "I have no style, my darling." And then he writes thirty pages.
+ITSUKI (blush, look=away) [close:itsuki]: ...Makar is a good man.
+MIO (soft, look=other) [close:mio]: He's the best man in the book. That's what makes it so unfair.
+BEAT 2 [two]
+MIO (look=front) [mcu:mio]: My favourite bit is the button.
+ITSUKI (look=front) [close:itsuki]: ...Oh. The button.
+MIO (look=front) [close:mio]: He's called in front of His Excellency because he made a mistake copying a document. He left out a line. And he's standing there in his torn uniform, shaking, and a button falls off.
+MIO (sad, look=front): It rolls across the floor. Right up to the general's feet. And Makar runs after it and tries to pick it up and can't, and then tries to sew it back on with his fingers. In front of everyone.
+ITSUKI (sad, look=down) [close:itsuki]: And the general gives him a hundred roubles.
+MIO (look=other) [close:mio]: And shakes his hand. Gramps wrote something there.
+INSERT book 7 | title=Poor Folk | text=He took my hand, my unworthy hand, and shook it, just as if I were his equal, as if I were a general myself. | underline=2 | note=Not the hundred roubles.\nThe hand.\n— G. | noteBy=genzo
+ITSUKI (soft, look=front) [close:itsuki]: ...He's right. Makar forgets the money in a page. He never forgets the hand.
+MIO (soft, look=other) [mcu:mio]: Has anyone ever shaken your hand like that?
+BEAT 2.5 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (look=down) [close:itsuki]: Once. A long time ago. A man gave me a certificate, and shook my hand, and said, "We look forward to the next one."
+MIO (thinking, look=other) [close:mio]: The next what?
+ITSUKI (shy, look=away) [close:itsuki]: ...Proofread. The next proofread.
+MIO (thought) [close:mio] (thinking, look=other): That's the first time I've caught him lying. He's very bad at it. He looked at the vending machine like it might help.
+BEAT 2.5 [two]
+MIO (look=book) [mcu:mio]: Okay, the part that made me laugh. Varvara lends him books. She sends him Pushkin, and he loves it. And then she sends him Gogol. The Overcoat.
+ITSUKI (laugh, act=laugh) [close:itsuki]: ...And he's furious.
+MIO (grin, act=point) [close:mio]: He's so furious! It's about a poor clerk who copies documents and saves for a year to buy a new coat, and it gets stolen. And Makar writes her this outraged letter. How dare he. How dare this Gogol write about a man like me and show everybody my boots.
+ITSUKI (smile, look=front) [close:itsuki]: Dostoevsky put a man in a book who is angry about being put in a book.
+MIO (tease): By someone who was laughing at him.
+ITSUKI (look=front) [mcu:itsuki]: Gogol isn't laughing at him, exactly. But Makar can't tell the difference. When you've been looked down on your whole life, pity and mockery feel the same from underneath.
+MIO (thinking, look=other) [close:mio]: But Pushkin he loves. The Stationmaster. The old man whose daughter runs away.
+ITSUKI (soft, look=down) [close:itsuki]: Because Pushkin lets the old man be sad without making him small.
+MIO (soft, look=other) [close:mio]: That's the kind of book I'd want to be in. If I had to be in one.
+ITSUKI (look=other) [close:itsuki]: ...You'd be the one writing it.
+BEAT 2 [close:mio] (mio=blush, mio.look=down)
+MIO (thought) [close:mio] (blush, look=down): He says things like that, and then he looks at the floor like the floor said it.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: Can I tell you which part I hated?
+ITSUKI (look=other): The end.
+MIO (annoyed, look=other) [close:mio]: The end! Varvara marries that horrible rich man Bykov and goes away to his estate, and her last letters are all about lace. She asks Makar to run around town for her, to change the lace on her dresses.
+MIO (sad, look=down) [close:mio]: And Makar's last letter is the most desperate thing I've ever read. "My darling, my little dove, my own." And then it just stops. No answer. The book ends with a letter that nobody replies to.
+ITSUKI (soft, look=front) [mcu:itsuki]: Dostoevsky was twenty-four. He already knew that's how most letters end.
+MIO (pout, look=other) [close:mio]: Whose side are you on?
+ITSUKI (look=front) [close:itsuki]: Varvara's.
+MIO (surprised, look=other) [close:mio]: Varvara's? She abandons him!
+ITSUKI (serious, look=front) [close:itsuki]: She's ill, and poor, and very young, and the only person who loves her is a man who can't buy his own boots. If she stays, she stays in a corner room across a courtyard for the rest of her life, being grateful.
+ITSUKI (soft, look=down) [mcu:itsuki]: Makar's love is real. But it's a small room. Somebody who loved her properly would want her to leave it.
+BEAT 3.5 [close:mio] (mio=soft, mio.look=other)
+MIO (soft, look=other) [close:mio]: That's a very sad thing to believe.
+ITSUKI (look=down) [close:itsuki]: ...It's a sad book.
+MIO (thought) [close:mio] (look=other): He said it like a rule he'd made for himself. Like something written on the inside of a door.
+BEAT 2.5 [wide] (sfx=buzzer)
+
+== SCENE laundry-4 | set=laundry_int season=summer music=tease musicVol=0.8 amb=washer,crickets washers=5 clock=23.6
+@ mio slot=benchL emo=thinking look=down prop=notebook
+@ itsuki slot=benchR emo=neutral look=other
+@ cat slot=cat_dryer pose=sit
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 2 [wide]
+MIO (grin, look=other) [close:mio]: Okay. New rule. Whenever one of us can't come on a Thursday, we write in the notebook. Like Makar and Varvara. But with a happier ending.
+ITSUKI (shy, look=down) [close:itsuki]: It's for socks.
+MIO (tease): It's for things that are lost.
+BEAT 2 [wide] (sfx=bell)
+@ hoshino slot=door emo=neutral look=other
+BEAT 1.5 [wide]
+HOSHINO (look=other) [mcu:hoshino]: Evening. Don't get up. I'm only here for the coin boxes.
+MIO (smile, look=other) [two]: Good evening, Mrs. Hoshino.
+@ hoshino slot=standR
+BEAT 2 [wide] (sfx=can)
+HOSHINO (look=other) [mcu:hoshino]: Somebody has been writing letters in my lost-and-found.
+ITSUKI (flustered, act=hide) [close:itsuki]: I'm very sorry.
+HOSHINO (look=other) [mcu:hoshino]: Hm. Two pages of letters, and still nobody has found that grey sock from Room 204.
+MIO (tease, look=other) [close:mio]: It's a lost-and-found. We're both lost. Technically we're eligible.
+HOSHINO (smile, look=other) [mcu:hoshino]: Then write neatly. And leave me one line at the bottom for socks.
+@ hoshino slot=door
+BEAT 2 [wide] (sfx=bell)
+@ hoshino slot=none
+BEAT 2 [two]
+MIO (laugh, act=laugh) [close:mio]: That's a yes.
+ITSUKI (smile, look=down) [close:itsuki]: That was a yes.
+BEAT 2 [two]
+MIO (soft, look=other) [close:mio]: Makar. Thank you for waiting.
+ITSUKI (shy, look=down) [close:itsuki]: ...My washing needed to rest.
+BEAT 2.5 [wide]
+
+== SCENE bridge-1 | set=bridge season=summer music=theme musicVol=0.7 amb=crickets
+@ mio slot=railL emo=soft look=down prop=notebook
+BEAT 3 [wide]
+MIO (thought) [close:mio] (look=down): I tore his letter out of the notebook. Carefully, along the stitches. Mrs. Hoshino will never notice. She'll notice.
+MIO (thought) [close:mio] (smile, look=front): I'm going to keep it in Underground. The throwing copy. It's the safest place I know.
+MIO (thought) [mcu:mio] (sad, look=down): "Somebody who loved her properly would want her to leave." Gramps, why does every man in these books talk like he's already said goodbye?
+BEAT 3.5 [wide]
+
+== SCENE room-3 | set=room_him season=summer music=night musicVol=0.7 amb=room,crickets
+@ itsuki slot=desk emo=neutral look=down
+BEAT 2.5 [wide] (sfx=pencil)
+ITSUKI (thought) [close:itsuki] (look=down): She has the letter. There is now a piece of my handwriting in the world that I can't proofread.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write\n5. Get umbrella back  (done!)\n6. Buy a better pen
+ITSUKI (thought) [mcu:itsuki] (soft, look=front): "We look forward to the next one." I said proofread. She knew. She let me keep it.
+ITSUKI (thought) [close:itsuki] (smile, look=down): Thursday number five. She told me the number on the way out. She's been counting since August.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=The Idea with an Axe | sub=on "Crime and Punishment"
+MIO (vo, grin): Next time. A poor student with a theory, a pawnbroker, and an axe. The big one.
+MIO (vo, tease): Episode four. The Idea with an Axe. There's a typhoon coming, Makar. Bring your umbrella. This time, keep it.
+BEAT 1.5

@@ -1,0 +1,231 @@
+episode: 4
+slug: e04-idea-with-an-axe
+title: The Idea with an Axe
+kanji: 第四話
+sub: on "Crime and Punishment" (I)
+book: Crime and Punishment (1866)
+season: autumn
+linegap: 0.75
+gap: 162
+logline: October, and a typhoon. Mio has been carrying an ugly thought about the baby for a week. Over Raskolnikov and the theory that carried him to murder, Itsuki admits the theory he once used on himself, and when the power fails, Mio says her thought out loud in the dark.
+quote: Pain and suffering are always necessary for a broad awareness and a deep heart.
+quoteBy: Fyodor Dostoevsky, "Crime and Punishment"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=room_her season=autumn weather=rain music=unease musicVol=0.6 amb=rain,room fadeIn=1.2
+@ mio slot=desk emo=neutral look=down prop=book bookColor=#3a3030
+BEAT 3 [wide] (sfx=page)
+KAORI (vo) [wide]: We could move Mio's boxes to the garage, couldn't we? Then the cot fits under the window.
+SATOSHI (vo) [mcu:mio]: Let's ask her first. It's her room.
+KAORI (vo) [close:mio]: It's only until we sort out the attic. She won't mind. She never minds anything.
+BEAT 2.5 [close:mio] (mio=sad, mio.look=down)
+MIO (thought) [close:mio] (sad, look=down): Six boxes. One shelf. I'd only just started.
+MIO (thought) [close:mio] (look=front): And just for a second, before I could stop it, I thought something.
+MIO (thought) [mcu:mio] (teary, look=down): I'm not going to say what. I'm going to put it under a stone, like Raskolnikov did with the purse, and never look at it again.
+BEAT 3 [wide] (sfx=thunder)
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=autumn weather=storm music=night musicVol=0.7 amb=storm,washer washers=1,3 clock=22.0 | caption=Thursday, October. Typhoon No. 19.
+@ mio slot=benchL emo=neutral look=down prop=book bookColor=#3a3030
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+BEAT 2.5 [wide] (sfx=thunder)
+BEAT 1.5 [wide] (sfx=bell)
+@ itsuki slot=door emo=neutral look=other prop=umbrella
+BEAT 1.5 [wide]
+MIO (grin, look=other) [mcu:mio]: You brought the umbrella. You kept it. I'm so proud.
+ITSUKI (look=other) [close:itsuki]: It turned inside out twice on the bridge.
+MIO (tease): And you still came. In a typhoon. For laundry.
+ITSUKI (shy, look=down) [close:itsuki]: ...I had a lot of laundry.
+@ itsuki slot=benchR prop=none emo=neutral look=front
+@ item basket benchR dx=95
+BEAT 2 [two]
+MIO (look=book) [close:mio]: I finished it. Crime and Punishment. Five hundred pages in eight days. I read it in the bath. The pages went wavy.
+ITSUKI (surprised, look=other) [close:itsuki]: Eight days.
+MIO (smile, look=other): It's a thriller. Nobody told me it's a thriller. Gramps always made it sound like homework.
+ITSUKI (smile, look=front) [close:itsuki]: It was printed in a magazine, in parts. People queued for the next issue. It's the first great crime novel where you know who did it on page eighty.
+MIO (look=book) [mcu:mio]: So. Rodion Romanovich Raskolnikov. Ex-student. Lives in a room so small his landlady's maid calls it a cupboard. Hasn't paid rent in months. Lies on a sofa thinking.
+MIO (tease, look=other): Sound like anyone?
+ITSUKI (flustered, act=hide) [close:itsuki]: My room has a window.
+MIO (grin): That's a low bar, Underground-san.
+BEAT 2 [two]
+MIO (sad, look=book) [mcu:mio]: The part that made me feel sick wasn't even the murder. It was the dream before it. The horse.
+ITSUKI (sad, look=down) [close:itsuki]: ...The horse.
+MIO (sad, look=front) [close:mio]: He dreams he's seven, walking with his father past a tavern, and a crowd of drunk men are beating an old mare because she can't pull a cart full of people. They beat her until she dies. And little Rodya runs through the crowd and throws his arms around her dead head and kisses her eyes.
+ITSUKI (soft, look=front) [close:itsuki]: And he wakes up and says, no, I can't do it. I won't. And for a moment he's free.
+MIO (look=other) [close:mio]: So why does he do it anyway?
+ITSUKI (look=front) [mcu:itsuki]: Because the boy in the dream and the man on the sofa aren't speaking to each other any more. The boy is still in there, crying over the horse. The man has a theory.
+MIO (soft, look=down) [close:mio]: Gramps had the dream page folded down. Not underlined. Just folded. Like he couldn't bear to write on it.
+BEAT 2 [two] (sfx=thunder)
+MIO (look=front) [close:mio]: And he has a theory. That's the scary part. Not the axe. The theory.
+ITSUKI (look=front) [close:itsuki]: That people are divided into two kinds.
+MIO (look=front) [close:mio]: Ordinary people, who are just material. They obey the law and have children. And extraordinary people, like Napoleon, who have the right to step over anything. Even blood. Because history will say they were right.
+MIO (annoyed, look=other): And then he looks at a horrible old pawnbroker who cheats students, and he thinks: a hundred good deeds could be done with her money. One death, a hundred lives. It's just arithmetic.
+ITSUKI (serious, look=front) [mcu:itsuki]: Two times two.
+MIO (look=other) [close:mio]: The Underground Man would hate him.
+ITSUKI (smile, look=front) [close:itsuki]: The Underground Man would throw a stone at his crystal palace.
+BEAT 2 [two]
+MIO (sad, look=down) [close:mio]: But then it doesn't work. He kills her, and her sister Lizaveta walks in. Lizaveta, who was gentle and simple and mended everyone's clothes. And he kills her too. She doesn't even raise her hands to her face.
+ITSUKI (sad, look=down) [close:itsuki]: That's the moment the arithmetic ends.
+MIO (look=down) [mcu:mio]: And he doesn't even spend the money. He hides the purse under a stone in a courtyard and never opens it. He doesn't know how much was in it.
+MIO (soft, look=book): Gramps wrote something next to the stone.
+INSERT book 7 | title=Crime and Punishment | text=He had not even looked into the purse; he did not know how much was in it. | right=He lifted the stone and slid everything underneath. | underline=1 | note=An idea is a guest.\nDo not give it\nthe best room.\n— G. | noteBy=genzo
+ITSUKI (soft, look=front) [close:itsuki]: ...That's the whole book, really.
+MIO (thinking, look=other) [close:mio]: He lay in that cupboard for a month, feeding the idea. Giving it the best room. By the time he picked up the axe, the idea was the one living there, and he was the guest.
+BEAT 3 [close:itsuki] (itsuki=thinking, itsuki.look=down)
+ITSUKI (thought) [close:itsuki] (look=down): She says these things as if they're obvious. As if she isn't seventeen.
+BEAT 2 [two] (sfx=thunder)
+MIO (look=other) [close:mio]: Did you ever have a theory? A Raskolnikov one?
+BEAT 2.5 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (look=down) [close:itsuki]: ...Yes.
+MIO (surprised, look=other) [close:mio]: Really?
+ITSUKI (look=front) [mcu:itsuki]: When I was twenty-three, something I'd done was... noticed. For a while. And I decided that from then on I had to be extraordinary, or nothing. That anything ordinary I made would be a kind of crime.
+ITSUKI (sad, look=down) [close:itsuki]: So I made nothing. Five years. It's a very tidy theory. No axe. You just use it on yourself, a little every day.
+BEAT 3 [close:mio] (mio=soft, mio.look=other)
+MIO (soft, look=other) [close:mio]: That's the saddest crime I've ever heard of.
+ITSUKI (shy, look=away) [close:itsuki]: It's not a crime. Nobody died.
+MIO (look=other) [close:mio]: Somebody did. A bit.
+BEAT 2.5 [wide] (sfx=thunder)
+
+== SCENE laundry-2 | set=laundry_int season=autumn weather=storm music=unease musicVol=0.5 amb=storm washers=9 clock=22.4 tint=#141a3a tintOp=0.62
+@ mio slot=benchL emo=surprised look=up
+@ itsuki slot=benchR emo=surprised look=up
+@ cat slot=cat_dryer pose=sit
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 2.5 [wide] (sfx=thump)
+MIO (surprised, look=up) [two]: ...Okay. The lights went out.
+ITSUKI (look=up) [close:itsuki]: The whole street's gone.
+MIO (grin, look=other) [close:mio]: Our washing is stuck in the machines. We're hostages.
+BEAT 2 [insert:cat] (sfx=meow)
++INSERT cat | pose=sit
+MIO (smile, look=up) [two]: Fyodor Mikhailovich is not happy. His dryer's going cold.
+ITSUKI (look=up) [close:itsuki]: He'll come to the bench. He always comes to the bench when the dryer stops.
+MIO (tease, look=other) [close:mio]: You know his schedule.
+ITSUKI (shy, look=down) [close:itsuki]: ...I've been coming here for three years. He's the only one who's been here longer.
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-3 | set=laundry_int season=autumn weather=storm music=sorrow musicVol=0.55 amb=storm washers=9 clock=22.5 tint=#141a3a tintOp=0.62
+@ mio slot=benchL emo=neutral look=front
+@ itsuki slot=benchR emo=neutral look=front
+@ cat slot=cat_bench pose=sleep
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 3.5 [wide] (sfx=thunder)
+MIO (look=front) [close:mio]: It's easier in the dark. Talking.
+ITSUKI (look=front) [close:itsuki]: ...Yes.
+MIO (look=front) [close:mio]: That's why Raskolnikov confesses to Sonya at night, isn't it. In her room, with the candle burning down.
+ITSUKI (soft, look=front) [close:itsuki]: And she doesn't run away. She says, "What have you done to yourself?" Not to them. To yourself.
+BEAT 3 [two]
+MIO (look=down) [close:mio]: Can I confess something? It's not an axe. It's much smaller. But it's ugly.
+ITSUKI (look=other) [close:itsuki]: ...You don't have to.
+MIO (sad, look=down) [close:mio]: I want to. Before I put it under a stone.
+BEAT 2.5 [close:mio] (mio=teary)
+MIO (teary, look=down) [close:mio]: Last week, Mum said they'd move Gramps's boxes to the garage. For the cot. And for one second, I thought: I wish there wasn't going to be a baby.
+MIO (cry, look=down) [mcu:mio]: She hasn't even been born. She's a heartbeat that sounds like a horse. And I wished her away so I could keep a corner of a room that isn't even mine.
+MIO (cry, act=cover) [close:mio]: What kind of sister thinks that? I've hated myself all week. I thought if I said it, it would become true.
+BEAT 4 [close:itsuki] (itsuki=sad, itsuki.look=other)
+ITSUKI (soft, look=other) [close:itsuki]: Can I say something about Raskolnikov?
+MIO (teary, look=down) [close:mio]: ...It had better be good.
+ITSUKI (look=front) [mcu:itsuki]: His crime wasn't that he had the thought. Everyone in that city had thoughts like that. There's a student in the tavern who says the exact same thing out loud, as a joke, at the start of the book.
+ITSUKI (look=front) [close:itsuki]: His crime was that he kept it. He took it home to his cupboard and fed it for a month and never told a living soul. He gave it the best room.
+ITSUKI (soft, look=other) [close:itsuki]: You had the thought for one second. And a week later you brought it out into a coin laundry, in a typhoon, and said it out loud to a stranger.
+ITSUKI (soft, look=other) [mcu:itsuki]: That's not Raskolnikov. That's the opposite. That's lifting the stone.
+BEAT 3 [close:mio] (mio=teary, mio.look=other)
+MIO (teary, look=other) [close:mio]: ...You're not a stranger.
+ITSUKI (blush, look=down) [close:itsuki]: ...Proofreader from the laundry.
+MIO (soft, look=other) [close:mio]: Can I ask what you'd do? If you were me.
+ITSUKI (look=front) [close:itsuki]: ...I'd ask if I could help paint the room. The baby's room. I'd make it partly mine that way.
+ITSUKI (shy, look=down): And I'd put the books somewhere she can find them when she's seventeen.
+BEAT 3.5 [close:mio] (mio=surprised, mio.look=other)
+MIO (thought) [close:mio] (teary, look=other): Gramps, he said seventeen. He imagined her at seventeen. Reading your books.
+MIO (smile, look=other) [close:mio]: So you're my Sonya.
+ITSUKI (flustered, act=hide) [close:itsuki]: I'm... not Sonya.
+MIO (tease, look=other): Who, then?
+ITSUKI (look=front) [close:itsuki]: Porfiry, maybe. The investigator. He knows everything and he never arrests him. He just keeps telling him to go outside. "What you need is air. Air."
+MIO (laugh, act=laugh) [close:mio]: You're telling me to go outside? You?
+ITSUKI (smile, look=down) [close:itsuki]: I'm outside. It's a typhoon. I came.
+BEAT 2 [two]
+MIO (look=other) [close:mio]: And your theory? Extraordinary or nothing? Are you going to lift that stone?
+ITSUKI (look=down) [close:itsuki]: ...I don't know where I put it.
+MIO (tease, look=other) [close:mio]: Yes you do. Everyone keeps it in the same place. A drawer. The one that sticks.
+BEAT 2 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+ITSUKI (surprised, look=other) [close:itsuki]: ...How did you know it sticks?
+MIO (soft, look=front) [close:mio]: Because Gramps had one too. His first translation got a terrible review in a newspaper in nineteen seventy-four. He kept it in a drawer that stuck for forty years. When we cleared the house, the review was on top of all his prizes.
+ITSUKI (soft, look=down) [close:itsuki]: He kept the bad review on top.
+MIO (smile, look=down) [close:mio]: He said it kept the prizes humble.
+BEAT 2.5 [wide] (sfx=thunder)
+
+== SCENE laundry-4 | set=laundry_int season=autumn weather=rain music=hope musicVol=0.6 amb=rain,washer washers=1,3 clock=22.9
+@ mio slot=benchL emo=soft look=up
+@ itsuki slot=benchR emo=neutral look=up
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 2.5 [wide] (sfx=chime)
+MIO (smile, look=up) [two]: Light.
+ITSUKI (look=up) [close:itsuki]: The machines are going again.
+MIO (grin, look=other) [close:mio]: Fyodor Mikhailovich has reclaimed his dryer. Order is restored to the universe.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: Do you know how it ends? Raskolnikov in Siberia. He doesn't even feel sorry for a long time. And then one morning, by a river, Sonya sits next to him, and he just falls at her feet, and that's it. A new story begins, the book says, but that's another story.
+ITSUKI (soft, look=front) [close:itsuki]: Seven years left of his sentence. And they think of them as seven days.
+MIO (soft, look=other) [close:mio]: I didn't cry at the murder. I cried at that.
+ITSUKI (soft, look=down) [close:itsuki]: ...Me too.
+BEAT 2 [two]
+MIO (grin, look=other) [close:mio]: Actually, my favourite person in the whole book is Razumikhin.
+ITSUKI (smile, look=front) [close:itsuki]: Razumikhin.
+MIO (laugh, look=other): Raskolnikov's friend! He's loud, he's poor, he's always broke, and he translates terrible German books for money, and he just keeps turning up. Raskolnikov is horrible to him and he turns up anyway, with soup.
+ITSUKI (soft, look=down) [close:itsuki]: Everybody needs a Razumikhin. Nobody thinks they deserve one.
+MIO (tease, act=point) [close:mio]: Then you can be my Razumikhin instead of Sonya. You keep turning up. Even in a typhoon.
+ITSUKI (shy, look=down) [close:itsuki]: ...I don't bring soup.
+MIO (grin): You bring a broken umbrella. It's close enough.
+BEAT 3 [wide] (sfx=buzzer)
+
+== SCENE bridge-1 | set=bridge season=autumn weather=rain music=theme musicVol=0.65 amb=rain
+@ mio slot=railL emo=soft look=other prop=umbrella open=true umbrellaColor=#e2a83a
+@ itsuki slot=railR emo=neutral look=other prop=umbrella open=true
+BEAT 3 [wide] (sfx=steps)
+ITSUKI (look=other) [two]: This is as far as I go.
+MIO (surprised, look=other) [close:mio]: Why? My house is just there. Five minutes.
+ITSUKI (look=down) [close:itsuki]: Because your house is on that side. And I'm a man from a coin laundry. Your mother should see you come home from that side.
+MIO (thought) [close:mio] (soft, look=other): He's drawn a line in the middle of the bridge. Like a proofreader's mark. Stop here.
+MIO (tease, look=other) [close:mio]: You're very old-fashioned, Porfiry Petrovich.
+ITSUKI (smile, look=down) [close:itsuki]: I'm a nineteenth-century man.
+MIO (smile, look=other) [two]: Goodnight. Thank you for lifting the stone.
+ITSUKI (soft, look=other) [close:itsuki]: You lifted it. I just held the umbrella.
+@ mio slot=farL
+BEAT 3 [wide] (sfx=steps)
+BEAT 2 [wide]
+
+== SCENE her-room | set=room_her season=autumn weather=rain music=hope musicVol=0.55 amb=rain,room
+@ mio slot=desk emo=neutral look=front
+BEAT 2.5 [wide]
+MIO (shy, look=front) [mcu:mio]: Mum? Is it too late to ask... can I help paint the baby's room?
+KAORI (vo) [close:mio]: ...Mio. Of course. Of course you can. I was scared to ask you.
+KAORI (vo) [mcu:mio]: I thought you'd hate the baby. A bit. I would have, at your age. I've been so careful around you I forgot to just ask.
+MIO (soft, look=down) [close:mio]: ...I hated her a bit. For about one second. I'm finished now.
+KAORI (vo) [close:mio]: One second is allowed. Come down. There's tea.
+MIO (thought) [close:mio] (teary, look=down): She was scared to ask me. We were both under stones.
+MIO (thought) [close:mio] (soft, look=down): Hello, little sister. Sorry. I'll make it up to you. I'll give you Gramps's books when you're seventeen. You have to read them in the bath.
+BEAT 3 [wide] (sfx=page)
+
+== SCENE room-4 | set=room_him season=autumn weather=rain music=night musicVol=0.65 amb=rain,room
+@ itsuki slot=desk emo=neutral look=down
+BEAT 2.5 [wide]
+ITSUKI (thought) [close:itsuki] (look=down): Extraordinary or nothing. I said it out loud for the first time tonight. In a laundry, in the dark, to a girl who isn't eighteen yet.
+ITSUKI (thought) [mcu:itsuki] (sad, look=front): It sounded much stupider out loud. That's the trouble with theories.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen
+ITSUKI (thought) [close:itsuki] (soft, look=down): Something ordinary. Ordinary is allowed.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Somewhere to Go | sub=on "Crime and Punishment" (II)
+MIO (vo, soft): Next time. A drunk in a tavern, a daughter who gave up everything for her family, and a question. Do you have somewhere to go?
+MIO (vo, smile): Episode five. Somewhere to Go. Mrs. Hoshino has something to tell us.
+BEAT 1.5

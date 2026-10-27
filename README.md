@@ -2,10 +2,12 @@
 
 Turn any source into a yellow-toon parody episode, or a calm flat-vector explainer, with free, open-source tools only.
 
-Two shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chromium + ffmpeg):
+Three shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chromium + ffmpeg):
 
 - **KINDLETON** (root `SKILL.md`, `engine/`, `episodes/`): Simpsons-inspired parody sitcom.
 - **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; season 1 covers *Suicidal Empathy* in seven episodes: an overview (`too-kind-to-survive`) and one episode per case-file chapter (`the-things-we-wont-say`, `same-species-different-rules`, `second-chances`, `settled`, `buying-absolution`, `the-kindest-government`). A special, `eight-nights-of-fire`, covers the 2023 French riots through the same lens.
+
+- **Dostoevsky at the Coin Laundry** (`anime/`): a quiet, hand-painted-look anime in twelve 15-minute episodes. A shy 28-year-old proofreader and a teasing 17-year-old who inherited her grandfather's Dostoevsky books meet every Thursday night in a 24-hour coin laundry by a canal, and talk about one book or character per episode, from *White Nights* to the last page of *The Brothers Karamazov*. Original story, designs and score; the friendship stays tender and unspoken. See `anime/SERIES.md` (bible), `anime/STYLE.md` and `anime/SKILL.md`. Episodes are written as `anime/episodes/<slug>/screenplay.txt` and built with `anime/engine/screenplay.py` and `anime/engine/build_audio.py`, then rendered with `node engine/render.mjs anime/episodes/<slug> --player anime/engine/player.html`.
 
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
 - `engine/`: the renderer and pipeline.
@@ -43,4 +45,4 @@ Import this repo in Vercel (free Hobby plan), framework preset "Other", no build
 3. `engine.js` draws any moment `t` as SVG: procedural characters (hair, clothes, glasses, beards, lipstick, kid proportions), blinking, eye-rolls and smirks, listener reactions, walk-on entrances, hand props, head bob, gestures, envelope-driven lip-sync, six sets, a cheering crowd, the Empathy dial, comic bursts, hearts, screen shake, desaturation, iris wipes, auto camera cuts and push-ins, and captions. The soundtrack gets an original plucked-guitar music bed that ducks under dialogue.
 4. `render.mjs` steps headless Chromium frame by frame and pipes JPEGs into ffmpeg with the soundtrack.
 
-Everything is original art and music. Fonts: Bangers and Nunito (SIL Open Font License).
+Everything is original art and music. Fonts: Bangers and Nunito; the anime also uses EB Garamond, Caveat and a Shippori Mincho subset (all SIL Open Font License).

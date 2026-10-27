@@ -24,11 +24,13 @@
   .badge { font-weight: 800; font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--toon); color: var(--ink); }
   .badge.adult { background: var(--hot); }
   .badge.explainer { background: #7ad3ff; }
+  .badge.anime { background: #f2b8c6; }
   #grid { display: grid; gap: 40px; }
   #grid[hidden] { display: none; }
   .show { display: grid; gap: 14px; }
   .show h2.sh { font: 400 40px/1 Bangers, Impact, sans-serif; margin: 0; letter-spacing: .03em; }
   .show h2.sh.lumen { font: 900 30px/1 Nunito, sans-serif; letter-spacing: .3em; color: #ffb347; }
+  .show h2.sh.anime { font: italic 500 34px/1.1 'EB Garamond', Georgia, serif; letter-spacing: .01em; color: #f2d8a8; }
   .show p.sp { margin: 0; color: var(--muted); }
   .cat { display: grid; gap: 28px; }
   .cat[hidden], #chips[hidden] { display: none; }
@@ -51,7 +53,7 @@
 <div class="wrap">
   <header>
     <h1><span>KINDLETON</span></h1>
-    <p>Animated parody sitcoms and calm illustrated explainers that turn books and big arguments into episodes. Original characters, open-source voices, rendered in the browser.</p>
+    <p>Animated parody sitcoms, calm illustrated explainers and a quiet literary anime that turn books and big arguments into episodes. Original characters, open-source voices, rendered in the browser.</p>
   </header>
   <section id="watch" hidden>
     <div class="row"><button class="btn ghost" id="back">&larr; All episodes</button></div>
@@ -70,12 +72,12 @@
   let EPS = [];
   // path from a player page's folder to an episode folder, e.g. explainer/engine/player.html -> ../episodes/x/
   const rel = (page, dir) => { const up = page.split('/').length - 1, a = page.split('/').slice(0, -1), b = dir.split('/'); let i = 0; while (i < a.length && a[i] === b[i]) i++; return '../'.repeat(up - i) + b.slice(i).join('/'); };
-  const SHOWS = { KINDLETON: 'Yellow-toon parody sitcom. Adult satire with original characters.', LUMEN: 'Calm, illustrated explainers in a flat-vector style. One big idea at a time.' };
+  const SHOWS = { KINDLETON: 'Yellow-toon parody sitcom. Adult satire with original characters.', LUMEN: 'Calm, illustrated explainers in a flat-vector style. One big idea at a time.', 'Dostoevsky at the Coin Laundry': 'A quiet twelve-episode anime. Two lonely strangers, one shared author, and the Thursday nights in a 24-hour coin laundry by a canal.' };
   function card(e) {
     const dir = e.dir || `episodes/${e.slug}/`;
     return `<button class="card" data-slug="${e.slug}">` +
       (e.poster ? `<img src="${dir}${e.poster}" alt="">` : `<div class="ph"></div>`) +
-      `<div class="body"><div class="meta"><span class="badge ${e.rating === 'adult' || e.rating === 'mature' ? 'adult' : ''}"${e.note ? ` title="${esc(e.note)}"` : ''}>${e.rating === 'adult' ? '18+' : e.rating === 'mature' ? 'MATURE' : 'ALL AGES'}</span>${e.format === 'explainer' ? '<span class="badge explainer">EXPLAINER</span>' : ''}${esc(e.show)} ${esc(e.episode)} · ${fmt(e.duration)}</div>` +
+      `<div class="body"><div class="meta"><span class="badge ${e.rating === 'adult' || e.rating === 'mature' ? 'adult' : ''}"${e.note ? ` title="${esc(e.note)}"` : ''}>${e.rating === 'adult' ? '18+' : e.rating === 'mature' ? 'MATURE' : 'ALL AGES'}</span>${e.format === 'explainer' ? '<span class="badge explainer">EXPLAINER</span>' : ''}${e.format === 'anime' ? '<span class="badge anime">ANIME</span>' : ''}${esc(e.show)} ${esc(e.episode)} · ${fmt(e.duration)}</div>` +
       `<h2>${esc(e.title)}</h2><div class="logline">${esc(e.logline)}</div></div></button>`;
   }
   function open(slug) {
@@ -105,7 +107,7 @@
     const cats = [...new Set(list.map(e => e.category || 'Other'))];
     const showsIn = c => [...new Set(list.filter(e => (e.category || 'Other') === c).map(e => e.show))].sort((a, b) => (b === 'LUMEN') - (a === 'LUMEN'));
     const section = c => `<section class="cat" data-cat="${esc(c)}"><h2 class="ch">${esc(c)} <b>· ${list.filter(e => (e.category || 'Other') === c).length} episodes</b></h2>` +
-      showsIn(c).map(sh => `<section class="show"><h2 class="sh ${sh === 'LUMEN' ? 'lumen' : ''}">${esc(sh)}</h2>${SHOWS[sh] ? `<p class="sp">${esc(SHOWS[sh])}</p>` : ''}` +
+      showsIn(c).map(sh => `<section class="show"><h2 class="sh ${sh === 'LUMEN' ? 'lumen' : sh === 'Dostoevsky at the Coin Laundry' ? 'anime' : ''}">${esc(sh)}</h2>${SHOWS[sh] ? `<p class="sp">${esc(SHOWS[sh])}</p>` : ''}` +
         `<div class="grid">${list.filter(e => (e.category || 'Other') === c && e.show === sh).map(card).join('')}</div></section>`).join('') + `</section>`;
     grid.innerHTML = cats.map(section).join('');
     const pick = c => { chips.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cat === c))); grid.querySelectorAll('.cat').forEach(x => x.hidden = c !== '' && x.dataset.cat !== c); };
