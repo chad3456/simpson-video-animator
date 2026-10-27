@@ -1,0 +1,1394 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E5",
+  "title": "Somewhere to Go",
+  "book": "Crime and Punishment (1866)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Late October. Mio arrives with yellow paint on her fingers, ready to argue about Marmeladov, the drunk who asks whether a man has somewhere to go. Then Itsuki's phone rings, and it's his mother, who calls him by his father's name. Mio sits with him in silence. And Mrs. Hoshino has news about the laundry.",
+  "season": "autumn",
+  "gap_bench": 150,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses Crime and Punishment (1866); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "fumiko": {
+   "name": "Fumiko Kanzaki",
+   "role": "Itsuki's mother",
+   "voice": "af_sarah:0.5+bf_emma:0.5",
+   "speed": 0.86
+  },
+  "hoshino": {
+   "name": "Mrs. Hoshino",
+   "role": "owner of Coin Laundry Hoshizora",
+   "voice": "bf_emma",
+   "speed": 0.9
+  },
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "phone"
+    },
+    {
+     "dur": 3.5,
+     "insert": {
+      "kind": "phone",
+      "call": "Hikari Care Home",
+      "sub": "incoming call"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Hikari Care Home. Seven forty in the morning. They only call in the morning when she's had a bad night."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "sfx": "phone"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I'll call back at lunch. I'll call back after work. I'll call back."
+    },
+    {
+     "dur": 2.0,
+     "shot": "mcu:itsuki",
+     "react": {
+      "itsuki": "sad"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Marmeladov drank his wife's stockings and then went to the tavern to explain himself to strangers. At least he explained."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "time": "day",
+   "season": "autumn",
+   "music": "unease",
+   "musicVol": 0.5,
+   "amb": [
+    "room",
+    "birds"
+   ],
+   "fadeIn": 1.2
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "autumn"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第五話",
+   "kicker": "EPISODE 5",
+   "title": "Somewhere to Go",
+   "sub": "on \"Crime and Punishment\" (II)",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "wave",
+     "shot": "mcu:mio",
+     "text": "Look. Look at my hands."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Yellow."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "text": "Nursery yellow. Satoshi-san picked it. It's called \"Morning Butter.\" I've been scrubbing for two days. It's in my ears."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "You painted the room."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I painted the room. Mum cried again. She cries at everything now. She cried at a bus timetable."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "text": "And the books didn't go to the garage. Satoshi-san built a shelf in the hall. A whole shelf. Gramps is in the hall now. Everyone walks past him."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...That's good."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You said to ask. So I asked. That's all I did."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Okay. This week. Marmeladov. I need to argue with someone about Marmeladov."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "The tavern."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The tavern! The first time Raskolnikov goes into a tavern, there's this drunk former official who just starts talking to him. For pages. He's lost his job, he's drunk the family's money, he's stolen his wife's stockings to buy vodka, and his daughter Sonya has had to go out and earn money in the worst way there is, to feed the little ones."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "text": "And he tells all of this to a stranger, almost proudly! And everyone in the tavern laughs at him! I wanted to throw the book. I nearly used the throwing copy."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Why didn't you?"
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Because of what he says next."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "Crime and Punishment",
+      "text": "Do you understand, sir, what it means when a man has absolutely nowhere to go?",
+      "right": "For every man must have somewhere he can go.",
+      "underline": 2,
+      "note": "Thursday nights\nat the go board.\nThat was mine.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Gramps played go every Thursday at the community hall, for forty years. He used to say the board was his somewhere."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Thursday."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Thursday. I didn't plan it. I promise. The dryer at home really is broken."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Then he talks about the Last Judgment."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's the bit. Say it. You say it better."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "I don't say anything better."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "text": "Underground-san. Say it."
+    },
+    {
+     "dur": 1.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": "shy"
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "He says that on the last day, when all the good people have been judged and forgiven, God will turn to the others. And say: come forth, you also. Come forth, you drunkards. Come forth, you weak ones. You shameless ones."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And the wise men will ask, Lord, why do you receive these? And He'll say: because not one of them ever believed himself worthy of it."
+    },
+    {
+     "dur": 3.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...See. You do say it better."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's a good speech. It does the work by itself."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "The people in the tavern are still laughing while he says it. That's what kills me. He's saying the most beautiful thing in the book and they're laughing at him."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky does that a lot. He gives the truest lines to the people nobody's listening to."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "And then he dies. A week later. Run over by a carriage, drunk, in the street. And who carries him home? Raskolnikov."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Three days after the murder."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Three days after the murder, he walks into that terrible room where the wife, Katerina Ivanovna, is coughing blood, with three little children crying, and he gives them all his money. Twenty-five roubles. Everything his mother sent him. For the funeral."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And the little girl, Polenka, runs down the stairs after him and hugs him. And he says, \"Pray for me sometimes. Pray for your servant Rodion.\" And he walks out feeling alive for the first time in the whole book."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "text": "So which one is he? The man with the axe, or the man who gave away twenty-five roubles to strangers? He can't be both."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "He's both. That's why the book is five hundred pages. If he were only one of them, it would be a newspaper story."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky never lets anyone be one thing. Marmeladov is a drunk who steals from his children, and the truest thing in the book comes out of his mouth. Raskolnikov kills two women and carries a stranger home."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And Sonya?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Sonya is the only one who's mostly one thing. And everyone treats her as if she's the worst."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He talks about Sonya the way Gramps used to talk about my grandmother. Like a person you'd stand up for in a room full of people laughing."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Where's your somewhere? Apart from here."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "sfx": "phone"
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Sorry."
+    },
+    {
+     "dur": 3.0,
+     "insert": {
+      "kind": "phone",
+      "call": "Hikari Care Home",
+      "sub": "incoming call"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I have to take this."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "prop": "phone"
+      }
+     }
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "none"
+      }
+     }
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "grin",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "can",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "music": "tease",
+   "musicVol": 0.8,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    2,
+    4
+   ],
+   "clock": 22.0,
+   "caption": "Thursday, late October.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ext-call",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Hello. Kanzaki speaking. ...Yes. I'm sorry. I couldn't this morning."
+    },
+    {
+     "who": "fumiko",
+     "phone": true,
+     "shot": "close:itsuki",
+     "text": "Hideo? Is that you, Hideo?"
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "My father's name. He died when I was twelve."
+    },
+    {
+     "who": "fumiko",
+     "phone": true,
+     "shot": "close:itsuki",
+     "text": "Hideo, the persimmons are ripe. The ones on the north side. You always forget to pick them, and then the crows get them."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "...I'll pick them."
+    },
+    {
+     "who": "fumiko",
+     "phone": true,
+     "shot": "close:itsuki",
+     "text": "And tell Itsuki to wear a coat. He never wears a coat. He's so thin."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'll tell him."
+    },
+    {
+     "who": "fumiko",
+     "phone": true,
+     "shot": "mcu:itsuki",
+     "text": "When are you coming home?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Soon."
+    },
+    {
+     "who": "fumiko",
+     "phone": true,
+     "shot": "close:itsuki",
+     "text": "You always say soon."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "prop": "none",
+       "emo": "sad",
+       "idleLook": "down"
+      }
+     }
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "standR",
+     "emo": "sad",
+     "prop": "phone",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_ext",
+   "season": "autumn",
+   "music": "sorrow",
+   "musicVol": 0.55,
+   "amb": [
+    "crickets",
+    "city"
+   ],
+   "cat": null
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "ext-bench",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "vending",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "soft",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "sfx": "can"
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "mio": {
+       "slot": "benchL",
+       "prop": "can",
+       "can": "coffee"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Black. Like yours. I don't know why you like it. It tastes like a bus station."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Thank you."
+    },
+    {
+     "dur": 5.0,
+     "shot": "wide"
+    },
+    {
+     "dur": 4.0,
+     "shot": "two",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "You're not asking."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Sonya doesn't ask. When Raskolnikov comes to her room, she doesn't ask anything. She just sits on the bed and waits until he's ready."
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "text": "I'm trying to be Sonya. It's very hard. I have about nine questions."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "smile",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...You can have one."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Who's Hideo?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "My father. My mother has dementia. Early onset. She's in a home in Tsugawa, two hours on the local line. Sometimes she knows me. More often I'm my father, or the man who fixes the boiler."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I send money. I call. I haven't been since spring. Every time I go, she's a little further away, and I come back and can't work for a week. So I stopped going. That's the whole story. It's not a very good one."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "There's a persimmon tree behind her house. My father planted it the year I was born. Every November he picked them and hung them under the eaves to dry, and I helped, and we ate them all winter."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "After he died I picked them with her. Every year until I left for university. She's remembering a November from twenty years ago. She's not wrong about anything. She's just in the wrong year."
+    },
+    {
+     "dur": 3.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "sad",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "When Gramps was in hospital, at the end, he couldn't talk. He'd had a stroke. I didn't know what to do with my hands."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "So I read to him. White Nights, all of it, twice. I don't know if he understood. But once, at the part about the bridge, he squeezed my finger."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Sonya reads Lazarus to Raskolnikov. Her voice shakes the whole time. She doesn't think he believes any of it. She reads it anyway. Like the reading is the thing, not the believing."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She doesn't know me."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "She knows Hideo. Go as Hideo. Pick the persimmons. She'll know a voice, even if she doesn't know the name."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "teary",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...You're very bad at being Sonya."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I lasted four minutes. That's a personal record."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Do you know what I love about Sonya's room? It's the strangest room in the book. All corners. One wall is so sharp it makes a corner like a knife, and the other is so wide you can't see the end of it in the candlelight. Three windows over the canal."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "It's a room nobody else would want. So it's the only room where anyone can come in."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Like this place."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Like this place."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Four minutes of silence, a can of coffee that tastes like a bus station, and the persimmons. I don't know which one is going to make me go. Maybe all three."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "sad",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_ext",
+   "season": "autumn",
+   "music": "night",
+   "musicVol": 0.5,
+   "amb": [
+    "crickets"
+   ],
+   "cat": null
+  },
+  {
+   "type": "scene",
+   "id": "ext-hoshino",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "hoshino": {
+       "slot": "standR",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Ah. Good. The two of you. I was going to put a notice up, but I'd rather say it."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "A notice?"
+    },
+    {
+     "who": "hoshino",
+     "look": "down",
+     "shot": "mcu:hoshino",
+     "text": "The building's been sold. The laundry closes at the end of March. They're putting up flats."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...Closes?"
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "I'm seventy-six, dear. My son wants me in Sendai, where he can keep an eye on me. I've kept this place open twenty-four hours a day for thirty-one years. I'd like to sleep through a night before I die."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Thank you for telling us."
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Thirty-one years, people have come in here with every kind of trouble. Divorce papers in the same bag as the towels. Hospital bags. A boy once washed his father's shirts every week for a year after the funeral, just to smell them."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "People wash their lives in here. You two wash books. It's been a nice change."
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "The cat comes with me, if he'll come. He won't."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "text": "Don't sit out here too long. It's going cold."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "hoshino": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "This is our tenth Thursday."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "You've been counting."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Since the first one. From now until the end of March, there are twenty-one more."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "That's still a lot. The Dreamer only got four nights."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It's a lot."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "What will you do? After March?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I suppose I'll have to fix the washing machine."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Don't. Don't fix it. Not yet."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Out of spite?"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Out of spite."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Twenty-one. It isn't a lot. It isn't a lot at all."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "soft",
+     "idleLook": "other"
+    },
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "prop": "can",
+     "can": "coffee",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_ext",
+   "season": "autumn",
+   "music": "unease",
+   "musicVol": 0.5,
+   "amb": [
+    "crickets"
+   ],
+   "cat": null
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "two",
+     "text": "Wear a coat, Itsuki-san. You never wear a coat."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": "surprised"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "You heard that."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The window was open. I'm not Sonya. I'm a terrible person."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'll wear a coat."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And the persimmons. Before the crows get them."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's nearly November. The crows have probably had them."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Then go and see the tree with no persimmons on it. Go and tell her the crows won. She'll like that. Mothers like being right about crows."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...You don't know my mother."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I know she thinks you're too thin. So she's right about two things."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "farL"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "shot": "close:itsuki",
+     "text": "I called him by his name. He didn't notice. I noticed."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "idleLook": "down"
+    },
+    "itsuki": {
+     "slot": "railR",
+     "emo": "neutral",
+     "idleLook": "other"
+    }
+   },
+   "set": "bridge",
+   "season": "autumn",
+   "music": "theme",
+   "musicVol": 0.6,
+   "amb": [
+    "crickets"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-5",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Twenty-one Thursdays. Marmeladov said every man must have somewhere to go. Mine closes at the end of March."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen\n7. Coat"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "She called me Itsuki-san on the bridge. I'm going to pretend I didn't hear it. I'm a very good pretender."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "autumn",
+   "music": "night",
+   "musicVol": 0.6,
+   "amb": [
+    "room",
+    "crickets"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 5: Somewhere to Go",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Fumiko Kanzaki",
+    "Mrs. Hoshino",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "Crime and Punishment (1866)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Do you understand, sir, what it means when a man has absolutely nowhere to go? For every man must have somewhere to go.",
+   "quoteBy": "Fyodor Dostoevsky, \"Crime and Punishment\"",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "grin",
+     "text": "Next time. The most good, most foolish man in all of literature. And a salaryman who's missed the last train."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "text": "Episode six. The Prince of the Coin Laundry. I've found a new name for him."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "The Prince of the Coin Laundry",
+   "nextSub": "on \"The Idiot\" (I)",
+   "season": "autumn"
+  }
+ ]
+}

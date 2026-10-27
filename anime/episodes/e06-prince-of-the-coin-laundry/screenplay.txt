@@ -1,0 +1,230 @@
+episode: 6
+slug: e06-prince-of-the-coin-laundry
+title: The Prince of the Coin Laundry
+kanji: 第六話
+sub: on "The Idiot" (I)
+book: The Idiot (1869)
+season: autumn
+linegap: 0.75
+gap: 138
+logline: November. A drunk salaryman who has missed the last train is asleep on the laundry bench, and Mio doesn't know what to do. Itsuki does. Watching him, she understands Dostoevsky's attempt to write a perfectly good man, and gives Itsuki the name that will stick. On the way out, he buys her a hot milk tea without asking.
+quote: Compassion is the chief, and perhaps the only, law of all human existence.
+quoteBy: Fyodor Dostoevsky, "The Idiot"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=street season=autumn music=memory musicVol=0.6 amb=city,wind fadeIn=1.2 leaves=true
+@ mio slot=walkL emo=neutral look=down prop=book bookColor=#2e4a3a
+BEAT 3 [wide] (sfx=steps)
+MIO (thought) [mcu:mio] (look=down): Gramps said The Idiot was Dostoevsky's attempt to write a positively beautiful man. A completely good person. He said it was the hardest thing a novelist could try.
+MIO (thought) [close:mio] (sad, look=front): While he was writing it, his first baby died. A girl. Three months old. He wrote the rest of the book in grief, in a foreign country, with no money.
+MIO (thought) [close:mio] (look=down): Gramps said: that's why the good man in it can't save anyone. Dostoevsky had just learned that love doesn't always save people.
+MIO (thought) [mcu:mio] (soft, look=up): Then he said, "It's still worth trying." And he went back to his go problem.
+MIO (thought) [close:mio] (look=front): Thursday number thirteen. I've started writing the number on my hand in the morning, so I can look at it in maths.
+BEAT 2.5 [wide] (sfx=steps)
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=autumn music=unease musicVol=0.55 amb=washer,wind washers=3 clock=22.0 | caption=Thursday, November.
+@ salaryman slot=benchR emo=sleepy look=down
+@ mio slot=standL emo=worried look=other prop=book bookColor=#2e4a3a
+@ cat slot=cat_dryer pose=sit
+@ item basket benchL dx=-95
+BEAT 3 [wide]
+MAN (sleepy, look=down) [mcu:salaryman]: ...Eleven forty-two. The last train. I watched it. I was right there on the platform. I watched the doors close.
+MIO (thought) [close:mio] (worried, look=other): He's been here since I arrived. He smells of beer and he keeps talking to the dryer. I don't know whether to leave or call someone. He's in Itsuki-san's seat.
+BEAT 2 [wide] (sfx=bell)
+@ itsuki slot=door emo=surprised look=other
+BEAT 1.5 [wide]
+MIO (worried, look=other) [mcu:mio]: Good evening. There's a, um. Situation.
+ITSUKI (look=other) [close:itsuki]: ...I see.
+@ itsuki slot=standR emo=neutral look=other
+BEAT 2 [wide]
+ITSUKI (soft, look=other) [close:itsuki]: Excuse me. Are you all right? Are you cold?
+MAN (sleepy, look=up) [mcu:salaryman]: Cold? I'm a section chief. Was. Was a section chief. Now I'm a "special adviser." Do you know what a special adviser is? It's a desk by the window, so the others don't have to look at you.
+ITSUKI (soft, look=other) [close:itsuki]: That sounds lonely.
+MAN (sad, look=down) [mcu:salaryman]: Twenty-six years. Twenty-six years, and they gave my desk to a boy who calls me "Pops." He thinks I can't hear him.
+BEAT 2 [wide] (sfx=vending)
+BEAT 1.5 [wide] (sfx=can)
+@ itsuki prop=can can=tea
+ITSUKI (soft, look=other) [close:itsuki]: Here. It's hot. Hold it, even if you don't drink it. Your hands will be glad.
+MAN (sad, look=up) [mcu:salaryman]: ...Thank you. You're a kind young man. My daughter would like you. She doesn't like me.
+ITSUKI (soft, look=other) [close:itsuki]: How old is she?
+MAN (teary, look=down) [mcu:salaryman]: Nineteen. She's at a university in Osaka. She doesn't answer my messages. I send her a message every night. "Did you eat?" Every night. Three hundred and something nights.
+MAN (soft, look=up) [mcu:salaryman]: When she was small, I carried her on my shoulders to the fireworks on the canal. Right out there. She held my ears like handlebars. She said, "Papa, you're the tallest man in the world."
+MAN (sad, look=down) [mcu:salaryman]: I'm not very tall. I'm one sixty-four.
+ITSUKI (soft, look=other) [close:itsuki]: ...She reads them.
+MAN (surprised, look=up) [mcu:salaryman]: How would you know?
+ITSUKI (look=down) [close:itsuki]: Because you'd notice if they stopped. And she would notice. A message every night is a kind of house. She knows where it is, even if she doesn't go in.
+BEAT 3 [close:mio] (mio=surprised, mio.look=other)
+MIO (thought) [close:mio] (surprised, look=other): Who is this person? He takes eleven seconds to say good evening to me.
+MAN (teary, look=down) [mcu:salaryman]: ...A house. That's nice. I'll tell my wife that. She thinks I'm a fool.
+ITSUKI (soft, look=other) [close:itsuki]: Do you live far?
+MAN (sleepy, look=down) [mcu:salaryman]: Shin-Kawabe. Forty minutes by taxi. Too much money. I'll sleep here. It's warm. The cat doesn't mind.
+BEAT 2 [insert:cat]
++INSERT cat | pose=sit
+MIO (look=up) [two]: The cat minds.
+BEAT 2 [two]
+ITSUKI (look=other) [close:itsuki]: I'll pay for the taxi. You can pay me back. Leave it with the lady who owns this place.
+MAN (surprised, look=up) [mcu:salaryman]: You'd do that? You don't know me.
+ITSUKI (shy, look=down) [close:itsuki]: ...I know you missed a train. I've missed a lot of trains.
+BEAT 2 [wide]
+@ itsuki prop=none
+ITSUKI (look=other) [close:itsuki]: And take this. It's cold out there.
+MAN (surprised) [mcu:salaryman]: Your coat?
+ITSUKI (smile, look=down) [close:itsuki]: I live close.
+MIO (thought) [close:mio] (soft, look=other): He doesn't live close. He lives by the station. He's going to walk twenty minutes in November in a cardigan.
+BEAT 2 [wide] (sfx=steps)
+@ salaryman slot=door
+MAN (smile, look=other) [mcu:salaryman]: Young man. What's your name?
+ITSUKI (shy, look=down) [close:itsuki]: ...It doesn't matter.
+MAN (smile, look=other) [mcu:salaryman]: Then I'll call you the prince. Goodnight, prince.
+@ salaryman slot=none
+BEAT 2 [wide] (sfx=bell)
+BEAT 3 [two] (mio=surprised, mio.look=other)
+MIO (look=other) [close:mio]: What if he doesn't pay you back?
+ITSUKI (look=down) [close:itsuki]: Then it was a gift. I just didn't say so, so he wouldn't have to be embarrassed.
+MIO (thinking, look=other) [close:mio]: And the coat?
+ITSUKI (smile, look=down) [close:itsuki]: The coat was ugly. Mrs. Hoshino said so in September.
+MIO (thought) [close:mio] (soft, look=other): The coat was not ugly. The coat was the one item on his list he'd actually done.
+BEAT 2 [two]
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-2 | set=laundry_int season=autumn music=wonder musicVol=0.7 amb=washer,wind washers=3,5 clock=22.4
+@ mio slot=benchL emo=soft look=other prop=book bookColor=#2e4a3a
+@ itsuki slot=benchR emo=shy look=down
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 3 [wide]
+MIO (soft, look=other) [close:mio]: He called you the prince.
+ITSUKI (flustered, act=hide) [close:itsuki]: He was very drunk.
+MIO (tease, look=other) [close:mio]: I've just finished the first half of The Idiot. Do you know what I thought, watching you? Prince Lev Nikolayevich Myshkin. Arrived in a coin laundry. Gives a stranger his coat.
+ITSUKI (flustered) [close:itsuki]: I'm not Myshkin.
+MIO (grin, act=point) [close:mio]: You are absolutely Myshkin. That's your name now. Underground-san is retired. Prince.
+ITSUKI (blush, act=hide) [close:itsuki]: ...Please don't.
+MIO (laugh): Prince. Prince. Prince of the Coin Laundry.
+BEAT 2 [close:itsuki] (itsuki=blush)
+ITSUKI (thought) [close:itsuki] (blush, look=down): It's going to stick. I can feel it sticking.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: Okay. Seriously. Myshkin. He comes back to Petersburg from a clinic in Switzerland, where he's been treated for epilepsy since he was a boy. He has one bundle and no coat for the weather. Sound familiar.
+MIO (look=front) [close:mio]: And on the first day, everyone he meets thinks he's an idiot. Because he answers every question honestly. A general asks him something rude, and he just answers it. Like a child. Like there's nothing to protect.
+ITSUKI (look=front) [close:itsuki]: And then, by the end of the day, they're all telling him their secrets.
+MIO (surprised, look=other) [close:mio]: Yes! Why does that happen?
+ITSUKI (look=front) [mcu:itsuki]: Because he doesn't want anything from them. Everyone in Petersburg is trying to get money or a wife or a position. He's the only person in the room who isn't. People can feel that. It's like warmth from a stove.
+MIO (look=book) [close:mio]: Gramps's note is on the Swiss story. The girl, Marie.
+INSERT book 7 | title=The Idiot | text=I talked to the children about Marie, and slowly they stopped throwing stones at her. | right=Before she died, they would come every day to the cliff and sit with her. | underline=1 | note=He does not save her.\nHe teaches others\nto love her.\nThat is the miracle.\n— G. | noteBy=genzo
+MIO (soft, look=front) [close:mio]: A poor girl in the Swiss village everyone despised, because a man had used her and left her. Even her mother. And Myshkin gives her a kiss on the cheek and his last coin, and then, slowly, he teaches the village children to love her.
+ITSUKI (soft, look=down) [close:itsuki]: She dies anyway.
+MIO (soft, look=other) [close:mio]: She dies anyway. But not alone. The children carry her coffin.
+BEAT 2.5 [two]
+MIO (grin, look=other) [close:mio]: And then there's Rogozhin. My favourite scary man. Black eyes, a fortune from his father, and he's obsessed with the same woman as Myshkin.
+ITSUKI (look=front) [close:itsuki]: And they swap crosses.
+MIO (soft, look=front) [close:mio]: They swap crosses! Rogozhin's gold one for Myshkin's cheap tin one. They become brothers. And Rogozhin's old mother blesses the prince. And then, that same day, Rogozhin waits for him on a dark staircase with a knife.
+ITSUKI (soft, look=down) [mcu:itsuki]: Myshkin sees the knife and says, "Parfyon, I don't believe it." And he has a seizure, and falls down the stairs, and that's what saves him.
+MIO (thinking, look=other) [close:mio]: Saved by being ill. By the thing that made everyone call him an idiot.
+ITSUKI (look=front) [close:itsuki]: Dostoevsky had epilepsy too. He wrote that just before a seizure there were a few seconds of perfect happiness. A harmony so complete that he'd give his whole life for it.
+MIO (soft, look=other) [close:mio]: And then the floor.
+ITSUKI (soft, look=down) [close:itsuki]: And then the floor.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: Somebody asks him: "Is it true, prince, that you once said beauty will save the world?" Everyone quotes that line. Gramps quoted it at weddings.
+MIO (smile, look=front) [close:mio]: But in his own copy, next to it, he wrote two words. "Which beauty?"
+ITSUKI (thinking, look=front) [close:itsuki]: ...That's a good question.
+MIO (look=other) [close:mio]: What's your answer?
+ITSUKI (look=front) [mcu:itsuki]: Not the beautiful woman. The book is clear about that. Her beauty doesn't save anyone, including her.
+ITSUKI (soft, look=down) [close:itsuki]: Maybe the other kind. A man in a tavern who says something true while everyone laughs. Children carrying a coffin up a hill. Somebody holding a hot can because their hands will be glad.
+BEAT 2.5 [close:mio] (mio=soft, mio.look=other)
+MIO (thought) [close:mio] (soft, look=other): He doesn't know he just described himself. I'm not going to tell him. He'd stop doing it.
+BEAT 2 [two]
+ITSUKI (look=front) [close:itsuki]: Have you read to the end?
+MIO (look=down) [close:mio]: Not yet. Don't tell me.
+ITSUKI (sad, look=down) [close:itsuki]: ...I won't. But it's not a happy book for good people.
+MIO (look=other) [close:mio]: Is that why you never do anything nice where anyone can see? In case it goes badly?
+BEAT 2.5 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (look=down) [close:itsuki]: Goodness looks foolish. That's the trouble. Myshkin is the best person in Russia and everyone calls him an idiot. A man gives his coat to a drunk and walks home in a cardigan. It's ridiculous.
+MIO (soft, look=other) [mcu:mio]: It wasn't ridiculous to him. He said his daughter would like you.
+ITSUKI (soft, look=down) [close:itsuki]: ...He was very drunk.
+MIO (smile, look=other) [close:mio]: Drunk people in Dostoevsky always tell the truth. You taught me that. Marmeladov.
+BEAT 2.5 [two]
+MIO (smile, look=book) [mcu:mio]: My favourite small thing in the whole book is the donkey.
+ITSUKI (smile, look=front) [close:itsuki]: The donkey in Basel.
+MIO (laugh, look=front) [close:mio]: When Myshkin first arrives in Switzerland, he's so ill he's in a kind of fog. He doesn't understand anything. And then in the market at Basel he hears a donkey bray. And suddenly everything clears. His whole mind wakes up. Because of a donkey.
+MIO (grin, look=other): The general's daughters all laugh at him. And he says, very seriously, I've loved donkeys ever since. It's a very useful animal.
+ITSUKI (laugh, act=laugh) [close:itsuki]: It's the only joke in the book Myshkin makes on purpose.
+MIO (soft, look=other) [close:mio]: I think everybody has a donkey. Something stupid that woke them up.
+ITSUKI (look=other) [close:itsuki]: ...What was yours?
+MIO (tease, look=other) [close:mio]: A man reading White Nights wrong in a coin laundry.
+ITSUKI (flustered, act=hide) [close:itsuki]: I'm the donkey.
+MIO (laugh, act=laugh): You're the donkey!
+BEAT 2 [two]
+MIO (look=other) [close:mio]: Can I ask something? Why do you talk to strangers like that, and to me you say about eleven words a night?
+ITSUKI (flustered, look=away) [close:itsuki]: ...I say more than eleven.
+MIO (tease) [close:mio]: You said "I see" when you came in. That's two.
+ITSUKI (look=down) [close:itsuki]: With strangers it doesn't matter what they think of me afterwards. They get on a train. They're gone.
+MIO (thinking, look=other) [close:mio]: And with me it matters.
+BEAT 3 [close:itsuki] (itsuki=blush, itsuki.look=down)
+ITSUKI (blush, look=down) [close:itsuki]: ...You're not getting on a train.
+MIO (thought) [close:mio] (blush, look=down): Oh. Okay. Okay. Don't look at him. Look at Fyodor Mikhailovich. Fyodor Mikhailovich is asleep. Good. Nobody saw that.
+BEAT 3 [wide] (sfx=buzzer)
+
+== SCENE ext-tea | set=laundry_ext season=autumn music=theme musicVol=0.65 amb=wind leaves=true
+@ mio slot=benchL emo=neutral look=down
+@ cat slot=none
+BEAT 2.5 [wide]
+@ itsuki slot=standR emo=neutral look=other
+BEAT 1 [wide] (sfx=vending)
+BEAT 1 [wide] (sfx=can)
+BEAT 1 [wide] (sfx=vending)
+BEAT 1 [wide] (sfx=can)
+@ itsuki slot=benchR prop=can can=coffee
+@ mio prop=can can=tea
+BEAT 2 [two]
+BEAT 2 [close:mio] (mio=surprised, mio.look=down)
+MIO (thought) [close:mio] (surprised, look=down): Hot milk tea. Royal Milk Tea, the one with the cow on it. He didn't ask. He just put it in my hands, and went back to his end of the bench.
+MIO (thought) [close:mio] (blush, look=down): I told him once. In September. I said "I like milk tea, coffee tastes like a bus station." Once. In passing. Two months ago.
+BEAT 3 [close:itsuki] (itsuki=shy, itsuki.look=front)
+ITSUKI (thought) [close:itsuki] (shy, look=front): Don't say anything. If she says something, I'll have to explain, and I can't explain.
+BEAT 3 [two]
+MIO (soft, look=front) [close:mio]: ...It's cold tonight.
+ITSUKI (look=front) [close:itsuki]: It's cold.
+BEAT 4 [wide]
+MIO (look=up) [two]: The forecast says snow next week. The first snow.
+ITSUKI (look=up) [close:itsuki]: ...It's early this year.
+MIO (soft, look=front) [close:mio]: Will you still come? When it snows?
+ITSUKI (look=front) [close:itsuki]: I came in a typhoon.
+MIO (thought) [close:mio] (soft, look=front): Neither of us said anything about the tea. It's the best conversation we've ever had.
+BEAT 3 [wide]
+
+== SCENE bridge-1 | set=bridge season=autumn music=theme musicVol=0.6 amb=wind leaves=true
+@ mio slot=railL emo=soft look=other prop=can can=tea
+@ itsuki slot=railR emo=neutral look=other
+BEAT 2 [wide] (sfx=steps)
+MIO (tease, look=other) [two]: Goodnight, Prince.
+ITSUKI (flustered, act=hide) [close:itsuki]: ...Goodnight.
+MIO (grin, look=other) [close:mio]: Wear a coat.
+ITSUKI (smile, look=down) [close:itsuki]: I gave it away.
+MIO (laugh, act=laugh) [close:mio]: Idiot.
+ITSUKI (smile, look=other) [close:itsuki]: That's the right word. Technically.
+MIO (soft, look=other) [close:mio]: It's the nicest word in the book. Remember that, Prince. When everyone's laughing.
+@ mio slot=farL
+BEAT 3 [wide] (sfx=steps)
+BEAT 2 [wide]
+
+== SCENE room-6 | set=room_him season=autumn music=night musicVol=0.6 amb=room,wind
+@ itsuki slot=desk emo=neutral look=down
+BEAT 2.5 [wide]
+ITSUKI (thought) [close:itsuki] (look=down): She called me an idiot on the bridge. It was the nicest thing anyone has called me in five years.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen\n7. Coat (again)\n8. Milk tea is 130 yen. Keep coins.
+ITSUKI (thought) [mcu:itsuki] (soft, look=front): "You're not getting on a train." I said that out loud. I should never be allowed to speak.
+ITSUKI (thought) [close:itsuki] (sad, look=down): She's seventeen. I'm the man at the other end of the bench. I'll stay at the other end of the bench. That's the one thing I'm sure of.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Money in the Fire | sub=on "The Idiot" (II)
+MIO (vo, annoyed): Next time. A hundred thousand roubles thrown into a fireplace, two women who can't stand each other, and a prince stuck in the middle.
+MIO (vo, pout): Episode seven. Money in the Fire. We're going to have our first fight. He started it.
+BEAT 1.5
