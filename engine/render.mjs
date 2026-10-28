@@ -1,5 +1,5 @@
 // Render an episode to MP4: headless Chromium draws each frame, ffmpeg encodes and muxes the soundtrack.
-// Usage: node engine/render.mjs episodes/<slug> [--fps 24] [--from 0] [--to 99999] [--stills 10,42,...] [--player engine/player.html]
+// Usage: node engine/render.mjs episodes/<slug> [--fps 24] [--from 0] [--to 99999] [--stills 10,42,...] [--player engine/player.html] [--out file.mp4]
 // Explainer episodes: node engine/render.mjs explainer/episodes/<slug> --player explainer/engine/player.html --fps 30
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
@@ -42,7 +42,7 @@ if (stills) {
 }
 
 const end = Math.min(duration, to), frames = Math.ceil((end - from) * fps);
-const out = path.join(epDir, 'episode.mp4');
+const out = path.resolve(epDir, opt('out', 'episode.mp4'));
 const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
   '-ss', String(from), '-t', String(end - from), '-i', path.join(epDir, 'episode.wav'),
   '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', '23', '-tune', 'animation',
