@@ -1,0 +1,9 @@
+# Fonts for the cinematic documentary look (`meta.look: "cinema"`)
+
+Unmodified latin subsets from Fontsource (npm `@fontsource/*`):
+
+- Playfair Display (400/700/900, roman and italic): SIL Open Font License 1.1
+- Bebas Neue: SIL Open Font License 1.1
+- Special Elite: Apache License 2.0
+
+License texts sit next to the files.

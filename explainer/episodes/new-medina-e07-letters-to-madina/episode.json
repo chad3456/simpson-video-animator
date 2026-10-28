@@ -1,0 +1,1683 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E7",
+  "title": "Letters to Madina",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "In 1942 a pro-Congress Urdu paper in the small town of Bijnor asked its readers what they understood by Pakistan, and printed the answers. Episode 7 follows that debate: a critic who said mass migration was impossible, a defender who promised hostages on both sides, readers from Bombay to Raichur, and letters to Jinnah asking what Pakistan would mean for those left behind.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 6; the Madina debate and letters in the Quaid-i-Azam Papers as quoted there.",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Amroha, United Provinces.",
+    "25 May 1944."
+   ],
+   "sub": "A LETTER FROM A SON",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "son",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.1,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "AMROHA · MAY 1944",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "l",
+     "type": "doc",
+     "x": 640,
+     "y": 330,
+     "w": 540,
+     "h": 280,
+     "title": "MY DEAREST QUAID E AZAM,",
+     "meta": "Athar Hasan to M. A. Jinnah (excerpt)",
+     "lines": [
+      "My father is a Congressman ...",
+      "He would like to see me a Congressman.",
+      "I don't even know what is Pakistan ...",
+      "I ask you to answer them as I shall be",
+      "able to make him a League admirer."
+     ],
+     "in": 0,
+     "d": 0.8,
+     "anim": "rise",
+     "cps": 24,
+     "rot": -1.2,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 2,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 0.5,
+       "t": 0.4
+      }
+     }
+    },
+    {
+     "id": "src92420",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Quaid-i-Azam Papers, IOR Neg 10814, Reel 55, File 1102; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In May 1944 a schoolboy in the small town of Amroha sat down to write to the most famous Muslim in India. Jinnah had written to him once, and he wanted to write again."
+    },
+    {
+     "text": "His problem was at home. His father was a Congressman, a keen one, who mocked the League at the dinner table. And the boy admitted something remarkable: he did not even know what Pakistan was. Would the Qaid please answer his father's objections, so that he could win him over?"
+    },
+    {
+     "text": "Four years after Lahore, that was the question in a thousand homes. What, exactly, is Pakistan? One newspaper decided to let its readers argue it out."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 7 · Letters to Madina",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "A Paper Called Madina",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bijnor · 1913 – 1942"
+  },
+  {
+   "type": "scene",
+   "id": "paper",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "paper",
+     "x": 380,
+     "y": 340,
+     "w": 420,
+     "h": 460,
+     "mast": "MADINA",
+     "date": "Bijnor · twice weekly",
+     "head": "What do you\nunderstand by\nPakistan?",
+     "headSize": 34,
+     "sub": "readers are invited to write",
+     "cols": 3,
+     "rot": -1.5,
+     "anim": "rise"
+    },
+    {
+     "id": "a1",
+     "type": "typer",
+     "x": 900,
+     "y": 200,
+     "text": "founded 1913 · twice weekly from 1917",
+     "in": 0,
+     "d": 2.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a2",
+     "type": "typer",
+     "x": 900,
+     "y": 240,
+     "text": "Iqbal · Akbar Ilahabadi · Hasrat Mohani",
+     "in": 0,
+     "d": 4.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a3",
+     "type": "typer",
+     "x": 900,
+     "y": 280,
+     "text": "banned in Punjab after Amritsar, 1919",
+     "in": 0,
+     "d": 6.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a4",
+     "type": "typer",
+     "x": 900,
+     "y": 380,
+     "text": "autumn 1942: the columns open",
+     "in": 1,
+     "d": 0.4,
+     "size": 20,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a5",
+     "type": "typer",
+     "x": 900,
+     "y": 420,
+     "text": "on wartime newsprint quotas",
+     "in": 1,
+     "d": 2.4,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src54211",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, ch. 6, on the Madina (Bijnor) and its 1942-43 debate",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The Madina was printed in Bijnor, a quiet district town in western U.P. Founded in 1913, it had carried verse by Iqbal and Akbar Ilahabadi, been banned in Punjab after the massacre at Amritsar, and stood for three decades as the most prominent pro-Congress Urdu paper in north India.",
+     "say": "The Madina was printed in Bij-nor, a quiet district town in western U.P. Founded in 1913, it had carried verse by Ik-baal and Akbar Ilahabadi, been banned in Punjab after the massacre at Amritsar, and stood for three decades as the most prominent pro-Congress Urdu paper in north India."
+    },
+    {
+     "text": "In the autumn of 1942, with Congress leaders in jail after Quit India and the argument over Pakistan at its height, the editor did something unusual. He asked readers what they understood by Pakistan, and whether it would help or harm India's Muslims. Then, despite wartime paper rationing, he printed their answers."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "letters",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 560,
+     "y": 372,
+     "k": 1.05,
+     "split": 0,
+     "und": 0.4,
+     "nb": 0.6,
+     "anim": "fade",
+     "arcs": [
+      {
+       "from": "Bombay",
+       "to": "Bijnor"
+      },
+      {
+       "from": "Chittagong",
+       "to": "Bijnor"
+      },
+      {
+       "from": "Raichur",
+       "to": "Bijnor",
+       "bend": 0.2
+      }
+     ],
+     "arcDraw": [
+      0,
+      0,
+      0
+     ],
+     "cities": [
+      {
+       "name": "Bijnor",
+       "color": "#d9b26a",
+       "pin": true
+      },
+      {
+       "name": "Bombay",
+       "color": "#e8cfa0",
+       "left": true
+      },
+      {
+       "name": "Chittagong",
+       "label": "Chatgaon",
+       "color": "#e8cfa0"
+      },
+      {
+       "name": "Raichur",
+       "color": "#e8cfa0"
+      }
+     ],
+     "keys": {
+      "0": {
+       "arcDraw": [
+        1,
+        1,
+        1
+       ],
+       "d": 4.0,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 1060,
+     "y": 380,
+     "w": 340,
+     "h": 260,
+     "anim": "fade"
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 1060,
+     "y": 320,
+     "text": "letters from across India",
+     "in": 0,
+     "d": 1.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 1060,
+     "y": 380,
+     "text": "one long essay against",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l3",
+     "type": "typer",
+     "x": 1060,
+     "y": 420,
+     "text": "one long essay for",
+     "in": 1,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l4",
+     "type": "typer",
+     "x": 1060,
+     "y": 480,
+     "text": "serialised for months",
+     "in": 1,
+     "d": 3.6,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src47979",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, ch. 6; modern borders shown for orientation",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Letters came from all over U.P., and from far beyond it: from Bombay on the west coast, from Chatgaon, that is Chittagong, in eastern Bengal, and from Raichur in the Deccan."
+    },
+    {
+     "text": "The debate settled into two long essays, one against Pakistan and one for it, printed in instalments over several months, with readers' replies in between. Dhulipala argues that they show us something rare: not the leaders' strategies, but what educated small-town Muslims actually thought.",
+     "say": "The debate settled into two long essays, one against Pakistan and one for it, printed in instalments over several months, with readers' replies in between. Doo-lee-paa-la argues that they show us something rare: not the leaders' strategies, but what educated small-town Muslims actually thought."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "The Critic",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Maulana Abu Syed Bazmi"
+  },
+  {
+   "type": "scene",
+   "id": "bazmi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Abu Syed Bazmi",
+     "role": "Urdu writer and critic",
+     "years": "1940s",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "topi",
+     "glasses": true,
+     "tag": "AGAINST",
+     "tagColor": "#8a2a2a"
+    },
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 870,
+     "y": 200,
+     "text": "'Pakistan, and only Pakistan'",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b2",
+     "type": "typer",
+     "x": 870,
+     "y": 245,
+     "text": "but hasn't Congress already conceded it?",
+     "in": 0,
+     "d": 4.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b3",
+     "type": "typer",
+     "x": 870,
+     "y": 330,
+     "text": "Azad: any province may leave the Union",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b4",
+     "type": "typer",
+     "x": 870,
+     "y": 370,
+     "text": "including Bengal, which Cripps left out",
+     "in": 1,
+     "d": 2.4,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b5",
+     "type": "typer",
+     "x": 870,
+     "y": 460,
+     "text": "wars are now won by coal, steel and science",
+     "in": 2,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b6",
+     "type": "typer",
+     "x": 870,
+     "y": 500,
+     "text": "not by strong arms",
+     "in": 2,
+     "d": 2.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src27079",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Bazmi, serial essay in Madina (Bijnor), 1942; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The case against was made by a writer named Abu Syed Bazmi, freshly released from a jail in one of the princely states. League workers were marching through U.P. shouting Pakistan, and only Pakistan. Bazmi asked a sly question: hadn't Congress already given it to them?"
+    },
+    {
+     "text": "The Congress president, Maulana Azad, had written that no province would be forced to stay in the Indian Union. Any province could leave, Bengal included, which was more than the British Cripps offer allowed. So why was the League still shouting?"
+    },
+    {
+     "text": "Then he turned to money. Lose the eastern districts of Punjab, and Calcutta with the coal and iron around it, and Pakistan would be poor. Modern wars, he wrote, were fought with coal, steel, rubber and factories. The strong men of Punjab could not win them with their arms alone."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "rocks",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "Hindus are not rocks and wood, to be sorted at will",
+     "in": 0,
+     "d": 0.8,
+     "size": 28,
+     "font": "serif",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "r0",
+     "type": "typer",
+     "x": 640,
+     "y": 255,
+     "text": "Bazmi on population transfer, paraphrased",
+     "in": 0,
+     "d": 4.4,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 360,
+     "y": 400,
+     "value": 0,
+     "size": 90,
+     "color": "#e3a857",
+     "label": "million Greeks: 'a miracle'",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 1,
+       "d": 0.6,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 920,
+     "y": 400,
+     "value": 0,
+     "size": 90,
+     "color": "#d7263d",
+     "label": "million each way, by his sums",
+     "in": 1,
+     "d": 4.0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 30,
+       "d": 1.4,
+       "t": 4.4
+      }
+     }
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 640,
+     "y": 550,
+     "text": "and the Hijrat of 1920, when migrants to Afghanistan were turned back",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src33457",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Bazmi in Madina, 1942; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "He saved his fiercest words for the idea of moving people. To create safe Muslim majorities, he calculated, perhaps thirty million Muslims would have to move in and as many Hindus move out. The greatest migration the world had seen, Greeks leaving Turkey, involved about a million people, and that was called a miracle. Who would pay? Who would buy the land? And Hindus, he wrote, were not rocks and wood to be sorted and slotted at will."
+    },
+    {
+     "text": "The Ganga and the Jamuna were as holy to Hindus as the Hijaz to Muslims. They would not give up those lands."
+    },
+    {
+     "text": "He reminded readers of 1920, when thousands of Indian Muslims had migrated to Afghanistan in religious fervour, only to be driven back across the border in misery. Five years later, the partition that Bazmi called impossible would uproot millions."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "Letters to the Editor",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bombay · Raichur · Aligarh"
+  },
+  {
+   "type": "scene",
+   "id": "replies",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "a",
+     "type": "doc",
+     "x": 230,
+     "y": 300,
+     "w": 380,
+     "h": 254,
+     "title": "HAKIM MOHAMMAD ANWAR",
+     "meta": "Bombay",
+     "lines": [
+      "The very word jihad would do",
+      "the work of an entire army.",
+      "Chittagong can rival Calcutta.",
+      "Buy coal and iron from Hindustan."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 30,
+     "rot": -2,
+     "sfx": "type",
+     "vol": 0.35,
+     "size": 15
+    },
+    {
+     "id": "s",
+     "type": "doc",
+     "x": 640,
+     "y": 330,
+     "w": 380,
+     "h": 254,
+     "title": "MOHAMMAD ABID SHARIF",
+     "meta": "Raichur",
+     "lines": [
+      "Co-education has Muslim girls",
+      "singing and dancing on stage.",
+      "If minorities are mistreated,",
+      "retaliation will certainly work."
+     ],
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 30,
+     "rot": 1,
+     "sfx": "type",
+     "vol": 0.35,
+     "size": 15
+    },
+    {
+     "id": "m",
+     "type": "doc",
+     "x": 1050,
+     "y": 300,
+     "w": 380,
+     "h": 254,
+     "title": "ADIL MIRZA, B.A., B.COM.",
+     "meta": "Aligarh",
+     "lines": [
+      "Not whether an Islamic government",
+      "is good, but whether it is possible.",
+      "'Let them eat cake.'",
+      "Shaikh Chilli's paradise."
+     ],
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 30,
+     "rot": -1,
+     "sfx": "type",
+     "vol": 0.35,
+     "size": 15
+    },
+    {
+     "id": "src88437",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Readers' letters in Madina, 1942; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The replies were vivid. From Bombay, a Hakim named Mohammad Anwar insisted Pakistan would be rich. Chittagong could be built into a port to rival Calcutta. Coal and iron could simply be bought from Hindustan. And the frontier? The very word jihad, he wrote, would do the work of an entire army."
+    },
+    {
+     "text": "From Raichur, Mohammad Abid Sharif worried about something else. Congress schools were teaching boys and girls together, and Muslim girls were singing and dancing on stage. Did U.P.'s Muslims want to drag the Muslims of Punjab and Bengal down with them? As for those left behind, retaliation would protect them."
+    },
+    {
+     "text": "From Aligarh, a student named Adil Mirza, with a B.A. and a B.Com., was scathing. Ports cost crores, he wrote. Buy coal from Hindustan? That was Marie Antoinette: let them eat cake. Nobody doubted an Islamic government was good. The question was whether it was possible. The League's Pakistan, he said, was Shaikh Chilli's paradise, the daydreamer's heaven that everyone loves and no one can find the road to.",
+     "say": "From Ali-gur, a student named Adil Mirza, with a B.A. and a B.Com., was scathing. Ports cost crores, he wrote. Buy coal from Hindustan? That was Marie Antoinette: let them eat cake. Nobody doubted an Islamic government was good. The question was whether it was possible. The League's Pakistan, he said, was Shaikh Chilli's paradise, the daydreamer's heaven that everyone loves and no one can find the road to."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "The Defence",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Maulana Abul Nazar Rizvi Amrohvi"
+  },
+  {
+   "type": "scene",
+   "id": "amrohvi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "a",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Abul Nazar Rizvi Amrohvi",
+     "role": "Urdu writer, of Amroha",
+     "years": "1940s",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "glasses": true,
+     "tag": "FOR",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "c1",
+     "type": "typer",
+     "x": 870,
+     "y": 190,
+     "text": "Azad's offer is a trap:",
+     "in": 0,
+     "d": 2.4,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c2",
+     "type": "typer",
+     "x": 870,
+     "y": 228,
+     "text": "Hindus and Sikhs would vote too",
+     "in": 0,
+     "d": 4.0,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c3",
+     "type": "typer",
+     "x": 870,
+     "y": 266,
+     "text": "the right to leave must belong to Muslims",
+     "in": 0,
+     "d": 5.6,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c4",
+     "type": "typer",
+     "x": 870,
+     "y": 350,
+     "text": "'England was once the Baluchistan of Europe'",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c5",
+     "type": "typer",
+     "x": 870,
+     "y": 390,
+     "text": "China did not surrender to Japan's machines",
+     "in": 1,
+     "d": 2.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c6",
+     "type": "typer",
+     "x": 870,
+     "y": 470,
+     "text": "an 'Islamic' state: any state whose ruler",
+     "in": 2,
+     "d": 0.4,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c7",
+     "type": "typer",
+     "x": 870,
+     "y": 505,
+     "text": "or majority is Muslim. Turkey counts.",
+     "in": 2,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src93436",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Amrohvi, serial essay in Madina, 1942-43; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Five weeks later the paper began the reply, by a writer from Amroha who signed himself Abul Nazar Rizvi Amrohvi. Azad's offer, he argued, was a trap. In a provincial vote, Hindus and Sikhs, organised and united, would vote too, and Punjab and Bengal would never leave. The right to secede had to belong to Muslims as a community, not to provinces."
+    },
+    {
+     "text": "Pakistan would be poor? England, he answered, was once the Baluchistan of Europe. Machines decide wars? China had not surrendered to Japan. Freedom, he wrote, rests on the passion for it."
+    },
+    {
+     "text": "And Pakistan would be Islamic, by his definition, if its ruler or its majority was Muslim. Turkey counted, though it had abolished Islamic law. Dhulipala calls him a modernist, who did not picture an Islamic state at all.",
+     "say": "And Pakistan would be Islamic, by his definition, if its ruler or its majority was Muslim. Turkey counted, though it had abolished Islamic law. Doo-lee-paa-la calls him a modernist, who did not picture an Islamic state at all."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "fate",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 230,
+     "w": 640,
+     "size": 28,
+     "text": "neither you nor anyone else\ncan change their fate",
+     "by": "Amrohvi on Muslims left in the minority provinces",
+     "in": 0,
+     "d": 2.0,
+     "anim": "fade"
+    },
+    {
+     "id": "f1",
+     "type": "typer",
+     "x": 640,
+     "y": 380,
+     "text": "their subjection would be matched",
+     "in": 1,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "f2",
+     "type": "typer",
+     "x": 640,
+     "y": 420,
+     "text": "by the subjection of crores of Hindus in Pakistan",
+     "in": 1,
+     "d": 2.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "f3",
+     "type": "typer",
+     "x": 640,
+     "y": 520,
+     "text": "the hostage theory, one more time",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src32558",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Amrohvi in Madina, 1943; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "On the hardest question, the Muslims of U.P., he was frank. Under Pakistan they would certainly live under Hindu rule. Neither you nor anyone else, he wrote, can change their fate. Punjabis and Bengalis might not always come to their aid."
+    },
+    {
+     "text": "They should make the sacrifice, as they had for the Caliphate and for Turkey. And they would not suffer alone. Their subjection, he promised, would be matched by the subjection of crores of Hindus in Pakistan."
+    },
+    {
+     "text": "Even Pakistan's most modern-minded defender ended up in the same place as the weavers of Tanda."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "Dear Qaid-e-Azam",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Lucknow and Amroha · 1944"
+  },
+  {
+   "type": "scene",
+   "id": "qaid",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "s",
+     "type": "doc",
+     "x": 400,
+     "y": 320,
+     "w": 500,
+     "h": 280,
+     "title": "ASHIQUE RAZA SIDDIQUI",
+     "meta": "Secretary, Lucknow Muslim League, 25 July 1944",
+     "lines": [
+      "So far no one has been able to give",
+      "a definite conception of Pakistan.",
+      "Hindus will be enjoying all civic rights",
+      "but they will have no political rights ...",
+      "They will be regarded as aliens."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.5,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 1,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 6.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "h",
+     "type": "doc",
+     "x": 930,
+     "y": 360,
+     "w": 440,
+     "h": 254,
+     "title": "ATHAR HASAN",
+     "meta": "Amroha, 25 May 1944",
+     "lines": [
+      "As here are 86% Hindus, they can ...",
+      "easily crush 14% Muslims ...",
+      "under what rules we can save",
+      "us from crushing?"
+     ],
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": 1.5,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 3,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 0.5,
+       "t": 6.0
+      }
+     }
+    },
+    {
+     "id": "src92420",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Quaid-i-Azam Papers, IOR Neg 10814, Reel 55, File 1102; via Dhulipala, ch. 6",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Even the League's own officials were unsure. In July 1944 the secretary of the Lucknow district League wrote to Jinnah: so far, no one has been able to give a definite conception of Pakistan. So he offered his own. Hindus in Pakistan would have civic rights but no political rights. They would be treated as aliens, and Muslims outside would be treated the same way, until, over time, everyone migrated home.",
+     "say": "Even the League's own officials were unsure. In July 1944 the secretary of the Luck-now district League wrote to Jinnah: so far, no one has been able to give a definite conception of Pakistan. So he offered his own. Hindus in Pakistan would have civic rights but no political rights. They would be treated as aliens, and Muslims outside would be treated the same way, until, over time, everyone migrated home."
+    },
+    {
+     "text": "And the boy from Amroha set down his father's sharpest objection. U.P. was eighty-six per cent Hindu. The League's answer was retaliation, but it was far harder to crush the Hindus of Punjab and Bengal than the Muslims of U.P. Under what rules, he asked Jinnah, can we be saved from crushing?"
+    },
+    {
+     "text": "There is no reply in the file."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "Ordinary Muslims argued over\nPakistan in detail.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Madina's serial debate, 1942-43; letters to Jinnah"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "Supporters shared one clear\npicture of Pakistan.",
+     "level": "weak",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Anwar, Amrohvi and the Lucknow secretary each imagined a different state"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "A transfer of tens of millions\ncould never happen.",
+     "level": "weak",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "In 1947 it did, at a terrible cost"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "Losing Calcutta would leave the\neast poor and resentful.",
+     "level": "partial",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "East Pakistan built up Chittagong; economic grievances fed 1971"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That ordinary Muslims argued over Pakistan in detail: well supported. The Madina's pages are the evidence."
+    },
+    {
+     "text": "That Pakistan's supporters shared one clear picture of it: weak. Here Dhulipala's own sources partly support his critics. A Hakim in Bombay, a modernist in Amroha and a League secretary in Lucknow each imagined a different country.",
+     "say": "That Pakistan's supporters shared one clear picture of it: weak. Here Doo-lee-paa-la's own sources partly support his critics. A Hakim in Bombay, a modernist in Amroha and a League secretary in Luck-now each imagined a different country."
+    },
+    {
+     "text": "That moving tens of millions of people could never happen: wrong, tragically. In 1947 it happened, without plan or protection."
+    },
+    {
+     "text": "And that losing Calcutta, its port and its coal would leave the east poor and resentful: partly borne out. East Pakistan built up Chittagong, but economic grievances against the west fed the war of 1971 that created Bangladesh."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 220,
+     "text": "Both sides, on the same page",
+     "in": 0,
+     "d": 0.4,
+     "size": 40,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 640,
+     "y": 330,
+     "text": "a pro-Congress paper printed the case for Pakistan",
+     "in": 1,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 370,
+     "text": "a father and son argued it at one table",
+     "in": 1,
+     "d": 2.6,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h4",
+     "type": "typer",
+     "x": 640,
+     "y": 500,
+     "text": "1942, under wartime rationing",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    }
+   ],
+   "lines": [
+    {
+     "text": "Look again at what the Madina did. A paper that opposed Pakistan, short of newsprint in the middle of a world war, gave months of space to the best case for it, and let readers on both sides answer."
+    },
+    {
+     "text": "And look at the Amroha letter: a father and son who disagreed about the biggest question of their lives, and kept talking. Whatever we think of the answers, that is how a public argument is supposed to work."
+    },
+    {
+     "text": "Today, when much of our political argument happens in feeds that show each of us only our own side, a small-town paper in wartime Bijnor sets a high bar. That observation is ours.",
+     "say": "Today, when much of our political argument happens in feeds that show each of us only our own side, a small-town paper in wartime Bij-nor sets a high bar. That observation is ours."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 8 · The Shaikhul Islam",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "Deoband · 1945 – 1946",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: the Deobandi scholar who broke with his own teachers and called Pakistan the new Medina. Shabbir Ahmad Usmani, the Jamiat Ulama-i-Islam, and the campaign that brought religion into the decisive election.",
+     "say": "Next time: the Day-oh-bun-dee scholar who broke with his own teachers and called Pakistan the new Madeena. Shub-beer Ah-mud Oos-maa-nee, the Jamiat Ulama-i-Islam, and the campaign that brought religion into the decisive election."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "Madina (Bijnor), serial debate on Pakistan, 1942-43: Abu Syed Bazmi, Abul Nazar Rizvi Amrohvi, and readers' letters",
+    "Quaid-i-Azam Papers, IOR Neg 10814 (letters from Lucknow and Amroha, 1944)",
+    "Rafiq Zakaria, The Price of Partition (1997)",
+    "",
+    "# Scholarship and reviews",
+    "C. A. Bayly, Empire and Information (1996)",
+    "Milton Israel, Communications and Power (1994)",
+    "Partition and 1971: standard accounts in the historical literature",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

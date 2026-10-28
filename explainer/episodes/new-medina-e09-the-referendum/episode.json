@@ -1,0 +1,2507 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E9",
+  "title": "The Referendum",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "The elections of 1945 and 1946 become a referendum on Pakistan. Episode 9 follows a divided League, Aligarh's pamphlets and student foot soldiers, the songs, the cap auctioned for sixteen thousand rupees, Madani and Nehru's counter-campaign, and the result: two in three U.P. Muslim voters back a country they will never live in.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 8; party papers, pamphlets, poems and the 1946 OSS report as quoted there.",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Bareilly.",
+    "20 November 1945."
+   ],
+   "sub": "AN ELECTION MEETING",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "bareilly",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.08,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "d",
+     "type": "doc",
+     "x": 420,
+     "y": 320,
+     "w": 500,
+     "h": 280,
+     "title": "WHAT I SAW",
+     "meta": "Manzoor Numani, eyewitness, Bareilly 1945 (substance)",
+     "lines": [
+      "Shoes waved, hockey sticks raised.",
+      "Men in sherwanis, college-educated,",
+      "howling like a mob.",
+      "The gas lamps smashed.",
+      "Then stones, from the road-builders' piles."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.2,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 4,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 1.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 930,
+     "y": 300,
+     "text": "the speaker:",
+     "in": 1,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 930,
+     "y": 340,
+     "text": "Husain Ahmad Madani",
+     "in": 1,
+     "d": 4.2,
+     "size": 24,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l3",
+     "type": "typer",
+     "x": 930,
+     "y": 380,
+     "text": "fifteen years a teacher of hadith in Medina",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src56102",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Numani, Ilekshani Jihad aur Uske Hathyar (Delhi, n.d.); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "On a November evening in 1945, a Deobandi scholar named Manzoor Numani stood at the edge of an election meeting in Bareilly and watched it being destroyed. Shoes were waved in the air, hockey sticks raised. Young men in fine sherwanis, plainly educated, howled like a mob.",
+     "say": "On a November evening in 1945, a Day-oh-bun-dee scholar named Manzoor Numani stood at the edge of an election meeting in Bareilly and watched it being destroyed. Shoes were waved in the air, hockey sticks raised. Young men in fine sherwanis, plainly educated, howled like a mob."
+    },
+    {
+     "text": "Then someone smashed the gas lamps. In the darkness, men climbed onto piles of stones left for road-building, and the stones began to rain down on the stage."
+    },
+    {
+     "text": "The man on that stage had taught the Prophet's sayings in Medina for fifteen years. His name was Husain Ahmad Madani. The crowd stoning him was shouting for a new Medina.",
+     "say": "The man on that stage had taught the Prophet's sayings in Madeena for fifteen years. His name was Hu-sain Ah-mud Ma-da-nee. The crowd stoning him was shouting for a new Madeena."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 9 · The Referendum",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "A House Divided",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Lucknow · 1944 – 1945"
+  },
+  {
+   "type": "scene",
+   "id": "wavell",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 190,
+     "text": "a referendum on Pakistan",
+     "in": 0,
+     "d": 0.6,
+     "size": 40,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 22
+    },
+    {
+     "id": "w1",
+     "type": "typer",
+     "x": 640,
+     "y": 270,
+     "text": "21 August 1945: Lord Wavell calls elections",
+     "in": 0,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 640,
+     "y": 420,
+     "value": 0,
+     "size": 90,
+     "color": "#5fbf9a",
+     "label": "League members in U.P., 1944",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 304586,
+       "d": 1.0,
+       "t": 2.0
+      }
+     }
+    },
+    {
+     "id": "w2",
+     "type": "typer",
+     "x": 640,
+     "y": 530,
+     "text": "in 1937, Congress had won none of the U.P. Muslim seats it contested",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src9715",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "QA Papers; The Pioneer (1945); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In August 1945 the Viceroy announced elections, to choose the men who would write India's next constitution. The League answered at once: these elections would be a referendum on Pakistan."
+    },
+    {
+     "text": "It had to win that referendum everywhere, even in provinces that would never be part of Pakistan. And in U.P. its membership had exploded, to more than three hundred thousand."
+    },
+    {
+     "text": "Congress was confident too. In 1937 it had contested nine Muslim seats in the province and lost every one. This time it meant to break the League's claim to speak for all Muslims."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "split",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "r",
+     "type": "dossier",
+     "x": 300,
+     "y": 340,
+     "name": "S. M. Rizwanullah",
+     "role": "the new man, Kanpur money",
+     "years": "League secretary",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "topi",
+     "tag": "NEW GROUP",
+     "tagColor": "#8a5a2a",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "i",
+     "type": "dossier",
+     "x": 640,
+     "y": 340,
+     "name": "Nawab Ismail Khan",
+     "role": "the old guard",
+     "years": "League president",
+     "in": 1,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "OLD GUARD",
+     "tagColor": "#2f4f6f",
+     "w": 200,
+     "h": 270
+    },
+    {
+     "id": "s1",
+     "type": "typer",
+     "x": 1000,
+     "y": 250,
+     "text": "Rs 20,000 unexplained",
+     "in": 0,
+     "d": 3.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s2",
+     "type": "typer",
+     "x": 1000,
+     "y": 290,
+     "text": "a forged ledger",
+     "in": 0,
+     "d": 5.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s3",
+     "type": "typer",
+     "x": 1000,
+     "y": 380,
+     "text": "Mahmudabad House v. Bhopal House",
+     "in": 1,
+     "d": 6.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s4",
+     "type": "typer",
+     "x": 1000,
+     "y": 470,
+     "text": "resigned, re-elected, twice in one day",
+     "in": 2,
+     "d": 1.0,
+     "size": 17,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s5",
+     "type": "typer",
+     "x": 1000,
+     "y": 510,
+     "text": "general secretary: 257 votes to 178",
+     "in": 2,
+     "d": 4.0,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src18065",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Mahmudabad to Jinnah, 11 August 1944, QA Papers; U.P. Fortnightly Reports; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "But the U.P. League was tearing itself apart. Its secretary, Rizwanullah, backed by Kanpur industrialists, could not explain twenty thousand rupees in his bank account. When he finally produced his books, the papers turned out to be forged. The party buried the scandal anyway, because the old guard wanted his votes."
+    },
+    {
+     "text": "It was a fatal mistake. Rizwanullah's men captured the party's machinery, and by July 1944 there were two Leagues in Lucknow, one working from the Mahmudabad mansion, the other from Bhopal House, each claiming to be the real thing. Jinnah refused to take sides.",
+     "say": "It was a fatal mistake. Rizwanullah's men captured the party's machinery, and by July 1944 there were two Leagues in Luck-now, one working from the Mahmudabad mansion, the other from Bhopal House, each claiming to be the real thing. Jinnah refused to take sides."
+    },
+    {
+     "text": "In September 1945, with elections weeks away, the president Ismail Khan resigned and was re-elected twice in a single afternoon, amid a scramble for the microphone. The old guard took the secretary's post by two hundred and fifty-seven votes to a hundred and seventy-eight. The truce that followed was thin."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "The Arsenal",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Aligarh · 1945"
+  },
+  {
+   "type": "scene",
+   "id": "pamphlets",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b1",
+     "type": "tome",
+     "x": 230,
+     "y": 330,
+     "w": 170,
+     "h": 230,
+     "title": "National States and National Minorities",
+     "author": "Kheiri · No. 1",
+     "color": "#2f4f6f",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "b2",
+     "type": "tome",
+     "x": 430,
+     "y": 330,
+     "w": 170,
+     "h": 230,
+     "title": "Is India Geographically One?",
+     "author": "K. S. Ahmad · No. 6",
+     "color": "#5a4a2a",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "b3",
+     "type": "tome",
+     "x": 630,
+     "y": 330,
+     "w": 170,
+     "h": 230,
+     "title": "The Future Development of Islamic Polity",
+     "author": "I. H. Qureshi · No. 8",
+     "color": "#2f6f5a",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "p1",
+     "type": "typer",
+     "x": 1000,
+     "y": 230,
+     "text": "minority treaties in Europe failed",
+     "in": 0,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p2",
+     "type": "typer",
+     "x": 1000,
+     "y": 330,
+     "text": "five states for South Asia:",
+     "in": 1,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p3",
+     "type": "typer",
+     "x": 1000,
+     "y": 365,
+     "text": "Pakistan · Hindustan · Bengalistan",
+     "in": 1,
+     "d": 3.4,
+     "size": 17,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p4",
+     "type": "typer",
+     "x": 1000,
+     "y": 400,
+     "text": "Dravidastan · Rajasthan",
+     "in": 1,
+     "d": 4.6,
+     "size": 17,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p5",
+     "type": "typer",
+     "x": 1000,
+     "y": 480,
+     "text": "sovereignty only in Islamic law,",
+     "in": 2,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "p6",
+     "type": "typer",
+     "x": 1000,
+     "y": 515,
+     "text": "unchangeable, policed by a supreme court",
+     "in": 2,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src68053",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Pakistan Literature Series (Lahore, 1945–47), Nos. 1, 2, 4, 6, 8; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "If the League's politicians were a mess, the Muslim University at Aligarh was a factory. A committee of writers produced the Pakistan Literature Series, cheap pamphlets for anyone who wanted the case in print. A professor argued that Europe's minority treaties had failed everywhere, and that Muslims must never accept being a minority.",
+     "say": "If the League's politicians were a mess, the Muslim University at Ali-gur was a factory. A committee of writers produced the Pakistan Literature Series, cheap pamphlets for anyone who wanted the case in print. A professor argued that Europe's minority treaties had failed everywhere, and that Muslims must never accept being a minority."
+    },
+    {
+     "text": "A young geographer insisted that India was no more one country than Scandinavia or Iberia, and redrew the subcontinent into five states: Pakistan, Hindustan, Bengalistan, Dravidastan and Rajasthan."
+    },
+    {
+     "text": "And the historian Ishtiaq Husain Qureshi argued that in a Muslim state, sovereignty could rest only in Islamic law, unchangeable, guarded by a court like America's Supreme Court. He also wrote approvingly of a line of Hitler's tying democracy to Jewish finance. Dhulipala quotes it, and so must we.",
+     "say": "And the historian Ishtiaq Husain Qureshi argued that in a Muslim state, sovereignty could rest only in Islamic law, unchangeable, guarded by a court like America's Supreme Court. He also wrote approvingly of a line of Hitler's tying democracy to Jewish finance. Doo-lee-paa-la quotes it, and so must we."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "students",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "f",
+     "type": "figures",
+     "x": 640,
+     "y": 640,
+     "n": 14,
+     "cols": 14,
+     "w": 980,
+     "rowh": 70,
+     "size": 0.9,
+     "color": "#1a140e",
+     "anim": "rise",
+     "banner": "ALIGARH STUDENT WORKERS",
+     "bannerColor": "#c8f0dd"
+    },
+    {
+     "id": "a1",
+     "type": "typer",
+     "x": 640,
+     "y": 150,
+     "text": "aged 17 or more · good speakers · local contacts",
+     "in": 0,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a2",
+     "type": "typer",
+     "x": 640,
+     "y": 190,
+     "text": "five minutes of public speaking each, every day",
+     "in": 0,
+     "d": 5.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 400,
+     "y": 340,
+     "value": 0,
+     "size": 84,
+     "color": "#5fbf9a",
+     "label": "students in Meerut division",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 500,
+       "d": 1.0,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "st2",
+     "type": "stat",
+     "x": 880,
+     "y": 340,
+     "value": 0,
+     "size": 84,
+     "color": "#e3a857",
+     "label": "miles a day, mostly on foot",
+     "in": 1,
+     "d": 4.0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 30,
+       "d": 1.0,
+       "t": 4.4
+      }
+     }
+    },
+    {
+     "id": "src39021",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "MUML circular; Jamiluddin Ahmad's report; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then the students went out. Aligarh's League branch drew up rules for its volunteers: at least seventeen, alert, good talkers, with contacts in the districts. They were trained in the history of the League, the answers to its critics, and public speaking, five minutes each, every day.",
+     "say": "Then the students went out. Ali-gur's League branch drew up rules for its volunteers: at least seventeen, alert, good talkers, with contacts in the districts. They were trained in the history of the League, the answers to its critics, and public speaking, five minutes each, every day."
+    },
+    {
+     "text": "In Meerut division, where Congress threw everything at defeating Liaquat Ali Khan, more than five hundred students spread through the villages, covering thirty miles a day, mostly on foot. In some mosques the prayer leaders stepped aside and asked the Aligarh boys to lead the prayers.",
+     "say": "In Meerut division, where Congress threw everything at defeating Lee-aa-kut Ali Khan, more than five hundred students spread through the villages, covering thirty miles a day, mostly on foot. In some mosques the prayer leaders stepped aside and asked the Ali-gur boys to lead the prayers."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "village",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 250,
+     "w": 760,
+     "size": 26,
+     "text": "Within an hour our quiet village\nhad been turned into Pakistan village",
+     "by": "Kalim Siddiqui, recalling 1945–46",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "v1",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "every scrap of green cloth became a League flag",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "v2",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "a four-mile walk, barefoot, to the polling booth",
+     "in": 1,
+     "d": 3.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "v3",
+     "type": "typer",
+     "x": 640,
+     "y": 520,
+     "text": "Mushirul Hasan: the 'Aligarh boys tilted the balance' in several seats",
+     "in": 2,
+     "d": 0.6,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src3263",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Kalim Siddiqui, Conflict, Crisis and War in Pakistan (1972), via Mushirul Hasan (2012); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "One writer remembered three Aligarh students arriving in his family's village, planting the green flag in the square, and gathering the little boys around them. Within an hour, he wrote, the quiet village had become Pakistan village.",
+     "say": "One writer remembered three Ali-gur students arriving in his family's village, planting the green flag in the square, and gathering the little boys around them. Within an hour, he wrote, the quiet village had become Pakistan village."
+    },
+    {
+     "text": "His mother turned every scrap of green cloth she could find into flags. Months later his parents walked barefoot four miles to the polling booth, some carrying their sick parents on their backs, to vote for the League."
+    },
+    {
+     "text": "The historian Mushirul Hasan agrees that the Aligarh boys tilted the balance in several constituencies.",
+     "say": "The historian Mushirul Hasan agrees that the Ali-gur boys tilted the balance in several constituencies."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "Songs for a Country",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bombay and Banaras · 1944 – 1945"
+  },
+  {
+   "type": "scene",
+   "id": "songs",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "paper",
+     "x": 380,
+     "y": 350,
+     "w": 380,
+     "h": 440,
+     "mast": "TARAANE",
+     "date": "Bombay · 25 December 1945 · 4 annas",
+     "head": "Songs of the\nNational Guards",
+     "headSize": 30,
+     "sub": "39 poems by 'Ramzi Illahabadi'",
+     "cols": 2,
+     "rot": -1.5,
+     "anim": "rise"
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 890,
+     "y": 220,
+     "text": "Pakistan hum le ke rahenge",
+     "in": 0,
+     "d": 3.0,
+     "size": 30,
+     "font": "serif",
+     "color": "#d9b26a",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 18
+    },
+    {
+     "id": "r2",
+     "type": "typer",
+     "x": 890,
+     "y": 270,
+     "text": "'we will take Pakistan'",
+     "in": 0,
+     "d": 6.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r3",
+     "type": "typer",
+     "x": 890,
+     "y": 360,
+     "text": "the refrain: Congress rule, 1937 to 1939",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r4",
+     "type": "typer",
+     "x": 890,
+     "y": 395,
+     "text": "curfews, Hindi for Urdu, the Eid sacrifice stopped",
+     "in": 1,
+     "d": 2.6,
+     "size": 16,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src13899",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ramzi Illahabadi, Muslim League National Guards ke Taraane (Bombay, 1945); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "How did college boys speak to villagers? The same way the Khilafat campaign had, a generation earlier: with poetry. Most of it was burned after Partition by Muslims afraid of being called seditious. A few booklets survive, like a four-anna songbook printed in Bombay on Jinnah's birthday in 1945."
+    },
+    {
+     "text": "Its songs are plain and catchy. One lists the grievances of Congress rule in U.P., the curfews, the newspapers fined, Urdu pushed aside for Hindi, the riots, and ends every verse with the same line: we will take Pakistan."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "kaif",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "k1",
+     "type": "typer",
+     "x": 640,
+     "y": 190,
+     "text": "Le ke rahenge Pakistan",
+     "in": 0,
+     "d": 0.6,
+     "size": 40,
+     "font": "serif",
+     "color": "#d9b26a",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 18
+    },
+    {
+     "id": "k2",
+     "type": "typer",
+     "x": 640,
+     "y": 250,
+     "text": "bat ke rahega Hindustan",
+     "in": 0,
+     "d": 3.4,
+     "size": 40,
+     "font": "serif",
+     "color": "#ff9a8a",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 18
+    },
+    {
+     "id": "k3",
+     "type": "typer",
+     "x": 640,
+     "y": 320,
+     "text": "'we will take Pakistan · Hindustan will be divided'",
+     "in": 0,
+     "d": 6.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 440,
+     "w": 700,
+     "size": 22,
+     "text": "a body of converts and their descendants\nclaiming to be a nation apart",
+     "by": "Gandhi to Jinnah, 1944; the line that angered the poet",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src91105",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Kaif Banarsi, Dil ki Dhadkan Pakistan (Karachi, 1990); Gandhi-Jinnah correspondence (1944); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "One refrain went much further. A student poet from Banaras, Kaif Banarsi, wrote the lines that would be chanted across north India: we will take Pakistan, and Hindustan will be divided."
+    },
+    {
+     "text": "He said he wrote it in anger, after Gandhi told Jinnah in 1944 that history knew no case of converts and their descendants claiming to be a nation apart from the parent stock. And even the Communists joined in. The poet Majaz wrote an anthem imagining a Pakistan that would light a red spark in the dead forest of capitalism."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "One Issue",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "The League's campaign · winter 1945"
+  },
+  {
+   "type": "scene",
+   "id": "machine",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "d",
+     "type": "doc",
+     "x": 380,
+     "y": 320,
+     "w": 440,
+     "h": 280,
+     "title": "LEAGUE MANIFESTO, U.P.",
+     "meta": "September 1945",
+     "lines": [
+      "Item 1: Pakistan.",
+      "Item 2: the League alone speaks",
+      "for India's Muslims.",
+      "",
+      "Land reform, banks, zamindari: dropped."
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.0,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 4,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 10.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "m1",
+     "type": "typer",
+     "x": 900,
+     "y": 220,
+     "text": "80% of candidates expected to be zamindars",
+     "in": 0,
+     "d": 8.0,
+     "size": 17,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 900,
+     "y": 350,
+     "value": 0,
+     "size": 80,
+     "color": "#e3a857",
+     "label": "polling stations, a booth leader each",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 1372,
+       "d": 1.0,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "m2",
+     "type": "typer",
+     "x": 900,
+     "y": 450,
+     "text": "50,000 workers · loudspeaker vans · one-anna badges",
+     "in": 1,
+     "d": 4.0,
+     "size": 16,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src29744",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "The Pioneer, 4 September 1945; Deccan Times (1945); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The League settled its manifesto in a single meeting. A left-winger, Z. H. Lari, proposed nationalising banks and abolishing the great estates. The landlords pointed out that about eighty per cent of the party's candidates would be zamindars, who were not going to sign their own death warrants. The manifesto shrank to two items: Pakistan, and the League as the only voice of India's Muslims."
+    },
+    {
+     "text": "Then came the machine: a booth leader for every one of the province's thirteen hundred and seventy-two polling stations, a target of fifty thousand workers, publicity vans with loudspeakers, and a badge for one anna."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "cap",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "c0",
+     "type": "typer",
+     "x": 360,
+     "y": 230,
+     "text": "JAMAL MIAN'S CAP",
+     "in": 0,
+     "d": 0.4,
+     "size": 24,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 360,
+     "y": 360,
+     "value": 0,
+     "prefix": "Rs ",
+     "size": 84,
+     "color": "#e8cfa0",
+     "label": "in the cap, mostly in annas",
+     "in": 0,
+     "d": 4.0,
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "value": 123,
+       "d": 1.0,
+       "t": 4.4
+      }
+     }
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 900,
+     "y": 360,
+     "value": 0,
+     "prefix": "Rs ",
+     "size": 84,
+     "color": "#5fbf9a",
+     "label": "after auctioning the cap, again and again",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 16302,
+       "d": 1.4,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "c1",
+     "type": "typer",
+     "x": 640,
+     "y": 520,
+     "text": "Jinnah: vote for the League even if its candidate is a lamp-post",
+     "in": 2,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src2828",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Jamal Mian at Lucknow, 1945; Jinnah at Allahabad, 1946; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Money came the same way. At a rally in Lucknow, Jamal Mian said the League had no Birlas or Tatas, and valued a poor man's gift above a millionaire's. He sent his cap round the crowd. It came back with a hundred and twenty-three rupees, mostly in small coins.",
+     "say": "Money came the same way. At a rally in Luck-now, Jamal Mian said the League had no Birlas or Tatas, and valued a poor man's gift above a millionaire's. He sent his cap round the crowd. It came back with a hundred and twenty-three rupees, mostly in small coins."
+    },
+    {
+     "text": "Then he auctioned the cap itself. Each buyer's name was read out, and the cap went back on the block, again and again. By the end of the night, sixteen thousand three hundred and two rupees."
+    },
+    {
+     "text": "And Jinnah told voters in Allahabad not to vote for personalities at all. Vote for the League's candidate, he said, even if he is a lamp-post, because he stands for Pakistan."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "rhetoric",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q1",
+     "type": "cquote",
+     "x": 640,
+     "y": 200,
+     "w": 640,
+     "size": 24,
+     "text": "Muslims are past masters\nat shedding their blood",
+     "by": "Liaquat Ali Khan, election meeting, 1945",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 640,
+     "y": 330,
+     "text": "Khaliquzzaman: win the 4th and 5th battles of Panipat",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r2",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "the promise: a treaty to protect Muslims left in Hindustan",
+     "in": 2,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r3",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "and if it was broken? 'diplomatic pressure'",
+     "in": 2,
+     "d": 4.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r4",
+     "type": "typer",
+     "x": 640,
+     "y": 520,
+     "text": "Muharram 1945: Pakistan maps lead the processions",
+     "in": 2,
+     "d": 9.0,
+     "size": 17,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src23081",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Deccan Times (1945); Jamal Mian at Sitapur; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The speeches grew hot. When Hindus warned that blood would flow if Pakistan came, Liaquat replied that Muslims were past masters at shedding their blood. Khaliquzzaman called the two rounds of voting the fourth and fifth battles of Panipat.",
+     "say": "The speeches grew hot. When Hindus warned that blood would flow if Pakistan came, Lee-aa-kut replied that Muslims were past masters at shedding their blood. Kha-leek-uz-za-maan called the two rounds of voting the fourth and fifth battles of Panipat."
+    },
+    {
+     "text": "What of the Muslims of U.P., who would stay behind? A treaty between Pakistan and Hindustan would protect them, said Jamal Mian. And if Hindustan broke it, a free Pakistan would apply diplomatic pressure."
+    },
+    {
+     "text": "Even the Shia processions of Muharram that year carried maps of Pakistan at their head, with League flags on elephants. The old cry of Ya Ali gave way to the new one."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "What Kind of Stan?",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "The opposition · winter 1945"
+  },
+  {
+   "type": "scene",
+   "id": "madani",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Husain Ahmad Madani",
+     "role": "head of the Darul Uloom, Deoband",
+     "years": "born Unnao, 1879",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "tag": "AGAINST",
+     "tagColor": "#8a2a2a"
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 850,
+     "y": 250,
+     "w": 560,
+     "size": 28,
+     "text": "Who is not with the Hindus?",
+     "by": "Madani, letter to a critic in Rawalpindi",
+     "in": 0,
+     "d": 6.0,
+     "anim": "fade"
+    },
+    {
+     "id": "m1",
+     "type": "typer",
+     "x": 850,
+     "y": 380,
+     "text": "Punjab and Bengal would be cut in two",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "m2",
+     "type": "typer",
+     "x": 850,
+     "y": 420,
+     "text": "Assam would never be Pakistan",
+     "in": 1,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "m3",
+     "type": "typer",
+     "x": 850,
+     "y": 500,
+     "text": "his allies' name for Jinnah: Kafir-i-Azam",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src9937",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Madani, Muslim League Kya Hai (1945); Metcalf, Husain Ahmad Madani (2009); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Madani was the League's most formidable opponent. Born in U.P. in 1879, he had taught in Medina and spent the First World War in a British prison on Malta. Told that he had joined the Hindus, he answered: Muslims meet Hindus in every bazaar, train, court and council in India. You trade with them, you rent land to them. Who is not with the Hindus?",
+     "say": "Ma-da-nee was the League's most formidable opponent. Born in U.P. in 1879, he had taught in Madeena and spent the First World War in a British prison on Malta. Told that he had joined the Hindus, he answered: Muslims meet Hindus in every bazaar, train, court and council in India. You trade with them, you rent land to them. Who is not with the Hindus?"
+    },
+    {
+     "text": "His sharpest argument was arithmetic. By the League's own logic of majorities, he said, eastern Punjab, western Bengal and Assam would never go to Pakistan. On that point, history would prove him right."
+    },
+    {
+     "text": "But his camp could be as rough as its rivals. His allies called Jinnah Kafir-i-Azam, the great unbeliever."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "numani",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 230,
+     "text": "Is this jihad?",
+     "in": 0,
+     "d": 0.6,
+     "size": 48,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 16
+    },
+    {
+     "id": "n1",
+     "type": "typer",
+     "x": 640,
+     "y": 320,
+     "text": "not in the path of God, but of idols, wrote Numani",
+     "in": 0,
+     "d": 3.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n2",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "a student's tale: Jinnah seated beside the Prophet in a dream",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n3",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "Numani: a lie, dragging the Prophet into an election",
+     "in": 1,
+     "d": 5.0,
+     "size": 17,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src99197",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Numani, Ilekshani Jihad aur Uske Hathyar; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Numani, the witness at Bareilly, wrote a furious pamphlet. The League's men called their campaign a jihad. Is this jihad, he asked? It was jihad, he said, in the path of idols, not of God."
+    },
+    {
+     "text": "He had heard an Aligarh student tell a crowd that a revered scholar had dreamed of Jinnah seated beside the Prophet himself, honoured for saving the sinking ship of the community. Numani called it a lie, one that dragged the Prophet into an election.",
+     "say": "He had heard an Ali-gur student tell a crowd that a revered scholar had dreamed of Jinnah seated beside the Prophet himself, honoured for saving the sinking ship of the community. Numani called it a lie, one that dragged the Prophet into an election."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "nehru",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "n",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Jawaharlal Nehru",
+     "role": "Congress",
+     "years": "1889 – 1964",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "topi",
+     "tag": "CONGRESS",
+     "tagColor": "#2f4f6f"
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 850,
+     "y": 230,
+     "w": 560,
+     "size": 28,
+     "text": "What kind of stan do you want?",
+     "by": "Nehru to the Muslims of U.P., Lucknow, 1945",
+     "in": 0,
+     "d": 6.0,
+     "anim": "fade"
+    },
+    {
+     "id": "n1",
+     "type": "typer",
+     "x": 850,
+     "y": 350,
+     "text": "would the Nawabs carry their estates to Pakistan?",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q2",
+     "type": "cquote",
+     "x": 850,
+     "y": 445,
+     "w": 560,
+     "size": 22,
+     "text": "we Muslims living in these provinces\nwill become aliens",
+     "by": "Rafi Ahmad Kidwai, campaign speech",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "n2",
+     "type": "typer",
+     "x": 850,
+     "y": 565,
+     "text": "Nehru's forecast: the League would win 25% of Punjab",
+     "in": 3,
+     "d": 0.6,
+     "size": 16,
+     "font": "type",
+     "color": "#ffb8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src22768",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "The Pioneer (1945); Dawn, 'Lucknow Hysterics'; via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Congress fought too. Nehru argued that the atom bomb had finished the age of small states, and that India should federate with its neighbours, not split. In Lucknow he put it bluntly to the province's Muslims: U.P. will not be in Pakistan. What kind of stan do you want?",
+     "say": "Congress fought too. Nehru argued that the atom bomb had finished the age of small states, and that India should federate with its neighbours, not split. In Luck-now he put it bluntly to the province's Muslims: U.P. will not be in Pakistan. What kind of stan do you want?"
+    },
+    {
+     "text": "Would the Nawabs move to Pakistan, he asked, and leave their estates behind? They could hardly carry them there. The League's paper, Dawn, called it Lucknow hysterics, and a threat.",
+     "say": "Would the Nawabs move to Pakistan, he asked, and leave their estates behind? They could hardly carry them there. The League's paper, Dawn, called it Luck-now hysterics, and a threat."
+    },
+    {
+     "text": "His lieutenant Rafi Ahmad Kidwai warned that the Muslims of U.P. would become aliens in their own land, with no more rights than visitors from Kabul. He promised land reform and work instead."
+    },
+    {
+     "text": "Nehru expected the League to win perhaps a quarter of the seats in Punjab. It was a spectacular misjudgment."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "The Verdict",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Results · 1946"
+  },
+  {
+   "type": "scene",
+   "id": "results",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "r0",
+     "type": "typer",
+     "x": 640,
+     "y": 150,
+     "text": "CENTRAL ASSEMBLY · U.P. MUSLIM SEATS",
+     "in": 0,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "c",
+     "type": "stat",
+     "x": 640,
+     "y": 240,
+     "value": 0,
+     "suffix": " of 6",
+     "size": 80,
+     "color": "#5fbf9a",
+     "label": "won by the League",
+     "in": 0,
+     "d": 1.4,
+     "anim": "fade",
+     "keys": {
+      "0": {
+       "value": 6,
+       "d": 1.0,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 300,
+     "y": 450,
+     "value": 0,
+     "suffix": "%",
+     "size": 90,
+     "color": "#5fbf9a",
+     "label": "League",
+     "in": 1,
+     "d": 2.0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 65,
+       "d": 1.2,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 640,
+     "y": 450,
+     "value": 0,
+     "suffix": "%",
+     "size": 90,
+     "color": "#7fb2d9",
+     "label": "Congress",
+     "in": 1,
+     "d": 6.0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 14,
+       "d": 1.0,
+       "t": 6.4
+      }
+     }
+    },
+    {
+     "id": "d",
+     "type": "stat",
+     "x": 980,
+     "y": 450,
+     "value": 0,
+     "suffix": "%",
+     "size": 90,
+     "color": "#e3a857",
+     "label": "Nationalist Muslims",
+     "in": 1,
+     "d": 8.0,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 14,
+       "d": 1.0,
+       "t": 8.4
+      }
+     }
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 640,
+     "y": 560,
+     "text": "U.P. Muslim vote, provincial assembly · on a limited franchise",
+     "in": 1,
+     "d": 10.0,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src69993",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "OIR Report No. 4162.1, 1 August 1946; via Dhulipala, ch. 8",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The first round, for the central assembly, was a clean sweep: the League won all six Muslim seats in U.P. Congress said the franchise was too narrow to mean much, and pinned its hopes on the provincial round."
+    },
+    {
+     "text": "The American intelligence service, the OSS, counted the provincial result. The League took sixty-five per cent of the U.P. Muslim vote. Congress took fourteen, its Nationalist Muslim allies another fourteen. The Americans called it a relatively poor showing, and blamed religious orthodoxy, Sunni-Shia rivalry and the League's own feuds."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "butla",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 280,
+     "w": 780,
+     "size": 26,
+     "text": "though their province is not in Pakistan\nyet they are solidly behind the Muslim League",
+     "by": "Abdus Sattar Butla, letter to Dawn",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 640,
+     "y": 430,
+     "text": "a 'relatively poor' showing, by U.P. standards, was still two to one",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src61669",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dawn (1946); via Dhulipala, ch. 8",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "A League supporter put the result in one line in a letter to Dawn. The Muslims of U.P., he wrote, had proved that though their province would not be in Pakistan, they stood solidly behind the League."
+    },
+    {
+     "text": "A poor showing by the League's standards still meant that two out of three Muslim voters had chosen a country they would never live in."
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "chapterx",
+   "kicker": "Chapter Seven",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "Most U.P. Muslim voters\nbacked the League in 1946.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "OSS figures; but only a minority of adults could vote"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "The vote was a mandate for an\nIslamic state, as the book argues.",
+     "level": "debated",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Voters backed Pakistan; what they pictured is disputed"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "Aligarh students tilted the\nbalance in many seats.",
+     "level": "partial",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Mushirul Hasan agrees; evidence is mostly memoir"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "A treaty would protect\nMuslims left in India.",
+     "level": "weak",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "No such treaty was ever signed"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That most Muslim voters in U.P. backed the League: strong, with one caveat. The franchise was limited by property and education, so most adults, Muslim or not, had no vote at all."
+    },
+    {
+     "text": "That the vote was a mandate for Pakistan as an Islamic state, as Dhulipala argues: debated. The League ran on Pakistan alone and left its details vague. Historians like Ayesha Jalal argue that many voters, and perhaps Jinnah himself, pictured something looser than the state that emerged.",
+     "say": "That the vote was a mandate for Pakistan as an Islamic state, as Doo-lee-paa-la argues: debated. The League ran on Pakistan alone and left its details vague. Historians like Ayesha Jalal argue that many voters, and perhaps Jinnah himself, pictured something looser than the state that emerged."
+    },
+    {
+     "text": "That the Aligarh students tilted the balance: partly supported. Serious historians agree, but much of the evidence is memoir.",
+     "say": "That the Ali-gur students tilted the balance: partly supported. Serious historians agree, but much of the evidence is memoir."
+    },
+    {
+     "text": "And the promise of a treaty to protect the Muslims left behind: weak. No such treaty was ever signed."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "Vote for the lamp-post.",
+     "in": 0,
+     "d": 0.4,
+     "size": 42,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 640,
+     "y": 300,
+     "text": "one issue · no programme · the candidate doesn't matter",
+     "in": 0,
+     "d": 3.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "an election as a referendum on who 'we' are",
+     "in": 1,
+     "d": 0.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h4",
+     "type": "typer",
+     "x": 640,
+     "y": 480,
+     "text": "an observation, ours, not the book's",
+     "in": 2,
+     "d": 0.6,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    }
+   ],
+   "lines": [
+    {
+     "text": "The League's campaign is worth remembering for its method as much as its result. One issue. No programme that might divide the coalition. And a candidate who did not matter, so long as he carried the flag."
+    },
+    {
+     "text": "Elections fought as referendums on identity, rather than on what a government will actually do, are not a thing of the past, in South Asia or anywhere else."
+    },
+    {
+     "text": "That observation is ours. The book's lesson is narrower and sharper: the voters of 1946 were promised a state, and the details were left for later."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 10 · Rivers of Blood, and After",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "1947 – today",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time, the final episode: Partition, the Muslims who left U.P. and the Muslims who stayed, and what Pakistan became for both."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "Pakistan Literature Series (Lahore, 1945–47) · Ramzi Illahabadi, Taraane (1945) · Kaif Banarsi, Dil ki Dhadkan Pakistan",
+    "Husain Ahmad Madani, Muslim League Kya Hai (1945) · Manzoor Numani, Ilekshani Jihad aur Uske Hathyar",
+    "Quaid-i-Azam Papers, ed. Zaidi · U.P. Fortnightly Reports · The Pioneer, Dawn, Deccan Times (1945–46)",
+    "OSS / OIR Report No. 4162.1, The All India Muslim League (1 August 1946)",
+    "",
+    "# Scholarship and reviews",
+    "Barbara Metcalf, Husain Ahmad Madani (2009)",
+    "Mushirul Hasan, 'Local Roots of the Pakistan Movement' (2012)",
+    "Ayesha Jalal, The Sole Spokesman (1985)",
+    "Ian Talbot, review in the Journal of Asian Studies 74:4 (2015)",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

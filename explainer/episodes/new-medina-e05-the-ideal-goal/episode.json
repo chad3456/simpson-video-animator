@@ -1,0 +1,2410 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E5",
+  "title": "The Ideal Goal",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "After the Lahore Resolution, the Muslim League's leaders in the United Provinces had to explain Pakistan to Muslims who would never live in it. Episode 5 follows the pamphlets, speeches and private letters: an Islamic state, a 'laboratory', a jumping-off ground for the Muslim world, a quiet readiness to accept a smaller Pakistan, and minorities held as hostages.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 4; the pamphlets, speeches and archival letters quoted there.",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Tanda, Fyzabad district.",
+    "1940."
+   ],
+   "sub": "A QUESTION FOR THE WEAVERS",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "weavers",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.1,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "TANDA · UNITED PROVINCES · 1940",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "r",
+     "type": "doc",
+     "x": 640,
+     "y": 330,
+     "w": 520,
+     "h": 306,
+     "title": "P. W. RADICE, I.C.S.",
+     "meta": "Private papers (excerpt)",
+     "lines": [
+      "Asked the weavers what they hoped",
+      "to gain from Pakistan.",
+      "'If the Hindus annoyed them, their",
+      "brethren in Pakistan would be able to",
+      "take their revenge on the Hindus there.'",
+      "A pleasant prospect."
+     ],
+     "in": 0,
+     "d": 0.8,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.2,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 5,
+     "hlOn": 0,
+     "keys": {
+      "2": {
+       "hlOn": 1,
+       "d": 0.5,
+       "t": 0.4
+      }
+     }
+    },
+    {
+     "id": "src82473",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "P. W. Radice Papers, MSS Eur F180/80, British Library; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 1940 a British district officer named P. W. Radice visited the Muslim handloom weavers of Tanda, a small town in eastern U.P. He asked them a simple question. What did they hope to gain from Pakistan?"
+    },
+    {
+     "text": "These weavers would never live in Pakistan. Their town was hundreds of miles from any Muslim-majority province. Their answer was blunt. If the Hindus annoyed them, their brethren in Pakistan could take revenge on the Hindus there."
+    },
+    {
+     "text": "Radice wrote two words in his notes. A pleasant prospect."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 5 · The Ideal Goal",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "Before Lahore",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bareilly · February 1940"
+  },
+  {
+   "type": "scene",
+   "id": "rizvi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "tome",
+     "x": 330,
+     "y": 330,
+     "w": 180,
+     "h": 240,
+     "title": "Pakistan",
+     "author": "Anis al Din Ahmad Rizvi · Bareilly · 1940",
+     "color": "#2f5a3a",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "r1",
+     "type": "typer",
+     "x": 880,
+     "y": 200,
+     "text": "a month before the Lahore Resolution",
+     "in": 0,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r2",
+     "type": "typer",
+     "x": 880,
+     "y": 240,
+     "text": "an Islamic state: 'khuda ki badshahat'",
+     "in": 0,
+     "d": 4.0,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r3",
+     "type": "typer",
+     "x": 880,
+     "y": 280,
+     "text": "the kingdom of God",
+     "in": 0,
+     "d": 5.6,
+     "size": 16,
+     "font": "type",
+     "color": "#8fb8a0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "rq",
+     "type": "cquote",
+     "x": 880,
+     "y": 450,
+     "w": 540,
+     "size": 22,
+     "text": "if a thorn lodged itself in the foot\nof a black African Muslim, the Chinese\nMuslim would instantly blink his eye",
+     "by": "Rizvi on Pakistan's foreign policy",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src55334",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Anis al Din Ahmad Rizvi, Pakistan (Bareilly, 1940); via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Jinnah liked to complain that the word Pakistan appeared nowhere in the Lahore Resolution. Hindus had invented it, he said. But a month before Lahore, in the western U.P. town of Bareilly, an Aligarh graduate named Anis al Din Ahmad Rizvi had already published a treatise. Its title was one word: Pakistan.",
+     "say": "Jinnah liked to complain that the word Pakistan appeared nowhere in the Lahore Resolution. Hindus had invented it, he said. But a month before Lahore, in the western U.P. town of Bareilly, an Ali-gur graduate named Anis al Din Ahmad Rizvi had already published a treatise. Its title was one word: Pakistan."
+    },
+    {
+     "text": "Rizvi wanted an Islamic state, ruled by the law of God. Its foreign policy would serve the whole Muslim world, bound so tightly, he wrote, that if a thorn pricked the foot of an African Muslim, a Chinese Muslim would blink."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "rizvimap",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 470,
+     "y": 372,
+     "k": 1.05,
+     "split": 0,
+     "und": 0.4,
+     "nb": 0.6,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Meerut",
+       "color": "#5fbf9a"
+      },
+      {
+       "name": "Aligarh",
+       "color": "#5fbf9a"
+      },
+      {
+       "name": "Agra",
+       "at": [
+        78.01,
+        27.18
+       ],
+       "color": "#5fbf9a",
+       "left": true
+      },
+      {
+       "name": "Dacca",
+       "color": "#5fbf9a"
+      },
+      {
+       "name": "Hyderabad",
+       "color": "#d9b26a"
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 5,
+       "d": 3.0,
+       "t": 2.4
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 1010,
+     "y": 360,
+     "w": 460,
+     "h": 360,
+     "anim": "fade"
+    },
+    {
+     "id": "l0",
+     "type": "typer",
+     "x": 1010,
+     "y": 220,
+     "text": "RIZVI'S THREE STATES",
+     "in": 0,
+     "d": 0.6,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 1010,
+     "y": 290,
+     "text": "north-west, with western U.P.:",
+     "in": 0,
+     "d": 2.4,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 1010,
+     "y": 320,
+     "text": "Meerut, Rohilkhand, Aligarh, Agra",
+     "in": 0,
+     "d": 3.4,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l3",
+     "type": "typer",
+     "x": 1010,
+     "y": 380,
+     "text": "east: Bengal and Assam",
+     "in": 0,
+     "d": 5.2,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l4",
+     "type": "typer",
+     "x": 1010,
+     "y": 440,
+     "text": "south: Hyderabad",
+     "in": 0,
+     "d": 6.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l5",
+     "type": "typer",
+     "x": 1010,
+     "y": 590,
+     "text": "modern borders shown, for orientation",
+     "in": 1,
+     "d": 0.6,
+     "size": 14,
+     "font": "type",
+     "color": "#8a7e68",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src14795",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Rizvi, Pakistan (1940), map; reproduced in Dhulipala, Map 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "And he drew a map. Three Muslim states: one in the north-west that reached deep into U.P. itself, taking in Meerut, Rohilkhand, Aligarh and Agra; one in Bengal and Assam; and the princely state of Hyderabad in the south.",
+     "say": "And he drew a map. Three Muslim states: one in the north-west that reached deep into U.P. itself, taking in Meerut, Rohilkhand, Ali-gur and Agra; one in Bengal and Assam; and the princely state of Hyderabad in the south."
+    },
+    {
+     "text": "Those left outside would be protected the way the weavers of Tanda imagined: by Hindus living inside Pakistan. Rizvi even welcomed exchanges of population. The hostage idea had reached the mofussil before the Resolution was passed."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "The Reluctant Leaders",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Allahabad and Lucknow · 1940"
+  },
+  {
+   "type": "scene",
+   "id": "ismail",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "i",
+     "type": "dossier",
+     "x": 300,
+     "y": 350,
+     "name": "Nawab Ismail Khan",
+     "role": "President, U.P. Muslim League",
+     "years": "of Meerut",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "A MODERATE",
+     "tagColor": "#3a6ea5"
+    },
+    {
+     "id": "iq",
+     "type": "cquote",
+     "x": 880,
+     "y": 240,
+     "w": 520,
+     "size": 26,
+     "text": "some kind of confederation\nwill come into being",
+     "by": "Ismail Khan, Allahabad, 1940",
+     "in": 0,
+     "d": 2.6,
+     "anim": "fade"
+    },
+    {
+     "id": "i1",
+     "type": "typer",
+     "x": 880,
+     "y": 380,
+     "text": "no exchange of populations",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "i2",
+     "type": "typer",
+     "x": 880,
+     "y": 420,
+     "text": "OSS: would settle 'even at the cost of",
+     "in": 1,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "i3",
+     "type": "typer",
+     "x": 880,
+     "y": 450,
+     "text": "modifying the demand for Pakistan'",
+     "in": 1,
+     "d": 2.6,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "i4",
+     "type": "typer",
+     "x": 880,
+     "y": 540,
+     "text": "'Now the old man is talking sense'",
+     "in": 2,
+     "d": 0.6,
+     "size": 20,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src34621",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Indian Annual Register 1940; OSS report 4162.1 (1946); K. H. Khurshid, Memories of Jinnah; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The man in charge of the League in U.P. was not so sure. Nawab Ismail Khan told Hindus not to worry. There would be no exchange of populations, he said, and the new sovereign states might well join a confederation with the rest of India."
+    },
+    {
+     "text": "An American intelligence report later called him a moderate, a man who would settle with Congress even at the cost of watering down Pakistan."
+    },
+    {
+     "text": "Jinnah's secretary recorded a joke told at a film show. What if the Qaid lost his memory, like the hero of Random Harvest, and asked his committee, what is this Pakistan nonsense? Ismail Khan, came the punchline, would say: now the old man is talking sense."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "shia",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.06,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "doc",
+     "x": 380,
+     "y": 320,
+     "w": 440,
+     "h": 228,
+     "title": "RAJA OF MAHMUDABAD (SENIOR)",
+     "meta": "to M. A. Jinnah, 29 March 1940 (substance)",
+     "lines": [
+      "Shia rights need safeguards.",
+      "Could the Viceroy step in",
+      "if they were threatened?"
+     ],
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": -1.5,
+     "sfx": "type",
+     "vol": 0.4
+    },
+    {
+     "id": "j",
+     "type": "doc",
+     "x": 900,
+     "y": 360,
+     "w": 460,
+     "h": 254,
+     "title": "M. A. JINNAH",
+     "meta": "reply (excerpt)",
+     "lines": [
+      "The hand of the British government",
+      "is disappearing rapidly ...",
+      "The one thing alone that matters",
+      "is that we are all Musalmans."
+     ],
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "cps": 26,
+     "rot": 1.5,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 3,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 0.5,
+       "t": 1.2
+      }
+     }
+    },
+    {
+     "id": "src9275",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Mahmudabad-Jinnah correspondence, QA Papers; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Even the Mahmudabads, the richest Muslim family in Awadh, hesitated. They were Shias. Days after Lahore the old Raja wrote to Jinnah asking for safeguards for his sect, and for the Viceroy to step in if Shia rights were threatened."
+    },
+    {
+     "text": "Jinnah's reply was cold. The British were leaving. The League alone would now do justice between Muslim and Muslim. The one thing alone that matters, he wrote, is that we are all Musalmans."
+    },
+    {
+     "text": "The Raja wired back that he was ill, that his brain worked like a wireless in bad weather. Within a week the family had fallen into line."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "Islamic, Not Muslim",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bombay · May 1940"
+  },
+  {
+   "type": "scene",
+   "id": "raja",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "r",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Raja of Mahmudabad",
+     "role": "chair, Pakistan delegation",
+     "years": "1914 – 1973",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "none",
+     "glasses": true,
+     "tag": "THE NEPHEW",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 860,
+     "y": 220,
+     "text": "I say Islamic, not Muslim.",
+     "in": 0,
+     "d": 2.4,
+     "size": 36,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 18
+    },
+    {
+     "id": "a1",
+     "type": "typer",
+     "x": 860,
+     "y": 320,
+     "text": "the second Islamic state, after Medina",
+     "in": 1,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a2",
+     "type": "typer",
+     "x": 860,
+     "y": 370,
+     "text": "'a laboratory wherein we may experiment'",
+     "in": 1,
+     "d": 2.4,
+     "size": 19,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a3",
+     "type": "typer",
+     "x": 860,
+     "y": 450,
+     "text": "prohibition · no usury · zakat",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a4",
+     "type": "typer",
+     "x": 860,
+     "y": 500,
+     "text": "a 'democratic-theocratic State'",
+     "in": 2,
+     "d": 2.4,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src66161",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Speech to the Bombay Provincial Muslim League, May 1940; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "His son was a different matter. The young Raja of Mahmudabad, whom Jinnah called his nephew, had skipped Lahore. Jinnah made him chairman of the delegation sent out to sell Pakistan to Muslims across India."
+    },
+    {
+     "text": "In Bombay in May 1940 he told the provincial League what Pakistan was for. The creation of an Islamic state, he said, mark my words, gentlemen, I say Islamic, not Muslim, is our ideal. The first Islamic state had been the Prophet's Medina. Pakistan would be the second, thirteen centuries later: a laboratory, he called it.",
+     "say": "In Bombay in May 1940 he told the provincial League what Pakistan was for. The creation of an Islamic state, he said, mark my words, gentlemen, I say Islamic, not Muslim, is our ideal. The first Islamic state had been the Prophet's Madeena. Pakistan would be the second, thirteen centuries later: a laboratory, he called it."
+    },
+    {
+     "text": "Its laws would come from Islam, fixed for ever. There would be prohibition, no usury, and zakat. Non-Muslims would share in the blessings of what he called a democratic-theocratic state."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "yap",
+   "bg": {
+    "kind": "room",
+    "pal": "sepia"
+   },
+   "cam": {
+    "zoom": [
+     1.05,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "y",
+     "type": "doc",
+     "x": 400,
+     "y": 330,
+     "w": 500,
+     "h": 280,
+     "title": "MAHMUDABAD TO JINNAH",
+     "meta": "after visiting Muzaffarnagar (excerpt)",
+     "lines": [
+      "Could not the same be done in other",
+      "districts? And then at the Centre?",
+      "We have had enough of democratic",
+      "yap yapping. Only one man at the head",
+      "can work and does the work."
+     ],
+     "in": 0,
+     "d": 0.6,
+     "anim": "rise",
+     "cps": 28,
+     "rot": -1,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 2,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 8.0,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "oq",
+     "type": "cquote",
+     "x": 920,
+     "y": 260,
+     "w": 460,
+     "size": 22,
+     "text": "the outposts of Islam will go forward,\nthey will not be withdrawn",
+     "by": "Mahmudabad, 1941",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "sq",
+     "type": "cquote",
+     "x": 920,
+     "y": 460,
+     "w": 460,
+     "size": 22,
+     "text": "one and only one Islamic\nSultanate for all of us",
+     "by": "Mahmudabad at Sasaram, Bihar",
+     "in": 1,
+     "d": 5.0,
+     "anim": "fade"
+    },
+    {
+     "id": "src80775",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Mahmudabad to Jinnah, QA Papers; Sidq, 11 May 1941; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "And who would run this state? In Muzaffarnagar the district League had been dissolved and a single man put in charge. Mahmudabad wrote to Jinnah: could not the same be done everywhere, and then at the centre? We have had enough, he wrote, of democratic yap yapping."
+    },
+    {
+     "text": "Nor would Pakistan mean Muslims retreating from India. The outposts of Islam, he said, will go forward. And at Sasaram, in Bihar, he went further still: the world's Muslims wanted one and only one Islamic sultanate for all of them."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "The Jumping-Off Ground",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Lucknow · 1940 – 1942"
+  },
+  {
+   "type": "scene",
+   "id": "khaliq",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "k",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Chaudhry Khaliquzzaman",
+     "role": "U.P. League leader; pan-Islamist",
+     "years": "1889 – 1973",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "PAN-ISLAM",
+     "tagColor": "#8a5a2a"
+    },
+    {
+     "id": "kq",
+     "type": "cquote",
+     "x": 870,
+     "y": 250,
+     "w": 560,
+     "size": 23,
+     "text": "Pakistan is not the final goal ...\nPakistan is only the jumping off ground.",
+     "by": "Chaudhry Khaliquzzaman",
+     "in": 0,
+     "d": 3.0,
+     "anim": "fade"
+    },
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 870,
+     "y": 420,
+     "text": "to the Governor, February 1940: three dominions",
+     "in": 1,
+     "d": 0.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 870,
+     "y": 465,
+     "text": "minorities on each side guarantee the other",
+     "in": 1,
+     "d": 2.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 870,
+     "y": 540,
+     "text": "'there would be retaliation'",
+     "in": 1,
+     "d": 17.0,
+     "size": 21,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src74782",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Sidq, 21 October 1940; Hallett to Linlithgow, 16 February 1940, Linlithgow Papers; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Chaudhry Khaliquzzaman, the League's strongman in Lucknow, had been a pan-Islamist since his youth, when he went to Turkey with a medical mission during the Balkan Wars. Just as the Prophet created the first Pakistan in Arabia, he told students, the League would create another in India. Pakistan, he declared, was not the final goal, only the jumping off ground.",
+     "say": "Chaudhry Kha-leek-uz-za-maan, the League's strongman in Luck-now, had been a pan-Islamist since his youth, when he went to Turkey with a medical mission during the Balkan Wars. Just as the Prophet created the first Pakistan in Arabia, he told students, the League would create another in India. Pakistan, he declared, was not the final goal, only the jumping off ground."
+    },
+    {
+     "text": "Weeks before Lahore he laid out a plan to the Governor of U.P. Two Muslim dominions and one Hindu one. Muslims left in the Hindu dominion would be safe because Hindus in the Muslim dominions would be treated the same way. The Governor wrote down how he had put it back to him, bluntly: in other words, there would be retaliation."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "readjust",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 470,
+     "y": 372,
+     "k": 1.05,
+     "split": 0,
+     "und": 0.4,
+     "nb": 0.6,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Lahore",
+       "color": "#5fbf9a",
+       "left": true
+      },
+      {
+       "name": "Ambala",
+       "at": [
+        76.78,
+        30.38
+       ],
+       "color": "#d7263d"
+      },
+      {
+       "name": "Calcutta",
+       "color": "#d7263d",
+       "left": true
+      },
+      {
+       "name": "Chittagong",
+       "color": "#5fbf9a"
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 4,
+       "d": 2.4,
+       "t": 3.0
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 1010,
+     "y": 380,
+     "w": 470,
+     "h": 420,
+     "anim": "fade"
+    },
+    {
+     "id": "l0",
+     "type": "typer",
+     "x": 1010,
+     "y": 210,
+     "text": "'TERRITORIAL READJUSTMENTS'",
+     "in": 0,
+     "d": 0.6,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 1010,
+     "y": 270,
+     "text": "lost: Calcutta, its port, coal and iron",
+     "in": 0,
+     "d": 3.0,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 1010,
+     "y": 305,
+     "text": "lost: the Ambala division of Punjab",
+     "in": 0,
+     "d": 4.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 1010,
+     "y": 450,
+     "w": 420,
+     "size": 22,
+     "text": "a political remedy ...\nalso a psychological cure",
+     "by": "Khaliquzzaman to Jinnah, 7 October 1942",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "l3",
+     "type": "typer",
+     "x": 1010,
+     "y": 560,
+     "text": "no reply came",
+     "in": 1,
+     "d": 22.0,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src60202",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Khaliquzzaman to Jinnah, 7 October 1942; Pathway to Pakistan (1961); via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "But Khaliq was worried about three words in the Lahore Resolution: with territorial readjustments. Reading the 1941 census, he saw what they could mean. Bengal's Hindu-majority west, with Calcutta, its port, its coal and its iron, could be cut away. So could Punjab's eastern districts. Pakistan would be left with flood plains and a sleepy port at Chittagong."
+    },
+    {
+     "text": "He wrote to Jinnah in October 1942, and he said the quiet part plainly. One basic principle behind Pakistan was keeping hostages in the Muslim provinces against the Muslims in Hindu provinces. Pakistan was a political remedy, and also a psychological cure. Let the Hindus of Punjab and Bengal go, and the cure would fail. Jinnah never replied."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "liaquat",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "l",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Liaquat Ali Khan",
+     "role": "General Secretary, Muslim League",
+     "years": "1895 – 1951",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "TRIAL BALLOONS?",
+     "tagColor": "#3a6ea5"
+    },
+    {
+     "id": "b0",
+     "type": "typer",
+     "x": 870,
+     "y": 200,
+     "text": "LAHORE, MARCH 1940",
+     "in": 0,
+     "d": 0.6,
+     "size": 20,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 870,
+     "y": 240,
+     "text": "the phrase means claiming 'Delhi and Aligarh'",
+     "in": 0,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b2",
+     "type": "typer",
+     "x": 870,
+     "y": 330,
+     "text": "DELHI, SEPTEMBER 1942",
+     "in": 1,
+     "d": 0.4,
+     "size": 20,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "b3",
+     "type": "typer",
+     "x": 870,
+     "y": 370,
+     "text": "to a US diplomat: a vote only in eastern Bengal",
+     "in": 1,
+     "d": 1.8,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b4",
+     "type": "typer",
+     "x": 870,
+     "y": 405,
+     "text": "and, yes, without Calcutta",
+     "in": 1,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b5",
+     "type": "typer",
+     "x": 870,
+     "y": 500,
+     "text": "a week later Jinnah repudiates it",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src3123",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "US State Dept 845.00/1574, 9 September 1942; S. S. Pirzada, 'The Lahore Resolution 1940' (1970); via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The phrase had been defended at Lahore by Liaquat Ali Khan. It was not meant to give up any part of Punjab or Bengal, he told the drafting committee, but to claim centres of Muslim culture like Delhi and Aligarh.",
+     "say": "The phrase had been defended at Lahore by Lee-aa-kut Ali Khan. It was not meant to give up any part of Punjab or Bengal, he told the drafting committee, but to claim centres of Muslim culture like Delhi and Ali-gur."
+    },
+    {
+     "text": "Two years later he told an American diplomat something else. A plebiscite would be held only in eastern Bengal, where Muslims were a clear majority. When the diplomat said that would cost Pakistan Calcutta, Liaquat agreed.",
+     "say": "Two years later he told an American diplomat something else. A plebiscite would be held only in eastern Bengal, where Muslims were a clear majority. When the diplomat said that would cost Pakistan Calcutta, Lee-aa-kut agreed."
+    },
+    {
+     "text": "A week later Jinnah told the same diplomat that Calcutta would be in Pakistan, and nearly all of Punjab too. Was Liaquat freelancing, or floating a trial balloon for his chief? Dhulipala's point is that a smaller Pakistan was thinkable at the top as early as 1942.",
+     "say": "A week later Jinnah told the same diplomat that Calcutta would be in Pakistan, and nearly all of Punjab too. Was Lee-aa-kut freelancing, or floating a trial balloon for his chief? Doo-lee-paa-la's point is that a smaller Pakistan was thinkable at the top as early as 1942."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "A Constitution in a Drawer",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Lucknow · 1940 – 1957"
+  },
+  {
+   "type": "scene",
+   "id": "nizam",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "tome",
+     "x": 300,
+     "y": 330,
+     "w": 190,
+     "h": 250,
+     "title": "Islam ka Siyasi Nizam",
+     "author": "M. Ishaq Sandelvi · drafted c. 1940–41",
+     "color": "#3a4a2a",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "n1",
+     "type": "typer",
+     "x": 900,
+     "y": 230,
+     "text": "commissioned by the U.P. League, with leading ulama",
+     "in": 0,
+     "d": 1.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n2",
+     "type": "typer",
+     "x": 900,
+     "y": 265,
+     "text": "convenor: Syed Sulaiman Nadwi",
+     "in": 0,
+     "d": 3.4,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n3",
+     "type": "typer",
+     "x": 900,
+     "y": 330,
+     "text": "God is sovereign; a Caliph governs",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n4",
+     "type": "typer",
+     "x": 900,
+     "y": 370,
+     "text": "majority rule called 'a rather stupid rule'",
+     "in": 1,
+     "d": 2.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n5",
+     "type": "typer",
+     "x": 900,
+     "y": 410,
+     "text": "council closed to non-Muslims, Shias, Ahmadis",
+     "in": 1,
+     "d": 4.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n6",
+     "type": "typer",
+     "x": 900,
+     "y": 490,
+     "text": "never debated · one copy lost · printed 1957",
+     "in": 2,
+     "d": 0.4,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "n7",
+     "type": "typer",
+     "x": 900,
+     "y": 530,
+     "text": "a source for the ulama's demands in Pakistan",
+     "in": 2,
+     "d": 2.6,
+     "size": 17,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src28710",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Sandelvi, Islam ka Siyasi Nizam (Azamgarh, 1957), foreword by Abdul Majid Daryabadi; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Soon after Lahore, Ismail Khan called together leading scholars at the Nadwatul Ulama in Lucknow, among them Sulaiman Nadwi and Abul Ala Mawdudi, to draft a constitution for an Islamic state in Pakistan. A little-known scholar from the Nadwa, Ishaq Sandelvi, was asked for a first draft. He produced more than three hundred pages.",
+     "say": "Soon after Lahore, Ismail Khan called together leading scholars at the Nadwatul Ulama in Luck-now, among them Su-lay-maan Nud-vee and Abul Ala Mow-doo-dee, to draft a constitution for an Islamic state in Pakistan. A little-known scholar from the Nadwa, Ishaq Sandelvi, was asked for a first draft. He produced more than three hundred pages."
+    },
+    {
+     "text": "In his design God was sovereign and a pious Caliph governed, chosen by scholars and notables rather than the masses. Majority rule, the draft said, was a rather stupid rule. The Caliph could overrule even a unanimous council, and that council was closed to non-Muslims, Shias and Ahmadis."
+    },
+    {
+     "text": "The committee never met again to debate it. One copy vanished in the post. But Nadwi kept his, and it was printed in 1957. By then Nadwi had moved to Pakistan to advise its Constituent Assembly on an Islamic constitution, and, Dhulipala argues, this draft fed directly into what the ulama asked for.",
+     "say": "The committee never met again to debate it. One copy vanished in the post. But Nadwi kept his, and it was printed in 1957. By then Nadwi had moved to Pakistan to advise its Constituent Assembly on an Islamic constitution, and, Doo-lee-paa-la argues, this draft fed directly into what the oo-la-maa asked for."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "A Friday in Badayun",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "19 April 1940"
+  },
+  {
+   "type": "scene",
+   "id": "badayun",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 190,
+     "text": "'in a democracy, people are counted, not weighed'",
+     "in": 0,
+     "d": 0.6,
+     "size": 26,
+     "font": "serif",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "b0",
+     "type": "typer",
+     "x": 640,
+     "y": 245,
+     "text": "Maulvi Musavvir Ali Khan, District League, Badayun",
+     "in": 0,
+     "d": 3.6,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b1",
+     "type": "typer",
+     "x": 360,
+     "y": 340,
+     "text": "no earthquake, no Great Wall:",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b2",
+     "type": "typer",
+     "x": 360,
+     "y": 375,
+     "text": "the Frontier Mail will still run",
+     "in": 1,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b3",
+     "type": "typer",
+     "x": 920,
+     "y": 340,
+     "text": "U.P. stays out of Pakistan",
+     "in": 2,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "b4",
+     "type": "typer",
+     "x": 920,
+     "y": 375,
+     "text": "its Muslims make 'a necessary sacrifice'",
+     "in": 2,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 520,
+     "w": 560,
+     "size": 25,
+     "text": "the hand amputated\nto save the body",
+     "by": "his metaphor for Muslims left behind",
+     "in": 3,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src96474",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Musavvir Ali Khan, Musalmanan-i-Hind ka Siyasi Nasbul Ain aur Jamhuriyat-i-Hind (Badayun, 1940); via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "On the nineteenth of April 1940 the League held Pakistan Day across India. In Badayun, after Friday prayers, a local lawyer named Musavvir Ali Khan explained the demand in a speech so admired that the district League paid to print it. Its title promised the political ideal goal of India's Muslims."
+    },
+    {
+     "text": "Democracy, he said, counted people instead of weighing them. Under a single federation Muslims would be outvoted for ever."
+    },
+    {
+     "text": "To those who wept over a divided motherland he was scornful. No earthquake would split the land and no Great Wall would rise. The Frontier Mail would still run from U.P. to Punjab."
+    },
+    {
+     "text": "Unlike Rizvi, he now left all of U.P. out of Pakistan. Its Muslims, he admitted, would gain nothing. They would make a necessary sacrifice, like a hand amputated to save the body. And the balance of power, he promised, would keep them safe."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "contest",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 386,
+     "y": 609,
+     "k": 3.0,
+     "split": 0,
+     "und": 0,
+     "nb": 0.8,
+     "up": 0.55,
+     "upLabel": false,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Delhi",
+       "color": "#7fb2d9"
+      },
+      {
+       "name": "Aligarh",
+       "color": "#d7263d"
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 1,
+       "d": 0.6,
+       "t": 1.0
+      },
+      "2": {
+       "lit": 2,
+       "d": 0.6,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "pn",
+     "type": "panel",
+     "x": 980,
+     "y": 380,
+     "w": 500,
+     "h": 470,
+     "anim": "fade"
+    },
+    {
+     "id": "c0",
+     "type": "typer",
+     "x": 980,
+     "y": 190,
+     "text": "AZAD MUSLIM CONFERENCE · DELHI",
+     "in": 0,
+     "d": 0.6,
+     "size": 19,
+     "font": "bebas",
+     "color": "#7fb2d9",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 2
+    },
+    {
+     "id": "c1",
+     "type": "typer",
+     "x": 980,
+     "y": 225,
+     "text": "perhaps 50,000 attend",
+     "in": 0,
+     "d": 2.4,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c2",
+     "type": "typer",
+     "x": 980,
+     "y": 295,
+     "text": "Allah Bakhsh, Premier of Sind:",
+     "in": 1,
+     "d": 0.4,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c3",
+     "type": "typer",
+     "x": 980,
+     "y": 330,
+     "text": "the east 'ten times more fantastic'",
+     "in": 1,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c4",
+     "type": "typer",
+     "x": 980,
+     "y": 410,
+     "text": "SIKH CONFERENCE · ALIGARH · JUNE 1940",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 2
+    },
+    {
+     "id": "c5",
+     "type": "typer",
+     "x": 980,
+     "y": 445,
+     "text": "'an ocean of Sikh blood' (Tara Singh)",
+     "in": 2,
+     "d": 2.0,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c6",
+     "type": "typer",
+     "x": 980,
+     "y": 480,
+     "text": "about 23,000 converts reported",
+     "in": 2,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c7",
+     "type": "typer",
+     "x": 980,
+     "y": 560,
+     "text": "the League answers with a National Guard",
+     "in": 2,
+     "d": 12.0,
+     "size": 17,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src43568",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Indian Annual Register 1940; U.P. Police Abstracts of Intelligence, 1940; via Dhulipala, ch. 4",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Pakistan was not only preached in U.P. It was fought over. A month after Lahore, Congress-minded Muslims led by the Deobandi ulama held an Azad Muslim Conference in Delhi. Observers put the crowd at fifty thousand, as large as Lahore's. The Premier of Sind called a Pakistan in the east ten times more fantastic and a hundred times more fragile than one in the west.",
+     "say": "Pakistan was not only preached in U.P. It was fought over. A month after Lahore, Congress-minded Muslims led by the Day-oh-bun-dee oo-la-maa held an Azad Muslim Conference in Delhi. Observers put the crowd at fifty thousand, as large as Lahore's. The Premier of Sind called a Pakistan in the east ten times more fantastic and a hundred times more fragile than one in the west."
+    },
+    {
+     "text": "Hindu Sabha workers held an anti-Pakistan day. The Akali leader Master Tara Singh told a Lucknow conference that Pakistan would have to pass through an ocean of Sikh blood.",
+     "say": "Hindu Sabha workers held an anti-Pakistan day. The Akali leader Master Tara Singh told a Luck-now conference that Pakistan would have to pass through an ocean of Sikh blood."
+    },
+    {
+     "text": "In June, at a Sikh conference in Aligarh, police reported a procession a mile long, twenty elephants, and about twenty-three thousand people converting to Sikhism, with thousands of free kirpans handed out. The League began enrolling Muslims in its National Guard. The temperature was rising.",
+     "say": "In June, at a Sikh conference in Ali-gur, police reported a procession a mile long, twenty elephants, and about twenty-three thousand people converting to Sikhism, with thousands of free kirpans handed out. The League began enrolling Muslims in its National Guard. The temperature was rising."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "chapterx",
+   "kicker": "Chapter Seven",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "U.P. Leaguers publicly promised\nPakistan as an Islamic state.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Mahmudabad, Khaliquzzaman, Rizvi, Musavvir Ali Khan"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "That promise was the League's\nsettled policy.",
+     "level": "debated",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Jinnah stayed vague; rhetoric is not a programme"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "A smaller Pakistan was accepted\nat the top by 1942.",
+     "level": "partial",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Liaquat to a US diplomat; Jinnah repudiated it a week later"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "Hostage minorities would keep\neach other safe.",
+     "level": "weak",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "In 1947 minorities on both sides were massacred and expelled"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That U.P.'s League leaders publicly sold Pakistan as an Islamic state: well supported. The speeches and pamphlets survive in their own words."
+    },
+    {
+     "text": "That this was the League's settled policy: debated. Jinnah himself rarely spoke in such terms, and critics argue that what a party says to rally its base is not the same as a programme for government."
+    },
+    {
+     "text": "That a smaller Pakistan was accepted at the top as early as 1942: partly supported. An American record backs Khaliquzzaman's suspicion about Liaquat. But Jinnah publicly and privately demanded far more.",
+     "say": "That a smaller Pakistan was accepted at the top as early as 1942: partly supported. An American record backs Kha-leek-uz-za-maan's suspicion about Lee-aa-kut. But Jinnah publicly and privately demanded far more."
+    },
+    {
+     "text": "And that minorities, held as hostages on each side, would keep each other safe: weak. In 1947 the hostages became the victims, in Punjab and Bengal and beyond."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 210,
+     "text": "Islamic, or Muslim?",
+     "in": 0,
+     "d": 0.4,
+     "size": 42,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "h2",
+     "type": "typer",
+     "x": 640,
+     "y": 320,
+     "text": "1949 · the Objectives Resolution: sovereignty belongs to God",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 360,
+     "text": "1956 · the Islamic Republic of Pakistan",
+     "in": 1,
+     "d": 2.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h4",
+     "type": "typer",
+     "x": 640,
+     "y": 400,
+     "text": "1973 · Islam the state religion",
+     "in": 1,
+     "d": 4.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h5",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "1980 · a Federal Shariat Court",
+     "in": 1,
+     "d": 6.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "h6",
+     "type": "typer",
+     "x": 640,
+     "y": 545,
+     "text": "a 1940 argument that has never been settled",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src68144",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Constitutions of Pakistan, 1956 and 1973; Objectives Resolution, 12 March 1949",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Mahmudabad's distinction, Islamic, not Muslim, did not stay in 1940. A state for Muslims, or a state run by Islamic law? Pakistan has argued about it ever since."
+    },
+    {
+     "text": "In 1949 its Assembly declared that sovereignty belongs to God. In 1956 it became an Islamic Republic. In 1973 Islam was made the state religion, and in 1980 a Federal Shariat Court was set up to test laws against Islam."
+    },
+    {
+     "text": "And far beyond Pakistan, from South Asia to the Middle East, the same question keeps returning: is a state the home of a faith, or of all its citizens? That last observation is ours."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 6 · The Other Medina",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "Deoband · 1940 – 1945",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: the ulama who said no. Husain Ahmad Madani and the Jamiat Ulama-i-Hind argued that Muslims and Hindus could share one nation, as the Prophet's Medina once had. Their critique of Pakistan, and the price they paid for it.",
+     "say": "Next time: the oo-la-maa who said no. Hu-sain Ah-mud Ma-da-nee and the Jamiat Ulama-i-Hind argued that Muslims and Hindus could share one nation, as the Prophet's Madeena once had. Their critique of Pakistan, and the price they paid for it."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "Anis al Din Ahmad Rizvi, Pakistan (Bareilly, 1940) · Musavvir Ali Khan, Siyasi Nasbul Ain (Badayun, 1940)",
+    "M. Ishaq Sandelvi, Islam ka Siyasi Nizam (Azamgarh, 1957) · Chaudhry Khaliquzzaman, Pathway to Pakistan (1961)",
+    "Linlithgow Papers · P. W. Radice Papers · U.P. Police Abstracts of Intelligence (British Library)",
+    "US State Department papers (1942) · OSS Research and Analysis reports (1943, 1946)",
+    "K. H. Khurshid, Memories of Jinnah · Indian Annual Register (1940-42)",
+    "",
+    "# Scholarship and reviews",
+    "S. V. R. Nasr, The Vanguard of the Islamic Revolution (1994)",
+    "M. Qasim Zaman, 'South Asian Islam and the Idea of the Caliphate' (2013)",
+    "Pakistan constitutional history: Objectives Resolution (1949), constitutions of 1956 and 1973",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

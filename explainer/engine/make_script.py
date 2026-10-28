@@ -19,15 +19,20 @@ voice = ep["cast"].get(m.get("narrator", "narrator"), {})
 print(f"Narrator voice: `{voice.get('voice')}` at speed {voice.get('speed', 1.0)}. Score: original ambient ({m.get('music')}).\n")
 for seg in ep["sequence"]:
     if seg["type"] == "card":
-        if seg.get("style") == "end":
+        if seg.get("style") in ("end", "endx"):
             print(f"\n**[{fmt(times.get((seg['id'], None)))}] END CARD**\n")
             for c in seg.get("credits", []):
                 print(f"- {c}")
             continue
         label = f"{seg.get('kicker', '')}: " if seg.get("kicker") else ""
-        print(f"\n## [{fmt(times.get((seg['id'], None)))}] {label}{seg['title']}\n")
+        title = seg.get("title") or " ".join(seg.get("lines", []))
+        if seg.get("sub"):
+            title += f" ({seg['sub']})"
+        print(f"\n## [{fmt(times.get((seg['id'], None)))}] {label}{title}\n")
         continue
     bg = seg.get("bg", {})
+    if isinstance(bg, str):
+        bg = {"kind": bg}
     els = ", ".join(sorted({e["type"] for e in seg.get("els", [])}))
     print(f"\n_[{fmt(times.get((seg['id'], 0)))}] Scene `{seg['id']}`: {bg.get('kind', 'studio')} / {bg.get('pal', 'midnight')}; on screen: {els}._\n")
     for i, line in enumerate(seg["lines"]):

@@ -1,0 +1,4187 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E1",
+  "title": "The Séance",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India and its mass violence, and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "Seven years after his death, a seance summons the founder of Pakistan, and he sees 'flashes of evil pictures'. Episode 1 of a ten-part documentary on Venkat Dhulipala's Creating a New Medina: the claim that Pakistan was not a vague accident but a plentifully imagined Islamic state, a new Medina, argued over in the towns of north India, and the critics who disagree.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015); reviews by F. Devji (The Wire, 2015), S. I. Khan (Marginalia Review), P. B. Mehta (Indian Express, 2015), I. Talbot (JAS, 2015); A. Jalal, The Sole Spokesman (1985).",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "The British Library, London.",
+    "India Office Records."
+   ],
+   "sub": "THE PRIVATE PAPERS OF MOHAMMAD ALI JINNAH",
+   "dur": 5.2,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "archive",
+   "bg": {
+    "kind": "corridor",
+    "pal": "sepia",
+    "speed": 0.08
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.08
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "LONDON · INDIA OFFICE RECORDS",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "reel",
+     "type": "doc",
+     "x": 640,
+     "y": 380,
+     "w": 380,
+     "h": 470,
+     "rot": -2,
+     "title": "QAID-I-AZAM PAPERS",
+     "meta": "Microfilm Neg. 10811 · File 1067",
+     "lines": [
+      "Handwritten record.",
+      "13 March 1955, 6 p.m.",
+      "",
+      "A seance."
+     ],
+     "cps": 16,
+     "in": 1,
+     "d": 0.2,
+     "anim": "rise",
+     "sfx": "type",
+     "vol": 0.5,
+     "stamp": "FILE 1067",
+     "stampOn": 0,
+     "keys": {
+      "2": {
+       "stampOn": 1,
+       "d": 0.1,
+       "t": 0.3
+      }
+     }
+    },
+    {
+     "id": "src47718",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Qaid-i-Azam Papers, Neg. 10811, File 1067, British Library; as described in Dhulipala, Introduction",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Late one evening, a historian working through microfilm of Jinnah's private papers came across a document that had no business being there."
+    },
+    {
+     "text": "Handwritten. The ink fading. It was the record of a séance."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "seance",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.12,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      30
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "13 MARCH 1955 · 6 P.M.",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "table",
+     "type": "seance",
+     "x": 640,
+     "y": 600,
+     "size": 0.95,
+     "anim": "fade",
+     "smoke": 0,
+     "keys": {
+      "3": {
+       "smoke": 1,
+       "d": 2.5,
+       "t": 3
+      }
+     }
+    },
+    {
+     "id": "who",
+     "type": "typer",
+     "x": 640,
+     "y": 110,
+     "text": "Present: a spiritualist. A Mr Ibrahim, government officer.",
+     "in": 1,
+     "d": 0.5,
+     "size": 20,
+     "font": "type",
+     "color": "#d9c49a",
+     "anim": "none"
+    },
+    {
+     "id": "src709",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Seance transcript in the Qaid-i-Azam Papers, quoted in Dhulipala, Introduction",
+     "in": 0,
+     "d": 1.0,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Six in the evening, the thirteenth of March, 1955. Pakistan is eight years old. Its founder, Mohammad Ali Jinnah, has been dead for nearly seven."
+    },
+    {
+     "text": "A government officer, a certain Mr Ibrahim, has hired a spiritualist to call him back."
+    },
+    {
+     "text": "The spiritualist politely offers the guest a seat. The spirit answers, rather tartly, that it is already seated."
+    },
+    {
+     "text": "In life, the Qaid-i-Azam was a heavy smoker. So a cigarette is lit and fixed on a wire stand, for the spirit to smoke while it answers.",
+     "say": "In life, the Kaa-id-ee-Aa-zam was a heavy smoker. So a cigarette is lit and fixed on a wire stand, for the spirit to smoke while it answers."
+    },
+    {
+     "text": "",
+     "dur": 2.4
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "transcript",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tx",
+     "type": "doc",
+     "x": 430,
+     "y": 362,
+     "w": 470,
+     "h": 560,
+     "rot": 1.5,
+     "title": "SEANCE, 13.3.1955",
+     "meta": "Excerpts, condensed. Quoted phrases verbatim.",
+     "lines": [
+      "Q. Sir, won't you guide the destiny",
+      "   of the nation now?",
+      "A. Not my place any more. I see",
+      "   'flashes of evil pictures",
+      "    about Pakistan'.",
+      "Q. A prosperous future?",
+      "A. 'I don't think so.'",
+      "Q. Your advice to its rulers?",
+      "A. 'Selflessness, selflessness.'"
+     ],
+     "cps": 24,
+     "anim": "rise",
+     "sfx": "type",
+     "vol": 0.5,
+     "hl": 3,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 4.5,
+       "t": 0.8
+      }
+     }
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 930,
+     "y": 330,
+     "w": 520,
+     "size": 28,
+     "text": "It is easier to acquire\na country, but it is\nextremely difficult\nto retain it.",
+     "by": "the 'spirit', 1955",
+     "in": 3,
+     "d": 0.3,
+     "anim": "fade"
+    },
+    {
+     "id": "src95321",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Qaid-i-Azam Papers, File 1067, quoted in Dhulipala, Introduction",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Mr Ibrahim asks the father of the nation to guide its destiny. The spirit refuses. That is no longer its place, it says, though it often sees 'flashes of evil pictures about Pakistan'."
+    },
+    {
+     "text": "Is there a prosperous future? 'I don't think so,' comes the reply. Its only advice to Pakistan's rulers is selflessness."
+    },
+    {
+     "text": "And then a line that historians keep coming back to."
+    },
+    {
+     "text": "'It is easier to acquire a country,' says the spirit, 'but it is extremely difficult to retain it.'"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "sfx": "bell"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "crisis",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      10,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "yr",
+     "type": "year",
+     "x": 380,
+     "y": 330,
+     "value": 1948,
+     "size": 150,
+     "anim": "fade",
+     "glowColor": "#d7263d",
+     "keys": {
+      "1": {
+       "value": 1951,
+       "d": 2.5,
+       "t": 1.5
+      },
+      "2": {
+       "value": 1958,
+       "d": 3.0,
+       "t": 1.5
+      }
+     }
+    },
+    {
+     "id": "e1",
+     "type": "typer",
+     "x": 880,
+     "y": 170,
+     "text": "Sept 1948 · Jinnah dies",
+     "in": 1,
+     "d": 0.2,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "e2",
+     "type": "typer",
+     "x": 880,
+     "y": 230,
+     "text": "1947-48 · war over Kashmir",
+     "in": 1,
+     "d": 1.8,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "e3",
+     "type": "typer",
+     "x": 880,
+     "y": 290,
+     "text": "1951 · Liaquat Ali Khan assassinated",
+     "in": 1,
+     "d": 3.6,
+     "size": 20,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "e4",
+     "type": "typer",
+     "x": 880,
+     "y": 350,
+     "text": "1950s · no agreed constitution",
+     "in": 2,
+     "d": 0.4,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "e5",
+     "type": "typer",
+     "x": 880,
+     "y": 410,
+     "text": "1958 · first martial law",
+     "in": 2,
+     "d": 3.2,
+     "size": 20,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "e6",
+     "type": "typer",
+     "x": 880,
+     "y": 490,
+     "text": "and after: coups, insurgencies,\nsectarian killing, leaders killed or exiled",
+     "in": 3,
+     "d": 0.3,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "r",
+     "type": "rule",
+     "x": 880,
+     "y": 455,
+     "w": 420,
+     "draw": 0,
+     "in": 3,
+     "anim": "none",
+     "keys": {
+      "3": {
+       "draw": 1,
+       "d": 0,
+       "t": 0.8
+      }
+     }
+    },
+    {
+     "id": "src58862",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, Introduction; standard chronology of Pakistan, 1947-58",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Whatever one makes of talking to the dead, the document records something real: a sense of crisis, almost from the start."
+    },
+    {
+     "text": "Jinnah died in September 1948, barely a year after independence. There was war with India over Kashmir. In 1951 the prime minister, Liaquat Ali Khan, was shot dead.",
+     "say": "Jinnah died in September 1948, barely a year after independence. There was war with India over Kashmir. In 1951 the prime minister, Lee-aa-kut Ali Khan, was shot dead."
+    },
+    {
+     "text": "Secularists, clerics, Islamists and regional parties could not agree on a constitution. Governments came and went. In 1958 came the first martial law."
+    },
+    {
+     "text": "Coups, insurgencies, sectarian killing, and leaders assassinated or driven into exile have followed ever since."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "question",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "why",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "Why so soon?",
+     "in": 0,
+     "d": 0.5,
+     "size": 56,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "italic": true
+    },
+    {
+     "id": "acc",
+     "type": "typer",
+     "x": 640,
+     "y": 300,
+     "text": "a slogan · a bargaining chip · an accident",
+     "in": 1,
+     "d": 0.3,
+     "size": 24,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    },
+    {
+     "id": "bk",
+     "type": "tome",
+     "x": 640,
+     "y": 500,
+     "w": 190,
+     "h": 250,
+     "title": "Creating a New Medina",
+     "author": "Venkat Dhulipala",
+     "color": "#5a1a1a",
+     "in": 2,
+     "d": 0.8,
+     "anim": "rise"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Why was the new country in trouble so soon? For decades, one answer has dominated the history books."
+    },
+    {
+     "text": "Pakistan, it says, was never really imagined. It was a slogan, a bargaining chip, a country that came about almost by accident."
+    },
+    {
+     "text": "This series follows a historian who went into the archives and came back with the opposite answer."
+    },
+    {
+     "text": "His name is Venkat Dhulipala. His book is called Creating a New Medina.",
+     "say": "His name is Venkat Doo-lee-paa-la. His book is called Creating a New Madeena."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 1 · The Séance",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.5,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "The Accidental Country",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "1940 – 1947"
+  },
+  {
+   "type": "scene",
+   "id": "partition",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 560,
+     "y": 372,
+     "k": 1.05,
+     "draw": 0,
+     "split": 0,
+     "nb": 0.8,
+     "anim": "fade",
+     "labels": [
+      {
+       "text": "INDIA",
+       "at": [
+        78.5,
+        21.5
+       ]
+      },
+      {
+       "text": "PAKISTAN",
+       "at": [
+        69.5,
+        28.6
+       ],
+       "size": 18
+      },
+      {
+       "text": "EAST PAKISTAN",
+       "at": [
+        92.6,
+        26.9
+       ],
+       "size": 12
+      }
+     ],
+     "labelsOn": 0,
+     "keys": {
+      "0": {
+       "draw": 1,
+       "d": 0,
+       "t": 4
+      },
+      "1": {
+       "split": 1,
+       "labelsOn": 1,
+       "d": 0.2,
+       "t": 1.6
+      }
+     }
+    },
+    {
+     "id": "d1",
+     "type": "typer",
+     "x": 1010,
+     "y": 250,
+     "text": "Deaths: est. 200,000 to 2 million",
+     "in": 2,
+     "d": 0.6,
+     "size": 19,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "d2",
+     "type": "typer",
+     "x": 1010,
+     "y": 300,
+     "text": "Uprooted: est. 10 to 20 million",
+     "in": 2,
+     "d": 2.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src10583",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Commonly cited scholarly ranges, e.g. Yasmin Khan, The Great Partition (2007)",
+     "in": 2,
+     "d": 0.4,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In August 1947 the British left, and their Indian empire was cut in two."
+    },
+    {
+     "text": "India. And Pakistan, in two wings a thousand miles apart."
+    },
+    {
+     "text": "The new borders ran through Punjab and Bengal. Millions crossed them in both directions. Historians estimate that between two hundred thousand and two million people were killed."
+    },
+    {
+     "text": "How did something so vast happen so fast? Here the historians divide."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "jalal",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "sole",
+     "type": "tome",
+     "x": 330,
+     "y": 380,
+     "w": 170,
+     "h": 230,
+     "title": "The Sole Spokesman",
+     "author": "Ayesha Jalal · 1985",
+     "color": "#2f4a6a",
+     "in": 0,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "bc",
+     "type": "typer",
+     "x": 840,
+     "y": 180,
+     "text": "THE BARGAINING COUNTER",
+     "in": 1,
+     "d": 0.2,
+     "size": 34,
+     "font": "bebas",
+     "color": "#e3a857",
+     "anim": "none",
+     "ls": 4,
+     "cursor": false,
+     "out": 3
+    },
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 840,
+     "y": 360,
+     "s": 0.9,
+     "tilt": 0,
+     "left": "people",
+     "right": "building",
+     "in": 1,
+     "d": 0.8,
+     "anim": "pop",
+     "keys": {
+      "2": {
+       "tilt": -0.6,
+       "d": 1.0,
+       "t": 1.2
+      }
+     },
+     "out": 3
+    },
+    {
+     "id": "cm",
+     "type": "typer",
+     "x": 840,
+     "y": 500,
+     "text": "1946 · Cabinet Mission plan rejected",
+     "in": 2,
+     "d": 1.2,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "out": 3
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 840,
+     "y": 330,
+     "w": 560,
+     "size": 26,
+     "text": "little more than a catch-all,\nan undefined slogan",
+     "by": "Ayesha Jalal, The Sole Spokesman (1985)",
+     "in": 3,
+     "d": 0.3,
+     "anim": "fade"
+    },
+    {
+     "id": "src23881",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Ayesha Jalal, The Sole Spokesman (Cambridge, 1985), as summarised by Dhulipala",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 1985 Ayesha Jalal published The Sole Spokesman, and changed the field."
+    },
+    {
+     "text": "Jinnah, she argued, did not really want a separate sovereign state. Pakistan was a bargaining counter, a demand meant to win Muslims an equal share of power in a loose, undivided India."
+    },
+    {
+     "text": "When Congress turned down the 1946 Cabinet Mission plan, with its weak centre, the bargain fell apart. Partition was what was left."
+    },
+    {
+     "text": "And the Muslims who cheered for Pakistan? In her account, it remained 'little more than a catch-all, an undefined slogan'."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "consensus",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.04
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "b1",
+     "type": "tome",
+     "x": 200,
+     "y": 300,
+     "w": 150,
+     "h": 200,
+     "title": "Origins of the Partition",
+     "author": "A. I. Singh · 1987",
+     "color": "#4a3a5a",
+     "in": 0,
+     "d": 0.2,
+     "anim": "rise"
+    },
+    {
+     "id": "b2",
+     "type": "tome",
+     "x": 420,
+     "y": 300,
+     "w": 150,
+     "h": 200,
+     "title": "Routine Violence",
+     "author": "G. Pandey · 2006",
+     "color": "#3a4a3a",
+     "in": 1,
+     "d": 0.2,
+     "anim": "rise"
+    },
+    {
+     "id": "b3",
+     "type": "tome",
+     "x": 640,
+     "y": 300,
+     "w": 150,
+     "h": 200,
+     "title": "Partition, Pakistan and South Asian History",
+     "author": "D. Gilmartin · 1998",
+     "color": "#5a4a2a",
+     "in": 1,
+     "d": 3.5,
+     "anim": "rise"
+    },
+    {
+     "id": "b4",
+     "type": "tome",
+     "x": 860,
+     "y": 300,
+     "w": 150,
+     "h": 200,
+     "title": "Nationalism without a Nation",
+     "author": "C. Jaffrelot · 2002",
+     "color": "#2a3a5a",
+     "in": 2,
+     "d": 0.2,
+     "anim": "rise"
+    },
+    {
+     "id": "b5",
+     "type": "tome",
+     "x": 1080,
+     "y": 300,
+     "w": 150,
+     "h": 200,
+     "title": "Making Sense of Pakistan",
+     "author": "F. Shaikh · 2009",
+     "color": "#5a2a3a",
+     "in": 2,
+     "d": 2.0,
+     "anim": "rise"
+    },
+    {
+     "id": "slog",
+     "type": "typer",
+     "x": 640,
+     "y": 500,
+     "text": "Pakistan ka matlab kya?  La ilaha illallah.",
+     "in": 3,
+     "d": 0.2,
+     "size": 28,
+     "font": "serif",
+     "color": "#d9b26a",
+     "anim": "none",
+     "italic": true,
+     "cps": 20
+    },
+    {
+     "id": "slog2",
+     "type": "typer",
+     "x": 640,
+     "y": 548,
+     "text": "What is the meaning of Pakistan? There is no god but God.",
+     "in": 3,
+     "d": 2.4,
+     "size": 18,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src5996",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Works as summarised in Dhulipala, Introduction; 'insufficiently imagined' is Salman Rushdie's phrase",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Others disagreed with Jalal about Jinnah. Anita Inder Singh argued he wanted a sovereign Pakistan all along. But even she agreed that for ordinary Muslims, it 'meant all things to all Muslims'."
+    },
+    {
+     "text": "Gyanendra Pandey, a historian of ordinary lives, wrote that few Muslims had clear ideas of what the goal meant. David Gilmartin saw Pakistan as a symbol of solidarity more than a place on a map.",
+     "say": "Gyaa-nen-dra Paan-day, a historian of ordinary lives, wrote that few Muslims had clear ideas of what the goal meant. David Gilmartin saw Pakistan as a symbol of solidarity more than a place on a map."
+    },
+    {
+     "text": "Christophe Jaffrelot called it a nationalism without a nation. Farzana Shaikh blamed Pakistan's later troubles on that missing content. Salman Rushdie's phrase stuck: insufficiently imagined.",
+     "say": "Christophe Zhaf-ruh-low called it a nationalism without a nation. Farzana Shaikh blamed Pakistan's later troubles on that missing content. Salman Rushdie's phrase stuck: insufficiently imagined."
+    },
+    {
+     "text": "At rallies, crowds chanted: what is the meaning of Pakistan? There is no god but God. Beyond that, the consensus says, there was little content at all."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "standard",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v",
+     "type": "verdict",
+     "x": 640,
+     "y": 300,
+     "w": 760,
+     "claim": "Pakistan was a vague idea that became\na state almost by accident.",
+     "level": "debated",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "The standard account, which this book sets out to overturn"
+    },
+    {
+     "id": "but",
+     "type": "typer",
+     "x": 640,
+     "y": 520,
+     "text": "One province does not fit.",
+     "in": 1,
+     "d": 0.6,
+     "size": 34,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true
+    }
+   ],
+   "lines": [
+    {
+     "text": "So the standard story runs like this. A vague dream below, a high-stakes bargain above, and a country nobody quite planned."
+    },
+    {
+     "text": "But there is one place that story struggles to explain."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "The Province Left Behind",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "United Provinces · 1940"
+  },
+  {
+   "type": "scene",
+   "id": "upmap",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.07
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      20,
+      -10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 600,
+     "y": 372,
+     "k": 1.05,
+     "split": 0,
+     "up": 0,
+     "und": 0.4,
+     "lit": 0,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Lucknow",
+       "pin": true
+      },
+      {
+       "name": "Aligarh",
+       "left": true
+      },
+      {
+       "name": "Deoband",
+       "left": true
+      },
+      {
+       "name": "Lahore",
+       "note": "23 March 1940",
+       "left": true
+      }
+     ],
+     "labels": [
+      {
+       "text": "PAKISTAN",
+       "at": [
+        69.5,
+        28.0
+       ],
+       "size": 18
+      },
+      {
+       "text": "PAKISTAN",
+       "at": [
+        90.3,
+        25.9
+       ],
+       "size": 13
+      },
+      {
+       "text": "HINDUSTAN",
+       "at": [
+        78.0,
+        20.5
+       ]
+      }
+     ],
+     "labelsOn": 0,
+     "keys": {
+      "0": {
+       "up": 1,
+       "lit": 3,
+       "d": 0.5,
+       "t": 3
+      },
+      "2": {
+       "lit": 4,
+       "split": 0.75,
+       "d": 0.6,
+       "t": 1.8
+      },
+      "3": {
+       "labelsOn": 1,
+       "d": 0.6,
+       "t": 1
+      }
+     }
+    },
+    {
+     "id": "pct",
+     "type": "typer",
+     "x": 1040,
+     "y": 180,
+     "text": "Muslims: about 14% of the province",
+     "in": 1,
+     "d": 0.3,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "lr",
+     "type": "doc",
+     "x": 1050,
+     "y": 420,
+     "w": 330,
+     "h": 300,
+     "rot": 2,
+     "title": "LAHORE RESOLUTION",
+     "meta": "All-India Muslim League, March 1940",
+     "lines": [
+      "Muslim-majority areas of the",
+      "north-west and the east to be",
+      "'autonomous and sovereign'."
+     ],
+     "cps": 30,
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise",
+     "hl": 2,
+     "hlOn": 0,
+     "keys": {
+      "2": {
+       "hlOn": 1,
+       "d": 3.4,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "src39721",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, Introduction; the 14% figure is the one cited by contemporaries in the book",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The United Provinces of Agra and Oudh. Today, Uttar Pradesh. The old heartland of Muslim north India: Lucknow, Aligarh, Deoband.",
+     "say": "The United Provinces of Agra and Oudh. Today, Uttar Pradesh. The old heartland of Muslim north India: Luck-now, Ali-gur, Day-oh-bund."
+    },
+    {
+     "text": "Muslims here were a minority, about fourteen percent of the province. Yet this is where the idea of Pakistan found its earliest, loudest and most sustained support."
+    },
+    {
+     "text": "In March 1940, at Lahore, the Muslim League demanded that the Muslim-majority areas of the north-west and the east become 'autonomous and sovereign'."
+    },
+    {
+     "text": "Look at the map. The United Provinces were not in it. Whatever Pakistan became, these Muslims would stay behind, in Hindustan."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "paradox",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "typer",
+     "x": 640,
+     "y": 160,
+     "text": "Why fight for a country\nyou will never live in?",
+     "in": 0,
+     "d": 0.3,
+     "size": 40,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 30
+    },
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 390,
+     "y": 400,
+     "value": 0,
+     "suffix": "%",
+     "size": 110,
+     "color": "#5fbf9a",
+     "label": "of U.P. Muslim votes for the League, 1946",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 65,
+       "d": 1.0,
+       "t": 2
+      }
+     }
+    },
+    {
+     "id": "six",
+     "type": "typer",
+     "x": 930,
+     "y": 360,
+     "text": "all 6 U.P. Muslim seats in the Central Assembly",
+     "in": 1,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "oss",
+     "type": "typer",
+     "x": 930,
+     "y": 430,
+     "text": "U.S. report: a 'relatively poor' showing",
+     "in": 2,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "why",
+     "type": "typer",
+     "x": 930,
+     "y": 480,
+     "text": "blamed orthodoxy, Sunni-Shia splits, infighting",
+     "in": 2,
+     "d": 2.4,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src48210",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "OIR Report No. 4162.1 (1 August 1946), quoted in Dhulipala, ch. 8",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "So why would they fight for a country they would never live in?"
+    },
+    {
+     "text": "In the winter of 1945 and 1946, elections became a referendum on Pakistan. In the United Provinces the League swept every Muslim seat for the central assembly, and won about two thirds of the Muslim vote for the province."
+    },
+    {
+     "text": "An American intelligence report still called that a relatively poor showing, and blamed religious orthodoxy, Sunni-Shia splits and League infighting. The bar was that high."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "A Symbol With Substance",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "1940 – 1946"
+  },
+  {
+   "type": "scene",
+   "id": "argue",
+   "bg": {
+    "kind": "paper",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.04,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "n1",
+     "type": "paper",
+     "x": 250,
+     "y": 370,
+     "w": 330,
+     "h": 450,
+     "rot": -4,
+     "mast": "MADINA",
+     "date": "BIJNOR · BI-WEEKLY · 1942",
+     "head": "What will\nPakistan be?",
+     "headSize": 26,
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "n2",
+     "type": "paper",
+     "x": 640,
+     "y": 360,
+     "w": 330,
+     "h": 450,
+     "rot": 2,
+     "mast": "DAWN",
+     "date": "DELHI · 1945",
+     "head": "The case for\nPakistan",
+     "headSize": 26,
+     "in": 1,
+     "d": 0.2,
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "n3",
+     "type": "doc",
+     "x": 1030,
+     "y": 370,
+     "w": 320,
+     "h": 430,
+     "rot": -3,
+     "title": "PAMPHLET",
+     "meta": "Urdu, 1940s (generic)",
+     "lines": [
+      "Is Pakistan possible?",
+      "Its revenues.",
+      "Its borders.",
+      "Its army.",
+      "Its minorities.",
+      "Its place in the world."
+     ],
+     "cps": 30,
+     "in": 1,
+     "d": 1.6,
+     "anim": "drop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "src43535",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Newspapers named in the book; layouts are generic reconstructions, not facsimiles",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Dhulipala starts from a simple observation. India was, in Amartya Sen's word, argumentative. Pakistan did not escape the argument.",
+     "say": "Doo-lee-paa-la starts from a simple observation. India was, in Amartya Sen's word, argumentative. Pakistan did not escape the argument."
+    },
+    {
+     "text": "From the moment the Lahore Resolution passed, it was argued over in Urdu newspapers, in pamphlets and books, at meetings in cities, bazaars and small market towns across north India."
+    },
+    {
+     "text": "Through those arguments, he says, Pakistan stopped being vague. It gained a shape, a substance and a following."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "medina",
+   "bg": {
+    "kind": "void",
+    "pal": "jade"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      -10,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "w",
+     "type": "samap",
+     "view": "wide",
+     "x": 700,
+     "y": 380,
+     "k": 1.45,
+     "split": 0.8,
+     "nb": 1,
+     "anim": "fade",
+     "arcs": [
+      {
+       "from": "Medina",
+       "to": "Lahore",
+       "label": "a new Medina",
+       "bend": 0.25
+      },
+      {
+       "from": "Istanbul",
+       "to": "Delhi",
+       "color": "#c97a6a",
+       "bend": 0.2,
+       "label": "after the Caliphate"
+      }
+     ],
+     "arcDraw": [
+      0,
+      0
+     ],
+     "cities": [
+      {
+       "name": "Medina",
+       "pin": true,
+       "left": true
+      },
+      {
+       "name": "Lahore"
+      },
+      {
+       "name": "Istanbul",
+       "left": true
+      },
+      {
+       "name": "Delhi"
+      }
+     ],
+     "lit": 1,
+     "keys": {
+      "0": {
+       "arcDraw": [
+        1,
+        0
+       ],
+       "d": 2.0,
+       "t": 2.5
+      },
+      "1": {
+       "lit": 2,
+       "d": 0.4,
+       "t": 1
+      },
+      "3": {
+       "lit": 4,
+       "arcDraw": [
+        1,
+        1
+       ],
+       "d": 0.2,
+       "t": 2.2
+      }
+     }
+    },
+    {
+     "id": "nm",
+     "type": "typer",
+     "x": 640,
+     "y": 110,
+     "text": "A NEW MEDINA",
+     "in": 0,
+     "d": 2.0,
+     "size": 44,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "none",
+     "ls": 10,
+     "cursor": false,
+     "cps": 12
+    },
+    {
+     "id": "ca",
+     "type": "typer",
+     "x": 300,
+     "y": 600,
+     "text": "Ottoman Caliphate abolished, 1924",
+     "in": 3,
+     "d": 0.5,
+     "size": 20,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src93716",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, Introduction and Conclusion",
+     "in": 0,
+     "d": 1.0,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The shape it took in the United Provinces was this: a sovereign Islamic state. Some of its champions had a name for it. A new Medina.",
+     "say": "The shape it took in the United Provinces was this: a sovereign Islamic state. Some of its champions had a name for it. A new Madeena."
+    },
+    {
+     "text": "Medina was the city where the Prophet Muhammad built the first Muslim community and state, in the seventh century. To invoke it was to promise a fresh beginning.",
+     "say": "Madeena was the city where the Prophet Muhammad built the first Muslim community and state, in the seventh century. To invoke it was to promise a fresh beginning."
+    },
+    {
+     "text": "Pakistan would be a refuge for India's Muslims. But more than a refuge: the base for a renewal of Islam in the modern world."
+    },
+    {
+     "text": "And the heir to the Ottoman Caliphate, abolished in 1924, as the leading power and protector of the world's Muslims."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "geobody",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 470,
+     "y": 372,
+     "k": 1.05,
+     "split": 1,
+     "nb": 0.7,
+     "anim": "fade",
+     "cities": [
+      {
+       "name": "Karachi",
+       "note": "port",
+       "left": true
+      },
+      {
+       "name": "Lahore",
+       "note": "railways"
+      },
+      {
+       "name": "Peshawar",
+       "note": "frontier",
+       "left": true
+      },
+      {
+       "name": "Chittagong",
+       "note": "port"
+      },
+      {
+       "name": "Dacca",
+       "note": "jute"
+      }
+     ],
+     "lit": 0,
+     "keys": {
+      "0": {
+       "lit": 5,
+       "d": 0.8,
+       "t": 5
+      }
+     }
+    },
+    {
+     "id": "i1",
+     "type": "icon",
+     "x": 900,
+     "y": 160,
+     "r": 34,
+     "glyph": "globe",
+     "color": "#4a7a6a",
+     "in": 0,
+     "d": 1.0
+    },
+    {
+     "id": "l1",
+     "type": "typer",
+     "x": 1080,
+     "y": 160,
+     "text": "maps · rivers · ports · railways",
+     "in": 0,
+     "d": 1.2,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "i2",
+     "type": "icon",
+     "x": 900,
+     "y": 260,
+     "r": 34,
+     "glyph": "medal",
+     "color": "#8a6a2a",
+     "in": 1,
+     "d": 0.4
+    },
+    {
+     "id": "l2",
+     "type": "typer",
+     "x": 1080,
+     "y": 260,
+     "text": "'a first-class power'",
+     "in": 1,
+     "d": 0.6,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "l2b",
+     "type": "typer",
+     "x": 1080,
+     "y": 300,
+     "text": "'Islamistan' (Khaliquzzaman)",
+     "in": 1,
+     "d": 5.5,
+     "size": 16,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "i3",
+     "type": "icon",
+     "x": 900,
+     "y": 380,
+     "r": 34,
+     "glyph": "shield",
+     "color": "#7a3a3a",
+     "in": 2,
+     "d": 0.4
+    },
+    {
+     "id": "l3",
+     "type": "typer",
+     "x": 1080,
+     "y": 380,
+     "text": "a bulwark for the Middle East",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#ffb3a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "i4",
+     "type": "icon",
+     "x": 900,
+     "y": 500,
+     "r": 34,
+     "glyph": "flask",
+     "color": "#3a5a7a",
+     "in": 3,
+     "d": 0.4
+    },
+    {
+     "id": "l4",
+     "type": "typer",
+     "x": 1080,
+     "y": 500,
+     "text": "'laboratory of Islam'",
+     "in": 3,
+     "d": 0.6,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src97431",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, Introduction; Khaliquzzaman quoted via H. Haqqani (2005); Jinnah, US Embassy Cairo memo, 21 Dec 1946",
+     "in": 0,
+     "d": 1.0,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "League propagandists sold the country's body as well as its soul. They printed its maps, listed its rivers, ports, railways and resources, and praised its place beside the Muslim Middle East."
+    },
+    {
+     "text": "Bigger than most European states, they said, and potentially a first-class power, stronger than Turkey. One senior leader, Chaudhry Khaliquzzaman, imagined it gathering the Muslim nations into an 'Islamistan'.",
+     "say": "Bigger than most European states, they said, and potentially a first-class power, stronger than Turkey. One senior leader, Chaudhry Kha-leek-uz-za-maan, imagined it gathering the Muslim nations into an 'Islamistan'."
+    },
+    {
+     "text": "In Cairo in 1946, Jinnah told an American diplomat that without Pakistan the Middle East itself would be threatened by what he called Hindu imperialism."
+    },
+    {
+     "text": "Pakistan would even be a laboratory, where Islam and modern learning would find answers to the problems of the modern world."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "hostages",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 120,
+     "text": "THE HOSTAGE POPULATION THEORY",
+     "in": 0,
+     "d": 1.5,
+     "size": 34,
+     "font": "bebas",
+     "color": "#ff9a8a",
+     "anim": "none",
+     "ls": 6,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "sc",
+     "type": "scale",
+     "x": 640,
+     "y": 290,
+     "s": 0.82,
+     "tilt": 0,
+     "left": "people",
+     "right": "people",
+     "in": 1,
+     "d": 0.2,
+     "anim": "pop",
+     "keys": {
+      "1": {
+       "tilt": 0.5,
+       "d": 2.0,
+       "t": 1
+      },
+      "2": {
+       "tilt": -0.5,
+       "d": 0.5,
+       "t": 1
+      },
+      "3": {
+       "tilt": 0,
+       "d": 0.5,
+       "t": 1
+      }
+     }
+    },
+    {
+     "id": "lp",
+     "type": "typer",
+     "x": 480,
+     "y": 420,
+     "text": "Hindus and Sikhs in Pakistan",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "rp",
+     "type": "typer",
+     "x": 800,
+     "y": 420,
+     "text": "Muslims in Hindustan",
+     "in": 1,
+     "d": 1.4,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "v",
+     "type": "verdict",
+     "x": 640,
+     "y": 585,
+     "w": 760,
+     "claim": "League leaders used 'hostage' logic to reassure minority-province Muslims.",
+     "level": "strong",
+     "in": 3,
+     "d": 1.5,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 2.4,
+       "t": 0.8
+      }
+     }
+    },
+    {
+     "id": "src62796",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Indian Annual Register 1940, vols 1-2; B. R. Ambedkar, Thoughts on Pakistan; quoted in Dhulipala, Introduction",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "And the Muslims left behind? Here the propaganda turned cold. It was called the hostage population theory."
+    },
+    {
+     "text": "Hindus and Sikhs inside Pakistan would be hostages. If Hindu India mistreated its Muslims, Pakistan could answer in kind. Each minority would guarantee the other's safety."
+    },
+    {
+     "text": "Some went further. In 1940 the Sindh League leader Abdullah Haroon compared India's Muslims with the Sudeten Germans, and referred admiringly to Hitler's move to 'liberate' them.",
+     "say": "Some went further. In 1940 the Sind League leader Ab-dul-la Haa-roon compared India's Muslims with the Sudeten Germans, and referred admiringly to Hitler's move to 'liberate' them."
+    },
+    {
+     "text": "Jinnah asked why, if Gladstone's Britain could intervene in Armenia to protect a minority, Pakistan should not do the same for its minorities in Hindustan."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "mosque",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "d1",
+     "type": "doc",
+     "x": 330,
+     "y": 330,
+     "w": 420,
+     "h": 300,
+     "rot": -2,
+     "title": "STAR OF INDIA",
+     "meta": "4 January 1941",
+     "lines": [
+      "Jinnah: it would be 'a great",
+      "mistake' to believe the demand",
+      "is only a counter for bargaining."
+     ],
+     "cps": 32,
+     "anim": "rise",
+     "hl": 0,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 4,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 870,
+     "y": 200,
+     "w": 560,
+     "claim": "Jinnah publicly denied that Pakistan\nwas a bargaining counter.",
+     "level": "strong",
+     "in": 0,
+     "d": 2.0,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 2.9,
+       "t": 0.8
+      }
+     },
+     "by": "Newspaper reports, January 1941"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 870,
+     "y": 420,
+     "w": 560,
+     "claim": "Jinnah: secure the land for the mosque\nfirst, then decide how to build it.",
+     "level": "debated",
+     "in": 1,
+     "d": 1.0,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.9,
+       "t": 0.8
+      }
+     },
+     "by": "One visitor's recollection, quoted in S. V. R. Nasr (1994)"
+    },
+    {
+     "id": "src50736",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "The Leader and Star of India, 4 Jan 1941; S. V. R. Nasr, The Vanguard of the Islamic Revolution (1994); via Dhulipala",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Was it all a bargaining chip, then? Jinnah himself warned his followers in 1941 that it would be 'a great mistake' to believe Congress claims that Pakistan was only a counter for bargaining."
+    },
+    {
+     "text": "On an Islamic state, he kept his public words vague. A visitor from the Jamaat-i-Islami later recalled Jinnah's answer: first secure the land for the mosque; then decide how to build the mosque."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "constitution",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.08,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "d",
+     "type": "doc",
+     "x": 640,
+     "y": 360,
+     "w": 520,
+     "h": 500,
+     "rot": 1,
+     "title": "DRAFT: AN ISLAMIC CONSTITUTION",
+     "meta": "U.P. Muslim League committee, chair S. Sulaiman Nadwi",
+     "lines": [
+      "Committee of League men and ulama,",
+      "set up soon after Lahore, 1940.",
+      "",
+      "Report circulated internally.",
+      "Published only in 1957.",
+      "",
+      "1949: Nadwi invited to advise",
+      "Pakistan's Constituent Assembly."
+     ],
+     "cps": 26,
+     "anim": "rise",
+     "sfx": "type",
+     "vol": 0.4,
+     "stamp": "UNPUBLISHED",
+     "stampOn": 0,
+     "keys": {
+      "1": {
+       "stampOn": 1,
+       "d": 0.4,
+       "t": 0.3
+      }
+     }
+    },
+    {
+     "id": "src288",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "M. I. Sandelvi, Islam Ka Siyasi Nizam (1957); L. Binder (1961); via Dhulipala, Introduction",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Soon after Lahore, the United Provinces League set up a committee of politicians and religious scholars to draft an Islamic constitution for Pakistan. For reasons never fully explained, its report stayed unpublished until 1957."
+    },
+    {
+     "text": "Its chairman, Sulaiman Nadwi, was invited in 1949 to lead the experts advising Pakistan's Constituent Assembly. His recommendations drew on that report.",
+     "say": "Its chairman, Su-lay-maan Nud-vee, was invited in 1949 to lead the experts advising Pakistan's Constituent Assembly. His recommendations drew on that report."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "Two Medinas",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Deoband · 1938 – 1945"
+  },
+  {
+   "type": "scene",
+   "id": "madani",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "dm",
+     "type": "dossier",
+     "x": 330,
+     "y": 360,
+     "name": "Husain Ahmad Madani",
+     "role": "Deoband; led the\nJamiatul Ulama-i-Hind",
+     "years": "1879 – 1957",
+     "in": 0,
+     "d": 1.0,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "beard": true,
+     "tag": "UNITED INDIA",
+     "tagColor": "#3a6ea5"
+    },
+    {
+     "id": "mq",
+     "type": "typer",
+     "x": 830,
+     "y": 170,
+     "text": "Muttahida Qaumiyat",
+     "in": 2,
+     "d": 0.3,
+     "size": 40,
+     "font": "serif",
+     "color": "#7fb2d9",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 18,
+     "out": 3
+    },
+    {
+     "id": "mq2",
+     "type": "typer",
+     "x": 830,
+     "y": 220,
+     "text": "composite nationalism",
+     "in": 2,
+     "d": 1.6,
+     "size": 20,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "out": 3
+    },
+    {
+     "id": "cov",
+     "type": "typer",
+     "x": 830,
+     "y": 300,
+     "text": "the Covenant of Medina: one community, many faiths",
+     "in": 2,
+     "d": 3.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "out": 3
+    },
+    {
+     "id": "dt",
+     "type": "dossier",
+     "x": 700,
+     "y": 470,
+     "name": "Ashraf Ali Thanawi",
+     "role": "Deobandi scholar",
+     "years": "1863 – 1943",
+     "in": 3,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "topi",
+     "beard": true,
+     "w": 200,
+     "h": 280
+    },
+    {
+     "id": "di",
+     "type": "dossier",
+     "x": 920,
+     "y": 470,
+     "name": "Muhammad Iqbal",
+     "role": "poet, philosopher",
+     "years": "1877 – 1938",
+     "in": 3,
+     "d": 1.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "w": 200,
+     "h": 280
+    },
+    {
+     "id": "dw",
+     "type": "dossier",
+     "x": 1140,
+     "y": 470,
+     "name": "Abul Ala Mawdudi",
+     "role": "Islamist thinker",
+     "years": "1903 – 1979",
+     "in": 3,
+     "d": 2.9,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "beard": true,
+     "w": 200,
+     "h": 280
+    },
+    {
+     "id": "src65760",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "H. A. Madani, Composite Nationalism and Islam (tr. 2005); B. Metcalf (2009); Dhulipala, Introduction and ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now the twist at the heart of the book. The first man to hold up Medina as a model for modern India was an opponent of Pakistan.",
+     "say": "Now the twist at the heart of the book. The first man to hold up Madeena as a model for modern India was an opponent of Pakistan."
+    },
+    {
+     "text": "Maulana Husain Ahmad Madani of Deoband had taught the Prophet's traditions in Medina itself for over a decade. He led the Jamiatul Ulama-i-Hind, the main body of India's religious scholars.",
+     "say": "Maulana Hu-sain Ah-mud Ma-da-nee of Day-oh-bund had taught the Prophet's traditions in Madeena itself for over a decade. He led the Jam-ee-at ul Oo-la-maa ee Hind, the main body of India's religious scholars."
+    },
+    {
+     "text": "In Medina, he argued, the Prophet had made a covenant with the city's Jews: one people of many faiths. Hindus and Muslims could likewise be one nation. He called it Muttahida Qaumiyat, composite nationalism.",
+     "say": "In Madeena, he argued, the Prophet had made a covenant with the city's Jews: one people of many faiths. Hindus and Muslims could likewise be one nation. He called it Mut-ta-hee-da Kow-mee-yut, composite nationalism."
+    },
+    {
+     "text": "His critics pounced. The scholar Ashraf Ali Thanawi, the poet Muhammad Iqbal and the Islamist Abul Ala Mawdudi all attacked his reading. Muslims, they insisted, were a nation apart.",
+     "say": "His critics pounced. The scholar Ush-ruf Ali Tha-naa-vee, the poet Muhammad Ik-baal and the Islamist Abul Ala Mow-doo-dee all attacked his reading. Muslims, they insisted, were a nation apart."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "usmani",
+   "bg": {
+    "kind": "void",
+    "pal": "jade"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "du",
+     "type": "dossier",
+     "x": 330,
+     "y": 360,
+     "name": "Shabbir Ahmad Usmani",
+     "role": "Thanawi's disciple; founded\nthe Jamiatul Ulama-i-Islam",
+     "years": "1886 – 1949",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "beard": true,
+     "tag": "PAKISTAN",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "w",
+     "type": "samap",
+     "view": "wide",
+     "x": 850,
+     "y": 380,
+     "k": 1.05,
+     "split": 1,
+     "nb": 1,
+     "anim": "fade",
+     "in": 1,
+     "d": 0.2,
+     "arcs": [
+      {
+       "from": "Medina",
+       "to": "Mecca",
+       "bend": -0.6,
+       "draw": 1
+      },
+      {
+       "from": "Medina",
+       "to": "Cairo",
+       "bend": 0.3
+      },
+      {
+       "from": "Lahore",
+       "to": "Istanbul",
+       "bend": 0.3,
+       "color": "#5fbf9a"
+      },
+      {
+       "from": "Lahore",
+       "to": "Cairo",
+       "bend": 0.25,
+       "color": "#5fbf9a"
+      }
+     ],
+     "cities": [
+      {
+       "name": "Medina",
+       "left": true
+      },
+      {
+       "name": "Lahore"
+      }
+     ],
+     "lit": 2
+    },
+    {
+     "id": "shk",
+     "type": "typer",
+     "x": 330,
+     "y": 600,
+     "text": "later hailed as Pakistan's Shaikhul Islam",
+     "in": 2,
+     "d": 0.4,
+     "size": 16,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src78556",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, Introduction and ch. 7",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then Thanawi's disciple, Maulana Shabbir Ahmad Usmani, turned Medina around. Pakistan, he declared, would be the new Medina.",
+     "say": "Then Tha-naa-vee's disciple, Maulana Shub-beer Ah-mud Oos-maa-nee, turned Madeena around. Pakistan, he declared, would be the new Madeena."
+    },
+    {
+     "text": "As the Prophet's Medina had been the base from which Islam spread across Arabia and beyond, Pakistan would unite the world's Muslims and carry them back onto the world stage as a great power.",
+     "say": "As the Prophet's Madeena had been the base from which Islam spread across Arabia and beyond, Pakistan would unite the world's Muslims and carry them back onto the world stage as a great power."
+    },
+    {
+     "text": "In 1945 Usmani founded the Jamiatul Ulama-i-Islam and campaigned for the League. India's religious scholars split down the middle.",
+     "say": "In 1945 Oos-maa-nee founded the Jam-ee-at ul Oo-la-maa ee Islam and campaigned for the League. India's religious scholars split down the middle."
+    },
+    {
+     "text": "One city, two futures. A Medina of many faiths sharing one homeland. Or a Medina as the capital of a rising Islamic power.",
+     "say": "One city, two futures. A Madeena of many faiths sharing one homeland. Or a Madeena as the capital of a rising Islamic power."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ulamav",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 640,
+     "y": 230,
+     "w": 820,
+     "claim": "Leading Deobandi scholars campaigned for Pakistan,\nnot only against it.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Well documented: Usmani, the JUI, the 1945-46 campaign"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 640,
+     "y": 460,
+     "w": 820,
+     "claim": "Their support was decisive in winning\nover Muslim voters.",
+     "level": "debated",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Dhulipala's argument; historians weigh it differently"
+    }
+   ],
+   "lines": [
+    {
+     "text": "That some leading clerics backed Pakistan is well documented. That they bridged the gap between League politicians and ordinary believers, and so helped win the vote, is Dhulipala's argument.",
+     "say": "That some leading clerics backed Pakistan is well documented. That they bridged the gap between League politicians and ordinary believers, and so helped win the vote, is Doo-lee-paa-la's argument."
+    },
+    {
+     "text": "Other historians weigh it differently. We will put it to the test in episode eight."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "The Great Argument",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Bombay · 1940 – 1946"
+  },
+  {
+   "type": "scene",
+   "id": "ambedkar",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "da",
+     "type": "dossier",
+     "x": 330,
+     "y": 360,
+     "name": "B. R. Ambedkar",
+     "role": "constitutional lawyer,\nBombay",
+     "years": "1891 – 1956",
+     "in": 0,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "glasses": true,
+     "tag": "NEITHER SIDE",
+     "tagColor": "#6a5a8a"
+    },
+    {
+     "id": "tp",
+     "type": "tome",
+     "x": 760,
+     "y": 360,
+     "w": 190,
+     "h": 250,
+     "title": "Thoughts on Pakistan",
+     "author": "B. R. Ambedkar",
+     "color": "#3a3a5a",
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "dj",
+     "type": "dossier",
+     "x": 1060,
+     "y": 360,
+     "name": "M. A. Jinnah",
+     "role": "constitutional lawyer,\nBombay",
+     "years": "1876 – 1948",
+     "in": 2,
+     "d": 0.6,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "karakul",
+     "tag": "PAKISTAN",
+     "tagColor": "#2f6f5a"
+    },
+    {
+     "id": "src96050",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, ch. 3; Gandhi-Jinnah talks, Bombay, September 1944",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Who set the terms of the debate? Dhulipala's surprising answer is a lawyer from Bombay who belonged neither to the League nor to Congress: B. R. Ambedkar.",
+     "say": "Who set the terms of the debate? Doo-lee-paa-la's surprising answer is a lawyer from Bombay who belonged neither to the League nor to Congress: B. R. Um-bayd-kar."
+    },
+    {
+     "text": "His book, Thoughts on Pakistan, weighed the case for and against with cold precision. When Gandhi and Jinnah met in Bombay in 1944, both cited it as the authority."
+    },
+    {
+     "text": "Two constitutional lawyers from Bombay, as the book calls them. Jinnah, who wanted Pakistan. And Ambedkar, who showed India how to argue about it.",
+     "say": "Two constitutional lawyers from Bombay, as the book calls them. Jinnah, who wanted Pakistan. And Um-bayd-kar, who showed India how to argue about it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "questions",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.03
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q0",
+     "type": "card",
+     "x": 205,
+     "y": 220,
+     "w": 250,
+     "h": 200,
+     "glyph": "scales",
+     "title": "Islamic state or liberal democracy?",
+     "color": "#7a5a3a",
+     "in": 1,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q1",
+     "type": "card",
+     "x": 495,
+     "y": 220,
+     "w": 250,
+     "h": 200,
+     "glyph": "coin",
+     "title": "Can it pay its way?",
+     "color": "#6a6a3a",
+     "in": 1,
+     "d": 1.4000000000000001,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q2",
+     "type": "card",
+     "x": 785,
+     "y": 220,
+     "w": 250,
+     "h": 200,
+     "glyph": "globe",
+     "title": "Where are the borders?",
+     "color": "#3a5a6a",
+     "in": 1,
+     "d": 2.5,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q3",
+     "type": "card",
+     "x": 1075,
+     "y": 220,
+     "w": 250,
+     "h": 200,
+     "glyph": "shield",
+     "title": "Can it defend itself?",
+     "color": "#6a3a3a",
+     "in": 2,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q4",
+     "type": "card",
+     "x": 205,
+     "y": 470,
+     "w": 250,
+     "h": 200,
+     "glyph": "people",
+     "title": "Its Hindu and Sikh minorities?",
+     "color": "#5a4a6a",
+     "in": 2,
+     "d": 1.4000000000000001,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q5",
+     "type": "card",
+     "x": 495,
+     "y": 470,
+     "w": 250,
+     "h": 200,
+     "glyph": "home",
+     "title": "Muslims left behind?",
+     "color": "#3a6a5a",
+     "in": 2,
+     "d": 2.5,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q6",
+     "type": "card",
+     "x": 785,
+     "y": 470,
+     "w": 250,
+     "h": 200,
+     "glyph": "plane",
+     "title": "Exchange of populations?",
+     "color": "#4a5a6a",
+     "in": 2,
+     "d": 3.6,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "q7",
+     "type": "card",
+     "x": 1075,
+     "y": 470,
+     "w": 250,
+     "h": 200,
+     "glyph": "star",
+     "title": "Its place in the world?",
+     "color": "#6a5a2a",
+     "in": 2,
+     "d": 4.7,
+     "anim": "pop",
+     "sfx": "tick",
+     "vol": 0.5
+    },
+    {
+     "id": "src5486",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Questions as set out in Dhulipala, Introduction",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Put Ambedkar together with the religious scholars who opposed Pakistan, and you get the questions that filled the newspapers for six years.",
+     "say": "Put Um-bayd-kar together with the religious scholars who opposed Pakistan, and you get the questions that filled the newspapers for six years."
+    },
+    {
+     "text": "Would Pakistan be an Islamic state, or a Western-style democracy? Could it pay for its government and army? Where exactly would its borders run?"
+    },
+    {
+     "text": "Could it defend itself against a far larger India? What of its Hindu and Sikh minorities, and the Muslims left behind? Would populations be exchanged? What would it count for in the world?"
+    },
+    {
+     "text": "Questions like these, Dhulipala argues, are what turned a slogan into a programme.",
+     "say": "Questions like these, Doo-lee-paa-la argues, are what turned a slogan into a programme."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "gandhi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "doc",
+     "x": 340,
+     "y": 340,
+     "w": 440,
+     "h": 420,
+     "rot": -2,
+     "title": "HARIJAN",
+     "meta": "12 July 1942 · M. K. Gandhi",
+     "lines": [
+      "There can be no comparison between",
+      "Pakistan and Andhra separation...",
+      "Pakistan... is a demand for carving",
+      "out of India a portion to be treated",
+      "as a wholly independent",
+      "sovereign State."
+     ],
+     "cps": 34,
+     "anim": "rise",
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 5,
+     "hlOn": 0,
+     "keys": {
+      "0": {
+       "hlOn": 1,
+       "d": 6,
+       "t": 0.6
+      }
+     }
+    },
+    {
+     "id": "q1",
+     "type": "cquote",
+     "x": 900,
+     "y": 220,
+     "w": 460,
+     "size": 30,
+     "text": "in a nutshell",
+     "by": "Jinnah on Gandhi's description, 1942",
+     "in": 1,
+     "d": 0.3,
+     "anim": "fade"
+    },
+    {
+     "id": "q2",
+     "type": "cquote",
+     "x": 900,
+     "y": 450,
+     "w": 460,
+     "size": 26,
+     "text": "mutilated, truncated,\nand moth-eaten",
+     "by": "Jinnah on the Rajagopalachari formula, 1944",
+     "in": 2,
+     "d": 1.4,
+     "anim": "fade"
+    },
+    {
+     "id": "src67619",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Collected Works of Mahatma Gandhi, vol. 83, p. 78 and p. 120 n. 2; via Dhulipala, Introduction",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Even Gandhi sharpened it. In July 1942 he wrote in his paper Harijan that Pakistan was nothing like a new linguistic province. It meant carving out of India a wholly independent, sovereign state.",
+     "say": "Even Gandhi sharpened it. In July 1942 he wrote in his paper Ha-ree-jun that Pakistan was nothing like a new linguistic province. It meant carving out of India a wholly independent, sovereign state."
+    },
+    {
+     "text": "Jinnah replied that Gandhi had put the Muslim demand 'in a nutshell'."
+    },
+    {
+     "text": "In 1944 the two men argued over maps. Gandhi held to a formula drawn up by C. Rajagopalachari. Jinnah dismissed it as offering a 'mutilated, truncated, and moth-eaten' Pakistan.",
+     "say": "In 1944 the two men argued over maps. Gandhi held to a formula drawn up by C. Raa-ja-go-paa-la-chaa-ree. Jinnah dismissed it as offering a 'mutilated, truncated, and moth-eaten' Pakistan."
+    },
+    {
+     "text": "Whatever else Pakistan was by then, it was not vague. The battle lines were being drawn on paper."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "cinema",
+   "bg": {
+    "kind": "room",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      -20
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "BOMBAY · 14 APRIL 1946 · 4 P.M. SHOW",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "scr",
+     "type": "shape",
+     "shape": "rect",
+     "x": 640,
+     "y": 270,
+     "w": 640,
+     "h": 330,
+     "round": 2,
+     "color": "#cfc6b0",
+     "anim": "fade"
+    },
+    {
+     "id": "map",
+     "type": "samap",
+     "x": 640,
+     "y": 275,
+     "k": 0.55,
+     "nb": 0,
+     "und": 1,
+     "land": "#6a5e48",
+     "anim": "fade",
+     "in": 1,
+     "d": 0.2
+    },
+    {
+     "id": "ttl",
+     "type": "typer",
+     "x": 640,
+     "y": 140,
+     "text": "FORTY CRORES",
+     "in": 0,
+     "d": 1.0,
+     "size": 30,
+     "font": "bebas",
+     "color": "#2a241c",
+     "anim": "none",
+     "ls": 8,
+     "cursor": false,
+     "cps": 14
+    },
+    {
+     "id": "aud",
+     "type": "figures",
+     "x": 640,
+     "y": 690,
+     "n": 22,
+     "cols": 11,
+     "w": 1100,
+     "rowh": 70,
+     "size": 1.0,
+     "color": "#0e0c09",
+     "anim": "none"
+    },
+    {
+     "id": "fx",
+     "type": "particles",
+     "kind": "sparkle",
+     "x": 360,
+     "y": 520,
+     "n": 18,
+     "w": 160,
+     "h": 80,
+     "in": 2,
+     "d": 0.4,
+     "anim": "pop",
+     "sfx": "pop",
+     "out": 3
+    },
+    {
+     "id": "cut",
+     "type": "slash",
+     "x": 430,
+     "y": 140,
+     "x2": 850,
+     "y2": 410,
+     "gap": 10,
+     "draw": 0,
+     "in": 2,
+     "d": 5.2,
+     "anim": "none",
+     "keys": {
+      "2": {
+       "draw": 1,
+       "d": 5.2,
+       "t": 0.25
+      }
+     },
+     "sfx": "boom",
+     "vol": 0.8
+    },
+    {
+     "id": "src12174",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Film India, vol. XII, no. 5, May 1946, quoted in Dhulipala, Introduction",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Bombay, the fourteenth of April, 1946. The four o'clock show of a film called Forty Crores: a plea for the unity of India's four hundred million people."
+    },
+    {
+     "text": "On screen, Hindu and Muslim heroes gather around a map of India and vow to defend its unity."
+    },
+    {
+     "text": "In the audience, League supporters set off firecrackers and stand up shouting. One of them runs to the screen and slashes it across with a six-inch blade."
+    },
+    {
+     "text": "",
+     "dur": 2.6
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "The Case Against",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Reviews · 2015 – 2018"
+  },
+  {
+   "type": "scene",
+   "id": "critics1",
+   "bg": {
+    "kind": "void",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q1",
+     "type": "cquote",
+     "x": 640,
+     "y": 190,
+     "w": 700,
+     "size": 30,
+     "text": "a travesty of her argument",
+     "by": "Faisal Devji, 'Young Fogeys', The Wire, 4 October 2015",
+     "in": 1,
+     "d": 0.4,
+     "anim": "fade",
+     "out": 3
+    },
+    {
+     "id": "d2",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "neglects the League's modernist, Aligarh-shaped politics",
+     "in": 2,
+     "d": 0.3,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "out": 3
+    },
+    {
+     "id": "d3",
+     "type": "typer",
+     "x": 640,
+     "y": 390,
+     "text": "and its international context",
+     "in": 2,
+     "d": 2.6,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "out": 3
+    },
+    {
+     "id": "q2",
+     "type": "cquote",
+     "x": 640,
+     "y": 470,
+     "w": 760,
+     "size": 26,
+     "text": "density of its archival knowledge",
+     "by": "Sohaib I. Khan, The Marginalia Review",
+     "in": 3,
+     "d": 0.4,
+     "anim": "fade"
+    },
+    {
+     "id": "src68499",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "F. Devji, The Wire (2015); S. I. Khan, Marginalia Review of Books",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "A book that overturns a consensus collects critics, and this one did. Here are their strongest points."
+    },
+    {
+     "text": "Faisal Devji, an Oxford historian, wrote that the book was so intent on refuting Ayesha Jalal that it produced 'a travesty of her argument'. Jalal, he said, treated partition as one option among several, not as impossible."
+    },
+    {
+     "text": "He also argued that reading the movement mainly as religion flattens the League's modernist politics, shaped at Aligarh, and ignores its wider international setting.",
+     "say": "He also argued that reading the movement mainly as religion flattens the League's modernist politics, shaped at Ali-gur, and ignores its wider international setting."
+    },
+    {
+     "text": "Sohaib Khan, writing in the Marginalia Review, praised the 'density of its archival knowledge', but found its idea of what counts as religious too loose, and its readings of sources too seamless."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "critics2",
+   "bg": {
+    "kind": "void",
+    "pal": "ember"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "k1",
+     "type": "typer",
+     "x": 640,
+     "y": 150,
+     "text": "Khan: linking the 1940s to today's crises risks making the present look fixed at birth",
+     "in": 0,
+     "d": 0.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ffb3a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "m1",
+     "type": "typer",
+     "x": 640,
+     "y": 250,
+     "text": "Mehta: 'among the most important studies' of Pakistan's ideological origins",
+     "in": 1,
+     "d": 0.3,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "m2",
+     "type": "typer",
+     "x": 640,
+     "y": 295,
+     "text": "but missing: Maulana Azad, and Iqbal's Reconstruction of Religious Thought",
+     "in": 1,
+     "d": 4.0,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t1",
+     "type": "typer",
+     "x": 640,
+     "y": 395,
+     "text": "Talbot, Gilmartin, Minault: a major intervention",
+     "in": 2,
+     "d": 0.3,
+     "size": 17,
+     "font": "type",
+     "color": "#c8f0dd",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t2",
+     "type": "typer",
+     "x": 640,
+     "y": 440,
+     "text": "the author's own caveat: Punjab and Bengal still need the same study",
+     "in": 2,
+     "d": 4.5,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src55524",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "P. B. Mehta, Indian Express (2015); I. Talbot, JAS (2015); D. Gilmartin, JAS (2015); G. Minault, H-Asia (2015); Dhulipala, Conclusion",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Above all, Khan objected to the leap from the 1940s to Pakistan's present. Tying today's crises to the founding vision, he argued, risks making the future look settled at birth."
+    },
+    {
+     "text": "Pratap Bhanu Mehta, in the Indian Express, called it among the most important studies of Pakistan's ideological origins, while noting striking absences: Maulana Azad, Congress's leading Muslim, and Iqbal's great work of religious thought.",
+     "say": "Pratap Bhanu Mehta, in the Indian Express, called it among the most important studies of Pakistan's ideological origins, while noting striking absences: Maulana Azad, Congress's leading Muslim, and Ik-baal's great work of religious thought."
+    },
+    {
+     "text": "Ian Talbot, David Gilmartin and Gail Minault welcomed it as a major intervention. And Dhulipala names his own limit: his evidence comes from a minority province. Punjab and Bengal, where Pakistan was actually built, need the same study.",
+     "say": "Ian Talbot, David Gilmartin and Gail Minault welcomed it as a major intervention. And Doo-lee-paa-la names his own limit: his evidence comes from a minority province. Punjab and Bengal, where Pakistan was actually built, need the same study."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "scorecard",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "Pakistan was argued over loudly\nand in detail in the 1940s.",
+     "level": "strong",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Urdu and English press, pamphlets, meetings"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "League leaders and leading clerics\nsold it as an Islamic state.",
+     "level": "partial",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Caveat: Jinnah's public words stayed ambiguous"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "Ordinary voters shared the vision;\nit was never a bargaining chip.",
+     "level": "debated",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Jalal, Devji and others disagree"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "Pakistan's later crises grow from\nthis founding vision.",
+     "level": "contested",
+     "in": 4,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "4": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "The book's boldest claim"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So where does the evidence stand? In this series, every big claim gets a label."
+    },
+    {
+     "text": "That Pakistan was argued over loudly and in detail in the 1940s, in print and in public meetings: well supported. The newspapers survive."
+    },
+    {
+     "text": "That many League leaders and leading clerics sold it as an Islamic state, a new Medina: supported, with the caveat that Jinnah kept his public words ambiguous.",
+     "say": "That many League leaders and leading clerics sold it as an Islamic state, a new Madeena: supported, with the caveat that Jinnah kept his public words ambiguous."
+    },
+    {
+     "text": "That ordinary voters shared that vision, and that Jinnah never meant it as a bargaining chip: debated by historians."
+    },
+    {
+     "text": "And that Pakistan's later troubles grow from this founding vision: contested. It is the book's boldest claim, and the series will keep testing it."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "chapterx",
+   "kicker": "Chapter Seven",
+   "title": "Why It Matters Now",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "1949 – today"
+  },
+  {
+   "type": "scene",
+   "id": "now-pk",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "samap",
+     "x": 470,
+     "y": 372,
+     "k": 1.05,
+     "split": 1,
+     "nb": 0.6,
+     "anim": "fade",
+     "pkColor": "#2f6f5a",
+     "labels": [
+      {
+       "text": "PAKISTAN",
+       "at": [
+        69.5,
+        28.6
+       ],
+       "size": 18
+      },
+      {
+       "text": "BANGLADESH",
+       "at": [
+        92.6,
+        26.9
+       ],
+       "size": 12,
+       "o": 0.8
+      }
+     ]
+    },
+    {
+     "id": "y1",
+     "type": "typer",
+     "x": 1000,
+     "y": 200,
+     "text": "1949 · Objectives Resolution",
+     "in": 1,
+     "d": 0.3,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd08a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "y1b",
+     "type": "typer",
+     "x": 1000,
+     "y": 240,
+     "text": "sovereignty belongs to God",
+     "in": 1,
+     "d": 2.6,
+     "size": 16,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "y2",
+     "type": "typer",
+     "x": 1000,
+     "y": 330,
+     "text": "1971 · the eastern wing becomes Bangladesh",
+     "in": 1,
+     "d": 5.4,
+     "size": 17,
+     "font": "type",
+     "color": "#ff9a8a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "rm",
+     "type": "typer",
+     "x": 1000,
+     "y": 450,
+     "text": "Riyasat-e-Madina",
+     "in": 2,
+     "d": 1.4,
+     "size": 40,
+     "font": "serif",
+     "color": "#d9b26a",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 14
+    },
+    {
+     "id": "rm2",
+     "type": "typer",
+     "x": 1000,
+     "y": 500,
+     "text": "'a state of Medina': Imran Khan, 2018",
+     "in": 2,
+     "d": 3.2,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src66219",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Objectives Resolution, Constituent Assembly of Pakistan, 12 March 1949; Imran Khan's speeches from 2018, widely reported",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Why tell this story now?"
+    },
+    {
+     "text": "Because the argument never ended. In 1949 Pakistan's Constituent Assembly declared that sovereignty belongs to God. In 1971 the eastern wing broke away as Bangladesh. The fight over what Pakistan is for has never stopped."
+    },
+    {
+     "text": "In 2018 a prime minister, Imran Khan, came to power promising Riyasat-e-Madina: a state modelled on Medina. The idea from the 1940s had come back, almost word for word.",
+     "say": "In 2018 a prime minister, Imran Khan, came to power promising Ree-yaa-sut ay Madeena: a state modelled on Madeena. The idea from the 1940s had come back, almost word for word."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now-in",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "pd",
+     "type": "typer",
+     "x": 640,
+     "y": 170,
+     "text": "14 AUGUST",
+     "in": 0,
+     "d": 0.5,
+     "size": 60,
+     "font": "bebas",
+     "color": "#ff9a8a",
+     "anim": "none",
+     "ls": 10,
+     "cursor": false,
+     "cps": 10
+    },
+    {
+     "id": "pd2",
+     "type": "typer",
+     "x": 640,
+     "y": 240,
+     "text": "Partition Horrors Remembrance Day, India, since 2021",
+     "in": 0,
+     "d": 2.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "tn",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "the two-nation theory, still argued over",
+     "in": 0,
+     "d": 6.0,
+     "size": 18,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "bk",
+     "type": "tome",
+     "x": 640,
+     "y": 490,
+     "w": 150,
+     "h": 200,
+     "title": "Creating a New Medina",
+     "author": "V. Dhulipala",
+     "color": "#5a1a1a",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "src37106",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Government of India notification, August 2021",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In India, partition is not history either. Since 2021 the government has marked the fourteenth of August as Partition Horrors Remembrance Day, and the two-nation theory is still invoked in arguments over citizenship and belonging."
+    },
+    {
+     "text": "The book was drawn into those arguments too. Some read it as proof that Pakistan was a religious project from the start. Others saw an old quarrel in new clothes."
+    },
+    {
+     "text": "And the Muslims of the United Provinces? Some left for Pakistan. Most stayed. Their story, on both sides of the border, is our final episode."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now-world",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "w",
+     "type": "samap",
+     "view": "wide",
+     "x": 640,
+     "y": 400,
+     "k": 1.25,
+     "split": 1,
+     "nb": 1,
+     "anim": "fade",
+     "lit": 0,
+     "cities": [
+      {
+       "name": "Jerusalem",
+       "note": "1948",
+       "left": true
+      },
+      {
+       "name": "Tehran",
+       "note": "1979"
+      },
+      {
+       "name": "Baghdad",
+       "note": "2014",
+       "left": true
+      },
+      {
+       "name": "Lahore",
+       "note": "1947"
+      }
+     ],
+     "keys": {
+      "1": {
+       "lit": 1,
+       "d": 1.0,
+       "t": 0.8
+      },
+      "2": {
+       "lit": 4,
+       "d": 2.0,
+       "t": 4
+      }
+     }
+    },
+    {
+     "id": "q",
+     "type": "typer",
+     "x": 640,
+     "y": 110,
+     "text": "A refuge, a utopia and a great power, all at once?",
+     "in": 0,
+     "d": 0.8,
+     "size": 26,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 30
+    },
+    {
+     "id": "ours",
+     "type": "typer",
+     "x": 640,
+     "y": 600,
+     "text": "the comparison with 1979 and 2014 is ours, not the book's",
+     "in": 2,
+     "d": 6.0,
+     "size": 15,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src30937",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "F. Devji, Muslim Zion: Pakistan as a Political Idea (2013)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Beyond South Asia, the book raises a universal question. What happens when a nation is founded on a promise of faith, and asked to be a refuge, a utopia and a great power all at once?"
+    },
+    {
+     "text": "The historian Faisal Devji has compared Pakistan with Israel, another state born at almost the same moment as a homeland for a religious community."
+    },
+    {
+     "text": "Others since, from Iran's revolution in 1979 to the self-declared caliphate of 2014, have promised to restore a lost golden polity. That comparison is ours, not the book's. But the 1940s show how such promises are made, and how hard they are to keep."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.1
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      10
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "table",
+     "type": "seance",
+     "x": 640,
+     "y": 600,
+     "size": 0.95,
+     "anim": "fade",
+     "chair": 1,
+     "keys": {
+      "2": {
+       "smoke": 0.15,
+       "chair": 0.3,
+       "d": 2,
+       "t": 5
+      }
+     }
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 170,
+     "w": 760,
+     "size": 30,
+     "text": "not insufficiently imagined,\nbut plentifully and with ambition",
+     "by": "Venkat Dhulipala, Creating a New Medina",
+     "anim": "fade",
+     "out": 2
+    },
+    {
+     "id": "src48827",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Dhulipala, Conclusion",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Pakistan, Dhulipala concludes, was 'not insufficiently imagined, but plentifully and with ambition'.",
+     "say": "Pakistan, Doo-lee-paa-la concludes, was 'not insufficiently imagined, but plentifully and with ambition'."
+    },
+    {
+     "text": "If he is right, its troubles came not from too little vision, but from the distance between that vision and what any state could deliver."
+    },
+    {
+     "text": "In a dark room in 1955, a cigarette burned down on its wire stand. 'It is easier to acquire a country,' the spirit had said. 'It is extremely difficult to retain it.'"
+    },
+    {
+     "text": "",
+     "dur": 3.4,
+     "sfx": "bell"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 2 · The Broken Coalition",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "United Provinces · 1937",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: 1937. A new constitution, an election in the United Provinces, a Muslim leadership divided, and a partnership with Congress that never came to be."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "Qaid-i-Azam Papers, British Library (seance record, File 1067)",
+    "Collected Works of Mahatma Gandhi, vol. 83",
+    "Indian Annual Register, 1940 · Star of India and The Leader, January 1941",
+    "Film India, May 1946 · U.S. OIR Report 4162.1, August 1946",
+    "",
+    "# Scholarship and reviews",
+    "Ayesha Jalal, The Sole Spokesman (1985) · Anita Inder Singh (1987)",
+    "Gyanendra Pandey (2006) · David Gilmartin (1998, 2015)",
+    "Christophe Jaffrelot (2002) · Farzana Shaikh (2009) · S. V. R. Nasr (1994)",
+    "Faisal Devji, 'Young Fogeys', The Wire (2015); Muslim Zion (2013)",
+    "Sohaib I. Khan, The Marginalia Review · Pratap Bhanu Mehta, Indian Express (2015)",
+    "Ian Talbot, Journal of Asian Studies (2015) · Gail Minault, H-Asia (2015)",
+    "Yasmin Khan, The Great Partition (2007)",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ],
+   "dur": 30
+  }
+ ]
+}

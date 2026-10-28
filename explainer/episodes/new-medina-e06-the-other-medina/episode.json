@@ -1,0 +1,1755 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "E6",
+  "title": "The Other Medina",
+  "series": "Creating a New Medina",
+  "format": "documentary",
+  "look": "cinema",
+  "category": "Creating a New Medina (book)",
+  "rating": "mature",
+  "content_note": "Discusses the partition of India, communal politics and historical rhetoric about minorities. No graphic imagery.",
+  "music": "cinema",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.5,
+  "captions": false,
+  "width": 1280,
+  "height": 720,
+  "logline": "Some of Pakistan's most determined Muslim opponents were men of religion. Episode 6 follows three critiques from the Deobandi camp and its allies: Sajjad's 'fraud of Islamic Pakistan', Manglori's sums for the Muslims left behind, and Seoharvi's warning that Islam would shrink into geography, plus the ulama's own plan for a united India.",
+  "source": "Venkat Dhulipala, Creating a New Medina: State Power, Islam, and the Quest for Pakistan in Late Colonial North India (Cambridge University Press, 2015), chapter 5; the Urdu tracts and articles quoted there; Metcalf (2009) on Madani.",
+  "disclaimer": "Original animation and music. Narration paraphrases the book; short quotations are attributed. Maps use modern outlines from Natural Earth (public domain) and are approximate for the 1940s. Not affiliated with the author or publisher."
+ },
+ "cast": {
+  "narrator": {
+   "name": "Narrator",
+   "role": "Measured, grave documentary voice",
+   "voice": "bm_george:0.55+am_onyx:0.45",
+   "speed": 0.93
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open",
+   "style": "intertitle",
+   "lines": [
+    "Kanpur.",
+    "Spring 1941."
+   ],
+   "sub": "A POLICE REPORT",
+   "dur": 5.0,
+   "sfx": "type"
+  },
+  {
+   "type": "scene",
+   "id": "kanpur",
+   "bg": {
+    "kind": "room",
+    "pal": "archive"
+   },
+   "cam": {
+    "zoom": [
+     1.1,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "slate",
+     "type": "slate",
+     "x": 0,
+     "y": 0,
+     "text": "KANPUR · UNITED PROVINCES · 1941",
+     "in": 0,
+     "d": 0.2,
+     "anim": "none"
+    },
+    {
+     "id": "p",
+     "type": "doc",
+     "x": 640,
+     "y": 330,
+     "w": 560,
+     "h": 306,
+     "title": "U.P. POLICE ABSTRACT OF INTELLIGENCE",
+     "meta": "week ending 4 April 1941 (excerpt)",
+     "lines": [
+      "Jinnah spoke on the usual lines and",
+      "stated that he was willing to allow",
+      "the 2 crores of Muslims who would fall",
+      "in minority provinces ... to be smashed",
+      "in order to liberate 7 crores of Muslims",
+      "in the majority provinces."
+     ],
+     "in": 0,
+     "d": 0.8,
+     "anim": "rise",
+     "cps": 28,
+     "rot": -1.2,
+     "sfx": "type",
+     "vol": 0.4,
+     "hl": 3,
+     "hlOn": 0,
+     "keys": {
+      "1": {
+       "hlOn": 1,
+       "d": 0.5,
+       "t": 0.4
+      }
+     }
+    },
+    {
+     "id": "src86109",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "U.P. Police Abstract of Intelligence, 4 April 1941; via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.8,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "In the spring of 1941 Jinnah spoke to Muslim students in Kanpur, in the heart of U.P. A police officer took notes, as police officers did at every political meeting."
+    },
+    {
+     "text": "According to that report, Jinnah said he was willing to let the two crore Muslims of the minority provinces be smashed, if that was the price of freeing the seven crore in the majority provinces."
+    },
+    {
+     "text": "It is a police summary, not a transcript. But it was the kind of line that the League's fiercest Muslim critics heard, repeated and could not forgive. They were not secular politicians. They were men of religion."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "titlex",
+   "kicker": "A LUMEN DOCUMENTARY IN TEN PARTS",
+   "title": "Creating a New Medina",
+   "sub": "Episode 6 · The Other Medina",
+   "by": "after the book by Venkat Dhulipala (2015)",
+   "dur": 7.0,
+   "sfx": "boom"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "chapterx",
+   "kicker": "Chapter One",
+   "title": "The Other Medina",
+   "color": "#5fbf9a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Deoband and Delhi · 1938 – 1942"
+  },
+  {
+   "type": "scene",
+   "id": "congress",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "c0",
+     "type": "typer",
+     "x": 640,
+     "y": 170,
+     "text": "CONGRESS ANSWERS LAHORE",
+     "in": 0,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "c1",
+     "type": "typer",
+     "x": 640,
+     "y": 230,
+     "text": "Rajagopalachari: a 'diseased mentality'",
+     "in": 0,
+     "d": 1.8,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c2",
+     "type": "typer",
+     "x": 640,
+     "y": 275,
+     "text": "Nehru: 'it would not last 24 hours'",
+     "in": 0,
+     "d": 3.6,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "c3",
+     "type": "typer",
+     "x": 640,
+     "y": 320,
+     "text": "Gandhi: 'vivisection', and a 'sin'",
+     "in": 0,
+     "d": 5.4,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 640,
+     "y": 480,
+     "w": 640,
+     "size": 26,
+     "text": "a pact between the Prophet\nand the Jews in Medina",
+     "by": "Madani's precedent for one Indian nation, as Dhulipala summarises it",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src54244",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Indian Annual Register 1940; Tendulkar, Mahatma, vol. 6; Barbara Metcalf, Husain Ahmad Madani (2009); via Dhulipala, chs 2 and 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Congress answered the Lahore Resolution with fury. Rajagopalachari blamed a diseased mentality. Nehru said Pakistan would not last twenty-four hours. Gandhi called it the vivisection of India, and a sin.",
+     "say": "Congress answered the Lahore Resolution with fury. Raa-ja-go-paa-la-chaa-ree blamed a diseased mentality. Nehru said Pakistan would not last twenty-four hours. Gandhi called it the vivisection of India, and a sin."
+    },
+    {
+     "text": "But the hard work of arguing with Muslims fell to Congress's oldest Muslim allies: the Deobandi scholars of the Jamiat Ulama-i-Hind. Their leader, Maulana Husain Ahmad Madani, had argued since 1938 that Hindus and Muslims could form one nation. His precedent was the Prophet's own compact with the Jews of Medina. Two communities, two faiths, one city.",
+     "say": "But the hard work of arguing with Muslims fell to Congress's oldest Muslim allies: the Day-oh-bun-dee scholars of the Jamiat Ulama-i-Hind. Their leader, Maulana Hu-sain Ah-mud Ma-da-nee, had argued since 1938 that Hindus and Muslims could form one nation. His precedent was the Prophet's own compact with the Jews of Madeena. Two communities, two faiths, one city."
+    },
+    {
+     "text": "If the League promised a new Medina, the ulama pointed to another one, and said India could be it.",
+     "say": "If the League promised a new Madeena, the oo-la-maa pointed to another one, and said India could be it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "smith",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "mq",
+     "type": "cquote",
+     "x": 640,
+     "y": 230,
+     "w": 720,
+     "size": 24,
+     "text": "If it means ... an Islamic state ...\nit is a very noble cause ...\nnobody can imagine the possibility",
+     "by": "Husain Ahmad Madani on the Pakistan movement",
+     "in": 0,
+     "d": 0.4,
+     "anim": "fade"
+    },
+    {
+     "id": "sq",
+     "type": "cquote",
+     "x": 640,
+     "y": 470,
+     "w": 720,
+     "size": 22,
+     "text": "no substantial organized group of Muslims\nopposed to the League's policy of separatism",
+     "by": "W. C. Smith, The Muslim League 1942-45 (1945)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src66512",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Z. H. Faruqi, The Deoband School and the Demand for Pakistan (1963); W. C. Smith (1945); via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Madani did not say an Islamic state was wrong. If Pakistan meant a state built on the Prophet's traditions and the punishments of Islamic law, he said, it would be a noble cause. His point was that under the conditions of the day, nobody could seriously imagine it happening.",
+     "say": "Ma-da-nee did not say an Islamic state was wrong. If Pakistan meant a state built on the Prophet's traditions and the punishments of Islamic law, he said, it would be a noble cause. His point was that under the conditions of the day, nobody could seriously imagine it happening."
+    },
+    {
+     "text": "By the end of 1942, the Canadian scholar Wilfred Cantwell Smith wrote that there was no substantial organised group of Muslims left opposing the League. Dhulipala disagrees. The ulama kept arguing, and some of their predictions turned out to be uncannily accurate. Here are three of them.",
+     "say": "By the end of 1942, the Canadian scholar Wilfred Cantwell Smith wrote that there was no substantial organised group of Muslims left opposing the League. Doo-lee-paa-la disagrees. The oo-la-maa kept arguing, and some of their predictions turned out to be uncannily accurate. Here are three of them."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "chapterx",
+   "kicker": "Chapter Two",
+   "title": "The Riddle of Pakistan",
+   "color": "#d9b26a",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Patna · 14 April 1940"
+  },
+  {
+   "type": "scene",
+   "id": "sajjad",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "s",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Maulana Muhammad Sajjad",
+     "role": "founder, Imarat-i-Shariah, Bihar",
+     "years": "1880 – 1940",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "tag": "FIRST CRITIC",
+     "tagColor": "#8a5a2a"
+    },
+    {
+     "id": "s1",
+     "type": "typer",
+     "x": 870,
+     "y": 200,
+     "text": "weeks after Lahore, in the weekly Naqeeb",
+     "in": 0,
+     "d": 3.0,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s2",
+     "type": "typer",
+     "x": 870,
+     "y": 290,
+     "text": "an Islamic state? only by expelling",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s3",
+     "type": "typer",
+     "x": 870,
+     "y": 325,
+     "text": "half the population, and shutting",
+     "in": 1,
+     "d": 1.6,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s4",
+     "type": "typer",
+     "x": 870,
+     "y": 360,
+     "text": "non-Muslims out of government",
+     "in": 1,
+     "d": 2.8,
+     "size": 18,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s5",
+     "type": "typer",
+     "x": 870,
+     "y": 420,
+     "text": "Jinnah promised neither",
+     "in": 1,
+     "d": 5.0,
+     "size": 20,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "s6",
+     "type": "typer",
+     "x": 870,
+     "y": 520,
+     "text": "so 'Islamic Pakistan' was a fraud",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src65901",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Sajjad, 'Muslim India aur Hindu India par ek Aham Tabsira', Naqeeb, 14 April 1940; via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The first critique appeared within weeks of Lahore, before even Ambedkar's book. Its author, Maulana Muhammad Sajjad of Bihar, had been a runaway boy who fled to a madrasa in Kanpur, was expelled from Deoband after a fight, and grew up to found the Imarat-i-Shariah, a network of Islamic courts that still exists in Bihar.",
+     "say": "The first critique appeared within weeks of Lahore, before even Um-bayd-kar's book. Its author, Maulana Muhammad Saj-jaad of Bihar, had been a runaway boy who fled to a madrasa in Kanpur, was expelled from Day-oh-bund after a fight, and grew up to found the Imarat-i-Shariah, a network of Islamic courts that still exists in Bihar."
+    },
+    {
+     "text": "His first argument was simple arithmetic. Nearly half the people in the proposed Pakistan were not Muslims. An Islamic state could be built there only by expelling them, and by shutting non-Muslims out of government."
+    },
+    {
+     "text": "Jinnah had ruled out large transfers of population, and promised non-Muslims a share in power. So, Sajjad concluded, calling Pakistan Islamic was a fraud.",
+     "say": "Jinnah had ruled out large transfers of population, and promised non-Muslims a share in power. So, Saj-jaad concluded, calling Pakistan Islamic was a fraud."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "turkey",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t0",
+     "type": "typer",
+     "x": 640,
+     "y": 170,
+     "text": "THE HOSTAGE THEORY, TESTED AGAINST HISTORY",
+     "in": 0,
+     "d": 0.4,
+     "size": 22,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "t1",
+     "type": "typer",
+     "x": 360,
+     "y": 250,
+     "text": "against the Shariah:",
+     "in": 0,
+     "d": 2.4,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t2",
+     "type": "typer",
+     "x": 360,
+     "y": 290,
+     "text": "no punishing your own citizens",
+     "in": 0,
+     "d": 3.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t3",
+     "type": "typer",
+     "x": 920,
+     "y": 250,
+     "text": "against the record:",
+     "in": 1,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "t4",
+     "type": "typer",
+     "x": 920,
+     "y": 290,
+     "text": "Turkey in 1857 · Albania in 1939 · Palestine",
+     "in": 1,
+     "d": 2.2,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "a",
+     "type": "stat",
+     "x": 360,
+     "y": 460,
+     "value": 0,
+     "size": 80,
+     "color": "#e3a857",
+     "label": "million sacrificed for 60 million",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "2": {
+       "value": 20,
+       "d": 1.0,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "b",
+     "type": "stat",
+     "x": 920,
+     "y": 460,
+     "value": 0,
+     "size": 80,
+     "color": "#5fbf9a",
+     "label": "million for 250 million worldwide",
+     "in": 2,
+     "d": 8.6,
+     "anim": "fade",
+     "keys": {
+      "2": {
+       "value": 80,
+       "d": 1.0,
+       "t": 9.0
+      }
+     }
+    },
+    {
+     "id": "src28823",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Sajjad (1940), reissued by the Jamiat as Pakistan ki Cheestan (1942, 1945); via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then he took apart the hostage theory. Punishing your own peaceful Hindu citizens for what happened to Muslims elsewhere, he wrote, was against the Shariah itself."
+    },
+    {
+     "text": "And it had never worked. Turkey had not lifted a finger for India's Muslims in 1857. The Muslim world had watched Italy swallow Albania, and ignored the pleas of the Palestinians. Anyone who believed such protection would come, he wrote, was the worst kind of fool."
+    },
+    {
+     "text": "Finally he turned the League's language of sacrifice back on itself. Jinnah asked twenty million Muslims to be sacrificed for sixty million. Better, said Sajjad, for all eighty million to join Congress, overthrow the British Empire, and free two hundred and fifty million Muslims across the world. Pan-Islam, it turned out, could argue against Pakistan too.",
+     "say": "Finally he turned the League's language of sacrifice back on itself. Jinnah asked twenty million Muslims to be sacrificed for sixty million. Better, said Saj-jaad, for all eighty million to join Congress, overthrow the British Empire, and free two hundred and fifty million Muslims across the world. Pan-Islam, it turned out, could argue against Pakistan too."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "chapterx",
+   "kicker": "Chapter Three",
+   "title": "The Wicketkeeper from Aligarh",
+   "color": "#7fb2d9",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Badayun · 1941 – 1942"
+  },
+  {
+   "type": "scene",
+   "id": "manglori",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "m",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Tufail Ahmad Manglori",
+     "role": "Aligarh old boy; Azad Muslim Conference",
+     "years": "born 1868",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "fez",
+     "glasses": true,
+     "tag": "NOT A CLERIC",
+     "tagColor": "#3a6ea5"
+    },
+    {
+     "id": "m1",
+     "type": "typer",
+     "x": 870,
+     "y": 200,
+     "text": "Hindus in the Muslim zones: 40 and 43 per cent",
+     "in": 0,
+     "d": 2.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "m2",
+     "type": "typer",
+     "x": 870,
+     "y": 245,
+     "text": "Muslims in the Hindu zone: about 10 per cent",
+     "in": 0,
+     "d": 4.6,
+     "size": 18,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 870,
+     "y": 380,
+     "value": 0,
+     "size": 90,
+     "color": "#e3a857",
+     "label": "million Muslims left behind",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 28,
+       "d": 1.2,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "q",
+     "type": "cquote",
+     "x": 870,
+     "y": 540,
+     "w": 480,
+     "size": 24,
+     "text": "martyrdom, yes; suicide, no",
+     "by": "Manglori's answer to the language of sacrifice (paraphrase)",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src27012",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Manglori in Zulqarnain (Badayun), 1941-42; Teen Karod Musalmanon ki Hifazat (1941); via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The second critic was no cleric at all. Tufail Ahmad Manglori was one of the first students at Sir Syed's college in Aligarh, its cricket team's wicketkeeper, nicknamed Maulvi for his neat dress and regular prayers. In old age, half blind, he wrote a stream of articles for a weekly in Badayun.",
+     "say": "The second critic was no cleric at all. Tufail Ahmad Mung-lo-ree was one of the first students at Sir Syed's college in Ali-gur, its cricket team's wicketkeeper, nicknamed Maulvi for his neat dress and regular prayers. In old age, half blind, he wrote a stream of articles for a weekly in Badayun."
+    },
+    {
+     "text": "He did the sums that League speakers avoided. Hindus would be forty per cent of the north-western zone and forty-three per cent of the eastern one. Muslims in the rest of India would be about one in ten. That was some twenty-eight million people, poor and scattered, nearly half as many as Pakistan's own Muslims."
+    },
+    {
+     "text": "Minority-province Muslims would gladly die as martyrs in open battle, he wrote. But the Qaid was not offering them martyrdom. He was asking them to commit suicide, and Islam forbade suicide."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "joint",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "tome",
+     "x": 300,
+     "y": 330,
+     "w": 190,
+     "h": 250,
+     "title": "Musalmanon ka Raushan Mustaqbil",
+     "author": "Tufail Ahmad Manglori · 5 editions, 1937–45",
+     "color": "#2f4f6f",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise"
+    },
+    {
+     "id": "j0",
+     "type": "typer",
+     "x": 880,
+     "y": 200,
+     "text": "HIS REMEDY: JOINT ELECTORATES",
+     "in": 0,
+     "d": 2.0,
+     "size": 21,
+     "font": "bebas",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40,
+     "ls": 3
+    },
+    {
+     "id": "j1",
+     "type": "typer",
+     "x": 880,
+     "y": 250,
+     "text": "make Hindu politicians need Muslim votes",
+     "in": 0,
+     "d": 3.6,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "j2",
+     "type": "typer",
+     "x": 880,
+     "y": 330,
+     "text": "Badayun riot, 1929: the town pays a police tax;",
+     "in": 1,
+     "d": 0.4,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "j3",
+     "type": "typer",
+     "x": 880,
+     "y": 365,
+     "text": "the civil lines, where the elites live, do not",
+     "in": 1,
+     "d": 2.2,
+     "size": 17,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g",
+     "type": "cquote",
+     "x": 880,
+     "y": 490,
+     "w": 500,
+     "size": 20,
+     "text": "though your argument is good I am afraid\nno good will come out of publishing it",
+     "by": "Gandhi to Manglori, 24 May 1942",
+     "in": 2,
+     "d": 0.6,
+     "anim": "fade"
+    },
+    {
+     "id": "src17874",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Manglori, 'Muslim Aqalliyat ki Hifazat', Zulqarnain, 14 Feb 1942; CWMG vol. 76, 144; via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "His remedy flew in the face of thirty years of Muslim politics. Scrap separate electorates, he said. Under a joint vote, a Hindu candidate had to knock on Muslim doors, and would never lead a band past a mosque at prayer time. Separate electorates suited only the Muslim elite, who no longer had to court anyone."
+    },
+    {
+     "text": "He had a story to prove it. After a riot in Badayun in 1929, the town had to pay for extra police. The civil lines, where the well-to-do of both faiths played cards and tennis together, were exempt. There had been no riot there."
+    },
+    {
+     "text": "He sent his essay to Gandhi for publication. Gandhi replied that the argument was good, but no good would come of publishing it now."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "chapterx",
+   "kicker": "Chapter Four",
+   "title": "A Revelation from Buckingham",
+   "color": "#d7263d",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Delhi · 1945"
+  },
+  {
+   "type": "scene",
+   "id": "seoharvi",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "dossier",
+     "x": 280,
+     "y": 350,
+     "name": "Hifzur Rahman Seoharvi",
+     "role": "Nazim, Jamiat Ulama-i-Hind",
+     "years": "1901 – 1962",
+     "in": 0,
+     "d": 0.4,
+     "anim": "drop",
+     "sfx": "shutter",
+     "vol": 0.5,
+     "hat": "turban",
+     "tag": "1945 ELECTION",
+     "tagColor": "#8a2a2a"
+    },
+    {
+     "id": "p",
+     "type": "paper",
+     "x": 870,
+     "y": 330,
+     "w": 380,
+     "h": 400,
+     "mast": "MADINA",
+     "date": "Bijnor · 1945",
+     "head": "A Look at the\nPakistan Movement",
+     "headSize": 30,
+     "sub": "by Hifzur Rahman Seoharvi",
+     "cols": 3,
+     "rot": 1.5,
+     "anim": "rise"
+    },
+    {
+     "id": "x1",
+     "type": "typer",
+     "x": 870,
+     "y": 580,
+     "text": "reprinted as Congress election propaganda",
+     "in": 1,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src86773",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Seoharvi, Tehrik-i-Pakistan par ek Nazar (Delhi, 1945); via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The third critique came on the eve of the 1945 election, the vote that would decide Pakistan. Its author, Maulana Hifzur Rahman Seoharvi, was the Jamiat's chief organiser, a Deoband-trained scholar from Bijnor who had once sat on the League's own election board.",
+     "say": "The third critique came on the eve of the 1945 election, the vote that would decide Pakistan. Its author, Maulana Hifzur Rahman Say-oh-haar-vee, was the Jamiat's chief organiser, a Day-oh-bund-trained scholar from Bij-nor who had once sat on the League's own election board."
+    },
+    {
+     "text": "His essay ran in the Bijnor newspaper Madina and was reprinted by Congress as campaign literature. Where Sajjad and Manglori spoke for the Muslims left behind, Seoharvi asked what Pakistan would do to all of India's Muslims.",
+     "say": "His essay ran in the Bij-nor newspaper Madina and was reprinted by Congress as campaign literature. Where Saj-jaad and Mung-lo-ree spoke for the Muslims left behind, Say-oh-haar-vee asked what Pakistan would do to all of India's Muslims."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "geography",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "t",
+     "type": "typer",
+     "x": 640,
+     "y": 200,
+     "text": "a Muslim will be someone who lives in Pakistan",
+     "in": 0,
+     "d": 0.8,
+     "size": 28,
+     "font": "serif",
+     "color": "#e8cfa0",
+     "anim": "none",
+     "italic": true,
+     "cursor": false
+    },
+    {
+     "id": "g0",
+     "type": "typer",
+     "x": 640,
+     "y": 255,
+     "text": "Seoharvi's warning, paraphrased",
+     "in": 0,
+     "d": 4.4,
+     "size": 16,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g1",
+     "type": "typer",
+     "x": 360,
+     "y": 350,
+     "text": "Islam shrunk from a faith",
+     "in": 1,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g2",
+     "type": "typer",
+     "x": 360,
+     "y": 385,
+     "text": "to a 'geographical programme'",
+     "in": 1,
+     "d": 2.0,
+     "size": 19,
+     "font": "type",
+     "color": "#cfe0f0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g3",
+     "type": "typer",
+     "x": 920,
+     "y": 350,
+     "text": "Urdu in India would become",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g4",
+     "type": "typer",
+     "x": 920,
+     "y": 385,
+     "text": "a 'holy' language, like Arabic",
+     "in": 2,
+     "d": 2.0,
+     "size": 19,
+     "font": "type",
+     "color": "#ffd8a8",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g5",
+     "type": "typer",
+     "x": 640,
+     "y": 500,
+     "text": "and Pakistan itself, he said, was a revelation",
+     "in": 3,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "g6",
+     "type": "typer",
+     "x": 640,
+     "y": 535,
+     "text": "'from the Kaiser of Buckingham'",
+     "in": 3,
+     "d": 2.4,
+     "size": 21,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src8021",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Seoharvi, Tehrik-i-Pakistan par ek Nazar (1945); via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "His sharpest point was about identity. A German is someone who lives in Germany, he wrote. After partition, a Muslim would come to mean someone who lives in Pakistan. Inviting a Hindu to embrace Islam would sound like inviting him to change countries. Islam would shrink from a faith into a geographical programme."
+    },
+    {
+     "text": "He predicted that if Pakistan made Urdu its language, India would choose Hindi in the Devanagari script, and Urdu would become a holy language among Indian Muslims, like Arabic, read only by scholars."
+    },
+    {
+     "text": "He predicted a Pakistan short of capital, dependent on foreign money, a quarter the size of its neighbour. And he was not above a cheap shot or two, including sectarian jabs at Shia and Ahmadi League leaders."
+    },
+    {
+     "text": "Pakistan, he said, was no revelation granted to Iqbal or Jinnah. It was a revelation from the Kaiser of Buckingham: a British plot to divide and rule.",
+     "say": "Pakistan, he said, was no revelation granted to Ik-baal or Jinnah. It was a revelation from the Kaiser of Buckingham: a British plot to divide and rule."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "chapterx",
+   "kicker": "Chapter Five",
+   "title": "The Ulama's Alternative",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Saharanpur · 1945"
+  },
+  {
+   "type": "scene",
+   "id": "formula",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "hemicycle",
+     "x": 640,
+     "y": 380,
+     "r": 220,
+     "rows": 6,
+     "reveal": 0,
+     "anim": "fade",
+     "title": "A FEDERAL ASSEMBLY · PARITY AT THE CENTRE",
+     "legendGap": 260,
+     "groups": [
+      {
+       "n": 45,
+       "color": "#5fbf9a",
+       "label": "Muslims"
+      },
+      {
+       "n": 10,
+       "color": "#8a7e68",
+       "label": "Others"
+      },
+      {
+       "n": 45,
+       "color": "#e3a857",
+       "label": "Hindus"
+      }
+     ],
+     "keys": {
+      "0": {
+       "reveal": 1,
+       "d": 2.0,
+       "t": 6.0
+      }
+     }
+    },
+    {
+     "id": "f4",
+     "type": "typer",
+     "x": 640,
+     "y": 500,
+     "text": "a veto for two-thirds of Muslim members",
+     "in": 1,
+     "d": 0.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "f5",
+     "type": "typer",
+     "x": 640,
+     "y": 540,
+     "text": "a Supreme Court half Muslim, half non-Muslim",
+     "in": 1,
+     "d": 2.4,
+     "size": 18,
+     "font": "type",
+     "color": "#e8cfa0",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "f6",
+     "type": "typer",
+     "x": 640,
+     "y": 595,
+     "text": "'better protection than the Pakistan resolution'",
+     "in": 2,
+     "d": 0.4,
+     "size": 19,
+     "font": "type",
+     "color": "#d9b26a",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src86940",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Jamiat Ulama-i-Hind resolutions, Lahore 1942 and Saharanpur 1945; Seoharvi (1945); via Dhulipala, ch. 5",
+     "in": 0,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The ulama did not only say no. In 1945, at Saharanpur, the Jamiat proposed a united India with weak central powers and strong provinces, and at the centre, parity: forty-five per cent of seats for Muslims, forty-five for Hindus, ten for everyone else.",
+     "say": "The oo-la-maa did not only say no. In 1945, at Saharanpur, the Jamiat proposed a united India with weak central powers and strong provinces, and at the centre, parity: forty-five per cent of seats for Muslims, forty-five for Hindus, ten for everyone else."
+    },
+    {
+     "text": "Any bill opposed by two-thirds of the Muslim members could not pass. The Supreme Court would have equal numbers of Muslim and non-Muslim judges."
+    },
+    {
+     "text": "According to Seoharvi, one well-known U.P. League leader admitted privately that this protected Muslims better than the Pakistan resolution did. Jinnah would not discuss it.",
+     "say": "According to Say-oh-haar-vee, one well-known U.P. League leader admitted privately that this protected Muslims better than the Pakistan resolution did. Jinnah would not discuss it."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "chapterx",
+   "kicker": "Chapter Six",
+   "title": "What the Historians Say",
+   "color": "#e3a857",
+   "dur": 4.2,
+   "sfx": "boom",
+   "year": "Testing the chapter"
+  },
+  {
+   "type": "scene",
+   "id": "tests",
+   "bg": {
+    "kind": "void",
+    "pal": "smoke"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "v1",
+     "type": "verdict",
+     "x": 340,
+     "y": 220,
+     "w": 560,
+     "claim": "Influential ulama argued against\nPakistan until the end.",
+     "level": "strong",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "0": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Tracts by Sajjad, Manglori, Seoharvi; the Jamiat's 1945 campaign"
+    },
+    {
+     "id": "v2",
+     "type": "verdict",
+     "x": 940,
+     "y": 220,
+     "w": 560,
+     "claim": "By 1942 organised Muslim\nopposition had collapsed.",
+     "level": "contested",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "1": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "W. C. Smith said so; Dhulipala shows the debate went on"
+    },
+    {
+     "id": "v3",
+     "type": "verdict",
+     "x": 340,
+     "y": 470,
+     "w": 560,
+     "claim": "Partition would weaken Urdu\nin India.",
+     "level": "partial",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "2": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Hindi became India's official language; Urdu survives, diminished"
+    },
+    {
+     "id": "v4",
+     "type": "verdict",
+     "x": 940,
+     "y": 470,
+     "w": 560,
+     "claim": "Pakistan was a British plot\nto divide and rule.",
+     "level": "weak",
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "on": 0,
+     "keys": {
+      "3": {
+       "on": 1,
+       "d": 1.3,
+       "t": 0.8
+      }
+     },
+     "by": "Few historians accept a simple plot; British policy is still argued over"
+    }
+   ],
+   "lines": [
+    {
+     "text": "So what holds up? That influential ulama argued against Pakistan until the very end: well supported. Their tracts survive, and they campaigned in the 1945 election.",
+     "say": "So what holds up? That influential oo-la-maa argued against Pakistan until the very end: well supported. Their tracts survive, and they campaigned in the 1945 election."
+    },
+    {
+     "text": "That organised Muslim opposition had collapsed by 1942: contested. Smith said so at the time. Dhulipala shows the argument went on, though the League would win the vote.",
+     "say": "That organised Muslim opposition had collapsed by 1942: contested. Smith said so at the time. Doo-lee-paa-la shows the argument went on, though the League would win the vote."
+    },
+    {
+     "text": "That partition would weaken Urdu in India: partly borne out. Hindi in Devanagari became India's official language in 1950. Urdu survives, in literature, film and some state governments, but it lost much of its old place in north India."
+    },
+    {
+     "text": "And that Pakistan was simply a British plot: weak. British policy is still argued over, but few historians today accept so simple an account. The ulama themselves, as Dhulipala notes, also never discussed the one thing that would come true: the partition of Punjab and Bengal.",
+     "say": "And that Pakistan was simply a British plot: weak. British policy is still argued over, but few historians today accept so simple an account. The oo-la-maa themselves, as Doo-lee-paa-la notes, also never discussed the one thing that would come true: the partition of Punjab and Bengal."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "now",
+   "bg": {
+    "kind": "void",
+    "pal": "blood"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h1",
+     "type": "typer",
+     "x": 640,
+     "y": 210,
+     "text": "Who speaks for those left behind?",
+     "in": 0,
+     "d": 0.4,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "italic": true,
+     "cursor": false,
+     "cps": 20
+    },
+    {
+     "id": "st",
+     "type": "stat",
+     "x": 640,
+     "y": 370,
+     "value": 0,
+     "size": 96,
+     "color": "#e3a857",
+     "label": "million Muslims in India, 2011 census (14.2%)",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "keys": {
+      "1": {
+       "value": 172,
+       "d": 1.6,
+       "t": 1.0
+      }
+     }
+    },
+    {
+     "id": "h3",
+     "type": "typer",
+     "x": 640,
+     "y": 545,
+     "text": "the minority the 1940s debate was about",
+     "in": 2,
+     "d": 0.6,
+     "size": 17,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "fade",
+     "cursor": false,
+     "cps": 40
+    },
+    {
+     "id": "src43344",
+     "type": "cite",
+     "x": 640,
+     "y": 700,
+     "text": "Census of India 2011, religion data",
+     "in": 1,
+     "d": 0.6,
+     "anim": "fade",
+     "prefix": "Source: "
+    }
+   ],
+   "lines": [
+    {
+     "text": "The minority-province Muslims these men worried about did not disappear. Most of them stayed."
+    },
+    {
+     "text": "Their descendants are counted in modern India's census: about a hundred and seventy-two million people in 2011, more Muslims than live in almost any other country on earth."
+    },
+    {
+     "text": "Manglori's question still runs through Indian politics: are minorities safer when politicians must compete for their votes, or when they vote apart? And the ulama's other Medina, a city of many faiths under one compact, is still the idea that India's constitution was built to test. Those last observations are ours.",
+     "say": "Mung-lo-ree's question still runs through Indian politics: are minorities safer when politicians must compete for their votes, or when they vote apart? And the oo-la-maa's other Madeena, a city of many faiths under one compact, is still the idea that India's constitution was built to test. Those last observations are ours."
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "sfx": "heart"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "bg": {
+    "kind": "void",
+    "pal": "ink"
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      12,
+      -4
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "nx",
+     "type": "typer",
+     "x": 640,
+     "y": 260,
+     "text": "NEXT",
+     "in": 0,
+     "d": 0.2,
+     "size": 28,
+     "font": "bebas",
+     "color": "#d7263d",
+     "anim": "none",
+     "ls": 12,
+     "cursor": false,
+     "cps": 8
+    },
+    {
+     "id": "nt",
+     "type": "typer",
+     "x": 640,
+     "y": 340,
+     "text": "Episode 7 · Letters to Madina",
+     "in": 0,
+     "d": 0.8,
+     "size": 38,
+     "font": "serif",
+     "color": "#f4ecdc",
+     "anim": "none",
+     "weight": 700,
+     "cursor": false,
+     "cps": 24
+    },
+    {
+     "id": "ny",
+     "type": "typer",
+     "x": 640,
+     "y": 410,
+     "text": "Bijnor · 1942 – 1943",
+     "in": 0,
+     "d": 2.4,
+     "size": 20,
+     "font": "type",
+     "color": "#b8a888",
+     "anim": "none",
+     "cursor": false
+    }
+   ],
+   "lines": [
+    {
+     "text": "Next time: a small-town newspaper opens its pages to its readers, and letters arrive from Bombay to Chittagong to Raichur. What ordinary Muslims thought Pakistan would be, in their own words."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "endx",
+   "title": "Creating a New Medina",
+   "dur": 26,
+   "credits": [
+    "# Based on",
+    "Creating a New Medina: State Power, Islam, and the Quest for Pakistan",
+    "in Late Colonial North India",
+    "by Venkat Dhulipala (Cambridge University Press, 2015)",
+    "Narration paraphrases the book. Short quotations are attributed.",
+    "",
+    "# Archival sources as cited in the book",
+    "Maulana Muhammad Sajjad, in Naqeeb (Patna, 1940) · Pakistan ki Cheestan (Jamiat, 1942, 1945)",
+    "Tufail Ahmad Manglori, Zulqarnain (Badayun, 1941-42) · Musalmanon ka Raushan Mustaqbil",
+    "Hifzur Rahman Seoharvi, Tehrik-i-Pakistan par ek Nazar (Delhi, 1945)",
+    "U.P. Police Abstracts of Intelligence (British Library) · Collected Works of Mahatma Gandhi, vol. 76",
+    "",
+    "# Scholarship and reviews",
+    "Barbara Metcalf, Husain Ahmad Madani: The Jihad for Islam and India's Freedom (2009)",
+    "Z. H. Faruqi, The Deoband School and the Demand for Pakistan (1963)",
+    "W. C. Smith, The Muslim League 1942-45 (1945)",
+    "Census of India 2011",
+    "",
+    "# Maps",
+    "Natural Earth 1:50m (public domain), modern outlines, approximate for the 1940s",
+    "",
+    "# Images",
+    "All imagery is original vector illustration.",
+    "Portraits are generic silhouettes, not likenesses.",
+    "Newspapers and documents are reconstructions, not facsimiles.",
+    "",
+    "# Voice and music",
+    "Kokoro open-weight TTS (Apache-2.0), blended original voice",
+    "Original score synthesised in numpy: tanpura drone, low strings",
+    "",
+    "# Type",
+    "Playfair Display, Bebas Neue (SIL OFL) · Special Elite (Apache-2.0) · Nunito (SIL OFL)",
+    "",
+    "LUMEN · original animation · not affiliated with the author or publisher"
+   ]
+  }
+ ]
+}

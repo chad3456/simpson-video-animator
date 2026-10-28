@@ -216,10 +216,110 @@ def ambient_bed(total, seed=11):
         k = int(d * SR); out[k:] += out[:-k] * g
     return out
 
+# ---------- cinema palette: documentary drama (tanpura drone, low strings, heartbeat hits) ----------
+
+def _tanpura_pluck(f, dur=4.5, amp=0.1, seed=0):
+    """A drone string with a jawari-like bloom: upper partials swell after the attack, then everything decays."""
+    t = np.arange(int(dur * SR)) / SR
+    rng = np.random.default_rng(seed)
+    sig = np.zeros(len(t))
+    for h in range(1, 17):
+        peak = 0.05 + 0.09 * h                       # higher partials bloom later
+        env = (t / peak) * np.exp(1 - t / peak) if h > 1 else np.exp(-t / 2.4)
+        sig += np.sin(2 * np.pi * f * h * t * (1 + 0.0006 * np.sin(2 * np.pi * 0.3 * t)) + rng.uniform(0, 6.28)) * env / h ** 0.85
+    return sig * np.exp(-t / 2.8) * np.minimum(1, t / 0.01) * amp
+
+def _string_pad(notes, dur, amp=0.05, seed=0):
+    t = np.arange(int(dur * SR)) / SR
+    rng = np.random.default_rng(seed)
+    att = np.minimum(1, t / 3.0) * np.minimum(1, np.maximum(0, dur - t) / 3.0)
+    sig = np.zeros(len(t))
+    for m in notes:
+        f = _note(m)
+        for det in (-0.003, 0, 0.003):
+            vib = 1 + 0.002 * np.sin(2 * np.pi * (4.8 + rng.uniform(-0.4, 0.4)) * t + rng.uniform(0, 6))
+            for h in range(1, 8):
+                sig += np.sin(2 * np.pi * f * h * (1 + det) * t * vib + rng.uniform(0, 6.28)) / h ** 1.3
+    return sig * att * amp / len(notes)
+
+def cinema_bed(total, seed=7):
+    """Original score for documentaries: a D tanpura drone, slow low strings (Dm, Bb, Gm, A), a distant heartbeat and a high
+    solo line that enters now and then."""
+    rng = np.random.default_rng(seed)
+    n = int((total + 3) * SR); out = np.zeros(n)
+    sa = _note(50)                                   # D3
+    cycle = [_note(45), sa, sa, _note(38)]           # Pa, Sa, Sa, low Sa
+    plucks = [_tanpura_pluck(f, 4.5, 0.05, i) for i, f in enumerate(cycle)]
+    step = 1.25; i = 0
+    while i * step < total + 2:
+        o = int(i * step * SR); p = plucks[i % 4]
+        out[o:o + len(p)] += p[: n - o]
+        i += 1
+    prog = [(38, 45, 53, 57), (34, 41, 50, 53), (31, 43, 46, 50), (33, 40, 49, 52)]   # Dm, Bb, Gm, A
+    sec = 10.0; k = 0
+    while k * sec < total + 2:
+        pad = _string_pad(prog[k % 4], sec + 4, 0.09, k)
+        o = int(k * sec * SR); out[o:o + len(pad)] += pad[: n - o]
+        if k % 3 != 2:                                # heartbeat: two low thumps every 2.5 s
+            for b in range(4):
+                for dd, g in ((0, 1.0), (0.32, 0.7)):
+                    ob = o + int((b * 2.5 + dd) * SR); th = sfx_thump() * 0.22 * g
+                    out[ob:ob + len(th)] += th[: max(0, n - ob)]
+        if rng.random() < 0.4:                       # a high solo line, long notes with vibrato
+            m = [69, 74, 72, 70, 69][k % 5]
+            tt = np.arange(int(6 * SR)) / SR
+            env = np.sin(np.pi * np.clip(tt / 6, 0, 1)) ** 2
+            line = np.sin(2 * np.pi * _note(m) * tt * (1 + 0.004 * np.sin(2 * np.pi * 5.2 * tt))) * env * 0.035
+            ob = o + int(2 * SR); out[ob:ob + len(line)] += line[: max(0, n - ob)]
+        k += 1
+    for d, g in ((0.29, 0.3), (0.67, 0.2), (1.21, 0.12), (1.9, 0.07)):   # room
+        kk = int(d * SR); out[kk:] += out[:-kk] * g
+    return out
+
+def sfx_boom():
+    n = int(SR * 3.5); t = np.arange(n) / SR
+    body = np.sin(2 * np.pi * (32 + 50 * np.exp(-t / 0.12)) * t) * np.exp(-t / 0.9)
+    return (body * 0.9 + _filtered_noise(n, 60, 3) * np.exp(-t / 0.6) * 2.5) * 0.5
+
+def sfx_type():
+    out = np.zeros(int(SR * 1.6)); rng = np.random.default_rng(5); t = 0.0
+    while t < 1.25:
+        n = int(SR * 0.03); tt = np.arange(n) / SR
+        click = (np.sin(2 * np.pi * rng.uniform(1800, 2600) * tt) * 0.5 + _filtered_noise(n, 3, int(t * 100))) * np.exp(-tt / 0.006) * 0.22
+        o = int(t * SR); out[o:o + n] += click; t += rng.uniform(0.06, 0.13)
+    return out
+
+def sfx_riser():
+    n = int(SR * 3.0); t = np.arange(n) / SR
+    env = (t / 3.0) ** 2 * np.exp(-np.maximum(t - 2.9, 0) / 0.05)
+    tone = np.sin(2 * np.pi * np.cumsum(110 + 330 * (t / 3.0) ** 2) / SR)
+    return (tone * 0.3 + _filtered_noise(n, 4, 9) * 0.6) * env * 0.5
+
+def sfx_heart():
+    out = np.zeros(int(SR * 1.0))
+    for d, g in ((0, 1.0), (0.3, 0.7)):
+        th = sfx_thump() * g; o = int(d * SR); out[o:o + len(th)] += th[: len(out) - o]
+    return out * 0.8
+
+def sfx_shutter():
+    n = int(SR * 0.12); t = np.arange(n) / SR
+    return _filtered_noise(n, 3, 4) * 0.6 * (np.exp(-t / 0.01) + 0.6 * np.exp(-np.maximum(t - 0.06, 0) / 0.01) * (t > 0.06)) * 0.8
+
+def sfx_bell():
+    a = _bell(_note(38), 6.0, 0.35); b = _bell(_note(50), 6.0, 0.12)
+    return a + b
+
+def sfx_murmur():
+    n = int(SR * 4.0); t = np.arange(n) / SR
+    env = np.sin(np.pi * np.clip(t / 4.0, 0, 1)) ** 1.5
+    voc = sum(np.sin(2 * np.pi * f * t + np.sin(2 * np.pi * r * t) * 3) for f, r in ((180, 3.1), (240, 4.3), (310, 2.6), (420, 5.1))) / 4
+    return (_filtered_noise(n, 12, 11) * 1.6 + voc * 0.05) * env * 0.35
+
 SFX = {"theme": sfx_theme, "sting": sfx_sting, "sparkle": sfx_sparkle,
        "chitter": sfx_chitter, "chomp": sfx_chomp, "crash": sfx_crash,
        "whoosh": sfx_whoosh, "pop": sfx_pop, "chime": sfx_chime, "tick": sfx_tick,
-       "swell": sfx_swell, "thump": sfx_thump}
+       "swell": sfx_swell, "thump": sfx_thump, "boom": sfx_boom, "type": sfx_type, "riser": sfx_riser,
+       "heart": sfx_heart, "shutter": sfx_shutter, "bell": sfx_bell, "murmur": sfx_murmur}
 
 
 # ---------- helpers ----------
@@ -325,8 +425,8 @@ def main():
         mix[o:o + len(sig)] += sig[: len(mix) - o]
     music = ep["meta"].get("music")
     if music:
-        ambient = music == "ambient"
-        bed = (ambient_bed(total) if ambient else music_bed(total))[: len(mix)]
+        ambient = music in ("ambient", "cinema")
+        bed = (cinema_bed(total) if music == "cinema" else ambient_bed(total) if ambient else music_bed(total))[: len(mix)]
         gain = np.full(len(mix), 0.75 if ambient else 0.55)
         for sh in shots:
             a, b = int(sh["start"] * SR), int(sh["end"] * SR)
