@@ -1,0 +1,387 @@
+title: तीन पग
+episode: 8
+slug: e08-teen-pag
+kicker: अध्याय आठ
+sub: विश्वामित्र, त्रिशंकु और वामन
+logline: एक राजा जिसे एक गाय ने ऋषि बना दिया, एक राजकुमार जो स्वर्ग और धरती के बीच उल्टा लटक गया, और एक नन्हा ब्राह्मण जिसने तीन पग में तीनों लोक नाप लिए।
+stories: 58, 59, 50
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 58, 59 और 50
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! आज तीन कथाएँ हैं, और तीनों में एक ही प्रश्न। कितना पर्याप्त है?
+NARAD (sly, pose=open) [mid:narad]: एक राजा, जिसके पास सब कुछ था, पर उसे एक गाय चाहिए थी। एक राजकुमार, जिसे स्वर्ग चाहिए था, पर शरीर समेत।
+NARAD (calm) [close:narad]: और एक असुर, जिसके पास तीनों लोक थे। और जिसने एक नन्हे ब्राह्मण को, केवल तीन पग भूमि दान में दी।
+NARAD (smile) [ecu:narad]: चलिए, देखते हैं किसका पेट भरा, और किसका मन।
+
+== TITLE | dur=7.5 | kicker=अध्याय आठ | title=तीन पग | sub=विश्वामित्र, त्रिशंकु और वामन
+
+== CHAPTER | kicker=कथा अट्ठावन | title=विश्वामित्र और वसिष्ठ
+
+# ---------------------------------------------------------------- the hermitage
+== SCENE ashram | set=glade time=dusk music=dawn amb=birds,river trans=mandala
+@ vasishtha x=880 y=650 s=0.95 face=-1 pose=offer emo=smile
+@ kaushik x=380 y=650 s=1 face=1 pose=hips emo=calm
+@ sainik fig=indra x=220 y=650 s=0.85 face=1 pose=rest emo=calm z=-1
+BEAT 1 [wide] (sfx=bell)
+NARRATOR [~wide]: राजा कौशिक योग्य शासक था। शत्रु उससे डरते थे, प्रजा उसका आदर करती थी। पर उसके माता-पिता के मन में एक भविष्यवाणी खंजर की तरह गड़ी थी। यह शासन तो करेगा, पर अंत में ऋषि बन जाएगा।
+NARRATOR [two:kaushik,vasishtha]: एक शाम, शिकार से थका कौशिक अपनी सेना के साथ वसिष्ठ के आश्रम पहुँचा। सीमित साधनों वाले उस ऋषि ने ऐसा स्वागत किया, ऐसा पेय, ऐसा भोजन, कि राजा की रसोई भी लज्जित हो जाए।
+KAUSHIK (joy, pose=open) [close:kaushik]: ऋषिवर, ऐसे उपहार मैंने पहले कभी नहीं देखे। आपके पास कौन-सा खज़ाना है, जिसके आगे राजा भी लज्जित हो जाएँ?
+VASISHTHA (smile, pose=point) [close:vasishtha]: मेरा खज़ाना वहाँ है।
+@ kamadhenu kind=creature creature=cow x=1500 y=690 s=1 face=-1
+> kamadhenu x=1100 t=2.5
++ kg kind=glow x=1100 y=600 r=200 color=#fff6d8 core=0.5 z=-1 anim=pop
+KAUSHIK (calm) [~close:kaushik]: एक गाय?
+VASISHTHA (serene) [close:vasishtha] (sfx=sparkle): यह कोई साधारण गाय नहीं। आपके सामने कामधेनु खड़ी हैं। हर मनोकामना पूरी करने वाली गौ माता।
+> kaushik emo=sly t=1
+NARRATOR [~close:kaushik] (sfx=heartbeat): राजा की आँखें फैल गईं। चेहरे पर लालच उतर आया। मन में बस एक ही वाक्य गूँज रहा था। यह मुझे चाहिए।
+KAUSHIK (sly, pose=open) [close:kaushik]: आप ब्राह्मण हैं, आपकी आवश्यकताएँ थोड़ी हैं। यह चमत्कारी पशु आपके किस काम का? इसे मुझे दे दीजिए। मैं इससे अपनी प्रजा का पालन करूँगा।
+VASISHTHA (calm) [close:vasishtha]: मैं इसे धन के लिए नहीं, धर्म के लिए रखता हूँ, राजन। यह देवताओं और पितरों के संस्कार पूरे करती है।
+KAUSHIK (angry, pose=point) [close:kaushik]: आप मुझे मना कर रहे हैं? मैं यहाँ का राजा हूँ!
+VASISHTHA (calm) [close:vasishtha]: इसीलिए, क्योंकि मैं उन शक्तियों के प्रति उत्तरदायी हूँ, जिन्होंने आपको राजा बनाया।
+NARRATOR [~wide]: राजा ने रत्न दिए, सोने के सिक्के दिए, एक हज़ार गाएँ दीं, घोड़े और हाथी जोड़े। ऋषि ने सब ठुकरा दिया।
+KAUSHIK (rage, pose=curse) [close:kaushik] (sfx=thunder): सैनिको! गाय को पकड़ लो!
+
+# ---------------------------------------------------------------- Kamadhenu's warriors
+== SCENE kamadhenu | set=glade time=night music=battle amb=storm,wind trans=cut tint=#2a0a0a,0.25
+@ kamadhenu kind=creature creature=cow x=900 y=690 s=1.1 face=-1
+@ s1 fig=indra x=420 y=650 s=0.85 face=1 pose=reach emo=angry
+@ s2 fig=manu x=300 y=650 s=0.8 face=1 pose=reach emo=angry z=-1
+@ kaushik x=160 y=650 s=0.95 face=1 pose=point emo=rage z=-2
+BEAT 0.8 [wide] (sfx=roar)
++ eyes kind=glow x=990 y=600 r=120 color=#ff3a2a core=1 z=10 anim=pop
+> kamadhenu s=1.4 y=700 t=1.5
+NARRATOR [~close:kamadhenu] (sfx=rumble, shake=6): सैनिक आगे बढ़े, और गाय का रूप बदलने लगा। आँखें अंगार बन गईं। सींग और खुर बढ़ गए।
+@ w1 fig=gana x=760 y=650 s=0.9 face=-1 pose=strike emo=rage anim=materialize z=2
+@ w2 fig=asura2 x=1040 y=650 s=0.9 face=-1 pose=strike emo=rage anim=materialize z=2
+@ w3 fig=veerabhadra x=1180 y=650 s=0.85 face=-1 pose=strike emo=rage anim=materialize z=1
++ c1 kind=clash x=600 y=400 period=0.6 z=60
+NARRATOR [~wide] (sfx=roar, clash, shake=8): और कामधेनु के रोम-रोम से योद्धा प्रकट होने लगे।
+> s1 o=0 t=0.4
+> s2 o=0 t=0.4 d=0.3
+- c1
+NARRATOR [~close:kaushik] (sfx=boom): राजा की सेना पल भर में समाप्त हो गई। और कौशिक, अपने प्राण बचाकर भागा।
+> kaushik x=-200 t=1.2
+
+# ---------------------------------------------------------------- the reflection
+== SCENE pratibimb | set=pond time=night music=sorrow amb=night trans=fade
++ moon kind=moonphase x=1060 y=150 r=50 phase=0.3 z=-4
+@ kaushik x=520 y=640 s=1 face=1 pose=despair emo=sad seat=kneel
+BEAT 1.2 [wide] (sfx=wind)
+NARRATOR [~wide]: जंगल में एक तालाब के किनारे, कौशिक गिर पड़ा। और जल में उसे अपना प्रतिबिंब दिखा, जो फुसफुसा रहा था।
++ t1 kind=text x=820 y=300 text="तलवार" size=44 z=70
+NARRATOR [~at:760,560,1.3] (sfx=magic): उसकी तलवार बोली। यह वह शक्ति है, जिसने एक तपस्वी के जादू के आगे घुटने टेक दिए।
+- t1
++ t2 kind=text x=820 y=300 text="मोती" size=44 z=70
+NARRATOR [~at:760,560,1.3] (sfx=magic): उसके मोती बोले। यह वह संपत्ति है, जो एक ऋषि के चिथड़ों से हार गई।
+- t2
++ t3 kind=text x=820 y=300 text="मुकुट" size=44 z=70
+NARRATOR [~at:760,560,1.4] (sfx=magic): और उसका अपना चेहरा बोला। यह वह राजा है, जो एक ब्राह्मण के आगे हार गया।
+- t3
+> kaushik pose=raise emo=rage t=0.4
+KAUSHIK (rage, pose=raise) [close:kaushik] (sfx=thunder, shake=6): मैं, कौशिक, आज राज्य त्यागता हूँ। अब मैं क्षत्रिय नहीं, ब्राह्मण हूँ। और मैं उस वसिष्ठ से श्रेष्ठ बनूँगा, जिसने आज मुझे हराया है!
+> kaushik pose=meditate emo=meditate seat=lotus t=1
++ ages kind=moonphase x=640 y=200 r=70 phase=0 z=-3
+> ages phase=1 t=6
++ yr kind=text x=640 y=110 text="एक हज़ार वर्ष" size=56 z=70
+NARRATOR [~full:kaushik] (sfx=om, swell): उसने आँखें बंद कीं। जब खोलीं, तो एक हज़ार वर्ष बीत चुके थे।
+- kaushik
+@ vishwamitra x=520 y=640 s=1 face=1 pose=meditate emo=calm seat=lotus anim=materialize inDur=2
++ vg kind=glow x=520 y=420 r=300 color=#ffb070 core=0.5 z=-2 anim=pop
+NARRATOR [~close:vishwamitra] (sfx=bell): भविष्यवाणी सच हो गई थी। राजा कौशिक, ऋषि विश्वामित्र बन चुका था।
+- yr
+
+# ---------------------------------------------------------------- the river turns red
+== SCENE sarasvati | set=glade time=day music=tension amb=river trans=mandala
++ river kind=water x=640 y=640 w=1500 h=180 color=#cfe6f0 crest=#3d8fc4 z=20
+@ vishwamitra x=260 y=650 s=0.95 face=1 pose=point emo=angry
+@ vasishtha x=1080 y=650 s=0.9 face=-1 pose=meditate emo=serene
+@ saraswati x=660 y=560 s=0.85 face=1 pose=namaste emo=fear fly=1 noShadow=true z=21
+BEAT 1 [wide] (sfx=splash)
+NARRATOR [~wide]: तप की शक्ति लेकर विश्वामित्र सरस्वती नदी के तट पर पहुँचे। नदी के उस पार, वसिष्ठ का आश्रम था।
+VISHWAMITRA (rage, pose=point) [close:vishwamitra]: सरस्वती! अपनी धारा से वसिष्ठ को मेरे पास ले आओ!
+SARASWATI (fear) [close:saraswati]: ऋषिवर, मैं एक ब्राह्मण की हत्या में सहायक नहीं बन सकती।
+> saraswati x=900 face=-1 t=1.5
+SARASWATI (sad, pose=namaste) [close:saraswati]: ऋषिवर वसिष्ठ, वे आपको मारना चाहते हैं।
+VASISHTHA (smile) [close:vasishtha]: लगता है, वे विश्वामित्र से अधिक, कौशिक ही बने रहना चाहते हैं। चलो, मुझे उनके पास ले चलो।
+> vasishtha x=700 t=2
+> vishwamitra pose=strike emo=rage t=0.4
+NARRATOR [~two:vishwamitra,vasishtha] (sfx=whoosh): विश्वामित्र अस्त्र खोजने लगे। और नदी डर गई। वह तेज़ी से मुड़ी, और वसिष्ठ को फिर सुरक्षित तट पर ले गई।
+> vasishtha x=1080 t=1.2
+VISHWAMITRA (rage, pose=curse) [close:vishwamitra] (sfx=thunder, shake=6, flash): तुम्हारी धारा अब केवल दैत्यों और दानवों का पोषण करेगी!
++ red kind=water x=640 y=640 w=1500 h=180 color=#a8303a crest=#5a0a1a op=0 z=22
+> red op=1 t=3
++ fog kind=smoke x=640 y=600 n=10 w=1300 h=200 color=#5a2a2a z=30
+NARRATOR [~wide] (sfx=rumble): सरस्वती लाल हो गई। उसमें रक्त के बुलबुले उठने लगे। पेड़ सूख गए, मछलियाँ सतह पर तैरने लगीं। एक वर्ष तक वह नदी, ब्रह्मांड के चेहरे पर एक घाव बनी रही।
+- fog
+> red op=0 t=4
++ pure kind=glow x=640 y=560 r=400 color=#fff1d0 core=0.4 z=-2 anim=pop
+NARRATOR [~close:vasishtha] (sfx=bell, splash): अंत में वसिष्ठ उसके स्रोत तक गए, और उसे फिर शुद्ध किया। और उसमें से एक नई धारा जन्मी। अरुणा, जिसका रंग लाल था।
+
+== CHAPTER | kicker=कथा उनसठ | title=त्रिशंकु आकाश से गिरा
+
+# ---------------------------------------------------------------- the exile
+== SCENE nirvasan | set=court wall=#3a1a0a music=court amb=court trans=mandala
+@ trayaruni x=900 y=650 s=1 face=-1 pose=despair emo=sad
+@ vasishtha x=380 y=650 s=0.95 face=1 pose=point emo=calm
+BEAT 1 [wide] (sfx=gong)
+NARRATOR [~wide]: अयोध्या में राजा त्रय्यारुणि राज करते थे। पर उनका पुत्र सत्यव्रत, अपने नाम का अपमान था। न सत्य बोलता था, न धर्म का अर्थ जानता था।
+TRAYARUNI (sad) [close:trayaruni]: आप चाहते हैं कि मैं राजकुमार को निर्वासित कर दूँ? वही तो मेरा उत्तराधिकारी है!
+VASISHTHA (calm) [close:vasishtha]: मैं आपकी पीड़ा समझता हूँ, महाराज। पर अंग सड़ जाए, तो उसे काटना पड़ता है।
+TRAYARUNI (sad, pose=namaste) [close:trayaruni]: वह मेरा पुत्र है। वही मुझे मृत्यु के बाद नरक से बचाएगा।
+VASISHTHA (calm, pose=open) [mid:vasishtha]: प्रजा को पीड़ित देखने से अच्छा है, आप स्वयं नरक जाएँ। आप क्या चुनेंगे, महाराज?
+
+# ---------------------------------------------------------------- famine
+== SCENE akal | set=glade time=dusk music=sorrow amb=wind,fire trans=fade tint=#3a2a0a,0.3
++ pyre kind=fire x=1040 y=640 size=1.6 z=-1
++ smoke kind=smoke x=1040 y=520 n=8 w=200 h=300 color=#6a5a4a z=-2
+@ satyavrat x=600 y=650 s=0.95 face=1 pose=despair emo=sad
+BEAT 1 [wide] (sfx=fire)
+NARRATOR [~wide]: सत्यव्रत नगर के बाहर, चांडालों के बीच रहने लगा। जलती चिताओं के पास सोता, और मृतकों को मोक्ष पाते देखता।
+NARRATOR [~close:satyavrat] (sfx=bell): फिर समाचार आया। पुत्र के शोक में राजा की मृत्यु हो गई। राजा के बिना राज्य अशुभ हो गया। धरती बंजर हुई, और बारह वर्ष का अकाल पड़ा।
+@ gramin x=1000 y=650 s=0.9 face=-1 pose=reach emo=sad
+@ boy fig=prahlad x=1140 y=660 s=0.7 face=-1 pose=fear emo=fear z=-1
+- pyre
+- smoke
+GRAMIN (sad, pose=reach) [close:gramin]: भोजन के बदले मेरा पुत्र! इसे ले जाओ, बदले में कुछ खाने को दे दो!
+> satyavrat x=820 pose=reach emo=angry t=1
+SATYAVRAT (angry) [close:satyavrat]: तुम अपने ही पुत्र को कैसे बेच सकती हो?
+GRAMIN (angry, pose=point) [close:gramin]: वैसे ही, जैसे आपके पिता ने आपको निकाल दिया था! हम मनुष्यों के पास चुनने का विकल्प नहीं होता। मेरा आकलन करने से पहले बताइए, क्या आप हमारी भूख का ध्यान रखेंगे?
+> satyavrat pose=raise emo=calm t=0.4
+SATYAVRAT (calm, pose=raise) [close:satyavrat] (sfx=crack): हाँ। रखूँगा।
+NARRATOR [~wide] (sfx=wind): पर उस सूखी धरती पर भोजन कहाँ से आता? हताश सत्यव्रत ने वसिष्ठ के आश्रम से एक गाय चुराई, और उसके प्राण ले लिए। स्त्री के परिवार का पेट तो भरा, पर उसके द्वार पर वसिष्ठ खड़े थे।
+
+# ---------------------------------------------------------------- three sins
+== SCENE shaap | set=glade time=night music=curse amb=wind trans=cut
+@ vasishtha x=880 y=650 s=1 face=-1 pose=rest emo=angry
+@ satyavrat x=400 y=650 s=0.95 face=1 pose=hips emo=sly
+BEAT 0.8 [wide] (sfx=thunder)
+SATYAVRAT (sly) [close:satyavrat]: आइए, ऋषिवर। आप निश्चय ही मुझे शाप देने आए हैं।
+VASISHTHA (angry) [close:vasishtha]: हाँ। इसीलिए आया हूँ।
+SATYAVRAT (angry, pose=open) [close:satyavrat]: तो दीजिए। मुझे कोई पछतावा नहीं। शरीर का पोषण हो, तभी आत्मा का पोषण होता है। मैंने बहुतों को बचाने के लिए एक प्राणी को मारा है।
+VASISHTHA (angry, pose=point) [close:vasishtha]: तुमने गाय चुराई और उसे मारा। तुमने उसे खाया। और इस अधर्म से अपने पिता और पूर्वजों को कुपित किया।
++ t3 kind=text x=640 y=140 text="तीन पाप" size=64 z=70
+VASISHTHA (rage, pose=curse) [ecu:vasishtha] (sfx=thunder, shake=6, flash): तीन पाप, सत्यव्रत। आज से तुम त्रिशंकु कहलाओगे। और तीनों लोकों में तुम्हें कहीं विश्राम नहीं मिलेगा!
+- t3
+
+# ---------------------------------------------------------------- the stranger's boon
+== SCENE vardan | set=glade time=dawn music=dawn amb=birds trans=fade
+@ satyavrat x=420 y=650 s=0.95 face=1 pose=despair emo=sad
+@ vishwamitra x=900 y=650 s=0.95 face=-1 pose=bless emo=calm
+BEAT 1 [wide] (sfx=bell)
+NARRATOR [~wide]: तभी स्त्री का पति लौटा। उसने सारा वृत्तांत सुना, और राजकुमार को आश्चर्य से देखता रहा।
+VISHWAMITRA (calm) [close:vishwamitra]: तुमने मेरे परिवार के लिए स्वयं को संकट में डाला। तुम्हें शाप किसने दिया?
+SATYAVRAT (sad) [close:satyavrat]: ऋषि वसिष्ठ ने।
+> vishwamitra emo=angry t=0.3
+VISHWAMITRA (angry) [close:vishwamitra] (sfx=rumble): वसिष्ठ? मैं उसका शाप तो नहीं काट सकता। पर तुम्हें वरदान दे सकता हूँ। कुछ भी माँग लो। कुछ भी।
+SATYAVRAT (calm, pose=open) [close:satyavrat]: मैं स्वर्ग जाना चाहता हूँ। इसी नश्वर शरीर के साथ। मैंने चांडालों के बीच देखा है, मृत्यु के बाद शरीर का क्या होता है।
+VISHWAMITRA (smile, pose=bless) [close:vishwamitra]: जैसा तुम चाहो।
+SATYAVRAT (joy, pose=namaste) [close:satyavrat]: हे पावन पुरुष, आपका नाम?
+VISHWAMITRA (sly) [ecu:vishwamitra] (sfx=bell): विश्वामित्र।
+
+# ---------------------------------------------------------------- the ascent
+== SCENE aarohan | set=yajna time=night music=wonder amb=fire trans=mandala
+@ vishwamitra x=300 y=650 s=0.9 face=1 pose=raise emo=calm seat=lotus
+@ trishanku x=760 y=650 s=0.85 face=1 pose=namaste emo=joy
+BEAT 1 [wide] (sfx=fire, om)
+NARRATOR [~wide]: वर्षों बाद, त्रिशंकु का पुत्र हरिश्चंद्र अयोध्या का राजा बना। और विश्वामित्र ने यज्ञ आरंभ किया।
++ lift kind=glow x=760 y=520 r=200 color=#ffd27a core=0.6 z=-1 anim=pop
+> trishanku y=200 fly=1 t=6
+NARRATOR [~at:760,400,1] (sfx=swell, whoosh): और त्रिशंकु अपने शरीर समेत ऊपर उठने लगा। बादलों को चीरता हुआ, सूर्य और चंद्र से भी ऊँचा।
+
+# ---------------------------------------------------------------- heaven's door
+== SCENE dvaar | set=lotusSky time=day music=tension amb=wind trans=cut
++ gate kind=mandala x=1000 y=360 r=260 spin=10 op=0.4 z=-4
+@ indra x=1040 y=600 s=0.95 face=-1 pose=point emo=rage
+@ agni x=1180 y=600 s=0.85 face=-1 pose=raise emo=angry z=-1
+@ trishanku x=300 y=600 s=0.8 face=1 pose=reach emo=joy fly=1 noShadow=true
+BEAT 0.8 [wide] (sfx=thunder)
+INDRA (rage, pose=point) [close:indra] (sfx=thunder): यह कैसी अराजकता? स्वर्ग में आत्माएँ आती हैं, शरीर नहीं! और ऐसा व्यक्ति, जिसने तीन पाप किए हों? कदापि नहीं!
+VISHWAMITRA (sly) [~wide] (sfx=rumble): और आप देवता, सबको इन लोकों से दूर ही रखते हैं।
+INDRA (angry, pose=point) [close:indra]: ध्रुव को देखिए। स्वयं श्रीहरि ने उसे आकाश के शिखर पर तारा बनाया। योग्य को कोई नहीं रोकता। पर आप तो बस स्वयं को वसिष्ठ से श्रेष्ठ सिद्ध करना चाहते हैं!
+> trishanku x=700 t=2
+> indra pose=strike t=0.3
+> agni pose=strike t=0.3
+> trishanku x=520 t=0.5
+> trishanku x=760 t=0.6 d=0.6
+> trishanku x=480 t=0.5 d=1.3
+NARRATOR [~wide] (sfx=clash, whoosh): देवता द्वार पर इकट्ठे हुए, और त्रिशंकु को पीछे धकेलने लगे। मनुष्य की इच्छा घुसपैठ कर रही थी, देवताओं की इच्छा उसे रोक रही थी।
++ shove kind=ring x=600 y=420 r=600 color=#f6e7a6 z=60
+> trishanku y=1200 rot=180 t=2.5 d=0.4
+BEAT 1 [wide] (sfx=boom, whoosh, shake=8)
+TRISHANKU (fear) [~wide] (sfx=whoosh): ऋषिवर, मुझे बचाइए!
+
+# ---------------------------------------------------------------- the fall and the halt
+== SCENE beech | set=cosmos music=curse amb=wind trans=cut
++ stars kind=sparkle x=640 y=360 n=60 r=700 z=-3
+@ trishanku x=640 y=-200 s=0.85 face=1 pose=fear emo=fear fly=1 noShadow=true rot=180
+> trishanku y=300 t=2
+TRISHANKU (fear) [~wide] (sfx=whoosh): कुछ कीजिए! मेरी सहायता कीजिए!
+@ vishwamitra x=200 y=650 s=0.9 face=1 pose=raise emo=rage
++ mantra kind=ring x=640 y=300 r=300 color=#ffb070 z=60
+> trishanku y=340 t=0.4
+BEAT 1.4 [wide] (sfx=om, flash)
+NARRATOR [~at:640,340,1.2] (sfx=bell): और अचानक, वह बीच में रुक गया। धरती और आकाश के मुहाने पर। विश्वामित्र के एक मंत्र ने उसे वहीं थाम लिया था।
+VISHWAMITRA (rage, pose=raise) [close:vishwamitra] (sfx=thunder): देवता उसे स्वर्ग नहीं देंगे? तो मैं उसके लिए एक नया स्वर्ग रचूँगा!
++ newsky kind=mandala x=640 y=300 r=360 spin=30 op=0.35 z=-2 anim=pop
++ newstars kind=sparkle x=640 y=300 n=40 r=380 z=-1
+NARRATOR [~wide] (sfx=magic, swell): और ऋषि ने एक समानांतर स्वर्ग गढ़ना आरंभ कर दिया। नए तारे, नए नक्षत्र।
+@ indra x=1080 y=520 s=0.8 face=-1 pose=abhaya emo=calm fly=1 noShadow=true anim=materialize
+INDRA (calm, pose=abhaya) [close:indra]: बस, ऋषिवर। एक समझौता हो। त्रिशंकु जहाँ है, वहीं रहेगा। पर उल्टा लटका रहेगा।
+NARRATOR [~close:trishanku] (sfx=wind): और इस तरह, त्रिशंकु वहीं लटका रह गया। स्वर्ग और पृथ्वी के बीच। अधर में। अपने ही स्वर्ग में, सिर के बल।
+
+== CHAPTER | kicker=कथा पचास | title=वामन अवतार
+
+# ---------------------------------------------------------------- Aditi's tears
+== SCENE aditi | set=kailash time=night music=sorrow amb=wind trans=mandala
+@ aditi x=480 y=650 s=1 face=1 pose=despair emo=sad seat=kneel
+@ kashyap x=900 y=650 s=0.95 face=-1 pose=open emo=sad
+BEAT 1 [wide] (sfx=wind)
+NARRATOR [~wide]: देवमाता अदिति धरती पर लेटी रो रही थीं। शुक्राचार्य की सहायता से दैत्यराज बलि ने फिर स्वर्ग जीत लिया था, और इंद्र अपने भाइयों के साथ ब्रह्मांड में भटक रहे थे।
+KASHYAP (sad) [close:kashyap]: मैं तुम्हें इस तरह रोते नहीं देख सकता। तुम्हें क्या चाहिए?
+ADITI (sad) [close:aditi]: माँ का हृदय संतान से बँधा होता है। मेरे आदित्य अब हँसते तक नहीं। मैं कैसे मुस्कुराऊँ?
+KASHYAP (calm, pose=point) [mid:kashyap]: तो विष्णु का तप करो। फाल्गुन में सब अन्न त्यागकर केवल दूध पियो, और केवल उनका नाम जपो।
+> aditi pose=meditate emo=meditate seat=lotus t=1
++ blue kind=glow x=640 y=380 r=420 color=#7aa0ff core=0.5 z=-3 anim=pop inDur=3
+@ vishnu x=880 y=560 s=0.9 face=-1 pose=abhaya emo=calm fly=1 noShadow=true anim=materialize
+- kashyap
+NARRATOR [~wide] (sfx=om, swell): जल्द ही अदिति की आँखों के सामने, नीले रंग की दिव्य छटा बिखर गई।
+VISHNU (calm) [close:vishnu]: मैं भी वही चाहता हूँ जो तुम चाहती हो, देवमाता। पर बलि अत्याचारी नहीं। वह उदार है। उसके द्वार से कोई खाली हाथ नहीं लौटता। बलि मुझे प्रिय है।
+ADITI (angry, pose=open) [close:aditi]: वह स्वयं संत हो सकता है, पर उसके असुर हर पवित्र वस्तु को उजाड़ रहे हैं, और वह उन्हें रोकता नहीं। यह वंश की नहीं, धर्म की बात है।
+ADITI (calm, pose=namaste) [close:aditi]: और भगवन, मैं चाहती हूँ कि यह सम्मान मेरे ही किसी पुत्र को मिले।
+VISHNU (smile) [close:vishnu]: तो एक उपाय करते हैं। मेरा अगला अवतार, आपके गर्भ से जन्म लेगा।
++ gem kind=sparkle x=480 y=520 n=30 r=150 z=40
+NARRATOR [~close:aditi] (sfx=sparkle, bells): विष्णु अंतर्धान हो गए। पर अदिति जानती थीं, कि वे अब उनके भीतर बढ़ रहे हैं, हज़ारों नीले रत्नों की तरह।
+- vishnu
+
+# ---------------------------------------------------------------- the dwarf is born
+== SCENE janma | set=glade time=dawn music=joy amb=birds trans=white
++ petals kind=petals x=640 y=200 n=40 w=1300 colors=#f2c230,#f6d24a,#fbf3df z=50
+@ vamana x=640 y=660 s=0.8 face=1 pose=hold emo=smile anim=materialize inDur=2 item=chhatra
++ vg kind=glow x=640 y=480 r=260 color=#ffd27a core=0.5 z=-2 anim=pop
+BEAT 1 [wide] (sfx=conch, bells)
+NARRATOR [~full:vamana] (sfx=sparkle): भाद्रपद में जब वह जन्मा, तो वृक्षों से पीले फूल बरसने लगे। ब्रह्मा ने ताम्रपात्र दिया, शिव ने रुद्राक्ष, बृहस्पति ने जनेऊ। सूर्य ने छत्र, चंद्र ने दंड।
+NARRATOR [~close:vamana]: बालक बावन अंगुल ऊँचा था। और इससे अधिक नहीं बढ़ा। वह वामन था। त्रेता युग में विष्णु का पहला अवतार।
+
+# ---------------------------------------------------------------- Bali's yajna
+== SCENE ashvamedh | set=yajna time=day music=court amb=fire,court trans=mandala
+@ bali x=860 y=650 s=1.05 face=-1 pose=bless emo=smile
+@ shukra x=1080 y=650 s=0.95 face=-1 pose=raise emo=calm item=sword
+@ a1 fig=asura2 x=1230 y=650 s=0.85 face=-1 pose=rest emo=joy z=-2
+BEAT 1 [wide] (sfx=fire, nagara)
+NARRATOR [~wide]: बलि ने भव्य अश्वमेध यज्ञ रचा। वेदी से अग्नि का स्तंभ उठ रहा था, अप्सराएँ नृत्य कर रही थीं। अश्व ब्रह्मांड घूमकर बिना चुनौती के लौट आया था।
+NARRATOR [close:shukra] (sfx=heartbeat): जैसे ही शुक्राचार्य ने तलवार उठाई, वे रुक गए। उन्हें कुछ सुनाई दिया। पदचाप।
+@ vamana x=-100 y=660 s=0.7 face=1 pose=hold emo=serene item=chhatra
+> vamana x=420 t=4
+NARRATOR [~wide] (sfx=bell): एक हाथ में छत्र, दूसरे में दंड। माथे पर चंदन, तन पर जनेऊ। असुरों के बीच वह नन्हा ब्राह्मण, और भी छोटा दिख रहा था।
+SHUKRA (fear) [close:shukra]: हमसे कोई चूक हो गई है। हमने तो किसी ब्राह्मण को बुलाया ही नहीं।
+BALI (calm) [close:bali]: क्या यह ब्रह्मा के चार कुमारों में से कोई है?
+SHUKRA (fear, pose=point) [close:shukra]: नहीं। यह कोई और है। इसका आभामंडल सबसे अलग है। सावधान, राजन। यह जो भी माँगे, वचन मत देना।
+BALI (smile) [close:bali]: आप मुझे अपने ही स्वभाव के विरुद्ध जाने को कह रहे हैं, गुरुदेव। यह कैसे होगा?
+> bali pose=namaste t=0.4
+VAMANA (smile, pose=bless) [close:vamana]: राजन, आप दीर्घायु हों। मैंने सुना है, आपके पितामह प्रह्लाद भक्ति का रूप हैं, और आप दान का। आप किसी को मना नहीं करते।
+BALI (smile) [close:bali]: यदि दाता ब्रह्मांड है, तो मैं मना करने वाला कौन?
+VAMANA (sly) [close:vamana]: तो जो मैं माँगूँ, वह आप देंगे?
+NARRATOR [~close:shukra] (sfx=heartbeat): शुक्राचार्य के माथे पर पसीना छलक आया। सबकी साँसें थम गईं।
+BALI (calm, pose=open) [close:bali]: बताइए, पूज्य। आप क्या चाहते हैं?
+VAMANA (smile) [close:vamana]: भूमि। मेरे तीन पग के बराबर।
++ t3 kind=text x=640 y=140 text="तीन पग" size=72 z=70
+> a1 emo=joy pose=hips t=0.3
+NARRATOR [~wide] (sfx=manjira): कोई हँसा, कोई सोच में डूब गया। शुक्राचार्य वामन के पैरों को देख रहे थे। कमल की दो कलियों जितने नन्हे पाँव।
+- t3
+BALI (joy) [close:bali]: बस इतनी-सी? यह तो कुछ भी नहीं!
+VAMANA (calm) [close:vamana]: जो तीन पग से संतुष्ट नहीं, वह किसी वस्तु से संतुष्ट नहीं होगा। जैसे मैं अपने आकार से संतुष्ट हूँ, वैसे ही इतनी भूमि से।
+BALI (smile, pose=bless) [close:bali]: तो मैं दान करता हूँ। आप पग कहाँ रखना चाहेंगे?
+
+# ---------------------------------------------------------------- Trivikrama
+== SCENE trivikram | set=cosmos music=cosmic amb=void,wind trans=white
++ halo kind=mandala x=640 y=360 r=460 spin=12 op=0.35 z=-4
++ stars kind=sparkle x=640 y=360 n=60 r=700 z=-3
+@ trivikram x=640 y=1500 s=0.5 face=1 pose=bless emo=serene noShadow=true
+@ bali x=200 y=680 s=0.6 face=1 pose=fear emo=fear z=10
+BEAT 0.6 [wide] (sfx=rumble)
+> trivikram s=3.2 y=1900 t=6
+NARRATOR [~wide] (sfx=swell, rumble, shake=6): और तभी, वामन का आकार बढ़ने लगा। उसके अंग खिंचने लगे, धड़ फैलने लगा, उसका मुख बादलों के पार निकल गया।
+NARRATOR [~at:640,360,0.9] (sfx=om): वह त्रिविक्रम बन चुका था। इतना विराट, कि असुरों को अब केवल उसके पैर के अँगूठे का सिरा दिखाई दे रहा था।
+TRIVIKRAM (serene) [~wide] (sfx=om): राजन, मैं अपना पहला पग यहाँ रखता हूँ।
++ earth kind=earth x=360 y=420 r=120 z=5 anim=pop
++ p1 kind=ring x=360 y=420 r=400 color=#7aa0ff z=60
+BEAT 1 [wide] (sfx=boom, shake=8)
+NARRATOR [~at:360,420,1.2] (sfx=swell): और उसने पूरी पृथ्वी नाप ली।
+TRIVIKRAM (serene) [~wide] (sfx=om): राजन, मैं अपना दूसरा पग यहाँ रखता हूँ।
++ swarga kind=lotus x=920 y=300 size=1.4 open=1 z=5 anim=pop
++ p2 kind=ring x=920 y=300 r=400 color=#ffd27a z=60
+BEAT 1 [wide] (sfx=boom, bells, shake=8)
+NARRATOR [~at:920,300,1.2] (sfx=sparkle): फिर समूचा स्वर्ग। ब्रह्मा ने उनके चरणों में प्रणाम किया, और अपने कमंडल के जल से उन्हें धोया।
+TRIVIKRAM (calm) [~wide] (sfx=om): राजन, तीसरा पग कहाँ रखूँ?
+> bali emo=sad pose=namaste t=0.6
+BALI (sad, pose=namaste) [close:bali]: आप वामन नहीं हैं।
+TRIVIKRAM (calm) [~wide]: मैं वामन हूँ।
+BALI (smile) [close:bali]: आप श्री विष्णु हैं। वह असीम, जो मुझे बता रहा है, कि मैं कितना सीमित हूँ।
+TRIVIKRAM (calm) [~wide] (sfx=om): तीसरा पग कहाँ रखूँ, राजन?
+
+# ---------------------------------------------------------------- the third step
+== SCENE teesra | set=yajna time=night music=vishnu amb=fire trans=mandala
+@ bali x=640 y=680 s=1 face=1 pose=namaste emo=serene seat=kneel
+@ shukra x=1080 y=650 s=0.9 face=-1 pose=point emo=rage
+BEAT 0.8 [wide] (sfx=bell)
+BALI (serene) [close:bali]: प्रभु, दो पग में आपने सब नाप लिया। मेरे पास अब कुछ शेष नहीं। केवल एक स्थान है, जो मैं विनम्रता से दे सकता हूँ।
+BALI (smile) [ecu:bali]: अपना तीसरा पग, मेरे मस्तक पर रख दीजिए।
+SHUKRA (rage, pose=point) [close:shukra] (sfx=thunder): यह छल है, राजन! जैसे इसने मोहिनी बनकर हमें छला था, वैसे ही वामन बनकर आपको छल रहा है! आँखें खोलिए!
+BALI (calm) [close:bali]: मैंने हृदय खोल दिया है, गुरुदेव। अपने पितामह प्रह्लाद की तरह।
++ sky kind=glow x=640 y=0 r=700 color=#4a6ae8 core=0.8 z=30 op=0 anim=pop
+> sky y=200 t=3
+NARRATOR [~wide] (sfx=rumble, swell): विष्णु का नीला चरण ऐसे उतरा, मानो आकाश ही नीचे गिर रहा हो। असुर भागने लगे। उन्हें लगा, उनका राजा कुचला जाएगा।
+> bali y=1100 t=3 d=0.4
++ down kind=ring x=640 y=600 r=700 color=#7aa0ff z=60
+BEAT 1.6 [wide] (sfx=boom, shake=10, flash)
+NARRATOR [~wide] (sfx=whoosh): पर चरण ने उसे कुचला नहीं। नीचे धकेल दिया। नीचे, और नीचे। ब्रह्मांड की रीढ़ के सहारे, सुतल लोक तक।
+
+# ---------------------------------------------------------------- king of the underworld
+== SCENE sutal | set=void music=vishnu amb=void trans=fade
++ deep kind=glow x=640 y=400 r=460 color=#3a4ad8 core=0.4 z=-4
++ gems kind=sparkle x=640 y=400 n=40 r=600 z=-3
+@ bali x=420 y=650 s=1 face=1 pose=namaste emo=joy
+@ vishnu x=880 y=560 s=0.95 face=-1 pose=bless emo=smile fly=1 noShadow=true anim=materialize
+BEAT 1 [wide] (sfx=om)
+VISHNU (smile, pose=bless) [close:vishnu]: तुम वास्तव में अतुलनीय हो, बलि। तीनों लोक याद रखेंगे, कि एक असुर ने अपना सर्वस्व दान कर दिया। मैं तुम्हें पाताल का सम्राट घोषित करता हूँ।
+> bali pose=raise t=0.6
+NARRATOR [~close:bali] (sfx=conch): और स्वर्ग में, इंद्र फिर देवराज बन गए।
+
+# ---------------------------------------------------------------- the river from his feet
+== SCENE vishnupadi | set=lotusSky time=dawn music=wonder amb=river,birds trans=white
+@ brahma x=380 y=600 s=0.95 face=1 pose=offer emo=smile fly=1 noShadow=true item=kamandal
+@ indra x=1040 y=650 s=0.85 face=-1 pose=namaste emo=calm
++ stream kind=water x=760 y=640 w=900 h=160 color=#dff1f8 crest=#3d8fc4 z=20
+BEAT 1 [wide] (sfx=river)
+INDRA (calm) [close:indra]: पितामह, यह जल कैसा है?
+BRAHMA (smile) [close:brahma]: यह वामन का चरणामृत है। इसी से मैंने श्रीहरि के चरण धोए थे। और देखो, उस धारा ने क्या रूप लिया है।
+@ ganga x=760 y=600 s=0.95 face=1 pose=bless emo=serene anim=rise inDur=2.5 z=21
++ gg kind=glow x=760 y=420 r=320 color=#d8f0ff core=0.6 z=-1 anim=pop
+NARRATOR [~full:ganga] (sfx=swell, bells): जल से एक सुंदर स्त्री उठी। उसके केश लहरें थे, उसकी हँसी झरने की कल-कल।
+INDRA (joy) [close:indra]: इसका नाम क्या है, परमपिता?
+BRAHMA (joy) [mid:brahma]: विष्णु के चरणों से पवित्र हुई है, इसलिए विष्णुपदी। पर मुझे इसे गंगा कहना अच्छा लगता है।
+GANGA (smile) [ecu:ganga] (sfx=sparkle): गंगा।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night trans=fade
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1.2 [wide] (sfx=veena)
+NARAD (smile) [mid:narad]: तो देखा? कौशिक को एक गाय चाहिए थी, और उसने एक हज़ार वर्ष तप में बिता दिए। त्रिशंकु को स्वर्ग चाहिए था, और वह आज भी उल्टा लटका है।
+NARAD (calm, pose=open) [close:narad]: और बलि? उसने सब दे दिया। अपना सिर तक। और उसे वह मिला, जो किसी असुर को नहीं मिला। श्रीहरि का चरण।
+NARAD (sly) [ecu:narad]: और वह धारा, जो ब्रह्मा के कमंडल में बंद है? वह एक दिन धरती पर उतरेगी। पर धरती उसका वेग सह पाएगी? इसके लिए चाहिए होगी, शिव की जटा।
+BEAT 1.5 [~close:narad] (sfx=veena)
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=गंगावतरण · भगीरथ · शिव की जटा
+NARRATOR: अगले अध्याय में: साठ हज़ार राजकुमारों की राख, एक राजा का तप, और आकाश से उतरती गंगा।
+
+== END | dur=13 | title=महागाथा | sub=अध्याय आठ · तीन पग | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 50, 58 और 59);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर

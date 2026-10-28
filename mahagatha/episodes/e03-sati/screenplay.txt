@@ -1,0 +1,408 @@
+title: सती
+episode: 3
+slug: e03-sati
+kicker: अध्याय तीन
+sub: प्रेम, अपमान और तांडव
+logline: दक्ष का चंद्र को शाप, सती का शिव से प्रेम, कनखल का यज्ञ, वीरभद्र का प्रकोप, और वह तांडव जिसने ब्रह्मांड को हिला दिया।
+stories: 19, 21
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 19 और 21
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ moon kind=moonphase x=1040 y=150 r=46 phase=1 z=-4
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=calm fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (calm) [~full:narad]: नारायण... नारायण। आज मैं वीणा धीमे बजाऊँगा। क्योंकि आज की कथा, प्रेम की कथा है। और प्रेम की कथाएँ, अक्सर आँसुओं पर ख़त्म होती हैं।
+NARAD (sad) [mid:narad]: पिछली बार आपने दक्ष की आँखों में घृणा देखी थी। शिव के लिए घृणा।
+NARAD (calm, pose=point) [close:narad]: पर उस घृणा का पहला शिकार शिव नहीं थे। वह था, यह।
+> moon phase=0.15 t=4
+BEAT 1.5 [~at:1040,150,2.2] (sfx=swell)
+NARAD (sly) [mid:narad]: जी हाँ। चंद्रमा। कभी सोचा है, चाँद घटता-बढ़ता क्यों है? सुनिए।
+
+== TITLE | dur=7.5 | kicker=अध्याय तीन | title=सती | sub=प्रेम, अपमान और तांडव
+
+== CHAPTER | kicker=कथा आठ | title=चंद्र ने खोया प्रकाश
+
+# ---------------------------------------------------------------- Chandra and the 27 stars
+== SCENE nabh | set=cosmos music=malkauns amb=night trans=mandala
++ halo kind=glow x=640 y=330 r=380 color=#e6eeff core=0.6 z=-5
++ stars kind=sparkle x=640 y=300 n=27 r=560 z=-3
+@ chandra x=640 y=620 s=0.95 face=1 pose=open emo=smile fly=1 noShadow=true
+@ rohini x=860 y=630 s=0.85 face=-1 pose=namaste emo=smile fly=1 noShadow=true
+@ n1 fig=nakshatra x=250 y=560 s=0.62 face=1 pose=namaste emo=sad fly=1 noShadow=true z=-2
+@ n2 fig=nakshatra x=380 y=520 s=0.55 face=1 pose=offer emo=sad fly=1 noShadow=true z=-3
+@ n3 fig=nakshatra x=1080 y=520 s=0.55 face=-1 pose=offer emo=sad fly=1 noShadow=true z=-3
+@ n4 fig=nakshatra x=1180 y=580 s=0.6 face=-1 pose=namaste emo=sad fly=1 noShadow=true z=-2
+BEAT 1.5 [wide] (sfx=sparkle)
+NARRATOR [~wide]: ऋषि अत्रि की आँखों से निकले दीप्तिमान तरल से जन्मे चंद्रदेव, ब्रह्मांड का रात्रि-दीप बन गए थे।
+NARRATOR [mid:chandra]: उनका विवाह दक्ष की सत्ताईस पुत्रियों से हुआ। सत्ताईस नक्षत्र, जो उनके चारों ओर झिलमिलाकर रात के आकाश को सजाते थे।
+> chandra face=1 gaze=1 t=0.5
+NARRATOR [two:chandra,rohini]: पर चंद्र की दृष्टि उनमें से केवल एक पर टिकी रहती थी। लालिमा लिए हुए, रोहिणी।
+NARRATOR [~wide]: रोहिणी के प्रति प्रेम इतना बढ़ा कि चंद्र बाकी पत्नियों को भूल ही गए। और उपेक्षा के साथ-साथ, उनकी आभा फीकी पड़ने लगी।
+> n2 x=470 pose=offer t=2
+> n3 x=990 pose=offer t=2
+NARRATOR [two:n2,n3] (sfx=veena): उन्होंने मधुर छंद गाए। चंद्र का प्रिय भोजन पकाया। सबसे सुंदर वस्त्र पहने। आकाश में अद्भुत आकृतियाँ रचीं।
+NAKSHATRAS (sad) [~wide]: स्वामी, हमारी ओर भी एक बार देखिए! हम भी आपकी पत्नियाँ हैं।
+NARRATOR [mid:chandra]: पर कुछ काम नहीं आया। चंद्र ने अपना प्रेम सत्ताईस भागों में नहीं बाँटा। सारा का सारा, रोहिणी को दे दिया।
+
+# ---------------------------------------------------------------- Daksha's curse
+== SCENE shaap | set=court music=curse amb=court trans=mandala
+@ daksha x=420 y=650 s=0.95 face=1 pose=hips emo=angry
+@ chandra x=880 y=650 s=0.9 face=-1 pose=rest emo=calm
+@ n1 fig=nakshatra x=200 y=650 s=0.75 face=1 pose=despair emo=sad
+@ n2 fig=nakshatra x=110 y=640 s=0.72 face=1 pose=cover emo=sad z=-1
+BEAT 1 [wide] (sfx=gong)
+NARRATOR [~wide]: जब उपेक्षा सहन न हुई, तो पुत्रियों ने अपने पिता, प्रजापति दक्ष से शिकायत की।
+DAKSHA (angry, pose=point) [close:daksha]: चंद्र! मेरी सत्ताईस पुत्रियाँ तुम्हारी पत्नियाँ हैं, केवल एक नहीं। उनके साथ यह अन्याय क्यों?
+CHANDRA (calm, pose=open) [close:chandra]: प्रजापति, मैं अपना प्रकाश सबको देता हूँ। पर अपना प्रेम किसे दूँ, यह तय करने का अधिकार मेरा है।
+> daksha emo=rage pose=curse t=0.5
++ dk kind=glow x=420 y=380 r=260 color=#ff6a3a core=0.6 z=-1 anim=pop
+DAKSHA (rage, pose=curse) [ecu:daksha] (sfx=thunder, shake=8, flash): तुम्हारी उपेक्षा ने मेरी पुत्रियों की आभा छीन ली है! तो तुम्हें चमकने का क्या अधिकार?
+DAKSHA (rage) [close:daksha]: मैं तुम्हें शाप देता हूँ। तुम्हारा प्रकाश, और वह सारा सौंदर्य जिस पर तुम्हें इतना अहंकार है, चला जाएगा। तुमने मेरी पुत्रियों का जीवन अंधकारमय किया है, अब वही अंधकार तुम्हें निगल जाएगा!
+- dk
+> chandra emo=joy pose=hips t=0.5
+CHANDRA (joy, pose=hips) [close:chandra] (sfx=magic): हा हा हा! मेरी आभा? कौन कम कर सकता है, प्रजापति?
+@ rohini x=1080 y=650 s=0.85 face=-1 pose=fear emo=fear anim=right
+ROHINI (fear, pose=cover) [two:chandra,rohini]: स्वामी... आपकी चमक... वह लुप्त हो रही है!
+> chandra emo=fear pose=fear t=0.6
++ fade kind=tint color=#0a0f2a op=0 z=55
+> fade op=0.45 t=4
+NARRATOR [~close:chandra] (sfx=swell): शाप का प्रभाव आरंभ हो चुका था। चंद्र की राजसी चमक दिन-ब-दिन घटने लगी, मानो कोई उनकी किरणें चूस रहा हो।
+
+# ---------------------------------------------------------------- the waning moon
+== SCENE kshay | set=glade time=night music=sorrow amb=night trans=fade
++ moon kind=moonphase x=640 y=170 r=80 phase=1 z=-4
+BEAT 1 [~at:640,200,1.6]
+> moon phase=0.08 t=9
+NARRATOR [~wide] (sfx=wind): चंद्र, पृथ्वी पर वनस्पतियों के स्वामी थे। यदि वे मुरझा गए, तो पौधे नष्ट हो जाएँगे। रातें अंधकार में डूब जाएँगी, और मनुष्य रास्ता भटक जाएँगे।
+NARRATOR: डरी हुई पत्नियों ने उन्हें ब्रह्मा के पास भेजा। और सृष्टिकर्ता को केवल एक ही नाम याद आया।
+BRAHMA (calm) [~at:640,200,1.6]: महादेव। आप उनसे प्रार्थना कीजिए। केवल वही आपका पुनरुद्धार कर सकते हैं।
+
+# ---------------------------------------------------------------- Somnath
+== SCENE somnath | set=ocean time=dawn music=shiva amb=ocean trans=mandala
++ linga kind=glow x=820 y=560 r=120 color=#f6e7a6 core=0.6 z=-1
+@ chandra x=560 y=640 s=0.85 face=1 seat=lotus pose=meditate emo=meditate o=0.7
++ waterfg kind=water x=640 y=660 w=1500 h=120 color=#e9e3d4 crest=#8299b8 op=0.85 z=40
+BEAT 1.5 [wide] (sfx=splash)
+NARRATOR [~wide]: चंद्र पश्चिमी तट पर पहुँचे। समुद्र के किनारे उन्होंने एक शिवलिंग बनाया, और महामृत्युंजय मंत्र का जाप करने लगे।
+NARRATOR [mid:chandra] (sfx=splash): वे ऐसे निश्चल बैठे रहे मानो पत्थर से गढ़े हों। लहरें आकर उनसे टकरातीं। खारा पानी त्वचा में शूल की तरह चुभता। समुद्र उन्हें खींचता, पर वे डटे रहे।
+NARRATOR [close:chandra]: उनका शरीर गलने लगा था। पर आत्मा नहीं।
++ sg kind=rays x=880 y=380 r=700 n=24 color=#fff0b0 op=0.25 z=-4 anim=pop inDur=2
+@ shiva x=900 y=650 s=0.95 face=-1 pose=abhaya emo=calm anim=materialize inDur=2
+> chandra emo=calm pose=namaste t=1
+NARRATOR [~wide] (sfx=om): फिर एक दिन चंद्र ने आँखें खोलीं, तो रेत पर किसी के पैरों के निशान थे। भगवान शिव सामने खड़े थे।
+SHIVA (calm) [close:shiva]: चंद्र, आपको क्या चाहिए?
+CHANDRA (sad, pose=namaste) [close:chandra]: मैं स्वयं को वापस पाना चाहता हूँ, भगवन्। दक्ष के शाप से मेरा तेज नष्ट हो गया है। मेरी महिमा मुझे लौटा दीजिए।
+SHIVA (calm, pose=open) [mid:shiva]: शाप को काटा नहीं जा सकता। और प्रजापति का शाप तो समुद्र में फेंकी वस्तु की तरह, लौट-लौटकर आता है। मैं इसे मिटा नहीं सकता। पर बदल अवश्य सकता हूँ।
++ cycle kind=moonphase x=640 y=200 r=60 phase=1 z=30
+> cycle phase=0 t=3
+SHIVA (serene, pose=abhaya) [~at:640,260,1.3]: आपकी चमक प्रतिदिन घटेगी, और आप लुप्त हो जाएँगे। पर यह स्थायी नहीं होगा। अगले ही दिन से आपका प्रकाश लौटने लगेगा।
+> cycle phase=1 t=3
+SHIVA (serene) [~at:640,260,1.3]: आप फिर दीप्तिमान होंगे, और फिर घटेंगे। शुक्ल और कृष्ण। पूर्ण और अर्ध। अनंत काल तक।
+CHANDRA (calm) [close:chandra]: जन्म और मृत्यु की तरह। निर्माण और विनाश की तरह।
+SHIVA (smile) [close:shiva]: हाँ। जिस दिन आप पूरी तरह अंधकार में डूबेंगे, वह अमावस्या कहलाएगी। और जिस दिन पूरा तेज लौटेगा, वह पूर्णिमा।
+- cycle
+SHIVA (serene, pose=bless) [mid:shiva] (sfx=sparkle): आपके घटने-बढ़ने से धरती के समुद्रों में ज्वार उठेंगे। और आज से मैं आपको अपने मस्तक पर धारण करूँगा। मेरा एक नाम होगा, चंद्रशेखर।
+- chandra od=1.5
++ crest kind=sparkle x=900 y=330 n=20 r=90 z=60
+BEAT 1.5 [close:shiva] (sfx=bell)
+NARRATOR [~wide]: चंद्र को सोम भी कहते हैं। इसलिए शिव और उस तटीय तीर्थ, दोनों को एक पवित्र नाम मिला।
++ name kind=text x=640 y=170 text="सोमनाथ" size=96 z=70
+BEAT 2.4 [wide] (sfx=conch)
+- name
+NARRATOR: चंद्र ने सभी पत्नियों के लिए हृदय के द्वार खोल दिए, और सदा निष्ठावान रहने का वचन दिया। दुर्भाग्य से, यह वचन सत्य नहीं हो पाया।
+NARRATOR: और दक्ष? उसके शाप को शिव ने बदल दिया था। घृणा की आग में, एक और लकड़ी पड़ चुकी थी।
+
+== CHAPTER | kicker=कथा नौ | title=सती
+
+# ---------------------------------------------------------------- Sati chooses
+== SCENE swayam | set=court wall=#7a2a5a music=dawn amb=court trans=mandala
+@ daksha x=380 y=650 s=0.95 face=1 pose=hips emo=calm
+@ prasuti x=200 y=650 s=0.85 face=1 pose=rest emo=calm z=-1
+@ sati x=860 y=650 s=0.9 face=-1 pose=namaste emo=calm
+BEAT 1 [wide] (sfx=bells)
+NARRATOR [~wide]: दक्ष की सबसे छोटी पुत्री सती, बड़ी होकर अत्यंत सुंदर हो गईं। वे आदिशक्ति का अवतार थीं।
+NARRATOR [mid:daksha]: माता-पिता ने जिस-जिस वर के लिए हाँ कही, सती ने मना कर दिया। सम्मानित से सम्मानित परिवार। पर हर बार, ना।
+DAKSHA (angry, pose=open) [close:daksha]: बहुत हुआ, सती! अब तुम ही बताओ। तुम किससे विवाह करना चाहती हो?
+> sati emo=serene t=0.6
+BEAT 1 [close:sati]
+SATI (serene, pose=namaste) [ecu:sati] (sfx=bell): महादेव।
+> daksha emo=rage t=0.3
+BEAT 1.2 [ecu:daksha] (sfx=thunder, shake=6)
+NARRATOR [close:daksha]: दक्ष भड़क उठे। वे कुछ नहीं भूले थे। पिता का कटा सिर। पूजा से वंचित ब्रह्मा। चंद्र को दिया शाप, जिसे शिव ने बदल दिया।
+
+# ---------------------------------------------------------------- the insult in Brahma's court
+== SCENE sabha | set=court music=court amb=court trans=mandala
+@ brahma x=640 y=600 s=0.75 face=1 seat=lotus pose=bless emo=calm fly=1 noShadow=true z=-3
+@ indra x=330 y=650 s=0.8 face=1 pose=namaste emo=calm
+@ agni x=200 y=650 s=0.78 face=1 pose=namaste emo=calm z=-1
+@ shiva x=1000 y=650 s=0.9 face=-1 seat=lotus pose=meditate emo=meditate
+@ nandi kind=creature creature=bull x=1180 y=660 s=0.7 face=-1 legs=4
+@ daksha x=-100 y=650 s=0.92 face=1 pose=rest emo=smile
+NARRATOR [~wide]: फिर एक दिन दक्ष ब्रह्मा की सभा में आए। सारे देवता सम्मान में उठ खड़े हुए।
+> daksha x=480 t=2.5
+> indra pose=namaste t=0.4
+NARRATOR [mid:shiva]: सब, केवल एक को छोड़कर। शिव ध्यान में बैठे रहे।
+> daksha emo=rage pose=point t=0.5
+DAKSHA (rage, pose=point) [close:daksha] (sfx=gong): यह शिव इतना असभ्य है, कि देवताओं के साथ बैठने योग्य नहीं! आज से कोई इस अशिष्ट को अपनी सभा में आमंत्रित नहीं करेगा!
+NANDI (angry) [close:nandi] (sfx=roar): प्रजापति! महादेव को सांसारिक अनुष्ठानों से कोई सरोकार नहीं। उन्हें अपशब्द कहने वाला कोई पशु ही हो सकता है।
+NANDI (angry) [two:nandi,daksha]: अपने शब्दों पर नियंत्रण रखिए। वरना एक दिन आप स्वयं पशु के समान दिखने लगेंगे।
+BEAT 1.4 [ecu:daksha] (sfx=heartbeat)
+
+# ---------------------------------------------------------------- Sati's penance
+== SCENE tapas | set=kailash music=devi amb=wind trans=mandala
++ heat kind=glow x=420 y=440 r=300 color=#ffb070 core=0.6 z=-1
++ snow kind=motes x=640 y=360 n=40 w=1300 h=700 z=60
+@ sati x=420 y=650 s=0.85 face=1 seat=lotus pose=meditate emo=meditate
+BEAT 1.5 [wide] (sfx=wind)
+NARRATOR [~wide]: सती को इन घटनाओं का पता नहीं था। वे बस इतना जानती थीं, कि उनका अस्तित्व अधूरा था। और उसे केवल शिव पूर्ण कर सकते थे।
+> heat r=600 core=0.9 t=8
+NARRATOR [~at:420,450,1.4] (sfx=fire): वन में रहकर सती ने घोर तपस्या शुरू की। उनके भीतर महादेव के लिए इतनी ऊष्मा उठी, कि कैलाश पर जमी बर्फ भी पिघलने लगी।
++ drip kind=water x=640 y=700 w=1500 h=60 color=#cfd8ea crest=#4a5f9e op=0.7 z=40
+@ shiva x=980 y=650 s=0.95 face=-1 pose=abhaya emo=smile anim=materialize inDur=2
+> sati emo=joy pose=namaste t=1
+NARRATOR [two:sati,shiva] (sfx=swell): सती के प्रेम से अभिभूत होकर, शिव उन्हें पत्नी बनाने के लिए सहमत हो गए।
+
+# ---------------------------------------------------------------- Daksha and Brahma argue
+== SCENE vivad | set=court music=tension amb=court trans=mandala
+@ daksha x=420 y=650 s=0.95 face=1 pose=open emo=angry
+@ brahma x=880 y=650 s=0.9 face=-1 pose=bless emo=calm
+BEAT 0.8 [wide]
+BRAHMA (calm, pose=bless) [close:brahma]: सती का जन्म शिव के लिए हुआ था, पुत्र।
+DAKSHA (rage, pose=open) [close:daksha]: वह शिव? जो पशु-चर्म पहने घूमता है? शरीर पर राख मलता है, बैल की सवारी करता है, गले में साँप लपेटता है? एक राजकुमारी, ऐसे संन्यासी के साथ कैसे रहेगी?
+BRAHMA (calm, pose=open) [close:brahma]: शिव स्वतंत्र हैं। उनका और सती का मिलन, प्रकृति का नियम है। आप उन्हें अलग नहीं कर सकते।
+DAKSHA (angry, pose=point) [ecu:daksha]: क्या आप भूल गए, पिताश्री? शिव ने आपको अपमानित किया था। एक बार नहीं, दो बार!
+NARRATOR [~wide]: पर ब्रह्मा ने घोषणा कर दी। विवाह होकर रहेगा। और प्रजापति को अपने पिता की इच्छा के आगे झुकना पड़ा।
+
+# ---------------------------------------------------------------- the wedding
+== SCENE vivah | set=yajna music=joy amb=fire,temple trans=white
++ agni kind=fire x=640 y=560 size=1.3 z=-1
++ fl kind=petals x=640 y=200 n=30 w=1200 z=60
+@ shiva x=480 y=650 s=0.9 face=1 pose=namaste emo=smile
+@ sati x=800 y=650 s=0.85 face=-1 pose=namaste emo=joy
+@ daksha x=1150 y=650 s=0.85 face=-1 pose=hips emo=angry z=-2
+BEAT 1.5 [wide] (sfx=bells, swell)
+> shiva x=640 y=700 t=4
+> sati x=520 y=600 t=4
+NARRATOR [~wide] (sfx=manjira): शिव और सती ने पवित्र अग्नि की परिक्रमा की।
+> shiva x=800 y=650 t=4
+> sati x=480 y=650 t=4
+NARRATOR [~close:daksha] (sfx=fire): और जैसे ही फेरे पूरे हुए, दक्ष के भीतर कुछ जलकर भस्म हो गया।
++ dt kind=tint color=#3a0806 op=0.35 z=55
+DAKSHA (rage) [ecu:daksha] (sfx=heartbeat): मैं उन्हें... उनकी सही जगह दिखाऊँगा।
+
+# ---------------------------------------------------------------- waiting for an invitation
+== SCENE pratiksha | set=kailash music=sorrow amb=wind trans=mandala
+@ shiva x=880 y=650 s=0.9 face=-1 seat=lotus pose=meditate emo=calm
+@ sati x=420 y=650 s=0.88 face=1 pose=rest emo=smile
+BEAT 1 [wide]
+NARRATOR [~wide]: नव-विवाहित जीवन अभी शुरू ही हुआ था, कि समाचार आया। प्रजापति कनखल में एक भव्य यज्ञ करने वाले थे। सारे देवता आमंत्रित थे।
+SATI (joy, pose=open) [close:sati]: माँ से मिलूँगी! बहनों से! कितने दिन हो गए उन्हें देखे!
+NARRATOR [mid:sati]: दिन बीतते गए। पर निमंत्रण नहीं आया। न दक्ष आए, न माँ। न कोई पुजारी, न कोई दूत।
+> sati emo=sad pose=despair t=1
+NARRATOR [close:sati]: धीरे-धीरे प्रसन्नता का स्थान भय ने ले लिया। सती न बाहर जातीं, न रात को सोतीं। आँखों में उम्मीद थी, पर दिल हर दिन डूबता जाता था।
+NARRATOR [close:shiva]: इस बीच, शिव ने उनसे कुछ नहीं कहा।
+@ d1 fig=indra x=1500 y=160 s=0.4 face=-1 pose=rest emo=calm fly=1 noShadow=true z=-4
+@ d2 fig=agni x=1600 y=200 s=0.38 face=-1 pose=rest emo=calm fly=1 noShadow=true z=-4
+> d1 x=-200 t=8
+> d2 x=-100 t=8
+NARRATOR [~wide] (sfx=whoosh): यज्ञ का दिन आया। सती ने देवताओं को कनखल की ओर उड़ते देखा। क्या वे ऊपर से ताना मार रहे थे? या दया दिखा रहे थे?
+SATI (sad, pose=despair) [close:sati]: पिताजी ऐसा क्यों कर रहे हैं? उन्होंने हर देवता को बुलाया, पर अपनी ही बेटी को नहीं? महादेव को नहीं?
+SHIVA (sad) [close:shiva]: प्रजापति के मन में मेरे लिए जो घृणा है, उसने तुम्हारे लिए उनके प्रेम को भी जला दिया है। वे अब तुम्हें पुत्री नहीं मानते। तुम केवल मेरी पत्नी हो।
+SATI (angry, pose=open) [close:sati]: पिता अपनी संतान से कभी घृणा नहीं कर सकता! मुझे वहाँ जाकर उनसे बात करनी चाहिए।
+SHIVA (calm, pose=abhaya) [mid:shiva]: वहाँ हमारा स्वागत नहीं होगा, सती। बिन बुलाया अतिथि सदा अपमानित होता है। और वहाँ तुम्हारी रक्षा करने वाला कोई नहीं होगा।
+SATI (angry) [ecu:sati]: मेरी हानि? अपने ही घर में? अपने ही परिवार के बीच? जब मैं पिताजी के सामने जाऊँगी, तो वे फिर से मुझसे प्रेम करने लगेंगे।
+@ nandi kind=creature creature=bull x=1400 y=660 s=0.75 face=-1 legs=4
+> nandi x=1080 t=2
+NARRATOR [~wide]: शिव ने बार-बार रोका, पर सती नहीं मानीं। अंत में महादेव ने नंदी को आज्ञा दी, कि सती को कनखल ले जाए।
+
+# ---------------------------------------------------------------- Kankhal
+== SCENE kankhal | set=yajna music=tension amb=fire,temple trans=mandala
++ agni kind=fire x=640 y=560 size=1.6 z=-1
+@ daksha x=860 y=650 s=0.95 face=-1 pose=offer emo=smile
+@ prasuti x=1050 y=650 s=0.85 face=-1 pose=rest emo=calm z=-1
+@ s1 fig=nakshatra x=1180 y=640 s=0.72 face=-1 pose=hips emo=sly z=-2
+@ s2 fig=rohini x=1250 y=630 s=0.7 face=-1 pose=point emo=sly z=-3
+@ brahma x=300 y=560 s=0.62 face=1 seat=lotus pose=bless emo=calm fly=1 noShadow=true z=-4
+@ vishnu x=160 y=570 s=0.62 face=1 pose=abhaya emo=calm fly=1 noShadow=true z=-4
+@ dadhichi x=470 y=650 s=0.78 face=1 seat=lotus pose=namaste emo=calm z=-1
+BEAT 1.5 [wide] (sfx=bells)
+@ sati x=-120 y=650 s=0.88 face=1 pose=rest emo=smile
+> sati x=360 t=2.5
+> prasuti x=520 pose=cradle emo=joy t=1.5 d=1
+NARRATOR [~wide]: सती कनखल पहुँचीं, तो चकित रह गईं। माँ प्रसूति ने उन्हें गले लगा लिया।
+PRASUTI (joy, pose=cradle) [two:prasuti,sati]: मेरी बच्ची! तुम आ गईं!
+> prasuti x=1050 pose=rest emo=sad t=1.5
+NARRATOR [close:daksha]: पर दक्ष की आँखों में तिरस्कार के सिवा कुछ नहीं था। और बहनें भी, बिन बुलाए आई सती को घूर रही थीं।
+NAKSHATRAS (sly) [two:s1,s2]: देखो तो, जंगली फूलों से सजकर आई है! संन्यासी की पत्नी!
+> sati emo=sad t=0.6
+NARRATOR [~at:640,480,1.2]: फिर सती ने यज्ञ-स्थल देखा, और उनकी पीड़ा और बढ़ गई। सब देवता थे। पर शिव के लिए आसन तक नहीं था। न यज्ञ का भाग, न उनके नाम का मंत्र।
+NARRATOR [two:brahma,vishnu]: शिव का पूर्ण बहिष्कार। और किसी ने विरोध तक नहीं किया। न ब्रह्मा ने, न विष्णु ने।
+> sati x=520 emo=angry pose=point t=1
+SATI (angry, pose=point) [close:sati]: पिताजी! महादेव के बिना आपने यज्ञ कैसे कर लिया? यहाँ देवता हैं, असुर हैं, यक्ष और गंधर्व हैं। आपने अपने दामाद को क्यों नहीं बुलाया?
+DAKSHA (sly, pose=hips) [close:daksha]: क्योंकि वह इनमें से किसी श्रेणी का नहीं। न देव, न असुर। न मनुष्य, न पशु। वह प्राणियों में सबसे तुच्छ है। क्या उसने तुम्हें निमंत्रण की भीख माँगने भेजा है?
+SATI (rage) [ecu:sati]: पिताजी! आप मेरे पति का अपमान कर रहे हैं!
+DAKSHA (rage, pose=point) [close:daksha]: हाँ! उस पति का, जिससे तुमने मेरी इच्छा के विरुद्ध विवाह किया। तुम हमारे लिए उसी दिन मर गई थीं, जिस दिन तुमने उससे विवाह किया। और मृतकों को निमंत्रण नहीं भेजा जाता।
+BEAT 1.4 [ecu:sati] (sfx=heartbeat)
+SATI (sad, pose=open) [close:sati]: जब चंद्र ने आपकी पुत्रियों की उपेक्षा की, तो आपने उन्हें शाप दिया। और आज आप स्वयं अपनी पुत्री की उपेक्षा कर रहे हैं?
+SATI (angry, pose=point) [~two:sati,brahma]: और आप, ब्रह्मदेव? श्री हरि? आप चुप बैठे हैं, जबकि शिव का अपमान हो रहा है? क्या आप भूल गए कि उन्हीं के साथ आप त्रिमूर्ति कहलाते हैं? या इन आहुतियों की भूख ने आपके मुँह बंद कर दिए हैं?
+> daksha pose=strike t=0.3
+DAKSHA (rage, pose=strike) [close:daksha] (sfx=gong, shake=4): तुम्हारी हिम्मत कैसे हुई? उसके लिए मेरे पास घृणा के सिवा कुछ नहीं!
+SATI (rage) [ecu:sati]: आप उनसे घृणा नहीं करते, पिताजी। आप उनसे डरते हैं। डरते हैं कि उन्हें वश में नहीं कर सकते, क्योंकि वे आपकी बनाई किसी चीज़ को नहीं मानते।
+DAKSHA (rage, pose=point) [close:daksha]: इसलिए उस परित्यक्त को यहाँ की जूठन भी नहीं मिलेगी!
+> dadhichi seat=none pose=raise emo=rage t=0.6
+DADHICHI (rage, pose=raise) [full:dadhichi] (sfx=thunder, shake=6): बहुत हुआ!
+NARRATOR [~wide]: सभा स्तब्ध रह गई। यह ऋषि दधीचि थे।
+DADHICHI (angry, pose=point) [close:dadhichi]: जिस यज्ञ में महादेव का अपमान हो, वह ब्रह्मांड के माथे पर कलंक है। यहाँ बैठना भी पाप है। आप सबको महादेव के क्रोध का सामना करना पड़ेगा। आप सबको!
+> dadhichi x=-200 t=3
+NARRATOR [~wide]: सबकी आँखें जाते हुए दधीचि पर थीं। किसी ने नहीं देखा, कि सती यज्ञ-वेदी के किनारे जा खड़ी हुई थीं।
+> sati x=560 pose=namaste emo=sad t=1.5
+SATI (sad, pose=namaste) [close:sati] (sfx=fire): मैं दधीचि की तरह लौट भी नहीं सकती। इस सती रूप में, मैं महादेव के पास नहीं लौट सकती। प्रजापति की बेटी होना ही शाप है।
+SATI (sad) [ecu:sati]: आज मेरे कारण मेरे स्वामी का अपमान हुआ। इसलिए मुझे यह पहचान, यह शरीर नष्ट करना होगा। आपके यज्ञ में मेरे स्वामी का कोई भाग नहीं, तो मैं स्वयं को इस वेदी में अर्पित करती हूँ। मुझे क्षमा करें, महादेव। मुझे क्षमा करें।
+DAKSHA (rage) [close:daksha]: शिव का नाम जपना बंद करो! तुम मेरी यज्ञ-वेदी अपवित्र कर रही हो!
+> sati emo=rage pose=curse t=0.3
++ shakti kind=rays x=560 y=380 r=700 n=30 color=#ffd0a0 op=0.3 z=-3 anim=pop
+SATI (rage, pose=curse) [~full:sati] (sfx=thunder, shake=10, flash): दुष्ट दक्ष! तुम भूल गए कि मैं आदिशक्ति हूँ! मैंने तुम्हारे घर में जन्म लिया, क्योंकि तुमने मुझे पुकारा था। और मैंने कहा था, जिस दिन तुम मेरा अपमान करोगे, मैं तुम्हें त्याग दूँगी!
+- shakti
+> sati x=640 y=560 o=0 t=1.2
+> agni size=3.4 t=1.2
++ burst kind=ring x=640 y=480 r=700 z=60
+BEAT 2 [wide] (sfx=boom, fire, shake=12, flash)
+NARRATOR [~at:640,460,1.2] (sfx=fire): और सती यज्ञ की अग्नि में समा गईं।
++ dark kind=tint color=#1a0606 op=0.5 z=55
++ crows kind=birds x=640 y=160 n=9 speed=140 color=#1a1a1a z=50
+NARRATOR [~wide] (sfx=wind, rumble): सब पीछे हट गए। आकाश काला पड़ गया। गिद्ध झपटने लगे, गीदड़ हाहाकार करने लगे। हवा, किसी क्रुद्ध आत्मा की तरह, लपटों को बुझाने लगी।
+
+== CHAPTER | kicker=कथा दस | title=वीरभद्र और तांडव
+
+# ---------------------------------------------------------------- Shiva's grief, Veerabhadra
+== SCENE virabhadra | set=kailash music=battle amb=storm,wind trans=cut tint=#2a0606,0.35
+@ shiva x=640 y=650 s=1 face=1 seat=lotus pose=meditate emo=meditate
+BEAT 1.4 [close:shiva] (sfx=heartbeat)
+> shiva emo=rage seat=none pose=raise t=0.3
+NARRATOR [ecu:shiva] (sfx=thunder, shake=10, flash): सती ने जैसे ही अंतिम साँस ली, शिव के नेत्र खुल गए।
+NARRATOR [close:shiva] (sfx=damaru): पीड़ा और रोष से काँपते शिव ने अपनी जटा से एक लट तोड़ी, और धरती पर पटक दी।
++ hit kind=ring x=900 y=640 r=500 z=60
++ smk kind=smoke x=900 y=660 n=12 w=300 color=#2a1a2a z=10
+@ veerabhadra x=920 y=660 s=1.1 face=-1 pose=raise emo=rage anim=grow inDur=1.4
+NARRATOR [~wide] (sfx=boom, roar, shake=14): धरती से टकराते ही प्रकट हुआ वीरभद्र। तीन नेत्रों और हज़ार भुजाओं वाला एक भयानक प्राणी।
+> veerabhadra pose=namaste t=0.5
+NARRATOR [two:shiva,veerabhadra]: उसने शिव को प्रणाम किया। और महादेव ने आज्ञा दी।
+SHIVA (rage, pose=point) [ecu:shiva] (sfx=thunder, shake=12): दक्ष के यज्ञ को ध्वंस कर दो!
+VEERABHADRA (rage, pose=strike) [close:veerabhadra] (sfx=roar): जो आज्ञा, महादेव!
+
+# ---------------------------------------------------------------- the yajna destroyed
+== SCENE dhvans | set=yajna music=battle amb=fire,storm trans=white
++ agni kind=fire x=640 y=560 size=2 z=-1
++ fires kind=fire x=1100 y=600 size=1.2 z=-2
++ smk kind=smoke x=640 y=600 n=14 w=1200 h=300 color=#2a1a2a z=30
+@ daksha x=520 y=650 s=0.9 face=1 pose=fear emo=fear
+@ bhrigu x=330 y=650 s=0.85 face=1 pose=curse emo=angry
+@ vishnu x=200 y=560 s=0.66 face=1 pose=abhaya emo=sad fly=1 noShadow=true z=-4
+@ veerabhadra x=1500 y=660 s=1.1 face=-1 pose=strike emo=rage
+@ g1 fig=gana x=1600 y=650 s=0.8 face=-1 pose=raise emo=rage
+@ g2 fig=gana x=1700 y=640 s=0.75 face=-1 pose=strike emo=rage z=-1
+@ g3 fig=gana x=1800 y=630 s=0.7 face=-1 pose=raise emo=angry z=-2
+> veerabhadra x=980 t=1.4
+> g1 x=1120 t=1.6
+> g2 x=1210 t=1.8
+> g3 x=1060 t=2
+BEAT 1.5 [wide] (sfx=roar, shake=10)
+NARRATOR [~wide] (sfx=boom, shake=8): यज्ञ-स्थल पर भगदड़ मच गई। वीरभद्र ने अपनी त्वचा के छिद्रों से अनगिनत भयानक गण उत्पन्न किए, और वे यज्ञ को रौंदने लगे।
++ c1 kind=clash x=740 y=420 z=60
+NARRATOR [mid:veerabhadra] (sfx=clash, fire): उन्होंने आहुतियाँ अपवित्र कर दीं। जगह-जगह आग लगाई, और उसकी राख से खेलने लगे। ब्रह्मांड में जो कुछ घातक हो सकता था, वह सब उस यज्ञ में हुआ।
+BHRIGU (angry, pose=curse) [close:bhrigu] (sfx=magic): ऋभुओ, प्रकट हो! इन्हें रोको!
+NARRATOR [~wide] (sfx=clash, shake=6): भृगु ने ऋभु योद्धा प्रकट किए। पर वीरभद्र की सेना, लुढ़कती चट्टान की तरह, अथक बढ़ती रही।
+- c1
+DAKSHA (fear, pose=namaste) [two:daksha,vishnu]: श्री हरि! अपना सुदर्शन चक्र चलाइए! हमें बचाइए!
+VISHNU (sad, pose=abhaya) [close:vishnu]: वीरभद्र स्वयं शिव की ऊर्जा है, प्रजापति। वह मेरे चक्र के समान शक्तिशाली है। दोनों टकराए, तो ब्रह्मांड नष्ट हो जाएगा।
+> veerabhadra x=640 pose=raise t=0.6
+NARRATOR [close:daksha] (sfx=heartbeat): इससे पहले कि दक्ष कुछ और कहते, वीरभद्र उन पर टूट पड़ा।
++ end kind=bolt x=560 y=0 h=600 z=60
+- daksha od=0.1
+BEAT 1.2 [wide] (sfx=boom, thunder, shake=14, flash)
+- end
+NARRATOR [~wide]: उसने प्रजापति का सिर काटकर अग्नि में झोंक दिया। दधीचि का शाप सत्य हो गया था।
+DADHICHI (angry) [wide]: आप सबको महादेव के क्रोध का सामना करना पड़ेगा... आप सबको...
+
+# ---------------------------------------------------------------- the ram's head
+== SCENE punarjivan | set=kailash music=sorrow amb=wind trans=mandala
+@ shiva x=880 y=650 s=0.95 face=-1 pose=rest emo=sad
+@ brahma x=330 y=650 s=0.85 face=1 pose=namaste emo=sad
+@ vishnu x=500 y=650 s=0.88 face=1 pose=namaste emo=sad
+@ indra x=180 y=650 s=0.8 face=1 pose=namaste emo=fear z=-1
+BEAT 1 [wide]
+NARRATOR [~wide]: यज्ञ अपवित्र हो चुका था। तीनों लोकों पर विनाश का संकट था। ब्रह्मा और विष्णु का एक ही मत था।
+VISHNU (sad, pose=namaste) [close:vishnu]: महादेव को शांत करना होगा। वही दक्ष को जीवित करके यज्ञ पूर्ण करवा सकते हैं।
+NARRATOR [two:shiva,brahma]: सारे देवता शिव के पास पहुँचे, दंडवत प्रणाम किया, क्षमा माँगी, और उन्हें कनखल ले आए।
+SHIVA (sad) [close:shiva]: दक्ष का सिर तो अग्नि में भस्म हो चुका है। कोई और उपाय खोजिए।
+- brahma
+- vishnu
+- indra
+@ daksharam x=400 y=650 s=0.92 face=1 pose=namaste emo=fear anim=materialize inDur=2
+NARRATOR [~full:daksharam] (sfx=magic): अंत में, प्रजापति के शरीर पर एक मेढ़े का सिर लगाया गया।
+NARRATOR [close:daksharam]: और नंदी का वचन भी सत्य हो गया। दक्ष ने शिव को पशु कहा था। आज वह स्वयं, एक पशु के सहारे ही जीवित हुआ था।
+NANDI (calm) [close:daksharam]: मैंने कहा था, प्रजापति।
+SHIVA (calm, pose=bless) [close:shiva]: एक दिन तुम पृथ्वी पर अपने वास्तविक रूप में फिर जन्म लोगे, दक्ष। जाओ, अपना यज्ञ पूर्ण करो।
+NARRATOR [~wide] (sfx=bells): यज्ञ संपन्न हुआ, और उसका पुण्य सबको मिला। तभी अचानक, पूरा ब्रह्मांड काँपने लगा।
+
+# ---------------------------------------------------------------- Rudra Tandava
+== SCENE tandav | set=cosmos music=battle amb=storm trans=white tint=#1a0610,0.25
++ fireR kind=ring x=640 y=380 r=640 dur=2.5 z=-3
++ flames kind=fire x=640 y=650 size=2.6 z=-2
+@ shiva x=640 y=660 s=1.05 face=1 pose=cradle emo=rage
+@ satibody fig=sati x=660 y=430 s=0.8 face=1 rot=-80 pose=rest emo=meditate noShadow=true z=1
+BEAT 1.2 [wide] (sfx=rumble, shake=14)
+NARRATOR [~wide] (sfx=damaru, shake=12): ब्रह्मांड ऐसे काँप रहा था, मानो कोई उसे निर्दयता से पीट रहा हो। लोग बाहर निकले, तो स्तब्ध रह गए।
+> shiva x=520 lean=-8 t=1.2
+> satibody x=540 t=1.2
+NARRATOR [close:shiva] (sfx=damaru, shake=10): भगवान शिव, सती के शव को कंधे पर लिए नृत्य कर रहे थे। आँखों में खून उतर आया था। पूरा शरीर हिंसक मुद्रा में फड़क रहा था।
+> shiva x=760 lean=8 t=1.2
+> satibody x=780 t=1.2
++ tw kind=text x=640 y=170 text="रुद्र तांडव" size=88 color=#ff6a3a z=70
+BEAT 2.4 [~at:640,400,1.1] (sfx=thunder, shake=14, flash)
+- tw
+> shiva x=640 lean=0 emo=sad t=1
+> satibody x=660 t=1
+NARRATOR [ecu:shiva] (sfx=heartbeat): महादेव विलाप कर रहे थे। अपनी प्रियतमा की मृत्यु का शोक।
+@ vishnu x=180 y=320 s=0.66 face=1 pose=raise emo=sad fly=1 noShadow=true z=-4
+NARRATOR [mid:vishnu]: ब्रह्मांड को बचाने के लिए सबकी दृष्टि विष्णु की ओर मुड़ी। विष्णु समझ गए, कि सती के अवशेष ही शिव को पीड़ा दे रहे थे।
++ chakra kind=chakra x=180 y=260 r=46 z=60
+> chakra x=660 y=430 t=2
+NARRATOR [~wide] (sfx=whoosh, magic): विष्णु ने अपना सुदर्शन चक्र छोड़ दिया।
+- satibody od=1.5
++ pieces kind=petals x=640 y=300 n=51 w=1400 z=55
++ shine kind=sparkle x=640 y=430 n=51 r=500 z=56
+- chakra
+NARRATOR [~at:640,420,1.1] (sfx=sparkle, swell): शिव झूम रहे थे, और चक्र ने सती के शरीर के इक्यावन भाग कर दिए। एक-एक करके वे धरती पर अलग-अलग स्थानों पर गिरे।
++ peeth kind=text x=640 y=170 text="५१ शक्तिपीठ" size=80 z=70
+NARRATOR [wide] (sfx=om): जहाँ-जहाँ वे गिरे, वहाँ शक्तिपीठ स्थापित हुए।
+- peeth
+- flames od=2
+> shiva pose=rest emo=sad t=1.5
+NARRATOR [close:shiva]: शिव रुक गए। शरीर से बोझ उतर गया था। पर हृदय अब भी भारी था।
+> shiva x=1500 t=7
+NARRATOR [~wide] (sfx=wind): शिव चले गए। वे फिर अकेले रह गए थे।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night trans=fade
++ moon kind=moonphase x=1040 y=150 r=46 phase=0.5 z=-4
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=sad fly=1 noShadow=true
+BEAT 1.5 [wide] (sfx=veena)
+NARAD (sad) [mid:narad]: एक पिता का अहंकार। एक बेटी का स्वाभिमान। और एक पति का शोक, जिसने ब्रह्मांड हिला दिया।
+NARAD (calm) [close:narad]: दक्ष ने कहा था, शिव पशु है। अंत में पशु का सिर किसे मिला? कर्म का चक्र, नारायण। वह किसी को नहीं छोड़ता।
+NARAD (smile, pose=point) [ecu:narad]: पर निराश मत होइए। आदिशक्ति कभी सदा के लिए नहीं जातीं। सती लौटेंगी। एक नए नाम के साथ। पार्वती।
+BEAT 1.5 [~close:narad] (sfx=veena)
+NARAD (sly, pose=open) [mid:narad]: पर उससे पहले, विष्णु को धरती पर उतरना होगा। एक बार नहीं, बार-बार। अलग-अलग रूपों में।
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=मत्स्य · वराह · नृसिंह
+NARRATOR: अगले अध्याय में: जब धर्म संकट में पड़ा, तो विष्णु मछली बने, वराह बने, और आधे सिंह, आधे मनुष्य बनकर एक अमर असुर का अंत किया।
+
+== END | dur=13 | title=महागाथा | sub=अध्याय तीन · सती | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 19 और 21);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर

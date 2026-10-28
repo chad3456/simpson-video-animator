@@ -1,0 +1,3065 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "लंका",
+  "episode": "10",
+  "slug": "e10-lanka",
+  "kicker": "अध्याय दस",
+  "sub": "कुबेर, रावण और सीता",
+  "logline": "सोने की नगरी जो एक भाई ने दूसरे से छीन ली, दस सिर काटकर माँगा गया शिवलिंग और देवताओं की एक शरारत, सीता के चार शाप, और वह छाया जिसे रावण कभी पहचान नहीं पाया।",
+  "stories": "71, 72, 73, 74",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 71, 72, 73 और 74"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "shiva": {
+   "label": "शिव",
+   "fig": "shiva",
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.86,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "ketaki": {
+   "label": "केतकी",
+   "fig": "ketaki",
+   "creature": "ketaki",
+   "voice": "hf_beta:0.85+af_kore:0.15",
+   "speed": 1.05,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "small"
+  },
+  "indra": {
+   "label": "इंद्र",
+   "fig": "indra",
+   "voice": "hm_psi:0.65+am_liam:0.35",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "devas": {
+   "label": "देवता",
+   "fig": "indra",
+   "voice": "hm_psi:0.6+am_liam:0.4",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "chorus"
+  },
+  "agni": {
+   "label": "अग्नि",
+   "fig": "agni",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "kaikasi": {
+   "label": "कैकसी",
+   "fig": "kaikasi",
+   "voice": "hf_alpha:0.5+af_kore:0.5",
+   "speed": 1.0,
+   "pitch": -3,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "kuber": {
+   "label": "कुबेर",
+   "fig": "kuber",
+   "voice": "hm_psi:0.5+am_santa:0.5",
+   "speed": 0.96,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "ravana": {
+   "label": "रावण",
+   "fig": "ravana",
+   "voice": "hm_omega:0.45+am_onyx:0.55",
+   "speed": 0.92,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "divine_big"
+  },
+  "vibhishana": {
+   "label": "विभीषण",
+   "fig": "vibhishana",
+   "voice": "hm_psi:0.6+am_liam:0.4",
+   "speed": 0.98,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "varuna": {
+   "label": "वरुण",
+   "fig": "varuna",
+   "voice": "hm_omega:0.6+am_echo:0.4",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "divine"
+  },
+  "vayu": {
+   "label": "वायु",
+   "fig": "vayu",
+   "voice": "hm_psi:0.6+am_puck:0.4",
+   "speed": 1.06,
+   "pitch": 1,
+   "fx": "bright"
+  },
+  "yamaraj": {
+   "label": "यम",
+   "fig": "yamaraj",
+   "voice": "hm_omega:0.5+am_onyx:0.5",
+   "speed": 0.9,
+   "pitch": -5,
+   "formant": "shifted",
+   "fx": "cave"
+  },
+  "rama": {
+   "label": "राम",
+   "fig": "rama",
+   "voice": "hm_omega:0.6+am_michael:0.4",
+   "speed": 0.92,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "sita": {
+   "label": "सीता",
+   "fig": "sita",
+   "voice": "hf_alpha:0.65+af_heart:0.35",
+   "speed": 0.93,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "mayasita": {
+   "label": "माया सीता",
+   "fig": "mayasita",
+   "voice": "hf_alpha:0.5+af_aoede:0.5",
+   "speed": 0.93,
+   "pitch": 1,
+   "fx": "dream"
+  },
+  "phalgu": {
+   "label": "फल्गु",
+   "fig": "phalgu",
+   "voice": "hf_beta:0.6+af_river:0.4",
+   "speed": 0.98,
+   "pitch": 1,
+   "fx": "dream"
+  },
+  "gau": {
+   "label": "गाय",
+   "voice": "hf_beta:0.5+af_nicole:0.5",
+   "speed": 0.9,
+   "pitch": -2,
+   "formant": "shifted",
+   "fx": "small"
+  },
+  "bargad": {
+   "label": "बरगद",
+   "voice": "hm_omega:0.5+bm_lewis:0.5",
+   "speed": 0.82,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "cave"
+  },
+  "dasharath": {
+   "label": "दशरथ",
+   "voice": "hm_psi:0.6+bm_daniel:0.4",
+   "speed": 0.88,
+   "pitch": -2,
+   "fx": "divine_big"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! याद है, वैकुंठ के वे दो द्वारपाल? जय और विजय? जिन्हें शाप मिला था, कि वे तीन जन्म असुर बनकर लेंगे?",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पहले जन्म में वे हिरण्याक्ष और हिरण्यकशिपु थे। अब, दूसरा जन्म। एक के दस सिर हैं, और दूसरा छह महीने सोता है।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "आज की कथा में एक सोने की नगरी है, एक शिवलिंग है, और एक स्त्री है, जिसे संसार जितना जानता है, उतना ही नहीं जानता।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और हाँ। इस कथा में मैं भी हूँ। एक बहुत छोटी-सी, बहुत महत्त्वपूर्ण भूमिका में।",
+     "cam": "ecu:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय दस",
+   "title": "लंका",
+   "sub": "कुबेर, रावण और सीता"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा इकहत्तर",
+   "title": "रावण का लंका पर अधिकार",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "kuber",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "brahma",
+     "x": 880,
+     "y": 600,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kuber",
+     "x": 380,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "lanka",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#ffd27a",
+     "core": 0.5,
+     "z": -3,
+     "anim": "pop",
+     "in": 5
+    },
+    {
+     "id": "gold",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 380,
+     "n": 50,
+     "r": 500,
+     "z": -2,
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा के पौत्र ऋषि विश्रवा की दो पत्नियाँ थीं। इलविदा से यक्ष कुबेर जन्मा। और राक्षसी कैकसी से चार संतानें। रावण, कुंभकर्ण, विभीषण और शूर्पणखा।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "brahma",
+     "text": "तुम्हारी क्या इच्छा है, कुबेर?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "kuber",
+     "text": "स्वर्ण! असीम स्वर्ण। मैं ऋषि का पुत्र हूँ, पर राजा बनना चाहता हूँ। सोने से बनी नगरी का राजा।",
+     "cam": "close:kuber"
+    },
+    {
+     "who": "brahma",
+     "text": "ऐसी एक ही जगह है। लंका।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "ठोस सोने की बनी। जब समुद्र में उसकी परछाईं जगमगाती है, तो लगता है जैसे अग्नि, जल का उपहास कर रही हो। विश्वकर्मा ने उसे राक्षस माली और सुमाली के लिए बनाया था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "kuber",
+     "text": "सुमाली? माता कैकसी के पिता?",
+     "cam": "close:kuber"
+    },
+    {
+     "who": "brahma",
+     "text": "हाँ। पर श्रीहरि ने उन्हें वहाँ से भगा दिया। लंका को नया राजा चाहिए। और मैं तुम्हें लंकेश्वर घोषित करता हूँ।",
+     "cam": "close:brahma"
+    }
+   ],
+   "music": "brahma",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "kaikasi",
+   "set": "court",
+   "ctx": {
+    "wall": "#1a0a1a"
+   },
+   "els": [
+    {
+     "id": "kaikasi",
+     "x": 860,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "curse",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "ravana",
+     "x": 380,
+     "y": 650,
+     "s": 1.05,
+     "face": 1,
+     "pose": "hips",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kumbhakarna",
+     "x": 180,
+     "y": 650,
+     "s": 1.15,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "vibhishana",
+     "x": 560,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "fear",
+     "z": 1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "fear",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "kaikasi",
+     "text": "लज्जा आनी चाहिए तुम्हें! एक यक्ष, लंकेश्वर बन गया! वह नगरी, जो कभी मेरे पिता की थी! तुम असुर जाति पर कलंक हो!",
+     "cam": "close:kaikasi"
+    },
+    {
+     "who": "vibhishana",
+     "text": "पर माँ, वह हमारा भाई है। क्या हमें उसकी प्रसन्नता में प्रसन्न नहीं होना चाहिए?",
+     "cam": "close:vibhishana"
+    },
+    {
+     "who": "kaikasi",
+     "text": "भाई नहीं, सौतेला भाई! वह तुम्हें आधे मन से प्रेम करता है। रावण, क्या तुम यह होने दोगे?",
+     "cam": "close:kaikasi"
+    },
+    {
+     "who": "ravana",
+     "text": "कभी नहीं!",
+     "cam": "close:ravana"
+    },
+    {
+     "who": "kaikasi",
+     "text": "तो लंका वापस लो! असुरों की तरह लड़ो! श्वास से आग बरसाओ, गंधक की वर्षा करो!",
+     "camMove": true,
+     "cam": "close:kaikasi"
+    },
+    {
+     "who": "vibhishana",
+     "text": "एक माँ ऐसा कैसे कह सकती है? आपने हमें दूध पिलाया है, या लहू?",
+     "cam": "close:vibhishana"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "vijay",
+   "set": "ocean",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "city",
+     "kind": "glow",
+     "x": 1040,
+     "y": 440,
+     "r": 260,
+     "color": "#ffd27a",
+     "core": 0.7,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "spires",
+     "kind": "sparkle",
+     "x": 1040,
+     "y": 440,
+     "n": 30,
+     "r": 200,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "kuber",
+     "x": 1040,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "fear",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 1500,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "ravana",
+     "x": 360,
+     "y": 650,
+     "s": 1.1,
+     "face": 1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 900,
+        "pose": "raise",
+        "emo": "joy",
+        "t": 2.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "kumbhakarna",
+     "x": 180,
+     "y": 650,
+     "s": 1.2,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 680,
+     "w": 1500,
+     "h": 100,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.9,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "red",
+     "kind": "water",
+     "x": 640,
+     "y": 680,
+     "w": 1500,
+     "h": 100,
+     "color": "#a8303a",
+     "crest": "#5a0a1a",
+     "op": 0,
+     "z": 41,
+     "in": 2,
+     "keys": {
+      "2": [
+       {
+        "op": 0.8,
+        "t": 3
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "roar",
+     "nagara": true
+    },
+    {
+     "who": "narrator",
+     "text": "विभीषण ने लड़ने से मना कर दिया। पर रावण और कुंभकर्ण ने कुबेर के द्वीप पर आक्रमण कर दिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash",
+     "roar": true
+    },
+    {
+     "who": "narrator",
+     "text": "कुबेर युद्ध के लिए तैयार नहीं था। उसके मन में अपने भाइयों के लिए स्नेह था। और जब समुद्र लाल होने लगा, उसने आत्मसमर्पण कर दिया।",
+     "camMove": true,
+     "cam": "close:kuber",
+     "sfx": "boom",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "यक्ष-ध्वज गिरा, और असुर-पताका फहरा उठी। लंका अब रावण की थी।",
+     "camMove": true,
+     "cam": "full:ravana",
+     "sfx": "conch",
+     "nagara": true
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "ocean",
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "dhanpati",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "kuber",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "despair",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "smile",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 880,
+     "y": 580,
+     "s": 0.9,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "pose": "bless",
+        "emo": "smile",
+        "t": 0.6
+       },
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gold",
+     "kind": "sparkle",
+     "x": 420,
+     "y": 420,
+     "n": 40,
+     "r": 260,
+     "z": 40,
+     "in": 5
+    },
+    {
+     "id": "kg",
+     "kind": "glow",
+     "x": 420,
+     "y": 420,
+     "r": 320,
+     "color": "#ffd27a",
+     "core": 0.5,
+     "z": -2,
+     "anim": "pop",
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "kuber",
+     "text": "जो कुछ परिश्रम से पाया था, सब खो दिया। क्या मैं लंका के योग्य नहीं था?",
+     "cam": "close:kuber"
+    },
+    {
+     "who": "brahma",
+     "text": "तुम उससे भी अधिक के योग्य हो। पर यह विजय पहले से तय थी। रावण दरअसल जय है, और कुंभकर्ण, विजय। वे श्रीहरि के हाथों मुक्ति पाने के लिए, दूसरी बार जन्मे हैं।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "दस सिरों से बुद्धि नहीं बढ़ती, कुबेर। मेरे चार सिर ज्ञान के प्रतीक हैं। रावण के दस सिर बस इतना बताते हैं, कि उसका अहंकार दस गुना है।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "उसने तुम्हारा धन छीना है। पर उसकी मृत्यु उसके हाथों होगी, जिसने सारे धन-वैभव का त्याग कर दिया होगा।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "तुम्हारे हृदय में शत्रु के लिए भी करुणा है। इसलिए आज से तुम धन के देवता हो।",
+     "camMove": true,
+     "cam": "full:kuber"
+    },
+    {
+     "who": "kuber",
+     "text": "और मैं सबको याद दिलाता रहूँगा, परमपिता, कि धन कितनी जल्दी अपना घर बदलता है।",
+     "cam": "close:kuber"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "chapter8",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा बहत्तर",
+   "title": "देवताओं का रावण से छल",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "dashsheesh",
+   "set": "kailash",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "pyre",
+     "kind": "fire",
+     "x": 880,
+     "y": 640,
+     "size": 2.6,
+     "z": -1,
+     "in": 0,
+     "out": 5
+    },
+    {
+     "id": "ravana",
+     "x": 440,
+     "y": 650,
+     "s": 1.1,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "item": "sword",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "heads10": 8,
+        "t": 0.1,
+        "d": 1
+       },
+       {
+        "heads10": 6,
+        "t": 0.1,
+        "d": 2.2
+       },
+       {
+        "heads10": 4,
+        "t": 0.1,
+        "d": 3.4
+       },
+       {
+        "heads10": 2,
+        "t": 0.1,
+        "d": 4.6
+       },
+       {
+        "heads10": 0,
+        "t": 0.1,
+        "d": 5.8
+       }
+      ],
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "heads10": 9,
+        "t": 1.5
+       }
+      ],
+      "11": [
+       {
+        "item": "linga",
+        "pose": "lift",
+        "emo": "joy",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "flare",
+     "kind": "ring",
+     "x": 880,
+     "y": 520,
+     "r": 300,
+     "color": "#ff6a2a",
+     "z": 60,
+     "period": 1.2,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "shiva",
+     "x": 880,
+     "y": 600,
+     "s": 1,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "anim": "materialize",
+     "inDur": 1,
+     "z": 2,
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "pose": "bless",
+        "t": 0.6
+       },
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sg",
+     "kind": "glow",
+     "x": 880,
+     "y": 360,
+     "r": 320,
+     "color": "#bcd8ff",
+     "core": 0.6,
+     "z": 1,
+     "anim": "pop",
+     "in": 5
+    },
+    {
+     "id": "heads",
+     "kind": "ring",
+     "x": 440,
+     "y": 320,
+     "r": 400,
+     "color": "#bcd8ff",
+     "z": 60,
+     "in": 10
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire",
+     "rumble": true
+    },
+    {
+     "who": "narrator",
+     "text": "कैलाश की बर्फ पिघल रही थी। ऊपर एक विशाल चिता धधक रही थी। रावण ने चंद्रहास उठाई, वह तलवार जो शिव ने उसे तांडव-स्तोत्र से प्रसन्न होकर दी थी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "fire"
+    },
+    {
+     "who": "narrator",
+     "text": "उसने अपना एक सिर काटकर अग्नि में अर्पित कर दिया। फिर दूसरा। फिर तीसरा। एक के बाद एक, नौ सिर लपटों में चले गए।",
+     "camMove": true,
+     "cam": "close:ravana",
+     "sfx": "whoosh",
+     "fire": true,
+     "whoosh": true
+    },
+    {
+     "who": "narrator",
+     "text": "और जैसे ही उसने अंतिम सिर पर तलवार रखी...",
+     "cam": "ecu:ravana",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "shiva",
+     "text": "बहुत हुआ!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "shiva",
+     "text": "तुम्हें क्या चाहिए, रावण?",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "ravana",
+     "text": "आप, प्रभु! आप मेरे साथ लंका चलकर रहें।",
+     "cam": "close:ravana"
+    },
+    {
+     "who": "shiva",
+     "text": "पर्वत से सागर तक? तुमने पहले भी एक बार यह प्रयास किया था।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "ravana",
+     "text": "हाँ। मैंने पूरा कैलाश उठा लिया था। और आपने अपने पैर के अँगूठे से उसे दबा दिया। मैं कुचलते-कुचलते बचा।",
+     "cam": "close:ravana"
+    },
+    {
+     "who": "ravana",
+     "text": "पर आज मैं आपको नहीं ले जा रहा। मुझे केवल आपका प्रतीक चाहिए। कैलाश का शिवलिंग। मैं उसे लंका के तट पर स्थापित करूँगा, जहाँ सागर की लहरें सदा उसका अभिषेक करेंगी।",
+     "cam": "close:ravana"
+    },
+    {
+     "who": "shiva",
+     "text": "मेरा आशीर्वाद तुम्हारे साथ है। मैं तुम्हारी इच्छा पूरी करता हूँ, और तुम्हारे नौ सिर भी लौटाता हूँ।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "केवल एक शर्त है। लंका पहुँचने तक इसे धरती पर मत रखना। यदि इसने कहीं भी धरती को छुआ, तो यह वहीं स्थापित हो जाएगा। फिर तुम इसे उठा नहीं पाओगे।",
+     "cam": "close:shiva"
+    }
+   ],
+   "tint": [
+    "#2a0a0a",
+    0.3
+   ],
+   "music": "curse",
+   "amb": [
+    "fire",
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "shadyantra",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "indra",
+     "x": 640,
+     "y": 600,
+     "s": 0.9,
+     "face": 1,
+     "pose": "point",
+     "emo": "sly",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vayu",
+     "x": 380,
+     "y": 600,
+     "s": 0.8,
+     "face": 1,
+     "pose": "open",
+     "emo": "fear",
+     "fly": 1,
+     "noShadow": true,
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "yamaraj",
+     "x": 200,
+     "y": 620,
+     "s": 0.85,
+     "face": 1,
+     "pose": "hips",
+     "emo": "angry",
+     "fly": 1,
+     "noShadow": true,
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "agni",
+     "x": 880,
+     "y": 600,
+     "s": 0.85,
+     "face": -1,
+     "pose": "open",
+     "emo": "sly",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "varuna",
+     "x": 1080,
+     "y": 600,
+     "s": 0.85,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "joy",
+        "t": 0.4
+       },
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "रावण बड़े-बड़े डग भरता दक्षिण की ओर चल पड़ा। शिवलिंग भारी था, पर उसकी गति धीमी नहीं हुई। और स्वर्ग में, देवता चिंतित होकर इकट्ठे हो गए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vayu",
+     "text": "लगता है, रावण सफल हो जाएगा।",
+     "cam": "close:vayu"
+    },
+    {
+     "who": "indra",
+     "text": "यदि वह शिवलिंग लंका में स्थापित हो गया, तो वह द्वीप अजेय हो जाएगा!",
+     "cam": "close:indra"
+    },
+    {
+     "who": "yamaraj",
+     "text": "किसी भी तरह, उससे शिवलिंग नीचे रखवाना होगा। पर कैसे?",
+     "cam": "close:yamaraj"
+    },
+    {
+     "who": "agni",
+     "text": "जल तो शरीर के दूसरे हिस्सों से भी निकल सकता है। वरुण को पता होगा।",
+     "cam": "close:agni"
+    },
+    {
+     "who": "varuna",
+     "text": "मुझे?",
+     "cam": "close:varuna"
+    },
+    {
+     "who": "agni",
+     "text": "क्या तुम जल के स्वामी नहीं हो? और जब पेट में बादल घुमड़ते हैं, तो उन्हें बरसना ही पड़ता है।",
+     "cam": "close:agni"
+    },
+    {
+     "who": "varuna",
+     "text": "बहुत बढ़िया! देखते हैं, लंकापति कब तक रोक पाता है!",
+     "cam": "close:varuna"
+    },
+    {
+     "who": "devas",
+     "text": "हा हा हा हा!",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "yatra",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "ravana",
+     "x": 200,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "lift",
+     "emo": "calm",
+     "item": "linga",
+     "walk": 1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 4
+       }
+      ],
+      "2": [
+       {
+        "emo": "fear",
+        "t": 0.4
+       },
+       {
+        "x": 900,
+        "t": 1.2
+       }
+      ],
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "वरुण ने अँगुलियाँ घुमाईं। और रावण को, अचानक, बड़े ज़ोर की लघु शंका लगी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "उसने चाल तेज़ कर दी। फिर धीमी की। फिर रुका। फिर सँभलकर आगे बढ़ा। पर भीतर की नदी उफन रही थी।",
+     "camMove": true,
+     "cam": "close:ravana",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "ravana",
+     "text": "मुझे रुकना पड़ेगा। पर शिवलिंग? यह तो धरती पर रखा नहीं जा सकता!",
+     "cam": "ecu:ravana"
+    },
+    {
+     "who": "narrator",
+     "text": "तभी वीणा की ध्वनि सुनाई दी। कोई चिड़िया की तरह गाता हुआ उसकी ओर आ रहा था। भगवा चोला। उलझे केश।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "veena"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "wind",
+    "birds"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "narad",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "ravana",
+     "x": 420,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "lift",
+     "emo": "fear",
+     "item": "linga",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "fear",
+        "pose": "offer",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "item": "none",
+        "t": 0.1
+       },
+       {
+        "x": -200,
+        "t": 1.2,
+        "d": 0.2
+       }
+      ],
+      "10": [
+       {
+        "x": 380,
+        "t": 1.5
+       }
+      ],
+      "11": [
+       {
+        "emo": "rage",
+        "pose": "fear",
+        "t": 0.3
+       },
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 640,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "x": 900,
+        "t": 2.5
+       }
+      ],
+      "1": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "item": "linga",
+        "pose": "lift",
+        "t": 0.1
+       }
+      ],
+      "8": [
+       {
+        "pose": "namaste",
+        "item": "none",
+        "t": 0.6
+       }
+      ],
+      "12": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "lingam",
+     "kind": "glow",
+     "x": 900,
+     "y": 600,
+     "r": 160,
+     "color": "#bcd8ff",
+     "core": 0.8,
+     "z": 10,
+     "anim": "pop",
+     "in": 8
+    },
+    {
+     "id": "settle",
+     "kind": "ring",
+     "x": 900,
+     "y": 600,
+     "r": 400,
+     "color": "#bcd8ff",
+     "z": 60,
+     "in": 8
+    },
+    {
+     "id": "ravana",
+     "x": -200,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "kind": "char",
+     "in": 10
+    }
+   ],
+   "lines": [
+    {
+     "who": "ravana",
+     "text": "हे मधुर गायक! हे देवर्षि! कृपया रुकिए! मुझे आपकी सहायता चाहिए!",
+     "camMove": true,
+     "cam": "two:ravana,narad"
+    },
+    {
+     "who": "narad",
+     "text": "लंकापति? कहिए, क्या सेवा करूँ?",
+     "cam": "close:narad"
+    },
+    {
+     "who": "ravana",
+     "text": "मैं फटने को हूँ! मेरे लौटने तक यह शिवलिंग पकड़ लीजिए। और ध्यान रहे, यह धरती को न छुए!",
+     "cam": "close:ravana"
+    },
+    {
+     "who": "narad",
+     "text": "मैं इसे उठा पाऊँगा? माँस और रक्त का शरीर दुर्बल होता है, लंकापति। देवत्व का भार बहुत देर नहीं सँभाल पाता।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "ravana",
+     "text": "आप शक्तिशाली हैं, देवर्षि! मुझे पूरा विश्वास है!",
+     "cam": "close:ravana"
+    },
+    {
+     "who": "narrator",
+     "text": "रावण पेड़ों के पीछे भागा। और जैसे ही वह आँखों से ओझल हुआ, नारद ने आकाश की ओर देखा, और मुस्कुराए।",
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "devas",
+     "text": "जल्दी करो! जल्दी करो!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "varuna",
+     "text": "कोई जल्दी नहीं। मैंने प्रबंध किया है, कि लंकापति को अभी बहुत समय लगेगा।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "नारद ने शिवलिंग को अपने माथे से छुआ, और धीरे से, धरती पर रख दिया।",
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "om",
+     "rumble": true
+    },
+    {
+     "who": "devas",
+     "text": "बच गए!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "और रावण लौट आया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "ravana",
+     "text": "नारद!",
+     "cam": "ecu:ravana"
+    },
+    {
+     "who": "narad",
+     "text": "मैंने कहा था, लंकापति। माँस और रक्त का शरीर, बहुत दुर्बल होता है। नारायण, नारायण!",
+     "cam": "close:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "birds"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter13",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा तिहत्तर",
+   "title": "सीता के चार शाप",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "phalgu",
+   "set": "glade",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 660,
+     "w": 1500,
+     "h": 130,
+     "color": "#dff1f8",
+     "crest": "#3d8fc4",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "rama",
+     "x": 520,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "seat": "none",
+        "pose": "rest",
+        "t": 0.6
+       },
+       {
+        "x": -200,
+        "t": 3,
+        "d": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "lakshmana",
+     "x": 340,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "seat": "kneel",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "seat": "none",
+        "t": 0.6
+       },
+       {
+        "x": -300,
+        "t": 3,
+        "d": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "sita",
+     "x": 880,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "cradle",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "river"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु ने राम के रूप में अवतार लिया था। शेषनाग लक्ष्मण बने, और लक्ष्मी, सीता। सौतेली माँ कैकेयी के षड्यंत्र से, तीनों चौदह वर्ष के वनवास में थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "किसी कठिनाई में उनकी आँखें नहीं भीगी थीं। पर उस दिन, अयोध्या से समाचार आया। राजा दशरथ नहीं रहे।",
+     "cam": "two:rama,lakshmana",
+     "sfx": "bell"
+    },
+    {
+     "who": "sita",
+     "text": "रघुनंदन, आप सबसे बड़े हैं। नदी के किनारे ही पिंडदान कर देना चाहिए।",
+     "cam": "close:sita"
+    },
+    {
+     "who": "narrator",
+     "text": "दोनों भाई सामग्री जुटाने निकले। घंटे बीत गए। सूर्य चढ़ता गया, और दोपहर से पहले अनुष्ठान पूरा होना था।",
+     "camMove": true,
+     "cam": "close:sita",
+     "sfx": "wind"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "river",
+    "birds"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "pinddaan",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 660,
+     "w": 1500,
+     "h": 130,
+     "color": "#dff1f8",
+     "crest": "#3d8fc4",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "sita",
+     "x": 560,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "offer",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "diya",
+     "kind": "diya",
+     "x": 720,
+     "y": 620,
+     "z": 21,
+     "in": 0
+    },
+    {
+     "id": "gau",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 1040,
+     "y": 690,
+     "s": 0.85,
+     "face": -1,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "ketaki",
+     "kind": "creature",
+     "creature": "ketaki",
+     "x": 300,
+     "y": 640,
+     "s": 0.8,
+     "face": 1,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "sky",
+     "kind": "rays",
+     "x": 640,
+     "y": 0,
+     "r": 800,
+     "n": 30,
+     "color": "#fff0b0",
+     "op": 0.3,
+     "z": -4,
+     "anim": "pop",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "सीता ने फल्गु में स्नान किया, गाय का दूध निकाला, केतकी का फूल और बरगद का एक पत्ता तोड़ा। फिर दीपक जलाया, और अर्पण किया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "dasharath",
+     "text": "तुम्हें आशीर्वाद, सीता। मुझे यह स्वीकार है।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sita",
+     "text": "पिताजी?",
+     "cam": "close:sita"
+    },
+    {
+     "who": "dasharath",
+     "text": "हाँ, पुत्री। मैं संतुष्ट हुआ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sita",
+     "text": "पर आपके दोनों पुत्र यहाँ नहीं हैं। वे विश्वास नहीं करेंगे।",
+     "cam": "close:sita"
+    },
+    {
+     "who": "dasharath",
+     "text": "तुम्हारे पाँच साक्षी हैं। फल्गु नदी, अग्नि, गाय, केतकी, और बरगद। ये सब गवाही देंगे।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "river",
+    "birds"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "sakshi",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 660,
+     "w": 1500,
+     "h": 130,
+     "color": "#dff1f8",
+     "crest": "#3d8fc4",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "rama",
+     "x": 560,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "point",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "lakshmana",
+     "x": 380,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "hold",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "sita",
+     "x": 1080,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "12": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "phalgu",
+     "x": 780,
+     "y": 600,
+     "s": 0.75,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sly",
+     "fly": 1,
+     "noShadow": true,
+     "z": 21,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 4
+    },
+    {
+     "id": "gau",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 820,
+     "y": 690,
+     "s": 0.8,
+     "face": -1,
+     "in": 4,
+     "keys": {
+      "5": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 6
+    },
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 820,
+     "y": 640,
+     "size": 1.2,
+     "z": 10,
+     "in": 6,
+     "out": 8
+    },
+    {
+     "id": "ketaki",
+     "kind": "creature",
+     "creature": "ketaki",
+     "x": 820,
+     "y": 640,
+     "s": 0.8,
+     "face": -1,
+     "in": 8,
+     "keys": {
+      "9": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 10
+    },
+    {
+     "id": "bargad",
+     "kind": "glow",
+     "x": 820,
+     "y": 380,
+     "r": 240,
+     "color": "#9ad08a",
+     "core": 0.5,
+     "z": -2,
+     "anim": "pop",
+     "in": 10,
+     "keys": {
+      "11": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "भाई लौटे, और सीता के दावे पर विश्वास नहीं कर पाए। इतने कम साधनों में अनुष्ठान? तब सीता ने साक्षी बुलाए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "rama",
+     "text": "बताओ, हे पूज्य फल्गु। क्या मेरी पत्नी ने अनुष्ठान पूरा किया?",
+     "cam": "close:rama"
+    },
+    {
+     "who": "phalgu",
+     "text": "नहीं। उन्होंने नहीं किया।",
+     "cam": "close:phalgu"
+    },
+    {
+     "who": "rama",
+     "text": "बताओ, हे पवित्र गाय?",
+     "cam": "close:rama"
+    },
+    {
+     "who": "gau",
+     "text": "नहीं। उन्होंने नहीं किया।",
+     "cam": "close:gau"
+    },
+    {
+     "who": "rama",
+     "text": "बताओ, हे पावन अग्नि?",
+     "cam": "close:rama"
+    },
+    {
+     "who": "agni",
+     "text": "नहीं। उन्होंने नहीं किया।",
+     "camMove": true,
+     "cam": "close:rama"
+    },
+    {
+     "who": "rama",
+     "text": "बताओ, हे सुगंधित केतकी?",
+     "cam": "close:rama"
+    },
+    {
+     "who": "ketaki",
+     "text": "नहीं, नहीं! उन्होंने नहीं किया!",
+     "cam": "close:ketaki"
+    },
+    {
+     "who": "rama",
+     "text": "और तुम, हे आदरणीय बरगद?",
+     "cam": "close:rama"
+    },
+    {
+     "who": "bargad",
+     "text": "हाँ। उन्होंने अनुष्ठान पूर्ण किया। आपके पिता संतुष्ट थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sita",
+     "text": "स्वामी, क्या आपको मुझ पर विश्वास नहीं है?",
+     "cam": "close:sita"
+    },
+    {
+     "who": "rama",
+     "text": "मुझे तो है। पर शायद दूसरों को न हो।",
+     "cam": "close:rama"
+    },
+    {
+     "who": "narrator",
+     "text": "राम ने स्वयं अनुष्ठान फिर शुरू किया। और दशरथ की आवाज़ फिर गूँजी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "dasharath",
+     "text": "तुम मुझे फिर क्यों बुला रहे हो? सीता यह कर चुकी है। राम, तुम किस पर विश्वास करोगे? दूसरों पर, या अपनी पत्नी पर?",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "river",
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "chaar_shaap",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "sita",
+     "x": 640,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "curse",
+     "emo": "angry",
+     "halo": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "angry",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.6
+       },
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.6
+       },
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sg",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 360,
+     "color": "#ffd27a",
+     "core": 0.4,
+     "z": -3,
+     "anim": "pop",
+     "in": 0
+    },
+    {
+     "id": "green",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#9ad08a",
+     "core": 0.4,
+     "z": -4,
+     "anim": "pop",
+     "in": 6
+    },
+    {
+     "id": "rama",
+     "x": 1000,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sad",
+     "kind": "char",
+     "in": 7,
+     "keys": {
+      "8": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "narrator",
+     "text": "दोनों भाइयों ने क्षमा माँगी। सीता ने उन्हें क्षमा कर दिया। पर चारों साक्षियों को नहीं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sita",
+     "text": "केतकी, तुम नहीं बदलीं। पहले ब्रह्मा के लिए झूठ बोला, आज फिर। तुम पूजा के योग्य नहीं रहोगी!",
+     "cam": "close:sita"
+    },
+    {
+     "who": "sita",
+     "text": "फल्गु, तुम धरती पर नहीं बहोगी। लज्जा से मुँह छिपाकर, धरती के नीचे बहोगी!",
+     "cam": "close:sita"
+    },
+    {
+     "who": "sita",
+     "text": "अग्निदेव, अब से तुम्हें जो भी अर्पित होगा, शुद्ध या अशुद्ध, तुम्हें सब खाना पड़ेगा!",
+     "cam": "close:sita"
+    },
+    {
+     "who": "sita",
+     "text": "और गाय, तुम्हारा मुख अब से अशुद्ध माना जाएगा!",
+     "cam": "close:sita"
+    },
+    {
+     "who": "sita",
+     "text": "हे बरगद, केवल तुमने सत्य कहा। तुम्हारे पत्ते कभी नहीं झड़ेंगे। तुम सदा हरे रहोगे।",
+     "cam": "mid:sita"
+    },
+    {
+     "who": "sita",
+     "text": "रघुनंदन, मुझे डर लग रहा है। आपने उन चारों पर भरोसा किया, मुझ पर नहीं। कल यदि संसार फिर मेरा अपमान करे, तो क्या आप मेरे साथ खड़े रहेंगे?",
+     "cam": "close:sita"
+    },
+    {
+     "who": "rama",
+     "text": "मैं तो रहूँगा। पर संभव है, दूसरे न रहें।",
+     "cam": "ecu:rama"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "wind",
+    "river"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter18",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा चौहत्तर",
+   "title": "माया सीता",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "rekha",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "line",
+     "kind": "glow",
+     "x": 720,
+     "y": 660,
+     "r": 260,
+     "color": "#ff8a3a",
+     "core": 0.2,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "mayasita",
+     "x": 560,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "offer",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": 760,
+        "t": 1.5
+       }
+      ],
+      "5": [
+       {
+        "x": 1600,
+        "t": 2,
+        "d": 0.1
+       }
+      ]
+     }
+    },
+    {
+     "id": "bhikshu",
+     "fig": "durvasa",
+     "x": 920,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "offer",
+     "emo": "sly",
+     "item": "kamandal",
+     "kind": "char",
+     "in": 0,
+     "out": 4
+    },
+    {
+     "id": "ravana",
+     "x": 920,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "reach",
+     "emo": "rage",
+     "anim": "materialize",
+     "inDur": 0.6,
+     "kind": "char",
+     "in": 4,
+     "keys": {
+      "5": [
+       {
+        "x": 1500,
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "burst",
+     "kind": "ring",
+     "x": 920,
+     "y": 400,
+     "r": 600,
+     "color": "#ff3a2a",
+     "z": 60,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "कुटिया की खिड़की से, दो आँखें बाहर देख रही थीं। रेखा के इस पार एक स्त्री। उस पार, एक भिक्षु।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "बाण की नोक से खींची वह रेखा, अग्नि की एक अदृश्य दीवार थी। स्त्री भिक्षा देना चाहती थी। भिक्षु कह रहा था, रेखा के बाहर आओ।",
+     "cam": "two:mayasita,bhikshu",
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "वह रेखा पार करेगी? या नहीं?",
+     "camMove": true,
+     "cam": "close:mayasita",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "roar",
+     "thunder": true,
+     "shake": 8,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "भिक्षु असुर बन गया। उसने स्त्री को पकड़ा, और घसीटता ले गया। रेखा ने उसे बचाया नहीं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "wind",
+    "birds"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "chhaya",
+   "set": "temple",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "ring",
+     "kind": "fire",
+     "x": 900,
+     "y": 640,
+     "size": 2,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "sita",
+     "x": 440,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "x": 900,
+        "t": 2.5
+       },
+       {
+        "o": 0,
+        "t": 1,
+        "d": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "agni",
+     "x": 880,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "open",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "swallow",
+     "kind": "ring",
+     "x": 900,
+     "y": 500,
+     "r": 400,
+     "color": "#ffb070",
+     "z": 60,
+     "in": 11
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire"
+    },
+    {
+     "who": "agni",
+     "text": "सीता।",
+     "cam": "close:agni"
+    },
+    {
+     "who": "sita",
+     "text": "वह चली गई, अग्निदेव। रावण उसे ले गया।",
+     "cam": "close:sita"
+    },
+    {
+     "who": "sita",
+     "text": "उसे पता नहीं चलेगा? कि वह मैं नहीं हूँ? कि वह माया सीता है, मेरी छाया, जिसे आपने गढ़ा?",
+     "cam": "close:sita"
+    },
+    {
+     "who": "agni",
+     "text": "नहीं। वह छद्म रूप में आया था, और छद्म रूप ही ले गया। संसार यही समझेगा कि रावण ने आपका हरण किया। पर सत्य केवल आप जानती हैं। आप, और देवता।",
+     "cam": "mid:agni"
+    },
+    {
+     "who": "sita",
+     "text": "संसार कहेगा, सीता इसलिए फँसी क्योंकि उसने रेखा लाँघी। पर क्या उसने अतिथि का सम्मान नहीं किया? क्या उसने एक धर्म निभाने के लिए, दूसरा नहीं तोड़ा? उसे किसकी बात माननी चाहिए थी? रावण की, या लक्ष्मण की?",
+     "cam": "close:sita"
+    },
+    {
+     "who": "narrator",
+     "text": "अग्निदेव मौन रहे।",
+     "camMove": true,
+     "cam": "close:agni",
+     "sfx": "fire"
+    },
+    {
+     "who": "agni",
+     "text": "रावण के अंत तक, आपको इन लपटों में छिपना होगा। जब राम माया सीता को मुक्त करेंगे, तो उसे अग्नि से गुज़रना होगा।",
+     "cam": "close:agni"
+    },
+    {
+     "who": "sita",
+     "text": "क्यों?",
+     "cam": "close:sita"
+    },
+    {
+     "who": "agni",
+     "text": "यह सिद्ध करने के लिए, कि वह पवित्र है।",
+     "cam": "close:agni"
+    },
+    {
+     "who": "sita",
+     "text": "सती अग्नि में इसलिए गईं, क्योंकि सबने उनके पति को अयोग्य कहा। और सीता को अग्नि में इसलिए जाना होगा, ताकि सिद्ध हो, कि वह स्वयं योग्य है।",
+     "cam": "ecu:sita"
+    },
+    {
+     "who": "narrator",
+     "text": "और सीता, लपटों में समा गईं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "fire",
+     "swell": true
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "fire"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "agnipariksha",
+   "set": "temple",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "pyre",
+     "kind": "fire",
+     "x": 640,
+     "y": 660,
+     "size": 3,
+     "z": 5,
+     "in": 0
+    },
+    {
+     "id": "rama",
+     "x": 1040,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "mayasita",
+     "x": 640,
+     "y": 640,
+     "s": 0.95,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "z": 6,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "o": 0,
+        "t": 1.5
+       }
+      ],
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sita",
+     "x": 640,
+     "y": 640,
+     "s": 0.95,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "serene",
+     "anim": "materialize",
+     "inDur": 2,
+     "z": 6,
+     "kind": "char",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire",
+     "conch": true
+    },
+    {
+     "who": "narrator",
+     "text": "कई महीने बाद, विनिमय पूरा हुआ। रावण मर चुका था, कुंभकर्ण भी। जय और विजय का दूसरा जन्म समाप्त हो गया था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "माया सीता अग्नि में गई, और सीता बाहर आईं। और राम ने उन्हें गले से लगा लिया।",
+     "camMove": true,
+     "cam": "close:sita",
+     "sfx": "swell"
+    },
+    {
+     "who": "mayasita",
+     "text": "मुझे आशा है, वे अब उस पर कभी अविश्वास नहीं करेंगे। सबके सामने अपनी पवित्रता सिद्ध करना, जब पति असहाय खड़ा देख रहा हो। इससे बड़ी लज्जा और क्या होगी?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "agni",
+     "text": "हो सकती है। इससे भी बड़ी। द्वापर में आप फिर अग्नि से जन्म लेंगी। याज्ञसेनी कहलाएँगी। पर संसार आपको याद रखेगा, द्रौपदी के नाम से।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "mayasita",
+     "text": "पर उसमें लज्जा की क्या बात है?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "agni",
+     "text": "आप देखेंगी। हम सब देखेंगे।",
+     "camMove": true,
+     "cam": "close:sita"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "fire",
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 700,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "हाँ, वह शिवलिंग मैंने ही रखा था। आज भी वह वहीं है, जहाँ मैंने रखा। देवघर में। बैद्यनाथ।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पर आज की कथा मेरी नहीं थी। आज की कथा उस प्रश्न की थी, जो सीता ने पूछा। आप किस पर विश्वास करेंगे? दूसरों पर, या उस पर, जो आपके साथ खड़ी है?",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "अगली बार, युग बदलता है। मथुरा का एक कारागार, एक बरसती रात, और एक बालक, जो टोकरी में यमुना पार करता है।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next23",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले अध्याय में: कंस का कारागार, यमुना का फणधारी नाग, और एक अँगुली पर उठा पर्वत।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "कृष्ण जन्म · कालिया · गोवर्धन",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end24",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय दस · लंका",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 71 से 74)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

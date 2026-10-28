@@ -1,0 +1,376 @@
+title: तारकासुर
+episode: 5
+slug: e05-tarakasur
+kicker: अध्याय पाँच
+sub: पार्वती, काम और कार्तिकेय
+logline: एक माँ का प्रतिशोध, एक असुर का चालाक वरदान, कामदेव का भस्म होना, अपर्णा की तपस्या, और छह मुखों वाले उस बालक का जन्म, जो सात दिन का होकर देवताओं का सेनापति बना।
+stories: 31, 32, 33, 34
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 31 से 34
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! पिछली बार मैंने आपसे कहा था, शिव अकेले रह गए। सती के शोक में, अनंत ध्यान में।
+NARAD (sly) [mid:narad]: पर ब्रह्मांड को एक अजीब समस्या आ पड़ी। एक असुर ऐसा जन्मा, जिसे केवल शिव का पुत्र मार सकता था।
+NARAD (calm, pose=open) [close:narad]: और शिव के कोई पुत्र नहीं था। न होने की कोई संभावना थी। चतुर था ना वह असुर?
+NARAD (smile) [mid:narad]: पर उसकी कथा उसकी दादी से शुरू होती है। एक माँ, जिसकी छाती में प्रतिशोध की आग जल रही थी।
+
+== TITLE | dur=7.5 | kicker=अध्याय पाँच | title=तारकासुर | sub=पार्वती, काम और कार्तिकेय
+
+== CHAPTER | kicker=कथा चौदह | title=तारक का स्वर्ग पर आक्रमण
+
+# ---------------------------------------------------------------- Diti's dawn
+== SCENE diti | set=glade time=dusk music=curse amb=wind trans=mandala
++ sun kind=glow x=1040 y=300 r=300 color=#ff8a4a core=0.7 z=-5
+@ diti x=560 y=650 s=0.95 face=1 seat=lotus pose=meditate emo=meditate
+BEAT 1.5 [wide] (sfx=wind)
+NARRATOR [~wide]: उस दिन सूर्य उगने से झिझक रहा था। क्योंकि उसके उगते ही, किसी की दस हज़ार वर्ष की तपस्या पूरी होने वाली थी।
+> sun y=180 t=8
+NARRATOR [~at:560,440,1.3]: आसमान में लालिमा फैली, मानो किसी पुराने घाव से अब तक रक्त रिस रहा हो। और सूर्य ने घबराकर उस माँ की ओर देखा। दिति।
+> diti emo=sly pose=lap t=1
+DITI (sly) [close:diti] (sfx=heartbeat): कश्यप का आशीर्वाद फल गया। मेरे गर्भ में वह पुत्र है, जो इंद्र का वध करेगा।
+DITI (rage) [ecu:diti]: वह इंद्र के बाल पकड़कर उसे घसीटेगा, और मेरे चरणों में ला पटकेगा। उसका हर अंग वज्र जैसा होगा। उसका नाम होगा, वज्रांग।
+
+# ---------------------------------------------------------------- Vajranga spares Indra
+== SCENE vajranga | set=court wall=#2a1a3a music=battle amb=court trans=mandala
+@ indra x=640 y=660 s=0.85 face=1 seat=kneel pose=namaste emo=fear
+@ vajranga x=900 y=650 s=1 face=-1 pose=strike emo=rage
+@ diti x=1120 y=650 s=0.88 face=-1 pose=point emo=rage z=-1
+BEAT 1 [wide] (sfx=nagara)
+NARRATOR [~wide]: शीघ्र ही वज्रांग ने इंद्र को परास्त कर दिया। देवराज, दिति के आगे घुटनों पर काँप रहा था।
+DITI (rage, pose=point) [close:diti] (sfx=gong): इसका सिर काट दो।
+@ brahma x=400 y=580 s=0.85 face=1 pose=abhaya emo=fear fly=1 noShadow=true anim=materialize
+BRAHMA (fear, pose=abhaya) [close:brahma] (sfx=whoosh): रुको! ऐसा मत करो, दिति! इंद्र देवताओं का राजा है। उसकी मृत्यु से ब्रह्मांड में भयंकर अव्यवस्था फैल जाएगी।
+BRAHMA (calm, pose=open) [close:brahma]: तुम्हारे पुत्र ने उसका अभिमान तोड़ दिया है। अब उसे जीवनदान दो। हर लोक में उसका अपमान होगा। इससे बुरा दंड और क्या?
+> vajranga pose=rest emo=calm t=0.8
+VAJRANGA (calm) [close:vajranga]: आप ठीक कहते हैं, परमपिता। अपमान मृत्यु से भी बुरा होता है। मैं आपकी आज्ञा मानता हूँ।
+NARRATOR [close:diti]: दिति पर कोई असर नहीं हुआ। पर वज्रांग की उदारता से प्रसन्न होकर, ब्रह्मा ने उसके लिए एक सुंदर पत्नी रची। वज्रांगी।
+
+# ---------------------------------------------------------------- Indra's revenge, Brahma's boon
+== SCENE badla | set=glade music=tension amb=wind,storm trans=mandala
+@ vajrangi fig=rati x=560 y=650 s=0.88 face=1 seat=lotus pose=meditate emo=meditate
+BEAT 1 [wide]
+NARRATOR [~wide]: वज्रांग तपस्या करने वन में गया, और उसकी पत्नी भी उसकी प्रतीक्षा में ध्यान में बैठ गई। पर इंद्र अब भी अपनी हार से जल रहा था।
++ dark kind=tint color=#1a2040 op=0.4 z=55
++ rain kind=rain x=640 y=360 n=180 z=58
+NARRATOR [~at:560,500,1.3] (sfx=thunder, splash): उसने सर्प बनकर वज्रांगी को डसा। फिर मेघों को बुलाकर उस पर मूसलाधार वर्षा कराई। पर ब्रह्मा की कृपा से वह बची रही, ध्यान में डटी रही।
+@ vajranga x=1100 y=650 s=1 face=-1 pose=fist emo=rage
+@ diti x=1260 y=650 s=0.88 face=-1 pose=point emo=rage z=-1
+DITI (rage, pose=point) [close:diti]: देखा? तुमने अपने भीतर के दैत्य को शांत करके उदारता दिखाई। और उसका फल भुगत रही है, तुम्हारी पत्नी!
+- rain
+- dark
+@ brahma x=820 y=580 s=0.85 face=-1 pose=bless emo=fear fly=1 noShadow=true anim=materialize
+VAJRANGA (rage, pose=strike) [close:vajranga] (sfx=roar): परमपिता! मैं इंद्र का सिर धड़ से अलग कर दूँगा!
+BRAHMA (fear, pose=bless) [close:brahma]: शांत, वज्रांग, शांत! मैं... मैं तुम्हें एक पुत्र का आशीर्वाद देता हूँ। एक देवता ने तुम्हें सताया है, इसलिए तुम्हारा पुत्र सब देवताओं के लिए संकट बनेगा। उसका नाम होगा, तारक।
+NARAD (sly) [ecu:brahma]: बेचारे पितामह। हर संकट का एक ही इलाज। एक और वरदान।
+
+# ---------------------------------------------------------------- Taraka's tapas and the clever boon
+== SCENE tarak | set=kailash music=curse amb=wind trans=mandala
+@ taraka x=520 y=650 s=1 face=1 pose=raise emo=meditate
++ snow kind=motes x=640 y=360 n=40 w=1300 h=700 z=60
+BEAT 1.5 [wide] (sfx=wind)
+NARRATOR [~wide]: कई वर्ष बाद तारक जन्मा। बड़ा होकर वह एक बर्फ़ीले पर्वत पर गया, जहाँ जीवन का चिह्न तक नहीं था।
++ y1 kind=text x=640 y=170 text="सौ वर्ष एक पैर पर" size=58 z=70
+NARRATOR [~at:520,400,1.4]: वह सौ वर्ष एक पैर पर खड़ा रहा। फिर पैर के अँगूठे पर। फिर सौ वर्ष जल के भीतर। फिर आग के बीच।
+- y1
++ ring kind=fire x=520 y=660 size=1.6 z=-1
+@ brahma x=900 y=600 s=0.85 face=-1 pose=bless emo=calm fly=1 noShadow=true anim=materialize
+BRAHMA (calm) [close:brahma]: तुम अद्वितीय हो, तारक। बोलो, क्या चाहिए?
+TARAKA (sly, pose=open) [close:taraka]: मैं मृत्यु पर विजय चाहता हूँ।
+BRAHMA (calm) [close:brahma]: अमरता असंभव है।
+TARAKA (sly, pose=point) [ecu:taraka]: तो वर दीजिए, कि मुझे एक बालक के सिवा कोई न मार सके। और वह बालक भी... महादेव का पुत्र हो।
+BRAHMA (calm) [close:brahma]: महादेव का? मैं समझ...
+> brahma emo=fear t=0.3
+BEAT 1.4 [ecu:brahma] (sfx=heartbeat)
+NARRATOR [close:brahma]: ब्रह्मा कहते-कहते रुक गए। महादेव का पुत्र? जो सती के शोक में अनंत ध्यान में बैठे हैं? यह वरदान नहीं, अमरता का चोर दरवाज़ा था।
+TARAKA (joy, pose=raise) [~full:taraka] (sfx=roar, thunder): हा हा हा हा! तथास्तु कहिए, परमपिता!
+
+# ---------------------------------------------------------------- the fall of heaven
+== SCENE swarg | set=lotusSky music=battle amb=storm trans=white tint=#3a0a1a,0.25
+@ taraka x=880 y=650 s=1.1 face=-1 pose=strike emo=rage
+@ indra x=360 y=650 s=0.9 face=1 pose=strike emo=angry
+@ agni x=200 y=650 s=0.82 face=1 pose=raise emo=angry z=-1
++ c1 kind=clash x=620 y=400 z=60
+BEAT 1 [wide] (sfx=clash, roar, shake=8)
+NARRATOR [~wide] (sfx=clash, boom, shake=8): वरदान मिलते ही तारक ने स्वर्ग पर धावा बोल दिया। देवताओं ने इंद्र के नेतृत्व में युद्ध किया। पर वरदान के आगे उनका सारा प्रतिरोध बिखर गया।
+- c1
+> indra x=560 seat=kneel pose=fear emo=fear t=0.8
+> agni x=-200 t=1.5
+NARRATOR [close:indra] (sfx=gong): तारक ने इंद्र को बंदी बना लिया। उसके केश काट दिए, और शरीर पर कुत्तों के पंजों के निशान अंकित कर दिए। विष्णु भी उसे परास्त नहीं कर सके।
+
+# ---------------------------------------------------------------- the only way
+== SCENE upay | set=court music=brahma amb=court trans=mandala
+@ brahma x=380 y=650 s=0.92 face=1 pose=open emo=calm
+@ indra x=840 y=650 s=0.88 face=-1 pose=despair emo=sad
+@ agni x=1020 y=650 s=0.82 face=-1 pose=rest emo=sad z=-1
+BEAT 0.8 [wide]
+BRAHMA (calm, pose=open) [close:brahma]: उस दैत्य का अंत हो सकता है। पर उसके लिए हमें महादेव के पुत्र की आवश्यकता है।
+DEVAS (sad) [two:indra,agni]: पर महादेव तो सती के शोक में डूबे हैं! उन्होंने सब कुछ छोड़ दिया है। वे संतान क्यों उत्पन्न करेंगे?
+BRAHMA (sly, pose=point) [close:brahma]: तारक भी यही सोचता है। पर आदिशक्ति का पुनर्जन्म हो चुका है। सती लौट आई हैं, और फिर से शिव को पाने के लिए तप कर रही हैं।
+BRAHMA (sad) [ecu:brahma]: पर प्रश्न यह है... क्या तपस्वी शिव, फिर कभी प्रेम करेंगे?
+
+== CHAPTER | kicker=कथा पंद्रह | title=पार्वती ने शिव को मनाया
+
+# ---------------------------------------------------------------- Kama
+== SCENE kama | set=glade music=joy amb=birds trans=mandala
+@ brahma x=400 y=650 s=0.9 face=1 pose=offer emo=smile
+@ kama x=840 y=650 s=0.95 face=-1 pose=namaste emo=smile item=bow
++ petals kind=petals x=640 y=200 n=20 w=1200 z=50
+BEAT 1 [wide] (sfx=sparkle)
+NARRATOR [~wide]: ब्रह्मा, बाणों पर सजे फूलों को सहला रहे थे। कमल, अशोक, आम और मल्लिका। ईख का धनुष। मधुमक्खियों की प्रत्यंचा।
+BRAHMA (smile) [close:brahma]: कामदेव, तुम इन फूलों को इतना ताज़ा कैसे रखते हो?
+KAMA (smile, pose=namaste) [close:kama]: मैं कुछ नहीं करता, परमपिता। आपकी जीवनदायी ऊर्जा, जिससे मैं बना, वही मेरे बाणों को जीवित रखती है।
+BRAHMA (smile) [close:brahma]: तुम मेरे हृदय से जन्मे हो, काम। ताकि तुम दूसरों के हृदय में प्रवेश कर सको।
+KAMA (joy, pose=open) [mid:kama] (sfx=veena): यही मेरा सर्वोच्च आनंद है! जब मेरा बाण किसी को छूता है, तो प्रेम उसके भीतर पंखुड़ियों की तरह खिलता है। और उस मिलन से नई सृष्टि जन्म लेती है। उस क्षण, मैं भी ब्रह्मा बन जाता हूँ।
+BRAHMA (calm) [close:brahma]: तो तुम्हें यह कार्य फिर से करना होगा।
+KAMA (smile) [close:kama]: प्रसन्नता से! किंतु लक्ष्य कौन है?
+BRAHMA (sly) [ecu:brahma]: क्या तुम्हारे बाण... महादेव का हृदय बींध सकते हैं?
+> kama emo=fear pose=fear t=0.4
+BEAT 1.2 [ecu:kama] (sfx=heartbeat)
+KAMA (fear) [close:kama]: परमपिता! महादेव ने तो आपको कामुकता के लिए दंड दिया था! और अब आप उन्हीं के भीतर काम जगाना चाहते हैं?
+BRAHMA (calm, pose=open) [mid:brahma]: तारक के लिए, काम। आदिशक्ति ने पार्वती के रूप में जन्म लिया है। केवल तुम ही महादेव को ध्यान से बाहर ला सकते हो।
+
+# ---------------------------------------------------------------- Parvati leaves home
+== SCENE maina | set=court wall=#3d6fc4 music=sorrow amb=wind trans=mandala
+@ maina x=420 y=650 s=0.9 face=1 pose=reach emo=sad
+@ himavan x=240 y=650 s=0.92 face=1 pose=rest emo=sad z=-1
+@ parvati x=860 y=650 s=0.9 face=-1 pose=namaste emo=serene
+BEAT 0.8 [wide]
+NARRATOR [~wide]: हिमालय के राजा हिमवान और रानी मैना की पुत्री, पार्वती, महल छोड़कर जा रही थीं।
+MAINA (sad, pose=reach) [close:maina]: रुक जाओ, बेटी। तुम्हारी दोनों बहनें पहले ही शाप से हमसे छिन चुकी हैं। अब तुम भी?
+PARVATI (serene, pose=open) [close:parvati]: माँ, क्या आप भूल गईं, नारद मुनि ने मेरी कुंडली देखकर क्या कहा था? मेरा जन्म शिव की पत्नी बनकर उन्हीं में विलीन होने के लिए हुआ है।
+NARAD (smile) [close:parvati]: हाँ हाँ, वह भविष्यवाणी मैंने ही की थी। कभी-कभी मैं झगड़े नहीं, विवाह भी करवाता हूँ।
+PARVATI (smile, pose=namaste) [close:parvati]: शिव ही मेरी नियति हैं। शोक मत कीजिए, माँ। आशीर्वाद दीजिए, कि मैं अपने अस्तित्व का अर्थ जान सकूँ।
+
+# ---------------------------------------------------------------- the arrow and the third eye
+== SCENE bhasm | set=kailash music=shiva amb=wind trans=mandala
+@ shiva x=860 y=650 s=1 face=-1 seat=lotus pose=meditate emo=meditate
+@ parvati x=300 y=650 s=0.85 face=1 seat=lotus pose=meditate emo=meditate z=-2
+@ kama x=520 y=660 s=0.9 face=1 pose=fear emo=fear item=bow
+BEAT 1.5 [wide] (sfx=om)
+NARRATOR [~wide]: पार्वती ने हिमालय पर शिव की उपासना शुरू की। और कामदेव ने महायोगी को देखा, तो भय से काँप उठे।
+NARRATOR [close:shiva]: आँखें बंद। रीढ़ सीधी। दुख में ऐसे डूबे, मानो पत्थर से लहू रिस रहा हो।
+NARRATOR [close:kama]: कामदेव की उँगलियाँ बाण नहीं उठा पा रही थीं। पर ब्रह्मा के शब्द, उनका हाथ पकड़कर प्रत्यंचा चढ़ा रहे थे। तारक के लिए...
+> kama pose=strike emo=angry t=0.6
++ spring kind=petals x=640 y=200 n=40 w=1300 z=50
++ flock kind=birds x=640 y=200 n=8 speed=80 z=20
++ arrow kind=sparkle x=700 y=400 n=14 r=60 z=60
+> arrow x=860 y=350 t=1.5
+NARRATOR [~wide] (sfx=whoosh, sparkle): बाण छूटा। मधुमक्खियाँ गुंजारने लगीं, पक्षी गाने लगे। सुगंधित बयार महादेव के केश सहलाने लगी। वसंत उतर आया था।
+- arrow
+> shiva emo=angry t=0.4
+NARRATOR [close:shiva] (sfx=heartbeat): बाण शिव के हृदय में उतरा। उसके फूल उस पत्थर जैसे मन में जड़ें जमाने लगे। और शिव ने आँखें खोल दीं।
+> shiva emo=rage t=0.2
++ eye kind=glow x=870 y=290 r=90 color=#ff4a1a core=1 z=60 anim=pop
+BEAT 1 [ecu:shiva] (sfx=thunder, shake=8)
+NARRATOR [ecu:shiva]: फिर तीसरा नेत्र भी।
++ beam kind=fire x=520 y=520 size=2.8 z=30
++ fl kind=ring x=520 y=480 r=600 color=#ff6a3a z=60
+- spring
+- flock
+> kama o=0 t=1.2 d=0.4
+BEAT 2 [wide] (sfx=boom, fire, shake=14, flash)
+NARRATOR [~wide] (sfx=fire): तीसरे नेत्र से नारकीय ज्वाला निकली, और कामदेव भस्म हो गए। पक्षी और फूल जल गए। वसंत झुलस गया। ब्रह्मांड थर्रा उठा।
+- beam od=2
++ ash kind=smoke x=520 y=660 n=8 w=200 h=120 color=#6a6a6a z=10
+
+# ---------------------------------------------------------------- Rati
+== SCENE rati | set=kailash music=sorrow amb=wind trans=fade tint=#1a1020,0.25
+@ rati x=520 y=660 s=0.88 face=1 seat=kneel pose=despair emo=sad
+@ shiva x=880 y=650 s=1 face=-1 pose=rest emo=sad
+@ brahma x=200 y=640 s=0.82 face=1 pose=despair emo=fear z=-1
+BEAT 1 [wide] (sfx=wind)
+BRAHMA (fear, pose=despair) [close:brahma]: महादेव, यह आपने क्या कर डाला! आपने यम को मारा, जो मृत्यु का स्वामी है। और अब काम को भी, जो जीवन का स्रोत है!
+NARRATOR [close:rati]: कामदेव की पत्नी रति धरती पर पड़ी विलाप कर रही थी। उसकी मुट्ठी में पति की भस्म थी।
+RATI (sad) [ecu:rati]: सती और रति। अग्नि को हम दोनों बहुत प्रिय हैं। सती जलकर भस्म हुई थीं। पर रति... सदा जलती रहेगी।
+> shiva x=640 pose=bless t=2
+SHIVA (sad, pose=bless) [two:shiva,rati]: नहीं, रति। द्वापर युग में कामदेव फिर जन्म लेंगे। और तुम दोनों का फिर मिलन होगा।
+BRAHMA (calm, pose=open) [close:brahma]: और आपको भी अपनी सती से फिर मिलना होगा, महादेव। उन्होंने आपके लिए ही पुनर्जन्म लिया है।
+SHIVA (sad) [close:shiva]: मैं फिर किसी से नहीं बँधना चाहता। मैं देख चुका हूँ, इच्छा कैसे माया से बाँध देती है।
+SHIVA (calm) [ecu:shiva]: अभी नहीं। अभी नहीं।
+
+# ---------------------------------------------------------------- Aparna
+== SCENE aparna | set=kailash music=devi amb=wind trans=mandala
++ snow kind=motes x=640 y=360 n=50 w=1300 h=700 z=60
+@ parvati x=520 y=650 s=0.92 face=1 seat=lotus pose=meditate emo=meditate
+BEAT 1.5 [wide] (sfx=wind)
+NARRATOR [~wide]: शिव देखते रहे। कैसे पार्वती बर्फ़ीले शिखर पर तप करतीं। हर रात बर्फ़ में जम जातीं, और हर सुबह फिर जीवित हो उठतीं।
++ leaf kind=petals x=520 y=200 n=12 w=300 colors=#3f7a3a,#5c9a4a z=50
+NARRATOR [~at:520,450,1.3]: उन्होंने भोजन और जल छोड़ दिया, और केवल पत्तों पर जीने लगीं। फिर पत्ते भी छोड़ दिए। केवल शिव के नाम के सहारे।
+- leaf
+NARRATOR [close:parvati]: उनकी देह ढह रही थी। पर उनका प्रेम, उन्हें थामे हुए था।
+@ shiva x=900 y=650 s=1 face=-1 pose=abhaya emo=smile anim=materialize inDur=2
+SHIVA (smile) [~two:parvati,shiva] (sfx=bell): अपर्णा।
+NARRATOR [close:parvati]: पार्वती नहीं हिलीं।
+SHIVA (serene) [close:shiva]: अपर्णा।
+> parvati emo=joy pose=namaste t=1
+NARRATOR [close:parvati] (sfx=swell): पार्वती ने आँखें खोलीं। वह शब्द ऐसे गूँज रहा था, मानो बर्फ़ ने धीरे से कुछ कहा हो। शिव सामने खड़े थे।
+PARVATI (joy) [close:parvati]: अपर्णा?
+SHIVA (smile, pose=open) [close:shiva]: हाँ। वह, जिसने पर्ण, यानी पत्ते का भी त्याग कर दिया।
+PARVATI (smile) [close:parvati]: पर स्वामी, मेरे माता-पिता ने तो मेरा नाम पार्वती रखा था।
+> shiva x=700 pose=cradle t=1.5
+SHIVA (serene, pose=cradle) [~two:parvati,shiva] (sfx=sparkle): पार्वती। सती। अपर्णा। उमा। ये सब आप हैं। और ये सब, मेरी हैं।
++ union kind=rays x=620 y=400 r=700 n=30 color=#ffe7a0 op=0.3 z=-4 anim=pop inDur=3
+BEAT 2 [~at:620,420,1.3] (sfx=om)
+
+== CHAPTER | kicker=कथा सोलह | title=कार्तिकेय की माताएँ
+
+# ---------------------------------------------------------------- the wedding
+== SCENE vivah | set=court wall=#3d6fc4 music=joy amb=temple trans=white
++ fl kind=petals x=640 y=200 n=40 w=1300 z=60
+@ maina x=330 y=650 s=0.9 face=1 pose=fear emo=fear
+@ parvati x=520 y=650 s=0.88 face=1 pose=namaste emo=joy
+@ shiva x=900 y=650 s=1 face=-1 pose=raise emo=sly arms=4 upper=devi
+@ nandi kind=creature creature=bull x=1120 y=660 s=0.75 face=-1 legs=4
+BEAT 1 [wide] (sfx=damaru, nagara)
+NARRATOR [~wide]: विवाह के दिन, वर को देखते ही रानी मैना ने विवाह रोकने की धमकी दे दी।
+NARRATOR [mid:shiva]: शिव आए थे बैल पर सवार होकर। साँपों से सजे, जटाएँ साँप की बाँबियों जैसी, सिंह-चर्म ओढ़े, शरीर पर भभूत।
+MAINA (fear, pose=fear) [close:maina]: यह? यह मेरी बेटी का वर है? नहीं! यह विवाह नहीं होगा!
+> shiva arms=2 emo=serene pose=bless t=0.1
++ glory kind=rays x=900 y=380 r=800 n=36 color=#fff0b0 op=0.4 z=-3 anim=pop inDur=2
++ gl kind=glow x=900 y=380 r=400 color=#fff4c4 core=0.8 z=-2 anim=pop
+NARRATOR [~full:shiva] (sfx=swell, sparkle): पर उसी क्षण शिव रूपांतरित हो गए। उनकी आभा ने ब्रह्मांड को आलोकित कर दिया। वे सूर्य और चंद्रमा से भी अधिक तेजस्वी थे।
+> maina emo=joy pose=namaste t=0.8
+MAINA (joy, pose=namaste) [close:maina]: क्षमा, प्रभु। मेरी आँखें सत्य नहीं देख पाईं।
+NARRATOR [two:parvati,shiva] (sfx=conch, bells): शिव, शंकर हो गए। संन्यासी, गृहस्थ हो गया। और पूरे ब्रह्मांड ने उस नए आरंभ का उत्सव मनाया।
+
+# ---------------------------------------------------------------- the seed of fire
+== SCENE tej | set=glade time=night music=wonder amb=river,night trans=mandala
++ seed kind=glow x=640 y=260 r=160 color=#ffcf5a core=1 z=5 anim=pop
+@ dove kind=creature creature=dove x=640 y=280 s=1.2 face=1 fly=1
+BEAT 1 [wide] (sfx=magic)
+NARRATOR [~wide]: दिन बीते, पर शिव की संतान का कोई समाचार नहीं आया। अधीर देवताओं ने अग्निदेव को कैलाश भेजा।
+NARRATOR [~at:640,280,1.6]: अग्नि बिन बुलाए पहुँचे, और शिव और पार्वती का एकांत भंग हो गया। उस क्षण शिव का दिव्य तेज, वह बीज जिससे तारक का शत्रु जन्मने वाला था, धरती पर गिर पड़ा।
+NARRATOR (sfx=whoosh) [~at:640,280,1.6]: अग्नि ने कबूतर बनकर उसे निगल लिया। पर वह तेज इतना प्रचंड था कि अग्नि स्वयं झुलसने लगे।
+> dove x=900 y=520 t=3
+> seed x=900 y=520 t=3
++ river kind=water x=640 y=600 w=1500 h=160 color=#56688a crest=#8494b4 op=0.9 z=10
+NARRATOR [~wide] (sfx=splash, fire): उन्होंने उसे कुटिला नदी में छोड़ दिया। नदी का जल उबल उठा। और छटपटाती कुटिला ने उसे तट के घने शर-वन में छोड़ दिया।
+- dove
+> seed x=1000 y=600 r=300 t=3
++ reeds kind=sparkle x=1000 y=560 n=40 r=220 z=12
+NARRATOR [~at:1000,560,1.3] (sfx=swell): अग्नि, जल, और धरती। तीनों ने शिव के बीज को धारण किया। और मार्गशीर्ष की षष्ठी के दिन, एक बालक जन्मा। उसके तेज से पूरा शर-वन सुनहरा हो उठा।
+
+# ---------------------------------------------------------------- six mothers, six faces
+== SCENE krittika | set=glade time=dawn music=dawn amb=birds,river trans=white
++ gold kind=glow x=640 y=520 r=300 color=#ffd27a core=0.7 z=-2
+@ baby fig=kartikeya x=640 y=640 s=0.5 face=1 seat=lotus pose=open emo=sad heads=1 halo=false
+@ kr1 fig=krittika x=300 y=650 s=0.78 face=1 pose=reach emo=joy anim=right
+@ kr2 fig=krittika x=420 y=630 s=0.74 face=1 pose=cradle emo=joy anim=right z=-1
+@ kr3 fig=krittika x=180 y=640 s=0.72 face=1 pose=reach emo=smile anim=right z=-2
+@ kr4 fig=krittika x=980 y=650 s=0.78 face=-1 pose=reach emo=joy anim=left
+@ kr5 fig=krittika x=860 y=630 s=0.74 face=-1 pose=cradle emo=joy anim=left z=-1
+@ kr6 fig=krittika x=1100 y=640 s=0.72 face=-1 pose=reach emo=smile anim=left z=-2
+BEAT 1 [wide] (sfx=sparkle)
+NARRATOR [~wide]: बालक रो रहा था, कि तभी छह कृत्तिकाओं ने उसे देखा। आकाश के छह नक्षत्र। एक झलक में सब मंत्रमुग्ध हो गईं।
+KRITTIKAS (joy) [~wide]: यह मेरा है! नहीं, मेरा! मैं इसे दूध पिलाऊँगी! नहीं, मैं!
+NARRATOR [mid:baby]: वे आपस में झगड़ने लगीं। और तभी कुछ ऐसा हुआ कि सब स्तब्ध रह गईं।
+> baby heads=6 halo=true emo=joy t=0.1
++ pop kind=ring x=640 y=560 r=300 z=60
+NARRATOR [~close:baby] (sfx=magic, sparkle): बालक के छह सिर प्रकट हो गए! अब हर माँ के लिए एक मुख था।
+NARRATOR [mid:baby]: इसलिए वह कहलाया षडानन, शण्मुख। अग्नि से जन्मा, इसलिए आग्नेय। शर-वन में, इसलिए शरवण। और कृत्तिकाओं ने पाला, इसलिए उसका मुख्य नाम हुआ...
++ name kind=text x=640 y=170 text="कार्तिकेय" size=92 z=70
+BEAT 2.2 [wide] (sfx=conch)
+- name
+@ parvati x=1500 y=650 s=0.9 face=-1 pose=reach emo=joy
+> parvati x=760 t=2.5
+> kr4 x=1300 t=2
+> kr5 x=1400 t=2
+NARRATOR [~wide]: फिर पार्वती शर-वन पहुँचीं। जैसे ही उन्होंने शिशु को बाँहों में उठाया...
+> baby heads=1 t=0.1
+> parvati pose=cradle t=0.6
++ joy kind=petals x=640 y=200 n=30 w=1200 z=60
+NARRATOR [two:parvati,baby] (sfx=bells, swell): ...उसके छह सिर फिर जुड़कर एक हो गए। आकाश हर्षित हो उठा।
+
+# ---------------------------------------------------------------- the seven-day-old general
+== SCENE senapati | set=kailash music=battle amb=wind trans=white
+@ kartikeya x=640 y=640 s=0.85 face=1 pose=raise emo=angry
+@ peacock kind=creature creature=peacock x=860 y=660 s=1.2 face=-1
++ aura kind=rays x=640 y=380 r=700 n=30 color=#ffd27a op=0.3 z=-4 anim=pop
+BEAT 1 [wide] (sfx=conch)
+NARRATOR [~wide]: कार्तिकेय को देवताओं का सेनापति घोषित किया गया। मयूर उनका वाहन बना, और मुर्गा उनकी ध्वजा का चिह्न।
+KARTIKEYA (rage, pose=raise) [~full:kartikeya] (sfx=thunder, shake=8, flash): तारक! मैं आ रहा हूँ!
+NARRATOR [close:kartikeya]: जन्म के सात दिन बाद, कैलाश के शिखर से उठी यह गर्जना, तीनों लोकों में गूँज उठी।
+
+== CHAPTER | kicker=कथा सत्रह | title=कार्तिकेय और तारक का युद्ध
+
+# ---------------------------------------------------------------- the march
+== SCENE yuddh | set=pillarSky music=battle amb=storm,wind trans=mandala
+@ kartikeya x=360 y=650 s=0.85 face=1 pose=hold emo=angry
+@ peacock kind=creature creature=peacock x=200 y=660 s=1 face=1 z=-1
+@ indra x=120 y=640 s=0.7 face=1 pose=raise emo=angry z=-3
+@ veerabhadra x=60 y=630 s=0.75 face=1 pose=raise emo=rage z=-4
+@ taraka x=980 y=650 s=1.15 face=-1 pose=hips emo=sly
+BEAT 1 [wide] (sfx=nagara, conch)
+NARRATOR [~wide]: तीनों लोक विस्मित थे। इंद्र, अग्नि, यम, वरुण, सूर्य, चंद्र, वीरभद्र। सब देवता एक सात दिन के बालक के पीछे चल रहे थे।
+TARAKA (joy, pose=hips) [close:taraka] (sfx=roar): हा हा हा! क्या स्वर्ग में कोई योद्धा नहीं बचा? एक दूध-पीता बच्चा भेज दिया?
+KARTIKEYA (calm, pose=point) [close:kartikeya]: तुमने शिव का अंश माँगा था, तारक। मैं आ गया हूँ।
++ c1 kind=clash x=640 y=400 z=60
+NARRATOR [~wide] (sfx=clash, boom, shake=8): दोनों सेनाएँ टकराईं।
+- c1
+
+# ---------------------------------------------------------------- the illusions
+== SCENE maya | set=cosmos music=curse amb=storm trans=cut
++ swirl kind=mandala x=640 y=360 r=360 spin=-30 op=0.4 z=-4
+@ taraka x=640 y=650 s=1.2 face=1 pose=raise emo=rage
++ illu kind=smoke x=640 y=500 n=14 w=1000 h=400 color=#3a1a4a z=20
+BEAT 1 [wide] (sfx=magic, rumble)
+NARRATOR [~wide] (sfx=roar): तारक ने काला जादू शुरू किया। भयानक दानवों के भ्रम, मृत्यु और प्रलय के झूठे दृश्य। देवताओं का रक्त जम गया।
+NARRATOR [close:taraka] (sfx=boom, shake=6): उसने इंद्र को अचेत कर दिया। यम को परास्त किया। वीरभद्र भी हार गए। अग्नि और वरुण ने घुटने टेक दिए।
+- illu
+@ kartikeya x=-100 y=650 s=0.85 face=1 pose=hold emo=angry
+> kartikeya x=300 t=1.5
+NARRATOR [two:kartikeya,taraka]: तब कार्तिकेय ने सेना को फिर एकत्र किया, और ऐसा व्यूह रचा कि बीच में केवल दो योद्धा बचे। कार्तिकेय, और तारक।
++ cloud kind=clouds x=640 y=200 n=3 speed=30 color=#2c3c60 edge=#8fa0d8 z=30
++ b1 kind=bolt x=900 y=0 h=500 z=40
+NARRATOR [~wide] (sfx=thunder): तारक मेघ बना, तो कार्तिकेय गर्जना बन गए।
+- cloud
+- b1
++ f1 kind=fire x=900 y=600 size=2 z=30
++ w1 kind=water x=640 y=700 w=1500 h=200 color=#cfd8ea crest=#4a5f9e z=31
+NARRATOR [~wide] (sfx=fire, splash): वह अग्नि बना, तो वे जल। अंधकार के विरुद्ध प्रकाश। सिंह के विरुद्ध गज। बाज़ के विरुद्ध नाग।
+- f1
+- w1
+
+# ---------------------------------------------------------------- the spear
+== SCENE shakti | set=pillarSky music=battle amb=storm trans=cut
+@ kartikeya x=420 y=650 s=0.9 face=1 pose=strike emo=rage heads=6
+@ taraka x=880 y=650 s=1.15 face=-1 pose=strike emo=rage
++ c2 kind=clash x=650 y=400 period=0.5 z=60
+BEAT 1 [wide] (sfx=clash, shake=6)
+NARRATOR [~wide] (sfx=clash): मायाजाल विफल हुआ, तो तारक ने तलवार उठा ली। उसकी चमक, कार्तिकेय के भाले पर पड़ रही थी।
++ dust kind=smoke x=640 y=620 n=18 w=900 h=400 color=#8a6a4a z=50
+NARRATOR [~at:640,420,1.1] (sfx=clash, rumble): धूल का ऐसा बादल उठा, कि कुछ दिखाई नहीं देता था। केवल अस्त्रों के टकराने का शोर।
+NARRATOR (sfx=clash): धीरे-धीरे, तारक की तलवार का स्वर मंद पड़ने लगा। फिर मौन हो गया।
+- c2
+- dust od=3
+> taraka o=0 t=1 d=1.5
++ fin kind=ring x=880 y=420 r=600 z=60
+BEAT 2.4 [wide] (sfx=boom, shake=12, flash)
++ shine kind=rays x=420 y=380 r=800 n=36 color=#ffd27a op=0.35 z=-3 anim=pop inDur=2
+> kartikeya pose=raise emo=joy t=0.6
+NARRATOR [~full:kartikeya] (sfx=conch, bells): धूल छँटी, तो सबने देखा। ब्रह्मा की वाणी सच हो चुकी थी। छह सिरों और बारह भुजाओं वाला बालक, अपने पूरे वैभव में खड़ा मुस्कुरा रहा था।
+@ peacock kind=creature creature=peacock x=700 y=660 s=1.1 face=-1 anim=materialize
+NARRATOR [~wide] (sfx=sparkle): तारकासुर का अंत हो चुका था। मयूर नृत्य कर रहा था। मुर्गे वाली पताका आकाश में लहरा रही थी।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night trans=fade
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1.2 [wide] (sfx=veena)
+NARAD (smile) [mid:narad]: देखा? तारक ने सोचा था, शोक में डूबा शिव कभी प्रेम नहीं करेगा। पर उसने एक बात नहीं सोची।
+NARAD (calm, pose=open) [close:narad]: प्रेम, शोक से बड़ा होता है। और जो प्रेम पत्ते तक त्याग दे, उसके आगे स्वयं महादेव भी झुक जाते हैं।
+NARAD (sly) [ecu:narad]: पर अब देवताओं के सामने एक और समस्या थी। असुरों के गुरु के पास एक मंत्र था, जो मरे हुए को जीवित कर देता था। और देवताओं के पास? अमृत तक नहीं।
+BEAT 1.5 [~close:narad] (sfx=veena)
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=समुद्र-मंथन · हलाहल · मोहिनी
+NARRATOR: अगले अध्याय में: देव और असुर मिलकर क्षीर सागर को मथेंगे। निकलेगा विष, निकलेगी लक्ष्मी, और निकलेगा अमृत। पर अमृत किसे मिलेगा?
+
+== END | dur=13 | title=महागाथा | sub=अध्याय पाँच · तारकासुर | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 31 से 34);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर

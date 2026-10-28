@@ -1,0 +1,3302 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "अवतार",
+  "episode": "4",
+  "slug": "e04-avatar",
+  "kicker": "अध्याय चार",
+  "sub": "मत्स्य, वराह और नृसिंह",
+  "logline": "एक नन्ही मछली जो प्रलय से सृष्टि को बचाती है, एक वराह जो डूबी धरती को उठाता है, और खंभे से निकला वह सिंह, जिसने एक अजेय असुर के हर वरदान को पार कर लिया।",
+  "stories": "8, 25, 26, 27",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 8, 25, 26 और 27"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "vishnu": {
+   "label": "विष्णु",
+   "fig": "vishnu",
+   "voice": "hm_omega:0.8+am_michael:0.2",
+   "speed": 0.94,
+   "pitch": 0,
+   "fx": "divine"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "kumaras": {
+   "label": "चार कुमार",
+   "fig": "kumara",
+   "voice": "hf_beta:0.8+af_sky:0.2",
+   "speed": 1.02,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "chorus"
+  },
+  "sanak": {
+   "label": "सनक",
+   "fig": "kumara",
+   "voice": "hf_beta:0.8+af_sky:0.2",
+   "speed": 1.02,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "indra": {
+   "label": "इंद्र",
+   "fig": "indra",
+   "voice": "hm_psi:0.65+am_liam:0.35",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "jaya": {
+   "label": "जय",
+   "fig": "jaya",
+   "voice": "hm_psi:0.6+am_liam:0.4",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "vijaya": {
+   "label": "विजय",
+   "fig": "vijaya",
+   "voice": "hm_omega:0.6+am_eric:0.4",
+   "speed": 1.02,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "dvarpal": {
+   "label": "जय-विजय",
+   "twin": [
+    "jaya",
+    "vijaya"
+   ]
+  },
+  "vaivasvat": {
+   "label": "वैवस्वत",
+   "fig": "vaivasvat",
+   "voice": "hm_psi:0.65+bm_daniel:0.35",
+   "speed": 0.97,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "matsya": {
+   "label": "मत्स्य",
+   "fig": "vishnu",
+   "voice": "hm_omega:0.75+am_michael:0.25",
+   "speed": 0.92,
+   "pitch": -1,
+   "fx": "divine_big"
+  },
+  "minnow": {
+   "label": "नन्ही मछली",
+   "voice": "hf_beta:0.8+af_sky:0.2",
+   "speed": 1.05,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "small"
+  },
+  "hiranyaksha": {
+   "label": "हिरण्याक्ष",
+   "fig": "hiranyaksha",
+   "voice": "hm_omega:0.5+am_fenrir:0.5",
+   "speed": 0.98,
+   "pitch": -5,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "hiranyakashipu": {
+   "label": "हिरण्यकशिपु",
+   "fig": "hiranyakashipu",
+   "voice": "hm_psi:0.5+am_onyx:0.5",
+   "speed": 0.95,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "prahlad": {
+   "label": "प्रह्लाद",
+   "fig": "prahlad",
+   "voice": "hf_beta:0.75+am_puck:0.25",
+   "speed": 1.0,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "holika": {
+   "label": "होलिका",
+   "fig": "holika",
+   "voice": "hf_alpha:0.6+af_bella:0.4",
+   "speed": 1.02,
+   "pitch": -3,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "narasimha": {
+   "label": "नृसिंह",
+   "fig": "narasimha",
+   "voice": "hm_omega:0.4+am_onyx:0.6",
+   "speed": 0.86,
+   "pitch": -5,
+   "formant": "shifted",
+   "fx": "roar"
+  },
+  "bhudevi": {
+   "label": "भूदेवी",
+   "voice": "hf_alpha:0.7+af_sarah:0.3",
+   "speed": 0.92,
+   "pitch": -1,
+   "fx": "dream"
+  },
+  "devas": {
+   "label": "देवता",
+   "fig": "indra",
+   "voice": "hm_psi:0.6+am_liam:0.4",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "chorus"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! आज की कथा मेरे प्रभु की है। स्वयं नारायण की।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "लोग पूछते हैं, जो सबका रक्षक है, उसे बार-बार धरती पर क्यों आना पड़ता है? कभी मछली बनकर, कभी वराह बनकर, कभी आधा सिंह बनकर?",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "उत्तर एक द्वार पर छिपा है। वैकुंठ के सातवें द्वार पर।",
+     "cam": "close:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "vaikunth",
+   "set": "lotusSky",
+   "ctx": {},
+   "els": [
+    {
+     "id": "gate",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 380,
+     "color": "#fff4c4",
+     "core": 0.6,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "jaya",
+     "x": 520,
+     "y": 650,
+     "s": 0.92,
+     "face": 1,
+     "pose": "hold",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "pose": "point",
+        "emo": "angry",
+        "t": 0.4
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "pose": "fear",
+        "emo": "fear",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "vijaya",
+     "x": 760,
+     "y": 650,
+     "s": 0.92,
+     "face": -1,
+     "pose": "hold",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "sly",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "pose": "fear",
+        "emo": "fear",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "kumaras",
+     "fig": "kumara",
+     "x": 200,
+     "y": 650,
+     "s": 0.6,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 380,
+        "t": 1.5
+       }
+      ],
+      "7": [
+       {
+        "emo": "angry",
+        "pose": "curse",
+        "t": 0.4
+       },
+       {
+        "emo": "angry",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "k2",
+     "fig": "kumara",
+     "x": 120,
+     "y": 650,
+     "s": 0.58,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "smile",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "vishnu",
+     "x": 640,
+     "y": 600,
+     "s": 0.9,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -2,
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "9": [
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा के चार मानस पुत्र, चिर-बालक कुमार, ब्रह्मांड में घूमते हुए वैकुंठ पहुँचे। विष्णु का धाम। छह द्वार पार हो गए। सातवें पर...",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "dvarpal",
+     "text": "रुको!",
+     "cam": "two:jaya,vijaya"
+    },
+    {
+     "who": "sanak",
+     "text": "तुम कौन हो, जो हमें रोक रहे हो?",
+     "cam": "close:kumaras"
+    },
+    {
+     "who": "jaya",
+     "text": "हम वैकुंठ के द्वारपाल हैं। जय...",
+     "cam": "close:jaya"
+    },
+    {
+     "who": "vijaya",
+     "text": "...और विजय। बालको, यहाँ यूँ ही नहीं टहला जाता। प्रवेश केवल विशेष लोगों को मिलता है।",
+     "cam": "close:vijaya"
+    },
+    {
+     "who": "narrator",
+     "text": "द्वारपाल नहीं जानते थे, कि ये बालक नहीं, ब्रह्मा के आशीर्वाद से सदा बालक रहने वाले प्रबुद्ध मुनि थे।",
+     "cam": "close:kumaras"
+    },
+    {
+     "who": "kumaras",
+     "text": "जिस धाम में अहंकार द्वार पर खड़ा हो, वहाँ के द्वारपाल वहाँ रहने योग्य नहीं! तुम धरती पर जन्म लोगे। असुर बनकर!",
+     "camMove": true,
+     "cam": "full:kumaras"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु प्रकट हुए। पर शाप दिया जा चुका था। उन्होंने द्वारपालों को एक विकल्प दिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell"
+    },
+    {
+     "who": "vishnu",
+     "text": "या तो सात जन्म मेरे भक्त बनकर जियो। या तीन जन्म मेरे शत्रु बनकर। और हर जन्म में, तुम्हारा अंत मेरे हाथों होगा।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "dvarpal",
+     "text": "तीन जन्म, प्रभु। आपसे सात जन्म दूर रहना, हमसे नहीं होगा।",
+     "cam": "two:jaya,vijaya"
+    },
+    {
+     "who": "narad",
+     "text": "और इस तरह, स्वयं विष्णु के द्वारपाल, उनके सबसे बड़े शत्रु बनने चल पड़े।",
+     "cam": "close:vishnu"
+    }
+   ],
+   "music": "vishnu",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "title3",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय चार",
+   "title": "अवतार",
+   "sub": "मत्स्य, वराह और नृसिंह"
+  },
+  {
+   "type": "card",
+   "id": "chapter4",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा ग्यारह",
+   "title": "मत्स्य अवतार",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "kritmala",
+   "set": "glade",
+   "ctx": {},
+   "els": [
+    {
+     "id": "sunG",
+     "kind": "glow",
+     "x": 640,
+     "y": 260,
+     "r": 400,
+     "color": "#fff2c0",
+     "core": 0.5,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "vaivasvat",
+     "x": 600,
+     "y": 520,
+     "s": 0.95,
+     "face": 1,
+     "pose": "offer",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "fear",
+        "t": 0.6
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "smile",
+        "t": 0.6
+       },
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "riverfg",
+     "kind": "water",
+     "x": 640,
+     "y": 600,
+     "w": 1500,
+     "h": 180,
+     "color": "#cfd9e0",
+     "crest": "#6a86b8",
+     "op": 0.85,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "minnow",
+     "kind": "creature",
+     "creature": "fish",
+     "x": 700,
+     "y": 330,
+     "s": 0.08,
+     "face": 1,
+     "anim": "materialize",
+     "in": 2,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "shine",
+     "kind": "sparkle",
+     "x": 700,
+     "y": 330,
+     "n": 16,
+     "r": 50,
+     "z": 30,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "सूर्य के पुत्र वैवस्वत अब पृथ्वी के शासक थे। एक दिन वे कृतमाला नदी के बीच खड़े होकर, विष्णु को अर्घ्य दे रहे थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने चुल्लू में पानी भरकर हाथ उठाए, तो चाँदी-सी चमक आँखों में चुभी। हथेलियों के बीच एक नन्ही-सी मछली झिलमिला रही थी।",
+     "camMove": true,
+     "cam": "at:690,340,2.6",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "minnow",
+     "text": "हे दयालु राजन्! मुझे अपने साथ ले चलिए। मैं बहुत छोटी हूँ, और मुझे नदी से डर लगता है।",
+     "cam": "at:690,340,2.6"
+    },
+    {
+     "who": "vaivasvat",
+     "text": "पर यही तो तुम्हारा घर है।",
+     "cam": "close:vaivasvat"
+    },
+    {
+     "who": "minnow",
+     "text": "कोई बड़ी मछली मुझे आसानी से खा जाएगी। आप धरती के स्वामी हैं। क्या अपनी प्रजा की रक्षा नहीं करेंगे?",
+     "cam": "at:690,340,2.6"
+    },
+    {
+     "who": "vaivasvat",
+     "text": "ठीक है, नन्ही। मैं तुम्हें अपने साथ ले चलूँगा।",
+     "cam": "close:vaivasvat"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "river",
+    "birds"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "vriddhi",
+   "set": "court",
+   "ctx": {
+    "wall": "#a8481e"
+   },
+   "els": [
+    {
+     "id": "vaivasvat",
+     "x": 360,
+     "y": 650,
+     "s": 0.92,
+     "face": 1,
+     "pose": "rest",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "x": 280,
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "minnow",
+     "kind": "creature",
+     "creature": "fish",
+     "x": 760,
+     "y": 520,
+     "s": 0.15,
+     "face": -1,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "s": 0.3,
+        "t": 2
+       },
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "s": 0.5,
+        "t": 2
+       }
+      ],
+      "4": [
+       {
+        "s": 0.9,
+        "x": 820,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "pot",
+     "kind": "glow",
+     "x": 760,
+     "y": 520,
+     "r": 90,
+     "color": "#c98a2a",
+     "core": 0.5,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "r": 160,
+        "t": 2
+       }
+      ],
+      "4": [
+       {
+        "r": 300,
+        "t": 3
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "वैवस्वत ने मछली को अपने ताँबे के कमंडल में रख लिया। पर सूर्यास्त तक वह सोलह अंगुल लंबी हो गई।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "minnow",
+     "text": "बचाइए, राजन्! यह कमंडल मेरे लिए छोटा पड़ गया!",
+     "camMove": true,
+     "cam": "mid:minnow"
+    },
+    {
+     "who": "narrator",
+     "text": "राजा ने उसे घड़े में डाला। घड़ा छोटा पड़ गया। फिर कुएँ में। फिर वही हुआ। फिर तालाब में, फिर वापस नदी में।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "और हर बार, मछली अपने घर से बड़ी हो जाती।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash",
+     "rumble": true
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "sagar",
+   "set": "ocean",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "vaivasvat",
+     "x": 260,
+     "y": 640,
+     "s": 0.8,
+     "face": 1,
+     "pose": "offer",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "pose": "namaste",
+        "emo": "calm",
+        "seat": "kneel",
+        "t": 1
+       },
+       {
+        "emo": "fear",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "matsya",
+     "kind": "creature",
+     "creature": "fish",
+     "x": 900,
+     "y": 520,
+     "s": 0.8,
+     "face": -1,
+     "horn": true,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "s": 2.6,
+        "x": 820,
+        "y": 560,
+        "t": 5
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 10,
+     "od": 1.5
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 660,
+     "w": 1500,
+     "h": 120,
+     "color": "#e9e3d4",
+     "crest": "#8299b8",
+     "op": 0.85,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 820,
+     "y": 420,
+     "r": 800,
+     "n": 30,
+     "color": "#fff0b0",
+     "op": 0.25,
+     "z": -4,
+     "anim": "pop",
+     "inDur": 3,
+     "in": 2,
+     "out": 10,
+     "od": 1.5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "अंत में वैवस्वत ने उसे महासागर में छोड़ दिया। लहरों का स्पर्श पाते ही उसका आकार और बढ़ गया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "बढ़ता गया। बढ़ता गया। और आख़िर उसने पूरे समुद्र को ढक लिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell",
+     "rumble": true,
+     "shake": 4
+    },
+    {
+     "who": "vaivasvat",
+     "text": "आप कोई साधारण मछली नहीं हैं। पूरी धरती पर आपको समेटने लायक कोई स्थान नहीं। आप केवल एक ही हो सकते हैं। क्या आप... विष्णु हैं?",
+     "cam": "close:vaivasvat"
+    },
+    {
+     "who": "matsya",
+     "text": "मैं विष्णु ही हूँ। और तुम्हें अगला मनु बनना है।",
+     "camMove": true,
+     "cam": "at:820,420,1.1"
+    },
+    {
+     "who": "narrator",
+     "text": "इससे पहले छह मनु हो चुके थे। हर मनु का युग, एक मन्वंतर। और अब विष्णु ने सातवाँ मनु घोषित कर दिया था। वैवस्वत मनु।",
+     "cam": "close:vaivasvat"
+    },
+    {
+     "who": "matsya",
+     "text": "सात दिनों में धरती पर प्रचंड बाढ़ आएगी, और सब जीवों का अंत हो जाएगा। एक नया कालचक्र आरंभ होगा। सृष्टि को बचाने का भार अब तुम पर है।",
+     "camMove": true,
+     "cam": "at:820,420,1.1"
+    },
+    {
+     "who": "vaivasvat",
+     "text": "प्रभु, मेरा मार्गदर्शन कीजिए।",
+     "cam": "close:vaivasvat"
+    },
+    {
+     "who": "matsya",
+     "text": "एक विशाल नौका बनाओ। उसमें जीवन के सारे स्रोत रख लो। बीज और अनाज। जड़ी-बूटियाँ और औषधियाँ। फल और फूल। पशुओं के जोड़े। सप्तऋषि, और मनुष्यों का लिखा सारा ज्ञान।",
+     "cam": "wide"
+    },
+    {
+     "who": "matsya",
+     "text": "जब प्रलय आएगी, मैं इसी रूप में फिर प्रकट होऊँगा। नौका को मुझसे बाँध देना। मैं तुम्हें सुरक्षित स्थान तक ले जाऊँगा।",
+     "camMove": true,
+     "cam": "at:820,420,1.1"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "splash"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "pralay",
+   "set": "glade",
+   "ctx": {},
+   "els": [
+    {
+     "id": "heat",
+     "kind": "glow",
+     "x": 640,
+     "y": 200,
+     "r": 500,
+     "color": "#ffcf70",
+     "core": 0.6,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "vaivasvat",
+     "x": 640,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "fear",
+        "gaze": -1,
+        "t": 0.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "dark",
+     "kind": "tint",
+     "color": "#1a2040",
+     "op": 0,
+     "z": 55,
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "op": 0.55,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "clouds",
+     "kind": "clouds",
+     "x": 640,
+     "y": 150,
+     "n": 4,
+     "speed": 30,
+     "color": "#2c3c60",
+     "edge": "#5a6a90",
+     "z": 50,
+     "in": 5
+    },
+    {
+     "id": "b1",
+     "kind": "bolt",
+     "x": 300,
+     "y": 0,
+     "h": 500,
+     "z": 52,
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "rain",
+     "kind": "rain",
+     "x": 640,
+     "y": 360,
+     "n": 180,
+     "z": 58,
+     "in": 6
+    },
+    {
+     "id": "flood",
+     "kind": "water",
+     "x": 640,
+     "y": 800,
+     "w": 1500,
+     "h": 500,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "z": 45,
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "y": 430,
+        "t": 8
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर मछली अदृश्य हो गई। और धरती पर भयंकर सूखा पड़ा। मानो किसी ने पृथ्वी की नसों से जीवन का रस चूस लिया हो।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "ज़मीन में दरारें पड़ गईं। मनुष्य दम तोड़ने लगे। जगत एक विशाल मरघट बन गया। छह दिनों तक मनु अपनी नौका में चुपचाप बैठे रहे।",
+     "cam": "mid:vaivasvat"
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "cam": "close:vaivasvat",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "सातवें दिन, किसी चीज़ ने मनु की त्वचा को छुआ। जल की एक बूँद।",
+     "cam": "ecu:vaivasvat"
+    },
+    {
+     "who": "narrator",
+     "text": "आकाश में काले मेघ घिर आए। बिजली कड़की। बादल गरजे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "thunder",
+     "shake": 6,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "और फिर वर्षा हुई। ऐसी, मानो मेघ आँसू बहा रहे हों। धरती से छीनी गई हर बूँद को, किसी ने घर लौटने का रास्ता दिखा दिया था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash",
+     "rumble": true
+    },
+    {
+     "who": "narrator",
+     "text": "इतनी वर्षा हुई कि ज़मीन दिखना बंद हो गई। जहाँ देखो, केवल पानी। और धरती डूबती गई।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "tint": [
+    "#7a4a10",
+    0.35
+   ],
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "nauka",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "rain",
+     "kind": "rain",
+     "x": 640,
+     "y": 360,
+     "n": 140,
+     "op": 0.4,
+     "z": 58,
+     "in": 0,
+     "out": 5,
+     "od": 3
+    },
+    {
+     "id": "boat",
+     "kind": "boat",
+     "x": 420,
+     "y": 520,
+     "s": 0.9,
+     "z": 10,
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "rope": 520,
+        "t": 1.5
+       }
+      ],
+      "5": [
+       {
+        "x": 900,
+        "t": 10
+       }
+      ]
+     }
+    },
+    {
+     "id": "vaivasvat",
+     "x": 420,
+     "y": 420,
+     "s": 0.45,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": 9,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "pose": "lift",
+        "emo": "joy",
+        "t": 0.6
+       }
+      ],
+      "5": [
+       {
+        "x": 900,
+        "t": 10
+       }
+      ]
+     }
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 600,
+     "w": 1500,
+     "h": 200,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.9,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "matsya",
+     "kind": "creature",
+     "creature": "fish",
+     "x": 980,
+     "y": 700,
+     "s": 1.6,
+     "face": -1,
+     "horn": true,
+     "z": 20,
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "y": 520,
+        "t": 4
+       }
+      ],
+      "5": [
+       {
+        "x": 1500,
+        "t": 10
+       }
+      ]
+     }
+    },
+    {
+     "id": "mg",
+     "kind": "glow",
+     "x": 980,
+     "y": 420,
+     "r": 360,
+     "color": "#ffe7a0",
+     "core": 0.6,
+     "z": 19,
+     "anim": "pop",
+     "inDur": 3,
+     "in": 3,
+     "keys": {
+      "5": [
+       {
+        "x": 1500,
+        "t": 10
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "अनंत जल पर केवल एक नौका तैर रही थी। उसमें मनुष्यता के बचे हुए अंश थे। संस्कृति। ज्ञान। पोषण। बोध।",
+     "camMove": true,
+     "cam": "at:420,440,1.5"
+    },
+    {
+     "who": "narrator",
+     "text": "क्या वह महासागर नौका को घूर रहा था? क्या वह उसे भी निगल जाने को व्याकुल था? मनु डरकर चारों ओर देख रहे थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "तभी समुद्र के नीचे से एक सींग उभरा। लहरों को चीरता हुआ, एक स्वर्णिम मछली का विशाल सिर। मत्स्य।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell",
+     "splash": true
+    },
+    {
+     "who": "narrator",
+     "text": "वैवस्वत ने नौका को मत्स्य के सींग से बाँध दिया।",
+     "cam": "mid:vaivasvat",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "narrator",
+     "text": "और समुद्र, इस महामत्स्य के आगे नतमस्तक हो गया। पहले मनु ने मछली को बचाया था। अब मछली, मनु को बचा रही थी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "देवता भी आकाश में प्रकट हो गए, यह देखने के लिए कि विष्णु धरती के बचे अंश की रक्षा कैसे कर रहे थे।"
+    }
+   ],
+   "music": "cosmic",
+   "amb": [
+    "ocean",
+    "storm"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "himalay",
+   "set": "kailash",
+   "ctx": {},
+   "els": [
+    {
+     "id": "sunG",
+     "kind": "glow",
+     "x": 640,
+     "y": 200,
+     "r": 500,
+     "color": "#ffe2b0",
+     "core": 0.5,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "vaivasvat",
+     "x": 420,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "vishnu",
+     "x": 860,
+     "y": 600,
+     "s": 0.9,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "flock",
+     "kind": "birds",
+     "x": 640,
+     "y": 220,
+     "n": 7,
+     "speed": 60,
+     "z": 10,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "रात भोर में बदली। समुद्र से एक हिमाच्छादित शिखर बाहर निकला। हिमालय।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vishnu",
+     "text": "हे सूर्यपुत्र! तुमसे गौरवशाली सूर्यवंश जन्म लेगा। धरती को फिर से समृद्ध करो।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "vishnu",
+     "text": "जैसे तुमने एक मछली की रक्षा की थी, वैसे ही ऐसा समाज बनाओ, जो सबकी रक्षा कर सके।",
+     "cam": "mid:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "पक्षी नए घोंसलों के गीत गाने लगे। एक नया मन्वंतर आरंभ हो चुका था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds",
+    "wind"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "chapter11",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा बारह",
+   "title": "वराह अवतार",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "vardan",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "hiranyaksha",
+     "x": 420,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "seat": "kneel",
+     "pose": "namaste",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 860,
+     "y": 600,
+     "s": 0.85,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "दिति के दैत्य पुत्रों में दो सबसे बड़े थे। हिरण्याक्ष, सुनहरी आँखों वाला। और हिरण्यकशिपु, सुनहरे वस्त्रों वाला।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "जय और विजय का पहला जन्म।",
+     "cam": "close:hiranyaksha"
+    },
+    {
+     "who": "hiranyaksha",
+     "text": "ब्रह्मदेव, मुझे अमर कर दीजिए।",
+     "cam": "close:hiranyaksha"
+    },
+    {
+     "who": "brahma",
+     "text": "असंभव। महादेव की तरह मैं किसी को अमर नहीं कर सकता। कुछ और माँगो।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "hiranyaksha",
+     "text": "तो मुझे धरती का स्वामी बना दीजिए। और वर दीजिए, कि न कोई मनुष्य, न कोई पशु मुझे मार सके।",
+     "cam": "close:hiranyaksha"
+    },
+    {
+     "who": "brahma",
+     "text": "कौन-कौन से पशु? तुम्हें हर प्रजाति का नाम लेना होगा।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "हिरण्याक्ष ने नाम गिनाने शुरू किए। थलचर, जलचर, नभचर। भूमिगत जीव। हर जगह रहने वाले प्राणी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "brahma",
+     "text": "तथास्तु।",
+     "cam": "close:brahma"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "void"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "prashn",
+   "set": "lotusSky",
+   "ctx": {},
+   "els": [
+    {
+     "id": "brahma",
+     "x": 420,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "indra",
+     "x": 860,
+     "y": 650,
+     "s": 0.88,
+     "face": -1,
+     "pose": "point",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "agni",
+     "x": 1040,
+     "y": 650,
+     "s": 0.8,
+     "face": -1,
+     "pose": "hips",
+     "emo": "angry",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "devas",
+     "text": "पितामह! आपने एक दैत्य को पूरी धरती दे दी? वह उसकी आत्मा तक नष्ट कर देगा!",
+     "cam": "two:brahma,indra"
+    },
+    {
+     "who": "brahma",
+     "text": "अडिग तपस्या कभी निष्फल नहीं जाती, पुत्रो। यह प्रकृति का नियम है। देवता हो या दैत्य, सच्ची साधना का फल मिलेगा ही।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "indra",
+     "text": "भले ही वरदान अमंगल हो?",
+     "cam": "close:indra"
+    },
+    {
+     "who": "brahma",
+     "text": "वरदान मंगल या अमंगल नहीं होता। वह केवल एक अवसर है। महत्त्व इस बात का है कि साधक उसका उपयोग कैसे करता है। यदि उसने विनाश चुना, तो पहले उसी का विनाश होगा।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "समय आने पर आप समझ जाएँगे।",
+     "cam": "ecu:brahma"
+    }
+   ],
+   "music": "brahma",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "patal",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "earthB",
+     "kind": "earth",
+     "x": 640,
+     "y": 260,
+     "r": 120,
+     "form": 1,
+     "z": -2,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "y": 640,
+        "x": 760,
+        "t": 5
+       }
+      ]
+     }
+    },
+    {
+     "id": "hiranyaksha",
+     "x": 920,
+     "y": 560,
+     "s": 1.1,
+     "face": -1,
+     "pose": "lift",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "y": 700,
+        "t": 5
+       }
+      ]
+     }
+    },
+    {
+     "id": "bhudevi",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 300,
+     "y": 560,
+     "s": 0.9,
+     "face": 1,
+     "fly": 1,
+     "anim": "materialize",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "rumble",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "शीघ्र ही देवताओं की आशंका सच हुई। हिरण्याक्ष के अत्याचार से धरती झुलसने लगी। और फिर उसने एक अकल्पनीय काम किया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "उसने पृथ्वी को उसकी धुरी से गिरा दिया, और खींचकर आदि-महासागर की अथाह गहराई में ले गया।",
+     "camMove": true,
+     "cam": "at:700,480,1.1",
+     "sfx": "splash",
+     "rumble": true,
+     "shake": 8
+    },
+    {
+     "who": "bhudevi",
+     "text": "मुझे बचाइए... खारा जल मेरी आँखें जला रहा है... मुझे मुक्त कीजिए।",
+     "cam": "mid:bhudevi"
+    },
+    {
+     "who": "narrator",
+     "text": "पृथ्वी की आत्मा, एक गाय के रूप में, देवताओं के सामने आई। उसका चेहरा मुक्ति की याचना कर रहा था।",
+     "cam": "mid:bhudevi"
+    }
+   ],
+   "tint": [
+    "#0a1a40",
+    0.4
+   ],
+   "music": "battle",
+   "amb": [
+    "ocean",
+    "storm"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "varaha",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "brahma",
+     "x": 300,
+     "y": 440,
+     "s": 0.7,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "indra",
+     "x": 150,
+     "y": 470,
+     "s": 0.6,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "fly": 1,
+     "noShadow": true,
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 560,
+     "w": 1500,
+     "h": 300,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.85,
+     "z": 30,
+     "in": 5
+    },
+    {
+     "id": "boar",
+     "kind": "creature",
+     "creature": "boar",
+     "x": 1500,
+     "y": 520,
+     "s": 2.2,
+     "face": -1,
+     "anim": "materialize",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 900,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "bg",
+     "kind": "glow",
+     "x": 900,
+     "y": 380,
+     "r": 420,
+     "color": "#bcd0ff",
+     "core": 0.6,
+     "z": -2,
+     "anim": "pop",
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "indra",
+     "text": "आपने कहा था वह अजेय नहीं है! पर उसने तो हर प्राणी से स्वयं को सुरक्षित कर लिया!",
+     "cam": "two:brahma,indra"
+    },
+    {
+     "who": "brahma",
+     "text": "नहीं। इसीलिए मैंने उससे हर प्रजाति का नाम पूछा था। मेरी सृष्टि इतनी विपुल है, कि कोई सब जीवों को गिन नहीं सकता। हिरण्याक्ष भी चूक गया। एक प्राणी का नाम छूट गया।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "indra",
+     "text": "कौन-सा?",
+     "cam": "close:indra"
+    },
+    {
+     "who": "brahma",
+     "text": "वराह।",
+     "cam": "ecu:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "और सबने देखा, विष्णु अपने विशाल, तेजस्वी वराह रूप में समुद्र में उतर रहे थे। उनके दाँत, जुड़वाँ पहाड़ियों जितने विशाल।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar",
+     "splash": true,
+     "shake": 8
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "ocean",
+    "storm"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "uddhar",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "boar",
+     "kind": "creature",
+     "creature": "boar",
+     "x": 420,
+     "y": 600,
+     "s": 2,
+     "face": 1,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 760,
+        "t": 0.6
+       }
+      ],
+      "4": [
+       {
+        "x": 700,
+        "y": 560,
+        "t": 5
+       }
+      ]
+     }
+    },
+    {
+     "id": "hiranyaksha",
+     "x": 920,
+     "y": 640,
+     "s": 1.1,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.4,
+        "d": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 680,
+     "y": 430,
+     "z": 60,
+     "in": 0,
+     "out": 3
+    },
+    {
+     "id": "yrs",
+     "kind": "text",
+     "x": 640,
+     "y": 170,
+     "text": "एक सहस्र वर्ष",
+     "size": 78,
+     "z": 70,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "whirl",
+     "kind": "mandala",
+     "x": 640,
+     "y": 400,
+     "r": 360,
+     "spin": 40,
+     "op": 0.35,
+     "z": -3,
+     "in": 2,
+     "out": 4
+    },
+    {
+     "id": "fin",
+     "kind": "ring",
+     "x": 880,
+     "y": 450,
+     "r": 500,
+     "z": 60,
+     "in": 3
+    },
+    {
+     "id": "earth",
+     "kind": "earth",
+     "x": 1000,
+     "y": 760,
+     "r": 110,
+     "form": 1,
+     "z": 10,
+     "in": 4,
+     "keys": {
+      "4": [
+       {
+        "x": 930,
+        "y": 360,
+        "t": 5
+       }
+      ]
+     }
+    },
+    {
+     "id": "up",
+     "kind": "glow",
+     "x": 930,
+     "y": 360,
+     "r": 360,
+     "color": "#ffe7a0",
+     "core": 0.6,
+     "z": 5,
+     "anim": "pop",
+     "inDur": 4,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "clash",
+     "roar": true,
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "वराह ने दैत्य को ललकारा, और युद्ध छिड़ गया। समुद्र कभी उबल उठता, कभी बर्फ़-सा जम जाता।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash",
+     "splash": true
+    },
+    {
+     "text": "",
+     "dur": 2.2,
+     "cam": "wide",
+     "sfx": "rumble",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "और अंत में, वराह ने हिरण्याक्ष का वध कर दिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "boom",
+     "roar": true,
+     "shake": 14,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "फिर वराह ने धरती को अपने दाँतों पर टिकाया, और ऐसे उठाया, मानो हथेली पर फूल रखा हो।",
+     "camMove": true,
+     "cam": "at:820,440,1.1",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "और उसे फिर से उसकी धुरी पर स्थापित कर दिया। ब्रह्मा हर्षित थे। देवता उत्सव मना रहे थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "conch",
+     "bells": true
+    },
+    {
+     "who": "narrator",
+     "text": "पर उस आनंद के क्षण में विष्णु उनके साथ नहीं थे। क्योंकि हिरण्याक्ष मरा था। हिरण्यकशिपु, अभी जीवित था।",
+     "cam": "close:boar"
+    }
+   ],
+   "tint": [
+    "#0a1a40",
+    0.35
+   ],
+   "music": "battle",
+   "amb": [
+    "ocean",
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter17",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा तेरह",
+   "title": "नृसिंह अवतार",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "kavach",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "hiranyakashipu",
+     "x": 420,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "seat": "kneel",
+     "pose": "namaste",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "yrs",
+     "kind": "text",
+     "x": 640,
+     "y": 170,
+     "text": "ग्यारह हज़ार वर्ष",
+     "size": 70,
+     "z": 70,
+     "in": 0,
+     "out": 1
+    },
+    {
+     "id": "brahma",
+     "x": 880,
+     "y": 600,
+     "s": 0.85,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 1,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "असुरों ने हिरण्यकशिपु का राज्याभिषेक किया। और उसने भी ब्रह्मा की उपासना की। ग्यारह हज़ार वर्ष बाद, ब्रह्मा प्रकट हुए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "brahma",
+     "text": "तुम्हें क्या वरदान चाहिए?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "हिरण्यकशिपु ने अपने भाई का अंत देखा था। उसने एक द्वार खुला छोड़ा था, और मृत्यु वहीं से भीतर आई। वह यह भूल नहीं दोहराएगा। उसने शब्द-शब्द तौलकर अपना वरदान गढ़ा। एक ऐसा किला, जिसमें कोई द्वार न हो।",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "मुझे न कोई देवता मारे, न असुर। न मनुष्य, न पशु।",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "मेरी मृत्यु न दिन में हो, न रात में। न घर के भीतर, न बाहर। न आकाश में, न धरती पर।",
+     "cam": "ecu:hiranyakashipu"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "और न कोई धातु, पत्थर या लकड़ी का अस्त्र मुझे मार सके! हे विधाता, मुझे यही वरदान दीजिए!",
+     "camMove": true,
+     "cam": "full:hiranyakashipu"
+    },
+    {
+     "who": "brahma",
+     "text": "तथास्तु।",
+     "cam": "close:brahma"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "void"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "prahlad",
+   "set": "court",
+   "ctx": {
+    "wall": "#2a1a3a"
+   },
+   "els": [
+    {
+     "id": "hiranyakashipu",
+     "x": 380,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "prahlad",
+     "x": 840,
+     "y": 650,
+     "s": 0.7,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "serene",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "serene",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "serene",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "nagara"
+    },
+    {
+     "who": "narrator",
+     "text": "वरदान पाकर हिरण्यकशिपु अपने भाई से दुगुना अत्याचारी हो गया। उसने इंद्र को स्वर्ग से निकाल दिया, और तीनों लोक जीत लिए।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "पर उस कीचड़ में भी एक कमल खिला। उसका सबसे छोटा पुत्र। प्रह्लाद।",
+     "cam": "mid:prahlad"
+    },
+    {
+     "who": "narad",
+     "text": "और जानते हैं, उसे नारायण का नाम किसने सिखाया? जब वह माँ के गर्भ में था, तब से मैं ही उसे विष्णु की कथाएँ सुनाता था।",
+     "cam": "close:prahlad"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "विष्णु? वह तुच्छ प्राणी, जिसने मेरे भाई को मारने के लिए एक पशु का रूप लिया? उसका नाम तुम्हें किसने सिखाया?",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "who": "prahlad",
+     "text": "स्वयं भगवान विष्णु ने, पिताजी। वे शिक्षकों के शिक्षक हैं। शासकों के शासक।",
+     "cam": "close:prahlad"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "तुम्हारे जीवन का उद्देश्य क्या है?",
+     "cam": "ecu:hiranyakashipu"
+    },
+    {
+     "who": "prahlad",
+     "text": "भगवान विष्णु की आराधना।",
+     "cam": "close:prahlad"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "मैं तुम्हारे सामने खड़ा हूँ, और तुम उसकी स्तुति करते हो? तुम अपने पिता का अपमान कर रहे हो!",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "who": "prahlad",
+     "text": "मैं तो उनकी स्तुति कर रहा हूँ, जो हम सबके पिता हैं।",
+     "cam": "ecu:prahlad"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "ecu:hiranyakashipu",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "इसे मृत्युदंड दो!",
+     "cam": "close:hiranyakashipu"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "raksha",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "prahlad",
+     "x": 640,
+     "y": 650,
+     "s": 0.75,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "shield",
+     "kind": "glow",
+     "x": 640,
+     "y": 520,
+     "r": 220,
+     "color": "#bcd0ff",
+     "core": 0.5,
+     "z": 5,
+     "in": 0
+    },
+    {
+     "id": "g1",
+     "fig": "asuraguard",
+     "x": 330,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": -200,
+        "pose": "fear",
+        "emo": "fear",
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "g2",
+     "fig": "asuraguard",
+     "x": 950,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": 1500,
+        "pose": "fear",
+        "emo": "fear",
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 640,
+     "y": 420,
+     "z": 60,
+     "in": 1,
+     "out": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "पर यह असंभव निकला। सैनिकों ने उसे हाथियों से रौंदवाने की कोशिश की, साँपों से डसवाने की।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash"
+    },
+    {
+     "who": "narrator",
+     "text": "उसे चट्टान से धकेला, पर वह बच गया, मानो विष्णु की अदृश्य हथेलियों ने उसे थाम लिया हो। समुद्र में फेंका, तो लहरें उसे तट पर लौटा गईं।",
+     "camMove": true,
+     "cam": "at:640,500,1.3",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "narrator",
+     "text": "भोजन में विष मिलाया, तो वह अमृत बन गया। शस्त्र उसे छू नहीं सके। और हत्यारों ने उसे मारने से मना कर दिया।",
+     "cam": "close:prahlad",
+     "sfx": "magic"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "om"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "holika",
+   "set": "yajna",
+   "ctx": {},
+   "els": [
+    {
+     "id": "hiranyakashipu",
+     "x": 1050,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "out": 3
+    },
+    {
+     "id": "holika",
+     "x": 380,
+     "y": 650,
+     "s": 0.92,
+     "face": 1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sly",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "seat": "lotus",
+        "pose": "cradle",
+        "x": 470,
+        "t": 1
+       }
+      ],
+      "7": [
+       {
+        "emo": "fear",
+        "pose": "despair",
+        "t": 0.4
+       },
+       {
+        "o": 0,
+        "t": 3,
+        "d": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "prahlad",
+     "x": 520,
+     "y": 600,
+     "s": 0.6,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "namaste",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "4": [
+       {
+        "emo": "meditate",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "pyre",
+     "kind": "fire",
+     "x": 500,
+     "y": 640,
+     "size": 1,
+     "z": 10,
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "size": 3,
+        "t": 4
+       }
+      ],
+      "8": [
+       {
+        "size": 0.8,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "shield",
+     "kind": "glow",
+     "x": 520,
+     "y": 480,
+     "r": 160,
+     "color": "#bcd0ff",
+     "core": 0.7,
+     "z": 12,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "holika",
+     "text": "भैया, भूल गए? मुझे भी वरदान मिला है। आग मेरा शरीर नहीं जला सकती।",
+     "cam": "close:holika"
+    },
+    {
+     "who": "holika",
+     "text": "एक चिता तैयार कीजिए। मैं प्रह्लाद को गोद में लेकर बैठूँगी। वह जल जाएगा, और मैं बच जाऊँगी।",
+     "cam": "close:holika"
+    },
+    {
+     "who": "narrator",
+     "text": "चिता जली। प्रह्लाद समझ गया कि क्या होने वाला है। पर उसने विरोध में एक शब्द नहीं कहा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "fire"
+    },
+    {
+     "who": "prahlad",
+     "text": "वंदे विष्णु... वंदे विष्णु... वंदे विष्णु...",
+     "cam": "close:prahlad"
+    },
+    {
+     "who": "narrator",
+     "text": "लपटें ऊँची होती गईं, और प्रह्लाद का जाप और तेज़।",
+     "camMove": true,
+     "cam": "at:500,460,1.3",
+     "sfx": "fire",
+     "rumble": true
+    },
+    {
+     "who": "prahlad",
+     "text": "वंदे विष्णु... वंदे विष्णु... वंदे विष्णु...",
+     "cam": "ecu:prahlad"
+    },
+    {
+     "who": "narrator",
+     "text": "अब चिता से चीखें आने लगीं। पर वे प्रह्लाद की नहीं, होलिका की थीं। उसने वरदान का दुरुपयोग किया था। और दैवी शक्तियों ने उसका वरदान छीन लिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar",
+     "fire": true,
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "लपटें मंद हुईं। प्रह्लाद जीवित बैठा था। होलिका, भस्म हो चुकी थी।",
+     "cam": "mid:prahlad",
+     "sfx": "bell"
+    }
+   ],
+   "tint": [
+    "#2a0806",
+    0.25
+   ],
+   "music": "curse",
+   "amb": [
+    "fire"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "stambh",
+   "set": "court",
+   "ctx": {
+    "wall": "#2a1a3a"
+   },
+   "els": [
+    {
+     "id": "col",
+     "kind": "column",
+     "x": 760,
+     "y": 660,
+     "w": 80,
+     "h": 440,
+     "crack": 0,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "crack": 1,
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "hiranyakashipu",
+     "x": 420,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "hold",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "joy",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "x": 640,
+        "pose": "strike",
+        "t": 0.5
+       },
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "x": 380,
+        "pose": "fear",
+        "emo": "fear",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "prahlad",
+     "x": 980,
+     "y": 650,
+     "s": 0.7,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "serene",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "meditate",
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "hit",
+     "kind": "clash",
+     "x": 740,
+     "y": 420,
+     "z": 60,
+     "in": 6,
+     "out": 7
+    },
+    {
+     "id": "shine",
+     "kind": "rays",
+     "x": 760,
+     "y": 430,
+     "r": 800,
+     "n": 36,
+     "color": "#fff0b0",
+     "op": 0.4,
+     "z": -2,
+     "anim": "pop",
+     "inDur": 1,
+     "in": 8
+    },
+    {
+     "id": "narasimha",
+     "x": 760,
+     "y": 660,
+     "s": 1.15,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "anim": "materialize",
+     "inDur": 1.2,
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "gong"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "बहुत हो चुका! अब मैं अपने हाथों से तुम्हारा अंत करूँगा।",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "who": "prahlad",
+     "text": "यह तभी होगा, जब मेरे प्रभु चाहेंगे, पिताजी।",
+     "cam": "close:prahlad"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "तो बुलाओ अपने विष्णु को! क्या वह मुझे रोकने आएगा?",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "who": "prahlad",
+     "text": "उन्हें कहीं आने की आवश्यकता नहीं। वे हर जगह हैं। हर तत्त्व में। हर कोशिका में। आप में, मुझ में, और इस खंभे में भी।",
+     "cam": "close:prahlad"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "खंभे में? हा हा हा हा! तो मुझे भी दिखाओ!",
+     "camMove": true,
+     "cam": "two:hiranyakashipu,prahlad"
+    },
+    {
+     "who": "hiranyakashipu",
+     "text": "बुलाओ अपने भगवान को! मुझे भी उसे देखना है! उसकी...",
+     "cam": "close:hiranyakashipu"
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "camMove": true,
+     "cam": "at:760,440,1.2",
+     "sfx": "crack",
+     "rumble": true,
+     "shake": 12
+    },
+    {
+     "who": "narasimha",
+     "text": "ह्ह्ह्हा!",
+     "camMove": true,
+     "cam": "full:narasimha"
+    },
+    {
+     "who": "narrator",
+     "text": "खंभा बीच से फट गया, और भीतर से प्रकाश की लहर के साथ एक प्राणी निकला। न मनुष्य, न पशु। न देवता, न दानव। सबका मिश्रण। भयावह, फिर भी सम्मोहक।",
+     "camMove": true,
+     "cam": "full:narasimha"
+    },
+    {
+     "who": "narrator",
+     "text": "नृसिंह। आधा मनुष्य, आधा सिंह। दैत्य की मृत्यु की हर शर्त पूरी करने वाला रूप।",
+     "cam": "close:narasimha",
+     "sfx": "om"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "court",
+    "storm"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "dehri",
+   "set": "court",
+   "ctx": {
+    "wall": "#2a1a3a"
+   },
+   "els": [
+    {
+     "id": "dusk",
+     "kind": "glow",
+     "x": 640,
+     "y": 200,
+     "r": 600,
+     "color": "#ff9a4a",
+     "core": 0.4,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "narasimha",
+     "x": 640,
+     "y": 640,
+     "s": 1.15,
+     "face": 1,
+     "seat": "kneel",
+     "pose": "cradle",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "seat": "none",
+        "pose": "bless",
+        "emo": "calm",
+        "t": 1.2
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "hiranyakashipu",
+     "x": 650,
+     "y": 470,
+     "s": 0.85,
+     "face": 1,
+     "rot": -80,
+     "pose": "fear",
+     "emo": "fear",
+     "noShadow": true,
+     "z": 1,
+     "kind": "char",
+     "in": 0,
+     "out": 6,
+     "od": 0.2
+    },
+    {
+     "id": "fin",
+     "kind": "ring",
+     "x": 640,
+     "y": 460,
+     "r": 700,
+     "z": 60,
+     "in": 6
+    },
+    {
+     "id": "prahlad",
+     "x": 1040,
+     "y": 650,
+     "s": 0.7,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "serene",
+     "kind": "char",
+     "in": 8
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "नृसिंह ने दैत्य को बाँहों में भरा, और घसीटकर महल की दहलीज़ पर ले गए। अब वह न घर के भीतर था, न बाहर।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "यह गोधूलि की बेला थी। न दिन, न रात।",
+     "camMove": true,
+     "cam": "at:640,300,1.2"
+    },
+    {
+     "who": "narrator",
+     "text": "नृसिंह ने उसे अपनी गोद में लिटा लिया। अब वह न धरती पर था, न आकाश में। न जल में, न थल पर।",
+     "cam": "mid:narasimha"
+    },
+    {
+     "who": "narasimha",
+     "text": "तुझे वर मिला था, कि धातु, पत्थर या लकड़ी का कोई अस्त्र तुझे नहीं मारेगा। मैं इनमें से किसी का उपयोग नहीं करूँगा।",
+     "cam": "close:narasimha"
+    },
+    {
+     "who": "narasimha",
+     "text": "मेरे नख, तेरा अंत करेंगे!",
+     "cam": "ecu:narasimha"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "boom",
+     "roar": true,
+     "shake": 16,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "और जय-विजय का पहला जन्म, धरती पर समाप्त हुआ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "प्रह्लाद भगवान के सामने नतमस्तक हो गया। विष्णु ने अपने भक्त की रक्षा कर ली थी।",
+     "cam": "two:narasimha,prahlad",
+     "sfx": "bells"
+    },
+    {
+     "who": "narasimha",
+     "text": "उठो, प्रह्लाद। जिसने भय में भी मेरा नाम नहीं छोड़ा, उसे मुझसे कभी कोई अलग नहीं कर सकता।",
+     "cam": "close:narasimha"
+    }
+   ],
+   "tint": [
+    "#5a2a10",
+    0.3
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 700,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "देखा आपने? एक ने हर पशु का नाम गिनाया, और एक छूट गया। दूसरे ने हर द्वार बंद किया, और भगवान दहलीज़ से आ गए।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "वरदान अवसर है, नारायण। ढाल नहीं। जो उसे अहंकार का किला बनाता है, उसी किले में घिर जाता है।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और जय-विजय? अभी उनके दो जन्म बाकी हैं। अगली बार वे लौटेंगे। दस सिर लेकर।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "पर पहले, स्वर्ग पर एक नया संकट आने वाला है। तारकासुर। और उसे केवल शिव का पुत्र मार सकता है। पर शिव? वे तो अकेले हैं...",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next25",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले अध्याय में: तारकासुर का आतंक, पार्वती की तपस्या, कामदेव का भस्म होना, और शिव के पुत्र कार्तिकेय का जन्म।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "तारकासुर · पार्वती · कार्तिकेय",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end26",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय चार · अवतार",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 8, 25, 26 और 27)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,335 @@
+title: लंका
+episode: 10
+slug: e10-lanka
+kicker: अध्याय दस
+sub: कुबेर, रावण और सीता
+logline: सोने की नगरी जो एक भाई ने दूसरे से छीन ली, दस सिर काटकर माँगा गया शिवलिंग और देवताओं की एक शरारत, सीता के चार शाप, और वह छाया जिसे रावण कभी पहचान नहीं पाया।
+stories: 71, 72, 73, 74
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 71, 72, 73 और 74
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! याद है, वैकुंठ के वे दो द्वारपाल? जय और विजय? जिन्हें शाप मिला था, कि वे तीन जन्म असुर बनकर लेंगे?
+NARAD (sly, pose=open) [mid:narad]: पहले जन्म में वे हिरण्याक्ष और हिरण्यकशिपु थे। अब, दूसरा जन्म। एक के दस सिर हैं, और दूसरा छह महीने सोता है।
+NARAD (calm) [close:narad]: आज की कथा में एक सोने की नगरी है, एक शिवलिंग है, और एक स्त्री है, जिसे संसार जितना जानता है, उतना ही नहीं जानता।
+NARAD (smile) [ecu:narad]: और हाँ। इस कथा में मैं भी हूँ। एक बहुत छोटी-सी, बहुत महत्त्वपूर्ण भूमिका में।
+
+== TITLE | dur=7.5 | kicker=अध्याय दस | title=लंका | sub=कुबेर, रावण और सीता
+
+== CHAPTER | kicker=कथा इकहत्तर | title=रावण का लंका पर अधिकार
+
+# ---------------------------------------------------------------- Kubera's boon
+== SCENE kuber | set=lotusSky time=day music=brahma amb=wind trans=mandala
+@ brahma x=880 y=600 s=0.95 face=-1 pose=bless emo=smile fly=1 noShadow=true
+@ kuber x=380 y=650 s=0.95 face=1 pose=namaste emo=calm
+BEAT 1 [wide] (sfx=om)
+NARRATOR [~wide]: ब्रह्मा के पौत्र ऋषि विश्रवा की दो पत्नियाँ थीं। इलविदा से यक्ष कुबेर जन्मा। और राक्षसी कैकसी से चार संतानें। रावण, कुंभकर्ण, विभीषण और शूर्पणखा।
+BRAHMA (smile) [close:brahma]: तुम्हारी क्या इच्छा है, कुबेर?
+KUBER (joy, pose=open) [close:kuber]: स्वर्ण! असीम स्वर्ण। मैं ऋषि का पुत्र हूँ, पर राजा बनना चाहता हूँ। सोने से बनी नगरी का राजा।
+BRAHMA (calm, pose=point) [mid:brahma]: ऐसी एक ही जगह है। लंका।
++ lanka kind=glow x=640 y=380 r=420 color=#ffd27a core=0.5 z=-3 anim=pop
++ gold kind=sparkle x=640 y=380 n=50 r=500 z=-2
+BRAHMA (serene) [~wide] (sfx=sparkle): ठोस सोने की बनी। जब समुद्र में उसकी परछाईं जगमगाती है, तो लगता है जैसे अग्नि, जल का उपहास कर रही हो। विश्वकर्मा ने उसे राक्षस माली और सुमाली के लिए बनाया था।
+KUBER (fear) [close:kuber]: सुमाली? माता कैकसी के पिता?
+BRAHMA (calm) [close:brahma]: हाँ। पर श्रीहरि ने उन्हें वहाँ से भगा दिया। लंका को नया राजा चाहिए। और मैं तुम्हें लंकेश्वर घोषित करता हूँ।
+
+# ---------------------------------------------------------------- the mother's poison
+== SCENE kaikasi | set=court wall=#1a0a1a music=tension amb=court trans=mandala
+@ kaikasi x=860 y=650 s=1 face=-1 pose=curse emo=rage
+@ ravana x=380 y=650 s=1.05 face=1 pose=hips emo=angry
+@ kumbhakarna x=180 y=650 s=1.15 face=1 pose=rest emo=calm z=-1
+@ vibhishana x=560 y=650 s=0.9 face=1 pose=namaste emo=fear z=1
+BEAT 1 [wide] (sfx=thunder)
+KAIKASI (rage, pose=curse) [close:kaikasi] (sfx=thunder): लज्जा आनी चाहिए तुम्हें! एक यक्ष, लंकेश्वर बन गया! वह नगरी, जो कभी मेरे पिता की थी! तुम असुर जाति पर कलंक हो!
+VIBHISHANA (fear, pose=namaste) [close:vibhishana]: पर माँ, वह हमारा भाई है। क्या हमें उसकी प्रसन्नता में प्रसन्न नहीं होना चाहिए?
+KAIKASI (angry, pose=point) [close:kaikasi]: भाई नहीं, सौतेला भाई! वह तुम्हें आधे मन से प्रेम करता है। रावण, क्या तुम यह होने दोगे?
+RAVANA (rage) [close:ravana] (sfx=roar, shake=6): कभी नहीं!
+KAIKASI (rage, pose=raise) [~close:kaikasi] (sfx=fire): तो लंका वापस लो! असुरों की तरह लड़ो! श्वास से आग बरसाओ, गंधक की वर्षा करो!
+VIBHISHANA (sad) [close:vibhishana]: एक माँ ऐसा कैसे कह सकती है? आपने हमें दूध पिलाया है, या लहू?
+
+# ---------------------------------------------------------------- the conquest
+== SCENE vijay | set=ocean time=dusk music=battle amb=ocean,storm trans=cut
++ city kind=glow x=1040 y=440 r=260 color=#ffd27a core=0.7 z=-3
++ spires kind=sparkle x=1040 y=440 n=30 r=200 z=-2
+@ kuber x=1040 y=650 s=0.9 face=-1 pose=fear emo=sad
+@ ravana x=360 y=650 s=1.1 face=1 pose=strike emo=rage
+@ kumbhakarna x=180 y=650 s=1.2 face=1 pose=raise emo=rage z=-1
++ waterfg kind=water x=640 y=680 w=1500 h=100 color=#cfd8ea crest=#4a5f9e op=0.9 z=40
+BEAT 1 [wide] (sfx=roar, nagara)
+NARRATOR [~wide] (sfx=clash, roar): विभीषण ने लड़ने से मना कर दिया। पर रावण और कुंभकर्ण ने कुबेर के द्वीप पर आक्रमण कर दिया।
++ red kind=water x=640 y=680 w=1500 h=100 color=#a8303a crest=#5a0a1a op=0 z=41
+> red op=0.8 t=3
+NARRATOR [~close:kuber] (sfx=boom, shake=6): कुबेर युद्ध के लिए तैयार नहीं था। उसके मन में अपने भाइयों के लिए स्नेह था। और जब समुद्र लाल होने लगा, उसने आत्मसमर्पण कर दिया।
+> kuber x=1500 t=3
+> ravana x=900 pose=raise emo=joy t=2.5
+NARRATOR [~full:ravana] (sfx=conch, nagara): यक्ष-ध्वज गिरा, और असुर-पताका फहरा उठी। लंका अब रावण की थी।
+
+# ---------------------------------------------------------------- the god of wealth
+== SCENE dhanpati | set=lotusSky time=night music=sorrow amb=wind trans=fade
+@ kuber x=420 y=650 s=0.95 face=1 pose=despair emo=sad
+@ brahma x=880 y=580 s=0.9 face=-1 pose=abhaya emo=calm fly=1 noShadow=true
+BEAT 1 [wide] (sfx=wind)
+KUBER (sad, pose=despair) [close:kuber]: जो कुछ परिश्रम से पाया था, सब खो दिया। क्या मैं लंका के योग्य नहीं था?
+BRAHMA (calm) [close:brahma]: तुम उससे भी अधिक के योग्य हो। पर यह विजय पहले से तय थी। रावण दरअसल जय है, और कुंभकर्ण, विजय। वे श्रीहरि के हाथों मुक्ति पाने के लिए, दूसरी बार जन्मे हैं।
+BRAHMA (sly) [close:brahma]: दस सिरों से बुद्धि नहीं बढ़ती, कुबेर। मेरे चार सिर ज्ञान के प्रतीक हैं। रावण के दस सिर बस इतना बताते हैं, कि उसका अहंकार दस गुना है।
+BRAHMA (calm, pose=point) [mid:brahma]: उसने तुम्हारा धन छीना है। पर उसकी मृत्यु उसके हाथों होगी, जिसने सारे धन-वैभव का त्याग कर दिया होगा।
+> brahma pose=bless emo=smile t=0.6
++ gold kind=sparkle x=420 y=420 n=40 r=260 z=40
++ kg kind=glow x=420 y=420 r=320 color=#ffd27a core=0.5 z=-2 anim=pop
+BRAHMA (smile, pose=bless) [~full:kuber] (sfx=bells, sparkle): तुम्हारे हृदय में शत्रु के लिए भी करुणा है। इसलिए आज से तुम धन के देवता हो।
+KUBER (smile, pose=namaste) [close:kuber]: और मैं सबको याद दिलाता रहूँगा, परमपिता, कि धन कितनी जल्दी अपना घर बदलता है।
+
+== CHAPTER | kicker=कथा बहत्तर | title=देवताओं का रावण से छल
+
+# ---------------------------------------------------------------- ten heads
+== SCENE dashsheesh | set=kailash time=night music=curse amb=fire,wind trans=cut tint=#2a0a0a,0.3
++ pyre kind=fire x=880 y=640 size=2.6 z=-1
+@ ravana x=440 y=650 s=1.1 face=1 pose=raise emo=rage item=sword
+BEAT 1 [wide] (sfx=fire, rumble)
+NARRATOR [~wide] (sfx=fire): कैलाश की बर्फ पिघल रही थी। ऊपर एक विशाल चिता धधक रही थी। रावण ने चंद्रहास उठाई, वह तलवार जो शिव ने उसे तांडव-स्तोत्र से प्रसन्न होकर दी थी।
+> ravana heads10=8 t=0.1 d=1
+> ravana heads10=6 t=0.1 d=2.2
+> ravana heads10=4 t=0.1 d=3.4
+> ravana heads10=2 t=0.1 d=4.6
+> ravana heads10=0 t=0.1 d=5.8
++ flare kind=ring x=880 y=520 r=300 color=#ff6a2a z=60 period=1.2
+NARRATOR [~close:ravana] (sfx=whoosh, fire, whoosh, fire): उसने अपना एक सिर काटकर अग्नि में अर्पित कर दिया। फिर दूसरा। फिर तीसरा। एक के बाद एक, नौ सिर लपटों में चले गए।
+- flare
+NARRATOR [ecu:ravana] (sfx=heartbeat): और जैसे ही उसने अंतिम सिर पर तलवार रखी...
+SHIVA (angry) [~wide] (sfx=thunder, flash): बहुत हुआ!
+@ shiva x=880 y=600 s=1 face=-1 pose=abhaya emo=calm anim=materialize inDur=1 z=2
++ sg kind=glow x=880 y=360 r=320 color=#bcd8ff core=0.6 z=1 anim=pop
+- pyre
+SHIVA (calm) [close:shiva]: तुम्हें क्या चाहिए, रावण?
+RAVANA (joy, pose=namaste) [close:ravana]: आप, प्रभु! आप मेरे साथ लंका चलकर रहें।
+SHIVA (smile) [close:shiva]: पर्वत से सागर तक? तुमने पहले भी एक बार यह प्रयास किया था।
+RAVANA (sad) [close:ravana]: हाँ। मैंने पूरा कैलाश उठा लिया था। और आपने अपने पैर के अँगूठे से उसे दबा दिया। मैं कुचलते-कुचलते बचा।
+RAVANA (calm, pose=namaste) [close:ravana]: पर आज मैं आपको नहीं ले जा रहा। मुझे केवल आपका प्रतीक चाहिए। कैलाश का शिवलिंग। मैं उसे लंका के तट पर स्थापित करूँगा, जहाँ सागर की लहरें सदा उसका अभिषेक करेंगी।
+> shiva pose=bless t=0.6
+> ravana heads10=9 t=1.5
++ heads kind=ring x=440 y=320 r=400 color=#bcd8ff z=60
+SHIVA (calm, pose=bless) [close:shiva] (sfx=om, swell): मेरा आशीर्वाद तुम्हारे साथ है। मैं तुम्हारी इच्छा पूरी करता हूँ, और तुम्हारे नौ सिर भी लौटाता हूँ।
+> ravana item=linga pose=lift emo=joy t=0.6
+SHIVA (sly, pose=point) [close:shiva] (sfx=bell): केवल एक शर्त है। लंका पहुँचने तक इसे धरती पर मत रखना। यदि इसने कहीं भी धरती को छुआ, तो यह वहीं स्थापित हो जाएगा। फिर तुम इसे उठा नहीं पाओगे।
+
+# ---------------------------------------------------------------- the gods conspire
+== SCENE shadyantra | set=lotusSky time=day music=joy amb=wind trans=mandala
+@ indra x=640 y=600 s=0.9 face=1 pose=point emo=sly fly=1 noShadow=true
+@ vayu x=380 y=600 s=0.8 face=1 pose=open emo=fear fly=1 noShadow=true z=-1
+@ yamaraj x=200 y=620 s=0.85 face=1 pose=hips emo=angry fly=1 noShadow=true z=-2
+@ agni x=880 y=600 s=0.85 face=-1 pose=open emo=sly fly=1 noShadow=true
+@ varuna x=1080 y=600 s=0.85 face=-1 pose=rest emo=calm fly=1 noShadow=true z=-1
+BEAT 0.8 [wide] (sfx=bells)
+NARRATOR [~wide]: रावण बड़े-बड़े डग भरता दक्षिण की ओर चल पड़ा। शिवलिंग भारी था, पर उसकी गति धीमी नहीं हुई। और स्वर्ग में, देवता चिंतित होकर इकट्ठे हो गए।
+VAYU (fear) [close:vayu]: लगता है, रावण सफल हो जाएगा।
+INDRA (angry, pose=point) [close:indra]: यदि वह शिवलिंग लंका में स्थापित हो गया, तो वह द्वीप अजेय हो जाएगा!
+YAMARAJ (angry) [close:yamaraj]: किसी भी तरह, उससे शिवलिंग नीचे रखवाना होगा। पर कैसे?
+AGNI (sly) [close:agni]: जल तो शरीर के दूसरे हिस्सों से भी निकल सकता है। वरुण को पता होगा।
+VARUNA (fear) [close:varuna]: मुझे?
+AGNI (sly, pose=point) [close:agni]: क्या तुम जल के स्वामी नहीं हो? और जब पेट में बादल घुमड़ते हैं, तो उन्हें बरसना ही पड़ता है।
+> varuna emo=joy t=0.4
+VARUNA (joy) [close:varuna] (sfx=splash): बहुत बढ़िया! देखते हैं, लंकापति कब तक रोक पाता है!
+DEVAS (joy) [~wide] (sfx=manjira): हा हा हा हा!
+
+# ---------------------------------------------------------------- the long walk
+== SCENE yatra | set=glade time=day music=tension amb=wind,birds trans=cut
+@ ravana x=200 y=650 s=1 face=1 pose=lift emo=calm item=linga walk=1
+BEAT 0.4 [wide] (sfx=rumble)
+> ravana x=700 t=4
+NARRATOR [~wide] (sfx=splash): वरुण ने अँगुलियाँ घुमाईं। और रावण को, अचानक, बड़े ज़ोर की लघु शंका लगी।
+> ravana emo=fear t=0.4
+> ravana x=900 t=1.2
+NARRATOR [~close:ravana] (sfx=heartbeat): उसने चाल तेज़ कर दी। फिर धीमी की। फिर रुका। फिर सँभलकर आगे बढ़ा। पर भीतर की नदी उफन रही थी।
+RAVANA (fear) [ecu:ravana] (sfx=heartbeat): मुझे रुकना पड़ेगा। पर शिवलिंग? यह तो धरती पर रखा नहीं जा सकता!
+NARRATOR [~wide] (sfx=veena): तभी वीणा की ध्वनि सुनाई दी। कोई चिड़िया की तरह गाता हुआ उसकी ओर आ रहा था। भगवा चोला। उलझे केश।
+
+# ---------------------------------------------------------------- Narad's little part
+== SCENE narad | set=glade time=day music=narad amb=birds trans=cut
+@ ravana x=420 y=650 s=1 face=1 pose=lift emo=fear item=linga
+@ narad x=1500 y=640 s=0.95 face=-1 pose=veena emo=smile
+> narad x=900 t=2.5
+RAVANA (fear) [~two:ravana,narad] (sfx=veena): हे मधुर गायक! हे देवर्षि! कृपया रुकिए! मुझे आपकी सहायता चाहिए!
+NARAD (sly) [close:narad]: लंकापति? कहिए, क्या सेवा करूँ?
+RAVANA (fear, pose=offer) [close:ravana]: मैं फटने को हूँ! मेरे लौटने तक यह शिवलिंग पकड़ लीजिए। और ध्यान रहे, यह धरती को न छुए!
+NARAD (sly) [close:narad]: मैं इसे उठा पाऊँगा? माँस और रक्त का शरीर दुर्बल होता है, लंकापति। देवत्व का भार बहुत देर नहीं सँभाल पाता।
+RAVANA (fear) [close:ravana]: आप शक्तिशाली हैं, देवर्षि! मुझे पूरा विश्वास है!
+> ravana item=none t=0.1
+> narad item=linga pose=lift t=0.1
+> ravana x=-200 t=1.2 d=0.2
+NARRATOR [~close:narad] (sfx=whoosh): रावण पेड़ों के पीछे भागा। और जैसे ही वह आँखों से ओझल हुआ, नारद ने आकाश की ओर देखा, और मुस्कुराए।
+DEVAS (joy) [~wide] (sfx=bells): जल्दी करो! जल्दी करो!
+VARUNA (sly) [~wide]: कोई जल्दी नहीं। मैंने प्रबंध किया है, कि लंकापति को अभी बहुत समय लगेगा।
+> narad pose=namaste item=none t=0.6
++ lingam kind=glow x=900 y=600 r=160 color=#bcd8ff core=0.8 z=10 anim=pop
++ settle kind=ring x=900 y=600 r=400 color=#bcd8ff z=60
+NARRATOR [~close:narad] (sfx=om, rumble): नारद ने शिवलिंग को अपने माथे से छुआ, और धीरे से, धरती पर रख दिया।
+DEVAS (joy) [~wide] (sfx=sparkle): बच गए!
+@ ravana x=-200 y=650 s=1 face=1 pose=rest emo=calm
+> ravana x=380 t=1.5
+NARRATOR [~wide] (sfx=heartbeat): और रावण लौट आया।
+> ravana emo=rage pose=fear t=0.3
+RAVANA (rage) [ecu:ravana] (sfx=roar, thunder, shake=10): नारद!
+NARAD (smile, pose=open) [close:narad]: मैंने कहा था, लंकापति। माँस और रक्त का शरीर, बहुत दुर्बल होता है। नारायण, नारायण!
+
+== CHAPTER | kicker=कथा तिहत्तर | title=सीता के चार शाप
+
+# ---------------------------------------------------------------- the riverbank
+== SCENE phalgu | set=glade time=dawn music=sorrow amb=river,birds trans=mandala
++ river kind=water x=640 y=660 w=1500 h=130 color=#dff1f8 crest=#3d8fc4 z=20
+@ rama x=520 y=650 s=0.95 face=1 pose=despair emo=sad seat=kneel
+@ lakshmana x=340 y=650 s=0.9 face=1 pose=despair emo=sad seat=kneel z=-1
+@ sita x=880 y=650 s=0.9 face=-1 pose=cradle emo=sad
+BEAT 1 [wide] (sfx=river)
+NARRATOR [~wide]: विष्णु ने राम के रूप में अवतार लिया था। शेषनाग लक्ष्मण बने, और लक्ष्मी, सीता। सौतेली माँ कैकेयी के षड्यंत्र से, तीनों चौदह वर्ष के वनवास में थे।
+NARRATOR [two:rama,lakshmana] (sfx=bell): किसी कठिनाई में उनकी आँखें नहीं भीगी थीं। पर उस दिन, अयोध्या से समाचार आया। राजा दशरथ नहीं रहे।
+SITA (sad, pose=open) [close:sita]: रघुनंदन, आप सबसे बड़े हैं। नदी के किनारे ही पिंडदान कर देना चाहिए।
+> rama seat=none pose=rest t=0.6
+> lakshmana seat=none t=0.6
+> rama x=-200 t=3 d=0.6
+> lakshmana x=-300 t=3 d=0.8
+NARRATOR [~close:sita] (sfx=wind): दोनों भाई सामग्री जुटाने निकले। घंटे बीत गए। सूर्य चढ़ता गया, और दोपहर से पहले अनुष्ठान पूरा होना था।
+
+# ---------------------------------------------------------------- Sita performs the rite
+== SCENE pinddaan | set=glade time=day music=dawn amb=river,birds trans=cut
++ river kind=water x=640 y=660 w=1500 h=130 color=#dff1f8 crest=#3d8fc4 z=20
+@ sita x=560 y=650 s=0.95 face=1 pose=offer emo=meditate
++ diya kind=diya x=720 y=620 z=21
+@ gau kind=creature creature=cow x=1040 y=690 s=0.85 face=-1 z=-1
+@ ketaki kind=creature creature=ketaki x=300 y=640 s=0.8 face=1 z=-1
+BEAT 1 [wide] (sfx=bell)
+NARRATOR [~wide] (sfx=splash): सीता ने फल्गु में स्नान किया, गाय का दूध निकाला, केतकी का फूल और बरगद का एक पत्ता तोड़ा। फिर दीपक जलाया, और अर्पण किया।
++ sky kind=rays x=640 y=0 r=800 n=30 color=#fff0b0 op=0.3 z=-4 anim=pop
+DASHARATH (calm) [~wide] (sfx=om, swell): तुम्हें आशीर्वाद, सीता। मुझे यह स्वीकार है।
+SITA (fear) [close:sita]: पिताजी?
+DASHARATH (smile) [~wide]: हाँ, पुत्री। मैं संतुष्ट हुआ।
+SITA (sad) [close:sita]: पर आपके दोनों पुत्र यहाँ नहीं हैं। वे विश्वास नहीं करेंगे।
+DASHARATH (calm) [~wide] (sfx=bell): तुम्हारे पाँच साक्षी हैं। फल्गु नदी, अग्नि, गाय, केतकी, और बरगद। ये सब गवाही देंगे।
+
+# ---------------------------------------------------------------- five witnesses
+== SCENE sakshi | set=glade time=dusk music=tension amb=river,wind trans=mandala
++ river kind=water x=640 y=660 w=1500 h=130 color=#dff1f8 crest=#3d8fc4 z=20
+@ rama x=560 y=650 s=0.95 face=1 pose=point emo=calm
+@ lakshmana x=380 y=650 s=0.9 face=1 pose=hold emo=calm z=-1
+@ sita x=1080 y=650 s=0.9 face=-1 pose=namaste emo=calm
+@ phalgu x=780 y=600 s=0.75 face=-1 pose=rest emo=sly fly=1 noShadow=true z=21
+BEAT 1 [wide] (sfx=bell)
+NARRATOR [~wide]: भाई लौटे, और सीता के दावे पर विश्वास नहीं कर पाए। इतने कम साधनों में अनुष्ठान? तब सीता ने साक्षी बुलाए।
+RAMA (calm, pose=point) [close:rama]: बताओ, हे पूज्य फल्गु। क्या मेरी पत्नी ने अनुष्ठान पूरा किया?
+PHALGU (sly) [close:phalgu]: नहीं। उन्होंने नहीं किया।
+- phalgu
+@ gau kind=creature creature=cow x=820 y=690 s=0.8 face=-1
+RAMA (calm) [close:rama]: बताओ, हे पवित्र गाय?
+GAU (sly) [close:gau]: नहीं। उन्होंने नहीं किया।
+- gau
++ fire kind=fire x=820 y=640 size=1.2 z=10
+RAMA (calm) [close:rama]: बताओ, हे पावन अग्नि?
+AGNI (sly) [~close:rama] (sfx=fire): नहीं। उन्होंने नहीं किया।
+- fire
+@ ketaki kind=creature creature=ketaki x=820 y=640 s=0.8 face=-1
+RAMA (calm) [close:rama]: बताओ, हे सुगंधित केतकी?
+KETAKI (sly) [close:ketaki]: नहीं, नहीं! उन्होंने नहीं किया!
+- ketaki
++ bargad kind=glow x=820 y=380 r=240 color=#9ad08a core=0.5 z=-2 anim=pop
+RAMA (calm) [close:rama]: और तुम, हे आदरणीय बरगद?
+BARGAD (calm) [~wide] (sfx=wind): हाँ। उन्होंने अनुष्ठान पूर्ण किया। आपके पिता संतुष्ट थे।
+SITA (sad) [close:sita]: स्वामी, क्या आपको मुझ पर विश्वास नहीं है?
+RAMA (sad) [close:rama]: मुझे तो है। पर शायद दूसरों को न हो।
+NARRATOR [~wide] (sfx=bell): राम ने स्वयं अनुष्ठान फिर शुरू किया। और दशरथ की आवाज़ फिर गूँजी।
+DASHARATH (angry) [~wide] (sfx=thunder): तुम मुझे फिर क्यों बुला रहे हो? सीता यह कर चुकी है। राम, तुम किस पर विश्वास करोगे? दूसरों पर, या अपनी पत्नी पर?
+
+# ---------------------------------------------------------------- the four curses
+== SCENE chaar_shaap | set=glade time=night music=curse amb=wind,river trans=cut
+@ sita x=640 y=650 s=1 face=1 pose=curse emo=angry halo=true
++ sg kind=glow x=640 y=380 r=360 color=#ffd27a core=0.4 z=-3 anim=pop
+BEAT 1 [wide] (sfx=thunder)
+NARRATOR [~wide]: दोनों भाइयों ने क्षमा माँगी। सीता ने उन्हें क्षमा कर दिया। पर चारों साक्षियों को नहीं।
+SITA (angry, pose=curse) [close:sita] (sfx=thunder): केतकी, तुम नहीं बदलीं। पहले ब्रह्मा के लिए झूठ बोला, आज फिर। तुम पूजा के योग्य नहीं रहोगी!
+SITA (angry) [close:sita] (sfx=thunder): फल्गु, तुम धरती पर नहीं बहोगी। लज्जा से मुँह छिपाकर, धरती के नीचे बहोगी!
+SITA (angry) [close:sita] (sfx=fire): अग्निदेव, अब से तुम्हें जो भी अर्पित होगा, शुद्ध या अशुद्ध, तुम्हें सब खाना पड़ेगा!
+SITA (angry) [close:sita] (sfx=thunder): और गाय, तुम्हारा मुख अब से अशुद्ध माना जाएगा!
+> sita emo=smile pose=bless t=0.6
++ green kind=glow x=640 y=380 r=420 color=#9ad08a core=0.4 z=-4 anim=pop
+SITA (smile, pose=bless) [mid:sita] (sfx=sparkle): हे बरगद, केवल तुमने सत्य कहा। तुम्हारे पत्ते कभी नहीं झड़ेंगे। तुम सदा हरे रहोगे।
+@ rama x=1000 y=650 s=0.95 face=-1 pose=rest emo=sad
+> sita emo=sad pose=open t=0.6
+SITA (sad, pose=open) [close:sita]: रघुनंदन, मुझे डर लग रहा है। आपने उन चारों पर भरोसा किया, मुझ पर नहीं। कल यदि संसार फिर मेरा अपमान करे, तो क्या आप मेरे साथ खड़े रहेंगे?
+RAMA (sad) [ecu:rama] (sfx=heartbeat): मैं तो रहूँगा। पर संभव है, दूसरे न रहें।
+
+== CHAPTER | kicker=कथा चौहत्तर | title=माया सीता
+
+# ---------------------------------------------------------------- the line
+== SCENE rekha | set=glade time=day music=tension amb=wind,birds trans=mandala
++ line kind=glow x=720 y=660 r=260 color=#ff8a3a core=0.2 z=-1
+@ mayasita x=560 y=650 s=0.95 face=1 pose=offer emo=calm
+@ bhikshu fig=durvasa x=920 y=650 s=0.95 face=-1 pose=offer emo=sly item=kamandal
+BEAT 1 [wide] (sfx=heartbeat)
+NARRATOR [~wide]: कुटिया की खिड़की से, दो आँखें बाहर देख रही थीं। रेखा के इस पार एक स्त्री। उस पार, एक भिक्षु।
+NARRATOR [two:mayasita,bhikshu] (sfx=magic): बाण की नोक से खींची वह रेखा, अग्नि की एक अदृश्य दीवार थी। स्त्री भिक्षा देना चाहती थी। भिक्षु कह रहा था, रेखा के बाहर आओ।
+NARRATOR [~close:mayasita] (sfx=heartbeat): वह रेखा पार करेगी? या नहीं?
+> mayasita x=760 t=1.5
+- bhikshu
+@ ravana x=920 y=650 s=1 face=-1 pose=reach emo=rage anim=materialize inDur=0.6
++ burst kind=ring x=920 y=400 r=600 color=#ff3a2a z=60
+BEAT 1.4 [wide] (sfx=roar, thunder, shake=8, flash)
+> ravana x=1500 t=2
+> mayasita x=1600 t=2 d=0.1
+NARRATOR [~wide] (sfx=whoosh): भिक्षु असुर बन गया। उसने स्त्री को पकड़ा, और घसीटता ले गया। रेखा ने उसे बचाया नहीं।
+
+# ---------------------------------------------------------------- the shadow
+== SCENE chhaya | set=temple time=night music=devi amb=fire trans=fade
++ ring kind=fire x=900 y=640 size=2 z=-1
+@ sita x=440 y=650 s=1 face=1 pose=rest emo=calm
+@ agni x=880 y=650 s=0.95 face=-1 pose=open emo=sad
+BEAT 1 [wide] (sfx=fire)
+AGNI (sad) [close:agni]: सीता।
+SITA (calm) [close:sita]: वह चली गई, अग्निदेव। रावण उसे ले गया।
+SITA (fear) [close:sita]: उसे पता नहीं चलेगा? कि वह मैं नहीं हूँ? कि वह माया सीता है, मेरी छाया, जिसे आपने गढ़ा?
+AGNI (calm, pose=open) [mid:agni]: नहीं। वह छद्म रूप में आया था, और छद्म रूप ही ले गया। संसार यही समझेगा कि रावण ने आपका हरण किया। पर सत्य केवल आप जानती हैं। आप, और देवता।
+SITA (sad, pose=open) [close:sita]: संसार कहेगा, सीता इसलिए फँसी क्योंकि उसने रेखा लाँघी। पर क्या उसने अतिथि का सम्मान नहीं किया? क्या उसने एक धर्म निभाने के लिए, दूसरा नहीं तोड़ा? उसे किसकी बात माननी चाहिए थी? रावण की, या लक्ष्मण की?
+NARRATOR [~close:agni] (sfx=fire): अग्निदेव मौन रहे।
+AGNI (calm) [close:agni]: रावण के अंत तक, आपको इन लपटों में छिपना होगा। जब राम माया सीता को मुक्त करेंगे, तो उसे अग्नि से गुज़रना होगा।
+SITA (angry) [close:sita]: क्यों?
+AGNI (sad) [close:agni]: यह सिद्ध करने के लिए, कि वह पवित्र है।
+SITA (sad) [ecu:sita] (sfx=heartbeat): सती अग्नि में इसलिए गईं, क्योंकि सबने उनके पति को अयोग्य कहा। और सीता को अग्नि में इसलिए जाना होगा, ताकि सिद्ध हो, कि वह स्वयं योग्य है।
+> sita x=900 t=2.5
+> sita o=0 t=1 d=2
++ swallow kind=ring x=900 y=500 r=400 color=#ffb070 z=60
+NARRATOR [~wide] (sfx=fire, swell): और सीता, लपटों में समा गईं।
+
+# ---------------------------------------------------------------- the exchange
+== SCENE agnipariksha | set=temple time=day music=devi amb=fire,court trans=mandala
++ pyre kind=fire x=640 y=660 size=3 z=5
+@ rama x=1040 y=650 s=0.95 face=-1 pose=rest emo=sad
+@ mayasita x=640 y=640 s=0.95 face=1 pose=namaste emo=calm z=6
+BEAT 1 [wide] (sfx=fire, conch)
+NARRATOR [~wide]: कई महीने बाद, विनिमय पूरा हुआ। रावण मर चुका था, कुंभकर्ण भी। जय और विजय का दूसरा जन्म समाप्त हो गया था।
+> mayasita o=0 t=1.5
+@ sita x=640 y=640 s=0.95 face=1 pose=namaste emo=serene anim=materialize inDur=2 z=6
+NARRATOR [~close:sita] (sfx=swell): माया सीता अग्नि में गई, और सीता बाहर आईं। और राम ने उन्हें गले से लगा लिया।
+MAYASITA (sad) [~wide] (sfx=magic): मुझे आशा है, वे अब उस पर कभी अविश्वास नहीं करेंगे। सबके सामने अपनी पवित्रता सिद्ध करना, जब पति असहाय खड़ा देख रहा हो। इससे बड़ी लज्जा और क्या होगी?
+AGNI (sad) [~wide] (sfx=fire): हो सकती है। इससे भी बड़ी। द्वापर में आप फिर अग्नि से जन्म लेंगी। याज्ञसेनी कहलाएँगी। पर संसार आपको याद रखेगा, द्रौपदी के नाम से।
+MAYASITA (fear) [~wide]: पर उसमें लज्जा की क्या बात है?
+AGNI (sad) [~close:sita] (sfx=heartbeat): आप देखेंगी। हम सब देखेंगे।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night trans=fade
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1.2 [wide] (sfx=veena)
+NARAD (sly) [mid:narad]: हाँ, वह शिवलिंग मैंने ही रखा था। आज भी वह वहीं है, जहाँ मैंने रखा। देवघर में। बैद्यनाथ।
+NARAD (calm, pose=open) [close:narad]: पर आज की कथा मेरी नहीं थी। आज की कथा उस प्रश्न की थी, जो सीता ने पूछा। आप किस पर विश्वास करेंगे? दूसरों पर, या उस पर, जो आपके साथ खड़ी है?
+NARAD (smile) [ecu:narad]: अगली बार, युग बदलता है। मथुरा का एक कारागार, एक बरसती रात, और एक बालक, जो टोकरी में यमुना पार करता है।
+BEAT 1.5 [~close:narad] (sfx=veena)
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=कृष्ण जन्म · कालिया · गोवर्धन
+NARRATOR: अगले अध्याय में: कंस का कारागार, यमुना का फणधारी नाग, और एक अँगुली पर उठा पर्वत।
+
+== END | dur=13 | title=महागाथा | sub=अध्याय दस · लंका | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 71 से 74);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर
