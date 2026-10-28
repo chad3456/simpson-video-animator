@@ -1,0 +1,172 @@
+episode: 9
+slug: e09-the-ridiculous-man
+title: The Ridiculous Man
+kanji: 第九話
+sub: on "The Dream of a Ridiculous Man"
+book: The Dream of a Ridiculous Man (1877)
+season: winter
+linegap: 0.75
+gap: 104
+logline: Mid-December. Mio's mother has gone into hospital three weeks early, and for two Thursdays the bench is empty. Alone with Dostoevsky's strangest short story, about a man who had decided nothing mattered until a little girl in the rain proved him wrong, Itsuki remembers the winter he wanted nothing, and keeps the notebook company until she comes back.
+quote: And I went and I found that little girl. And I shall go on. I shall go on.
+quoteBy: Fyodor Dostoevsky, "The Dream of a Ridiculous Man"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=laundry_int season=winter weather=snow music=night musicVol=0.6 amb=washer,snow washers=3 clock=22.0 fadeIn=1.2
+@ cat slot=cat_dryer pose=sleep
+BEAT 2 [wide] (sfx=bell)
+@ itsuki slot=door emo=neutral look=front prop=manuscript
+BEAT 2 [wide]
+ITSUKI (thought) [mcu:itsuki] (look=front): Thursday number sixteen. Page one, in my coat pocket. Folded in four. I've unfolded it twenty times on the way here to check the commas.
+ITSUKI (thought) [close:itsuki] (sad, look=other): The bench is empty.
+@ itsuki slot=benchR prop=notebook emo=neutral look=down
+BEAT 2 [wide] (sfx=page)
+MIO (vo, soft) [insert]: Prince. Mum went into hospital this morning. The baby's coming three weeks early. Everyone says it's fine, so I'm not saying it, because last time everyone said it was fine I didn't believe them either.
++INSERT notebook | title=LOST & FOUND | hand=mio | rot=-2 | text=Prince —\nMum went into hospital this morning.\nThe baby is coming 3 weeks early.\nI might not come for a while.
+MIO (vo, soft) [close:itsuki]: I might not come for a while. Leave page one here. I'll read it, I promise. Read The Dream of a Ridiculous Man while I'm gone. It's only twenty pages. Even you can't take more than a week.
+MIO (vo, smile) [mcu:itsuki]: And look between the pages. I've lent you something of Gramps's. Don't lose it. — A. (still the hedgehog one)
+BEAT 3 [wide]
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=winter weather=snow music=memory musicVol=0.6 amb=washer,snow washers=3 clock=22.2 | caption=Thursday, mid-December.
+@ itsuki slot=benchR emo=neutral look=down prop=notebook
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 2.5 [wide] (sfx=page)
+ITSUKI (thought) [close:itsuki] (surprised, look=down): A leaf. A maple leaf, pressed flat, brown at the edges, still red in the veins. Taped to a slip of paper in her grandfather's pencil.
+INSERT book 7 | title=Demons | text=Have you seen a leaf, a leaf from a tree? Green, bright, with the veins, and the sun shining on it? | right=Everything is good. Everything. A man is unhappy only because he does not know that he is happy. | underline=2 | note=Kirillov. Right about\nthe leaf. Wrong about\neverything else.\n— G. | noteBy=genzo
+ITSUKI (thought) [mcu:itsuki] (soft, look=down): Kirillov, in Demons. The engineer who has decided to die, and who stays up all night playing with a neighbour's baby, and says everything is good. Dostoevsky put the happiest speech in the book in the mouth of the saddest man.
+ITSUKI (thought) [close:itsuki] (look=front): She lent me her grandfather's leaf. She doesn't lend people things. She lends people nicknames.
+BEAT 3 [wide]
+@ itsuki act=write
+BEAT 3 [mcu:itsuki] (sfx=pencil)
+ITSUKI (thought) [close:itsuki] (look=down): Page one goes in the notebook, between her letter and the sock notices. Folded once. The first page I've given anyone in five years, and nobody's here to read it. That's probably the right way to start.
+BEAT 3 [wide] (sfx=page)
+ITSUKI (thought) [close:itsuki] (look=down): The Dream of a Ridiculous Man. Twenty pages. She's right. I'll read it here.
+BEAT 2 [two]
+ITSUKI (thought) [mcu:itsuki] (look=front): "I am a ridiculous man. Now they call me mad." It starts like the Underground Man. A man nobody listens to, talking to an audience that isn't there.
+ITSUKI (thought) [close:itsuki] (look=down): He has decided that nothing matters. Not as a mood. As a fact. Nothing in the world makes any difference. So one November night he goes home intending to end his life.
+ITSUKI (thought) [close:itsuki] (sad, look=down): On the way, a little girl grabs his sleeve in the rain. Eight years old, soaking, crying "Mama, mama." Her mother is dying. She's looking for anyone at all. And he shouts at her and stamps his foot and walks on.
+ITSUKI (thought) [mcu:itsuki] (sad, look=front): And at home, with everything ready, he can't stop thinking about her. If nothing matters, why does he feel sorry? Why does it hurt? The little girl has ruined his whole theory.
+BEAT 3 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (thought) [close:itsuki] (look=down): There was a winter when I wanted nothing. Five years ago, after the prize, after Mum's diagnosis. I didn't want to die, exactly. I just didn't want. Not food, not books, not mornings. I lay on the floor of my flat and watched the ceiling get dark at four o'clock.
+ITSUKI (thought) [close:itsuki] (soft, look=front): What got me up was ridiculous. A woman from the flat below knocked to say my washing machine was leaking through her ceiling. She was so angry. She was the first person in a month who'd needed me to do something.
+ITSUKI (thought) [mcu:itsuki] (smile, look=down): That was the washing machine. That's how it broke. I never fixed it. I suppose I didn't want to throw away the thing that knocked on the door.
+BEAT 3 [wide]
+
+== SCENE laundry-2 | set=laundry_int season=winter weather=snow music=night musicVol=0.55 amb=washer,snow washers=3 clock=23.1
+@ itsuki slot=benchR emo=neutral look=down prop=notebook
+@ cat slot=cat_bench pose=sleep
+@ item basket benchR dx=95
+BEAT 2 [wide] (sfx=bell)
+@ hoshino slot=door emo=neutral look=other
+BEAT 1.5 [wide]
+HOSHINO (look=other) [mcu:hoshino]: Ah. Just you.
+ITSUKI (look=other) [close:itsuki]: Her mother's having the baby. Early.
+HOSHINO (soft, look=other) [mcu:hoshino]: I know. She rang me. She asked me to tell you something.
+ITSUKI (surprised, look=other) [close:itsuki]: ...She rang you?
+HOSHINO (smile, look=other) [mcu:hoshino]: She said, "Make sure he eats. And make sure he doesn't fix the washing machine." I said I'd do my best with the first one.
+@ hoshino slot=standL
+BEAT 2.5 [wide] (sfx=can)
+HOSHINO (look=other) [mcu:hoshino]: Do you remember the first night you came in here? Three years ago. Three in the morning, in November. You had a carrier bag with one shirt and one sock in it, and a face like a wet newspaper.
+ITSUKI (shy, look=down) [close:itsuki]: ...I didn't think anyone noticed.
+HOSHINO (look=other) [mcu:hoshino]: I was doing the coin boxes. You sat at that end of the bench for two hours watching one shirt go round. I thought, that boy's either in love or in trouble.
+ITSUKI (look=down) [close:itsuki]: Trouble.
+HOSHINO (smile, look=other) [mcu:hoshino]: My husband and I opened this place in nineteen ninety-three. He used to say a coin laundry is the only honest room in Japan. Everybody's socks go round the same way. Company presidents and students and grandmothers, all watching the same window.
+HOSHINO (soft, look=other) [mcu:hoshino]: He died in two thousand and nine. I kept it open twenty-four hours after that because I couldn't sleep anyway. Somebody might as well get some use out of me being awake.
+ITSUKI (soft, look=other) [close:itsuki]: ...I'm glad you were awake.
+HOSHINO (soft, look=other) [mcu:hoshino]: I know. You were back the next week with two shirts. That's how I knew you'd be all right. It was the extra shirt.
+BEAT 3 [close:itsuki] (itsuki=teary, itsuki.look=down)
+HOSHINO (look=other) [mcu:hoshino]: She told me about you in September, you know. The girl. She said, "There's a man who reads White Nights wrong. Do you know if he's nice?" I said I'd known you three years and you'd never once said a whole sentence. She said, "Good. Then he's saving them."
+ITSUKI (blush, act=hide) [close:itsuki]: ...Oh.
+HOSHINO (smile, look=other) [mcu:hoshino]: Eat something. There's a convenience store. I'll watch your sock.
+@ hoshino slot=none
+BEAT 2 [wide] (sfx=bell)
+BEAT 3 [wide]
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-3 | set=laundry_int season=winter weather=snow music=wonder musicVol=0.6 amb=washer,snow washers=2 clock=22.5 | caption=The next Thursday.
+@ itsuki slot=benchR emo=neutral look=down prop=notebook
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 3 [wide] (sfx=page)
+ITSUKI (thought) [close:itsuki] (look=down): Thursday seventeen. Still empty. Page one is still in the notebook. Unread. Page two is in my pocket.
+ITSUKI (thought) [mcu:itsuki] (look=front): In the story, the ridiculous man falls asleep in his chair and dreams. He dreams he shoots himself, and he's buried, and then something carries him through space to a star. To another Earth.
+ITSUKI (thought) [close:itsuki] (soft, look=front): An Earth before the Fall. Where people have never learned to lie. They sing to the trees. They love each other without jealousy. They look at him with such tenderness that he weeps.
+ITSUKI (thought) [close:itsuki] (sad, look=down): And he ruins them. Not on purpose. He teaches them one lie, as a joke, and it spreads like a germ. Then pride, then jealousy, then cruelty, then science to explain why cruelty is natural. In the end they're just like us. And he begs them to crucify him, and they laugh at him. Ridiculous man.
+ITSUKI (thought) [mcu:itsuki] (look=front): And then he wakes up. Still in his chair. The gun on the table. Morning. And he's laughing. Because he's seen it. He's seen that people could be happy, and that it's possible, and that the whole thing is very simple.
+INSERT book 7 | title=The Dream of a Ridiculous Man | text=The main thing is to love others as yourself. That is the main thing, and that is everything. | right=And I found that little girl. And I shall go on! I shall go on! | underline=2 | note=He does not save\nthe world. He finds\none girl. Enough.\n— G. | noteBy=genzo
+BEAT 3 [close:itsuki] (itsuki=soft, itsuki.look=down)
+ITSUKI (thought) [close:itsuki] (soft, look=down): He found the little girl. That's the whole ending. He doesn't change the world. He goes and finds the one person he walked past.
+@ itsuki act=write
+BEAT 2.5 [mcu:itsuki] (sfx=pencil)
+ITSUKI (vo, soft) [insert]: Dear Varvara, dear Nastenka, dear hedgehog. I've read it. It took me twenty minutes, and then I read it three more times, and then Mrs. Hoshino made me eat a rice ball.
++INSERT notebook | title=LOST & FOUND | hand=itsuki | rot=1 | text=Dear Varvara, dear Nastenka,\ndear hedgehog —\nI've read it.
+ITSUKI (vo) [close:itsuki]: The ridiculous man's little girl is the reason he gets up in the morning. Not because he saved her. He didn't. Because she asked him for help, and he found out it mattered to him that he said no.
+ITSUKI (vo, soft) [mcu:itsuki]: Mine was a woman with a leaking ceiling. Then a cat on a dryer. Then a girl who said I was reading White Nights wrong. I didn't go and find any of them. They all came to me. I'd like to be the one who goes, for once.
+ITSUKI (vo, shy) [close:itsuki]: So I'm going to go. Not tonight. But soon. There's a tree with no persimmons on it, two hours away on the local line. I'll tell you about it. Your leaf is safe. — Makar, Underground-san, the donkey, the Prince.
+BEAT 3 [wide]
+
+== SCENE laundry-4 | set=laundry_int season=winter weather=snow music=night musicVol=0.5 amb=washer,snow washers=9 clock=0.9
+@ itsuki slot=benchR emo=sleepy look=down prop=notebook
+@ cat slot=cat_bench pose=sleep
+@ item basket benchR dx=95
+BEAT 3 [wide]
+ITSUKI (thought) [close:itsuki] (sleepy, look=down): Ten to one. My washing finished two hours ago. It's resting.
+BEAT 2 [wide] (sfx=steps)
+BEAT 1.5 [wide] (sfx=bell)
+@ mio slot=door emo=cry look=other
+BEAT 2 [wide]
+ITSUKI (surprised, look=other) [close:itsuki]: ...Takanashi-san?
+MIO (cry, look=other) [mcu:mio]: You're here. You're still here. It's one in the morning and you're still here.
+ITSUKI (worried, look=other) [close:itsuki]: Is everyone...
+MIO (cry, act=cover) [close:mio]: Everyone's fine. Everyone's fine. She's fine. She was so small, Prince. Two kilos. She was in a box with wires for nine days and I wasn't allowed to touch her and today they let me hold her and she held my finger.
+MIO (teary, look=other) [close:mio]: I came straight from the hospital. I didn't think you'd be here. I just wanted to see the bench. I just wanted to see the place.
+@ mio slot=benchL emo=teary look=down
+BEAT 3 [two]
+ITSUKI (soft, look=other) [close:itsuki]: ...What's her name?
+MIO (teary, look=down) [close:mio]: They let me suggest it. I said Sora. Like the sky. Like the laundry. Hoshizora. Mum said it was perfect. She doesn't know where it's from.
+ITSUKI (soft, look=down) [close:itsuki]: ...Sora.
+MIO (smile, look=other) [close:mio]: Sora Ogawa. She has Satoshi-san's ears. Poor thing.
+BEAT 3 [close:itsuki] (itsuki=smile, itsuki.look=down)
+MIO (look=down) [close:mio]: The first night, they took Mum away for an operation and nobody would tell us anything. Satoshi-san was walking up and down the corridor like Dostoevsky dictating. And I sat on a plastic chair and read the Ridiculous Man on my phone, because I'd told you to.
+MIO (soft, look=front) [close:mio]: When I got to the little girl in the rain, I got up, and I went and found Satoshi-san, and I held his hand. The first time. He cried so much a nurse brought him a towel. A warm one.
+ITSUKI (soft, look=other) [close:itsuki]: ...You found the little girl.
+MIO (smile, look=down) [close:mio]: I found a forty-five-year-old man with Sora's ears. It counts.
+MIO (soft, look=down) [close:mio]: Did you read it? The Ridiculous Man?
+ITSUKI (look=down) [close:itsuki]: It's in the notebook. I wrote you a reply. And page one. And here.
+@ itsuki prop=manuscript
+BEAT 1.5 [close:itsuki] (sfx=page)
+ITSUKI (shy, look=down) [close:itsuki]: Page two. I didn't know if I should write it, without page one being read. I wrote it anyway.
+MIO (teary, look=other) [mcu:mio]: You kept going. Even with nobody reading.
+ITSUKI (soft, look=down) [close:itsuki]: ...I shall go on. Somebody told me to read that.
+MIO (soft, look=down) [mcu:mio]: "On the second night of every week, the cat moves from dryer three to the bench, because dryer three is the only machine in town that runs hot enough for a cat, and on the second night of every week someone uses it."
+MIO (laugh, act=laugh) [close:mio]: The second night of every week. That's us. That's our laundry. Fyodor Mikhailovich gets evicted because of us!
+ITSUKI (flustered, look=down) [close:itsuki]: ...It wasn't meant to be funny.
+MIO (smile, look=other) [close:mio]: It's the funniest sentence I've ever read. Keep it. Don't you dare proofread it.
+BEAT 3 [close:mio] (mio=teary, mio.look=down)
+MIO (thought) [close:mio] (teary, look=down): He waited until one in the morning. On a Thursday that's technically a Friday. With his washing resting.
+MIO (thought) [close:mio] (soft, look=down): He's never once said my first name. Not once, in seventeen Thursdays. I've stopped minding. Some people say your name. Some people wait until one in the morning.
+BEAT 3 [wide]
+
+== SCENE ext-dawn | set=laundry_ext time=night season=winter weather=snow music=theme musicVol=0.7 amb=snow
+@ cat slot=none
+BEAT 3 [wide]
+MIO (thought) [ext]: Thursday seventeen. Technically Friday. I'm counting it.
+ITSUKI (thought) [ext]: She read both pages under the strip light, with her coat still on. She laughed at a sentence I didn't know was funny. I'm going to keep that sentence.
+MIO (thought) [ext]: Gramps, I held my sister today, and then I ran across town in the snow to look at a bench. I don't know what that means. I think you would have.
+ITSUKI (thought) [ext]: Fourteen Thursdays left. I've written two pages. The ridiculous man said it's very simple. He's right. You go and find the person. You go on.
+BEAT 3 [ext] (sfx=buzzer)
+BEAT 4 [ext]
+
+== ED
+
+== NEXT | title=Returning the Ticket | sub=on "The Brothers Karamazov" (I)
+MIO (vo, sad): Next time. Ivan Karamazov, the Grand Inquisitor, and the hardest argument in literature. And a decision I've been avoiding.
+MIO (vo, soft): Episode ten. Returning the Ticket. It's going to snow a lot.
+BEAT 1.5

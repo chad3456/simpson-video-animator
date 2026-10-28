@@ -1,0 +1,270 @@
+episode: 1
+slug: e01-four-nights
+title: Four Nights
+kanji: 第一話
+sub: on "White Nights"
+book: White Nights (1848)
+season: summer
+gap: 215
+logline: Late August. In a 24-hour coin laundry by the canal, a teasing seventeen-year-old notices that the silent man at the far end of the bench is reading her late grandfather's favourite story, about a lonely dreamer who gets four nights with a girl on a bridge.
+quote: My God, a whole moment of bliss! Is that really too little, even for the whole of a man's life?
+quoteBy: Fyodor Dostoevsky, "White Nights"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE memory | set=sky time=night season=summer music=memory amb=crickets memory=true fadeIn=1.5
+BEAT 3 [sky]
+GENZO (memory) [sky]: It was a wonderful night, the kind of night that can only happen when we are young, dear reader.
+GENZO (memory) [sky]: The sky was so full of stars, so bright, that looking up at it you had to ask yourself: can angry, unhappy people really live under a sky like this?
+MIO (thought) [sky]: My grandfather read me that sentence so many times I could say it before I could spell it.
+MIO (thought) [sky]: He said every Russian novel worth reading starts on a night like this one.
+INSERT photo 3.5
+MIO (thought) [insert]: He died in March.
++INSERT photo
+== SCENE coldopen-ext | set=laundry_ext time=night season=summer music=memory amb=crickets,city extCast=false
+BEAT 2.5 [ext]
+MIO (thought) [ext]: In August, I met a man who was reading his favourite story in a coin laundry.
+MIO (thought) [ext:bench]: He was reading it wrong.
+BEAT 1.5 [ext]
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=summer music=night amb=washer,crickets washers=3 clock=22.3 | caption=Thursday, late August. Coin Laundry Hoshizora.
+@ itsuki slot=benchR prop=book bookColor=#3f6a4a emo=neutral
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 3 [wide] (sfx=page)
+BEAT 2.5 [close:itsuki]
+BEAT 2 [wide] (sfx=bell)
+@ mio slot=benchL prop=book emo=neutral
+BEAT 2.5 [wide] (sfx=buzzer, sfxAt=0.6)
+@ item basket benchL dx=-95
+BEAT 2 [two] (mio=neutral)
+MIO (thought) [close:mio] (look=book): Gramps's copy. Third time this summer. I keep thinking if I read it enough, his notes will start saying new things.
+BEAT 2 [two] (sfx=page)
+MIO (thought) [close:mio] (surprised, look=other): Wait. Green cover. That's...
+INSERT cover 3.5 | title=White Nights | author=F. M. Dostoevsky | color=#3f6a4a | caption=The man at the other end of the bench.
+MIO (thought) [close:mio] (look=other): He's reading White Nights. In a coin laundry. On a Thursday.
+BEAT 1.5 [two]
+MIO (smile, look=other): Excuse me.
+BEAT 1.2 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+MIO (tease): You're reading it wrong.
+ITSUKI (surprised, look=other) [close:itsuki]: Sorry?
+MIO (grin) [close:mio]: White Nights. You're meant to read it outside. At night. Ideally on a bridge.
+ITSUKI (blush, look=down): It's... a coin laundry.
+MIO (tease): Exactly. Very wrong. And you're slouching exactly like the Dreamer, which is a bit much.
+ITSUKI (thought) [close:itsuki] (flustered): Who is this?
+MIO (shy, look=down): Sorry. That was rude. My grandfather used to say that. "You're reading it wrong." He said it about everything.
+MIO (smile): Menus. Train timetables. My report cards.
+ITSUKI (neutral, look=front): ...Was he a teacher?
+MIO (soft): A translator. Russian literature. He read to me on the veranda every summer, with a mosquito coil going, doing all the voices. His Nastenka was terrible. Very high. Very Russian.
+MIO (smile, look=book): This one was his.
+INSERT book 6 | title=White Nights | text=It was a wonderful night, the kind of night that can only happen when we are young, dear reader. | underline=2 | note=Read this one\nunder the stars, Mio.\nNot under a lamp.\n— G. | noteBy=genzo
+ITSUKI (soft, look=other) [close:itsuki]: ...Oh. I'm sorry.
+MIO (smile): Don't be. He'd love this. A stranger reading it in public. He'd have come over and corrected your posture.
+ITSUKI (shy): Which translation is yours?
+MIO (thought) [close:mio] (surprised): He asked a question.
+MIO (grin): His own. He never published it. It's all in pencil, in the margins. Which one's yours?
+ITSUKI (look=book): The green one.
+MIO (tease): The green one is fine. Gramps called it "competent." From him, that was practically a medal.
+BEAT 1.5 [close:itsuki] (itsuki=smile)
+MIO (thought) [close:mio] (look=other): He almost smiled. Like someone who has forgotten where he put his smile and just found it in a coat pocket.
+BEAT 2.5 [wide] (sfx=page)
+MIO (look=other): How far are you?
+ITSUKI (look=book): The second night.
+MIO: So she's just told him about her grandmother and the pin.
+ITSUKI (nod): Yes.
+MIO (soft, look=front) [mcu:mio]: Her grandmother is blind, so she pins Nastenka's dress to her own dress with a safety pin. For years. So she can't run off.
+MIO (look=front): When I was little, I thought that was the saddest thing in the book.
+ITSUKI (look=other): ...And now?
+MIO (look=other) [close:mio]: Now I think the saddest thing in the book is him. The Dreamer. Eight years in the city and he doesn't know a single person.
+MIO (sad): He knows the houses, though. He says good morning to the buildings. One of them got painted yellow and he grieved like it was a friend.
+ITSUKI (look=down) [close:itsuki]: ...The buildings don't mind.
+MIO (surprised): What?
+ITSUKI (flustered, act=hide): Nothing.
+MIO (grin, act=lean): No, no. Say it again.
+ITSUKI (shy, look=down): Buildings are... good company. They're there every morning. They don't expect anything from you.
+BEAT 1.5 [two] (mio=tease)
+MIO (look=other): In the book, she asks him for his history. Remember? "Tell me your history." And he says he hasn't got one.
+ITSUKI (look=book): "I have no history."
+MIO (tease, act=lean): So what's yours?
+ITSUKI (blush, look=down): ...I haven't got one.
+MIO (grin): Everybody has one.
+ITSUKI (shy, look=front) [close:itsuki]: Mine is very short. Boy reads books. Boy grows up. Boy reads books in a laundry.
+BEAT 1.2 [close:mio] (mio=laugh, mio.act=laugh)
+MIO (tease) [close:mio]: Mr. Dreamer.
+ITSUKI (flustered) [close:itsuki]: I'm not...
+MIO (tease, act=point): You are reading White Nights, alone, in a coin laundry, at ten thirty on a Thursday night. That's practically a confession.
+ITSUKI (blush, look=other): You're... also here.
+MIO (grin): I'm doing laundry. You're doing literature at the laundry. Different crime.
+BEAT 3 [wide] (sfx=meow, sfxAt=1)
+@ cat slot=cat_dryer pose=sit
+BEAT 2 [insert:cat] (sfx=purr)
++INSERT cat | pose=sit
+MIO (smile, look=up): Oh. You're awake. That's Fyodor.
+ITSUKI (surprised, look=other): The cat?
+MIO (tease): I named him just now. He looks like a man with gambling debts.
+BEAT 1.2 [close:itsuki] (itsuki=laugh, itsuki.act=laugh)
+MIO (thought) [close:mio] (surprised, look=other): He laughed. It sounded rusty. Like a gate nobody has opened in a long time.
+ITSUKI (shy, look=down): ...Dostoevsky really did have gambling debts.
+MIO (grin): I know. That's why it's funny.
+ITSUKI (look=front): Fedya, then. That's what Russians would call a Fyodor at home.
+MIO (warm): Fedya. Okay. Fedya when he's good, Fyodor Mikhailovich when he's on the counter.
+BEAT 2.5 [wide]
+@ cat slot=cat_dryer pose=sleep
+BEAT 2 [close:itsuki] (itsuki.look=up)
+INSERT sign 3.5 | fixed=false
+MIO (look=other) [two]: You keep looking at that sign.
+ITSUKI (blush, look=down): Sorry.
+MIO (smile): "Dryer, ten minuts." It's been like that for years. I think it's cute. Like little tiny minutes.
+ITSUKI (serious, look=up): It's wrong.
+MIO (laugh): Are you an English teacher?
+ITSUKI (shy, look=down): Proofreader.
+MIO (grin, act=laugh) [close:mio]: Of course you are. Of course the man reading Dostoevsky in the laundry fixes other people's spelling for a living.
+ITSUKI (blush) [close:itsuki]: I don't fix it. I just... notice it.
+MIO (soft) [close:mio]: That's what the Dreamer does too, isn't it. Notices everything. Touches nothing.
+BEAT 2.5 [two] (itsuki=sad, itsuki.look=down)
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-2 | set=laundry_int season=summer music=night amb=washer,crickets washers=3 clock=22.6
+@ itsuki slot=benchR prop=book bookColor=#3f6a4a emo=neutral look=book
+@ mio slot=benchL prop=book emo=thinking
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 2.5 [wide]
+MIO (thinking, look=up) [close:mio]: Can I ask you something, Mr. Dreamer?
+ITSUKI (look=other): ...You will anyway.
+MIO (grin): Correct. The ending. The last line. Do you believe it?
+ITSUKI (look=book): I haven't read the ending yet.
+MIO (surprised): You've never read it?
+ITSUKI (shy, look=down): I have. Eleven times. I just haven't read it tonight.
+BEAT 1.5 [close:mio] (mio=laugh, mio.act=laugh)
+MIO (tease): Eleven. That's not reading, that's a relationship.
+MIO (serious, look=front): Okay. The ending. She chooses the lodger. The man she was waiting for comes back, and she runs to him, right in front of the Dreamer. And the next morning she sends a letter, and he sits in his room and says...
+INSERT book 7 | title=White Nights | text=My God, a whole moment of bliss! | right=Is that really too little, even for the whole of a man's life? | underline=1 | note=Yes.\n— G. (1971)\n\nNo.\n— G. (2019) | noteBy=genzo
+MIO (soft) [close:mio]: Gramps wrote "yes" in nineteen seventy-one. And then, years later, under it, "no." In different pencil.
+ITSUKI (surprised, look=other) [close:itsuki]: He changed his mind.
+MIO (sad, look=front): He changed his mind and never told me why. I found it in April, after.
+BEAT 2 [two]
+MIO (look=front): I think it's not enough. One moment? For a whole life? That's the consolation prize. That's what you tell yourself when you lost.
+ITSUKI (thinking, look=front) [close:itsuki]: ...Or it's the opposite.
+MIO (look=other): Go on.
+ITSUKI (look=front) [mcu:itsuki]: Most people never get the moment at all. They don't even notice when it's happening. He noticed. For four nights he was completely awake.
+ITSUKI (soft, look=front) [close:itsuki]: He knew it was ending while it was still happening, and he didn't look away. I think that's the bravest thing anybody does in the book.
+BEAT 1.5 [close:mio] (mio=surprised)
+MIO (thought) [close:mio] (look=other): Oh. He can talk. He just needs a book to stand behind.
+ITSUKI (blush, act=hide) [close:itsuki]: Sorry. That was a lot.
+MIO (smile) [two]: No. It was good. You sounded like someone else for a second.
+ITSUKI (shy, look=down): ...Someone else?
+MIO (tease): Someone who says more than four words.
+BEAT 2 [wide] (sfx=page)
+MIO (look=other): Have you had one? A moment like that?
+ITSUKI (look=down) [close:itsuki]: ...Once.
+MIO (look=other): And?
+ITSUKI (sad, look=away): It was enough to live on for a long time.
+MIO (soft): Is it still?
+BEAT 3 [close:itsuki] (itsuki.look=down)
+ITSUKI (look=down): It was a long time ago.
+MIO (thought) [close:mio] (sad, look=other): That's not an answer. That's a door closing very politely.
+BEAT 2 [two]
+MIO (soft, look=front) [mcu:mio]: I'll tell you mine, then. To be fair.
+MIO (soft, look=front): Last summer, Gramps read me White Nights on the veranda. One night per evening. Four evenings. He was already sick, but he wouldn't skip.
+MIO (sad, look=down) [close:mio]: On the fourth evening he fell asleep before the end. So I read him the morning. Out loud. It's the only time I ever read to him.
+BEAT 2.5 [close:itsuki] (itsuki=sad, itsuki.look=other)
+MIO (smile, look=front) [close:mio]: That's mine. It's enough to live on for a while.
+ITSUKI (soft, look=other) [close:itsuki]: ...Thank you for telling me.
+BEAT 2.5 [two]
+MIO (look=front): Everyone hates Nastenka, you know. People say she uses him. She cries on him, she makes him help with her letter, then she runs off with the other guy.
+ITSUKI (look=other): You don't hate her.
+MIO (serious): She's been pinned to a blind old woman for years. The one person who was ever kind to her left her alone for a whole year. She's allowed to be selfish for one night.
+MIO (look=front): She's seventeen. She doesn't know yet that you can hurt someone just by being happy in front of them.
+ITSUKI (look=other) [close:itsuki]: ...She's seventeen?
+MIO (smile): Seventeen. Same as me.
+BEAT 2 [close:itsuki] (itsuki=serious, itsuki.look=front)
+ITSUKI (serious, look=front): ...It's late. You should be home.
+MIO (pout) [close:mio]: The laundry's open twenty-four hours. That's the whole point of it. So people like us have somewhere to be.
+ITSUKI (look=other): People like us?
+MIO (smile, look=front): People whose washing machines are broken.
+ITSUKI (look=down): ...Mine broke three years ago.
+MIO (surprised, look=other) [close:mio]: Three years? And you just never fixed it?
+ITSUKI (shy, look=front): It's on a list.
+MIO (tease): What else is on the list?
+ITSUKI (flustered, act=hide) [close:itsuki]: ...It's a long list.
+BEAT 1.5 [two] (mio=laugh, mio.act=laugh)
+ITSUKI (thought) [close:itsuki] (look=other): That isn't what she meant, either. About the broken machines.
+BEAT 3 [wide] (sfx=buzzer)
+== SCENE laundry-3 | set=laundry_int season=summer music=night amb=washer,crickets washers= clock=22.9
+@ itsuki slot=benchR prop=book bookColor=#3f6a4a emo=neutral look=book
+@ mio slot=standL emo=neutral
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 2 [wide]
+MIO (look=down) [mcu:mio]: These aren't mine, by the way. My stepfather's shirts. He's a nice man. He irons his socks.
+ITSUKI (look=other): ...That's very thorough.
+MIO (laugh): Isn't it? We moved into his house in May. My mum's having a baby in winter. Everything's very new and very clean and very... ironed.
+MIO (smile, look=front): So on Thursdays I do the laundry. The dryer at home is broken. It's very convenient that it's broken.
+ITSUKI (soft, look=other) [close:itsuki]: ...Convenient.
+MIO (look=other) [close:mio]: Don't do that.
+ITSUKI (surprised): Do what?
+MIO (tease): Notice things. It's my job tonight. You're the one who's supposed to be embarrassing.
+BEAT 2.5 [two] (sfx=page)
+MIO (look=front): Dostoevsky wrote White Nights when he was twenty-six, you know. Before anything bad happened to him. Gramps said that's why it's so gentle. It's the last thing he wrote before the world got its hands on him.
+ITSUKI (look=front) [close:itsuki]: A year later, they arrested him.
+MIO (look=other): You know that?
+ITSUKI (shy, look=down): I know a lot of useless things about him.
+MIO (warm): It isn't useless. It's just homeless. It needs someone to tell it to.
+ITSUKI (look=other) [close:itsuki]: ...Is that why you talk to strangers in laundries?
+MIO (surprised) [close:mio]: Was that a joke? Mr. Dreamer, was that a joke?
+ITSUKI (blush, act=hide): No.
+MIO (grin): It was. It was a small, dry joke. I'm writing it down.
+BEAT 3 [close:itsuki] (itsuki=soft, itsuki.look=other)
+@ mio slot=door
+BEAT 2 [wide] (sfx=steps)
+MIO (look=other) [mcu:mio]: The Dreamer gets four nights, you know. Four nights and one morning. That's all.
+MIO (tease): Let's see how many you get.
+ITSUKI (surprised, look=other) [close:itsuki]: ...What?
+MIO (grin): Same time next Thursday, Mr. Dreamer?
+BEAT 2.5 [close:itsuki] (itsuki=blush, itsuki.look=down)
+@ mio slot=none
+BEAT 2.5 [wide] (sfx=bell)
+BEAT 3 [close:itsuki] (itsuki=soft, itsuki.look=front)
+ITSUKI (soft, look=front) [close:itsuki]: ...Yes.
+BEAT 4 [wide]
+
+== SCENE bridge-1 | set=bridge season=summer music=theme musicVol=0.8 amb=crickets
+@ mio slot=railL emo=soft look=up pose2=rail
+BEAT 3 [wide]
+MIO (thought) [close:mio] (look=up): He said yes. I know, because I'd stopped outside the window to see if he would.
+MIO (thought) [close:mio] (smile, look=down): Gramps, I think I met someone who reads the way you did. Like the book might answer back.
+MIO (thought) [mcu:mio] (warm, look=up): The Dreamer got four nights. I wonder how many we get.
+BEAT 4 [wide]
+
+== SCENE street-1 | set=street season=summer music=night musicVol=0.8 amb=crickets,city
+@ itsuki slot=walkR pose=walk emo=neutral look=down
+BEAT 3 [wide] (sfx=steps)
+ITSUKI (thought) [mcu:itsuki] (look=down): People like us. Somewhere to be.
+ITSUKI (thought) [mcu:itsuki] (serious, look=front): She's seventeen. She has school, and a mother, and a whole life that starts again tomorrow morning. She doesn't need a man who talks to buildings.
+ITSUKI (thought) [wide] (look=down): It's only a book. Talking about a book with someone is allowed.
+ITSUKI (thought) [mcu:itsuki] (soft, look=up): Same time next Thursday. Nobody has said "next Thursday" to me in years.
+BEAT 3.5 [wide] (sfx=crossing)
+
+== SCENE room-1 | set=room_him season=summer music=night musicVol=0.7 amb=room,crickets
+@ itsuki slot=desk prop=book bookColor=#3f6a4a emo=neutral look=book
+BEAT 3 [wide] (sfx=page)
+INSERT book 6 | title=White Nights | text=My God, a whole moment of bliss! | right=Is that really too little, even for the whole of a man's life? | underline=1
+ITSUKI (thought) [close:itsuki] (look=book): A whole moment of bliss. Is it too little for a whole life?
+ITSUKI (thought) [close:itsuki] (sad, look=up): I used to know the answer.
+BEAT 2 [close:itsuki] (itsuki=soft, itsuki.look=front)
+ITSUKI (thought) [mcu:itsuki] (soft, look=front): Same time next Thursday.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Two Times Two Makes Five | sub=on "Notes from Underground"
+MIO (vo, tease): Next time. A man who lives under the floorboards and would rather be right than happy. Remind you of anyone, Mr. Dreamer?
+MIO (vo, grin): Episode two. Two Times Two Makes Five. Bring an umbrella. And your spite.
+BEAT 1.5

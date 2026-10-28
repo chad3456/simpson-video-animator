@@ -1,0 +1,1273 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E11",
+  "title": "Forgiveness of the Birds",
+  "book": "The Brothers Karamazov (1880)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "February. On the same Saturday, Mio takes the train to Tokyo for her entrance exam and Itsuki takes the local line to his mother's care home, carrying Father Zosima's story of his dying brother, who asked the birds to forgive him. That Thursday, Mrs. Hoshino tells Mio something about Itsuki's washing machine that he will never say himself.",
+  "season": "winter",
+  "gap_bench": 90,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Brothers Karamazov (1880); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "fumiko": {
+   "name": "Fumiko Kanzaki",
+   "role": "Itsuki's mother",
+   "voice": "af_sarah:0.5+bf_emma:0.5",
+   "speed": 0.86
+  },
+  "hoshino": {
+   "name": "Mrs. Hoshino",
+   "role": "owner of Coin Laundry Hoshizora",
+   "voice": "bf_emma",
+   "speed": 0.9
+  },
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "train"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "away",
+     "shot": "mcu:itsuki",
+     "text": "Saturday. The local line to Tsugawa. Two hours and eleven minutes, fourteen stations. I used to know all their names. I've forgotten three."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "At this moment she's on the bullet train to Tokyo with a pencil case and her grandfather's star clip. Her exam starts at ten. We're travelling in opposite directions at the same time."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "She wrote it in the notebook on Thursday. \"You go your way, I'll go mine, and we'll compare notes. No excuses, Prince.\""
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "train"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "seatL",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#3a2a4a",
+     "idleLook": "away"
+    }
+   },
+   "set": "train",
+   "time": "day",
+   "season": "winter",
+   "music": "memory",
+   "musicVol": 0.6,
+   "amb": [
+    "train"
+   ],
+   "fadeIn": 1.2
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "winter"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第十一話",
+   "kicker": "EPISODE 11",
+   "title": "Forgiveness of the Birds",
+   "sub": "on \"The Brothers Karamazov\" (II)",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "station-mio",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "train"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "worried",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "Tokyo Station. Everyone walks like they're late for their own execution. I'm going to be crushed by a businessman before I find the right exit."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps came here in nineteen sixty-eight with one suitcase and a Russian dictionary. He said the first thing he did was get lost for three hours and the second was buy a book."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "up",
+     "shot": "close:mio",
+     "text": "Somewhere, two hours north of home, he's on a train too. I told him to go. He told me to go. We're both going. That's the most romantic thing that's ever happened to me and nobody would understand it."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Mum wanted to come with me. I said no. Somebody has to do the two o'clock feed, and Satoshi-san sleeps through it like a log. She cried at the ticket gate. Sora didn't. Sora was asleep. Sora is very cool about everything."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "smile",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "Okay. Exit B. Go."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "steps"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "platL",
+     "emo": "worried",
+     "idleLook": "front"
+    }
+   },
+   "set": "station",
+   "station": "tokyo",
+   "time": "day",
+   "season": "winter",
+   "music": "hope",
+   "musicVol": 0.55,
+   "amb": [
+    "city"
+   ],
+   "caption": "Saturday, February. Tokyo."
+  },
+  {
+   "type": "scene",
+   "id": "carehome-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "fumiko",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "Hideo. You came. You didn't wear a coat."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I wore a coat, Mum. Look. It's a good one. It's been dry-cleaned."
+    },
+    {
+     "who": "fumiko",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "You look thin. They don't feed you at that office."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "They don't."
+    },
+    {
+     "who": "fumiko",
+     "look": "away",
+     "shot": "mcu:fumiko",
+     "text": "Is it still the bank? You said they were going to move you to the branch by the river."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...They moved me. It's a nice branch. You can see the river from the window."
+    },
+    {
+     "who": "fumiko",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "Good. A man should be able to see water from where he works. Otherwise he forgets things move."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "My father worked at the bank by the river for twenty years. I'm lying to her in his voice, about his life. It's the only conversation she can have. I'll have it."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "I went past the house. The persimmon tree's still there. Bare. The crows had all of them."
+    },
+    {
+     "who": "fumiko",
+     "emo": "laugh",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "I told you. Every year I tell you. You never listen."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...You were right about the crows."
+    },
+    {
+     "who": "fumiko",
+     "emo": "smile",
+     "look": "away",
+     "shot": "mcu:fumiko",
+     "text": "I'm always right about crows."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She liked being right about the crows. Somebody told me she would."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Can I read you something? It's short."
+    },
+    {
+     "who": "fumiko",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "Read. Your father always read to me. Badly."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "sfx": "page",
+     "cs": {
+      "itsuki": {
+       "prop": "book",
+       "bookColor": "#3a2a4a"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "book",
+     "shot": "close:itsuki",
+     "text": "There's an old monk, Father Zosima. When he was a boy, his older brother, Markel, was seventeen and dying of consumption. And Markel had been angry and proud, and didn't believe in anything. And then, in the spring, in his last weeks, he changed."
+    },
+    {
+     "who": "itsuki",
+     "look": "book",
+     "shot": "mcu:itsuki",
+     "text": "He started saying things nobody understood. He told his mother not to cry. He said, life is paradise, Mama, and we are all in paradise, but we don't want to know it. If we only wanted to, tomorrow the whole world would be paradise."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "book",
+     "shot": "close:itsuki",
+     "text": "And he'd open his window in the mornings and the birds would be in the garden, and he'd say: birds of God, joyful birds, forgive me too, for I have sinned against you as well."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Brothers Karamazov",
+      "text": "Birds of God, joyful birds, forgive me too, for I have sinned against you as well.",
+      "right": "Each of us is guilty before everyone, for everyone and for everything.",
+      "underline": 1,
+      "note": "I did not understand\nthis until I was old.\nRead it to someone.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "fumiko",
+     "look": "away",
+     "shot": "mcu:fumiko",
+     "text": "...Asking the birds for forgiveness. What a strange boy."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Everyone thought he'd lost his mind. His mother cried, because she thought it was the illness. But Zosima says he was the only sane person in the house."
+    },
+    {
+     "who": "fumiko",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "The mother cried because her boy was being kind and she couldn't keep him. That's what mothers cry about."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "teary",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "fumiko",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "...Itsuki?"
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "fumiko",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "Itsuki. When did you get so old? You're wearing a coat."
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Hello, Mum."
+    },
+    {
+     "who": "fumiko",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "Are you eating? You look like a heron. Are you writing?"
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I'm writing. One page a week. A friend is making me."
+    },
+    {
+     "who": "fumiko",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "What's it about?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "A laundry. A coin laundry by a canal that's always open, and is closing."
+    },
+    {
+     "who": "fumiko",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "That sounds nice. Ordinary. Put a good mother in it this time. That one in the first book was too harsh."
+    },
+    {
+     "who": "itsuki",
+     "emo": "teary",
+     "act": "cover",
+     "shot": "close:itsuki",
+     "text": "...I'll put a good mother in it."
+    },
+    {
+     "who": "fumiko",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:fumiko",
+     "text": "And the friend who's making you. Put her in too. Anyone who can make you do anything deserves to be in a book."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "\"Her.\" I never said her."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "chime"
+    },
+    {
+     "who": "fumiko",
+     "look": "away",
+     "shot": "mcu:fumiko",
+     "text": "Hideo, is it time for lunch? The boy who comes on Saturdays always forgets the lunch."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I'll bring it next time."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "She knew me for six minutes. I timed it on the clock above the door. Six minutes. It was enough. It was more than enough. It was a whole moment of bliss."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "fumiko": {
+     "slot": "chairL",
+     "emo": "neutral",
+     "idleLook": "away"
+    },
+    "itsuki": {
+     "slot": "chairR",
+     "emo": "neutral",
+     "idleLook": "other"
+    }
+   },
+   "set": "carehome",
+   "time": "day",
+   "season": "winter",
+   "music": "memory",
+   "musicVol": 0.5,
+   "amb": [
+    "birds",
+    "room"
+   ],
+   "caption": "Hikari Care Home, Tsugawa."
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "I got lost for three hours and then I bought a book. Exactly like Gramps. The exam was fine. I think. I wrote about the Underground Man. I called him a spiteful little coward with a beautiful mind. I may have failed."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "You'll have passed. You're the type. Where's your prince?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Late. He's never late. He's probably proofreading the snow."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Hm. Can I tell you something he'd be very cross that I told you?"
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...Yes. Obviously yes."
+    },
+    {
+     "who": "hoshino",
+     "look": "down",
+     "shot": "mcu:hoshino",
+     "text": "In October, the week after the typhoon, he came in on a Tuesday. He never comes on a Tuesday. He asked me which washing machine to buy. A proper one. He wrote down the model I said, very carefully, in pencil."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...October?"
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "My nephew delivers for the electrical shop. He took it up four flights of stairs. It's been in that flat since the twenty-fourth of October. Working. Plumbed in."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "And he's been here every Thursday since. With a basket of washing he could have done at home. Some weeks it's three shirts. Last week it was one towel."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "October. The typhoon. The week I said my ugly thing out loud in the dark. He went home and bought a washing machine, and then came back the next Thursday with a basket of washing. And the next. And the next."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Sixteen Thursdays with nothing to wash. One towel."
+    },
+    {
+     "who": "hoshino",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "I'm not telling you so you'll say anything. Don't you dare say anything. I'm telling you because I'm an old woman and I'm leaving in March, and somebody besides me ought to know."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "hoshino": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Each of us is guilty before everyone, for everyone. Markel meant it as a kind of happiness. I never understood that. I think I do now. I owe him for sixteen towels."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "grin",
+     "idleLook": "other"
+    },
+    "hoshino": {
+     "slot": "standR",
+     "emo": "neutral",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    1,
+    4
+   ],
+   "clock": 21.9,
+   "caption": "Thursday.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You went."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I went."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Tell me. Everything. I mean it. Start with the train."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Fourteen stations. She called me Hideo. I told her the crows had won. She was delighted. I read her Markel. And at the part about the birds she said the mother cried because her boy was being kind and she couldn't keep him."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And then she looked at me and said my name. For six minutes. She asked if I was writing. I said yes. She said put a good mother in it."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...Six minutes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "The Dreamer got four nights. I got six minutes. I think I did better, per minute."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "cover",
+     "shot": "close:mio",
+     "text": "Don't make jokes. I'm trying to cry properly."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "I read the Zosima chapters on the bullet train. The duel. Zosima as a young officer, the night before a duel, hits his servant in the face. And in the morning the sun is shining and the birds are singing and he suddenly understands what he's done."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And he goes and bows to the servant. Down to the ground."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And then he goes to the duel and lets the other man shoot first, and when he misses, he throws his pistol into the trees and apologises. Everyone thinks he's a coward. And that afternoon he resigns and becomes a monk."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky really liked people who throw away the thing everyone's watching. The pistol. The money in the fire."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And Dmitri. Gramps loved Dmitri most. The night they arrest him for his father's murder, the one he didn't do, he falls asleep on a chest in the police station and dreams."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "He's riding through a burnt village in the snow, and there are thin women standing by the road, and one of them is holding a baby that's crying, crying, with its little arms bare and blue. And he keeps asking the driver, why is the babe crying? Why are they poor? Why don't they feed the babe?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And the driver says, it's the fire. They've been burnt out. And Dmitri says, no, tell me why. And he feels a tenderness he's never felt before. He wants to do something, right now, so that the babe stops crying."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And when he wakes up, someone has put a pillow under his head. One of the clerks. He doesn't know who. And he says, \"I've had a good dream, gentlemen,\" and he's almost crying because of the pillow."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Somebody put a pillow under his head. That's the whole of Dostoevsky. A man accused of murder, and someone he'll never know does something kind while he's sleeping."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "People keep putting pillows under other people's heads in this book. In secret."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...They do."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Like buying a washing machine."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Sorry?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Your washing machine. Item one. How's it doing? Still broken?"
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "blush",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It's not broken."
+    },
+    {
+     "dur": 4.0,
+     "shot": "two",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "...Good. Don't fix it."
+    },
+    {
+     "dur": 5.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She knows. Mrs. Hoshino. She knows, and she isn't going to say anything, and neither am I. That's the most honest conversation I've ever had."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "He knows I know. Neither of us is going to say it. Some things are better as a stone nobody lifts. Not because they're ugly. Because they're finished, and they're ours."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Five Thursdays left."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Five."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Life is paradise, Markel said. We're all in paradise, but we don't want to know it."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I know it. Tonight I know it."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "soft",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "wonder",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    1,
+    4
+   ],
+   "clock": 22.1,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "two",
+     "text": "Goodnight, Prince. Do your laundry at home sometimes. It's a waste of a good machine."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...Goodnight."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The results come out on the tenth of March. Online. At ten in the morning."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...You'll tell me?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I'll write it in the notebook. Whatever it says. Pass or fail. And then I'll come and tell you on Thursday, so you have to look at my face when you read it."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...That's cruel."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I learned from the best. Nastasya Filippovna."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "farL"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Markel asked the birds to forgive him. I don't know who to ask. Her, maybe. For coming every Thursday with one towel. Or the towel."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "railR",
+     "emo": "soft",
+     "idleLook": "other"
+    }
+   },
+   "set": "bridge",
+   "season": "winter",
+   "weather": "snow",
+   "music": "theme",
+   "musicVol": 0.65,
+   "amb": [
+    "snow"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-11",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "dur": 6.0,
+     "insert": {
+      "kind": "manuscript",
+      "title": 11,
+      "text": "Mrs. Hoshino has kept the laundry open for thirty-one years so that no one in the town would ever have nowhere to go at three in the morning. In March she will close it, and sleep through the night, and this town will have to find somewhere else to be honest."
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Page eleven. A good mother is coming in page twelve. I promised."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine  (bought in October. Don't tell.)\n2. Visit Mum  (done. 6 minutes.)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write  (page 11 of 16)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.\n10. Tell her to go.  (done)"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Item three. Mr. Sakurai, the editor who said \"we look forward to the next one.\" Five years. I'll write to him when there's a next one."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "soft",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.55,
+   "amb": [
+    "room",
+    "snow"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 11: Forgiveness of the Birds",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Fumiko Kanzaki",
+    "Mrs. Hoshino",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Brothers Karamazov (1880)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Birds of God, joyful birds, forgive me too, for I have sinned against you as well.",
+   "quoteBy": "Fyodor Dostoevsky, \"The Brothers Karamazov\"",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "text": "Next time. The last chapter. A speech by a stone, twelve schoolboys, and a cheer."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "text": "Episode twelve. Let Us Never Forget One Another. The last Thursday. Don't be late, Prince."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Let Us Never Forget One Another",
+   "nextSub": "on \"The Brothers Karamazov\" (III)",
+   "season": "winter"
+  }
+ ]
+}

@@ -1,0 +1,1252 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E8",
+  "title": "Twenty-Six Days",
+  "book": "The Gambler (1866)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Early December and the first snow. Mio has found, in the city library, a five-year-old literary magazine with Itsuki's photograph in it. Over the novel Dostoevsky dictated in twenty-six days to save everything he had written, and the morning he stood in front of a firing squad, she offers him a deal: one page, every Thursday, until the laundry closes.",
+  "season": "winter",
+  "gap_bench": 116,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Gambler (1866); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "Kawabe City Library, second floor, periodicals. Literary magazines, bound by year. I was looking for an article about Gramps's translations."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I found a photograph instead. A young man with too much hair, holding a certificate, looking at the camera like it was going to arrest him."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "cover",
+      "title": "The Room\nWithout a Window",
+      "author": "Itsuki Kanzaki",
+      "label": "Prize",
+      "color": "#e8e2d4",
+      "caption": "Newcomer Prize, winning novella. Five years ago."
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "\"We look forward to the next one.\" It's printed under the picture. The editor's words. He said it was about proofreading."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "I read it in the reading room. Forty pages. I missed the bus. I had to sit in the toilets for ten minutes before I could go outside."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "steps"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "walkL",
+     "emo": "surprised",
+     "prop": "book",
+     "bookColor": "#b8323a",
+     "idleLook": "down"
+    }
+   },
+   "set": "street",
+   "time": "day",
+   "season": "winter",
+   "music": "wonder",
+   "musicVol": 0.6,
+   "amb": [
+    "city",
+    "snow"
+   ],
+   "fadeIn": 1.2
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "winter"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第八話",
+   "kicker": "EPISODE 8",
+   "title": "Twenty-Six Days",
+   "sub": "on \"The Gambler\"",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "grin",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "up",
+     "shot": "mcu:mio",
+     "text": "It's snowing! Prince, it's snowing!"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I noticed. I'm made of it."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "mio": {
+       "slot": "benchL",
+       "emo": "soft",
+       "idleLook": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "There's already a milk tea next to my basket."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "The machine gave me two. It was a malfunction."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The machine has malfunctioned every Thursday for three weeks."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...It's a very old machine."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Okay. The Gambler. I have a confession. I liked it more than The Idiot."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That's a terrible confession."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "text": "It's short! It's fast! It's about a tutor in a German spa town called Roulettenburg, who's in love with a girl who treats him like dirt, and everyone is waiting for a rich old aunt to die so they can inherit her money."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "And then the aunt doesn't die! She turns up! In a wheelchair, carried by servants, shouting at everyone! \"So you've been sending telegrams to see if I'm dead yet?\""
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "Grandmother."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "shot": "close:mio",
+     "text": "The best grandmother in literature. And she goes straight to the casino and puts everything on zero. \"Zero! Zero! Put it on zero!\" And it comes up! And she wins! And then she comes back the next day and loses her whole fortune."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky knew that casino. He lost his wife's wedding ring at roulette. And her earrings. And his own coat."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You give your coat away. He gambled his. You're the same, just in opposite directions."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "But I don't understand Alexei. The hero. He wins a fortune, a real fortune, enough to marry the girl and go home. And he goes back to the table the next night and loses it."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Because he doesn't want the money. He says so. He wants the moment before the wheel stops. When you've put everything on one number and you don't know yet. He says he's never felt so alive as in that second."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So he's addicted to not knowing."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "He's addicted to risk. The rest of his life feels like waiting in a corridor."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "What's the biggest risk you've ever taken, Prince?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I lent a stranger an umbrella."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "You put everything on zero."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It came back."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "But the best story isn't in the book. It's how he wrote it. Gramps wrote it on the inside cover."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Gambler",
+      "text": "Contract of 1865: a new novel by 1 November 1866, or every work he has written belongs to Stellovsky for nine years.",
+      "right": "On 4 October he hired a stenographer, Anna Grigorievna. They finished on 30 October.",
+      "underline": 1,
+      "note": "26 days.\nNo excuses, Mio.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "\"No excuses, Mio.\" He wrote that when I was twelve and said I couldn't do my summer homework in two weeks."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Did you do it?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "In nine days. Out of spite."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "A publisher tricked him into a contract when he was desperate. If he didn't deliver a whole new novel by the first of November, the publisher would own everything he'd written. Crime and Punishment. All of it. For nothing."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And in October he hadn't written a word. He was busy writing Crime and Punishment, which was being printed in parts every month. Two novels at once."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So he hired Anna."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "So he hired Anna. She was the best stenography student in Petersburg. He walked around the room, smoking, dictating, and she took it down in shorthand and wrote it out clean at home every night. Twenty-six days. He delivered it on time, and the publisher had hidden himself away so he couldn't receive it, so Dostoevsky had it stamped at a police station."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "That's the most Dostoevsky thing ever. Delivering a novel to a police station."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Later she ran his publishing and his money and his life. She's the reason he finished Karamazov. She read his handwriting when nobody else could."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The reader is the hero."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Often."
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Anna kept a diary in shorthand. Gramps had a translation. On the first day she was so nervous she couldn't read her own notes, and he was so nervous he told her the whole story of his execution in the first hour, to a stranger, while she was trying to take dictation."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "People tell strangers the most important things."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You'd know. Section Chief, Special Adviser."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...He told me about the fireworks."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And Anna said that by the end of the twenty-six days she couldn't imagine a day without going to that flat and hearing him walk up and down. It wasn't the book she missed. It was the walking."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Speaking of handwriting."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "sfx": "page",
+     "cs": {
+      "mio": {
+       "prop": "manuscript"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "I found something in the library."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "dur": 4.0,
+     "insert": {
+      "kind": "cover",
+      "title": "The Room\nWithout a Window",
+      "author": "Itsuki Kanzaki",
+      "label": "Prize",
+      "color": "#e8e2d4"
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Ah."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "can",
+     "can": "coffee",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "tease",
+   "musicVol": 0.75,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    1,
+    5
+   ],
+   "clock": 22.0,
+   "caption": "Thursday, early December. First snow.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "can",
+     "slot": "benchR",
+     "dx": -60,
+     "can": "tea",
+     "steam": true
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95,
+     "from": 4
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "\"We look forward to the next one.\" Proofreading, you said."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'm sorry I lied."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I'm not angry. I'm... I read it. In the library. All forty pages."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "Please don't tell me what you thought."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "A boy whose mother locks him in a room with no window while she's at work. And he invents a window. He draws it on the wall with a pencil, and every day he adds something he imagines outside. A tree. A canal. A cat. A bridge. By the end, the wall is a whole town."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And on the last page, his mother comes home, and she sees the wall, and instead of shouting, she sits down on the floor and asks him to tell her about the town."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I had to sit in the library toilets for ten minutes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It's a small book. It's very sentimental. The prose in the middle is too pleased with itself."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Stop proofreading it! I'm telling you it made me cry in a public toilet!"
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": "surprised"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Thank you."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Why did you stop?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "You know why. Extraordinary or nothing. After the prize, everything I wrote looked small next to it. So I put it in a drawer. And then my mother got ill, and work was easier than writing, and five years went by like a train you're watching from the platform."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Did your mother read it?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...She read it the month before she started forgetting things. She called me and said, \"The boy's mother is too harsh.\" I said, it's not you, Mum. It's fiction."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "It was a little bit her. She worked nights at a hospital after my father died. I was alone a lot. She knew. She said, \"But she comes home at the end. You let her come home.\" And then she asked what I was writing next."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And you said?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I said I was busy. And a month later she didn't remember the book. So now the only person who ever asked me what was next is the one person I can't tell."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...You can tell me. And I'll tell her. Somehow. I'm very good at telling people things."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Do you know about the execution? Dostoevsky's?"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Gramps told me. A bit. Tell me properly."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "He was twenty-eight. My age. He'd been arrested for reading forbidden letters aloud at a discussion group. A book club, more or less. And on the twenty-second of December, eighteen forty-nine, in the snow, they took him and the others to Semyonovsky Square and read out their sentence. Death by firing squad."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "They put white shirts on them. The first three were tied to posts. Dostoevsky was in the second group. He had about a minute left. He said goodbye to the man next to him. He looked at the sun on the golden dome of a church and thought that in a minute he'd be part of that light."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And then a drum. A messenger rode in. The Tsar had changed the sentences. He'd planned it all along. The execution was a performance, to teach them a lesson."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "That's the cruellest thing I've ever heard."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "That same afternoon, back in his cell, he wrote to his brother. \"Life is a gift. Life is happiness. Every minute could be an eternity of happiness. If only youth knew.\" He was being sent to Siberia for four years in chains, and he wrote that."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And then he went and gambled away his wife's earrings."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "laugh",
+       "act": "laugh"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "...Yes. He did."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So he wasted some minutes. He still wrote all those books. The minutes he didn't waste were enough."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "I want to make you a deal. Like Stellovsky. But nicer."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I'm afraid of your deals."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "point",
+     "shot": "mcu:mio",
+     "text": "The laundry closes at the end of March. This is Thursday number fifteen. That leaves sixteen. You bring one page every Thursday. Just one. Anything. Ordinary is allowed. And I read it, here, on the bench, in front of you."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I'll be your Anna. Not the stenography. I can't do shorthand. Just the reading. Someone has to read it, or it's just a wall with a pencil drawing on it."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And if I can't?"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Then you give me a blank page and I read that. Out loud. Very slowly. With feeling."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "smile",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...That would be worse."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Twenty-six days for a novel. You've got sixteen Thursdays for sixteen pages. No excuses, Prince."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "thinking",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "...One page."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "One page."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Ordinary."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Ordinary is allowed. Somebody very wise told me that, during a typhoon."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "prop": "manuscript",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "sad",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "winter",
+   "weather": "snow",
+   "music": "night",
+   "musicVol": 0.6,
+   "amb": [
+    "washer",
+    "snow"
+   ],
+   "washers": [
+    1,
+    5
+   ],
+   "clock": 22.4,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "up",
+     "shot": "two",
+     "text": "It's settling. On the rail. Look."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "The canal's gone quiet. Snow does that."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Next Thursday. Page one."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Page one."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Write it with the better pen. Item six."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "How do you know about item six?"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "You left your list in the notebook in September. I'm a terrible person. I told you."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "up",
+     "shot": "two",
+     "text": "Prince. Thank you for saying yes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "I said \"one page.\" That's not quite yes."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "In Dostoevsky, that's a forty-page speech. In proofreader, it's yes. I've learned the language."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...Goodnight."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "farL"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "She knew about the list for three months and never said a word. She just kept walking me through it. Item by item."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "idleLook": "up"
+    },
+    "itsuki": {
+     "slot": "railR",
+     "emo": "neutral",
+     "idleLook": "up"
+    }
+   },
+   "set": "bridge",
+   "season": "winter",
+   "weather": "snow",
+   "music": "theme",
+   "musicVol": 0.7,
+   "amb": [
+    "snow"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-8",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Twenty-eight. Dostoevsky's age at the square. He got a messenger on a horse. I got a girl with a photocopy."
+    },
+    {
+     "dur": 3.0,
+     "shot": "mcu:itsuki",
+     "sfx": "pencil",
+     "cs": {
+      "itsuki": {
+       "act": "write"
+      }
+     }
+    },
+    {
+     "dur": 6.0,
+     "insert": {
+      "kind": "manuscript",
+      "title": 1,
+      "text": "There is a coin laundry by the canal that never closes. That is the first thing to know about it. The second thing is that it is closing."
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "I'm not going to write about her. I'm going to write about the laundry. The machines, the sign, the cat, Mrs. Hoshino, the people who wash their lives here. She can be in it the way the moon is in a painting of a street. Somewhere at the top. Not the subject."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Two sentences. Ordinary ones. It's a start. It's not extraordinary. It's allowed."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write  (one page, every Thursday, 16 pages)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again."
+     }
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "winter",
+   "weather": "snow",
+   "music": "hope",
+   "musicVol": 0.6,
+   "amb": [
+    "room",
+    "snow"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 8: Twenty-Six Days",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Gambler (1866)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Life is a gift. Life is happiness. Every minute could be an eternity of happiness.",
+   "quoteBy": "Fyodor Dostoevsky, letter to his brother, 22 December 1849",
+   "season": "winter"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "text": "Next time. A man who decides to shoot himself, a little girl in the rain, and a dream about a star."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "sad",
+     "text": "Episode nine. The Ridiculous Man. I might not be there, Prince. Read the notebook."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "The Ridiculous Man",
+   "nextSub": "on \"The Dream of a Ridiculous Man\"",
+   "season": "winter"
+  }
+ ]
+}

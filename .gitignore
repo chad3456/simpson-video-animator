@@ -4,3 +4,4 @@ node_modules/
 still-*.png
 .style-study/
 explainer/episodes/_*/
+__pycache__/

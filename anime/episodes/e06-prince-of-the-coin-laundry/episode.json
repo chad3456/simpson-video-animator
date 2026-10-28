@@ -1,0 +1,1456 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E6",
+  "title": "The Prince of the Coin Laundry",
+  "book": "The Idiot (1869)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "November. A drunk salaryman who has missed the last train is asleep on the laundry bench, and Mio doesn't know what to do. Itsuki does. Watching him, she understands Dostoevsky's attempt to write a perfectly good man, and gives Itsuki the name that will stick. On the way out, he buys her a hot milk tea without asking.",
+  "season": "autumn",
+  "gap_bench": 138,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Idiot (1869); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  },
+  "salaryman": {
+   "name": "A salaryman",
+   "role": "a stranger who has missed the last train",
+   "voice": "am_adam",
+   "speed": 0.98
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "Gramps said The Idiot was Dostoevsky's attempt to write a positively beautiful man. A completely good person. He said it was the hardest thing a novelist could try."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "While he was writing it, his first baby died. A girl. Three months old. He wrote the rest of the book in grief, in a foreign country, with no money."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Gramps said: that's why the good man in it can't save anyone. Dostoevsky had just learned that love doesn't always save people."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "up",
+     "shot": "mcu:mio",
+     "text": "Then he said, \"It's still worth trying.\" And he went back to his go problem."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Thursday number thirteen. I've started writing the number on my hand in the morning, so I can look at it in maths."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "steps"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "walkL",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#2e4a3a",
+     "idleLook": "down"
+    }
+   },
+   "set": "street",
+   "season": "autumn",
+   "music": "memory",
+   "musicVol": 0.6,
+   "amb": [
+    "city",
+    "wind"
+   ],
+   "fadeIn": 1.2,
+   "leaves": true
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "autumn"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第六話",
+   "kicker": "EPISODE 6",
+   "title": "The Prince of the Coin Laundry",
+   "sub": "on \"The Idiot\" (I)",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "salaryman",
+     "emo": "sleepy",
+     "look": "down",
+     "shot": "mcu:salaryman",
+     "text": "...Eleven forty-two. The last train. I watched it. I was right there on the platform. I watched the doors close."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "worried",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's been here since I arrived. He smells of beer and he keeps talking to the dryer. I don't know whether to leave or call someone. He's in Itsuki-san's seat."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "emo": "surprised",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "worried",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Good evening. There's a, um. Situation."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...I see."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "standR",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Excuse me. Are you all right? Are you cold?"
+    },
+    {
+     "who": "salaryman",
+     "emo": "sleepy",
+     "look": "up",
+     "shot": "mcu:salaryman",
+     "text": "Cold? I'm a section chief. Was. Was a section chief. Now I'm a \"special adviser.\" Do you know what a special adviser is? It's a desk by the window, so the others don't have to look at you."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That sounds lonely."
+    },
+    {
+     "who": "salaryman",
+     "emo": "sad",
+     "look": "down",
+     "shot": "mcu:salaryman",
+     "text": "Twenty-six years. Twenty-six years, and they gave my desk to a boy who calls me \"Pops.\" He thinks I can't hear him."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "vending"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "sfx": "can"
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Here. It's hot. Hold it, even if you don't drink it. Your hands will be glad.",
+     "cs": {
+      "itsuki": {
+       "prop": "can",
+       "can": "tea"
+      }
+     }
+    },
+    {
+     "who": "salaryman",
+     "emo": "sad",
+     "look": "up",
+     "shot": "mcu:salaryman",
+     "text": "...Thank you. You're a kind young man. My daughter would like you. She doesn't like me."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "How old is she?"
+    },
+    {
+     "who": "salaryman",
+     "emo": "teary",
+     "look": "down",
+     "shot": "mcu:salaryman",
+     "text": "Nineteen. She's at a university in Osaka. She doesn't answer my messages. I send her a message every night. \"Did you eat?\" Every night. Three hundred and something nights."
+    },
+    {
+     "who": "salaryman",
+     "emo": "soft",
+     "look": "up",
+     "shot": "mcu:salaryman",
+     "text": "When she was small, I carried her on my shoulders to the fireworks on the canal. Right out there. She held my ears like handlebars. She said, \"Papa, you're the tallest man in the world.\""
+    },
+    {
+     "who": "salaryman",
+     "emo": "sad",
+     "look": "down",
+     "shot": "mcu:salaryman",
+     "text": "I'm not very tall. I'm one sixty-four."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...She reads them."
+    },
+    {
+     "who": "salaryman",
+     "emo": "surprised",
+     "look": "up",
+     "shot": "mcu:salaryman",
+     "text": "How would you know?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Because you'd notice if they stopped. And she would notice. A message every night is a kind of house. She knows where it is, even if she doesn't go in."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Who is this person? He takes eleven seconds to say good evening to me."
+    },
+    {
+     "who": "salaryman",
+     "emo": "teary",
+     "look": "down",
+     "shot": "mcu:salaryman",
+     "text": "...A house. That's nice. I'll tell my wife that. She thinks I'm a fool."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Do you live far?"
+    },
+    {
+     "who": "salaryman",
+     "emo": "sleepy",
+     "look": "down",
+     "shot": "mcu:salaryman",
+     "text": "Shin-Kawabe. Forty minutes by taxi. Too much money. I'll sleep here. It's warm. The cat doesn't mind."
+    },
+    {
+     "dur": 2.0,
+     "shot": "insert:cat",
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "mio",
+     "look": "up",
+     "shot": "two",
+     "text": "The cat minds."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "I'll pay for the taxi. You can pay me back. Leave it with the lady who owns this place."
+    },
+    {
+     "who": "salaryman",
+     "emo": "surprised",
+     "look": "up",
+     "shot": "mcu:salaryman",
+     "text": "You'd do that? You don't know me."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I know you missed a train. I've missed a lot of trains."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "And take this. It's cold out there.",
+     "cs": {
+      "itsuki": {
+       "prop": "none"
+      }
+     }
+    },
+    {
+     "who": "salaryman",
+     "emo": "surprised",
+     "shot": "mcu:salaryman",
+     "text": "Your coat?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I live close."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He doesn't live close. He lives by the station. He's going to walk twenty minutes in November in a cardigan."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "salaryman",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:salaryman",
+     "text": "Young man. What's your name?",
+     "cs": {
+      "salaryman": {
+       "slot": "door"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It doesn't matter."
+    },
+    {
+     "who": "salaryman",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:salaryman",
+     "text": "Then I'll call you the prince. Goodnight, prince."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "salaryman": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "two",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "What if he doesn't pay you back?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Then it was a gift. I just didn't say so, so he wouldn't have to be embarrassed."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And the coat?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "The coat was ugly. Mrs. Hoshino said so in September."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The coat was not ugly. The coat was the one item on his list he'd actually done."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    }
+   ],
+   "chars": {
+    "salaryman": {
+     "slot": "benchR",
+     "emo": "sleepy",
+     "idleLook": "down"
+    },
+    "mio": {
+     "slot": "standL",
+     "emo": "worried",
+     "prop": "book",
+     "bookColor": "#2e4a3a",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "music": "unease",
+   "musicVol": 0.55,
+   "amb": [
+    "washer",
+    "wind"
+   ],
+   "washers": [
+    3
+   ],
+   "clock": 22.0,
+   "caption": "Thursday, November.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sit"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He called you the prince."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "He was very drunk."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I've just finished the first half of The Idiot. Do you know what I thought, watching you? Prince Lev Nikolayevich Myshkin. Arrived in a coin laundry. Gives a stranger his coat."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "shot": "close:itsuki",
+     "text": "I'm not Myshkin."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "point",
+     "shot": "close:mio",
+     "text": "You are absolutely Myshkin. That's your name now. Underground-san is retired. Prince."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...Please don't."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "text": "Prince. Prince. Prince of the Coin Laundry."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": "blush"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's going to stick. I can feel it sticking."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Okay. Seriously. Myshkin. He comes back to Petersburg from a clinic in Switzerland, where he's been treated for epilepsy since he was a boy. He has one bundle and no coat for the weather. Sound familiar."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And on the first day, everyone he meets thinks he's an idiot. Because he answers every question honestly. A general asks him something rude, and he just answers it. Like a child. Like there's nothing to protect."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And then, by the end of the day, they're all telling him their secrets."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Yes! Why does that happen?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Because he doesn't want anything from them. Everyone in Petersburg is trying to get money or a wife or a position. He's the only person in the room who isn't. People can feel that. It's like warmth from a stove."
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "close:mio",
+     "text": "Gramps's note is on the Swiss story. The girl, Marie."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Idiot",
+      "text": "I talked to the children about Marie, and slowly they stopped throwing stones at her.",
+      "right": "Before she died, they would come every day to the cliff and sit with her.",
+      "underline": 1,
+      "note": "He does not save her.\nHe teaches others\nto love her.\nThat is the miracle.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "A poor girl in the Swiss village everyone despised, because a man had used her and left her. Even her mother. And Myshkin gives her a kiss on the cheek and his last coin, and then, slowly, he teaches the village children to love her."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She dies anyway."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "She dies anyway. But not alone. The children carry her coffin."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And then there's Rogozhin. My favourite scary man. Black eyes, a fortune from his father, and he's obsessed with the same woman as Myshkin."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And they swap crosses."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "They swap crosses! Rogozhin's gold one for Myshkin's cheap tin one. They become brothers. And Rogozhin's old mother blesses the prince. And then, that same day, Rogozhin waits for him on a dark staircase with a knife."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "Myshkin sees the knife and says, \"Parfyon, I don't believe it.\" And he has a seizure, and falls down the stairs, and that's what saves him."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Saved by being ill. By the thing that made everyone call him an idiot."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky had epilepsy too. He wrote that just before a seizure there were a few seconds of perfect happiness. A harmony so complete that he'd give his whole life for it."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And then the floor."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And then the floor."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Somebody asks him: \"Is it true, prince, that you once said beauty will save the world?\" Everyone quotes that line. Gramps quoted it at weddings."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "But in his own copy, next to it, he wrote two words. \"Which beauty?\""
+    },
+    {
+     "who": "itsuki",
+     "emo": "thinking",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...That's a good question."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "What's your answer?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Not the beautiful woman. The book is clear about that. Her beauty doesn't save anyone, including her."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Maybe the other kind. A man in a tavern who says something true while everyone laughs. Children carrying a coffin up a hill. Somebody holding a hot can because their hands will be glad."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He doesn't know he just described himself. I'm not going to tell him. He'd stop doing it."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Have you read to the end?"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Not yet. Don't tell me."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I won't. But it's not a happy book for good people."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Is that why you never do anything nice where anyone can see? In case it goes badly?"
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Goodness looks foolish. That's the trouble. Myshkin is the best person in Russia and everyone calls him an idiot. A man gives his coat to a drunk and walks home in a cardigan. It's ridiculous."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "It wasn't ridiculous to him. He said his daughter would like you."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...He was very drunk."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Drunk people in Dostoevsky always tell the truth. You taught me that. Marmeladov."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "My favourite small thing in the whole book is the donkey."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "The donkey in Basel."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "When Myshkin first arrives in Switzerland, he's so ill he's in a kind of fog. He doesn't understand anything. And then in the market at Basel he hears a donkey bray. And suddenly everything clears. His whole mind wakes up. Because of a donkey."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "text": "The general's daughters all laugh at him. And he says, very seriously, I've loved donkeys ever since. It's a very useful animal."
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "It's the only joke in the book Myshkin makes on purpose."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I think everybody has a donkey. Something stupid that woke them up."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...What was yours?"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "A man reading White Nights wrong in a coin laundry."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "I'm the donkey."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "text": "You're the donkey!"
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Can I ask something? Why do you talk to strangers like that, and to me you say about eleven words a night?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "...I say more than eleven."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "shot": "close:mio",
+     "text": "You said \"I see\" when you came in. That's two."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "With strangers it doesn't matter what they think of me afterwards. They get on a train. They're gone."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And with me it matters."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "blush",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...You're not getting on a train."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Oh. Okay. Okay. Don't look at him. Look at Fyodor Mikhailovich. Fyodor Mikhailovich is asleep. Good. Nobody saw that."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "soft",
+     "prop": "book",
+     "bookColor": "#2e4a3a",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "shy",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "music": "wonder",
+   "musicVol": 0.7,
+   "amb": [
+    "washer",
+    "wind"
+   ],
+   "washers": [
+    3,
+    5
+   ],
+   "clock": 22.4,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "ext-tea",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "dur": 1.0,
+     "shot": "wide",
+     "sfx": "vending",
+     "cs": {
+      "itsuki": {
+       "slot": "standR",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "dur": 1.0,
+     "shot": "wide",
+     "sfx": "can"
+    },
+    {
+     "dur": 1.0,
+     "shot": "wide",
+     "sfx": "vending"
+    },
+    {
+     "dur": 1.0,
+     "shot": "wide",
+     "sfx": "can"
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "prop": "can",
+       "can": "coffee"
+      },
+      "mio": {
+       "prop": "can",
+       "can": "tea"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Hot milk tea. Royal Milk Tea, the one with the cow on it. He didn't ask. He just put it in my hands, and went back to his end of the bench."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I told him once. In September. I said \"I like milk tea, coffee tastes like a bus station.\" Once. In passing. Two months ago."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "shy",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "shy",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Don't say anything. If she says something, I'll have to explain, and I can't explain."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "...It's cold tonight."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "It's cold."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "look": "up",
+     "shot": "two",
+     "text": "The forecast says snow next week. The first snow."
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "...It's early this year."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Will you still come? When it snows?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "I came in a typhoon."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Neither of us said anything about the tea. It's the best conversation we've ever had."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_ext",
+   "season": "autumn",
+   "music": "theme",
+   "musicVol": 0.65,
+   "amb": [
+    "wind"
+   ],
+   "leaves": true,
+   "cat": null
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "two",
+     "text": "Goodnight, Prince."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "...Goodnight."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Wear a coat."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I gave it away."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "Idiot."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That's the right word. Technically."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "It's the nicest word in the book. Remember that, Prince. When everyone's laughing."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "farL"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "prop": "can",
+     "can": "tea",
+     "idleLook": "other"
+    },
+    "itsuki": {
+     "slot": "railR",
+     "emo": "neutral",
+     "idleLook": "other"
+    }
+   },
+   "set": "bridge",
+   "season": "autumn",
+   "music": "theme",
+   "musicVol": 0.6,
+   "amb": [
+    "wind"
+   ],
+   "leaves": true
+  },
+  {
+   "type": "scene",
+   "id": "room-6",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She called me an idiot on the bridge. It was the nicest thing anyone has called me in five years."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen\n7. Coat (again)\n8. Milk tea is 130 yen. Keep coins."
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "\"You're not getting on a train.\" I said that out loud. I should never be allowed to speak."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She's seventeen. I'm the man at the other end of the bench. I'll stay at the other end of the bench. That's the one thing I'm sure of."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "autumn",
+   "music": "night",
+   "musicVol": 0.6,
+   "amb": [
+    "room",
+    "wind"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 6: The Prince of the Coin Laundry",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "A salaryman",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Idiot (1869)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "Compassion is the chief, and perhaps the only, law of all human existence.",
+   "quoteBy": "Fyodor Dostoevsky, \"The Idiot\"",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "annoyed",
+     "text": "Next time. A hundred thousand roubles thrown into a fireplace, two women who can't stand each other, and a prince stuck in the middle."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "pout",
+     "text": "Episode seven. Money in the Fire. We're going to have our first fight. He started it."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Money in the Fire",
+   "nextSub": "on \"The Idiot\" (II)",
+   "season": "autumn"
+  }
+ ]
+}

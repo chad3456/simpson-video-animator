@@ -1,0 +1,1472 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E3",
+  "title": "Letters in the Lost-and-Found",
+  "book": "Poor Folk (1846)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Late September. For the first time, Mio isn't there when Itsuki arrives. She has left him a letter in the laundry's lost-and-found notebook, because Dostoevsky's first novel is made of letters, and because some things are easier to say on paper. He writes back.",
+  "season": "summer",
+  "gap_bench": 178,
+  "fps": 24,
+  "gap": 0.62,
+  "source": "Original story. Discusses Poor Folk (1846); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "hoshino": {
+   "name": "Mrs. Hoshino",
+   "role": "owner of Coin Laundry Hoshizora",
+   "voice": "bf_emma",
+   "speed": 0.9
+  },
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "door",
+       "emo": "neutral",
+       "idleLook": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Ten o'clock. Thursday. The bench is empty."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "cs": {
+      "itsuki": {
+       "slot": "benchR",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "She's always here first. She sits at her end with her feet up, and she says something rude before I've got my coat off."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's fine. It's a coin laundry. People don't owe a coin laundry anything."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "up"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "surprised",
+     "look": "up",
+     "shot": "mcu:itsuki",
+     "text": "...My umbrella. Hanging on the hook by the counter. With a piece of paper tied to the handle."
+    },
+    {
+     "dur": 3.5,
+     "insert": {
+      "kind": "text",
+      "text": "READ THE NOTEBOOK. (the sock one)"
+     }
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {},
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    2
+   ],
+   "clock": 22.0,
+   "fadeIn": 1.2,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   }
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "summer"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第三話",
+   "kicker": "EPISODE 3",
+   "title": "Letters in the Lost-and-Found",
+   "sub": "on \"Poor Folk\"",
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "page"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "The Laundry Notebook. Lost-and-found. Mrs. Hoshino keeps it on the counter for missing socks. Nobody ever finds their socks."
+    },
+    {
+     "dur": 6.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "hoshino",
+      "rot": -1,
+      "text": "LOST: one grey sock. Has a hole. Sentimental value. (Room 204)\nFOUND: nothing. — Hoshino\nLOST: my will to live (dryer 2 took 300 yen)\nDryer 2 is fine. Use dryer 3. — Hoshino"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Dryer two is not fine."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "sfx": "page"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "surprised",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "And then, in blue ink, a whole page. In handwriting that runs uphill."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "shot": "insert",
+     "text": "Dear Underground-san. Also known as Mr. Dreamer. Also known as Proofreader. Also known as Fedya's other human.",
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "mio",
+      "rot": -2,
+      "typeOn": true,
+      "text": "Dear Underground-san\n(Mr. Dreamer, Proofreader,\nFedya's other human),"
+     }
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "smile",
+     "shot": "close:itsuki",
+     "text": "If you're reading this, I'm late. Don't panic. You'll panic. You'll be sitting there right now with your face doing the thing."
+    },
+    {
+     "dur": 1.2,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "flustered",
+       "act": "hide"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "shot": "mcu:itsuki",
+     "text": "Mum has a hospital appointment tonight. It's the baby. It's fine. Everyone keeps saying it's fine, so I'm saying it too. Satoshi-san's car won't start, so I'm going with her on the bus. I'll come after. Wait for me, or don't. You will."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "shot": "close:itsuki",
+     "text": "I'm writing you a letter because this week's book is all letters. Gramps said Poor Folk is Dostoevsky's first novel, and that he wrote it when he was twenty-four, and that everyone who read it cried, including the critic who discovered him, who woke him up at four in the morning to tell him so."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "grin",
+     "shot": "close:itsuki",
+     "text": "So I'm Varvara, the girl at the window across the courtyard. And you have to be Makar. Sorry. He's a poor old clerk who copies documents all day. You copy other people's words for a living. It's not my fault. It's the casting."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Makar Devushkin. Forty-seven, a titular councillor, the lowest rank that still has a title. His handwriting is the only beautiful thing about him."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "soft",
+     "shot": "mcu:itsuki",
+     "text": "P.S. The umbrella is on the hook. I dried it on the warm towel rail. It was the first time I liked the towel rail."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "shot": "close:itsuki",
+     "text": "P.P.S. Write back. In the notebook. It's a lost-and-found. If you don't write back, I'll report you as lost."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "dur": 1.5,
+     "shot": "insert:cat",
+     "sfx": "meow",
+     "cat": {
+      "slot": "cat_dryer",
+      "pose": "sit"
+     },
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "...Don't look at me like that, Fedya."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I'm not going to write back. People don't write letters in coin laundries."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "thinking",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Makar writes to Varvara every day. About the weather. About the tea he can't afford. About the geraniums he buys her. He tells her he's fine, while he sells his coat."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "And he's ashamed. Not of being poor. Of being seen being poor. He goes to the office in boots with holes in them and sits very still so nobody looks at his feet."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "I sit very still too."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "dur": 4.0,
+     "shot": "mcu:itsuki",
+     "sfx": "pencil",
+     "cs": {
+      "itsuki": {
+       "act": "write",
+       "emo": "thinking",
+       "idleLook": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "flustered",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Just a short reply. Out of politeness. The notebook asks for it. It's a lost-and-found."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "tease",
+   "musicVol": 0.8,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    2
+   ],
+   "clock": 22.1,
+   "caption": "Thursday, late September.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "sad",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "You waited."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "My washing isn't finished."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "two",
+     "text": "Washer two finished forty minutes ago. The light's off. I can see it from here."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It needs to rest."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "mio": {
+       "slot": "benchL",
+       "emo": "soft",
+       "idleLook": "front"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Your mother?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Fine. Really fine. They put the gel on her stomach and a little screen came on, and there was a sound like a horse galloping very far away."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "text": "It's a girl. I'm going to have a sister."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Congratulations."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Thank you. Mum cried. Satoshi-san cried. The nurse nearly cried. I said \"wow\" like a normal person."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I said wow. And then on the bus I wanted to cry too, and I didn't know which kind of crying it was going to be, so I didn't."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two",
+     "react": {
+      "mio": "soft"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So. Did you read it? My letter?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It was in the lost-and-found. Anyone could have read it."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "text": "Did you write back?"
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "flustered",
+       "act": "hide"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "point",
+     "shot": "close:mio",
+     "text": "You did! Give it here."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "shot": "close:itsuki",
+     "text": "Not now. Read it at home. Or never. Never is good."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "It's a lost-and-found, Makar Alexeyevich. It belongs to the public."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "sfx": "page",
+     "cs": {
+      "itsuki": {
+       "prop": "none"
+      },
+      "mio": {
+       "prop": "notebook"
+      }
+     }
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "sleepy",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "night",
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    2,
+    5
+   ],
+   "clock": 23.0,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95,
+     "from": 6
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-3",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "shy",
+     "shot": "insert",
+     "text": "Dear Varvara Alexeyevna. The umbrella has been received, dry and in good health. It has never been to a towel rail before. It may be spoiled now.",
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "itsuki",
+      "rot": 1,
+      "text": "Dear Varvara Alexeyevna,\nThe umbrella has been received, dry\nand in good health."
+     }
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "I am sorry to have been cast as Makar. But it is fair. I correct the commas of other people's sentences eight hours a day, and at night I keep my feet still so nobody looks at my shoes."
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "soft",
+     "shot": "close:mio",
+     "text": "Makar says that the worst thing about being poor is not hunger, but that people pass judgement on you, and you begin to pass it on yourself. I have read that line many times. I think it is the truest line in the book."
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "soft",
+     "shot": "close:mio",
+     "text": "I hope your mother is well. I hope the bus was warm. Fedya is asleep on dryer three and sends no regards, because he is a cat."
+    },
+    {
+     "who": "itsuki",
+     "vo": true,
+     "emo": "shy",
+     "shot": "insert",
+     "text": "Yours, with a good umbrella. Makar (proofreader).",
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "itsuki",
+      "rot": 1,
+      "text": "...Fedya is asleep on dryer three and\nsends no regards, because he is a cat.\n\nYours, with a good umbrella,\nMakar (proofreader)"
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "surprised",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Oh."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He doesn't write like a proofreader. He writes like someone who has been saving words for a long time and didn't have anyone to spend them on."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "You write beautifully."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "I know where the commas go. That's all."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Makar says that too. \"I have no style, my darling.\" And then he writes thirty pages."
+    },
+    {
+     "who": "itsuki",
+     "emo": "blush",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "...Makar is a good man."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's the best man in the book. That's what makes it so unfair."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "My favourite bit is the button."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Oh. The button."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "He's called in front of His Excellency because he made a mistake copying a document. He left out a line. And he's standing there in his torn uniform, shaking, and a button falls off."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "front",
+     "text": "It rolls across the floor. Right up to the general's feet. And Makar runs after it and tries to pick it up and can't, and then tries to sew it back on with his fingers. In front of everyone."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "And the general gives him a hundred roubles."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And shakes his hand. Gramps wrote something there."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "Poor Folk",
+      "text": "He took my hand, my unworthy hand, and shook it, just as if I were his equal, as if I were a general myself.",
+      "underline": 2,
+      "note": "Not the hundred roubles.\nThe hand.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...He's right. Makar forgets the money in a page. He never forgets the hand."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Has anyone ever shaken your hand like that?"
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Once. A long time ago. A man gave me a certificate, and shook my hand, and said, \"We look forward to the next one.\""
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The next what?"
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "away",
+     "shot": "close:itsuki",
+     "text": "...Proofread. The next proofread."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's the first time I've caught him lying. He's very bad at it. He looked at the vending machine like it might help."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Okay, the part that made me laugh. Varvara lends him books. She sends him Pushkin, and he loves it. And then she sends him Gogol. The Overcoat."
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "...And he's furious."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "act": "point",
+     "shot": "close:mio",
+     "text": "He's so furious! It's about a poor clerk who copies documents and saves for a year to buy a new coat, and it gets stolen. And Makar writes her this outraged letter. How dare he. How dare this Gogol write about a man like me and show everybody my boots."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky put a man in a book who is angry about being put in a book."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "By someone who was laughing at him."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Gogol isn't laughing at him, exactly. But Makar can't tell the difference. When you've been looked down on your whole life, pity and mockery feel the same from underneath."
+    },
+    {
+     "who": "mio",
+     "emo": "thinking",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "But Pushkin he loves. The Stationmaster. The old man whose daughter runs away."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Because Pushkin lets the old man be sad without making him small."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's the kind of book I'd want to be in. If I had to be in one."
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...You'd be the one writing it."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "blush",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "blush",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He says things like that, and then he looks at the floor like the floor said it."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "Can I tell you which part I hated?"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "text": "The end."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "The end! Varvara marries that horrible rich man Bykov and goes away to his estate, and her last letters are all about lace. She asks Makar to run around town for her, to change the lace on her dresses."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "And Makar's last letter is the most desperate thing I've ever read. \"My darling, my little dove, my own.\" And then it just stops. No answer. The book ends with a letter that nobody replies to."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Dostoevsky was twenty-four. He already knew that's how most letters end."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Whose side are you on?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Varvara's."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Varvara's? She abandons him!"
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "She's ill, and poor, and very young, and the only person who loves her is a man who can't buy his own boots. If she stays, she stays in a corner room across a courtyard for the rest of her life, being grateful."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "Makar's love is real. But it's a small room. Somebody who loved her properly would want her to leave it."
+    },
+    {
+     "dur": 3.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "soft",
+       "look": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "That's a very sad thing to believe."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...It's a sad book."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He said it like a rule he'd made for himself. Like something written on the inside of a door."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "buzzer"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "neutral",
+     "prop": "notebook",
+     "idleLook": "down"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "shy",
+     "idleLook": "away"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "wonder",
+   "musicVol": 0.8,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    2,
+    5
+   ],
+   "clock": 23.1,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-4",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Okay. New rule. Whenever one of us can't come on a Thursday, we write in the notebook. Like Makar and Varvara. But with a happier ending."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "It's for socks."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "It's for things that are lost."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "hoshino": {
+       "slot": "door",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Evening. Don't get up. I'm only here for the coin boxes."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "two",
+     "text": "Good evening, Mrs. Hoshino."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "can",
+     "cs": {
+      "hoshino": {
+       "slot": "standR"
+      }
+     }
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Somebody has been writing letters in my lost-and-found."
+    },
+    {
+     "who": "itsuki",
+     "emo": "flustered",
+     "act": "hide",
+     "shot": "close:itsuki",
+     "text": "I'm very sorry."
+    },
+    {
+     "who": "hoshino",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Hm. Two pages of letters, and still nobody has found that grey sock from Room 204."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "It's a lost-and-found. We're both lost. Technically we're eligible."
+    },
+    {
+     "who": "hoshino",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:hoshino",
+     "text": "Then write neatly. And leave me one line at the bottom for socks."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "hoshino": {
+       "slot": "door"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "hoshino": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "That's a yes."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "That was a yes."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Makar. Thank you for waiting."
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...My washing needed to rest."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "thinking",
+     "prop": "notebook",
+     "idleLook": "down"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "idleLook": "other"
+    }
+   },
+   "set": "laundry_int",
+   "season": "summer",
+   "music": "tease",
+   "musicVol": 0.8,
+   "amb": [
+    "washer",
+    "crickets"
+   ],
+   "washers": [
+    5
+   ],
+   "clock": 23.6,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sit"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I tore his letter out of the notebook. Carefully, along the stitches. Mrs. Hoshino will never notice. She'll notice."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "I'm going to keep it in Underground. The throwing copy. It's the safest place I know."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "\"Somebody who loved her properly would want her to leave.\" Gramps, why does every man in these books talk like he's already said goodbye?"
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "soft",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "bridge",
+   "season": "summer",
+   "music": "theme",
+   "musicVol": 0.7,
+   "amb": [
+    "crickets"
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "room-3",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She has the letter. There is now a piece of my handwriting in the world that I can't proofread."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine\n2. Visit Mum\n3. Reply to Mr. Sakurai (the magazine)\n4. Write\n5. Get umbrella back  (done!)\n6. Buy a better pen"
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "\"We look forward to the next one.\" I said proofread. She knew. She let me keep it."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Thursday number five. She told me the number on the way out. She's been counting since August."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "summer",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "room",
+    "crickets"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 3: Letters in the Lost-and-Found",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Mrs. Hoshino",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "Poor Folk (1846)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "But what is the use of writing, my darling? The heart only aches more when you write.",
+   "quoteBy": "Fyodor Dostoevsky, \"Poor Folk\"",
+   "season": "summer"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "grin",
+     "text": "Next time. A poor student with a theory, a pawnbroker, and an axe. The big one."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "text": "Episode four. The Idea with an Axe. There's a typhoon coming, Makar. Bring your umbrella. This time, keep it."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "The Idea with an Axe",
+   "nextSub": "on \"Crime and Punishment\"",
+   "season": "summer"
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+episode: 12
+slug: e12-never-forget-one-another
+title: Let Us Never Forget One Another
+kanji: 第十二話
+sub: on "The Brothers Karamazov" (III)
+book: The Brothers Karamazov (1880)
+season: spring
+linegap: 0.75
+gap: 85
+logline: Late March, the last night of the Coin Laundry Hoshizora, and the thirty-first Thursday. Mio leaves for Tokyo on Saturday. Over the last chapter of Dostoevsky's last novel, Alyosha's speech to twelve schoolboys at a stone, the two of them give each other the only presents that fit, and Itsuki finally fixes the sign.
+quote: Let us never forget one another. And whatever happens, even if we never meet again, let us remember how good it once was here, all of us together.
+quoteBy: Fyodor Dostoevsky, "The Brothers Karamazov"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE memory | set=sky time=night season=spring music=memory amb=crickets memory=true fadeIn=1.5
+BEAT 3 [sky]
+GENZO (memory) [sky]: Listen, Mio. This is the last page. Dostoevsky died three months after he finished it. He was planning a second part. He never wrote it. So this is where he stopped.
+GENZO (memory) [sky]: A young man at a stone, with twelve boys who have just buried their friend. And he tells them: whatever happens to us, let us never forget one another.
+MIO (thought) [sky]: I was ten. I said, that's a sad place to stop. He said, no, it's the best place to stop. It's a place you can stand.
+INSERT photo 3.5
+MIO (thought) [insert]: Gramps. It's the last Thursday.
++INSERT photo
+== SCENE coldopen-ext | set=laundry_ext time=night season=spring music=memory amb=crickets,city petals=true extCast=false
+BEAT 2.5 [ext]
+MIO (thought) [ext]: Thursday thirty-one. The Dreamer got four nights. We got thirty-one.
+MIO (thought) [ext:bench]: I'm going to say goodbye properly. I'm not going to cry. I've decided. Out of spite.
+BEAT 2 [ext]
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=spring music=tease musicVol=0.7 amb=washer,crickets washers=1,2 clock=21.9 petals=true | caption=Thursday, late March. The last night.
+@ mio slot=benchL emo=grin look=other prop=book bookColor=#3a2a4a
+@ hoshino slot=standR emo=smile look=other
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+BEAT 2.5 [wide]
+HOSHINO (smile, look=other) [mcu:hoshino]: Last night. Midnight, I lock the door, and the keys go to a man in a suit. Thirty-one years.
+MIO (soft, look=other) [close:mio]: Are you sad?
+HOSHINO (look=other) [mcu:hoshino]: I'm seventy-six. I'm going to sleep for a week. Ask me in April.
+BEAT 2 [wide] (sfx=bell)
+@ itsuki slot=door emo=neutral look=other prop=manuscript
+BEAT 1.5 [wide]
+MIO (grin, act=wave) [mcu:mio]: Prince! You're on time! On the last night! I'm so proud.
+ITSUKI (smile, look=other) [close:itsuki]: ...I'm always on time.
+MIO (tease, look=other): You were late in February. By four minutes.
+ITSUKI (shy, look=down) [close:itsuki]: There was snow.
+HOSHINO (look=other) [mcu:hoshino]: Before you sit down. You've been suffering for three years. Go on.
+@ hoshino prop=none
+BEAT 2 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+ITSUKI (surprised, look=other) [close:itsuki]: ...The sign?
+HOSHINO (smile, look=other) [mcu:hoshino]: The sign. I've watched you look at it every week like it insulted your mother.
+@ itsuki slot=standR prop=none
+BEAT 2 [wide] (sfx=pencil)
+INSERT sign 4 | pencil=true
+MIO (laugh, look=other) [two]: Do it! Do it! Thirty-one weeks of pain!
+BEAT 1.5 [wide] (sfx=pencil)
+INSERT sign 4 | fixed=true
+BEAT 1.5 [close:itsuki] (itsuki=smile, itsuki.look=up)
+ITSUKI (smile, look=up) [close:itsuki]: ...Dryer, ten minutes. One hundred yen.
+MIO (laugh, act=laugh) [close:mio]: He's glowing! Mrs. Hoshino, look, he's actually glowing!
+HOSHINO (laugh, look=other) [mcu:hoshino]: Thirty-one years and nobody else ever noticed. My husband wrote that sign in nineteen ninety-three. He couldn't spell. I loved him anyway.
+@ hoshino slot=none
+BEAT 2 [wide] (sfx=bell)
+@ itsuki slot=benchR emo=soft look=other
+@ item basket benchR dx=95
+BEAT 2.5 [two]
+MIO (tease, look=other) [close:mio]: Did you see the notebook? On the tenth?
+ITSUKI (smile, look=down) [close:itsuki]: "PASSED." In letters three lines high. With a drawing of a hedgehog wearing a graduation hat.
+MIO (grin, look=other): It's a very good hedgehog.
+ITSUKI (soft, look=down) [close:itsuki]: Mrs. Hoshino cried. I saw her through the window. She pretended it was the steam from dryer three.
+MIO (soft, look=down) [close:mio]: And you?
+ITSUKI (shy, look=away) [close:itsuki]: ...It was very steamy that day.
+BEAT 2 [two]
+MIO (look=down) [close:mio]: Notice something? Only the baskets between us now. In August you sat so far away I thought I had a disease.
+ITSUKI (shy, look=down) [close:itsuki]: ...The bench got shorter.
+MIO (laugh, act=laugh) [close:mio]: The bench did not get shorter!
+ITSUKI (smile, look=down) [close:itsuki]: Mrs. Hoshino says it's the cold. Wood shrinks.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: Okay. Last book. Last chapter. Last page. Gramps's favourite.
+ITSUKI (soft, look=front) [close:itsuki]: The stone.
+MIO (look=front) [close:mio]: There's a boy called Ilyusha. Nine years old. His father is a poor ex-captain, and one day Dmitri drags his father out of a tavern by his beard, in front of the whole town, in front of the schoolboys. And little Ilyusha runs after them crying, and kisses Dmitri's hand, and begs him to let his father go.
+MIO (sad, look=down) [close:mio]: And afterwards he sits on a big stone at the edge of town with his father, and says, Papa, when I grow up I'll challenge him and kill him. And he gets ill. Consumption. And all the boys in his class who used to throw stones at him come, one by one, and sit by his bed.
+ITSUKI (soft, look=front) [close:itsuki]: Alyosha brings them. One at a time. He doesn't lecture anyone. He just keeps bringing them.
+MIO (smile, look=other) [close:mio]: And Kolya brings the dog. Ilyusha thought he'd killed a dog, a long time ago, fed it bread with a pin in it. And it's been eating him up. And Kolya finds the dog, alive, and teaches it tricks, and brings it into the room and it does all its tricks for Ilyusha.
+ITSUKI (smile, look=down) [close:itsuki]: Zhuchka.
+MIO (teary, look=down) [mcu:mio]: Zhuchka! And Ilyusha's face. Gramps said he couldn't read that bit out loud without stopping.
+BEAT 2.5 [two]
+MIO (look=front) [close:mio]: And then Ilyusha dies. And after the funeral, Alyosha stops the boys by the stone. The same stone. And he gives them a speech. Twelve of them.
+ITSUKI (look=front) [mcu:itsuki]: He says, we'll be parting soon. And maybe we'll become bad people later. Cruel, or proud, or we'll laugh at people who suffer. But whatever happens, let's remember this. How we were all together, and how good it was, and how we loved that boy.
+ITSUKI (soft, look=front) [close:itsuki]: He says one good memory, kept from when you were young, might be the thing that saves you one day. Even if it's only one. Even if you only remember it to laugh at it. Some part of you will say, no, I was good then. I was honest and good.
+INSERT book 7 | title=The Brothers Karamazov | text=Let us never forget one another. And whatever happens, let us remember how good it once was here, all of us together. | right="Hurrah for Karamazov!" Kolya cried once more, and all the boys joined in. | underline=2 | note=This is the place\nyou can stand.\n— G. | noteBy=genzo
+BEAT 3 [close:mio] (mio=teary, mio.look=down)
+MIO (teary, look=down) [close:mio]: "This is the place you can stand." He wrote that when I was ten. After he read it to me.
+ITSUKI (soft, look=other) [close:itsuki]: ...It's a good place.
+MIO (look=front) [close:mio]: And then Kolya asks Alyosha. Is it true, Karamazov, what religion says, that we'll all rise from the dead and see each other again? Even Ilyusha?
+ITSUKI (soft, look=front) [close:itsuki]: And Alyosha says, certainly we shall. And we'll tell each other everything that happened, joyfully. Half laughing, half in ecstasy.
+MIO (soft, look=other) [close:mio]: Half laughing. I like that he says half laughing. Like even in heaven people will be a bit embarrassed.
+ITSUKI (smile, look=down) [close:itsuki]: ...Some people will be very embarrassed.
+MIO (smile, look=front) [close:mio]: And then Kolya, the clever one, the show-off, shouts "Hurrah for Karamazov!" And all the boys shout it. And they go off to eat pancakes at the funeral lunch. That's the last line of Dostoevsky's last book. Pancakes.
+ITSUKI (smile, look=down) [close:itsuki]: He finishes with lunch. After all of it. After the Inquisitor and the murder and the trial. Twelve boys going to eat pancakes.
+MIO (laugh, act=laugh) [close:mio]: It's the best ending in literature.
+ITSUKI (smile) [close:itsuki]: It is.
+BEAT 3 [wide] (sfx=buzzer)
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-2 | set=laundry_int season=spring music=wonder musicVol=0.6 amb=washer,crickets washers=2 clock=22.6 signFixed=true petals=true
+@ mio slot=benchL emo=soft look=other
+@ itsuki slot=benchR emo=neutral look=down prop=manuscript
+@ cat slot=cat_bench pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 3 [wide]
+MIO (soft, look=front) [close:mio]: The nine twelve train. On Saturday. Mum's coming with me to set up the room. It's six tatami. It has a window. I checked.
+ITSUKI (soft, look=down) [close:itsuki]: ...A window is important.
+MIO (smile, look=other) [close:mio]: I know. I read a very sad novella about it.
+BEAT 2 [two]
+ITSUKI (shy, look=down) [close:itsuki]: This is for you.
+@ itsuki prop=none
+@ mio prop=manuscript
+BEAT 2 [close:mio] (sfx=page)
+INSERT manuscript 6 | title=The Laundry That Never Closes | text=Chapter One\n\nThere is a coin laundry by the canal that never closes. That is the first thing to know about it. The second thing is that it is closing. | note=sixteen pages. for my reader. — I.K.
+MIO (surprised, look=down) [close:mio]: ...All sixteen. Bound.
+ITSUKI (shy, look=away) [close:itsuki]: The print shop at work. I used the good stapler. Nobody saw.
+MIO (teary, look=down) [mcu:mio]: There's a good mother in it.
+ITSUKI (soft, look=down) [close:itsuki]: On page twelve. I promised.
+MIO (teary, look=down) [close:mio]: And a girl.
+ITSUKI (look=front) [close:itsuki]: ...She's like the moon in a picture of a street. She's at the top. She's not the subject.
+MIO (thought) [close:mio] (teary, look=down): She's on every page. I read them every Thursday. She's on every single page and he thinks she isn't.
+MIO (smile, look=other) [close:mio]: I'll read it again on the train. And every winter. Like Gramps.
+BEAT 3 [two]
+MIO (look=down) [close:mio]: My turn. Close your eyes. No. Don't close them. You'll fall asleep. You're very old.
+ITSUKI (smile, look=down) [close:itsuki]: ...I'm twenty-nine now. In February.
+MIO (surprised, look=other) [close:mio]: You had a birthday and didn't tell me?
+ITSUKI (shy, look=down) [close:itsuki]: Mum told me. She remembered. For six minutes.
+BEAT 2.5 [close:mio] (mio=teary)
+@ mio prop=book bookColor=#3a2a4a
+MIO (soft, look=other) [mcu:mio]: Gramps's Karamazov. The one with eleven winters in the back.
+ITSUKI (surprised, look=other) [close:itsuki]: ...I can't take that.
+MIO (look=other) [close:mio]: You're not taking it. I'm lending it. Like the leaf. You have to give it back. That means we have to meet again. That's the rule of lending.
+@ mio prop=none
+@ itsuki prop=book bookColor=#3a2a4a
+BEAT 2 [close:itsuki] (sfx=page)
+ITSUKI (soft, look=down) [close:itsuki]: There's new writing on the last page.
+MIO (shy, look=down) [close:mio]: Read it later.
+ITSUKI (look=down) [close:itsuki]: ...I'm going to read it now.
+INSERT book 8 | title=The Brothers Karamazov | text="Hurrah for Karamazov!" Kolya cried once more, and all the boys joined in. | note=Run sooner.\nRead again next winter.\nNever forget.\n— M. (the hedgehog one) | noteBy=mio
+BEAT 3 [close:itsuki] (itsuki=teary, itsuki.look=down)
+ITSUKI (teary, look=down) [close:itsuki]: ...Blue pencil.
+MIO (teary, look=down) [close:mio]: Gramps used grey. I'm not Gramps. I'm the next one.
+BEAT 4 [wide]
+@ cat slot=cat_dryer pose=sit
+BEAT 2 [insert:cat] (sfx=meow)
++INSERT cat | pose=sit
+MIO (smile, look=up) [two]: Fyodor Mikhailovich. Where will you go? Mrs. Hoshino says you won't go to Sendai.
+ITSUKI (look=up) [close:itsuki]: ...I asked her. If I could take him. My new machine runs very hot. He'll like it.
+MIO (laugh, act=cover) [close:mio]: You're going to let a cat sleep on your secret washing machine.
+ITSUKI (smile, look=down) [close:itsuki]: It isn't a secret any more. It's a cat bed.
+BEAT 2 [wide] (sfx=bell)
+@ hoshino slot=standL emo=soft look=other
+BEAT 1.5 [wide]
+HOSHINO (soft, look=other) [mcu:hoshino]: Ten minutes, my dears. I'm sorry. The man in the suit will be here at midnight and he's the punctual type.
+MIO (teary, look=other) [close:mio]: Mrs. Hoshino. Thank you. For the notebook. For everything.
+HOSHINO (smile, look=other) [mcu:hoshino]: Take it. The notebook. The lost-and-found belongs to whoever lost the most in it, and found the most. I think that's you two. Split it down the middle.
+HOSHINO (soft, look=other) [mcu:hoshino]: Come and see me in Sendai. Both of you, separately, whenever you like. Bring a book. Not a sad one. I've had enough sad ones in thirty-one years.
+ITSUKI (soft, look=other) [close:itsuki]: ...Thank you for being awake.
+HOSHINO (teary, look=other) [mcu:hoshino]: Oh, don't. Don't you start. I said I wouldn't.
+@ hoshino slot=none
+BEAT 2 [wide] (sfx=bell)
+BEAT 3 [wide] (sfx=chime)
+MIO (look=up) [close:mio]: It's eleven fifty.
+ITSUKI (look=up) [close:itsuki]: ...Yes.
+BEAT 3 [two]
+
+== SCENE door | set=laundry_ext season=spring music=theme musicVol=0.6 amb=crickets petals=true
+@ mio slot=door emo=soft look=other
+@ itsuki slot=standR emo=neutral look=other prop=book bookColor=#3a2a4a
+@ cat slot=none
+BEAT 2.5 [wide]
+MIO (smile, look=other) [two]: I'm not going to cry. I decided. Out of spite.
+ITSUKI (soft, look=other) [close:itsuki]: That's a very good reason.
+MIO (look=other) [close:mio]: Thirty-one Thursdays. Four for the Dreamer. Thirty-one for us. We won.
+ITSUKI (smile, look=down) [close:itsuki]: We won.
+BEAT 3 [close:itsuki] (itsuki=soft, itsuki.look=other)
+ITSUKI (soft, look=other) [close:itsuki]: ...Mio.
+BEAT 4 [close:mio] (mio=surprised, mio.look=other)
+ITSUKI (soft, look=other) [mcu:itsuki]: Thank you for telling me I was reading it wrong.
+BEAT 3 [close:mio] (mio=teary, mio.look=other)
+MIO (thought) [close:mio] (teary, look=other): Thirty-one Thursdays. Once. He saved it for the last one. Like a man who's been carrying one word around in his coat pocket since August, unfolding it to check the commas.
+MIO (teary, look=other) [close:mio]: ...Itsuki-san. You're very welcome.
+MIO (smile, look=other) [close:mio]: Goodnight. Don't walk me. I know where the line is.
+@ mio slot=none
+BEAT 3 [wide] (sfx=steps)
+BEAT 2 [wide]
+
+== SCENE bridge-1 | set=bridge season=spring music=theme musicVol=0.8 amb=crickets petals=true
+@ mio slot=farL emo=teary look=other
+@ itsuki slot=farR emo=soft look=other prop=book bookColor=#3a2a4a
+BEAT 3 [wide] (sfx=steps)
+MIO (thought) [close:mio] (teary, look=front): The middle of the bridge. His line. I'm walking over it. On the other side is Saturday, and Tokyo, and a room with a window.
+BEAT 2 [wide]
+MIO (laugh, look=other) [close:mio]: Itsuki-san! Hurrah for Karamazov!
+BEAT 1.5 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+BEAT 2 [close:itsuki] (itsuki=laugh, itsuki.act=laugh)
+ITSUKI (laugh, act=laugh) [close:itsuki]: Hurrah for Karamazov!
+MIO (thought) [close:mio] (cry, look=other): He laughed. Out loud. On a bridge, at midnight. The whole canal heard it. I'm going to keep that. That's my stone.
+BEAT 4 [wide]
+
+== SCENE epilogue | set=room_him time=day season=spring music=hope musicVol=0.6 amb=birds,room | caption=April.
+@ itsuki slot=desk emo=soft look=down
+BEAT 3 [wide] (sfx=pencil)
+INSERT cat 4 | pose=sleep
+ITSUKI (thought) [insert]: Fedya sleeps on the washing machine. It runs very hot. He's forgiven me for everything.
++INSERT cat | pose=sleep
+INSERT notebook 7 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine  (cat bed)\n2. Visit Mum  (every month. Next: 20th.)\n3. Reply to Mr. Sakurai  (sent. "Here is the next one.")\n4. Write  (chapter 2, page 3)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.\n10. Tell her to go.  (done)\n11. Return the Karamazov. In person.
+MIO (vo, smile) [mcu:itsuki]: Dear Makar Alexeyevich. Tokyo is very loud and my window looks at another window, which has a man in it who plays the trumpet badly every morning at seven. He's my favourite person in Tokyo. I've named him Rogozhin.
+MIO (vo, soft) [close:itsuki]: I've read the sixteen pages again. Four times. You need to send me page seventeen. You're late. No excuses, Prince.
+MIO (vo, soft) [mcu:itsuki]: I told Mum everything. About the Thursdays, and the notebook, and the bridge, and your line in the middle of it. She was quiet for a long time. Then she said she'd like to meet the man who told me to go, so she can thank him properly. She's bringing persimmons. Be warned.
+MIO (vo, tease) [close:itsuki]: P.S. Sora can hold her head up. She is the cleverest baby in Japan. P.P.S. Read again next winter. Never forget.
+BEAT 2.5 [close:itsuki] (itsuki=smile, itsuki.look=down)
+ITSUKI (thought) [mcu:itsuki] (smile, look=front): Page seventeen. There is a coin laundry by the canal that has closed. That's the first thing to know. The second thing is that nothing that happened there is finished.
+BEAT 4 [wide]
+
+== ED
+
+== CARD | dur=8 | title=Thank you for reading with us. | sub=Dostoevsky at the Coin Laundry · The End

@@ -1,0 +1,1416 @@
+{
+ "meta": {
+  "show": "Dostoevsky at the Coin Laundry",
+  "episode": "E7",
+  "title": "Money in the Fire",
+  "book": "The Idiot (1869)",
+  "rating": "general",
+  "format": "anime",
+  "category": "Dostoevsky at the Coin Laundry (anime series)",
+  "logline": "Late November. A classmate has seen Mio at the laundry with \"an old guy,\" and the gossip has followed her all week. Over Nastasya Filippovna, who throws a hundred thousand roubles into the fire, and proud Aglaya, who mocks the prince because she loves him, Mio says one sentence too many. Itsuki answers with the most careful thing he can think of, and they have their first quarrel.",
+  "season": "autumn",
+  "gap_bench": 128,
+  "fps": 24,
+  "gap": 0.75,
+  "source": "Original story. Discusses The Idiot (1869); Dostoevsky passages are our own renderings of the public-domain texts.",
+  "disclaimer": "Original characters, designs and music. Not affiliated with any studio.",
+  "content_note": null,
+  "musicLevel": 0.55
+ },
+ "cast": {
+  "itsuki": {
+   "name": "Itsuki Kanzaki",
+   "role": "28, proofreader at a small printing company; once won a prize for a novella",
+   "voice": "am_michael",
+   "speed": 0.93
+  },
+  "mio": {
+   "name": "Mio Takanashi",
+   "role": "17, third-year high-school student; inherited her grandfather's Dostoevsky",
+   "voice": "af_heart:0.75+af_sky:0.25",
+   "speed": 1.04
+  },
+  "yuka": {
+   "name": "Yuka",
+   "role": "Mio's classmate",
+   "voice": "af_bella",
+   "speed": 1.08
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "coldopen",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "yuka",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "Mio! Mio, wait. Is it true? Ayaka's brother saw you at that coin laundry by the canal. With a guy. An old guy. He said every Thursday."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's not old. He's twenty-eight."
+    },
+    {
+     "who": "yuka",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "That's old! That's so old! Is he your boyfriend? Oh my god. Is it creepy? Is he a creep?"
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "annoyed",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "He's nobody. We talk about books. He's like a library with glasses."
+    },
+    {
+     "who": "yuka",
+     "vo": true,
+     "shot": "mcu:mio",
+     "text": "Ayaka says it's weird. Everyone's saying it's weird."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Ayaka thinks Tolstoy is a kind of soup."
+    },
+    {
+     "who": "yuka",
+     "vo": true,
+     "shot": "close:mio",
+     "text": "I'm just saying. Be careful. My mum says men like that, at that age, who hang around girls..."
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "He doesn't hang around. I hang around. He's just always there first."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "\"He's nobody.\" I said it so fast. Like Peter in the courtyard. Before the cock crowed even once."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide",
+     "sfx": "steps"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "walkL",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "street",
+   "time": "day",
+   "season": "autumn",
+   "music": "tease",
+   "musicVol": 0.6,
+   "amb": [
+    "city"
+   ],
+   "fadeIn": 1.0,
+   "leaves": true
+  },
+  {
+   "type": "card",
+   "id": "op",
+   "style": "op",
+   "dur": 52,
+   "season": "autumn"
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "title",
+   "dur": 6.5,
+   "kanji": "第七話",
+   "kicker": "EPISODE 7",
+   "title": "Money in the Fire",
+   "sub": "on \"The Idiot\" (II)",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-1",
+   "lines": [
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "neutral",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Good evening."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Good evening, Prince."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two",
+     "cs": {
+      "mio": {
+       "slot": "benchL"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Mrs. Hoshino left something for me. On the hook."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "mio",
+      "rot": 1,
+      "text": "To the Prince.\nYour coat, dry-cleaned, and the taxi money.\nAnd a box of sweets from Shin-Kawabe.\nMy daughter replied to my message.\nShe said: \"Yes, I ate. Did you?\"\n— Section Chief (Special Adviser)"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "She replied."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She replied."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "\"Did you?\" She asked him back. That's a whole conversation. That's a house."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Do you want a sweet? There are twelve. I can't eat twelve sweets."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "text": "Give me three. One for me, one for Fyodor Mikhailovich, one for the baby."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "shot": "close:itsuki",
+     "text": "The baby can't eat sweets."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "text": "Then one for the baby's big sister, on her behalf."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "book",
+     "shot": "mcu:mio",
+     "text": "I finished it. The Idiot. Both halves. You were right. It's not a happy book for good people."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "No."
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "The last chapter. Myshkin and Rogozhin, in that dark house, at night. Lying side by side on cushions on the floor, next to the curtain. And behind the curtain is..."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Yes."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "And Rogozhin starts shaking and shouting, and Myshkin just strokes his hair. All night. Stroking the hair of the man who did it. And when they find them in the morning, the prince doesn't recognise anyone. He's gone back to being an idiot, properly this time. They send him back to Switzerland."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Why did Gramps love a book that ends like that? He read it every winter."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...Maybe because for six hundred pages there was a man like that in the world. Even if it was only in a book. Even if the world couldn't keep him."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Dostoevsky tried to write a perfectly good man, and he couldn't make him win. But he didn't make him bad, either, to make the ending easier. He let goodness lose and still be good. I think that's very brave."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Gramps wrote on the last page: \"Read again next winter.\" Every year. There are eleven of them. Eleven winters, in different pencils."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Then this is the twelfth winter."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...I'll write it. \"Read again next winter.\" In my pencil."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "But first. The fire. I have to talk about the fire."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Nastasya Filippovna's party."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "It's her birthday. And every man in the room is trying to buy her. One wants to marry her off with seventy-five thousand roubles so he can marry someone respectable. Ganya will marry her for the money, even though he's ashamed of her. And then Rogozhin bursts in, drunk, with a hundred thousand roubles wrapped in a newspaper."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "text": "Like she's at an auction. And she knows it. That's the worst part. She's the only one in the room who says what's happening."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "And Myshkin asks her to marry him."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "Myshkin asks her to marry him. Not to buy her. To save her. And she says no, because she thinks she'd ruin him. She runs off with Rogozhin instead."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "text": "But before she goes, she throws the hundred thousand roubles in the fire."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "book",
+      "title": "The Idiot",
+      "text": "She seized the packet and flung it into the fire.",
+      "right": "If you pull it out with your bare hands, Ganya, it is yours. All of it.",
+      "underline": 2,
+      "note": "Everyone watches the money.\nWatch Ganya's face.\n— G.",
+      "noteBy": "genzo"
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And Ganya doesn't move. He stands there, watching it burn, and then he faints."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "He faints! And she pulls it out herself with the fire tongs and throws it at him. It's the most dramatic thing I've ever read. I read it on the bus and the man next to me asked if I was all right."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Were you?"
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "I was cheering. Quietly."
+    },
+    {
+     "dur": 2.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Is she mad? Nastasya?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "She was taken in by a rich man when she was a child, and he made her what everyone calls her. And she agrees with them. She thinks she's ruined. So she'd rather burn everything than let someone kind be kind to her."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "That's what the Underground Man did. To Liza."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "...It's the same wound. Different book."
+    },
+    {
+     "dur": 2.5,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "And then there's Aglaya. My favourite."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Of course she's your favourite."
+    },
+    {
+     "who": "mio",
+     "emo": "tease",
+     "act": "point",
+     "shot": "close:mio",
+     "text": "The youngest daughter of the general. Proud, beautiful, very rude. She mocks Myshkin all the time. She calls him a poor knight. She reads a poem at him in front of everyone to embarrass him. She sends him a hedgehog!"
+    },
+    {
+     "who": "itsuki",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:itsuki",
+     "text": "The hedgehog."
+    },
+    {
+     "who": "mio",
+     "emo": "laugh",
+     "act": "laugh",
+     "shot": "close:mio",
+     "text": "An actual live hedgehog! In a basket! As a message! And nobody knows what it means, and everyone argues about the hedgehog for a whole chapter."
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "And the poor knight. The poem."
+    },
+    {
+     "who": "mio",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Tell me about the poem. I didn't get the poem. Gramps just wrote \"Pushkin, of course\" and a smiley face."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "It's a Pushkin ballad. A knight has a vision once, of something holy and beautiful, and after that he never lifts his visor to look at any woman again. He rides about doing good deeds, faithful to one vision his whole life, and everyone thinks he's mad."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Aglaya reads it aloud in front of everyone, to tease Myshkin. But she reads it so beautifully that everyone goes quiet. She meant it as a joke, and it came out as the truth."
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...That happens."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "In books."
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "In books."
+    },
+    {
+     "who": "mio",
+     "emo": "grin",
+     "look": "front",
+     "shot": "mcu:mio",
+     "text": "But it's obvious. It's so obvious. Aglaya mocks the prince because she loves him. She can't say it, so she teases him, and she's horrible to him, because if she was nice he'd..."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "surprised",
+       "look": "front"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "surprised",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "flustered",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "...Anyway. The hedgehog."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...The hedgehog."
+    },
+    {
+     "dur": 4.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "prop": "book",
+     "bookColor": "#2e4a3a",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "music": "night",
+   "musicVol": 0.7,
+   "amb": [
+    "washer",
+    "wind"
+   ],
+   "washers": [
+    2,
+    6
+   ],
+   "clock": 22.0,
+   "caption": "Thursday, late November.",
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95,
+     "from": 4
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "eyecatch",
+   "style": "eyecatch",
+   "dur": 5,
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "laundry-2",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "flustered",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I said it out loud. In front of him. In a laundry with very good acoustics."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She was talking about Aglaya. She was talking about a book. That's all it was. That's all I'm allowed to hear."
+    },
+    {
+     "dur": 3.0,
+     "shot": "two"
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Can I tell you something annoying?"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "who": "mio",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "Someone from my school saw us here. And now everyone is saying things. That I meet an old man in a laundry. That it's weird. That you're... you know."
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...I'm sorry."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Don't be sorry! I'm telling you so we can laugh about it. They're idiots. Not your kind of idiot. The normal kind."
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "Next time someone asks, tell them I'm your tutor."
+    },
+    {
+     "who": "mio",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "...My tutor?"
+    },
+    {
+     "who": "itsuki",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "For Russian literature. For your entrance exams. It's almost true. Tell your mother the same, if she asks. A tutor is something people understand."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I don't want them to understand. I don't care what they understand."
+    },
+    {
+     "who": "itsuki",
+     "emo": "serious",
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "I do. You're seventeen. I'm a grown man you meet at night. People are right to ask questions about that. That's what they're supposed to do. It's how girls are kept safe."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "I'm not in danger from you."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "You know that, and I know that. The town doesn't. And your mother doesn't. So we tell them something true and simple, and nobody has to be hurt by a rumour."
+    },
+    {
+     "dur": 2.5,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "sad",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "A tutor. Like I'm an hourly rate."
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "That's not what I..."
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "You're doing the Myshkin thing. Being so good that it's cruel. Everyone in that book gets hurt by how careful he is."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Myshkin wasn't careful. That was his problem. He said yes to everybody. He didn't keep any lines, and everybody he loved ended up broken."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "So you're keeping a line."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Yes."
+    },
+    {
+     "who": "mio",
+     "emo": "teary",
+     "look": "other",
+     "shot": "close:mio",
+     "text": "Where is it?"
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "mcu:itsuki",
+     "text": "In the middle of the bridge. Where it's always been."
+    },
+    {
+     "dur": 4.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I know he's right. I know. That's what makes me so angry. If he were wrong I could shout at him."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "steps",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "annoyed",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "annoyed",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "I'm going home. Goodnight, Tutor-san."
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Goodnight."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "mio": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 5.0,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "She left her washing in machine six. She'll come back for it. She'll come back for it, and I'll still be here, because I don't know how to leave first."
+    },
+    {
+     "dur": 3.0,
+     "shot": "insert:cat",
+     "sfx": "meow",
+     "insert": {
+      "kind": "cat",
+      "pose": "sit"
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "sad",
+     "look": "up",
+     "shot": "close:itsuki",
+     "text": "...I know, Fedya. I know."
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "benchL",
+     "emo": "neutral",
+     "idleLook": "down"
+    },
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "music": "unease",
+   "musicVol": 0.5,
+   "amb": [
+    "washer",
+    "wind"
+   ],
+   "washers": [
+    2,
+    6
+   ],
+   "clock": 22.4,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sleep"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "laundry-3",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "pencil"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Makar wrote letters because he couldn't say things to Varvara's face. I always thought that was a weakness. It might be the only courage I have."
+    },
+    {
+     "dur": 7.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "itsuki",
+      "rot": -1,
+      "typeOn": true,
+      "text": "Lost: one argument.\nNot hers. Mine.\nI was right about the line, and wrong about the word.\nYou are not an hourly rate.\nYou are the best reader I have ever met.\n— the idiot"
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "buzzer"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "neutral",
+       "idleLook": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "...I forgot my washing."
+    },
+    {
+     "who": "itsuki",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Machine six."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "page",
+     "cs": {
+      "mio": {
+       "slot": "standL"
+      }
+     }
+    },
+    {
+     "dur": 3.0,
+     "shot": "close:mio",
+     "react": {
+      "mio": {
+       "emo": "teary",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "down",
+     "shot": "close:mio",
+     "text": "\"The best reader I have ever met.\" In pencil. With the margin straight, like a proofreader."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "pencil",
+     "cs": {
+      "mio": {
+       "act": "write"
+      }
+     }
+    },
+    {
+     "dur": 4.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LOST & FOUND",
+      "hand": "mio",
+      "rot": -1,
+      "text": "Found: one argument.\nReturned to owner.\nSorry for \"Tutor-san.\"\n— A. (the hedgehog one)"
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "soft",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Goodnight, Prince.",
+     "cs": {
+      "mio": {
+       "slot": "door"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "soft",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "Goodnight."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "mio": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "soft",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "smile",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...The hedgehog one."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell"
+    },
+    {
+     "dur": 1.5,
+     "shot": "wide",
+     "cs": {
+      "mio": {
+       "slot": "door",
+       "emo": "shy",
+       "idleLook": "other"
+      }
+     }
+    },
+    {
+     "who": "mio",
+     "emo": "shy",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "One more thing."
+    },
+    {
+     "who": "itsuki",
+     "emo": "surprised",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "...Yes?"
+    },
+    {
+     "who": "mio",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "Can I still come? On Thursdays?"
+    },
+    {
+     "who": "itsuki",
+     "look": "other",
+     "shot": "close:itsuki",
+     "text": "It's a public laundry."
+    },
+    {
+     "who": "mio",
+     "emo": "pout",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "That's not an answer. That's a proofreader's answer."
+    },
+    {
+     "dur": 2.0,
+     "shot": "close:itsuki",
+     "react": {
+      "itsuki": {
+       "emo": "shy",
+       "look": "down"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "emo": "shy",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "...Yes. Please come."
+    },
+    {
+     "who": "mio",
+     "emo": "smile",
+     "look": "other",
+     "shot": "mcu:mio",
+     "text": "Okay. Good. Goodnight. Again."
+    },
+    {
+     "dur": 2.0,
+     "shot": "wide",
+     "sfx": "bell",
+     "cs": {
+      "mio": {
+       "slot": "none"
+      }
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "\"Please.\" I've never said please to anyone about anything I wanted. Only about things I wanted them to stop."
+    },
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "benchR",
+     "emo": "sad",
+     "prop": "notebook",
+     "idleLook": "down"
+    }
+   },
+   "set": "laundry_int",
+   "season": "autumn",
+   "music": "night",
+   "musicVol": 0.5,
+   "amb": [
+    "washer",
+    "wind"
+   ],
+   "washers": [
+    6
+   ],
+   "clock": 22.8,
+   "cat": {
+    "slot": "cat_dryer",
+    "pose": "sit"
+   },
+   "items": [
+    {
+     "kind": "basket",
+     "slot": "benchR",
+     "dx": 95
+    },
+    {
+     "kind": "basket",
+     "slot": "benchL",
+     "dx": -95
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "bridge-1",
+   "lines": [
+    {
+     "dur": 3.0,
+     "shot": "wide",
+     "sfx": "steps"
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "look": "down",
+     "shot": "close:mio",
+     "text": "I walked to the middle of the bridge by myself. I stood on his line. There's nothing there. Just the same boards as everywhere else."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "teary",
+     "look": "front",
+     "shot": "close:mio",
+     "text": "He's right. I know he's right. I'm seventeen. He's twenty-eight. If I were Mum, I'd want him to say exactly what he said."
+    },
+    {
+     "who": "mio",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "mcu:mio",
+     "text": "It's just that nobody has ever been careful with me before. It feels like being pushed away, and it's the opposite. I need a new word for it."
+    },
+    {
+     "dur": 3.0,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "mio": {
+     "slot": "railL",
+     "emo": "sad",
+     "idleLook": "down"
+    }
+   },
+   "set": "bridge",
+   "season": "autumn",
+   "music": "sorrow",
+   "musicVol": 0.55,
+   "amb": [
+    "wind"
+   ],
+   "leaves": true
+  },
+  {
+   "type": "scene",
+   "id": "room-7",
+   "lines": [
+    {
+     "dur": 2.5,
+     "shot": "wide"
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Aglaya mocks the prince because she loves him. She said it about a book. I'll let it stay about a book."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "sad",
+     "look": "front",
+     "shot": "mcu:itsuki",
+     "text": "A grown man's job is not to make her feelings smaller. It's to make sure she gets to keep them somewhere safe, and grow up, and go. A line in the middle of a bridge. The whole of me on this side of it."
+    },
+    {
+     "dur": 5.0,
+     "insert": {
+      "kind": "notebook",
+      "title": "LIST",
+      "hand": "itsuki",
+      "rot": -1,
+      "text": "1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again."
+     }
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "look": "front",
+     "shot": "close:itsuki",
+     "text": "Her classmate's mother is right to warn her. About men in general. I'd warn her too. That's the strange part. I'm on the side of the people who are talking about me."
+    },
+    {
+     "who": "itsuki",
+     "thought": true,
+     "emo": "soft",
+     "look": "down",
+     "shot": "close:itsuki",
+     "text": "Nine sweets left. I'll take them on Thursday. She'll want the baby's share."
+    },
+    {
+     "dur": 3.5,
+     "shot": "wide"
+    }
+   ],
+   "chars": {
+    "itsuki": {
+     "slot": "desk",
+     "emo": "neutral",
+     "idleLook": "down"
+    }
+   },
+   "set": "room_him",
+   "season": "autumn",
+   "music": "night",
+   "musicVol": 0.55,
+   "amb": [
+    "room",
+    "wind"
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ed",
+   "style": "ed",
+   "dur": 50,
+   "credits": [
+    "#Dostoevsky at the Coin Laundry",
+    "Episode 7: Money in the Fire",
+    "",
+    "#Story and script",
+    "Claude (Anthropic)",
+    "from an idea by jasch",
+    "",
+    "#Cast",
+    "Mio Takanashi",
+    "Itsuki Kanzaki",
+    "Yuka",
+    "Fyodor, the laundry cat",
+    "",
+    "#Voices",
+    "Kokoro open-weight speech",
+    "",
+    "#Music",
+    "an original piano and strings score",
+    "",
+    "#Backgrounds and animation",
+    "painted and drawn in code",
+    "",
+    "#After",
+    "The Idiot (1869)",
+    "passages in our own renderings",
+    "of the public-domain texts",
+    "",
+    "#Coin Laundry Hoshizora",
+    "open 24 hours"
+   ],
+   "quote": "It is life that matters, only life: the discovering of it, the endless and everlasting discovering, not the discovery itself.",
+   "quoteBy": "Fyodor Dostoevsky, \"The Idiot\"",
+   "season": "autumn"
+  },
+  {
+   "type": "scene",
+   "id": "next",
+   "lines": [
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "grin",
+     "text": "Next time. Dostoevsky has twenty-six days to write a whole novel, or lose everything he's ever written. And I find something in the library with the Prince's name on it."
+    },
+    {
+     "who": "mio",
+     "vo": true,
+     "emo": "tease",
+     "text": "Episode eight. Twenty-Six Days. Bring a pen, Prince. A better one."
+    },
+    {
+     "dur": 1.5
+    }
+   ],
+   "chars": {},
+   "set": "card",
+   "style": "next",
+   "music": "tease",
+   "nextTitle": "Twenty-Six Days",
+   "nextSub": "on \"The Gambler\"",
+   "season": "autumn"
+  }
+ ]
+}

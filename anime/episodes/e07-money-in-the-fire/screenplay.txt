@@ -1,0 +1,221 @@
+episode: 7
+slug: e07-money-in-the-fire
+title: Money in the Fire
+kanji: 第七話
+sub: on "The Idiot" (II)
+book: The Idiot (1869)
+season: autumn
+linegap: 0.75
+gap: 128
+logline: Late November. A classmate has seen Mio at the laundry with "an old guy," and the gossip has followed her all week. Over Nastasya Filippovna, who throws a hundred thousand roubles into the fire, and proud Aglaya, who mocks the prince because she loves him, Mio says one sentence too many. Itsuki answers with the most careful thing he can think of, and they have their first quarrel.
+quote: It is life that matters, only life: the discovering of it, the endless and everlasting discovering, not the discovery itself.
+quoteBy: Fyodor Dostoevsky, "The Idiot"
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=street time=day season=autumn music=tease musicVol=0.6 amb=city fadeIn=1.0 leaves=true
+@ mio slot=walkL emo=neutral look=down
+BEAT 2 [wide] (sfx=steps)
+YUKA (vo) [mcu:mio]: Mio! Mio, wait. Is it true? Ayaka's brother saw you at that coin laundry by the canal. With a guy. An old guy. He said every Thursday.
+MIO (grin, look=other) [close:mio]: He's not old. He's twenty-eight.
+YUKA (vo) [close:mio]: That's old! That's so old! Is he your boyfriend? Oh my god. Is it creepy? Is he a creep?
+BEAT 2 [close:mio] (mio=annoyed, mio.look=down)
+MIO (laugh, look=other) [close:mio]: He's nobody. We talk about books. He's like a library with glasses.
+YUKA (vo) [mcu:mio]: Ayaka says it's weird. Everyone's saying it's weird.
+MIO (annoyed, look=other) [close:mio]: Ayaka thinks Tolstoy is a kind of soup.
+YUKA (vo) [close:mio]: I'm just saying. Be careful. My mum says men like that, at that age, who hang around girls...
+MIO (look=down) [close:mio]: He doesn't hang around. I hang around. He's just always there first.
+MIO (thought) [close:mio] (sad, look=down): "He's nobody." I said it so fast. Like Peter in the courtyard. Before the cock crowed even once.
+BEAT 2.5 [wide] (sfx=steps)
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=autumn music=night musicVol=0.7 amb=washer,wind washers=2,6 clock=22.0 | caption=Thursday, late November.
+@ itsuki slot=benchR emo=neutral look=down prop=book bookColor=#2e4a3a
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+BEAT 2 [wide] (sfx=bell)
+@ mio slot=door emo=neutral look=other
+BEAT 1.5 [wide]
+ITSUKI (look=other) [close:itsuki]: ...Good evening.
+MIO (smile, look=other) [mcu:mio]: Good evening, Prince.
+@ mio slot=benchL
+@ item basket benchL dx=-95
+BEAT 2 [two]
+ITSUKI (look=other) [close:itsuki]: Mrs. Hoshino left something for me. On the hook.
+INSERT notebook 7 | title=LOST & FOUND | hand=mio | rot=1 | text=To the Prince.\nYour coat, dry-cleaned, and the taxi money.\nAnd a box of sweets from Shin-Kawabe.\nMy daughter replied to my message.\nShe said: "Yes, I ate. Did you?"\n— Section Chief (Special Adviser)
+MIO (surprised, look=other) [close:mio]: She replied.
+ITSUKI (smile, look=down) [close:itsuki]: She replied.
+MIO (smile, look=other) [close:mio]: "Did you?" She asked him back. That's a whole conversation. That's a house.
+ITSUKI (soft, look=down) [close:itsuki]: ...Do you want a sweet? There are twelve. I can't eat twelve sweets.
+MIO (grin, look=other): Give me three. One for me, one for Fyodor Mikhailovich, one for the baby.
+ITSUKI (smile) [close:itsuki]: The baby can't eat sweets.
+MIO (tease): Then one for the baby's big sister, on her behalf.
+BEAT 2.5 [two]
+MIO (look=book) [mcu:mio]: I finished it. The Idiot. Both halves. You were right. It's not a happy book for good people.
+ITSUKI (soft, look=other) [close:itsuki]: No.
+MIO (sad, look=down) [close:mio]: The last chapter. Myshkin and Rogozhin, in that dark house, at night. Lying side by side on cushions on the floor, next to the curtain. And behind the curtain is...
+ITSUKI (sad, look=down) [close:itsuki]: Yes.
+MIO (teary, look=front) [close:mio]: And Rogozhin starts shaking and shouting, and Myshkin just strokes his hair. All night. Stroking the hair of the man who did it. And when they find them in the morning, the prince doesn't recognise anyone. He's gone back to being an idiot, properly this time. They send him back to Switzerland.
+MIO (look=other) [mcu:mio]: Why did Gramps love a book that ends like that? He read it every winter.
+ITSUKI (look=front) [close:itsuki]: ...Maybe because for six hundred pages there was a man like that in the world. Even if it was only in a book. Even if the world couldn't keep him.
+ITSUKI (soft, look=down) [close:itsuki]: Dostoevsky tried to write a perfectly good man, and he couldn't make him win. But he didn't make him bad, either, to make the ending easier. He let goodness lose and still be good. I think that's very brave.
+MIO (soft, look=other) [close:mio]: Gramps wrote on the last page: "Read again next winter." Every year. There are eleven of them. Eleven winters, in different pencils.
+ITSUKI (soft, look=other) [close:itsuki]: Then this is the twelfth winter.
+MIO (smile, look=down) [close:mio]: ...I'll write it. "Read again next winter." In my pencil.
+BEAT 2 [two]
+MIO (look=front) [close:mio]: But first. The fire. I have to talk about the fire.
+ITSUKI (look=front) [close:itsuki]: Nastasya Filippovna's party.
+MIO (annoyed, look=other) [close:mio]: It's her birthday. And every man in the room is trying to buy her. One wants to marry her off with seventy-five thousand roubles so he can marry someone respectable. Ganya will marry her for the money, even though he's ashamed of her. And then Rogozhin bursts in, drunk, with a hundred thousand roubles wrapped in a newspaper.
+MIO (look=front): Like she's at an auction. And she knows it. That's the worst part. She's the only one in the room who says what's happening.
+ITSUKI (look=front) [mcu:itsuki]: And Myshkin asks her to marry him.
+MIO (soft, look=down) [close:mio]: Myshkin asks her to marry him. Not to buy her. To save her. And she says no, because she thinks she'd ruin him. She runs off with Rogozhin instead.
+MIO (grin, look=other): But before she goes, she throws the hundred thousand roubles in the fire.
+INSERT book 7 | title=The Idiot | text=She seized the packet and flung it into the fire. | right=If you pull it out with your bare hands, Ganya, it is yours. All of it. | underline=2 | note=Everyone watches the money.\nWatch Ganya's face.\n— G. | noteBy=genzo
+ITSUKI (look=front) [close:itsuki]: And Ganya doesn't move. He stands there, watching it burn, and then he faints.
+MIO (laugh, act=laugh) [close:mio]: He faints! And she pulls it out herself with the fire tongs and throws it at him. It's the most dramatic thing I've ever read. I read it on the bus and the man next to me asked if I was all right.
+ITSUKI (smile, look=down) [close:itsuki]: Were you?
+MIO (smile, look=front) [close:mio]: I was cheering. Quietly.
+BEAT 2 [two]
+MIO (look=other) [close:mio]: Is she mad? Nastasya?
+ITSUKI (look=front) [mcu:itsuki]: She was taken in by a rich man when she was a child, and he made her what everyone calls her. And she agrees with them. She thinks she's ruined. So she'd rather burn everything than let someone kind be kind to her.
+MIO (soft, look=down) [close:mio]: That's what the Underground Man did. To Liza.
+ITSUKI (soft, look=front) [close:itsuki]: ...It's the same wound. Different book.
+BEAT 2.5 [two]
+MIO (grin, look=other) [close:mio]: And then there's Aglaya. My favourite.
+ITSUKI (smile, look=front) [close:itsuki]: Of course she's your favourite.
+MIO (tease, act=point) [close:mio]: The youngest daughter of the general. Proud, beautiful, very rude. She mocks Myshkin all the time. She calls him a poor knight. She reads a poem at him in front of everyone to embarrass him. She sends him a hedgehog!
+ITSUKI (laugh, act=laugh) [close:itsuki]: The hedgehog.
+MIO (laugh, act=laugh) [close:mio]: An actual live hedgehog! In a basket! As a message! And nobody knows what it means, and everyone argues about the hedgehog for a whole chapter.
+ITSUKI (smile, look=front) [close:itsuki]: And the poor knight. The poem.
+MIO (look=other) [close:mio]: Tell me about the poem. I didn't get the poem. Gramps just wrote "Pushkin, of course" and a smiley face.
+ITSUKI (look=front) [mcu:itsuki]: It's a Pushkin ballad. A knight has a vision once, of something holy and beautiful, and after that he never lifts his visor to look at any woman again. He rides about doing good deeds, faithful to one vision his whole life, and everyone thinks he's mad.
+ITSUKI (soft, look=down) [close:itsuki]: Aglaya reads it aloud in front of everyone, to tease Myshkin. But she reads it so beautifully that everyone goes quiet. She meant it as a joke, and it came out as the truth.
+MIO (soft, look=other) [close:mio]: ...That happens.
+ITSUKI (look=down) [close:itsuki]: In books.
+MIO (look=down) [close:mio]: In books.
+MIO (grin, look=front) [mcu:mio]: But it's obvious. It's so obvious. Aglaya mocks the prince because she loves him. She can't say it, so she teases him, and she's horrible to him, because if she was nice he'd...
+BEAT 2.5 [close:mio] (mio=surprised, mio.look=front)
+BEAT 2 [close:itsuki] (itsuki=surprised, itsuki.look=down)
+MIO (flustered, look=down) [close:mio]: ...Anyway. The hedgehog.
+ITSUKI (look=down) [close:itsuki]: ...The hedgehog.
+BEAT 4 [wide]
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-2 | set=laundry_int season=autumn music=unease musicVol=0.5 amb=washer,wind washers=2,6 clock=22.4
+@ mio slot=benchL emo=neutral look=down
+@ itsuki slot=benchR emo=neutral look=down
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 3 [wide]
+MIO (thought) [close:mio] (flustered, look=down): I said it out loud. In front of him. In a laundry with very good acoustics.
+ITSUKI (thought) [close:itsuki] (look=down): She was talking about Aglaya. She was talking about a book. That's all it was. That's all I'm allowed to hear.
+BEAT 3 [two]
+MIO (look=front) [close:mio]: Can I tell you something annoying?
+ITSUKI (look=other) [close:itsuki]: ...Yes.
+MIO (look=front) [close:mio]: Someone from my school saw us here. And now everyone is saying things. That I meet an old man in a laundry. That it's weird. That you're... you know.
+BEAT 3 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (look=down) [close:itsuki]: ...I'm sorry.
+MIO (annoyed, look=other) [close:mio]: Don't be sorry! I'm telling you so we can laugh about it. They're idiots. Not your kind of idiot. The normal kind.
+ITSUKI (look=front) [mcu:itsuki]: Next time someone asks, tell them I'm your tutor.
+MIO (surprised, look=other) [close:mio]: ...My tutor?
+ITSUKI (look=front) [close:itsuki]: For Russian literature. For your entrance exams. It's almost true. Tell your mother the same, if she asks. A tutor is something people understand.
+MIO (annoyed, look=other) [close:mio]: I don't want them to understand. I don't care what they understand.
+ITSUKI (serious, look=front) [close:itsuki]: I do. You're seventeen. I'm a grown man you meet at night. People are right to ask questions about that. That's what they're supposed to do. It's how girls are kept safe.
+MIO (pout, look=other) [close:mio]: I'm not in danger from you.
+ITSUKI (look=down) [close:itsuki]: You know that, and I know that. The town doesn't. And your mother doesn't. So we tell them something true and simple, and nobody has to be hurt by a rumour.
+BEAT 2.5 [close:mio] (mio=sad, mio.look=down)
+MIO (sad, look=down) [close:mio]: A tutor. Like I'm an hourly rate.
+ITSUKI (soft, look=other) [close:itsuki]: That's not what I...
+MIO (annoyed, look=other) [mcu:mio]: You're doing the Myshkin thing. Being so good that it's cruel. Everyone in that book gets hurt by how careful he is.
+ITSUKI (sad, look=down) [close:itsuki]: Myshkin wasn't careful. That was his problem. He said yes to everybody. He didn't keep any lines, and everybody he loved ended up broken.
+MIO (teary, look=other) [close:mio]: So you're keeping a line.
+ITSUKI (look=down) [close:itsuki]: ...Yes.
+MIO (teary, look=other) [close:mio]: Where is it?
+ITSUKI (look=down) [mcu:itsuki]: In the middle of the bridge. Where it's always been.
+BEAT 4 [close:mio] (mio=teary, mio.look=down)
+MIO (thought) [close:mio] (teary, look=down): I know he's right. I know. That's what makes me so angry. If he were wrong I could shout at him.
+@ mio slot=door emo=annoyed look=other
+BEAT 2 [wide] (sfx=steps)
+MIO (annoyed, look=other) [mcu:mio]: I'm going home. Goodnight, Tutor-san.
+ITSUKI (sad, look=other) [close:itsuki]: ...Goodnight.
+@ mio slot=none
+BEAT 2 [wide] (sfx=bell)
+BEAT 5 [wide]
+ITSUKI (thought) [close:itsuki] (sad, look=down): She left her washing in machine six. She'll come back for it. She'll come back for it, and I'll still be here, because I don't know how to leave first.
+BEAT 3 [insert:cat] (sfx=meow)
++INSERT cat | pose=sit
+ITSUKI (sad, look=up) [close:itsuki]: ...I know, Fedya. I know.
+
+== SCENE laundry-3 | set=laundry_int season=autumn music=night musicVol=0.5 amb=washer,wind washers=6 clock=22.8
+@ itsuki slot=benchR emo=sad look=down prop=notebook
+@ cat slot=cat_dryer pose=sit
+@ item basket benchR dx=95
+@ item basket benchL dx=-95
+BEAT 3 [wide] (sfx=pencil)
+ITSUKI (thought) [close:itsuki] (look=down): Makar wrote letters because he couldn't say things to Varvara's face. I always thought that was a weakness. It might be the only courage I have.
+INSERT notebook 7 | title=LOST & FOUND | hand=itsuki | rot=-1 | typeOn=true | text=Lost: one argument.\nNot hers. Mine.\nI was right about the line, and wrong about the word.\nYou are not an hourly rate.\nYou are the best reader I have ever met.\n— the idiot
+BEAT 2 [wide] (sfx=buzzer)
+BEAT 2 [wide] (sfx=bell)
+@ mio slot=door emo=neutral look=down
+BEAT 2 [wide]
+MIO (look=down) [mcu:mio]: ...I forgot my washing.
+ITSUKI (look=down) [close:itsuki]: Machine six.
+@ mio slot=standL
+BEAT 3 [wide] (sfx=page)
+BEAT 3 [close:mio] (mio=teary, mio.look=down)
+MIO (thought) [close:mio] (teary, look=down): "The best reader I have ever met." In pencil. With the margin straight, like a proofreader.
+@ mio act=write
+BEAT 3 [wide] (sfx=pencil)
+INSERT notebook 4 | title=LOST & FOUND | hand=mio | rot=-1 | text=Found: one argument.\nReturned to owner.\nSorry for "Tutor-san."\n— A. (the hedgehog one)
+@ mio slot=door
+MIO (soft, look=other) [mcu:mio]: Goodnight, Prince.
+ITSUKI (soft, look=other) [close:itsuki]: Goodnight.
+@ mio slot=none
+BEAT 2 [wide] (sfx=bell)
+BEAT 2 [close:itsuki] (itsuki=soft, itsuki.look=down)
+ITSUKI (smile, look=down) [close:itsuki]: ...The hedgehog one.
+BEAT 2 [wide] (sfx=bell)
+@ mio slot=door emo=shy look=other
+BEAT 1.5 [wide]
+MIO (shy, look=other) [mcu:mio]: One more thing.
+ITSUKI (surprised, look=other) [close:itsuki]: ...Yes?
+MIO (look=down) [mcu:mio]: Can I still come? On Thursdays?
+ITSUKI (look=other) [close:itsuki]: It's a public laundry.
+MIO (pout, look=other) [mcu:mio]: That's not an answer. That's a proofreader's answer.
+BEAT 2 [close:itsuki] (itsuki=shy, itsuki.look=down)
+ITSUKI (shy, look=down) [close:itsuki]: ...Yes. Please come.
+MIO (smile, look=other) [mcu:mio]: Okay. Good. Goodnight. Again.
+@ mio slot=none
+BEAT 2 [wide] (sfx=bell)
+ITSUKI (thought) [close:itsuki] (soft, look=down): "Please." I've never said please to anyone about anything I wanted. Only about things I wanted them to stop.
+BEAT 2.5 [wide]
+
+== SCENE bridge-1 | set=bridge season=autumn music=sorrow musicVol=0.55 amb=wind leaves=true
+@ mio slot=railL emo=sad look=down
+BEAT 3 [wide] (sfx=steps)
+MIO (thought) [close:mio] (look=down): I walked to the middle of the bridge by myself. I stood on his line. There's nothing there. Just the same boards as everywhere else.
+MIO (thought) [close:mio] (teary, look=front): He's right. I know he's right. I'm seventeen. He's twenty-eight. If I were Mum, I'd want him to say exactly what he said.
+MIO (thought) [mcu:mio] (soft, look=down): It's just that nobody has ever been careful with me before. It feels like being pushed away, and it's the opposite. I need a new word for it.
+BEAT 3 [wide]
+
+== SCENE room-7 | set=room_him season=autumn music=night musicVol=0.55 amb=room,wind
+@ itsuki slot=desk emo=neutral look=down
+BEAT 2.5 [wide]
+ITSUKI (thought) [close:itsuki] (look=down): Aglaya mocks the prince because she loves him. She said it about a book. I'll let it stay about a book.
+ITSUKI (thought) [mcu:itsuki] (sad, look=front): A grown man's job is not to make her feelings smaller. It's to make sure she gets to keep them somewhere safe, and grow up, and go. A line in the middle of a bridge. The whole of me on this side of it.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write (something ordinary)\n5. Get umbrella back  (done!)\n6. Buy a better pen\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.
+ITSUKI (thought) [close:itsuki] (look=front): Her classmate's mother is right to warn her. About men in general. I'd warn her too. That's the strange part. I'm on the side of the people who are talking about me.
+ITSUKI (thought) [close:itsuki] (soft, look=down): Nine sweets left. I'll take them on Thursday. She'll want the baby's share.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=Twenty-Six Days | sub=on "The Gambler"
+MIO (vo, grin): Next time. Dostoevsky has twenty-six days to write a whole novel, or lose everything he's ever written. And I find something in the library with the Prince's name on it.
+MIO (vo, tease): Episode eight. Twenty-Six Days. Bring a pen, Prince. A better one.
+BEAT 1.5

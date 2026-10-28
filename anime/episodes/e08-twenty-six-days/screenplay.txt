@@ -1,0 +1,192 @@
+episode: 8
+slug: e08-twenty-six-days
+title: Twenty-Six Days
+kanji: 第八話
+sub: on "The Gambler"
+book: The Gambler (1866)
+season: winter
+linegap: 0.75
+gap: 116
+logline: Early December and the first snow. Mio has found, in the city library, a five-year-old literary magazine with Itsuki's photograph in it. Over the novel Dostoevsky dictated in twenty-six days to save everything he had written, and the morning he stood in front of a firing squad, she offers him a deal: one page, every Thursday, until the laundry closes.
+quote: Life is a gift. Life is happiness. Every minute could be an eternity of happiness.
+quoteBy: Fyodor Dostoevsky, letter to his brother, 22 December 1849
+
+// ---------------------------------------------------------------- COLD OPEN
+== SCENE coldopen | set=street time=day season=winter music=wonder musicVol=0.6 amb=city,snow fadeIn=1.2
+@ mio slot=walkL emo=surprised look=down prop=book bookColor=#b8323a
+BEAT 2.5 [wide] (sfx=steps)
+MIO (thought) [mcu:mio] (look=down): Kawabe City Library, second floor, periodicals. Literary magazines, bound by year. I was looking for an article about Gramps's translations.
+MIO (thought) [close:mio] (surprised, look=down): I found a photograph instead. A young man with too much hair, holding a certificate, looking at the camera like it was going to arrest him.
+INSERT cover 5 | title=The Room\nWithout a Window | author=Itsuki Kanzaki | label=Prize | color=#e8e2d4 | caption=Newcomer Prize, winning novella. Five years ago.
+MIO (thought) [close:mio] (soft, look=front): "We look forward to the next one." It's printed under the picture. The editor's words. He said it was about proofreading.
+MIO (thought) [mcu:mio] (teary, look=down): I read it in the reading room. Forty pages. I missed the bus. I had to sit in the toilets for ten minutes before I could go outside.
+BEAT 2.5 [wide] (sfx=steps)
+
+== OP
+== TITLE
+
+// ---------------------------------------------------------------- PART A
+== SCENE laundry-1 | set=laundry_int season=winter weather=snow music=tease musicVol=0.75 amb=washer,snow washers=1,5 clock=22.0 | caption=Thursday, early December. First snow.
+@ itsuki slot=benchR emo=neutral look=down prop=can can=coffee
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchR dx=95
+@ item can benchR dx=-60 can=tea steam=true
+BEAT 2.5 [wide] (sfx=bell)
+@ mio slot=door emo=grin look=other
+BEAT 1.5 [wide]
+MIO (grin, look=up) [mcu:mio]: It's snowing! Prince, it's snowing!
+ITSUKI (smile, look=other) [close:itsuki]: ...I noticed. I'm made of it.
+@ mio slot=benchL emo=soft look=down
+@ item basket benchL dx=-95
+BEAT 2 [two]
+MIO (soft, look=down) [close:mio]: There's already a milk tea next to my basket.
+ITSUKI (shy, look=away) [close:itsuki]: The machine gave me two. It was a malfunction.
+MIO (tease, look=other) [close:mio]: The machine has malfunctioned every Thursday for three weeks.
+ITSUKI (flustered, act=hide) [close:itsuki]: ...It's a very old machine.
+BEAT 2 [two]
+MIO (look=book) [mcu:mio]: Okay. The Gambler. I have a confession. I liked it more than The Idiot.
+ITSUKI (surprised, look=other) [close:itsuki]: That's a terrible confession.
+MIO (grin, look=other): It's short! It's fast! It's about a tutor in a German spa town called Roulettenburg, who's in love with a girl who treats him like dirt, and everyone is waiting for a rich old aunt to die so they can inherit her money.
+MIO (laugh, act=laugh) [close:mio]: And then the aunt doesn't die! She turns up! In a wheelchair, carried by servants, shouting at everyone! "So you've been sending telegrams to see if I'm dead yet?"
+ITSUKI (laugh, act=laugh) [close:itsuki]: Grandmother.
+MIO (laugh) [close:mio]: The best grandmother in literature. And she goes straight to the casino and puts everything on zero. "Zero! Zero! Put it on zero!" And it comes up! And she wins! And then she comes back the next day and loses her whole fortune.
+ITSUKI (smile, look=front) [close:itsuki]: Dostoevsky knew that casino. He lost his wife's wedding ring at roulette. And her earrings. And his own coat.
+MIO (tease, look=other) [close:mio]: You give your coat away. He gambled his. You're the same, just in opposite directions.
+MIO (look=other) [close:mio]: But I don't understand Alexei. The hero. He wins a fortune, a real fortune, enough to marry the girl and go home. And he goes back to the table the next night and loses it.
+ITSUKI (look=front) [mcu:itsuki]: Because he doesn't want the money. He says so. He wants the moment before the wheel stops. When you've put everything on one number and you don't know yet. He says he's never felt so alive as in that second.
+MIO (thinking, look=other) [close:mio]: So he's addicted to not knowing.
+ITSUKI (soft, look=down) [close:itsuki]: He's addicted to risk. The rest of his life feels like waiting in a corridor.
+MIO (tease, look=other) [close:mio]: What's the biggest risk you've ever taken, Prince?
+ITSUKI (look=down) [close:itsuki]: ...I lent a stranger an umbrella.
+MIO (laugh, act=laugh) [close:mio]: You put everything on zero.
+ITSUKI (smile, look=down) [close:itsuki]: It came back.
+BEAT 2 [two]
+MIO (look=front) [mcu:mio]: But the best story isn't in the book. It's how he wrote it. Gramps wrote it on the inside cover.
+INSERT book 7 | title=The Gambler | text=Contract of 1865: a new novel by 1 November 1866, or every work he has written belongs to Stellovsky for nine years. | right=On 4 October he hired a stenographer, Anna Grigorievna. They finished on 30 October. | underline=1 | note=26 days.\nNo excuses, Mio.\n— G. | noteBy=genzo
+MIO (soft, look=down) [close:mio]: "No excuses, Mio." He wrote that when I was twelve and said I couldn't do my summer homework in two weeks.
+ITSUKI (soft, look=down) [close:itsuki]: Did you do it?
+MIO (smile, look=front) [close:mio]: In nine days. Out of spite.
+ITSUKI (look=front) [mcu:itsuki]: A publisher tricked him into a contract when he was desperate. If he didn't deliver a whole new novel by the first of November, the publisher would own everything he'd written. Crime and Punishment. All of it. For nothing.
+ITSUKI (look=front) [close:itsuki]: And in October he hadn't written a word. He was busy writing Crime and Punishment, which was being printed in parts every month. Two novels at once.
+MIO (look=other) [close:mio]: So he hired Anna.
+ITSUKI (soft, look=front) [close:itsuki]: So he hired Anna. She was the best stenography student in Petersburg. He walked around the room, smoking, dictating, and she took it down in shorthand and wrote it out clean at home every night. Twenty-six days. He delivered it on time, and the publisher had hidden himself away so he couldn't receive it, so Dostoevsky had it stamped at a police station.
+MIO (grin): That's the most Dostoevsky thing ever. Delivering a novel to a police station.
+ITSUKI (smile, look=down) [close:itsuki]: Later she ran his publishing and his money and his life. She's the reason he finished Karamazov. She read his handwriting when nobody else could.
+MIO (look=other) [close:mio]: The reader is the hero.
+ITSUKI (look=down) [close:itsuki]: ...Often.
+MIO (look=book) [mcu:mio]: Anna kept a diary in shorthand. Gramps had a translation. On the first day she was so nervous she couldn't read her own notes, and he was so nervous he told her the whole story of his execution in the first hour, to a stranger, while she was trying to take dictation.
+ITSUKI (smile, look=front) [close:itsuki]: People tell strangers the most important things.
+MIO (tease, look=other) [close:mio]: You'd know. Section Chief, Special Adviser.
+ITSUKI (smile, look=down) [close:itsuki]: ...He told me about the fireworks.
+MIO (soft, look=other) [close:mio]: And Anna said that by the end of the twenty-six days she couldn't imagine a day without going to that flat and hearing him walk up and down. It wasn't the book she missed. It was the walking.
+BEAT 3 [two]
+MIO (look=down) [close:mio]: Speaking of handwriting.
+@ mio prop=manuscript
+BEAT 2 [close:mio] (sfx=page)
+MIO (soft, look=other) [mcu:mio]: I found something in the library.
+BEAT 3 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+INSERT cover 4 | title=The Room\nWithout a Window | author=Itsuki Kanzaki | label=Prize | color=#e8e2d4
+BEAT 3 [close:itsuki] (itsuki=sad, itsuki.look=down)
+ITSUKI (look=down) [close:itsuki]: ...Ah.
+BEAT 3 [wide]
+
+== EYECATCH
+
+// ---------------------------------------------------------------- PART B
+== SCENE laundry-2 | set=laundry_int season=winter weather=snow music=night musicVol=0.6 amb=washer,snow washers=1,5 clock=22.4
+@ mio slot=benchL emo=soft look=other prop=manuscript
+@ itsuki slot=benchR emo=sad look=down
+@ cat slot=cat_dryer pose=sleep
+@ item basket benchL dx=-95
+@ item basket benchR dx=95
+BEAT 3 [wide]
+MIO (soft, look=other) [close:mio]: "We look forward to the next one." Proofreading, you said.
+ITSUKI (sad, look=down) [close:itsuki]: ...I'm sorry I lied.
+MIO (look=other) [close:mio]: I'm not angry. I'm... I read it. In the library. All forty pages.
+ITSUKI (flustered, act=hide) [close:itsuki]: Please don't tell me what you thought.
+MIO (look=front) [mcu:mio]: A boy whose mother locks him in a room with no window while she's at work. And he invents a window. He draws it on the wall with a pencil, and every day he adds something he imagines outside. A tree. A canal. A cat. A bridge. By the end, the wall is a whole town.
+MIO (soft, look=down) [close:mio]: And on the last page, his mother comes home, and she sees the wall, and instead of shouting, she sits down on the floor and asks him to tell her about the town.
+BEAT 3 [close:itsuki] (itsuki=sad, itsuki.look=down)
+MIO (teary, look=down) [close:mio]: I had to sit in the library toilets for ten minutes.
+ITSUKI (sad, look=down) [close:itsuki]: ...It's a small book. It's very sentimental. The prose in the middle is too pleased with itself.
+MIO (annoyed, look=other) [close:mio]: Stop proofreading it! I'm telling you it made me cry in a public toilet!
+BEAT 2 [close:itsuki] (itsuki=surprised)
+ITSUKI (soft, look=down) [close:itsuki]: ...Thank you.
+MIO (soft, look=other) [close:mio]: Why did you stop?
+ITSUKI (look=front) [mcu:itsuki]: You know why. Extraordinary or nothing. After the prize, everything I wrote looked small next to it. So I put it in a drawer. And then my mother got ill, and work was easier than writing, and five years went by like a train you're watching from the platform.
+MIO (soft, look=down) [close:mio]: Did your mother read it?
+ITSUKI (look=down) [close:itsuki]: ...She read it the month before she started forgetting things. She called me and said, "The boy's mother is too harsh." I said, it's not you, Mum. It's fiction.
+ITSUKI (sad, look=front) [close:itsuki]: It was a little bit her. She worked nights at a hospital after my father died. I was alone a lot. She knew. She said, "But she comes home at the end. You let her come home." And then she asked what I was writing next.
+MIO (soft, look=other) [close:mio]: And you said?
+ITSUKI (sad, look=down) [close:itsuki]: I said I was busy. And a month later she didn't remember the book. So now the only person who ever asked me what was next is the one person I can't tell.
+BEAT 3 [close:mio] (mio=teary, mio.look=other)
+MIO (teary, look=other) [close:mio]: ...You can tell me. And I'll tell her. Somehow. I'm very good at telling people things.
+BEAT 2.5 [two]
+ITSUKI (look=front) [close:itsuki]: Do you know about the execution? Dostoevsky's?
+MIO (look=other) [close:mio]: Gramps told me. A bit. Tell me properly.
+ITSUKI (look=front) [mcu:itsuki]: He was twenty-eight. My age. He'd been arrested for reading forbidden letters aloud at a discussion group. A book club, more or less. And on the twenty-second of December, eighteen forty-nine, in the snow, they took him and the others to Semyonovsky Square and read out their sentence. Death by firing squad.
+ITSUKI (look=front) [close:itsuki]: They put white shirts on them. The first three were tied to posts. Dostoevsky was in the second group. He had about a minute left. He said goodbye to the man next to him. He looked at the sun on the golden dome of a church and thought that in a minute he'd be part of that light.
+ITSUKI (soft, look=front) [close:itsuki]: And then a drum. A messenger rode in. The Tsar had changed the sentences. He'd planned it all along. The execution was a performance, to teach them a lesson.
+MIO (sad, look=down) [close:mio]: That's the cruellest thing I've ever heard.
+ITSUKI (soft, look=down) [mcu:itsuki]: That same afternoon, back in his cell, he wrote to his brother. "Life is a gift. Life is happiness. Every minute could be an eternity of happiness. If only youth knew." He was being sent to Siberia for four years in chains, and he wrote that.
+BEAT 3 [close:mio] (mio=soft, mio.look=other)
+MIO (soft, look=other) [close:mio]: And then he went and gambled away his wife's earrings.
+BEAT 1.2 [close:itsuki] (itsuki=laugh, itsuki.act=laugh)
+ITSUKI (laugh, act=laugh) [close:itsuki]: ...Yes. He did.
+MIO (smile, look=other) [close:mio]: So he wasted some minutes. He still wrote all those books. The minutes he didn't waste were enough.
+BEAT 2.5 [two]
+MIO (look=front) [close:mio]: I want to make you a deal. Like Stellovsky. But nicer.
+ITSUKI (look=other) [close:itsuki]: ...I'm afraid of your deals.
+MIO (grin, act=point) [mcu:mio]: The laundry closes at the end of March. This is Thursday number fifteen. That leaves sixteen. You bring one page every Thursday. Just one. Anything. Ordinary is allowed. And I read it, here, on the bench, in front of you.
+MIO (soft, look=other) [close:mio]: I'll be your Anna. Not the stenography. I can't do shorthand. Just the reading. Someone has to read it, or it's just a wall with a pencil drawing on it.
+BEAT 3 [close:itsuki] (itsuki=surprised, itsuki.look=other)
+ITSUKI (look=down) [close:itsuki]: And if I can't?
+MIO (tease, look=other) [close:mio]: Then you give me a blank page and I read that. Out loud. Very slowly. With feeling.
+BEAT 2 [close:itsuki] (itsuki=smile, itsuki.look=down)
+ITSUKI (smile, look=down) [close:itsuki]: ...That would be worse.
+MIO (soft, look=other) [close:mio]: Twenty-six days for a novel. You've got sixteen Thursdays for sixteen pages. No excuses, Prince.
+BEAT 3 [close:itsuki] (itsuki=thinking, itsuki.look=front)
+ITSUKI (soft, look=front) [mcu:itsuki]: ...One page.
+MIO (smile, look=other) [close:mio]: One page.
+ITSUKI (shy, look=down) [close:itsuki]: Ordinary.
+MIO (soft, look=other) [close:mio]: Ordinary is allowed. Somebody very wise told me that, during a typhoon.
+BEAT 3 [wide] (sfx=buzzer)
+
+== SCENE bridge-1 | set=bridge season=winter weather=snow music=theme musicVol=0.7 amb=snow
+@ mio slot=railL emo=soft look=up
+@ itsuki slot=railR emo=neutral look=up
+BEAT 3 [wide] (sfx=steps)
+MIO (smile, look=up) [two]: It's settling. On the rail. Look.
+ITSUKI (look=up) [close:itsuki]: The canal's gone quiet. Snow does that.
+MIO (soft, look=other) [close:mio]: Next Thursday. Page one.
+ITSUKI (soft, look=other) [close:itsuki]: ...Page one.
+MIO (tease, look=other) [close:mio]: Write it with the better pen. Item six.
+ITSUKI (surprised, look=other) [close:itsuki]: How do you know about item six?
+MIO (grin, look=other) [close:mio]: You left your list in the notebook in September. I'm a terrible person. I told you.
+MIO (smile, look=up) [two]: Prince. Thank you for saying yes.
+ITSUKI (soft, look=up) [close:itsuki]: I said "one page." That's not quite yes.
+MIO (tease, look=other) [close:mio]: In Dostoevsky, that's a forty-page speech. In proofreader, it's yes. I've learned the language.
+ITSUKI (flustered, act=hide) [close:itsuki]: ...Goodnight.
+@ mio slot=farL
+BEAT 3 [wide] (sfx=steps)
+ITSUKI (thought) [close:itsuki] (soft, look=other): She knew about the list for three months and never said a word. She just kept walking me through it. Item by item.
+BEAT 2.5 [wide]
+
+== SCENE room-8 | set=room_him season=winter weather=snow music=hope musicVol=0.6 amb=room,snow
+@ itsuki slot=desk emo=neutral look=down
+BEAT 3 [wide]
+ITSUKI (thought) [close:itsuki] (look=down): Twenty-eight. Dostoevsky's age at the square. He got a messenger on a horse. I got a girl with a photocopy.
+@ itsuki act=write
+BEAT 3 [mcu:itsuki] (sfx=pencil)
+INSERT manuscript 6 | title=1 | text=There is a coin laundry by the canal that never closes. That is the first thing to know about it. The second thing is that it is closing.
+ITSUKI (thought) [mcu:itsuki] (look=front): I'm not going to write about her. I'm going to write about the laundry. The machines, the sign, the cat, Mrs. Hoshino, the people who wash their lives here. She can be in it the way the moon is in a painting of a street. Somewhere at the top. Not the subject.
+ITSUKI (thought) [close:itsuki] (soft, look=down): Two sentences. Ordinary ones. It's a start. It's not extraordinary. It's allowed.
+INSERT notebook 5 | title=LIST | hand=itsuki | rot=-1 | text=1. Washing machine (don't)\n2. Visit Mum  (persimmons, north side)\n3. Reply to Mr. Sakurai (the magazine)\n4. Write  (one page, every Thursday, 16 pages)\n5. Get umbrella back  (done!)\n6. Buy a better pen  (done!)\n7. Coat  (returned, dry-cleaned)\n8. Milk tea is 130 yen. Keep coins.\n9. Never call her a tutor again.
+BEAT 3.5 [wide]
+
+== ED
+
+== NEXT | title=The Ridiculous Man | sub=on "The Dream of a Ridiculous Man"
+MIO (vo, soft): Next time. A man who decides to shoot himself, a little girl in the rain, and a dream about a star.
+MIO (vo, sad): Episode nine. The Ridiculous Man. I might not be there, Prince. Read the notebook.
+BEAT 1.5
