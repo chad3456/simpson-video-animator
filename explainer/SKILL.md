@@ -52,6 +52,7 @@ Pacing: a new visual every 4 to 6 seconds; one idea per scene; each key term app
 - Give critics a full part with their strongest points, and name where they published.
 - Satirize nothing. The tone is curious and calm. Name hot-button chapters on cards; do not dramatize them with creatures that stand in for real groups.
 - Pebbles are "people in general". A `spiky` pebble may stand for a threat or a free-rider in the abstract, never for a nationality, religion or other group.
+- **Investigations** (testing a named author's thesis): stamp every claim on screen with a `stamp` (on the record, her or his reporting, analysis, disputed, not supported), give the author's case in their own framing first, then the record, then the critics, and close with a stamped scorecard. See `episodes/the-red-green-alliance`.
 - **News episodes** (a real event, like the riots special): every figure gets a `cite` chip on screen and a row in the bible's fact sheet. Where sources disagree, show both. Draw participants as roles (hooded rioters, capped police, bright residents), never by religion, skin or nationality. Show damage and cruelty plainly but stylised: flames, burnt cars, labels and counts, no gore. Attribute a framing author's claims to them, test any claim about a group against data, and keep a full part for critics.
 
 ## 4. episode.json
@@ -118,6 +119,10 @@ The title card shows a big glowing heart, or the badge named by `glyph` in `colo
 | `gbars` | `groups:[{label, vals[]}] series:[{name, color}] max unit w h grow:0..1` (grouped bars; key `grow` to reveal) |
 | `feed` | `posts:[{tag, text, color, stamp}] app w ph shown stamps:0..1` (a generic social feed, no platform logos; `stamps` reveals FALSE/OLD stamps) |
 | `hexmap` | `r spread:0..1 n city pin color cities lit` (France as a soft hexagon; towns light up from Paris outwards). `cities: [{name,u,v,note,left,color}]` places named towns in hexagon units (Paris is about 0.12, -0.55); key `lit` from 0 up to light them in order |
+| `stamp` | `kind:"fact"/"reporting"/"analysis"/"disputed"/"unsupported"` or `text color size` (an evidence stamp that slams in; use `anim:"none"`) |
+| `venn` | `r join:0..1 left right mid lc rc size` (two movements as overlapping circles; key `join` to slide them together or apart) |
+| `web` | `nodes:[{name,u,v,color,r,fs}] edges:[[a,b,"solid"/"dash"]] shown draw:0..1` (a network map; solid = documented money or partnership, dashed = inferred) |
+| `tline` | `events:[{year,text,color}] w shown` (a timeline; key `shown` to reveal events in order; keep `w` under about 880 so edge labels stay on screen) |
 
 To add a visual, write a function `(props, t, seed, age) => svgString` drawn around the origin, use `solid()` and `glow()` for the house look, and register it in `DRAW`.
 

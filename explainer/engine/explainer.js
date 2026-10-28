@@ -768,8 +768,60 @@
     return s;
   }
 
+  // ---------- investigation elements ----------
+  /* Evidence stamp: what kind of claim is on screen. kind: fact reporting analysis disputed unsupported (or text + color). */
+  const STAMPS = { fact: ['ON THE RECORD', '#7bdc8c'], reporting: ['HER REPORTING', '#5ec8e5'], analysis: ["NOMANI'S ANALYSIS", '#ffb347'], disputed: ['DISPUTED', '#ff8fab'], unsupported: ['NOT SUPPORTED', '#ff5a7a'] };
+  function stamp(p, t, seed, age) {
+    const [txt, col] = STAMPS[p.kind] || [p.text || 'NOTE', p.color || '#ffd166'], size = p.size || 22, c = p.color || col;
+    const w = textW(p.text || txt, size, 900) + (p.text || txt).length * 2 + size * 1.6, h = size * 2.1, a = back(clamp(age / 0.35)), sc = 1.6 - 0.6 * a;
+    return `<g transform="rotate(${p.rot == null ? -6 : 0}) scale(${f1(sc * 100) / 100})" opacity="${f1(clamp(age / 0.2))}">` + glow(0, 0, w * 0.7, c, 0.18) +
+      `<path d="${rrect(-w / 2, -h / 2, w, h, 10)}" fill="#050818" fill-opacity="0.45" stroke="${c}" stroke-width="4"/>` + text(p.text || txt, 0, 1, size, { weight: 900, fill: c, ls: 2 }) + `</g>`;
+  }
+  /* Two movements as overlapping circles; key "join" 0..1 to slide them together. left/right/mid labels. */
+  function venn(p, t) {
+    const r = p.r || 170, j = p.join == null ? 0.5 : p.join, dx = r * (1.25 - 0.75 * j), lc = p.lc || '#ff5a5a', rc = p.rc || '#3fcf8e';
+    let s = glow(-dx, 0, r * 1.6, lc, 0.25) + glow(dx, 0, r * 1.6, rc, 0.25);
+    s += `<circle cx="${f1(-dx)}" cy="0" r="${r}" fill="${lc}" opacity="0.62"/><circle cx="${f1(dx)}" cy="0" r="${r}" fill="${rc}" opacity="0.62"/>`;
+    s += `<circle cx="${f1(-dx)}" cy="0" r="${r}" fill="none" stroke="${tint(lc, 0.4)}" stroke-width="4"/><circle cx="${f1(dx)}" cy="0" r="${r}" fill="none" stroke="${tint(rc, 0.4)}" stroke-width="4"/>`;
+    if (p.left) s += text(p.left, -dx - r * 0.35, 0, p.size || 26, { weight: 900 });
+    if (p.right) s += text(p.right, dx + r * 0.35, 0, p.size || 26, { weight: 900 });
+    if (p.mid && j > 0.6) s += text(p.mid, 0, 0, (p.size || 26) * 0.8, { weight: 900, fill: '#fff6e6', op: f1(clamp((j - 0.6) * 4)) });
+    return s;
+  }
+  /* A network map. nodes [{name, u, v, color, r}] in px from the origin; edges [[a, b, "solid"|"dash"]]; key "draw" 0..1 for edges, "shown" for nodes. */
+  function web(p, t, seed, age) {
+    const N = p.nodes || [], E = p.edges || [], dr = p.draw == null ? 1 : p.draw, shown = p.shown == null ? N.length : p.shown;
+    let s = '';
+    E.forEach(([a, b, st], i) => {
+      const A = N[a], B = N[b]; if (!A || !B || a >= shown || b >= shown) return;
+      const q = clamp(dr * E.length - i); if (q <= 0) return;
+      const x2 = A.u + (B.u - A.u) * q, y2 = A.v + (B.v - A.v) * q, dash = st === 'dash';
+      s += `<path d="M${f1(A.u)} ${f1(A.v)}L${f1(x2)} ${f1(y2)}" stroke="${dash ? '#ffb347' : '#e6ebff'}" stroke-opacity="${dash ? 0.85 : 0.6}" stroke-width="${dash ? 3 : 4}"${dash ? ' stroke-dasharray="10 9"' : ''} stroke-linecap="round"/>`;
+    });
+    N.forEach((n, i) => {
+      const q = back(clamp((shown - i) * 1.5)); if (q <= 0) return;
+      const r = (n.r || 34) * q, c = n.color || '#5ec8e5', bob = Math.sin(t * 1.3 + i) * 3;
+      s += `<g transform="translate(${f1(n.u)} ${f1(n.v + bob)})">` + glow(0, 0, r * 2, c, 0.3) + solid(circ(0, 0, r), c, r * 0.12, [-r * 0.35, -r * 0.4, r * 0.3, r * 0.14]);
+      s += text(n.name, 0, (n.below === false ? -1 : 1) * (r + 20), n.fs || 18, { weight: 900, op: f1(clamp(q)) }) + `</g>`;
+    });
+    return s;
+  }
+  /* A horizontal timeline. events [{year, text, color}]; key "shown" to reveal them in order. */
+  function tline(p, t, seed, age) {
+    const ev = p.events || [], w = p.w || 1000, n = ev.length, shown = p.shown == null ? n : p.shown;
+    let s = `<path d="M${-w / 2} 0H${w / 2}" stroke="#fff" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/>`;
+    ev.forEach((e, i) => {
+      const x = -w / 2 + (n === 1 ? w / 2 : i * w / (n - 1)), q = clamp(shown - i), up = i % 2 === 0, c = e.color || '#ffd166';
+      s += solid(circ(x, 0, 8 + 6 * q), q > 0.5 ? c : '#5a6aa0', 2);
+      if (q <= 0) return;
+      s += `<g opacity="${f1(q)}">` + glow(x, 0, 40, c, 0.5 * q) + text(e.year, x, up ? -38 : 38, 26, { weight: 900, fill: c });
+      s += text(e.text, x, up ? -92 : 96, 17, { weight: 800, fill: '#e6ebff', lh: 1.2 }) + `</g>`;
+    });
+    return s;
+  }
+
   const DRAW = { pebble, crowd, heart, brain, book, rings, curve, meter, label, icon, card, phone, arrow, mirror, house, dominoes, dots, scale, planet, particles, shape: shapeEl, text: textEl, bars, critter, quote,
-    flames, car, van, townhall, stat, cite, gbars, feed, hexmap };
+    flames, car, van, townhall, stat, cite, gbars, feed, hexmap, stamp, venn, web, tline };
 
   // ---------- timing ----------
   function load(ep, tl, svg) {
