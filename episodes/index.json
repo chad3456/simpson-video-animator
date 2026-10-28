@@ -818,5 +818,25 @@
     "player": true,
     "script": true,
     "bible": true
+  },
+  {
+    "slug": "who-burned-france-revised",
+    "dir": "explainer/episodes/who-burned-france-revised/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "Special 2 (revised cut)",
+    "title": "Who Burned France? Revised Cut",
+    "logline": "The revised cut of LUMEN's October 2026 riots special. Blunter about the ultra-left violence, the Palestinian flags in the riots, the State's own report on Islamist entryism, Islam's measured growth in France, and the politicians and influencers who excused the damage, while still testing every claim against the record.",
+    "rating": "adult",
+    "format": "explainer",
+    "note": "Adult audiences: describes riot violence, arson, injuries to children and police, Islamist entryism and online hate factually. Stylised imagery, no graphic content.",
+    "category": "Current events: France",
+    "source": "Interior Ministry (L. Nuñez) and Justice Ministry (G. Darmanin), Oct 2026; PM S. Lecornu; Limoges prefecture; Asra Q. Nomani, Fox News Digital (9 and 20 Oct 2026); AP Fact Focus (20 Oct); NewsGuard; The Week fact check; Reuters, AP, AFP, Al Jazeera, Le Figaro, Sud Radio, actu17, Wikipedia timeline. Figures as of 23 October 2026. Revised cut adds: INSEE TeO2 (2023); 'Frères musulmans et islamisme politique en France' report (May 2025, via Public Sénat); Ifop for Écran de veille (Nov 2025) and the CDCM complaint against it; L'Appel (20 Oct 2026); Sud Radio (27 Feb 2025); LCI via Le Tribunal du Net, i24NEWS and Townhall (20-21 Oct 2026); Le Tribunal du Net (18 Oct 2026); ICI Isère.",
+    "duration": 1044.309,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": true
   }
 ]

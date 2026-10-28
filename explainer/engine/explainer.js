@@ -719,7 +719,7 @@
       s += text(g.label, cx, h / 2 + 30, 20, { weight: 800, fill: '#e6ebff' });
     });
     let lx = -((S.length - 1) * 150) / 2;
-    for (const se of S) { if (se.name) s += `<circle cx="${f1(lx - 40)}" cy="${f1(-h / 2 - 30)}" r="9" fill="${se.color}"/>` + text(se.name, lx + 10, -h / 2 - 30, 20, { weight: 800 }); lx += 150; }
+    for (const se of S) { if (se.name) s += `<circle cx="${f1(lx - 40)}" cy="${f1(-h / 2 - 30)}" r="9" fill="${se.color}"/>` + text(se.name, lx - 24, -h / 2 - 30, 20, { weight: 800, anchor: 'start' }); lx += 70 + se.name.length * 10; }
     return s;
   }
   /* A social feed panel with generic posts (no platform logos). posts [{tag, text, color, stamp}], shown = how many, stamps 0..1. */
