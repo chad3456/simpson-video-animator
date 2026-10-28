@@ -77,7 +77,7 @@
   // Shesha, the many-hooded serpent: coils as a bed and a canopy of hoods over the god
   FX.shesha = (p, t) => {
     const w = p.w || 520, sw = Math.sin(t * 1.1) * 4; let s = '';
-    const body = '#3e7c74', belly = '#e9dca8';
+    const body = p.body || '#3e7c74', belly = p.belly || '#e9dca8';
     // coils: three stacked rounded bands
     for (let i = 2; i >= 0; i--) {
       const y = -i * 30, ww = w * (1 - i * 0.08);
@@ -308,6 +308,21 @@
     if (fl > 0.95) for (let i = 0; i < 24; i++) { const a = R() * Math.PI, r = 40 + ((age * 120 + R() * 200) % 160); s += circ(f1(Math.cos(a) * r * 1.4), f1(-Math.sin(a) * r * 0.6), 2 + R() * 3, '#fff', { op: 0.7 }); }
     return s;
   };
+  // Govardhan: a painted hill of rounded rocks and trees; lifted, it shows a dark underside
+  FX.hill = (p, t) => {
+    const w = p.w || 520, h = p.h || 260, R = rng(p.seed || 12); let s = '';
+    s += path(`M${-w / 2},0 C${-w / 2 + 40},${-h * 0.7} ${-w * 0.2},${-h} 0,${-h} C${w * 0.2},${-h} ${w / 2 - 40},${-h * 0.7} ${w / 2},0Z`, p.color || '#7a8a4a', { sw: 2 });
+    for (let i = 0; i < 26; i++) {
+      const x = (R() - 0.5) * w * 0.85, yy = -R() * h * 0.8 * (1 - Math.abs(x) / w), r = 14 + R() * 18;
+      s += path(`M${f1(x - r)},${f1(yy)} C${f1(x - r)},${f1(yy - r)} ${f1(x + r)},${f1(yy - r)} ${f1(x + r)},${f1(yy)}Z`, shade(p.color || '#7a8a4a', (R() - 0.5) * 0.3), { sw: 1 });
+    }
+    for (let i = 0; i < 7; i++) { const x = (i - 3) * w * 0.11, yy = -h * (0.92 - Math.abs(i - 3) * 0.12); s += tree(x, yy, 0.5, i % 2 ? "round" : "mango", 20 + i); }
+    if (p.lifted) {
+      s += path(`M${-w / 2},0 C${-w * 0.3},${h * 0.16} ${w * 0.3},${h * 0.16} ${w / 2},0 C${w * 0.3},${h * 0.06} ${-w * 0.3},${h * 0.06} ${-w / 2},0Z`, '#3a2a1a', { sw: 1.6 });
+      for (let i = 0; i < 9; i++) s += curve(`M${f1((i - 4) * w * 0.1)},${f1(h * 0.08)} l${f1((R() - 0.5) * 8)},${f1(10 + R() * 18)}`, '#5a4a2a', 3, { op: 0.8 });
+    }
+    return s;
+  };
   // Manu's great boat: a painted hull with a canopy, rocking on the water
   FX.boat = (p, t) => {
     const rock = Math.sin(t * 1.2) * 3;
@@ -379,6 +394,114 @@
   FX.veil = (p, t, age) => {
     const R = rng(5); let s = `<path d="M-120,0 C-140,-120 -60,-260 0,-300 C60,-260 140,-120 120,0 C60,30 -60,30 -120,0Z" fill="#141d45" opacity="${p.op ?? 0.85}" stroke="#5a69ab" stroke-width="2"/>`;
     for (let i = 0; i < 40; i++) s += circ((R() - 0.5) * 200, -R() * 280, 1.2 + R() * 1.6, '#fdf6dc', { op: 0.4 + 0.6 * Math.abs(Math.sin(t * 2 + i)) });
+    return s;
+  };
+
+  // ---- E12 set pieces ----
+  // a single serpent: a sinuous painted body along +x, head (hooded or plain) at the far end
+  function serpentBody(len, amp, th, color, belly, t, sp, hood, seed) {
+    const pts = [];
+    for (let i = 0; i <= 28; i++) { const u = i / 28, x = u * len; pts.push([x, Math.sin(u * 7 - t * sp + seed) * amp * (0.35 + 0.65 * u)]); }
+    const d = 'M' + pts.map(q => f1(q[0]) + ',' + f1(q[1])).join(' L');
+    let s = `<path d="${d}" fill="none" stroke="${LINE}" stroke-width="${th + 3}" stroke-linecap="round" stroke-linejoin="round"/>`;
+    s += `<path d="${d}" fill="none" stroke="${color}" stroke-width="${th}" stroke-linecap="round" stroke-linejoin="round"/>`;
+    s += `<path d="${d}" fill="none" stroke="${belly}" stroke-width="${f1(th * 0.28)}" stroke-dasharray="${f1(th * 0.5)} ${f1(th * 0.7)}" stroke-linecap="round" opacity="0.9"/>`;
+    const [hx, hy] = pts[28], [px, py] = pts[26], a = Math.atan2(hy - py, hx - px) * 57.3;
+    s += `<g transform="translate(${f1(hx)} ${f1(hy)}) rotate(${f1(a + 90)}) scale(${f1(th / 22)})">`;
+    if (hood) s += path('M0,-40 C26,-40 34,-14 30,6 C26,22 12,32 0,36 C-12,32 -26,22 -30,6 C-34,-14 -26,-40 0,-40Z', shade(color, 0.1), { sw: 1.8 }) + path('M0,-24 C12,-22 16,-8 14,6 C11,16 4,22 0,24 C-4,22 -11,16 -14,6 C-16,-8 -12,-22 0,-24Z', belly, { sw: 1 });
+    else s += path('M0,-22 C14,-22 16,-6 12,6 C8,14 -8,14 -12,6 C-16,-6 -14,-22 0,-22Z', color, { sw: 1.6 });
+    s += circ(-8, hood ? -26 : -12, 3, '#f6d24a', { stroke: LINE, sw: 0.6 }) + circ(8, hood ? -26 : -12, 3, '#f6d24a', { stroke: LINE, sw: 0.6 });
+    s += `<path d="M0,${hood ? -40 : -22} l-3,-10 l3,4 l3,-4Z" fill="#d0182a"/></g>`;
+    return s;
+  }
+  FX.serpent = (p, t) => serpentBody(p.len || 300, p.amp ?? 24, p.th || 22, p.color || '#c8a02a', p.belly || '#f6e7a6', t, p.speed ?? 2.2, p.hood !== 0, p.seed || 0);
+  // serpents tumbling out of the sky towards the origin (the sacrifice fire), in the five colours of the five clans
+  FX.snakerain = (p, t, age) => {
+    const n = p.n || 14, h = p.h || 700, w = p.w || 900, R = rng(p.seed || 9), cols = ['#f4efe2', '#c8372d', '#1e2430', '#e86a8c', '#f2c230'];
+    let s = '';
+    for (let i = 0; i < n; i++) {
+      const sx = (R() - 0.5) * w, per = 1.6 + R() * 1.4, ph = ((age + R() * per) / per) % 1, c = cols[i % 5];
+      const x = sx * (1 - ph), y = -h * (1 - ph * ph), sc = 0.35 + R() * 0.3, rot = 60 + R() * 60 + ph * 200;
+      s += `<g transform="translate(${f1(x)} ${f1(y)}) rotate(${f1(rot)}) scale(${f1(sc)})" opacity="${f1(Math.min(1, (1 - ph) * 4))}">${serpentBody(160, 18, 16, c, c === '#1e2430' ? '#8a8a6a' : '#fbf3df', t, 6, i % 3 === 0, i)}</g>`;
+    }
+    return s;
+  };
+  // the great banyan (vat): a broad canopy with hanging aerial roots
+  FX.vat = (p, t) => {
+    const R = rng(p.seed || 31); let s = path('M-40,0 C-30,-80 -40,-160 -60,-220 L60,-220 C40,-160 30,-80 40,0Z', '#6b3a1e', { sw: 2 });
+    s += curve('M-10,-20 C-6,-90 -16,-160 -20,-210 M14,-30 C10,-100 18,-160 22,-210', '#4a2a12', 2, { op: 0.7 });
+    for (let i = 0; i < 9; i++) { const x = -300 + i * 75; s += curve(`M${x},-230 C${x + 4},-150 ${x - 4},-80 ${x + 2},${-10 - (i % 3) * 30}`, '#7a4a26', 3, { op: 0.85 }); }
+    let d = '';
+    for (const [lx, ly, lr] of [[0, -300, 140], [-200, -260, 110], [200, -260, 110], [-320, -220, 70], [320, -220, 70], [-100, -380, 100], [110, -380, 100]]) d += `M${lx + lr},${ly} A${lr},${lr * 0.8} 0 1 0 ${lx - lr},${ly} A${lr},${lr * 0.8} 0 1 0 ${lx + lr},${ly}Z`;
+    s += `<path d="${d}" fill="none" stroke="${LINE}" stroke-width="5"/><path d="${d}" fill="${p.color || '#2b5233'}"/>`;
+    for (let i = 0; i < 160; i++) {
+      const lx = (R() - 0.5) * 760, ly = -230 - R() * 220 + Math.abs(lx) * 0.25, sw = Math.sin(t * 1.3 + i) * 1.5;
+      s += `<path d="M${f1(lx)},${f1(ly)} c${f1(-6 + sw)},-4 -6,-14 0,-16 c6,2 6,12 0,16Z" fill="${i % 3 ? '#4f8a3a' : '#86b85a'}" opacity="0.9"/>`;
+    }
+    return s;
+  };
+  // the serpent that swallows its own tail: a scaled ring, turning slowly, head biting the tail at the top
+  FX.ouroboros = (p, t) => {
+    const r = p.r || 140, th = p.th || 26, c = p.color || '#2e8a57', b = p.belly || '#f2c230', sp = (p.spin ?? 6) * t;
+    let s = `<g transform="rotate(${f1(sp)})">`;
+    s += `<circle r="${r}" fill="none" stroke="${LINE}" stroke-width="${th + 4}"/><circle r="${r}" fill="none" stroke="${c}" stroke-width="${th}"/>`;
+    s += `<circle r="${r}" fill="none" stroke="${b}" stroke-width="${f1(th * 0.3)}" stroke-dasharray="${f1(th * 0.45)} ${f1(th * 0.6)}" opacity="0.9"/>`;
+    for (let i = 0; i < 36; i++) { const a = i / 36 * Math.PI * 2; s += circ(f1(Math.cos(a) * (r + th * 0.28)), f1(Math.sin(a) * (r + th * 0.28)), 2.2, shade(c, -0.3)); }
+    // the tail tapering into the jaws
+    s += path(`M${-th * 0.4},${-r - th * 0.5} C${-th * 1.2},${-r - th * 0.2} ${-th * 1.6},${-r + th * 0.1} ${-th * 2.2},${-r}`, c, { sw: 1.6 });
+    s += `<g transform="translate(${f1(th * 0.6)} ${-r}) rotate(-90) scale(${f1(th / 22)})">` + path('M0,-24 C16,-24 20,-6 14,8 C10,16 -10,16 -14,8 C-20,-6 -16,-24 0,-24Z', shade(c, 0.1), { sw: 1.6 }) +
+      circ(-8, -10, 3, '#f6d24a', { stroke: LINE, sw: 0.6 }) + circ(8, -10, 3, '#f6d24a', { stroke: LINE, sw: 0.6 }) + '</g>';
+    return s + '</g>';
+  };
+  // the iron reeds on the shore at Prabhas: grey-blue blades that sway; grow 0..1
+  FX.reeds = (p, t) => {
+    const n = p.n || 40, w = p.w || 1200, h = p.h || 160, g = clamp(p.grow ?? 1), R = rng(p.seed || 7); let s = '';
+    for (let i = 0; i < n; i++) {
+      const x = (i / n - 0.5) * w + (R() - 0.5) * 20, hh = h * (0.6 + R() * 0.5) * g, sw = Math.sin(t * 1.4 + i * 0.7) * 10 * g;
+      s += path(`M${f1(x - 4)},0 C${f1(x - 3)},${f1(-hh * 0.5)} ${f1(x + sw * 0.5)},${f1(-hh * 0.8)} ${f1(x + sw)},${f1(-hh)} C${f1(x + 3 + sw * 0.5)},${f1(-hh * 0.8)} ${f1(x + 4)},${f1(-hh * 0.5)} ${f1(x + 4)},0Z`, i % 2 ? '#6a7a8a' : '#4a5a6a', { sw: 1 });
+      s += curve(`M${f1(x)},-4 L${f1(x + sw * 0.8)},${f1(-hh * 0.85)}`, '#b8c8d8', 1, { op: 0.6 });
+    }
+    return s;
+  };
+  // an arrow flying along +x (rotate the element to aim it)
+  FX.arrow = (p) => {
+    const L = p.len || 120;
+    return line([[-L / 2, 0], [L / 2, 0]], '#6b3a1e', 3) + path(`M${L / 2 + 14},0 L${L / 2 - 4},-7 L${L / 2 - 4},7Z`, '#7a8a9a', { sw: 1.2 }) +
+      path(`M${-L / 2},0 L${-L / 2 - 18},-10 L${-L / 2 - 10},0 L${-L / 2 - 18},10Z`, '#c8372d', { sw: 1 });
+  };
+  // a kite on its string, tugging in the wind; the string runs to (sx, sy)
+  FX.kite = (p, t) => {
+    const dx = Math.sin(t * 1.7) * 14, dy = Math.cos(t * 1.3) * 8, c = p.color || '#e8641e';
+    return curve(`M${f1(dx)},${f1(dy + 30)} C${f1((p.sx || -200) * 0.3)},${f1(dy + 120)} ${f1((p.sx || -200) * 0.7)},${f1((p.sy || 400) * 0.5)} ${p.sx || -200},${p.sy || 400}`, '#fbf3df', 1.2, { op: 0.8 }) +
+      `<g transform="translate(${f1(dx)} ${f1(dy)}) rotate(${f1(Math.sin(t * 2) * 8)})">` + path('M0,-34 L28,0 L0,34 L-28,0Z', c, { sw: 1.6 }) + path('M0,-34 L0,34 M-28,0 L28,0', 'none', { sw: 1 }) +
+      path('M0,34 L-8,50 L8,50Z', p.tail || '#f2c230', { sw: 1 }) + '</g>';
+  };
+  // Dwarka: a skyline of gold domes and crystal pavilions; sink 0..1 lowers it beneath the waves
+  FX.city = (p, t) => {
+    const w = p.w || 1000, sk = clamp(p.sink || 0) * (p.h || 320), R = rng(p.seed || 21); let s = `<g transform="translate(0 ${f1(sk)})">`;
+    const n = 9;
+    for (let i = 0; i < n; i++) {
+      const x = (i / (n - 1) - 0.5) * w, hh = 120 + R() * 140 - Math.abs(x) / w * 80, bw = 70 + R() * 40;
+      s += path(`M${f1(x - bw / 2)},0 L${f1(x - bw / 2)},${f1(-hh)} L${f1(x + bw / 2)},${f1(-hh)} L${f1(x + bw / 2)},0Z`, i % 2 ? '#dfe7f0' : '#f6efe0', { sw: 1.6 });
+      for (let k = 0; k < 3; k++) s += path(`M${f1(x - bw / 2 + 10 + k * (bw - 20) / 3)},${f1(-hh * 0.3)} l0,-30 a${f1((bw - 40) / 6)},10 0 0 1 ${f1((bw - 40) / 3)},0 l0,30Z`, '#3d6fc4', { sw: 1 });
+      s += path(`M${f1(x - bw / 2 - 6)},${f1(-hh)} C${f1(x - bw / 2)},${f1(-hh - 60)} ${f1(x + bw / 2)},${f1(-hh - 60)} ${f1(x + bw / 2 + 6)},${f1(-hh)}Z`, GOLD, { sw: 1.6 });
+      s += line([[x, -hh - 46], [x, -hh - 70]], GOLD_LO, 2) + path(`M${f1(x)},${f1(-hh - 70)} l14,6 l-14,6Z`, '#c8372d', { sw: 0.8 });
+    }
+    return s + '</g>';
+  };
+  // a golden throne (Indra's seat), optionally with a serpent coiled around it
+  FX.throne = (p, t) => {
+    let s = path('M-80,0 L-70,-60 L70,-60 L80,0Z', GOLD, { sw: 2 }) + path('M-70,-60 L-60,-200 C-30,-230 30,-230 60,-200 L70,-60Z', '#c8372d', { sw: 2 });
+    s += path('M-60,-200 C-30,-230 30,-230 60,-200 C40,-250 -40,-250 -60,-200Z', GOLD, { sw: 1.6 }) + circ(0, -150, 18, PEARL, { stroke: GOLD_LO, sw: 2 });
+    if (p.coil) for (let i = 0; i < 3; i++) s += `<path d="M-80,${-40 - i * 60} C-20,${-70 - i * 60} 20,${-10 - i * 60} 80,${-40 - i * 60}" fill="none" stroke="${LINE}" stroke-width="25"/><path d="M-80,${-40 - i * 60} C-20,${-70 - i * 60} 20,${-10 - i * 60} 80,${-40 - i * 60}" fill="none" stroke="${p.coil === 1 ? '#c8a02a' : p.coil}" stroke-width="21"/>`;
+    return s;
+  };
+  // a cloth bundle of rice, optionally open with grains spilling out
+  FX.rice = (p, t, age) => {
+    const R = rng(p.seed || 3); let s = '';
+    if (p.bundle !== 0) s += path('M-30,0 C-36,-26 -20,-40 0,-42 C20,-40 36,-26 30,0Z', '#c9b98f', { sw: 1.6 }) + path('M-10,-40 L-16,-56 L0,-46 L16,-56 L10,-40Z', '#b5a07a', { sw: 1.2 });
+    const n = p.n ?? 0;
+    for (let i = 0; i < n; i++) { const x = (R() - 0.5) * (p.w || 120), y = -R() * 10; s += `<ellipse cx="${f1(x)}" cy="${f1(y)}" rx="3.2" ry="1.6" transform="rotate(${f1(R() * 180)} ${f1(x)} ${f1(y)})" fill="#fbf6ea" stroke="${LINE}" stroke-width="0.4"/>`; }
     return s;
   };
 

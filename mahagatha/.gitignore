@@ -3,3 +3,4 @@
 .voice-cache/
 still-*.png
 __pycache__/
+episodes/_preview*/

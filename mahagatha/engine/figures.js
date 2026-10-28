@@ -127,6 +127,8 @@
     // eyebrow: a long thin bow
     const b0 = [ex - 13, ey - 11 - browUp], b1 = [ex + 1, ey - 16 - browUp * 1.3 + browIn * 0.3], b2 = [ex + 14, ey - 11 + browIn];
     s += curve(`M${pt(...b0)} Q${pt(...b1)} ${pt(...b2)}`, o.browCol || LC, 2.2);
+    // Gandhari's blindfold: a cloth band tied across both eyes
+    if (o.blindfold) s += pth('M-10,-14 C8,-17 30,-17 47,-12 L46,4 C30,0 8,0 -10,2Z', o.blindfold === true ? '#f4efe2' : o.blindfold, { sw: 1.2 }) + curve('M-10,-6 C-18,-2 -22,8 -20,18 M-10,-2 C-16,4 -16,14 -12,22', o.blindfold === true ? '#e2d8c0' : o.blindfold, 3);
     // ear + earring
     if (!o.veilEar) s += pth('M-6,0 C-1,-4 3,2 1,9 C-1,15 -4,17 -7,14 C-4,10 -6,5 -6,0Z', shade(skin, -0.05), { sw: 1.2 });
     if (o.earring !== false) {
@@ -850,6 +852,37 @@
     sita:    { name: 'सीता', skin: '#f3c79a', female: true, crown: 'veil', odhni: '#f2a516', skirt: '#c8372d', skirtMotif: 'flower', choli: '#2e8a57', noseRing: true, tilak: 'bindi', seed: 104 },
     mayasita: { name: 'माया सीता', skin: '#d8b8c8', female: true, crown: 'veil', odhni: '#b8a0c8', skirt: '#7a5a8a', skirtMotif: 'star', skirtDots: '#e9e2ff', choli: '#5a3a6a', noseRing: true, tilak: 'bindi', seed: 105 },
     phalgu:  { name: 'फल्गु', skin: '#e8c8a8', female: true, crown: 'devi', odhni: '#a8c8d8', skirt: '#c8d8e0', skirtMotif: 'flower', skirtDots: '#5a8ab8', choli: '#5a8ab8', noseRing: true, seed: 106 },
+    vasudev: { name: 'वसुदेव', skin: '#d8a070', crown: 'turban', turban: '#f2a516', mustache: true, beard: 'short', dhoti: '#f6efe0', dhotiDots: '#c8372d', scarf: '#c8372d', necklace: true, seed: 107 },
+    devaki:  { name: 'देवकी', skin: '#f0c49a', female: true, crown: 'veil', odhni: '#c8372d', skirt: '#2e5a8a', skirtMotif: 'flower', choli: '#f2a516', noseRing: true, tilak: 'bindi', seed: 108 },
+    kansa:   { name: 'कंस', skin: '#b87a4a', crown: 'kirit', mustache: true, beard: 'short', beardCol: '#1a1a1a', build: 'large', dhoti: '#2a1a3a', dhotiMotif: 'stripe', dhotiDots: '#c8372d', scarf: '#8a0f1a', necklace: true, eyeWhite: '#f6d24a', iris: '#8a0f1a', item: 'sword', seed: 109 },
+    yogamaya: { name: 'योगमाया', skin: '#f2b860', female: true, dhoti: '#c8372d', crown: 'devi', arms: 10, upper: 'devi', odhni: '#e8641e', skirt: '#e8641e', skirtMotif: 'flower', skirtDots: '#f2c230', choli: '#2e8a57', noseRing: true, tilak: 'bindi', halo: '#ffe08a', item: 'trishul', itemFar: 'chakra', seed: 110 },
+    krishna: { name: 'कृष्ण', skin: '#2b4fa8', crown: 'krishna', build: 'child', dhoti: '#f2c230', dhotiDots: '#c8372d', scarf: '#e86a8c', garland: true, necklace: true, tilak: 'vaishnav', item: 'flute', seed: 111 },
+    yashoda: { name: 'यशोदा', skin: '#e8b07a', female: true, crown: 'veil', odhni: '#f2a516', skirt: '#2e8a57', skirtMotif: 'flower', skirtDots: '#f2c230', choli: '#c8372d', noseRing: true, tilak: 'bindi', seed: 112 },
+    nand:    { name: 'नंद', skin: '#d8a070', crown: 'turban', turban: '#e8641e', mustache: true, beard: 'long', beardCol: '#e9e4d8', dhoti: '#f6efe0', dhotiDots: '#e8641e', scarf: '#f2a516', necklace: true, seed: 113 },
+    balaram: { name: 'बलराम', skin: '#f6e8d0', crown: 'mukut', build: 'child', dhoti: '#3d6fc4', dhotiDots: '#f2c230', scarf: '#2e8a57', necklace: true, item: 'gada', seed: 114 },
+    gopa:    { name: 'ग्वाल', skin: '#c8905a', crown: 'turban', turban: '#e8641e', build: 'child', dhoti: '#f2c230', dhotiDots: '#2e8a57', scarf: null, necklace: true, seed: 115 },
+    gopa2:   { name: 'ग्वाल', skin: '#b8804a', crown: 'turban', turban: '#2e8a57', build: 'child', dhoti: '#e86a8c', dhotiDots: '#f2c230', scarf: null, necklace: true, seed: 116 },
+    gopi:    { name: 'गोपी', skin: '#e8b07a', female: true, crown: 'veil', odhni: '#e86a8c', skirt: '#f2a516', skirtMotif: 'flower', choli: '#2e8a57', noseRing: true, seed: 117 },
+    naagin:  { name: 'नागपत्नी', skin: '#3e7c74', lineCol: '#f3ead4', female: true, crown: 'devi', odhni: '#1e3a3a', skirt: '#2a4a4a', skirtMotif: 'star', skirtDots: '#f2c230', choli: '#5a8a3a', noseRing: true, seed: 118 },
+    yamuna:  { name: 'यमुना', skin: '#3a4a7a', lineCol: '#e9e2ff', female: true, crown: 'devi', odhni: '#2a3a6a', skirt: '#3a4a8a', skirtMotif: 'flower', skirtDots: '#9fd0e8', choli: '#5a8ab8', noseRing: true, tilak: 'bindi', halo: '#9fb8e8', seed: 119 },
+    // E12: Sudama, the end of the Yadus, the serpent sacrifice
+    sudama:  { name: 'सुदामा', skin: '#b88058', crown: 'topknot', build: 'slim', dhoti: '#e9dfc4', dhotiDots: '#8a7a5a', scarf: '#c9b98f', thread: true, tilak: 'vaishnav', necklace: false, earring: false, seed: 121 },
+    sudamapatni: { name: 'सुशीला', skin: '#c88a5a', female: true, crown: 'veil', odhni: '#b5703a', skirt: '#8a5a3a', skirtDots: '#e9dfc4', choli: '#6a4a2a', tilak: 'bindi', seed: 122 },
+    sudamaputra: { name: 'पुत्र', skin: '#c08a5a', crown: 'topknot', build: 'child', dhoti: '#e9dfc4', scarf: null, earring: false, seed: 123 },
+    dwarpal: { name: 'द्वारपाल', skin: '#a8703a', crown: 'turban', turban: '#c8372d', mustache: true, build: 'large', dhoti: '#2e8a57', dhotiDots: '#f2c230', scarf: '#f2c230', item: 'trishul', seed: 124 },
+    krishna2: { name: 'कृष्ण', skin: '#2b4fa8', crown: 'krishna', dhoti: '#f2c230', dhotiDots: '#c8372d', scarf: '#e86a8c', garland: true, necklace: true, tilak: 'vaishnav', halo: '#f6e7a6', item: 'flute', seed: 125 },
+    draupadi: { name: 'द्रौपदी', skin: '#8a5a3a', female: true, crown: 'devi', odhni: '#c8372d', skirt: '#f2a516', skirtMotif: 'flower', skirtDots: '#c8372d', choli: '#2a3a8a', noseRing: true, tilak: 'bindi', seed: 126 },
+    gandhari: { name: 'गांधारी', skin: '#e8b88a', female: true, crown: 'veil', odhni: '#f4efe2', skirt: '#e9e2cc', skirtDots: '#8a0f1a', choli: '#8a0f1a', blindfold: true, seed: 127 },
+    samba:   { name: 'सांब', skin: '#3a5aa8', crown: 'mukut', dhoti: '#e8641e', dhotiDots: '#f2c230', scarf: '#2e8a57', necklace: true, mustache: false, seed: 128 },
+    sambastri: { name: 'सांब', skin: '#3a5aa8', female: true, crown: 'veil', odhni: '#e86a8c', skirt: '#f2c230', skirtMotif: 'flower', choli: '#2e8a57', noseRing: true, mustache: true, seed: 129 },
+    yadav:   { name: 'यादव', skin: '#c8905a', crown: 'turban', turban: '#f2a516', mustache: true, dhoti: '#c8372d', dhotiDots: '#f2c230', scarf: '#3d6fc4', necklace: true, seed: 130 },
+    yadav2:  { name: 'यादव', skin: '#a8703a', crown: 'turban', turban: '#3d6fc4', mustache: true, beard: 'short', dhoti: '#2e8a57', dhotiDots: '#fbf4e2', scarf: '#e8641e', necklace: true, seed: 131 },
+    balarama: { name: 'बलराम', skin: '#f6e8d0', crown: 'mukut', build: 'large', mustache: true, dhoti: '#3d6fc4', dhotiDots: '#f2c230', scarf: '#2e8a57', necklace: true, garland: true, item: 'gada', seed: 132 },
+    jara:    { name: 'जरा', skin: '#6a3a1e', crown: 'turban', turban: '#4a6a2a', mustache: true, dhoti: '#8a5a2a', dhotiMotif: 'stripe', dhotiDots: '#3a2a1a', scarf: null, necklace: false, earring: false, item: 'bow', seed: 133 },
+    parikshit: { name: 'परीक्षित', skin: '#e0a878', crown: 'kirit', mustache: true, beard: 'long', beardCol: '#f4efe2', hair: '#f4efe2', dhoti: '#f6efe0', dhotiDots: '#c8372d', scarf: '#8a0f1a', necklace: true, seed: 134 },
+    janamejay: { name: 'जनमेजय', skin: '#e0a878', crown: 'kirit', mustache: true, dhoti: '#8a0f1a', dhotiMotif: 'flower', dhotiDots: '#f2c230', scarf: '#f2c230', necklace: true, item: 'sword', seed: 135 },
+    mantri:  { name: 'मंत्री', skin: '#d8a070', crown: 'turban', turban: '#f4efe2', mustache: true, beard: 'short', beardCol: '#9a9a9a', dhoti: '#f4efe2', dhotiDots: '#3d6fc4', scarf: '#3d6fc4', necklace: true, seed: 136 },
+    astika:  { name: 'आस्तीक', skin: '#d8a070', crown: 'topknot', build: 'child', dhoti: '#f2a516', dhotiDots: '#c8372d', scarf: '#f2c230', thread: true, tilak: 'tripundra', halo: '#fff1b8', seed: 137 },
     daksha2: { name: 'दक्ष', skin: FAIR, crown: 'turban', turban: '#c8372d', mustache: true, beard: 'short', dhoti: '#f2a516', seed: 22 }
   };
 

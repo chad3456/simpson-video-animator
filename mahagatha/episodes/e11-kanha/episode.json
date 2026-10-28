@@ -1,0 +1,2969 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "कान्हा",
+  "episode": "11",
+  "slug": "e11-kanha",
+  "kicker": "अध्याय ग्यारह",
+  "sub": "जन्म, कालिय और गोवर्धन",
+  "logline": "मथुरा का कारागार, एक बरसती रात में यमुना पार करती टोकरी, आठ भुजाओं वाली योगमाया की चेतावनी, विषैले नाग के फन पर नाचता बालक, और छोटी अँगुली पर उठा एक पूरा पर्वत।",
+  "stories": "84, 86, 88",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 84, 86 और 88"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "indra": {
+   "label": "इंद्र",
+   "fig": "indra",
+   "voice": "hm_psi:0.65+am_liam:0.35",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "vasudev": {
+   "label": "वसुदेव",
+   "fig": "vasudev",
+   "voice": "hm_psi:0.6+am_adam:0.4",
+   "speed": 0.94,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "devaki": {
+   "label": "देवकी",
+   "fig": "devaki",
+   "voice": "hf_alpha:0.6+af_sarah:0.4",
+   "speed": 0.92,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "kansa": {
+   "label": "कंस",
+   "fig": "kansa",
+   "voice": "hm_omega:0.45+am_onyx:0.55",
+   "speed": 0.95,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "cave"
+  },
+  "yogamaya": {
+   "label": "योगमाया",
+   "fig": "yogamaya",
+   "voice": "hf_alpha:0.6+af_nicole:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "divine_big"
+  },
+  "akashvani": {
+   "label": "आकाशवाणी",
+   "voice": "hm_omega:0.5+hf_alpha:0.5",
+   "speed": 0.86,
+   "pitch": -1,
+   "fx": "divine_big"
+  },
+  "krishna": {
+   "label": "कृष्ण",
+   "fig": "krishna",
+   "voice": "hm_psi:0.45+hf_beta:0.25+am_puck:0.3",
+   "speed": 1.0,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "yashoda": {
+   "label": "यशोदा",
+   "fig": "yashoda",
+   "voice": "hf_alpha:0.55+af_bella:0.45",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "nand": {
+   "label": "नंद",
+   "fig": "nand",
+   "voice": "hm_omega:0.6+bm_george:0.4",
+   "speed": 0.95,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "gopas": {
+   "label": "ग्वाल-बाल",
+   "fig": "gopa",
+   "voice": "hf_beta:0.5+am_puck:0.5",
+   "speed": 1.08,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "chorus"
+  },
+  "gopa": {
+   "label": "ग्वाल",
+   "fig": "gopa",
+   "voice": "hf_beta:0.6+am_puck:0.4",
+   "speed": 1.08,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "gopa2": {
+   "label": "ग्वाल",
+   "fig": "gopa2",
+   "voice": "hf_beta:0.4+am_liam:0.6",
+   "speed": 1.06,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "kaliya": {
+   "label": "कालिय",
+   "voice": "hm_psi:0.4+am_fenrir:0.6",
+   "speed": 0.9,
+   "pitch": -5,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "naagin": {
+   "label": "नागपत्नियाँ",
+   "fig": "naagin",
+   "voice": "hf_alpha:0.6+af_kore:0.4",
+   "speed": 0.95,
+   "pitch": -1,
+   "fx": "chorus"
+  },
+  "yamuna": {
+   "label": "यमुना",
+   "fig": "yamuna",
+   "voice": "hf_beta:0.6+af_river:0.4",
+   "speed": 0.92,
+   "pitch": 0,
+   "fx": "dream"
+  },
+  "vrajvasi": {
+   "label": "वृंदावनवासी",
+   "fig": "gopi",
+   "voice": "hm_omega:0.4+hf_alpha:0.3+am_michael:0.3",
+   "speed": 1.02,
+   "pitch": 0,
+   "fx": "chorus"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! युग बदल गया है। त्रेता गया, द्वापर आया। और श्रीहरि फिर आने वाले हैं।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पर इस बार उनका जन्म किसी महल में नहीं होगा। एक कारागार में होगा। और जिस रात वे जन्मेंगे, उनके पिता उन्हें सिर पर रखकर, उफनती नदी पार करेंगे।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "मैं मानता हूँ, उस कथा के एक अँधेरे मोड़ पर, मेरा भी हाथ था। मैंने कंस को इंद्रधनुष दिखाकर पूछा था, इसका पहला रंग कौन-सा है, और आठवाँ कौन-सा?",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "वह प्रश्न बहुत महँगा पड़ा। चलिए, मथुरा चलते हैं।",
+     "cam": "ecu:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night",
+    "river"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय ग्यारह",
+   "title": "कान्हा",
+   "sub": "जन्म, कालिय और गोवर्धन"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा चौरासी",
+   "title": "कृष्ण का जन्म",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "karagar",
+   "set": "temple",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "torch",
+     "kind": "fire",
+     "x": 200,
+     "y": 420,
+     "size": 0.7,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "torch2",
+     "kind": "fire",
+     "x": 1080,
+     "y": 420,
+     "size": 0.7,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "devaki",
+     "x": 520,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "cradle",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasudev",
+     "x": 840,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "x": 760,
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "flash",
+     "kind": "bolt",
+     "x": 640,
+     "y": 0,
+     "h": 300,
+     "z": -2,
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "kansa",
+     "x": 1500,
+     "y": 650,
+     "s": 1.1,
+     "face": -1,
+     "pose": "hips",
+     "emo": "rage",
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "x": 1040,
+        "t": 2.5
+       },
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "dark",
+     "kind": "tint",
+     "color": "#000000",
+     "op": 0,
+     "z": 55,
+     "in": 11,
+     "keys": {
+      "11": [
+       {
+        "op": 0.85,
+        "t": 1.5
+       }
+      ]
+     },
+     "out": 12,
+     "od": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "मथुरा के कारागार में, वसुदेव अपने हाथों को देख रहे थे। उन्होंने अभी-अभी अपने पहले पुत्र को जन्म दिलाया था। और वे जानते थे, कि यह शिशु कुछ ही क्षणों का अतिथि है।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "devaki",
+     "text": "इसका माथा आपके जैसा है।",
+     "cam": "close:devaki"
+    },
+    {
+     "who": "vasudev",
+     "text": "इसी माथे पर तो देवताओं ने हमारा भाग्य लिखा है, देवकी। तुम राजकुमारी हो। तुमने सोचा था, रानी बनोगी। और तुम पत्थर के फ़र्श पर लेटी हो।",
+     "cam": "close:vasudev"
+    },
+    {
+     "who": "devaki",
+     "text": "यह आपके नहीं, मेरे भाई के कर्म हैं। वह अँधेरा अपने भीतर मत खोजिए। वह उसके भीतर है।",
+     "cam": "close:devaki"
+    },
+    {
+     "who": "narrator",
+     "text": "वसुदेव को वह दिन याद आया। विवाह के ठीक बाद, कंस अपनी प्रिय बहन को रथ में ले जा रहा था, कि तभी आकाशवाणी हुई।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "akashvani",
+     "text": "सावधान, कंस! देवकी की आठवीं संतान, तुम्हारी मृत्यु का कारण बनेगी!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "कंस ने तलवार खींच ली। वसुदेव उसके पैरों में गिर पड़े, और वचन दिया। हर संतान, जन्मते ही, वे स्वयं कंस को सौंप देंगे।",
+     "camMove": true,
+     "cam": "close:vasudev"
+    },
+    {
+     "who": "kansa",
+     "text": "समय हो चुका, वसुदेव। मेरे भांजे को यहाँ लाओ।",
+     "cam": "close:kansa"
+    },
+    {
+     "who": "devaki",
+     "text": "भैया, कम से कम इसका नाम रख लेने दो।",
+     "cam": "close:devaki"
+    },
+    {
+     "who": "kansa",
+     "text": "बहन, मृतक किसी का नाम नहीं पूछते।",
+     "cam": "ecu:kansa"
+    },
+    {
+     "who": "narrator",
+     "text": "कंस ने बालक को छीन लिया। और कारागार में सन्नाटा छा गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "ऐसा बार-बार हुआ। एक, दो, तीन... छह। देवकी ने हर पुत्र की गर्भनाल अपने पास संभालकर रखी। वे उन्हें घंटों गिनती रहतीं।",
+     "camMove": true,
+     "cam": "close:devaki",
+     "sfx": "bell"
+    },
+    {
+     "who": "devaki",
+     "text": "अब यह हमारे लिए नहीं है, स्वामी। यह संसार को कंस से मुक्ति दिलाने के लिए है। यदि नियति में लिखा है, कि आठवाँ यह करेगा, तो आठवाँ आएगा।",
+     "cam": "close:devaki"
+    }
+   ],
+   "tint": [
+    "#0a0a1a",
+    0.35
+   ],
+   "music": "sorrow",
+   "amb": [
+    "night"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "janm",
+   "set": "temple",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "devaki",
+     "x": 520,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "cradle",
+     "emo": "serene",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "pose": "offer",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasudev",
+     "x": 820,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1080,
+     "y": 160,
+     "r": 46,
+     "phase": 0.6,
+     "z": -4,
+     "in": 3
+    },
+    {
+     "id": "birth",
+     "kind": "glow",
+     "x": 540,
+     "y": 520,
+     "r": 80,
+     "color": "#7aa0ff",
+     "core": 1,
+     "z": 20,
+     "anim": "pop",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "r": 500,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 540,
+     "y": 520,
+     "r": 800,
+     "n": 36,
+     "color": "#bcd0ff",
+     "op": 0.35,
+     "z": -2,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 3
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "x": 640,
+     "y": 120,
+     "text": "कृष्ण",
+     "size": 80,
+     "z": 70,
+     "in": 4,
+     "out": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "सातवाँ गर्भ, योगमाया ने चुपचाप रोहिणी के गर्भ में पहुँचा दिया, जहाँ बलराम जन्मे। और कंस ने समझा, सातवाँ गर्भ में ही मर गया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "devaki",
+     "text": "यह वही है, स्वामी। मेरे भीतर एक लौ है। मैंने उसे धारण नहीं किया, उसने मुझे धारण किया है।",
+     "cam": "close:devaki"
+    },
+    {
+     "who": "narrator",
+     "text": "भाद्रपद, कृष्ण पक्ष की अष्टमी। आधी रात। देवकी ने अपने आठवें पुत्र को जन्म दिया। और श्यामवर्ण बालक ने कोठरी को प्रकाश से भर दिया।",
+     "camMove": true,
+     "cam": "full:devaki",
+     "sfx": "conch",
+     "bells": true,
+     "swell": true
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "मशालें तेज़ हो गईं। पहरेदार सो गए। और कारागार का द्वार अपने-आप खुल गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "magic"
+    },
+    {
+     "who": "akashvani",
+     "text": "इन्हें यमुना पार गोकुल ले जाओ, नंद और यशोदा के घर। वहाँ अभी-अभी एक कन्या जन्मी है। इन्हें वहाँ छोड़ो, और उसे यहाँ ले आओ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vasudev",
+     "text": "यदि पहरेदार जाग गए? यदि कंस ने देख लिया?",
+     "cam": "close:vasudev"
+    },
+    {
+     "who": "narrator",
+     "text": "देवकी ने अपने पुत्र के पैर छुए, उसे सींक की टोकरी में रखा, और वसुदेव को सौंप दिया।",
+     "camMove": true,
+     "cam": "two:devaki,vasudev",
+     "sfx": "heartbeat"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "night",
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "yamuna",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "rain",
+     "kind": "rain",
+     "n": 160,
+     "speed": 1100,
+     "color": "#cfe0ff",
+     "op": 0.55,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 600,
+     "w": 1500,
+     "h": 220,
+     "color": "#3a4a7a",
+     "crest": "#9fb8e8",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "vasudev",
+     "x": 200,
+     "y": 700,
+     "s": 1,
+     "face": 1,
+     "pose": "lift",
+     "emo": "fear",
+     "item": "kalash",
+     "walk": 1,
+     "z": 10,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 640,
+        "y": 720,
+        "t": 6
+       }
+      ],
+      "4": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "baby",
+     "kind": "glow",
+     "x": 230,
+     "y": 330,
+     "r": 50,
+     "color": "#7aa0ff",
+     "core": 1,
+     "z": 11,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 670,
+        "y": 350,
+        "t": 6
+       }
+      ]
+     }
+    },
+    {
+     "id": "wave",
+     "kind": "water",
+     "x": 640,
+     "y": 520,
+     "w": 1500,
+     "h": 200,
+     "color": "#3a4a7a",
+     "crest": "#9fb8e8",
+     "op": 0,
+     "z": 30,
+     "in": 2,
+     "keys": {
+      "2": [
+       {
+        "op": 0.9,
+        "y": 440,
+        "t": 2
+       }
+      ],
+      "4": [
+       {
+        "op": 0,
+        "y": 600,
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "yamuna",
+     "x": 1000,
+     "y": 520,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "serene",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "rise",
+     "z": 31,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 4
+    },
+    {
+     "id": "naag",
+     "kind": "shesha",
+     "x": 900,
+     "y": 700,
+     "w": 300,
+     "hoods": 10,
+     "body": "#3e7c74",
+     "z": 9,
+     "anim": "rise",
+     "inDur": 2.5,
+     "in": 5
+    },
+    {
+     "id": "devas",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 300,
+     "n": 50,
+     "r": 600,
+     "z": 40,
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "thunder",
+     "splash": true
+    },
+    {
+     "who": "narrator",
+     "text": "बादल गरज रहे थे, मूसलाधार वर्षा हो रही थी। वसुदेव ने टोकरी सिर पर रखी, और उफनती यमुना में उतर गए।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "thunder",
+     "splash": true
+    },
+    {
+     "who": "narrator",
+     "text": "अचानक नदी में तूफ़ान आ गया। लहरें इतनी ऊँची उठीं, कि जल की दीवार ने वसुदेव को ढक लिया।",
+     "camMove": true,
+     "cam": "close:vasudev",
+     "sfx": "splash",
+     "rumble": true,
+     "shake": 6
+    },
+    {
+     "who": "yamuna",
+     "text": "डरो मत। मैं केवल श्रीहरि के चरण छूना चाहती हूँ। सुना है, उनके चरणों ने गंगा को पवित्र किया था। आज मैं भी धन्य हो गई।",
+     "cam": "close:yamuna"
+    },
+    {
+     "who": "vasudev",
+     "text": "नारायण! आपने वर्षा की है, तो आप ही छाया भी देंगे!",
+     "cam": "close:vasudev"
+    },
+    {
+     "who": "narrator",
+     "text": "और उनके ठीक पीछे, यमुना से कुछ उठा। इतना ऊँचा, कि चाँद उसके पीछे छिप गया। वासुकि नाग। दस फनों का एक विशाल छत्र, पिता और पुत्र के ऊपर तन गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell",
+     "rumble": true
+    },
+    {
+     "who": "narrator",
+     "text": "देवता इस दृश्य को देखने प्रकट होने लगे। जो विष्णु मनुष्यों को भवसागर पार कराते हैं, आज एक मनुष्य उन्हें नदी पार करा रहा था।",
+     "camMove": true,
+     "cam": "at:640,380,1",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "हरे कृष्ण, हरे कृष्ण। हरे राम, हरे राम।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "cosmic",
+   "amb": [
+    "storm",
+    "river"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "yogamaya",
+   "set": "temple",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "devaki",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "seat": "none",
+        "pose": "offer",
+        "emo": "sly",
+        "t": 0.6
+       }
+      ],
+      "7": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kansa",
+     "x": 760,
+     "y": 650,
+     "s": 1.1,
+     "face": -1,
+     "pose": "lift",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sly",
+        "pose": "lift",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "pose": "fear",
+        "emo": "fear",
+        "t": 0.4
+       }
+      ],
+      "5": [
+       {
+        "x": 560,
+        "pose": "reach",
+        "emo": "rage",
+        "t": 0.6
+       },
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "girl",
+     "kind": "glow",
+     "x": 760,
+     "y": 300,
+     "r": 40,
+     "color": "#ffd27a",
+     "core": 1,
+     "z": 20,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "y": 160,
+        "r": 120,
+        "t": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "blind",
+     "kind": "rays",
+     "x": 640,
+     "y": 200,
+     "r": 900,
+     "n": 40,
+     "color": "#ffe08a",
+     "op": 0.5,
+     "z": -2,
+     "anim": "pop",
+     "in": 2,
+     "out": 5
+    },
+    {
+     "id": "yogamaya",
+     "x": 640,
+     "y": 400,
+     "s": 1.05,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "inDur": 1.5,
+     "z": 30,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "4": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "kansa",
+     "text": "एक कन्या? यह कन्या कंस को मारेगी? मैं महिषासुर नहीं, न शुंभ-निशुंभ। मैं कंस हूँ!",
+     "cam": "close:kansa"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "swell",
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "वह कन्या कंस की पकड़ से छूटकर हवा में उड़ गई। और प्रकाश में, आठ भुजाओं वाली योगमाया बन गई।",
+     "camMove": true,
+     "cam": "full:yogamaya",
+     "sfx": "conch",
+     "thunder": true
+    },
+    {
+     "who": "yogamaya",
+     "text": "दुष्ट कंस! तू किसे मारना चाहता है? मुझे, जो अजन्मा है? तेरा विनाश करने वाला जीवित है! वह जितना साँस लेगा, तेरा दम उतना घुटेगा। और जब वह आएगा, तेरा अंत निश्चित है!",
+     "cam": "close:yogamaya"
+    },
+    {
+     "who": "kansa",
+     "text": "तेरा पुत्र कहाँ है? उसका नाम क्या है?",
+     "cam": "close:kansa"
+    },
+    {
+     "who": "narrator",
+     "text": "देवकी ने कंस की कलाई पकड़ी, और उस पर एक गर्भनाल बाँधते हुए मुस्कुराईं।",
+     "camMove": true,
+     "cam": "two:devaki,kansa",
+     "sfx": "bell"
+    },
+    {
+     "who": "devaki",
+     "text": "भैया, मृतक किसी का नाम नहीं पूछते।",
+     "cam": "ecu:devaki"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "night",
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter8",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा छियासी",
+   "title": "कृष्ण ने कालिय को वश में किया",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "vish",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 660,
+     "w": 1500,
+     "h": 140,
+     "color": "#4a6a3a",
+     "crest": "#1e3a1a",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "fumes",
+     "kind": "smoke",
+     "x": 640,
+     "y": 600,
+     "n": 10,
+     "w": 1300,
+     "h": 200,
+     "color": "#5a7a3a",
+     "z": 21,
+     "in": 0
+    },
+    {
+     "id": "nand",
+     "x": 820,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "open",
+     "emo": "sad",
+     "z": 22,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "v1",
+     "fig": "gopi",
+     "x": 420,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "despair",
+     "emo": "fear",
+     "z": 22,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "v2",
+     "fig": "vasudev",
+     "x": 280,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": 21,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "krishna",
+     "x": 1500,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "hold",
+     "emo": "smile",
+     "item": "none",
+     "z": 22,
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 1080,
+        "t": 2
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "वर्षों बाद, वृंदावन। यमुना में कालिय नाम का एक कई फनों वाला नाग आ बसा था। उसके विष से नदी विषैली झील बन गई थी। पेड़ सूख गए, मछलियाँ मर गईं, और ऊपर से उड़ते पक्षी तक गिर पड़ते।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "हमें यह स्थान छोड़ना होगा, नंद बाबा! मवेशी मर रहे हैं, और जल्द ही हमारी बारी है!",
+     "camMove": true,
+     "cam": "two:v1,v2"
+    },
+    {
+     "who": "nand",
+     "text": "शायद हमें कालिय से बात करनी चाहिए।",
+     "cam": "close:nand"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "उसके पास गए, तो मुँह से झाग निकलने लगेगा!",
+     "camMove": true,
+     "cam": "two:v1,v2"
+    },
+    {
+     "who": "narrator",
+     "text": "कृष्ण दूर खड़े सुन रहे थे। पूतना, तृणावर्त, बकासुर, अघासुर। कंस के भेजे कितने ही असुरों को वे पहले ही हरा चुके थे।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "हम इसका कुछ नहीं कर सकते।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna",
+     "text": "कुछ तो कर सकते हैं।",
+     "cam": "close:krishna"
+    }
+   ],
+   "tint": [
+    "#1a2a1a",
+    0.25
+   ],
+   "music": "tension",
+   "amb": [
+    "river",
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "gend",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 670,
+     "w": 1500,
+     "h": 120,
+     "color": "#4a6a3a",
+     "crest": "#1e3a1a",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "krishna",
+     "x": 900,
+     "y": 640,
+     "s": 0.9,
+     "face": -1,
+     "pose": "raise",
+     "emo": "joy",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "x": 760,
+        "y": 760,
+        "o": 0,
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "gopa",
+     "x": 400,
+     "y": 640,
+     "s": 0.85,
+     "face": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gopa2",
+     "x": 240,
+     "y": 640,
+     "s": 0.82,
+     "face": 1,
+     "pose": "open",
+     "emo": "joy",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "ball",
+     "kind": "glow",
+     "x": 640,
+     "y": 300,
+     "r": 14,
+     "color": "#c8372d",
+     "core": 1,
+     "z": 40,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 420,
+        "y": 380,
+        "t": 0.8
+       },
+       {
+        "x": 900,
+        "y": 260,
+        "t": 0.8,
+        "d": 0.8
+       },
+       {
+        "x": 260,
+        "y": 360,
+        "t": 0.8,
+        "d": 1.6
+       },
+       {
+        "x": 900,
+        "y": 300,
+        "t": 0.8,
+        "d": 2.4
+       }
+      ],
+      "2": [
+       {
+        "x": 760,
+        "y": 680,
+        "t": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "dive",
+     "kind": "ring",
+     "x": 760,
+     "y": 670,
+     "r": 300,
+     "color": "#9fb8e8",
+     "z": 40,
+     "in": 7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "manjira"
+    },
+    {
+     "who": "narrator",
+     "text": "खेल शुरू हुआ। गेंद एक बालक से दूसरे के पास जाती रही। गोल-गोल। ऊँची, और ऊँची। फिर गेंद कृष्ण के हाथ में आई। उन्होंने यमुना की ओर देखा। और यमुना ने उनकी ओर।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "flute"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "gopa",
+     "text": "गेंद तो अंदर चली गई!",
+     "cam": "close:gopa"
+    },
+    {
+     "who": "gopa2",
+     "text": "यमुना में गोता? पागल हो क्या? वह कालिय की नदी है!",
+     "cam": "close:gopa2"
+    },
+    {
+     "who": "gopa",
+     "text": "पर वह मनसुख की गेंद है! उसे पता चला तो बहुत नाराज़ होगा!",
+     "cam": "close:gopa"
+    },
+    {
+     "who": "krishna",
+     "text": "फिर तो एक ही काम किया जा सकता है।",
+     "cam": "close:krishna"
+    },
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "splash",
+     "whoosh": true
+    },
+    {
+     "who": "gopas",
+     "text": "कान्हा! कान्हा!",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds",
+    "river"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "kaliya",
+   "set": "void",
+   "ctx": {},
+   "els": [
+    {
+     "id": "deep",
+     "kind": "glow",
+     "x": 640,
+     "y": 400,
+     "r": 520,
+     "color": "#2a5a3a",
+     "core": 0.3,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "bubbles",
+     "kind": "motes",
+     "x": 640,
+     "y": 500,
+     "n": 40,
+     "w": 1200,
+     "h": 500,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "kaliya",
+     "kind": "shesha",
+     "x": 900,
+     "y": 700,
+     "w": 420,
+     "hoods": 5,
+     "body": "#1e2430",
+     "belly": "#5a6a3a",
+     "z": 2,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "x": 520,
+        "t": 1
+       }
+      ],
+      "9": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna",
+     "x": 380,
+     "y": 640,
+     "s": 0.95,
+     "face": 1,
+     "pose": "hold",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "s": 1.5,
+        "y": 700,
+        "t": 3
+       }
+      ],
+      "12": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "venom",
+     "kind": "poison",
+     "x": 640,
+     "y": 440,
+     "r": 420,
+     "z": 30,
+     "in": 6,
+     "out": 8
+    },
+    {
+     "id": "coil",
+     "kind": "mandala",
+     "x": 400,
+     "y": 440,
+     "r": 180,
+     "spin": -90,
+     "op": 0.6,
+     "z": 10,
+     "anim": "pop",
+     "in": 8,
+     "keys": {
+      "10": [
+       {
+        "r": 360,
+        "op": 0,
+        "t": 3
+       }
+      ]
+     },
+     "out": 11
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "नदी के भीतर, मरे हुए जीव तैर रहे थे। विष की लपटें धारा में घुली थीं। और एक विशाल काला नाग, कृष्ण की ओर रेंगता आ रहा था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "kaliya",
+     "text": "बालक, नाम क्या है तुम्हारा?",
+     "camMove": true,
+     "cam": "close:kaliya"
+    },
+    {
+     "who": "krishna",
+     "text": "वही, जो तुम्हारा है। मैं कृष्ण हूँ, तुम कालिय। दोनों का अर्थ एक ही है। काला।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "kaliya",
+     "text": "तुम्हारी त्वचा मेरी तरह काली है, पर सिर पर मेरे शत्रु, मोर का पंख? यहाँ क्यों आए हो?",
+     "camMove": true,
+     "cam": "close:kaliya"
+    },
+    {
+     "who": "krishna",
+     "text": "अपनी गेंद ढूँढ़ने। और तुमसे यह कहने, कि यमुना छोड़कर चले जाओ।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "kaliya",
+     "text": "तुम्हें तो अब तक मर जाना चाहिए था! तुम महादेव की तरह मेरा विष पी जाओगे?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna",
+     "text": "तुम्हारा विष मुझे छू भी नहीं सकता, कालिय।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "narrator",
+     "text": "नाग ने अपनी कुंडली खोली, और कृष्ण को सिर से पाँव तक लपेट लिया।",
+     "camMove": true,
+     "cam": "close:krishna",
+     "sfx": "rumble",
+     "shake": 6
+    },
+    {
+     "who": "kaliya",
+     "text": "अब? अब कैसे मारोगे मुझे?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "और कृष्ण बढ़ने लगे। उनके अंग बड़े होते गए, पंख फैलता गया। जितना कृष्ण बढ़े, कुंडली उतनी ही कसती गई, और नाग का अपना शरीर कटने लगा। वह सीमित से असीम को बाँधने चला था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell",
+     "rumble": true
+    },
+    {
+     "who": "kaliya",
+     "text": "आप मनुष्य नहीं हैं। फिर कौन हैं?",
+     "camMove": true,
+     "cam": "close:kaliya"
+    },
+    {
+     "who": "krishna",
+     "text": "मैं वह हूँ, जो शेषनाग पर विराजमान है।",
+     "cam": "close:krishna"
+    }
+   ],
+   "tint": [
+    "#0a2a1a",
+    0.4
+   ],
+   "music": "curse",
+   "amb": [
+    "void"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "nritya",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 680,
+     "w": 1500,
+     "h": 140,
+     "color": "#4a6a3a",
+     "crest": "#1e3a1a",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "yashoda",
+     "x": 300,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "z": 22,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "pose": "cradle",
+        "emo": "joy",
+        "t": 0.6
+       },
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "nand",
+     "x": 160,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": 21,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "gopa",
+     "x": 440,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": 22,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "stir",
+     "kind": "ring",
+     "x": 900,
+     "y": 680,
+     "r": 300,
+     "color": "#9fb8e8",
+     "z": 40,
+     "in": 3
+    },
+    {
+     "id": "kaliya",
+     "kind": "shesha",
+     "x": 1040,
+     "y": 720,
+     "w": 300,
+     "hoods": 5,
+     "body": "#1e2430",
+     "belly": "#5a6a3a",
+     "z": 19,
+     "anim": "rise",
+     "inDur": 3,
+     "in": 4,
+     "keys": {
+      "11": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 13,
+     "od": 2
+    },
+    {
+     "id": "krishna",
+     "x": 880,
+     "y": 420,
+     "s": 0.9,
+     "face": -1,
+     "pose": "flute",
+     "emo": "smile",
+     "item": "flute",
+     "anim": "rise",
+     "inDur": 3,
+     "z": 23,
+     "kind": "char",
+     "in": 4,
+     "keys": {
+      "6": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "y": 400,
+        "t": 0.3
+       },
+       {
+        "y": 430,
+        "t": 0.3,
+        "d": 0.3
+       },
+       {
+        "y": 400,
+        "t": 0.3,
+        "d": 0.6
+       },
+       {
+        "y": 430,
+        "t": 0.3,
+        "d": 0.9
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "naagin",
+     "x": 1260,
+     "y": 620,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "rise",
+     "z": 22,
+     "kind": "char",
+     "in": 9,
+     "keys": {
+      "9": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "clear",
+     "kind": "water",
+     "x": 640,
+     "y": 680,
+     "w": 1500,
+     "h": 140,
+     "color": "#dff1f8",
+     "crest": "#3d8fc4",
+     "op": 0,
+     "z": 21,
+     "in": 13,
+     "keys": {
+      "13": [
+       {
+        "op": 1,
+        "t": 3
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "पूरा वृंदावन तट पर इकट्ठा था। यशोदा छाती पीट रही थीं। उन्होंने वचन दिया, यदि कान्हा लौट आया, तो उसे संसार का सारा मक्खन खिला देंगी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "yashoda",
+     "text": "मेरा कान्हा! कोई मेरे कान्हा को लौटा दो!",
+     "cam": "close:yashoda"
+    },
+    {
+     "who": "narrator",
+     "text": "पानी ज़ोर से हिलने लगा। और यमुना के गर्भ से कुछ उभरा।",
+     "camMove": true,
+     "cam": "at:900,520,1.2",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "पहले मोरपंख। फिर एक मुस्कुराता चेहरा, कीचड़ में खिले कमल जैसा। फिर बाँसुरी। और फिर पैर, कालिय के फन पर।",
+     "camMove": true,
+     "cam": "at:880,400,1.3",
+     "sfx": "flute"
+    },
+    {
+     "who": "narrator",
+     "text": "बालक कृष्ण, नाग के फन पर ऐसे खड़ा था, जैसे पर्वत सूर्य को मुकुट की तरह धारण करता है। और नाग, बाँसुरी की धुन पर झूम रहा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "flute",
+     "manjira": true
+    },
+    {
+     "who": "krishna",
+     "text": "माँ! यह लो, गेंद। इसे खोजने में कालिय ने मेरी सहायता की!",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "yashoda",
+     "text": "वह जीवित है! हमारा कान्हा जीवित है!",
+     "cam": "close:yashoda"
+    },
+    {
+     "who": "narrator",
+     "text": "और कृष्ण नाचने लगे। उनके पैर फन पर ताल दे रहे थे। उस दिन से वे नटवर कहलाए।",
+     "camMove": true,
+     "cam": "close:krishna",
+     "sfx": "manjira",
+     "drumroll": true
+    },
+    {
+     "who": "naagin",
+     "text": "नारायण, आपके नृत्य से हमारे पति को पीड़ा हो रही है। उन्हें मुक्त कीजिए। आपके स्पर्श ने उन्हें दोषमुक्त कर दिया है।",
+     "cam": "close:naagin"
+    },
+    {
+     "who": "krishna",
+     "text": "कालिय, अपने रमणक द्वीप लौट जाओ।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "kaliya",
+     "text": "प्रभु, मैं वहाँ से डरकर भागा था। गरुड़ से। यमुना ही वह जगह है, जहाँ गरुड़ नहीं आ सकते। और यदि हम नाग जन्म से विषैले हैं, तो क्या यह हमारा दोष है?",
+     "camMove": true,
+     "cam": "close:krishna"
+    },
+    {
+     "who": "krishna",
+     "text": "मैं जानता हूँ, घर छोड़ने की पीड़ा कैसी होती है। तुम निर्भय होकर लौटो। मेरे पदचिह्न अब तुम्हारे फन पर सदा के लिए अंकित हैं। इन्हें देखकर गरुड़ तुम्हें कभी नहीं छुएँगे।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "narrator",
+     "text": "कालिय रो रहा था। कृष्ण हँस रहे थे। क्योंकि उन्हें यमुना की हँसी सुनाई दे रही थी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle",
+     "river": true
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "river",
+    "birds"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "card",
+   "id": "chapter13",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा अट्ठासी",
+   "title": "कृष्ण ने गोवर्धन उठाया",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "prashn",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "diyas",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 600,
+     "n": 40,
+     "r": 600,
+     "z": 10,
+     "in": 0
+    },
+    {
+     "id": "d1",
+     "kind": "diya",
+     "x": 760,
+     "y": 620,
+     "z": 11,
+     "in": 0
+    },
+    {
+     "id": "nand",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "open",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna",
+     "x": 880,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "offer",
+     "emo": "calm",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "offer",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "दीपावली की रात। वृंदावन में मिट्टी के सैकड़ों दीये टिमटिमा रहे थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "nand",
+     "text": "कल हम सदा की तरह इंद्र की पूजा करेंगे, कान्हा। हमारी गायों को घास चाहिए, घास को वर्षा, और वर्षा इंद्र करते हैं।",
+     "cam": "close:nand"
+    },
+    {
+     "who": "krishna",
+     "text": "पिताजी, यह दीया क्यों जल रहा है? क्या इसमें केवल अग्निदेव हैं? या वह बाती भी, जो हमें प्रकाश देने के लिए स्वयं जलती है?",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "nand",
+     "text": "तुम मान्यताओं पर प्रश्न उठा रहे हो।",
+     "cam": "close:nand"
+    },
+    {
+     "who": "krishna",
+     "text": "यदि प्रश्न नहीं उठाएँगे, तो नए उत्तर कैसे मिलेंगे?",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "krishna",
+     "text": "वर्षा के बादल गोवर्धन पर्वत रोकता है। उसी के चरागाह हमारी गायों को पालते हैं। कल हम दूर बैठे देवता की नहीं, अपने गोवर्धन की पूजा करेंगे।",
+     "cam": "mid:krishna"
+    },
+    {
+     "who": "narrator",
+     "text": "नंद मुस्कुराए। कृष्ण के हाथ के दीये ने उन्हें नया मार्ग दिखा दिया था।",
+     "cam": "close:nand",
+     "sfx": "bell"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "night"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "puja",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "hill",
+     "kind": "hill",
+     "x": 900,
+     "y": 660,
+     "w": 700,
+     "h": 320,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "krishna",
+     "x": 400,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "flute",
+     "emo": "smile",
+     "item": "flute",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "yashoda",
+     "x": 240,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "nand",
+     "x": 100,
+     "y": 650,
+     "s": 0.88,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "z": -2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "c1",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 620,
+     "y": 690,
+     "s": 0.7,
+     "face": 1,
+     "z": 1,
+     "in": 0
+    },
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 560,
+     "y": 650,
+     "size": 1,
+     "z": 2,
+     "in": 0
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 200,
+     "n": 30,
+     "w": 1300,
+     "colors": "#e8505a,#f2c230,#fbf3df",
+     "z": 50,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "flute",
+     "bells": true
+    },
+    {
+     "who": "narrator",
+     "text": "अगली सुबह, पूरा वृंदावन गोवर्धन की तलहटी पर इकट्ठा हुआ। मालाएँ, भजन, दूध और मक्खन का भोग। और कृष्ण की बाँसुरी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "manjira"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "गोवर्धन धराधर, गोकुल त्राणकारक!",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "indra",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "hill",
+     "kind": "hill",
+     "x": 900,
+     "y": 660,
+     "w": 700,
+     "h": 320,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "clouds",
+     "kind": "clouds",
+     "x": 640,
+     "y": 120,
+     "n": 4,
+     "speed": 60,
+     "color": "#2c3c60",
+     "edge": "#8fa0d8",
+     "z": 30,
+     "in": 0
+    },
+    {
+     "id": "krishna",
+     "x": 400,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "point",
+     "emo": "calm",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "yashoda",
+     "x": 240,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "nand",
+     "x": 100,
+     "y": 650,
+     "s": 0.88,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 620,
+     "y": 690,
+     "s": 0.7,
+     "face": 1,
+     "z": 1,
+     "in": 0
+    },
+    {
+     "id": "bolt",
+     "kind": "bolt",
+     "x": 900,
+     "y": 0,
+     "h": 520,
+     "z": 40,
+     "in": 4,
+     "out": 5
+    },
+    {
+     "id": "rain",
+     "kind": "rain",
+     "n": 200,
+     "speed": 1300,
+     "color": "#cfe0ff",
+     "op": 0.6,
+     "z": 50,
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "krishna",
+     "text": "और ज़ोर से जपो!",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "गोवर्धन धराधर!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna",
+     "text": "और ज़ोर से!",
+     "cam": "close:krishna"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "thunder",
+     "boom": true,
+     "shake": 10,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "बिजली गोवर्धन पर गिरी। आकाश काला पड़ गया। और वर्षा, किसी जंगली सेना की तरह टूट पड़ी। यज्ञ की आग बुझ गई, गायें रंभाने लगीं। मानो इंद्र ने स्वर्ग के द्वार लात मारकर खोल दिए हों।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "thunder",
+     "rumble": true
+    },
+    {
+     "who": "nand",
+     "text": "यह वर्षा नहीं, कान्हा! यह इंद्र के क्रोध के आँसू हैं! हमें बचाएगा कौन?",
+     "cam": "close:nand"
+    },
+    {
+     "who": "krishna",
+     "text": "गोवर्धन।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "vrajvasi",
+     "text": "यह टीला, जो आँखें नीची किए बैठा है?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna",
+     "text": "गोवर्धन का अर्थ है, पालने वाला। पर्वत आँखें नीची नहीं करेगा। सिर ऊपर उठाएगा।",
+     "cam": "close:krishna"
+    }
+   ],
+   "tint": [
+    "#0a0a2a",
+    0.35
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "giridhar",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "rain",
+     "kind": "rain",
+     "n": 200,
+     "speed": 1300,
+     "color": "#cfe0ff",
+     "op": 0.6,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "hill",
+     "kind": "hill",
+     "x": 900,
+     "y": 660,
+     "w": 700,
+     "h": 320,
+     "z": -3,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 640,
+        "y": 260,
+        "lifted": 1,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna",
+     "x": 640,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "raise",
+     "emo": "serene",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "glowK",
+     "kind": "glow",
+     "x": 640,
+     "y": 460,
+     "r": 360,
+     "color": "#ffd27a",
+     "core": 0.4,
+     "z": -1,
+     "anim": "pop",
+     "inDur": 3,
+     "in": 1
+    },
+    {
+     "id": "yashoda",
+     "x": 420,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "anim": "right",
+     "kind": "char",
+     "in": 3
+    },
+    {
+     "id": "nand",
+     "x": 300,
+     "y": 660,
+     "s": 0.82,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "anim": "right",
+     "z": -1,
+     "kind": "char",
+     "in": 3
+    },
+    {
+     "id": "gopa",
+     "x": 860,
+     "y": 660,
+     "s": 0.75,
+     "face": -1,
+     "pose": "raise",
+     "emo": "joy",
+     "anim": "left",
+     "kind": "char",
+     "in": 3
+    },
+    {
+     "id": "c1",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 980,
+     "y": 690,
+     "s": 0.6,
+     "face": -1,
+     "z": 1,
+     "in": 3
+    },
+    {
+     "id": "c2",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 200,
+     "y": 690,
+     "s": 0.6,
+     "face": 1,
+     "z": 1,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "अगले क्षण किसी ने पलक नहीं झपकाई। गोवर्धन धरती से उठ रहा था। मानो कोई विशाल योद्धा, इंद्र की ओर चढ़ाई कर रहा हो।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "rumble",
+     "swell": true,
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "पर्वत अपने-आप नहीं उड़ा था। कृष्ण ने उसे उखाड़कर, अपनी छोटी अँगुली की नोक पर टिका लिया था।",
+     "camMove": true,
+     "cam": "at:640,300,1.3",
+     "sfx": "bell"
+    },
+    {
+     "who": "krishna",
+     "text": "आओ! सब नीचे आ जाओ! गायें भी!",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "narrator",
+     "text": "और पूरा वृंदावन, पर्वत की छाया में आ गया। कभी कूर्म ने मंदार को पीठ पर धारण किया था। आज कृष्ण ने गोवर्धन को अँगुली पर।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "manjira"
+    }
+   ],
+   "tint": [
+    "#0a0a2a",
+    0.25
+   ],
+   "music": "cosmic",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "bhay",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "krishna",
+     "x": 820,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "indra",
+     "x": 400,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "indra",
+     "text": "मुझे क्षमा करें, श्रीहरि।",
+     "cam": "close:indra"
+    },
+    {
+     "who": "krishna",
+     "text": "आप ऐसा क्यों करते हैं, देवराज?",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "indra",
+     "text": "भय। मैं सदा डरा रहता हूँ। कि मेरी उपेक्षा न हो जाए। कि लोग मेरा सम्मान करना न छोड़ दें। बताइए, भय को कैसे जीता जाए?",
+     "cam": "close:indra"
+    },
+    {
+     "who": "krishna",
+     "text": "भय को वैसे ही धारण करो, जैसे मैंने गोवर्धन को किया। शुरू में पूरा शरीर लगेगा। फिर दोनों बाँहें। फिर एक हाथ। फिर पाँच अँगुलियाँ, चार, तीन, दो।",
+     "cam": "mid:krishna"
+    },
+    {
+     "who": "krishna",
+     "text": "और जिस दिन तुम उसे छोटी अँगुली की नोक पर थाम लोगे, समझना, भय जीत लिया।",
+     "cam": "close:krishna"
+    },
+    {
+     "who": "indra",
+     "text": "आपने मुझे प्रकाश से भर दिया। मैं आपको दो नए नाम देता हूँ। गिरिधर, पर्वत को धारण करने वाले। और गोपाल, गायों के रक्षक।",
+     "cam": "close:indra"
+    }
+   ],
+   "music": "vishnu",
+   "amb": [
+    "wind"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 700,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नाग के फन पर नाचना, पर्वत को अँगुली पर उठाना। सब चमत्कार देखते हैं। पर मुझे सबसे बड़ा चमत्कार एक प्रश्न लगता है। यह दीया क्यों जल रहा है?",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "कृष्ण ने कालिय को मारा नहीं। उसे घर लौटा दिया, एक कवच के साथ। और इंद्र को हराया नहीं, उसे भय उठाना सिखा दिया।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "अगली और अंतिम बार। एक गरीब ब्राह्मण, मुट्ठी भर चावल, और एक राजा। फिर एक वंश का अंत। और अंत में, एक यज्ञ, जिसमें संसार के सारे सर्प जलने वाले थे।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night",
+    "river"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next20",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले और अंतिम अध्याय में: मित्रता, विनाश, और वह कथा, जिसमें सारी कथाएँ समाई हैं।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "सुदामा · यदुवंश का अंत · सर्प-यज्ञ",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end21",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय ग्यारह · कान्हा",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 84, 86 और 88)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

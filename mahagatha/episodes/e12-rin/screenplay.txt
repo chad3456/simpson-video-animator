@@ -1,0 +1,554 @@
+title: ऋण
+episode: 12
+slug: e12-rin
+kicker: अध्याय बारह
+sub: सुदामा · यदुवंश का अंत · सर्प-यज्ञ
+logline: मुट्ठी भर चावल का ऋण, जो एक राजा दस गुना लौटाता है। लोहे के नरकट, जो एक पूरे वंश को निगल जाते हैं। एक शिकारी का बाण, जो युगों पुराना हिसाब चुकाता है। और एक यज्ञ, जिसमें संसार के सारे सर्प जलने वाले थे, जब तक एक बालक ने गाना नहीं शुरू किया।
+stories: 92, 99, 100
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 92, 99 और 100
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller, one last time
+== SCENE sutradhar | set=cosmos time=night music=narad amb=void trans=fade
++ glowL kind=glow x=640 y=380 r=460 color=#fff1b8 core=0.25 z=-5
++ wheel kind=mandala x=640 y=360 r=300 spin=8 op=0.35 z=-4
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! आज यह वीणा आख़िरी बार आपके लिए बज रही है। ग्यारह अध्याय हमने साथ चले। सृष्टि के अंडे से, कुरुक्षेत्र के बाद के सन्नाटे तक।
+NARAD (sly, pose=open) [mid:narad]: और इतनी कथाओं के बाद, मुझे एक बात समझ आई है। हर कथा एक ऋण से शुरू होती है। किसी का किसी पर कुछ बाकी रह जाता है। एक दाना, एक धागा, एक बाण।
+NARAD (calm) [close:narad]: आज तीन ऋण चुकाए जाएँगे। एक प्रेम से, एक मृत्यु से, और एक, क्षमा से।
+NARAD (serene) [ecu:narad]: पहला ऋण, मुट्ठी भर चावल का है।
+
+== TITLE | dur=7.5 | kicker=अध्याय बारह | title=ऋण | sub=सुदामा · यदुवंश का अंत · सर्प-यज्ञ
+
+== CHAPTER | kicker=कथा बानवे | title=कृष्ण और सुदामा
+
+# ---------------------------------------------------------------- the hut
+== SCENE jhopdi | set=glade time=dusk music=sorrow amb=wind trans=mandala tint=#2a1a0a,0.2
++ d1 kind=diya x=640 y=640 size=0.8 z=5
++ grains kind=rice x=640 y=660 bundle=0 n=40 w=90 z=6
+@ sudama x=440 y=650 s=0.95 face=1 pose=rest emo=smile seat=kneel
+@ sudamapatni x=840 y=650 s=0.95 face=-1 pose=offer emo=sad seat=kneel
+@ sudamaputra x=1040 y=650 s=0.85 face=-1 pose=cradle emo=sad seat=kneel z=-1
+BEAT 1.2 [wide] (sfx=wind)
+NARRATOR [~wide]: एक छोटी-सी झोंपड़ी। एक दीया। और थाली में गिने-चुने चावल के दाने। सुदामा उन दानों को देख रहे थे, और मुस्कुरा रहे थे।
+SUDAMAPATNI (angry) [close:sudamapatni]: फिर से? इन चावलों में ऐसा क्या है, जो आप हर बार इन्हें देखकर मुस्कुराते हैं?
+SUDAMA (smile) [close:sudama]: स्मृति। यह मुझे गुदगुदाती है।
+SUDAMAPATNI (sad) [close:sudamapatni]: आप जितना चाहें हँस लीजिए। मैं तो केवल रो सकती हूँ। हमारे पास खाने को इन दानों के सिवा कुछ नहीं बचा।
+SUDAMA (calm, pose=bless) [two:sudama,sudamapatni]: निराश मत हो, प्रिये। जो सबको खिलाता है, वह हमें भी खिलाएगा।
+SUDAMAPATNI (sly, pose=point) [close:sudamapatni]: मुझे तो आपके उस मित्र पर अधिक भरोसा है। कृष्ण। द्वारवती के राजा। मैंने कितनी बार कहा, एक बार उनसे मिल आइए।
+SUDAMA (sad) [close:sudama]: तुम चाहती हो, मैं अपनी मित्रता बेच दूँ? मैं किसी से भीख नहीं माँग सकता। मित्र से भी नहीं।
+> sudamapatni pose=offer emo=sad t=0.6
+NARRATOR [~close:sudamaputra]: उसने बेटे की आधी-खाली थाली पति की ओर खिसका दी।
+SUDAMAPATNI (sad) [close:sudamapatni]: अगर हम दोनों अकेले होते, तो मैं कभी न कहती। मैं रोज़ पेट पर गीला कपड़ा बाँधकर सो जाती। पर इसे भूखा नहीं देख सकती। क्या आपका धर्म, अपने बेटे का भार उठा पाएगा?
+@ bhikshu fig=durvasa x=1500 y=650 s=0.85 face=-1 pose=offer emo=sad z=-2
+> bhikshu x=1200 t=2
+NARRATOR [~wide] (sfx=bell): तभी द्वार पर आवाज़ आई। एक भिखारी, जिसकी आँखें उनके चावलों पर टिकी थीं, मुट्ठी भर अन्न माँग रहा था।
+SUDAMAPATNI (calm) [ecu:sudamapatni]: रोज़ दूसरों के आगे हाथ फैलाने से, क्या एक बार मित्र से माँग लेना अच्छा नहीं?
+BEAT 1 [close:sudama] (sfx=heartbeat)
+NARRATOR [~close:sudama]: सुदामा के पास इस प्रश्न का कोई उत्तर नहीं था। उन्होंने बचे हुए चावल एक पोटली में बाँधे, और समुद्र-तट की ओर चल पड़े।
+
+# ---------------------------------------------------------------- Dwarka
+== SCENE dwarka | set=ocean time=day music=wonder amb=ocean trans=white
++ city kind=city x=640 y=470 w=1200 z=-3
++ sea kind=water x=640 y=620 w=1500 h=200 color=#3d8fc4 crest=#dff1f8 z=-2
++ birds kind=birds x=640 y=160 n=6 z=40
+@ sudama x=-100 y=700 s=0.9 face=1 pose=rest emo=fear walk=1 z=10
+BEAT 1 [wide] (sfx=conch, swell)
+> sudama x=380 t=5
+NARRATOR [~at:640,330,1.15]: द्वारवती। नीलम जड़े स्फटिक के महल। पन्ने से चमचमाती चाँदी की दीवारें। मूँगे के स्तंभ, और मोतियों की छतरियाँ।
+NARRATOR [~close:sudama]: और उस सोने के फाटक के आगे, सुदामा के चिथड़े, पहले से भी अधिक फटे दिखते थे।
+
+# ---------------------------------------------------------------- the gate
+== SCENE dwar | set=court time=day music=court amb=court trans=cut
+@ dwarpal x=860 y=650 s=1 face=-1 pose=hold emo=sly
+@ dwarpal2 fig=dwarpal x=1040 y=650 s=1 face=-1 pose=hips emo=smile z=-1
+@ sudama x=420 y=650 s=0.9 face=1 pose=namaste emo=fear
+BEAT 0.8 [wide]
+SUDAMA (fear) [close:sudama]: मैं कृष्ण का मित्र हूँ। हम दोनों महर्षि सांदीपनि के आश्रम में साथ पढ़ते थे।
+DWARPAL (sly) [close:dwarpal] (sfx=manjira): मित्र? द्वारकाधीश के? इन कपड़ों में? सुना, भाई? आज राजा का एक और भाई आया है!
+DWARPAL (rage, pose=point) [two:dwarpal,sudama]: चल, भाग यहाँ से! वरना कारागार की हवा खिलाएँगे।
+> sudama pose=offer emo=calm t=0.6
++ potli kind=rice x=470 y=470 n=0 z=20
+SUDAMA (calm) [close:sudama]: ठीक है। बस यह पोटली अपने स्वामी तक पहुँचा दो। वे समझ जाएँगे, मैं कौन हूँ।
+- potli
+
+# ---------------------------------------------------------------- the barefoot run
+== SCENE milan | set=court time=day music=joy amb=court trans=cut
+@ krishna2 x=1300 y=650 s=1 face=-1 pose=offer emo=fear item=none
+@ sudama x=380 y=650 s=0.9 face=1 pose=despair emo=sad
+BEAT 0.6 [wide]
+NARRATOR [~wide]: कृष्ण भोजन करने बैठे ही थे, कि एक पहरेदार वह पोटली लेकर आया। कृष्ण ने चावल देखे, और पल भर में उठ खड़े हुए।
+> krishna2 x=560 t=1.8
+BEAT 0.4 [wide] (sfx=whoosh, drumroll)
+NARRATOR [~two:krishna2,sudama]: वस्त्र अस्त-व्यस्त। पैरों में चप्पल तक नहीं। द्वारका का राजा, नंगे पैर, द्वार की ओर दौड़ पड़ा।
+> krishna2 x=500 pose=reach emo=joy t=0.4
+> sudama pose=reach emo=joy t=0.4
++ hug kind=glow x=440 y=420 r=200 color=#fff1b8 core=0.6 z=30 anim=pop
++ petals kind=petals x=640 y=150 n=40 w=1300 colors=#e8505a,#f2c230,#fbf3df z=50
+KRISHNA2 (joy) [~two:krishna2,sudama] (sfx=bells): सखा!
+KRISHNA2 (sad) [close:krishna2]: बहुत समय हो गया, सुदामा। बहुत ज़्यादा।
+- hug od=2
+
+# ---------------------------------------------------------------- the feast
+== SCENE bhoj | set=court time=day music=court amb=court trans=mandala
++ thali kind=glow x=640 y=600 r=150 color=#f2c230 core=0.8 z=2
++ d1 kind=diya x=520 y=620 size=0.6 z=3
++ d2 kind=diya x=760 y=620 size=0.6 z=3
+@ sudama x=440 y=650 s=0.9 face=1 pose=fear emo=fear seat=lotus
+@ krishna2 x=860 y=650 s=0.95 face=-1 pose=offer emo=smile seat=kneel item=none
+BEAT 1 [wide] (sfx=sparkle)
+NARRATOR [~wide]: कृष्ण ने सुदामा को आसन पर बैठाया। सुगंधित जल से उनके पैर धोए। मोरपंख से हवा की। और सामने छप्पन व्यंजनों की थाली सजा दी।
+KRISHNA2 (smile) [close:krishna2]: खाओ, सखा।
+BEAT 1 [close:sudama]
+KRISHNA2 (calm) [close:krishna2]: क्या हुआ?
+SUDAMA (fear) [close:sudama]: कहाँ से शुरू करूँ?
+KRISHNA2 (smile) [close:krishna2]: जहाँ से तुम्हें अच्छा लगे।
+SUDAMA (calm) [close:sudama]: और तुम्हारा भोजन?
++ potli kind=rice x=760 y=600 n=24 w=60 z=5
+> krishna2 pose=lift emo=joy t=0.6
+NARRATOR [~close:krishna2] (sfx=veena): कृष्ण मुस्कुराए। सुदामा की पोटली खोली, मुट्ठी भर चावल लिए, और चबाने लगे। और उन दानों ने, एक पुरानी रात को फिर से जगा दिया।
+
+# ---------------------------------------------------------------- memory: the rain tree
+== SCENE smriti | set=glade time=night music=dawn amb=storm trans=white tint=#1a2a4a,0.3
++ rain kind=rain n=140 speed=1000 color=#cfe0ff op=0.5 z=50
++ vat kind=vat x=640 y=720 s=1.1 z=-2
+@ boysudama fig=sudamaputra x=520 y=350 s=0.85 face=1 pose=hold emo=smile seat=kneel z=5
+@ krishna x=760 y=350 s=0.85 face=-1 pose=reach emo=joy seat=kneel item=none z=5
++ grains kind=rice x=600 y=345 bundle=0 n=14 w=40 z=6
+BEAT 1.2 [wide] (sfx=thunder)
+NARRATOR [~wide]: सांदीपनि के आश्रम के दिन। एक रात, दो बालक जंगल में रास्ता भटक गए। वर्षा शुरू हुई, और वे एक पेड़ पर चढ़ गए। भूख लगी, तो सुदामा ने अपने चावल निकाले।
+BOYSUDAMA (sly) [close:boysudama]: पर तुम तो वृंदावन के मुखिया के बेटे हो। ये मामूली चावल खाओगे?
+KRISHNA (joy, pose=bless) [close:krishna] (sfx=bell): ये दाने मुझ पर ऋण हैं, सखा। धर्म साक्षी है, मैं इन्हें दस गुना करके तुम्हें लौटाऊँगा।
++ t1 kind=text x=640 y=130 text="दस गुना" size=64 z=70
+BEAT 1.4 [wide] (sfx=om)
+- t1
+
+# ---------------------------------------------------------------- silence
+== SCENE maun | set=court time=night music=sorrow amb=night trans=cut tint=#0a0a2a,0.35
++ d1 kind=diya x=900 y=620 size=0.7 z=3
++ mirror kind=glow x=900 y=380 r=110 color=#cfe0ff core=0.3 z=-1
+@ sudama x=620 y=650 s=0.95 face=1 pose=despair emo=sad
+BEAT 1 [wide] (sfx=heartbeat)
+NARRATOR [~wide]: कुछ दिन सुदामा सपनों के लोक में जिए। रेशमी वस्त्र, सोने की माला, नर्म बिछौने। पर जितना सुख था, उतनी ही पीड़ा। उनके कानों में, बेटे की खाली थाली बजती रहती।
+NARRATOR [~close:sudama]: कई बार वे कहने गए। पर शब्द होंठों तक आकर रुक जाते। कृष्ण के आगे भिक्षा माँगने वालों की पंक्ति देखकर, उनकी जिह्वा जैसे बँध जाती।
+SUDAMA (sad) [ecu:sudama] (sfx=wind): मुझे क्षमा कर देना, प्रिये। मैं भीख नहीं माँग सकता। नहीं माँग सकता।
+
+== SCENE vida | set=court time=dawn music=sorrow amb=birds trans=fade
+@ sudama x=380 y=650 s=0.9 face=-1 pose=rest emo=sad
+@ krishna2 x=820 y=650 s=0.95 face=-1 pose=open emo=calm item=flute
+BEAT 0.8 [wide]
+> sudama face=1 t=0.3
+KRISHNA2 (calm) [close:krishna2]: क्या हुआ, सखा?
+SUDAMA (fear) [close:sudama]: मैं...
+KRISHNA2 (smile) [close:krishna2]: हाँ?
+SUDAMA (fear) [ecu:sudama]: मुझे...
+KRISHNA2 (calm) [close:krishna2]: बताओ।
+SUDAMA (sad) [ecu:sudama]: कुछ नहीं।
+KRISHNA2 (sly) [ecu:krishna2] (sfx=bell): कुछ नहीं?
+SUDAMA (calm) [close:sudama]: नहीं। कुछ नहीं।
+
+# ---------------------------------------------------------------- the house that is not his
+== SCENE ghar | set=glade time=day music=joy amb=birds trans=white
++ city kind=city x=760 y=560 w=700 seed=4 z=-3
++ petals kind=petals x=640 y=150 n=40 w=1300 colors=#e8505a,#f2c230,#fbf3df z=50
+@ sudama x=260 y=650 s=0.9 face=1 pose=fear emo=fear
+@ c1 kind=creature creature=cow x=1120 y=690 s=0.7 face=-1 z=2
+BEAT 1 [wide] (sfx=swell)
+NARRATOR [~wide]: लौटते हुए, सुदामा पूरे रास्ते बहाने गढ़ते रहे। पत्नी से क्या कहेंगे? फिर अचानक वे रुक गए। झोंपड़ी कहाँ गई? यहाँ महल कैसा?
+SUDAMA (fear) [close:sudama]: यह कैसी माया है?
+@ sudamaputra x=1400 y=650 s=0.8 face=-1 pose=offer emo=joy z=3
+> sudamaputra x=560 t=2
+@ sudamapatni x=1500 y=650 s=0.95 face=-1 pose=namaste emo=joy z=1
+> sudamapatni x=860 t=3
+SUDAMAPUTRA (joy) [close:sudamaputra] (sfx=manjira): आप भी खाइए, पिताजी!
+SUDAMAPATNI (joy) [close:sudamapatni]: आज सुबह उठी, तो यह सब था। सिक्के। वस्त्र। अन्न। गायें। आपके मित्र ने सब कुछ दे दिया। जितना माँगते, उससे भी ज़्यादा।
++ spill kind=rice x=300 y=660 bundle=0 n=40 w=120 z=12 anim=pop
+> sudama pose=despair emo=sad t=0.6
+NARRATOR [~close:sudama] (sfx=bell): पोटली सुदामा के हाथ से छूट गई। ज़मीन पर बिखरे दानों को देखते हुए, उन्हें बरसात की वह रात याद आई।
+KRISHNA (calm) [~ecu:sudama] (sfx=om): धर्म साक्षी है, मैं इन्हें दस गुना करके तुम्हें लौटाऊँगा।
+
+# ---------------------------------------------------------------- the kite
+== SCENE patang | set=lotusSky time=day music=joy amb=wind trans=mandala
++ k1 kind=kite x=900 y=180 color=#e8641e sx=-250 sy=420 z=20
++ k2 kind=kite x=360 y=220 color=#2e8a57 tail=#e86a8c sx=200 sy=380 z=19
+@ krishna2 x=780 y=650 s=0.95 face=-1 pose=raise emo=joy item=none
+@ draupadi x=460 y=650 s=0.95 face=1 pose=raise emo=joy
+BEAT 1 [wide] (sfx=wind)
+NARRATOR [~wide]: बरसों बाद, संक्रांति का दिन। द्रौपदी और कृष्ण की पतंगें आकाश में थीं। तभी डोर से कृष्ण की अँगुली कट गई।
+> krishna2 pose=hold emo=fear t=0.4
++ drop kind=glow x=740 y=420 r=12 color=#c8372d core=1 z=30
+DRAUPADI (fear) [close:draupadi]: केशव!
+> draupadi x=640 pose=offer emo=sad t=1
+- drop
++ band kind=glow x=730 y=420 r=24 color=#c8372d core=0.6 z=30
+NARRATOR [~two:krishna2,draupadi]: द्रौपदी ने बिना सोचे अपनी साड़ी का किनारा फाड़ा, और घाव पर बाँध दिया।
+> krishna2 pose=bless emo=serene t=0.6
+KRISHNA2 (serene) [close:krishna2] (sfx=om): सखी, मैं इन धागों का ऋणी हूँ। धर्म साक्षी है, मैं इन्हें दस गुना करके लौटाऊँगा।
+NARAD (sly) [~wide] (sfx=veena): और जिस दिन भरी सभा में द्रौपदी की साड़ी खींची गई, उस दिन वह ऋण चुकाया गया। धागे के बदले, अनंत धागे। पर वह कथा, किसी और महाकाव्य की है।
+- band
+
+== CHAPTER | kicker=कथा निन्यानवे | title=यदु वंश का अंत
+
+# ---------------------------------------------------------------- the banyan
+== SCENE vat | set=glade time=dusk music=drone amb=wind,birds trans=mandala
++ vat kind=vat x=760 y=700 s=1.2 z=-3
+@ krishna2 x=760 y=660 s=0.95 face=-1 pose=flute emo=serene seat=lotus item=flute
+BEAT 1.5 [wide] (sfx=flute, wind)
+NARRATOR [~wide]: छत्तीस वर्ष बाद। एक वट वृक्ष के नीचे, कृष्ण बैठे थे। बायाँ पैर दाहिने घुटने पर। गुलाबी तलवा आगे की ओर। जैसे वे किसी की प्रतीक्षा कर रहे हों।
+KRISHNA2 (sly) [ecu:krishna2]: इससे काम हो जाएगा...
+NARRATOR [~close:krishna2]: कुरुक्षेत्र का युद्ध कब का समाप्त हो चुका था। अठारह दिन। गीता का उपदेश। और अनगिनत चिताएँ। पांडव जीते, कौरव हारे। और युद्ध के बाद, एक माँ ने कृष्ण को शाप दिया था।
+
+# ---------------------------------------------------------------- Gandhari's curse
+== SCENE gandhari | set=court time=night music=curse amb=fire trans=cut tint=#2a0a0a,0.4
++ pyre kind=fire x=640 y=640 size=1.8 z=-2
++ smoke kind=smoke x=640 y=420 n=8 w=900 h=300 color=#3a2a2a z=-1
+@ gandhari x=440 y=650 s=1 face=1 pose=curse emo=rage
+@ krishna2 x=880 y=650 s=0.95 face=-1 pose=namaste emo=sad item=none
+BEAT 1 [wide] (sfx=fire)
+GANDHARI (rage) [close:gandhari] (sfx=thunder): सोच रहे हो, मैं शाप क्यों दे रही हूँ? तो द्वारवती लौटकर देवकी से पूछ लेना। उसने भी अपने बेटे कारागार में खोए थे। वह मेरी पीड़ा समझेगी।
+GANDHARI (rage, pose=raise) [~full:gandhari] (sfx=thunder, shake=6): कृष्ण, जैसे मेरे कुल का नाश हुआ, वैसे ही तुम्हारा वंश भी नष्ट होगा! जैसे मेरा राज्य आँसुओं में डूबा, तुम्हारी द्वारवती समुद्र में डूबेगी!
+GANDHARI (sad) [ecu:gandhari]: और अंत में, तुम वन में मरोगे। एक पशु की तरह, किसी व्याध का शिकार बनकर।
+> krishna2 pose=bless emo=serene t=0.6
+KRISHNA2 (serene) [close:krishna2] (sfx=om): तथास्तु, माता।
+
+== SCENE vat2 | set=glade time=dusk music=drone amb=wind trans=cut
++ vat kind=vat x=760 y=700 s=1.2 z=-3
+@ krishna2 x=760 y=660 s=0.95 face=-1 pose=flute emo=serene seat=lotus item=flute
+BEAT 1 [~close:krishna2] (sfx=heartbeat)
+NARRATOR [~close:krishna2]: वट वृक्ष के नीचे, कृष्ण ने आहट सुनी। दूर, सूखे पत्तों पर किसी के कदम।
+KRISHNA2 (smile) [ecu:krishna2]: वह आ गया...
+
+# ---------------------------------------------------------------- the prank
+== SCENE parihas | set=pond time=day music=narad amb=birds trans=mandala
+@ durvasa x=900 y=650 s=1 face=-1 pose=meditate emo=meditate seat=lotus
+@ sambastri x=420 y=650 s=0.95 face=1 pose=cradle emo=sly
+@ yadav x=240 y=650 s=0.9 face=1 pose=point emo=joy z=-1
+@ yadav2 x=120 y=650 s=0.9 face=1 pose=hips emo=sly z=-2
+BEAT 1 [wide] (sfx=manjira)
+NARRATOR [~wide]: कुछ महीने पहले। कृष्ण का पुत्र सांब, अपने साथियों के साथ पिंडारक तीर्थ गया। वहाँ दुर्वासा ध्यान में बैठे थे। और लड़कों को एक शरारत सूझी।
+NARRATOR [~close:sambastri]: सांब ने स्त्री के वस्त्र पहने। पेट पर कुछ बाँधकर उसे गर्भवती स्त्री जैसा फुलाया। और ऋषि के आगे जा खड़ा हुआ।
+YADAVS (joy) [two:yadav,sambastri]: हे ज्ञानी ऋषि! बताइए, इस स्त्री को बेटा होगा या बेटी?
+> durvasa pose=curse emo=rage seat=none t=0.5
++ flash kind=rays x=900 y=380 r=900 n=30 color=#ff6a3a op=0.5 z=-1 anim=pop
+DURVASA (rage) [~close:durvasa] (sfx=thunder, shake=8): यह लड़का एक लोहे के मूसल को जन्म देगा! और वही मूसल, पूरे यदुवंश का नाश करेगा!
+- flash od=1.5
+> sambastri emo=fear pose=fear t=0.4
+> yadav emo=fear pose=fear t=0.4
+> yadav2 emo=fear pose=fear t=0.4
+BEAT 1 [wide] (sfx=heartbeat)
+
+# ---------------------------------------------------------------- the iron reeds
+== SCENE narkat | set=ocean time=dusk music=tension amb=ocean trans=cut
++ sea kind=water x=640 y=600 w=1500 h=220 color=#3a5a7a crest=#9fb8e8 z=-2
++ reeds kind=reeds x=640 y=720 w=1300 h=170 grow=0 z=10
+@ yadav x=420 y=660 s=0.9 face=1 pose=lift emo=fear z=12
+BEAT 1 [wide] (sfx=splash)
+NARRATOR [~wide]: और कुछ घंटों बाद, सांब के वस्त्रों से सचमुच एक लोहे का मूसल निकला। यादव परिषद ने उसे पीसकर चूर्ण बनाया, और समुद्र में फेंक दिया।
++ dust kind=motes x=760 y=520 n=40 w=500 h=200 z=11
+> yadav pose=open emo=sad t=0.6
+NARRATOR [~at:640,560,1.1] (sfx=rumble): पर समुद्र ने वह विनाशक धातु स्वीकार नहीं की। लहरें उसे लौटा लाईं। और तट पर, वह चूर्ण अंकुरित हो गया।
+> reeds grow=1 t=4
+BEAT 2 [~at:640,620,1.3] (sfx=crack, rumble)
+NARRATOR [~at:640,620,1.3]: लोहे के नरकट। मोटे, धूसर, और धारदार। जो एक शाप को पूरा करने के लिए उगे थे।
+@ fish kind=creature creature=fish x=1000 y=640 s=0.6 face=-1 z=5
+> fish x=1200 y=680 o=0 t=2
+NARRATOR [~wide] (sfx=splash): और मूसल का एक छोटा-सा टुकड़ा, जो पिस नहीं पाया था, एक मछली निगल गई।
+
+== SCENE vat3 | set=glade time=dusk music=drone amb=wind trans=cut
++ vat kind=vat x=760 y=700 s=1.2 z=-3
+@ krishna2 x=760 y=660 s=0.95 face=-1 pose=flute emo=serene seat=lotus item=flute
+BEAT 1 [~close:krishna2] (sfx=flute)
+NARRATOR [~close:krishna2]: वट के नीचे, कृष्ण ने आख़िरी बार अपनी बाँसुरी को सहलाया। उन सब स्वरों को सुना, जो उन्होंने कभी बजाए थे। कदमों की आहट तेज़ हो रही थी।
+KRISHNA2 (serene) [ecu:krishna2]: वह निकट आ रहा है...
+
+# ---------------------------------------------------------------- Prabhas
+== SCENE prabhas | set=ocean time=dusk music=battle amb=ocean,court trans=mandala
++ sea kind=water x=640 y=600 w=1500 h=220 color=#3a5a7a crest=#9fb8e8 z=-2
++ reeds kind=reeds x=640 y=730 w=1300 h=150 z=-1
++ fire kind=fire x=640 y=640 size=0.9 z=0
+@ yadav x=420 y=650 s=0.95 face=1 pose=raise emo=joy
+@ yadav2 x=860 y=650 s=0.95 face=-1 pose=raise emo=joy
+@ balarama x=1120 y=650 s=1 face=-1 pose=hips emo=calm z=-1
+@ krishna2 x=1240 y=650 s=0.95 face=-1 pose=rest emo=sad item=none z=-2
+BEAT 1 [wide] (sfx=nagara)
+NARRATOR [~wide]: यादवों ने नियम बनाए थे। भीड़ में जुआ नहीं। हथियार नहीं। सभाओं में मदिरा नहीं। पर कृष्ण जानते थे। शाप से बचा नहीं जा सकता।
+NARRATOR [~two:yadav,yadav2]: उस दिन, युद्ध की वर्षगाँठ पर, यादव प्रभास-तट पर इकट्ठे हुए। नियमों के बावजूद, मदिरा चली। और कुरुक्षेत्र की पुरानी आग, फिर सुलग उठी।
+> yadav pose=point emo=rage t=0.4
+YADAV (rage) [close:yadav]: तुम कौरवों के साथ लड़े थे! सोते हुए वीरों पर वार करने वालों के साथ!
+> yadav2 pose=strike emo=rage t=0.4
+YADAV2 (rage) [close:yadav2]: और तुमने? भूमि पर बैठे निहत्थे भूरिश्रवा का सिर काटा था! कौन-सा धर्म था वह?
++ clash kind=clash x=640 y=420 z=40
+BEAT 0.6 [two:yadav,yadav2] (sfx=clash, shake=6)
+- clash
+BALARAMA (calm, pose=abhaya) [close:balarama]: घबराओ मत, कृष्ण। परिषद के आदेश से किसी के पास शस्त्र नहीं हैं। यह झगड़ा ज़्यादा देर नहीं चलेगा।
+> krishna2 pose=point emo=sad t=0.5
+NARRATOR [~at:640,620,1.3] (sfx=crack): फिर कृष्ण ने संकेत किया। एक यादव ने तट से कुछ उखाड़ लिया था।
+BALARAMA (fear) [close:balarama]: नरकट! लोहे के मूसल से उगे नरकट!
+KRISHNA2 (sad) [close:krishna2]: यह धातु, यहाँ तट पर, हमारी प्रतीक्षा कर रही थी।
++ dark kind=tint color=#3a0000 op=0 z=55
+> dark op=0.8 t=1.5
++ clash2 kind=clash x=420 y=420 z=60
++ clash3 kind=clash x=860 y=380 z=60
+BEAT 1 [wide] (sfx=clash, roar, shake=8)
+NARRATOR [~wide] (sfx=drumroll): जंगल की आग की तरह, क्रोध एक से दूसरे तक फैलता गया। हर हाथ ने एक नरकट उखाड़ा। भाई ने भाई को नहीं पहचाना। सांब गिरे। प्रद्युम्न गिरे। अनिरुद्ध गिरे।
+- clash2
+- clash3
+NARRATOR [~wide] (sfx=heartbeat): और जब सूरज डूबा, प्रभास के तट पर, यदुवंश में कोई नहीं बचा था।
+- dark od=2
+
+# ---------------------------------------------------------------- Balarama returns to the sea
+== SCENE shesh | set=ocean time=night music=cosmic amb=ocean trans=fade tint=#2a0010,0.3
++ moon kind=moonphase x=1080 y=150 r=46 phase=0.5 z=-4
++ sea kind=water x=640 y=600 w=1500 h=220 color=#7a1a2a crest=#e8a0a0 z=-2
+@ balarama x=640 y=620 s=1 face=1 pose=namaste emo=meditate z=2
+@ krishna2 x=240 y=650 s=0.9 face=1 pose=despair emo=sad item=none z=4
+BEAT 1 [wide] (sfx=splash)
+NARRATOR [~wide]: समुद्र लाल हो गया था। एक रक्तिम लहर ने कृष्ण के पैर भिगो दिए। उन्होंने देखा, बलराम धीरे-धीरे जल में उतर रहे थे। उनकी आँखें बंद थीं।
+> balarama y=720 o=0.3 t=4
++ naag kind=shesha x=760 y=620 w=360 hoods=11 body=#f4efe2 belly=#3d6fc4 z=3 anim=rise inDur=4
++ rays kind=rays x=640 y=300 r=800 n=36 color=#dfe7f0 op=0.3 z=-3 anim=pop inDur=3
+BEAT 2 [~at:640,330,1.15] (sfx=om, swell)
+NARRATOR [~at:640,300,1.1]: बलराम के भीतर से, हज़ार फनों वाला एक श्वेत नाग निकला, जैसे कोई केंचुली छोड़ रहा हो। शेषनाग अपने नश्वर रूप को छोड़कर, समुद्र के गर्भ में लौट रहे थे।
+- balarama od=2
+> naag y=820 o=0 t=4
+KRISHNA2 (sad) [close:krishna2] (sfx=bell): जाओ, भैया। क्षीर सागर में मेरी प्रतीक्षा करना।
+
+# ---------------------------------------------------------------- the arrow
+== SCENE baan | set=glade time=dusk music=tension amb=wind trans=cut
++ vat kind=vat x=760 y=700 s=1.2 z=-3
+@ krishna2 x=760 y=660 s=0.95 face=-1 pose=flute emo=serene seat=lotus item=flute
+@ jara x=-80 y=660 s=0.9 face=1 pose=hold emo=sly z=4
+BEAT 1 [~close:krishna2] (sfx=wind)
+NARRATOR [~close:krishna2]: वट वृक्ष के नीचे, कृष्ण ने आँखें उठाईं। पत्तों के बीच एक परछाईं डोल रही थी।
+KRISHNA2 (smile) [ecu:krishna2]: उसने देख लिया है...
+> jara x=150 t=2
+NARRATOR [~close:jara] (sfx=heartbeat): जरा नाम का एक शिकारी। पत्तों के बीच उसे एक गुलाबी-सी चीज़ दिखी। किसी हिरण का कान।
+KRISHNA2 (serene) [ecu:krishna2] (sfx=heartbeat): वह निशाना साध रहा है...
++ arrow kind=arrow x=230 y=470 len=110 rot=12 z=30
+> arrow x=700 y=560 t=0.5
+BEAT 0.6 [wide] (sfx=whoosh, crack, flash)
+- arrow
++ wound kind=glow x=700 y=580 r=30 color=#c8372d core=0.8 z=30
++ tremble kind=rays x=640 y=360 r=900 n=30 color=#fff1b8 op=0.3 z=-2 anim=pop
+NARRATOR [~wide] (sfx=swell): बाण तलवे को बींध गया। विष्णु, ब्रह्मा, और शिव, तीनों सिहर उठे। ब्रह्मांड ने अपनी आँखें मूँद लीं, क्योंकि उसकी आँखों में आँसू छलक आए थे।
+- tremble od=2
+> jara x=480 pose=reach emo=joy t=2
+> jara pose=despair emo=fear seat=kneel t=0.5
+JARA (fear) [close:jara] (sfx=heartbeat): वासुदेव... मैंने वासुदेव को मारा है... मैं नरक में जलूँगा...
+KRISHNA2 (calm, pose=bless) [close:krishna2]: डरो मत। तुम अपराधी नहीं हो।
+NARRATOR [~two:krishna2,jara]: रक्त कृष्ण का बह रहा था। पर घाव उन्होंने जरा का भरा।
+KRISHNA2 (calm) [close:krishna2]: यह बाण, लोहे के जिस टुकड़े से बना है, वह तुम्हें कहाँ मिला?
+JARA (sad) [close:jara]: एक मछली के पेट में, प्रभु।
+KRISHNA2 (serene) [close:krishna2]: सब पहले से लिखा था। जैसे मैं उन्हें बचाने के लिए कुछ नहीं कर सका, वैसे ही तुमने मुझे मारने के लिए कुछ नहीं किया। मैं तुम्हारी प्रतीक्षा कर रहा था।
+JARA (sad) [ecu:jara]: पर मैं ही क्यों, प्रभु? मेरे ही हाथों क्यों?
+KRISHNA2 (calm) [ecu:krishna2] (sfx=om): क्योंकि तुम बाली हो। और मैंने तुम्हें वचन दिया था।
+
+# ---------------------------------------------------------------- Treta: the tree
+== SCENE treta | set=pillarSky time=day music=sorrow amb=wind trans=white tint=#fff4c4,0.15
++ tree kind=vat x=520 y=720 s=0.9 z=-1
+@ rama x=520 y=650 s=0.95 face=1 pose=point emo=calm item=bow z=2
++ arrow kind=arrow x=640 y=460 len=110 rot=4 z=30
+> arrow x=1400 y=500 t=0.6
+BEAT 0.8 [wide] (sfx=whoosh, crack)
+- arrow
+NARRATOR [~wide]: त्रेता युग। एक वानर-राजा अपने भाई सुग्रीव से लड़ रहा था। और एक वृक्ष के पीछे से, राम ने बाण चलाया था।
+KRISHNA2 (calm) [~close:rama]: तब मैं राम था। आज मैं कृष्ण हूँ। मेरी इच्छा थी कि तुम भी मुझे उसी तरह मारो। तुमने कोई पाप नहीं किया, जरा। तुमने मुझे ऋण से मुक्त किया है।
+
+# ---------------------------------------------------------------- last words
+== SCENE antim | set=glade time=night music=end amb=ocean trans=fade tint=#0a0a2a,0.25
++ vat kind=vat x=760 y=700 s=1.2 z=-3
++ glow kind=glow x=760 y=480 r=260 color=#7aa0ff core=0.4 z=-2
+@ krishna2 x=760 y=660 s=0.95 face=-1 pose=flute emo=serene seat=lotus item=flute
+@ jara x=480 y=660 s=0.9 face=1 pose=namaste emo=sad seat=kneel
+BEAT 1 [wide] (sfx=wind)
+JARA (sad) [close:jara]: त्रेता से द्वापर तक... कितना कुछ बदल गया, प्रभु।
+KRISHNA2 (calm) [close:krishna2]: हाँ। राम के समय युद्ध परायों से था। कृष्ण के समय, अपनों से। फिर भी बहुत कुछ वैसा ही है। तब सीता का अपमान हुआ था। अब द्रौपदी का।
+KRISHNA2 (serene) [ecu:krishna2]: लोग राम को भूल गए। लोग कृष्ण को भी भूल जाएँगे। फिर कल्कि आएँगे, इस युग का अंत घोषित करने।
+JARA (sad) [close:jara]: क्या मैं आपसे फिर मिलूँगा, प्रभु?
+KRISHNA2 (serene) [close:krishna2]: जीवन और मृत्यु के परे, एक प्रकाश है। हम वहीं मिलेंगे।
+> krishna2 emo=meditate t=1
+KRISHNA2 (meditate) [~full:krishna2] (sfx=flute): यह कथा एक बाँसुरी से शुरू हुई थी, और लोहे के एक नरकट पर ख़त्म हो रही है। यमुना से शुरू हुई थी। समुद्र पर ख़त्म हो रही है।
+> glow r=900 core=1 t=3
++ rays kind=rays x=760 y=480 r=900 n=40 color=#bcd0ff op=0.4 z=40 anim=pop inDur=3
+BEAT 2 [wide] (sfx=om, swell)
+- krishna2 od=3
+- rays od=2
+
+# ---------------------------------------------------------------- Dwarka sinks
+== SCENE pralay | set=ocean time=night music=sorrow amb=storm,ocean trans=cut
++ city kind=city x=640 y=520 w=1200 sink=0 h=420 z=-3
++ sea kind=water x=640 y=640 w=1500 h=200 color=#2a4a7a crest=#9fb8e8 z=-2
++ wave kind=water x=640 y=820 w=1500 h=420 color=#2a4a7a crest=#cfe0ff z=5
++ rain kind=rain n=120 speed=1100 color=#cfe0ff op=0.4 z=50
+BEAT 1 [wide] (sfx=thunder, rumble)
+> wave y=600 t=14
+> city sink=1 t=16
+NARRATOR [~wide] (sfx=splash, rumble, shake=5): और फिर समुद्र उठा। लहरों ने द्वारवती की दीवारें गिरा दीं। महल ढहा दिए। और पूरे नगर को निगल लिया। चारों ओर खारा जल था, जैसे धरती रो रही हो।
+NARRATOR [~wide] (sfx=gong): कृष्ण पृथ्वी से जा चुके थे। धर्म अब केवल एक पैर पर खड़ा था। द्वापर युग समाप्त हुआ। और कलियुग शुरू हो गया।
++ t1 kind=text x=640 y=200 text="कलियुग" size=84 z=70
+BEAT 1.8 [wide] (sfx=boom)
+- t1
+
+== CHAPTER | kicker=कथा सौ | title=जनमेजय का सर्प-यज्ञ
+
+# ---------------------------------------------------------------- Takshak in the palace
+== SCENE takshak | set=court time=night music=curse amb=night trans=mandala tint=#0a0a1a,0.35
++ torch kind=fire x=200 y=420 size=0.7 z=-1
++ torch2 kind=fire x=1080 y=420 size=0.7 z=-1
++ snake kind=serpent x=1400 y=300 len=360 amp=26 th=24 color=#c8a02a belly=#3a2a1a z=20
+@ parikshit x=640 y=650 s=1 face=-1 pose=hold emo=calm item=none
+BEAT 1 [wide] (sfx=wind)
+> snake x=980 y=380 o=1 t=3
+NARRATOR [~wide] (sfx=heartbeat): अभी वह दिखा। अगले ही पल गायब। मशालों की रोशनी और परछाइयों के बीच, एक सर्प फ़र्श के रंगों में घुलता चला जा रहा था।
+> snake o=0.3 t=1
+> snake o=1 t=1 d=1
+NARRATOR [~close:parikshit]: कुछ देर पहले, वह एक फल में छिपकर आया था। और जैसे ही राजा परीक्षित ने वह फल खाया, उसने अपने विषदंत गड़ा दिए।
++ dark kind=tint color=#000000 op=0 z=55
+> dark op=0.6 t=1
+> parikshit pose=despair emo=fear t=0.4
+TAKSHAK (sly) [~close:parikshit] (sfx=wind): मैंने अपना वचन पूरा किया, राजन्। मेरा प्रतिशोध पूर्ण हुआ।
+> parikshit rot=-80 y=690 emo=meditate t=1.2
+- snake od=1
+- dark od=1.5
+NARRATOR [~wide]: अभिमन्यु का पुत्र, अर्जुन का पौत्र, कलियुग का पहला राजा। साठ वर्ष की आयु में, परीक्षित ने देह त्याग दी।
++ name kind=text x=640 y=560 text="तक्षक" size=72 z=50
+@ janamejay x=1400 y=650 s=1 face=-1 pose=fear emo=fear z=5
+@ mantri x=-120 y=650 s=0.95 face=1 pose=despair emo=fear z=4
+> janamejay x=920 t=1.5
+> mantri x=300 t=1.5
+JANAMEJAY (rage, pose=point) [close:janamejay] (sfx=thunder): यह क्या है? फ़र्श पर यह किसका नाम है?
+MANTRI (fear) [close:mantri]: उसने प्रण लिया था, युवराज। और उसका प्रण पूरा हो गया।
+JANAMEJAY (rage) [close:janamejay]: कैसा प्रण? कौन है यह तक्षक?
+MANTRI (sad) [close:mantri]: सर्पों का राजा। जब आपके प्रपितामह अर्जुन ने इंद्रप्रस्थ के लिए खांडव वन जलाया, उसकी पूरी जाति भस्म हो गई। केवल तक्षक बचा। उसने अर्जुन के वंश को मिटाने का प्रण लिया था।
+- name
+> janamejay seat=kneel pose=cradle emo=sad t=0.6
+NARRATOR [~close:janamejay] (sfx=heartbeat): जनमेजय ने अपने पिता का हाथ ऐसे दबाया, मानो शिराओं से विष खींच लेना चाहता हो।
+JANAMEJAY (rage) [ecu:janamejay]: ब्राह्मणों को बुलाओ। यज्ञ की तैयारी करो। सर्प-सत्र।
+MANTRI (fear) [close:mantri]: सर्प-सत्र? पर महाराज का दाह-संस्कार? आपका राज्याभिषेक?
+JANAMEJAY (rage, pose=strike) [~full:janamejay] (sfx=thunder, shake=6): जब तक संसार का हर सर्प जल नहीं जाता, मेरे पिता की चिता नहीं जलेगी!
+
+# ---------------------------------------------------------------- the serpent sacrifice
+== SCENE satra | set=yajna time=night music=tension amb=fire trans=mandala
++ agni kind=fire x=720 y=620 size=2.2 z=2
++ m1 kind=mandala x=720 y=640 r=260 spin=12 op=0.4 z=-1
+@ r1 fig=vishwamitra x=250 y=650 s=0.8 face=1 pose=bless emo=calm seat=lotus z=3
+@ r2 fig=vasishtha x=990 y=650 s=0.85 face=-1 pose=bless emo=calm seat=lotus z=3
+@ r3 fig=bhrigu x=100 y=650 s=0.75 face=1 pose=bless emo=calm seat=lotus z=2
+@ r4 fig=durvasa x=1160 y=650 s=0.8 face=-1 pose=bless emo=calm seat=lotus z=2
+@ janamejay x=440 y=670 s=0.9 face=1 pose=hold emo=rage seat=kneel z=5
+BEAT 1.2 [wide] (sfx=om, fire)
+NARRATOR [~wide]: ऋषि वेदी के चारों ओर घेरा बनाकर बैठे। सफ़ेद, लाल, काले, गुलाबी और पीले रंगों से पाँच चिह्न बनाए गए, नागों के पाँच आदि वंशों के लिए।
+JANAMEJAY (rage) [close:janamejay]: शुरू कीजिए।
+NARRATOR [~at:640,520,1.1] (sfx=om): मंत्र उठे। ज्वार की लहरों की तरह।
+> agni size=2.8 t=2
+> m1 r=360 op=0.6 t=2
+NARRATOR [~at:640,500,1.2] (sfx=swell): और ऊपर। और ऊपर। और ऊपर।
+NARRATOR [~close:janamejay] (sfx=heartbeat): उस दिन मंत्र आनंद नहीं, भय दे रहे थे। हस्तिनापुर के लोग घरों में कान बंद करके बैठ गए। केवल जनमेजय, हर शब्द को पी रहा था।
+> janamejay look=up emo=sly t=0.4
+JANAMEJAY (sly) [ecu:janamejay]: शुरू हो गया।
++ rainS kind=snakerain x=720 y=600 n=22 h=700 w=1300 s=1.4 z=40
+BEAT 2 [wide] (sfx=whoosh, fire, shake=4)
+NARRATOR [~wide] (sfx=fire, swell): बादलों से एक सर्प गिरा, और वेदी में भस्म हो गया। फिर जैसे नागों की वर्षा होने लगी। काले नाग, करैत, अजगर। हर लोक से, मंत्र उन्हें अग्नि की ओर खींच रहे थे।
+> agni size=3.4 t=3
+BEAT 2 [~at:640,420,1.1] (sfx=fire, drumroll)
+NARRATOR [~close:janamejay]: संसार ने किसी जाति का ऐसा संहार कभी नहीं देखा था। पर जनमेजय की भूख शांत नहीं हुई। जिसकी उसे प्रतीक्षा थी, वह अब तक नहीं आया था।
+JANAMEJAY (rage, pose=point) [close:janamejay] (sfx=thunder): तक्षक कहाँ है?
+- rainS od=1
+
+# ---------------------------------------------------------------- the tug of war
+== SCENE indralok | set=lotusSky time=day music=battle amb=storm trans=cut
++ clouds kind=clouds x=640 y=600 n=6 w=1400 z=-2
++ throne kind=throne x=560 y=560 s=1.6 coil=1 z=2
+@ indra x=940 y=560 s=0.95 face=-1 pose=fear emo=fear fly=1 noShadow=true z=3
+BEAT 1 [wide] (sfx=rumble)
+NARRATOR [~wide]: तक्षक इंद्र के पास भागा था, और उसने देवराज के सिंहासन के चारों ओर अपने आप को लपेट लिया था।
+JANAMEJAY (rage) [~at:640,420,1.1] (sfx=om): और ज़ोर से!
+> throne y=600 t=1
+> throne y=560 t=0.6 d=1
+> throne y=680 t=1.4 d=1.6
+NARRATOR [~at:640,440,1.15] (sfx=swell, shake=5): पकड़ कसी, तो मंत्रों ने और खींचा। पकड़ और कसी, तो मंत्रों ने और ज़ोर से। और तक्षक के साथ, इंद्र का सिंहासन भी नीचे खिंचने लगा।
+> indra y=700 t=2
+INDRA (fear) [close:indra] (sfx=thunder): यह कैसी अग्नि है, जो देवराज को भी खींच रही है?
+NARRATOR [~wide] (sfx=drumroll): क्या वह पवित्र अग्नि, देवताओं के राजा को भी निगल जाएगी?
+
+# ---------------------------------------------------------------- the boy who sang
+== SCENE astika | set=yajna time=night music=dawn amb=temple trans=white
++ agni kind=fire x=640 y=620 size=2.6 z=2
++ snake kind=serpent x=520 y=140 len=280 amp=18 th=22 color=#c8a02a belly=#3a2a1a rot=20 speed=0.6 z=30
+@ janamejay x=880 y=650 s=0.95 face=-1 pose=hold emo=rage
+@ vasishtha x=1120 y=650 s=0.85 face=-1 pose=bless emo=calm seat=lotus z=-1
+@ astika x=-80 y=650 s=0.85 face=1 pose=namaste emo=serene z=4
+BEAT 1 [wide] (sfx=bells)
+NARRATOR [~wide] (sfx=bell): तभी, मंदिर की घंटी जैसा एक स्वर गूँजा। कोई जनमेजय की, और उसके यज्ञ की, स्तुति गा रहा था।
+> astika x=360 t=3
+NARRATOR [~close:astika]: एक ब्राह्मण बालक। उसका चेहरा, उसके स्वर जितना ही उजला था। पूरी सभा उसकी विद्या पर चकित थी। जनमेजय भी तक्षक को भूल गया।
+JANAMEJAY (smile, pose=open) [close:janamejay]: बालक, तुम्हारी स्तुति ने मेरा मन जीत लिया। माँगो, क्या वरदान चाहिए?
+ASTIKA (serene) [close:astika] (sfx=om): राजन्, प्रतिशोध की यह परंपरा यहीं समाप्त कर दीजिए। यह सर्प-सत्र रोक दीजिए।
+> janamejay emo=rage pose=fear t=0.4
+NARRATOR [~close:janamejay]: जनमेजय का चेहरा क्रोध से तमतमा उठा। पर उसकी आँखें, दीवार के एक चित्र पर जा टिकीं। असुरराज बलि, वामन के आगे सिर झुकाए हुए। दिया हुआ वचन, जो राजा ने अपना सब कुछ देकर निभाया था।
+JANAMEJAY (rage) [close:janamejay]: उस सर्प को कौन बचा रहा है? वह हवा में क्यों रुक गया?
+VASISHTHA (calm) [close:vasishtha]: यही बालक, राजन्। इसके शब्दों ने हमारे मंत्रों की शक्ति बाँध दी है।
+JANAMEJAY (fear) [close:janamejay]: बालक, तुम हो कौन?
+ASTIKA (calm) [ecu:astika]: आस्तीक। नागराज वासुकि का भांजा।
+
+# ---------------------------------------------------------------- Brahma's lotus
+== SCENE brahma | set=yajna time=night music=brahma amb=temple trans=cut
++ agni kind=fire x=640 y=620 size=1.6 z=2
++ lotus kind=lotus x=900 y=640 r=120 open=1 z=3 anim=pop inDur=2
++ halo kind=rays x=900 y=380 r=700 n=36 color=#ffe08a op=0.35 z=-2 anim=pop inDur=2
+@ brahma x=900 y=560 s=0.85 face=-1 pose=bless emo=serene fly=1 noShadow=true z=4 anim=materialize inDur=2
+@ janamejay x=420 y=650 s=0.95 face=1 pose=namaste emo=fear
+@ astika x=240 y=650 s=0.8 face=1 pose=namaste emo=serene z=-1
+BEAT 1.4 [wide] (sfx=om, swell)
+NARRATOR [~wide]: उसी समय वेदी के पास एक कमल खिला, और उस पर ब्रह्मा प्रकट हुए।
+BRAHMA (calm) [close:brahma]: इस बालक की बात सुनो, जनमेजय। सर्पदंश से मृत्यु, परीक्षित के भाग्य में लिखी थी। जब उसे जीना था, तब कृष्ण ने उसे माँ के गर्भ में जीवित किया। जब उसे जाना था, तक्षक ने उसके रक्त में विष घोल दिया।
+JANAMEJAY (sad) [close:janamejay]: तो उन सर्पों का क्या, जो आज जल गए? उन्हें क्यों मरना पड़ा?
+BRAHMA (calm) [close:brahma]: क्योंकि तुम्हारे पिता की तरह, उन्हें भी अपनी नियति तक पहुँचना था। क्या तुमने कद्रू और विनता के बारे में सुना है?
+@ horse kind=creature creature=horse x=640 y=300 s=0.6 face=1 fly=1 noShadow=true z=20 anim=materialize inDur=1.5
++ hglow kind=glow x=640 y=260 r=180 color=#fff1b8 core=0.4 z=19
+JANAMEJAY (calm) [close:janamejay]: नागों की माता, और गरुड़ की माता। दोनों बहनों में एक शर्त लगी थी। उच्चैःश्रवा घोड़े की पूँछ के रंग पर।
+BRAHMA (sly) [close:brahma]: कद्रू ने कहा, पूँछ काली है। विनता ने कहा, सफ़ेद। और जब कद्रू को लगा कि वह हार रही है...
+JANAMEJAY (calm, pose=open) [close:janamejay]: ...उसने अपने पुत्रों से कहा, जाकर पूँछ से लिपट जाओ, ताकि वह काली दिखे।
+BRAHMA (calm) [close:brahma]: अधिकांश सर्प मान गए। कुछ ने मना कर दिया। तब कद्रू ने उन्हें क्या शाप दिया था, जनमेजय?
+- horse od=1.5
+- hglow od=1.5
+BEAT 1 [close:janamejay] (sfx=heartbeat)
+> janamejay pose=despair emo=sad t=0.6
+JANAMEJAY (sad) [ecu:janamejay]: कि जिन पुत्रों ने माँ की आज्ञा नहीं मानी, वे कलियुग के एक यज्ञ में जलकर भस्म होंगे।
++ ouro kind=ouroboros x=640 y=280 r=120 z=30 anim=pop inDur=2
+NARRATOR [~at:640,330,1.15] (sfx=swell): और जनमेजय को समझ आया। ब्रह्मांड में सब कुछ जुड़ा हुआ है। जैसे कोई सर्प, अपनी ही पूँछ निगल रहा हो। कथाओं में गुँथी कथाएँ। एक महागाथा।
+BRAHMA (serene) [close:brahma]: जिन्हें मरना था, वे मर चुके। मैं उनकी बात कर रहा हूँ, जिन्हें जीना है। तक्षक ने परीक्षित को उसकी नियति तक पहुँचाया। तुमने सर्पों को उनकी नियति तक। अब समय है कि तुम अपनी नियति तक पहुँचो।
+> janamejay pose=namaste emo=serene seat=kneel t=0.8
+JANAMEJAY (serene) [close:janamejay] (sfx=bell): परमपिता, मैं अँधेरे के सागर में तैर रहा था। आपने मुझे प्रकाश दिखाया। मैं यह सर्प-सत्र समाप्त करता हूँ।
+> agni size=0.4 t=3
+JANAMEJAY (calm) [close:janamejay]: पर बताइए, क्या इस कलियुग में कुछ है, जो हमें आशा दे सके?
+BRAHMA (smile) [~full:brahma] (sfx=om): अवश्य है। पुराने युगों में, बहुत तप से थोड़ा-सा पुण्य मिलता था। कलियुग में उलटा है। थोड़ा-सा ज्ञान, और बहुत-सा पुण्य।
+JANAMEJAY (calm) [close:janamejay]: इसका उपाय क्या है?
+BRAHMA (serene) [ecu:brahma]: स्वयं को परखो। स्वयं को शुद्ध करो। स्वयं को जानो। क्या तुम तैयार हो?
+> janamejay emo=meditate t=1
+BEAT 1.2 [close:janamejay] (sfx=bell)
+> lotus open=0 t=3
+- brahma od=3
+NARRATOR [~at:640,330,1.1] (sfx=om): जनमेजय ने सिर झुका दिया। सर्प, कुंडली मारकर, एक चक्र बन गया। और कमल की पंखुड़ियाँ बंद हो गईं।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upsanhar | set=cosmos time=night music=end amb=void trans=mandala
++ glowL kind=glow x=640 y=380 r=520 color=#fff1b8 core=0.25 z=-5
++ wheel kind=ouroboros x=640 y=330 r=230 th=34 z=-2
++ mand kind=mandala x=640 y=360 r=340 spin=6 op=0.35 z=-4
++ motes kind=motes x=640 y=520 n=40 w=1200 h=300 z=60
+@ narad x=640 y=560 s=0.95 face=1 pose=veena emo=serene fly=1 noShadow=true
+BEAT 1.5 [wide] (sfx=veena)
+NARAD (serene) [~full:narad]: तो, यह थी महागाथा। एक अंडे से शुरू हुई, और एक सर्प पर ख़त्म हुई, जो अपनी ही पूँछ निगल रहा है।
+NARAD (smile, pose=open) [mid:narad]: एक दाने का ऋण, दस गुना लौटा। एक बाण का ऋण, एक युग बाद चुका। और प्रतिशोध का ऋण, जो पीढ़ियों से चला आ रहा था, एक बालक के गीत ने माफ़ कर दिया।
+NARAD (calm) [close:narad]: कहते हैं, उसी यज्ञ के बाद, उसी सभा में, जनमेजय को पहली बार पूरा महाभारत सुनाया गया। यानी, जहाँ यह कथा ख़त्म होती है, वहीं से एक और कथा शुरू होती है।
+NARAD (sly) [ecu:narad]: कथाएँ कभी ख़त्म नहीं होतीं। वे बस, अगले सुनने वाले की प्रतीक्षा करती हैं।
+NARAD (serene) [~full:narad] (sfx=om): नारायण... नारायण।
+BEAT 2.5 [~wide] (sfx=veena, swell)
+
+== END | dur=16 | title=महागाथा | sub=अध्याय बारह · ऋण · समाप्त | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 92, 99 और 100);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर;बारह अध्यायों की इस यात्रा में साथ चलने के लिए धन्यवाद
