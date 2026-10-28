@@ -5,3 +5,5 @@ episodes/*.py
 explainer/tools/
 explainer/engine/*.py
 .style-study/
+*.mp4
+*.pdf

@@ -40,6 +40,8 @@ Watch locally: `npx serve .` then open `/` for the gallery or `/engine/player.ht
 
 Import this repo in Vercel (free Hobby plan), framework preset "Other", no build command, output directory `.`. Every push to `main` redeploys.
 
+The episode MP4s are too big to ship with the site, so Vercel skips them (`.vercelignore`) and the gallery streams each one from the repo's `videos` GitHub release instead. The **Publish episode videos** workflow (`.github/workflows/publish-videos.yml`) uploads every committed `*.mp4` to that release on each push to `main` that touches a video, and skips files already there. Asset names are the episode folder with `/` turned into `_` (for example `anime_episodes_e01-four-nights.mp4`). To add an episode: commit its `episode.mp4` (under 100 MB, GitHub's per-file limit), add it to `episodes/index.json`, and push. To re-upload everything, run the workflow by hand from the Actions tab.
+
 ## How it works
 
 1. `episode.json` is the whole show: cast looks and voices, scenes, lines, emotions, gestures, camera hints, chalkboard text, news graphics, props and effects.

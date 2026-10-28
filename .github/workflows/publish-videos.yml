@@ -1,0 +1,41 @@
+# Uploads every episode MP4 in the repo to the "videos" release, which the gallery
+# (index.html) streams from. Vercel skips *.mp4 (see .vercelignore), so the site stays small.
+# Asset name = the MP4's folder with / replaced by _, e.g. anime_episodes_e01-four-nights.mp4.
+name: Publish episode videos
+
+on:
+  push:
+    branches: [main]
+    paths: ['**/*.mp4', '.github/workflows/publish-videos.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: publish-videos
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload new or changed videos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release view videos >/dev/null 2>&1 || \
+            gh release create videos --title "Episode videos" --latest=false \
+              --notes "Episode MP4s streamed by the gallery. Filled automatically by the Publish episode videos workflow; don't delete."
+          gh release view videos --json assets -q '.assets[] | "\(.name) \(.size)"' > existing.txt || true
+          mkdir -p "$RUNNER_TEMP/up"
+          git ls-files '*.mp4' | while read -r f; do
+            name="$(dirname "$f" | tr '/' '_').mp4"
+            size="$(stat -c %s "$f")"
+            if grep -qxF "$name $size" existing.txt; then echo "up to date: $name"; continue; fi
+            ln -f "$f" "$RUNNER_TEMP/up/$name" 2>/dev/null || cp "$f" "$RUNNER_TEMP/up/$name"
+            echo "uploading: $name ($size bytes)"
+            gh release upload videos "$RUNNER_TEMP/up/$name" --clobber
+            rm -f "$RUNNER_TEMP/up/$name"
+          done
