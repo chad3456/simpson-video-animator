@@ -1694,7 +1694,7 @@
      "who": "kaliya",
      "text": "बालक, नाम क्या है तुम्हारा?",
      "camMove": true,
-     "cam": "close:kaliya"
+     "cam": "at:740,450,1.6"
     },
     {
      "who": "krishna",
@@ -1705,7 +1705,7 @@
      "who": "kaliya",
      "text": "तुम्हारी त्वचा मेरी तरह काली है, पर सिर पर मेरे शत्रु, मोर का पंख? यहाँ क्यों आए हो?",
      "camMove": true,
-     "cam": "close:kaliya"
+     "cam": "at:740,450,1.6"
     },
     {
      "who": "krishna",
@@ -1749,7 +1749,7 @@
      "who": "kaliya",
      "text": "आप मनुष्य नहीं हैं। फिर कौन हैं?",
      "camMove": true,
-     "cam": "close:kaliya"
+     "cam": "at:420,450,1.4"
     },
     {
      "who": "krishna",
