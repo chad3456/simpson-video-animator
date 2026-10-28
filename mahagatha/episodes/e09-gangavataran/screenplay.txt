@@ -1,0 +1,380 @@
+title: गंगावतरण
+episode: 9
+slug: e09-gangavataran
+kicker: अध्याय नौ
+sub: सगर, भगीरथ और परशुराम
+logline: विष के साथ जन्मा राजा, राख बने साठ हज़ार पुत्र, चार पीढ़ियों का तप, शिव की जटा में समाई गंगा, और फरसे वाला वह ब्राह्मण जिसने इक्कीस बार धरती को अत्याचारी राजाओं से मुक्त किया।
+stories: 62, 63, 65
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 62, 63 और 65
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night,river trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! सुनिए। यह कल-कल की ध्वनि। गंगा की है।
+NARAD (calm, pose=open) [mid:narad]: पर गंगा धरती पर अपने-आप नहीं आई। उसे लाने में चार पीढ़ियाँ खप गईं। चार राजा, एक ही नाम जपते-जपते, संसार से चले गए।
+NARAD (sly) [close:narad]: और यह सब शुरू हुआ, एक घोड़े की चोरी से। चोर कौन था? आप अनुमान लगाइए। संकेत: वह स्वर्ग का राजा है, और उसे अश्वमेध यज्ञ से बहुत डर लगता है।
+NARAD (smile) [ecu:narad]: पर पहले, एक चिता। और एक रानी, जो उस पर बैठी थी।
+
+== TITLE | dur=7.5 | kicker=अध्याय नौ | title=गंगावतरण | sub=सगर, भगीरथ और परशुराम
+
+== CHAPTER | kicker=कथा बासठ | title=सगर ने पुत्रों को खोया
+
+# ---------------------------------------------------------------- the fallen king
+== SCENE subahu | set=glade time=dusk music=sorrow amb=wind,birds trans=mandala
+@ subahu x=520 y=650 s=0.95 face=1 pose=despair emo=sad seat=kneel
+@ yadavi x=760 y=650 s=0.9 face=-1 pose=cradle emo=sad
++ birds kind=birds x=640 y=200 n=2 z=30
+BEAT 1 [wide] (sfx=wind)
+NARRATOR [~wide]: हरिश्चंद्र की छह पीढ़ियों बाद, सूर्यवंश के सिंहासन पर सुबाहु बैठा। पर रात्रि के आगे सूर्य को भी झुकना पड़ता है। प्रजा ने विद्रोह किया, शत्रु एकत्र हुए, और राजा सब हारकर अपनी रानी यादवी के साथ वन में भाग गया।
+NARRATOR [~close:subahu] (sfx=birds): एक पेड़ के नीचे विश्राम करते हुए, उसने दो पक्षियों को बात करते सुना।
+BIRDS (smile) [~wide]: चलो, यहाँ से उड़ चलें।
+BIRDS (angry) [~wide] (sfx=birds): इस पापी सुबाहु की छाया भी हम पर नहीं पड़नी चाहिए!
+- birds
+> subahu o=0 t=2
+NARRATOR [~close:yadavi] (sfx=heartbeat): अपराध-बोध ने राजा का हृदय ऐसा झकझोरा, कि उसके प्राण ही निकल गए।
+
+# ---------------------------------------------------------------- the pyre
+== SCENE chita | set=glade time=night music=curse amb=fire,wind trans=cut
++ pyre kind=fire x=560 y=660 size=2.2 z=-1
+@ yadavi x=560 y=640 s=0.9 face=1 pose=namaste emo=meditate seat=lotus
+@ aurva x=1500 y=650 s=0.95 face=-1 pose=reach emo=fear
+BEAT 1 [wide] (sfx=fire)
+NARRATOR [~wide] (sfx=fire): यादवी ने टहनियाँ तोड़कर चिता सजाई, और पति के साथ उस पर बैठकर आग लगा दी।
+> aurva x=920 t=1.5
+AURVA (fear, pose=reach) [~two:yadavi,aurva] (sfx=whoosh): ऐसा मत करो!
+YADAVI (angry) [close:yadavi]: दूर रहिए! मेरा पति नहीं रहा, मेरी भूमि मेरी नहीं रही। मैं किसके लिए जिऊँ?
+AURVA (calm, pose=point) [close:aurva]: उसके लिए, जो तुम्हारे भीतर पल रहा है। मैं और्व हूँ, रानी। मुझे तुम्हारे भीतर सूर्यवंश की एक किरण जगमगाती दिख रही है।
+YADAVI (fear) [close:yadavi]: आप झूठ बोल रहे हैं!
+> pyre size=3 t=3
+AURVA (fear) [close:aurva] (sfx=fire): पुत्र अपनी माँ का अंतिम संस्कार करता है। आप अपने पुत्र का अंतिम संस्कार क्यों कर रही हैं?
+> yadavi x=820 seat=none pose=cradle emo=sad t=0.8
+NARRATOR [~two:yadavi,aurva] (sfx=whoosh): यादवी उछलकर चिता से बाहर आ गई। और्व ने उसे सँभाल लिया।
+YADAVI (sad) [close:yadavi]: पर यदि यह भी बड़ा होकर दूसरा सुबाहु बना तो?
+AURVA (smile, pose=bless) [close:aurva]: कुलीनता प्रायः एक पीढ़ी बाद लौटती है, रानी। तुम्हारे पुत्र में वह हर गुण होगा, जो उसके पिता में नहीं था।
+
+# ---------------------------------------------------------------- born with poison
+== SCENE gar | set=glade time=dawn music=dawn amb=birds trans=fade
+@ aurva x=860 y=650 s=0.95 face=-1 pose=bless emo=smile
+@ yadavi x=440 y=650 s=0.9 face=1 pose=cradle emo=joy
++ baby kind=glow x=470 y=470 r=60 color=#ffd27a core=1 z=20 anim=pop
+BEAT 1 [wide] (sfx=bells)
+NARRATOR [~wide]: और्व के आश्रम में, ऋषि-पत्नी के मन में संदेह जागा। उसे लगा, रानी के गर्भ में ऋषि का पुत्र है। और उसने चुपके से रानी के भोजन में, रोज़ एक बूँद विष मिलाना शुरू कर दिया। गर नाम का विष।
++ drop kind=sparkle x=470 y=470 n=8 r=60 z=21
+NARRATOR [~close:yadavi] (sfx=swell): पर नौ महीने बाद, यादवी ने एक देवदूत जैसे पुत्र को जन्म दिया।
+AURVA (smile) [close:aurva]: तुम गर के साथ जन्मे हो। इसलिए तुम्हारा नाम होगा, सगर।
+NARRATOR [~wide] (sfx=conch): विष का प्रभाव न शिशु के तन पर हुआ, न मन पर। सगर बड़ा हुआ, शत्रुओं को हराया, और विजयी होकर अयोध्या लौटा।
+
+# ---------------------------------------------------------------- sixty thousand sons
+== SCENE saath | set=court wall=#3a1a0a music=joy amb=court trans=mandala
+@ sagar x=640 y=650 s=1.05 face=1 pose=bless emo=smile
+@ aurva x=1040 y=650 s=0.9 face=-1 pose=point emo=smile
+BEAT 0.8 [wide] (sfx=gong)
+AURVA (smile, pose=point) [close:aurva]: तुम्हारी दोनों रानियों के पुत्र होंगे, राजन। एक का केवल एक पुत्र, और दूसरी के साठ हज़ार। चुन लो।
+NARRATOR [~wide] (sfx=bells): रानी केशिनी ने एक पुत्र चुना, और रानी सुमति ने साठ हज़ार।
++ cry kind=sparkle x=640 y=380 n=60 r=600 z=40
+NARRATOR [~wide] (sfx=manjira): और अयोध्या शिशुओं के रुदन से गूँज उठी।
+- cry
+@ anshuman x=300 y=650 s=0.9 face=1 pose=namaste emo=calm
+NARRATOR [two:anshuman,sagar]: केशिनी का पुत्र असमंजस असभ्य निकला, और उसे निर्वासित करना पड़ा। पर उसका पुत्र अंशुमान, अपने दादा का प्रिय बना।
+SAGAR (calm, pose=raise) [~full:sagar] (sfx=conch): हम अश्वमेध यज्ञ करेंगे! हमारा अश्व भूलोक में घूमेगा। जो राज्य उसे रोके, वह हमसे युद्ध करे। उसकी रक्षा कौन करेगा?
+@ p1 fig=sagarputra x=1100 y=650 s=0.85 face=-1 pose=raise emo=joy z=-1
+@ p2 fig=sagarputra x=1200 y=650 s=0.8 face=-1 pose=raise emo=joy z=-2
+@ p3 fig=sagarputra x=980 y=650 s=0.88 face=-1 pose=raise emo=joy
+SAGARPUTRAS (joy, pose=raise) [~wide] (sfx=nagara): हम करेंगे!
+ANSHUMAN (calm, pose=namaste) [close:anshuman]: पितामह, मैं यहीं आपके साथ रहकर यज्ञ की तैयारी करूँगा।
+
+# ---------------------------------------------------------------- Indra steals the horse
+== SCENE chori | set=ocean time=night music=tension amb=ocean,night trans=mandala
++ moon kind=moonphase x=1080 y=150 r=50 phase=0.5 z=-4
+@ horse kind=creature creature=horse x=640 y=680 s=1 face=1
+@ p1 fig=sagarputra x=260 y=660 s=0.8 face=1 pose=rest emo=meditate seat=kneel
+@ p2 fig=sagarputra x=140 y=660 s=0.75 face=1 pose=rest emo=meditate seat=kneel z=-1
++ waterfg kind=water x=640 y=680 w=1500 h=90 color=#cfd8ea crest=#4a5f9e op=0.8 z=40
+BEAT 1 [wide] (sfx=splash)
+NARRATOR [~wide]: स्वर्ग में इंद्र काँप रहे थे। पृथु की तरह, बलि की तरह, क्या सगर भी चक्रवर्ती बन जाएगा? और जब राजकुमार समुद्र-तट पर सो गए...
+@ indra x=1500 y=640 s=0.9 face=-1 pose=reach emo=sly
+> indra x=820 t=2.5
+INDRA (sly) [close:indra]: चलो। तुम्हारे लिए मैंने कुछ सोचा है।
+> horse x=1600 t=3
+> indra x=1700 t=3
+NARRATOR [~wide] (sfx=whoosh): इंद्र चुपचाप अश्व को ले उड़े।
+- indra
+> p1 seat=none pose=fear emo=fear t=0.4 d=0.6
+> p2 seat=none pose=fear emo=fear t=0.4 d=0.8
+SAGARPUTRAS (fear) [~wide] (sfx=heartbeat): घोड़ा कहाँ है? घोड़ा कहाँ गया?
+NARRATOR [~wide] (sfx=rumble): उन्होंने समुद्र में गोते लगाए, धरती खोद डाली। अश्वमेध का घोड़ा खोना महा-अपशकुन था। और खोजते-खोजते, वे पाताल तक पहुँच गए।
+
+# ---------------------------------------------------------------- Kapila's eyes
+== SCENE kapil | set=void music=curse amb=void trans=cut
++ cave kind=glow x=640 y=400 r=460 color=#3a4ad8 core=0.3 z=-4
+@ kapil x=900 y=650 s=1 face=-1 pose=meditate emo=meditate seat=lotus
+@ horse kind=creature creature=horse x=1180 y=690 s=0.8 face=-1 z=-1
+@ p1 fig=sagarputra x=420 y=650 s=0.9 face=1 pose=point emo=rage
+@ p2 fig=sagarputra x=280 y=650 s=0.85 face=1 pose=strike emo=rage z=-1
+@ p3 fig=sagarputra x=140 y=650 s=0.8 face=1 pose=raise emo=rage z=-2
+BEAT 0.8 [wide] (sfx=roar)
+SAGARPUTRAS (joy, pose=point) [~wide]: वो रहा!
+NARRATOR [~wide]: घोड़ा एक आश्रम में बँधा था। ऋषि कपिल का आश्रम। राजकुमारों को लगा, ऋषि ही चोर है। वे नहीं जानते थे, कि घोड़ा इंद्र ने वहाँ बाँधा था।
++ c1 kind=clash x=640 y=400 period=0.8 z=60
+NARRATOR [~wide] (sfx=clash, crack, boom): उन्होंने आश्रम तहस-नहस कर दिया। छत गिराई, पौधे रौंदे, दीवारें ढहा दीं। ऋषि का अपमान किया, उन पर पत्थर फेंके।
+- c1
+SAGARPUTRAS (rage, pose=strike) [~wide] (sfx=roar): चोर! ढोंगी! उठ!
+> kapil emo=calm t=0.1
+NARRATOR [~close:kapil] (sfx=heartbeat): ऋषि ने आँखें बंद कीं।
+> kapil emo=rage t=0.2
++ eyefire kind=glow x=930 y=330 r=80 color=#ff6a2a core=1 z=40 anim=pop
+NARRATOR [ecu:kapil] (sfx=heartbeat): और एक क्षण बाद, खोलीं।
++ blast kind=fire x=300 y=640 size=3.4 z=30
++ r kind=ring x=900 y=360 r=900 color=#ff6a2a z=60
+> p1 o=0 t=0.3
+> p2 o=0 t=0.3 d=0.1
+> p3 o=0 t=0.3 d=0.2
+BEAT 2.4 [wide] (sfx=boom, fire, shake=12, flash)
+- blast od=2
++ ash kind=smoke x=300 y=640 n=14 w=500 h=200 color=#6a6a6a z=10
+BEAT 1.6 [wide] (sfx=wind)
+
+# ---------------------------------------------------------------- the ashes
+== SCENE raakh | set=court wall=#1a1a2a music=sorrow amb=court trans=fade
+@ sagar x=820 y=650 s=1 face=-1 pose=rest emo=calm
+@ anshuman x=420 y=650 s=0.9 face=1 pose=offer emo=sad
++ ashes kind=sparkle x=470 y=520 n=10 r=40 z=40
+BEAT 1 [wide] (sfx=gong)
+SAGAR (fear) [close:sagar]: मेरे पुत्रों का क्या हुआ, अंशुमान?
+ANSHUMAN (sad, pose=offer) [close:anshuman]: वे सब भस्म हो गए, पितामह। सभी साठ हज़ार।
+SAGAR (fear) [close:sagar]: भस्म?
+ANSHUMAN (sad) [close:anshuman]: ऋषि कपिल ने उन्हें क्रोध से देखा, और उनकी आँखों की अग्नि ने सबको राख कर दिया। मैं वहाँ खड़ा था, पितामह। मैंने साठ हज़ार आत्माओं को कराहते सुना। वे अब भी जल रही हैं।
+> sagar pose=despair emo=sad t=0.8
+SAGAR (sad, pose=despair) [close:sagar]: ऐसी हिंसक मृत्यु से आत्मा को कभी मुक्ति नहीं मिलती। अब क्या होगा?
+ANSHUMAN (calm, pose=point) [close:anshuman]: ऋषि ने एक उपाय बताया है। गंगा! स्वर्ग में बहने वाली देवनदी। उसका जल छू जाए, तो वे मुक्त हो सकते हैं।
+NARRATOR [~close:sagar] (sfx=wind): सगर ने यज्ञ की अग्नि बुझा दी। और खिड़की से आकाश को देखते हुए पूछा।
+SAGAR (sad) [ecu:sagar]: हम गंगा को नीचे कैसे लाएँगे?
+
+== CHAPTER | kicker=कथा तिरसठ | title=गंगा को धरती पर लाए भगीरथ
+
+# ---------------------------------------------------------------- four generations
+== SCENE peedhi | set=kailash time=night music=drone amb=wind trans=mandala
++ stars kind=sparkle x=640 y=300 n=40 r=700 z=-3
++ t1 kind=text x=640 y=140 text="सगर" size=60 z=70
+@ g1 fig=sagar x=640 y=650 s=0.9 face=1 pose=meditate emo=meditate seat=lotus
+BEAT 1 [wide] (sfx=om)
+NARRATOR [~wide]: सगर ने प्रयास किया।
+- g1
+- t1
++ t2 kind=text x=640 y=140 text="अंशुमान" size=60 z=70
+@ g2 fig=anshuman x=640 y=650 s=0.9 face=1 pose=meditate emo=meditate seat=lotus anim=materialize
+NARRATOR [~wide] (sfx=om): अंशुमान ने प्रयास किया।
+- g2
+- t2
++ t3 kind=text x=640 y=140 text="दिलीप" size=60 z=70
+@ g3 fig=trishanku x=640 y=650 s=0.9 face=1 pose=meditate emo=meditate seat=lotus anim=materialize
+NARRATOR [~wide] (sfx=om): अंशुमान के पुत्र दिलीप ने प्रयास किया। तीन पीढ़ियाँ, एक ही नाम जपते हुए, संसार से चली गईं।
+- g3
+- t3
++ t4 kind=text x=640 y=140 text="भगीरथ" size=64 z=70
+@ bhagirath x=640 y=650 s=0.95 face=1 pose=meditate emo=meditate seat=lotus anim=materialize inDur=2
++ ages kind=moonphase x=1040 y=220 r=50 phase=0 z=-2
+> ages phase=1 t=6
+NARRATOR [~full:bhagirath] (sfx=heartbeat): अब दिलीप का पुत्र भगीरथ, एक हज़ार वर्ष से ध्यान में था। उसे भी नहीं पता था कि गंगा उतरेगी या नहीं। पर वह यह कर रहा था, क्योंकि यह किया जाना आवश्यक था।
+- t4
++ drops kind=rain n=30 speed=300 color=#cfe6ff op=0.6 z=30
+NARRATOR [ecu:bhagirath] (sfx=splash): सहसा उसकी त्वचा पर पानी की कुछ बूँदें गिरीं। क्या वह आ गई थी?
+- drops
+@ brahma x=1000 y=560 s=0.9 face=-1 pose=bless emo=smile fly=1 noShadow=true item=kamandal anim=materialize
+BRAHMA (smile, pose=bless) [close:brahma]: आँखें खोलो, भगीरथ। तुम्हारे वंश के धैर्य ने हमें जीत लिया है। जो होना था, उसका समय आ गया है।
+
+# ---------------------------------------------------------------- Ganga refuses
+== SCENE ganga | set=lotusSky time=dawn music=devi amb=river,wind trans=white
++ stream kind=water x=640 y=640 w=1500 h=160 color=#dff1f8 crest=#3d8fc4 z=20
+@ ganga x=640 y=580 s=1 face=1 pose=open emo=calm fly=1 noShadow=true z=21
+@ brahma x=1060 y=560 s=0.85 face=-1 pose=open emo=calm fly=1 noShadow=true
+@ bhagirath x=260 y=650 s=0.9 face=1 pose=namaste emo=calm
+BEAT 1 [wide] (sfx=river, bells)
+BRAHMA (calm, pose=open) [close:brahma]: गंगा, तुम्हें भूलोक पर उतरना होगा। केवल सगर के पुत्रों को नहीं, हर उस प्राणी को मुक्ति देनी है, जो तुम्हारे जल में डुबकी लगाए।
+GANGA (fear) [close:ganga]: पर मैं शुद्ध हूँ, परमपिता। इतने पापियों को धोकर, क्या मेरा जल मैला नहीं हो जाएगा?
+BRAHMA (smile) [close:brahma]: नहीं, गंगा। तुम विष्णुपदी हो। निकृष्टतम को छूकर भी तुम पवित्र ही रहोगी।
+> bhagirath seat=kneel t=0.6
+BHAGIRATH (sad, pose=namaste) [close:bhagirath]: माँ, वे आपकी प्रतीक्षा कर रहे हैं। साठ हज़ार। वे अब भी जल रहे हैं। केवल आपका जल उनकी आग बुझा सकता है।
+GANGA (sad) [close:ganga]: मैं यह नहीं कर सकती।
+BRAHMA (angry) [close:brahma]: यह तुम्हारा कार्य है, गंगा। तुम्हारा अवतरण भूलोक की नसों में नया जीवन भरेगा।
+GANGA (fear, pose=open) [mid:ganga] (sfx=rumble, shake=6): वह भूलोक को धूल में मिला देगा! इतनी ऊँचाई से गिरा मेरा वेग, पृथ्वी को बीच से चीर देगा।
+NARRATOR [~wide] (sfx=heartbeat): ब्रह्मा और भगीरथ मौन खड़े रहे। फिर गंगा बोली।
+GANGA (calm) [close:ganga]: इसका एक ही उपाय है। महादेव। वही मेरे वेग को थाम सकते हैं।
+
+# ---------------------------------------------------------------- the descent
+== SCENE avataran | set=kailash time=day music=cosmic amb=storm,river trans=mandala
++ clouds kind=clouds x=640 y=120 n=3 speed=30 color=#e8eef8 edge=#8fa0d8 z=-2
+@ shiva x=640 y=650 s=1 face=1 pose=raise emo=serene
+@ bhagirath x=220 y=660 s=0.8 face=1 pose=namaste emo=fear z=2
+BEAT 1 [wide] (sfx=damaru)
+SHIVA (smile) [close:shiva]: जब मैंने सागर से निकला विष पी लिया था, तो आकाश से गिरता अमृत भी ग्रहण कर लूँगा।
++ jata kind=glow x=640 y=290 r=180 color=#3a2a1a core=0.6 z=-1 anim=pop
+NARRATOR [~close:shiva] (sfx=om): शिव कैलाश के किनारे खड़े हुए, और अपनी जटाओं की गाँठ खोल दी। जटाएँ एक विशाल पात्र की तरह फैल गईं।
++ thunder kind=bolt x=900 y=0 h=400 z=-1
+NARRATOR [~wide] (sfx=thunder, shake=6): आकाश गड़गड़ाने लगा।
+- thunder
++ falls kind=falls x=640 y=270 h=600 w0=60 w=300 flow=0 z=30
+> falls flow=1 t=3
++ spray kind=sparkle x=640 y=280 n=50 r=260 z=31
+BEAT 1 [wide] (sfx=splash, rumble, shake=8)
+NARRATOR [~at:640,250,1] (sfx=splash, rumble, shake=10): और सहसा, जलधारा फट पड़ी। तरल वज्रपात जैसी श्वेत फेन की लहर। वह निकट आई, और निकट, सौ गुना तेज़।
+NARRATOR [~at:640,300,1.3] (sfx=boom, shake=12, flash): गंगा शिव के शीश से टकराई। ब्रह्मांड काँप उठा।
+> falls flow=0.3 t=4
+- spray od=3
++ curls kind=mandala x=640 y=290 r=180 spin=80 op=0.45 z=31 anim=pop
+NARRATOR [~close:shiva] (sfx=river): पर फिर, जितना जल ऊपर से गिरा, उतना ही जटाओं में समाता गया। गंगा का वेग थम गया। वह अब स्वर्ग में नहीं थी। वह शिव की जटाओं की भूलभुलैया में कैद थी।
+- falls
+NARRATOR [~close:shiva] (sfx=bell): ब्रह्मा द्वारा जन्मी। विष्णु के चरणों से पवित्र। शिव द्वारा धारण की गई।
+GANGA (calm) [~close:shiva] (sfx=bell): मैं आपको प्रणाम करती हूँ, गंगाधर। मुझे मुक्त कीजिए, ताकि मैं अपना उद्देश्य पूरा कर सकूँ।
+> shiva emo=smile pose=bless t=0.6
++ out kind=falls x=760 y=640 h=360 w0=12 w=120 flow=0 z=30
+> out flow=1 t=2
+NARRATOR [~wide] (sfx=splash, swell): और शिव ने अपनी एक लट खोल दी।
+
+# ---------------------------------------------------------------- liberation
+== SCENE mukti | set=glade time=dawn music=wonder amb=river,birds trans=white
++ river kind=water x=640 y=640 w=1500 h=180 color=#dff1f8 crest=#3d8fc4 z=20
++ ash kind=smoke x=640 y=600 n=10 w=900 h=160 color=#6a6a6a z=21
+@ bhagirath x=280 y=650 s=0.95 face=1 pose=raise emo=joy z=22
+@ ganga x=900 y=560 s=0.9 face=-1 pose=bless emo=serene fly=1 noShadow=true z=22
+BEAT 1 [wide] (sfx=river)
+NARRATOR [~wide] (sfx=splash): भगीरथ आगे-आगे चला, और गंगा उसके पीछे-पीछे। पर्वतों से, मैदानों से, होकर सागर तक, उस राख के ढेर तक।
+- ash od=3
++ souls kind=motes x=640 y=520 n=60 w=1100 h=300 z=40
++ rise kind=rays x=640 y=200 r=800 n=30 color=#fff0b0 op=0.3 z=-5 anim=pop inDur=3
+NARRATOR [~at:640,400,1] (sfx=swell, bells): जल ने राख को छुआ। और साठ हज़ार आत्माएँ, शीतल होकर, ऊपर उठने लगीं।
+> bhagirath pose=namaste emo=sad t=0.6
+GANGA (smile) [close:ganga]: तुम्हारे कारण मैं धरती पर आई हूँ, भगीरथ। आज से मैं भागीरथी कहलाऊँगी।
+NARRATOR [~close:bhagirath] (sfx=bell): भगीरथ की आँखों से फिर आँसू बह निकले।
+
+== CHAPTER | kicker=कथा पैंसठ | title=परशुराम अवतार
+
+# ---------------------------------------------------------------- which one?
+== SCENE kaun | set=glade time=day music=tension amb=birds trans=mandala
+@ jamadagni x=1000 y=650 s=1 face=-1 pose=rest emo=calm
+@ s1 fig=rishiputra x=200 y=650 s=0.8 face=1 pose=hold emo=calm
+@ s2 fig=rishiputra x=320 y=650 s=0.8 face=1 pose=offer emo=calm
+@ s3 fig=rishiputra x=440 y=650 s=0.8 face=1 pose=rest emo=calm
+@ s4 fig=rishiputra x=560 y=650 s=0.8 face=1 pose=namaste emo=calm
+@ parashuram x=700 y=650 s=0.85 face=1 pose=hold emo=calm item=none
+BEAT 1 [wide] (sfx=bell)
+NARRATOR [~wide]: ऋषि जमदग्नि अपने पाँच पुत्रों को देख रहे थे। और एक ही प्रश्न उन्हें बार-बार सता रहा था। इनमें से कौन-सा?
+NARRATOR [close:jamadagni]: उनके पिता ऋचीक ने भविष्यवाणी की थी। तुम्हारा पुत्र एक विकट योद्धा बनेगा। ब्राह्मण के घर में, क्षत्रिय का रक्त।
+JAMADAGNI (calm) [ecu:jamadagni] (sfx=heartbeat): कौन-सा? कौन-सा?
+
+# ---------------------------------------------------------------- the broken pot
+== SCENE ghada | set=glade time=dusk music=sorrow amb=river trans=fade
++ river kind=water x=640 y=660 w=1500 h=120 color=#dff1f8 crest=#3d8fc4 z=20
+@ renuka x=560 y=650 s=0.95 face=1 pose=hold emo=calm item=kalash z=21
+@ gv fig=gandharva x=1500 y=300 s=0.6 face=-1 pose=open emo=smile fly=1 noShadow=true
+BEAT 1 [wide] (sfx=river)
+NARRATOR [~wide]: रेणुका की पवित्रता इतनी प्रबल थी, कि वे कच्ची मिट्टी के घड़े में जल भरती थीं, और वह कभी नहीं टूटता था।
+> gv x=-200 t=5
+NARRATOR [~wide] (sfx=sparkle): उस दिन, आकाश से दो गंधर्व गुज़रे। एक क्षण के लिए, रेणुका की दृष्टि उनसे मिली। और मन में एक सिहरन-सी हुई।
+> renuka item=none emo=fear pose=fear t=0.2
++ shard kind=sparkle x=600 y=560 n=12 r=60 z=40
+BEAT 0.8 [wide] (sfx=crack)
+NARRATOR [~close:renuka] (sfx=splash): घड़ा चकनाचूर हो गया, और नदी में विलीन हो गया। रेणुका समझ गईं। उन्हें पता चल गया है।
+
+# ---------------------------------------------------------------- the command
+== SCENE aagya | set=glade time=night music=curse amb=wind trans=cut
+@ jamadagni x=960 y=650 s=1 face=-1 pose=point emo=rage
+@ renuka x=700 y=650 s=0.9 face=1 pose=despair emo=sad
+@ s1 fig=rishiputra x=200 y=650 s=0.8 face=1 pose=fear emo=fear
+@ s2 fig=rishiputra x=320 y=650 s=0.8 face=1 pose=fear emo=fear
+@ parashuram x=480 y=650 s=0.85 face=1 pose=hold emo=calm
+BEAT 1 [wide] (sfx=thunder)
+JAMADAGNI (rage, pose=point) [close:jamadagni] (sfx=thunder, shake=6): तुम्हारी माँ ने अपनी पवित्रता खो दी है। मैं आज्ञा देता हूँ, इसका सिर काट दो। एक ही वार में!
+> s1 seat=kneel t=0.4
+> s2 seat=kneel t=0.4
+RISHIPUTRAS (fear, pose=namaste) [~two:s1,s2]: पिताजी! यदि उन्होंने पाप किया है, तो आप हमसे पाप क्यों करवा रहे हैं? हम उस माँ को कैसे मारें, जिसने हमें जीवन दिया?
+> parashuram item=parashu pose=strike t=0.2
++ swing kind=bolt x=700 y=0 h=640 z=60
+> renuka o=0 t=0.05
+BEAT 1.4 [wide] (sfx=whoosh, boom, flash)
+- swing
++ dark kind=tint color=#000000 op=0.6 z=55
+NARRATOR [~close:parashuram] (sfx=heartbeat): वे पीछे हट गए। सबसे छोटे पुत्र, राम, के हाथ में फरसा था।
+RISHIPUTRAS (fear) [~wide]: राम! यह तुमने क्या कर डाला?
+PARASHURAM (calm) [close:parashuram]: मैंने पिताजी की आज्ञा का पालन किया है।
+> jamadagni emo=rage t=0.2
++ stone kind=ring x=260 y=420 r=500 color=#9a9a9a z=60
+BEAT 0.8 [wide] (sfx=crack, flash)
+> s1 o=0.35 t=0.6
+> s2 o=0.35 t=0.6
+NARRATOR [~wide] (sfx=rumble): जमदग्नि की लाल आँखों ने चारों भाइयों को देखा, और वे पत्थर की मूर्तियाँ बन गए।
+- dark
+JAMADAGNI (fear) [close:jamadagni]: तो वह तुम हो। ब्रह्मक्षत्रिय। केवल तुम माँ का सिर बिना पछतावे के काट सकते थे। मुझे तुमसे डर लग रहा है, राम। पर तुमने बिना प्रश्न किए आज्ञा मानी। माँगो, दो वरदान।
+PARASHURAM (calm, pose=namaste) [close:parashuram]: मेरी माँ को फिर से जीवित कर दीजिए। और मेरे भाइयों को फिर से मनुष्य बना दीजिए।
+> renuka o=1 pose=namaste emo=serene t=1.5
+> s1 o=1 seat=none pose=namaste emo=joy t=1
+> s2 o=1 seat=none pose=namaste emo=joy t=1
++ life kind=glow x=640 y=420 r=500 color=#fff1b8 core=0.4 z=-2 anim=pop
+NARRATOR [~wide] (sfx=swell, bells): ऋषि चकित रह गए। और उनका परिवार फिर से जी उठा।
+JAMADAGNI (smile, pose=bless) [close:jamadagni]: तुमसे डरना मेरी भूल थी, राम। तुम्हारा शरीर कठोर है, आत्मा नहीं। यह फरसा केवल उन्हीं का रक्त पिएगा, जो धर्म के लिए संकट बनें। आज से तुम परशुराम हो।
+
+# ---------------------------------------------------------------- the thousand-armed king
+== SCENE sahasrarjun | set=glade time=day music=battle amb=fire,wind trans=mandala
+@ kartavirya x=360 y=650 s=1.05 face=1 pose=point emo=rage
+@ jamadagni x=920 y=650 s=0.95 face=-1 pose=abhaya emo=calm
+@ kamadhenu kind=creature creature=cow x=1150 y=690 s=0.9 face=-1 z=-1
+BEAT 1 [wide] (sfx=nagara)
+NARRATOR [~wide]: एक दिन हैहय राजा कार्तवीर्य अर्जुन आश्रम आया। उसकी एक हज़ार भुजाएँ थीं। कहते हैं, वह विष्णु के सुदर्शन चक्र का मानव अवतार था, जिसे अपनी शक्ति पर घमंड हो गया था।
+NARRATOR [two:kartavirya,kamadhenu]: आश्रम में एक दिव्य गाय थी। और राजा को ईर्ष्या हुई।
+KARTAVIRYA (rage, pose=point) [close:kartavirya] (sfx=fire): मेरे बाणों की नोक पर अग्नि है, ऋषि। वह आपकी कुटिया को चिता बना सकती है। गाय मुझे दे दो!
+JAMADAGNI (calm) [close:jamadagni]: चिता की ओर तो हम सभी जा रहे हैं, महाराज। नदी को समुद्र से क्या डर?
+> kartavirya pose=strike t=0.3
+> kamadhenu x=-200 t=3 d=0.6
+NARRATOR [~wide] (sfx=roar, clash): राजा के सैनिक, उन्हीं पर टूट पड़े जिन्होंने उन्हें भोजन परोसा था। और कार्तवीर्य, गाय छीन ले गया।
+
+# ---------------------------------------------------------------- axe against wheel
+== SCENE parashu | set=pillarSky time=night music=battle amb=storm trans=cut
+@ parashuram x=380 y=650 s=1.05 face=1 pose=strike emo=rage item=parashu
+@ kartavirya x=920 y=650 s=1.05 face=-1 pose=strike emo=rage
++ c1 kind=clash x=640 y=400 period=0.5 z=60
+BEAT 1 [wide] (sfx=clash, nagara, shake=6)
+NARRATOR [~wide] (sfx=clash, roar): क्रोधित परशुराम ने कार्तवीर्य का किला तहस-नहस कर दिया, और उसकी हज़ार भुजाएँ, एक-एक करके काट डालीं।
+- c1
+> kartavirya arms=2 pose=fear emo=fear t=0.1
+PARASHURAM (rage) [close:parashuram]: तुम्हारा समय हो गया, सुदर्शन। अब तुम्हारा सिर वैसे ही कटेगा, जैसे तुम दूसरों का काटते हो।
++ fin kind=bolt x=920 y=0 h=640 z=60
+> kartavirya o=0 t=0.2
+BEAT 1.4 [wide] (sfx=whoosh, boom, flash)
+- fin
+NARRATOR [~close:parashuram] (sfx=bell): विष्णु के फरसे ने, विष्णु के चक्र को काट दिया।
+
+# ---------------------------------------------------------------- twenty-one times
+== SCENE ikkis | set=pillarSky time=dusk music=curse amb=wind,fire trans=fade tint=#3a0a0a,0.35
+@ parashuram x=640 y=650 s=1.1 face=1 pose=raise emo=rage item=parashu
++ lakes kind=water x=640 y=680 w=1500 h=100 color=#a8303a crest=#5a0a1a z=20
+BEAT 1 [wide] (sfx=wind)
+NARRATOR [~wide] (sfx=heartbeat): पर रक्तपात थमा नहीं। परशुराम की अनुपस्थिति में, कार्तवीर्य के पुत्रों ने आश्रम पर हमला किया, और जमदग्नि पर इक्कीस वार करके उनके प्राण ले लिए।
+PARASHURAM (rage, pose=raise) [close:parashuram] (sfx=thunder, shake=8): मैं शपथ लेता हूँ। हर वह क्षत्रिय, जो दूसरों पर अत्याचार करेगा, मेरे परशु का भोजन बनेगा!
++ t21 kind=text x=640 y=130 text="इक्कीस बार" size=64 z=70
+NARRATOR [~wide] (sfx=nagara, clash): और परशुराम ने इक्कीस बार, पृथ्वी को अधर्मी राजाओं से मुक्त किया। जितने वार उनके पिता पर हुए थे।
+- t21
+NARRATOR [~wide] (sfx=wind): इतना रक्त बहा, कि पाँच सरोवर बन गए। उस भूमि का नाम पड़ा, स्यमंतपंचक। और युगों बाद, उसी भूमि पर एक और महासंहार हुआ।
++ t2 kind=text x=640 y=130 text="कुरुक्षेत्र" size=72 z=70
+NARRATOR [~close:parashuram] (sfx=conch): महाभारत।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night,river trans=fade
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1.2 [wide] (sfx=veena)
+NARAD (smile) [mid:narad]: देखा? जिस बालक को गर्भ में विष दिया गया, उसी के वंश ने अमृत धरती पर उतारा। और जिस देवता ने विष पिया था, उसी ने अमृत को अपनी जटा में थामा।
+NARAD (calm, pose=open) [close:narad]: पर गंगा को लाने में चार पीढ़ियाँ लगीं, और परशुराम के क्रोध को शांत होने में इक्कीस। कुछ कार्य एक जीवन में पूरे नहीं होते।
+NARAD (sly) [ecu:narad]: अगली बार? समुद्र के पार एक सोने की नगरी। उसे बनाया किसी और के लिए गया था, पर उस पर बैठा एक दस सिरों वाला राजा। और उसी वंश की एक बहू, जिसकी कथा सब जानते हैं। पर पूरी नहीं।
+BEAT 1.5 [~close:narad] (sfx=veena)
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=कुबेर · रावण · सीता · माया सीता
+NARRATOR: अगले अध्याय में: लंका। सोने की नगरी, दस सिरों वाला राजा, एक शिवलिंग जो धरती पर रख दिया गया, और सीता की छाया।
+
+== END | dur=13 | title=महागाथा | sub=अध्याय नौ · गंगावतरण | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 62, 63 और 65);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर

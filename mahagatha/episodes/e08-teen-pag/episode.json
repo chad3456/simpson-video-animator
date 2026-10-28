@@ -1,0 +1,3513 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "तीन पग",
+  "episode": "8",
+  "slug": "e08-teen-pag",
+  "kicker": "अध्याय आठ",
+  "sub": "विश्वामित्र, त्रिशंकु और वामन",
+  "logline": "एक राजा जिसे एक गाय ने ऋषि बना दिया, एक राजकुमार जो स्वर्ग और धरती के बीच उल्टा लटक गया, और एक नन्हा ब्राह्मण जिसने तीन पग में तीनों लोक नाप लिए।",
+  "stories": "58, 59, 50",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 58, 59 और 50"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "vishnu": {
+   "label": "विष्णु",
+   "fig": "vishnu",
+   "voice": "hm_omega:0.8+am_michael:0.2",
+   "speed": 0.94,
+   "pitch": 0,
+   "fx": "divine"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "indra": {
+   "label": "इंद्र",
+   "fig": "indra",
+   "voice": "hm_psi:0.65+am_liam:0.35",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "bali": {
+   "label": "बलि",
+   "fig": "bali",
+   "voice": "hm_omega:0.65+am_michael:0.35",
+   "speed": 0.95,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "kashyap": {
+   "label": "कश्यप",
+   "fig": "kashyap",
+   "voice": "hm_omega:0.7+bm_george:0.3",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "aditi": {
+   "label": "अदिति",
+   "fig": "aditi",
+   "voice": "hf_alpha:0.7+af_sarah:0.3",
+   "speed": 0.92,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "vamana": {
+   "label": "वामन",
+   "fig": "vamana",
+   "voice": "hf_beta:0.5+am_puck:0.5",
+   "speed": 0.98,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "trivikram": {
+   "label": "त्रिविक्रम",
+   "fig": "trivikram",
+   "voice": "hm_omega:0.6+am_michael:0.4",
+   "speed": 0.84,
+   "pitch": -3,
+   "fx": "divine_big"
+  },
+  "shukra": {
+   "label": "शुक्राचार्य",
+   "fig": "shukra",
+   "voice": "hm_psi:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "pitch": -2,
+   "formant": "shifted",
+   "fx": "elder"
+  },
+  "kaushik": {
+   "label": "कौशिक",
+   "fig": "kaushik",
+   "voice": "hm_omega:0.55+am_eric:0.45",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "vishwamitra": {
+   "label": "विश्वामित्र",
+   "fig": "vishwamitra",
+   "voice": "hm_omega:0.55+am_eric:0.45",
+   "speed": 0.94,
+   "pitch": -2,
+   "fx": "cave"
+  },
+  "vasishtha": {
+   "label": "वसिष्ठ",
+   "fig": "vasishtha",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.88,
+   "pitch": -1,
+   "fx": "elder"
+  },
+  "saraswati": {
+   "label": "सरस्वती",
+   "fig": "saraswati",
+   "voice": "hf_beta:0.6+af_river:0.4",
+   "speed": 0.93,
+   "pitch": 1,
+   "fx": "dream"
+  },
+  "trayaruni": {
+   "label": "त्रय्यारुणि",
+   "fig": "trayaruni",
+   "voice": "hm_psi:0.6+bm_daniel:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "satyavrat": {
+   "label": "सत्यव्रत",
+   "fig": "satyavrat",
+   "voice": "hm_omega:0.5+am_liam:0.5",
+   "speed": 1.02,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "trishanku": {
+   "label": "त्रिशंकु",
+   "fig": "trishanku",
+   "voice": "hm_omega:0.5+am_liam:0.5",
+   "speed": 1.04,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "gramin": {
+   "label": "स्त्री",
+   "fig": "gramin",
+   "voice": "hf_alpha:0.55+af_jessica:0.45",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "ganga": {
+   "label": "गंगा",
+   "fig": "ganga",
+   "voice": "hf_beta:0.6+af_nova:0.4",
+   "speed": 0.95,
+   "pitch": 1,
+   "fx": "dream"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! आज तीन कथाएँ हैं, और तीनों में एक ही प्रश्न। कितना पर्याप्त है?",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "एक राजा, जिसके पास सब कुछ था, पर उसे एक गाय चाहिए थी। एक राजकुमार, जिसे स्वर्ग चाहिए था, पर शरीर समेत।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और एक असुर, जिसके पास तीनों लोक थे। और जिसने एक नन्हे ब्राह्मण को, केवल तीन पग भूमि दान में दी।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "चलिए, देखते हैं किसका पेट भरा, और किसका मन।",
+     "cam": "ecu:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय आठ",
+   "title": "तीन पग",
+   "sub": "विश्वामित्र, त्रिशंकु और वामन"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा अट्ठावन",
+   "title": "विश्वामित्र और वसिष्ठ",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "ashram",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "vasishtha",
+     "x": 880,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "offer",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kaushik",
+     "x": 380,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "hips",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sly",
+        "t": 1
+       }
+      ],
+      "8": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sainik",
+     "fig": "indra",
+     "x": 220,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "kamadhenu",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 1500,
+     "y": 690,
+     "s": 1,
+     "face": -1,
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 1100,
+        "t": 2.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "kg",
+     "kind": "glow",
+     "x": 1100,
+     "y": 600,
+     "r": 200,
+     "color": "#fff6d8",
+     "core": 0.5,
+     "z": -1,
+     "anim": "pop",
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "राजा कौशिक योग्य शासक था। शत्रु उससे डरते थे, प्रजा उसका आदर करती थी। पर उसके माता-पिता के मन में एक भविष्यवाणी खंजर की तरह गड़ी थी। यह शासन तो करेगा, पर अंत में ऋषि बन जाएगा।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "एक शाम, शिकार से थका कौशिक अपनी सेना के साथ वसिष्ठ के आश्रम पहुँचा। सीमित साधनों वाले उस ऋषि ने ऐसा स्वागत किया, ऐसा पेय, ऐसा भोजन, कि राजा की रसोई भी लज्जित हो जाए।",
+     "cam": "two:kaushik,vasishtha"
+    },
+    {
+     "who": "kaushik",
+     "text": "ऋषिवर, ऐसे उपहार मैंने पहले कभी नहीं देखे। आपके पास कौन-सा खज़ाना है, जिसके आगे राजा भी लज्जित हो जाएँ?",
+     "cam": "close:kaushik"
+    },
+    {
+     "who": "vasishtha",
+     "text": "मेरा खज़ाना वहाँ है।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "kaushik",
+     "text": "एक गाय?",
+     "camMove": true,
+     "cam": "close:kaushik"
+    },
+    {
+     "who": "vasishtha",
+     "text": "यह कोई साधारण गाय नहीं। आपके सामने कामधेनु खड़ी हैं। हर मनोकामना पूरी करने वाली गौ माता।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "narrator",
+     "text": "राजा की आँखें फैल गईं। चेहरे पर लालच उतर आया। मन में बस एक ही वाक्य गूँज रहा था। यह मुझे चाहिए।",
+     "camMove": true,
+     "cam": "close:kaushik",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "kaushik",
+     "text": "आप ब्राह्मण हैं, आपकी आवश्यकताएँ थोड़ी हैं। यह चमत्कारी पशु आपके किस काम का? इसे मुझे दे दीजिए। मैं इससे अपनी प्रजा का पालन करूँगा।",
+     "cam": "close:kaushik"
+    },
+    {
+     "who": "vasishtha",
+     "text": "मैं इसे धन के लिए नहीं, धर्म के लिए रखता हूँ, राजन। यह देवताओं और पितरों के संस्कार पूरे करती है।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "kaushik",
+     "text": "आप मुझे मना कर रहे हैं? मैं यहाँ का राजा हूँ!",
+     "cam": "close:kaushik"
+    },
+    {
+     "who": "vasishtha",
+     "text": "इसीलिए, क्योंकि मैं उन शक्तियों के प्रति उत्तरदायी हूँ, जिन्होंने आपको राजा बनाया।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "narrator",
+     "text": "राजा ने रत्न दिए, सोने के सिक्के दिए, एक हज़ार गाएँ दीं, घोड़े और हाथी जोड़े। ऋषि ने सब ठुकरा दिया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "kaushik",
+     "text": "सैनिको! गाय को पकड़ लो!",
+     "cam": "close:kaushik"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds",
+    "river"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "kamadhenu",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "kamadhenu",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 900,
+     "y": 690,
+     "s": 1.1,
+     "face": -1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "s": 1.4,
+        "y": 700,
+        "t": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "s1",
+     "fig": "indra",
+     "x": 420,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "reach",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "s2",
+     "fig": "manu",
+     "x": 300,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "pose": "reach",
+     "emo": "angry",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.4,
+        "d": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "kaushik",
+     "x": 160,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "point",
+     "emo": "rage",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": -200,
+        "t": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "eyes",
+     "kind": "glow",
+     "x": 990,
+     "y": 600,
+     "r": 120,
+     "color": "#ff3a2a",
+     "core": 1,
+     "z": 10,
+     "anim": "pop",
+     "in": 1
+    },
+    {
+     "id": "w1",
+     "fig": "gana",
+     "x": 760,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": 2,
+     "kind": "char",
+     "in": 2
+    },
+    {
+     "id": "w2",
+     "fig": "asura2",
+     "x": 1040,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": 2,
+     "kind": "char",
+     "in": 2
+    },
+    {
+     "id": "w3",
+     "fig": "veerabhadra",
+     "x": 1180,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": 1,
+     "kind": "char",
+     "in": 2
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 600,
+     "y": 400,
+     "period": 0.6,
+     "z": 60,
+     "in": 2,
+     "out": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "सैनिक आगे बढ़े, और गाय का रूप बदलने लगा। आँखें अंगार बन गईं। सींग और खुर बढ़ गए।",
+     "camMove": true,
+     "cam": "close:kamadhenu",
+     "sfx": "rumble",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "और कामधेनु के रोम-रोम से योद्धा प्रकट होने लगे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar",
+     "clash": true,
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "राजा की सेना पल भर में समाप्त हो गई। और कौशिक, अपने प्राण बचाकर भागा।",
+     "camMove": true,
+     "cam": "close:kaushik",
+     "sfx": "boom"
+    }
+   ],
+   "tint": [
+    "#2a0a0a",
+    0.25
+   ],
+   "music": "battle",
+   "amb": [
+    "storm",
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "pratibimb",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1060,
+     "y": 150,
+     "r": 50,
+     "phase": 0.3,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "kaushik",
+     "x": 520,
+     "y": 640,
+     "s": 1,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "pose": "raise",
+        "emo": "rage",
+        "t": 0.4
+       },
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "pose": "meditate",
+        "emo": "meditate",
+        "seat": "lotus",
+        "t": 1
+       }
+      ]
+     },
+     "out": 7
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "x": 820,
+     "y": 300,
+     "text": "तलवार",
+     "size": 44,
+     "z": 70,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "t2",
+     "kind": "text",
+     "x": 820,
+     "y": 300,
+     "text": "मोती",
+     "size": 44,
+     "z": 70,
+     "in": 3,
+     "out": 4
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "x": 820,
+     "y": 300,
+     "text": "मुकुट",
+     "size": 44,
+     "z": 70,
+     "in": 4,
+     "out": 5
+    },
+    {
+     "id": "ages",
+     "kind": "moonphase",
+     "x": 640,
+     "y": 200,
+     "r": 70,
+     "phase": 0,
+     "z": -3,
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "phase": 1,
+        "t": 6
+       }
+      ]
+     }
+    },
+    {
+     "id": "yr",
+     "kind": "text",
+     "x": 640,
+     "y": 110,
+     "text": "एक हज़ार वर्ष",
+     "size": 56,
+     "z": 70,
+     "in": 6
+    },
+    {
+     "id": "vishwamitra",
+     "x": 520,
+     "y": 640,
+     "s": 1,
+     "face": 1,
+     "pose": "meditate",
+     "emo": "calm",
+     "seat": "lotus",
+     "anim": "materialize",
+     "inDur": 2,
+     "kind": "char",
+     "in": 7
+    },
+    {
+     "id": "vg",
+     "kind": "glow",
+     "x": 520,
+     "y": 420,
+     "r": 300,
+     "color": "#ffb070",
+     "core": 0.5,
+     "z": -2,
+     "anim": "pop",
+     "in": 7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "जंगल में एक तालाब के किनारे, कौशिक गिर पड़ा। और जल में उसे अपना प्रतिबिंब दिखा, जो फुसफुसा रहा था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उसकी तलवार बोली। यह वह शक्ति है, जिसने एक तपस्वी के जादू के आगे घुटने टेक दिए।",
+     "camMove": true,
+     "cam": "at:760,560,1.3",
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "उसके मोती बोले। यह वह संपत्ति है, जो एक ऋषि के चिथड़ों से हार गई।",
+     "camMove": true,
+     "cam": "at:760,560,1.3",
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "और उसका अपना चेहरा बोला। यह वह राजा है, जो एक ब्राह्मण के आगे हार गया।",
+     "camMove": true,
+     "cam": "at:760,560,1.4",
+     "sfx": "magic"
+    },
+    {
+     "who": "kaushik",
+     "text": "मैं, कौशिक, आज राज्य त्यागता हूँ। अब मैं क्षत्रिय नहीं, ब्राह्मण हूँ। और मैं उस वसिष्ठ से श्रेष्ठ बनूँगा, जिसने आज मुझे हराया है!",
+     "cam": "close:kaushik"
+    },
+    {
+     "who": "narrator",
+     "text": "उसने आँखें बंद कीं। जब खोलीं, तो एक हज़ार वर्ष बीत चुके थे।",
+     "camMove": true,
+     "cam": "full:kaushik",
+     "sfx": "om",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "भविष्यवाणी सच हो गई थी। राजा कौशिक, ऋषि विश्वामित्र बन चुका था।",
+     "camMove": true,
+     "cam": "close:vishwamitra",
+     "sfx": "bell"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "sarasvati",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "river",
+     "kind": "water",
+     "x": 640,
+     "y": 640,
+     "w": 1500,
+     "h": 180,
+     "color": "#cfe6f0",
+     "crest": "#3d8fc4",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "vishwamitra",
+     "x": 260,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "point",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "pose": "strike",
+        "emo": "rage",
+        "t": 0.4
+       }
+      ],
+      "7": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasishtha",
+     "x": 1080,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "meditate",
+     "emo": "serene",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "x": 700,
+        "t": 2
+       }
+      ],
+      "7": [
+       {
+        "x": 1080,
+        "t": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "saraswati",
+     "x": 660,
+     "y": 560,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "fear",
+     "fly": 1,
+     "noShadow": true,
+     "z": 21,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "x": 900,
+        "face": -1,
+        "t": 1.5
+       },
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "red",
+     "kind": "water",
+     "x": 640,
+     "y": 640,
+     "w": 1500,
+     "h": 180,
+     "color": "#a8303a",
+     "crest": "#5a0a1a",
+     "op": 0,
+     "z": 22,
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "op": 1,
+        "t": 3
+       }
+      ],
+      "9": [
+       {
+        "op": 0,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "fog",
+     "kind": "smoke",
+     "x": 640,
+     "y": 600,
+     "n": 10,
+     "w": 1300,
+     "h": 200,
+     "color": "#5a2a2a",
+     "z": 30,
+     "in": 8,
+     "out": 9
+    },
+    {
+     "id": "pure",
+     "kind": "glow",
+     "x": 640,
+     "y": 560,
+     "r": 400,
+     "color": "#fff1d0",
+     "core": 0.4,
+     "z": -2,
+     "anim": "pop",
+     "in": 9
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "तप की शक्ति लेकर विश्वामित्र सरस्वती नदी के तट पर पहुँचे। नदी के उस पार, वसिष्ठ का आश्रम था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "सरस्वती! अपनी धारा से वसिष्ठ को मेरे पास ले आओ!",
+     "cam": "close:vishwamitra"
+    },
+    {
+     "who": "saraswati",
+     "text": "ऋषिवर, मैं एक ब्राह्मण की हत्या में सहायक नहीं बन सकती।",
+     "cam": "close:saraswati"
+    },
+    {
+     "who": "saraswati",
+     "text": "ऋषिवर वसिष्ठ, वे आपको मारना चाहते हैं।",
+     "cam": "close:saraswati"
+    },
+    {
+     "who": "vasishtha",
+     "text": "लगता है, वे विश्वामित्र से अधिक, कौशिक ही बने रहना चाहते हैं। चलो, मुझे उनके पास ले चलो।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "narrator",
+     "text": "विश्वामित्र अस्त्र खोजने लगे। और नदी डर गई। वह तेज़ी से मुड़ी, और वसिष्ठ को फिर सुरक्षित तट पर ले गई।",
+     "camMove": true,
+     "cam": "two:vishwamitra,vasishtha",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "तुम्हारी धारा अब केवल दैत्यों और दानवों का पोषण करेगी!",
+     "cam": "close:vishwamitra"
+    },
+    {
+     "who": "narrator",
+     "text": "सरस्वती लाल हो गई। उसमें रक्त के बुलबुले उठने लगे। पेड़ सूख गए, मछलियाँ सतह पर तैरने लगीं। एक वर्ष तक वह नदी, ब्रह्मांड के चेहरे पर एक घाव बनी रही।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "अंत में वसिष्ठ उसके स्रोत तक गए, और उसे फिर शुद्ध किया। और उसमें से एक नई धारा जन्मी। अरुणा, जिसका रंग लाल था।",
+     "camMove": true,
+     "cam": "close:vasishtha",
+     "sfx": "bell",
+     "splash": true
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "river"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "chapter8",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा उनसठ",
+   "title": "त्रिशंकु आकाश से गिरा",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "nirvasan",
+   "set": "court",
+   "ctx": {
+    "wall": "#3a1a0a"
+   },
+   "els": [
+    {
+     "id": "trayaruni",
+     "x": 900,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasishtha",
+     "x": 380,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "point",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "gong"
+    },
+    {
+     "who": "narrator",
+     "text": "अयोध्या में राजा त्रय्यारुणि राज करते थे। पर उनका पुत्र सत्यव्रत, अपने नाम का अपमान था। न सत्य बोलता था, न धर्म का अर्थ जानता था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "trayaruni",
+     "text": "आप चाहते हैं कि मैं राजकुमार को निर्वासित कर दूँ? वही तो मेरा उत्तराधिकारी है!",
+     "cam": "close:trayaruni"
+    },
+    {
+     "who": "vasishtha",
+     "text": "मैं आपकी पीड़ा समझता हूँ, महाराज। पर अंग सड़ जाए, तो उसे काटना पड़ता है।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "trayaruni",
+     "text": "वह मेरा पुत्र है। वही मुझे मृत्यु के बाद नरक से बचाएगा।",
+     "cam": "close:trayaruni"
+    },
+    {
+     "who": "vasishtha",
+     "text": "प्रजा को पीड़ित देखने से अच्छा है, आप स्वयं नरक जाएँ। आप क्या चुनेंगे, महाराज?",
+     "cam": "mid:vasishtha"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "akal",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "pyre",
+     "kind": "fire",
+     "x": 1040,
+     "y": 640,
+     "size": 1.6,
+     "z": -1,
+     "in": 0,
+     "out": 3
+    },
+    {
+     "id": "smoke",
+     "kind": "smoke",
+     "x": 1040,
+     "y": 520,
+     "n": 8,
+     "w": 200,
+     "h": 300,
+     "color": "#6a5a4a",
+     "z": -2,
+     "in": 0,
+     "out": 3
+    },
+    {
+     "id": "satyavrat",
+     "x": 600,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": 820,
+        "pose": "reach",
+        "emo": "angry",
+        "t": 1
+       },
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "pose": "raise",
+        "emo": "calm",
+        "t": 0.4
+       },
+       {
+        "emo": "calm",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gramin",
+     "x": 1000,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "reach",
+     "emo": "sad",
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "pose": "reach",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "boy",
+     "fig": "prahlad",
+     "x": 1140,
+     "y": 660,
+     "s": 0.7,
+     "face": -1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": -1,
+     "kind": "char",
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire"
+    },
+    {
+     "who": "narrator",
+     "text": "सत्यव्रत नगर के बाहर, चांडालों के बीच रहने लगा। जलती चिताओं के पास सोता, और मृतकों को मोक्ष पाते देखता।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर समाचार आया। पुत्र के शोक में राजा की मृत्यु हो गई। राजा के बिना राज्य अशुभ हो गया। धरती बंजर हुई, और बारह वर्ष का अकाल पड़ा।",
+     "camMove": true,
+     "cam": "close:satyavrat",
+     "sfx": "bell"
+    },
+    {
+     "who": "gramin",
+     "text": "भोजन के बदले मेरा पुत्र! इसे ले जाओ, बदले में कुछ खाने को दे दो!",
+     "cam": "close:gramin"
+    },
+    {
+     "who": "satyavrat",
+     "text": "तुम अपने ही पुत्र को कैसे बेच सकती हो?",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "gramin",
+     "text": "वैसे ही, जैसे आपके पिता ने आपको निकाल दिया था! हम मनुष्यों के पास चुनने का विकल्प नहीं होता। मेरा आकलन करने से पहले बताइए, क्या आप हमारी भूख का ध्यान रखेंगे?",
+     "cam": "close:gramin"
+    },
+    {
+     "who": "satyavrat",
+     "text": "हाँ। रखूँगा।",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "narrator",
+     "text": "पर उस सूखी धरती पर भोजन कहाँ से आता? हताश सत्यव्रत ने वसिष्ठ के आश्रम से एक गाय चुराई, और उसके प्राण ले लिए। स्त्री के परिवार का पेट तो भरा, पर उसके द्वार पर वसिष्ठ खड़े थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "wind"
+    }
+   ],
+   "tint": [
+    "#3a2a0a",
+    0.3
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind",
+    "fire"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "shaap",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "vasishtha",
+     "x": 880,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "rest",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "satyavrat",
+     "x": 400,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "x": 640,
+     "y": 140,
+     "text": "तीन पाप",
+     "size": 64,
+     "z": 70,
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "satyavrat",
+     "text": "आइए, ऋषिवर। आप निश्चय ही मुझे शाप देने आए हैं।",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "vasishtha",
+     "text": "हाँ। इसीलिए आया हूँ।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "satyavrat",
+     "text": "तो दीजिए। मुझे कोई पछतावा नहीं। शरीर का पोषण हो, तभी आत्मा का पोषण होता है। मैंने बहुतों को बचाने के लिए एक प्राणी को मारा है।",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "vasishtha",
+     "text": "तुमने गाय चुराई और उसे मारा। तुमने उसे खाया। और इस अधर्म से अपने पिता और पूर्वजों को कुपित किया।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "vasishtha",
+     "text": "तीन पाप, सत्यव्रत। आज से तुम त्रिशंकु कहलाओगे। और तीनों लोकों में तुम्हें कहीं विश्राम नहीं मिलेगा!",
+     "cam": "ecu:vasishtha"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "vardan",
+   "set": "glade",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "satyavrat",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishwamitra",
+     "x": 900,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "t": 0.3
+       },
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "तभी स्त्री का पति लौटा। उसने सारा वृत्तांत सुना, और राजकुमार को आश्चर्य से देखता रहा।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "तुमने मेरे परिवार के लिए स्वयं को संकट में डाला। तुम्हें शाप किसने दिया?",
+     "cam": "close:vishwamitra"
+    },
+    {
+     "who": "satyavrat",
+     "text": "ऋषि वसिष्ठ ने।",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "वसिष्ठ? मैं उसका शाप तो नहीं काट सकता। पर तुम्हें वरदान दे सकता हूँ। कुछ भी माँग लो। कुछ भी।",
+     "cam": "close:vishwamitra"
+    },
+    {
+     "who": "satyavrat",
+     "text": "मैं स्वर्ग जाना चाहता हूँ। इसी नश्वर शरीर के साथ। मैंने चांडालों के बीच देखा है, मृत्यु के बाद शरीर का क्या होता है।",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "जैसा तुम चाहो।",
+     "cam": "close:vishwamitra"
+    },
+    {
+     "who": "satyavrat",
+     "text": "हे पावन पुरुष, आपका नाम?",
+     "cam": "close:satyavrat"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "विश्वामित्र।",
+     "cam": "ecu:vishwamitra"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "aarohan",
+   "set": "yajna",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "vishwamitra",
+     "x": 300,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "raise",
+     "emo": "calm",
+     "seat": "lotus",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "trishanku",
+     "x": 760,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "y": 200,
+        "fly": 1,
+        "t": 6
+       }
+      ]
+     }
+    },
+    {
+     "id": "lift",
+     "kind": "glow",
+     "x": 760,
+     "y": 520,
+     "r": 200,
+     "color": "#ffd27a",
+     "core": 0.6,
+     "z": -1,
+     "anim": "pop",
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire",
+     "om": true
+    },
+    {
+     "who": "narrator",
+     "text": "वर्षों बाद, त्रिशंकु का पुत्र हरिश्चंद्र अयोध्या का राजा बना। और विश्वामित्र ने यज्ञ आरंभ किया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "और त्रिशंकु अपने शरीर समेत ऊपर उठने लगा। बादलों को चीरता हुआ, सूर्य और चंद्र से भी ऊँचा।",
+     "camMove": true,
+     "cam": "at:760,400,1",
+     "sfx": "swell",
+     "whoosh": true
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "fire"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "dvaar",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "gate",
+     "kind": "mandala",
+     "x": 1000,
+     "y": 360,
+     "r": 260,
+     "spin": 10,
+     "op": 0.4,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "indra",
+     "x": 1040,
+     "y": 600,
+     "s": 0.95,
+     "face": -1,
+     "pose": "point",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "pose": "strike",
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "agni",
+     "x": 1180,
+     "y": 600,
+     "s": 0.85,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "pose": "strike",
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "trishanku",
+     "x": 300,
+     "y": 600,
+     "s": 0.8,
+     "face": 1,
+     "pose": "reach",
+     "emo": "joy",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": 700,
+        "t": 2
+       },
+       {
+        "x": 520,
+        "t": 0.5
+       },
+       {
+        "x": 760,
+        "t": 0.6,
+        "d": 0.6
+       },
+       {
+        "x": 480,
+        "t": 0.5,
+        "d": 1.3
+       }
+      ],
+      "5": [
+       {
+        "y": 1200,
+        "rot": 180,
+        "t": 2.5,
+        "d": 0.4
+       }
+      ],
+      "6": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "shove",
+     "kind": "ring",
+     "x": 600,
+     "y": 420,
+     "r": 600,
+     "color": "#f6e7a6",
+     "z": 60,
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "indra",
+     "text": "यह कैसी अराजकता? स्वर्ग में आत्माएँ आती हैं, शरीर नहीं! और ऐसा व्यक्ति, जिसने तीन पाप किए हों? कदापि नहीं!",
+     "cam": "close:indra"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "और आप देवता, सबको इन लोकों से दूर ही रखते हैं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "indra",
+     "text": "ध्रुव को देखिए। स्वयं श्रीहरि ने उसे आकाश के शिखर पर तारा बनाया। योग्य को कोई नहीं रोकता। पर आप तो बस स्वयं को वसिष्ठ से श्रेष्ठ सिद्ध करना चाहते हैं!",
+     "cam": "close:indra"
+    },
+    {
+     "who": "narrator",
+     "text": "देवता द्वार पर इकट्ठे हुए, और त्रिशंकु को पीछे धकेलने लगे। मनुष्य की इच्छा घुसपैठ कर रही थी, देवताओं की इच्छा उसे रोक रही थी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash",
+     "whoosh": true
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "boom",
+     "whoosh": true,
+     "shake": 8
+    },
+    {
+     "who": "trishanku",
+     "text": "ऋषिवर, मुझे बचाइए!",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "beech",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "stars",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 360,
+     "n": 60,
+     "r": 700,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "trishanku",
+     "x": 640,
+     "y": -200,
+     "s": 0.85,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "fly": 1,
+     "noShadow": true,
+     "rot": 180,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "y": 300,
+        "t": 2
+       },
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "1": [
+       {
+        "y": 340,
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishwamitra",
+     "x": 200,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "kind": "char",
+     "in": 1,
+     "keys": {
+      "3": [
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "mantra",
+     "kind": "ring",
+     "x": 640,
+     "y": 300,
+     "r": 300,
+     "color": "#ffb070",
+     "z": 60,
+     "in": 1
+    },
+    {
+     "id": "newsky",
+     "kind": "mandala",
+     "x": 640,
+     "y": 300,
+     "r": 360,
+     "spin": 30,
+     "op": 0.35,
+     "z": -2,
+     "anim": "pop",
+     "in": 4
+    },
+    {
+     "id": "newstars",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 300,
+     "n": 40,
+     "r": 380,
+     "z": -1,
+     "in": 4
+    },
+    {
+     "id": "indra",
+     "x": 1080,
+     "y": 520,
+     "s": 0.8,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "abhaya",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "who": "trishanku",
+     "text": "कुछ कीजिए! मेरी सहायता कीजिए!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "om",
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "और अचानक, वह बीच में रुक गया। धरती और आकाश के मुहाने पर। विश्वामित्र के एक मंत्र ने उसे वहीं थाम लिया था।",
+     "camMove": true,
+     "cam": "at:640,340,1.2",
+     "sfx": "bell"
+    },
+    {
+     "who": "vishwamitra",
+     "text": "देवता उसे स्वर्ग नहीं देंगे? तो मैं उसके लिए एक नया स्वर्ग रचूँगा!",
+     "cam": "close:vishwamitra"
+    },
+    {
+     "who": "narrator",
+     "text": "और ऋषि ने एक समानांतर स्वर्ग गढ़ना आरंभ कर दिया। नए तारे, नए नक्षत्र।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "magic",
+     "swell": true
+    },
+    {
+     "who": "indra",
+     "text": "बस, ऋषिवर। एक समझौता हो। त्रिशंकु जहाँ है, वहीं रहेगा। पर उल्टा लटका रहेगा।",
+     "cam": "close:indra"
+    },
+    {
+     "who": "narrator",
+     "text": "और इस तरह, त्रिशंकु वहीं लटका रह गया। स्वर्ग और पृथ्वी के बीच। अधर में। अपने ही स्वर्ग में, सिर के बल।",
+     "camMove": true,
+     "cam": "close:trishanku",
+     "sfx": "wind"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter16",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा पचास",
+   "title": "वामन अवतार",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "aditi",
+   "set": "kailash",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "aditi",
+     "x": 480,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "pose": "meditate",
+        "emo": "meditate",
+        "seat": "lotus",
+        "t": 1
+       }
+      ],
+      "7": [
+       {
+        "emo": "angry",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kashyap",
+     "x": 900,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "open",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 5
+    },
+    {
+     "id": "blue",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#7aa0ff",
+     "core": 0.5,
+     "z": -3,
+     "anim": "pop",
+     "inDur": 3,
+     "in": 5
+    },
+    {
+     "id": "vishnu",
+     "x": 880,
+     "y": 560,
+     "s": 0.9,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "6": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gem",
+     "kind": "sparkle",
+     "x": 480,
+     "y": 520,
+     "n": 30,
+     "r": 150,
+     "z": 40,
+     "in": 10
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "देवमाता अदिति धरती पर लेटी रो रही थीं। शुक्राचार्य की सहायता से दैत्यराज बलि ने फिर स्वर्ग जीत लिया था, और इंद्र अपने भाइयों के साथ ब्रह्मांड में भटक रहे थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "kashyap",
+     "text": "मैं तुम्हें इस तरह रोते नहीं देख सकता। तुम्हें क्या चाहिए?",
+     "cam": "close:kashyap"
+    },
+    {
+     "who": "aditi",
+     "text": "माँ का हृदय संतान से बँधा होता है। मेरे आदित्य अब हँसते तक नहीं। मैं कैसे मुस्कुराऊँ?",
+     "cam": "close:aditi"
+    },
+    {
+     "who": "kashyap",
+     "text": "तो विष्णु का तप करो। फाल्गुन में सब अन्न त्यागकर केवल दूध पियो, और केवल उनका नाम जपो।",
+     "cam": "mid:kashyap"
+    },
+    {
+     "who": "narrator",
+     "text": "जल्द ही अदिति की आँखों के सामने, नीले रंग की दिव्य छटा बिखर गई।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "om",
+     "swell": true
+    },
+    {
+     "who": "vishnu",
+     "text": "मैं भी वही चाहता हूँ जो तुम चाहती हो, देवमाता। पर बलि अत्याचारी नहीं। वह उदार है। उसके द्वार से कोई खाली हाथ नहीं लौटता। बलि मुझे प्रिय है।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "aditi",
+     "text": "वह स्वयं संत हो सकता है, पर उसके असुर हर पवित्र वस्तु को उजाड़ रहे हैं, और वह उन्हें रोकता नहीं। यह वंश की नहीं, धर्म की बात है।",
+     "cam": "close:aditi"
+    },
+    {
+     "who": "aditi",
+     "text": "और भगवन, मैं चाहती हूँ कि यह सम्मान मेरे ही किसी पुत्र को मिले।",
+     "cam": "close:aditi"
+    },
+    {
+     "who": "vishnu",
+     "text": "तो एक उपाय करते हैं। मेरा अगला अवतार, आपके गर्भ से जन्म लेगा।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु अंतर्धान हो गए। पर अदिति जानती थीं, कि वे अब उनके भीतर बढ़ रहे हैं, हज़ारों नीले रत्नों की तरह।",
+     "camMove": true,
+     "cam": "close:aditi",
+     "sfx": "sparkle",
+     "bells": true
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "janma",
+   "set": "glade",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 200,
+     "n": 40,
+     "w": 1300,
+     "colors": "#f2c230,#f6d24a,#fbf3df",
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "vamana",
+     "x": 640,
+     "y": 660,
+     "s": 0.8,
+     "face": 1,
+     "pose": "hold",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 2,
+     "item": "chhatra",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "vg",
+     "kind": "glow",
+     "x": 640,
+     "y": 480,
+     "r": 260,
+     "color": "#ffd27a",
+     "core": 0.5,
+     "z": -2,
+     "anim": "pop",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "conch",
+     "bells": true
+    },
+    {
+     "who": "narrator",
+     "text": "भाद्रपद में जब वह जन्मा, तो वृक्षों से पीले फूल बरसने लगे। ब्रह्मा ने ताम्रपात्र दिया, शिव ने रुद्राक्ष, बृहस्पति ने जनेऊ। सूर्य ने छत्र, चंद्र ने दंड।",
+     "camMove": true,
+     "cam": "full:vamana",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "बालक बावन अंगुल ऊँचा था। और इससे अधिक नहीं बढ़ा। वह वामन था। त्रेता युग में विष्णु का पहला अवतार।",
+     "camMove": true,
+     "cam": "close:vamana"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "ashvamedh",
+   "set": "yajna",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "bali",
+     "x": 860,
+     "y": 650,
+     "s": 1.05,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "pose": "namaste",
+        "t": 0.4
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "15": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "17": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "shukra",
+     "x": 1080,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "raise",
+     "emo": "calm",
+     "item": "sword",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "fear",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "a1",
+     "fig": "asura2",
+     "x": 1230,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "rest",
+     "emo": "joy",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "14": [
+       {
+        "emo": "joy",
+        "pose": "hips",
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "vamana",
+     "x": -100,
+     "y": 660,
+     "s": 0.7,
+     "face": 1,
+     "pose": "hold",
+     "emo": "serene",
+     "item": "chhatra",
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "x": 420,
+        "t": 4
+       }
+      ],
+      "8": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "16": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "t3",
+     "kind": "text",
+     "x": 640,
+     "y": 140,
+     "text": "तीन पग",
+     "size": 72,
+     "z": 70,
+     "in": 14,
+     "out": 15
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire",
+     "nagara": true
+    },
+    {
+     "who": "narrator",
+     "text": "बलि ने भव्य अश्वमेध यज्ञ रचा। वेदी से अग्नि का स्तंभ उठ रहा था, अप्सराएँ नृत्य कर रही थीं। अश्व ब्रह्मांड घूमकर बिना चुनौती के लौट आया था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "जैसे ही शुक्राचार्य ने तलवार उठाई, वे रुक गए। उन्हें कुछ सुनाई दिया। पदचाप।",
+     "cam": "close:shukra",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "एक हाथ में छत्र, दूसरे में दंड। माथे पर चंदन, तन पर जनेऊ। असुरों के बीच वह नन्हा ब्राह्मण, और भी छोटा दिख रहा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "shukra",
+     "text": "हमसे कोई चूक हो गई है। हमने तो किसी ब्राह्मण को बुलाया ही नहीं।",
+     "cam": "close:shukra"
+    },
+    {
+     "who": "bali",
+     "text": "क्या यह ब्रह्मा के चार कुमारों में से कोई है?",
+     "cam": "close:bali"
+    },
+    {
+     "who": "shukra",
+     "text": "नहीं। यह कोई और है। इसका आभामंडल सबसे अलग है। सावधान, राजन। यह जो भी माँगे, वचन मत देना।",
+     "cam": "close:shukra"
+    },
+    {
+     "who": "bali",
+     "text": "आप मुझे अपने ही स्वभाव के विरुद्ध जाने को कह रहे हैं, गुरुदेव। यह कैसे होगा?",
+     "cam": "close:bali"
+    },
+    {
+     "who": "vamana",
+     "text": "राजन, आप दीर्घायु हों। मैंने सुना है, आपके पितामह प्रह्लाद भक्ति का रूप हैं, और आप दान का। आप किसी को मना नहीं करते।",
+     "cam": "close:vamana"
+    },
+    {
+     "who": "bali",
+     "text": "यदि दाता ब्रह्मांड है, तो मैं मना करने वाला कौन?",
+     "cam": "close:bali"
+    },
+    {
+     "who": "vamana",
+     "text": "तो जो मैं माँगूँ, वह आप देंगे?",
+     "cam": "close:vamana"
+    },
+    {
+     "who": "narrator",
+     "text": "शुक्राचार्य के माथे पर पसीना छलक आया। सबकी साँसें थम गईं।",
+     "camMove": true,
+     "cam": "close:shukra",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "bali",
+     "text": "बताइए, पूज्य। आप क्या चाहते हैं?",
+     "cam": "close:bali"
+    },
+    {
+     "who": "vamana",
+     "text": "भूमि। मेरे तीन पग के बराबर।",
+     "cam": "close:vamana"
+    },
+    {
+     "who": "narrator",
+     "text": "कोई हँसा, कोई सोच में डूब गया। शुक्राचार्य वामन के पैरों को देख रहे थे। कमल की दो कलियों जितने नन्हे पाँव।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "manjira"
+    },
+    {
+     "who": "bali",
+     "text": "बस इतनी-सी? यह तो कुछ भी नहीं!",
+     "cam": "close:bali"
+    },
+    {
+     "who": "vamana",
+     "text": "जो तीन पग से संतुष्ट नहीं, वह किसी वस्तु से संतुष्ट नहीं होगा। जैसे मैं अपने आकार से संतुष्ट हूँ, वैसे ही इतनी भूमि से।",
+     "cam": "close:vamana"
+    },
+    {
+     "who": "bali",
+     "text": "तो मैं दान करता हूँ। आप पग कहाँ रखना चाहेंगे?",
+     "cam": "close:bali"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "fire",
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "trivikram",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "halo",
+     "kind": "mandala",
+     "x": 640,
+     "y": 360,
+     "r": 460,
+     "spin": 12,
+     "op": 0.35,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "stars",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 360,
+     "n": 60,
+     "r": 700,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "trivikram",
+     "x": 640,
+     "y": 1500,
+     "s": 0.5,
+     "face": 1,
+     "pose": "bless",
+     "emo": "serene",
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "s": 3.2,
+        "y": 1900,
+        "t": 6
+       }
+      ],
+      "3": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "bali",
+     "x": 200,
+     "y": 680,
+     "s": 0.6,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": 10,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "10": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.6
+       },
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "earth",
+     "kind": "earth",
+     "x": 360,
+     "y": 420,
+     "r": 120,
+     "z": 5,
+     "anim": "pop",
+     "in": 4
+    },
+    {
+     "id": "p1",
+     "kind": "ring",
+     "x": 360,
+     "y": 420,
+     "r": 400,
+     "color": "#7aa0ff",
+     "z": 60,
+     "in": 4
+    },
+    {
+     "id": "swarga",
+     "kind": "lotus",
+     "x": 920,
+     "y": 300,
+     "size": 1.4,
+     "open": 1,
+     "z": 5,
+     "anim": "pop",
+     "in": 7
+    },
+    {
+     "id": "p2",
+     "kind": "ring",
+     "x": 920,
+     "y": 300,
+     "r": 400,
+     "color": "#ffd27a",
+     "z": 60,
+     "in": 7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "और तभी, वामन का आकार बढ़ने लगा। उसके अंग खिंचने लगे, धड़ फैलने लगा, उसका मुख बादलों के पार निकल गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell",
+     "rumble": true,
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "वह त्रिविक्रम बन चुका था। इतना विराट, कि असुरों को अब केवल उसके पैर के अँगूठे का सिरा दिखाई दे रहा था।",
+     "camMove": true,
+     "cam": "at:640,360,0.9",
+     "sfx": "om"
+    },
+    {
+     "who": "trivikram",
+     "text": "राजन, मैं अपना पहला पग यहाँ रखता हूँ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "boom",
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "और उसने पूरी पृथ्वी नाप ली।",
+     "camMove": true,
+     "cam": "at:360,420,1.2",
+     "sfx": "swell"
+    },
+    {
+     "who": "trivikram",
+     "text": "राजन, मैं अपना दूसरा पग यहाँ रखता हूँ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "boom",
+     "bells": true,
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "फिर समूचा स्वर्ग। ब्रह्मा ने उनके चरणों में प्रणाम किया, और अपने कमंडल के जल से उन्हें धोया।",
+     "camMove": true,
+     "cam": "at:920,300,1.2",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "trivikram",
+     "text": "राजन, तीसरा पग कहाँ रखूँ?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "bali",
+     "text": "आप वामन नहीं हैं।",
+     "cam": "close:bali"
+    },
+    {
+     "who": "trivikram",
+     "text": "मैं वामन हूँ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "bali",
+     "text": "आप श्री विष्णु हैं। वह असीम, जो मुझे बता रहा है, कि मैं कितना सीमित हूँ।",
+     "cam": "close:bali"
+    },
+    {
+     "who": "trivikram",
+     "text": "तीसरा पग कहाँ रखूँ, राजन?",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "cosmic",
+   "amb": [
+    "void",
+    "wind"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "teesra",
+   "set": "yajna",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "bali",
+     "x": 640,
+     "y": 680,
+     "s": 1,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "serene",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "y": 1100,
+        "t": 3,
+        "d": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "shukra",
+     "x": 1080,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "point",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sky",
+     "kind": "glow",
+     "x": 640,
+     "y": 0,
+     "r": 700,
+     "color": "#4a6ae8",
+     "core": 0.8,
+     "z": 30,
+     "op": 0,
+     "anim": "pop",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "y": 200,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "down",
+     "kind": "ring",
+     "x": 640,
+     "y": 600,
+     "r": 700,
+     "color": "#7aa0ff",
+     "z": 60,
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "bali",
+     "text": "प्रभु, दो पग में आपने सब नाप लिया। मेरे पास अब कुछ शेष नहीं। केवल एक स्थान है, जो मैं विनम्रता से दे सकता हूँ।",
+     "cam": "close:bali"
+    },
+    {
+     "who": "bali",
+     "text": "अपना तीसरा पग, मेरे मस्तक पर रख दीजिए।",
+     "cam": "ecu:bali"
+    },
+    {
+     "who": "shukra",
+     "text": "यह छल है, राजन! जैसे इसने मोहिनी बनकर हमें छला था, वैसे ही वामन बनकर आपको छल रहा है! आँखें खोलिए!",
+     "cam": "close:shukra"
+    },
+    {
+     "who": "bali",
+     "text": "मैंने हृदय खोल दिया है, गुरुदेव। अपने पितामह प्रह्लाद की तरह।",
+     "cam": "close:bali"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु का नीला चरण ऐसे उतरा, मानो आकाश ही नीचे गिर रहा हो। असुर भागने लगे। उन्हें लगा, उनका राजा कुचला जाएगा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "rumble",
+     "swell": true
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "cam": "wide",
+     "sfx": "boom",
+     "shake": 10,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "पर चरण ने उसे कुचला नहीं। नीचे धकेल दिया। नीचे, और नीचे। ब्रह्मांड की रीढ़ के सहारे, सुतल लोक तक।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh"
+    }
+   ],
+   "music": "vishnu",
+   "amb": [
+    "fire"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "sutal",
+   "set": "void",
+   "ctx": {},
+   "els": [
+    {
+     "id": "deep",
+     "kind": "glow",
+     "x": 640,
+     "y": 400,
+     "r": 460,
+     "color": "#3a4ad8",
+     "core": 0.4,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "gems",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 400,
+     "n": 40,
+     "r": 600,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "bali",
+     "x": 420,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "pose": "raise",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishnu",
+     "x": 880,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "vishnu",
+     "text": "तुम वास्तव में अतुलनीय हो, बलि। तीनों लोक याद रखेंगे, कि एक असुर ने अपना सर्वस्व दान कर दिया। मैं तुम्हें पाताल का सम्राट घोषित करता हूँ।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "और स्वर्ग में, इंद्र फिर देवराज बन गए।",
+     "camMove": true,
+     "cam": "close:bali",
+     "sfx": "conch"
+    }
+   ],
+   "music": "vishnu",
+   "amb": [
+    "void"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "vishnupadi",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "brahma",
+     "x": 380,
+     "y": 600,
+     "s": 0.95,
+     "face": 1,
+     "pose": "offer",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "item": "kamandal",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "indra",
+     "x": 1040,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "stream",
+     "kind": "water",
+     "x": 760,
+     "y": 640,
+     "w": 900,
+     "h": 160,
+     "color": "#dff1f8",
+     "crest": "#3d8fc4",
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "ganga",
+     "x": 760,
+     "y": 600,
+     "s": 0.95,
+     "face": 1,
+     "pose": "bless",
+     "emo": "serene",
+     "anim": "rise",
+     "inDur": 2.5,
+     "z": 21,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "6": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gg",
+     "kind": "glow",
+     "x": 760,
+     "y": 420,
+     "r": 320,
+     "color": "#d8f0ff",
+     "core": 0.6,
+     "z": -1,
+     "anim": "pop",
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "river"
+    },
+    {
+     "who": "indra",
+     "text": "पितामह, यह जल कैसा है?",
+     "cam": "close:indra"
+    },
+    {
+     "who": "brahma",
+     "text": "यह वामन का चरणामृत है। इसी से मैंने श्रीहरि के चरण धोए थे। और देखो, उस धारा ने क्या रूप लिया है।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "जल से एक सुंदर स्त्री उठी। उसके केश लहरें थे, उसकी हँसी झरने की कल-कल।",
+     "camMove": true,
+     "cam": "full:ganga",
+     "sfx": "swell",
+     "bells": true
+    },
+    {
+     "who": "indra",
+     "text": "इसका नाम क्या है, परमपिता?",
+     "cam": "close:indra"
+    },
+    {
+     "who": "brahma",
+     "text": "विष्णु के चरणों से पवित्र हुई है, इसलिए विष्णुपदी। पर मुझे इसे गंगा कहना अच्छा लगता है।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "ganga",
+     "text": "गंगा।",
+     "cam": "ecu:ganga"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "river",
+    "birds"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 700,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "तो देखा? कौशिक को एक गाय चाहिए थी, और उसने एक हज़ार वर्ष तप में बिता दिए। त्रिशंकु को स्वर्ग चाहिए था, और वह आज भी उल्टा लटका है।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और बलि? उसने सब दे दिया। अपना सिर तक। और उसे वह मिला, जो किसी असुर को नहीं मिला। श्रीहरि का चरण।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और वह धारा, जो ब्रह्मा के कमंडल में बंद है? वह एक दिन धरती पर उतरेगी। पर धरती उसका वेग सह पाएगी? इसके लिए चाहिए होगी, शिव की जटा।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next25",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले अध्याय में: साठ हज़ार राजकुमारों की राख, एक राजा का तप, और आकाश से उतरती गंगा।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "गंगावतरण · भगीरथ · शिव की जटा",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end26",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय आठ · तीन पग",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 50, 58 और 59)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

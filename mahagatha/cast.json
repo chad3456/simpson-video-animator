@@ -1,0 +1,1326 @@
+{
+ "narrator": {
+  "label": "कथावाचक",
+  "narrator": true,
+  "voice": "hm_omega:0.62+bm_george:0.38",
+  "speed": 0.93,
+  "pitch": -1,
+  "fx": "storyteller"
+ },
+ "narad": {
+  "label": "नारद",
+  "fig": "narad",
+  "voice": "hm_psi:0.72+am_puck:0.28",
+  "speed": 1.07,
+  "pitch": 2,
+  "formant": "shifted",
+  "fx": "bright"
+ },
+ "vishnu": {
+  "label": "विष्णु",
+  "fig": "vishnu",
+  "voice": "hm_omega:0.8+am_michael:0.2",
+  "speed": 0.94,
+  "pitch": 0,
+  "fx": "divine"
+ },
+ "hayagriva": {
+  "label": "हयग्रीव",
+  "fig": "hayagriva",
+  "voice": "hm_omega:0.7+am_onyx:0.3",
+  "speed": 0.9,
+  "pitch": -3,
+  "formant": "shifted",
+  "fx": "divine_big"
+ },
+ "brahma": {
+  "label": "ब्रह्मा",
+  "fig": "brahma",
+  "voice": "hm_psi:0.6+bm_george:0.4",
+  "speed": 0.9,
+  "pitch": -2,
+  "fx": "elder"
+ },
+ "shiva": {
+  "label": "शिव",
+  "fig": "shiva",
+  "voice": "hm_omega:0.6+am_onyx:0.4",
+  "speed": 0.86,
+  "pitch": -3,
+  "fx": "cave"
+ },
+ "rudra": {
+  "label": "रुद्र",
+  "fig": "rudra",
+  "voice": "hm_omega:0.5+am_onyx:0.5",
+  "speed": 0.9,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "roar"
+ },
+ "madhu": {
+  "label": "मधु",
+  "fig": "madhu",
+  "voice": "hm_omega:0.55+am_fenrir:0.45",
+  "speed": 1.0,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "kaitabh": {
+  "label": "कैटभ",
+  "fig": "kaitabh",
+  "voice": "hm_psi:0.5+am_fenrir:0.5",
+  "speed": 1.04,
+  "pitch": -6,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "twins": {
+  "label": "मधु-कैटभ",
+  "twin": [
+   "madhu",
+   "kaitabh"
+  ]
+ },
+ "nidra": {
+  "label": "योगनिद्रा",
+  "fig": "nidra",
+  "voice": "hf_beta:0.7+af_nicole:0.3",
+  "speed": 0.84,
+  "pitch": -1,
+  "fx": "dream"
+ },
+ "devi": {
+  "label": "आदिशक्ति",
+  "fig": "devi",
+  "voice": "hf_alpha:0.72+af_heart:0.28",
+  "speed": 0.9,
+  "pitch": -1,
+  "fx": "divine"
+ },
+ "ardha": {
+  "label": "अर्धनारीश्वर",
+  "duet": [
+   "shiva",
+   "devi"
+  ]
+ },
+ "kumaras": {
+  "label": "चार कुमार",
+  "fig": "kumara",
+  "voice": "hf_beta:0.8+af_sky:0.2",
+  "speed": 1.02,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "chorus"
+ },
+ "sanak": {
+  "label": "सनक",
+  "fig": "kumara",
+  "voice": "hf_beta:0.8+af_sky:0.2",
+  "speed": 1.02,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "dharma": {
+  "label": "धर्म",
+  "fig": "dharma",
+  "creature": "bull",
+  "voice": "hm_psi:0.6+am_echo:0.4",
+  "speed": 0.95,
+  "pitch": -1,
+  "formant": "shifted",
+  "fx": "room"
+ },
+ "rishi": {
+  "label": "ऋषि",
+  "fig": "rishi",
+  "voice": "hm_omega:0.5+bm_lewis:0.5",
+  "speed": 0.9,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "atri": {
+  "label": "अत्रि",
+  "fig": "rishi",
+  "voice": "hm_omega:0.5+bm_lewis:0.5",
+  "speed": 0.9,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "marichi": {
+  "label": "मरीचि",
+  "fig": "rishi",
+  "voice": "hm_psi:0.6+bm_daniel:0.4",
+  "speed": 0.92,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "shatarupa": {
+  "label": "शतरूपा",
+  "fig": "shatarupa",
+  "voice": "hf_alpha:0.62+af_bella:0.38",
+  "speed": 0.94,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "manu": {
+  "label": "मनु",
+  "fig": "manu",
+  "voice": "hm_psi:0.7+am_adam:0.3",
+  "speed": 0.96,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "daksha": {
+  "label": "दक्ष",
+  "fig": "daksha",
+  "voice": "hm_psi:0.6+am_eric:0.4",
+  "speed": 1.03,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "ketaki": {
+  "label": "केतकी",
+  "fig": "ketaki",
+  "creature": "ketaki",
+  "voice": "hf_beta:0.85+af_kore:0.15",
+  "speed": 1.05,
+  "pitch": 2,
+  "formant": "shifted",
+  "fx": "small"
+ },
+ "sati": {
+  "label": "सती",
+  "fig": "sati",
+  "voice": "hf_alpha:0.6+af_aoede:0.4",
+  "speed": 0.95,
+  "pitch": 1,
+  "fx": "room"
+ },
+ "parvati": {
+  "label": "पार्वती",
+  "fig": "parvati",
+  "voice": "hf_beta:0.7+af_heart:0.3",
+  "speed": 0.94,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "lakshmi": {
+  "label": "लक्ष्मी",
+  "fig": "lakshmi",
+  "voice": "hf_alpha:0.5+hf_beta:0.5",
+  "speed": 0.92,
+  "pitch": 0,
+  "fx": "divine"
+ },
+ "indra": {
+  "label": "इंद्र",
+  "fig": "indra",
+  "voice": "hm_psi:0.65+am_liam:0.35",
+  "speed": 1.0,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "child": {
+  "label": "बालक",
+  "fig": "kumara",
+  "voice": "hf_beta:0.85+af_sky:0.15",
+  "speed": 1.0,
+  "pitch": 4,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "asura": {
+  "label": "असुर",
+  "fig": "madhu",
+  "voice": "hm_omega:0.5+am_fenrir:0.5",
+  "speed": 1.0,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "chandra": {
+  "label": "चंद्र",
+  "fig": "chandra",
+  "voice": "hm_psi:0.62+am_adam:0.38",
+  "speed": 0.98,
+  "pitch": 1,
+  "fx": "divine"
+ },
+ "rohini": {
+  "label": "रोहिणी",
+  "fig": "rohini",
+  "voice": "hf_alpha:0.7+af_nicole:0.3",
+  "speed": 0.96,
+  "pitch": 1,
+  "fx": "room"
+ },
+ "nakshatras": {
+  "label": "नक्षत्र",
+  "fig": "nakshatra",
+  "voice": "hf_beta:0.75+af_sarah:0.25",
+  "speed": 1.0,
+  "pitch": 1,
+  "fx": "chorus"
+ },
+ "nandi": {
+  "label": "नंदी",
+  "fig": "dharma",
+  "creature": "bull",
+  "voice": "hm_omega:0.6+am_echo:0.4",
+  "speed": 0.95,
+  "pitch": -3,
+  "formant": "shifted",
+  "fx": "room"
+ },
+ "dadhichi": {
+  "label": "दधीचि",
+  "fig": "dadhichi",
+  "voice": "hm_omega:0.55+bm_george:0.45",
+  "speed": 0.88,
+  "pitch": -2,
+  "fx": "elder"
+ },
+ "veerabhadra": {
+  "label": "वीरभद्र",
+  "fig": "veerabhadra",
+  "voice": "hm_omega:0.4+am_onyx:0.6",
+  "speed": 0.9,
+  "pitch": -7,
+  "formant": "shifted",
+  "fx": "roar"
+ },
+ "prasuti": {
+  "label": "प्रसूति",
+  "fig": "prasuti",
+  "voice": "hf_alpha:0.55+bf_emma:0.45",
+  "speed": 0.94,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "bhrigu": {
+  "label": "भृगु",
+  "fig": "bhrigu",
+  "voice": "hm_psi:0.55+bm_lewis:0.45",
+  "speed": 0.92,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "jaya": {
+  "label": "जय",
+  "fig": "jaya",
+  "voice": "hm_psi:0.6+am_liam:0.4",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "vijaya": {
+  "label": "विजय",
+  "fig": "vijaya",
+  "voice": "hm_omega:0.6+am_eric:0.4",
+  "speed": 1.02,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "dvarpal": {
+  "label": "जय-विजय",
+  "twin": [
+   "jaya",
+   "vijaya"
+  ]
+ },
+ "vaivasvat": {
+  "label": "वैवस्वत",
+  "fig": "vaivasvat",
+  "voice": "hm_psi:0.65+bm_daniel:0.35",
+  "speed": 0.97,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "matsya": {
+  "label": "मत्स्य",
+  "fig": "vishnu",
+  "voice": "hm_omega:0.75+am_michael:0.25",
+  "speed": 0.92,
+  "pitch": -1,
+  "fx": "divine_big"
+ },
+ "minnow": {
+  "label": "नन्ही मछली",
+  "voice": "hf_beta:0.8+af_sky:0.2",
+  "speed": 1.05,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "small"
+ },
+ "hiranyaksha": {
+  "label": "हिरण्याक्ष",
+  "fig": "hiranyaksha",
+  "voice": "hm_omega:0.5+am_fenrir:0.5",
+  "speed": 0.98,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "hiranyakashipu": {
+  "label": "हिरण्यकशिपु",
+  "fig": "hiranyakashipu",
+  "voice": "hm_psi:0.5+am_onyx:0.5",
+  "speed": 0.95,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "prahlad": {
+  "label": "प्रह्लाद",
+  "fig": "prahlad",
+  "voice": "hf_beta:0.75+am_puck:0.25",
+  "speed": 1.0,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "holika": {
+  "label": "होलिका",
+  "fig": "holika",
+  "voice": "hf_alpha:0.6+af_bella:0.4",
+  "speed": 1.02,
+  "pitch": -3,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "narasimha": {
+  "label": "नृसिंह",
+  "fig": "narasimha",
+  "voice": "hm_omega:0.4+am_onyx:0.6",
+  "speed": 0.86,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "roar"
+ },
+ "bhudevi": {
+  "label": "भूदेवी",
+  "voice": "hf_alpha:0.7+af_sarah:0.3",
+  "speed": 0.92,
+  "pitch": -1,
+  "fx": "dream"
+ },
+ "devas": {
+  "label": "देवता",
+  "fig": "indra",
+  "voice": "hm_psi:0.6+am_liam:0.4",
+  "speed": 1.0,
+  "pitch": 0,
+  "fx": "chorus"
+ },
+ "diti": {
+  "label": "दिति",
+  "fig": "diti",
+  "voice": "hf_alpha:0.6+bf_isabella:0.4",
+  "speed": 0.95,
+  "pitch": -2,
+  "formant": "shifted",
+  "fx": "cave"
+ },
+ "vajranga": {
+  "label": "वज्रांग",
+  "fig": "vajranga",
+  "voice": "hm_omega:0.6+am_adam:0.4",
+  "speed": 0.96,
+  "pitch": -3,
+  "fx": "room"
+ },
+ "taraka": {
+  "label": "तारकासुर",
+  "fig": "taraka",
+  "voice": "hm_psi:0.45+am_fenrir:0.55",
+  "speed": 0.96,
+  "pitch": -6,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "kama": {
+  "label": "कामदेव",
+  "fig": "kama",
+  "voice": "hm_psi:0.6+am_puck:0.4",
+  "speed": 1.04,
+  "pitch": 1,
+  "fx": "bright"
+ },
+ "rati": {
+  "label": "रति",
+  "fig": "rati",
+  "voice": "hf_beta:0.6+af_aoede:0.4",
+  "speed": 0.92,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "maina": {
+  "label": "मैना",
+  "fig": "maina",
+  "voice": "hf_alpha:0.6+bf_alice:0.4",
+  "speed": 0.95,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "kartikeya": {
+  "label": "कार्तिकेय",
+  "fig": "kartikeya",
+  "voice": "hf_beta:0.55+am_puck:0.45",
+  "speed": 1.0,
+  "pitch": 2,
+  "formant": "shifted",
+  "fx": "divine"
+ },
+ "krittikas": {
+  "label": "कृत्तिकाएँ",
+  "fig": "krittika",
+  "voice": "hf_alpha:0.7+af_kore:0.3",
+  "speed": 1.02,
+  "pitch": 1,
+  "fx": "chorus"
+ },
+ "agni": {
+  "label": "अग्नि",
+  "fig": "agni",
+  "voice": "hm_psi:0.6+am_eric:0.4",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "durvasa": {
+  "label": "दुर्वासा",
+  "fig": "durvasa",
+  "voice": "hm_omega:0.5+bm_lewis:0.5",
+  "speed": 1.04,
+  "pitch": -2,
+  "fx": "elder"
+ },
+ "bali": {
+  "label": "बलि",
+  "fig": "bali",
+  "voice": "hm_omega:0.65+am_michael:0.35",
+  "speed": 0.95,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "mohini": {
+  "label": "मोहिनी",
+  "fig": "mohini",
+  "voice": "hf_beta:0.55+af_bella:0.45",
+  "speed": 0.9,
+  "pitch": 1,
+  "fx": "dream"
+ },
+ "swarbhanu": {
+  "label": "स्वरभानु",
+  "fig": "swarbhanu",
+  "voice": "hm_psi:0.5+am_fenrir:0.5",
+  "speed": 1.0,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "surya": {
+  "label": "सूर्य",
+  "fig": "surya",
+  "voice": "hm_omega:0.6+am_liam:0.4",
+  "speed": 1.02,
+  "pitch": 0,
+  "fx": "bright"
+ },
+ "asuras": {
+  "label": "असुर",
+  "fig": "asura2",
+  "voice": "hm_omega:0.5+am_fenrir:0.5",
+  "speed": 1.0,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "chorus"
+ },
+ "bhasmasur": {
+  "label": "भस्मासुर",
+  "fig": "bhasmasur",
+  "voice": "hm_psi:0.45+am_onyx:0.55",
+  "speed": 1.0,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "yama": {
+  "label": "यम",
+  "fig": "asura2",
+  "voice": "hm_omega:0.6+am_onyx:0.4",
+  "speed": 0.9,
+  "pitch": -4,
+  "fx": "cave"
+ },
+ "vrika": {
+  "label": "वृकासुर",
+  "fig": "bhasmasur",
+  "voice": "hm_psi:0.45+am_onyx:0.55",
+  "speed": 1.0,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "ganesha": {
+  "label": "गणेश",
+  "fig": "ganesha",
+  "voice": "hm_psi:0.5+am_puck:0.5",
+  "speed": 0.98,
+  "pitch": 0,
+  "fx": "bright"
+ },
+ "ganeshboy": {
+  "label": "बालक",
+  "fig": "ganeshboy",
+  "voice": "hf_beta:0.6+am_puck:0.4",
+  "speed": 1.04,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "durga": {
+  "label": "दुर्गा",
+  "fig": "durga",
+  "voice": "hf_alpha:0.65+af_nicole:0.35",
+  "speed": 0.92,
+  "pitch": -2,
+  "fx": "divine_big"
+ },
+ "kali": {
+  "label": "काली",
+  "fig": "kali",
+  "voice": "hf_alpha:0.5+af_kore:0.5",
+  "speed": 0.9,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "mahishasura": {
+  "label": "महिषासुर",
+  "fig": "mahishasura",
+  "voice": "hm_omega:0.4+am_fenrir:0.6",
+  "speed": 0.92,
+  "pitch": -7,
+  "formant": "shifted",
+  "fx": "roar"
+ },
+ "shumbha": {
+  "label": "शुंभ",
+  "fig": "shumbha",
+  "voice": "hm_psi:0.55+am_eric:0.45",
+  "speed": 0.96,
+  "pitch": -3,
+  "fx": "growl"
+ },
+ "nishumbha": {
+  "label": "निशुंभ",
+  "fig": "nishumbha",
+  "voice": "hm_omega:0.55+am_liam:0.45",
+  "speed": 1.02,
+  "pitch": -2,
+  "formant": "shifted",
+  "fx": "room"
+ },
+ "raktabeej": {
+  "label": "रक्तबीज",
+  "fig": "raktabeej",
+  "voice": "hm_psi:0.4+am_onyx:0.6",
+  "speed": 1.0,
+  "pitch": -6,
+  "formant": "shifted",
+  "fx": "chorus"
+ },
+ "kashyap": {
+  "label": "कश्यप",
+  "fig": "kashyap",
+  "voice": "hm_omega:0.7+bm_george:0.3",
+  "speed": 0.9,
+  "pitch": -2,
+  "fx": "elder"
+ },
+ "sugriva_doot": {
+  "label": "दूत",
+  "fig": "asura2",
+  "voice": "hm_psi:0.6+am_adam:0.4",
+  "speed": 1.06,
+  "pitch": 1,
+  "fx": "room"
+ },
+ "chanda": {
+  "label": "चंड",
+  "fig": "asura2",
+  "voice": "hm_omega:0.6+am_michael:0.4",
+  "speed": 1.04,
+  "pitch": -3,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "munda": {
+  "label": "मुंड",
+  "fig": "gana",
+  "voice": "hm_psi:0.6+am_fenrir:0.4",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "growl"
+ },
+ "chandmund": {
+  "label": "चंड-मुंड",
+  "duet": [
+   "chanda",
+   "munda"
+  ],
+  "fx": "room"
+ },
+ "ganas": {
+  "label": "गण",
+  "fig": "gana",
+  "voice": "hm_omega:0.5+am_fenrir:0.5",
+  "speed": 1.0,
+  "pitch": -2,
+  "fx": "chorus"
+ },
+ "shumbhnishumbh": {
+  "label": "शुंभ-निशुंभ",
+  "duet": [
+   "shumbha",
+   "nishumbha"
+  ],
+  "fx": "room"
+ },
+ "aditi": {
+  "label": "अदिति",
+  "fig": "aditi",
+  "voice": "hf_alpha:0.7+af_sarah:0.3",
+  "speed": 0.92,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "vamana": {
+  "label": "वामन",
+  "fig": "vamana",
+  "voice": "hf_beta:0.5+am_puck:0.5",
+  "speed": 0.98,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "trivikram": {
+  "label": "त्रिविक्रम",
+  "fig": "trivikram",
+  "voice": "hm_omega:0.6+am_michael:0.4",
+  "speed": 0.84,
+  "pitch": -3,
+  "fx": "divine_big"
+ },
+ "shukra": {
+  "label": "शुक्राचार्य",
+  "fig": "shukra",
+  "voice": "hm_psi:0.6+bm_lewis:0.4",
+  "speed": 0.95,
+  "pitch": -2,
+  "formant": "shifted",
+  "fx": "elder"
+ },
+ "kaushik": {
+  "label": "कौशिक",
+  "fig": "kaushik",
+  "voice": "hm_omega:0.55+am_eric:0.45",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "vishwamitra": {
+  "label": "विश्वामित्र",
+  "fig": "vishwamitra",
+  "voice": "hm_omega:0.55+am_eric:0.45",
+  "speed": 0.94,
+  "pitch": -2,
+  "fx": "cave"
+ },
+ "vasishtha": {
+  "label": "वसिष्ठ",
+  "fig": "vasishtha",
+  "voice": "hm_psi:0.6+bm_george:0.4",
+  "speed": 0.88,
+  "pitch": -1,
+  "fx": "elder"
+ },
+ "saraswati": {
+  "label": "सरस्वती",
+  "fig": "saraswati",
+  "voice": "hf_beta:0.6+af_river:0.4",
+  "speed": 0.93,
+  "pitch": 1,
+  "fx": "dream"
+ },
+ "trayaruni": {
+  "label": "त्रय्यारुणि",
+  "fig": "trayaruni",
+  "voice": "hm_psi:0.6+bm_daniel:0.4",
+  "speed": 0.9,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "satyavrat": {
+  "label": "सत्यव्रत",
+  "fig": "satyavrat",
+  "voice": "hm_omega:0.5+am_liam:0.5",
+  "speed": 1.02,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "trishanku": {
+  "label": "त्रिशंकु",
+  "fig": "trishanku",
+  "voice": "hm_omega:0.5+am_liam:0.5",
+  "speed": 1.04,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "gramin": {
+  "label": "स्त्री",
+  "fig": "gramin",
+  "voice": "hf_alpha:0.55+af_jessica:0.45",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "ganga": {
+  "label": "गंगा",
+  "fig": "ganga",
+  "voice": "hf_beta:0.6+af_nova:0.4",
+  "speed": 0.95,
+  "pitch": 1,
+  "fx": "dream"
+ },
+ "subahu": {
+  "label": "सुबाहु",
+  "fig": "subahu",
+  "voice": "hm_psi:0.6+am_adam:0.4",
+  "speed": 0.96,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "yadavi": {
+  "label": "यादवी",
+  "fig": "yadavi",
+  "voice": "hf_alpha:0.6+af_aoede:0.4",
+  "speed": 0.95,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "aurva": {
+  "label": "और्व",
+  "fig": "aurva",
+  "voice": "hm_omega:0.6+bm_fable:0.4",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "sagar": {
+  "label": "सगर",
+  "fig": "sagar",
+  "voice": "hm_omega:0.6+am_onyx:0.4",
+  "speed": 0.92,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "anshuman": {
+  "label": "अंशुमान",
+  "fig": "anshuman",
+  "voice": "hm_psi:0.55+am_liam:0.45",
+  "speed": 1.0,
+  "pitch": 1,
+  "fx": "room"
+ },
+ "sagarputras": {
+  "label": "साठ हज़ार पुत्र",
+  "fig": "sagarputra",
+  "voice": "hm_omega:0.5+am_michael:0.5",
+  "speed": 1.04,
+  "pitch": 0,
+  "fx": "chorus"
+ },
+ "kapil": {
+  "label": "कपिल",
+  "fig": "kapil",
+  "voice": "hm_psi:0.6+bm_george:0.4",
+  "speed": 0.86,
+  "pitch": -2,
+  "fx": "divine"
+ },
+ "bhagirath": {
+  "label": "भगीरथ",
+  "fig": "bhagirath",
+  "voice": "hm_omega:0.55+am_eric:0.45",
+  "speed": 0.95,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "jamadagni": {
+  "label": "जमदग्नि",
+  "fig": "jamadagni",
+  "voice": "hm_psi:0.55+am_onyx:0.45",
+  "speed": 0.92,
+  "pitch": -3,
+  "fx": "elder"
+ },
+ "renuka": {
+  "label": "रेणुका",
+  "fig": "renuka",
+  "voice": "hf_alpha:0.6+af_heart:0.4",
+  "speed": 0.94,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "parashuram": {
+  "label": "परशुराम",
+  "fig": "parashuram",
+  "voice": "hm_omega:0.5+am_fenrir:0.5",
+  "speed": 0.93,
+  "pitch": -3,
+  "fx": "cave"
+ },
+ "rishiputras": {
+  "label": "चार भाई",
+  "fig": "rishiputra",
+  "voice": "hm_psi:0.5+am_puck:0.5",
+  "speed": 1.04,
+  "pitch": 1,
+  "fx": "chorus"
+ },
+ "kartavirya": {
+  "label": "कार्तवीर्य",
+  "fig": "kartavirya",
+  "voice": "hm_psi:0.5+am_eric:0.5",
+  "speed": 0.98,
+  "pitch": -2,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "birds": {
+  "label": "पक्षी",
+  "voice": "hf_beta:0.7+af_sky:0.3",
+  "speed": 1.1,
+  "pitch": 4,
+  "formant": "shifted",
+  "fx": "small"
+ },
+ "vishrava": {
+  "label": "विश्रवा",
+  "fig": "vishrava",
+  "voice": "hm_psi:0.6+bm_george:0.4",
+  "speed": 0.9,
+  "pitch": -1,
+  "fx": "elder"
+ },
+ "kaikasi": {
+  "label": "कैकसी",
+  "fig": "kaikasi",
+  "voice": "hf_alpha:0.5+af_kore:0.5",
+  "speed": 1.0,
+  "pitch": -3,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "kuber": {
+  "label": "कुबेर",
+  "fig": "kuber",
+  "voice": "hm_psi:0.5+am_santa:0.5",
+  "speed": 0.96,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "ravana": {
+  "label": "रावण",
+  "fig": "ravana",
+  "voice": "hm_omega:0.45+am_onyx:0.55",
+  "speed": 0.92,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "divine_big"
+ },
+ "kumbhakarna": {
+  "label": "कुंभकर्ण",
+  "fig": "kumbhakarna",
+  "voice": "hm_omega:0.4+am_fenrir:0.6",
+  "speed": 0.9,
+  "pitch": -7,
+  "formant": "shifted",
+  "fx": "cave"
+ },
+ "vibhishana": {
+  "label": "विभीषण",
+  "fig": "vibhishana",
+  "voice": "hm_psi:0.6+am_liam:0.4",
+  "speed": 0.98,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "varuna": {
+  "label": "वरुण",
+  "fig": "varuna",
+  "voice": "hm_omega:0.6+am_echo:0.4",
+  "speed": 1.0,
+  "pitch": -1,
+  "fx": "divine"
+ },
+ "vayu": {
+  "label": "वायु",
+  "fig": "vayu",
+  "voice": "hm_psi:0.6+am_puck:0.4",
+  "speed": 1.06,
+  "pitch": 1,
+  "fx": "bright"
+ },
+ "yamaraj": {
+  "label": "यम",
+  "fig": "yamaraj",
+  "voice": "hm_omega:0.5+am_onyx:0.5",
+  "speed": 0.9,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "cave"
+ },
+ "rama": {
+  "label": "राम",
+  "fig": "rama",
+  "voice": "hm_omega:0.6+am_michael:0.4",
+  "speed": 0.92,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "lakshmana": {
+  "label": "लक्ष्मण",
+  "fig": "lakshmana",
+  "voice": "hm_psi:0.6+am_liam:0.4",
+  "speed": 1.02,
+  "pitch": 1,
+  "fx": "room"
+ },
+ "sita": {
+  "label": "सीता",
+  "fig": "sita",
+  "voice": "hf_alpha:0.65+af_heart:0.35",
+  "speed": 0.93,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "mayasita": {
+  "label": "माया सीता",
+  "fig": "mayasita",
+  "voice": "hf_alpha:0.5+af_aoede:0.5",
+  "speed": 0.93,
+  "pitch": 1,
+  "fx": "dream"
+ },
+ "phalgu": {
+  "label": "फल्गु",
+  "fig": "phalgu",
+  "voice": "hf_beta:0.6+af_river:0.4",
+  "speed": 0.98,
+  "pitch": 1,
+  "fx": "dream"
+ },
+ "gau": {
+  "label": "गाय",
+  "voice": "hf_beta:0.5+af_nicole:0.5",
+  "speed": 0.9,
+  "pitch": -2,
+  "formant": "shifted",
+  "fx": "small"
+ },
+ "bargad": {
+  "label": "बरगद",
+  "voice": "hm_omega:0.5+bm_lewis:0.5",
+  "speed": 0.82,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "cave"
+ },
+ "dasharath": {
+  "label": "दशरथ",
+  "voice": "hm_psi:0.6+bm_daniel:0.4",
+  "speed": 0.88,
+  "pitch": -2,
+  "fx": "divine_big"
+ },
+ "vasudev": {
+  "label": "वसुदेव",
+  "fig": "vasudev",
+  "voice": "hm_psi:0.6+am_adam:0.4",
+  "speed": 0.94,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "devaki": {
+  "label": "देवकी",
+  "fig": "devaki",
+  "voice": "hf_alpha:0.6+af_sarah:0.4",
+  "speed": 0.92,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "kansa": {
+  "label": "कंस",
+  "fig": "kansa",
+  "voice": "hm_omega:0.45+am_onyx:0.55",
+  "speed": 0.95,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "cave"
+ },
+ "yogamaya": {
+  "label": "योगमाया",
+  "fig": "yogamaya",
+  "voice": "hf_alpha:0.6+af_nicole:0.4",
+  "speed": 0.9,
+  "pitch": -2,
+  "fx": "divine_big"
+ },
+ "akashvani": {
+  "label": "आकाशवाणी",
+  "voice": "hm_omega:0.5+hf_alpha:0.5",
+  "speed": 0.86,
+  "pitch": -1,
+  "fx": "divine_big"
+ },
+ "krishna": {
+  "label": "कृष्ण",
+  "fig": "krishna",
+  "voice": "hm_psi:0.45+hf_beta:0.25+am_puck:0.3",
+  "speed": 1.0,
+  "pitch": 2,
+  "formant": "shifted",
+  "fx": "bright"
+ },
+ "yashoda": {
+  "label": "यशोदा",
+  "fig": "yashoda",
+  "voice": "hf_alpha:0.55+af_bella:0.45",
+  "speed": 1.0,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "nand": {
+  "label": "नंद",
+  "fig": "nand",
+  "voice": "hm_omega:0.6+bm_george:0.4",
+  "speed": 0.95,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "gopas": {
+  "label": "ग्वाल-बाल",
+  "fig": "gopa",
+  "voice": "hf_beta:0.5+am_puck:0.5",
+  "speed": 1.08,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "chorus"
+ },
+ "gopa": {
+  "label": "ग्वाल",
+  "fig": "gopa",
+  "voice": "hf_beta:0.6+am_puck:0.4",
+  "speed": 1.08,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "gopa2": {
+  "label": "ग्वाल",
+  "fig": "gopa2",
+  "voice": "hf_beta:0.4+am_liam:0.6",
+  "speed": 1.06,
+  "pitch": 2,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "kaliya": {
+  "label": "कालिय",
+  "voice": "hm_psi:0.4+am_fenrir:0.6",
+  "speed": 0.9,
+  "pitch": -5,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "naagin": {
+  "label": "नागपत्नियाँ",
+  "fig": "naagin",
+  "voice": "hf_alpha:0.6+af_kore:0.4",
+  "speed": 0.95,
+  "pitch": -1,
+  "fx": "chorus"
+ },
+ "yamuna": {
+  "label": "यमुना",
+  "fig": "yamuna",
+  "voice": "hf_beta:0.6+af_river:0.4",
+  "speed": 0.92,
+  "pitch": 0,
+  "fx": "dream"
+ },
+ "vrajvasi": {
+  "label": "वृंदावनवासी",
+  "fig": "gopi",
+  "voice": "hm_omega:0.4+hf_alpha:0.3+am_michael:0.3",
+  "speed": 1.02,
+  "pitch": 0,
+  "fx": "chorus"
+ },
+ "sudama": {
+  "label": "सुदामा",
+  "fig": "sudama",
+  "voice": "hm_psi:0.55+bm_fable:0.45",
+  "speed": 0.93,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "sudamapatni": {
+  "label": "सुदामा की पत्नी",
+  "fig": "sudamapatni",
+  "voice": "hf_alpha:0.55+af_nicole:0.45",
+  "speed": 0.98,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "sudamaputra": {
+  "label": "पुत्र",
+  "fig": "sudamaputra",
+  "voice": "hf_beta:0.55+af_sky:0.45",
+  "speed": 1.08,
+  "pitch": 4,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "dwarpal": {
+  "label": "द्वारपाल",
+  "fig": "dwarpal",
+  "voice": "hm_omega:0.55+am_santa:0.45",
+  "speed": 1.02,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "krishna2": {
+  "label": "कृष्ण",
+  "fig": "krishna2",
+  "voice": "hm_psi:0.55+am_michael:0.45",
+  "speed": 0.96,
+  "pitch": 0,
+  "fx": "bright"
+ },
+ "draupadi": {
+  "label": "द्रौपदी",
+  "fig": "draupadi",
+  "voice": "hf_alpha:0.55+bf_isabella:0.45",
+  "speed": 0.98,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "gandhari": {
+  "label": "गांधारी",
+  "fig": "gandhari",
+  "voice": "hf_alpha:0.5+bf_alice:0.5",
+  "speed": 0.88,
+  "pitch": -2,
+  "formant": "shifted",
+  "fx": "divine"
+ },
+ "samba": {
+  "label": "सांब",
+  "fig": "samba",
+  "voice": "hm_psi:0.5+am_puck:0.5",
+  "speed": 1.08,
+  "pitch": 2,
+  "fx": "room"
+ },
+ "yadavs": {
+  "label": "यादव युवक",
+  "fig": "yadav",
+  "duet": [
+   "samba",
+   "yadav"
+  ]
+ },
+ "yadav": {
+  "label": "यादव",
+  "fig": "yadav",
+  "voice": "hm_omega:0.5+am_eric:0.5",
+  "speed": 1.05,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "balarama": {
+  "label": "बलराम",
+  "fig": "balarama",
+  "voice": "hm_omega:0.55+am_adam:0.45",
+  "speed": 0.98,
+  "pitch": -2,
+  "fx": "room"
+ },
+ "jara": {
+  "label": "जरा",
+  "fig": "jara",
+  "voice": "hm_psi:0.5+am_echo:0.5",
+  "speed": 0.95,
+  "pitch": -1,
+  "fx": "room"
+ },
+ "takshak": {
+  "label": "तक्षक",
+  "voice": "hm_psi:0.4+am_fenrir:0.6",
+  "speed": 0.86,
+  "pitch": -4,
+  "formant": "shifted",
+  "fx": "growl"
+ },
+ "janamejay": {
+  "label": "जनमेजय",
+  "fig": "janamejay",
+  "voice": "hm_psi:0.6+am_liam:0.4",
+  "speed": 1.0,
+  "pitch": 0,
+  "fx": "room"
+ },
+ "mantri": {
+  "label": "मंत्री",
+  "fig": "mantri",
+  "voice": "hm_omega:0.5+bm_lewis:0.5",
+  "speed": 0.98,
+  "pitch": -1,
+  "fx": "elder"
+ },
+ "astika": {
+  "label": "आस्तीक",
+  "fig": "astika",
+  "voice": "hf_beta:0.5+am_puck:0.5",
+  "speed": 0.96,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "bright"
+ },
+ "boysudama": {
+  "label": "सुदामा",
+  "fig": "sudamaputra",
+  "voice": "hf_beta:0.5+bm_fable:0.5",
+  "speed": 1.05,
+  "pitch": 3,
+  "formant": "shifted",
+  "fx": "child"
+ },
+ "yadav2": {
+  "label": "यादव",
+  "fig": "yadav2",
+  "voice": "hm_psi:0.5+am_onyx:0.5",
+  "speed": 1.04,
+  "pitch": -2,
+  "fx": "room"
+ }
+}

@@ -1,0 +1,3402 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "आदि",
+  "episode": "1",
+  "slug": "e01-aadi",
+  "kicker": "अध्याय एक",
+  "sub": "जहाँ से सब आरंभ हुआ",
+  "logline": "सृष्टि का जन्म, मधु-कैटभ का संहार, रुद्र का प्राकट्य, और वह शाप जो एक पुत्र ने अपने पिता को दिया।",
+  "stories": "1, 2, 3, 4",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 1 से 4"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "vishnu": {
+   "label": "विष्णु",
+   "fig": "vishnu",
+   "voice": "hm_omega:0.8+am_michael:0.2",
+   "speed": 0.94,
+   "pitch": 0,
+   "fx": "divine"
+  },
+  "hayagriva": {
+   "label": "हयग्रीव",
+   "fig": "hayagriva",
+   "voice": "hm_omega:0.7+am_onyx:0.3",
+   "speed": 0.9,
+   "pitch": -3,
+   "formant": "shifted",
+   "fx": "divine_big"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "shiva": {
+   "label": "शिव",
+   "fig": "shiva",
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.86,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "rudra": {
+   "label": "रुद्र",
+   "fig": "rudra",
+   "voice": "hm_omega:0.5+am_onyx:0.5",
+   "speed": 0.9,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "roar"
+  },
+  "madhu": {
+   "label": "मधु",
+   "fig": "madhu",
+   "voice": "hm_omega:0.55+am_fenrir:0.45",
+   "speed": 1.0,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "kaitabh": {
+   "label": "कैटभ",
+   "fig": "kaitabh",
+   "voice": "hm_psi:0.5+am_fenrir:0.5",
+   "speed": 1.04,
+   "pitch": -6,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "twins": {
+   "label": "मधु-कैटभ",
+   "twin": [
+    "madhu",
+    "kaitabh"
+   ]
+  },
+  "nidra": {
+   "label": "योगनिद्रा",
+   "fig": "nidra",
+   "voice": "hf_beta:0.7+af_nicole:0.3",
+   "speed": 0.84,
+   "pitch": -1,
+   "fx": "dream"
+  },
+  "kumaras": {
+   "label": "चार कुमार",
+   "fig": "kumara",
+   "voice": "hf_beta:0.8+af_sky:0.2",
+   "speed": 1.02,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "chorus"
+  },
+  "sanak": {
+   "label": "सनक",
+   "fig": "kumara",
+   "voice": "hf_beta:0.8+af_sky:0.2",
+   "speed": 1.02,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "dharma": {
+   "label": "धर्म",
+   "fig": "dharma",
+   "creature": "bull",
+   "voice": "hm_psi:0.6+am_echo:0.4",
+   "speed": 0.95,
+   "pitch": -1,
+   "formant": "shifted",
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 16
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "clouds",
+     "kind": "clouds",
+     "x": 640,
+     "y": 300,
+     "n": 3,
+     "speed": 10,
+     "color": "#2c3c80",
+     "edge": "#8fa0d8",
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 760,
+        "t": 3.2
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "pose": "veena",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.4,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! प्रणाम, प्रणाम! आइए, आइए, बैठिए।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "मुझे पहचाना? मैं नारद। तीनों लोकों का घुमक्कड़, देवताओं का संदेशवाहक, और... थोड़ा-सा झगड़े करवाने वाला भी।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "लोग कहते हैं, जहाँ नारद पहुँचे, वहाँ कोई न कोई कहानी शुरू हो जाती है। बात तो सच है।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "आज मैं आपको वे कथाएँ सुनाऊँगा जो पुराणों में लिखी हैं। देवताओं की, असुरों की, ऋषियों की और राजाओं की।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पर याद रखिए, इन कथाओं में कोई पूरी तरह अच्छा नहीं, कोई पूरी तरह बुरा नहीं। यहाँ देवता भी छल करते हैं, और असुर भी सद्गुणी हो सकते हैं।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और हर कर्म का फल मिलता है। हर कर्म, एक नया चक्र आरंभ करता है।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "अब एक रहस्य की बात। सृष्टि के रचयिता, स्वयं ब्रह्मा को भी एक बार शाप मिला था।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और जानते हैं, वह शाप किसने दिया था? ...मैंने।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "पर वह कथा बाद में। पहले चलिए वहाँ, जहाँ कुछ भी नहीं था।",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय एक",
+   "title": "आदि",
+   "sub": "जहाँ से सब आरंभ हुआ"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा एक",
+   "title": "सृष्टि की रचना",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "shunya",
+   "set": "void",
+   "ctx": {},
+   "els": [
+    {
+     "id": "dark",
+     "kind": "glow",
+     "x": 640,
+     "y": 360,
+     "r": 300,
+     "color": "#3d4a86",
+     "core": 0.3,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "om",
+     "kind": "om",
+     "x": 640,
+     "y": 330,
+     "size": 170,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 4,
+     "out": 6,
+     "od": 1
+    },
+    {
+     "id": "gunas",
+     "kind": "gunas",
+     "x": 640,
+     "y": 330,
+     "r": 170,
+     "labels": true,
+     "anim": "pop",
+     "in": 6,
+     "out": 7
+    },
+    {
+     "id": "elements",
+     "kind": "elements",
+     "x": 640,
+     "y": 330,
+     "r": 250,
+     "in": 7,
+     "out": 8
+    },
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 760,
+     "w": 1500,
+     "h": 420,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "z": -2,
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "y": 360,
+        "t": 5
+       }
+      ]
+     }
+    },
+    {
+     "id": "nara",
+     "kind": "lotus",
+     "x": 640,
+     "y": 372,
+     "size": 0.5,
+     "anim": "grow",
+     "inDur": 2,
+     "open": 0.2,
+     "in": 9,
+     "keys": {
+      "9": [
+       {
+        "open": 1,
+        "t": 4
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 2.5,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "आरंभ में कुछ भी नहीं था। न धरती, न आकाश। न प्रकाश, न अंधकार।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "केवल परब्रह्म था। एक ऐसा परम तत्त्व, जिसका न कोई आदि था, न अंत।"
+    },
+    {
+     "who": "narrator",
+     "text": "उसका कोई आकार नहीं था, फिर भी वह निराकार नहीं था। वह विचारों और इंद्रियों की पहुँच से परे, एक विशुद्ध चेतना था।"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर परब्रह्म की इच्छा हुई। उस इच्छा से एक कंपन उठा, और उस कंपन से जन्मी पहली ध्वनि। ॐ।",
+     "camMove": true,
+     "cam": "at:640,330,1.25",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "इस एक ध्वनि में संसार की सारी ध्वनियाँ समाई थीं।"
+    },
+    {
+     "who": "narrator",
+     "text": "उस ध्वनि से महत् तत्त्व प्रकट हुआ, और उससे तीन गुण। सत्त्व, जो संरक्षण है। रजस्, जो क्रिया है। और तमस्, जो विनाश है।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "इन तीनों के मेल से जन्मे पाँच तत्त्व। वायु, जल, पृथ्वी, अग्नि और आकाश। इन्हीं से प्रकृति बनी, और फिर इंद्रियाँ, और फिर मन।"
+    },
+    {
+     "who": "narrator",
+     "text": "और तब जल बहने लगा। जल, जिसने सब कुछ ढक लिया। चारों ओर केवल जल ही जल था।",
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "तब परब्रह्म ने स्वयं एक दिव्य रूप धारण किया, जो उस अथाह जल पर कमल की तरह खिल उठा।",
+     "camMove": true,
+     "cam": "at:640,360,1.4"
+    },
+    {
+     "who": "narrator",
+     "text": "जल को नार कहते हैं, और निवास को अयन। जल में जिसका निवास है, वही कहलाया... नारायण।"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle"
+    }
+   ],
+   "music": "cosmic",
+   "amb": [
+    "void"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "hiranya",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "eggglow",
+     "kind": "glow",
+     "x": 640,
+     "y": 230,
+     "r": 380,
+     "color": "#ffe680",
+     "core": 0.5,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "egg",
+     "kind": "egg",
+     "x": 640,
+     "y": 250,
+     "r": 110,
+     "anim": "grow",
+     "inDur": 3,
+     "crack": 0,
+     "in": 0
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 620,
+     "w": 1500,
+     "h": 140,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.7,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "vishnuEnter",
+     "kind": "glow",
+     "x": 640,
+     "y": 250,
+     "r": 160,
+     "color": "#7aa0f0",
+     "core": 0.8,
+     "anim": "pop",
+     "in": 3,
+     "out": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "परब्रह्म ने अपना एक अंश उस जल में रख दिया। जल ने उस अंश को पाला, और समय आने पर उससे एक अंडा उत्पन्न हुआ।",
+     "camMove": true,
+     "cam": "at:640,250,1.6"
+    },
+    {
+     "who": "narrator",
+     "text": "एक सुनहरा अंडा, जो प्रकाश के एक वृत्त की तरह चमक रहा था। परब्रह्म से जन्मा, इसलिए उसे कहा गया, ब्रह्मांड।"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर नारायण ने विष्णु बनकर उस अंडे में प्रवेश किया। सर्वव्यापी विष्णु, सृष्टि के संरक्षक, सत्त्व गुण के स्वामी।",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "सुनहरे आवरण ने विष्णु को गर्भ की तरह ढक लिया। इसलिए उस अंडे का नाम पड़ा, हिरण्यगर्भ।"
+    },
+    {
+     "text": "",
+     "dur": 1.8,
+     "camMove": true,
+     "cam": "at:640,250,2.4",
+     "sfx": "heartbeat"
+    }
+   ],
+   "music": "cosmic",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "padma",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "brahma",
+     "x": 702,
+     "y": 200,
+     "s": 0.5,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "in": 2,
+     "anim": "materialize",
+     "kind": "char",
+     "keys": {
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "lap",
+        "t": 0.6
+       }
+      ],
+      "10": [
+       {
+        "emo": "meditate",
+        "t": 0.5
+       }
+      ],
+      "11": [
+       {
+        "emo": "smile",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "shesha",
+     "kind": "shesha",
+     "x": 600,
+     "y": 600,
+     "w": 560,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "vishnu",
+     "x": 840,
+     "y": 528,
+     "s": 0.82,
+     "rot": -86,
+     "pose": "lap",
+     "emo": "meditate",
+     "halo": false,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "stem",
+     "kind": "stem",
+     "x": 640,
+     "y": 500,
+     "dx": 60,
+     "dy": -300,
+     "grow": 0,
+     "w": 11,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "grow": 1,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "throne",
+     "kind": "lotus",
+     "x": 700,
+     "y": 206,
+     "size": 0.55,
+     "open": 0,
+     "o": 0,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "o": 1,
+        "open": 1,
+        "t": 3,
+        "d": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 640,
+     "w": 1500,
+     "h": 120,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.85,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "egg",
+     "kind": "egg",
+     "x": 640,
+     "y": 300,
+     "r": 250,
+     "crack": 0,
+     "z": -8,
+     "anim": "grow",
+     "inDur": 1.2,
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "crack": 1,
+        "t": 3,
+        "d": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "vedas",
+     "kind": "vedas",
+     "x": 702,
+     "y": 110,
+     "r": 100,
+     "anim": "pop",
+     "inDur": 1.5,
+     "in": 10
+    },
+    {
+     "id": "narad",
+     "x": 1180,
+     "y": 660,
+     "s": 0.6,
+     "face": -1,
+     "pose": "veena",
+     "emo": "sly",
+     "fly": 1,
+     "noShadow": true,
+     "z": 55,
+     "in": 8,
+     "kind": "char",
+     "keys": {
+      "12": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "भीतर, अनंत सर्प शेषनाग की कुंडली पर, विष्णु योगनिद्रा में लेटे थे।",
+     "camMove": true,
+     "cam": "at:560,440,1.7"
+    },
+    {
+     "who": "narrator",
+     "text": "तभी विष्णु की नाभि से एक कमल का नाल ऊपर उठा, और उसके सिरे पर चौदह पंखुड़ियों वाला एक कमल खिला।",
+     "camMove": true,
+     "cam": "at:660,330,1.25",
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "और उस कमल से प्रकट हुए... ब्रह्मा। सृष्टि के रचयिता। रजो गुण के स्वामी।",
+     "camMove": true,
+     "cam": "full:brahma",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "एक हाथ में कमंडल, दूसरे में माला। नाभि से निकले कमल से जन्मे, इसलिए कहलाए पद्मयोनि।",
+     "cam": "close:brahma"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "एक वर्ष तक हिरण्यगर्भ के भीतर रहने के बाद, ब्रह्मा ने उस सुनहरे अंडे के दो भाग कर दिए।",
+     "cam": "wide",
+     "sfx": "crack",
+     "boom": true
+    },
+    {
+     "who": "narrator",
+     "text": "ऊपर का आधा भाग स्वर्ग बना, नीचे का आधा भाग पृथ्वी। और दोनों के बीच फैल गया आकाश।"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा जानते थे कि यह आरंभ है, और यह भी जानते थे कि इसका अंत कैसे होगा। पहले सर्ग, यानी रचना। फिर स्थिति, यानी संरक्षण। और अंत में प्रलय।"
+    },
+    {
+     "who": "narrator",
+     "text": "और हर प्रलय के बाद, ब्रह्मा फिर से रचना करेंगे। चक्रों का एक शाश्वत क्रम। एक-दूसरे में गुँथे हुए वृत्त।"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर ब्रह्मा ध्यान में डूब गए, और उस ध्यान की गहराई से चार वेद प्रकट हुए। ऋग्वेद, यजुर्वेद, सामवेद और अथर्ववेद।",
+     "camMove": true,
+     "cam": "mid:brahma",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "पर रचयिता यह नहीं जानते थे कि चार मुसीबतें भी सिर उठाने वाली थीं। ऐसी चार मुसीबतें, जो पूरी सृष्टि को संकट में डाल सकती थीं।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narad",
+     "text": "कहते हैं, अच्छी शुरुआत आधा काम है। ...देखते हैं, बाकी आधा कैसा जाता है।",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "white",
+   "push": 0.02
+  },
+  {
+   "type": "card",
+   "id": "chapter7",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा दो",
+   "title": "मधु और कैटभ",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "karnamal",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "shesha",
+     "kind": "shesha",
+     "x": 600,
+     "y": 600,
+     "w": 560,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "vishnu",
+     "x": 840,
+     "y": 528,
+     "s": 0.82,
+     "rot": -86,
+     "pose": "lap",
+     "emo": "meditate",
+     "halo": false,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "22": [
+       {
+        "emo": "calm",
+        "t": 0.3,
+        "d": 2.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "stem",
+     "kind": "stem",
+     "x": 640,
+     "y": 500,
+     "dx": 60,
+     "dy": -300,
+     "w": 11,
+     "in": 0,
+     "keys": {
+      "10": [
+       {
+        "shake": 4,
+        "t": 0.3,
+        "d": 1.2
+       }
+      ],
+      "12": [
+       {
+        "shake": 0,
+        "t": 0.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "throne",
+     "kind": "lotus",
+     "x": 700,
+     "y": 206,
+     "size": 0.55,
+     "in": 0
+    },
+    {
+     "id": "brahma",
+     "x": 702,
+     "y": 200,
+     "s": 0.5,
+     "seat": "lotus",
+     "pose": "lap",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "10": [
+       {
+        "lean": -8,
+        "pose": "fear",
+        "emo": "fear",
+        "t": 0.6,
+        "d": 1.2
+       }
+      ],
+      "13": [
+       {
+        "fly": 1,
+        "x": 440,
+        "y": 330,
+        "lean": 0,
+        "pose": "namaste",
+        "t": 2.5
+       }
+      ],
+      "14": [
+       {
+        "emo": "fear",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "15": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "20": [
+       {
+        "pose": "offer",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vedas",
+     "kind": "vedas",
+     "x": 702,
+     "y": 110,
+     "r": 100,
+     "in": 0,
+     "keys": {
+      "11": [
+       {
+        "fall": 1,
+        "t": 3
+       }
+      ]
+     },
+     "out": 12
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 640,
+     "w": 1500,
+     "h": 120,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.85,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "madhu",
+     "x": 470,
+     "y": 470,
+     "s": 0.1,
+     "face": 1,
+     "pose": "rest",
+     "emo": "neutral",
+     "anim": "grow",
+     "noShadow": true,
+     "kind": "char",
+     "in": 1,
+     "keys": {
+      "3": [
+       {
+        "s": 0.85,
+        "x": 930,
+        "y": 600,
+        "t": 5
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "face": -1,
+        "t": 0.5
+       }
+      ],
+      "5": [
+       {
+        "pose": "point",
+        "emo": "angry",
+        "t": 0.5
+       }
+      ],
+      "8": [
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "x": 700,
+        "y": 560,
+        "pose": "reach",
+        "t": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "kaitabh",
+     "x": 500,
+     "y": 478,
+     "s": 0.1,
+     "face": 1,
+     "pose": "rest",
+     "emo": "neutral",
+     "anim": "grow",
+     "noShadow": true,
+     "kind": "char",
+     "in": 1,
+     "keys": {
+      "3": [
+       {
+        "s": 0.85,
+        "x": 1110,
+        "y": 606,
+        "t": 5,
+        "d": 0.4
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "face": -1,
+        "t": 0.5
+       }
+      ],
+      "9": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "x": 820,
+        "y": 566,
+        "pose": "reach",
+        "t": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "nidra",
+     "x": 430,
+     "y": 520,
+     "s": 0.75,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "anim": "materialize",
+     "noShadow": true,
+     "kind": "char",
+     "in": 21,
+     "keys": {
+      "21": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "22": [
+       {
+        "y": 120,
+        "o": 0,
+        "t": 4
+       }
+      ]
+     },
+     "out": 23
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा ने वेदों को प्रकट किया ही था, कि विष्णु के कान के मैल से दो जीव रेंगते हुए बाहर निकले।",
+     "camMove": true,
+     "cam": "at:430,440,2.6",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "एक को भूख मिटाने के लिए शहद की इच्छा हुई, इसलिए उसका नाम पड़ा मधु। दूसरा कीड़े जैसा दिखता था, सो वह कहलाया कैटभ।"
+    },
+    {
+     "who": "narrator",
+     "text": "दोनों भूखे थे, और चारों ओर केवल अनंत जल था। उन्होंने वही जल पीना शुरू किया, और पीते-पीते बेहद शक्तिशाली हो गए।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "जैसे-जैसे उनके शरीर बढ़े, अहंकार से उनके सिर भी फूलते गए। उन्हें लगा, इस सारे जल के स्वामी वही हैं।",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "who": "twins",
+     "text": "तुम कौन हो? यह कमल का आसन केवल श्रेष्ठ लोगों के लिए है! तुम्हारी हिम्मत कैसे हुई इस पर बैठने की?",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा ने कुछ नहीं कहा। और यह चुप्पी, दोनों भाइयों को और भड़का गई।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "madhu",
+     "text": "नीचे उतरो! या तो हमारी प्रभुता स्वीकार करो...",
+     "cam": "close:madhu"
+    },
+    {
+     "who": "kaitabh",
+     "text": "...या युद्ध में हमें हराकर दिखाओ!",
+     "cam": "close:kaitabh"
+    },
+    {
+     "who": "narrator",
+     "text": "जब रचयिता नहीं हिले, तो मधु और कैटभ कमल का नाल पकड़कर ज़ोर-ज़ोर से हिलाने लगे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा ने पुष्प को कसकर पकड़े रखा, पर वेद उनके हाथ से फिसल गए, और एक-एक करके पंखुड़ियों की दरारों से नीचे गिरते चले गए।",
+     "camMove": true,
+     "cam": "at:700,260,1.6",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "दोनों भाइयों ने वेदों को जल के नीचे छिपा दिया, और ब्रह्मा को धमकाने लगे कि जो कुछ उन्होंने रचा है, सब नष्ट कर देंगे।",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "who": "narrator",
+     "text": "घबराए हुए ब्रह्मा, भागकर विष्णु के पास पहुँचे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "brahma",
+     "text": "हे ब्रह्मांड के रक्षक! मेरी सहायता कीजिए। मैं तो आपके ही मैल से जन्मे इन प्राणियों से भी नहीं लड़ सकता।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "यदि आप मेरी रक्षा नहीं करेंगे, तो सृष्टि का काम कैसे पूरा होगा? क्या आप मुझे सुन रहे हैं, भगवन्? ...आप सुन रहे हैं?",
+     "cam": "close:brahma"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "at:420,430,2.2"
+    },
+    {
+     "who": "narrator",
+     "text": "पर विष्णु तो योगनिद्रा में थे। जागने और सोने के बीच की एक ऐसी स्वप्नहीन अवस्था, जिसमें उन्हें किसी बात की सुध नहीं रहती।",
+     "cam": "at:430,440,2.2"
+    },
+    {
+     "who": "twins",
+     "text": "हा हा हा हा!",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "who": "narrator",
+     "text": "जब कोई उपाय नहीं सूझा, तो ब्रह्मा ने स्वयं निद्रा देवी का आह्वान किया।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "हे निद्रा! आपकी शक्ति से नारायण सो रहे हैं। मैं विनती करता हूँ, उन्हें अपने आलिंगन से मुक्त कर दीजिए, ताकि वे हमें इन दोनों से बचा सकें।",
+     "cam": "close:brahma",
+     "emo": "sad"
+    },
+    {
+     "who": "nidra",
+     "text": "तथास्तु, ब्रह्मदेव।",
+     "cam": "mid:nidra"
+    },
+    {
+     "who": "narrator",
+     "text": "निद्रा ने ब्रह्मा की विनती सुन ली। और संरक्षक विष्णु ने अपने कमल जैसे नेत्र खोल दिए।",
+     "camMove": true,
+     "cam": "at:460,380,1.5",
+     "sfx": "sparkle"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "ecu:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा की दशा देखते ही वे समझ गए कि पूरी सृष्टि संकट में है।",
+     "cam": "ecu:vishnu"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "hayagriva",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "halo",
+     "kind": "rays",
+     "x": 520,
+     "y": 330,
+     "r": 700,
+     "n": 28,
+     "color": "#fff0b0",
+     "op": 0.25,
+     "z": -6,
+     "in": 0,
+     "keys": {
+      "22": [
+       {
+        "r": 1200,
+        "op": 0.4,
+        "t": 6
+       }
+      ]
+     }
+    },
+    {
+     "id": "glowH",
+     "kind": "glow",
+     "x": 520,
+     "y": 330,
+     "r": 360,
+     "color": "#bcd0ff",
+     "core": 0.6,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "hayagriva",
+     "x": 520,
+     "y": 600,
+     "s": 0.95,
+     "face": 1,
+     "pose": "raise",
+     "emo": "angry",
+     "anim": "materialize",
+     "inDur": 1.5,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 700,
+        "pose": "strike",
+        "t": 1
+       }
+      ],
+      "6": [
+       {
+        "pose": "rest",
+        "emo": "calm",
+        "x": 560,
+        "t": 1.5
+       }
+      ],
+      "7": [
+       {
+        "pose": "namaste",
+        "t": 0.8
+       }
+      ],
+      "8": [
+       {
+        "emo": "smile",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "pose": "offer",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "17": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "22": [
+       {
+        "s": 2.4,
+        "x": 430,
+        "y": 700,
+        "pose": "open",
+        "t": 6
+       }
+      ]
+     }
+    },
+    {
+     "id": "madhu",
+     "x": 930,
+     "y": 600,
+     "s": 0.85,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 860,
+        "pose": "strike",
+        "t": 1
+       }
+      ],
+      "4": [
+       {
+        "x": 1000,
+        "pose": "fear",
+        "t": 0.8
+       }
+      ],
+      "6": [
+       {
+        "x": 930,
+        "pose": "hips",
+        "emo": "sly",
+        "t": 1.5
+       }
+      ],
+      "11": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "19": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.5
+       }
+      ],
+      "24": [
+       {
+        "x": 560,
+        "y": 420,
+        "s": 0.5,
+        "t": 1.5
+       }
+      ]
+     },
+     "out": 25,
+     "od": 1.2
+    },
+    {
+     "id": "kaitabh",
+     "x": 1110,
+     "y": 606,
+     "s": 0.85,
+     "face": -1,
+     "pose": "strike",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": 860,
+        "pose": "raise",
+        "t": 0.8
+       }
+      ],
+      "6": [
+       {
+        "x": 1110,
+        "pose": "hips",
+        "emo": "sly",
+        "t": 1.5
+       }
+      ],
+      "12": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "19": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.5
+       }
+      ],
+      "24": [
+       {
+        "x": 680,
+        "y": 430,
+        "s": 0.5,
+        "t": 1.5
+       }
+      ]
+     },
+     "out": 25,
+     "od": 1.2
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 640,
+     "w": 1500,
+     "h": 120,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.85,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "clash1",
+     "kind": "clash",
+     "x": 800,
+     "y": 330,
+     "z": 60,
+     "in": 3,
+     "out": 5
+    },
+    {
+     "id": "years",
+     "kind": "text",
+     "x": 640,
+     "y": 180,
+     "text": "पाँच हज़ार वर्ष",
+     "size": 78,
+     "screen": false,
+     "z": 70,
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "slay",
+     "kind": "ring",
+     "x": 620,
+     "y": 420,
+     "r": 900,
+     "color": "#fff6cf",
+     "z": 70,
+     "in": 25
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "conch",
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "मधु और कैटभ से टक्कर लेने के लिए विष्णु ने एक नया रूप धारण किया। चमकती अयाल वाला एक तेजस्वी रूप। घोड़े का मुख!",
+     "cam": "full:hayagriva"
+    },
+    {
+     "who": "narrator",
+     "text": "प्रभु हयग्रीव बन गए थे।",
+     "cam": "close:hayagriva",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "युद्ध आरंभ हुआ। पर विष्णु ने पाया कि वे इन दोनों को मार ही नहीं पा रहे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash",
+     "clash": true,
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "एक भाई थक जाता, तो दूसरा लड़ने लगता। दूसरा थकता, तो पहला लौट आता।",
+     "cam": "two:hayagriva,kaitabh",
+     "sfx": "clash",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "इस तरह युद्ध करते पाँच हज़ार वर्ष बीत गए।",
+     "cam": "wide",
+     "sfx": "drumroll"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु थक चुके थे। वे समझ गए कि केवल बल से काम नहीं बनेगा। इन्हें हराने के लिए बुद्धि चाहिए।",
+     "camMove": true,
+     "cam": "full:hayagriva"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु ने अपनी गदा नीचे रख दी, हाथ जोड़े, और बड़े मधुर स्वर में बोले।",
+     "cam": "mid:hayagriva"
+    },
+    {
+     "who": "hayagriva",
+     "text": "वाह! मैं तुम्हारे कौशल के आगे नतमस्तक हूँ। तुम दोनों सचमुच अजेय हो।",
+     "cam": "close:hayagriva"
+    },
+    {
+     "who": "hayagriva",
+     "text": "तुम्हारी शक्ति को प्रणाम करते हुए मैं तुम्हें वरदान देना चाहता हूँ। कुछ भी माँगो।",
+     "cam": "close:hayagriva"
+    },
+    {
+     "who": "twins",
+     "text": "तुमसे वरदान? हा हा हा!",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "who": "madhu",
+     "text": "उससे, जो खुद हमारे सामने डरा खड़ा है? जिसकी नीली त्वचा डर से और भी नीली पड़ गई है?",
+     "cam": "close:madhu"
+    },
+    {
+     "who": "kaitabh",
+     "text": "विजेता वरदान माँगते नहीं, वरदान देते हैं। तुम हमसे माँगो। जो चाहोगे, मिलेगा।",
+     "cam": "close:kaitabh"
+    },
+    {
+     "who": "hayagriva",
+     "text": "कुछ भी?",
+     "cam": "close:hayagriva"
+    },
+    {
+     "who": "twins",
+     "text": "हाँ, कुछ भी!",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "ecu:hayagriva"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु को इसी पल की प्रतीक्षा थी। उनके मुख पर एक शांत मुस्कान फैल गई।",
+     "cam": "ecu:hayagriva"
+    },
+    {
+     "who": "hayagriva",
+     "text": "तो मुझे यह वरदान दो... कि मैं तुम दोनों को मार सकूँ।",
+     "cam": "close:hayagriva"
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "cam": "two:madhu,kaitabh",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "सन्नाटा छा गया। दोनों भाई समझ गए कि वे खुली आँखों से जाल में फँस चुके हैं। पर वचन दिया जा चुका था, और उसे तोड़ा नहीं जा सकता था।",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "who": "narrator",
+     "text": "मौत को सिर पर मँडराता देख, उन्होंने चारों ओर फैले अनंत जल को देखा, और एक आखिरी दाँव खेला।"
+    },
+    {
+     "who": "twins",
+     "text": "ठीक है, मार लो। पर एक शर्त है। हमें ऐसी जगह मारना, जहाँ जल न हो!",
+     "cam": "two:madhu,kaitabh"
+    },
+    {
+     "who": "narrator",
+     "text": "हयग्रीव फिर मुस्कुराए। उन्होंने अपनी भुजाएँ फैलाईं, और उनका आकार बढ़ने लगा। बड़ा, और बड़ा। और बड़ा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "इतना बड़ा, कि जल के ऊपर वे एक विशाल नीले पर्वत जैसे दिखने लगे, जो नीले आकाश से जा मिला था।",
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर हयग्रीव ने मधु और कैटभ को अपनी जाँघों पर रखा। वहाँ, जहाँ जल नहीं था।",
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 2.2,
+     "cam": "wide",
+     "sfx": "boom",
+     "flash": "#ffe9e0",
+     "shake": 12
+    },
+    {
+     "who": "narrator",
+     "text": "और दोनों का अंत कर दिया। विष्णु के कानों से जन्मे मधु और कैटभ का अंत, विष्णु की ही जाँघों पर हुआ।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "मधु का वध करने के कारण, विष्णु का एक नाम पड़ा... मधुसूदन।"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "ocean",
+    "wind"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "medini",
+   "set": "lotusSky",
+   "ctx": {},
+   "els": [
+    {
+     "id": "sunglow",
+     "kind": "glow",
+     "x": 640,
+     "y": 300,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.4,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "earth",
+     "kind": "earth",
+     "x": 640,
+     "y": 330,
+     "r": 150,
+     "form": 0,
+     "anim": "pop",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "form": 1,
+        "t": 6
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishnu",
+     "x": 360,
+     "y": 640,
+     "s": 0.8,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 930,
+     "y": 640,
+     "s": 0.8,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "वेद वापस मिल गए। फिर विष्णु ने दोनों के शरीर से मेद निकाला, और ब्रह्मा से कहा कि इसी मेद से भूमि की रचना करें।",
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "इसीलिए पृथ्वी को मेदिनी भी कहते हैं। और उनके शरीर के बचे हुए टुकड़े, छह-छह भागों में बिखरकर पृथ्वी की बारह प्लेटें बन गए।",
+     "camMove": true,
+     "cam": "at:640,330,1.5"
+    },
+    {
+     "who": "brahma",
+     "text": "ऐसा लगता है कि मैं जितना अधिक रचूँगा, विनाश करने वाली शक्तियाँ भी उतनी ही अधिक जन्म लेंगी।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "नारायण, हमारी इसी तरह रक्षा करते रहिए।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "vishnu",
+     "text": "शायद मैंने कुछ नहीं किया, ब्रह्मदेव। शायद ब्रह्मांड ने, मेरे माध्यम से, स्वयं अपनी रक्षा की है।",
+     "cam": "close:vishnu"
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "camMove": true,
+     "cam": "two:vishnu,brahma",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा फिर अपने कमल पर बैठे और रचना में लग गए। उन्हें आशा थी कि आगे का मार्ग शांत होगा।",
+     "cam": "two:vishnu,brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "पर उनकी मुसीबतें तो अभी शुरू ही हुई थीं।",
+     "cam": "wide"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "chapter11",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा तीन",
+   "title": "शिव का प्राकट्य",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "rachna",
+   "set": "glade",
+   "ctx": {},
+   "els": [
+    {
+     "id": "yugas",
+     "kind": "yugas",
+     "x": 1040,
+     "y": 190,
+     "r": 90,
+     "active": -1,
+     "anim": "pop",
+     "in": 2,
+     "keys": {
+      "3": [
+       {
+        "active": 0,
+        "t": 0.5
+       }
+      ],
+      "4": [
+       {
+        "active": 1,
+        "t": 0.5
+       }
+      ],
+      "5": [
+       {
+        "active": 2,
+        "t": 0.5
+       }
+      ],
+      "6": [
+       {
+        "active": 3,
+        "t": 0.5
+       }
+      ],
+      "7": [
+       {
+        "active": -1,
+        "t": 0.5
+       }
+      ]
+     },
+     "out": 7,
+     "od": 1
+    },
+    {
+     "id": "brahma",
+     "x": 640,
+     "y": 690,
+     "s": 0.9,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "8": [
+       {
+        "emo": "meditate",
+        "pose": "meditate",
+        "t": 0.6
+       }
+      ],
+      "10": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.6
+       },
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "14": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "18": [
+       {
+        "emo": "sad",
+        "pose": "offer",
+        "t": 0.6
+       }
+      ],
+      "20": [
+       {
+        "emo": "sad",
+        "pose": "abhaya",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "birdsA",
+     "kind": "birds",
+     "x": 640,
+     "y": 150,
+     "n": 6,
+     "speed": 50,
+     "in": 0
+    },
+    {
+     "id": "sanak",
+     "fig": "kumara",
+     "group": "kumaras",
+     "x": 300,
+     "y": 660,
+     "s": 0.62,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "15": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "21": [
+       {
+        "x": -200,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "sanatan",
+     "fig": "kumara",
+     "group": "kumaras",
+     "x": 400,
+     "y": 670,
+     "s": 0.62,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 0.5,
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "21": [
+       {
+        "x": -100,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "sanandan",
+     "fig": "kumara",
+     "group": "kumaras",
+     "x": 880,
+     "y": 670,
+     "s": 0.62,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 1,
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "21": [
+       {
+        "x": 1500,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "sanatkumar",
+     "fig": "kumara",
+     "group": "kumaras",
+     "x": 980,
+     "y": 660,
+     "s": 0.62,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 1.5,
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "21": [
+       {
+        "x": 1600,
+        "t": 4
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "मेद से बनी पृथ्वी को अब सँवारना था। ब्रह्मा ने सुमेरु, कैलाश, हिमालय और मलय जैसे आठ बड़े पर्वत बनाए, और जम्बूद्वीप से पुष्करद्वीप तक सात महाद्वीप।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "नदियाँ और समुद्र बहने लगे। पेड़-पौधे, फल और फूल अंकुरित होने लगे। पृथ्वी भूलोक कहलाई, उसके ऊपर स्वर्गलोक, नीचे सात पाताल, और सबसे ऊपर विष्णु का वैकुंठ।"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर ब्रह्मा ने समय को चार युगों में बाँटा। श्वेत सतयुग...",
+     "camMove": true,
+     "cam": "at:1040,220,2"
+    },
+    {
+     "who": "narrator",
+     "text": "लाल त्रेता..."
+    },
+    {
+     "who": "narrator",
+     "text": "पीला द्वापर..."
+    },
+    {
+     "who": "narrator",
+     "text": "और काला कलियुग। चारों मिलकर बनाते हैं एक महायुग।"
+    },
+    {
+     "who": "narrator",
+     "text": "अब समय था भूलोक पर जीवन के सबसे श्रेष्ठ रूप को लाने का। मनुष्य को रचने का। और यहीं मिली अगली मुसीबत।",
+     "camMove": true,
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा ने आँखें बंद कीं, और उनके मन से चार बालक ऋषि प्रकट हुए। सनक, सनातन, सनंदन और सनत्कुमार।",
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा के मन से जन्मे, इसलिए मानस पुत्र। चार थे, इसलिए चतुर्सन।"
+    },
+    {
+     "who": "brahma",
+     "text": "पुत्रो, मैंने तुम्हें एक विशेष प्रयोजन से रचा है। सृजन में मेरा हाथ बँटाओ। संतान उत्पन्न करो, और इस ब्रह्मांड को भर दो।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "kumaras",
+     "text": "नहीं।",
+     "cam": "two:sanak,sanatan"
+    },
+    {
+     "who": "brahma",
+     "text": "नहीं?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "kumaras",
+     "text": "नहीं।",
+     "cam": "two:sanandan,sanatkumar"
+    },
+    {
+     "who": "brahma",
+     "text": "तुम अपने पिता की आज्ञा ठुकराने का दुस्साहस करोगे? अपने जन्मदाता की?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "sanak",
+     "text": "हमें क्षमा करें, परम पिता। आपने हमें जन्म दिया, हम आभारी हैं। पर हम जन्म और मृत्यु के चक्र में नहीं बँधना चाहते।",
+     "cam": "close:sanak"
+    },
+    {
+     "who": "sanak",
+     "text": "जब हमारे चारों ओर ब्रह्मांड असीम है, तो हम किसी सीमित चीज़ को क्यों समर्पित हों? हम उस अनंत परब्रह्म पर मनन करेंगे।",
+     "cam": "close:sanak"
+    },
+    {
+     "who": "kumaras",
+     "text": "क्या आपने सुना नहीं, परम पिता? चारों दिशाएँ हम चारों को पुकार रही हैं।",
+     "cam": "two:sanak,sanatkumar"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा ने बहुत समझाया। याद दिलाया कि उनके मना करने से सारा उपक्रम व्यर्थ हो जाएगा। पर चतुर्सन टस से मस नहीं हुए।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "kumaras",
+     "text": "परम पिता, हमें आशीर्वाद दें कि हम कभी बूढ़े न हों। सदा बालक रहें, और अनंत काल तक ज्ञान पाएँ, और बाँटें।",
+     "cam": "two:sanak,sanatkumar"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा अंततः मान गए।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "पर अपने मानस पुत्रों को जाते देखकर, उनके भीतर ज़बरदस्त क्रोध उमड़ आया। और इसी क्रोध में छिपी थी तीसरी मुसीबत।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh"
+    }
+   ],
+   "music": "brahma",
+   "amb": [
+    "birds"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "rudra",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "brahma",
+     "x": 640,
+     "y": 690,
+     "s": 0.9,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "fist",
+     "emo": "angry",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "hips",
+        "t": 0.5
+       }
+      ],
+      "4": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.4
+       }
+      ],
+      "7": [
+       {
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "smile",
+        "pose": "namaste",
+        "t": 0.6
+       }
+      ],
+      "11": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.6,
+        "d": 3
+       }
+      ],
+      "13": [
+       {
+        "emo": "fear",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "15": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "17": [
+       {
+        "emo": "sad",
+        "pose": "offer",
+        "t": 0.45
+       }
+      ],
+      "18": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "22": [
+       {
+        "emo": "sad",
+        "pose": "lap",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "browfire",
+     "kind": "fire",
+     "x": 655,
+     "y": 250,
+     "size": 1.2,
+     "anim": "pop",
+     "in": 1,
+     "out": 2,
+     "od": 1
+    },
+    {
+     "id": "rglow",
+     "kind": "glow",
+     "x": 950,
+     "y": 420,
+     "r": 340,
+     "color": "#ff8a4a",
+     "core": 0.7,
+     "z": -1,
+     "in": 2,
+     "keys": {
+      "8": [
+       {
+        "color": "#bcd8ff",
+        "t": 1.5
+       }
+      ],
+      "21": [
+       {
+        "o": 0,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "rudra",
+     "x": 950,
+     "y": 680,
+     "s": 0.95,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "anim": "materialize",
+     "inDur": 2,
+     "kind": "char",
+     "in": 2,
+     "keys": {
+      "3": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 8,
+     "od": 0.5
+    },
+    {
+     "id": "shiva",
+     "x": 950,
+     "y": 680,
+     "s": 0.95,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "anim": "materialize",
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "14": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "19": [
+       {
+        "emo": "calm",
+        "pose": "rest",
+        "t": 0.45
+       }
+      ],
+      "20": [
+       {
+        "emo": "meditate",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 21,
+     "od": 0.5
+    },
+    {
+     "id": "vishnu",
+     "x": 300,
+     "y": 690,
+     "s": 0.85,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "anim": "materialize",
+     "fly": 1,
+     "noShadow": true,
+     "z": -2,
+     "kind": "char",
+     "in": 9,
+     "out": 10,
+     "od": 1
+    },
+    {
+     "id": "r1",
+     "fig": "rudra",
+     "x": 1110,
+     "y": 660,
+     "s": 0.8,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -3,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 3
+    },
+    {
+     "id": "r2",
+     "fig": "rudra",
+     "x": 800,
+     "y": 660,
+     "s": 0.8,
+     "face": -1,
+     "pose": "strike",
+     "emo": "angry",
+     "anim": "materialize",
+     "d": 0.4,
+     "z": -3,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 3.3
+    },
+    {
+     "id": "r3",
+     "fig": "rudra",
+     "x": 1200,
+     "y": 620,
+     "s": 0.65,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "anim": "materialize",
+     "d": 0.8,
+     "z": -4,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 3.6
+    },
+    {
+     "id": "r4",
+     "fig": "rudra",
+     "x": 760,
+     "y": 610,
+     "s": 0.65,
+     "face": -1,
+     "pose": "hips",
+     "emo": "rage",
+     "anim": "materialize",
+     "d": 1.2,
+     "z": -4,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 3.9
+    },
+    {
+     "id": "r5",
+     "fig": "rudra",
+     "x": 1050,
+     "y": 590,
+     "s": 0.55,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "anim": "materialize",
+     "d": 1.6,
+     "z": -5,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 4.2
+    },
+    {
+     "id": "r6",
+     "fig": "rudra",
+     "x": 880,
+     "y": 585,
+     "s": 0.55,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "d": 2,
+     "z": -5,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 4.5
+    },
+    {
+     "id": "r7",
+     "fig": "rudra",
+     "x": 1180,
+     "y": 560,
+     "s": 0.45,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "anim": "materialize",
+     "d": 2.4,
+     "z": -6,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 4.8
+    },
+    {
+     "id": "r8",
+     "fig": "rudra",
+     "x": 960,
+     "y": 555,
+     "s": 0.45,
+     "face": -1,
+     "pose": "hips",
+     "emo": "rage",
+     "anim": "materialize",
+     "d": 2.8,
+     "z": -6,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 5.1
+    },
+    {
+     "id": "r9",
+     "fig": "rudra",
+     "x": 820,
+     "y": 550,
+     "s": 0.42,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "anim": "materialize",
+     "d": 3.2,
+     "z": -6,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 5.4
+    },
+    {
+     "id": "r10",
+     "fig": "rudra",
+     "x": 1100,
+     "y": 530,
+     "s": 0.38,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "d": 3.6,
+     "z": -7,
+     "kind": "char",
+     "in": 11,
+     "out": 21,
+     "od": 5.7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "close:brahma",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा का क्रोध बढ़ा, और उनके मस्तक से एक अग्नि-शिखा फूट पड़ी।",
+     "cam": "ecu:brahma",
+     "sfx": "fire"
+    },
+    {
+     "who": "narrator",
+     "text": "और उस अग्नि से एक दिव्य जीव प्रकट हुआ, जिसकी लाल आँखें अंगारों की तरह दहक रही थीं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "boom",
+     "shake": 8
+    },
+    {
+     "who": "rudra",
+     "text": "मेरा नाम क्या है?",
+     "cam": "close:rudra"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "close:brahma"
+    },
+    {
+     "who": "rudra",
+     "text": "मुझे मेरा नाम बताओ!",
+     "cam": "ecu:rudra"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा को याद आया कि रक्त और गर्जन, दोनों का मूल रुद् धातु है।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "रुद्र। मैं तुम्हें रुद्र नाम देता हूँ।",
+     "cam": "close:brahma",
+     "emo": "calm"
+    },
+    {
+     "who": "narrator",
+     "text": "रुद्र, शिव थे। महादेव। परब्रह्म की एक और दिव्य अभिव्यक्ति, तमो गुण के स्वामी।",
+     "cam": "full:shiva",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "और इस तरह पूरी हुई त्रिमूर्ति। रचयिता ब्रह्मा। संरक्षक विष्णु। संहारक शिव।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा ने हाथ जोड़कर उन्हें शांत किया, और सृजन में सहायता माँगी। शिव मान गए, और तुरंत जीव उत्पन्न करने लगे।",
+     "cam": "two:brahma,shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "पर यह क्या? महारुद्र तो स्वयं को ही दोहरा रहे थे। जैसे दर्पण में दर्पण, एक के बाद एक रुद्र प्रकट होने लगे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "boom"
+    },
+    {
+     "who": "narrator",
+     "text": "और सबसे उलझन की बात यह, कि वे सब भी शिव की तरह अमर थे। अब ब्रह्मा के सामने ग्यारह रुद्र खड़े थे।",
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "brahma",
+     "text": "रुक जाइए! ठहर जाइए, महादेव! आप ऐसा नहीं कर सकते!",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "कैसा?",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "brahma",
+     "text": "आप इस तरह अमर जीव उत्पन्न नहीं कर सकते।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "क्यों नहीं?",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "brahma",
+     "text": "इससे ब्रह्मांड का संतुलन बिगड़ जाएगा। सृष्टि में केवल नश्वर प्राणियों का जन्म होना चाहिए, जो मरें, ताकि फिर जन्म ले सकें। तभी सृजन, संरक्षण और विनाश का चक्र चल सकता है।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "क्या आप नश्वर प्राणी नहीं रच सकते?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "मैं केवल अमर प्राणी ही रच सकता हूँ। यदि इससे आपकी प्रक्रिया बिगड़ती है, तो मैं इसका हिस्सा नहीं बन सकता।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "इससे अच्छा है कि मैं ध्यान में लीन हो जाऊँ।",
+     "cam": "ecu:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "ग्यारह रुद्रों को पीछे छोड़कर शिव चले गए। ब्रह्मा ने रुद्रों को रहने के लिए ग्यारह स्थान दिए। एक को हृदय, पाँच को इंद्रियाँ, और पाँच को तत्त्व।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "narrator",
+     "text": "और ब्रह्मा फिर अकेले रह गए। एक ओर, उनके पुत्रों ने रचने से मना कर दिया था। दूसरी ओर, शिव ने ज़रूरत से कहीं अधिक रच दिया था।",
+     "camMove": true,
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "वे समझ गए कि महादेव का काम विनाश है, सृजन नहीं। त्रिदेव के बीच काम का बँटवारा पवित्र है। रचना केवल ब्रह्मा का कर्म है।",
+     "cam": "close:brahma"
+    }
+   ],
+   "tint": [
+    "#3a0c10",
+    0.25
+   ],
+   "music": "shiva",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "kailash",
+   "set": "kailash",
+   "ctx": {},
+   "els": [
+    {
+     "id": "shiva",
+     "x": 640,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "sglow",
+     "kind": "glow",
+     "x": 640,
+     "y": 480,
+     "r": 300,
+     "color": "#cfe6f6",
+     "core": 0.4,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "snow",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 300,
+     "n": 50,
+     "w": 1280,
+     "h": 600,
+     "rise": false,
+     "color": "#ffffff",
+     "z": 60,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "damaru"
+    },
+    {
+     "who": "narrator",
+     "text": "और दूर कैलाश पर, महादेव ध्यान में डूब गए। उनकी शांति, किसी तूफ़ान से पहले के सन्नाटे जैसी थी।",
+     "camMove": true,
+     "cam": "full:shiva"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "wind"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "chapter15",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा चार",
+   "title": "ब्रह्मा और नारद की लड़ाई",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "sabha",
+   "set": "court",
+   "ctx": {},
+   "els": [
+    {
+     "id": "brahma",
+     "x": 380,
+     "y": 640,
+     "s": 0.9,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "abhaya",
+        "t": 0.6
+       },
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "sad",
+        "pose": "lap",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "18": [
+       {
+        "emo": "rage",
+        "pose": "hips",
+        "t": 0.5
+       }
+      ],
+      "20": [
+       {
+        "pose": "curse",
+        "t": 0.4
+       },
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "28": [
+       {
+        "emo": "sad",
+        "pose": "despair",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "ri1",
+     "fig": "rishi",
+     "x": 820,
+     "y": 640,
+     "s": 0.62,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "ri2",
+     "fig": "rishi",
+     "x": 900,
+     "y": 630,
+     "s": 0.6,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 0.3,
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "ri3",
+     "fig": "rishi",
+     "x": 980,
+     "y": 640,
+     "s": 0.62,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 0.6,
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "ri4",
+     "fig": "rishi",
+     "x": 1060,
+     "y": 630,
+     "s": 0.6,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 0.9,
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "ri5",
+     "fig": "rishi",
+     "x": 1140,
+     "y": 640,
+     "s": 0.62,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 1.2,
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "ri6",
+     "fig": "rishi",
+     "x": 860,
+     "y": 600,
+     "s": 0.5,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 1.5,
+     "z": -2,
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "ri7",
+     "fig": "rishi",
+     "x": 1100,
+     "y": 600,
+     "s": 0.5,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "anim": "materialize",
+     "d": 1.8,
+     "z": -2,
+     "kind": "char",
+     "in": 1,
+     "out": 2
+    },
+    {
+     "id": "dharma",
+     "x": 880,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "legs": 4,
+     "anim": "materialize",
+     "kind": "creature",
+     "creature": "bull",
+     "in": 2,
+     "keys": {
+      "5": [
+       {
+        "legs": 3,
+        "t": 0.8
+       }
+      ],
+      "7": [
+       {
+        "legs": 2,
+        "t": 0.8
+       }
+      ],
+      "9": [
+       {
+        "legs": 1,
+        "t": 0.8
+       },
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 11,
+     "od": 1.5
+    },
+    {
+     "id": "narad",
+     "x": 880,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "prop": "null",
+     "kind": "char",
+     "in": 12,
+     "keys": {
+      "14": [
+       {
+        "emo": "calm",
+        "pose": "shrug",
+        "t": 0.5
+       }
+      ],
+      "15": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "16": [
+       {
+        "emo": "serene",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "21": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.3
+       }
+      ],
+      "23": [
+       {
+        "emo": "angry",
+        "pose": "curse",
+        "t": 0.4
+       },
+       {
+        "emo": "angry",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "24": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 27,
+     "od": 2
+    },
+    {
+     "id": "tremble",
+     "kind": "bolt",
+     "x": 640,
+     "y": 0,
+     "h": 560,
+     "z": 70,
+     "seed": 3,
+     "in": 25,
+     "out": 26
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा फिर ध्यान में लीन हुए। इस बार उनके भीतर से सात दिव्य ऋषि प्रकट हुए। वसिष्ठ, मरीचि, अत्रि, अंगिरा, पुलस्त्य, पुलह और क्रतु। सप्तर्षि।",
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर ब्रह्मा के हृदय से जन्म हुआ धर्म का, एक बैल के रूप में।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "brahma",
+     "text": "धर्म, तुम चार पैरों पर खड़े हो। ये चार पैर चार गुण हैं। सत्य, तप, शुचिता और करुणा।",
+     "cam": "two:brahma,dharma"
+    },
+    {
+     "who": "brahma",
+     "text": "सतयुग में तुम चारों पैरों पर खड़े रहोगे। पर जैसे-जैसे युग बीतेंगे, तुम एक-एक करके अपने पैर खोते जाओगे।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "dharma",
+     "text": "पिताश्री, तीन पैर?",
+     "cam": "full:dharma",
+     "sfx": "bell"
+    },
+    {
+     "who": "brahma",
+     "text": "हाँ। त्रेता में बहुत-से लोग तप करना छोड़ देंगे।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "dharma",
+     "text": "पिताश्री, दो पैर?",
+     "cam": "full:dharma",
+     "sfx": "bell"
+    },
+    {
+     "who": "brahma",
+     "text": "हाँ। द्वापर में लोग शुचिता को त्याग देंगे।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "dharma",
+     "text": "पिताश्री... केवल एक पैर?",
+     "cam": "full:dharma"
+    },
+    {
+     "who": "brahma",
+     "text": "हाँ। क्योंकि कलियुग में लोगों में करुणा नहीं बचेगी। धर्म, मैंने तुम्हें अपने हृदय से रचा है, पर दूसरों के हृदय में तुम अधिक समय तक नहीं रहोगे।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर और भी जीव जन्मे। ब्रह्मा की भौंहों से अग्नि, वक्ष से कामदेव, दाहिने अँगूठे से दक्ष, नाभि से विश्वकर्मा...",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "...और कंठ से, नारद।",
+     "camMove": true,
+     "cam": "full:narad",
+     "sfx": "veena"
+    },
+    {
+     "who": "brahma",
+     "text": "जाओ, पुत्र। सृजन की प्रक्रिया को आगे बढ़ाओ।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "पर दुर्भाग्य से, कुमारों की ही तरह, नारद ने भी सिर हिला दिया।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "मैं यह स्वीकार नहीं कर सकता। जन्म और मृत्यु के अंतहीन भँवर में फँसे इस संसार का मेरे लिए कोई अर्थ नहीं।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "मुझे तो केवल नारायण का लोक प्रिय है, जो समय और स्थान से परे है। आप मुझे भौतिक सुख देना चाहते हैं, पर मैं चैतन्य परमानंद का अभिलाषी हूँ।",
+     "cam": "close:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "close:brahma",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "अब सृष्टिकर्ता से और सहा नहीं गया। पहले मधु-कैटभ। फिर उनके अपने चतुर्सन। फिर शिव, जिन्होंने उनकी मुसीबत ग्यारह गुना कर दी। और अब नारद भी उन्हें छोड़कर जा रहे थे।",
+     "camMove": true,
+     "cam": "close:brahma",
+     "tint": true
+    },
+    {
+     "who": "narrator",
+     "text": "क्रोध की ज्वाला फिर भड़की, और उसकी चकाचौंध में ब्रह्मा को कुछ और दिखाई नहीं दिया।",
+     "cam": "ecu:brahma"
+    },
+    {
+     "who": "brahma",
+     "text": "नारद! तुम गंधर्व बन जाओगे! एक भाट! यदि सब संसार से दूर भागेंगे, तो सृष्टि का काम कैसे चलेगा?",
+     "cam": "close:brahma"
+    },
+    {
+     "text": "",
+     "dur": 1.8,
+     "cam": "ecu:narad",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "नारद स्तब्ध रह गए। पर उन्होंने वह शाप चुपचाप स्वीकार नहीं किया। उन्होंने वह किया जो अकल्पनीय था।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "जिस तरह आप अपने क्रोध को नहीं रोक पाए, उसी तरह आप अपनी वासना को भी नहीं रोक पाएँगे!",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "आपके मन में ऐसी इच्छा जागेगी, जो कभी नहीं जागनी चाहिए। और फिर आपको उसका मूल्य चुकाना पड़ेगा!",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 2.6,
+     "cam": "wide",
+     "sfx": "thunder",
+     "rumble": true,
+     "shake": 14
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मांड सिहर उठा। तीनों लोक काँप उठे। इससे पहले कभी किसी पिता ने पुत्र को, या पुत्र ने पिता को शाप नहीं दिया था।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "नारद के शब्द पूरे ब्रह्मांड में गूँजते रहे। और नारद वहाँ से चले गए।",
+     "camMove": true,
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा की आँखों से आँसू छलक आए। उन्हें इतनी पीड़ा थी, कि उनके कमल की पंखुड़ियाँ तक मुरझाने लगीं।",
+     "cam": "close:brahma",
+     "sfx": "descend"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्हें लगभग विश्वास हो चला था कि उनका सारा उद्यम व्यर्थ है। और तभी, उन्हें सहायता मिली। उससे, जिससे सबसे कम उम्मीद थी।",
+     "cam": "mid:brahma"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 760,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "हाँ। वह शाप मैंने ही दिया था। अपने ही पिता को।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "उस दिन मैंने सीखा, कि शाप तीर की तरह होता है। एक बार छूट जाए, तो लौटता नहीं। वह कच्चे फल की तरह सही मौसम की प्रतीक्षा करता है।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और वह मौसम आया। पर उससे पहले, एक चमत्कार हुआ। आधा पुरुष, आधी स्त्री...",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "अगले अध्याय में। नारायण... नारायण।",
+     "cam": "mid:narad"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "veena"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next18",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले अध्याय में: अर्धनारीश्वर का रहस्य, पहले मानव, और अग्नि का वह स्तंभ, जिसका न आदि था, न अंत।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "अर्धनारीश्वर · मनु और शतरूपा · अग्नि-स्तंभ",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end19",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय एक · आदि",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 1 से 4)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

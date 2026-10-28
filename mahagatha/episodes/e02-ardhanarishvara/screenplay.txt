@@ -1,0 +1,455 @@
+title: अर्धनारीश्वर
+episode: 2
+slug: e02-ardhanarishvara
+kicker: अध्याय दो
+sub: शिव, शक्ति और अनंत स्तंभ
+logline: हरि और हर का युद्ध, अर्धनारीश्वर का रहस्य, पहले मानव, ब्रह्मा का पाँचवाँ सिर, और अग्नि का वह स्तंभ जिसका न आदि था न अंत।
+stories: 5, 6, 11
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 5, 6 और 11
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ clouds kind=clouds x=640 y=300 n=3 speed=10 color=#2c3c80 edge=#8fa0d8 z=-4
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=760 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! आप लौट आए? अच्छा किया। कहानी अभी तो शुरू ही हुई है।
+NARAD (sly) [mid:narad]: पिछली बार आपने देखा, मैंने अपने ही पिता, ब्रह्मदेव को शाप दे दिया था। आपके मन में ऐसी इच्छा उत्पन्न होगी, जो कभी उत्पन्न नहीं होनी चाहिए।
+NARAD (calm) [close:narad]: शाप भी अजीब चीज़ होता है। एक बार कह दिया, तो वह प्रकृति का नियम बन जाता है।
+NARAD (calm, pose=open) [mid:narad]: वह कच्चे फल की तरह पेड़ पर लटका रहता है, और सही मौसम की प्रतीक्षा करता है।
+NARAD (sly) [ecu:narad]: और मौसम, आज बदलने वाला है।
+BEAT 1.2 [~close:narad] (sfx=veena)
+NARAD (smile, pose=point) [mid:narad]: पर पहले, एक यज्ञ में चलते हैं। जहाँ एक अतिथि बिना बुलाए आ पहुँचा।
+
+== TITLE | dur=7.5 | kicker=अध्याय दो | title=अर्धनारीश्वर | sub=शिव, शक्ति और अनंत स्तंभ
+
+== CHAPTER | kicker=कथा पाँच | title=हरि, हर और अर्धनारीश्वर
+
+# ---------------------------------------------------------------- Daksha's yajna, Shiva storms in
+== SCENE yajna | set=yajna music=court amb=fire,temple trans=mandala
++ agni kind=fire x=640 y=560 size=1.4 z=-1
+@ daksha x=470 y=650 s=0.85 face=1 pose=offer emo=smile
+@ ri1 fig=rishi x=820 y=650 s=0.7 face=-1 pose=namaste emo=meditate
+@ ri2 fig=rishi x=920 y=640 s=0.66 face=-1 pose=namaste emo=meditate
+@ ri3 fig=rishi x=1020 y=650 s=0.7 face=-1 pose=offer emo=meditate
+@ ri4 fig=rishi x=330 y=640 s=0.66 face=1 pose=namaste emo=meditate
+@ vishnu x=180 y=600 s=0.7 face=1 pose=abhaya emo=calm fly=1 noShadow=true z=-3
+@ brahma x=1130 y=590 s=0.66 face=-1 seat=lotus pose=bless emo=calm fly=1 noShadow=true z=-3
+BEAT 1.5 [wide] (sfx=bells)
+NARRATOR [~wide]: ब्रह्मा के दाहिने अँगूठे से जन्मे दक्ष ने एक भव्य यज्ञ आयोजित किया। सप्तऋषि आए, और स्वयं विष्णु और ब्रह्मा भी निद्रा से निकलकर उसमें सम्मिलित हुए।
+NARRATOR [~at:640,520,1.4] (sfx=om): मंत्रों के स्वर ब्रह्मांड की शिराओं में गूँजने लगे। जिस वस्तु को उनका स्पर्श मिलता, वह पवित्र हो जाती।
+NARRATOR [mid:daksha]: भक्ति के रस में डूबा ब्रह्मांड झूम रहा था। और तभी, प्रवेश-द्वार पर भगदड़ मच गई।
++ door kind=glow x=1250 y=420 r=320 color=#bcd8ff core=0.7 z=-2
+@ shiva x=1400 y=650 s=0.92 face=-1 pose=strike emo=rage
+> shiva x=1060 t=1.2
+> ri1 x=1500 pose=fear emo=fear t=1.2 d=0.6
+> ri2 x=1550 pose=fear emo=fear t=1.2 d=0.7
+> ri3 x=1600 pose=fear emo=fear t=1.2 d=0.5
+BEAT 1.6 [wide] (sfx=thunder, shake=10, flash)
+NARRATOR [full:shiva]: शिव! ब्रह्मा से विदा लेकर वे एक रमणीय स्थान पर ध्यान में लीन थे। पर ऋषियों के मंत्रों ने उनकी शांति भंग कर दी थी।
+NARRATOR [~wide] (sfx=boom, shake=8): क्रोधित महादेव ने यज्ञ-स्थल पर धावा बोल दिया, और सब कुछ उलट-पलट कर डाला।
+> daksha x=-200 pose=fear emo=fear t=1.4
+> ri4 x=-300 pose=fear emo=fear t=1.4 d=0.3
+NARRATOR [mid:daksha]: दक्ष और ऋषि तो डरकर भाग खड़े हुए। पर एक देवता अपनी जगह से नहीं हिले।
+> vishnu x=420 y=620 fly=0 noShadow=false pose=raise emo=angry t=1.5
+VISHNU (angry, pose=raise) [~two:vishnu,shiva]: रुकिए, महादेव! यह बर्बरता है। यज्ञ को नष्ट करने का अधिकार किसी को नहीं।
+SHIVA (rage, pose=point) [close:shiva] (sfx=damaru): अधिकार? मुझे अधिकार सिखाएँगे, नारायण?
+- door
++ c1 kind=clash x=740 y=360 z=60
+> vishnu x=600 pose=strike t=0.8
+> shiva x=860 pose=strike t=0.8
++ sky kind=tint color=#2a0a2a op=0.35 z=55
+NARRATOR [~wide] (sfx=clash, shake=12, flash): और दोनों के बीच घमासान युद्ध छिड़ गया। आकाशगंगाएँ काँप उठीं। समय थम गया।
++ b1 kind=bolt x=420 y=0 h=500 z=58
++ b2 kind=bolt x=980 y=0 h=520 seed=4 z=58
+NARRATOR [~at:740,380,1.3] (sfx=thunder, shake=8): दो समकक्ष शक्तियों के टकराव से ब्रह्मांड बिखरने लगा। तत्त्वों ने भय से अपनी आँखें मूँद लीं।
+- b1
+- b2
+> brahma x=740 y=400 pose=namaste emo=fear t=1.5
+BRAHMA (fear, pose=namaste) [close:brahma]: मैं आप दोनों से विनती करता हूँ! यह युद्ध रोक दीजिए, वरना यह कभी नहीं रुकेगा।
+BRAHMA (sad) [close:brahma]: आप दोनों एक-दूसरे के समकक्ष हैं, और विपरीत भी। आपके आस-पास सब कुछ नष्ट हो जाएगा, पर आप लड़ते ही रहेंगे।
+BRAHMA (angry, pose=open) [~two:vishnu,shiva]: इसलिए या तो अपना क्रोध शांत कीजिए, या मेरे बनाए ब्रह्मांड को नष्ट कर दीजिए। कहिए, आप क्या करना चाहेंगे?
+- c1
+- sky od=1.5
+> vishnu pose=rest emo=calm x=560 t=1.2
+> shiva pose=rest emo=calm x=920 t=1.2
+BEAT 2 [wide] (sfx=bell)
+NARRATOR [two:vishnu,shiva]: दोनों देवताओं को बात समझ में आई, और वे रुक गए। ब्रह्मा मुस्कुरा दिए।
+> brahma emo=smile pose=bless t=0.6
+BRAHMA (smile, pose=bless) [close:brahma]: आपने मेरे हृदय का भय दूर कर दिया। इसलिए आज से विष्णु कहलाएँगे हरि, और शिव कहलाएँगे हर।
+BRAHMA [~two:vishnu,shiva] (sfx=sparkle): दोनों का अर्थ एक ही है। दूर करने वाला। यह नाम आपको याद दिलाएगा कि आप दोनों एक-दूसरे के पर्याय हैं। हरि और हर मिलकर, हरिहर।
++ hh kind=text x=740 y=200 text="हरिहर" size=96 z=70
+BEAT 2.2 [wide] (sfx=om)
+- hh
+
+# ---------------------------------------------------------------- Brahma's despair
+== SCENE vyatha | set=court music=sorrow amb=court trans=mandala
++ pil kind=glow x=1000 y=330 r=200 color=#f4f0e0 core=0.4 z=-4
+@ brahma x=430 y=640 s=0.95 face=1 pose=despair emo=sad
+@ vishnu x=860 y=650 s=0.95 face=-1 pose=rest emo=calm
+BEAT 1.2 [wide]
+NARRATOR [~wide]: यज्ञ पूरा हुआ, सब जाने लगे। तब विष्णु ने ब्रह्मा को एक ओर बुलाया।
+VISHNU (calm, pose=open) [close:vishnu]: प्रभु, मैं देख रहा हूँ, आप परेशान हैं। आपने यज्ञ का आनंद भी नहीं लिया। बताइए, आपको क्या दुख है?
+NARRATOR [close:brahma]: सहानुभूति के ये शब्द सुनते ही ब्रह्मा का दुख धारा की तरह बह निकला।
+BRAHMA (sad, pose=despair) [close:brahma]: मेरे अपने पुत्रों ने मेरी बात नहीं मानी। सृजन मेरे लिए हर क्षण की पीड़ा बन गया है। और आप? आप आराम से सोते रहते हैं।
+BRAHMA (sad, pose=shrug) [ecu:brahma]: शायद मुझे इस पद से हटा दिया जाना चाहिए। मैं अपना कार्य करने में विफल रहा हूँ।
+NARRATOR [mid:vishnu]: विष्णु बहुत देर तक श्वेत-स्वर्ण के एक स्तंभ को निहारते रहे। फिर धीरे से बोले।
+VISHNU (calm) [close:vishnu]: महादेव।
+BRAHMA (fear) [close:brahma]: महादेव? मैंने कोशिश की थी। पर वे तो अमर रुद्र उत्पन्न करने लगे! वे संहारक हैं, वे रचना कैसे करेंगे?
+VISHNU (smile, pose=bless) [two:brahma,vishnu]: वे रचना न करें, पर मार्ग अवश्य दिखा सकते हैं। आप महादेव के पास जाइए।
+
+# ---------------------------------------------------------------- Kailash: Ardhanarishvara
+== SCENE kailash | set=kailash music=shiva amb=wind trans=mandala
++ snow kind=motes x=640 y=360 n=40 w=1300 h=700 z=60
+@ shiva x=820 y=650 s=0.9 face=-1 seat=lotus pose=meditate emo=meditate
+@ brahma x=330 y=660 s=0.85 face=1 seat=kneel pose=namaste emo=fear
+BEAT 1.5 [wide] (sfx=om)
+NARRATOR [~wide]: ब्रह्मा कैलाश पहुँचे, तो देखा कि महादेव फिर ध्यान में लीन थे।
+NARRATOR [close:brahma]: दक्ष के यज्ञ में शिव का प्रकोप देखने के बाद, उनका ध्यान भंग करने का साहस ब्रह्मा में नहीं था। पर खाली हाथ लौटना भी संभव नहीं था।
+> brahma emo=meditate t=1
+NARRATOR [~at:330,480,1.6]: इसलिए ब्रह्मा वहीं बैठ गए, और आत्मा की गहराई से उपासना करने लगे। समय बीतता गया। पर ब्रह्मा अपनी जगह से नहीं हिले।
+BEAT 2 [~wide] (sfx=swell)
+> shiva emo=calm t=0.6
+SHIVA (calm) [close:shiva] (sfx=bell): मुझे पता है, आप यहाँ क्यों आए हैं।
+BRAHMA (sad, pose=namaste) [close:brahma]: प्रभु, मेरा मार्गदर्शन कीजिए। सृष्टि खतरे में है, और मैं भटक गया हूँ। बताइए, मुझसे कहाँ भूल हुई?
+SHIVA (calm, pose=abhaya) [close:shiva]: जिस तरह आपने पुत्रों को जन्म दिया है, उस तरह प्रजनन संभव नहीं है। आपको दरअसल शक्ति की आवश्यकता है।
+BRAHMA (fear) [close:brahma]: शक्ति?
+SHIVA (serene) [ecu:shiva]: स्त्री की शक्ति।
+> shiva seat=none t=1
++ aura kind=rays x=820 y=380 r=700 n=32 color=#ffe7a0 op=0.3 z=-6 anim=pop inDur=2
++ ag kind=glow x=820 y=380 r=420 color=#ffd7e8 core=0.8 z=-5
+BEAT 1.5 [~at:820,420,1.3] (sfx=swell)
+- shiva od=1.5
+@ ardha x=820 y=650 s=0.95 face=1 pose=abhaya emo=serene anim=materialize inDur=2.5
+NARRATOR [~full:ardha] (sfx=magic): ब्रह्मा मंत्रमुग्ध देखते रहे। महादेव के शरीर ने एक नया रूप धारण कर लिया था। आधा पुरुष, आधा स्त्री।
+NARRATOR [mid:ardha]: बीच की धुरी पर बराबर बँटा हुआ, फिर भी एक। दो विरोधी ऊर्जाओं का आदर्श मिलन। ऐसा रूप, जो ब्रह्मा ने पहले कभी नहीं देखा था।
+> brahma emo=joy t=0.6
+NARRATOR [close:brahma]: भय और हर्ष से भरकर ब्रह्मा वहीं बैठे रह गए। इस रूप का आधा भाग नारी का था, इसलिए इसे कहा गया, अर्धनारीश्वर।
+ARDHA (serene, pose=open) [full:ardha] (sfx=om): सृजन के लिए इसी की आवश्यकता है! शिव और शक्ति। देव और देवी। स्थिर और गतिशील। होना और बनना।
+ARDHA [mid:ardha]: पुरुष और स्त्री, आपकी सृष्टि के दो अंग हैं। एक के बिना दूसरा अपना कार्य नहीं कर सकता। दोनों एक होंगे, तभी सृजन आरंभ होगा, और अंत समय तक चलता रहेगा।
+ARDHA (joy, pose=raise) [~at:820,380,1.2] (sfx=conch): आदिशक्ति की जय! देवी माता की जय! पवित्र स्त्री रूप की जय हो!
+> brahma pose=namaste emo=calm t=0.6
+BRAHMA (calm, pose=namaste) [close:brahma]: देवी, मैं आपकी वंदना करता हूँ। आपने मेरी आँखें खोल दीं। आशीर्वाद दीजिए कि मैं नारी की रचना कर सकूँ, और ऐसा मानव-युगल बना सकूँ जो पृथ्वी पर जीवन आगे बढ़ाए।
++ gift kind=sparkle x=330 y=420 n=30 r=160 z=40
+NARRATOR [~wide] (sfx=sparkle): आदिशक्ति मुस्कुराईं, और उन्होंने ब्रह्मा को प्रजनन की शक्ति प्रदान कर दी।
+
+# ---------------------------------------------------------------- Manu and Brahmi
+== SCENE manav | set=glade music=dawn amb=birds trans=white
++ sun kind=glow x=640 y=300 r=420 color=#fff2c0 core=0.6 z=-5
+@ brahma x=640 y=660 s=0.9 face=1 pose=bless emo=smile
+BEAT 1.2 [wide] (sfx=swell)
+@ manu x=390 y=660 s=0.85 face=1 pose=namaste emo=calm anim=materialize inDur=2
+@ shatarupa x=890 y=660 s=0.85 face=-1 pose=namaste emo=calm anim=materialize inDur=2 d=0.6
+NARRATOR [~wide] (sfx=magic): उस शक्ति से ब्रह्मा ने अपने ही शरीर से एक पुरुष और एक स्त्री की रचना की। पृथ्वी का पहला युगल।
+NARRATOR [mid:manu]: पुरुष का नाम था मनु। और स्त्री का नाम रखा गया ब्राह्मी।
+NARRATOR [two:manu,shatarupa]: मनु से मानव जाति आरंभ होनी थी, इसलिए उनकी संतानें कहलाईं, मनुष्य। मानव।
+NARRATOR [close:brahma]: ब्रह्मा इतने प्रसन्न थे कि अब तक की हर परेशानी भूल गए। हर बाधा। यहाँ तक कि वह भयानक शाप भी, जो नारद ने उन्हें दिया था।
++ dim kind=tint color=#1a0820 op=0 z=55
+> dim op=0.45 t=2
+NARAD (sad) [ecu:brahma] (sfx=heartbeat): आपके मन में ऐसी इच्छा उत्पन्न होगी... जो कभी उत्पन्न नहीं होनी चाहिए।
+NARRATOR [close:brahma]: वे शब्द, जो सच होने वाले थे।
+
+== CHAPTER | kicker=कथा छह | title=पाँचवाँ सिर
+
+# ---------------------------------------------------------------- the curse ripens
+== SCENE moh | set=lotusSky music=tension amb=wind trans=mandala
+@ brahma x=420 y=650 s=0.92 face=1 pose=rest emo=calm
+@ shatarupa x=860 y=660 s=0.85 face=-1 pose=namaste emo=calm
+BEAT 1.2 [wide]
+NARRATOR [~wide]: मनु ब्रह्मा के पुत्र थे, और ब्राह्मी उनकी पुत्री। पर शाप तो शाप होता है। वह किसी संबंध को नहीं मानता। वह तीर की तरह निष्ठुरता से अपने लक्ष्य तक पहुँचता है।
+> brahma emo=sly gaze=1 t=1
+NARRATOR [close:brahma] (sfx=heartbeat): ब्राह्मी अत्यंत रूपवती थी। और सृष्टिकर्ता, अपनी ही रचना पर मोहित हो गए।
+> shatarupa emo=fear pose=cover t=0.6
+NARRATOR [close:shatarupa]: ब्राह्मी ने सम्मान में सिर झुकाया, पर तुरंत समझ गई। ब्रह्मा की आँखों में प्रेम नहीं, वासना थी। अतृप्त वासना।
+> shatarupa x=1150 face=-1 t=1.2
+> brahma face=1 x=520 t=1.2 d=0.4
+NARRATOR [~wide]: उनकी दृष्टि से बचने के लिए ब्राह्मी कभी दाईं ओर गई, कभी बाईं ओर, कभी उनके पीछे। पर जहाँ भी वह जाती, ब्रह्मा का कोई न कोई मुख उसे खोज लेता।
+> shatarupa fly=1 noShadow=true x=760 y=330 t=2.5
+NARRATOR [~at:640,380,1.1]: हताश होकर ब्राह्मी हवा में ऊपर उठ गई। पर ब्रह्मा के जुनून की तो जैसे कोई सीमा ही नहीं बची थी।
+> brahma heads=5 t=0.1 d=0.8
++ h5 kind=ring x=520 y=230 r=200 color=#ffd0a0 z=60
+NARRATOR [close:brahma] (sfx=crack, shake=6): अचानक उनके चारों सिरों के ठीक ऊपर, एक पाँचवाँ सिर उग आया, जो ब्राह्मी को देखने के लिए तड़प रहा था।
+@ marichi fig=rishi x=-150 y=660 s=0.8 face=1 pose=raise emo=angry
+@ atri fig=rishi x=-300 y=660 s=0.8 face=1 pose=raise emo=angry
+> marichi x=150 t=1.2
+> atri x=280 t=1.2 d=0.2
+NARRATOR [~wide]: अपनी बहन को संकट में और पिता को लज्जित होते देख, मरीचि और अत्रि चेतावनी देने दौड़े आए।
+MARICHI (angry, pose=point) [close:marichi]: पिताश्री! आपको नारद के वचनों के वश में नहीं होना चाहिए। आप सृष्टिकर्ता हैं। सर्वोच्च शक्ति के प्रतीक।
+ATRI (angry, pose=raise) [close:atri]: अपनी ही पुत्री के लिए ऐसी अपवित्र भावना? आपने ब्राह्मी को दिव्य उद्देश्य के लिए रचा है। ऐसी इच्छा के आगे मत झुकिए, जो आपकी पूरी सृष्टि को अशुभ कर दे!
+> brahma emo=rage t=0.4
+BEAT 1.2 [ecu:brahma] (sfx=heartbeat)
+NARRATOR [mid:brahma]: पर नारद का शाप कहीं अधिक शक्तिशाली था। ब्रह्मा ने ब्राह्मी का पीछा करना शुरू कर दिया।
+
+# ---------------------------------------------------------------- the hundred forms
+== SCENE rupa | set=glade music=battle amb=birds,wind trans=white
+BEAT 0.8 [wide] (sfx=whoosh)
+@ cow1 kind=creature creature=cow x=300 y=640 s=0.8 face=-1 anim=materialize
+@ bull1 kind=creature creature=bull x=600 y=650 s=0.9 face=-1 anim=materialize d=0.6
+> cow1 x=-200 t=4 d=1
+> bull1 x=100 t=4 d=1.4
+NARRATOR [~wide] (sfx=magic): बचने के लिए ब्राह्मी ने पशु रूप धारण कर लिए। वह गाय बनी, तो ब्रह्मा बैल बन गए।
+- cow1
+- bull1
+@ sw1 kind=creature creature=swan x=1400 y=300 s=0.7 face=-1 fly=1
+@ sw2 kind=creature creature=swan x=1700 y=340 s=0.75 face=-1 fly=1
+> sw1 x=-200 t=6
+> sw2 x=100 t=6
++ flock kind=birds x=640 y=200 n=9 speed=120 z=10
+NARRATOR [~wide] (sfx=whoosh): वह हंसिनी बनी, तो ब्रह्मा हंस बन गए। वह घोड़ी बनी, तो वे घोड़ा। वह हिरनी बनी, तो वे हिरन।
+- sw1
+- sw2
+@ f1 kind=creature creature=fish x=1300 y=560 s=0.7 face=-1
+@ f2 kind=creature creature=fish x=1520 y=580 s=0.75 face=-1
+> f1 x=-200 t=5
+> f2 x=60 t=5
+NARRATOR [~wide] (sfx=splash): सरीसृप, कीट, पक्षी, मछलियाँ। आकाश, धरती, नदी और समुद्र के जीव। एक के बाद एक, सौ रूप।
+- f1
+- f2
+- flock
+@ shatarupa x=640 y=640 s=0.95 face=1 pose=despair emo=sad anim=materialize
+NARRATOR [~full:shatarupa]: और हर बार, सम्मोहित ब्रह्मा उसके नर रूप में बदल जाते। ब्राह्मी ने सौ रूप धारण किए, इसलिए उनका नाम पड़ा, शतरूपा।
+NARRATOR [close:shatarupa]: इसी भाग-दौड़ में पृथ्वी पर अनगिनत जीव-जंतु अस्तित्व में आए। पर इस कथा की कीमत, कोई और चुकाने वाला था।
+
+# ---------------------------------------------------------------- Shiva's punishment
+== SCENE kapal | set=lotusSky music=shiva amb=wind,storm trans=cut tint=#2a0a1a,0.3
+@ brahma x=420 y=650 s=0.92 face=1 pose=reach emo=sly heads=5
+@ shatarupa x=980 y=330 s=0.75 face=-1 pose=cover emo=fear fly=1 noShadow=true
+BEAT 0.8 [wide]
++ sg kind=glow x=900 y=380 r=380 color=#9ec8ff core=0.8 z=-2 anim=pop
+@ shiva x=900 y=660 s=1 face=-1 pose=point emo=rage anim=materialize inDur=1
+NARRATOR [~wide] (sfx=thunder, shake=10, flash): यह देखकर शिव का क्रोध फूट पड़ा।
+SHIVA (rage, pose=curse) [close:shiva] (sfx=damaru): ब्रह्मदेव! होश में आइए! आप सृष्टिकर्ता हैं, या एक भूखे पशु?
+> brahma emo=fear pose=namaste t=0.5
+BRAHMA (fear, pose=namaste) [close:brahma]: क्षमा, महादेव, क्षमा! मुझे... मुझे पता नहीं मुझे क्या हो गया था।
+NARRATOR [mid:shiva]: ब्रह्मा को होश आया, और उन्होंने क्षमा माँगी। पर शिव का क्रोध उबल रहा था।
+> shiva x=640 pose=strike t=0.4
++ cut kind=bolt x=520 y=-40 h=300 z=60
++ cr kind=ring x=520 y=230 r=300 z=60
+> brahma heads=4 t=0.1
+NARRATOR [ecu:brahma] (sfx=boom, shake=14, flash): और उन्होंने ऊपर की ओर निकला वह पाँचवाँ सिर, एक ही प्रहार में काट दिया।
+- cut
+- cr
+SHIVA (angry, pose=point) [close:shiva]: ऐसे अधम विचार क्षम्य नहीं हैं। आपके चारों मुख, इस भूल के प्रायश्चित में, सदा वेदों का पाठ करते रहेंगे।
+> shiva item=kapal emo=fear pose=lift t=0.6
+NARRATOR [close:shiva] (sfx=heartbeat): अचानक शिव बोलते-बोलते रुक गए। उनके हाथ पर कुछ चिपका हुआ था। ब्रह्मा का कटा हुआ सिर।
+NARRATOR [ecu:shiva]: शिव समझ गए। ब्रह्मा का सिर काटना, ब्रह्महत्या थी। और उसका दंड, यह सिर अब उनके हाथ से छूटने वाला नहीं था।
+> shatarupa fly=0 y=660 x=1100 t=1.6
+SHATARUPA (angry, pose=open) [close:shatarupa]: पर महादेव ने जो किया, वह उचित था! फिर उन्हें दंड क्यों मिले?
+@ atri fig=rishi x=-150 y=660 s=0.8 face=1 pose=bless emo=calm
+> atri x=200 t=1.2
+ATRI (calm, pose=bless) [close:atri]: बहन, कर्म का संदर्भ चाहे जो हो, हर क्रिया एक प्रतिक्रिया को जन्म देती है।
+ATRI (calm, pose=open) [mid:atri]: पिताश्री ने शाप के वश में अनुचित कामना की, और उसका मूल्य चुकाया। महादेव का कर्म चाहे कितना ही न्यायसंगत हो, उन्हें भी उसका फल भोगना होगा। ब्रह्मांड के नियम सब पर समान लागू होते हैं।
+
+# ---------------------------------------------------------------- Kapali reaches Kashi
+== SCENE kashi | set=glade time=dusk music=sorrow amb=river,wind trans=mandala
+@ shiva x=1400 y=650 s=0.85 face=-1 pose=lift item=kapal emo=sad walk=1
+> shiva x=760 t=9
+NARRATOR [~wide] (sfx=wind): महादेव पूरे ब्रह्मांड में भटकते रहे, पर कोई उपाय नहीं मिला। कटा सिर उनके हाथ से चिपका रहा।
+NARRATOR [mid:shiva]: समय के साथ मांस सड़कर गिर गया, और केवल हड्डियाँ बचीं। हाथ में कपाल लिए भटकते शिव का एक नाम पड़ा, कपाली।
+> shiva walk=0 t=0.5
++ d1 kind=diya x=300 y=470 size=0.5 z=5
++ d2 kind=diya x=470 y=480 size=0.5 z=5
++ d3 kind=diya x=900 y=475 size=0.5 z=5
++ d4 kind=diya x=1080 y=468 size=0.5 z=5
+NARRATOR [~at:760,500,1.3] (sfx=bell): फिर एक दिन शिव ने धरती के एक स्थान पर कदम रखा। और चमत्कार हुआ।
+> shiva item=none pose=abhaya emo=serene t=0.6
++ fall kind=ring x=820 y=560 r=260 color=#ffe7a0 z=40
++ shine kind=rays x=760 y=380 r=700 n=24 color=#ffe7a0 op=0.25 z=-4 anim=pop inDur=2
+NARRATOR [close:shiva] (sfx=splash, swell): कपाल उनके हाथ से छूटकर नीचे गिर पड़ा। भगवान का शुद्धिकरण हो चुका था।
+NARRATOR [~wide] (sfx=om): वह भूमि मोक्ष देने वाली थी। जो भी वहाँ आएगा, अपने पापों से मुक्त हो जाएगा। वही स्थान कहलाया, काशी। वाराणसी।
++ kashi kind=text x=640 y=170 text="काशी" size=92 z=70
+BEAT 2.2 [wide] (sfx=bells)
+- kashi
+
+# ---------------------------------------------------------------- Shatarupa's fear
+== SCENE bhay | set=pond time=night music=sorrow amb=night trans=fade
++ moonglow kind=glow x=1040 y=150 r=260 color=#e6eeff core=0.4 z=-5
+@ manu x=520 y=650 s=0.9 face=1 pose=rest emo=calm
+@ shatarupa x=760 y=655 s=0.88 face=-1 pose=despair emo=sad
+BEAT 1.5 [wide] (sfx=wind)
+NARRATOR [~wide]: कुछ समय बाद, मनु ने शतरूपा को गहरे विचार में डूबा देखा।
+> manu pose=cradle t=1
+MANU (calm, pose=cradle) [two:manu,shatarupa]: तुम्हें क्या कष्ट है, प्रिये?
+SHATARUPA (sad) [close:shatarupa]: मुझे भय लग रहा है, मनु। मुझे नारी को जन्म देने से भय लग रहा है।
+SHATARUPA (sad, pose=open) [close:shatarupa]: अगर पिता से ही पुत्री को खतरा हो, तो फिर उसकी रक्षा कौन करेगा? अगर सब उसे चोट पहुँचाएँगे, तो उसके घाव कौन भरेगा?
+NARRATOR [close:manu]: मनु शांत रहे। पर शतरूपा काँप रही थी।
+SHATARUPA (fear) [ecu:shatarupa]: मुझे डर है कि स्त्री को सौंदर्य दिया, तो पुरुष उसे निर्वस्त्र कर देंगे। उसे ज्ञान दिया, तो उसे नीचा दिखाएँगे।
+SHATARUPA (fear, pose=cover) [ecu:shatarupa]: उसे चुनने का अधिकार दिया, तो उसे ठुकरा देंगे। और अगर उसे शक्ति दी... तो उसे नष्ट कर देंगे।
+> shatarupa x=1000 t=2
+> manu pose=reach t=1
+BEAT 1.6 [wide] (sfx=heartbeat)
+SHATARUPA (sad) [close:shatarupa]: मैं भयभीत हूँ, मनु। मुझे भय लगता है।
+BEAT 2 [~wide]
+
+== CHAPTER | kicker=कथा सात | title=अग्नि-स्तंभ
+
+# ---------------------------------------------------------------- the quarrel
+== SCENE hod | set=lotusSky music=tension amb=wind trans=mandala
+@ brahma x=420 y=650 s=0.92 face=1 pose=point emo=angry
+@ vishnu x=880 y=650 s=0.95 face=-1 pose=hips emo=angry
+@ indra x=640 y=560 s=0.6 face=1 pose=fear emo=fear fly=1 noShadow=true z=-4
+BEAT 1 [wide] (sfx=gong)
+NARRATOR [~wide]: एक दिन देवता जागे, तो देखा कि ब्रह्मा और विष्णु एक-दूसरे से लड़ने को तैयार खड़े थे।
+BRAHMA (angry, pose=point) [close:brahma]: मैं इस मार्ग से आया, और इन्होंने मुझे प्रणाम तक नहीं किया! मैं इस सृष्टि का रचयिता हूँ। त्रिदेवों में प्रथम। क्या मैं ज़रा-से सम्मान के योग्य भी नहीं?
+VISHNU (sly, pose=hips) [close:vishnu]: आप रचयिता हैं। पर इस सृष्टि का संरक्षक, मैं हूँ।
+BRAHMA (rage, pose=open) [close:brahma]: आप संरक्षण कर पाते हैं, क्योंकि मैं रचना करता हूँ! मेरे बिना आपके पास करने को कुछ नहीं होगा।
+VISHNU (angry, pose=point) [close:vishnu]: सृष्टि इतनी दुर्बल है कि उसे मेरी आवश्यकता है। याद है, मधु और कैटभ को किसने मारा था? जो रक्षा करता है, वही बड़ा होता है।
+BRAHMA (rage, pose=strike) [~two:brahma,vishnu]: शक्ति देखनी है मेरी? तो आइए, मेरे शरीर में प्रवेश कीजिए, और देखिए मेरे भीतर क्या समाया है!
+
+# ---------------------------------------------------------------- inside each other
+== SCENE antar | set=cosmos music=wonder amb=void trans=white
++ swirl kind=mandala x=640 y=360 r=320 spin=6 z=-5 op=0.6
++ e1 kind=earth x=380 y=330 r=70 form=0 z=-2
++ e2 kind=earth x=900 y=260 r=50 form=0 z=-2
++ e3 kind=earth x=1040 y=520 r=40 form=0 z=-2
+@ vishnu x=640 y=640 s=0.5 face=1 pose=open emo=joy fly=1 noShadow=true
+> e1 form=1 t=4
+> e2 form=1 t=4 d=1
+> e3 form=1 t=4 d=2
+NARRATOR [~wide] (sfx=magic): विष्णु ने ब्रह्मा के भीतर प्रवेश किया, तो देखा, लाखों संसार वहाँ धड़क रहे थे। समुद्र उफन रहे थे, पर्वत ऊपर उठ रहे थे।
++ sp kind=sparkle x=640 y=360 n=40 r=500 z=20
+NARRATOR [~at:640,420,1.4]: हर तरह का जीवन, हर तरह का संसार, अपनी पूरी भव्यता में साँस ले रहा था। वहाँ का खालीपन भी, अपने गर्भ में कोई रहस्य छिपाए था।
+VISHNU (joy, pose=open) [close:vishnu]: आप वास्तव में समस्त सृष्टि के स्वामी हैं। पर अब आप भी देखिए, मेरे भीतर क्या है।
+- vishnu od=0.8
+- e1
+- e2
+- e3
++ r1 kind=ring x=640 y=360 r=600 dur=3 z=10
++ yuga kind=yugas x=640 y=360 r=260 z=-3
+@ brahma x=640 y=600 s=0.42 face=1 pose=fear emo=fear fly=1 noShadow=true anim=materialize
+NARRATOR [~at:640,360,0.85] (sfx=swell): ब्रह्मा ने विष्णु के भीतर प्रवेश किया, और चकित रह गए। वे सचमुच अनंत के बीच खड़े थे। असीम, अंतहीन।
+NARRATOR: लाखों आकाशगंगाएँ। विशाल ग्रह। झिलमिलाते नक्षत्र। अतीत, वर्तमान और भविष्य, तीनों काल एक साथ। वहाँ एक नहीं, अनेक ब्रह्मांड थे।
+> brahma x=300 t=3
+> brahma x=980 y=520 t=3 d=3
+NARRATOR [mid:brahma]: ब्रह्मा के अनेक सिर भी उसे समझ नहीं पा रहे थे। वे बाहर निकलना चाहते थे, पर कोई मार्ग नहीं मिल रहा था।
++ st kind=stem x=640 y=760 dx=0 dy=-520 grow=0 w=12 z=-1
+> st grow=1 t=3
+> brahma x=640 y=260 t=3 d=1.5
+NARRATOR [~at:640,400,1.1] (sfx=whoosh): ऊपर-नीचे भटकते हुए, आख़िरकार उन्हें एक कमल-नाल मिला। और ब्रह्मा उसी के सहारे, विष्णु की नाभि से बाहर निकल आए।
+
+# ---------------------------------------------------------------- the pillar of fire
+== SCENE stambh | set=pillarSky music=battle amb=wind,fire trans=white
+@ brahma x=360 y=650 s=0.85 face=1 pose=strike item=kamandal emo=rage
+@ vishnu x=920 y=650 s=0.9 face=-1 pose=strike emo=rage
+@ indra x=640 y=540 s=0.55 face=1 pose=fear emo=fear fly=1 noShadow=true z=-4
+BEAT 0.8 [wide]
++ c2 kind=clash x=640 y=360 z=60
+NARRATOR [~wide] (sfx=clash, shake=6): अपनी दिव्यता सिद्ध करने के लिए बहस फिर भड़क उठी। पहले अपशब्द, फिर अस्त्र-शस्त्र। यह देखकर सब काँप उठे।
+- c2
+> brahma x=220 pose=fear emo=fear t=1
+> vishnu x=1080 pose=fear emo=fear t=1
+- indra
++ pillar kind=pillar x=640 y=360 w=110 h=2400 z=-2 anim=grow inDur=2
+BEAT 2 [~wide] (sfx=boom, shake=12, flash)
+NARRATOR [~at:640,360,0.9] (sfx=fire): तभी उनके बीच एक विशाल अग्नि-स्तंभ प्रकट हुआ। सोने की तरह दहकता हुआ। बहुत ऊपर तक, और बहुत नीचे तक। मानो उसका न आदि था, न अंत।
+> brahma pose=rest emo=fear t=0.6
+> vishnu pose=rest emo=fear t=0.6
+NARRATOR [two:brahma,vishnu]: दृश्य इतना सम्मोहक था कि रचयिता और संरक्षक, दोनों ठिठक गए।
+@ indra x=640 y=180 s=0.6 face=1 pose=open emo=calm fly=1 noShadow=true z=5
+INDRA (calm, pose=open) [full:indra]: हे देवों! एक प्रस्ताव है। भगवान विष्णु इस स्तंभ का आधार खोजें, और ब्रह्मदेव इसका शीर्ष। जो पहले सफल होगा, वही श्रेष्ठ माना जाएगा।
+BRAHMA (sly) [close:brahma]: स्वीकार है।
+VISHNU (calm) [close:vishnu]: स्वीकार है।
+- indra
+- vishnu od=0.6
+@ boar kind=creature creature=boar x=1000 y=650 s=0.9 face=-1 anim=materialize
+NARRATOR [mid:boar] (sfx=roar): विष्णु ने वराह का रूप धारण किया, और धरती खोदते हुए नीचे उतरने लगे।
+> boar y=1100 x=760 t=4
++ dust kind=smoke x=820 y=680 n=10 w=300 color=#8a6a4a z=10
+- brahma od=0.6
+@ hamsa kind=creature creature=swan x=260 y=600 s=0.8 face=1 anim=materialize fly=1
+NARRATOR [mid:hamsa] (sfx=whoosh): और ब्रह्मा ने हंस का रूप धारण किया, और ऊपर की दिशा में उड़ चले।
+> hamsa x=560 y=-300 t=5
+- dust
+NARRATOR [~at:640,300,1.2]: दोनों खोजते रहे। बहुत खोजते रहे। युग बीत गए।
+
+# ---------------------------------------------------------------- the ketaki flower
+== SCENE ketaki | set=cosmos music=wonder amb=wind,fire trans=cut
++ pillar kind=pillar x=420 y=360 w=110 h=2400 z=-2
+@ hamsa kind=creature creature=swan x=780 y=520 s=0.8 face=-1 fly=1
+@ ketaki x=800 y=-80 s=0.9 face=1 fly=1
+NARRATOR [~wide] (sfx=wind): वह स्तंभ, ब्रह्मांड की रीढ़ की तरह, दोनों दिशाओं में अनंत तक फैला था। ब्रह्मा पूरी तरह थक चुके थे।
+> ketaki y=330 t=4
+NARRATOR [~at:780,400,1.3] (sfx=sparkle): वे लौटने ही वाले थे, कि उनकी नज़र नीचे की ओर तैरती किसी चीज़ पर पड़ी। केतकी का फूल।
+> ketaki x=840 y=470 t=1
+BRAHMA (calm) [two:hamsa,ketaki]: तुम कहाँ से आ रहे हो?
+KETAKI (smile) [close:ketaki]: मैं इस स्तंभ के ऊपरी सिरे पर था, पर वहाँ से फिसल गया।
++ echo kind=text x=640 y=200 text="...ऊपरी सिरा..." size=60 z=70
+BEAT 1.6 [ecu:hamsa] (sfx=heartbeat)
+- echo
+NARRATOR [close:hamsa]: ब्रह्मा ने पूरा वाक्य नहीं सुना। बस उसका एक अंश। स्तंभ का ऊपरी सिरा। उनके हाथ अब फूल नहीं, विजय की कुंजी लग चुकी थी।
+BRAHMA (sly) [two:hamsa,ketaki]: सुनो केतकी। तुम सबके सामने कहोगे, कि मैं स्तंभ के शीर्ष तक पहुँचा, और वहीं से तुम्हें उठाकर लाया।
+KETAKI (fear) [close:ketaki]: आप चाहते हैं कि मैं झूठ बोलूँ?
+BRAHMA (angry) [ecu:hamsa]: मैंने तुम्हें बनाया है। बस वही उपकार लौटाने को कह रहा हूँ।
+KETAKI (sad) [close:ketaki]: पर... झूठ?
+BRAHMA (sly) [two:hamsa,ketaki]: तुम ऐसा कर दो, तो मैं अपनी श्रेष्ठता सिद्ध कर दूँगा।
+BEAT 1.2 [close:ketaki]
+NARRATOR [~wide]: और केतकी का फूल, झूठ बोलने के लिए तैयार हो गया।
+
+# ---------------------------------------------------------------- the lie, and the Jyotirlinga
+== SCENE jyotirlinga | set=pillarSky music=shiva amb=wind,fire trans=white
++ pillar kind=pillar x=640 y=360 w=110 h=2400 z=-2 crack=0
+@ brahma x=330 y=650 s=0.88 face=1 pose=open emo=sly
+@ vishnu x=950 y=650 s=0.9 face=-1 pose=rest emo=sad
+@ ketaki x=230 y=420 s=0.7 face=1 fly=1
+BEAT 1 [wide]
+NARRATOR [~wide]: लौटते हुए उन्होंने विष्णु को भी आते देखा। उनका मुख उतरा हुआ था।
+VISHNU (sad, pose=namaste) [close:vishnu]: मैं इस स्तंभ का आधार नहीं खोज सका।
+BRAHMA (joy, pose=raise) [close:brahma]: और मैं इसके शीर्ष तक पहुँचा! वहाँ चोंच मारी, और यह प्रमाण लेकर लौटा। देखो!
+KETAKI (smile) [close:ketaki]: हाँ, हाँ! ब्रह्मदेव वास्तव में सबसे महान हैं।
+> vishnu pose=namaste t=0.6
+NARRATOR [close:vishnu]: विष्णु ने पराजय स्वीकार कर ली। उन्होंने हाथ जोड़े ही थे, कि...
+> pillar crack=1 t=2.5
+BEAT 2.4 [~at:640,360,1.2] (sfx=crack, rumble, shake=10)
++ oms kind=om x=640 y=200 size=110 anim=pop z=30
+NARRATOR [at:640,330,1.3] (sfx=om): अग्नि-स्तंभ बीच से चटकने लगा। भीतर से ॐ की ध्वनि गूँज उठी। लपटों की लालिमा गहरी होती गई।
+- oms
+@ shiva x=640 y=640 s=1.05 face=-1 pose=point emo=rage anim=materialize inDur=1
++ sring kind=ring x=640 y=400 r=600 z=60
+SHIVA (rage, pose=point) [~full:shiva] (sfx=thunder, shake=14, flash): झूठ!
+> brahma pose=fear emo=fear t=0.3
+NARRATOR [close:brahma]: सब चकित रह गए। ब्रह्मा का रंग पीला पड़ गया।
+SHIVA (angry, pose=open) [close:shiva]: आपको इस स्तंभ का शीर्ष मिल गया? इस सदाशिव का शीर्ष? इस अनंत परशिव का? जानते भी हैं, आप क्या खोज रहे थे?
+SHIVA (rage, pose=raise) [ecu:shiva] (sfx=om): शिवलिंग। ज्योतिर्लिंग!
+SHIVA (calm, pose=abhaya) [mid:shiva]: ज्योतिर्लिंग चिरस्थायी है। उस परब्रह्म की तरह अथाह, जिसका यह प्रतीक है। यह आपको बस इतना याद दिलाने आया था, कि आपका झगड़ा कितना तुच्छ था।
+SHIVA (angry) [close:shiva]: श्री हरि ने अपनी हार स्वीकार कर ली। पर ब्रह्मदेव, आपको हारने का इतना भय था, कि आपने हम सबको धोखा देना चाहा। जो स्वयं भयभीत है, वह दूसरों का भय कैसे दूर करेगा?
++ tri kind=bolt x=360 y=0 h=600 z=60
+SHIVA (rage, pose=strike) [~two:shiva,brahma] (sfx=boom, shake=10, flash): यह शाप नहीं है, ब्रह्मदेव। यह प्रकृति का नियम है। आपने सत्य को स्वीकार नहीं किया, इसलिए अब कोई आपको स्वीकार नहीं करेगा। आज से आपकी पूजा नहीं होगी!
+- tri
+> brahma emo=sad pose=despair t=0.8
+> ketaki y=600 t=2
+SHIVA (sad, pose=point) [two:shiva,ketaki]: और केतकी। तुम मुझे प्रिय थे। पर तुमने झूठी गवाही दी। आज से कोई तुम्हें मेरी पूजा में नहीं चढ़ाएगा।
+KETAKI (sad) [close:ketaki]: क्षमा, प्रभु...
+- shiva od=1.5
+- ketaki od=1.5
+BEAT 1.5 [wide] (sfx=wind)
+
+# ---------------------------------------------------------------- Daksha's hatred
+== SCENE dvesh | set=pillarSky music=curse amb=wind trans=cut tint=#2a0806,0.4
+@ daksha x=640 y=660 s=1 face=1 pose=fist emo=angry
+BEAT 1 [~close:daksha] (sfx=heartbeat)
+NARRATOR [close:daksha]: महादेव चले गए। पर कोई उन्हें जाते हुए घूरता रहा। दक्ष। उसकी आँखों में पानी था, और आत्मा जल रही थी।
+> daksha emo=rage t=0.6
+DAKSHA (rage) [ecu:daksha] (sfx=heartbeat): पहले तुमने मेरे पिता का सिर काटा...
+DAKSHA (rage, pose=fist) [ecu:daksha] (sfx=fire): ...और अब उन्हें पूजा से भी वंचित कर दिया।
++ hate kind=fire x=640 y=520 size=1.6 z=-1
+NARRATOR [~mid:daksha] (sfx=rumble): शिव के प्रति घृणा की एक लहर, दक्ष को सिर से पाँव तक लील गई।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night trans=fade
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=calm fly=1 noShadow=true
+BEAT 1.2 [wide] (sfx=veena)
+NARAD (calm) [mid:narad]: देखा आपने? एक शाप। एक कटा सिर। एक झूठा फूल। और इन सबके बीच, एक पुत्र के मन में बोया गया घृणा का बीज।
+NARAD (sad) [close:narad]: और घृणा के बीज, नारायण... बहुत धीरे उगते हैं। पर जब उगते हैं, तो पूरे वन को जला देते हैं।
+NARAD (sly) [ecu:narad]: क्योंकि इसी दक्ष के घर, एक दिन एक बेटी जन्म लेगी। और वह बेटी, शिव से प्रेम करेगी।
+BEAT 1.5 [~close:narad] (sfx=veena)
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=सती · दक्ष का यज्ञ · शिव का तांडव
+NARRATOR: अगले अध्याय में: दक्ष की पुत्री सती, शिव के लिए उसका प्रेम, और वह यज्ञ, जिसकी अग्नि ने तीनों लोकों को हिला दिया।
+
+== END | dur=13 | title=महागाथा | sub=अध्याय दो · अर्धनारीश्वर | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 5, 6 और 11);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर

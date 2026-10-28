@@ -1,0 +1,4909 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "ऋण",
+  "episode": "12",
+  "slug": "e12-rin",
+  "kicker": "अध्याय बारह",
+  "sub": "सुदामा · यदुवंश का अंत · सर्प-यज्ञ",
+  "logline": "मुट्ठी भर चावल का ऋण, जो एक राजा दस गुना लौटाता है। लोहे के नरकट, जो एक पूरे वंश को निगल जाते हैं। एक शिकारी का बाण, जो युगों पुराना हिसाब चुकाता है। और एक यज्ञ, जिसमें संसार के सारे सर्प जलने वाले थे, जब तक एक बालक ने गाना नहीं शुरू किया।",
+  "stories": "92, 99, 100",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 92, 99 और 100"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "indra": {
+   "label": "इंद्र",
+   "fig": "indra",
+   "voice": "hm_psi:0.65+am_liam:0.35",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "durvasa": {
+   "label": "दुर्वासा",
+   "fig": "durvasa",
+   "voice": "hm_omega:0.5+bm_lewis:0.5",
+   "speed": 1.04,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "vasishtha": {
+   "label": "वसिष्ठ",
+   "fig": "vasishtha",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.88,
+   "pitch": -1,
+   "fx": "elder"
+  },
+  "krishna": {
+   "label": "कृष्ण",
+   "fig": "krishna",
+   "voice": "hm_psi:0.45+hf_beta:0.25+am_puck:0.3",
+   "speed": 1.0,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "sudama": {
+   "label": "सुदामा",
+   "fig": "sudama",
+   "voice": "hm_psi:0.55+bm_fable:0.45",
+   "speed": 0.93,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "sudamapatni": {
+   "label": "सुदामा की पत्नी",
+   "fig": "sudamapatni",
+   "voice": "hf_alpha:0.55+af_nicole:0.45",
+   "speed": 0.98,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "sudamaputra": {
+   "label": "पुत्र",
+   "fig": "sudamaputra",
+   "voice": "hf_beta:0.55+af_sky:0.45",
+   "speed": 1.08,
+   "pitch": 4,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "dwarpal": {
+   "label": "द्वारपाल",
+   "fig": "dwarpal",
+   "voice": "hm_omega:0.55+am_santa:0.45",
+   "speed": 1.02,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "krishna2": {
+   "label": "कृष्ण",
+   "fig": "krishna2",
+   "voice": "hm_psi:0.55+am_michael:0.45",
+   "speed": 0.96,
+   "pitch": 0,
+   "fx": "bright"
+  },
+  "draupadi": {
+   "label": "द्रौपदी",
+   "fig": "draupadi",
+   "voice": "hf_alpha:0.55+bf_isabella:0.45",
+   "speed": 0.98,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "gandhari": {
+   "label": "गांधारी",
+   "fig": "gandhari",
+   "voice": "hf_alpha:0.5+bf_alice:0.5",
+   "speed": 0.88,
+   "pitch": -2,
+   "formant": "shifted",
+   "fx": "divine"
+  },
+  "samba": {
+   "label": "सांब",
+   "fig": "samba",
+   "voice": "hm_psi:0.5+am_puck:0.5",
+   "speed": 1.08,
+   "pitch": 2,
+   "fx": "room"
+  },
+  "yadavs": {
+   "label": "यादव युवक",
+   "fig": "yadav",
+   "duet": [
+    "samba",
+    "yadav"
+   ]
+  },
+  "yadav": {
+   "label": "यादव",
+   "fig": "yadav",
+   "voice": "hm_omega:0.5+am_eric:0.5",
+   "speed": 1.05,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "balarama": {
+   "label": "बलराम",
+   "fig": "balarama",
+   "voice": "hm_omega:0.55+am_adam:0.45",
+   "speed": 0.98,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "jara": {
+   "label": "जरा",
+   "fig": "jara",
+   "voice": "hm_psi:0.5+am_echo:0.5",
+   "speed": 0.95,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "takshak": {
+   "label": "तक्षक",
+   "voice": "hm_psi:0.4+am_fenrir:0.6",
+   "speed": 0.86,
+   "pitch": -4,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "janamejay": {
+   "label": "जनमेजय",
+   "fig": "janamejay",
+   "voice": "hm_psi:0.6+am_liam:0.4",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "mantri": {
+   "label": "मंत्री",
+   "fig": "mantri",
+   "voice": "hm_omega:0.5+bm_lewis:0.5",
+   "speed": 0.98,
+   "pitch": -1,
+   "fx": "elder"
+  },
+  "astika": {
+   "label": "आस्तीक",
+   "fig": "astika",
+   "voice": "hf_beta:0.5+am_puck:0.5",
+   "speed": 0.96,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "boysudama": {
+   "label": "सुदामा",
+   "fig": "sudamaputra",
+   "voice": "hf_beta:0.5+bm_fable:0.5",
+   "speed": 1.05,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "yadav2": {
+   "label": "यादव",
+   "fig": "yadav2",
+   "voice": "hm_psi:0.5+am_onyx:0.5",
+   "speed": 1.04,
+   "pitch": -2,
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "cosmos",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 460,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "wheel",
+     "kind": "mandala",
+     "x": 640,
+     "y": 360,
+     "r": 300,
+     "spin": 8,
+     "op": 0.35,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! आज यह वीणा आख़िरी बार आपके लिए बज रही है। ग्यारह अध्याय हमने साथ चले। सृष्टि के अंडे से, कुरुक्षेत्र के बाद के सन्नाटे तक।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "और इतनी कथाओं के बाद, मुझे एक बात समझ आई है। हर कथा एक ऋण से शुरू होती है। किसी का किसी पर कुछ बाकी रह जाता है। एक दाना, एक धागा, एक बाण।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "आज तीन ऋण चुकाए जाएँगे। एक प्रेम से, एक मृत्यु से, और एक, क्षमा से।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पहला ऋण, मुट्ठी भर चावल का है।",
+     "cam": "ecu:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "void"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय बारह",
+   "title": "ऋण",
+   "sub": "सुदामा · यदुवंश का अंत · सर्प-यज्ञ"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा बानवे",
+   "title": "कृष्ण और सुदामा",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "jhopdi",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "d1",
+     "kind": "diya",
+     "x": 640,
+     "y": 640,
+     "size": 0.8,
+     "z": 5,
+     "in": 0
+    },
+    {
+     "id": "grains",
+     "kind": "rice",
+     "x": 640,
+     "y": 660,
+     "bundle": 0,
+     "n": 40,
+     "w": 90,
+     "z": 6,
+     "in": 0
+    },
+    {
+     "id": "sudama",
+     "x": 440,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "rest",
+     "emo": "smile",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sudamapatni",
+     "x": 840,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "offer",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "pose": "offer",
+        "emo": "sad",
+        "t": 0.6
+       }
+      ],
+      "9": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sudamaputra",
+     "x": 1040,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "cradle",
+     "emo": "sad",
+     "seat": "kneel",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "bhikshu",
+     "fig": "durvasa",
+     "x": 1500,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "offer",
+     "emo": "sad",
+     "z": -2,
+     "kind": "char",
+     "in": 10,
+     "keys": {
+      "10": [
+       {
+        "x": 1200,
+        "t": 2
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "एक छोटी-सी झोंपड़ी। एक दीया। और थाली में गिने-चुने चावल के दाने। सुदामा उन दानों को देख रहे थे, और मुस्कुरा रहे थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sudamapatni",
+     "text": "फिर से? इन चावलों में ऐसा क्या है, जो आप हर बार इन्हें देखकर मुस्कुराते हैं?",
+     "cam": "close:sudamapatni"
+    },
+    {
+     "who": "sudama",
+     "text": "स्मृति। यह मुझे गुदगुदाती है।",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "sudamapatni",
+     "text": "आप जितना चाहें हँस लीजिए। मैं तो केवल रो सकती हूँ। हमारे पास खाने को इन दानों के सिवा कुछ नहीं बचा।",
+     "cam": "close:sudamapatni"
+    },
+    {
+     "who": "sudama",
+     "text": "निराश मत हो, प्रिये। जो सबको खिलाता है, वह हमें भी खिलाएगा।",
+     "cam": "two:sudama,sudamapatni"
+    },
+    {
+     "who": "sudamapatni",
+     "text": "मुझे तो आपके उस मित्र पर अधिक भरोसा है। कृष्ण। द्वारवती के राजा। मैंने कितनी बार कहा, एक बार उनसे मिल आइए।",
+     "cam": "close:sudamapatni"
+    },
+    {
+     "who": "sudama",
+     "text": "तुम चाहती हो, मैं अपनी मित्रता बेच दूँ? मैं किसी से भीख नहीं माँग सकता। मित्र से भी नहीं।",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "narrator",
+     "text": "उसने बेटे की आधी-खाली थाली पति की ओर खिसका दी।",
+     "camMove": true,
+     "cam": "close:sudamaputra"
+    },
+    {
+     "who": "sudamapatni",
+     "text": "अगर हम दोनों अकेले होते, तो मैं कभी न कहती। मैं रोज़ पेट पर गीला कपड़ा बाँधकर सो जाती। पर इसे भूखा नहीं देख सकती। क्या आपका धर्म, अपने बेटे का भार उठा पाएगा?",
+     "cam": "close:sudamapatni"
+    },
+    {
+     "who": "narrator",
+     "text": "तभी द्वार पर आवाज़ आई। एक भिखारी, जिसकी आँखें उनके चावलों पर टिकी थीं, मुट्ठी भर अन्न माँग रहा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "sudamapatni",
+     "text": "रोज़ दूसरों के आगे हाथ फैलाने से, क्या एक बार मित्र से माँग लेना अच्छा नहीं?",
+     "cam": "ecu:sudamapatni"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "close:sudama",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "सुदामा के पास इस प्रश्न का कोई उत्तर नहीं था। उन्होंने बचे हुए चावल एक पोटली में बाँधे, और समुद्र-तट की ओर चल पड़े।",
+     "camMove": true,
+     "cam": "close:sudama"
+    }
+   ],
+   "tint": [
+    "#2a1a0a",
+    0.2
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "dwarka",
+   "set": "ocean",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "city",
+     "kind": "city",
+     "x": 640,
+     "y": 470,
+     "w": 1200,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 620,
+     "w": 1500,
+     "h": 200,
+     "color": "#3d8fc4",
+     "crest": "#dff1f8",
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "birds",
+     "kind": "birds",
+     "x": 640,
+     "y": 160,
+     "n": 6,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "sudama",
+     "x": -100,
+     "y": 700,
+     "s": 0.9,
+     "face": 1,
+     "pose": "rest",
+     "emo": "fear",
+     "walk": 1,
+     "z": 10,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 380,
+        "t": 5
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "conch",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "द्वारवती। नीलम जड़े स्फटिक के महल। पन्ने से चमचमाती चाँदी की दीवारें। मूँगे के स्तंभ, और मोतियों की छतरियाँ।",
+     "camMove": true,
+     "cam": "at:640,330,1.15"
+    },
+    {
+     "who": "narrator",
+     "text": "और उस सोने के फाटक के आगे, सुदामा के चिथड़े, पहले से भी अधिक फटे दिखते थे।",
+     "camMove": true,
+     "cam": "close:sudama"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "dwar",
+   "set": "court",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "dwarpal",
+     "x": 860,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "hold",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "dwarpal2",
+     "fig": "dwarpal",
+     "x": 1040,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "hips",
+     "emo": "smile",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "sudama",
+     "x": 420,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "pose": "offer",
+        "emo": "calm",
+        "t": 0.6
+       },
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "potli",
+     "kind": "rice",
+     "x": 470,
+     "y": 470,
+     "n": 0,
+     "z": 20,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "sudama",
+     "text": "मैं कृष्ण का मित्र हूँ। हम दोनों महर्षि सांदीपनि के आश्रम में साथ पढ़ते थे।",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "dwarpal",
+     "text": "मित्र? द्वारकाधीश के? इन कपड़ों में? सुना, भाई? आज राजा का एक और भाई आया है!",
+     "cam": "close:dwarpal"
+    },
+    {
+     "who": "dwarpal",
+     "text": "चल, भाग यहाँ से! वरना कारागार की हवा खिलाएँगे।",
+     "cam": "two:dwarpal,sudama"
+    },
+    {
+     "who": "sudama",
+     "text": "ठीक है। बस यह पोटली अपने स्वामी तक पहुँचा दो। वे समझ जाएँगे, मैं कौन हूँ।",
+     "cam": "close:sudama"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "milan",
+   "set": "court",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "krishna2",
+     "x": 1300,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "offer",
+     "emo": "fear",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 560,
+        "t": 1.8
+       }
+      ],
+      "4": [
+       {
+        "x": 500,
+        "pose": "reach",
+        "emo": "joy",
+        "t": 0.4
+       },
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sudama",
+     "x": 380,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "pose": "reach",
+        "emo": "joy",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "hug",
+     "kind": "glow",
+     "x": 440,
+     "y": 420,
+     "r": 200,
+     "color": "#fff1b8",
+     "core": 0.6,
+     "z": 30,
+     "anim": "pop",
+     "in": 4
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 150,
+     "n": 40,
+     "w": 1300,
+     "colors": "#e8505a,#f2c230,#fbf3df",
+     "z": 50,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "कृष्ण भोजन करने बैठे ही थे, कि एक पहरेदार वह पोटली लेकर आया। कृष्ण ने चावल देखे, और पल भर में उठ खड़े हुए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "drumroll": true
+    },
+    {
+     "who": "narrator",
+     "text": "वस्त्र अस्त-व्यस्त। पैरों में चप्पल तक नहीं। द्वारका का राजा, नंगे पैर, द्वार की ओर दौड़ पड़ा।",
+     "camMove": true,
+     "cam": "two:krishna2,sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "सखा!",
+     "camMove": true,
+     "cam": "two:krishna2,sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "बहुत समय हो गया, सुदामा। बहुत ज़्यादा।",
+     "cam": "close:krishna2"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "bhoj",
+   "set": "court",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "thali",
+     "kind": "glow",
+     "x": 640,
+     "y": 600,
+     "r": 150,
+     "color": "#f2c230",
+     "core": 0.8,
+     "z": 2,
+     "in": 0
+    },
+    {
+     "id": "d1",
+     "kind": "diya",
+     "x": 520,
+     "y": 620,
+     "size": 0.6,
+     "z": 3,
+     "in": 0
+    },
+    {
+     "id": "d2",
+     "kind": "diya",
+     "x": 760,
+     "y": 620,
+     "size": 0.6,
+     "z": 3,
+     "in": 0
+    },
+    {
+     "id": "sudama",
+     "x": 440,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "seat": "lotus",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna2",
+     "x": 860,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "offer",
+     "emo": "smile",
+     "seat": "kneel",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "pose": "lift",
+        "emo": "joy",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "potli",
+     "kind": "rice",
+     "x": 760,
+     "y": 600,
+     "n": 24,
+     "w": 60,
+     "z": 5,
+     "in": 8
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "कृष्ण ने सुदामा को आसन पर बैठाया। सुगंधित जल से उनके पैर धोए। मोरपंख से हवा की। और सामने छप्पन व्यंजनों की थाली सजा दी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna2",
+     "text": "खाओ, सखा।",
+     "cam": "close:krishna2"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "close:sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "क्या हुआ?",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "sudama",
+     "text": "कहाँ से शुरू करूँ?",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "जहाँ से तुम्हें अच्छा लगे।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "sudama",
+     "text": "और तुम्हारा भोजन?",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "narrator",
+     "text": "कृष्ण मुस्कुराए। सुदामा की पोटली खोली, मुट्ठी भर चावल लिए, और चबाने लगे। और उन दानों ने, एक पुरानी रात को फिर से जगा दिया।",
+     "camMove": true,
+     "cam": "close:krishna2",
+     "sfx": "veena"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "smriti",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "rain",
+     "kind": "rain",
+     "n": 140,
+     "speed": 1000,
+     "color": "#cfe0ff",
+     "op": 0.5,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "vat",
+     "kind": "vat",
+     "x": 640,
+     "y": 720,
+     "s": 1.1,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "boysudama",
+     "fig": "sudamaputra",
+     "x": 520,
+     "y": 350,
+     "s": 0.85,
+     "face": 1,
+     "pose": "hold",
+     "emo": "smile",
+     "seat": "kneel",
+     "z": 5,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna",
+     "x": 760,
+     "y": 350,
+     "s": 0.85,
+     "face": -1,
+     "pose": "reach",
+     "emo": "joy",
+     "seat": "kneel",
+     "item": "none",
+     "z": 5,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "grains",
+     "kind": "rice",
+     "x": 600,
+     "y": 345,
+     "bundle": 0,
+     "n": 14,
+     "w": 40,
+     "z": 6,
+     "in": 0
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "x": 640,
+     "y": 130,
+     "text": "दस गुना",
+     "size": 64,
+     "z": 70,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "narrator",
+     "text": "सांदीपनि के आश्रम के दिन। एक रात, दो बालक जंगल में रास्ता भटक गए। वर्षा शुरू हुई, और वे एक पेड़ पर चढ़ गए। भूख लगी, तो सुदामा ने अपने चावल निकाले।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "boysudama",
+     "text": "पर तुम तो वृंदावन के मुखिया के बेटे हो। ये मामूली चावल खाओगे?",
+     "cam": "close:boysudama"
+    },
+    {
+     "who": "krishna",
+     "text": "ये दाने मुझ पर ऋण हैं, सखा। धर्म साक्षी है, मैं इन्हें दस गुना करके तुम्हें लौटाऊँगा।",
+     "cam": "close:krishna"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "om"
+    }
+   ],
+   "tint": [
+    "#1a2a4a",
+    0.3
+   ],
+   "music": "dawn",
+   "amb": [
+    "storm"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "maun",
+   "set": "court",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "d1",
+     "kind": "diya",
+     "x": 900,
+     "y": 620,
+     "size": 0.7,
+     "z": 3,
+     "in": 0
+    },
+    {
+     "id": "mirror",
+     "kind": "glow",
+     "x": 900,
+     "y": 380,
+     "r": 110,
+     "color": "#cfe0ff",
+     "core": 0.3,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "sudama",
+     "x": 620,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "कुछ दिन सुदामा सपनों के लोक में जिए। रेशमी वस्त्र, सोने की माला, नर्म बिछौने। पर जितना सुख था, उतनी ही पीड़ा। उनके कानों में, बेटे की खाली थाली बजती रहती।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "कई बार वे कहने गए। पर शब्द होंठों तक आकर रुक जाते। कृष्ण के आगे भिक्षा माँगने वालों की पंक्ति देखकर, उनकी जिह्वा जैसे बँध जाती।",
+     "camMove": true,
+     "cam": "close:sudama"
+    },
+    {
+     "who": "sudama",
+     "text": "मुझे क्षमा कर देना, प्रिये। मैं भीख नहीं माँग सकता। नहीं माँग सकता।",
+     "cam": "ecu:sudama"
+    }
+   ],
+   "tint": [
+    "#0a0a2a",
+    0.35
+   ],
+   "music": "sorrow",
+   "amb": [
+    "night"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "vida",
+   "set": "court",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "sudama",
+     "x": 380,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "face": 1,
+        "t": 0.3
+       }
+      ],
+      "2": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna2",
+     "x": 820,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "open",
+     "emo": "calm",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna2",
+     "text": "क्या हुआ, सखा?",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "sudama",
+     "text": "मैं...",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "हाँ?",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "sudama",
+     "text": "मुझे...",
+     "cam": "ecu:sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "बताओ।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "sudama",
+     "text": "कुछ नहीं।",
+     "cam": "ecu:sudama"
+    },
+    {
+     "who": "krishna2",
+     "text": "कुछ नहीं?",
+     "cam": "ecu:krishna2"
+    },
+    {
+     "who": "sudama",
+     "text": "नहीं। कुछ नहीं।",
+     "cam": "close:sudama"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "ghar",
+   "set": "glade",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "city",
+     "kind": "city",
+     "x": 760,
+     "y": 560,
+     "w": 700,
+     "seed": 4,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 150,
+     "n": 40,
+     "w": 1300,
+     "colors": "#e8505a,#f2c230,#fbf3df",
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "sudama",
+     "x": 260,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "pose": "despair",
+        "emo": "sad",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "creature",
+     "creature": "cow",
+     "x": 1120,
+     "y": 690,
+     "s": 0.7,
+     "face": -1,
+     "z": 2,
+     "in": 0
+    },
+    {
+     "id": "sudamaputra",
+     "x": 1400,
+     "y": 650,
+     "s": 0.8,
+     "face": -1,
+     "pose": "offer",
+     "emo": "joy",
+     "z": 3,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "x": 560,
+        "t": 2
+       },
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sudamapatni",
+     "x": 1500,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "joy",
+     "z": 1,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "x": 860,
+        "t": 3
+       }
+      ],
+      "4": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "spill",
+     "kind": "rice",
+     "x": 300,
+     "y": 660,
+     "bundle": 0,
+     "n": 40,
+     "w": 120,
+     "z": 12,
+     "anim": "pop",
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "लौटते हुए, सुदामा पूरे रास्ते बहाने गढ़ते रहे। पत्नी से क्या कहेंगे? फिर अचानक वे रुक गए। झोंपड़ी कहाँ गई? यहाँ महल कैसा?",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sudama",
+     "text": "यह कैसी माया है?",
+     "cam": "close:sudama"
+    },
+    {
+     "who": "sudamaputra",
+     "text": "आप भी खाइए, पिताजी!",
+     "cam": "close:sudamaputra"
+    },
+    {
+     "who": "sudamapatni",
+     "text": "आज सुबह उठी, तो यह सब था। सिक्के। वस्त्र। अन्न। गायें। आपके मित्र ने सब कुछ दे दिया। जितना माँगते, उससे भी ज़्यादा।",
+     "cam": "close:sudamapatni"
+    },
+    {
+     "who": "narrator",
+     "text": "पोटली सुदामा के हाथ से छूट गई। ज़मीन पर बिखरे दानों को देखते हुए, उन्हें बरसात की वह रात याद आई।",
+     "camMove": true,
+     "cam": "close:sudama",
+     "sfx": "bell"
+    },
+    {
+     "who": "krishna",
+     "text": "धर्म साक्षी है, मैं इन्हें दस गुना करके तुम्हें लौटाऊँगा।",
+     "camMove": true,
+     "cam": "ecu:sudama"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "patang",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "k1",
+     "kind": "kite",
+     "x": 900,
+     "y": 180,
+     "color": "#e8641e",
+     "sx": -250,
+     "sy": 420,
+     "z": 20,
+     "in": 0
+    },
+    {
+     "id": "k2",
+     "kind": "kite",
+     "x": 360,
+     "y": 220,
+     "color": "#2e8a57",
+     "tail": "#e86a8c",
+     "sx": 200,
+     "sy": 380,
+     "z": 19,
+     "in": 0
+    },
+    {
+     "id": "krishna2",
+     "x": 780,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "raise",
+     "emo": "joy",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "pose": "hold",
+        "emo": "fear",
+        "t": 0.4
+       }
+      ],
+      "4": [
+       {
+        "pose": "bless",
+        "emo": "serene",
+        "t": 0.6
+       },
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "draupadi",
+     "x": 460,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "x": 640,
+        "pose": "offer",
+        "emo": "sad",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "drop",
+     "kind": "glow",
+     "x": 740,
+     "y": 420,
+     "r": 12,
+     "color": "#c8372d",
+     "core": 1,
+     "z": 30,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "band",
+     "kind": "glow",
+     "x": 730,
+     "y": 420,
+     "r": 24,
+     "color": "#c8372d",
+     "core": 0.6,
+     "z": 30,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "बरसों बाद, संक्रांति का दिन। द्रौपदी और कृष्ण की पतंगें आकाश में थीं। तभी डोर से कृष्ण की अँगुली कट गई।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "draupadi",
+     "text": "केशव!",
+     "cam": "close:draupadi"
+    },
+    {
+     "who": "narrator",
+     "text": "द्रौपदी ने बिना सोचे अपनी साड़ी का किनारा फाड़ा, और घाव पर बाँध दिया।",
+     "camMove": true,
+     "cam": "two:krishna2,draupadi"
+    },
+    {
+     "who": "krishna2",
+     "text": "सखी, मैं इन धागों का ऋणी हूँ। धर्म साक्षी है, मैं इन्हें दस गुना करके लौटाऊँगा।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "narad",
+     "text": "और जिस दिन भरी सभा में द्रौपदी की साड़ी खींची गई, उस दिन वह ऋण चुकाया गया। धागे के बदले, अनंत धागे। पर वह कथा, किसी और महाकाव्य की है।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "chapter14",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा निन्यानवे",
+   "title": "यदु वंश का अंत",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "vat",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "vat",
+     "kind": "vat",
+     "x": 760,
+     "y": 700,
+     "s": 1.2,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "krishna2",
+     "x": 760,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "flute",
+     "emo": "serene",
+     "seat": "lotus",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "flute",
+     "wind": true
+    },
+    {
+     "who": "narrator",
+     "text": "छत्तीस वर्ष बाद। एक वट वृक्ष के नीचे, कृष्ण बैठे थे। बायाँ पैर दाहिने घुटने पर। गुलाबी तलवा आगे की ओर। जैसे वे किसी की प्रतीक्षा कर रहे हों।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna2",
+     "text": "इससे काम हो जाएगा...",
+     "cam": "ecu:krishna2"
+    },
+    {
+     "who": "narrator",
+     "text": "कुरुक्षेत्र का युद्ध कब का समाप्त हो चुका था। अठारह दिन। गीता का उपदेश। और अनगिनत चिताएँ। पांडव जीते, कौरव हारे। और युद्ध के बाद, एक माँ ने कृष्ण को शाप दिया था।",
+     "camMove": true,
+     "cam": "close:krishna2"
+    }
+   ],
+   "music": "drone",
+   "amb": [
+    "wind",
+    "birds"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "gandhari",
+   "set": "court",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "pyre",
+     "kind": "fire",
+     "x": 640,
+     "y": 640,
+     "size": 1.8,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "smoke",
+     "kind": "smoke",
+     "x": 640,
+     "y": 420,
+     "n": 8,
+     "w": 900,
+     "h": 300,
+     "color": "#3a2a2a",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "gandhari",
+     "x": 440,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "curse",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna2",
+     "x": 880,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "sad",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "pose": "bless",
+        "emo": "serene",
+        "t": 0.6
+       },
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire"
+    },
+    {
+     "who": "gandhari",
+     "text": "सोच रहे हो, मैं शाप क्यों दे रही हूँ? तो द्वारवती लौटकर देवकी से पूछ लेना। उसने भी अपने बेटे कारागार में खोए थे। वह मेरी पीड़ा समझेगी।",
+     "cam": "close:gandhari"
+    },
+    {
+     "who": "gandhari",
+     "text": "कृष्ण, जैसे मेरे कुल का नाश हुआ, वैसे ही तुम्हारा वंश भी नष्ट होगा! जैसे मेरा राज्य आँसुओं में डूबा, तुम्हारी द्वारवती समुद्र में डूबेगी!",
+     "camMove": true,
+     "cam": "full:gandhari"
+    },
+    {
+     "who": "gandhari",
+     "text": "और अंत में, तुम वन में मरोगे। एक पशु की तरह, किसी व्याध का शिकार बनकर।",
+     "cam": "ecu:gandhari"
+    },
+    {
+     "who": "krishna2",
+     "text": "तथास्तु, माता।",
+     "cam": "close:krishna2"
+    }
+   ],
+   "tint": [
+    "#2a0a0a",
+    0.4
+   ],
+   "music": "curse",
+   "amb": [
+    "fire"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "vat2",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "vat",
+     "kind": "vat",
+     "x": 760,
+     "y": 700,
+     "s": 1.2,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "krishna2",
+     "x": 760,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "flute",
+     "emo": "serene",
+     "seat": "lotus",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "camMove": true,
+     "cam": "close:krishna2",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "वट वृक्ष के नीचे, कृष्ण ने आहट सुनी। दूर, सूखे पत्तों पर किसी के कदम।",
+     "camMove": true,
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "krishna2",
+     "text": "वह आ गया...",
+     "cam": "ecu:krishna2"
+    }
+   ],
+   "music": "drone",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "parihas",
+   "set": "pond",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "durvasa",
+     "x": 900,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "meditate",
+     "emo": "meditate",
+     "seat": "lotus",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "pose": "curse",
+        "emo": "rage",
+        "seat": "none",
+        "t": 0.5
+       },
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sambastri",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "cradle",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "yadav",
+     "x": 240,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "point",
+     "emo": "joy",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "yadav2",
+     "x": 120,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "hips",
+     "emo": "sly",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "flash",
+     "kind": "rays",
+     "x": 900,
+     "y": 380,
+     "r": 900,
+     "n": 30,
+     "color": "#ff6a3a",
+     "op": 0.5,
+     "z": -1,
+     "anim": "pop",
+     "in": 4,
+     "out": 5,
+     "od": 1.5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "manjira"
+    },
+    {
+     "who": "narrator",
+     "text": "कुछ महीने पहले। कृष्ण का पुत्र सांब, अपने साथियों के साथ पिंडारक तीर्थ गया। वहाँ दुर्वासा ध्यान में बैठे थे। और लड़कों को एक शरारत सूझी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "सांब ने स्त्री के वस्त्र पहने। पेट पर कुछ बाँधकर उसे गर्भवती स्त्री जैसा फुलाया। और ऋषि के आगे जा खड़ा हुआ।",
+     "camMove": true,
+     "cam": "close:sambastri"
+    },
+    {
+     "who": "yadavs",
+     "text": "हे ज्ञानी ऋषि! बताइए, इस स्त्री को बेटा होगा या बेटी?",
+     "cam": "two:yadav,sambastri"
+    },
+    {
+     "who": "durvasa",
+     "text": "यह लड़का एक लोहे के मूसल को जन्म देगा! और वही मूसल, पूरे यदुवंश का नाश करेगा!",
+     "camMove": true,
+     "cam": "close:durvasa"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "birds"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "narkat",
+   "set": "ocean",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 600,
+     "w": 1500,
+     "h": 220,
+     "color": "#3a5a7a",
+     "crest": "#9fb8e8",
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "reeds",
+     "kind": "reeds",
+     "x": 640,
+     "y": 720,
+     "w": 1300,
+     "h": 170,
+     "grow": 0,
+     "z": 10,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "grow": 1,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "yadav",
+     "x": 420,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "lift",
+     "emo": "fear",
+     "z": 12,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "pose": "open",
+        "emo": "sad",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "dust",
+     "kind": "motes",
+     "x": 760,
+     "y": 520,
+     "n": 40,
+     "w": 500,
+     "h": 200,
+     "z": 11,
+     "in": 2
+    },
+    {
+     "id": "fish",
+     "kind": "creature",
+     "creature": "fish",
+     "x": 1000,
+     "y": 640,
+     "s": 0.6,
+     "face": -1,
+     "z": 5,
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 1200,
+        "y": 680,
+        "o": 0,
+        "t": 2
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "और कुछ घंटों बाद, सांब के वस्त्रों से सचमुच एक लोहे का मूसल निकला। यादव परिषद ने उसे पीसकर चूर्ण बनाया, और समुद्र में फेंक दिया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "पर समुद्र ने वह विनाशक धातु स्वीकार नहीं की। लहरें उसे लौटा लाईं। और तट पर, वह चूर्ण अंकुरित हो गया।",
+     "camMove": true,
+     "cam": "at:640,560,1.1",
+     "sfx": "rumble"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "camMove": true,
+     "cam": "at:640,620,1.3",
+     "sfx": "crack",
+     "rumble": true
+    },
+    {
+     "who": "narrator",
+     "text": "लोहे के नरकट। मोटे, धूसर, और धारदार। जो एक शाप को पूरा करने के लिए उगे थे।",
+     "camMove": true,
+     "cam": "at:640,620,1.3"
+    },
+    {
+     "who": "narrator",
+     "text": "और मूसल का एक छोटा-सा टुकड़ा, जो पिस नहीं पाया था, एक मछली निगल गई।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "vat3",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "vat",
+     "kind": "vat",
+     "x": 760,
+     "y": 700,
+     "s": 1.2,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "krishna2",
+     "x": 760,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "flute",
+     "emo": "serene",
+     "seat": "lotus",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "camMove": true,
+     "cam": "close:krishna2",
+     "sfx": "flute"
+    },
+    {
+     "who": "narrator",
+     "text": "वट के नीचे, कृष्ण ने आख़िरी बार अपनी बाँसुरी को सहलाया। उन सब स्वरों को सुना, जो उन्होंने कभी बजाए थे। कदमों की आहट तेज़ हो रही थी।",
+     "camMove": true,
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "krishna2",
+     "text": "वह निकट आ रहा है...",
+     "cam": "ecu:krishna2"
+    }
+   ],
+   "music": "drone",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "prabhas",
+   "set": "ocean",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 600,
+     "w": 1500,
+     "h": 220,
+     "color": "#3a5a7a",
+     "crest": "#9fb8e8",
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "reeds",
+     "kind": "reeds",
+     "x": 640,
+     "y": 730,
+     "w": 1300,
+     "h": 150,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 640,
+     "y": 640,
+     "size": 0.9,
+     "z": 0,
+     "in": 0
+    },
+    {
+     "id": "yadav",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "pose": "point",
+        "emo": "rage",
+        "t": 0.4
+       },
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "yadav2",
+     "x": 860,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "raise",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "pose": "strike",
+        "emo": "rage",
+        "t": 0.4
+       },
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "balarama",
+     "x": 1120,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "hips",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "calm",
+        "pose": "abhaya",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna2",
+     "x": 1240,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sad",
+     "item": "none",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "pose": "point",
+        "emo": "sad",
+        "t": 0.5
+       }
+      ],
+      "9": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "clash",
+     "kind": "clash",
+     "x": 640,
+     "y": 420,
+     "z": 40,
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "dark",
+     "kind": "tint",
+     "color": "#3a0000",
+     "op": 0,
+     "z": 55,
+     "in": 10,
+     "keys": {
+      "10": [
+       {
+        "op": 0.8,
+        "t": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "clash2",
+     "kind": "clash",
+     "x": 420,
+     "y": 420,
+     "z": 60,
+     "in": 10,
+     "out": 12
+    },
+    {
+     "id": "clash3",
+     "kind": "clash",
+     "x": 860,
+     "y": 380,
+     "z": 60,
+     "in": 10,
+     "out": 12
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "nagara"
+    },
+    {
+     "who": "narrator",
+     "text": "यादवों ने नियम बनाए थे। भीड़ में जुआ नहीं। हथियार नहीं। सभाओं में मदिरा नहीं। पर कृष्ण जानते थे। शाप से बचा नहीं जा सकता।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उस दिन, युद्ध की वर्षगाँठ पर, यादव प्रभास-तट पर इकट्ठे हुए। नियमों के बावजूद, मदिरा चली। और कुरुक्षेत्र की पुरानी आग, फिर सुलग उठी।",
+     "camMove": true,
+     "cam": "two:yadav,yadav2"
+    },
+    {
+     "who": "yadav",
+     "text": "तुम कौरवों के साथ लड़े थे! सोते हुए वीरों पर वार करने वालों के साथ!",
+     "cam": "close:yadav"
+    },
+    {
+     "who": "yadav2",
+     "text": "और तुमने? भूमि पर बैठे निहत्थे भूरिश्रवा का सिर काटा था! कौन-सा धर्म था वह?",
+     "cam": "close:yadav2"
+    },
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "two:yadav,yadav2",
+     "sfx": "clash",
+     "shake": 6
+    },
+    {
+     "who": "balarama",
+     "text": "घबराओ मत, कृष्ण। परिषद के आदेश से किसी के पास शस्त्र नहीं हैं। यह झगड़ा ज़्यादा देर नहीं चलेगा।",
+     "cam": "close:balarama"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर कृष्ण ने संकेत किया। एक यादव ने तट से कुछ उखाड़ लिया था।",
+     "camMove": true,
+     "cam": "at:640,620,1.3",
+     "sfx": "crack"
+    },
+    {
+     "who": "balarama",
+     "text": "नरकट! लोहे के मूसल से उगे नरकट!",
+     "cam": "close:balarama"
+    },
+    {
+     "who": "krishna2",
+     "text": "यह धातु, यहाँ तट पर, हमारी प्रतीक्षा कर रही थी।",
+     "cam": "close:krishna2"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "clash",
+     "roar": true,
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "जंगल की आग की तरह, क्रोध एक से दूसरे तक फैलता गया। हर हाथ ने एक नरकट उखाड़ा। भाई ने भाई को नहीं पहचाना। सांब गिरे। प्रद्युम्न गिरे। अनिरुद्ध गिरे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "drumroll"
+    },
+    {
+     "who": "narrator",
+     "text": "और जब सूरज डूबा, प्रभास के तट पर, यदुवंश में कोई नहीं बचा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "ocean",
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "shesh",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1080,
+     "y": 150,
+     "r": 46,
+     "phase": 0.5,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 600,
+     "w": 1500,
+     "h": 220,
+     "color": "#7a1a2a",
+     "crest": "#e8a0a0",
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "balarama",
+     "x": 640,
+     "y": 620,
+     "s": 1,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "z": 2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "y": 720,
+        "o": 0.3,
+        "t": 4
+       }
+      ]
+     },
+     "out": 4,
+     "od": 2
+    },
+    {
+     "id": "krishna2",
+     "x": 240,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "item": "none",
+     "z": 4,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "naag",
+     "kind": "shesha",
+     "x": 760,
+     "y": 620,
+     "w": 360,
+     "hoods": 11,
+     "body": "#f4efe2",
+     "belly": "#3d6fc4",
+     "z": 3,
+     "anim": "rise",
+     "inDur": 4,
+     "in": 2,
+     "keys": {
+      "4": [
+       {
+        "y": 820,
+        "o": 0,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 640,
+     "y": 300,
+     "r": 800,
+     "n": 36,
+     "color": "#dfe7f0",
+     "op": 0.3,
+     "z": -3,
+     "anim": "pop",
+     "inDur": 3,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "समुद्र लाल हो गया था। एक रक्तिम लहर ने कृष्ण के पैर भिगो दिए। उन्होंने देखा, बलराम धीरे-धीरे जल में उतर रहे थे। उनकी आँखें बंद थीं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "camMove": true,
+     "cam": "at:640,330,1.15",
+     "sfx": "om",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "बलराम के भीतर से, हज़ार फनों वाला एक श्वेत नाग निकला, जैसे कोई केंचुली छोड़ रहा हो। शेषनाग अपने नश्वर रूप को छोड़कर, समुद्र के गर्भ में लौट रहे थे।",
+     "camMove": true,
+     "cam": "at:640,300,1.1"
+    },
+    {
+     "who": "krishna2",
+     "text": "जाओ, भैया। क्षीर सागर में मेरी प्रतीक्षा करना।",
+     "cam": "close:krishna2"
+    }
+   ],
+   "tint": [
+    "#2a0010",
+    0.3
+   ],
+   "music": "cosmic",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "baan",
+   "set": "glade",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "vat",
+     "kind": "vat",
+     "x": 760,
+     "y": 700,
+     "s": 1.2,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "krishna2",
+     "x": 760,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "flute",
+     "emo": "serene",
+     "seat": "lotus",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "14": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "jara",
+     "x": -80,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "hold",
+     "emo": "sly",
+     "z": 4,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 150,
+        "t": 2
+       }
+      ],
+      "7": [
+       {
+        "x": 480,
+        "pose": "reach",
+        "emo": "joy",
+        "t": 2
+       },
+       {
+        "pose": "despair",
+        "emo": "fear",
+        "seat": "kneel",
+        "t": 0.5
+       },
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "arrow",
+     "kind": "arrow",
+     "x": 230,
+     "y": 470,
+     "len": 110,
+     "rot": 12,
+     "z": 30,
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 700,
+        "y": 560,
+        "t": 0.5
+       }
+      ]
+     },
+     "out": 6
+    },
+    {
+     "id": "wound",
+     "kind": "glow",
+     "x": 700,
+     "y": 580,
+     "r": 30,
+     "color": "#c8372d",
+     "core": 0.8,
+     "z": 30,
+     "in": 6
+    },
+    {
+     "id": "tremble",
+     "kind": "rays",
+     "x": 640,
+     "y": 360,
+     "r": 900,
+     "n": 30,
+     "color": "#fff1b8",
+     "op": 0.3,
+     "z": -2,
+     "anim": "pop",
+     "in": 6,
+     "out": 7,
+     "od": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "camMove": true,
+     "cam": "close:krishna2",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "वट वृक्ष के नीचे, कृष्ण ने आँखें उठाईं। पत्तों के बीच एक परछाईं डोल रही थी।",
+     "camMove": true,
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "krishna2",
+     "text": "उसने देख लिया है...",
+     "cam": "ecu:krishna2"
+    },
+    {
+     "who": "narrator",
+     "text": "जरा नाम का एक शिकारी। पत्तों के बीच उसे एक गुलाबी-सी चीज़ दिखी। किसी हिरण का कान।",
+     "camMove": true,
+     "cam": "close:jara",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "krishna2",
+     "text": "वह निशाना साध रहा है...",
+     "cam": "ecu:krishna2"
+    },
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "crack": true,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "बाण तलवे को बींध गया। विष्णु, ब्रह्मा, और शिव, तीनों सिहर उठे। ब्रह्मांड ने अपनी आँखें मूँद लीं, क्योंकि उसकी आँखों में आँसू छलक आए थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell"
+    },
+    {
+     "who": "jara",
+     "text": "वासुदेव... मैंने वासुदेव को मारा है... मैं नरक में जलूँगा...",
+     "cam": "close:jara"
+    },
+    {
+     "who": "krishna2",
+     "text": "डरो मत। तुम अपराधी नहीं हो।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "narrator",
+     "text": "रक्त कृष्ण का बह रहा था। पर घाव उन्होंने जरा का भरा।",
+     "camMove": true,
+     "cam": "two:krishna2,jara"
+    },
+    {
+     "who": "krishna2",
+     "text": "यह बाण, लोहे के जिस टुकड़े से बना है, वह तुम्हें कहाँ मिला?",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "jara",
+     "text": "एक मछली के पेट में, प्रभु।",
+     "cam": "close:jara"
+    },
+    {
+     "who": "krishna2",
+     "text": "सब पहले से लिखा था। जैसे मैं उन्हें बचाने के लिए कुछ नहीं कर सका, वैसे ही तुमने मुझे मारने के लिए कुछ नहीं किया। मैं तुम्हारी प्रतीक्षा कर रहा था।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "jara",
+     "text": "पर मैं ही क्यों, प्रभु? मेरे ही हाथों क्यों?",
+     "cam": "ecu:jara"
+    },
+    {
+     "who": "krishna2",
+     "text": "क्योंकि तुम बाली हो। और मैंने तुम्हें वचन दिया था।",
+     "cam": "ecu:krishna2"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "treta",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "tree",
+     "kind": "vat",
+     "x": 520,
+     "y": 720,
+     "s": 0.9,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "rama",
+     "x": 520,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "point",
+     "emo": "calm",
+     "item": "bow",
+     "z": 2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "arrow",
+     "kind": "arrow",
+     "x": 640,
+     "y": 460,
+     "len": 110,
+     "rot": 4,
+     "z": 30,
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "x": 1400,
+        "y": 500,
+        "t": 0.6
+       }
+      ]
+     },
+     "out": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "crack": true
+    },
+    {
+     "who": "narrator",
+     "text": "त्रेता युग। एक वानर-राजा अपने भाई सुग्रीव से लड़ रहा था। और एक वृक्ष के पीछे से, राम ने बाण चलाया था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "krishna2",
+     "text": "तब मैं राम था। आज मैं कृष्ण हूँ। मेरी इच्छा थी कि तुम भी मुझे उसी तरह मारो। तुमने कोई पाप नहीं किया, जरा। तुमने मुझे ऋण से मुक्त किया है।",
+     "camMove": true,
+     "cam": "close:rama"
+    }
+   ],
+   "tint": [
+    "#fff4c4",
+    0.15
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "antim",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "vat",
+     "kind": "vat",
+     "x": 760,
+     "y": 700,
+     "s": 1.2,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 760,
+     "y": 480,
+     "r": 260,
+     "color": "#7aa0ff",
+     "core": 0.4,
+     "z": -2,
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "r": 900,
+        "core": 1,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "krishna2",
+     "x": 760,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "flute",
+     "emo": "serene",
+     "seat": "lotus",
+     "item": "flute",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "meditate",
+        "t": 1
+       },
+       {
+        "emo": "meditate",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "jara",
+     "x": 480,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "seat": "kneel",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 760,
+     "y": 480,
+     "r": 900,
+     "n": 40,
+     "color": "#bcd0ff",
+     "op": 0.4,
+     "z": 40,
+     "anim": "pop",
+     "inDur": 3,
+     "in": 7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "jara",
+     "text": "त्रेता से द्वापर तक... कितना कुछ बदल गया, प्रभु।",
+     "cam": "close:jara"
+    },
+    {
+     "who": "krishna2",
+     "text": "हाँ। राम के समय युद्ध परायों से था। कृष्ण के समय, अपनों से। फिर भी बहुत कुछ वैसा ही है। तब सीता का अपमान हुआ था। अब द्रौपदी का।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "krishna2",
+     "text": "लोग राम को भूल गए। लोग कृष्ण को भी भूल जाएँगे। फिर कल्कि आएँगे, इस युग का अंत घोषित करने।",
+     "cam": "ecu:krishna2"
+    },
+    {
+     "who": "jara",
+     "text": "क्या मैं आपसे फिर मिलूँगा, प्रभु?",
+     "cam": "close:jara"
+    },
+    {
+     "who": "krishna2",
+     "text": "जीवन और मृत्यु के परे, एक प्रकाश है। हम वहीं मिलेंगे।",
+     "cam": "close:krishna2"
+    },
+    {
+     "who": "krishna2",
+     "text": "यह कथा एक बाँसुरी से शुरू हुई थी, और लोहे के एक नरकट पर ख़त्म हो रही है। यमुना से शुरू हुई थी। समुद्र पर ख़त्म हो रही है।",
+     "camMove": true,
+     "cam": "full:krishna2"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "om",
+     "swell": true
+    }
+   ],
+   "tint": [
+    "#0a0a2a",
+    0.25
+   ],
+   "music": "end",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "pralay",
+   "set": "ocean",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "city",
+     "kind": "city",
+     "x": 640,
+     "y": 520,
+     "w": 1200,
+     "sink": 0,
+     "h": 420,
+     "z": -3,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "sink": 1,
+        "t": 16
+       }
+      ]
+     }
+    },
+    {
+     "id": "sea",
+     "kind": "water",
+     "x": 640,
+     "y": 640,
+     "w": 1500,
+     "h": 200,
+     "color": "#2a4a7a",
+     "crest": "#9fb8e8",
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "wave",
+     "kind": "water",
+     "x": 640,
+     "y": 820,
+     "w": 1500,
+     "h": 420,
+     "color": "#2a4a7a",
+     "crest": "#cfe0ff",
+     "z": 5,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "y": 600,
+        "t": 14
+       }
+      ]
+     }
+    },
+    {
+     "id": "rain",
+     "kind": "rain",
+     "n": 120,
+     "speed": 1100,
+     "color": "#cfe0ff",
+     "op": 0.4,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "x": 640,
+     "y": 200,
+     "text": "कलियुग",
+     "size": 84,
+     "z": 70,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "thunder",
+     "rumble": true
+    },
+    {
+     "who": "narrator",
+     "text": "और फिर समुद्र उठा। लहरों ने द्वारवती की दीवारें गिरा दीं। महल ढहा दिए। और पूरे नगर को निगल लिया। चारों ओर खारा जल था, जैसे धरती रो रही हो।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "splash",
+     "rumble": true,
+     "shake": 5
+    },
+    {
+     "who": "narrator",
+     "text": "कृष्ण पृथ्वी से जा चुके थे। धर्म अब केवल एक पैर पर खड़ा था। द्वापर युग समाप्त हुआ। और कलियुग शुरू हो गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "gong"
+    },
+    {
+     "text": "",
+     "dur": 1.8,
+     "cam": "wide",
+     "sfx": "boom"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "storm",
+    "ocean"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter27",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा सौ",
+   "title": "जनमेजय का सर्प-यज्ञ",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "takshak",
+   "set": "court",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "torch",
+     "kind": "fire",
+     "x": 200,
+     "y": 420,
+     "size": 0.7,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "torch2",
+     "kind": "fire",
+     "x": 1080,
+     "y": 420,
+     "size": 0.7,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "snake",
+     "kind": "serpent",
+     "x": 1400,
+     "y": 300,
+     "len": 360,
+     "amp": 26,
+     "th": 24,
+     "color": "#c8a02a",
+     "belly": "#3a2a1a",
+     "z": 20,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 980,
+        "y": 380,
+        "o": 1,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "o": 0.3,
+        "t": 1
+       },
+       {
+        "o": 1,
+        "t": 1,
+        "d": 1
+       }
+      ]
+     },
+     "out": 4,
+     "od": 1
+    },
+    {
+     "id": "parikshit",
+     "x": 640,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "hold",
+     "emo": "calm",
+     "item": "none",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "pose": "despair",
+        "emo": "fear",
+        "t": 0.4
+       }
+      ],
+      "4": [
+       {
+        "rot": -80,
+        "y": 690,
+        "emo": "meditate",
+        "t": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "dark",
+     "kind": "tint",
+     "color": "#000000",
+     "op": 0,
+     "z": 55,
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "op": 0.6,
+        "t": 1
+       }
+      ]
+     },
+     "out": 4,
+     "od": 1.5
+    },
+    {
+     "id": "name",
+     "kind": "text",
+     "x": 640,
+     "y": 560,
+     "text": "तक्षक",
+     "size": 72,
+     "z": 50,
+     "in": 5,
+     "out": 9
+    },
+    {
+     "id": "janamejay",
+     "x": 1400,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "fear",
+     "emo": "fear",
+     "z": 5,
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 920,
+        "t": 1.5
+       },
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "seat": "kneel",
+        "pose": "cradle",
+        "emo": "sad",
+        "t": 0.6
+       }
+      ],
+      "10": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "mantri",
+     "x": -120,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "fear",
+     "z": 4,
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 300,
+        "t": 1.5
+       }
+      ],
+      "6": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "अभी वह दिखा। अगले ही पल गायब। मशालों की रोशनी और परछाइयों के बीच, एक सर्प फ़र्श के रंगों में घुलता चला जा रहा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "कुछ देर पहले, वह एक फल में छिपकर आया था। और जैसे ही राजा परीक्षित ने वह फल खाया, उसने अपने विषदंत गड़ा दिए।",
+     "camMove": true,
+     "cam": "close:parikshit"
+    },
+    {
+     "who": "takshak",
+     "text": "मैंने अपना वचन पूरा किया, राजन्। मेरा प्रतिशोध पूर्ण हुआ।",
+     "camMove": true,
+     "cam": "close:parikshit"
+    },
+    {
+     "who": "narrator",
+     "text": "अभिमन्यु का पुत्र, अर्जुन का पौत्र, कलियुग का पहला राजा। साठ वर्ष की आयु में, परीक्षित ने देह त्याग दी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "janamejay",
+     "text": "यह क्या है? फ़र्श पर यह किसका नाम है?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "mantri",
+     "text": "उसने प्रण लिया था, युवराज। और उसका प्रण पूरा हो गया।",
+     "cam": "close:mantri"
+    },
+    {
+     "who": "janamejay",
+     "text": "कैसा प्रण? कौन है यह तक्षक?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "mantri",
+     "text": "सर्पों का राजा। जब आपके प्रपितामह अर्जुन ने इंद्रप्रस्थ के लिए खांडव वन जलाया, उसकी पूरी जाति भस्म हो गई। केवल तक्षक बचा। उसने अर्जुन के वंश को मिटाने का प्रण लिया था।",
+     "cam": "close:mantri"
+    },
+    {
+     "who": "narrator",
+     "text": "जनमेजय ने अपने पिता का हाथ ऐसे दबाया, मानो शिराओं से विष खींच लेना चाहता हो।",
+     "camMove": true,
+     "cam": "close:janamejay",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "janamejay",
+     "text": "ब्राह्मणों को बुलाओ। यज्ञ की तैयारी करो। सर्प-सत्र।",
+     "cam": "ecu:janamejay"
+    },
+    {
+     "who": "mantri",
+     "text": "सर्प-सत्र? पर महाराज का दाह-संस्कार? आपका राज्याभिषेक?",
+     "cam": "close:mantri"
+    },
+    {
+     "who": "janamejay",
+     "text": "जब तक संसार का हर सर्प जल नहीं जाता, मेरे पिता की चिता नहीं जलेगी!",
+     "camMove": true,
+     "cam": "full:janamejay"
+    }
+   ],
+   "tint": [
+    "#0a0a1a",
+    0.35
+   ],
+   "music": "curse",
+   "amb": [
+    "night"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "satra",
+   "set": "yajna",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "agni",
+     "kind": "fire",
+     "x": 720,
+     "y": 620,
+     "size": 2.2,
+     "z": 2,
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "size": 2.8,
+        "t": 2
+       }
+      ],
+      "9": [
+       {
+        "size": 3.4,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "m1",
+     "kind": "mandala",
+     "x": 720,
+     "y": 640,
+     "r": 260,
+     "spin": 12,
+     "op": 0.4,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "r": 360,
+        "op": 0.6,
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "r1",
+     "fig": "vishwamitra",
+     "x": 250,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "z": 3,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "r2",
+     "fig": "vasishtha",
+     "x": 990,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "z": 3,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "r3",
+     "fig": "bhrigu",
+     "x": 100,
+     "y": 650,
+     "s": 0.75,
+     "face": 1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "z": 2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "r4",
+     "fig": "durvasa",
+     "x": 1160,
+     "y": 650,
+     "s": 0.8,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "z": 2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "janamejay",
+     "x": 440,
+     "y": 670,
+     "s": 0.9,
+     "face": 1,
+     "pose": "hold",
+     "emo": "rage",
+     "seat": "kneel",
+     "z": 5,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "look": "up",
+        "emo": "sly",
+        "t": 0.4
+       },
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rainS",
+     "kind": "snakerain",
+     "x": 720,
+     "y": 600,
+     "n": 22,
+     "h": 700,
+     "w": 1300,
+     "s": 1.4,
+     "z": 40,
+     "in": 7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "om",
+     "fire": true
+    },
+    {
+     "who": "narrator",
+     "text": "ऋषि वेदी के चारों ओर घेरा बनाकर बैठे। सफ़ेद, लाल, काले, गुलाबी और पीले रंगों से पाँच चिह्न बनाए गए, नागों के पाँच आदि वंशों के लिए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "janamejay",
+     "text": "शुरू कीजिए।",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "narrator",
+     "text": "मंत्र उठे। ज्वार की लहरों की तरह।",
+     "camMove": true,
+     "cam": "at:640,520,1.1",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "और ऊपर। और ऊपर। और ऊपर।",
+     "camMove": true,
+     "cam": "at:640,500,1.2",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "उस दिन मंत्र आनंद नहीं, भय दे रहे थे। हस्तिनापुर के लोग घरों में कान बंद करके बैठ गए। केवल जनमेजय, हर शब्द को पी रहा था।",
+     "camMove": true,
+     "cam": "close:janamejay",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "janamejay",
+     "text": "शुरू हो गया।",
+     "cam": "ecu:janamejay"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "fire": true,
+     "shake": 4
+    },
+    {
+     "who": "narrator",
+     "text": "बादलों से एक सर्प गिरा, और वेदी में भस्म हो गया। फिर जैसे नागों की वर्षा होने लगी। काले नाग, करैत, अजगर। हर लोक से, मंत्र उन्हें अग्नि की ओर खींच रहे थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "fire",
+     "swell": true
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "camMove": true,
+     "cam": "at:640,420,1.1",
+     "sfx": "fire",
+     "drumroll": true
+    },
+    {
+     "who": "narrator",
+     "text": "संसार ने किसी जाति का ऐसा संहार कभी नहीं देखा था। पर जनमेजय की भूख शांत नहीं हुई। जिसकी उसे प्रतीक्षा थी, वह अब तक नहीं आया था।",
+     "camMove": true,
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "janamejay",
+     "text": "तक्षक कहाँ है?",
+     "cam": "close:janamejay"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "fire"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "indralok",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "clouds",
+     "kind": "clouds",
+     "x": 640,
+     "y": 600,
+     "n": 6,
+     "w": 1400,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "throne",
+     "kind": "throne",
+     "x": 560,
+     "y": 560,
+     "s": 1.6,
+     "coil": 1,
+     "z": 2,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "y": 600,
+        "t": 1
+       },
+       {
+        "y": 560,
+        "t": 0.6,
+        "d": 1
+       },
+       {
+        "y": 680,
+        "t": 1.4,
+        "d": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "indra",
+     "x": 940,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "fear",
+     "emo": "fear",
+     "fly": 1,
+     "noShadow": true,
+     "z": 3,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "y": 700,
+        "t": 2
+       },
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "तक्षक इंद्र के पास भागा था, और उसने देवराज के सिंहासन के चारों ओर अपने आप को लपेट लिया था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "janamejay",
+     "text": "और ज़ोर से!",
+     "camMove": true,
+     "cam": "at:640,420,1.1"
+    },
+    {
+     "who": "narrator",
+     "text": "पकड़ कसी, तो मंत्रों ने और खींचा। पकड़ और कसी, तो मंत्रों ने और ज़ोर से। और तक्षक के साथ, इंद्र का सिंहासन भी नीचे खिंचने लगा।",
+     "camMove": true,
+     "cam": "at:640,440,1.15",
+     "sfx": "swell",
+     "shake": 5
+    },
+    {
+     "who": "indra",
+     "text": "यह कैसी अग्नि है, जो देवराज को भी खींच रही है?",
+     "cam": "close:indra"
+    },
+    {
+     "who": "narrator",
+     "text": "क्या वह पवित्र अग्नि, देवताओं के राजा को भी निगल जाएगी?",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "drumroll"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "astika",
+   "set": "yajna",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "agni",
+     "kind": "fire",
+     "x": 640,
+     "y": 620,
+     "size": 2.6,
+     "z": 2,
+     "in": 0
+    },
+    {
+     "id": "snake",
+     "kind": "serpent",
+     "x": 520,
+     "y": 140,
+     "len": 280,
+     "amp": 18,
+     "th": 22,
+     "color": "#c8a02a",
+     "belly": "#3a2a1a",
+     "rot": 20,
+     "speed": 0.6,
+     "z": 30,
+     "in": 0
+    },
+    {
+     "id": "janamejay",
+     "x": 880,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "hold",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "fear",
+        "t": 0.4
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasishtha",
+     "x": 1120,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "astika",
+     "x": -80,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "serene",
+     "z": 4,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 360,
+        "t": 3
+       }
+      ],
+      "4": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "तभी, मंदिर की घंटी जैसा एक स्वर गूँजा। कोई जनमेजय की, और उसके यज्ञ की, स्तुति गा रहा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "एक ब्राह्मण बालक। उसका चेहरा, उसके स्वर जितना ही उजला था। पूरी सभा उसकी विद्या पर चकित थी। जनमेजय भी तक्षक को भूल गया।",
+     "camMove": true,
+     "cam": "close:astika"
+    },
+    {
+     "who": "janamejay",
+     "text": "बालक, तुम्हारी स्तुति ने मेरा मन जीत लिया। माँगो, क्या वरदान चाहिए?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "astika",
+     "text": "राजन्, प्रतिशोध की यह परंपरा यहीं समाप्त कर दीजिए। यह सर्प-सत्र रोक दीजिए।",
+     "cam": "close:astika"
+    },
+    {
+     "who": "narrator",
+     "text": "जनमेजय का चेहरा क्रोध से तमतमा उठा। पर उसकी आँखें, दीवार के एक चित्र पर जा टिकीं। असुरराज बलि, वामन के आगे सिर झुकाए हुए। दिया हुआ वचन, जो राजा ने अपना सब कुछ देकर निभाया था।",
+     "camMove": true,
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "janamejay",
+     "text": "उस सर्प को कौन बचा रहा है? वह हवा में क्यों रुक गया?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "vasishtha",
+     "text": "यही बालक, राजन्। इसके शब्दों ने हमारे मंत्रों की शक्ति बाँध दी है।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "janamejay",
+     "text": "बालक, तुम हो कौन?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "astika",
+     "text": "आस्तीक। नागराज वासुकि का भांजा।",
+     "cam": "ecu:astika"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "temple"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "brahma",
+   "set": "yajna",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "agni",
+     "kind": "fire",
+     "x": 640,
+     "y": 620,
+     "size": 1.6,
+     "z": 2,
+     "in": 0,
+     "keys": {
+      "14": [
+       {
+        "size": 0.4,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "lotus",
+     "kind": "lotus",
+     "x": 900,
+     "y": 640,
+     "r": 120,
+     "open": 1,
+     "z": 3,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 0,
+     "keys": {
+      "19": [
+       {
+        "open": 0,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "halo",
+     "kind": "rays",
+     "x": 900,
+     "y": 380,
+     "r": 700,
+     "n": 36,
+     "color": "#ffe08a",
+     "op": 0.35,
+     "z": -2,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 0
+    },
+    {
+     "id": "brahma",
+     "x": 900,
+     "y": 560,
+     "s": 0.85,
+     "face": -1,
+     "pose": "bless",
+     "emo": "serene",
+     "fly": 1,
+     "noShadow": true,
+     "z": 4,
+     "anim": "materialize",
+     "inDur": 2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "15": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "17": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 19,
+     "od": 3
+    },
+    {
+     "id": "janamejay",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "pose": "despair",
+        "emo": "sad",
+        "t": 0.6
+       },
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "pose": "namaste",
+        "emo": "serene",
+        "seat": "kneel",
+        "t": 0.8
+       },
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "14": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "16": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "18": [
+       {
+        "emo": "meditate",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "astika",
+     "x": 240,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "serene",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "horse",
+     "kind": "creature",
+     "creature": "horse",
+     "x": 640,
+     "y": 300,
+     "s": 0.6,
+     "face": 1,
+     "fly": 1,
+     "noShadow": true,
+     "z": 20,
+     "anim": "materialize",
+     "inDur": 1.5,
+     "in": 5,
+     "out": 9,
+     "od": 1.5
+    },
+    {
+     "id": "hglow",
+     "kind": "glow",
+     "x": 640,
+     "y": 260,
+     "r": 180,
+     "color": "#fff1b8",
+     "core": 0.4,
+     "z": 19,
+     "in": 5,
+     "out": 9,
+     "od": 1.5
+    },
+    {
+     "id": "ouro",
+     "kind": "ouroboros",
+     "x": 640,
+     "y": 280,
+     "r": 120,
+     "z": 30,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 11
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "om",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "उसी समय वेदी के पास एक कमल खिला, और उस पर ब्रह्मा प्रकट हुए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "brahma",
+     "text": "इस बालक की बात सुनो, जनमेजय। सर्पदंश से मृत्यु, परीक्षित के भाग्य में लिखी थी। जब उसे जीना था, तब कृष्ण ने उसे माँ के गर्भ में जीवित किया। जब उसे जाना था, तक्षक ने उसके रक्त में विष घोल दिया।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "janamejay",
+     "text": "तो उन सर्पों का क्या, जो आज जल गए? उन्हें क्यों मरना पड़ा?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "brahma",
+     "text": "क्योंकि तुम्हारे पिता की तरह, उन्हें भी अपनी नियति तक पहुँचना था। क्या तुमने कद्रू और विनता के बारे में सुना है?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "janamejay",
+     "text": "नागों की माता, और गरुड़ की माता। दोनों बहनों में एक शर्त लगी थी। उच्चैःश्रवा घोड़े की पूँछ के रंग पर।",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "brahma",
+     "text": "कद्रू ने कहा, पूँछ काली है। विनता ने कहा, सफ़ेद। और जब कद्रू को लगा कि वह हार रही है...",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "janamejay",
+     "text": "...उसने अपने पुत्रों से कहा, जाकर पूँछ से लिपट जाओ, ताकि वह काली दिखे।",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "brahma",
+     "text": "अधिकांश सर्प मान गए। कुछ ने मना कर दिया। तब कद्रू ने उन्हें क्या शाप दिया था, जनमेजय?",
+     "cam": "close:brahma"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "close:janamejay",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "janamejay",
+     "text": "कि जिन पुत्रों ने माँ की आज्ञा नहीं मानी, वे कलियुग के एक यज्ञ में जलकर भस्म होंगे।",
+     "cam": "ecu:janamejay"
+    },
+    {
+     "who": "narrator",
+     "text": "और जनमेजय को समझ आया। ब्रह्मांड में सब कुछ जुड़ा हुआ है। जैसे कोई सर्प, अपनी ही पूँछ निगल रहा हो। कथाओं में गुँथी कथाएँ। एक महागाथा।",
+     "camMove": true,
+     "cam": "at:640,330,1.15",
+     "sfx": "swell"
+    },
+    {
+     "who": "brahma",
+     "text": "जिन्हें मरना था, वे मर चुके। मैं उनकी बात कर रहा हूँ, जिन्हें जीना है। तक्षक ने परीक्षित को उसकी नियति तक पहुँचाया। तुमने सर्पों को उनकी नियति तक। अब समय है कि तुम अपनी नियति तक पहुँचो।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "janamejay",
+     "text": "परमपिता, मैं अँधेरे के सागर में तैर रहा था। आपने मुझे प्रकाश दिखाया। मैं यह सर्प-सत्र समाप्त करता हूँ।",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "janamejay",
+     "text": "पर बताइए, क्या इस कलियुग में कुछ है, जो हमें आशा दे सके?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "brahma",
+     "text": "अवश्य है। पुराने युगों में, बहुत तप से थोड़ा-सा पुण्य मिलता था। कलियुग में उलटा है। थोड़ा-सा ज्ञान, और बहुत-सा पुण्य।",
+     "camMove": true,
+     "cam": "full:brahma"
+    },
+    {
+     "who": "janamejay",
+     "text": "इसका उपाय क्या है?",
+     "cam": "close:janamejay"
+    },
+    {
+     "who": "brahma",
+     "text": "स्वयं को परखो। स्वयं को शुद्ध करो। स्वयं को जानो। क्या तुम तैयार हो?",
+     "cam": "ecu:brahma"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "close:janamejay",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "जनमेजय ने सिर झुका दिया। सर्प, कुंडली मारकर, एक चक्र बन गया। और कमल की पंखुड़ियाँ बंद हो गईं।",
+     "camMove": true,
+     "cam": "at:640,330,1.1",
+     "sfx": "om"
+    }
+   ],
+   "music": "brahma",
+   "amb": [
+    "temple"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "upsanhar",
+   "set": "cosmos",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 520,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "wheel",
+     "kind": "ouroboros",
+     "x": 640,
+     "y": 330,
+     "r": 230,
+     "th": 34,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "mand",
+     "kind": "mandala",
+     "x": 640,
+     "y": 360,
+     "r": 340,
+     "spin": 6,
+     "op": 0.35,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 40,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 640,
+     "y": 560,
+     "s": 0.95,
+     "face": 1,
+     "pose": "veena",
+     "emo": "serene",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "तो, यह थी महागाथा। एक अंडे से शुरू हुई, और एक सर्प पर ख़त्म हुई, जो अपनी ही पूँछ निगल रहा है।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "एक दाने का ऋण, दस गुना लौटा। एक बाण का ऋण, एक युग बाद चुका। और प्रतिशोध का ऋण, जो पीढ़ियों से चला आ रहा था, एक बालक के गीत ने माफ़ कर दिया।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "कहते हैं, उसी यज्ञ के बाद, उसी सभा में, जनमेजय को पहली बार पूरा महाभारत सुनाया गया। यानी, जहाँ यह कथा ख़त्म होती है, वहीं से एक और कथा शुरू होती है।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "कथाएँ कभी ख़त्म नहीं होतीं। वे बस, अगले सुनने वाले की प्रतीक्षा करती हैं।",
+     "cam": "ecu:narad"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "text": "",
+     "dur": 2.5,
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "veena",
+     "swell": true
+    }
+   ],
+   "music": "end",
+   "amb": [
+    "void"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "end34",
+   "style": "end",
+   "lines": [],
+   "dur": 16,
+   "title": "महागाथा",
+   "sub": "अध्याय बारह · ऋण · समाप्त",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 92, 99 और 100)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर",
+    "बारह अध्यायों की इस यात्रा में साथ चलने के लिए धन्यवाद"
+   ]
+  }
+ ]
+}

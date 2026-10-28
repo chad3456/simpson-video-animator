@@ -1,0 +1,8 @@
+*.mp4
+*.wav
+.voice-cache/
+still-*.png
+__pycache__/
+episodes/_preview*/
+.chunks/
+*.tmp.mp4

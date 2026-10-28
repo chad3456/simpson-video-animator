@@ -1,0 +1,3483 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "सती",
+  "episode": "3",
+  "slug": "e03-sati",
+  "kicker": "अध्याय तीन",
+  "sub": "प्रेम, अपमान और तांडव",
+  "logline": "दक्ष का चंद्र को शाप, सती का शिव से प्रेम, कनखल का यज्ञ, वीरभद्र का प्रकोप, और वह तांडव जिसने ब्रह्मांड को हिला दिया।",
+  "stories": "19, 21",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 19 और 21"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "vishnu": {
+   "label": "विष्णु",
+   "fig": "vishnu",
+   "voice": "hm_omega:0.8+am_michael:0.2",
+   "speed": 0.94,
+   "pitch": 0,
+   "fx": "divine"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "shiva": {
+   "label": "शिव",
+   "fig": "shiva",
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.86,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "daksha": {
+   "label": "दक्ष",
+   "fig": "daksha",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 1.03,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "sati": {
+   "label": "सती",
+   "fig": "sati",
+   "voice": "hf_alpha:0.6+af_aoede:0.4",
+   "speed": 0.95,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "chandra": {
+   "label": "चंद्र",
+   "fig": "chandra",
+   "voice": "hm_psi:0.62+am_adam:0.38",
+   "speed": 0.98,
+   "pitch": 1,
+   "fx": "divine"
+  },
+  "rohini": {
+   "label": "रोहिणी",
+   "fig": "rohini",
+   "voice": "hf_alpha:0.7+af_nicole:0.3",
+   "speed": 0.96,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "nakshatras": {
+   "label": "नक्षत्र",
+   "fig": "nakshatra",
+   "voice": "hf_beta:0.75+af_sarah:0.25",
+   "speed": 1.0,
+   "pitch": 1,
+   "fx": "chorus"
+  },
+  "nandi": {
+   "label": "नंदी",
+   "fig": "dharma",
+   "creature": "bull",
+   "voice": "hm_omega:0.6+am_echo:0.4",
+   "speed": 0.95,
+   "pitch": -3,
+   "formant": "shifted",
+   "fx": "room"
+  },
+  "dadhichi": {
+   "label": "दधीचि",
+   "fig": "dadhichi",
+   "voice": "hm_omega:0.55+bm_george:0.45",
+   "speed": 0.88,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "veerabhadra": {
+   "label": "वीरभद्र",
+   "fig": "veerabhadra",
+   "voice": "hm_omega:0.4+am_onyx:0.6",
+   "speed": 0.9,
+   "pitch": -7,
+   "formant": "shifted",
+   "fx": "roar"
+  },
+  "prasuti": {
+   "label": "प्रसूति",
+   "fig": "prasuti",
+   "voice": "hf_alpha:0.55+bf_emma:0.45",
+   "speed": 0.94,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "bhrigu": {
+   "label": "भृगु",
+   "fig": "bhrigu",
+   "voice": "hm_psi:0.55+bm_lewis:0.45",
+   "speed": 0.92,
+   "pitch": -2,
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1040,
+     "y": 150,
+     "r": 46,
+     "phase": 1,
+     "z": -4,
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "phase": 0.15,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण। आज मैं वीणा धीमे बजाऊँगा। क्योंकि आज की कथा, प्रेम की कथा है। और प्रेम की कथाएँ, अक्सर आँसुओं पर ख़त्म होती हैं।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पिछली बार आपने दक्ष की आँखों में घृणा देखी थी। शिव के लिए घृणा।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पर उस घृणा का पहला शिकार शिव नहीं थे। वह था, यह।",
+     "cam": "close:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "at:1040,150,2.2",
+     "sfx": "swell"
+    },
+    {
+     "who": "narad",
+     "text": "जी हाँ। चंद्रमा। कभी सोचा है, चाँद घटता-बढ़ता क्यों है? सुनिए।",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय तीन",
+   "title": "सती",
+   "sub": "प्रेम, अपमान और तांडव"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा आठ",
+   "title": "चंद्र ने खोया प्रकाश",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "nabh",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "halo",
+     "kind": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 380,
+     "color": "#e6eeff",
+     "core": 0.6,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "stars",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 300,
+     "n": 27,
+     "r": 560,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "chandra",
+     "x": 640,
+     "y": 620,
+     "s": 0.95,
+     "face": 1,
+     "pose": "open",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "face": 1,
+        "gaze": 1,
+        "t": 0.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "rohini",
+     "x": 860,
+     "y": 630,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "n1",
+     "fig": "nakshatra",
+     "x": 250,
+     "y": 560,
+     "s": 0.62,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "z": -2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "n2",
+     "fig": "nakshatra",
+     "x": 380,
+     "y": 520,
+     "s": 0.55,
+     "face": 1,
+     "pose": "offer",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "z": -3,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "x": 470,
+        "pose": "offer",
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "n3",
+     "fig": "nakshatra",
+     "x": 1080,
+     "y": 520,
+     "s": 0.55,
+     "face": -1,
+     "pose": "offer",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "z": -3,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "x": 990,
+        "pose": "offer",
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "n4",
+     "fig": "nakshatra",
+     "x": 1180,
+     "y": 580,
+     "s": 0.6,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "z": -2,
+     "kind": "char",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "ऋषि अत्रि की आँखों से निकले दीप्तिमान तरल से जन्मे चंद्रदेव, ब्रह्मांड का रात्रि-दीप बन गए थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उनका विवाह दक्ष की सत्ताईस पुत्रियों से हुआ। सत्ताईस नक्षत्र, जो उनके चारों ओर झिलमिलाकर रात के आकाश को सजाते थे।",
+     "cam": "mid:chandra"
+    },
+    {
+     "who": "narrator",
+     "text": "पर चंद्र की दृष्टि उनमें से केवल एक पर टिकी रहती थी। लालिमा लिए हुए, रोहिणी।",
+     "cam": "two:chandra,rohini"
+    },
+    {
+     "who": "narrator",
+     "text": "रोहिणी के प्रति प्रेम इतना बढ़ा कि चंद्र बाकी पत्नियों को भूल ही गए। और उपेक्षा के साथ-साथ, उनकी आभा फीकी पड़ने लगी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने मधुर छंद गाए। चंद्र का प्रिय भोजन पकाया। सबसे सुंदर वस्त्र पहने। आकाश में अद्भुत आकृतियाँ रचीं।",
+     "cam": "two:n2,n3",
+     "sfx": "veena"
+    },
+    {
+     "who": "nakshatras",
+     "text": "स्वामी, हमारी ओर भी एक बार देखिए! हम भी आपकी पत्नियाँ हैं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "पर कुछ काम नहीं आया। चंद्र ने अपना प्रेम सत्ताईस भागों में नहीं बाँटा। सारा का सारा, रोहिणी को दे दिया।",
+     "cam": "mid:chandra"
+    }
+   ],
+   "music": "malkauns",
+   "amb": [
+    "night"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "shaap",
+   "set": "court",
+   "ctx": {},
+   "els": [
+    {
+     "id": "daksha",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "hips",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.5
+       },
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "chandra",
+     "x": 880,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "hips",
+        "t": 0.5
+       },
+       {
+        "emo": "joy",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "n1",
+     "fig": "nakshatra",
+     "x": 200,
+     "y": 650,
+     "s": 0.75,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "n2",
+     "fig": "nakshatra",
+     "x": 110,
+     "y": 640,
+     "s": 0.72,
+     "face": 1,
+     "pose": "cover",
+     "emo": "sad",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "dk",
+     "kind": "glow",
+     "x": 420,
+     "y": 380,
+     "r": 260,
+     "color": "#ff6a3a",
+     "core": 0.6,
+     "z": -1,
+     "anim": "pop",
+     "in": 4,
+     "out": 6
+    },
+    {
+     "id": "rohini",
+     "x": 1080,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "fear",
+     "emo": "fear",
+     "anim": "right",
+     "kind": "char",
+     "in": 7,
+     "keys": {
+      "7": [
+       {
+        "emo": "fear",
+        "pose": "cover",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "fade",
+     "kind": "tint",
+     "color": "#0a0f2a",
+     "op": 0,
+     "z": 55,
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "op": 0.45,
+        "t": 4
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "gong"
+    },
+    {
+     "who": "narrator",
+     "text": "जब उपेक्षा सहन न हुई, तो पुत्रियों ने अपने पिता, प्रजापति दक्ष से शिकायत की।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "daksha",
+     "text": "चंद्र! मेरी सत्ताईस पुत्रियाँ तुम्हारी पत्नियाँ हैं, केवल एक नहीं। उनके साथ यह अन्याय क्यों?",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "chandra",
+     "text": "प्रजापति, मैं अपना प्रकाश सबको देता हूँ। पर अपना प्रेम किसे दूँ, यह तय करने का अधिकार मेरा है।",
+     "cam": "close:chandra"
+    },
+    {
+     "who": "daksha",
+     "text": "तुम्हारी उपेक्षा ने मेरी पुत्रियों की आभा छीन ली है! तो तुम्हें चमकने का क्या अधिकार?",
+     "cam": "ecu:daksha"
+    },
+    {
+     "who": "daksha",
+     "text": "मैं तुम्हें शाप देता हूँ। तुम्हारा प्रकाश, और वह सारा सौंदर्य जिस पर तुम्हें इतना अहंकार है, चला जाएगा। तुमने मेरी पुत्रियों का जीवन अंधकारमय किया है, अब वही अंधकार तुम्हें निगल जाएगा!",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "chandra",
+     "text": "हा हा हा! मेरी आभा? कौन कम कर सकता है, प्रजापति?",
+     "cam": "close:chandra"
+    },
+    {
+     "who": "rohini",
+     "text": "स्वामी... आपकी चमक... वह लुप्त हो रही है!",
+     "cam": "two:chandra,rohini"
+    },
+    {
+     "who": "narrator",
+     "text": "शाप का प्रभाव आरंभ हो चुका था। चंद्र की राजसी चमक दिन-ब-दिन घटने लगी, मानो कोई उनकी किरणें चूस रहा हो।",
+     "camMove": true,
+     "cam": "close:chandra",
+     "sfx": "swell"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "kshay",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 640,
+     "y": 170,
+     "r": 80,
+     "phase": 1,
+     "z": -4,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "phase": 0.08,
+        "t": 9
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "camMove": true,
+     "cam": "at:640,200,1.6"
+    },
+    {
+     "who": "narrator",
+     "text": "चंद्र, पृथ्वी पर वनस्पतियों के स्वामी थे। यदि वे मुरझा गए, तो पौधे नष्ट हो जाएँगे। रातें अंधकार में डूब जाएँगी, और मनुष्य रास्ता भटक जाएँगे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "डरी हुई पत्नियों ने उन्हें ब्रह्मा के पास भेजा। और सृष्टिकर्ता को केवल एक ही नाम याद आया।"
+    },
+    {
+     "who": "brahma",
+     "text": "महादेव। आप उनसे प्रार्थना कीजिए। केवल वही आपका पुनरुद्धार कर सकते हैं।",
+     "camMove": true,
+     "cam": "at:640,200,1.6"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "somnath",
+   "set": "ocean",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "linga",
+     "kind": "glow",
+     "x": 820,
+     "y": 560,
+     "r": 120,
+     "color": "#f6e7a6",
+     "core": 0.6,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "chandra",
+     "x": 560,
+     "y": 640,
+     "s": 0.85,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "o": 0.7,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 1
+       }
+      ],
+      "6": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 13,
+     "od": 1.5
+    },
+    {
+     "id": "waterfg",
+     "kind": "water",
+     "x": 640,
+     "y": 660,
+     "w": 1500,
+     "h": 120,
+     "color": "#e9e3d4",
+     "crest": "#8299b8",
+     "op": 0.85,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "sg",
+     "kind": "rays",
+     "x": 880,
+     "y": 380,
+     "r": 700,
+     "n": 24,
+     "color": "#fff0b0",
+     "op": 0.25,
+     "z": -4,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 4
+    },
+    {
+     "id": "shiva",
+     "x": 900,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "anim": "materialize",
+     "inDur": 2,
+     "kind": "char",
+     "in": 4,
+     "keys": {
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "serene",
+        "pose": "abhaya",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "serene",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "cycle",
+     "kind": "moonphase",
+     "x": 640,
+     "y": 200,
+     "r": 60,
+     "phase": 1,
+     "z": 30,
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "phase": 0,
+        "t": 3
+       }
+      ],
+      "9": [
+       {
+        "phase": 1,
+        "t": 3
+       }
+      ]
+     },
+     "out": 12
+    },
+    {
+     "id": "crest",
+     "kind": "sparkle",
+     "x": 900,
+     "y": 330,
+     "n": 20,
+     "r": 90,
+     "z": 60,
+     "in": 13
+    },
+    {
+     "id": "name",
+     "kind": "text",
+     "x": 640,
+     "y": 170,
+     "text": "सोमनाथ",
+     "size": 96,
+     "z": 70,
+     "in": 15,
+     "out": 16
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "चंद्र पश्चिमी तट पर पहुँचे। समुद्र के किनारे उन्होंने एक शिवलिंग बनाया, और महामृत्युंजय मंत्र का जाप करने लगे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "वे ऐसे निश्चल बैठे रहे मानो पत्थर से गढ़े हों। लहरें आकर उनसे टकरातीं। खारा पानी त्वचा में शूल की तरह चुभता। समुद्र उन्हें खींचता, पर वे डटे रहे।",
+     "cam": "mid:chandra",
+     "sfx": "splash"
+    },
+    {
+     "who": "narrator",
+     "text": "उनका शरीर गलने लगा था। पर आत्मा नहीं।",
+     "cam": "close:chandra"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर एक दिन चंद्र ने आँखें खोलीं, तो रेत पर किसी के पैरों के निशान थे। भगवान शिव सामने खड़े थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "shiva",
+     "text": "चंद्र, आपको क्या चाहिए?",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "chandra",
+     "text": "मैं स्वयं को वापस पाना चाहता हूँ, भगवन्। दक्ष के शाप से मेरा तेज नष्ट हो गया है। मेरी महिमा मुझे लौटा दीजिए।",
+     "cam": "close:chandra"
+    },
+    {
+     "who": "shiva",
+     "text": "शाप को काटा नहीं जा सकता। और प्रजापति का शाप तो समुद्र में फेंकी वस्तु की तरह, लौट-लौटकर आता है। मैं इसे मिटा नहीं सकता। पर बदल अवश्य सकता हूँ।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "आपकी चमक प्रतिदिन घटेगी, और आप लुप्त हो जाएँगे। पर यह स्थायी नहीं होगा। अगले ही दिन से आपका प्रकाश लौटने लगेगा।",
+     "camMove": true,
+     "cam": "at:640,260,1.3"
+    },
+    {
+     "who": "shiva",
+     "text": "आप फिर दीप्तिमान होंगे, और फिर घटेंगे। शुक्ल और कृष्ण। पूर्ण और अर्ध। अनंत काल तक।",
+     "camMove": true,
+     "cam": "at:640,260,1.3"
+    },
+    {
+     "who": "chandra",
+     "text": "जन्म और मृत्यु की तरह। निर्माण और विनाश की तरह।",
+     "cam": "close:chandra"
+    },
+    {
+     "who": "shiva",
+     "text": "हाँ। जिस दिन आप पूरी तरह अंधकार में डूबेंगे, वह अमावस्या कहलाएगी। और जिस दिन पूरा तेज लौटेगा, वह पूर्णिमा।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "आपके घटने-बढ़ने से धरती के समुद्रों में ज्वार उठेंगे। और आज से मैं आपको अपने मस्तक पर धारण करूँगा। मेरा एक नाम होगा, चंद्रशेखर।",
+     "cam": "mid:shiva"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "close:shiva",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "चंद्र को सोम भी कहते हैं। इसलिए शिव और उस तटीय तीर्थ, दोनों को एक पवित्र नाम मिला।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "cam": "wide",
+     "sfx": "conch"
+    },
+    {
+     "who": "narrator",
+     "text": "चंद्र ने सभी पत्नियों के लिए हृदय के द्वार खोल दिए, और सदा निष्ठावान रहने का वचन दिया। दुर्भाग्य से, यह वचन सत्य नहीं हो पाया।"
+    },
+    {
+     "who": "narrator",
+     "text": "और दक्ष? उसके शाप को शिव ने बदल दिया था। घृणा की आग में, एक और लकड़ी पड़ चुकी थी।"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "chapter8",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा नौ",
+   "title": "सती",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "swayam",
+   "set": "court",
+   "ctx": {
+    "wall": "#7a2a5a"
+   },
+   "els": [
+    {
+     "id": "daksha",
+     "x": 380,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "hips",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "prasuti",
+     "x": 200,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "sati",
+     "x": 860,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "serene",
+        "t": 0.6
+       }
+      ],
+      "5": [
+       {
+        "emo": "serene",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "दक्ष की सबसे छोटी पुत्री सती, बड़ी होकर अत्यंत सुंदर हो गईं। वे आदिशक्ति का अवतार थीं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "माता-पिता ने जिस-जिस वर के लिए हाँ कही, सती ने मना कर दिया। सम्मानित से सम्मानित परिवार। पर हर बार, ना।",
+     "cam": "mid:daksha"
+    },
+    {
+     "who": "daksha",
+     "text": "बहुत हुआ, सती! अब तुम ही बताओ। तुम किससे विवाह करना चाहती हो?",
+     "cam": "close:daksha"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "close:sati"
+    },
+    {
+     "who": "sati",
+     "text": "महादेव।",
+     "cam": "ecu:sati"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "ecu:daksha",
+     "sfx": "thunder",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "दक्ष भड़क उठे। वे कुछ नहीं भूले थे। पिता का कटा सिर। पूजा से वंचित ब्रह्मा। चंद्र को दिया शाप, जिसे शिव ने बदल दिया।",
+     "cam": "close:daksha"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "sabha",
+   "set": "court",
+   "ctx": {},
+   "els": [
+    {
+     "id": "brahma",
+     "x": 640,
+     "y": 600,
+     "s": 0.75,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "bless",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -3,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "indra",
+     "x": 330,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "pose": "namaste",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "agni",
+     "x": 200,
+     "y": 650,
+     "s": 0.78,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "x": 1000,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "nandi",
+     "kind": "creature",
+     "creature": "bull",
+     "x": 1180,
+     "y": 660,
+     "s": 0.7,
+     "face": -1,
+     "legs": 4,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "daksha",
+     "x": -100,
+     "y": 650,
+     "s": 0.92,
+     "face": 1,
+     "pose": "rest",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 480,
+        "t": 2.5
+       }
+      ],
+      "2": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.5
+       },
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "फिर एक दिन दक्ष ब्रह्मा की सभा में आए। सारे देवता सम्मान में उठ खड़े हुए।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "सब, केवल एक को छोड़कर। शिव ध्यान में बैठे रहे।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "daksha",
+     "text": "यह शिव इतना असभ्य है, कि देवताओं के साथ बैठने योग्य नहीं! आज से कोई इस अशिष्ट को अपनी सभा में आमंत्रित नहीं करेगा!",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "nandi",
+     "text": "प्रजापति! महादेव को सांसारिक अनुष्ठानों से कोई सरोकार नहीं। उन्हें अपशब्द कहने वाला कोई पशु ही हो सकता है।",
+     "cam": "close:nandi"
+    },
+    {
+     "who": "nandi",
+     "text": "अपने शब्दों पर नियंत्रण रखिए। वरना एक दिन आप स्वयं पशु के समान दिखने लगेंगे।",
+     "cam": "two:nandi,daksha"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "ecu:daksha",
+     "sfx": "heartbeat"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "tapas",
+   "set": "kailash",
+   "ctx": {},
+   "els": [
+    {
+     "id": "heat",
+     "kind": "glow",
+     "x": 420,
+     "y": 440,
+     "r": 300,
+     "color": "#ffb070",
+     "core": 0.6,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "r": 600,
+        "core": 0.9,
+        "t": 8
+       }
+      ]
+     }
+    },
+    {
+     "id": "snow",
+     "kind": "motes",
+     "x": 640,
+     "y": 360,
+     "n": 40,
+     "w": 1300,
+     "h": 700,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "sati",
+     "x": 420,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "drip",
+     "kind": "water",
+     "x": 640,
+     "y": 700,
+     "w": 1500,
+     "h": 60,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "op": 0.7,
+     "z": 40,
+     "in": 3
+    },
+    {
+     "id": "shiva",
+     "x": 980,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 2,
+     "kind": "char",
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "सती को इन घटनाओं का पता नहीं था। वे बस इतना जानती थीं, कि उनका अस्तित्व अधूरा था। और उसे केवल शिव पूर्ण कर सकते थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "वन में रहकर सती ने घोर तपस्या शुरू की। उनके भीतर महादेव के लिए इतनी ऊष्मा उठी, कि कैलाश पर जमी बर्फ भी पिघलने लगी।",
+     "camMove": true,
+     "cam": "at:420,450,1.4",
+     "sfx": "fire"
+    },
+    {
+     "who": "narrator",
+     "text": "सती के प्रेम से अभिभूत होकर, शिव उन्हें पत्नी बनाने के लिए सहमत हो गए।",
+     "cam": "two:sati,shiva",
+     "sfx": "swell"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "vivad",
+   "set": "court",
+   "ctx": {},
+   "els": [
+    {
+     "id": "daksha",
+     "x": 420,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "open",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "rage",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 880,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    },
+    {
+     "who": "brahma",
+     "text": "सती का जन्म शिव के लिए हुआ था, पुत्र।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "daksha",
+     "text": "वह शिव? जो पशु-चर्म पहने घूमता है? शरीर पर राख मलता है, बैल की सवारी करता है, गले में साँप लपेटता है? एक राजकुमारी, ऐसे संन्यासी के साथ कैसे रहेगी?",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "brahma",
+     "text": "शिव स्वतंत्र हैं। उनका और सती का मिलन, प्रकृति का नियम है। आप उन्हें अलग नहीं कर सकते।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "daksha",
+     "text": "क्या आप भूल गए, पिताश्री? शिव ने आपको अपमानित किया था। एक बार नहीं, दो बार!",
+     "cam": "ecu:daksha"
+    },
+    {
+     "who": "narrator",
+     "text": "पर ब्रह्मा ने घोषणा कर दी। विवाह होकर रहेगा। और प्रजापति को अपने पिता की इच्छा के आगे झुकना पड़ा।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "vivah",
+   "set": "yajna",
+   "ctx": {},
+   "els": [
+    {
+     "id": "agni",
+     "kind": "fire",
+     "x": 640,
+     "y": 560,
+     "size": 1.3,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "fl",
+     "kind": "petals",
+     "x": 640,
+     "y": 200,
+     "n": 30,
+     "w": 1200,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "x": 480,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 640,
+        "y": 700,
+        "t": 4
+       }
+      ],
+      "2": [
+       {
+        "x": 800,
+        "y": 650,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "sati",
+     "x": 800,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "joy",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 520,
+        "y": 600,
+        "t": 4
+       }
+      ],
+      "2": [
+       {
+        "x": 480,
+        "y": 650,
+        "t": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "daksha",
+     "x": 1150,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "hips",
+     "emo": "angry",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "dt",
+     "kind": "tint",
+     "color": "#3a0806",
+     "op": 0.35,
+     "z": 55,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "bells",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "शिव और सती ने पवित्र अग्नि की परिक्रमा की।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "manjira"
+    },
+    {
+     "who": "narrator",
+     "text": "और जैसे ही फेरे पूरे हुए, दक्ष के भीतर कुछ जलकर भस्म हो गया।",
+     "camMove": true,
+     "cam": "close:daksha",
+     "sfx": "fire"
+    },
+    {
+     "who": "daksha",
+     "text": "मैं उन्हें... उनकी सही जगह दिखाऊँगा।",
+     "cam": "ecu:daksha"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "fire",
+    "temple"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "pratiksha",
+   "set": "kailash",
+   "ctx": {},
+   "els": [
+    {
+     "id": "shiva",
+     "x": 880,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "8": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "pose": "abhaya",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sati",
+     "x": 420,
+     "y": 650,
+     "s": 0.88,
+     "face": 1,
+     "pose": "rest",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "pose": "despair",
+        "t": 1
+       }
+      ],
+      "7": [
+       {
+        "emo": "sad",
+        "pose": "despair",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "angry",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "d1",
+     "fig": "indra",
+     "x": 1500,
+     "y": 160,
+     "s": 0.4,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -4,
+     "kind": "char",
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "x": -200,
+        "t": 8
+       }
+      ]
+     }
+    },
+    {
+     "id": "d2",
+     "fig": "agni",
+     "x": 1600,
+     "y": 200,
+     "s": 0.38,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -4,
+     "kind": "char",
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "x": -100,
+        "t": 8
+       }
+      ]
+     }
+    },
+    {
+     "id": "nandi",
+     "kind": "creature",
+     "creature": "bull",
+     "x": 1400,
+     "y": 660,
+     "s": 0.75,
+     "face": -1,
+     "legs": 4,
+     "in": 12,
+     "keys": {
+      "12": [
+       {
+        "x": 1080,
+        "t": 2
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "नव-विवाहित जीवन अभी शुरू ही हुआ था, कि समाचार आया। प्रजापति कनखल में एक भव्य यज्ञ करने वाले थे। सारे देवता आमंत्रित थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sati",
+     "text": "माँ से मिलूँगी! बहनों से! कितने दिन हो गए उन्हें देखे!",
+     "cam": "close:sati"
+    },
+    {
+     "who": "narrator",
+     "text": "दिन बीतते गए। पर निमंत्रण नहीं आया। न दक्ष आए, न माँ। न कोई पुजारी, न कोई दूत।",
+     "cam": "mid:sati"
+    },
+    {
+     "who": "narrator",
+     "text": "धीरे-धीरे प्रसन्नता का स्थान भय ने ले लिया। सती न बाहर जातीं, न रात को सोतीं। आँखों में उम्मीद थी, पर दिल हर दिन डूबता जाता था।",
+     "cam": "close:sati"
+    },
+    {
+     "who": "narrator",
+     "text": "इस बीच, शिव ने उनसे कुछ नहीं कहा।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "यज्ञ का दिन आया। सती ने देवताओं को कनखल की ओर उड़ते देखा। क्या वे ऊपर से ताना मार रहे थे? या दया दिखा रहे थे?",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "sati",
+     "text": "पिताजी ऐसा क्यों कर रहे हैं? उन्होंने हर देवता को बुलाया, पर अपनी ही बेटी को नहीं? महादेव को नहीं?",
+     "cam": "close:sati"
+    },
+    {
+     "who": "shiva",
+     "text": "प्रजापति के मन में मेरे लिए जो घृणा है, उसने तुम्हारे लिए उनके प्रेम को भी जला दिया है। वे अब तुम्हें पुत्री नहीं मानते। तुम केवल मेरी पत्नी हो।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "sati",
+     "text": "पिता अपनी संतान से कभी घृणा नहीं कर सकता! मुझे वहाँ जाकर उनसे बात करनी चाहिए।",
+     "cam": "close:sati"
+    },
+    {
+     "who": "shiva",
+     "text": "वहाँ हमारा स्वागत नहीं होगा, सती। बिन बुलाया अतिथि सदा अपमानित होता है। और वहाँ तुम्हारी रक्षा करने वाला कोई नहीं होगा।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "sati",
+     "text": "मेरी हानि? अपने ही घर में? अपने ही परिवार के बीच? जब मैं पिताजी के सामने जाऊँगी, तो वे फिर से मुझसे प्रेम करने लगेंगे।",
+     "cam": "ecu:sati"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने बार-बार रोका, पर सती नहीं मानीं। अंत में महादेव ने नंदी को आज्ञा दी, कि सती को कनखल ले जाए।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "kankhal",
+   "set": "yajna",
+   "ctx": {},
+   "els": [
+    {
+     "id": "agni",
+     "kind": "fire",
+     "x": 640,
+     "y": 560,
+     "size": 1.6,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "25": [
+       {
+        "size": 3.4,
+        "t": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "daksha",
+     "x": 860,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "offer",
+     "emo": "smile",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "8": [
+       {
+        "emo": "sly",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "14": [
+       {
+        "pose": "strike",
+        "t": 0.3
+       },
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "16": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "23": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "prasuti",
+     "x": 1050,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 520,
+        "pose": "cradle",
+        "emo": "joy",
+        "t": 1.5,
+        "d": 1
+       }
+      ],
+      "2": [
+       {
+        "emo": "joy",
+        "pose": "cradle",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "x": 1050,
+        "pose": "rest",
+        "emo": "sad",
+        "t": 1.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "s1",
+     "fig": "nakshatra",
+     "x": 1180,
+     "y": 640,
+     "s": 0.72,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "z": -2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "s2",
+     "fig": "rohini",
+     "x": 1250,
+     "y": 630,
+     "s": 0.7,
+     "face": -1,
+     "pose": "point",
+     "emo": "sly",
+     "z": -3,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "brahma",
+     "x": 300,
+     "y": 560,
+     "s": 0.62,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "bless",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -4,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "vishnu",
+     "x": 160,
+     "y": 570,
+     "s": 0.62,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -4,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "dadhichi",
+     "x": 470,
+     "y": 650,
+     "s": 0.78,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "namaste",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "17": [
+       {
+        "seat": "none",
+        "pose": "raise",
+        "emo": "rage",
+        "t": 0.6
+       },
+       {
+        "emo": "rage",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "19": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "20": [
+       {
+        "x": -200,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "sati",
+     "x": -120,
+     "y": 650,
+     "s": 0.88,
+     "face": 1,
+     "pose": "rest",
+     "emo": "smile",
+     "kind": "char",
+     "in": 1,
+     "keys": {
+      "1": [
+       {
+        "x": 360,
+        "t": 2.5
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.6
+       }
+      ],
+      "7": [
+       {
+        "x": 520,
+        "emo": "angry",
+        "pose": "point",
+        "t": 1
+       },
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "15": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "21": [
+       {
+        "x": 560,
+        "pose": "namaste",
+        "emo": "sad",
+        "t": 1.5
+       },
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "22": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "24": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.3
+       },
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "25": [
+       {
+        "x": 640,
+        "y": 560,
+        "o": 0,
+        "t": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "shakti",
+     "kind": "rays",
+     "x": 560,
+     "y": 380,
+     "r": 700,
+     "n": 30,
+     "color": "#ffd0a0",
+     "op": 0.3,
+     "z": -3,
+     "anim": "pop",
+     "in": 24,
+     "out": 25
+    },
+    {
+     "id": "burst",
+     "kind": "ring",
+     "x": 640,
+     "y": 480,
+     "r": 700,
+     "z": 60,
+     "in": 25
+    },
+    {
+     "id": "dark",
+     "kind": "tint",
+     "color": "#1a0606",
+     "op": 0.5,
+     "z": 55,
+     "in": 27
+    },
+    {
+     "id": "crows",
+     "kind": "birds",
+     "x": 640,
+     "y": 160,
+     "n": 9,
+     "speed": 140,
+     "color": "#1a1a1a",
+     "z": 50,
+     "in": 27
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "सती कनखल पहुँचीं, तो चकित रह गईं। माँ प्रसूति ने उन्हें गले लगा लिया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "prasuti",
+     "text": "मेरी बच्ची! तुम आ गईं!",
+     "cam": "two:prasuti,sati"
+    },
+    {
+     "who": "narrator",
+     "text": "पर दक्ष की आँखों में तिरस्कार के सिवा कुछ नहीं था। और बहनें भी, बिन बुलाए आई सती को घूर रही थीं।",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "nakshatras",
+     "text": "देखो तो, जंगली फूलों से सजकर आई है! संन्यासी की पत्नी!",
+     "cam": "two:s1,s2"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर सती ने यज्ञ-स्थल देखा, और उनकी पीड़ा और बढ़ गई। सब देवता थे। पर शिव के लिए आसन तक नहीं था। न यज्ञ का भाग, न उनके नाम का मंत्र।",
+     "camMove": true,
+     "cam": "at:640,480,1.2"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव का पूर्ण बहिष्कार। और किसी ने विरोध तक नहीं किया। न ब्रह्मा ने, न विष्णु ने।",
+     "cam": "two:brahma,vishnu"
+    },
+    {
+     "who": "sati",
+     "text": "पिताजी! महादेव के बिना आपने यज्ञ कैसे कर लिया? यहाँ देवता हैं, असुर हैं, यक्ष और गंधर्व हैं। आपने अपने दामाद को क्यों नहीं बुलाया?",
+     "cam": "close:sati"
+    },
+    {
+     "who": "daksha",
+     "text": "क्योंकि वह इनमें से किसी श्रेणी का नहीं। न देव, न असुर। न मनुष्य, न पशु। वह प्राणियों में सबसे तुच्छ है। क्या उसने तुम्हें निमंत्रण की भीख माँगने भेजा है?",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "sati",
+     "text": "पिताजी! आप मेरे पति का अपमान कर रहे हैं!",
+     "cam": "ecu:sati"
+    },
+    {
+     "who": "daksha",
+     "text": "हाँ! उस पति का, जिससे तुमने मेरी इच्छा के विरुद्ध विवाह किया। तुम हमारे लिए उसी दिन मर गई थीं, जिस दिन तुमने उससे विवाह किया। और मृतकों को निमंत्रण नहीं भेजा जाता।",
+     "cam": "close:daksha"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "ecu:sati",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "sati",
+     "text": "जब चंद्र ने आपकी पुत्रियों की उपेक्षा की, तो आपने उन्हें शाप दिया। और आज आप स्वयं अपनी पुत्री की उपेक्षा कर रहे हैं?",
+     "cam": "close:sati"
+    },
+    {
+     "who": "sati",
+     "text": "और आप, ब्रह्मदेव? श्री हरि? आप चुप बैठे हैं, जबकि शिव का अपमान हो रहा है? क्या आप भूल गए कि उन्हीं के साथ आप त्रिमूर्ति कहलाते हैं? या इन आहुतियों की भूख ने आपके मुँह बंद कर दिए हैं?",
+     "camMove": true,
+     "cam": "two:sati,brahma"
+    },
+    {
+     "who": "daksha",
+     "text": "तुम्हारी हिम्मत कैसे हुई? उसके लिए मेरे पास घृणा के सिवा कुछ नहीं!",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "sati",
+     "text": "आप उनसे घृणा नहीं करते, पिताजी। आप उनसे डरते हैं। डरते हैं कि उन्हें वश में नहीं कर सकते, क्योंकि वे आपकी बनाई किसी चीज़ को नहीं मानते।",
+     "cam": "ecu:sati"
+    },
+    {
+     "who": "daksha",
+     "text": "इसलिए उस परित्यक्त को यहाँ की जूठन भी नहीं मिलेगी!",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "dadhichi",
+     "text": "बहुत हुआ!",
+     "cam": "full:dadhichi"
+    },
+    {
+     "who": "narrator",
+     "text": "सभा स्तब्ध रह गई। यह ऋषि दधीचि थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "dadhichi",
+     "text": "जिस यज्ञ में महादेव का अपमान हो, वह ब्रह्मांड के माथे पर कलंक है। यहाँ बैठना भी पाप है। आप सबको महादेव के क्रोध का सामना करना पड़ेगा। आप सबको!",
+     "cam": "close:dadhichi"
+    },
+    {
+     "who": "narrator",
+     "text": "सबकी आँखें जाते हुए दधीचि पर थीं। किसी ने नहीं देखा, कि सती यज्ञ-वेदी के किनारे जा खड़ी हुई थीं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "sati",
+     "text": "मैं दधीचि की तरह लौट भी नहीं सकती। इस सती रूप में, मैं महादेव के पास नहीं लौट सकती। प्रजापति की बेटी होना ही शाप है।",
+     "cam": "close:sati"
+    },
+    {
+     "who": "sati",
+     "text": "आज मेरे कारण मेरे स्वामी का अपमान हुआ। इसलिए मुझे यह पहचान, यह शरीर नष्ट करना होगा। आपके यज्ञ में मेरे स्वामी का कोई भाग नहीं, तो मैं स्वयं को इस वेदी में अर्पित करती हूँ। मुझे क्षमा करें, महादेव। मुझे क्षमा करें।",
+     "cam": "ecu:sati"
+    },
+    {
+     "who": "daksha",
+     "text": "शिव का नाम जपना बंद करो! तुम मेरी यज्ञ-वेदी अपवित्र कर रही हो!",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "sati",
+     "text": "दुष्ट दक्ष! तुम भूल गए कि मैं आदिशक्ति हूँ! मैंने तुम्हारे घर में जन्म लिया, क्योंकि तुमने मुझे पुकारा था। और मैंने कहा था, जिस दिन तुम मेरा अपमान करोगे, मैं तुम्हें त्याग दूँगी!",
+     "camMove": true,
+     "cam": "full:sati"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "boom",
+     "fire": true,
+     "shake": 12,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "और सती यज्ञ की अग्नि में समा गईं।",
+     "camMove": true,
+     "cam": "at:640,460,1.2",
+     "sfx": "fire"
+    },
+    {
+     "who": "narrator",
+     "text": "सब पीछे हट गए। आकाश काला पड़ गया। गिद्ध झपटने लगे, गीदड़ हाहाकार करने लगे। हवा, किसी क्रुद्ध आत्मा की तरह, लपटों को बुझाने लगी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "wind",
+     "rumble": true
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "fire",
+    "temple"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "card",
+   "id": "chapter16",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा दस",
+   "title": "वीरभद्र और तांडव",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "virabhadra",
+   "set": "kailash",
+   "ctx": {},
+   "els": [
+    {
+     "id": "shiva",
+     "x": 640,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "seat": "lotus",
+     "pose": "meditate",
+     "emo": "meditate",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "seat": "none",
+        "pose": "raise",
+        "t": 0.3
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "hit",
+     "kind": "ring",
+     "x": 900,
+     "y": 640,
+     "r": 500,
+     "z": 60,
+     "in": 3
+    },
+    {
+     "id": "smk",
+     "kind": "smoke",
+     "x": 900,
+     "y": 660,
+     "n": 12,
+     "w": 300,
+     "color": "#2a1a2a",
+     "z": 10,
+     "in": 3
+    },
+    {
+     "id": "veerabhadra",
+     "x": 920,
+     "y": 660,
+     "s": 1.1,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "anim": "grow",
+     "inDur": 1.4,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "4": [
+       {
+        "pose": "namaste",
+        "t": 0.5
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "close:shiva",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "सती ने जैसे ही अंतिम साँस ली, शिव के नेत्र खुल गए।",
+     "cam": "ecu:shiva",
+     "sfx": "thunder",
+     "shake": 10,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "पीड़ा और रोष से काँपते शिव ने अपनी जटा से एक लट तोड़ी, और धरती पर पटक दी।",
+     "cam": "close:shiva",
+     "sfx": "damaru"
+    },
+    {
+     "who": "narrator",
+     "text": "धरती से टकराते ही प्रकट हुआ वीरभद्र। तीन नेत्रों और हज़ार भुजाओं वाला एक भयानक प्राणी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "boom",
+     "roar": true,
+     "shake": 14
+    },
+    {
+     "who": "narrator",
+     "text": "उसने शिव को प्रणाम किया। और महादेव ने आज्ञा दी।",
+     "cam": "two:shiva,veerabhadra"
+    },
+    {
+     "who": "shiva",
+     "text": "दक्ष के यज्ञ को ध्वंस कर दो!",
+     "cam": "ecu:shiva"
+    },
+    {
+     "who": "veerabhadra",
+     "text": "जो आज्ञा, महादेव!",
+     "cam": "close:veerabhadra"
+    }
+   ],
+   "tint": [
+    "#2a0606",
+    0.35
+   ],
+   "music": "battle",
+   "amb": [
+    "storm",
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "dhvans",
+   "set": "yajna",
+   "ctx": {},
+   "els": [
+    {
+     "id": "agni",
+     "kind": "fire",
+     "x": 640,
+     "y": 560,
+     "size": 2,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "fires",
+     "kind": "fire",
+     "x": 1100,
+     "y": 600,
+     "size": 1.2,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "smk",
+     "kind": "smoke",
+     "x": 640,
+     "y": 600,
+     "n": 14,
+     "w": 1200,
+     "h": 300,
+     "color": "#2a1a2a",
+     "z": 30,
+     "in": 0
+    },
+    {
+     "id": "daksha",
+     "x": 520,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "fear",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 8,
+     "od": 0.1
+    },
+    {
+     "id": "bhrigu",
+     "x": 330,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "curse",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishnu",
+     "x": 200,
+     "y": 560,
+     "s": 0.66,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "z": -4,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "sad",
+        "pose": "abhaya",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "veerabhadra",
+     "x": 1500,
+     "y": 660,
+     "s": 1.1,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "x": 980,
+        "t": 1.4
+       }
+      ],
+      "7": [
+       {
+        "x": 640,
+        "pose": "raise",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "g1",
+     "fig": "gana",
+     "x": 1600,
+     "y": 650,
+     "s": 0.8,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "x": 1120,
+        "t": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "g2",
+     "fig": "gana",
+     "x": 1700,
+     "y": 640,
+     "s": 0.75,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "x": 1210,
+        "t": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "g3",
+     "fig": "gana",
+     "x": 1800,
+     "y": 630,
+     "s": 0.7,
+     "face": -1,
+     "pose": "raise",
+     "emo": "angry",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "0": [
+       {
+        "x": 1060,
+        "t": 2
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 740,
+     "y": 420,
+     "z": 60,
+     "in": 2,
+     "out": 5
+    },
+    {
+     "id": "end",
+     "kind": "bolt",
+     "x": 560,
+     "y": 0,
+     "h": 600,
+     "z": 60,
+     "in": 8,
+     "out": 9
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 10
+    },
+    {
+     "who": "narrator",
+     "text": "यज्ञ-स्थल पर भगदड़ मच गई। वीरभद्र ने अपनी त्वचा के छिद्रों से अनगिनत भयानक गण उत्पन्न किए, और वे यज्ञ को रौंदने लगे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "boom",
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने आहुतियाँ अपवित्र कर दीं। जगह-जगह आग लगाई, और उसकी राख से खेलने लगे। ब्रह्मांड में जो कुछ घातक हो सकता था, वह सब उस यज्ञ में हुआ।",
+     "cam": "mid:veerabhadra",
+     "sfx": "clash",
+     "fire": true
+    },
+    {
+     "who": "bhrigu",
+     "text": "ऋभुओ, प्रकट हो! इन्हें रोको!",
+     "cam": "close:bhrigu"
+    },
+    {
+     "who": "narrator",
+     "text": "भृगु ने ऋभु योद्धा प्रकट किए। पर वीरभद्र की सेना, लुढ़कती चट्टान की तरह, अथक बढ़ती रही।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash",
+     "shake": 6
+    },
+    {
+     "who": "daksha",
+     "text": "श्री हरि! अपना सुदर्शन चक्र चलाइए! हमें बचाइए!",
+     "cam": "two:daksha,vishnu"
+    },
+    {
+     "who": "vishnu",
+     "text": "वीरभद्र स्वयं शिव की ऊर्जा है, प्रजापति। वह मेरे चक्र के समान शक्तिशाली है। दोनों टकराए, तो ब्रह्मांड नष्ट हो जाएगा।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "इससे पहले कि दक्ष कुछ और कहते, वीरभद्र उन पर टूट पड़ा।",
+     "cam": "close:daksha",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "boom",
+     "thunder": true,
+     "shake": 14,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "उसने प्रजापति का सिर काटकर अग्नि में झोंक दिया। दधीचि का शाप सत्य हो गया था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "dadhichi",
+     "text": "आप सबको महादेव के क्रोध का सामना करना पड़ेगा... आप सबको...",
+     "cam": "wide"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "fire",
+    "storm"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "punarjivan",
+   "set": "kailash",
+   "ctx": {},
+   "els": [
+    {
+     "id": "shiva",
+     "x": 880,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 330,
+     "y": 650,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "out": 5
+    },
+    {
+     "id": "vishnu",
+     "x": 500,
+     "y": 650,
+     "s": 0.88,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 5
+    },
+    {
+     "id": "indra",
+     "x": 180,
+     "y": 650,
+     "s": 0.8,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "fear",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "out": 5
+    },
+    {
+     "id": "daksharam",
+     "x": 400,
+     "y": 650,
+     "s": 0.92,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "fear",
+     "anim": "materialize",
+     "inDur": 2,
+     "kind": "char",
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "यज्ञ अपवित्र हो चुका था। तीनों लोकों पर विनाश का संकट था। ब्रह्मा और विष्णु का एक ही मत था।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "vishnu",
+     "text": "महादेव को शांत करना होगा। वही दक्ष को जीवित करके यज्ञ पूर्ण करवा सकते हैं।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "सारे देवता शिव के पास पहुँचे, दंडवत प्रणाम किया, क्षमा माँगी, और उन्हें कनखल ले आए।",
+     "cam": "two:shiva,brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "दक्ष का सिर तो अग्नि में भस्म हो चुका है। कोई और उपाय खोजिए।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "अंत में, प्रजापति के शरीर पर एक मेढ़े का सिर लगाया गया।",
+     "camMove": true,
+     "cam": "full:daksharam",
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "और नंदी का वचन भी सत्य हो गया। दक्ष ने शिव को पशु कहा था। आज वह स्वयं, एक पशु के सहारे ही जीवित हुआ था।",
+     "cam": "close:daksharam"
+    },
+    {
+     "who": "nandi",
+     "text": "मैंने कहा था, प्रजापति।",
+     "cam": "close:daksharam"
+    },
+    {
+     "who": "shiva",
+     "text": "एक दिन तुम पृथ्वी पर अपने वास्तविक रूप में फिर जन्म लोगे, दक्ष। जाओ, अपना यज्ञ पूर्ण करो।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "यज्ञ संपन्न हुआ, और उसका पुण्य सबको मिला। तभी अचानक, पूरा ब्रह्मांड काँपने लगा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bells"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "tandav",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "fireR",
+     "kind": "ring",
+     "x": 640,
+     "y": 380,
+     "r": 640,
+     "dur": 2.5,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "flames",
+     "kind": "fire",
+     "x": 640,
+     "y": 650,
+     "size": 2.6,
+     "z": -2,
+     "in": 0,
+     "out": 9,
+     "od": 2
+    },
+    {
+     "id": "shiva",
+     "x": 640,
+     "y": 660,
+     "s": 1.05,
+     "face": 1,
+     "pose": "cradle",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 520,
+        "lean": -8,
+        "t": 1.2
+       }
+      ],
+      "3": [
+       {
+        "x": 760,
+        "lean": 8,
+        "t": 1.2
+       }
+      ],
+      "4": [
+       {
+        "x": 640,
+        "lean": 0,
+        "emo": "sad",
+        "t": 1
+       }
+      ],
+      "9": [
+       {
+        "pose": "rest",
+        "emo": "sad",
+        "t": 1.5
+       }
+      ],
+      "10": [
+       {
+        "x": 1500,
+        "t": 7
+       }
+      ]
+     }
+    },
+    {
+     "id": "satibody",
+     "fig": "sati",
+     "x": 660,
+     "y": 430,
+     "s": 0.8,
+     "face": 1,
+     "rot": -80,
+     "pose": "rest",
+     "emo": "meditate",
+     "noShadow": true,
+     "z": 1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 540,
+        "t": 1.2
+       }
+      ],
+      "3": [
+       {
+        "x": 780,
+        "t": 1.2
+       }
+      ],
+      "4": [
+       {
+        "x": 660,
+        "t": 1
+       }
+      ]
+     },
+     "out": 7,
+     "od": 1.5
+    },
+    {
+     "id": "tw",
+     "kind": "text",
+     "x": 640,
+     "y": 170,
+     "text": "रुद्र तांडव",
+     "size": 88,
+     "color": "#ff6a3a",
+     "z": 70,
+     "in": 3,
+     "out": 4
+    },
+    {
+     "id": "vishnu",
+     "x": 180,
+     "y": 320,
+     "s": 0.66,
+     "face": 1,
+     "pose": "raise",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "z": -4,
+     "kind": "char",
+     "in": 5
+    },
+    {
+     "id": "chakra",
+     "kind": "chakra",
+     "x": 180,
+     "y": 260,
+     "r": 46,
+     "z": 60,
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "x": 660,
+        "y": 430,
+        "t": 2
+       }
+      ]
+     },
+     "out": 7
+    },
+    {
+     "id": "pieces",
+     "kind": "petals",
+     "x": 640,
+     "y": 300,
+     "n": 51,
+     "w": 1400,
+     "z": 55,
+     "in": 7
+    },
+    {
+     "id": "shine",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 430,
+     "n": 51,
+     "r": 500,
+     "z": 56,
+     "in": 7
+    },
+    {
+     "id": "peeth",
+     "kind": "text",
+     "x": 640,
+     "y": 170,
+     "text": "५१ शक्तिपीठ",
+     "size": 80,
+     "z": 70,
+     "in": 8,
+     "out": 9
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "rumble",
+     "shake": 14
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मांड ऐसे काँप रहा था, मानो कोई उसे निर्दयता से पीट रहा हो। लोग बाहर निकले, तो स्तब्ध रह गए।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "damaru",
+     "shake": 12
+    },
+    {
+     "who": "narrator",
+     "text": "भगवान शिव, सती के शव को कंधे पर लिए नृत्य कर रहे थे। आँखों में खून उतर आया था। पूरा शरीर हिंसक मुद्रा में फड़क रहा था।",
+     "cam": "close:shiva",
+     "sfx": "damaru",
+     "shake": 10
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "camMove": true,
+     "cam": "at:640,400,1.1",
+     "sfx": "thunder",
+     "shake": 14,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "महादेव विलाप कर रहे थे। अपनी प्रियतमा की मृत्यु का शोक।",
+     "cam": "ecu:shiva",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मांड को बचाने के लिए सबकी दृष्टि विष्णु की ओर मुड़ी। विष्णु समझ गए, कि सती के अवशेष ही शिव को पीड़ा दे रहे थे।",
+     "cam": "mid:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु ने अपना सुदर्शन चक्र छोड़ दिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "magic": true
+    },
+    {
+     "who": "narrator",
+     "text": "शिव झूम रहे थे, और चक्र ने सती के शरीर के इक्यावन भाग कर दिए। एक-एक करके वे धरती पर अलग-अलग स्थानों पर गिरे।",
+     "camMove": true,
+     "cam": "at:640,420,1.1",
+     "sfx": "sparkle",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "जहाँ-जहाँ वे गिरे, वहाँ शक्तिपीठ स्थापित हुए।",
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव रुक गए। शरीर से बोझ उतर गया था। पर हृदय अब भी भारी था।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव चले गए। वे फिर अकेले रह गए थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "wind"
+    }
+   ],
+   "tint": [
+    "#1a0610",
+    0.25
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1040,
+     "y": 150,
+     "r": 46,
+     "phase": 0.5,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 700,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "sad",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "smile",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "एक पिता का अहंकार। एक बेटी का स्वाभिमान। और एक पति का शोक, जिसने ब्रह्मांड हिला दिया।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "दक्ष ने कहा था, शिव पशु है। अंत में पशु का सिर किसे मिला? कर्म का चक्र, नारायण। वह किसी को नहीं छोड़ता।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पर निराश मत होइए। आदिशक्ति कभी सदा के लिए नहीं जातीं। सती लौटेंगी। एक नए नाम के साथ। पार्वती।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "पर उससे पहले, विष्णु को धरती पर उतरना होगा। एक बार नहीं, बार-बार। अलग-अलग रूपों में।",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next22",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले अध्याय में: जब धर्म संकट में पड़ा, तो विष्णु मछली बने, वराह बने, और आधे सिंह, आधे मनुष्य बनकर एक अमर असुर का अंत किया।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "मत्स्य · वराह · नृसिंह",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end23",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय तीन · सती",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 19 और 21)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

@@ -7,6 +7,8 @@ Two shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chrom
 - **KINDLETON** (root `SKILL.md`, `engine/`, `episodes/`): Simpsons-inspired parody sitcom.
 - **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; season 1 covers *Suicidal Empathy* in seven episodes: an overview (`too-kind-to-survive`) and one episode per case-file chapter (`the-things-we-wont-say`, `same-species-different-rules`, `second-chances`, `settled`, `buying-absolution`, `the-kindest-government`). A special, `eight-nights-of-fire`, covers the 2023 French riots through the same lens.
 
+- **MAHAGATHA** (`mahagatha/`): a twelve-episode Hindi mythology series in the style of Indian pichwai and miniature painting, adapted from *Mahagatha: 100 Tales from the Puranas* (Satyarth Nayak, Hindi translation by Ashutosh Garg). Hand-drawn SVG gods, sets and set pieces, a Hindi screenplay format, and distinct character voices blended from Kokoro. See `mahagatha/SKILL.md`.
+
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
 - `engine/`: the renderer and pipeline.
 - `index.html`: the episode gallery (static, deploys to Vercel with zero config).

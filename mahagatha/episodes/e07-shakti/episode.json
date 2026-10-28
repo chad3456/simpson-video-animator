@@ -1,0 +1,4614 @@
+{
+ "meta": {
+  "series": "महागाथा",
+  "seriesSub": "पुराणों की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "title": "शक्ति",
+  "episode": "7",
+  "slug": "e07-shakti",
+  "kicker": "अध्याय सात",
+  "sub": "गणेश, दुर्गा और काली",
+  "logline": "हल्दी से गढ़ा एक बालक जो महादेव का मार्ग रोक देता है, सब देवताओं के तेज से जन्मी दुर्गा और महिषासुर का नौ दिन का युद्ध, और वह असुर जिसके रक्त की हर बूँद नया असुर बन जाती थी।",
+  "stories": "41, 42, 44",
+  "source": "महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 41, 42 और 44"
+ },
+ "cast": {
+  "narrator": {
+   "label": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "narad": {
+   "label": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.07,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "vishnu": {
+   "label": "विष्णु",
+   "fig": "vishnu",
+   "voice": "hm_omega:0.8+am_michael:0.2",
+   "speed": 0.94,
+   "pitch": 0,
+   "fx": "divine"
+  },
+  "brahma": {
+   "label": "ब्रह्मा",
+   "fig": "brahma",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "shiva": {
+   "label": "शिव",
+   "fig": "shiva",
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.86,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "parvati": {
+   "label": "पार्वती",
+   "fig": "parvati",
+   "voice": "hf_beta:0.7+af_heart:0.3",
+   "speed": 0.94,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "devas": {
+   "label": "देवता",
+   "fig": "indra",
+   "voice": "hm_psi:0.6+am_liam:0.4",
+   "speed": 1.0,
+   "pitch": 0,
+   "fx": "chorus"
+  },
+  "agni": {
+   "label": "अग्नि",
+   "fig": "agni",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "ganesha": {
+   "label": "गणेश",
+   "fig": "ganesha",
+   "voice": "hm_psi:0.5+am_puck:0.5",
+   "speed": 0.98,
+   "pitch": 0,
+   "fx": "bright"
+  },
+  "ganeshboy": {
+   "label": "बालक",
+   "fig": "ganeshboy",
+   "voice": "hf_beta:0.6+am_puck:0.4",
+   "speed": 1.04,
+   "pitch": 3,
+   "formant": "shifted",
+   "fx": "child"
+  },
+  "durga": {
+   "label": "दुर्गा",
+   "fig": "durga",
+   "voice": "hf_alpha:0.65+af_nicole:0.35",
+   "speed": 0.92,
+   "pitch": -2,
+   "fx": "divine_big"
+  },
+  "mahishasura": {
+   "label": "महिषासुर",
+   "fig": "mahishasura",
+   "voice": "hm_omega:0.4+am_fenrir:0.6",
+   "speed": 0.92,
+   "pitch": -7,
+   "formant": "shifted",
+   "fx": "roar"
+  },
+  "shumbha": {
+   "label": "शुंभ",
+   "fig": "shumbha",
+   "voice": "hm_psi:0.55+am_eric:0.45",
+   "speed": 0.96,
+   "pitch": -3,
+   "fx": "growl"
+  },
+  "nishumbha": {
+   "label": "निशुंभ",
+   "fig": "nishumbha",
+   "voice": "hm_omega:0.55+am_liam:0.45",
+   "speed": 1.02,
+   "pitch": -2,
+   "formant": "shifted",
+   "fx": "room"
+  },
+  "raktabeej": {
+   "label": "रक्तबीज",
+   "fig": "raktabeej",
+   "voice": "hm_psi:0.4+am_onyx:0.6",
+   "speed": 1.0,
+   "pitch": -6,
+   "formant": "shifted",
+   "fx": "chorus"
+  },
+  "kashyap": {
+   "label": "कश्यप",
+   "fig": "kashyap",
+   "voice": "hm_omega:0.7+bm_george:0.3",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "sugriva_doot": {
+   "label": "दूत",
+   "fig": "asura2",
+   "voice": "hm_psi:0.6+am_adam:0.4",
+   "speed": 1.06,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "chanda": {
+   "label": "चंड",
+   "fig": "asura2",
+   "voice": "hm_omega:0.6+am_michael:0.4",
+   "speed": 1.04,
+   "pitch": -3,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "munda": {
+   "label": "मुंड",
+   "fig": "gana",
+   "voice": "hm_psi:0.6+am_fenrir:0.4",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "growl"
+  },
+  "chandmund": {
+   "label": "चंड-मुंड",
+   "duet": [
+    "chanda",
+    "munda"
+   ],
+   "fx": "room"
+  },
+  "ganas": {
+   "label": "गण",
+   "fig": "gana",
+   "voice": "hm_omega:0.5+am_fenrir:0.5",
+   "speed": 1.0,
+   "pitch": -2,
+   "fx": "chorus"
+  },
+  "shumbhnishumbh": {
+   "label": "शुंभ-निशुंभ",
+   "duet": [
+    "shumbha",
+    "nishumbha"
+   ],
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 14
+  },
+  {
+   "type": "scene",
+   "id": "sutradhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "glowL",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#fff1b8",
+     "core": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 1500,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 700,
+        "t": 3
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 3.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "नारायण... नारायण! आज की कथा किसी देवता की नहीं, शक्ति की है।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "वह शक्ति, जो माँ बनकर हल्दी से एक बालक गढ़ देती है। और वही शक्ति, जो सिंह पर चढ़कर दस हाथों में दस अस्त्र उठा लेती है।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "असुर सोचते थे, स्त्री सबसे दुर्बल है। उन्हें यह भ्रम बहुत महँगा पड़ा।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "पर पहले, कैलाश चलते हैं। जहाँ एक माँ, अकेली बैठी रो रही थी।",
+     "cam": "ecu:narad"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7.5,
+   "kicker": "अध्याय सात",
+   "title": "शक्ति",
+   "sub": "गणेश, दुर्गा और काली"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा इकतालीस",
+   "title": "गणेश को मिला जीवन",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "akeli",
+   "set": "kailash",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1040,
+     "y": 170,
+     "r": 60,
+     "phase": 1,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "x": 640,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "cradle",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 1
+       },
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "whisper",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 380,
+     "n": 16,
+     "r": 200,
+     "z": 40,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "पार्वती रो रही थीं। कार्तिकेय की विजय ने उन्हें गौरव से भर दिया था। पर देवताओं का सेनापति निरंतर युद्ध में रहता था, और माँ उसे कम ही देख पाती थी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उनका मातृ-प्रेम बढ़ता जा रहा था, पर उसे ग्रहण करने वाला कोई नहीं था। ब्रह्मांड ने उनका पुत्र उनसे माँग लिया था।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "दूसरा पुत्र...? किसने कहा यह?",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "narrator",
+     "text": "पर वहाँ कोई नहीं था। तो क्या ये शब्द उनके अपने भीतर से उपजे थे? क्या ब्रह्मांड ऐसे ही विचारों को कर्म में बदल देता है?",
+     "camMove": true,
+     "cam": "close:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "महादेव ने कार्तिकेय को उत्पन्न किया था। मैं भी ऐसा कर सकती हूँ।",
+     "cam": "close:parvati"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "haldi",
+   "set": "glade",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "sun",
+     "kind": "glow",
+     "x": 640,
+     "y": 360,
+     "r": 380,
+     "color": "#ffd27a",
+     "core": 0.35,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "x": 480,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "offer",
+     "emo": "serene",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "meditate",
+        "t": 0.6
+       },
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "pose": "cradle",
+        "emo": "joy",
+        "t": 0.6
+       },
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "clay",
+     "kind": "glow",
+     "x": 760,
+     "y": 560,
+     "r": 70,
+     "color": "#f2c230",
+     "core": 1,
+     "z": 5,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "r": 120,
+        "t": 4
+       }
+      ]
+     },
+     "out": 5,
+     "od": 1.5
+    },
+    {
+     "id": "ganeshboy",
+     "x": 760,
+     "y": 660,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 2,
+     "item": "none",
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "6": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "item": "gada",
+        "t": 0.2
+       }
+      ],
+      "11": [
+       {
+        "emo": "smile",
+        "pose": "hold",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "pop",
+     "kind": "ring",
+     "x": 760,
+     "y": 520,
+     "r": 300,
+     "color": "#ffd27a",
+     "z": 50,
+     "in": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "river"
+    },
+    {
+     "who": "narrator",
+     "text": "स्नान से पहले पार्वती ने पूरे शरीर पर हल्दी का लेप लगाया था। अब वे उसे मलकर उतारने लगीं, और उतरे हुए लेप से एक लोई बनाई।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "सिर। धड़। हाथ और पैर। आँखें और कान। यह बालक माँ के गर्भ में नहीं, उनकी हथेलियों में ढल रहा था।",
+     "camMove": true,
+     "cam": "at:760,520,1.4",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "parvati",
+     "text": "क्या महादेव इसे स्वीकार करेंगे? हाँ। मैं कार्तिकेय से प्रेम करती हूँ, महादेव भी इससे प्रेम करेंगे।",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "narrator",
+     "text": "पार्वती ने श्वास ली।",
+     "cam": "ecu:parvati",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "और उनका बनाया शिशु भी श्वास लेने लगा।",
+     "camMove": true,
+     "cam": "two:parvati,ganeshboy",
+     "sfx": "swell",
+     "bells": true
+    },
+    {
+     "who": "ganeshboy",
+     "text": "माँ!",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "parvati",
+     "text": "मेरा पुत्र!",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "मेरा नाम क्या है, माँ?",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "parvati",
+     "text": "हमारे अनुयायी गण कहलाते हैं। तुम्हारा नाम गणेश होगा। गणपति। गणों के स्वामी।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "मैं अब स्नान करूँगी। पुत्र, यहीं पहरा देना, और किसी को भीतर मत आने देना।",
+     "cam": "two:parvati,ganeshboy"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "ऐसा ही होगा, माँ। मैं वचन देता हूँ।",
+     "cam": "close:ganeshboy"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "birds",
+    "river"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "dvar",
+   "set": "kailash",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "door",
+     "kind": "glow",
+     "x": 320,
+     "y": 480,
+     "r": 200,
+     "color": "#fff1b8",
+     "core": 0.4,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "ganeshboy",
+     "x": 420,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "hold",
+     "emo": "calm",
+     "item": "gada",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "calm",
+        "pose": "hold",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "pose": "hold",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "pose": "strike",
+        "t": 0.4
+       },
+       {
+        "emo": "angry",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "shiva",
+     "x": 1500,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 900,
+        "t": 3
+       },
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "item": "trishul",
+        "pose": "hold",
+        "emo": "angry",
+        "t": 0.4
+       },
+       {
+        "emo": "angry",
+        "pose": "hold",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "damaru"
+    },
+    {
+     "who": "narrator",
+     "text": "पार्वती नहीं जानती थीं कि शिव कैलाश लौट आए हैं, और उन्हीं से मिलने आ रहे हैं।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "shiva",
+     "text": "भीतर कौन जा रहा है?",
+     "cam": "two:ganeshboy,shiva"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "बाहर कौन खड़ा है?",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "मैं गणेश हूँ। पार्वती का पुत्र।",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "shiva",
+     "text": "मैं महादेव हूँ। पार्वती का पति। मुझे जाने दो।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "मेरी माँ स्नान कर रही हैं। किसी को भीतर जाने की अनुमति नहीं। आपको प्रतीक्षा करनी होगी।",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "shiva",
+     "text": "समय मेरी प्रतीक्षा करता है, मैं किसी की प्रतीक्षा नहीं करता। मैं महाकाल हूँ। ब्रह्मांड का कोई कोना मेरे लिए दुर्गम नहीं।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "पर यह कक्ष आपके लिए दुर्गम है। जब तक मैं इसके द्वार पर खड़ा हूँ।",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "shiva",
+     "text": "यदि तुम पार्वती के पुत्र हो, तो मैं तुम्हारा पिता हुआ। क्या तुम आज्ञाकारिता का अर्थ नहीं जानते?",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "आपका मार्ग रोककर ही मैं माँ की आज्ञा मान रहा हूँ। आप पिता हो सकते हैं, पर अभी माँ की आज्ञा आपसे भी बड़ी है।",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "shiva",
+     "text": "मेरा त्रिशूल तुम्हें मार सकता है।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "मेरा दंड आपको चोट पहुँचा सकता है।",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव हैरान रह गए। जिनके आगे सृष्टि काँपती थी, उनके सामने यह बालक निश्चिंत खड़ा था, दंड ऐसे घुमाता हुआ मानो त्रिशूल से टक्कर लेना चाहता हो।",
+     "camMove": true,
+     "cam": "two:ganeshboy,shiva"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "haar",
+   "set": "kailash",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "ganeshboy",
+     "x": 420,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "hold",
+     "emo": "smile",
+     "item": "gada",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "pose": "strike",
+        "t": 0.3
+       }
+      ],
+      "7": [
+       {
+        "emo": "joy",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "calm",
+        "pose": "hold",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "o": 0,
+        "t": 0.05
+       }
+      ]
+     }
+    },
+    {
+     "id": "g1",
+     "fig": "gana",
+     "x": 900,
+     "y": 660,
+     "s": 0.85,
+     "face": -1,
+     "pose": "open",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "out": 3
+    },
+    {
+     "id": "narad",
+     "x": 900,
+     "y": 560,
+     "s": 0.85,
+     "face": -1,
+     "pose": "veena",
+     "emo": "sly",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "x": 1400,
+        "t": 1.2
+       }
+      ]
+     },
+     "out": 5
+    },
+    {
+     "id": "r1",
+     "fig": "rishi",
+     "x": 900,
+     "y": 660,
+     "s": 0.85,
+     "face": -1,
+     "pose": "offer",
+     "emo": "calm",
+     "item": "vedas",
+     "kind": "char",
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "r2",
+     "fig": "atri",
+     "x": 1040,
+     "y": 660,
+     "s": 0.8,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "z": -1,
+     "kind": "char",
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "brahma",
+     "x": 860,
+     "y": 560,
+     "s": 0.8,
+     "face": -1,
+     "pose": "open",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 6,
+     "out": 8
+    },
+    {
+     "id": "vishnu",
+     "x": 1080,
+     "y": 560,
+     "s": 0.8,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "kind": "char",
+     "in": 6,
+     "out": 8
+    },
+    {
+     "id": "shiva",
+     "x": 920,
+     "y": 650,
+     "s": 1.05,
+     "face": -1,
+     "pose": "hold",
+     "emo": "rage",
+     "item": "trishul",
+     "anim": "materialize",
+     "kind": "char",
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "pose": "strike",
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "redglow",
+     "kind": "glow",
+     "x": 920,
+     "y": 330,
+     "r": 260,
+     "color": "#ff5a3a",
+     "core": 0.5,
+     "z": -2,
+     "anim": "pop",
+     "in": 8
+    },
+    {
+     "id": "tri",
+     "kind": "bolt",
+     "x": 640,
+     "y": 0,
+     "h": 640,
+     "z": 60,
+     "in": 10,
+     "out": 12
+    },
+    {
+     "id": "dark",
+     "kind": "tint",
+     "color": "#000000",
+     "op": 0,
+     "z": 55,
+     "in": 13,
+     "keys": {
+      "13": [
+       {
+        "op": 0.75,
+        "t": 0.3
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "narrator",
+     "text": "गणों ने विनती की।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "ganas",
+     "text": "हे बालक, मार्ग दे दो! ये स्वयं महादेव हैं!",
+     "cam": "close:g1"
+    },
+    {
+     "who": "narrator",
+     "text": "नारद ने प्रयास किया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "पुत्र, थोड़ी-सी बुद्धि से काम लो। शिव से कौन जीता है?",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narrator",
+     "text": "सप्तर्षियों ने शास्त्र याद दिलाए। कोई लाभ नहीं हुआ।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "यहाँ तक कि ब्रह्मा और विष्णु ने भी मार्ग छोड़ने को कहा। पर बालक नहीं हटा। जैसे भृंगी केवल शिव के आगे झुकते थे, वैसे ही गणेश केवल पार्वती का नाम जप रहे थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "conch"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "लगता है, आज सब मेरे संकल्प के आगे दुर्बल पड़ गए हैं!",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "who": "shiva",
+     "text": "बस! ऐसी अंधभक्ति लाभ से अधिक हानि करती है। अब या तो मैं पार्वती से मिलूँगा, या तू यम से मिलेगा!",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "माँ का आशीर्वाद मेरे साथ है। यदि किसी ने मेरे प्राण लिए, तो मैं फिर जीवित हो जाऊँगा।",
+     "cam": "close:ganeshboy"
+    },
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने त्रिशूल छोड़ दिया। वह हवा में उछला, और तीन रेखाएँ खींचता हुआ बालक की ओर लपका।",
+     "camMove": true,
+     "cam": "at:420,420,1.3",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "ganeshboy",
+     "text": "माँ!",
+     "cam": "ecu:ganeshboy"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "मृत्यु की वह चीख गगनभेदी थी। फिर सन्नाटा। और उस सन्नाटे को चीरती, पार्वती के कदमों की आहट।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "prakop",
+   "set": "kailash",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "parvati",
+     "x": 640,
+     "y": 650,
+     "s": 1.05,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "halo": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "rage",
+        "pose": "curse",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "fury",
+     "kind": "glow",
+     "x": 640,
+     "y": 330,
+     "r": 500,
+     "color": "#ff3a2a",
+     "core": 0.6,
+     "z": -3,
+     "anim": "pop",
+     "in": 0
+    },
+    {
+     "id": "yog",
+     "kind": "mandala",
+     "x": 640,
+     "y": 360,
+     "r": 420,
+     "spin": 60,
+     "op": 0.45,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "yoginis",
+     "kind": "sparkle",
+     "x": 640,
+     "y": 380,
+     "n": 64,
+     "r": 560,
+     "z": 40,
+     "in": 0
+    },
+    {
+     "id": "steam",
+     "kind": "smoke",
+     "x": 640,
+     "y": 640,
+     "n": 16,
+     "w": 1300,
+     "h": 300,
+     "color": "#8a6a7a",
+     "z": 45,
+     "in": 2
+    },
+    {
+     "id": "shiva",
+     "x": 1060,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "fear",
+     "z": 2,
+     "kind": "char",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.6
+       },
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "15": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kashyap",
+     "x": 200,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "kind": "char",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sad",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 380,
+     "y": 520,
+     "s": 0.7,
+     "face": 1,
+     "pose": "open",
+     "emo": "fear",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -1,
+     "kind": "char",
+     "in": 12,
+     "keys": {
+      "12": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "14": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishnu",
+     "x": 880,
+     "y": 520,
+     "s": 0.7,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -1,
+     "kind": "char",
+     "in": 16,
+     "keys": {
+      "16": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 10
+    },
+    {
+     "who": "narrator",
+     "text": "आदिशक्ति क्रोध से उबल उठीं। पार्वती प्रकृति हैं, और प्रकृति चीख रही थी। उनके शरीर से चौंसठ योगिनियाँ सर्वनाश के लिए प्रकट हो गईं।",
+     "camMove": true,
+     "cam": "full:parvati",
+     "sfx": "rumble",
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "महासागर भाप बनकर उड़ने लगे। पहाड़ फटने लगे। तीनों लोक विलुप्त होने के कगार पर थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "boom",
+     "shake": 10
+    },
+    {
+     "who": "shiva",
+     "text": "शांत हो जाओ, पार्वती। तुम हम सबको संकट में डाल रही हो।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "parvati",
+     "text": "यह आपने क्या कर डाला?",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "kashyap",
+     "text": "यह उन्होंने नहीं किया, देवी। यह मेरे कारण हुआ है। मैंने शाप दिया था।",
+     "cam": "close:kashyap"
+    },
+    {
+     "who": "parvati",
+     "text": "आपने?",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "kashyap",
+     "text": "बहुत पहले, महादेव ने अपने भक्तों की रक्षा में मेरे पुत्र सूर्य को आकाश से गिरा दिया था। पुत्र की पीड़ा देख मैंने शाप दिया, कि एक दिन वे स्वयं अपने पुत्र का सिर काटेंगे। वह शाप आज पूरा हुआ।",
+     "cam": "mid:kashyap"
+    },
+    {
+     "who": "parvati",
+     "text": "तो मेरे गणेश का बस यही काम था? एक शाप पूरा करने का उपकरण? मैंने उसे अपने शरीर से रचा था, महादेव! आपने उसे नहीं मारा, आपने मुझे मार डाला है।",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "shiva",
+     "text": "तुम स्वयं को नष्ट नहीं कर सकतीं!",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "parvati",
+     "text": "क्यों नहीं? सती बनकर भी किया था, पार्वती बनकर फिर करूँगी! आपने मार्कण्डेय को अमर किया, अंधक को क्षमा किया, और जिसने मेरी रक्षा की, उसी को मार दिया?",
+     "cam": "ecu:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "मुझे बचाना है, तो मेरे पुत्र को बचाइए। जैसे दक्ष को फिर जीवन दिया था, वैसे ही गणेश को जीवित कीजिए।",
+     "cam": "close:parvati"
+    },
+    {
+     "who": "brahma",
+     "text": "पर दक्ष को तो भेड़ का सिर लगाकर जीवित किया गया था!",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "इसका समाधान भी वैसा ही होगा। गणो! उत्तर दिशा में जो पहला पशु मिले, उसका सिर ले आओ।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "brahma",
+     "text": "उत्तर? ज्ञान की दिशा?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "हाँ। पर वह पशु स्वयं इसके लिए तैयार होना चाहिए।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "vishnu",
+     "text": "वह तैयार होगा। जैसे कश्यप का शाप सत्य हुआ, वैसे ही गजासुर का वरदान भी पूरा होगा। महादेव ने उसे वर दिया था, कि उसके सिर की सदा पूजा होगी।",
+     "cam": "close:vishnu"
+    }
+   ],
+   "tint": [
+    "#3a0a0a",
+    0.3
+   ],
+   "music": "curse",
+   "amb": [
+    "storm",
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "gajanan",
+   "set": "kailash",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 640,
+     "y": 380,
+     "r": 760,
+     "n": 32,
+     "color": "#fff0b0",
+     "op": 0.25,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "x": 300,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "despair",
+     "emo": "sad",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "pose": "cradle",
+        "emo": "joy",
+        "t": 0.6,
+        "d": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "shiva",
+     "x": 1000,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "serene",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "emo": "smile",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gaj",
+     "kind": "creature",
+     "creature": "elephant",
+     "x": 640,
+     "y": 720,
+     "s": 0.5,
+     "face": 1,
+     "o": 0,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "o": 0.9,
+        "t": 1
+       }
+      ],
+      "2": [
+       {
+        "o": 0,
+        "t": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "ganesha",
+     "x": 640,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 2.5,
+     "kind": "char",
+     "in": 2,
+     "keys": {
+      "3": [
+       {
+        "face": -1,
+        "x": 480,
+        "t": 1.5
+       }
+      ],
+      "4": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "halo",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 320,
+     "color": "#ffd27a",
+     "core": 0.7,
+     "z": -2,
+     "anim": "pop",
+     "in": 2
+    },
+    {
+     "id": "ring",
+     "kind": "ring",
+     "x": 640,
+     "y": 420,
+     "r": 500,
+     "color": "#ffd27a",
+     "z": 60,
+     "in": 2
+    },
+    {
+     "id": "brahma",
+     "x": 640,
+     "y": 420,
+     "s": 0.7,
+     "face": 1,
+     "pose": "bless",
+     "emo": "joy",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -1,
+     "kind": "char",
+     "in": 6,
+     "keys": {
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 200,
+     "n": 40,
+     "w": 1300,
+     "colors": "#e8505a,#f2c230,#fbf3df",
+     "z": 50,
+     "in": 9
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "conch"
+    },
+    {
+     "who": "narrator",
+     "text": "कुछ देर बाद गण लौट आए। उनके साथ था, गजासुर का सिर। एक श्वेत गज, जिसे अनंत पूजा का वरदान मिला था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने वह सिर स्थान पर रखा। और गणेश ने आँखें खोलीं।",
+     "camMove": true,
+     "cam": "full:ganesha",
+     "sfx": "om",
+     "swell": true
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने अपनी सूँड़ से माँ को छुआ।",
+     "camMove": true,
+     "cam": "two:parvati,ganesha",
+     "sfx": "bells"
+    },
+    {
+     "who": "ganesha",
+     "text": "माँ!",
+     "cam": "close:ganesha"
+    },
+    {
+     "who": "narrator",
+     "text": "आदिशक्ति का हृदय पिघल गया। चारों ओर फैला प्रकोप शांत हो गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "brahma",
+     "text": "आप पवित्र हैं, गणपति। पहले माता ने आपको जीवन दिया, अब पिता ने।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "shiva",
+     "text": "आज से गणेश अग्र देवता होंगे। सबसे पहले इन्हीं की पूजा होगी। इन्होंने मेरे मार्ग में बाधा डाली, पर ये विघ्नेश कहलाएँगे, दूसरों के मार्ग की बाधाएँ हरने वाले।",
+     "camMove": true,
+     "cam": "full:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "गजानन, जिसका मस्तक हाथी का है। और विनायक, नायकों में श्रेष्ठ!",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "devas",
+     "text": "गणपति बप्पा की जय!",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "wind",
+    "birds"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "card",
+   "id": "chapter10",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा बयालीस",
+   "title": "महिषासुर-मर्दिनी",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "mahish",
+   "set": "glade",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "moon",
+     "kind": "moonphase",
+     "x": 1080,
+     "y": 150,
+     "r": 50,
+     "phase": 0.6,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "b1",
+     "kind": "creature",
+     "creature": "buffalo",
+     "x": 300,
+     "y": 690,
+     "s": 0.7,
+     "face": 1,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "x": 360,
+        "t": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "b2",
+     "kind": "creature",
+     "creature": "buffalo",
+     "x": 160,
+     "y": 700,
+     "s": 0.62,
+     "face": 1,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "b3",
+     "kind": "creature",
+     "creature": "buffalo",
+     "x": 1140,
+     "y": 700,
+     "s": 0.62,
+     "face": -1,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "mahishasura",
+     "x": 760,
+     "y": 650,
+     "s": 1.1,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "f1",
+     "kind": "fire",
+     "x": 420,
+     "y": 560,
+     "size": 2,
+     "z": 30,
+     "in": 4,
+     "out": 7
+    },
+    {
+     "id": "w1",
+     "kind": "water",
+     "x": 880,
+     "y": 700,
+     "w": 700,
+     "h": 200,
+     "color": "#cfd8ea",
+     "crest": "#4a5f9e",
+     "z": 31,
+     "in": 4,
+     "out": 5
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "एक रात, एक दानव अपने ही झुंड को अपने जन्म की कथा सुना रहा था। आधा भैंसा, आधा दानव।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "mahishasura",
+     "text": "मैं दक्ष का वंशज हूँ। दक्ष की पुत्री दिति से दैत्य जन्मे, और दूसरी पुत्री दनु से हम दानव।",
+     "cam": "close:mahishasura"
+    },
+    {
+     "who": "mahishasura",
+     "text": "रंभ और करंभ, दो दानव भाई। अजेय होने के लिए एक आग की लपटों में खड़ा हुआ, दूसरा जल के भीतर ध्यान में बैठा।",
+     "cam": "mid:mahishasura"
+    },
+    {
+     "who": "narrator",
+     "text": "पर इंद्र डर गया कि ये भाई उसे स्वर्ग से निकाल देंगे। उसने मगरमच्छ बनकर जल में प्रवेश किया, और करंभ को निगल गया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "fire",
+     "splash": true
+    },
+    {
+     "who": "mahishasura",
+     "text": "फिर वह रंभ को मारने अग्नि में घुसा। पर अग्निदेव, रंभ की भक्ति से प्रसन्न थे। उन्होंने इंद्र को ही भगा दिया!",
+     "cam": "close:mahishasura"
+    },
+    {
+     "who": "mahishasura",
+     "text": "भाई की मृत्यु से टूटा रंभ, अपना सिर काटने चला। अग्नि ने फिर उसका हाथ रोका, और वर दिया। एक पुत्र, जो किसी भी प्रजाति की माँ से जन्म ले सके।",
+     "cam": "mid:mahishasura"
+    },
+    {
+     "who": "mahishasura",
+     "text": "और रंभ को एक महिषी से प्रेम हो गया। उन दोनों का पुत्र था, मैं। महिषासुर।",
+     "camMove": true,
+     "cam": "close:mahishasura"
+    },
+    {
+     "who": "narrator",
+     "text": "झुंड ने सिर झुका दिए। और महिषासुर, ब्रह्मा को प्रसन्न करने वन की ओर चल पड़ा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "night",
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "var",
+   "set": "lotusSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "brahma",
+     "x": 860,
+     "y": 600,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sly",
+        "t": 0.4
+       }
+      ],
+      "8": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "mahishasura",
+     "x": 380,
+     "y": 650,
+     "s": 1.05,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "pose": "hips",
+        "emo": "sly",
+        "t": 0.4
+       },
+       {
+        "emo": "sly",
+        "pose": "hips",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "brahma",
+     "text": "तुम्हारे पिता मेरे प्रपौत्र थे, महिषासुर। अग्नि तुम्हें पहले ही विजय का वर दे चुके हैं। अब और क्या चाहिए?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "mahishasura",
+     "text": "अमरता। उस विजय का क्या लाभ, जिसका स्वाद चखने के लिए मैं जीवित ही न रहूँ?",
+     "cam": "close:mahishasura"
+    },
+    {
+     "who": "brahma",
+     "text": "अमरता असंभव है।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "mahishasura",
+     "text": "जानता हूँ। तो यह वर दीजिए, कि स्त्री के सिवा मुझे कोई न मार सके।",
+     "cam": "close:mahishasura"
+    },
+    {
+     "who": "brahma",
+     "text": "स्त्री ही क्यों?",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "mahishasura",
+     "text": "क्योंकि आपकी सारी रचनाओं में वही सबसे दुर्बल है! वह किसी के लिए संकट नहीं हो सकती। मुझे जन्म देने में तो मेरे पिता को स्त्री की आवश्यकता तक नहीं पड़ी।",
+     "cam": "mid:mahishasura"
+    },
+    {
+     "who": "narrator",
+     "text": "ब्रह्मा मुस्कुराए। और हामी भर दी।",
+     "camMove": true,
+     "cam": "close:brahma",
+     "sfx": "bell"
+    },
+    {
+     "who": "brahma",
+     "text": "तथास्तु।",
+     "cam": "ecu:brahma"
+    }
+   ],
+   "music": "brahma",
+   "amb": [
+    "wind"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "vijay",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "smoke",
+     "kind": "smoke",
+     "x": 640,
+     "y": 600,
+     "n": 14,
+     "w": 1300,
+     "h": 300,
+     "color": "#4a2a2a",
+     "z": 30,
+     "in": 0
+    },
+    {
+     "id": "mahishasura",
+     "x": 640,
+     "y": 650,
+     "s": 1.25,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "mb",
+     "kind": "creature",
+     "creature": "buffalo",
+     "x": 300,
+     "y": 700,
+     "s": 0.9,
+     "face": 1,
+     "z": -1,
+     "charge": true,
+     "in": 0
+    },
+    {
+     "id": "indra",
+     "x": 1180,
+     "y": 650,
+     "s": 0.8,
+     "face": -1,
+     "pose": "fear",
+     "emo": "fear",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 1500,
+        "t": 1.5
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "roar",
+     "nagara": true
+    },
+    {
+     "who": "narrator",
+     "text": "फिर वही हुआ, जो होना था। पहले पाताल, फिर भूलोक, और अंत में स्वर्ग। महिषासुर ने तीनों लोक जीत लिए।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "rumble",
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "उसके सींग देवताओं और मनुष्यों को मारते, उसके खुर ब्रह्मांड के कोने-कोने को रौंदते।",
+     "camMove": true,
+     "cam": "close:mahishasura",
+     "sfx": "boom",
+     "shake": 6
+    },
+    {
+     "who": "mahishasura",
+     "text": "कोई है? कोई पुरुष, कोई देवता, जो मुझे रोक सके? कोई नहीं!",
+     "cam": "ecu:mahishasura"
+    }
+   ],
+   "tint": [
+    "#2a0a0a",
+    0.25
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "tej",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "halo",
+     "kind": "mandala",
+     "x": 640,
+     "y": 360,
+     "r": 340,
+     "spin": 20,
+     "op": 0.35,
+     "z": -4,
+     "in": 0
+    },
+    {
+     "id": "brahma",
+     "x": 200,
+     "y": 520,
+     "s": 0.7,
+     "face": 1,
+     "pose": "raise",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishnu",
+     "x": 380,
+     "y": 420,
+     "s": 0.7,
+     "face": 1,
+     "pose": "raise",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "x": 900,
+     "y": 420,
+     "s": 0.7,
+     "face": -1,
+     "pose": "raise",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "indra",
+     "x": 1080,
+     "y": 520,
+     "s": 0.66,
+     "face": -1,
+     "pose": "raise",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "agni",
+     "x": 640,
+     "y": 230,
+     "s": 0.55,
+     "face": 1,
+     "pose": "raise",
+     "emo": "calm",
+     "fly": 1,
+     "noShadow": true,
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "beam",
+     "kind": "rays",
+     "x": 640,
+     "y": 430,
+     "r": 700,
+     "n": 40,
+     "color": "#ffe08a",
+     "op": 0,
+     "z": -2,
+     "in": 4,
+     "keys": {
+      "4": [
+       {
+        "op": 0.5,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "star",
+     "kind": "glow",
+     "x": 640,
+     "y": 430,
+     "r": 60,
+     "color": "#fff6c8",
+     "core": 1,
+     "z": 30,
+     "anim": "pop",
+     "in": 4,
+     "keys": {
+      "5": [
+       {
+        "r": 240,
+        "t": 4
+       }
+      ]
+     },
+     "out": 7,
+     "od": 1.5
+    },
+    {
+     "id": "durga",
+     "x": 640,
+     "y": 650,
+     "s": 1.05,
+     "face": 1,
+     "pose": "abhaya",
+     "emo": "serene",
+     "anim": "materialize",
+     "inDur": 2.5,
+     "z": 5,
+     "kind": "char",
+     "in": 7,
+     "keys": {
+      "10": [
+       {
+        "emo": "serene",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "dg",
+     "kind": "glow",
+     "x": 640,
+     "y": 380,
+     "r": 420,
+     "color": "#ffd27a",
+     "core": 0.6,
+     "z": -1,
+     "anim": "pop",
+     "in": 7
+    },
+    {
+     "id": "boom",
+     "kind": "ring",
+     "x": 640,
+     "y": 420,
+     "r": 700,
+     "color": "#ffd27a",
+     "z": 60,
+     "in": 7
+    },
+    {
+     "id": "t1",
+     "kind": "text",
+     "x": 640,
+     "y": 120,
+     "text": "चक्र · त्रिशूल · वज्र · धनुष · शंख",
+     "size": 46,
+     "z": 70,
+     "in": 9,
+     "out": 10
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "brahma",
+     "text": "एक देवी। हमें एक देवी चाहिए। आदिशक्ति का योद्धा रूप।",
+     "cam": "close:brahma"
+    },
+    {
+     "who": "agni",
+     "text": "मेरा वरदान प्रयोग हो चुका, पितामह। अब आपके वरदान के सच होने का समय है।",
+     "cam": "close:agni"
+    },
+    {
+     "who": "brahma",
+     "text": "तो एकत्र हो जाओ। हम सबकी आभा से एक स्त्री योद्धा जन्म लेगी।",
+     "cam": "mid:brahma"
+    },
+    {
+     "who": "narrator",
+     "text": "देवता घेरा बनाकर खड़े हुए। उनके मुख से प्रकाश की किरणें फूटीं, और केंद्र में आपस में मिलकर, एक सुलगते नक्षत्र में बदल गईं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर उस नक्षत्र ने स्त्री का रूप लेना शुरू किया। ऊँचा मस्तक। अनेक भुजाएँ। सुनहरा रंग।",
+     "camMove": true,
+     "cam": "at:640,430,1.3",
+     "sfx": "magic",
+     "sparkle": true
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने मुख गढ़ा, विष्णु ने भुजाएँ। इंद्र ने कमर, ब्रह्मा ने चरण। वायु ने कान दिए, और अग्नि ने आँखें।",
+     "camMove": true,
+     "cam": "at:640,430,1.4"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "conch",
+     "bells": true,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "सब देवता, एक देवी के रूप में प्रकट हो गए। उन्होंने उसका नाम रखा, दुर्गा। दुर्गा, यानी रक्षक।",
+     "camMove": true,
+     "cam": "full:durga",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु ने चक्र दिया, शिव ने त्रिशूल। इंद्र ने वज्र, वायु ने धनुष। वरुण ने शंख, और यम ने अपना दंड।",
+     "cam": "mid:durga",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "durga",
+     "text": "मैं आ गई हूँ।",
+     "cam": "close:durga"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "void"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "simha",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 640,
+     "y": 380,
+     "r": 760,
+     "n": 32,
+     "color": "#ffd27a",
+     "op": 0.3,
+     "z": -5,
+     "in": 0
+    },
+    {
+     "id": "lion",
+     "kind": "creature",
+     "creature": "lion",
+     "x": 1500,
+     "y": 720,
+     "s": 1.3,
+     "face": -1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 640,
+        "t": 2.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "durga",
+     "x": 640,
+     "y": 580,
+     "s": 0.95,
+     "face": -1,
+     "pose": "strike",
+     "emo": "angry",
+     "seat": "kneel",
+     "anim": "drop",
+     "inDur": 1,
+     "z": 2,
+     "kind": "char",
+     "in": 1
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 6
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "roar",
+     "conch": true
+    },
+    {
+     "who": "narrator",
+     "text": "दस भुजाओं में दस अस्त्र लिए, देवी दहाड़ते सिंह पर सवार हो गईं।",
+     "camMove": true,
+     "cam": "full:durga",
+     "sfx": "nagara"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "white"
+  },
+  {
+   "type": "scene",
+   "id": "navratri",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "lion",
+     "kind": "creature",
+     "creature": "lion",
+     "x": 380,
+     "y": 720,
+     "s": 1.2,
+     "face": 1,
+     "in": 0
+    },
+    {
+     "id": "durga",
+     "x": 380,
+     "y": 580,
+     "s": 0.9,
+     "face": 1,
+     "pose": "strike",
+     "emo": "angry",
+     "seat": "kneel",
+     "z": 2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "pose": "raise",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "mahishasura",
+     "x": 960,
+     "y": 650,
+     "s": 1.2,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "out": 2,
+     "keys": {
+      "7": [
+       {
+        "o": 0,
+        "t": 0.6,
+        "d": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 680,
+     "y": 400,
+     "period": 0.6,
+     "z": 60,
+     "in": 0,
+     "out": 6
+    },
+    {
+     "id": "days",
+     "kind": "text",
+     "x": 640,
+     "y": 120,
+     "text": "एक · दो · तीन · चार · पाँच",
+     "size": 56,
+     "z": 70,
+     "in": 2,
+     "out": 5
+    },
+    {
+     "id": "mb",
+     "kind": "creature",
+     "creature": "buffalo",
+     "x": 1000,
+     "y": 720,
+     "s": 1.2,
+     "face": -1,
+     "charge": true,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "ml",
+     "kind": "creature",
+     "creature": "lion",
+     "x": 1000,
+     "y": 720,
+     "s": 1.1,
+     "face": -1,
+     "in": 3,
+     "out": 4
+    },
+    {
+     "id": "me",
+     "kind": "creature",
+     "creature": "elephant",
+     "x": 1000,
+     "y": 700,
+     "s": 0.8,
+     "face": -1,
+     "in": 4,
+     "out": 5
+    },
+    {
+     "id": "days2",
+     "kind": "text",
+     "x": 640,
+     "y": 120,
+     "text": "छह · सात · आठ · नौ",
+     "size": 56,
+     "z": 70,
+     "in": 5,
+     "out": 6
+    },
+    {
+     "id": "mahishasura",
+     "x": 960,
+     "y": 650,
+     "s": 1.2,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 5
+    },
+    {
+     "id": "t10",
+     "kind": "text",
+     "x": 640,
+     "y": 120,
+     "text": "दसवाँ दिन",
+     "size": 64,
+     "z": 70,
+     "in": 6,
+     "out": 8
+    },
+    {
+     "id": "end",
+     "kind": "bolt",
+     "x": 960,
+     "y": 0,
+     "h": 600,
+     "z": 60,
+     "in": 7,
+     "out": 8
+    },
+    {
+     "id": "fin",
+     "kind": "ring",
+     "x": 960,
+     "y": 420,
+     "r": 700,
+     "color": "#ff5a3a",
+     "z": 60,
+     "in": 7
+    },
+    {
+     "id": "shine",
+     "kind": "rays",
+     "x": 380,
+     "y": 420,
+     "r": 800,
+     "n": 36,
+     "color": "#ffd27a",
+     "op": 0.35,
+     "z": -3,
+     "anim": "pop",
+     "inDur": 2,
+     "in": 9
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "clash",
+     "nagara": true,
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "दुर्गा और महिषासुर का युद्ध नौ दिन चला।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash"
+    },
+    {
+     "who": "narrator",
+     "text": "वह भैंसा बनकर टूट पड़ा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 8
+    },
+    {
+     "who": "narrator",
+     "text": "फिर सिंह बना।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर मदमस्त हाथी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar",
+     "boom": true
+    },
+    {
+     "who": "narrator",
+     "text": "वह रूप बदलता रहा, और देवी हर रूप का नाश करती रहीं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash",
+     "shake": 6
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "drumroll"
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "cam": "wide",
+     "sfx": "boom",
+     "roar": true,
+     "shake": 12,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "दसवें दिन, देवी ने महिषासुर को धरती पर गिराकर उसका अंत कर दिया। जिसने स्त्री को सबसे दुर्बल समझा था, उसी स्त्री के आगे वह मिट्टी में मिल गया।",
+     "camMove": true,
+     "cam": "full:durga",
+     "sfx": "conch",
+     "bells": true
+    },
+    {
+     "who": "devas",
+     "text": "जय महिषासुर-मर्दिनी! जय दुर्गा!",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "storm",
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter17",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "कथा चौवालीस",
+   "title": "शुंभ, निशुंभ और रक्तबीज",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "darbar",
+   "set": "court",
+   "ctx": {
+    "wall": "#2a0a1a"
+   },
+   "els": [
+    {
+     "id": "shumbha",
+     "x": 760,
+     "y": 650,
+     "s": 1.05,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "8": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "nishumbha",
+     "x": 960,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sly",
+     "z": -1,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "chanda",
+     "fig": "asura2",
+     "x": 360,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "open",
+     "emo": "joy",
+     "item": "sword",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "munda",
+     "fig": "gana",
+     "x": 200,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "rest",
+     "emo": "joy",
+     "item": "sword",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "gong"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर एक नया संकट मँडराया। जुड़वाँ संकट। राक्षस भाई शुंभ और निशुंभ, जो हर लोक को अपने अधीन कर रहे थे।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उनके सेनापति चंड और मुंड, हर सुबह निकलते और हर साँझ रक्त से भीगी तलवारें लेकर लौटते। उनकी कथाएँ सुनकर दोनों भाई ठहाके लगाते।",
+     "cam": "two:chanda,munda"
+    },
+    {
+     "who": "narrator",
+     "text": "पर उस दिन ऐसा नहीं हुआ। उस दिन वे एक देवी की बात कर रहे थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "chanda",
+     "text": "विष-सी काली आँखें, अंगारों-से लाल होंठ, अमावस की रात-से केश।",
+     "cam": "close:chanda"
+    },
+    {
+     "who": "chandmund",
+     "text": "दुर्गा!",
+     "cam": "two:chanda,munda"
+    },
+    {
+     "who": "shumbhnishumbh",
+     "text": "वही, जिसने महिषासुर को मारा? क्या वह इतनी मनमोहक है?",
+     "cam": "two:shumbha,nishumbha"
+    },
+    {
+     "who": "munda",
+     "text": "उससे भी अधिक। उसे सब देवताओं की आभा से गढ़ा गया है। उसे पा लो, तो देवता सदा के लिए तुम्हारे आगे झुक जाएँगे।",
+     "cam": "close:munda"
+    },
+    {
+     "who": "shumbha",
+     "text": "सुग्रीव! हमारा प्रस्ताव लेकर जाओ।",
+     "cam": "close:shumbha"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "doot",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "lion",
+     "kind": "creature",
+     "creature": "lion",
+     "x": 900,
+     "y": 720,
+     "s": 1.1,
+     "face": -1,
+     "in": 0
+    },
+    {
+     "id": "durga",
+     "x": 900,
+     "y": 590,
+     "s": 0.9,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "smile",
+     "seat": "kneel",
+     "z": 2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sugriva",
+     "fig": "asura2",
+     "x": 360,
+     "y": 650,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "sugriva_doot",
+     "text": "हे देवी, मेरे स्वामी शुंभ और निशुंभ आपको अपनाना चाहते हैं। क्या आपको प्रस्ताव स्वीकार है?",
+     "cam": "close:sugriva"
+    },
+    {
+     "who": "durga",
+     "text": "मैं प्रसन्न हूँ। पर मैंने एक प्रतिज्ञा ली है।",
+     "cam": "close:durga"
+    },
+    {
+     "who": "sugriva_doot",
+     "text": "प्रतिज्ञा?",
+     "cam": "close:sugriva"
+    },
+    {
+     "who": "durga",
+     "text": "मैं केवल उसी को स्वीकार करूँगी, जो मुझे युद्ध में पराजित कर दे।",
+     "cam": "close:durga"
+    },
+    {
+     "who": "sugriva_doot",
+     "text": "युद्ध? देवी, सोचकर कहिए। वे स्त्री मानकर आप पर दया नहीं करेंगे!",
+     "cam": "close:sugriva"
+    },
+    {
+     "who": "durga",
+     "text": "शुंभ का अर्थ है, जो स्वयं पर संदेह करे। निशुंभ का अर्थ है, जो दूसरों पर संदेह करे। इतने संदेह से भरे लोग, युद्ध कर पाएँगे?",
+     "cam": "close:durga"
+    },
+    {
+     "who": "sugriva_doot",
+     "text": "मेरे स्वामी उन देवताओं को भी हरा चुके हैं, जिन्होंने आपको बनाया!",
+     "cam": "close:sugriva"
+    },
+    {
+     "who": "durga",
+     "text": "फिर तो बात सुलझ गई। यदि उन्होंने मुझे हरा दिया, तो रणभूमि में ही वरमाला पहना दूँगी।",
+     "cam": "mid:durga"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "dhumra",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "lion",
+     "kind": "creature",
+     "creature": "lion",
+     "x": 380,
+     "y": 720,
+     "s": 1.1,
+     "face": 1,
+     "in": 0
+    },
+    {
+     "id": "durga",
+     "x": 380,
+     "y": 590,
+     "s": 0.9,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "seat": "kneel",
+     "z": 2,
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "a1",
+     "fig": "asura2",
+     "x": 900,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "a2",
+     "fig": "gana",
+     "x": 1040,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.4,
+        "d": 0.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "a3",
+     "fig": "asura2",
+     "x": 1180,
+     "y": 650,
+     "s": 0.8,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.4,
+        "d": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "roarfire",
+     "kind": "fire",
+     "x": 900,
+     "y": 600,
+     "size": 3,
+     "z": 30,
+     "in": 2
+    },
+    {
+     "id": "r1",
+     "kind": "ring",
+     "x": 420,
+     "y": 420,
+     "r": 900,
+     "color": "#ff8a3a",
+     "z": 60,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "nagara"
+    },
+    {
+     "who": "narrator",
+     "text": "सुबह होते ही धूम्रलोचन साठ हज़ार की सेना लेकर आया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "roar",
+     "fire": true,
+     "shake": 10,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "देवी ने गर्जना की। उस गर्जना से ऐसी आग उठी, कि धूम्रलोचन वहीं भस्म हो गया। और सिंह ने छलाँग लगाकर बाकी सेना को समाप्त कर दिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "fire"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "wind",
+    "fire"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "chamunda",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "durga",
+     "x": 380,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "strike",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0
+    },
+    {
+     "id": "chanda",
+     "fig": "asura2",
+     "x": 880,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "item": "sword",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "o": 0,
+        "t": 0.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "munda",
+     "fig": "gana",
+     "x": 1040,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "item": "sword",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "o": 0,
+        "t": 0.2,
+        "d": 0.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 640,
+     "y": 400,
+     "period": 0.7,
+     "z": 60,
+     "in": 0,
+     "out": 2
+    },
+    {
+     "id": "dk",
+     "kind": "glow",
+     "x": 380,
+     "y": 380,
+     "r": 320,
+     "color": "#3a0a2a",
+     "core": 0.8,
+     "z": -2,
+     "anim": "pop",
+     "in": 2
+    },
+    {
+     "id": "kali",
+     "x": 520,
+     "y": 650,
+     "s": 1.05,
+     "face": 1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "inDur": 1.2,
+     "z": 3,
+     "kind": "char",
+     "in": 2
+    },
+    {
+     "id": "cut",
+     "kind": "bolt",
+     "x": 960,
+     "y": 0,
+     "h": 640,
+     "z": 60,
+     "in": 4,
+     "out": 5
+    },
+    {
+     "id": "chant",
+     "kind": "text",
+     "x": 640,
+     "y": 140,
+     "text": "चामुंडा",
+     "size": 80,
+     "z": 70,
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "clash",
+     "nagara": true
+    },
+    {
+     "who": "narrator",
+     "text": "अगले दिन चंड और मुंड आए। हर कौशल, हर अस्त्र। फिर भी भीतर से एक आवाज़ उठ रही थी। यह शत्रु अजेय है। अंत निकट है।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash"
+    },
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "roar",
+     "thunder": true,
+     "shake": 10
+    },
+    {
+     "who": "narrator",
+     "text": "और तब, दुर्गा के भीतर से निकलीं, काली।",
+     "camMove": true,
+     "cam": "full:kali",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "boom": true,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "एक वार में, चंड और मुंड का अंत हो गया। और ब्रह्मांड ने देवी को एक नया नाम दिया।",
+     "camMove": true,
+     "cam": "close:kali",
+     "sfx": "drumroll"
+    },
+    {
+     "who": "devas",
+     "text": "चामुंडा! चामुंडा! चामुंडा!",
+     "camMove": true,
+     "cam": "full:kali"
+    }
+   ],
+   "tint": [
+    "#1a0a1a",
+    0.3
+   ],
+   "music": "curse",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "parashakti",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "durga",
+     "x": 380,
+     "y": 650,
+     "s": 0.95,
+     "face": 1,
+     "pose": "strike",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.4
+       }
+      ],
+      "7": [
+       {
+        "emo": "joy",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "s": 1.25,
+        "y": 680,
+        "t": 2
+       }
+      ],
+      "11": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "shumbha",
+     "x": 960,
+     "y": 650,
+     "s": 1.05,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "item": "sword",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "x": 1400,
+        "t": 1
+       },
+       {
+        "x": 960,
+        "t": 0.4,
+        "d": 1
+       },
+       {
+        "o": 0,
+        "t": 0.5,
+        "d": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "nishumbha",
+     "x": 780,
+     "y": 650,
+     "s": 1,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "item": "gada",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "o": 0,
+        "t": 0.5,
+        "d": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1",
+     "kind": "clash",
+     "x": 600,
+     "y": 400,
+     "period": 0.6,
+     "z": 60,
+     "in": 0,
+     "out": 4
+    },
+    {
+     "id": "ch",
+     "kind": "chakra",
+     "x": 780,
+     "y": 380,
+     "r": 50,
+     "spin": 1,
+     "z": 40,
+     "in": 3,
+     "out": 4
+    },
+    {
+     "id": "cos",
+     "kind": "mandala",
+     "x": 380,
+     "y": 380,
+     "r": 500,
+     "spin": 30,
+     "op": 0.5,
+     "z": -3,
+     "anim": "pop",
+     "in": 8
+    },
+    {
+     "id": "cr",
+     "kind": "rays",
+     "x": 380,
+     "y": 380,
+     "r": 900,
+     "n": 40,
+     "color": "#ffd27a",
+     "op": 0.4,
+     "z": -4,
+     "anim": "pop",
+     "in": 8
+    },
+    {
+     "id": "gb",
+     "fig": "brahma",
+     "x": 180,
+     "y": 260,
+     "s": 0.45,
+     "face": 1,
+     "pose": "bless",
+     "emo": "serene",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -2,
+     "kind": "char",
+     "in": 8
+    },
+    {
+     "id": "gv",
+     "fig": "vishnu",
+     "x": 380,
+     "y": 180,
+     "s": 0.45,
+     "face": 1,
+     "pose": "bless",
+     "emo": "serene",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -2,
+     "kind": "char",
+     "in": 8
+    },
+    {
+     "id": "gs",
+     "fig": "shiva",
+     "x": 580,
+     "y": 260,
+     "s": 0.45,
+     "face": 1,
+     "pose": "bless",
+     "emo": "serene",
+     "fly": 1,
+     "noShadow": true,
+     "anim": "materialize",
+     "z": -2,
+     "kind": "char",
+     "in": 8
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "clash",
+     "nagara": true,
+     "shake": 6
+    },
+    {
+     "who": "shumbhnishumbh",
+     "text": "बस! वह युद्ध चाहती है? तो युद्ध होगा!",
+     "cam": "two:shumbha,nishumbha"
+    },
+    {
+     "who": "narrator",
+     "text": "दोनों भाई दिखा रहे थे कि उन्होंने हर लोक कैसे जीता। और दुर्गा दिखा रही थीं, कि उन्हें महिषासुर-मर्दिनी क्यों कहते हैं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "boom": true,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "विष्णु के चक्र ने निशुंभ की ढाल काटी, और शिव के त्रिशूल ने उसका वक्ष।",
+     "camMove": true,
+     "cam": "two:durga,shumbha",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "shumbha",
+     "text": "तुम्हारे पास अपना है ही क्या? अस्त्र उधार के, शक्ति उधार की, शरीर तक उधार का! सब देवताओं ने दिया है। मैं तुमसे क्यों लड़ूँ?",
+     "cam": "close:shumbha"
+    },
+    {
+     "who": "narrator",
+     "text": "देवी हँसने लगीं। और उनके साथ, सारा ब्रह्मांड हँस पड़ा।",
+     "camMove": true,
+     "cam": "close:durga",
+     "sfx": "magic"
+    },
+    {
+     "who": "durga",
+     "text": "कितने अज्ञानी हो तुम, शुंभ! मैं ब्रह्मा हूँ। मैं विष्णु हूँ। मैं महादेव हूँ।",
+     "cam": "close:durga"
+    },
+    {
+     "who": "narrator",
+     "text": "देवी ने अपना रूप इतना फैलाया, कि ब्रह्मांड का हर देवता उनके भीतर दिखने लगा। ब्रह्मा, विष्णु, महेश। ब्राह्मणी, वैष्णवी, माहेश्वरी। वे परब्रह्म थीं। पराशक्ति।",
+     "camMove": true,
+     "cam": "at:380,380,0.9",
+     "sfx": "swell",
+     "om": true
+    },
+    {
+     "text": "",
+     "dur": 2.2,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "boom": true,
+     "shake": 10,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "शुंभ भागा, पर देवी ने झपटकर उसे पकड़ लिया, और धरती पर पटक दिया।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "durga",
+     "text": "लगता है, विवाह हो नहीं पाएगा।",
+     "cam": "close:durga"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "raktabeej",
+   "set": "pillarSky",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "durga",
+     "x": 380,
+     "y": 650,
+     "s": 1,
+     "face": 1,
+     "pose": "strike",
+     "emo": "angry",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "meditate",
+        "pose": "rest",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "raktabeej",
+     "x": 880,
+     "y": 650,
+     "s": 1.05,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "cut",
+     "kind": "clash",
+     "x": 760,
+     "y": 400,
+     "z": 60,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "drop",
+     "kind": "sparkle",
+     "x": 880,
+     "y": 600,
+     "n": 10,
+     "r": 80,
+     "z": 40,
+     "in": 2
+    },
+    {
+     "id": "rb1",
+     "fig": "raktabeej",
+     "x": 1040,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "anim": "materialize",
+     "z": -1,
+     "kind": "char",
+     "in": 3
+    },
+    {
+     "id": "rb2",
+     "fig": "raktabeej",
+     "x": 1180,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -2,
+     "kind": "char",
+     "in": 4
+    },
+    {
+     "id": "rb3",
+     "fig": "raktabeej",
+     "x": 720,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -1,
+     "kind": "char",
+     "in": 4
+    },
+    {
+     "id": "rb4",
+     "fig": "raktabeej",
+     "x": 1000,
+     "y": 640,
+     "s": 0.8,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -3,
+     "kind": "char",
+     "in": 6
+    },
+    {
+     "id": "rb5",
+     "fig": "raktabeej",
+     "x": 1250,
+     "y": 640,
+     "s": 0.78,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -3,
+     "kind": "char",
+     "in": 6
+    },
+    {
+     "id": "rb6",
+     "fig": "raktabeej",
+     "x": 600,
+     "y": 640,
+     "s": 0.8,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -3,
+     "kind": "char",
+     "in": 6
+    },
+    {
+     "id": "rb7",
+     "fig": "raktabeej",
+     "x": 1120,
+     "y": 630,
+     "s": 0.7,
+     "face": -1,
+     "pose": "hips",
+     "emo": "sly",
+     "anim": "materialize",
+     "z": -4,
+     "kind": "char",
+     "in": 6
+    },
+    {
+     "id": "rb8",
+     "fig": "raktabeej",
+     "x": 820,
+     "y": 630,
+     "s": 0.7,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "anim": "materialize",
+     "z": -4,
+     "kind": "char",
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "rumble"
+    },
+    {
+     "who": "narrator",
+     "text": "मरते हुए शुंभ ने एक ओर संकेत किया। और उसके अंतिम शब्द देवी तक पहुँचे। ‘उसका क्या करोगी? तुम उसे जितना मारोगी, वह उतना ही जीवित होता जाएगा।’",
+     "camMove": true,
+     "cam": "close:raktabeej",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "clash"
+    },
+    {
+     "who": "narrator",
+     "text": "देवी ने उसका हाथ काटा। पर जैसे ही रक्त की बूँद धरती पर गिरी, उसी जैसा एक और राक्षस उठ खड़ा हुआ।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "magic"
+    },
+    {
+     "who": "durga",
+     "text": "तुम कौन हो?",
+     "cam": "close:durga"
+    },
+    {
+     "who": "raktabeej",
+     "text": "रक्तबीज! मेरा अपना रक्त ही मुझे जन्म देता है।",
+     "cam": "close:raktabeej"
+    },
+    {
+     "who": "narrator",
+     "text": "हर बार। बार-बार। रक्त की हर बूँद, एक नए रक्तबीज का बीज। रणभूमि में अब सैकड़ों रक्तबीज खड़े थे।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "magic",
+     "magic": true
+    },
+    {
+     "who": "raktabeej",
+     "text": "हा हा हा! मुझे जितना मारोगी, मैं उतना ही बढ़ूँगा!",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "देवी ने आँखें बंद कर लीं। अब एक ही उपाय बचा था। केवल एक ही प्राणी इसका प्रतिकार कर सकता था।",
+     "camMove": true,
+     "cam": "close:durga",
+     "sfx": "heartbeat"
+    }
+   ],
+   "tint": [
+    "#2a0a0a",
+    0.3
+   ],
+   "music": "curse",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "kali",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "rb1",
+     "fig": "raktabeej",
+     "x": 900,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "10": [
+       {
+        "o": 0,
+        "t": 0.3,
+        "d": 0.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "rb2",
+     "fig": "raktabeej",
+     "x": 1060,
+     "y": 650,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "z": -1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "o": 0,
+        "t": 0.3,
+        "d": 1.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "rb3",
+     "fig": "raktabeej",
+     "x": 1200,
+     "y": 640,
+     "s": 0.85,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "o": 0,
+        "t": 0.3,
+        "d": 1.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "rb4",
+     "fig": "raktabeej",
+     "x": 780,
+     "y": 640,
+     "s": 0.8,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "z": -2,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "o": 0,
+        "t": 0.3,
+        "d": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "rb5",
+     "fig": "raktabeej",
+     "x": 1120,
+     "y": 630,
+     "s": 0.75,
+     "face": -1,
+     "pose": "hips",
+     "emo": "rage",
+     "z": -3,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "o": 0,
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "dk",
+     "kind": "glow",
+     "x": 380,
+     "y": 380,
+     "r": 380,
+     "color": "#3a0a2a",
+     "core": 0.9,
+     "z": -2,
+     "anim": "pop",
+     "in": 1
+    },
+    {
+     "id": "kali",
+     "x": 380,
+     "y": 650,
+     "s": 1.15,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "open": 1,
+     "anim": "materialize",
+     "inDur": 1.5,
+     "z": 5,
+     "kind": "char",
+     "in": 1
+    },
+    {
+     "id": "storm",
+     "kind": "mandala",
+     "x": 640,
+     "y": 420,
+     "r": 520,
+     "spin": 220,
+     "op": 0.45,
+     "z": 30,
+     "in": 3,
+     "out": 11,
+     "od": 2
+    },
+    {
+     "id": "drops",
+     "kind": "sparkle",
+     "x": 900,
+     "y": 520,
+     "n": 30,
+     "r": 260,
+     "z": 40,
+     "in": 4,
+     "keys": {
+      "5": [
+       {
+        "x": 420,
+        "y": 380,
+        "r": 20,
+        "t": 2
+       }
+      ]
+     },
+     "out": 8
+    },
+    {
+     "id": "fin",
+     "kind": "bolt",
+     "x": 900,
+     "y": 0,
+     "h": 640,
+     "z": 60,
+     "in": 10,
+     "out": 11
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "roar",
+     "thunder": true,
+     "shake": 12
+    },
+    {
+     "who": "narrator",
+     "text": "खोपड़ियों की खड़खड़ाहट। तलवार की सरसराहट। क्रोध की अग्नि। काली फिर प्रकट हो चुकी थीं।",
+     "camMove": true,
+     "cam": "full:kali",
+     "sfx": "damaru"
+    },
+    {
+     "who": "narrator",
+     "text": "वे एक भयंकर चक्रवात बन गईं, और एक-एक रक्तबीज को काटने लगीं।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "clash": true
+    },
+    {
+     "who": "narrator",
+     "text": "रक्त की बूँदें धरती की ओर गिरने लगीं। पर धरती तक पहुँचने से पहले ही, कुछ लाल-सा, सर्प के फन जैसा, उनके बीच आ गया।",
+     "camMove": true,
+     "cam": "at:640,460,1.2",
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "काली ने अपनी जिह्वा फैला दी थी। वे हर बूँद को धरती छूने से पहले ही पी रही थीं।",
+     "camMove": true,
+     "cam": "close:kali",
+     "sfx": "whoosh"
+    },
+    {
+     "text": "",
+     "dur": 2.4,
+     "cam": "wide",
+     "sfx": "clash",
+     "whoosh": true,
+     "clash": true
+    },
+    {
+     "who": "narrator",
+     "text": "एक वार, एक घूँट। एक और वार, एक और घूँट। रक्तबीज घटते गए। रणभूमि खाली होने लगी।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "clash"
+    },
+    {
+     "who": "narrator",
+     "text": "अब केवल एक रक्तबीज बचा था। अंतिम। असली।",
+     "camMove": true,
+     "cam": "two:kali,rb1",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "raktabeej",
+     "text": "नहीं... नहीं!",
+     "cam": "close:rb1"
+    },
+    {
+     "text": "",
+     "dur": 1.8,
+     "cam": "wide",
+     "sfx": "boom",
+     "roar": true,
+     "shake": 12,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "काली ने अंतिम बार वार किया, और अंतिम बार रक्त पी लिया। रक्तबीज का बीज, सदा के लिए समाप्त हो गया।",
+     "camMove": true,
+     "cam": "full:kali",
+     "sfx": "swell"
+    }
+   ],
+   "tint": [
+    "#1a0000",
+    0.25
+   ],
+   "music": "battle",
+   "amb": [
+    "storm",
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "shant",
+   "set": "cosmos",
+   "ctx": {},
+   "els": [
+    {
+     "id": "halo",
+     "kind": "mandala",
+     "x": 640,
+     "y": 360,
+     "r": 420,
+     "spin": -40,
+     "op": 0.35,
+     "z": -4,
+     "in": 0,
+     "out": 8
+    },
+    {
+     "id": "kali",
+     "x": 1500,
+     "y": 650,
+     "s": 1.1,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "open": 1,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "x": 640,
+        "t": 3
+       }
+      ],
+      "5": [
+       {
+        "pose": "fear",
+        "emo": "fear",
+        "t": 0.4
+       }
+      ],
+      "8": [
+       {
+        "emo": "serene",
+        "pose": "namaste",
+        "t": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "shiva",
+     "x": 520,
+     "y": 690,
+     "s": 0.9,
+     "face": 1,
+     "rot": -88,
+     "pose": "rest",
+     "emo": "serene",
+     "noShadow": true,
+     "anim": "materialize",
+     "z": 1,
+     "kind": "char",
+     "in": 2
+    },
+    {
+     "id": "sg",
+     "kind": "glow",
+     "x": 520,
+     "y": 620,
+     "r": 260,
+     "color": "#bcd8ff",
+     "core": 0.5,
+     "z": -1,
+     "anim": "pop",
+     "in": 2
+    },
+    {
+     "id": "stop",
+     "kind": "ring",
+     "x": 640,
+     "y": 500,
+     "r": 600,
+     "color": "#bcd8ff",
+     "z": 60,
+     "in": 5
+    },
+    {
+     "id": "calm",
+     "kind": "glow",
+     "x": 640,
+     "y": 360,
+     "r": 500,
+     "color": "#fff1b8",
+     "core": 0.3,
+     "z": -5,
+     "anim": "pop",
+     "in": 8
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 200,
+     "n": 30,
+     "w": 1300,
+     "colors": "#e8505a,#f2c230,#fbf3df",
+     "z": 50,
+     "in": 8
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narrator",
+     "text": "पर रक्तबीज के वध ने काली को रक्त-पिपासु बना दिया था। वे रुक ही नहीं रही थीं। उनकी जिह्वा चारों ओर घूम रही थी, मानो पूरे ब्रह्मांड को सुखा देना चाहती हो।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "rumble",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "तब शिव आए। जैसे उन्होंने कभी नृसिंह को शांत किया था, वैसे ही अब काली को शांत करना था। महादेव, चुपचाप देवी के मार्ग में लेट गए।",
+     "camMove": true,
+     "cam": "close:shiva",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्माद में डूबी काली, खोपड़ियों की माला झनकाती, आगे बढ़ती रहीं। उन्हें कुछ दिखाई नहीं दे रहा था।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "damaru",
+     "heartbeat": true
+    },
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "camMove": true,
+     "cam": "close:kali",
+     "sfx": "bell",
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "और अगले ही पल, वे स्तब्ध रह गईं। उनका पैर, उनके पति के ऊपर था।",
+     "cam": "ecu:kali"
+    },
+    {
+     "who": "narrator",
+     "text": "काली ने लज्जा से अपनी जीभ दाँतों तले दबा ली। उनका क्रोध, वहीं थम गया।",
+     "camMove": true,
+     "cam": "close:kali",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "और ब्रह्मांड ने फिर से साँस ली।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "storm"
+   ],
+   "trans": "mandala"
+  },
+  {
+   "type": "scene",
+   "id": "upasamhar",
+   "set": "pond",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "motes",
+     "kind": "motes",
+     "x": 640,
+     "y": 520,
+     "n": 30,
+     "w": 1200,
+     "h": 300,
+     "z": 60,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": 700,
+     "y": 560,
+     "s": 0.95,
+     "face": -1,
+     "pose": "veena",
+     "emo": "smile",
+     "fly": 1,
+     "noShadow": true,
+     "kind": "char",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "open",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "महिषासुर ने कहा था, स्त्री सबसे दुर्बल है। शुंभ ने कहा, उसकी शक्ति उधार की है। दोनों भूल गए, कि सब देवताओं की शक्ति, उसी से तो आई थी।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "वही माँ हल्दी से गणेश गढ़ती है, वही सिंह पर चढ़ती है, और वही काली बनकर रक्त का तूफ़ान पी जाती है। और उसे रोकने के लिए, स्वयं महादेव को धरती पर लेटना पड़ता है।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "अगली बार? एक बौना, जो तीन पग में तीनों लोक नाप लेता है। और एक राजा, जो स्वर्ग और धरती के बीच, उल्टा लटका रह गया।",
+     "cam": "ecu:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.5,
+     "camMove": true,
+     "cam": "close:narad",
+     "sfx": "veena"
+    }
+   ],
+   "music": "narad",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next27",
+   "style": "next",
+   "lines": [
+    {
+     "who": "narrator",
+     "text": "अगले अध्याय में: वामन के तीन पग, वसिष्ठ और विश्वामित्र का वैर, और त्रिशंकु का अपना स्वर्ग।"
+    }
+   ],
+   "dur": 1,
+   "title": "अगले अध्याय में",
+   "sub": "वामन · विश्वामित्र · त्रिशंकु",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end28",
+   "style": "end",
+   "lines": [],
+   "dur": 13,
+   "title": "महागाथा",
+   "sub": "अध्याय सात · शक्ति",
+   "credits": [
+    "आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 41, 42 और 44)",
+    "लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग",
+    "चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन",
+    "संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना)",
+    "स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर"
+   ]
+  }
+ ]
+}

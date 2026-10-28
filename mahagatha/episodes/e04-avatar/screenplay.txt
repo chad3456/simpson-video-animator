@@ -1,0 +1,382 @@
+title: अवतार
+episode: 4
+slug: e04-avatar
+kicker: अध्याय चार
+sub: मत्स्य, वराह और नृसिंह
+logline: एक नन्ही मछली जो प्रलय से सृष्टि को बचाती है, एक वराह जो डूबी धरती को उठाता है, और खंभे से निकला वह सिंह, जिसने एक अजेय असुर के हर वरदान को पार कर लिया।
+stories: 8, 25, 26, 27
+source: महागाथा: पुराणों की 100 कथाएँ (सत्यार्थ नायक, अनुवाद: आशुतोष गर्ग), कथाएँ 8, 25, 26 और 27
+
+== OPEN | dur=14
+
+# ---------------------------------------------------------------- the storyteller
+== SCENE sutradhar | set=pond time=night music=narad amb=night trans=fade
++ glowL kind=glow x=640 y=380 r=420 color=#fff1b8 core=0.25 z=-5
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=1500 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1 [wide]
+> narad x=700 t=3
+BEAT 3.2 [wide] (sfx=veena)
+NARAD (smile) [~full:narad]: नारायण... नारायण! आज की कथा मेरे प्रभु की है। स्वयं नारायण की।
+NARAD (calm, pose=open) [mid:narad]: लोग पूछते हैं, जो सबका रक्षक है, उसे बार-बार धरती पर क्यों आना पड़ता है? कभी मछली बनकर, कभी वराह बनकर, कभी आधा सिंह बनकर?
+NARAD (sly) [close:narad]: उत्तर एक द्वार पर छिपा है। वैकुंठ के सातवें द्वार पर।
+
+# ---------------------------------------------------------------- Jaya and Vijaya
+== SCENE vaikunth | set=lotusSky music=vishnu amb=wind trans=mandala
++ gate kind=glow x=640 y=380 r=380 color=#fff4c4 core=0.6 z=-5
+@ jaya x=520 y=650 s=0.92 face=1 pose=hold emo=calm
+@ vijaya x=760 y=650 s=0.92 face=-1 pose=hold emo=calm
+@ kumaras fig=kumara x=200 y=650 s=0.6 face=1 pose=namaste emo=smile
+@ k2 fig=kumara x=120 y=650 s=0.58 face=1 pose=namaste emo=smile z=-1
+BEAT 1.2 [wide] (sfx=bells)
+NARRATOR [~wide]: ब्रह्मा के चार मानस पुत्र, चिर-बालक कुमार, ब्रह्मांड में घूमते हुए वैकुंठ पहुँचे। विष्णु का धाम। छह द्वार पार हो गए। सातवें पर...
+> kumaras x=380 t=1.5
+> jaya pose=point emo=angry t=0.4
+DVARPAL (angry, pose=point) [two:jaya,vijaya] (sfx=gong): रुको!
+SANAK (calm) [close:kumaras]: तुम कौन हो, जो हमें रोक रहे हो?
+JAYA (sly, pose=hips) [close:jaya]: हम वैकुंठ के द्वारपाल हैं। जय...
+VIJAYA (sly, pose=hips) [close:vijaya]: ...और विजय। बालको, यहाँ यूँ ही नहीं टहला जाता। प्रवेश केवल विशेष लोगों को मिलता है।
+NARRATOR [close:kumaras]: द्वारपाल नहीं जानते थे, कि ये बालक नहीं, ब्रह्मा के आशीर्वाद से सदा बालक रहने वाले प्रबुद्ध मुनि थे।
+> kumaras emo=angry pose=curse t=0.4
+KUMARAS (angry, pose=curse) [~full:kumaras] (sfx=thunder, shake=6, flash): जिस धाम में अहंकार द्वार पर खड़ा हो, वहाँ के द्वारपाल वहाँ रहने योग्य नहीं! तुम धरती पर जन्म लोगे। असुर बनकर!
+> jaya pose=fear emo=fear t=0.4
+> vijaya pose=fear emo=fear t=0.4
+@ vishnu x=640 y=600 s=0.9 face=1 pose=abhaya emo=sad fly=1 noShadow=true anim=materialize z=-2
+NARRATOR [~wide] (sfx=swell): विष्णु प्रकट हुए। पर शाप दिया जा चुका था। उन्होंने द्वारपालों को एक विकल्प दिया।
+VISHNU (sad, pose=open) [close:vishnu]: या तो सात जन्म मेरे भक्त बनकर जियो। या तीन जन्म मेरे शत्रु बनकर। और हर जन्म में, तुम्हारा अंत मेरे हाथों होगा।
+DVARPAL (sad, pose=namaste) [two:jaya,vijaya]: तीन जन्म, प्रभु। आपसे सात जन्म दूर रहना, हमसे नहीं होगा।
+NARAD (calm) [close:vishnu]: और इस तरह, स्वयं विष्णु के द्वारपाल, उनके सबसे बड़े शत्रु बनने चल पड़े।
+
+== TITLE | dur=7.5 | kicker=अध्याय चार | title=अवतार | sub=मत्स्य, वराह और नृसिंह
+
+== CHAPTER | kicker=कथा ग्यारह | title=मत्स्य अवतार
+
+# ---------------------------------------------------------------- the little fish
+== SCENE kritmala | set=glade music=dawn amb=river,birds trans=mandala
++ sunG kind=glow x=640 y=260 r=400 color=#fff2c0 core=0.5 z=-5
+@ vaivasvat x=600 y=520 s=0.95 face=1 pose=offer emo=meditate
++ riverfg kind=water x=640 y=600 w=1500 h=180 color=#cfd9e0 crest=#6a86b8 op=0.85 z=40
+BEAT 1.2 [wide] (sfx=splash)
+NARRATOR [~wide]: सूर्य के पुत्र वैवस्वत अब पृथ्वी के शासक थे। एक दिन वे कृतमाला नदी के बीच खड़े होकर, विष्णु को अर्घ्य दे रहे थे।
+@ minnow kind=creature creature=fish x=700 y=330 s=0.08 face=1 anim=materialize
++ shine kind=sparkle x=700 y=330 n=16 r=50 z=30
+> vaivasvat emo=fear t=0.6
+NARRATOR [~at:690,340,2.6] (sfx=sparkle): उन्होंने चुल्लू में पानी भरकर हाथ उठाए, तो चाँदी-सी चमक आँखों में चुभी। हथेलियों के बीच एक नन्ही-सी मछली झिलमिला रही थी।
+MINNOW (fear) [at:690,340,2.6]: हे दयालु राजन्! मुझे अपने साथ ले चलिए। मैं बहुत छोटी हूँ, और मुझे नदी से डर लगता है।
+VAIVASVAT (calm) [close:vaivasvat]: पर यही तो तुम्हारा घर है।
+MINNOW (sad) [at:690,340,2.6]: कोई बड़ी मछली मुझे आसानी से खा जाएगी। आप धरती के स्वामी हैं। क्या अपनी प्रजा की रक्षा नहीं करेंगे?
+> vaivasvat emo=smile t=0.6
+VAIVASVAT (smile) [close:vaivasvat]: ठीक है, नन्ही। मैं तुम्हें अपने साथ ले चलूँगा।
+- shine
+
+# ---------------------------------------------------------------- the fish that would not stop growing
+== SCENE vriddhi | set=court wall=#a8481e music=joy amb=court trans=mandala
+@ vaivasvat x=360 y=650 s=0.92 face=1 pose=rest emo=smile
+@ minnow kind=creature creature=fish x=760 y=520 s=0.15 face=-1
++ pot kind=glow x=760 y=520 r=90 color=#c98a2a core=0.5 z=-1
+BEAT 1 [wide]
+NARRATOR [~wide]: वैवस्वत ने मछली को अपने ताँबे के कमंडल में रख लिया। पर सूर्यास्त तक वह सोलह अंगुल लंबी हो गई।
+> minnow s=0.3 t=2
+MINNOW (fear) [~mid:minnow]: बचाइए, राजन्! यह कमंडल मेरे लिए छोटा पड़ गया!
+> minnow s=0.5 t=2
+> pot r=160 t=2
+NARRATOR [~wide] (sfx=splash): राजा ने उसे घड़े में डाला। घड़ा छोटा पड़ गया। फिर कुएँ में। फिर वही हुआ। फिर तालाब में, फिर वापस नदी में।
+> minnow s=0.9 x=820 t=3
+> pot r=300 t=3
+> vaivasvat emo=fear pose=fear x=280 t=1
+NARRATOR [~wide] (sfx=splash, rumble): और हर बार, मछली अपने घर से बड़ी हो जाती।
+
+# ---------------------------------------------------------------- the ocean, and the revelation
+== SCENE sagar | set=ocean time=dawn music=wonder amb=ocean trans=white
+@ vaivasvat x=260 y=640 s=0.8 face=1 pose=offer emo=fear
+@ matsya kind=creature creature=fish x=900 y=520 s=0.8 face=-1 horn=true
++ waterfg kind=water x=640 y=660 w=1500 h=120 color=#e9e3d4 crest=#8299b8 op=0.85 z=40
+BEAT 1 [wide] (sfx=splash)
+NARRATOR [~wide]: अंत में वैवस्वत ने उसे महासागर में छोड़ दिया। लहरों का स्पर्श पाते ही उसका आकार और बढ़ गया।
+> matsya s=2.6 x=820 y=560 t=5
++ rays kind=rays x=820 y=420 r=800 n=30 color=#fff0b0 op=0.25 z=-4 anim=pop inDur=3
+NARRATOR [~wide] (sfx=swell, rumble, shake=4): बढ़ता गया। बढ़ता गया। और आख़िर उसने पूरे समुद्र को ढक लिया।
+> vaivasvat pose=namaste emo=calm seat=kneel t=1
+VAIVASVAT (fear, pose=namaste) [close:vaivasvat]: आप कोई साधारण मछली नहीं हैं। पूरी धरती पर आपको समेटने लायक कोई स्थान नहीं। आप केवल एक ही हो सकते हैं। क्या आप... विष्णु हैं?
+MATSYA (calm) [~at:820,420,1.1] (sfx=om): मैं विष्णु ही हूँ। और तुम्हें अगला मनु बनना है।
+NARRATOR [close:vaivasvat]: इससे पहले छह मनु हो चुके थे। हर मनु का युग, एक मन्वंतर। और अब विष्णु ने सातवाँ मनु घोषित कर दिया था। वैवस्वत मनु।
+MATSYA [~at:820,420,1.1]: सात दिनों में धरती पर प्रचंड बाढ़ आएगी, और सब जीवों का अंत हो जाएगा। एक नया कालचक्र आरंभ होगा। सृष्टि को बचाने का भार अब तुम पर है।
+VAIVASVAT (calm, pose=namaste) [close:vaivasvat]: प्रभु, मेरा मार्गदर्शन कीजिए।
+MATSYA (serene) [wide]: एक विशाल नौका बनाओ। उसमें जीवन के सारे स्रोत रख लो। बीज और अनाज। जड़ी-बूटियाँ और औषधियाँ। फल और फूल। पशुओं के जोड़े। सप्तऋषि, और मनुष्यों का लिखा सारा ज्ञान।
+MATSYA [~at:820,420,1.1]: जब प्रलय आएगी, मैं इसी रूप में फिर प्रकट होऊँगा। नौका को मुझसे बाँध देना। मैं तुम्हें सुरक्षित स्थान तक ले जाऊँगा।
+- matsya od=1.5
+- rays od=1.5
+BEAT 1.5 [wide] (sfx=splash)
+
+# ---------------------------------------------------------------- drought, then rain
+== SCENE pralay | set=glade music=tension amb=wind trans=mandala tint=#7a4a10,0.35
++ heat kind=glow x=640 y=200 r=500 color=#ffcf70 core=0.6 z=-5
+@ vaivasvat x=640 y=650 s=0.9 face=1 seat=lotus pose=meditate emo=sad
+BEAT 1 [wide] (sfx=wind)
+NARRATOR [~wide] (sfx=wind): फिर मछली अदृश्य हो गई। और धरती पर भयंकर सूखा पड़ा। मानो किसी ने पृथ्वी की नसों से जीवन का रस चूस लिया हो।
+NARRATOR [mid:vaivasvat]: ज़मीन में दरारें पड़ गईं। मनुष्य दम तोड़ने लगे। जगत एक विशाल मरघट बन गया। छह दिनों तक मनु अपनी नौका में चुपचाप बैठे रहे।
+BEAT 1.6 [close:vaivasvat] (sfx=heartbeat)
+> vaivasvat emo=fear gaze=-1 t=0.5
+NARRATOR [ecu:vaivasvat]: सातवें दिन, किसी चीज़ ने मनु की त्वचा को छुआ। जल की एक बूँद।
++ dark kind=tint color=#1a2040 op=0 z=55
+> dark op=0.55 t=3
++ clouds kind=clouds x=640 y=150 n=4 speed=30 color=#2c3c60 edge=#5a6a90 z=50
++ b1 kind=bolt x=300 y=0 h=500 z=52
+NARRATOR [~wide] (sfx=thunder, shake=6, flash): आकाश में काले मेघ घिर आए। बिजली कड़की। बादल गरजे।
+- b1
++ rain kind=rain x=640 y=360 n=180 z=58
++ flood kind=water x=640 y=800 w=1500 h=500 color=#cfd8ea crest=#4a5f9e z=45
+> flood y=430 t=8
+NARRATOR [~wide] (sfx=splash, rumble): और फिर वर्षा हुई। ऐसी, मानो मेघ आँसू बहा रहे हों। धरती से छीनी गई हर बूँद को, किसी ने घर लौटने का रास्ता दिखा दिया था।
+NARRATOR [~wide]: इतनी वर्षा हुई कि ज़मीन दिखना बंद हो गई। जहाँ देखो, केवल पानी। और धरती डूबती गई।
+
+# ---------------------------------------------------------------- the boat and the great fish
+== SCENE nauka | set=ocean time=night music=cosmic amb=ocean,storm trans=white
++ rain kind=rain x=640 y=360 n=140 op=0.4 z=58
++ boat kind=boat x=420 y=520 s=0.9 z=10
+@ vaivasvat x=420 y=420 s=0.45 face=1 pose=fear emo=fear z=9
++ waterfg kind=water x=640 y=600 w=1500 h=200 color=#cfd8ea crest=#4a5f9e op=0.9 z=40
+BEAT 1.5 [wide] (sfx=splash)
+NARRATOR [~at:420,440,1.5]: अनंत जल पर केवल एक नौका तैर रही थी। उसमें मनुष्यता के बचे हुए अंश थे। संस्कृति। ज्ञान। पोषण। बोध।
+NARRATOR [~wide]: क्या वह महासागर नौका को घूर रहा था? क्या वह उसे भी निगल जाने को व्याकुल था? मनु डरकर चारों ओर देख रहे थे।
+@ matsya kind=creature creature=fish x=980 y=700 s=1.6 face=-1 horn=true z=20
+> matsya y=520 t=4
++ mg kind=glow x=980 y=420 r=360 color=#ffe7a0 core=0.6 z=19 anim=pop inDur=3
+NARRATOR [~wide] (sfx=swell, splash): तभी समुद्र के नीचे से एक सींग उभरा। लहरों को चीरता हुआ, एक स्वर्णिम मछली का विशाल सिर। मत्स्य।
+> boat rope=520 t=1.5
+> vaivasvat pose=lift emo=joy t=0.6
+NARRATOR [mid:vaivasvat] (sfx=whoosh): वैवस्वत ने नौका को मत्स्य के सींग से बाँध दिया।
+- rain od=3
+> matsya x=1500 t=10
+> boat x=900 t=10
+> vaivasvat x=900 t=10
+> mg x=1500 t=10
+NARRATOR [~wide]: और समुद्र, इस महामत्स्य के आगे नतमस्तक हो गया। पहले मनु ने मछली को बचाया था। अब मछली, मनु को बचा रही थी।
+NARRATOR: देवता भी आकाश में प्रकट हो गए, यह देखने के लिए कि विष्णु धरती के बचे अंश की रक्षा कैसे कर रहे थे।
+
+# ---------------------------------------------------------------- Himalaya at dawn
+== SCENE himalay | set=kailash music=dawn amb=birds,wind trans=fade
++ sunG kind=glow x=640 y=200 r=500 color=#ffe2b0 core=0.5 z=-5
+@ vaivasvat x=420 y=650 s=0.9 face=1 pose=namaste emo=joy
+@ vishnu x=860 y=600 s=0.9 face=-1 pose=bless emo=smile fly=1 noShadow=true anim=materialize
++ flock kind=birds x=640 y=220 n=7 speed=60 z=10
+BEAT 1.2 [wide] (sfx=bells)
+NARRATOR [~wide]: रात भोर में बदली। समुद्र से एक हिमाच्छादित शिखर बाहर निकला। हिमालय।
+VISHNU (smile, pose=bless) [close:vishnu]: हे सूर्यपुत्र! तुमसे गौरवशाली सूर्यवंश जन्म लेगा। धरती को फिर से समृद्ध करो।
+VISHNU (serene) [mid:vishnu]: जैसे तुमने एक मछली की रक्षा की थी, वैसे ही ऐसा समाज बनाओ, जो सबकी रक्षा कर सके।
+NARRATOR [~wide] (sfx=sparkle): पक्षी नए घोंसलों के गीत गाने लगे। एक नया मन्वंतर आरंभ हो चुका था।
+
+== CHAPTER | kicker=कथा बारह | title=वराह अवतार
+
+# ---------------------------------------------------------------- Hiranyaksha's boon
+== SCENE vardan | set=cosmos music=curse amb=void trans=mandala
+@ hiranyaksha x=420 y=650 s=1 face=1 seat=kneel pose=namaste emo=meditate
+@ brahma x=860 y=600 s=0.85 face=-1 pose=bless emo=calm fly=1 noShadow=true
+BEAT 1 [wide] (sfx=om)
+NARRATOR [~wide]: दिति के दैत्य पुत्रों में दो सबसे बड़े थे। हिरण्याक्ष, सुनहरी आँखों वाला। और हिरण्यकशिपु, सुनहरे वस्त्रों वाला।
+NARRATOR [close:hiranyaksha]: जय और विजय का पहला जन्म।
+HIRANYAKSHA (sly, pose=open) [close:hiranyaksha]: ब्रह्मदेव, मुझे अमर कर दीजिए।
+BRAHMA (calm) [close:brahma]: असंभव। महादेव की तरह मैं किसी को अमर नहीं कर सकता। कुछ और माँगो।
+HIRANYAKSHA (sly, pose=point) [close:hiranyaksha]: तो मुझे धरती का स्वामी बना दीजिए। और वर दीजिए, कि न कोई मनुष्य, न कोई पशु मुझे मार सके।
+BRAHMA (sly) [close:brahma]: कौन-कौन से पशु? तुम्हें हर प्रजाति का नाम लेना होगा।
+NARRATOR [~wide] (sfx=whoosh): हिरण्याक्ष ने नाम गिनाने शुरू किए। थलचर, जलचर, नभचर। भूमिगत जीव। हर जगह रहने वाले प्राणी।
+BRAHMA (calm, pose=bless) [close:brahma] (sfx=bell): तथास्तु।
+
+# ---------------------------------------------------------------- the devas protest
+== SCENE prashn | set=lotusSky music=brahma amb=wind trans=mandala
+@ brahma x=420 y=650 s=0.9 face=1 pose=rest emo=calm
+@ indra x=860 y=650 s=0.88 face=-1 pose=point emo=angry
+@ agni x=1040 y=650 s=0.8 face=-1 pose=hips emo=angry z=-1
+BEAT 0.8 [wide]
+DEVAS (angry, pose=point) [two:brahma,indra]: पितामह! आपने एक दैत्य को पूरी धरती दे दी? वह उसकी आत्मा तक नष्ट कर देगा!
+BRAHMA (calm, pose=open) [close:brahma]: अडिग तपस्या कभी निष्फल नहीं जाती, पुत्रो। यह प्रकृति का नियम है। देवता हो या दैत्य, सच्ची साधना का फल मिलेगा ही।
+INDRA (angry) [close:indra]: भले ही वरदान अमंगल हो?
+BRAHMA (smile, pose=bless) [mid:brahma]: वरदान मंगल या अमंगल नहीं होता। वह केवल एक अवसर है। महत्त्व इस बात का है कि साधक उसका उपयोग कैसे करता है। यदि उसने विनाश चुना, तो पहले उसी का विनाश होगा।
+BRAHMA (sly) [ecu:brahma]: समय आने पर आप समझ जाएँगे।
+
+# ---------------------------------------------------------------- the earth drowned
+== SCENE patal | set=ocean time=night music=battle amb=ocean,storm trans=mandala tint=#0a1a40,0.4
++ earthB kind=earth x=640 y=260 r=120 form=1 z=-2
+@ hiranyaksha x=920 y=560 s=1.1 face=-1 pose=lift emo=rage
+BEAT 1 [wide] (sfx=rumble, shake=6)
+NARRATOR [~wide] (sfx=roar): शीघ्र ही देवताओं की आशंका सच हुई। हिरण्याक्ष के अत्याचार से धरती झुलसने लगी। और फिर उसने एक अकल्पनीय काम किया।
+> earthB y=640 x=760 t=5
+> hiranyaksha y=700 t=5
+NARRATOR [~at:700,480,1.1] (sfx=splash, rumble, shake=8): उसने पृथ्वी को उसकी धुरी से गिरा दिया, और खींचकर आदि-महासागर की अथाह गहराई में ले गया।
+@ bhudevi kind=creature creature=cow x=300 y=560 s=0.9 face=1 fly=1 anim=materialize
+BHUDEVI (sad) [mid:bhudevi]: मुझे बचाइए... खारा जल मेरी आँखें जला रहा है... मुझे मुक्त कीजिए।
+NARRATOR [mid:bhudevi]: पृथ्वी की आत्मा, एक गाय के रूप में, देवताओं के सामने आई। उसका चेहरा मुक्ति की याचना कर रहा था।
+
+# ---------------------------------------------------------------- the one animal not named
+== SCENE varaha | set=ocean time=night music=battle amb=ocean,storm trans=white
+@ brahma x=300 y=440 s=0.7 face=1 pose=namaste emo=smile fly=1 noShadow=true
+@ indra x=150 y=470 s=0.6 face=1 pose=fear emo=fear fly=1 noShadow=true z=-1
+BEAT 0.8 [wide]
+INDRA (fear) [two:brahma,indra]: आपने कहा था वह अजेय नहीं है! पर उसने तो हर प्राणी से स्वयं को सुरक्षित कर लिया!
+BRAHMA (smile, pose=open) [close:brahma]: नहीं। इसीलिए मैंने उससे हर प्रजाति का नाम पूछा था। मेरी सृष्टि इतनी विपुल है, कि कोई सब जीवों को गिन नहीं सकता। हिरण्याक्ष भी चूक गया। एक प्राणी का नाम छूट गया।
+INDRA (fear) [close:indra]: कौन-सा?
+BRAHMA (joy, pose=namaste) [ecu:brahma] (sfx=conch): वराह।
++ sea kind=water x=640 y=560 w=1500 h=300 color=#cfd8ea crest=#4a5f9e op=0.85 z=30
+@ boar kind=creature creature=boar x=1500 y=520 s=2.2 face=-1 anim=materialize
+> boar x=900 t=3
++ bg kind=glow x=900 y=380 r=420 color=#bcd0ff core=0.6 z=-2 anim=pop
+NARRATOR [~wide] (sfx=roar, splash, shake=8): और सबने देखा, विष्णु अपने विशाल, तेजस्वी वराह रूप में समुद्र में उतर रहे थे। उनके दाँत, जुड़वाँ पहाड़ियों जितने विशाल।
+
+# ---------------------------------------------------------------- the thousand-year fight, the lifting
+== SCENE uddhar | set=ocean time=night music=battle amb=ocean,storm trans=cut tint=#0a1a40,0.35
+@ boar kind=creature creature=boar x=420 y=600 s=2 face=1
+@ hiranyaksha x=920 y=640 s=1.1 face=-1 pose=strike emo=rage
++ c1 kind=clash x=680 y=430 z=60
+BEAT 1.2 [wide] (sfx=clash, roar, shake=8)
+NARRATOR [~wide] (sfx=clash, splash): वराह ने दैत्य को ललकारा, और युद्ध छिड़ गया। समुद्र कभी उबल उठता, कभी बर्फ़-सा जम जाता।
++ yrs kind=text x=640 y=170 text="एक सहस्र वर्ष" size=78 z=70
++ whirl kind=mandala x=640 y=400 r=360 spin=40 op=0.35 z=-3
+BEAT 2.2 [wide] (sfx=rumble, shake=6)
+- yrs
+- c1
+> boar x=760 t=0.6
++ fin kind=ring x=880 y=450 r=500 z=60
+> hiranyaksha o=0 t=0.4 d=0.4
+NARRATOR [~wide] (sfx=boom, roar, shake=14, flash): और अंत में, वराह ने हिरण्याक्ष का वध कर दिया।
+- whirl
++ earth kind=earth x=1000 y=760 r=110 form=1 z=10
+> earth x=930 y=360 t=5
+> boar x=700 y=560 t=5
++ up kind=glow x=930 y=360 r=360 color=#ffe7a0 core=0.6 z=5 anim=pop inDur=4
+NARRATOR [~at:820,440,1.1] (sfx=swell): फिर वराह ने धरती को अपने दाँतों पर टिकाया, और ऐसे उठाया, मानो हथेली पर फूल रखा हो।
+NARRATOR [~wide] (sfx=conch, bells): और उसे फिर से उसकी धुरी पर स्थापित कर दिया। ब्रह्मा हर्षित थे। देवता उत्सव मना रहे थे।
+NARRATOR [close:boar]: पर उस आनंद के क्षण में विष्णु उनके साथ नहीं थे। क्योंकि हिरण्याक्ष मरा था। हिरण्यकशिपु, अभी जीवित था।
+
+== CHAPTER | kicker=कथा तेरह | title=नृसिंह अवतार
+
+# ---------------------------------------------------------------- the perfect boon
+== SCENE kavach | set=cosmos music=curse amb=void trans=mandala
+@ hiranyakashipu x=420 y=650 s=1 face=1 seat=kneel pose=namaste emo=meditate
++ yrs kind=text x=640 y=170 text="ग्यारह हज़ार वर्ष" size=70 z=70
+BEAT 2 [wide] (sfx=om)
+- yrs
+@ brahma x=880 y=600 s=0.85 face=-1 pose=bless emo=calm fly=1 noShadow=true anim=materialize
+NARRATOR [~wide]: असुरों ने हिरण्यकशिपु का राज्याभिषेक किया। और उसने भी ब्रह्मा की उपासना की। ग्यारह हज़ार वर्ष बाद, ब्रह्मा प्रकट हुए।
+BRAHMA (calm) [close:brahma]: तुम्हें क्या वरदान चाहिए?
+NARRATOR [close:hiranyakashipu]: हिरण्यकशिपु ने अपने भाई का अंत देखा था। उसने एक द्वार खुला छोड़ा था, और मृत्यु वहीं से भीतर आई। वह यह भूल नहीं दोहराएगा। उसने शब्द-शब्द तौलकर अपना वरदान गढ़ा। एक ऐसा किला, जिसमें कोई द्वार न हो।
+HIRANYAKASHIPU (sly, pose=open) [close:hiranyakashipu]: मुझे न कोई देवता मारे, न असुर। न मनुष्य, न पशु।
+HIRANYAKASHIPU (sly) [ecu:hiranyakashipu]: मेरी मृत्यु न दिन में हो, न रात में। न घर के भीतर, न बाहर। न आकाश में, न धरती पर।
+HIRANYAKASHIPU (rage, pose=raise) [~full:hiranyakashipu] (sfx=thunder): और न कोई धातु, पत्थर या लकड़ी का अस्त्र मुझे मार सके! हे विधाता, मुझे यही वरदान दीजिए!
+BRAHMA (calm, pose=bless) [close:brahma] (sfx=bell): तथास्तु।
+
+# ---------------------------------------------------------------- the lotus in the swamp
+== SCENE prahlad | set=court wall=#2a1a3a music=tension amb=court trans=mandala
+@ hiranyakashipu x=380 y=650 s=1 face=1 pose=hips emo=sly
+@ prahlad x=840 y=650 s=0.7 face=-1 pose=namaste emo=serene
+BEAT 1 [wide] (sfx=nagara)
+NARRATOR [~wide] (sfx=roar): वरदान पाकर हिरण्यकशिपु अपने भाई से दुगुना अत्याचारी हो गया। उसने इंद्र को स्वर्ग से निकाल दिया, और तीनों लोक जीत लिए।
+NARRATOR [mid:prahlad]: पर उस कीचड़ में भी एक कमल खिला। उसका सबसे छोटा पुत्र। प्रह्लाद।
+NARAD (smile) [close:prahlad]: और जानते हैं, उसे नारायण का नाम किसने सिखाया? जब वह माँ के गर्भ में था, तब से मैं ही उसे विष्णु की कथाएँ सुनाता था।
+HIRANYAKASHIPU (angry, pose=point) [close:hiranyakashipu]: विष्णु? वह तुच्छ प्राणी, जिसने मेरे भाई को मारने के लिए एक पशु का रूप लिया? उसका नाम तुम्हें किसने सिखाया?
+PRAHLAD (serene, pose=namaste) [close:prahlad]: स्वयं भगवान विष्णु ने, पिताजी। वे शिक्षकों के शिक्षक हैं। शासकों के शासक।
+HIRANYAKASHIPU (rage) [ecu:hiranyakashipu]: तुम्हारे जीवन का उद्देश्य क्या है?
+PRAHLAD (smile) [close:prahlad]: भगवान विष्णु की आराधना।
+HIRANYAKASHIPU (rage, pose=strike) [close:hiranyakashipu] (sfx=gong): मैं तुम्हारे सामने खड़ा हूँ, और तुम उसकी स्तुति करते हो? तुम अपने पिता का अपमान कर रहे हो!
+PRAHLAD (serene, pose=bless) [ecu:prahlad]: मैं तो उनकी स्तुति कर रहा हूँ, जो हम सबके पिता हैं।
+BEAT 1.4 [ecu:hiranyakashipu] (sfx=heartbeat)
+HIRANYAKASHIPU (rage, pose=curse) [close:hiranyakashipu] (sfx=thunder, shake=8, flash): इसे मृत्युदंड दो!
+
+# ---------------------------------------------------------------- he could not be killed
+== SCENE raksha | set=glade time=dusk music=battle amb=wind trans=mandala
+@ prahlad x=640 y=650 s=0.75 face=1 pose=namaste emo=meditate
++ shield kind=glow x=640 y=520 r=220 color=#bcd0ff core=0.5 z=5
+@ g1 fig=asuraguard x=330 y=650 s=0.85 face=1 pose=strike emo=rage
+@ g2 fig=asuraguard x=950 y=650 s=0.85 face=-1 pose=strike emo=rage
+BEAT 0.8 [wide]
++ c1 kind=clash x=640 y=420 z=60
+NARRATOR [~wide] (sfx=clash): पर यह असंभव निकला। सैनिकों ने उसे हाथियों से रौंदवाने की कोशिश की, साँपों से डसवाने की।
+NARRATOR [~at:640,500,1.3] (sfx=whoosh): उसे चट्टान से धकेला, पर वह बच गया, मानो विष्णु की अदृश्य हथेलियों ने उसे थाम लिया हो। समुद्र में फेंका, तो लहरें उसे तट पर लौटा गईं।
+- c1
+NARRATOR [close:prahlad] (sfx=magic): भोजन में विष मिलाया, तो वह अमृत बन गया। शस्त्र उसे छू नहीं सके। और हत्यारों ने उसे मारने से मना कर दिया।
+> g1 x=-200 pose=fear emo=fear t=2
+> g2 x=1500 pose=fear emo=fear t=2
+BEAT 1.4 [wide] (sfx=om)
+
+# ---------------------------------------------------------------- Holika
+== SCENE holika | set=yajna music=curse amb=fire trans=mandala tint=#2a0806,0.25
+@ hiranyakashipu x=1050 y=650 s=0.95 face=-1 pose=hips emo=sly
+@ holika x=380 y=650 s=0.92 face=1 pose=hips emo=sly
+BEAT 0.8 [wide]
+HOLIKA (sly, pose=hips) [close:holika]: भैया, भूल गए? मुझे भी वरदान मिला है। आग मेरा शरीर नहीं जला सकती।
+HOLIKA (sly, pose=point) [close:holika]: एक चिता तैयार कीजिए। मैं प्रह्लाद को गोद में लेकर बैठूँगी। वह जल जाएगा, और मैं बच जाऊँगी।
+- hiranyakashipu
+@ prahlad x=520 y=600 s=0.6 face=1 seat=lotus pose=namaste emo=meditate
+> holika seat=lotus pose=cradle x=470 t=1
++ pyre kind=fire x=500 y=640 size=1 z=10
+> pyre size=3 t=4
+NARRATOR [~wide] (sfx=fire): चिता जली। प्रह्लाद समझ गया कि क्या होने वाला है। पर उसने विरोध में एक शब्द नहीं कहा।
++ shield kind=glow x=520 y=480 r=160 color=#bcd0ff core=0.7 z=12
+PRAHLAD (meditate) [close:prahlad] (sfx=fire): वंदे विष्णु... वंदे विष्णु... वंदे विष्णु...
+NARRATOR [~at:500,460,1.3] (sfx=fire, rumble): लपटें ऊँची होती गईं, और प्रह्लाद का जाप और तेज़।
+PRAHLAD (serene) [ecu:prahlad]: वंदे विष्णु... वंदे विष्णु... वंदे विष्णु...
+> holika emo=fear pose=despair t=0.4
+> holika o=0 t=3 d=1
+NARRATOR [~wide] (sfx=roar, fire, shake=6): अब चिता से चीखें आने लगीं। पर वे प्रह्लाद की नहीं, होलिका की थीं। उसने वरदान का दुरुपयोग किया था। और दैवी शक्तियों ने उसका वरदान छीन लिया।
+> pyre size=0.8 t=3
+NARRATOR [mid:prahlad] (sfx=bell): लपटें मंद हुईं। प्रह्लाद जीवित बैठा था। होलिका, भस्म हो चुकी थी।
+
+# ---------------------------------------------------------------- the pillar
+== SCENE stambh | set=court wall=#2a1a3a music=tension amb=court,storm trans=mandala
++ col kind=column x=760 y=660 w=80 h=440 crack=0 z=-1
+@ hiranyakashipu x=420 y=650 s=1 face=1 pose=hold emo=rage
+@ prahlad x=980 y=650 s=0.7 face=-1 pose=namaste emo=serene
+BEAT 0.8 [wide] (sfx=gong)
+HIRANYAKASHIPU (rage, pose=point) [close:hiranyakashipu]: बहुत हो चुका! अब मैं अपने हाथों से तुम्हारा अंत करूँगा।
+PRAHLAD (serene) [close:prahlad]: यह तभी होगा, जब मेरे प्रभु चाहेंगे, पिताजी।
+HIRANYAKASHIPU (rage, pose=strike) [close:hiranyakashipu]: तो बुलाओ अपने विष्णु को! क्या वह मुझे रोकने आएगा?
+PRAHLAD (smile, pose=open) [close:prahlad]: उन्हें कहीं आने की आवश्यकता नहीं। वे हर जगह हैं। हर तत्त्व में। हर कोशिका में। आप में, मुझ में, और इस खंभे में भी।
+HIRANYAKASHIPU (joy, pose=hips) [~two:hiranyakashipu,prahlad] (sfx=roar): खंभे में? हा हा हा हा! तो मुझे भी दिखाओ!
+> hiranyakashipu x=640 pose=strike t=0.5
++ hit kind=clash x=740 y=420 z=60
+> prahlad emo=meditate t=0.3
+HIRANYAKASHIPU (rage, pose=strike) [close:hiranyakashipu] (sfx=clash, shake=6): बुलाओ अपने भगवान को! मुझे भी उसे देखना है! उसकी...
+- hit
+> col crack=1 t=2
+> hiranyakashipu x=380 pose=fear emo=fear t=1
+BEAT 2.4 [~at:760,440,1.2] (sfx=crack, rumble, shake=12)
++ shine kind=rays x=760 y=430 r=800 n=36 color=#fff0b0 op=0.4 z=-2 anim=pop inDur=1
+@ narasimha x=760 y=660 s=1.15 face=-1 pose=raise emo=rage anim=materialize inDur=1.2
+NARASIMHA (rage) [~full:narasimha] (sfx=roar, thunder, shake=16, flash): ह्ह्ह्हा!
+NARRATOR [~full:narasimha]: खंभा बीच से फट गया, और भीतर से प्रकाश की लहर के साथ एक प्राणी निकला। न मनुष्य, न पशु। न देवता, न दानव। सबका मिश्रण। भयावह, फिर भी सम्मोहक।
+NARRATOR [close:narasimha] (sfx=om): नृसिंह। आधा मनुष्य, आधा सिंह। दैत्य की मृत्यु की हर शर्त पूरी करने वाला रूप।
+
+# ---------------------------------------------------------------- the threshold at twilight
+== SCENE dehri | set=court wall=#2a1a3a music=battle amb=storm trans=cut tint=#5a2a10,0.3
++ dusk kind=glow x=640 y=200 r=600 color=#ff9a4a core=0.4 z=-5
+@ narasimha x=640 y=640 s=1.15 face=1 seat=kneel pose=cradle emo=rage
+@ hiranyakashipu x=650 y=470 s=0.85 face=1 rot=-80 pose=fear emo=fear noShadow=true z=1
+BEAT 1 [wide] (sfx=roar)
+NARRATOR [~wide]: नृसिंह ने दैत्य को बाँहों में भरा, और घसीटकर महल की दहलीज़ पर ले गए। अब वह न घर के भीतर था, न बाहर।
+NARRATOR [~at:640,300,1.2]: यह गोधूलि की बेला थी। न दिन, न रात।
+NARRATOR [mid:narasimha]: नृसिंह ने उसे अपनी गोद में लिटा लिया। अब वह न धरती पर था, न आकाश में। न जल में, न थल पर।
+NARASIMHA (rage) [close:narasimha] (sfx=roar): तुझे वर मिला था, कि धातु, पत्थर या लकड़ी का कोई अस्त्र तुझे नहीं मारेगा। मैं इनमें से किसी का उपयोग नहीं करूँगा।
+NARASIMHA (rage, pose=strike) [ecu:narasimha] (sfx=thunder, shake=10): मेरे नख, तेरा अंत करेंगे!
++ fin kind=ring x=640 y=460 r=700 z=60
+- hiranyakashipu od=0.2
+BEAT 1.4 [wide] (sfx=boom, roar, shake=16, flash)
+NARRATOR [~wide]: और जय-विजय का पहला जन्म, धरती पर समाप्त हुआ।
+@ prahlad x=1040 y=650 s=0.7 face=-1 pose=namaste emo=serene
+> narasimha seat=none pose=bless emo=calm t=1.2
+NARRATOR [two:narasimha,prahlad] (sfx=bells): प्रह्लाद भगवान के सामने नतमस्तक हो गया। विष्णु ने अपने भक्त की रक्षा कर ली थी।
+NARASIMHA (calm, pose=bless) [close:narasimha]: उठो, प्रह्लाद। जिसने भय में भी मेरा नाम नहीं छोड़ा, उसे मुझसे कभी कोई अलग नहीं कर सकता।
+
+# ---------------------------------------------------------------- epilogue
+== SCENE upasamhar | set=pond time=night music=narad amb=night trans=fade
++ motes kind=motes x=640 y=520 n=30 w=1200 h=300 z=60
+@ narad x=700 y=560 s=0.95 face=-1 pose=veena emo=smile fly=1 noShadow=true
+BEAT 1.2 [wide] (sfx=veena)
+NARAD (smile) [mid:narad]: देखा आपने? एक ने हर पशु का नाम गिनाया, और एक छूट गया। दूसरे ने हर द्वार बंद किया, और भगवान दहलीज़ से आ गए।
+NARAD (calm, pose=open) [close:narad]: वरदान अवसर है, नारायण। ढाल नहीं। जो उसे अहंकार का किला बनाता है, उसी किले में घिर जाता है।
+NARAD (sly) [ecu:narad]: और जय-विजय? अभी उनके दो जन्म बाकी हैं। अगली बार वे लौटेंगे। दस सिर लेकर।
+BEAT 1.5 [~close:narad] (sfx=veena)
+NARAD (smile, pose=point) [mid:narad]: पर पहले, स्वर्ग पर एक नया संकट आने वाला है। तारकासुर। और उसे केवल शिव का पुत्र मार सकता है। पर शिव? वे तो अकेले हैं...
+
+== NEXT | dur=1 | title=अगले अध्याय में | sub=तारकासुर · पार्वती · कार्तिकेय
+NARRATOR: अगले अध्याय में: तारकासुर का आतंक, पार्वती की तपस्या, कामदेव का भस्म होना, और शिव के पुत्र कार्तिकेय का जन्म।
+
+== END | dur=13 | title=महागाथा | sub=अध्याय चार · अवतार | credits=आधारित: महागाथा, पुराणों की 100 कथाएँ (कथाएँ 8, 25, 26 और 27);लेखक: सत्यार्थ नायक · हिंदी अनुवाद: आशुतोष गर्ग;चित्रांकन: पिछवाई और लघुचित्र शैली से प्रेरित मूल एनिमेशन;संगीत: तानपुरा, बाँसुरी, सितार, तबला, शहनाई (मूल रचना);स्वर: कोकोरो (मुक्त स्रोत) से निर्मित पात्र-स्वर

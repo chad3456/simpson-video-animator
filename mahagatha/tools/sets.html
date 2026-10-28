@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0}</style></head><body>
+<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"></svg>
+<script src="../engine/figures.js"></script><script src="../engine/sets.js"></script>
+<script>
+const q=new URLSearchParams(location.search); const name=q.get('set'); const c=JSON.parse(q.get('c')||'{}');
+const L=PWSets.SETS[name](c);
+document.getElementById('s').innerHTML=`<defs><radialGradient id="pwGlow"><stop offset="0" stop-color="#fff3b0"/><stop offset="1" stop-color="#fff3b0" stop-opacity="0"/></radialGradient></defs>`+L.back+(L.front||'')+(q.has('frame')?PWSets.grain()+PWSets.border():'');
+window.__ready=true;
+</script></body></html>
