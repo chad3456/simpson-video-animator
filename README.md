@@ -5,7 +5,7 @@ Turn any source into a yellow-toon parody episode, or a calm flat-vector explain
 Three shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chromium + ffmpeg):
 
 - **KINDLETON** (root `SKILL.md`, `engine/`, `episodes/`): Simpsons-inspired parody sitcom.
-- **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; season 1 covers *Suicidal Empathy* in seven episodes: an overview (`too-kind-to-survive`) and one episode per case-file chapter (`the-things-we-wont-say`, `same-species-different-rules`, `second-chances`, `settled`, `buying-absolution`, `the-kindest-government`). A special, `eight-nights-of-fire`, covers the 2023 French riots through the same lens. A ten-part documentary series, *Creating a New Medina* (`new-medina-e01` to `e10`), adapts Venkat Dhulipala's 2015 history of the Pakistan idea in U.P. in a letterboxed "cinema" look; see `explainer/NEW-MEDINA.md`.
+- **LUMEN** (`explainer/`): science-explainer homage with rounded "pebble" creatures, glows, parallax, chapter cards, a calm blended narrator and an ambient score. See `explainer/SKILL.md` and `explainer/STYLE.md`; season 1 covers *Suicidal Empathy* in seven episodes: an overview (`too-kind-to-survive`) and one episode per case-file chapter (`the-things-we-wont-say`, `same-species-different-rules`, `second-chances`, `settled`, `buying-absolution`, `the-kindest-government`). A special, `eight-nights-of-fire`, covers the 2023 French riots through the same lens. A ten-part documentary series, *Creating a New Medina* (`new-medina-e01` to `e10`), adapts Venkat Dhulipala's 2015 history of the Pakistan idea in U.P. in a letterboxed "cinema" look; see `explainer/NEW-MEDINA.md`. `who-burned-france` covers the October 2026 unrest, and the first investigation, `the-red-green-alliance`, tests Asra Nomani's Red-Green Alliance thesis claim by claim.
 
 - **MAHAGATHA** (`mahagatha/`): a twelve-episode Hindi mythology series in the style of Indian pichwai and miniature painting, adapted from *Mahagatha: 100 Tales from the Puranas* (Satyarth Nayak, Hindi translation by Ashutosh Garg). Hand-drawn SVG gods, sets and set pieces, a Hindi screenplay format, and distinct character voices blended from Kokoro. See `mahagatha/SKILL.md`.
 
@@ -39,6 +39,8 @@ Watch locally: `npx serve .` then open `/` for the gallery or `/engine/player.ht
 ## Deploy
 
 Import this repo in Vercel (free Hobby plan), framework preset "Other", no build command, output directory `.`. Every push to `main` redeploys.
+
+The episode MP4s are too big to ship with the site, so Vercel skips them (`.vercelignore`) and the gallery streams each one from the repo's `videos` GitHub release instead. The **Publish episode videos** workflow (`.github/workflows/publish-videos.yml`) uploads every committed `*.mp4` to that release on each push to `main` that touches a video, and skips files already there. Asset names are the episode folder with `/` turned into `_` (for example `anime_episodes_e01-four-nights.mp4`). To add an episode: commit its `episode.mp4` (under 100 MB, GitHub's per-file limit), add it to `episodes/index.json`, and push. To re-upload everything, run the workflow by hand from the Actions tab.
 
 ## How it works
 
