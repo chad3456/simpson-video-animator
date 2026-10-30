@@ -175,6 +175,56 @@
     return s;
   }
 
+  // a frontal face (Brahma's centre face): almond eyes, a straight nose, the beard spread on both sides
+  function frontHead(o, st) {
+    const skin = o.skin, LC = o.lineCol || LINE, sk2 = shade(skin, -0.18);
+    const pth = (d, f, oo = {}) => path(d, f, Object.assign({ stroke: LC }, oo));
+    const open = clamp(st.open || 0) * 4, blink = clamp(st.blink || 0), emo = st.emo || 'neutral';
+    const hc = o.hair || '#140c0a';
+    let s = '';
+    // ears and earrings behind the face
+    for (const sx of [-1, 1]) {
+      s += pth(`M${sx * 27},-6 C${sx * 36},-10 ${sx * 38},4 ${sx * 32},14 C${sx * 30},18 ${sx * 27},16 ${sx * 26},12Z`, sk2, { sw: 1.2 });
+      s += circ(sx * 32, 22, 5, GOLD, { stroke: GOLD_LO, sw: 1 }) + circ(sx * 32, 22, 2.4, RUBY) + circ(sx * 32, 30, 2.2, PEARL);
+    }
+    // hair falling to the shoulders on both sides
+    s += pth('M-30,-34 C-40,-10 -40,20 -34,44 L-26,40 C-30,16 -30,-10 -24,-30Z', hc, { sw: 1.2 });
+    s += pth('M30,-34 C40,-10 40,20 34,44 L26,40 C30,16 30,-10 24,-30Z', hc, { sw: 1.2 });
+    // the face oval
+    s += pth('M0,-44 C18,-44 29,-30 29,-8 C29,16 22,40 0,50 C-22,40 -29,16 -29,-8 C-29,-30 -18,-44 0,-44Z', skin, { sw: 1.5 });
+    // hair parted under the crown
+    s += pth('M-28,-22 C-26,-40 -12,-46 0,-44 C12,-46 26,-40 28,-22 C20,-34 8,-36 0,-32 C-8,-36 -20,-34 -28,-22Z', hc, { sw: 1.1 });
+    // eyes: two fish-shaped eyes looking out
+    let lid = 0; if (emo === 'calm' || emo === 'serene') lid = 2.4; if (emo === 'sly') lid = 2; if (emo === 'angry' || emo === 'rage') lid = 1.2;
+    for (const sx of [-1, 1]) {
+      const ex = sx * 12, ey = -4, h = (7 - lid) * (1 - blink * 0.95);
+      if (emo === 'meditate' || blink > 0.9) { s += curve(`M${ex - 9},${ey} C${ex - 3},${ey + 3} ${ex + 3},${ey + 3} ${ex + 9},${ey}`, LC, 1.8); continue; }
+      const d = `M${ex - 10 * sx},${ey + 1} C${ex - 4 * sx},${f1(ey - h)} ${ex + 5 * sx},${f1(ey - h)} ${ex + 10 * sx},${ey} C${ex + 5 * sx},${f1(ey + h * 0.6)} ${ex - 4 * sx},${f1(ey + h * 0.6)} ${ex - 10 * sx},${ey + 1}Z`;
+      s += pth(d, o.eyeWhite || '#fbf6ea', { sw: 0.9 }) + circ(ex, ey, 3.2, o.iris || '#1a0f0a') + circ(ex + 0.9, ey - 1, 0.9, '#fff');
+      s += curve(`M${ex - 10 * sx},${ey + 1} C${ex - 4 * sx},${f1(ey - h)} ${ex + 5 * sx},${f1(ey - h)} ${ex + 10 * sx},${ey} L${ex + 14 * sx},${ey - 3}`, LC, 2);
+      const bu = emo === 'fear' || emo === 'sad' ? 2 : 0, bi = emo === 'angry' || emo === 'rage' ? 3 : 0;
+      s += curve(`M${ex - 9 * sx},${-12 - bu + bi} Q${ex},${-18 - bu} ${ex + 11 * sx},${-13 - bu}`, o.browCol || LC, 2);
+    }
+    // nose: a straight ridge and a soft base
+    s += curve('M-3,-10 C-3,0 -4,8 -6,14', sk2, 1.4, { op: 0.8 }) + curve('M-7,15 C-4,19 4,19 7,15', LC, 1.3);
+    // tilak
+    if (o.tilak === 'vaishnav') s += `<path d="M-3,-30 L-2,-16 M3,-30 L2,-16" stroke="#fdf7e8" stroke-width="2"/><path d="M0,-28 L0,-15" stroke="${RUBY}" stroke-width="2"/>`;
+    else s += circ(0, -22, 2.6, RUBY);
+    // mouth
+    const lip = o.lips || shade(skin, -0.32);
+    if (open > 0.5) s += pth(`M-7,27 C-3,${f1(27 + open)} 3,${f1(27 + open)} 7,27Z`, '#5a1414', { sw: 0.8 });
+    s += pth(`M-8,26 C-4,24 4,24 8,26 C4,28 -4,28 -8,26Z`, lip, { sw: 0.8 });
+    if (emo === 'smile' || emo === 'joy') s += curve('M-10,25 C-9,28 -7,29 -5,29 M10,25 C9,28 7,29 5,29', LC, 1);
+    // mustache and the long beard
+    if (o.mustache) s += pth('M0,21 C-6,19 -14,20 -20,25 C-14,23 -8,24 0,24 C8,24 14,23 20,25 C14,20 6,19 0,21Z', o.beardCol || LC, { sw: 0.8 });
+    if (o.beard) {
+      const bc = o.beardCol || LC, len = o.beard === 'long' ? 44 : 18;
+      s += pth(`M-24,22 C-24,${30 + open} -14,${f1(34 + open)} -8,${f1(31 + open)} C-4,${f1(34 + open)} 4,${f1(34 + open)} 8,${f1(31 + open)} C14,${f1(34 + open)} 24,${30 + open} 24,22 C30,${44 + len * 0.4} 16,${60 + len} 0,${64 + len} C-16,${60 + len} -30,${44 + len * 0.4} -24,22Z`, bc, { sw: 1.2 });
+      for (let i = -3; i <= 3; i++) s += curve(`M${i * 5},${f1(38 + open)} C${i * 6},${50 + len * 0.5} ${i * 5},${56 + len * 0.8} ${i * 3},${60 + len * 0.9}`, shade(bc, bc === LC ? 0.25 : -0.15), 1, { op: 0.7 });
+    }
+    return s;
+  }
+
   function crown(o, t) {
     const c = o.crown;
     let s = '';
@@ -338,6 +388,25 @@
       case 'ketaki':    // the ketaki flower
         s += curve('M0,6 C0,-6 2,-14 0,-20', '#5c7a3a', 2) + path('M0,-20 C-10,-30 -8,-46 0,-56 C8,-46 10,-30 0,-20Z', '#f5ecc4', { sw: 1.1 }) + path('M0,-24 C-4,-30 -3,-40 0,-46 C3,-40 4,-30 0,-24Z', '#e8d27a', { sw: 0.6 });
         break;
+      case 'modak': {   // Ganesha's bowl of modaks
+        s += path('M-20,-6 C-18,6 18,6 20,-6Z', GOLD, { sw: 1.3 }) + curve('M-20,-6 L20,-6', GOLD_LO, 1.4);
+        for (const [x, y] of [[-11, -10], [0, -11], [11, -10], [-5, -19], [6, -19], [0, -27]]) s += path(`M${x - 6},${y + 3} C${x - 6},${y - 3} ${x - 2},${y - 7} ${x},${y - 10} C${x + 2},${y - 7} ${x + 6},${y - 3} ${x + 6},${y + 3}Z`, '#f6e2b0', { sw: 0.9 }) + curve(`M${x},${y - 8} L${x},${y + 2}`, '#d9b878', 0.6);
+        break;
+      }
+      case 'vel': {     // Kartikeya's leaf-bladed spear
+        s += curve('M0,40 L0,-140', '#6a3a1a', 4) + `<rect x="-5" y="-146" width="10" height="10" rx="2" fill="${GOLD}" stroke="${LINE}" stroke-width="0.8"/>`;
+        s += path('M0,-146 C-16,-160 -16,-186 0,-214 C16,-186 16,-160 0,-146Z', '#dfe3ea', { sw: 1.3 }) + curve('M0,-150 L0,-206', '#9aa4b0', 1.2);
+        break;
+      }
+      case 'vajra': {   // Indra's thunderbolt: a waisted rod with prongs at both ends
+        s += `<g transform="translate(0 -20)"><rect x="-4" y="-8" width="8" height="16" rx="2" fill="${GOLD}" stroke="${LINE}" stroke-width="1"/>` + circ(0, 0, 4, RUBY, { stroke: false });
+        for (const d of [-1, 1]) {
+          s += path(`M-6,${8 * d} C-12,${20 * d} -12,${32 * d} 0,${44 * d} C12,${32 * d} 12,${20 * d} 6,${8 * d}Z`, GOLD, { sw: 1.1 });
+          s += curve(`M0,${10 * d} L0,${48 * d}`, GOLD_LO, 1.6) + circ(0, 48 * d, 2.6, GOLD_HI);
+        }
+        s += '</g>';
+        break;
+      }
       case 'diya':
         s += path('M-12,0 C-10,8 10,8 12,0 L16,-2 C8,-4 -8,-4 -12,0Z', '#b4562a', { sw: 1 }) + flame(13, -6, 0.6, t);
         break;
@@ -432,7 +501,10 @@
     vishnu: { near: [104, -64, 'fist', 'shankh'], far: [-86, -84, 'fist', 'chakra'] },
     shiva:  { near: [100, -70, 'fist', 'damaru'], far: [-84, -70, 'fist', 'trishul'] },
     brahma: { near: [104, -50, 'fist', 'vedas'], far: [-86, -60, 'fist', 'kamandal'] },
-    devi:   { near: [100, -70, 'fist', 'sword'], far: [-86, -80, 'fist', 'chakra'] }
+    devi:   { near: [100, -70, 'fist', 'sword'], far: [-86, -80, 'fist', 'chakra'] },
+    ganesha: { near: [100, -60, 'fist', 'parashu'], far: [-84, -70, 'fist', 'padma'] },
+    lakshmi: { near: [100, -64, 'fist', 'padma'], far: [-84, -70, 'fist', 'padma'] },
+    saraswati: { near: [100, -60, 'fist', 'mala'], far: [-84, -64, 'fist', 'vedas'] }
   };
 
   // ---------------------------------------------------------------- BODY ----
@@ -607,10 +679,11 @@
     // --- head (with optional extra heads for Brahma)
     const hx = 6 * W + lean * 0.5, hy = headY;
     let H = '';
-    if (o.heads === 4) {   // two side heads peeking behind (the back one is hidden)
-      const so = Object.assign({}, o, { crown: 'brahma' });
-      H += `<g transform="translate(${f1(hx - 22)} ${f1(hy + 4)}) scale(${-hs * 0.94} ${hs * 0.94})">${head(so, Object.assign({}, st, { open: 0 }))}${crown(so, t)}</g>`;
-      H += `<g transform="translate(${f1(hx - 10)} ${f1(hy - 2)}) scale(${hs * 0.97})" opacity="1">${head(so, Object.assign({}, st, { open: 0, emo: st.emo === 'meditate' ? 'meditate' : 'calm' }))}${crown(so, t)}</g>`;
+    if (o.heads === 4 || o.heads === 5) {   // Brahma as painted: a frontal centre face between two profiles (the fourth is behind)
+      const so = Object.assign({}, o, { crown: 'brahma' }), side = Object.assign({}, st, { open: 0, emo: st.emo === 'meditate' ? 'meditate' : 'calm' });
+      H += `<g transform="translate(${f1(hx - 34 * hs)} ${f1(hy + 4 * hs)}) scale(${-hs * 0.86} ${hs * 0.86})">${head(so, side)}${crown(so, t)}</g>`;
+      H += `<g transform="translate(${f1(hx + 34 * hs)} ${f1(hy + 4 * hs)}) scale(${hs * 0.86})">${head(so, side)}${crown(so, t)}</g>`;
+      if (o.heads === 5) H += `<g transform="translate(${f1(hx)} ${f1(hy - 92 * hs)}) scale(${hs * 0.8})">${frontHead(so, Object.assign({}, st, { open: 0, emo: 'sly' }))}<g transform="translate(4 0)">${crown(so, t)}</g></g>`;
     }
     if (o.heads === 6) {   // Kartikeya: a fan of five more faces behind the first
       for (const [dx, dy, flip, sc] of [[-30, -46, -1, 0.82], [-6, -54, 1, 0.84], [-36, -6, -1, 0.9], [-14, -18, 1, 0.92], [-24, 8, -1, 0.9]])
@@ -622,17 +695,12 @@
       for (const i of order.sort((a, b) => Math.abs(b) - Math.abs(a)))
         H += `<g transform="translate(${f1(hx + i * 44 * hs)} ${f1(hy + 6 - Math.abs(i) * 2)}) scale(${hs * 0.86})">${head(o, Object.assign({}, st, { open: 0, emo: Math.abs(i) % 2 ? (st.emo || 'calm') : 'sly' }))}${crown(o, t)}</g>`;
     }
-    if (o.heads === 5) {
-      const so = Object.assign({}, o, { crown: 'brahma' });
-      H += `<g transform="translate(${f1(hx - 22)} ${f1(hy + 4)}) scale(${-hs * 0.94} ${hs * 0.94})">${head(so, Object.assign({}, st, { open: 0 }))}${crown(so, t)}</g>`;
-      H += `<g transform="translate(${f1(hx - 10)} ${f1(hy - 2)}) scale(${hs * 0.97})">${head(so, Object.assign({}, st, { open: 0 }))}${crown(so, t)}</g>`;
-      H += `<g transform="translate(${f1(hx - 6)} ${f1(hy - 68)}) scale(${hs * 0.9})">${head(so, Object.assign({}, st, { open: 0, emo: 'sly' }))}${crown(so, t)}</g>`;
-    }
     if (o.headKind === 'horse') H += horseHead(o, st, hx, hy, hs);
     else if (o.headKind === 'ram') H += ramHead(o, st, hx, hy, hs);
     else if (o.headKind === 'lion') H += lionHead(o, st, hx, hy, hs);
     else if (o.headKind === 'elephant') H += elephantHead(o, st, hx, hy, hs);
     else if (o.headKind === 'buffalo') H += buffaloHead(o, st, hx, hy, hs);
+    else if (o.heads === 4 || o.heads === 5) H += `<g transform="translate(${f1(hx)} ${f1(hy)}) scale(${hs}) rotate(${f1(st.nod || 0)})">${frontHead(o, st)}<g transform="translate(4 0)">${crown(o, t)}</g></g>`;
     else H += `<g transform="translate(${f1(hx)} ${f1(hy)}) scale(${hs}) rotate(${f1(lean * 0.6 + (st.nod || 0))})">${head(o, st)}${crown(o, t)}</g>`;
     // halo (prabhamandal)
     let halo = '';
@@ -726,17 +794,42 @@
   }
 
   function horseHead(o, st, hx, hy, hs) {
-    // Hayagriva: a white horse head with a flowing gold-edged mane and a crown
-    const t = st.t || 0, open = clamp(st.open || 0) * 6, sway = Math.sin(t * 1.3) * 3;
-    let s = `<g transform="translate(${f1(hx - 4)} ${f1(hy + 6)}) scale(${hs * 1.15})">`;
-    s += path(`M-36,-20 C-60,10 ${-70 + sway},50 ${-58 + sway},80 C-40,60 -30,30 -16,10Z`, '#1d2a6a', { sw: 1.3 });
-    s += path(`M-30,-30 C-10,-56 30,-46 50,-10 L84,20 C92,28 88,40 78,${f1(42 + open)} L64,${f1(44 + open)} C54,40 40,36 30,40 C10,50 -10,48 -20,30 C-34,10 -38,-10 -30,-30Z`, '#f3ead4', { sw: 1.6 });
-    s += path(`M64,${f1(36 + open)} C72,${f1(40 + open)} 80,${f1(40 + open)} 84,${f1(34 + open)}`, 'none', { sw: 1.2 });
-    s += `<ellipse cx="22" cy="-12" rx="8" ry="5" fill="#fff" stroke="${LINE}" stroke-width="1.2"/><circle cx="25" cy="-12" r="3" fill="${LINE}"/>`;
-    s += curve('M8,-20 C18,-26 30,-22 34,-16', LINE, 2.2) + curve('M76,26 C79,24 82,25 83,28', LINE, 1.4);
-    s += path('M-10,-44 L-2,-70 L8,-46Z', '#f3ead4', { sw: 1.3 });
-    for (let i = 0; i < 6; i++) s += curve(`M${-24 + i * 6},${-36 + i * 2} C${-40 + i * 4},${-10 + i * 6} ${-46 + i * 4 + sway},${20 + i * 8} ${-40 + i * 4 + sway},${50 + i * 4}`, GOLD, 1.6, { op: 0.9 });
-    s += `<g transform="translate(-4 -30) scale(0.9)">${crown({ crown: 'mukut' }, t)}</g>`;
+    // Hayagriva: a white horse head on an arched neck, two upright ears, a long tapering muzzle,
+    // the round cheek of a horse, a dark flowing mane and a jewelled crown and browband
+    const t = st.t || 0, open = clamp(st.open || 0) * 7, sway = Math.sin(t * 1.3) * 3, blink = clamp(st.blink || 0);
+    const W = '#f6efdf', W2 = '#e3d6b8', mane = o.mane || '#1d2a6a';
+    let s = `<g transform="translate(${f1(hx - 14 * hs)} ${f1(hy - 6 * hs)}) scale(${hs * 1.05})">`;
+    // mane down the back of the neck
+    s += path(`M-4,-50 C-30,-40 -50,0 ${-58 + sway},40 C${-66 + sway},70 -60,96 -50,112 L-34,104 C-40,70 -36,30 -20,-10Z`, mane, { sw: 1.3 });
+    for (let i = 0; i < 7; i++) s += curve(`M${-8 - i * 4},${-44 + i * 10} C${-30 - i * 3 + sway},${-20 + i * 14} ${-46 - i * 2 + sway},${20 + i * 12} ${-48 - i + sway},${50 + i * 9}`, GOLD, 1.3, { op: 0.75 });
+    // the crown sits behind the ears
+    s += `<g transform="translate(-12 -44) rotate(4) scale(0.66)">${crown({ crown: 'kirit' }, t)}</g>`;
+    // far ear
+    s += path('M2,-46 C2,-66 8,-80 16,-88 C20,-72 18,-58 12,-44Z', W2, { sw: 1.3 });
+    // neck and head in one silhouette: poll, forehead, nose bridge, muzzle, lips, chin groove, round jaw, throat, neck front
+    s += path(`M-6,-48 C14,-50 34,-34 52,-12 C66,6 82,18 96,24 C104,28 106,40 100,46 L92,${f1(48 + open * 0.2)} ` +
+      `C86,${f1(50 + open)} 78,${f1(52 + open)} 72,${f1(50 + open)} C66,${f1(54 + open)} 58,58 50,56 ` +
+      `C36,62 16,60 6,46 C2,58 0,78 4,104 L-36,108 C-40,70 -30,-10 -6,-48Z`, W, { sw: 1.7 });
+    // the muzzle's soft shading and the long cheek muscle
+    s += path('M78,20 C90,24 100,30 100,42 C92,40 84,34 76,30Z', '#efd9c4', { stroke: 'none' });
+    s += curve('M8,46 C10,24 22,10 40,6 C50,4 56,12 54,26 C52,38 46,48 40,54', W2, 1.6);
+    // mouth line and chin groove
+    s += curve(`M98,44 C90,${f1(44 + open * 0.5)} 80,${f1(46 + open * 0.7)} 72,${f1(48 + open * 0.6)}`, LINE, 1.3);
+    if (open > 1) s += path(`M92,46 C86,${f1(48 + open)} 78,${f1(50 + open)} 74,${f1(48 + open * 0.6)} C80,47 86,46 92,46Z`, '#7a2020', { sw: 0.8 });
+    // nostril: the comma of a horse
+    s += path('M92,28 C88,26 86,30 88,33 C91,34 94,31 92,28Z', '#5a3a2a', { sw: 0.8 });
+    // the eye: dark and large, set high on the side of the head
+    if (blink > 0.9) s += curve('M30,-10 C34,-7 40,-7 44,-10', LINE, 1.8);
+    else s += `<ellipse cx="37" cy="-11" rx="7.5" ry="5.4" fill="#2a1a12" stroke="${LINE}" stroke-width="1.3"/><circle cx="39" cy="-13" r="1.6" fill="#fff"/>`;
+    s += curve('M27,-14 C32,-20 42,-20 47,-13', LINE, 1.8);
+    // near ear
+    s += path('M-2,-46 C-6,-68 -2,-84 6,-94 C12,-78 12,-60 8,-44Z', W, { sw: 1.4 }) + curve('M2,-50 C0,-64 2,-76 6,-86', '#e8a0a0', 2, { op: 0.6 });
+    // forelock falling from under the crown
+    s += path(`M4,-52 C18,-46 24,-36 22,-24 C16,-32 10,-36 2,-40Z`, mane, { sw: 1 });
+    // jewelled browband and noseband (as on the painted Hayagrivas)
+    s += curve('M8,-40 C20,-32 30,-22 36,-14 M58,6 C62,16 64,30 60,44', GOLD, 3) + circ(22, -30, 3, RUBY, { stroke: GOLD_LO, sw: 0.8 }) + circ(62, 24, 2.6, PEARL);
+    // a pearl collar where the neck meets the body
+    for (let i = 0; i < 9; i++) s += circ(-32 + i * 4.6, 100 + Math.sin(i / 8 * Math.PI) * 4, 2.4, i % 3 ? PEARL : RUBY, { stroke: LINE, sw: 0.4 });
     s += '</g>';
     return s;
   }
@@ -764,8 +857,8 @@
     nidra:   { name: 'योगनिद्रा', skin: '#2a3570', female: true, crown: 'devi', lineCol: '#e9e2ff', odhni: '#141d45', skirt: '#1c2a5e', skirtDots: '#fdf6dc', skirtMotif: 'star', choli: '#5a69ab', noseRing: true, halo: '#5a69ab', eyesClosed: false, seed: 15 },
     sati:    { name: 'सती', skin: FAIR, female: true, crown: 'veil', odhni: '#c8372d', skirt: '#f2a516', choli: '#2e8a57', noseRing: true, tilak: 'bindi', seed: 16 },
     parvati: { name: 'पार्वती', skin: '#f0b88a', female: true, crown: 'devi', odhni: '#2e8a57', skirt: '#c8372d', choli: '#f2a516', noseRing: true, tilak: 'bindi', halo: true, seed: 17 },
-    lakshmi: { name: 'लक्ष्मी', skin: '#f3c79a', female: true, crown: 'devi', odhni: '#c2366d', skirt: '#c8372d', skirtMotif: 'flower', choli: '#f2a516', noseRing: true, tilak: 'bindi', halo: true, item: 'padma', seed: 18 },
-    indra:   { name: 'इंद्र', skin: '#f0c08a', crown: 'indra', mustache: true, dhoti: '#f2c230', torso: null, scarf: '#3d6fc4', halo: '#f6e7a6', item: 'sword', seed: 19 },
+    lakshmi: { name: 'लक्ष्मी', skin: '#f3c79a', female: true, crown: 'devi', odhni: '#c2366d', skirt: '#c8372d', skirtMotif: 'flower', choli: '#f2a516', noseRing: true, tilak: 'bindi', halo: true, arms: 4, upper: 'lakshmi', item: 'padma', seed: 18 },
+    indra:   { name: 'इंद्र', skin: '#f0c08a', crown: 'indra', mustache: true, dhoti: '#f2c230', torso: null, scarf: '#3d6fc4', halo: '#f6e7a6', item: 'vajra', seed: 19 },
     agni:    { name: 'अग्नि', skin: '#e2582a', crown: 'asura', hair: '#f29a1e', mustache: true, beardCol: '#f6d24a', dhoti: '#c8372d', scarf: '#f29a1e', lineCol: '#fff3c0', seed: 20 },
     kama:    { name: 'कामदेव', skin: '#5a8ae0', crown: 'mukut', dhoti: '#e86a8c', scarf: '#f2c230', item: 'bow', garland: '#e8505a', seed: 21 },
     chandra: { name: 'चंद्र', skin: '#e9eef8', crown: 'mukut', dhoti: '#dfe6f4', dhotiDots: '#7d8fb8', scarf: '#bcd0ff', halo: '#dfe8f6', garland: '#f4f0e0', moonCrest: true, seed: 23 },
@@ -792,7 +885,7 @@
     rati:    { name: 'रति', skin: '#f3c79a', female: true, crown: 'devi', odhni: '#e86a8c', skirt: '#f2a516', skirtMotif: 'flower', choli: '#c2366d', noseRing: true, tilak: 'bindi', seed: 44 },
     maina:   { name: 'मैना', skin: FAIR, female: true, crown: 'veil', odhni: '#e8e2cc', skirt: '#2e8a57', choli: '#c8372d', noseRing: true, tilak: 'bindi', seed: 45 },
     himavan: { name: 'हिमवान', skin: '#f0d0b0', crown: 'mukut', mustache: true, beard: 'long', beardCol: '#f4efe2', dhoti: '#dfe7f0', dhotiDots: '#3d6fc4', scarf: '#3d6fc4', seed: 46 },
-    kartikeya: { name: 'कार्तिकेय', skin: '#f0b070', crown: 'mukut', heads: 6, build: 'child', dhoti: '#c8372d', dhotiMotif: 'flower', scarf: '#2e8a57', halo: '#ffd27a', necklace: true, item: 'trishul', seed: 47 },
+    kartikeya: { name: 'कार्तिकेय', skin: '#f0b070', crown: 'mukut', heads: 6, build: 'child', dhoti: '#c8372d', dhotiMotif: 'flower', scarf: '#2e8a57', halo: '#ffd27a', necklace: true, item: 'vel', seed: 47 },
     krittika: { name: 'कृत्तिका', skin: '#f3c79a', female: true, crown: 'veil', odhni: '#5a69ab', skirt: '#2c3c80', skirtDots: '#fdf6dc', skirtMotif: 'star', choli: '#e8a13a', noseRing: true, seed: 48 },
     durvasa: { name: 'दुर्वासा', skin: '#b5704a', crown: 'rishi', beard: 'long', beardCol: '#d9d2c0', hair: '#d9d2c0', mustache: true, dhoti: '#c8372d', scarf: null, thread: true, tilak: 'tripundra', item: 'kamandal', seed: 49 },
     bali:    { name: 'बलि', skin: '#3a4a7a', lineCol: '#f3ead4', crown: 'kirit', mustache: true, build: 'large', dhoti: '#f2a516', dhotiMotif: 'flower', dhotiDots: '#c8372d', scarf: '#2e8a57', garland: true, halo: '#c9b8ff', item: 'gada', seed: 50 },
@@ -802,7 +895,7 @@
     dhanvantari: { name: 'धन्वंतरि', skin: '#4a76c8', crown: 'mukut', dhoti: '#f2c230', scarf: '#2e8a57', halo: '#bfe7a0', arms: 4, upper: 'vishnu', item: 'kalash', seed: 54 },
     bhasmasur: { name: 'भस्मासुर', skin: '#4a2a2a', lineCol: '#f3ead4', crown: 'asura', hair: '#2a2a2a', horns: true, fangs: true, mustache: true, beardCol: '#2a2a2a', build: 'large', dhoti: '#6a6a6a', dhotiMotif: 'stripe', dhotiDots: '#2a2a2a', scarf: null, eyeWhite: '#f6d24a', iris: '#8a0f1a', lips: '#c2366d', seed: 55 },
     asura2:  { name: 'असुर', skin: '#4a2a5a', lineCol: '#f3ead4', crown: 'asura', hair: '#c8372d', fangs: true, mustache: true, build: 'large', dhoti: '#2a4a2a', dhotiMotif: 'stripe', dhotiDots: '#f2c230', scarf: null, eyeWhite: '#f6d24a', iris: '#8a0f1a', item: 'sword', seed: 56 },
-    ganesha: { name: 'गणेश', skin: '#e9a27a', headKind: 'elephant', build: 'child', dhoti: '#f2c230', dhotiMotif: 'flower', scarf: '#c8372d', necklace: true, thread: true, item: 'lotus', halo: true, seed: 57 },
+    ganesha: { name: 'गणेश', skin: '#e9a27a', headKind: 'elephant', build: 'child', dhoti: '#f2c230', dhotiMotif: 'flower', scarf: '#c8372d', necklace: true, thread: true, arms: 4, upper: 'ganesha', item: 'modak', halo: true, seed: 57 },
     ganeshboy: { name: 'गणेश', skin: '#f2c070', crown: 'topknot', build: 'child', dhoti: '#f2c230', dhotiDots: '#c8372d', scarf: null, necklace: true, item: 'gada', seed: 58 },
     durga:   { name: 'दुर्गा', skin: '#f2b860', female: true, dhoti: '#c8372d', crown: 'devi', arms: 10, upper: 'devi', odhni: '#c8372d', skirt: '#c8372d', skirtMotif: 'flower', skirtDots: '#f2c230', choli: '#2e8a57', noseRing: true, tilak: 'bindi', halo: '#ffd27a', item: 'trishul', itemFar: 'chakra', seed: 59 },
     kali:    { name: 'काली', skin: '#1e2a5a', tongue: true, lineCol: '#e9e2ff', female: true, crown: 'asura', hair: '#0a0a1a', arms: 4, upper: 'devi', odhni: false, skirt: '#2a1a1a', skirtMotif: 'star', skirtDots: '#efe6cf', choli: '#8a0f1a', fangs: true, eyeWhite: '#f6d24a', iris: '#c00', lips: '#c00', thirdEye: true, item: 'sword', halo: '#8a0f1a', seed: 60 },
@@ -818,7 +911,7 @@
     kaushik: { name: 'कौशिक', skin: '#d99a62', crown: 'kirit', mustache: true, beard: 'short', build: 'large', dhoti: '#c8372d', dhotiMotif: 'flower', dhotiDots: '#f2c230', scarf: '#f2a516', necklace: true, item: 'sword', seed: 70 },
     vishwamitra: { name: 'विश्वामित्र', skin: '#c47a4a', crown: 'rishi', beard: 'long', beardCol: '#5a4a3a', hair: '#3a2a1a', mustache: true, dhoti: '#e8641e', scarf: null, thread: true, tilak: 'tripundra', item: 'mala', seed: 71 },
     vasishtha: { name: 'वसिष्ठ', skin: '#e0b48a', crown: 'rishi', beard: 'long', beardCol: '#fbf8f0', hair: '#fbf8f0', mustache: true, dhoti: '#f6efe0', dhotiDots: '#f29a1e', scarf: '#f29a1e', thread: true, tilak: 'vaishnav', item: 'kamandal', halo: '#fff3c0', seed: 72 },
-    saraswati: { name: 'सरस्वती', skin: '#f6dcc0', female: true, crown: 'devi', odhni: '#f6f2e8', skirt: '#eef2f8', skirtMotif: 'flower', skirtDots: '#3d6fc4', choli: '#3d6fc4', noseRing: true, tilak: 'bindi', halo: '#dfe7ff', item: 'veena', seed: 73 },
+    saraswati: { name: 'सरस्वती', skin: '#f6dcc0', female: true, crown: 'devi', odhni: '#f6f2e8', skirt: '#eef2f8', skirtMotif: 'flower', skirtDots: '#3d6fc4', choli: '#3d6fc4', noseRing: true, tilak: 'bindi', halo: '#dfe7ff', arms: 4, upper: 'saraswati', item: null, itemFar: null, seed: 73, prop: { name: 'veena', x: 30, y: 70, rot: -38 } },
     trayaruni: { name: 'त्रय्यारुणि', skin: '#e8b88a', crown: 'mukut', mustache: true, beard: 'long', beardCol: '#e9e4d8', dhoti: '#f2a516', dhotiMotif: 'flower', scarf: '#c8372d', necklace: true, garland: true, seed: 74 },
     satyavrat: { name: 'सत्यव्रत', skin: '#c48a5a', crown: 'turban', turban: '#6a5a4a', mustache: true, dhoti: '#8a7a6a', dhotiDots: '#4a3a2a', scarf: '#5a4a3a', seed: 75 },
     trishanku: { name: 'त्रिशंकु', skin: '#c48a5a', crown: 'mukut', mustache: true, beard: 'short', dhoti: '#f2c230', dhotiMotif: 'flower', scarf: '#c8372d', necklace: true, garland: true, seed: 76 },
