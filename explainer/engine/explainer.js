@@ -874,8 +874,8 @@
       s += `<g opacity="${f1(to)}" transform="translate(0 ${f1((1 - easeOut(to)) * 30)})">${text(c.title, 643, 345, 78, { weight: 900, fill: '#050818', op: 0.35 })}${text(c.title, 640, 340, 78, { weight: 900 })}</g>`;
       s += text(c.sub || '', 640, 430, 26, { weight: 700, fill: '#f2d0ff', op: f1(clamp((age - 1.4) / 0.6)) });
     }
-    if (out < 1) s += `<rect width="${W}" height="${H}" fill="#050818" opacity="${f1(1 - out)}"/>`;
-    if (age < 0.3) s += `<rect width="${W}" height="${H}" fill="#050818" opacity="${f1(1 - age / 0.3)}"/>`;
+    if (out < 1) s += `<rect width="${W}" height="${H}" fill="${(EXT.dip && EXT.dip()) || '#050818'}" opacity="${f1(1 - out)}"/>`;
+    if (age < 0.3) s += `<rect width="${W}" height="${H}" fill="${(EXT.dip && EXT.dip()) || '#050818'}" opacity="${f1(1 - age / 0.3)}"/>`;
     return s;
   }
 
@@ -925,7 +925,7 @@
     }
     const fin = clamp(age / 0.3), fout = clamp((g.end - T) / 0.22);
     const dip = Math.min(fin, fout);
-    if (dip < 1) s += `<rect width="${W}" height="${H}" fill="#050818" opacity="${f1((1 - dip) * 100) / 100}"/>`;
+    if (dip < 1) s += `<rect width="${W}" height="${H}" fill="${(EXT.dip && EXT.dip()) || '#050818'}" opacity="${f1((1 - dip) * 100) / 100}"/>`;
     return s;
   }
 

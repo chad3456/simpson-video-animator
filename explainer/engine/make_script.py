@@ -19,7 +19,7 @@ voice = ep["cast"].get(m.get("narrator", "narrator"), {})
 print(f"Narrator voice: `{voice.get('voice')}` at speed {voice.get('speed', 1.0)}. Score: original ambient ({m.get('music')}).\n")
 for seg in ep["sequence"]:
     if seg["type"] == "card":
-        if seg.get("style") in ("end", "endx"):
+        if seg.get("style") in ("end", "endx", "cend"):
             print(f"\n**[{fmt(times.get((seg['id'], None)))}] END CARD**\n")
             for c in seg.get("credits", []):
                 print(f"- {c}")
@@ -37,6 +37,7 @@ for seg in ep["sequence"]:
     print(f"\n_[{fmt(times.get((seg['id'], 0)))}] Scene `{seg['id']}`: {bg.get('kind', 'studio')} / {bg.get('pal', 'midnight')}; on screen: {els}._\n")
     for i, line in enumerate(seg["lines"]):
         if line.get("text"):
-            print(f"- `{fmt(times.get((seg['id'], i)))}` {line['text']}")
+            who = ep["cast"].get(line["who"], {}).get("name", line["who"]).upper() + ": " if line.get("who") else ""
+            print(f"- `{fmt(times.get((seg['id'], i)))}` {who}{line['text']}")
         else:
             print(f"- `{fmt(times.get((seg['id'], i)))}` *(music beat, {line.get('dur', 1.5)}s)*")

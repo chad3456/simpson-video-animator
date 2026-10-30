@@ -480,6 +480,26 @@
     "bible": false
   },
   {
+    "slug": "demons",
+    "dir": "explainer/episodes/demons/",
+    "playerPage": "explainer/engine/player.html",
+    "show": "LUMEN",
+    "episode": "Documentary",
+    "title": "Demons: The Revolution That Ate Its Own",
+    "logline": "A paper-collage video essay on Dostoevsky's Demons: the real 1869 murder behind it, the liberal fathers and nihilist sons, Shigalyov's paradise for one tenth, the fashionable people who flattered the radicals, three kinds of freedom, and the strongest case against Dostoevsky's verdict on the revolutionary left.",
+    "rating": "mature",
+    "format": "explainer",
+    "note": "Describes murders, a suicide and political violence from the novel and from history. A crime against a child is named but not described. Stylised paper-collage imagery, nothing graphic.",
+    "category": "Dostoevsky's Demons (book)",
+    "source": "Fyodor Dostoevsky, Demons (1871-72), Garnett translation (1916); Joseph Frank; Philip Pomper; Franco Venturi; Catechism of a Revolutionary (1869); Berdyaev (1918); Camus (1959); Gorky (1913).",
+    "duration": 1596.828,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": true,
+    "script": true,
+    "bible": true
+  },
+  {
     "slug": "suicidal-empathy",
     "dir": "episodes/suicidal-empathy/",
     "playerPage": "engine/player.html",
