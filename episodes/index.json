@@ -1117,6 +1117,38 @@
     "poster": "poster.jpg",
     "player": false,
     "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "अग्नि-स्तंभ",
+        "logline": "ब्रह्मा और विष्णु में श्रेष्ठता को लेकर युद्ध छिड़ जाता है, तभी उनके बीच एक ऐसा अग्नि-स्तंभ प्रकट होता है जिसका न आदि है न अंत।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 490.332
+      }
+    }
+  },
+  {
+    "slug": "sp-e02-naradas-pride",
+    "dir": "shiva-purana/episodes/e02-naradas-pride/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E2",
+    "title": "Narada's Pride",
+    "logline": "Narada defeats desire, and then boasts about it. So Vishnu builds him a city, a princess and a very surprising face.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Srishti Khanda, chapters 2 to 4 (tr. Bibek Debroy)",
+    "duration": 386.348,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
     "bible": false
   }
 ]
