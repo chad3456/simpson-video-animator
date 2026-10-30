@@ -1309,6 +1309,114 @@
     "poster": "poster.jpg",
     "player": false,
     "script": true,
-    "bible": false
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "वीरभद्र",
+        "logline": "शिव अपनी जटा की एक लट उखाड़ते हैं, और उससे वीरभद्र और महाकाली प्रकट होते हैं। स्वयं विष्णु भी उनका रास्ता नहीं रोक पाते।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 340.002
+      }
+    }
+  },
+  {
+    "slug": "sp-e08-burning-of-kama",
+    "dir": "shiva-purana/episodes/e08-burning-of-kama/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E8",
+    "title": "The Burning of Kama",
+    "logline": "Sati is reborn as Parvati, an asura can only be killed by Shiva's son, and Shiva will not open his eyes. So the gods send the god of love.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 6 to 19 (tr. Bibek Debroy)",
+    "duration": 254.023,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "कामदेव का दहन",
+        "logline": "सती पार्वती के रूप में फिर जन्म लेती हैं, एक असुर को केवल शिव का पुत्र मार सकता है, और शिव आँखें नहीं खोलते। तब देवता प्रेम के देवता को भेजते हैं।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 287.449
+      }
+    }
+  },
+  {
+    "slug": "sp-e09-parvatis-penance",
+    "dir": "shiva-purana/episodes/e09-parvatis-penance/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E9",
+    "title": "Parvati's Penance",
+    "logline": "Parvati gives up her silks for bark and her food for leaves, then even leaves. Seven sages try to talk her out of it, and then a strange young ascetic tries harder.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 22 to 30 (tr. Bibek Debroy)",
+    "duration": 244.612,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "पार्वती की तपस्या",
+        "logline": "पार्वती रेशम छोड़कर वल्कल पहनती हैं, भोजन छोड़कर पत्ते खाती हैं, फिर पत्ते भी छोड़ देती हैं। सप्तर्षि उन्हें समझाने आते हैं, और फिर एक विचित्र युवा तपस्वी उससे भी ज़्यादा कोशिश करता है।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 270.351
+      }
+    }
+  },
+  {
+    "slug": "sp-e10-wedding-of-shiva",
+    "dir": "shiva-purana/episodes/e10-wedding-of-shiva/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E10",
+    "title": "The Wedding of Shiva",
+    "logline": "Mena waits on the palace roof to see her famous son-in-law. Every god who arrives is more dazzling than the last, and none of them is Shiva. Then Shiva arrives.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 43 to 55 (tr. Bibek Debroy)",
+    "duration": 267.866,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "शिव विवाह",
+        "logline": "मेना अपने प्रसिद्ध दामाद को देखने महल की छत पर प्रतीक्षा करती हैं। हर आने वाला देवता पिछले से अधिक तेजस्वी है, और उनमें से कोई शिव नहीं। फिर शिव आते हैं।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 278.095
+      }
+    }
   }
 ]
