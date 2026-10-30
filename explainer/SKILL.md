@@ -130,6 +130,22 @@ To add a visual, write a function `(props, t, seed, age) => svgString` drawn aro
 
 **SFX:** `whoosh pop chime tick swell thump` (explainer set) plus the toon set.
 
+## 4b. The collage look (`meta.look: "collage"`)
+
+A paper-and-marker video-essay style for book and history documentaries, loaded from `engine/collage.js`. Set `"look": "collage"` and `"music": "collage"` (an original piano pulse over a pad) in `meta`, use `bg.kind: "paperc"` with `pal` one of `cream news sage mustard night slate oxblood` (plus `grid`, `ruled`, `scraps`), and build scenes from:
+
+| type | props |
+|---|---|
+| `cut` | torn cut-out portrait: `who` (preset: dostoevsky stavrogin pyotr stepan shatov kirillov shigalyov liputin varvara yulia marya lebyadkin karmazinov lembke erkel fedka nechayev ivanov tikhon sofya lisa marie gorky camus berdyaev bakunin student) or `face:{hair, hairC, beard, mous, brow, eyes, mouth, coat, tie, female, ...}`, `name role color w h mood mask:0..1 cross:0..1` |
+| `hl` | text with highlighter sweeps over `[[phrases]]`; `size card by anchor font hcolor draw` |
+| `headline` | bold condensed type on a torn strip: `text size bg color type` |
+| `scrib` | red marker: `kind: circle underline box check cross bracket arrow` (`x2 y2 bend label`) |
+| `strings` | pins and red string: `pts links draw` |
+| `sheet` | paper: `kind: page letter clip manifesto note`, `kicker head text fill stamp tape` |
+| `stampc`, `openbook`, `ptl` (timeline), `herd` (`elite split`), `cell` (`members centre ring`), `crowdp` (`riot`), `town` (`burn river`), `pigs` (`run`), `park` (`ripple lantern`), `stakes` (`aim`), `train` (`go`), `balance`, `candle`, `emptyroom`, `scrap` | set pieces |
+
+Cards: `ctitle` (title on red paper), `cchapter` (`num kicker title sub who`), `cquote` (`text by`), `cend` (rolling `credits`). Sources go in `cite` elements, drawn as small paper tags bottom left. Portraits are invented drawings; never trace a photograph. Lines may carry `"who"` for a short character read in its own Kokoro blend. Example: `episodes/demons/build.py`.
+
 ## 5. Production
 
 ```bash

@@ -7,3 +7,11 @@ Unmodified latin subsets from Fontsource (npm `@fontsource/*`):
 - Special Elite: Apache License 2.0
 
 License texts sit next to the files.
+
+# Fonts for the paper collage look (`meta.look: "collage"`)
+
+Unmodified files from the google/fonts repository:
+
+- Archivo Black: SIL Open Font License 1.1
+- Libre Franklin (variable, roman and italic): SIL Open Font License 1.1
+- Permanent Marker: Apache License 2.0
