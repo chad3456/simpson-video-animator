@@ -1213,6 +1213,102 @@
     "poster": "poster.jpg",
     "player": false,
     "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "चंचुला",
+        "logline": "व्यर्थ जीवन बिताने वाली एक स्त्री शिव कथा के कुछ शब्द सुनकर बदल जाती है। फिर वह अपने उस पति को बचाने लौटती है जो प्रेत बन गया था।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 296.207
+      }
+    }
+  },
+  {
+    "slug": "sp-e05-dakshas-daughter",
+    "dir": "shiva-purana/episodes/e05-dakshas-daughter/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E5",
+    "title": "Daksha's Daughter",
+    "logline": "The goddess is born as Daksha's daughter Sati and wins Shiva through devotion. Then, in a forest, she doubts him, takes the form of Sita, and pays a price.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Sati Khanda, chapters 14 to 25 (tr. Bibek Debroy)",
+    "duration": 284.178,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "दक्ष की पुत्री",
+        "logline": "देवी दक्ष की पुत्री सती के रूप में जन्म लेती हैं और भक्ति से शिव को पाती हैं। फिर एक वन में वे शिव पर संदेह करती हैं, सीता का रूप धरती हैं, और उसकी कीमत चुकाती हैं।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 332.002
+      }
+    }
+  },
+  {
+    "slug": "sp-e06-the-uninvited",
+    "dir": "shiva-purana/episodes/e06-the-uninvited/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E6",
+    "title": "The Uninvited",
+    "logline": "Daksha holds the greatest sacrifice the world has seen and invites everyone except Shiva. Sati goes anyway.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Sati Khanda, chapters 26 to 31 (tr. Bibek Debroy)",
+    "duration": 285.222,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "बिन बुलाए",
+        "logline": "दक्ष संसार का सबसे बड़ा यज्ञ करते हैं और शिव को छोड़कर सबको बुलाते हैं। सती फिर भी जाती हैं।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 317.54
+      }
+    }
+  },
+  {
+    "slug": "sp-e07-virabhadra",
+    "dir": "shiva-purana/episodes/e07-virabhadra/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E7",
+    "title": "Virabhadra",
+    "logline": "Shiva tears out a lock of his hair, and from it rise Virabhadra and Mahakali. Not even Vishnu can stand in their way.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Sati Khanda, chapters 32 to 43 (tr. Bibek Debroy)",
+    "duration": 311.446,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
     "bible": false
   }
 ]
