@@ -1149,6 +1149,70 @@
     "poster": "poster.jpg",
     "player": false,
     "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "नारद का अभिमान",
+        "logline": "नारद काम को जीत लेते हैं, और फिर उसका बखान करते हैं। तब विष्णु उनके लिए एक नगर, एक राजकुमारी और एक बड़ा अनोखा चेहरा रचते हैं।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 451.01
+      }
+    }
+  },
+  {
+    "slug": "sp-e03-thief-and-lamp",
+    "dir": "shiva-purana/episodes/e03-thief-and-lamp/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E3",
+    "title": "The Thief and the Lamp",
+    "logline": "A gambler steals food from a temple on Shivaratri and tears his cloth to brighten a lamp. That one flame carries him across three lives, all the way to Kailasa.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Rudra Samhita, Srishti Khanda, chapters 17 to 19 (tr. Bibek Debroy)",
+    "duration": 332.627,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false,
+    "dub": {
+      "hi": {
+        "dir": "hi/",
+        "label": "हिंदी",
+        "title": "चोर और दीपक",
+        "logline": "एक जुआरी शिवरात्रि पर मंदिर से भोग चुराता है और दीपक तेज़ करने के लिए अपना वस्त्र फाड़ देता है। वही एक लौ उसे तीन जन्मों के पार, कैलास तक ले जाती है।",
+        "video": "episode.mp4",
+        "poster": "poster.jpg",
+        "script": true,
+        "duration": 390.765
+      }
+    }
+  },
+  {
+    "slug": "sp-e04-chanchula",
+    "dir": "shiva-purana/episodes/e04-chanchula/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E4",
+    "title": "Chanchula",
+    "logline": "A woman who wasted her life hears a few words of Shiva's story and turns around. Then she goes back for the husband who became a ghost.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Shiva Purana Mahatmya, chapters 3 to 5 (tr. Bibek Debroy)",
+    "duration": 276.829,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
     "bible": false
   }
 ]
