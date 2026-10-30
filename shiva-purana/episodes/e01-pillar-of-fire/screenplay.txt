@@ -1,0 +1,226 @@
+title: The Pillar of Fire
+title_hi: अग्नि-स्तंभ
+episode: 1
+slug: e01-pillar-of-fire
+kicker: Issue One
+kicker_hi: पहला अंक
+sub: Who is the greatest of the gods?
+sub_hi: देवताओं में सबसे बड़ा कौन?
+logline: Brahma and Vishnu go to war over who is supreme, until a column of fire with no beginning and no end splits the sky between them.
+logline_hi: ब्रह्मा और विष्णु में श्रेष्ठता को लेकर युद्ध छिड़ जाता है, तभी उनके बीच एक ऐसा अग्नि-स्तंभ प्रकट होता है जिसका न आदि है न अंत।
+source: Shiva Purana, Vidyeshvara Samhita, chapters 6 to 9 (tr. Bibek Debroy)
+
+== OPEN | dur=9 | figs=brahma5,shiva,vishnu
+
+# ------------------------------------------------------------ Naimisha: the frame
+== SCENE naimisha | set=forest time=dawn music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+@ rishi2 fig=rishi2 x=180 y=665 s=0.8 face=1 pose=namaste emo=calm seat=lotus z=-1
+BEAT 1.2 [wide] (sfx=bell)
+NARRATOR [wide]: In the forest of Naimisha, the sages gathered around Suta, the great teller of tales. || नैमिष वन में ऋषिगण, महान कथावाचक सूत जी के चारों ओर एकत्र हुए।
+RISHI (pose=namaste) [mid:rishi]: O Suta, tell us. Why is Shiva worshipped as the lingam, and not only in his human form? || हे सूत जी, बताइए। शिव की पूजा लिंग रूप में क्यों होती है, केवल मानव रूप में ही क्यों नहीं?
+SUTA (smile, pose=raise) [mid:suta]: That is the oldest story of all. It begins with a quarrel between two gods. || यह सबसे पुरानी कथा है। इसका आरंभ दो देवताओं के झगड़े से होता है।
+SUTA (calm) [close:suta]: Listen, and I will tell you what Nandi once told the sage Sanatkumara. || सुनिए। मैं आपको वही सुनाता हूँ, जो कभी नंदी ने ऋषि सनत्कुमार को सुनाया था।
+
+== TITLE | dur=7 | kicker=Issue One | kicker_hi=पहला अंक | title=The Pillar of Fire | title_hi=अग्नि-स्तंभ | sub=Who is the greatest of the gods? | sub_hi=देवताओं में सबसे बड़ा कौन? | figs=brahma5,vishnu | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=I Am the Lord! | title_hi=मैं ही स्वामी हूँ!
+
+# ------------------------------------------------------------ Vishnu on Shesha; Brahma arrives
+== SCENE vaikuntha | set=vaikuntha music=vishnu amb=ocean | caption=Long, long ago | caption_hi=बहुत, बहुत पहले
++ shesha kind=shesha x=880 y=640 s=1.1 z=-1
+@ vishnu x=880 y=590 s=0.8 face=-1 pose=vishnu emo=serene seat=lotus shadow=false
+@ brahma fig=brahma5 x=-200 y=660 s=0.92 face=1 pose=brahma emo=neutral
+BEAT 1.5 [wide] (sfx=sparkle)
+NARRATOR [wide]: Once, long ago, Vishnu lay resting on the great serpent Shesha, surrounded by splendour. || एक बार, बहुत पहले, विष्णु महासर्प शेषनाग पर विश्राम कर रहे थे, चारों ओर वैभव फैला था।
+> brahma x=330 t=2.6 walk=1
+NARRATOR [~wide]: Then Brahma, the creator, came wandering by on his swan. || तभी सृष्टिकर्ता ब्रह्मा अपने हंस पर घूमते हुए वहाँ आ पहुँचे।
+> brahma walk=0 t=0.3
+BRAHMA (angry, pose=point) [mid:brahma]: What kind of fellow are you? You see me, and you keep lying there? || तुम कैसे व्यक्ति हो? मुझे देखकर भी लेटे हुए हो?
+BRAHMA (rage, pose=point) [close:brahma] (shout): Get up, child! Your lord has arrived! || उठो, बालक! तुम्हारा स्वामी आया है!
+VISHNU (smile, pose=bless) [mid:vishnu]: Welcome, child. Sit. Why does your face look so troubled? || स्वागत है, वत्स। बैठो। तुम्हारा मुख इतना व्याकुल क्यों है?
+BRAHMA (angry, pose=chest) [two:brahma,vishnu]: I am the grandfather of the universe. I am your protector! || मैं जगत का पितामह हूँ। मैं तुम्हारा रक्षक हूँ!
+VISHNU (sly, pose=point) [close:vishnu]: The whole universe lives inside me. You were born from the lotus in my navel. You are my son. || सारा ब्रह्मांड मुझमें स्थित है। तुम मेरी नाभि के कमल से जन्मे हो। तुम मेरे पुत्र हो।
+BRAHMA (rage, pose=strike) [brahma|vishnu] (shake=4): I am the lord! || मैं ही स्वामी हूँ!
+VISHNU (angry, pose=point) [vishnu|brahma] (shake=4): No. I am the lord! || नहीं। स्वामी मैं हूँ!
+
+# ------------------------------------------------------------ the war of the gods
+== SCENE war | set=cosmos music=battle amb=storm trans=ink
+@ brahma fig=brahma5 x=300 y=660 s=0.9 face=1 pose=strike emo=rage
+@ vishnu x=980 y=660 s=0.9 face=-1 pose=strike emo=angry
+BEAT 1 [wide] (sfx=nagara)
+NARRATOR [~wide] (speed=1): They fought. Their mounts fought, the swan against the eagle Garuda. Their followers fought on both sides. || दोनों में युद्ध छिड़ गया। उनके वाहन भी लड़े, हंस और गरुड़। दोनों ओर उनके अनुचर भी लड़ने लगे।
++ b1 kind=beam x=360 y=380 dx=520 dy=-20 col=#ff8a1e z=55
++ b2 kind=beam x=920 y=360 dx=-520 dy=30 col=#5ab0ff cold=true z=55
+BEAT 1.4 [wide] (sfx=whoosh, bang=ZZAKK!|सननन!, bangPos=640,170)
+- b1
+- b2
+NARRATOR [wide] (capPos=bottom): The devas came in their chariots to watch. At first they showered flowers. Then they began to tremble. || देवता अपने विमानों में युद्ध देखने आए। पहले उन्होंने फूल बरसाए। फिर वे काँपने लगे।
+VISHNU (rage, pose=raise) [low:vishnu]: Then face the Maheshvara weapon! || तो अब माहेश्वर अस्त्र का सामना करो!
+BRAHMA (rage, pose=raise) [low:brahma]: And you, the Pashupata! || और तुम, पाशुपत का!
++ c1 kind=clash x=640 y=330 s=1.4 z=60
++ rays kind=rays x=640 y=330 n=24 r=800 col=#fff3a0 op=0.4 z=-2
+BEAT 1.8 [wide] (sfx=boom,thunder, shake=10, flash, bang=KRA-KOOM!|धड़ाम!, bangPos=640,180)
+NARRATOR [wide] (tint=#ff3a0a,0.18): The two weapons rose like ten thousand suns. The three worlds began to burn. It was as if the end of time had come. || दोनों अस्त्र दस हज़ार सूर्यों के समान उठे। तीनों लोक जलने लगे। मानो प्रलय का समय आ गया हो।
+
+# ------------------------------------------------------------ Kailash
+== SCENE kailash | set=kailash time=night music=shiva amb=wind trans=wipe | caption=Mount Kailasa | caption_hi=कैलास पर्वत
+@ shiva x=560 y=650 s=0.95 face=1 pose=abhaya emo=serene seat=lotus
+@ parvati x=760 y=650 s=0.85 face=-1 pose=namaste emo=calm seat=lotus
+@ devas fig=deva x=1150 y=665 s=0.8 face=-1 pose=namaste emo=fear
+@ indra x=1010 y=665 s=0.85 face=-1 pose=namaste emo=fear
+BEAT 1.2 [wide] (sfx=om)
+NARRATOR [wide]: Terrified, the devas fled to Mount Kailasa, where Shiva sat with Uma, surrounded by his ganas. || भयभीत देवता कैलास पर्वत की ओर भागे, जहाँ शिव उमा के साथ अपने गणों से घिरे बैठे थे।
+INDRA (fear, pose=beg) [mid:indra]: Mahadeva, save us! Brahma and Vishnu are burning down the worlds! || महादेव, हमें बचाइए! ब्रह्मा और विष्णु लोकों को जला रहे हैं!
+SHIVA (smile) [mid:shiva]: Children, I already know about their battle. Do not be afraid. || बच्चो, मैं उनके युद्ध के बारे में पहले से जानता हूँ। डरो मत।
+SHIVA (calm, pose=bless) [close:shiva]: I will go there myself. || मैं स्वयं वहाँ जाऊँगा।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=The Column Without End | title_hi=अनंत स्तंभ
+
+# ------------------------------------------------------------ the pillar
+== SCENE pillar | set=cosmos music=wonder amb=void trans=flash
+@ brahma fig=brahma5 x=280 y=660 s=0.85 face=1 pose=raise emo=rage
+@ vishnu x=1000 y=660 s=0.85 face=-1 pose=raise emo=rage
++ c1 kind=clash x=640 y=330 s=1.2 z=60
+BEAT 1 [wide] (sfx=rumble)
+- c1
++ pillar kind=pillar x=640 y=360 w=120 growT=1.6 z=-1
+> brahma pose=fear emo=shock t=0.4 d=0.5
+> vishnu pose=fear emo=shock t=0.4 d=0.5
+BEAT 2.4 [wide] (sfx=boom, flash, shake=8, bang=FWOOOM!|भड़ाक!, bangPos=980,170)
+NARRATOR [wide] (capPos=bottom): Shiva hid himself in the clouds. And between the two gods, a terrible column of fire burst into being. || शिव बादलों में छिप गए। और दोनों देवताओं के बीच एक भयंकर अग्नि-स्तंभ प्रकट हो गया।
+NARRATOR [~at:640,300,1.6]: Both blazing weapons fell into it, and were quenched in an instant. || दोनों धधकते अस्त्र उसमें समा गए, और पल भर में शांत हो गए।
+VISHNU (shock) [mid:vishnu]: What is this? It is beyond all the senses. || यह क्या है? यह तो सभी इंद्रियों से परे है।
+BRAHMA (shock, pose=pointUp) [low:brahma]: It rises past the sky, and sinks below the earth. || यह आकाश के पार उठता है, और धरती के नीचे तक जाता है।
+VISHNU (calm, pose=point) [two:brahma,vishnu]: Let us find its top and its bottom. We must do it together. || आओ, इसका ऊपरी सिरा और निचला सिरा खोजें। यह काम हमें साथ मिलकर करना होगा।
+VISHNU (calm) [mid:vishnu]: I will go down. You go up. || मैं नीचे जाऊँगा। तुम ऊपर जाओ।
+
+# ------------------------------------------------------------ the boar and the swan
+== SCENE search | set=cosmos music=tension amb=void trans=cut | panel=split
++ pillar kind=pillar x=640 y=360 w=120 growT=0.01 z=-1
+@ boar x=380 y=640 s=1 face=1
+@ swan x=900 y=300 s=0.9 face=-1 fly=1
+BEAT 1.2 [at:380,520,1.6|at:900,260,1.6] (sfx=magic,whoosh)
+NARRATOR [at:380,520,1.6|at:900,260,1.6]: Vishnu became a great boar and dug down into the underworld. Brahma became a swan and flew up into the sky. || विष्णु ने विशाल वराह का रूप लिया और पाताल में खुदाई करते चले गए। ब्रह्मा हंस बनकर आकाश में उड़ चले।
+> boar y=900 t=4 ease=linear
+> swan y=-200 t=4 ease=linear
+NARRATOR [~at:640,360,1]: Down and down went the boar. Up and up flew the swan. Years passed. || वराह नीचे, और नीचे गया। हंस ऊपर, और ऊपर उड़ा। वर्ष बीत गए।
+
+# ------------------------------------------------------------ the ketaki
+== SCENE ketaki | set=sky time=night music=narad amb=wind trans=wipe
++ pillar kind=pillar x=300 y=360 w=120 growT=0.01 z=-1
+@ swan x=820 y=520 s=0.95 face=-1 fly=1
++ flower kind=ketaki x=760 y=-80 s=1.4 z=10
+BEAT 1 [wide] (sfx=wind)
+> flower y=250 t=3
+NARRATOR [wide]: High above, Brahma saw something drifting down. A ketaki flower, as fresh and fragrant as the day it fell. || ऊँचे आकाश में ब्रह्मा ने कुछ नीचे गिरता देखा। एक केतकी का फूल, जो उतना ही ताज़ा और सुगंधित था जितना गिरने के दिन।
+BRAHMA [at:780,330,1.8]: O king of flowers! Why are you falling? Who wore you? || हे पुष्पराज! तुम क्यों गिर रहे हो? तुम्हें किसने धारण किया था?
+KETAKI [at:760,260,2.2]: I fell from Shiva's hair when he laughed and shook his head. I have been falling for ages, and I have only reached the middle. || जब शिव हँसे और उन्होंने सिर हिलाया, तब मैं उनकी जटाओं से गिरा। युगों से गिर रहा हूँ, और अभी केवल बीच तक पहुँचा हूँ।
+KETAKI [~at:760,260,2]: You will never see the top. || तुम इसका ऊपरी सिरा कभी नहीं देख पाओगे।
+BRAHMA (sly) [at:780,330,1.8]: Then, my great friend, do something for me. Come with me to Vishnu. || तो, मेरे परम मित्र, मेरा एक काम करो। मेरे साथ विष्णु के पास चलो।
+BRAHMA (sly) [at:780,330,2.4] (think): Tell him that Brahma has seen the top of the column. || उनसे कहना कि ब्रह्मा ने स्तंभ का ऊपरी सिरा देख लिया है।
+NARRATOR [wide] (capPos=bottom): Brahma bowed again and again before the flower. And the flower agreed. || ब्रह्मा ने बार-बार उस फूल के आगे सिर झुकाया। और फूल मान गया।
+
+# ------------------------------------------------------------ the lie
+== SCENE lie | set=cosmos music=curse amb=void trans=wipe
++ pillar kind=pillar x=640 y=360 w=120 growT=0.01 z=-1
+@ vishnu x=950 y=660 s=0.9 face=-1 pose=grief emo=sad
+@ brahma fig=brahma5 x=330 y=660 s=0.9 face=1 pose=rest emo=joy
++ flower kind=ketaki x=480 y=330 s=1.1 z=10
+BEAT 1 [wide]
+NARRATOR [wide]: Vishnu returned, worn out, his joy gone. Brahma saw him and danced with delight. || विष्णु थके-हारे, उदास होकर लौटे। उन्हें देखकर ब्रह्मा खुशी से नाच उठे।
+VISHNU (sad, pose=chest) [mid:vishnu]: I went below the underworld. I could not find where it begins. || मैं पाताल से भी नीचे गया। मुझे इसका आरंभ नहीं मिला।
+BRAHMA (joy, pose=pointUp) [mid:brahma]: O Hari! I have seen the top of the column. And this ketaki is my witness. || हे हरि! मैंने स्तंभ का ऊपरी सिरा देख लिया है। और यह केतकी मेरी साक्षी है।
+BRAHMA (sly, pose=point) [two:brahma,vishnu]: Tell him! || बताओ इन्हें!
+KETAKI [at:480,330,2.2]: It is true. He saw the top. || यह सच है। इन्होंने ऊपरी सिरा देखा है।
+> vishnu pose=namaste emo=calm t=0.8
+NARRATOR [~two:brahma,vishnu]: Vishnu believed them. He bowed before Brahma and worshipped him. || विष्णु ने उनकी बात मान ली। उन्होंने ब्रह्मा को प्रणाम किया और उनकी पूजा की।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Truth Revealed | title_hi=सत्य का प्रकाश
+
+# ------------------------------------------------------------ Shiva emerges
+== SCENE reveal | set=cosmos music=shiva amb=void trans=flash
++ glow kind=glow x=640 y=380 r=560 z=-2
++ pillar kind=pillar x=640 y=360 w=120 growT=0.01 z=-1
+@ shiva x=640 y=680 s=1.05 face=1 pose=trident emo=serene anim=materialize inDur=2 aura=0.8
+@ vishnu x=1020 y=660 s=0.85 face=-1 pose=fear emo=shock
+@ brahma fig=brahma5 x=260 y=660 s=0.85 face=1 pose=fear emo=shock
++ flower kind=ketaki x=400 y=330 s=1.0 z=10
+BEAT 3 [wide] (sfx=om,swell, flash, bang=OM|ॐ, bangPos=640,150, bangCol=#ffd22e)
+NARRATOR [wide] (capPos=bottom): Then, to punish the deceit, Shiva himself stepped out of the lingam of fire. || तब, उस छल का दंड देने के लिए, स्वयं शिव उस अग्नि-लिंग से प्रकट हुए।
+> vishnu pose=namaste emo=sad t=0.6
+VISHNU (sad) [mid:vishnu]: Your form has no beginning and no end. It was our pride that blinded us. Forgive us, lord. || आपका रूप अनादि और अनंत है। हमारे अहंकार ने हमें अंधा कर दिया था। हमें क्षमा करें, प्रभु।
+SHIVA (smile, pose=bless) [mid:shiva]: Hari, I am pleased with you. Even while you longed to be lord, you did not stray from the truth. || हरि, मैं तुमसे प्रसन्न हूँ। स्वामी बनने की इच्छा में भी तुम सत्य से नहीं डिगे।
+SHIVA (calm, pose=bless) [close:shiva]: From today, you will be worshipped as my equal, with your own temples, your own festivals. || आज से तुम मेरे समान पूजे जाओगे, तुम्हारे अपने मंदिर होंगे, अपने उत्सव होंगे।
+
+# ------------------------------------------------------------ Bhairava
+== SCENE bhairava | set=cosmos music=battle amb=fire trans=cut | tint=#5a0a0a,0.15
++ pillar kind=pillar x=900 y=360 w=110 growT=0.01 z=-2
+@ shiva x=1040 y=660 s=0.88 face=-1 pose=abhaya emo=angry
+@ brahma fig=brahma5 x=380 y=660 s=0.9 face=1 pose=fear emo=fear
+@ bhairava x=760 y=660 s=1.0 face=-1 pose=sword emo=rage anim=materialize inDur=1
+@ vishnu x=150 y=660 s=0.82 face=1 pose=fear emo=shock
+BEAT 0.5 [mid:shiva]
+NARRATOR [close:shiva] (sfx=thunder): From between his eyebrows, Mahadeva brought forth a terrible being. Bhairava. || तब महादेव ने अपनी भौंहों के बीच से एक भयानक रूप उत्पन्न किया। भैरव।
+BEAT 1.6 [low:bhairava] (sfx=roar, shake=8, bang=GRRRAH!|हुंकार!, bangPos=300,170)
+BHAIRAVA (rage, pose=sword) [mid:bhairava]: Lord, what is your command? || प्रभु, क्या आज्ञा है?
+SHIVA (angry) [close:shiva]: This is Brahma, the first of the gods. Honour him with your sharp sword. || यह ब्रह्मा हैं, देवताओं में प्रथम। अपनी तीखी तलवार से इनका सत्कार करो।
+> bhairava x=520 t=0.8
+> brahma pose=beg seat=kneel t=0.5
+NARRATOR [two:bhairava,brahma] (sfx=whoosh, shake=5): Bhairava seized the fifth head, the one that had told the lie. Brahma shook like a plantain leaf in the wind. || भैरव ने ब्रह्मा का पाँचवाँ सिर पकड़ लिया, वही जिसने झूठ बोला था। ब्रह्मा केले के पत्ते की तरह काँपने लगे।
+> vishnu x=260 pose=beg seat=kneel emo=sad t=0.8
+VISHNU (sad, pose=beg) [mid:vishnu]: O Isha! It was you who gave him these five heads. Forgive him. Restrain your anger. || हे ईश! आपने ही इन्हें ये पाँच सिर दिए थे। इन्हें क्षमा कीजिए। अपना क्रोध शांत कीजिए।
+> shiva emo=calm pose=halt t=0.6
+SHIVA (calm, pose=halt) [mid:shiva]: Bhairava. Stop. || भैरव। रुक जाओ।
+> bhairava x=760 pose=rest emo=angry t=1
+BEAT 1.2 [wide]
+
+# ------------------------------------------------------------ the curse and the boon
+== SCENE curse | set=cosmos music=curse amb=void trans=wipe
++ glow kind=glow x=820 y=380 r=420 z=-2
+@ shiva x=860 y=660 s=0.95 face=-1 pose=bless emo=calm
+@ brahma x=380 y=660 s=0.9 face=1 pose=namaste emo=sad
+BEAT 0.6 [wide]
+NARRATOR [wide] (capPos=bottom): Brahma's life was spared. From that day he had four heads. But there was still a price. || ब्रह्मा के प्राण बच गए। उस दिन से उनके चार सिर रहे। पर कीमत तो चुकानी ही थी।
+SHIVA (angry, pose=point) [mid:shiva]: Brahma, you lied for the sake of worship. So you will not be worshipped in the worlds. No temples, no festivals of your own. || ब्रह्मा, तुमने पूजा पाने के लिए झूठ बोला। इसलिए संसार में तुम्हारी पूजा नहीं होगी। न तुम्हारे मंदिर होंगे, न तुम्हारे उत्सव।
+BRAHMA (sad, pose=namaste) [mid:brahma]: Lord, you have spared my head. That alone is a boon to me. || प्रभु, आपने मेरा सिर बचा लिया। मेरे लिए यही वरदान है।
+SHIVA (smile, pose=bless) [close:shiva]: Then take another. In every sacrifice and sacred rite, you will be the guru. Without you, no sacrifice will bear fruit. || तो एक और लो। हर यज्ञ और हर पवित्र अनुष्ठान में तुम गुरु रहोगे। तुम्हारे बिना कोई यज्ञ फल नहीं देगा।
+
+# ------------------------------------------------------------ the ketaki is judged
+== SCENE flowerjudged | set=cosmos music=sorrow amb=void trans=cut
+@ shiva x=860 y=660 s=0.95 face=-1 pose=point emo=angry
++ flower kind=ketaki x=420 y=360 s=1.5 z=10
+BEAT 0.5 [wide]
+SHIVA (angry, pose=point) [mid:shiva]: And you, ketaki. You bore false witness. Go far away. I will never again be worshipped with you. || और तुम, केतकी। तुमने झूठी गवाही दी। दूर चले जाओ। अब मेरी पूजा में तुम्हें कभी नहीं चढ़ाया जाएगा।
+> flower x=360 y=420 t=1
+KETAKI [at:420,360,2]: Forgive me, father! I have seen you now. How can the sin of a lie remain on me? || क्षमा करें, पिता! अब तो मैंने आपके दर्शन कर लिए हैं। झूठ का पाप मुझ पर कैसे टिक सकता है?
+> shiva pose=bless emo=calm t=0.6
+SHIVA (calm, pose=bless) [mid:shiva]: I speak the truth, so I will not wear you. But my followers will. And you may adorn the canopies above me. || मैं सत्य बोलता हूँ, इसलिए मैं तुम्हें धारण नहीं करूँगा। पर मेरे भक्त करेंगे। और तुम मेरे ऊपर लगे मंडपों की शोभा बन सकते हो।
+
+# ------------------------------------------------------------ Shivaratri and the lingam
+== SCENE lingam | set=temple music=shiva amb=temple trans=ink
++ pillar kind=pillar x=640 y=360 w=120 growT=0.01 z=-1
+@ brahma x=320 y=660 s=0.85 face=1 pose=namaste emo=serene
+@ vishnu x=960 y=660 s=0.85 face=-1 pose=namaste emo=serene
+BEAT 1 [wide] (sfx=bells)
+NARRATOR [wide]: Humbled at last, Brahma and Vishnu worshipped Shiva together, the first ever to do so. || अंततः विनम्र होकर, ब्रह्मा और विष्णु ने साथ मिलकर शिव की पूजा की। ऐसा करने वाले वे पहले थे।
+- pillar od=0.2
++ ling kind=lingam x=640 y=640 s=1.3 glow=true anim=grow inDur=2
+BEAT 2.5 [~at:640,520,1.6] (sfx=swell)
+SHIVA (calm) [at:640,520,1.6] (sky): This day will be called Shivaratri. Whoever fasts and worships my lingam on this night gains the fruit of a whole year of worship. || यह दिन शिवरात्रि कहलाएगा। जो इस रात उपवास करके मेरे लिंग की पूजा करेगा, उसे पूरे वर्ष की पूजा का फल मिलेगा।
+SHIVA (calm) [at:640,520,1.6] (sky): The column has no beginning and no end. But so that the world may see it and worship it, it will become small. || इस स्तंभ का न आदि है, न अंत। पर संसार इसे देख सके और पूज सके, इसलिए यह छोटा हो जाएगा।
+NARRATOR [~wide] (capPos=bottom): The mountain of fire became Arunachala, the red mountain. And the lingam became the sign of Shiva, formless and with form, everywhere at once. || वह अग्नि-पर्वत अरुणाचल कहलाया, लाल पर्वत। और लिंग शिव का चिह्न बन गया, निराकार भी और साकार भी, हर जगह एक साथ।
+
+# ------------------------------------------------------------ frame close
+== SCENE close | set=forest time=dusk music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
+BEAT 0.6 [wide]
+SUTA (smile, pose=bless) [mid:suta]: So remember. Pride blinds even gods. And the one who tells the truth, like Vishnu, is honoured. || तो याद रखिए। अहंकार देवताओं को भी अंधा कर देता है। और जो सत्य बोलता है, विष्णु की तरह, उसका सम्मान होता है।
+RISHI (joy, pose=namaste) [mid:rishi]: And who was the next to be humbled, Suta? || और अगली बार किसका अहंकार टूटा, सूत जी?
+SUTA (sly) [close:suta]: The cleverest sage of all. Narada. || सबसे चतुर ऋषि का। नारद का।
+
+== NEXT | dur=8 | title=Narada's Pride | title_hi=नारद का अभिमान | sub=The sage who wanted to marry a princess | sub_hi=वह ऋषि जो राजकुमारी से विवाह करना चाहता था
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue One: The Pillar of Fire | sub_hi=पहला अंक: अग्नि-स्तंभ | credits=Adapted from the Shiva Purana, Vidyeshvara Samhita;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, विद्येश्वर संहिता पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

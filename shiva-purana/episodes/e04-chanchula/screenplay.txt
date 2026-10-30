@@ -1,0 +1,126 @@
+title: Chanchula
+title_hi: चंचुला
+episode: 4
+slug: e04-chanchula
+kicker: Issue Four
+kicker_hi: चौथा अंक
+sub: A wife, a ghost, and the power of a story
+sub_hi: एक पत्नी, एक प्रेत, और कथा की शक्ति
+logline: A woman who wasted her life hears a few words of Shiva's story and turns around. Then she goes back for the husband who became a ghost.
+logline_hi: व्यर्थ जीवन बिताने वाली एक स्त्री शिव कथा के कुछ शब्द सुनकर बदल जाती है। फिर वह अपने उस पति को बचाने लौटती है जो प्रेत बन गया था।
+source: Shiva Purana, Shiva Purana Mahatmya, chapters 3 to 5 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=chanchula,parvati,tumburu
+
+== SCENE frame | set=forest time=day music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+RISHI (calm) [mid:rishi]: Suta, you say that simply hearing Shiva's story can free a person. Even a sinner? || सूत जी, आप कहते हैं कि शिव कथा सुनने भर से मनुष्य मुक्त हो सकता है। पापी भी?
+SUTA (calm, pose=raise) [mid:suta]: Even a sinner. Listen to the story of Chanchula, and her husband Binduga. || पापी भी। चंचुला और उसके पति बिंदुग की कथा सुनिए।
+
+== TITLE | dur=7 | kicker=Issue Four | kicker_hi=चौथा अंक | title=Chanchula | title_hi=चंचुला | sub=A wife, a ghost, and the power of a story | sub_hi=एक पत्नी, एक प्रेत, और कथा की शक्ति | figs=chanchula,binduga | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=The Village of Bashkala | title_hi=बाष्कल गाँव
+
+# ------------------------------------------------------------ Bashkala
+== SCENE village | set=city time=dusk music=tension amb=court trans=ink | caption=Bashkala, by the sea | caption_hi=बाष्कल, समुद्र के पास
+@ binduga x=360 y=660 s=0.92 face=1 pose=hips emo=sly
+@ chanchula x=880 y=660 s=0.88 face=-1 pose=chest emo=sad
+BEAT 0.6 [wide]
+NARRATOR [wide]: By the sea lay a village called Bashkala, where people cheated and quarrelled and cared for nothing but pleasure. || समुद्र के पास बाष्कल नाम का एक गाँव था, जहाँ लोग छल करते, झगड़ते, और भोग के सिवा किसी चीज़ की परवाह नहीं करते थे।
+NARRATOR [mid:binduga]: There lived a brahmin named Binduga. He left his faithful wife Chanchula and spent his days with a courtesan. || वहाँ बिंदुग नाम का एक ब्राह्मण रहता था। उसने अपनी पतिव्रता पत्नी चंचुला को छोड़ दिया और एक वेश्या के साथ दिन बिताने लगा।
+CHANCHULA (sad, pose=chest) [mid:chanchula]: You abandon me for another woman, day after day. What am I to do, alone in this house? || तुम दिन-ब-दिन मुझे छोड़कर दूसरी स्त्री के पास जाते हो। मैं इस घर में अकेली क्या करूँ?
+BINDUGA (sly, pose=point) [mid:binduga]: Do as you please. Find your own company. Just bring the money to me. || जो चाहो करो। अपना साथ खुद ढूँढ लो। बस पैसा मुझे ला देना।
+NARRATOR [~wide] (capPos=bottom): And so, for years, the two of them lived without shame, without dharma, chasing pleasure and money. || और इस तरह, वर्षों तक, दोनों बिना लाज, बिना धर्म के, भोग और धन के पीछे भागते रहे।
+
+== SCENE death | set=hell music=curse amb=fire trans=wipe
+@ binduga fig=pishacha x=640 y=660 s=1.0 face=1 pose=fear emo=fear
+BEAT 0.6 [wide] (sfx=roar, shake=6)
+NARRATOR [wide] (tint=#3a0a0a,0.25): Binduga died. After long torments in hell, he was reborn as a terrible pishacha, a ghost, wandering the Vindhya mountains. || बिंदुग मर गया। नरक में लंबी यातनाएँ भोगकर, वह विंध्य पर्वत पर भटकने वाला एक भयानक पिशाच बना।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=A Few Words at Gokarna | title_hi=गोकर्ण में कुछ शब्द
+
+# ------------------------------------------------------------ Gokarna
+== SCENE gokarna | set=temple music=shiva amb=temple trans=ink | caption=Gokarna, years later | caption_hi=गोकर्ण, वर्षों बाद
++ ling kind=lingam x=640 y=600 s=0.9 z=-2
+@ kathavachak x=900 y=660 s=0.92 face=-1 pose=raise emo=calm seat=lotus
+@ chanchula x=330 y=660 s=0.88 face=1 pose=rest emo=neutral
++ crowd kind=crowd x=600 y=650 n=6 z=-1
+BEAT 0.6 [wide] (sfx=bells)
+NARRATOR [wide]: Years later, her youth gone, Chanchula went with her relatives to the holy place of Gokarna. In a temple, a brahmin was reciting the Shiva Purana. || वर्षों बाद, जब जवानी ढल चुकी थी, चंचुला अपने संबंधियों के साथ तीर्थ गोकर्ण गई। एक मंदिर में एक ब्राह्मण शिव पुराण सुना रहे थे।
+KATHAVACHAK (calm, pose=point) [mid:kathavachak]: Those who throw away their dharma for pleasure meet Yama's messengers at the end. And what waits for them there is terrible. || जो सुख के लिए अपना धर्म छोड़ देते हैं, अंत में उनका सामना यमदूतों से होता है। और वहाँ जो उनकी प्रतीक्षा करता है, वह भयानक है।
+> chanchula emo=fear pose=fear t=0.5
+NARRATOR [close:chanchula] (capPos=bottom): Chanchula began to tremble. || चंचुला काँपने लगी।
+- crowd
+> chanchula x=620 pose=beg seat=kneel emo=sad t=1.2
+CHANCHULA (sad, pose=beg) [two:chanchula,kathavachak]: Brahmin, save me! I have wasted my whole youth. When Yama's messengers come for me, who will save me? || ब्राह्मण देवता, मुझे बचाइए! मैंने अपनी सारी जवानी व्यर्थ गँवा दी। जब यमदूत आएँगे, तब मुझे कौन बचाएगा?
+CHANCHULA (sad) [close:chanchula]: You are my guru, my mother, my father. I seek refuge with you. || आप ही मेरे गुरु हैं, मेरी माता, मेरे पिता। मैं आपकी शरण में हूँ।
+KATHAVACHAK (smile, pose=bless) [mid:kathavachak]: Do not be afraid. Your understanding has woken at the right time, by Shiva's grace. || डरो मत। शिव की कृपा से तुम्हारी बुद्धि सही समय पर जाग गई है।
+KATHAVACHAK (calm, pose=bless) [close:kathavachak]: Repentance is the greatest atonement. And Shiva's story cleans the mind, the way a cloth cleans a mirror. || पश्चाताप ही सबसे बड़ा प्रायश्चित है। और शिव कथा मन को ऐसे साफ़ करती है, जैसे कपड़ा दर्पण को।
+
+== SCENE listen | set=temple music=dawn amb=temple trans=wipe
++ ling kind=lingam x=640 y=600 s=0.9 z=-2
+@ kathavachak x=900 y=660 s=0.92 face=-1 pose=raise emo=calm seat=lotus
+@ chanchula fig=chanchulaTapas x=380 y=660 s=0.88 face=1 pose=namaste emo=serene seat=lotus
+BEAT 0.6 [wide] (sfx=om)
+NARRATOR [~wide]: So she stayed, and served him, and listened. Day after day, the whole Shiva Purana. || तो वह वहीं रुक गई, उनकी सेवा करती रही, और सुनती रही। दिन-प्रतिदिन, पूरा शिव पुराण।
+NARRATOR [~full:chanchula] (capPos=bottom): Her mind grew still. She meditated on Shiva's form, with the moon in his hair and the trident in his hand. || उसका मन शांत हो गया। वह शिव के रूप का ध्यान करने लगी, जटाओं में चंद्रमा और हाथ में त्रिशूल।
+
+== SCENE ascent | set=sky time=dawn music=wonder amb=wind trans=flash
+@ chanchula fig=chanchulaTapas x=500 y=660 s=0.88 face=1 pose=namaste emo=meditate seat=lotus
++ vim kind=vimana x=900 y=360 s=0.9 anim=right inDur=1.5
+@ shivadoot x=1050 y=660 s=0.9 face=-1 pose=bless emo=smile anim=materialize in=1
+BEAT 1.5 [wide] (sfx=sparkle)
+NARRATOR [wide]: When her time came, there were no messengers of Yama. Instead, a shining chariot came down from Shiva's world. || जब उसका समय आया, कोई यमदूत नहीं आया। उसकी जगह शिवलोक से एक चमकता विमान उतरा।
+> chanchula fig=chanchulaDivine seat=none pose=namaste emo=joy t=0.01
+BEAT 1 [wide] (flash, sfx=magic)
+> chanchula y=360 x=860 t=3
+NARRATOR [~wide] (capPos=bottom): Her body became radiant. And she rose with Shiva's attendants to the world of Shiva and Parvati. || उसका शरीर दिव्य हो गया। और वह शिव के गणों के साथ शिव और पार्वती के लोक को चली गई।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Ghost of the Vindhyas | title_hi=विंध्य का प्रेत
+
+# ------------------------------------------------------------ Shiva's world
+== SCENE shivaloka | set=kailash time=day music=devi amb=wind trans=ink | caption=Shiva's world | caption_hi=शिवलोक
+@ parvati x=860 y=650 s=0.95 face=-1 pose=bless emo=smile seat=lotus
+@ chanchula fig=chanchulaDivine x=380 y=660 s=0.88 face=1 pose=namaste emo=sad
+BEAT 0.5 [wide] (sfx=bell)
+NARRATOR [wide]: Chanchula served the goddess Parvati with love. But one thing troubled her. || चंचुला ने प्रेम से देवी पार्वती की सेवा की। पर एक बात उसे सताती रही।
+CHANCHULA (sad, pose=namaste) [mid:chanchula]: Mother, where is my husband Binduga now? What has become of him? || माँ, मेरे पति बिंदुग अब कहाँ हैं? उनका क्या हुआ?
+PARVATI (sad) [mid:parvati]: He suffered long in hell. Now he is a pishacha in the Vindhya mountains, living on wind, in torment. || उसने नरक में बहुत समय कष्ट भोगा। अब वह विंध्य पर्वत में एक पिशाच है, हवा पीकर जीता है, यातना में।
+CHANCHULA (sad, pose=beg) [close:chanchula]: However wicked he was, he was my husband. Mother, is there no way to save him? || वह जैसा भी था, मेरा पति था। माँ, क्या उसे बचाने का कोई उपाय नहीं?
+PARVATI (smile, pose=bless) [mid:parvati]: There is. The same way you were saved. He must hear Shiva's story. || है। वही, जिससे तुम बचीं। उसे शिव कथा सुननी होगी।
+> parvati face=1 t=0.3
+@ tumburu x=1120 y=660 s=0.9 face=-1 pose=namaste emo=smile anim=materialize
+PARVATI (calm, pose=point) [two:parvati,tumburu]: Tumburu, sweetest of singers. Go with her to the Vindhyas, and sing him the Shiva Purana. || तुम्बुरु, गायकों में सबसे मधुर। इसके साथ विंध्य जाओ, और उसे शिव पुराण सुनाओ।
+
+# ------------------------------------------------------------ the Vindhyas
+== SCENE vindhya | set=vindhya music=tension amb=storm trans=ink | caption=The Vindhya mountains | caption_hi=विंध्य पर्वत
+@ binduga fig=pishacha x=880 y=660 s=1.0 face=-1 pose=fear emo=rage
+@ tumburu x=360 y=660 s=0.9 face=1 pose=veena item=veena emo=calm
+@ chanchula fig=chanchulaDivine x=170 y=660 s=0.85 face=1 pose=namaste emo=sad
+BEAT 0.8 [wide] (sfx=roar, shake=6, bang=GRAAARGH!|हुआँ!, bangPos=980,160)
+BINDUGA (rage) [mid:binduga]: Who dares come here? Go away! || यहाँ आने का साहस किसने किया? भाग जाओ!
+TUMBURU (calm, pose=veena) [mid:tumburu]: Sit, Binduga. I have not come to fight. I have come to sing. || बैठो, बिंदुग। मैं लड़ने नहीं आया। गाने आया हूँ।
+NARRATOR [~wide] (sfx=veena): Tumburu played his veena and told the story of Shiva. Of the pillar of fire, of the thief and the lamp, of Shiva's mercy without end. || तुम्बुरु ने वीणा बजाई और शिव की कथा सुनाई। अग्नि-स्तंभ की, चोर और दीपक की, शिव की अनंत करुणा की।
+> binduga seat=kneel pose=namaste emo=sad t=1
+NARRATOR [mid:binduga] (capPos=bottom): And slowly, the ghost stopped growling, and knelt, and listened. || और धीरे-धीरे, प्रेत ने गुर्राना बंद कर दिया, घुटने टेके, और सुनने लगा।
++ glow kind=glow x=880 y=480 r=380 z=-1
+> binduga fig=bindugaDivine seat=none emo=joy t=0.01
+BEAT 1.8 [mid:binduga] (sfx=swell, flash, bang=OM|ॐ, bangPos=640,150, bangCol=#ffd22e)
+BINDUGA (joy, pose=namaste) [mid:binduga]: Chanchula. You came back for me. After everything. || चंचुला। तुम मेरे लिए लौट आईं। सब कुछ होने के बाद भी।
+CHANCHULA (smile, pose=namaste) [two:chanchula,binduga]: It was Shiva's story that saved us both. Come. || हम दोनों को शिव कथा ने बचाया। चलो।
++ vim kind=vimana x=640 y=280 s=0.9 anim=right inDur=1.5 z=-1
+NARRATOR [~wide] (capPos=bottom, sfx=sparkle): Free of his ghostly body, Binduga rose with them in a heavenly chariot, to the feet of Shiva. || अपने प्रेत शरीर से मुक्त होकर, बिंदुग उनके साथ दिव्य विमान में शिव के चरणों तक गया।
+
+== SCENE close | set=forest time=dusk music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
+BEAT 0.4 [wide]
+SUTA (smile, pose=bless) [mid:suta]: That is why we tell these stories. A few words reached Chanchula at the right time, and changed everything. || इसीलिए हम ये कथाएँ सुनाते हैं। सही समय पर कुछ शब्द चंचुला तक पहुँचे, और सब बदल गया।
+RISHI (calm) [mid:rishi]: Now tell us of Shiva himself, Suta. Of his first wife, Sati. || अब स्वयं शिव की कथा सुनाइए, सूत जी। उनकी पहली पत्नी, सती की।
+SUTA (calm) [close:suta]: The daughter of Daksha. Yes. That is a story of love, and of fire. || दक्ष की पुत्री। हाँ। वह प्रेम की कथा है, और अग्नि की।
+
+== NEXT | dur=8 | title=Daksha's Daughter | title_hi=दक्ष की पुत्री | sub=How Sati won Shiva, and how she tested him | sub_hi=सती ने शिव को कैसे पाया, और उनकी परीक्षा कैसे ली
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Four: Chanchula | sub_hi=चौथा अंक: चंचुला | credits=Adapted from the Shiva Purana Mahatmya;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण माहात्म्य पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

@@ -1098,5 +1098,25 @@
     "player": false,
     "script": true,
     "bible": false
+  },
+  {
+    "slug": "sp-e01-pillar-of-fire",
+    "dir": "shiva-purana/episodes/e01-pillar-of-fire/",
+    "playerPage": "shiva-purana/engine/player.html",
+    "show": "Shiva Purana",
+    "episode": "E1",
+    "title": "The Pillar of Fire",
+    "logline": "Brahma and Vishnu go to war over who is supreme, until a column of fire with no beginning and no end splits the sky between them.",
+    "rating": "general",
+    "format": "comic",
+    "note": null,
+    "category": "Shiva Purana (mythology comic series)",
+    "source": "Shiva Purana, Vidyeshvara Samhita, chapters 6 to 9 (tr. Bibek Debroy)",
+    "duration": 433.544,
+    "video": "episode.mp4",
+    "poster": "poster.jpg",
+    "player": false,
+    "script": true,
+    "bible": false
   }
 ]

@@ -26,6 +26,9 @@
   .badge.explainer { background: #7ad3ff; }
   .badge.anime { background: #f2b8c6; }
   .badge.pichwai { background: #f4a261; }
+  .badge.comic { background: #ff6b3d; }
+  .badge.dub { background: #c7f0a8; }
+  .btn[aria-pressed="true"] { background: var(--toon); color: var(--ink); border-color: var(--toon); }
   #grid { display: grid; gap: 40px; }
   #grid[hidden] { display: none; }
   .show { display: grid; gap: 14px; }
@@ -54,7 +57,7 @@
 <div class="wrap">
   <header>
     <h1><span>KINDLETON</span></h1>
-    <p>Animated parody sitcoms, calm illustrated explainers and a quiet literary anime and a Hindi mythology series that turn books and big arguments into episodes. Original characters, open-source voices, rendered in the browser.</p>
+    <p>Animated parody sitcoms, calm illustrated explainers, a quiet literary anime and two mythology series that turn books and big arguments into episodes. Original characters, open-source voices, rendered in the browser.</p>
   </header>
   <section id="watch" hidden>
     <div class="row"><button class="btn ghost" id="back">&larr; All episodes</button></div>
@@ -78,17 +81,23 @@
   // The second <source> keeps local previews (npx serve .) working.
   const RELEASE = 'https://github.com/chad3456/simpson-video-animator/releases/download/videos/';
   const videoUrl = dir => RELEASE + dir.replace(/\/$/, '').replace(/\//g, '_') + '.mp4';
-  const SHOWS = { KINDLETON: 'Yellow-toon parody sitcom. Adult satire with original characters.', LUMEN: 'Calm, illustrated explainers in a flat-vector style. One big idea at a time.', 'महागाथा': 'A Hindi mythology series in the style of pichwai and miniature painting, from Satyarth Nayak\'s Mahagatha: 100 Tales from the Puranas.', 'Dostoevsky at the Coin Laundry': 'A quiet twelve-episode anime. Two lonely strangers, one shared author, and the Thursday nights in a 24-hour coin laundry by a canal.' };
+  const SHOWS = { KINDLETON: 'Yellow-toon parody sitcom. Adult satire with original characters.', LUMEN: 'Calm, illustrated explainers in a flat-vector style. One big idea at a time.', 'महागाथा': 'A Hindi mythology series in the style of pichwai and miniature painting, from Satyarth Nayak\'s Mahagatha: 100 Tales from the Puranas.', 'Shiva Purana': 'Tales of Mahadeva as a moving comic book, from Bibek Debroy\'s translation of the Shiva Purana. Every issue plays in English or with a Hindi dub.', 'Dostoevsky at the Coin Laundry': 'A quiet twelve-episode anime. Two lonely strangers, one shared author, and the Thursday nights in a 24-hour coin laundry by a canal.' };
   function card(e) {
     const dir = e.dir || `episodes/${e.slug}/`;
     return `<button class="card" data-slug="${e.slug}">` +
       (e.poster ? `<img src="${dir}${e.poster}" alt="">` : `<div class="ph"></div>`) +
-      `<div class="body"><div class="meta"><span class="badge ${e.rating === 'adult' || e.rating === 'mature' ? 'adult' : ''}"${e.note ? ` title="${esc(e.note)}"` : ''}>${e.rating === 'adult' ? '18+' : e.rating === 'mature' ? 'MATURE' : 'ALL AGES'}</span>${e.format === 'explainer' ? '<span class="badge explainer">EXPLAINER</span>' : ''}${e.format === 'anime' ? '<span class="badge anime">ANIME</span>' : ''}${e.format === 'pichwai' ? '<span class="badge pichwai">HINDI</span>' : ''}${esc(e.show)} ${esc(e.episode)} · ${fmt(e.duration)}</div>` +
-      `<h2>${esc(e.title)}</h2><div class="logline">${esc(e.logline)}</div></div></button>`;
+      `<div class="body"><div class="meta"><span class="badge ${e.rating === 'adult' || e.rating === 'mature' ? 'adult' : ''}"${e.note ? ` title="${esc(e.note)}"` : ''}>${e.rating === 'adult' ? '18+' : e.rating === 'mature' ? 'MATURE' : 'ALL AGES'}</span>${e.format === 'explainer' ? '<span class="badge explainer">EXPLAINER</span>' : ''}${e.format === 'anime' ? '<span class="badge anime">ANIME</span>' : ''}${e.format === 'pichwai' ? '<span class="badge pichwai">HINDI</span>' : ''}${e.format === 'comic' ? '<span class="badge comic">COMIC</span>' : ''}${e.dub ? '<span class="badge dub">EN · हिंदी</span>' : ''}${esc(e.show)} ${esc(e.episode)} · ${fmt(e.duration)}</div>` +
+      `<h2>${esc(e.title)}${e.dub && e.dub.hi && e.dub.hi.title ? ` <span style="font:700 20px/1 Nunito,sans-serif;color:var(--muted)">${esc(e.dub.hi.title)}</span>` : ''}</h2><div class="logline">${esc(e.logline)}</div></div></button>`;
   }
-  function open(slug) {
-    const e = EPS.find(x => x.slug === slug); if (!e) return;
-    const dir = e.dir || `episodes/${e.slug}/`, playerPage = e.playerPage || 'engine/player.html';
+  // episodes with a dub (e.dub.hi) play either language; the choice is remembered
+  let LANG = 'en';
+  try { LANG = localStorage.getItem('dub-lang') || 'en'; } catch (_) {}
+  function open(slug, lang) {
+    const e0 = EPS.find(x => x.slug === slug); if (!e0) return;
+    if (lang) { LANG = lang; try { localStorage.setItem('dub-lang', lang); } catch (_) {} }
+    const alt = e0.dub && LANG !== 'en' ? e0.dub[LANG] : null;
+    const e = alt ? Object.assign({}, e0, { title: alt.title || e0.title, logline: alt.logline || e0.logline, video: alt.video, poster: alt.poster, script: alt.script }) : e0;
+    const dir = (e0.dir || `episodes/${e0.slug}/`) + (alt ? alt.dir : ''), playerPage = e.playerPage || 'engine/player.html';
     if (e.rating === 'adult') { try { if (!localStorage.getItem('age-ok') && !confirm(e.note ? `${e.note} Continue?` : 'This episode is for adults (strong language). Continue?')) return; localStorage.setItem('age-ok', '1'); } catch (_) {} }
     document.getElementById('screen').innerHTML = e.video
       ? `<video ${e.poster ? `poster="${dir}${e.poster}"` : ''} controls playsinline autoplay preload="metadata"><source src="${videoUrl(dir)}" type="video/mp4"><source src="${dir}${e.video}" type="video/mp4"></video>`
@@ -96,6 +105,7 @@
     document.getElementById('w-title').textContent = `${e.title}`;
     document.getElementById('w-log').textContent = e.logline;
     document.getElementById('w-links').innerHTML =
+      (e0.dub ? `<span class="row" role="group" aria-label="Language">` + [['en', 'English']].concat(Object.entries(e0.dub).map(([k, v]) => [k, v.label])).map(([k, l]) => `<button class="btn ghost" data-lang="${k}" aria-pressed="${k === (alt ? LANG : 'en')}">${esc(l)}</button>`).join('') + `</span>` : '') +
       (e.player ? `<a class="btn" href="${playerPage}?ep=${rel(playerPage, dir)}">Interactive player</a>` : '') +
       (e.video ? `<a class="btn ghost" href="${videoUrl(dir)}">Download video</a>` : '') +
       (e.script ? `<a class="btn ghost" href="${dir}script.md">Script</a>` : '') +
@@ -103,6 +113,7 @@
     document.getElementById('watch').hidden = false; document.getElementById('grid').hidden = true; document.getElementById('chips').hidden = true;
     location.hash = slug; scrollTo(0, 0);
   }
+  document.getElementById('w-links').onclick = ev => { const b = ev.target.closest('[data-lang]'); if (b) open(location.hash.slice(1), b.dataset.lang); };
   document.getElementById('back').onclick = () => {
     document.getElementById('screen').innerHTML = ''; document.getElementById('watch').hidden = true;
     document.getElementById('grid').hidden = false; document.getElementById('chips').hidden = false; history.replaceState(null, '', location.pathname);

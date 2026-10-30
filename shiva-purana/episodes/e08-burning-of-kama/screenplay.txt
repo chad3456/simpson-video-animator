@@ -1,0 +1,141 @@
+title: The Burning of Kama
+title_hi: कामदेव का दहन
+episode: 8
+slug: e08-burning-of-kama
+kicker: Issue Eight
+kicker_hi: आठवाँ अंक
+sub: The god of love meets the third eye
+sub_hi: प्रेम के देवता का सामना तीसरे नेत्र से
+logline: Sati is reborn as Parvati, an asura can only be killed by Shiva's son, and Shiva will not open his eyes. So the gods send the god of love.
+logline_hi: सती पार्वती के रूप में फिर जन्म लेती हैं, एक असुर को केवल शिव का पुत्र मार सकता है, और शिव आँखें नहीं खोलते। तब देवता प्रेम के देवता को भेजते हैं।
+source: Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 6 to 19 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=kama,shiva,parvati
+
+== SCENE frame | set=forest time=dawn music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+SUTA (smile, pose=raise) [mid:suta]: On the mountain king Himavan and his queen Mena, the goddess bestowed a gift. She was born again, as their daughter. || पर्वतराज हिमवान और उनकी रानी मेना को देवी ने एक वरदान दिया। वे फिर से जन्मीं, उनकी पुत्री बनकर।
+
+== TITLE | dur=7 | kicker=Issue Eight | kicker_hi=आठवाँ अंक | title=The Burning of Kama | title_hi=कामदेव का दहन | sub=The god of love meets the third eye | sub_hi=प्रेम के देवता का सामना तीसरे नेत्र से | figs=kama,rati | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=The Daughter of the Mountain | title_hi=पर्वत की पुत्री
+
+== SCENE birth | set=himalaya time=day music=devi amb=wind trans=ink | caption=The palace of Himavan | caption_hi=हिमवान का महल
+@ himavan x=360 y=660 s=0.95 face=1 pose=bless emo=joy
+@ mena x=860 y=660 s=0.88 face=-1 pose=offer emo=joy
++ glow kind=glow x=860 y=420 r=260 z=-1
++ petals kind=petals x=640 y=0 n=30 w=1280 z=50
+BEAT 0.6 [wide] (sfx=sparkle,conch)
+NARRATOR [wide]: A daughter was born to Mena and Himavan, dark and glowing like a blue lotus. They named her Parvati, daughter of the mountain. Some called her Kali, some Uma. || मेना और हिमवान के घर एक पुत्री जन्मी, नीलकमल की तरह साँवली और दमकती। उन्होंने उसका नाम पार्वती रखा, पर्वत की पुत्री। कुछ उसे काली कहते, कुछ उमा।
+@ narad x=-120 y=660 s=0.88 face=1 pose=veena item=veena emo=smile
+> narad x=150 t=1.6 walk=1
+NARRATOR [~wide] (sfx=veena): When she was a girl, Narada came to visit, and Himavan asked him to read her palm. || जब वह बालिका थी, नारद मिलने आए, और हिमवान ने उनसे उसका हाथ देखने को कहा।
+@ parvati x=640 y=665 s=0.75 face=-1 pose=namaste emo=smile
+NARAD (calm, pose=point) [mid:narad]: Her husband will be a yogi. He will have no mother and no father. He wears no fine clothes, and lives without any home. || इसका पति एक योगी होगा। उसके न माता होंगे, न पिता। वह सुंदर वस्त्र नहीं पहनेगा, और बिना घर के रहेगा।
+MENA (shock) [mid:mena]: What sort of husband is that for my daughter? || यह मेरी पुत्री के लिए कैसा पति हुआ?
+NARAD (smile, pose=bless) [close:narad]: Do not grieve. Every sign I named belongs to Shiva. She will be his wife, as she was before. || दुखी मत होइए। मैंने जो भी लक्षण बताए, वे सब शिव के हैं। यह उनकी पत्नी बनेगी, जैसे पहले थी।
+> parvati emo=joy t=0.4
+NARRATOR [close:parvati] (capPos=bottom): And from that day, Parvati's heart belonged to Shiva. || और उस दिन से पार्वती का हृदय शिव का हो गया।
+
+== SCENE serve | set=himalaya time=dawn music=dawn amb=river trans=wipe
+@ shiva x=880 y=660 s=0.95 face=-1 pose=namaste emo=meditate seat=lotus
+@ parvati x=380 y=660 s=0.88 face=1 pose=offer emo=serene
++ fl kind=platter x=560 y=640 s=0.8
+BEAT 0.6 [wide] (sfx=om)
+NARRATOR [wide]: Shiva had come to the Himalaya to meditate. With her father's leave, Parvati served him every day. She brought flowers, water and fruit. || शिव ध्यान करने हिमालय आए थे। पिता की अनुमति से पार्वती रोज़ उनकी सेवा करने लगीं। वे फूल, जल और फल लातीं।
+NARRATOR [mid:shiva] (capPos=bottom): Shiva never opened his eyes. || शिव ने कभी आँखें नहीं खोलीं।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=Taraka | title_hi=तारकासुर
+
+== SCENE taraka | set=hell music=battle amb=fire trans=ink
+@ taraka x=640 y=680 s=1.1 face=1 pose=raise emo=rage
+@ asura x=260 y=665 s=0.9 face=1 pose=strike emo=rage z=-1
+@ asura2 fig=asura x=1020 y=665 s=0.9 face=-1 pose=strike emo=rage z=-1
+BEAT 0.6 [wide] (sfx=roar, shake=6)
+NARRATOR [wide]: Meanwhile, an asura named Taraka did terrible austerities, and asked Brahma for a boon. || इस बीच तारक नाम के एक असुर ने घोर तपस्या की, और ब्रह्मा से वर माँगा।
+TARAKA (sly, pose=point) [mid:taraka]: Let no one be able to kill me. No one, except a son born of Shiva. || मुझे कोई न मार सके। कोई नहीं, सिवाय शिव से जन्मे पुत्र के।
+TARAKA (joy, pose=raise) [low:taraka] (shout): And Shiva is a yogi who will never marry! I am immortal! || और शिव एक योगी हैं जो कभी विवाह नहीं करेंगे! मैं अमर हूँ!
+NARRATOR [~wide] (capPos=bottom, sfx=boom, shake=8): Taraka conquered the three worlds. He drove the gods out of heaven, and took their wealth and their places. || तारक ने तीनों लोक जीत लिए। उसने देवताओं को स्वर्ग से निकाल दिया, और उनका धन और उनके पद छीन लिए।
+
+== SCENE council | set=court col=#1a3a7a music=tension amb=court trans=wipe | caption=The exiled gods | caption_hi=निर्वासित देवता
+@ indra x=420 y=660 s=0.95 face=1 pose=chest emo=sad
+@ kama x=880 y=660 s=0.92 face=-1 pose=bow item=bow emo=calm
+@ rati x=1080 y=665 s=0.85 face=-1 pose=namaste emo=fear z=-1
+BEAT 0.4 [wide]
+INDRA (sad, pose=point) [mid:indra]: Only Shiva's son can kill Taraka. And Shiva sits in meditation, and will not even look at Parvati. || तारक को केवल शिव का पुत्र मार सकता है। और शिव ध्यान में बैठे हैं, पार्वती की ओर देखते तक नहीं।
+INDRA (calm, pose=point) [close:indra]: Kama, you are our only hope. Wake desire in Shiva's heart. || कामदेव, तुम ही हमारी एकमात्र आशा हो। शिव के हृदय में कामना जगाओ।
+RATI (fear) [mid:rati]: My lord, he is Shiva. The destroyer. Please, do not go. || स्वामी, वे शिव हैं। संहारक। कृपया मत जाइए।
+KAMA (smile, pose=bow) [mid:kama]: I have never failed, Rati. Come, Vasanta. Let us make it spring. || मैं कभी असफल नहीं हुआ, रति। आओ, वसंत। चलो वसंत ऋतु लाएँ।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=Spring Out of Season | title_hi=बेमौसम वसंत
+
+== SCENE spring | set=himalaya time=day music=joy amb=birds trans=ink
+@ shiva x=880 y=660 s=0.95 face=-1 pose=namaste emo=meditate seat=lotus
+@ parvati x=560 y=660 s=0.88 face=1 pose=offer emo=serene
+@ kama x=180 y=660 s=0.9 face=1 pose=bow item=bow emo=sly o=0.85
+@ vasanta x=-200 y=665 s=0.8 face=1 pose=offer emo=joy z=-1
++ petals kind=petals x=640 y=0 n=60 w=1280 z=50
+BEAT 0.6 [wide] (sfx=sparkle)
+> vasanta x=60 t=1.5 walk=1
+NARRATOR [~wide]: Suddenly, out of season, spring came to the frozen mountain. Trees burst into flower. Bees hummed. Cool fragrant winds began to blow. || अचानक, बेमौसम, जमे हुए पर्वत पर वसंत आ गया। पेड़ फूलों से लद गए। भौंरे गुनगुनाने लगे। ठंडी सुगंधित हवा चलने लगी।
+NARRATOR [mid:kama] (capPos=bottom): Kama hid among the trees and drew his bow of sugarcane, strung with bees. || कामदेव पेड़ों के बीच छिप गए और भौंरों की डोरी वाला अपना गन्ने का धनुष ताना।
++ arrow kind=beam x=280 y=380 dx=560 dy=-20 col=#f59ab8 w=10 z=55
+BEAT 1 [wide] (sfx=whoosh, bang=THWIPP!|सर्र!, bangPos=520,170)
+- arrow
+> shiva emo=calm t=0.3
+NARRATOR [mid:shiva]: For a moment, just a moment, Shiva's mind stirred. He opened his eyes and saw Parvati. || एक पल के लिए, बस एक पल, शिव का मन डोला। उन्होंने आँखें खोलीं और पार्वती को देखा।
+> shiva emo=angry t=0.4
+SHIVA (angry) [close:shiva] (think): I was deep in meditation. Who has done this? Who has disturbed my mind? || मैं गहरे ध्यान में था। यह किसने किया? किसने मेरा मन विचलित किया?
+> shiva seat=none pose=trident emo=rage t=0.5
+NARRATOR [two:shiva,kama] (capPos=bottom): He looked around, and saw Kama on his left, bow drawn, about to shoot again. || उन्होंने चारों ओर देखा, और बाईं ओर कामदेव को धनुष ताने, फिर से बाण चलाने को तैयार पाया।
+
+== SCENE eye | set=himalaya time=day music=battle amb=storm trans=cut | tint=#5a0a0a,0.1
+@ shiva x=880 y=660 s=1.0 face=-1 pose=trident emo=rage
+@ kama x=300 y=660 s=0.9 face=1 pose=bow item=bow emo=fear
+BEAT 0.4 [ecu:shiva] (sfx=heartbeat)
+> shiva third=1 t=0.3
+BEAT 1.2 [ecu:shiva] (sfx=rumble, shake=6, flash=#ff8a1e)
++ beam kind=beam x=880 y=262 dx=-560 dy=60 w=40 col=#ff6a1a t=0.6 z=55
++ yf kind=yogafire x=300 y=660 z=56 growT=0.8
+BEAT 1.8 [wide] (sfx=fire,boom, flash, shake=14, bang=FWOOOOM!|भस्म!, bangPos=640,170)
+- beam
+- kama od=0.3
+BEAT 1.6 [wide] (sfx=fire)
+- yf
++ ash kind=ash x=300 y=660 s=1.2
+NARRATOR [wide] (capPos=bottom): Fire leapt from Shiva's third eye. Before the gods could even cry out for mercy, Kama was ash. || शिव के तीसरे नेत्र से अग्नि निकली। देवता क्षमा की पुकार भी नहीं लगा पाए, और कामदेव भस्म हो गए।
+> shiva emo=calm pose=rest t=1
+- shiva od=1
+NARRATOR [~wide]: Then Shiva vanished from the mountain. Parvati, pale and shaken, went home with her friends. || फिर शिव पर्वत से अंतर्धान हो गए। पार्वती, पीली पड़ी और काँपती, अपनी सखियों के साथ घर लौट गईं।
+
+== SCENE rati | set=himalaya time=dusk music=sorrow amb=wind trans=fade
++ ash kind=ash x=640 y=660 s=1.2
+@ rati x=640 y=665 s=0.9 face=1 pose=grief emo=sad seat=kneel
+BEAT 0.8 [wide] (sfx=wind)
+RATI (sad, pose=grief) [mid:rati]: What have the gods done? They called my husband here, and he burned for them! Kama, you were dearer to me than my own life! || देवताओं ने यह क्या किया? उन्होंने मेरे पति को यहाँ बुलाया, और वे उनके लिए जल गए! कामदेव, आप मुझे अपने प्राणों से भी प्रिय थे!
+@ indra x=1000 y=660 s=0.88 face=-1 pose=bless emo=sad
+INDRA (sad, pose=bless) [mid:indra]: Rati, keep his ashes safe. Shiva never causes sorrow without reason. He will bring your husband back. || रति, उनकी भस्म सँभालकर रखो। शिव बिना कारण दुख नहीं देते। वे तुम्हारे पति को लौटाएँगे।
++ rays kind=rays x=640 y=0 n=18 r=700 col=#fff3a0 op=0.3 z=-2
+SHIVA (calm) [wide] (sky): What my anger has done cannot be undone. Kama will live without a body, Ananga. And when Krishna is born on earth, Kama will be born again, as his son. || मेरे क्रोध ने जो किया, वह लौट नहीं सकता। कामदेव बिना शरीर के जीवित रहेंगे, अनंग बनकर। और जब धरती पर कृष्ण जन्म लेंगे, कामदेव उनके पुत्र बनकर फिर जन्मेंगे।
+> rati pose=namaste emo=calm t=0.8
+NARRATOR [~mid:rati] (capPos=bottom): And so love lives on in the world, everywhere, and invisible. || और इस तरह प्रेम संसार में जीवित है, हर जगह, और अदृश्य।
+
+== SCENE resolve | set=himalaya time=night music=devi amb=wind trans=wipe
+@ parvati x=640 y=660 s=0.92 face=1 pose=chest emo=calm
++ snow kind=snow x=640 y=0 n=50 w=1280 z=50
+BEAT 0.6 [wide]
+PARVATI (calm, pose=chest) [mid:parvati]: My beauty did not win him. My service did not win him. Then I will win him the way he knows best. || मेरी सुंदरता उन्हें नहीं जीत पाई। मेरी सेवा उन्हें नहीं जीत पाई। तो मैं उन्हें उसी तरह जीतूँगी जो वे सबसे अच्छी तरह जानते हैं।
+PARVATI (serene) [close:parvati]: With tapas. || तपस्या से।
+
+== SCENE close | set=forest time=dusk music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.4 [wide]
+SUTA (calm, pose=bless) [mid:suta]: Desire could not move Shiva. Only devotion could. || काम शिव को नहीं डिगा सका। केवल भक्ति डिगा सकती थी।
+SUTA (smile) [close:suta]: And Parvati's devotion would shake the three worlds. || और पार्वती की भक्ति तीनों लोकों को हिलाने वाली थी।
+
+== NEXT | dur=8 | title=Parvati's Penance | title_hi=पार्वती की तपस्या | sub=The austerity that won the unwinnable | sub_hi=वह तप जिसने अजेय को जीता
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Eight: The Burning of Kama | sub_hi=आठवाँ अंक: कामदेव का दहन | credits=Adapted from the Shiva Purana, Rudra Samhita, Parvati Khanda;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता, पार्वती खंड पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

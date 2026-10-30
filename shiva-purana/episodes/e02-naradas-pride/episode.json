@@ -1,0 +1,1847 @@
+{
+ "meta": {
+  "series": "Shiva Purana",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "Tales of Mahadeva",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "en",
+  "title": "Narada's Pride",
+  "title_hi": "नारद का अभिमान",
+  "episode": "2",
+  "slug": "e02-naradas-pride",
+  "kicker": "Issue Two",
+  "kicker_hi": "दूसरा अंक",
+  "sub": "The sage who wanted to marry a princess",
+  "sub_hi": "वह ऋषि जो राजकुमारी से विवाह करना चाहता था",
+  "logline": "Narada defeats desire, and then boasts about it. So Vishnu builds him a city, a princess and a very surprising face.",
+  "logline_hi": "नारद काम को जीत लेते हैं, और फिर उसका बखान करते हैं। तब विष्णु उनके लिए एक नगर, एक राजकुमारी और एक बड़ा अनोखा चेहरा रचते हैं।",
+  "source": "Shiva Purana, Rudra Samhita, Srishti Khanda, chapters 2 to 4 (tr. Bibek Debroy)",
+  "num": "2"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "bm_george:0.55+bm_fable:0.25+hm_omega:0.2",
+   "speed": 0.95,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "bm_lewis:0.7+hm_psi:0.3",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "rishi": {
+   "label": "Sage",
+   "label_hi": "ऋषि",
+   "fig": "rishi",
+   "voice": "bm_daniel:0.7+hm_omega:0.3",
+   "speed": 0.95,
+   "fx": "room"
+  },
+  "shiva": {
+   "label": "Shiva",
+   "label_hi": "शिव",
+   "fig": "shiva",
+   "divine": true,
+   "voice": "am_onyx:0.7+hm_omega:0.3",
+   "speed": 0.9,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "vishnu": {
+   "label": "Vishnu",
+   "label_hi": "विष्णु",
+   "fig": "vishnu",
+   "divine": true,
+   "voice": "am_michael:0.75+hm_omega:0.25",
+   "speed": 0.94,
+   "fx": "divine"
+  },
+  "narad": {
+   "label": "Narada",
+   "label_hi": "नारद",
+   "fig": "narad",
+   "voice": "am_puck:0.7+hm_psi:0.3",
+   "speed": 1.05,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "indra": {
+   "label": "Indra",
+   "label_hi": "इंद्र",
+   "fig": "indra",
+   "voice": "am_liam:0.75+hm_psi:0.25",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "kama": {
+   "label": "Kama",
+   "label_hi": "कामदेव",
+   "fig": "kama",
+   "voice": "am_puck:0.6+am_adam:0.4",
+   "speed": 1.04,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "gana": {
+   "label": "Gana",
+   "label_hi": "गण",
+   "fig": "gana",
+   "voice": "am_fenrir:0.6+am_puck:0.4",
+   "speed": 1.04,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "gana2": {
+   "label": "Gana",
+   "label_hi": "गण",
+   "fig": "gana2",
+   "voice": "am_echo:0.6+am_puck:0.4",
+   "speed": 1.06,
+   "pitch": 2,
+   "fx": "room"
+  },
+  "shilanidhi": {
+   "label": "King Shilanidhi",
+   "label_hi": "राजा शीलनिधि",
+   "fig": "shilanidhi",
+   "voice": "bm_daniel:0.6+am_eric:0.4",
+   "speed": 0.98,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "shrimati": {
+   "label": "Shrimati",
+   "label_hi": "श्रीमती",
+   "fig": "shrimati",
+   "voice": "af_sky:0.6+hf_beta:0.4",
+   "speed": 1.0,
+   "pitch": 1,
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "narad,shiva,vishnu"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "suta",
+     "text": "Narada is the wisest of sages. He wanders the three worlds singing Vishnu's name.",
+     "text_hi": "नारद ऋषियों में सबसे ज्ञानी हैं। वे विष्णु का नाम गाते हुए तीनों लोकों में घूमते हैं।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "suta",
+     "text": "And yet, once, even Narada was fooled. Not by a demon. By himself.",
+     "text_hi": "फिर भी, एक बार नारद भी धोखा खा गए। किसी राक्षस से नहीं। स्वयं से।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Two",
+   "kicker_hi": "दूसरा अंक",
+   "title": "Narada's Pride",
+   "title_hi": "नारद का अभिमान",
+   "sub": "The sage who wanted to marry a princess",
+   "sub_hi": "वह ऋषि जो राजकुमारी से विवाह करना चाहता था",
+   "figs": "narad,shrimati",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "The Sage Who Beat Desire",
+   "title_hi": "काम को जीतने वाला ऋषि",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "cave",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "narad",
+     "x": 640,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "item": "none",
+     "in": 0
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 640,
+     "y": 520,
+     "r": 260,
+     "op": 0.5,
+     "z": -1,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "Beside the heavenly river, in a beautiful Himalayan cave, Narada sat still and silent, deep in meditation.",
+     "text_hi": "स्वर्गीय नदी के किनारे, हिमालय की एक सुंदर गुफा में, नारद मौन और स्थिर होकर गहरे ध्यान में बैठे थे।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "His austerities grew so strong that, far away in heaven, Indra began to worry.",
+     "text_hi": "उनकी तपस्या इतनी प्रबल हो गई कि दूर स्वर्ग में इंद्र को चिंता होने लगी।",
+     "camMove": true,
+     "cam": "full:narad"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "river"
+   ],
+   "caption": "A cave in the Himalaya",
+   "caption_hi": "हिमालय की एक गुफा"
+  },
+  {
+   "type": "scene",
+   "id": "indra",
+   "set": "court",
+   "ctx": {
+    "col": "#1a3a7a"
+   },
+   "els": [
+    {
+     "id": "indra",
+     "x": 420,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "hold",
+     "item": "vajra",
+     "emo": "angry",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kama",
+     "x": 900,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bow",
+     "emo": "smile",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "pose": "bow",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rati",
+     "x": 1080,
+     "y": 660,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide"
+    },
+    {
+     "who": "indra",
+     "text": "That sage wants my throne, Kama. I am sure of it. He will ask Brahma for my kingdom.",
+     "text_hi": "वह ऋषि मेरा सिंहासन चाहता है, कामदेव। मुझे पूरा विश्वास है। वह ब्रह्मा से मेरा राज्य माँग लेगा।",
+     "cam": "mid:indra"
+    },
+    {
+     "who": "indra",
+     "text": "You have broken the pride of many ascetics. Go and break his.",
+     "text_hi": "तुमने कई तपस्वियों का अभिमान तोड़ा है। जाओ, उसका भी तोड़ो।",
+     "cam": "close:indra"
+    },
+    {
+     "who": "kama",
+     "text": "With Vasanta and his spring beside me, no sage can resist.",
+     "text_hi": "वसंत और उसकी बहार मेरे साथ हो, तो कोई ऋषि नहीं टिक सकता।",
+     "cam": "mid:kama"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "wipe",
+   "caption": "Indra's court",
+   "caption_hi": "इंद्र की सभा"
+  },
+  {
+   "type": "scene",
+   "id": "attack",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "narad",
+     "x": 760,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "emo": "smile",
+        "pose": "chest",
+        "seat": "none",
+        "t": 0.8
+       },
+       {
+        "emo": "joy",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kama",
+     "x": 260,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "bow",
+     "emo": "sly",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "shock",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasanta",
+     "x": 110,
+     "y": 660,
+     "s": 0.8,
+     "face": 1,
+     "pose": "offer",
+     "emo": "joy",
+     "in": 0
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 0,
+     "n": 40,
+     "w": 1280,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "arrow",
+     "kind": "beam",
+     "x": 360,
+     "y": 380,
+     "dx": 300,
+     "dy": 0,
+     "col": "#f59ab8",
+     "w": 10,
+     "z": 55,
+     "in": 2,
+     "out": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "Spring burst over the mountain. Flowers bloomed, cuckoos sang, and Kama drew his flowered bow.",
+     "text_hi": "पर्वत पर वसंत छा गया। फूल खिल उठे, कोयलें गाने लगीं, और कामदेव ने अपना पुष्प-धनुष ताना।",
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "bang": "TWANG!|टंकार!",
+     "bangPos": "420,180"
+    },
+    {
+     "who": "narrator",
+     "text": "Nothing happened. Narada did not even open his eyes.",
+     "text_hi": "कुछ नहीं हुआ। नारद ने आँखें तक नहीं खोलीं।",
+     "cam": "mid:narad",
+     "capPos": "bottom"
+    },
+    {
+     "who": "kama",
+     "text": "My arrows... they have no power here!",
+     "text_hi": "मेरे बाण... यहाँ उनमें कोई शक्ति नहीं!",
+     "cam": "mid:kama"
+    },
+    {
+     "who": "narrator",
+     "text": "For this was the very spot where Shiva had once burned Kama to ashes, and Shiva had declared that Kama's tricks would never work here.",
+     "text_hi": "क्योंकि यह वही स्थान था जहाँ शिव ने कभी कामदेव को भस्म किया था, और शिव ने कहा था कि यहाँ काम की कोई चाल कभी नहीं चलेगी।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "narrator",
+     "text": "Narada knew none of this. When he opened his eyes, he believed he had beaten desire all by himself.",
+     "text_hi": "नारद यह सब नहीं जानते थे। जब उन्होंने आँखें खोलीं, तो उन्हें लगा कि उन्होंने अपने बल पर काम को जीत लिया है।",
+     "camMove": true,
+     "cam": "full:narad"
+    },
+    {
+     "who": "narad",
+     "text": "I have conquered Kama himself!",
+     "text_hi": "मैंने स्वयं कामदेव को जीत लिया!",
+     "cam": "close:narad"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "boast1",
+   "set": "kailash",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "x": 900,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 380,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "veena",
+     "item": "veena",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "joy",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "Mahadeva! Kama came to tempt me, with spring itself. And I did not move! I defeated him!",
+     "text_hi": "महादेव! कामदेव मुझे लुभाने आया, वसंत को साथ लेकर। और मैं टस से मस नहीं हुआ! मैंने उसे हरा दिया!",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "shiva",
+     "text": "You are blessed, Narada. But listen to me. Do not tell this to anyone else.",
+     "text_hi": "तुम धन्य हो, नारद। पर मेरी बात सुनो। यह बात किसी और से मत कहना।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "Above all, do not tell it to Vishnu. Keep it a secret. I say this because I love you.",
+     "text_hi": "सबसे बढ़कर, विष्णु से मत कहना। इसे गुप्त रखना। मैं यह इसलिए कहता हूँ क्योंकि तुम मुझे प्रिय हो।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "But Narada was already lost in Shiva's maya. He heard the words, and did not listen.",
+     "text_hi": "पर नारद तो शिव की माया में खो चुके थे। उन्होंने बात सुनी, पर मानी नहीं।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "wind"
+   ],
+   "trans": "wipe",
+   "caption": "Mount Kailasa",
+   "caption_hi": "कैलास पर्वत"
+  },
+  {
+   "type": "scene",
+   "id": "boast2",
+   "set": "vaikuntha",
+   "ctx": {},
+   "els": [
+    {
+     "id": "vishnu",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.5
+       },
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 380,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "chest",
+     "item": "veena",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "joy",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "He went to Brahma and boasted. Then he went straight to Vishnu.",
+     "text_hi": "वे ब्रह्मा के पास गए और डींग मारी। फिर सीधे विष्णु के पास पहुँचे।",
+     "cam": "wide"
+    },
+    {
+     "who": "narad",
+     "text": "Lord, I sat in the Himalaya, and Kama himself could not shake me!",
+     "text_hi": "प्रभु, मैं हिमालय में बैठा था, और स्वयं कामदेव मुझे डिगा नहीं सका!",
+     "cam": "two:narad,vishnu"
+    },
+    {
+     "who": "vishnu",
+     "text": "Mahadeva, your maya is blessed. It fools everyone.",
+     "text_hi": "महादेव, आपकी माया धन्य है। यह सबको मोह लेती है।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "vishnu",
+     "text": "Desire troubles only those without devotion. How could it ever touch you?",
+     "text_hi": "काम केवल उन्हें सताता है जिनमें भक्ति नहीं। वह आपको कैसे छू सकता है?",
+     "cam": "mid:vishnu"
+    },
+    {
+     "who": "narad",
+     "text": "As long as you are kind to me, lord, what power has Kama over me?",
+     "text_hi": "जब तक आपकी कृपा है, प्रभु, कामदेव की मुझ पर क्या चलेगी?",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "vishnu",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "wipe",
+   "caption": "Vaikuntha",
+   "caption_hi": "वैकुंठ"
+  },
+  {
+   "type": "card",
+   "id": "chapter9",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "A City Made of Maya",
+   "title_hi": "माया का नगर",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "city",
+   "set": "city",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "narad",
+     "x": -120,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "veena",
+     "item": "veena",
+     "emo": "smile",
+     "walk": 1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 420,
+        "t": 3,
+        "walk": 1
+       }
+      ],
+      "2": [
+       {
+        "walk": 0,
+        "t": 0.3
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "On Narada's road, Vishnu raised a city out of nothing. A hundred yojanas wide, more beautiful than heaven.",
+     "text_hi": "नारद के मार्ग में, विष्णु ने शून्य से एक नगर रच दिया। सौ योजन चौड़ा, स्वर्ग से भी सुंदर।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "There, King Shilanidhi was holding a svayamvara for his daughter. Princes had come from every direction.",
+     "text_hi": "वहाँ राजा शीलनिधि अपनी पुत्री का स्वयंवर कर रहे थे। हर दिशा से राजकुमार आए थे।",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "palace",
+   "set": "court",
+   "ctx": {
+    "col": "#7a1a3a"
+   },
+   "els": [
+    {
+     "id": "shilanidhi",
+     "x": 900,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 360,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "bless",
+     "emo": "calm",
+     "item": "veena",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "pose": "pointUp",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "shrimati",
+     "x": 1120,
+     "y": 660,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "anim": "right",
+     "d": 0.3,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 620,
+        "t": 1.5
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide"
+    },
+    {
+     "who": "shilanidhi",
+     "text": "Great sage, this is my daughter, Shrimati. Tell me her fortune. What kind of husband will she have?",
+     "text_hi": "महान ऋषि, यह मेरी पुत्री श्रीमती है। इसका भाग्य बताइए। इसे कैसा पति मिलेगा?",
+     "cam": "mid:shilanidhi"
+    },
+    {
+     "who": "narrator",
+     "text": "Narada looked at the princess. And the sage who had beaten desire forgot everything.",
+     "text_hi": "नारद ने राजकुमारी को देखा। और काम को जीतने वाला ऋषि सब कुछ भूल गया।",
+     "cam": "two:narad,shrimati"
+    },
+    {
+     "who": "narad",
+     "text": "Her husband will be a lord of everything. Unconquerable. Like Shiva. One who has conquered Kama!",
+     "text_hi": "इसका पति सबका स्वामी होगा। अजेय। शिव के समान। जिसने कामदेव को जीता हो!",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "One who has conquered Kama... that is me! But will she choose me, among all these princes?",
+     "text_hi": "जिसने कामदेव को जीता हो... वह तो मैं हूँ! पर क्या इतने राजकुमारों में वह मुझे चुनेगी?",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narad",
+     "text": "Women love beauty. And who is more beautiful than Vishnu?",
+     "text_hi": "सुंदरता सबको भाती है। और विष्णु से सुंदर कौन है?",
+     "cam": "ecu:narad"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "wipe",
+   "caption": "King Shilanidhi's palace",
+   "caption_hi": "राजा शीलनिधि का महल"
+  },
+  {
+   "type": "scene",
+   "id": "ask",
+   "set": "vaikuntha",
+   "ctx": {},
+   "els": [
+    {
+     "id": "vishnu",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "vishnu",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.3
+       },
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 380,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "beg",
+     "emo": "smile",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "beg",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "m",
+     "kind": "sparkle",
+     "x": 380,
+     "y": 380,
+     "n": 30,
+     "r": 200,
+     "z": 60,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "narad",
+     "text": "Lord, I want to marry Shrimati. Give me your form, so that she places the garland around my neck!",
+     "text_hi": "प्रभु, मैं श्रीमती से विवाह करना चाहता हूँ। मुझे अपना रूप दे दीजिए, ताकि वह वरमाला मेरे गले में डाले!",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "vishnu",
+     "text": "Go, sage. I will do what is good for you. Just as a physician treats a patient.",
+     "text_hi": "जाओ, ऋषि। मैं वही करूँगा जो तुम्हारे लिए हितकर है। जैसे वैद्य रोगी का उपचार करता है।",
+     "cam": "close:vishnu"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "mid:narad",
+     "sfx": "magic",
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "And Vishnu gave Narada... the face of a monkey. Then he vanished.",
+     "text_hi": "और विष्णु ने नारद को दिया... बंदर का चेहरा। फिर वे अंतर्धान हो गए।",
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "vishnu",
+   "amb": [
+    "ocean"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "card",
+   "id": "chapter13",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "The Svayamvara",
+   "title_hi": "स्वयंवर",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "hall",
+   "set": "court",
+   "ctx": {
+    "col": "#7a1a3a"
+   },
+   "els": [
+    {
+     "id": "crowd",
+     "kind": "crowd",
+     "x": 640,
+     "y": 560,
+     "n": 10,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "fig": "naradmonkey",
+     "x": 420,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "chest",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "prince",
+     "x": 860,
+     "y": 660,
+     "s": 0.85,
+     "face": -1,
+     "pose": "stand",
+     "emo": "calm",
+     "in": 0
+    },
+    {
+     "id": "gana",
+     "fig": "ganadisguise",
+     "x": 150,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "point",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana2",
+     "fig": "ganadisguise",
+     "x": 260,
+     "y": 665,
+     "s": 0.8,
+     "face": 1,
+     "pose": "chest",
+     "emo": "joy",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "Narada sat proudly in the hall, sure he looked like Vishnu. Everyone else saw only the old Narada.",
+     "text_hi": "नारद गर्व से सभा में बैठे, इस विश्वास में कि वे विष्णु जैसे दिखते हैं। बाकी सबको तो पुराने नारद ही दिखाई दिए।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "But two of Shiva's ganas, disguised as brahmins, could see the truth.",
+     "text_hi": "पर ब्राह्मण वेश में आए शिव के दो गण सच्चाई देख सकते थे।",
+     "cam": "two:gana,gana2"
+    },
+    {
+     "who": "gana",
+     "text": "Look at Narada! Vishnu's body, and a monkey's face!",
+     "text_hi": "नारद को देखो! शरीर विष्णु का, और मुँह बंदर का!",
+     "cam": "two:gana,gana2"
+    },
+    {
+     "who": "gana2",
+     "text": "And he hopes to win the princess! Ha ha ha!",
+     "text_hi": "और ये राजकुमारी को जीतने की आशा रखते हैं! हा हा हा!",
+     "cam": "mid:gana2"
+    },
+    {
+     "who": "narad",
+     "text": "Let them laugh. They are jealous.",
+     "text_hi": "हँसने दो। ये जलते हैं।",
+     "cam": "close:narad"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "garland",
+   "set": "court",
+   "ctx": {
+    "col": "#7a1a3a"
+   },
+   "els": [
+    {
+     "id": "vishnu",
+     "fig": "vishnuking",
+     "x": 1050,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "stand",
+     "emo": "smile",
+     "anim": "materialize",
+     "d": 0,
+     "in": 3,
+     "out": 6,
+     "od": 0.4
+    },
+    {
+     "id": "shrimati",
+     "x": -100,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "garland",
+     "item": "varmala",
+     "emo": "smile",
+     "walk": 1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 360,
+        "t": 2.5,
+        "walk": 1
+       }
+      ],
+      "2": [
+       {
+        "walk": 0,
+        "emo": "angry",
+        "t": 0.3
+       },
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "face": -1,
+        "t": 0.3
+       }
+      ],
+      "4": [
+       {
+        "x": 880,
+        "face": 1,
+        "walk": 1,
+        "t": 2.5
+       }
+      ],
+      "5": [
+       {
+        "walk": 0,
+        "emo": "joy",
+        "t": 0.3
+       }
+      ]
+     },
+     "out": 6,
+     "od": 0.4
+    },
+    {
+     "id": "narad",
+     "fig": "naradmonkey",
+     "x": 520,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "chest",
+     "emo": "joy",
+     "in": 0
+    },
+    {
+     "id": "sp",
+     "kind": "sparkle",
+     "x": 960,
+     "y": 400,
+     "n": 30,
+     "r": 200,
+     "z": 60,
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.3,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "Shrimati entered with a golden garland, searching the hall for her husband.",
+     "text_hi": "श्रीमती सोने की वरमाला लिए आईं, सभा में अपने पति को खोजती हुई।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "shrimati",
+     "text": "A monkey's face?",
+     "text_hi": "बंदर का चेहरा?",
+     "cam": "two:shrimati,narad"
+    },
+    {
+     "who": "narrator",
+     "text": "She turned away in disgust. Narada was stunned.",
+     "text_hi": "वह घृणा से मुँह फेरकर आगे बढ़ गईं। नारद हक्के-बक्के रह गए।",
+     "cam": "mid:narad",
+     "capPos": "bottom"
+    },
+    {
+     "who": "narrator",
+     "text": "Then a new king appeared in the hall. It was Vishnu himself, in disguise.",
+     "text_hi": "तभी सभा में एक नया राजा प्रकट हुआ। स्वयं विष्णु, वेश बदलकर।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "Her face bloomed like a lotus. She placed the garland around his neck, and the two of them vanished.",
+     "text_hi": "उनका मुख कमल की तरह खिल उठा। उन्होंने वरमाला उनके गले में डाल दी, और दोनों अंतर्धान हो गए।",
+     "cam": "two:shrimati,vishnu",
+     "sfx": "sparkle"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "magic"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "mirror",
+   "set": "court",
+   "ctx": {
+    "col": "#7a1a3a"
+   },
+   "els": [
+    {
+     "id": "narad",
+     "fig": "naradmonkey",
+     "x": 640,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "beg",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "face": 1,
+        "t": 0.3
+       }
+      ],
+      "3": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.3
+       },
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana",
+     "fig": "ganadisguise",
+     "x": 200,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "point",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "joy",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana2",
+     "fig": "ganadisguise",
+     "x": 320,
+     "y": 665,
+     "s": 0.8,
+     "face": 1,
+     "pose": "chest",
+     "emo": "joy",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "mirror",
+     "kind": "mirror",
+     "x": 820,
+     "y": 400,
+     "s": 1.2,
+     "z": 55,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "gana",
+     "text": "Narada, your desire was wasted. Look at your own face. It is a monkey's!",
+     "text_hi": "नारद, आपका मोह व्यर्थ गया। अपना चेहरा तो देखिए। बंदर का है!",
+     "cam": "two:gana,gana2"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "mid:narad",
+     "sfx": "crack"
+    },
+    {
+     "who": "narad",
+     "text": "You laughed at me! Then be born as brahmins, with the bodies of rakshasas!",
+     "text_hi": "तुमने मेरी हँसी उड़ाई! तो जाओ, ब्राह्मण कुल में जन्म लो, पर राक्षसों के शरीर के साथ!",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narrator",
+     "text": "The ganas did not curse him back. They knew he was not himself. They went away quietly, praising Shiva.",
+     "text_hi": "गणों ने बदले में शाप नहीं दिया। वे जानते थे कि नारद अपने आप में नहीं हैं। वे शिव की स्तुति करते हुए चुपचाप चले गए।",
+     "cam": "two:gana,gana2",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "court"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter17",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Four",
+   "kicker_hi": "चौथा भाग",
+   "title": "The Curse on Vishnu",
+   "title_hi": "विष्णु को शाप",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "curse",
+   "set": "vaikuntha",
+   "ctx": {},
+   "els": [
+    {
+     "id": "vishnu",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "fig": "naradmonkey",
+     "x": 380,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "point",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "rage",
+        "pose": "strike",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "fig": "narad",
+        "t": 0.01
+       },
+       {
+        "pose": "beg",
+        "emo": "sad",
+        "seat": "kneel",
+        "t": 0.8
+       },
+       {
+        "emo": "sad",
+        "pose": "beg",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "flash",
+     "kind": "burst",
+     "x": 640,
+     "y": 380,
+     "r": 400,
+     "col": "#ffffff",
+     "z": -1,
+     "in": 3,
+     "out": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "thunder"
+    },
+    {
+     "who": "narad",
+     "text": "Hari, you deceiver! You trick the whole world! You took Mohini's form and cheated the asuras of the nectar!",
+     "text_hi": "हरि, छलिया! तुम सारे संसार को छलते हो! तुमने मोहिनी बनकर असुरों से अमृत छीन लिया था!",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narad",
+     "text": "You tricked me over a woman. So in a human body you will suffer. You will lose your wife, and only monkeys will help you!",
+     "text_hi": "तुमने एक स्त्री के लिए मुझे छला। इसलिए मनुष्य देह में तुम दुख भोगोगे। तुम्हारी पत्नी तुमसे बिछड़ेगी, और केवल बंदर तुम्हारी सहायता करेंगे!",
+     "cam": "close:narad"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "boom",
+     "flash": true
+    },
+    {
+     "who": "vishnu",
+     "text": "I accept your curse, sage. It comes from Shiva's will.",
+     "text_hi": "मैं आपका शाप स्वीकार करता हूँ, ऋषि। यह शिव की इच्छा से आया है।",
+     "cam": "mid:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "And in that moment, Shiva lifted the maya. Narada's mind cleared, like a sky after rain.",
+     "text_hi": "और उसी क्षण शिव ने माया हटा ली। नारद का मन ऐसे साफ़ हो गया, जैसे वर्षा के बाद आकाश।",
+     "cam": "wide",
+     "capPos": "bottom",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narad",
+     "text": "Lord, what have I done? I spoke wicked words. I cursed you! Let the curse be false!",
+     "text_hi": "प्रभु, यह मैंने क्या कर दिया? मैंने दुर्वचन कहे। मैंने आपको शाप दे दिया! यह शाप झूठा हो जाए!",
+     "cam": "close:narad"
+    },
+    {
+     "who": "vishnu",
+     "text": "Do not grieve. It was Shiva's play, to break your pride. The curse will come true, and it will be for the good of the world.",
+     "text_hi": "दुखी मत हो। यह शिव की लीला थी, तुम्हारा अभिमान तोड़ने के लिए। शाप सत्य होगा, और वह संसार के कल्याण के लिए होगा।",
+     "cam": "mid:vishnu"
+    },
+    {
+     "who": "vishnu",
+     "text": "Go to Kashi. Sing the names of Shiva, and your heart will be at peace.",
+     "text_hi": "काशी जाओ। शिव के नाम गाओ, तुम्हारा मन शांत हो जाएगा।",
+     "cam": "close:vishnu"
+    },
+    {
+     "who": "narrator",
+     "text": "Ages later, Vishnu was born as Rama. He lost Sita, and an army of monkeys helped him win her back.",
+     "text_hi": "युगों बाद विष्णु ने राम के रूप में जन्म लिया। सीता उनसे बिछड़ीं, और वानरों की सेना ने उन्हें वापस पाने में सहायता की।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "tint": [
+    "#5a0a0a",
+    0.12
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "forgiven",
+   "set": "himalaya",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "narad",
+     "x": 640,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "item": "veena",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana",
+     "fig": "ganadisguise",
+     "x": 200,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana2",
+     "fig": "ganadisguise",
+     "x": 320,
+     "y": 665,
+     "s": 0.8,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "z": -1,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "gana",
+     "text": "Sage, we only laughed. Will you free us from your curse?",
+     "text_hi": "ऋषिवर, हमने तो केवल हँसी की थी। क्या आप हमें शाप से मुक्त करेंगे?",
+     "cam": "mid:gana"
+    },
+    {
+     "who": "narad",
+     "text": "A curse cannot be taken back. You will be born as mighty rakshasa kings. But you will die by Vishnu's own hand, and you will be free.",
+     "text_hi": "शाप वापस नहीं लिया जा सकता। तुम पराक्रमी राक्षस राजा बनोगे। पर विष्णु के हाथों मरोगे, और मुक्त हो जाओगे।",
+     "cam": "mid:narad"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "river"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "So, the moment you think you have beaten desire, that is when it has beaten you.",
+     "text_hi": "तो, जिस क्षण आपको लगे कि आपने काम को जीत लिया, उसी क्षण उसने आपको जीत लिया होता है।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "rishi",
+     "text": "Tell us another, Suta! Is there a story of Shiva's mercy?",
+     "text_hi": "एक और सुनाइए, सूत जी! क्या शिव की करुणा की कोई कथा है?",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "There is. It is about a thief.",
+     "text_hi": "है। एक चोर की।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next21",
+   "style": "next",
+   "lines": [],
+   "dur": 8,
+   "title": "The Thief and the Lamp",
+   "title_hi": "चोर और दीपक",
+   "sub": "A gambler, a temple, and the night of Shiva",
+   "sub_hi": "एक जुआरी, एक मंदिर, और शिव की रात",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end22",
+   "style": "end",
+   "lines": [],
+   "dur": 10,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Two: Narada's Pride",
+   "sub_hi": "दूसरा अंक: नारद का अभिमान",
+   "credits": [
+    "Adapted from the Shiva Purana, Rudra Samhita",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code"
+   ],
+   "credits_hi": [
+    "शिव पुराण, रुद्र संहिता पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने"
+   ]
+  }
+ ]
+}

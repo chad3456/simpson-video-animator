@@ -1,0 +1,1102 @@
+{
+ "meta": {
+  "series": "शिव पुराण",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "महादेव की कथाएँ",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "hi",
+  "title": "पार्वती की तपस्या",
+  "title_hi": "पार्वती की तपस्या",
+  "episode": "9",
+  "slug": "e09-parvatis-penance",
+  "kicker": "नौवाँ अंक",
+  "kicker_hi": "नौवाँ अंक",
+  "sub": "वह तप जिसने अजेय को जीता",
+  "sub_hi": "वह तप जिसने अजेय को जीता",
+  "logline": "पार्वती रेशम छोड़कर वल्कल पहनती हैं, भोजन छोड़कर पत्ते खाती हैं, फिर पत्ते भी छोड़ देती हैं। सप्तर्षि उन्हें समझाने आते हैं, और फिर एक विचित्र युवा तपस्वी उससे भी ज़्यादा कोशिश करता है।",
+  "logline_hi": "पार्वती रेशम छोड़कर वल्कल पहनती हैं, भोजन छोड़कर पत्ते खाती हैं, फिर पत्ते भी छोड़ देती हैं। सप्तर्षि उन्हें समझाने आते हैं, और फिर एक विचित्र युवा तपस्वी उससे भी ज़्यादा कोशिश करता है।",
+  "source": "Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 22 to 30 (tr. Bibek Debroy)",
+  "num": "9"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "hm_psi:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "rishi": {
+   "label": "Sage",
+   "label_hi": "ऋषि",
+   "fig": "rishi",
+   "voice": "hm_omega:0.7+bm_daniel:0.3",
+   "speed": 0.95,
+   "fx": "room"
+  },
+  "shiva": {
+   "label": "Shiva",
+   "label_hi": "शिव",
+   "fig": "shiva",
+   "divine": true,
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.9,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "parvati": {
+   "label": "Parvati",
+   "label_hi": "पार्वती",
+   "fig": "parvati",
+   "voice": "hf_beta:0.7+af_heart:0.3",
+   "speed": 0.97,
+   "fx": "room"
+  },
+  "mena": {
+   "label": "Mena",
+   "label_hi": "मेना",
+   "fig": "mena",
+   "voice": "hf_alpha:0.6+af_sarah:0.4",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "vasishtha": {
+   "label": "Vasishtha",
+   "label_hi": "वसिष्ठ",
+   "fig": "vasishtha",
+   "voice": "hm_psi:0.6+bm_george:0.4",
+   "speed": 0.92,
+   "pitch": -1,
+   "fx": "elder"
+  },
+  "jatila": {
+   "label": "The Young Ascetic",
+   "label_hi": "जटिल ब्रह्मचारी",
+   "fig": "jatila",
+   "voice": "hm_psi:0.7+am_puck:0.3",
+   "speed": 1.04,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "vijaya": {
+   "label": "Vijaya",
+   "label_hi": "विजया",
+   "fig": "vijaya",
+   "voice": "hf_beta:0.6+af_nova:0.4",
+   "speed": 1.02,
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "parvatiTapas,shiva,jatila"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "suta",
+     "text": "कामदेव भस्म हो चुके थे। शिव जा चुके थे। और पार्वती ने मन बना लिया।",
+     "text_hi": "कामदेव भस्म हो चुके थे। शिव जा चुके थे। और पार्वती ने मन बना लिया।",
+     "cam": "mid:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Nine",
+   "kicker_hi": "नौवाँ अंक",
+   "title": "Parvati's Penance",
+   "title_hi": "पार्वती की तपस्या",
+   "sub": "The austerity that won the unwinnable",
+   "sub_hi": "वह तप जिसने अजेय को जीता",
+   "figs": "parvatiTapas,jatila",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "O, Do Not!",
+   "title_hi": "उ मा!",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "leave",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "mena",
+     "x": 880,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "beg",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "pose": "beg",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "pose": "bless",
+        "emo": "calm",
+        "t": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "parvati",
+     "x": 400,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide"
+    },
+    {
+     "who": "parvati",
+     "text": "माँ, पिताजी मान गए हैं। कल सुबह मैं वन जाऊँगी और तप करूँगी, जब तक शिव को पा न लूँ।",
+     "text_hi": "माँ, पिताजी मान गए हैं। कल सुबह मैं वन जाऊँगी और तप करूँगी, जब तक शिव को पा न लूँ।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "mena",
+     "text": "तेरा शरीर इतना कोमल है, बेटी। यहीं घर पर तप कर ले। सब देवता यहीं हैं, सब तीर्थ यहीं हैं। उ... मा! अरी, मत जा!",
+     "text_hi": "तेरा शरीर इतना कोमल है, बेटी। यहीं घर पर तप कर ले। सब देवता यहीं हैं, सब तीर्थ यहीं हैं। उ... मा! अरी, मत जा!",
+     "cam": "mid:mena"
+    },
+    {
+     "who": "narrator",
+     "text": "\"उ मा।\" अरी, मत जा। और इसी से उनका नाम पड़ा उमा।",
+     "text_hi": "\"उ मा।\" अरी, मत जा। और इसी से उनका नाम पड़ा उमा।",
+     "camMove": true,
+     "cam": "two:parvati,mena",
+     "capPos": "bottom"
+    },
+    {
+     "who": "narrator",
+     "text": "पर मेना ने देखा कि बेटी कितनी दुखी है, और अंततः उन्होंने उसे जाने दिया।",
+     "text_hi": "पर मेना ने देखा कि बेटी कितनी दुखी है, और अंततः उन्होंने उसे जाने दिया।",
+     "cam": "wide"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "ink",
+   "caption": "The palace of Himavan",
+   "caption_hi": "हिमवान का महल"
+  },
+  {
+   "type": "scene",
+   "id": "tapas",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "parvati",
+     "fig": "parvatiTapas",
+     "x": 640,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0
+    },
+    {
+     "id": "f1",
+     "kind": "fire",
+     "x": 420,
+     "y": 650,
+     "size": 0.5,
+     "z": -1,
+     "in": 2,
+     "out": 4
+    },
+    {
+     "id": "f2",
+     "kind": "fire",
+     "x": 860,
+     "y": 650,
+     "size": 0.5,
+     "z": -1,
+     "in": 2,
+     "out": 4
+    },
+    {
+     "id": "sun",
+     "kind": "glow",
+     "x": 640,
+     "y": 120,
+     "r": 200,
+     "warm": true,
+     "z": -3,
+     "in": 2,
+     "out": 4
+    },
+    {
+     "id": "snow",
+     "kind": "snow",
+     "x": 640,
+     "y": 0,
+     "n": 70,
+     "w": 1280,
+     "z": 50,
+     "in": 4
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 640,
+     "y": 480,
+     "r": 520,
+     "warm": true,
+     "op": 0.6,
+     "z": -2,
+     "in": 7
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने गहने और रेशम उतार दिए, और वल्कल और मृगचर्म पहन लिया। वे उसी ढलान पर गईं जहाँ शिव ने कामदेव को भस्म किया था।",
+     "text_hi": "उन्होंने गहने और रेशम उतार दिए, और वल्कल और मृगचर्म पहन लिया। वे उसी ढलान पर गईं जहाँ शिव ने कामदेव को भस्म किया था।",
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "fire",
+     "tint": "#ff6a0a,0.12"
+    },
+    {
+     "who": "narrator",
+     "text": "गर्मी में वे जलती धूप में धधकती अग्नियों के बीच बैठीं।",
+     "text_hi": "गर्मी में वे जलती धूप में धधकती अग्नियों के बीच बैठीं।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "wind",
+     "tint": "#a8c8f0,0.15"
+    },
+    {
+     "who": "narrator",
+     "text": "सर्दी में वे रात भर बर्फ़ीले पानी में खड़ी रहीं।",
+     "text_hi": "सर्दी में वे रात भर बर्फ़ीले पानी में खड़ी रहीं।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "narrator",
+     "text": "पहले उन्होंने फल खाए। फिर केवल पत्ते। फिर पत्ते भी छोड़ दिए। तब संसार ने उन्हें अपर्णा कहा, जिसने पत्ता भी नहीं खाया।",
+     "text_hi": "पहले उन्होंने फल खाए। फिर केवल पत्ते। फिर पत्ते भी छोड़ दिए। तब संसार ने उन्हें अपर्णा कहा, जिसने पत्ता भी नहीं खाया।",
+     "camMove": true,
+     "cam": "full:parvati"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "wide",
+     "sfx": "swell"
+    },
+    {
+     "who": "narrator",
+     "text": "उनका तप इतना प्रचंड था कि तीनों लोक तपने लगे, और देवता दौड़कर शिव के पास गए।",
+     "text_hi": "उनका तप इतना प्रचंड था कि तीनों लोक तपने लगे, और देवता दौड़कर शिव के पास गए।",
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "river"
+   ],
+   "trans": "wipe",
+   "caption": "Gaurishikhara",
+   "caption_hi": "गौरीशिखर"
+  },
+  {
+   "type": "card",
+   "id": "chapter6",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "The Seven Sages",
+   "title_hi": "सप्तर्षि",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "sages",
+   "set": "himalaya",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "parvati",
+     "fig": "parvatiTapas",
+     "x": 880,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vasishtha",
+     "x": 380,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "point",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "pose": "namaste",
+        "emo": "joy",
+        "t": 0.6
+       },
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 200,
+     "y": 665,
+     "s": 0.85,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "rishi2",
+     "fig": "rishi2",
+     "x": 80,
+     "y": 670,
+     "s": 0.82,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -2,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने उनकी परीक्षा लेने सात महर्षियों को भेजा।",
+     "text_hi": "शिव ने उनकी परीक्षा लेने सात महर्षियों को भेजा।",
+     "cam": "wide"
+    },
+    {
+     "who": "vasishtha",
+     "text": "बेटी, शिव के लिए स्वयं को क्यों सताती हो? वह भटकता भिखारी है। उसने बिना कारण कामदेव को जला दिया। उसने सती को मरने दिया।",
+     "text_hi": "बेटी, शिव के लिए स्वयं को क्यों सताती हो? वह भटकता भिखारी है। उसने बिना कारण कामदेव को जला दिया। उसने सती को मरने दिया।",
+     "cam": "mid:vasishtha"
+    },
+    {
+     "who": "vasishtha",
+     "text": "उसकी जगह विष्णु से विवाह कर लो। वे सुंदर हैं, दयालु हैं, वैकुंठ में रहते हैं।",
+     "text_hi": "उसकी जगह विष्णु से विवाह कर लो। वे सुंदर हैं, दयालु हैं, वैकुंठ में रहते हैं।",
+     "cam": "close:vasishtha"
+    },
+    {
+     "who": "parvati",
+     "text": "ऋषियो, आप जो मानते हैं, वह कहते हैं। पर मैं शिव से विवाह करूँगी, या किसी से नहीं। यदि वे मुझे अस्वीकार भी करें, तो मैं हज़ार जन्मों तक तप करूँगी।",
+     "text_hi": "ऋषियो, आप जो मानते हैं, वह कहते हैं। पर मैं शिव से विवाह करूँगी, या किसी से नहीं। यदि वे मुझे अस्वीकार भी करें, तो मैं हज़ार जन्मों तक तप करूँगी।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "vasishtha",
+     "text": "तब आप ही जगन्माता हैं, और हम आपको प्रणाम करते हैं।",
+     "text_hi": "तब आप ही जगन्माता हैं, और हम आपको प्रणाम करते हैं।",
+     "cam": "mid:vasishtha"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "wind"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "card",
+   "id": "chapter8",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "The Young Ascetic",
+   "title_hi": "युवा तपस्वी",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "jatila",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "parvati",
+     "fig": "parvatiTapas",
+     "x": 880,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "rage",
+        "pose": "halt",
+        "t": 0.4
+       },
+       {
+        "emo": "rage",
+        "pose": "halt",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "face": 1,
+        "x": 1100,
+        "t": 1,
+        "walk": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "vijaya",
+     "x": 1110,
+     "y": 665,
+     "s": 0.82,
+     "face": -1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "jatila",
+     "x": -120,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "rest",
+     "emo": "smile",
+     "item": "danda",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 380,
+        "t": 2,
+        "walk": 1
+       }
+      ],
+      "2": [
+       {
+        "walk": 0,
+        "t": 0.3
+       },
+       {
+        "emo": "smile",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर एक दिन एक युवा ब्रह्मचारी आया, जटाधारी, हाथ में दंड, अपने तप से दमकता हुआ।",
+     "text_hi": "फिर एक दिन एक युवा ब्रह्मचारी आया, जटाधारी, हाथ में दंड, अपने तप से दमकता हुआ।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "jatila",
+     "text": "इतनी कठोर तपस्या, इतनी कम उम्र में! क्या चाहती हो, देवी? स्वर्ग? धन? पति?",
+     "text_hi": "इतनी कठोर तपस्या, इतनी कम उम्र में! क्या चाहती हो, देवी? स्वर्ग? धन? पति?",
+     "cam": "mid:jatila"
+    },
+    {
+     "who": "vijaya",
+     "text": "वे शिव को पति के रूप में चाहती हैं।",
+     "text_hi": "वे शिव को पति के रूप में चाहती हैं।",
+     "cam": "mid:vijaya"
+    },
+    {
+     "who": "jatila",
+     "text": "शिव? हा! उसका न कुल है, न घर, न वस्त्र। वह बैल पर चढ़ता है और श्मशान की भस्म मलता है।",
+     "text_hi": "शिव? हा! उसका न कुल है, न घर, न वस्त्र। वह बैल पर चढ़ता है और श्मशान की भस्म मलता है।",
+     "cam": "mid:jatila"
+    },
+    {
+     "who": "jatila",
+     "text": "गले में साँप। मित्र प्रेत। सोचो विवाह कैसा होगा! तुम रेशम में, और वह बाघ की खाल में।",
+     "text_hi": "गले में साँप। मित्र प्रेत। सोचो विवाह कैसा होगा! तुम रेशम में, और वह बाघ की खाल में।",
+     "cam": "close:jatila"
+    },
+    {
+     "who": "parvati",
+     "text": "बस! तुम शिव के बारे में कुछ नहीं जानते। वे गुणों से परे हैं। जिस भस्म का तुम उपहास करते हो, उसे स्वयं देवता धारण करते हैं!",
+     "text_hi": "बस! तुम शिव के बारे में कुछ नहीं जानते। वे गुणों से परे हैं। जिस भस्म का तुम उपहास करते हो, उसे स्वयं देवता धारण करते हैं!",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "जो शिव की निंदा सुनता है, वह भी पाप का भागी होता है। विजया, चलो। मैं यहाँ एक पल भी नहीं रुकूँगी।",
+     "text_hi": "जो शिव की निंदा सुनता है, वह भी पाप का भागी होता है। विजया, चलो। मैं यहाँ एक पल भी नहीं रुकूँगी।",
+     "cam": "close:parvati"
+    },
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "river"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "reveal",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 380,
+     "y": 420,
+     "r": 540,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "fig": "shivafair",
+     "x": 380,
+     "y": 660,
+     "s": 1.0,
+     "face": 1,
+     "pose": "reach",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 1.5,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "reach",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "parvati",
+     "fig": "parvatiTapas",
+     "x": 900,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "rest",
+     "emo": "angry",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "face": -1,
+        "emo": "shock",
+        "t": 0.4
+       }
+      ],
+      "4": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.6
+       },
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 0,
+     "n": 60,
+     "w": 1280,
+     "z": 50,
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.8,
+     "cam": "wide",
+     "sfx": "om",
+     "swell": true,
+     "flash": true,
+     "bang": "OM|ॐ",
+     "bangPos": "640,150",
+     "bangCol": "#ffd22e"
+    },
+    {
+     "who": "shiva",
+     "text": "मुझे छोड़कर कहाँ जाओगी, पार्वती?",
+     "text_hi": "मुझे छोड़कर कहाँ जाओगी, पार्वती?",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "युवा तपस्वी कहीं नहीं था। उसकी जगह स्वयं शिव खड़े थे, मुस्कुराते हुए।",
+     "text_hi": "युवा तपस्वी कहीं नहीं था। उसकी जगह स्वयं शिव खड़े थे, मुस्कुराते हुए।",
+     "cam": "two:shiva,parvati",
+     "capPos": "bottom"
+    },
+    {
+     "who": "shiva",
+     "text": "मैंने तुम्हारी परीक्षा ली, और तुम नहीं डिगीं। तुम्हारे तप ने मुझे मोल ले लिया है। मैं तुम्हारा हूँ। जो चाहो माँगो।",
+     "text_hi": "मैंने तुम्हारी परीक्षा ली, और तुम नहीं डिगीं। तुम्हारे तप ने मुझे मोल ले लिया है। मैं तुम्हारा हूँ। जो चाहो माँगो।",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "parvati",
+     "text": "तो मेरे पिता से मेरा हाथ माँगिए, प्रभु। संसार देखे कि आप विधिपूर्वक मुझसे विवाह करते हैं।",
+     "text_hi": "तो मेरे पिता से मेरा हाथ माँगिए, प्रभु। संसार देखे कि आप विधिपूर्वक मुझसे विवाह करते हैं।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "shiva",
+     "text": "ऐसा ही हो।",
+     "text_hi": "ऐसा ही हो।",
+     "cam": "two:shiva,parvati"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "sparkle",
+     "conch": true
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "wind"
+   ],
+   "trans": "flash"
+  },
+  {
+   "type": "scene",
+   "id": "home",
+   "set": "himalaya",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "himavan",
+     "x": 380,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "in": 0
+    },
+    {
+     "id": "mena",
+     "x": 600,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "offer",
+     "emo": "joy",
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "x": 920,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "joy",
+     "anim": "right",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "conch",
+     "bells": true
+    },
+    {
+     "who": "narrator",
+     "text": "पार्वती विजयी होकर घर लौटीं, और पूरे पर्वत राज्य में उत्सव मनाया गया।",
+     "text_hi": "पार्वती विजयी होकर घर लौटीं, और पूरे पर्वत राज्य में उत्सव मनाया गया।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "पर सब प्रसन्न नहीं थे। शिव मेना के मन की भी परीक्षा लेना चाहते थे।",
+     "text_hi": "पर सब प्रसन्न नहीं थे। शिव मेना के मन की भी परीक्षा लेना चाहते थे।",
+     "camMove": true,
+     "cam": "two:himavan,mena",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "जिसे न सुंदरता डिगा सकी, न काम, उसे दृढ़ता ने जीत लिया।",
+     "text_hi": "जिसे न सुंदरता डिगा सकी, न काम, उसे दृढ़ता ने जीत लिया।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "rishi",
+     "text": "और विवाह, सूत जी! विवाह के बारे में बताइए!",
+     "text_hi": "और विवाह, सूत जी! विवाह के बारे में बताइए!",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "अहा। विवाह। वहीं तो मेना बेहोश हो गई थीं।",
+     "text_hi": "अहा। विवाह। वहीं तो मेना बेहोश हो गई थीं।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next13",
+   "style": "next",
+   "lines": [],
+   "dur": 8,
+   "title": "The Wedding of Shiva",
+   "title_hi": "शिव विवाह",
+   "sub": "The strangest groom the world has ever seen",
+   "sub_hi": "संसार का सबसे अनोखा दूल्हा",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end14",
+   "style": "end",
+   "lines": [],
+   "dur": 10,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Nine: Parvati's Penance",
+   "sub_hi": "नौवाँ अंक: पार्वती की तपस्या",
+   "credits": [
+    "Adapted from the Shiva Purana, Rudra Samhita, Parvati Khanda",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code"
+   ],
+   "credits_hi": [
+    "शिव पुराण, रुद्र संहिता, पार्वती खंड पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने"
+   ]
+  }
+ ]
+}

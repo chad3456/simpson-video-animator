@@ -1,0 +1,141 @@
+title: The Uninvited
+title_hi: बिन बुलाए
+episode: 6
+slug: e06-the-uninvited
+kicker: Issue Six
+kicker_hi: छठा अंक
+sub: Daksha's great sacrifice, and the guest he refused
+sub_hi: दक्ष का महायज्ञ, और वह अतिथि जिसे उन्होंने ठुकराया
+logline: Daksha holds the greatest sacrifice the world has seen and invites everyone except Shiva. Sati goes anyway.
+logline_hi: दक्ष संसार का सबसे बड़ा यज्ञ करते हैं और शिव को छोड़कर सबको बुलाते हैं। सती फिर भी जाती हैं।
+source: Shiva Purana, Rudra Samhita, Sati Khanda, chapters 26 to 31 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=daksha,sati,shiva
+
+== SCENE frame | set=forest time=dusk music=sorrow amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=sad seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+SUTA (sad) [mid:suta]: Daksha never loved his son-in-law. To him, Shiva was a beggar who wore ash and skulls and lived among ghosts. || दक्ष ने अपने दामाद को कभी पसंद नहीं किया। उनकी नज़र में शिव एक भिखारी थे, जो भस्म और खोपड़ियाँ पहनते और प्रेतों के बीच रहते थे।
+SUTA (calm, pose=raise) [close:suta]: It began with a small thing. Shiva did not stand up. || शुरुआत एक छोटी-सी बात से हुई। शिव खड़े नहीं हुए।
+
+== TITLE | dur=7 | kicker=Issue Six | kicker_hi=छठा अंक | title=The Uninvited | title_hi=बिन बुलाए | sub=Daksha's great sacrifice, and the guest he refused | sub_hi=दक्ष का महायज्ञ, और वह अतिथि जिसे उन्होंने ठुकराया | figs=daksha,sati | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=The Insult at Prayaga | title_hi=प्रयाग में अपमान
+
+== SCENE prayaga | set=yajna time=day music=court amb=court trans=ink | caption=A gathering of sages at Prayaga | caption_hi=प्रयाग में ऋषियों की सभा
++ fire kind=fire x=640 y=650 size=0.6 z=-2
+@ shiva x=980 y=650 s=0.92 face=-1 pose=abhaya emo=calm seat=lotus
+@ brahma x=1160 y=650 s=0.85 face=-1 pose=brahma emo=calm seat=lotus z=-1
+@ rishi x=150 y=665 s=0.8 face=1 pose=namaste emo=calm z=-1
+@ daksha x=-150 y=660 s=0.95 face=1 pose=stand emo=calm
+BEAT 0.4 [wide] (sfx=gong)
+> daksha x=420 t=2.2 walk=1
+NARRATOR [~wide]: When Daksha entered the great assembly, every sage and god rose to honour him. Every one, except Brahma, his father, and Shiva. || जब दक्ष महासभा में आए, हर ऋषि और देवता उनके सम्मान में खड़ा हो गया। हर एक, सिवाय उनके पिता ब्रह्मा और शिव के।
+> daksha walk=0 emo=angry pose=point t=0.4
+DAKSHA (rage, pose=point) [mid:daksha] (shout): Look at him! My son-in-law, who should be like my son, does not even rise for me! || देखो इसे! मेरा दामाद, जिसे मेरे पुत्र जैसा होना चाहिए, मेरे लिए उठा तक नहीं!
+DAKSHA (rage) [close:daksha]: He wanders burning grounds with ghosts, wears ash, and has no manners. He shall have no share in any sacrifice! || यह श्मशानों में प्रेतों के साथ घूमता है, भस्म लगाता है, और इसमें कोई शिष्टाचार नहीं। इसे किसी यज्ञ में भाग नहीं मिलेगा!
+NARRATOR [mid:shiva] (capPos=bottom): Shiva said nothing. He sat as still as a mountain. || शिव ने कुछ नहीं कहा। वे पर्वत की तरह स्थिर बैठे रहे।
+@ nandi fig=nandigana x=820 y=660 s=0.92 face=-1 pose=point emo=rage anim=right
+NANDI (rage, pose=point) [mid:nandi] (shout): You curse my lord? Then hear me! You and those who follow you will lose all true knowledge. And you, Daksha, will wear the face of a goat! || तुम मेरे स्वामी को शाप देते हो? तो मेरी भी सुनो! तुम और तुम्हारे अनुयायी सच्चा ज्ञान खो देंगे। और तुम, दक्ष, बकरे का मुँह पाओगे!
+SHIVA (calm, pose=halt) [mid:shiva]: Nandi. Enough. Anger is not wisdom. Come. || नंदी। बस। क्रोध ज्ञान नहीं है। चलो।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=Everyone But Shiva | title_hi=शिव के सिवा सब
+
+== SCENE kanakhala | set=yajna time=day music=court amb=fire trans=ink | caption=Kanakhala, Daksha's great sacrifice | caption_hi=कनखल, दक्ष का महायज्ञ
++ fire kind=fire x=640 y=650 size=1.0 z=-1
++ crowd kind=crowd x=640 y=560 n=12 z=-3
+@ daksha x=380 y=660 s=0.95 face=1 pose=raise emo=joy
+@ bhrigu x=880 y=660 s=0.9 face=-1 pose=offer emo=calm
+@ vishnu x=1100 y=665 s=0.85 face=-1 pose=vishnu emo=calm z=-1
+BEAT 0.6 [wide] (sfx=conch,bells)
+NARRATOR [wide]: Daksha began the greatest sacrifice the world had ever seen, at Kanakhala. Bhrigu led the priests. Vishnu came, Brahma came, Indra and all the gods came. || दक्ष ने कनखल में संसार का सबसे बड़ा यज्ञ आरंभ किया। भृगु मुख्य पुरोहित थे। विष्णु आए, ब्रह्मा आए, इंद्र और सभी देवता आए।
+NARRATOR [mid:daksha] (capPos=bottom): Everyone was invited. Except Shiva. And except Sati. || सबको बुलाया गया। सिवाय शिव के। और सिवाय सती के।
+@ dadhichi x=-120 y=660 s=0.9 face=1 pose=point emo=angry
+> dadhichi x=180 t=1.6 walk=1
+DADHICHI (angry, pose=point) [mid:dadhichi]: Daksha! Where is Shiva? Without him, this sacrifice is a corpse. It will end in ruin! || दक्ष! शिव कहाँ हैं? उनके बिना यह यज्ञ एक शव है। इसका अंत विनाश में होगा!
+DAKSHA (sly, pose=point) [mid:daksha]: I have Vishnu, the lord of sacrifice. What do I need with that wanderer? || मेरे पास यज्ञ के स्वामी विष्णु हैं। मुझे उस भटकने वाले की क्या ज़रूरत?
+DADHICHI (rage) [close:dadhichi]: Then I will not stay to watch it burn. || तो मैं इसे जलते देखने के लिए नहीं रुकूँगा।
+> dadhichi face=-1 x=-200 t=2 walk=1
+NARRATOR [~wide] (capPos=bottom): The old sage walked out. A few others followed him. Daksha laughed. || वृद्ध ऋषि चले गए। कुछ और भी उनके पीछे चले गए। दक्ष हँस पड़े।
+
+# ------------------------------------------------------------ Sati learns
+== SCENE kailash | set=kailash time=day music=devi amb=wind trans=wipe | caption=Mount Kailasa | caption_hi=कैलास पर्वत
+@ sati x=360 y=660 s=0.9 face=1 pose=point emo=shock
+@ vijaya x=150 y=665 s=0.82 face=1 pose=rest emo=calm z=-1
++ moon kind=vimana x=1000 y=200 s=0.6 z=-3
+BEAT 0.5 [wide] (sfx=sparkle)
+NARRATOR [wide]: On Kailasa, Sati saw the Moon and his wives flying past in their chariot, all dressed in their finest. || कैलास पर सती ने चंद्रमा और उनकी पत्नियों को अपने विमान में उड़ते देखा, सब सजे-धजे।
+SATI (shock) [mid:sati]: Vijaya, where is everyone going? || विजया, सब कहाँ जा रहे हैं?
+VIJAYA (calm) [mid:vijaya]: To your father's great sacrifice, my lady. Did you not know? || आपके पिता के महायज्ञ में, देवी। क्या आपको पता नहीं?
+
+== SCENE ask | set=kailash time=day music=sorrow amb=wind trans=cut
+@ shiva x=900 y=650 s=0.95 face=-1 pose=abhaya emo=calm seat=lotus
+@ sati x=420 y=660 s=0.9 face=1 pose=namaste emo=sad
+BEAT 0.4 [wide]
+SATI (sad, pose=namaste) [mid:sati]: Lord, my father holds a great sacrifice, and all my sisters are going. Let us go too. || प्रभु, मेरे पिता महायज्ञ कर रहे हैं, और मेरी सब बहनें जा रही हैं। चलिए, हम भी चलें।
+SHIVA (calm) [mid:shiva]: We were not invited, Sati. To go uninvited to a house that hates you is worse than death. || हमें बुलाया नहीं गया, सती। जो घर तुमसे घृणा करे, वहाँ बिन बुलाए जाना मृत्यु से भी बुरा है।
+SATI (angry, pose=chest) [close:sati]: He is my father! A daughter needs no invitation to her father's house. And I must ask him why he has insulted you. || वे मेरे पिता हैं! बेटी को पिता के घर जाने के लिए निमंत्रण नहीं चाहिए। और मुझे उनसे पूछना है कि उन्होंने आपका अपमान क्यों किया।
+SHIVA (sad) [close:shiva]: Then go, if you must. Take Nandi, and my ganas. || तो जाओ, यदि जाना ही है। नंदी को ले जाओ, और मेरे गणों को।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Empty Seat | title_hi=खाली आसन
+
+== SCENE arrival | set=yajna time=day music=tension amb=fire trans=ink
++ fire kind=fire x=640 y=650 size=1.0 z=-1
++ crowd kind=crowd x=640 y=560 n=12 z=-3
+@ daksha x=880 y=660 s=0.95 face=-1 pose=hips emo=angry
+@ asikni x=1100 y=665 s=0.85 face=-1 pose=namaste emo=sad z=-1
+@ sati x=-100 y=660 s=0.9 face=1 pose=rest emo=calm
+@ nandi x=-300 y=660 s=0.9 face=1 z=-1
+BEAT 0.3 [wide]
+> sati x=330 t=2.2 walk=1
+> nandi x=100 t=2.2
+NARRATOR [~wide]: Sati arrived on Nandi. Her mother and sisters embraced her. But her father turned his face away. || सती नंदी पर सवार होकर पहुँचीं। माँ और बहनों ने उन्हें गले लगाया। पर पिता ने मुँह फेर लिया।
+> sati walk=0 t=0.3
+NARRATOR [at:640,560,1.6] (capPos=bottom): Then she saw the offerings. A share for Vishnu. A share for Brahma. A share for every god. And no share for Shiva. || फिर उन्होंने आहुतियाँ देखीं। विष्णु का भाग। ब्रह्मा का भाग। हर देवता का भाग। और शिव का कोई भाग नहीं।
+> sati emo=rage pose=point t=0.5
+SATI (rage, pose=point) [mid:sati] (shout): Father! Where is the share of Shiva? Without him, how can this be a sacrifice at all? || पिताजी! शिव का भाग कहाँ है? उनके बिना यह यज्ञ हो ही कैसे सकता है?
+DAKSHA (sly, pose=point) [mid:daksha]: Why did you come uninvited? Your husband is a lord of ghosts, an inauspicious beggar. He gets no share here. || तुम बिन बुलाए क्यों आईं? तुम्हारा पति प्रेतों का स्वामी है, एक अमंगल भिखारी। यहाँ उसे कोई भाग नहीं मिलेगा।
+SATI (rage) [close:sati]: Vishnu, Brahma, you sit here and listen to this? The one you worship is insulted, and you are silent? || विष्णु, ब्रह्मा, आप यहाँ बैठकर यह सुन रहे हैं? जिसकी आप पूजा करते हैं, उसका अपमान हो रहा है, और आप चुप हैं?
+SATI (rage, pose=chest) [ecu:sati] (shake=4): This body came from you, Daksha. I am ashamed of it. I will not keep it a moment longer. || यह शरीर तुमसे मिला है, दक्ष। मुझे इस पर लज्जा है। मैं इसे अब एक पल भी नहीं रखूँगी।
+
+== SCENE yogafire | set=yajna time=dusk music=sorrow amb=fire trans=cut | tint=#3a0a0a,0.15
+@ sati x=640 y=660 s=0.92 face=1 pose=namaste emo=meditate seat=lotus
+BEAT 0.6 [wide] (sfx=om)
+NARRATOR [~full:sati]: She sat down on the ground and closed her eyes. She thought of only one thing. Her husband's feet. || वे धरती पर बैठ गईं, आँखें मूँद लीं। उन्होंने केवल एक ही चीज़ का ध्यान किया। अपने पति के चरणों का।
++ yf kind=yogafire x=640 y=660 z=40 growT=3
+BEAT 3 [~at:640,420,1.4] (sfx=fire,swell, flash=#ffb43a)
+NARRATOR [wide] (capPos=bottom): She raised her breath through her body, and a fire rose from within her. And Sati was gone. || उन्होंने अपनी प्राणवायु को ऊपर उठाया, और भीतर से एक अग्नि उठी। और सती चली गईं।
+- sati od=0.2
+BEAT 2 [wide] (sfx=heartbeat)
+
+== SCENE ribhus | set=yajna time=dusk music=battle amb=fire trans=cut | speed=1
++ fire kind=fire x=640 y=650 size=1.2 z=-1
+@ gana x=300 y=660 s=0.92 face=1 pose=strike emo=rage
+@ gana2 x=160 y=665 s=0.86 face=1 pose=raise emo=rage z=-1
+@ bhrigu x=900 y=660 s=0.9 face=-1 pose=offer emo=angry
+BEAT 0.4 [wide] (sfx=roar)
+GANAS (rage) [two:gana,gana2] (shout, shake=6): She is dead! Kill Daksha! Destroy the sacrifice! || वे नहीं रहीं! दक्ष को मारो! यज्ञ नष्ट कर दो!
+NARRATOR [mid:bhrigu]: Bhrigu poured an offering into the fire, chanting from the Yajur Veda. And from the flames rose an army of fiery warriors, the Ribhus. || भृगु ने यजुर्वेद के मंत्र पढ़ते हुए अग्नि में आहुति डाली। और ज्वालाओं से अग्निमय योद्धाओं की एक सेना उठी, ऋभु।
++ ribhu kind=burst x=760 y=420 r=260 col=#ff8a1e z=55
+BEAT 1.4 [wide] (sfx=boom, flash, shake=10, bang=WHOOOSH!|धधक!, bangPos=900,160)
+- ribhu
+> gana x=-200 t=1.6
+> gana2 x=-300 t=1.6
+NARRATOR [wide] (capPos=bottom): Shiva's ganas were driven away. Many had already died of grief beside Sati. || शिव के गण खदेड़ दिए गए। कई तो सती के शोक में पहले ही प्राण दे चुके थे।
++ rays kind=rays x=640 y=0 n=20 r=700 col=#fff3a0 op=0.35 z=-2
+SKYVOICE [wide] (sky, sfx=thunder): Daksha, you fool! You did not honour Sati, the mother of the worlds, nor Shiva, the father. Your sacrifice will be destroyed. Not even the gods can save you now. || दक्ष, मूर्ख! तुमने न जगन्माता सती का सम्मान किया, न जगत्पिता शिव का। तुम्हारा यज्ञ नष्ट होगा। अब देवता भी तुम्हें नहीं बचा सकते।
+@ daksha x=1000 y=660 s=0.95 face=-1 pose=fear emo=fear anim=right
+NARRATOR [mid:daksha] (capPos=bottom): And far away, on Kailasa, Narada went to tell Shiva what had happened. || और दूर कैलास पर, नारद शिव को यह सब बताने पहुँचे।
+
+== SCENE close | set=forest time=night music=sorrow amb=night trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=sad seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=grief emo=sad seat=lotus
+BEAT 0.4 [wide]
+SUTA (sad) [mid:suta]: Pride makes us cruel even to our own children. Daksha had everything, and he threw it all into the fire. || अहंकार हमें अपने ही बच्चों के प्रति क्रूर बना देता है। दक्ष के पास सब कुछ था, और उन्होंने सब आग में झोंक दिया।
+RISHI (sad) [mid:rishi]: And Shiva? What did Shiva do? || और शिव? शिव ने क्या किया?
+SUTA (calm) [close:suta]: He tore a lock from his hair. || उन्होंने अपनी जटा से एक लट उखाड़ ली।
+
+== NEXT | dur=8 | title=Virabhadra | title_hi=वीरभद्र | sub=The wrath of Shiva | sub_hi=शिव का प्रकोप
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Six: The Uninvited | sub_hi=छठा अंक: बिन बुलाए | credits=Adapted from the Shiva Purana, Rudra Samhita, Sati Khanda;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता, सती खंड पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

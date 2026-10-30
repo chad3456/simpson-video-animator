@@ -1,0 +1,161 @@
+title: Virabhadra
+title_hi: वीरभद्र
+episode: 7
+slug: e07-virabhadra
+kicker: Issue Seven
+kicker_hi: सातवाँ अंक
+sub: The wrath of Shiva
+sub_hi: शिव का प्रकोप
+logline: Shiva tears out a lock of his hair, and from it rise Virabhadra and Mahakali. Not even Vishnu can stand in their way.
+logline_hi: शिव अपनी जटा की एक लट उखाड़ते हैं, और उससे वीरभद्र और महाकाली प्रकट होते हैं। स्वयं विष्णु भी उनका रास्ता नहीं रोक पाते।
+source: Shiva Purana, Rudra Samhita, Sati Khanda, chapters 32 to 43 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=mahakali,virabhadra,shiva
+
+== SCENE frame | set=forest time=night music=tension amb=night trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=sad seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=fear seat=lotus
+BEAT 0.8 [wide] (sfx=thunder)
+SUTA (sad) [mid:suta]: Sati was gone. Her ganas fled to Kailasa, and Narada told Shiva everything. || सती नहीं रहीं। उनके गण भागकर कैलास पहुँचे, और नारद ने शिव को सब कुछ बता दिया।
+SUTA (calm, pose=raise) [close:suta]: And the calmest being in the universe became the most terrible. || और ब्रह्मांड का सबसे शांत स्वरूप सबसे भयानक बन गया।
+
+== TITLE | dur=7 | kicker=Issue Seven | kicker_hi=सातवाँ अंक | title=Virabhadra | title_hi=वीरभद्र | sub=The wrath of Shiva | sub_hi=शिव का प्रकोप | figs=mahakali,virabhadra | sfx=conch | bg=#1a0a0a
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=A Lock of Hair | title_hi=जटा की एक लट
+
+== SCENE wrath | set=kailash time=night music=shiva amb=storm trans=ink
+@ shiva x=640 y=660 s=1.0 face=1 pose=trident emo=rage
+@ narad x=1050 y=660 s=0.85 face=-1 pose=namaste emo=sad
+BEAT 0.6 [wide] (sfx=thunder, shake=4)
+NARAD (sad, pose=namaste) [mid:narad]: Lord, she asked for your share, and he insulted you before everyone. So she gave up her body in yogic fire. || प्रभु, उन्होंने आपका भाग माँगा, और दक्ष ने सबके सामने आपका अपमान किया। तब उन्होंने योगाग्नि में अपना शरीर त्याग दिया।
+> shiva third=1 t=0.6
+BEAT 1.4 [ecu:shiva] (sfx=rumble, shake=8, tint=#c8281e,0.2)
+NARRATOR [close:shiva]: Shiva's eyes turned red. He plucked a single lock from his matted hair, and flung it down upon the mountain. || शिव की आँखें लाल हो गईं। उन्होंने अपनी जटा से एक लट उखाड़ी, और उसे पर्वत पर दे पटका।
++ lock kind=lock x=640 y=300 s=1.4 z=55
+> lock y=640 t=1
+BEAT 1.2 [wide] (sfx=whoosh)
+- lock od=0.01
++ boom kind=burst x=640 y=560 r=420 col=#ff6a1a z=55
+BEAT 1.6 [wide] (sfx=boom,thunder, flash, shake=14, bang=KRA-THOOM!|धड़ाम!, bangPos=640,170)
+- boom
+- shiva
+- narad
+@ virabhadra x=460 y=680 s=1.15 face=1 pose=raise emo=rage anim=grow inDur=1.2
+@ kali fig=mahakali x=880 y=680 s=1.0 face=-1 pose=raise emo=rage anim=grow inDur=1.2 d=0.5
++ smoke kind=smoke x=640 y=660 z=40
+NARRATOR [wide] (tint=#5a0a0a,0.2): The lock split in two. From one half rose Virabhadra, tall as the sky, blazing like the fire at the end of time. From the other rose Mahakali, surrounded by a host of spirits. || लट दो भागों में बँट गई। एक भाग से वीरभद्र उठे, आकाश जितने ऊँचे, प्रलय की अग्नि के समान धधकते हुए। दूसरे से महाकाली प्रकट हुईं, भूत-प्रेतों की सेना से घिरी।
+VIRABHADRA (rage, pose=raise) [low:virabhadra] (shout): Lord, command me! Shall I dry up the oceans? Crush the mountains? Burn the gods to ash? || प्रभु, आज्ञा दीजिए! क्या मैं समुद्र सुखा दूँ? पर्वत चूर कर दूँ? देवताओं को भस्म कर दूँ?
+SHIVA (rage) [wide] (sky): Go to Daksha's sacrifice. Destroy it. And bring down all who stand with him. || दक्ष के यज्ञ में जाओ। उसे नष्ट कर दो। और जो उसके साथ खड़े हों, उन्हें धूल चटा दो।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=The March | title_hi=चढ़ाई
+
+== SCENE omens | set=yajna time=dusk music=tension amb=storm trans=ink
++ fire kind=fire x=640 y=650 size=0.6 z=-1
+@ daksha x=420 y=660 s=0.95 face=1 pose=fear emo=fear
+@ vishnu x=860 y=660 s=0.95 face=-1 pose=vishnu emo=calm
+@ indra x=1080 y=665 s=0.85 face=-1 pose=hold item=vajra emo=fear z=-1
+BEAT 0.6 [wide] (sfx=heartbeat)
+NARRATOR [wide]: At Kanakhala, the omens turned black. Jackals howled. Blood rained from the sky. The sacrificial fire sputtered. || कनखल में अपशकुन होने लगे। सियार चिल्लाने लगे। आकाश से रक्त बरसा। यज्ञ की अग्नि मंद पड़ गई।
+DAKSHA (fear, pose=beg) [mid:daksha]: Vishnu, protect my sacrifice! You are the lord of sacrifice! || विष्णु, मेरे यज्ञ की रक्षा कीजिए! आप यज्ञ के स्वामी हैं!
+VISHNU (calm) [mid:vishnu]: Daksha, you insulted the lord of all. Nothing can save a sacrifice that dishonours Shiva. Still, I am here. I will fight. || दक्ष, तुमने सबके स्वामी का अपमान किया। जो यज्ञ शिव का अनादर करे, उसे कोई नहीं बचा सकता। फिर भी, मैं यहाँ हूँ। मैं लड़ूँगा।
+
+== SCENE battle | set=yajna time=dusk music=battle amb=fire trans=cut | speed=1
++ fire kind=fire x=640 y=650 size=0.8 z=-3
+@ virabhadra x=300 y=680 s=1.05 face=1 pose=strike emo=rage
+@ kali fig=mahakali x=120 y=680 s=0.95 face=1 pose=raise emo=rage z=-1
+@ gana x=480 y=665 s=0.85 face=1 pose=strike emo=rage z=-2
+@ indra x=880 y=660 s=0.92 face=-1 pose=strike item=vajra emo=angry
+@ vishnu x=1100 y=665 s=0.92 face=-1 pose=vishnu emo=angry z=-1
+BEAT 0.6 [wide] (sfx=roar,nagara, shake=6)
+NARRATOR [~wide]: The ganas fell upon the gods. Indra hurled his thunderbolt, Agni his spear, Yama his staff. Gana fought god, two by two. || गण देवताओं पर टूट पड़े। इंद्र ने वज्र फेंका, अग्नि ने भाला, यम ने दंड। गण और देवता जोड़ी-जोड़ी लड़ने लगे।
++ b1 kind=beam x=820 y=360 dx=-360 dy=40 col=#5ab0ff cold=true z=55
+BEAT 1.2 [wide] (sfx=thunder, bang=KRAKK!|कड़क!, bangPos=640,170)
+- b1
+NARRATOR [two:kali,virabhadra] (capPos=bottom): Mahakali and her yoginis swept through the ranks of the gods like a storm. || महाकाली और उनकी योगिनियाँ देवताओं की पंक्तियों में तूफ़ान की तरह घुस गईं।
+> vishnu x=860 pose=strike t=0.5
++ chakra kind=item name=chakra x=760 y=330 s=1.6 z=55
+> chakra x=420 t=0.8
+VISHNU (rage, pose=strike) [mid:vishnu] (shout): Sudarshana! || सुदर्शन!
+BEAT 1 [wide] (sfx=whoosh)
+- chakra od=0.01
+@ gana3 x=420 y=665 s=0.95 face=1 pose=chest emo=joy anim=grow
+NARRATOR [mid:gana3] (capPos=bottom): The blazing discus flew. And one of Shiva's warriors, Kshetrapala, opened his mouth and swallowed it whole. || धधकता चक्र उड़ा। और शिव के एक योद्धा, क्षेत्रपाल, ने मुँह खोलकर उसे पूरा निगल लिया।
+BEAT 1 [mid:gana3] (sfx=boom, bang=GULP!|गटक!, bangPos=600,170)
+NARRATOR [two:vishnu,gana3]: Vishnu seized him by the throat and squeezed until he spat it out again. || विष्णु ने उसका गला पकड़कर इतना दबाया कि उसने चक्र उगल दिया।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=Vishnu Against Virabhadra | title_hi=विष्णु और वीरभद्र
+
+== SCENE duel | set=cosmos music=battle amb=storm trans=ink | panel=split
+@ virabhadra x=360 y=680 s=1.05 face=1 pose=raise emo=rage
+@ vishnu x=920 y=670 s=0.95 face=-1 pose=strike emo=angry
+BEAT 0.6 [mid:virabhadra|mid:vishnu] (sfx=nagara)
+NARRATOR [mid:virabhadra|mid:vishnu]: Then Vishnu himself faced Virabhadra. From Vishnu's body sprang countless warriors bearing conch, discus and mace. || तब स्वयं विष्णु वीरभद्र के सामने आए। विष्णु के शरीर से असंख्य योद्धा निकले, शंख, चक्र और गदा लिए।
+NARRATOR [wide] (panel=full, capPos=bottom): Virabhadra remembered Shiva, raised his trident, and burned them all to ash. || वीरभद्र ने शिव का स्मरण किया, त्रिशूल उठाया, और उन सबको भस्म कर दिया।
++ hit kind=clash x=840 y=380 s=1.2 z=55
+BEAT 1.4 [wide] (panel=full, sfx=boom, flash, shake=12, bang=THOOM!|धम्म!, bangPos=980,170)
+- hit
+> vishnu pose=fear emo=shock seat=kneel t=0.4
+NARRATOR [mid:vishnu] (capPos=bottom): His trident struck Vishnu on the chest, and Vishnu fell senseless to the ground. || उनका त्रिशूल विष्णु की छाती पर लगा, और विष्णु मूर्छित होकर धरती पर गिर पड़े।
+> vishnu seat=none pose=strike emo=rage t=0.6
+NARRATOR [~mid:vishnu]: He rose again, eyes red, and raised the discus. But by Shiva's will, it froze in his hand and would not move. || वे फिर उठे, आँखें लाल, और चक्र उठाया। पर शिव की इच्छा से वह उनके हाथ में जम गया और हिला तक नहीं।
+VIRABHADRA (rage, pose=point) [mid:virabhadra]: Stand there like a mountain, Vishnu! || पर्वत की तरह खड़े रहो, विष्णु!
+NARRATOR [wide] (capPos=bottom): Vishnu broke free and drew his great bow. Virabhadra cut it into three pieces with three arrows. || विष्णु मुक्त हुए और अपना महाधनुष ताना। वीरभद्र ने तीन बाणों से उसके तीन टुकड़े कर दिए।
+> vishnu pose=namaste emo=calm t=0.6
+VISHNU (calm, pose=namaste) [close:vishnu] (think): This is what Sati's sacrifice has set in motion. No one can resist it. Let Shiva's will be done. || यह सती के बलिदान का परिणाम है। इसे कोई नहीं रोक सकता। शिव की इच्छा पूरी हो।
+- vishnu od=0.3
++ sp kind=sparkle x=920 y=420 n=26 r=200 z=60
+BEAT 1.2 [wide] (sfx=magic)
+
+== SCENE fall | set=yajna time=night music=curse amb=fire trans=wipe | tint=#3a0a0a,0.25
++ fire kind=fire x=640 y=650 size=1.0 z=-1
+@ virabhadra x=360 y=680 s=1.1 face=1 pose=sword item=sword emo=rage
+@ daksha x=900 y=660 s=0.92 face=-1 pose=fear emo=fear
+BEAT 0.5 [wide] (sfx=roar)
+NARRATOR [wide]: Vishnu withdrew. Brahma withdrew. The sacrifice itself took the form of a deer and fled into the sky, and Virabhadra cut it down. || विष्णु लौट गए। ब्रह्मा लौट गए। स्वयं यज्ञ हिरण का रूप लेकर आकाश में भागा, और वीरभद्र ने उसे मार गिराया।
+> virabhadra x=700 t=1.2
+DAKSHA (fear, pose=beg) [mid:daksha] (shout): No! Mercy! || नहीं! दया करो!
+BEAT 0.6 [close:virabhadra] (sfx=whoosh)
+BEAT 1.2 [wide] (sfx=boom, flash=#c8281e, shake=10, tint=#000000,0.9)
+NARRATOR [at:640,560,1.4] (capPos=bottom): Virabhadra struck off Daksha's head, and cast it into the sacrificial fire. Then he and his ganas returned to Kailasa. || वीरभद्र ने दक्ष का सिर काट दिया, और उसे यज्ञ की अग्नि में डाल दिया। फिर वे अपने गणों के साथ कैलास लौट गए।
+
+== CHAPTER | kicker=Part Four | kicker_hi=चौथा भाग | title=The Goat-Headed King | title_hi=बकरे के सिर वाला राजा
+
+== SCENE plea | set=kailash time=dawn music=shiva amb=wind trans=ink
+@ shiva x=880 y=650 s=0.95 face=-1 pose=abhaya emo=sad seat=lotus
+@ brahma x=420 y=660 s=0.9 face=1 pose=namaste emo=sad
+@ vishnu x=200 y=665 s=0.88 face=1 pose=namaste emo=sad z=-1
+BEAT 0.6 [wide] (sfx=om)
+NARRATOR [wide]: Brahma and Vishnu came to Kailasa with the gods, and praised Shiva, and begged for mercy. || ब्रह्मा और विष्णु देवताओं के साथ कैलास आए, शिव की स्तुति की, और दया की भीख माँगी।
+BRAHMA (sad, pose=namaste) [mid:brahma]: Lord, Daksha was a fool, and he has been punished. But without the sacrifice, the world cannot go on. Restore it. Forgive him. || प्रभु, दक्ष मूर्ख था, और उसे दंड मिल चुका। पर यज्ञ के बिना संसार नहीं चल सकता। उसे पुनः पूरा कीजिए। उसे क्षमा कीजिए।
+> shiva emo=calm pose=bless t=0.6
+SHIVA (calm, pose=bless) [mid:shiva]: I do not hold this against children. Daksha's head has burned in the fire. Let him wear the head of a goat. || मैं बच्चों की भूल मन में नहीं रखता। दक्ष का सिर अग्नि में जल चुका है। उसे बकरे का सिर दिया जाए।
+
+== SCENE revive | set=yajna time=day music=wonder amb=court trans=wipe
++ fire kind=fire x=420 y=650 size=0.6 z=-1
++ glow kind=glow x=900 y=420 r=440 z=-2
+@ shiva x=940 y=660 s=0.95 face=-1 pose=bless emo=calm
+@ daksha fig=dakshagoat x=520 y=660 s=0.92 face=1 pose=namaste emo=neutral anim=materialize inDur=2
+BEAT 2.4 [wide] (sfx=swell, flash)
+NARRATOR [wide]: Shiva looked upon the ruined sacrifice with kindness, and everyone who had fallen rose again, whole. And Daksha rose too, with the head of a goat. || शिव ने उजड़े हुए यज्ञ पर करुणा से दृष्टि डाली, और जो भी गिरे थे, सब फिर पूरे होकर उठ खड़े हुए। और दक्ष भी उठे, बकरे के सिर के साथ।
+> daksha seat=kneel t=0.6
+DAKSHA (sad, pose=namaste) [mid:daksha]: Lord, I insulted you, and you have given me life. I was blind with pride. You are the lord of all. Forgive me. || प्रभु, मैंने आपका अपमान किया, और आपने मुझे जीवन दिया। मैं अहंकार में अंधा था। आप ही सबके स्वामी हैं। मुझे क्षमा करें।
+SHIVA (smile, pose=bless) [close:shiva]: Complete your sacrifice, Daksha. And this time, remember whose share it is. || अपना यज्ञ पूरा करो, दक्ष। और इस बार याद रखना कि भाग किसका है।
+NARRATOR [~wide] (capPos=bottom): And so the great sacrifice was finished, and Shiva received his share. But Sati was gone. || और इस तरह महायज्ञ पूरा हुआ, और शिव को उनका भाग मिला। पर सती जा चुकी थीं।
+
+== SCENE alone | set=himalaya time=night music=sorrow amb=wind trans=fade
+@ shiva x=640 y=660 s=0.95 face=1 pose=namaste emo=meditate seat=lotus
++ snow kind=snow x=640 y=0 n=60 w=1280 z=50
+BEAT 1 [wide] (sfx=wind)
+NARRATOR [wide]: Shiva returned to the Himalaya, and sank into the deepest meditation, alone. || शिव हिमालय लौट गए, और अकेले सबसे गहरे ध्यान में डूब गए।
+
+== SCENE close | set=forest time=dawn music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=sad seat=lotus
+BEAT 0.4 [wide]
+SUTA (calm, pose=bless) [mid:suta]: Even in his greatest anger, Shiva gave back what he took. That is the difference between his wrath and ours. || अपने सबसे बड़े क्रोध में भी, शिव ने जो लिया था, वह लौटा दिया। यही उनके और हमारे क्रोध में अंतर है।
+RISHI (sad) [mid:rishi]: But Sati? Did she never come back? || पर सती? क्या वे कभी लौटकर नहीं आईं?
+SUTA (smile) [close:suta]: She did. As the daughter of the mountain. Parvati. || आईं। पर्वत की पुत्री बनकर। पार्वती।
+
+== NEXT | dur=8 | title=The Burning of Kama | title_hi=कामदेव का दहन | sub=The god of love meets the third eye | sub_hi=प्रेम के देवता का सामना तीसरे नेत्र से
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Seven: Virabhadra | sub_hi=सातवाँ अंक: वीरभद्र | credits=Adapted from the Shiva Purana, Rudra Samhita, Sati Khanda;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता, सती खंड पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

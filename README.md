@@ -9,6 +9,8 @@ Three shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chr
 
 - **MAHAGATHA** (`mahagatha/`): a twelve-episode Hindi mythology series in the style of Indian pichwai and miniature painting, adapted from *Mahagatha: 100 Tales from the Puranas* (Satyarth Nayak, Hindi translation by Ashutosh Garg). Hand-drawn SVG gods, sets and set pieces, a Hindi screenplay format, and distinct character voices blended from Kokoro. See `mahagatha/SKILL.md`.
 
+- **Shiva Purana** (`shiva-purana/`): ten tales of Mahadeva from Bibek Debroy's translation of the Shiva Purana, as cinematic 2D comic-book animation: inked, cel-shaded figures with halftone shadows, panels, speech balloons and SFX lettering. Every episode is built in English and as a Hindi dub (`hi/`), and the gallery's watch page switches between them. See `shiva-purana/SKILL.md`.
+
 - **Dostoevsky at the Coin Laundry** (`anime/`): a quiet, hand-painted-look anime in twelve 15-minute episodes. A shy 28-year-old proofreader and a teasing 17-year-old who inherited her grandfather's Dostoevsky books meet every Thursday night in a 24-hour coin laundry by a canal, and talk about one book or character per episode, from *White Nights* to the last page of *The Brothers Karamazov*. Original story, designs and score; the friendship stays tender and unspoken. See `anime/SERIES.md` (bible), `anime/STYLE.md` and `anime/SKILL.md`. Episodes are written as `anime/episodes/<slug>/screenplay.txt` and built with `anime/engine/screenplay.py` and `anime/engine/build_audio.py`, then rendered with `node engine/render.mjs anime/episodes/<slug> --player anime/engine/player.html`.
 
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
