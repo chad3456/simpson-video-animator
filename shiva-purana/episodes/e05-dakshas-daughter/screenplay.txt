@@ -1,0 +1,128 @@
+title: Daksha's Daughter
+title_hi: दक्ष की पुत्री
+episode: 5
+slug: e05-dakshas-daughter
+kicker: Issue Five
+kicker_hi: पाँचवाँ अंक
+sub: How Sati won Shiva, and how she tested him
+sub_hi: सती ने शिव को कैसे पाया, और उनकी परीक्षा कैसे ली
+logline: The goddess is born as Daksha's daughter Sati and wins Shiva through devotion. Then, in a forest, she doubts him, takes the form of Sita, and pays a price.
+logline_hi: देवी दक्ष की पुत्री सती के रूप में जन्म लेती हैं और भक्ति से शिव को पाती हैं। फिर एक वन में वे शिव पर संदेह करती हैं, सीता का रूप धरती हैं, और उसकी कीमत चुकाती हैं।
+source: Shiva Purana, Rudra Samhita, Sati Khanda, chapters 14 to 25 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=sati,shiva,daksha
+
+== SCENE frame | set=forest time=day music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+SUTA (calm, pose=raise) [mid:suta]: Shiva sat alone in meditation, wanting nothing. So the gods worried. How would the world go on, if the destroyer never married? || शिव ध्यान में अकेले बैठे रहते थे, उन्हें किसी चीज़ की चाह नहीं थी। देवता चिंतित थे। यदि संहारक कभी विवाह न करें, तो संसार कैसे चलेगा?
+SUTA (smile) [close:suta]: So the great goddess herself agreed to be born on earth, as the daughter of Daksha. || तब स्वयं महादेवी ने धरती पर दक्ष की पुत्री के रूप में जन्म लेना स्वीकार किया।
+
+== TITLE | dur=7 | kicker=Issue Five | kicker_hi=पाँचवाँ अंक | title=Daksha's Daughter | title_hi=दक्ष की पुत्री | sub=How Sati won Shiva, and how she tested him | sub_hi=सती ने शिव को कैसे पाया, और उनकी परीक्षा कैसे ली | figs=sati,shiva | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=The Girl Who Drew Shiva | title_hi=शिव का चित्र बनाने वाली बालिका
+
+== SCENE birth | set=court col=#7a1a3a music=devi amb=court trans=ink | caption=Daksha's palace | caption_hi=दक्ष का महल
+@ daksha x=380 y=660 s=0.95 face=1 pose=chest emo=joy
+@ asikni x=820 y=660 s=0.88 face=-1 pose=offer emo=joy
++ glow kind=glow x=820 y=420 r=260 z=-1
+BEAT 0.6 [wide] (sfx=sparkle)
+NARRATOR [wide]: Daksha, son of Brahma and lord of all creatures, and his wife Asikni had a daughter. They named her Sati. || ब्रह्मा के पुत्र और प्रजापति दक्ष, और उनकी पत्नी असिक्नी के घर एक पुत्री जन्मी। उन्होंने उसका नाम सती रखा।
+DAKSHA (joy) [mid:daksha]: Look at her, Asikni. She glows like the moon. || देखो इसे, असिक्नी। यह चंद्रमा की तरह दमकती है।
+NARRATOR [~wide] (capPos=bottom): As she grew, Sati played like other children. But she drew only one face, again and again. The face of Shiva. || बड़ी होते हुए सती दूसरे बच्चों की तरह खेलती थीं। पर वे बार-बार केवल एक ही चेहरा बनाती थीं। शिव का चेहरा।
+
+== SCENE vow | set=himalaya time=dawn music=devi amb=river trans=wipe
+@ sati x=640 y=660 s=0.9 face=1 pose=namaste emo=meditate seat=lotus
++ ling kind=lingam x=900 y=640 s=0.8
+BEAT 0.6 [wide] (sfx=bell)
+NARRATOR [wide]: When she was grown, she kept the Nanda vow for a whole year. She fasted, she prayed, she meditated on Shiva alone. || बड़ी होकर उन्होंने पूरे वर्ष नंदा व्रत रखा। उपवास किया, प्रार्थना की, और केवल शिव का ध्यान किया।
++ halo kind=glow x=640 y=420 r=460 z=-2
+@ shiva fig=shivafair x=960 y=650 s=0.95 face=-1 pose=bless emo=smile anim=materialize inDur=2
+- ling od=0.1
+BEAT 2 [wide] (sfx=om,swell, flash)
+NARRATOR [wide] (capPos=bottom): On the ninth day of the bright fortnight, Shiva himself appeared before her. Radiant, with the moon on his crest and the river in his hair. || शुक्ल पक्ष की नवमी को स्वयं शिव उनके सामने प्रकट हुए। तेजस्वी, मस्तक पर चंद्रमा और जटाओं में गंगा।
+SHIVA (smile, pose=bless) [mid:shiva]: Daughter of Daksha, I am pleased with your vow. Ask for any boon. || दक्ष-पुत्री, मैं तुम्हारे व्रत से प्रसन्न हूँ। कोई भी वर माँगो।
+> sati seat=none pose=namaste emo=smile t=0.6
+SATI (smile, pose=namaste) [close:sati]: Lord, grant me the boon I desire... || प्रभु, मुझे वह वर दीजिए जो मैं चाहती हूँ...
+SHIVA (joy) [mid:shiva]: Be my wife. || मेरी पत्नी बनो।
+NARRATOR [two:sati,shiva] (capPos=bottom): He did not even let her finish. || उन्होंने उनकी बात पूरी होने तक भी प्रतीक्षा नहीं की।
+SATI (smile, pose=namaste) [mid:sati]: Then ask my father for my hand, and marry me by the proper rites. || तो मेरे पिता से मेरा हाथ माँगिए, और विधिपूर्वक मुझसे विवाह कीजिए।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=The Wedding | title_hi=विवाह
+
+== SCENE wedding | set=yajna time=day music=joy amb=court trans=ink
++ fire kind=fire x=640 y=640 size=0.8
+@ shiva fig=shivafair x=860 y=660 s=0.95 face=-1 pose=bless emo=smile
+@ sati x=420 y=660 s=0.9 face=1 pose=garland item=varmala emo=joy
+@ daksha x=180 y=665 s=0.85 face=1 pose=namaste emo=calm z=-1
+@ brahma x=1100 y=665 s=0.85 face=-1 pose=brahma emo=smile z=-1
++ petals kind=petals x=640 y=0 n=40 w=1280 z=50
+BEAT 0.8 [wide] (sfx=conch,bells)
+NARRATOR [wide]: Brahma himself carried Shiva's proposal to Daksha. And Daksha, whatever he felt in his heart, gave his daughter away. || स्वयं ब्रह्मा शिव का प्रस्ताव लेकर दक्ष के पास गए। और दक्ष ने, मन में जो भी रहा हो, अपनी पुत्री का कन्यादान कर दिया।
+NARRATOR [two:sati,shiva] (capPos=bottom): Sati and Shiva went around the sacred fire, and the gods showered flowers. || सती और शिव ने पवित्र अग्नि के फेरे लिए, और देवताओं ने फूल बरसाए।
+NARRATOR [~wide]: Then Shiva took his bride to Kailasa on Nandi, and for ages they wandered the worlds together, happy. || फिर शिव अपनी दुल्हन को नंदी पर बिठाकर कैलास ले गए, और युगों तक दोनों प्रसन्न होकर लोकों में घूमते रहे।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Test in the Forest | title_hi=वन में परीक्षा
+
+# ------------------------------------------------------------ Dandaka
+== SCENE dandaka | set=forest time=day music=sorrow amb=birds trans=ink | caption=The Dandaka forest | caption_hi=दंडकारण्य
+@ rama x=820 y=660 s=0.92 face=-1 pose=grief emo=sad
+@ lakshmana x=1060 y=660 s=0.86 face=-1 pose=rest emo=sad
+@ shiva x=260 y=660 s=0.9 face=1 pose=namaste emo=joy o=0.75
+@ sati x=420 y=660 s=0.86 face=1 pose=rest emo=neutral o=0.75
+BEAT 0.6 [wide] (sfx=wind)
+NARRATOR [wide]: One day, unseen, Shiva and Sati came to the Dandaka forest. There, a prince wandered, weeping, with his brother at his side. || एक दिन शिव और सती अदृश्य रूप में दंडकारण्य पहुँचे। वहाँ एक राजकुमार अपने भाई के साथ रोता हुआ भटक रहा था।
+RAMA (sad, pose=grief) [mid:rama]: Sita! Sita! Trees, birds, have you seen my Sita? || सीता! सीता! वृक्षो, पक्षियो, क्या तुमने मेरी सीता को देखा है?
+SHIVA (joy, pose=namaste) [mid:shiva]: Victory to you, Rama! || आपकी जय हो, राम!
+SATI (shock) [close:sati]: Lord, you bow to a man who weeps and wanders like a madman? The master does not bow to the servant. || प्रभु, आप एक ऐसे मनुष्य को प्रणाम करते हैं जो पागलों की तरह रोता-भटकता है? स्वामी सेवक को प्रणाम नहीं करता।
+SHIVA (smile, pose=point) [two:shiva,sati]: That is Rama, son of Dasharatha. He is Vishnu himself, born on earth. His brother Lakshmana is a part of Shesha. || वह दशरथ के पुत्र राम हैं। वे स्वयं विष्णु हैं, धरती पर जन्मे। उनके भाई लक्ष्मण शेषनाग के अंश हैं।
+> sati emo=sly t=0.4
+SATI (sly) [close:sati] (think): Vishnu? Lost and crying in a forest? I do not believe it. || विष्णु? वन में खोए हुए, रोते हुए? मुझे विश्वास नहीं होता।
+SHIVA (calm) [mid:shiva]: If you do not believe me, Sati, go and test him yourself. || यदि तुम्हें मुझ पर विश्वास नहीं, सती, तो जाकर स्वयं उनकी परीक्षा लो।
+
+== SCENE test | set=forest time=day music=tension amb=birds trans=wipe
+@ rama x=820 y=660 s=0.92 face=-1 pose=grief emo=sad
+@ sati x=300 y=660 s=0.88 face=1 pose=rest emo=sly
+BEAT 0.4 [wide]
+SATI (sly) [mid:sati] (think): If he is truly Vishnu, he will know me. If he is only a man, he will run to his wife. || यदि ये सचमुच विष्णु हैं, तो मुझे पहचान लेंगे। यदि केवल मनुष्य हैं, तो अपनी पत्नी की ओर दौड़ेंगे।
++ sp kind=sparkle x=300 y=420 n=30 r=200 z=60
+> sati fig=satisita t=0.01
+BEAT 1.4 [mid:sati] (sfx=magic, flash)
+> sati x=560 t=1.6
+NARRATOR [~wide]: She took on the form of Sita, and walked toward him. || उन्होंने सीता का रूप धरा, और उनकी ओर चल पड़ीं।
+> rama pose=namaste emo=smile t=0.8
+NARRATOR [mid:rama] (capPos=bottom): Rama looked at her, and smiled, and bowed his head. And he whispered the name of Shiva. || राम ने उन्हें देखा, मुस्कुराए, और सिर झुका दिया। और धीरे से शिव का नाम लिया।
+RAMA (smile, pose=namaste) [mid:rama]: Mother Sati, I bow to you. But why are you alone in this forest? Where is Shambhu? || माता सती, आपको प्रणाम। पर आप इस वन में अकेली क्यों हैं? शंभु कहाँ हैं?
+RAMA (calm) [close:rama]: And why have you put aside your own form, and taken this one? || और आपने अपना रूप छोड़कर यह रूप क्यों धारण किया है?
+> sati fig=sati emo=shock t=0.01
+BEAT 1 [two:sati,rama] (sfx=crack, flash, bang=GASP!|हाय!, bangPos=980,170)
+SATI (sad, pose=namaste) [mid:sati]: Forgive me, Rama. My husband bowed to you, and I doubted him. Now I know who you are. || क्षमा करें, राम। मेरे पति ने आपको प्रणाम किया, और मैंने उन पर संदेह किया। अब मैं जानती हूँ कि आप कौन हैं।
+RAMA (calm, pose=bless) [mid:rama]: Long ago, Shiva crowned Vishnu with his own hands and bowed to him, and told all the gods to do the same. That is why he bowed to me. His love made him do it. || बहुत पहले, शिव ने स्वयं अपने हाथों से विष्णु का राज्याभिषेक किया था, उन्हें प्रणाम किया था, और सब देवताओं से भी ऐसा करने को कहा था। इसीलिए उन्होंने मुझे प्रणाम किया। उनके प्रेम ने उनसे यह करवाया।
+
+# ------------------------------------------------------------ the silent vow
+== SCENE vowsilent | set=forest time=dusk music=sorrow amb=wind trans=ink
+@ shiva x=880 y=660 s=0.95 face=-1 pose=rest emo=calm
+@ sati x=360 y=660 s=0.88 face=1 pose=chest emo=sad
+BEAT 0.6 [wide]
+SHIVA (calm) [mid:shiva]: Did you test him? || क्या तुमने उनकी परीक्षा ली?
+SATI (sad) [mid:sati]: I... did nothing, lord. I only looked. || मैंने... कुछ नहीं किया, प्रभु। बस देखा।
+NARRATOR [close:shiva]: But Shiva saw everything in his meditation. Sati had taken the form of Sita, wife of the Lord he worshipped. || पर शिव ने ध्यान में सब देख लिया था। सती ने सीता का रूप लिया था, उन प्रभु की पत्नी का जिनकी वे पूजा करते थे।
+SHIVA (sad, pose=chest) [ecu:shiva] (think): In that form, she is like a mother to me. I cannot see her as my wife in this body again. || उस रूप में वे मेरे लिए माता समान हैं। इस शरीर में अब मैं उन्हें पत्नी के रूप में नहीं देख सकता।
++ halo kind=rays x=880 y=200 n=18 r=600 col=#fff3a0 op=0.3 z=-2
+SKYVOICE [wide] (sky, sfx=swell): Blessed is the great lord. Who else in the three worlds could keep such a vow? || धन्य हैं महादेव। तीनों लोकों में और कौन ऐसा व्रत निभा सकता है?
+> sati pose=grief emo=sad t=0.6
+SATI (sad) [close:sati] (think): What vow? What has he resolved? He will not tell me... I have lost him, and I do not even know how. || कैसा व्रत? उन्होंने क्या संकल्प लिया है? वे मुझे बताएँगे नहीं... मैंने उन्हें खो दिया, और मुझे पता भी नहीं कैसे।
+NARRATOR [~wide] (capPos=bottom): They went home to Kailasa. Shiva sat in meditation for eighty-seven thousand years. And a silence grew between them. || वे कैलास लौट आए। शिव सत्तासी हज़ार वर्षों तक ध्यान में बैठे रहे। और दोनों के बीच एक मौन पसर गया।
+
+== SCENE close | set=forest time=dusk music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=sad seat=lotus
+BEAT 0.4 [wide]
+SUTA (calm, pose=bless) [mid:suta]: Even the goddess was tested by Shiva's maya, so that the world would learn. Doubt the one you love, and something breaks. || स्वयं देवी की भी शिव की माया ने परीक्षा ली, ताकि संसार सीख सके। जिससे प्रेम करते हो, उस पर संदेह करो, तो कुछ टूट जाता है।
+RISHI (sad) [mid:rishi]: And did that silence ever end, Suta? || और क्या वह मौन कभी टूटा, सूत जी?
+SUTA (sad) [close:suta]: It ended. In fire. At her father's sacrifice. || टूटा। अग्नि में। उनके पिता के यज्ञ में।
+
+== NEXT | dur=8 | title=The Uninvited | title_hi=बिन बुलाए | sub=Daksha's great sacrifice, and the guest he refused | sub_hi=दक्ष का महायज्ञ, और वह अतिथि जिसे उन्होंने ठुकराया
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Five: Daksha's Daughter | sub_hi=पाँचवाँ अंक: दक्ष की पुत्री | credits=Adapted from the Shiva Purana, Rudra Samhita, Sati Khanda;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता, सती खंड पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

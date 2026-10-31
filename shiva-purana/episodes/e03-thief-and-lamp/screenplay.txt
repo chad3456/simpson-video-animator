@@ -1,0 +1,184 @@
+title: The Thief and the Lamp
+title_hi: चोर और दीपक
+episode: 3
+slug: e03-thief-and-lamp
+kicker: Issue Three
+kicker_hi: तीसरा अंक
+sub: A gambler, a temple, and the night of Shiva
+sub_hi: एक जुआरी, एक मंदिर, और शिव की रात
+logline: A gambler steals food from a temple on Shivaratri and tears his cloth to brighten a lamp. That one flame carries him across three lives, all the way to Kailasa.
+logline_hi: एक जुआरी शिवरात्रि पर मंदिर से भोग चुराता है और दीपक तेज़ करने के लिए अपना वस्त्र फाड़ देता है। वही एक लौ उसे तीन जन्मों के पार, कैलास तक ले जाती है।
+source: Shiva Purana, Rudra Samhita, Srishti Khanda, chapters 17 to 19 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=gunanidhi,shiva,kubera
+
+== SCENE frame | set=forest time=dusk music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+RISHI (calm) [mid:rishi]: Suta, how did Shiva come to live on Kailasa, beside Kubera, the lord of wealth? || सूत जी, शिव कैलास पर, धन के स्वामी कुबेर के पास, कैसे रहने लगे?
+SUTA (smile, pose=raise) [mid:suta]: Because of a lamp. And a thief who never meant to light it. || एक दीपक के कारण। और एक ऐसे चोर के कारण, जिसने उसे जलाने का इरादा भी नहीं किया था।
+
+== TITLE | dur=7 | kicker=Issue Three | kicker_hi=तीसरा अंक | title=The Thief and the Lamp | title_hi=चोर और दीपक | sub=A gambler, a temple, and the night of Shiva | sub_hi=एक जुआरी, एक मंदिर, और शिव की रात | figs=gunanidhi,kubera | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=The Worst Gambler on Earth | title_hi=धरती का सबसे बुरा जुआरी
+
+# ------------------------------------------------------------ the household
+== SCENE home | set=court col=#6a4a2a music=court amb=court trans=ink | caption=The city of Kampilya | caption_hi=काम्पिल्य नगर
+@ yajnadatta x=330 y=660 s=0.92 face=1 pose=mala emo=calm
+@ mother x=640 y=660 s=0.86 face=-1 pose=namaste emo=calm
+@ gunanidhi x=1060 y=660 s=0.9 face=-1 pose=rest emo=sly
++ fire kind=fire x=180 y=650 size=0.6 z=-1
+BEAT 0.6 [wide] (sfx=bell)
+NARRATOR [wide]: In Kampilya lived a learned priest, Yajnadatta, honoured by the king. He had one son, Gunanidhi, handsome as the moon. || काम्पिल्य में यज्ञदत्त नाम के एक विद्वान पुरोहित रहते थे, जिनका राजा भी आदर करते थे। उनका एक ही पुत्र था, गुणनिधि, चंद्रमा जैसा सुंदर।
+NARRATOR [mid:gunanidhi]: But Gunanidhi had a secret. He gambled. And he lost. Every single day. || पर गुणनिधि का एक रहस्य था। वह जुआ खेलता था। और हारता था। हर दिन।
+YAJNADATTA (calm) [mid:yajnadatta]: Where is our son? I never see him at home. || हमारा पुत्र कहाँ है? मैं उसे कभी घर पर नहीं देखता।
+MOTHER (smile, pose=namaste) [mid:mother]: He has just gone out to study, with two or three friends. || अभी-अभी पढ़ने गया है, दो-तीन मित्रों के साथ।
+- gunanidhi
+NARRATOR [~wide] (capPos=bottom): She loved her only son, so she lied, again and again. And Gunanidhi carried off pots, clothes and jewels to the gambling dens. || वह अपने इकलौते बेटे से प्रेम करती थी, इसलिए बार-बार झूठ बोलती रही। और गुणनिधि बर्तन, कपड़े और गहने उठाकर जुआघरों में ले जाता रहा।
+
+== SCENE den | set=city time=night music=tension amb=night trans=wipe
++ dice kind=dice x=640 y=640 s=1.1 z=5
+@ gunanidhi x=420 y=660 s=0.9 face=1 pose=offer emo=joy seat=kneel
+@ gambler x=870 y=660 s=0.9 face=-1 pose=point emo=sly seat=kneel
+BEAT 0.5 [wide] (sfx=heartbeat)
+GAMBLER (sly, pose=point) [mid:gambler]: Your mother's garment, last week. And today? || पिछले हफ़्ते तुम्हारी माँ का वस्त्र। और आज?
+> gunanidhi pose=offer t=0.4
+GUNANIDHI (joy, pose=offer) [mid:gunanidhi]: My father's ring! Set with jewels! Roll! || मेरे पिता की अंगूठी! रत्नों से जड़ी! फेंको पासे!
++ coins kind=coins x=640 y=600 z=10
+BEAT 1.2 [two:gunanidhi,gambler] (sfx=clash, bang=CLATTER!|खड़खड़!, bangPos=980,170)
+> gunanidhi emo=sad pose=grief t=0.4
+NARRATOR [mid:gunanidhi] (capPos=bottom): He lost. There was no worse gambler on earth. || वह हार गया। धरती पर उससे बुरा जुआरी कोई नहीं था।
+
+== SCENE ring | set=city time=day music=curse amb=court trans=wipe
+@ gambler x=840 y=660 s=0.9 face=-1 pose=hold emo=sly
+@ yajnadatta x=380 y=660 s=0.92 face=1 pose=point emo=angry
+BEAT 0.4 [wide]
+YAJNADATTA (angry, pose=point) [mid:yajnadatta]: That is my ring! Where did you get it, thief? || वह मेरी अंगूठी है! तुम्हें यह कहाँ से मिली, चोर?
+GAMBLER (sly) [mid:gambler]: Thief? Your son gave it to me, priest. He has given us half your house. Did you not know? || चोर? यह तो तुम्हारे बेटे ने दी है, पुरोहित जी। वह आधा घर हमें दे चुका है। आपको पता नहीं था?
+> yajnadatta pose=head emo=sad t=0.6
+NARRATOR [close:yajnadatta] (capPos=bottom): Yajnadatta covered his head in shame and walked home. || यज्ञदत्त ने लज्जा से सिर ढक लिया और घर लौट आए।
+
+== SCENE disown | set=court col=#6a4a2a music=sorrow amb=court trans=cut
+@ yajnadatta x=380 y=660 s=0.92 face=1 pose=halt emo=rage
+@ mother x=820 y=660 s=0.86 face=-1 pose=grief emo=sad
+BEAT 0.3 [wide]
+YAJNADATTA (rage, pose=halt) [mid:yajnadatta] (shout): You hid it from me all these years! A son like that is worse than no son at all! || तुमने इतने वर्षों तक मुझसे यह छिपाया! ऐसा पुत्र होने से तो पुत्र न होना ही अच्छा!
+YAJNADATTA (angry) [close:yajnadatta]: Bring me water and sesame. I will offer the rites for the dead. From today, I have no son. || जल और तिल लाओ। मैं उसका तर्पण करूँगा। आज से मेरा कोई पुत्र नहीं।
+
+== SCENE tree | set=forest time=dusk music=sorrow amb=wind trans=fade
+@ gunanidhi x=640 y=660 s=0.92 face=1 pose=grief emo=sad seat=kneel
+BEAT 0.6 [wide] (sfx=wind)
+NARRATOR [wide]: Gunanidhi heard, and fled the city. He had no learning, no money, no friends. || गुणनिधि ने यह सुना, और नगर छोड़कर भाग गया। न विद्या थी, न धन, न मित्र।
+GUNANIDHI (sad) [close:gunanidhi] (think): Where will I go? Who will feed me now? Every morning, my mother gave me sweet food. || अब कहाँ जाऊँ? अब मुझे कौन खिलाएगा? हर सुबह माँ मुझे मीठा भोजन खिलाती थी।
+NARRATOR [~wide] (capPos=bottom): He sat under a tree, hungry, as the sun went down. It was the night of Shivaratri. || वह भूखा एक पेड़ के नीचे बैठ गया, और सूरज डूब गया। वह शिवरात्रि की रात थी।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=One Night, One Lamp | title_hi=एक रात, एक दीपक
+
+# ------------------------------------------------------------ the temple
+== SCENE temple | set=temple music=shiva amb=temple trans=ink
++ ling kind=lingam x=640 y=600 s=1.1
++ plat kind=platter x=820 y=600 s=0.9
++ lamp kind=lamp x=470 y=600 s=0.9
+@ devotee x=1040 y=660 s=0.9 face=-1 pose=namaste emo=serene
+@ gunanidhi x=150 y=660 s=0.88 face=1 pose=rest emo=sad
+BEAT 0.8 [wide] (sfx=bells)
+NARRATOR [wide]: A devotee of Shiva passed by with his family, carrying offerings of food to the temple. They had fasted all day. || शिव का एक भक्त अपने परिवार के साथ वहाँ से गुज़रा, मंदिर के लिए भोग लिए हुए। उन्होंने दिन भर उपवास किया था।
+NARRATOR [mid:devotee]: All night they sang Shiva's names and worshipped the lingam. || रात भर उन्होंने शिव के नाम गाए और लिंग की पूजा की।
+GUNANIDHI (sly) [mid:gunanidhi] (think): That food smells wonderful. When they fall asleep, it is mine. || उस भोजन की सुगंध कितनी अच्छी है। जब ये सो जाएँगे, तब यह मेरा होगा।
+NARRATOR [~close:gunanidhi]: So he sat at the temple door, without food, listening to Shiva's names all night long. || तो वह मंदिर के द्वार पर भूखा बैठा रहा, और रात भर शिव के नाम सुनता रहा।
+
+== SCENE wick | set=temple music=tension amb=night trans=wipe | tint=#0a0a2a,0.35
++ ling kind=lingam x=640 y=600 s=1.1
++ plat kind=platter x=820 y=600 s=0.9
++ lamp kind=lamp x=470 y=600 s=0.5
+@ gunanidhi x=320 y=660 s=0.92 face=1 pose=reach emo=sly
+BEAT 0.6 [wide] (sfx=heartbeat)
+NARRATOR [wide]: When all were asleep, he crept inside. The lamp was dying. He could barely see the food. || जब सब सो गए, वह चुपके से भीतर घुसा। दीपक बुझने वाला था। उसे भोजन ठीक से दिख भी नहीं रहा था।
+> gunanidhi pose=hold t=0.5
+BEAT 1 [mid:gunanidhi] (sfx=crack, bang=RRRIP!|चर्र!, bangPos=300,180)
+NARRATOR [mid:gunanidhi] (capPos=bottom): So he tore a strip from his own cloth and twisted it into a new wick. || तो उसने अपने वस्त्र से एक पट्टी फाड़ी और उसे बटकर नई बत्ती बना दी।
+- lamp od=0.01
++ lamp2 kind=lamp x=470 y=600 s=1.1 anim=grow
++ glow kind=glow x=600 y=480 r=380 warm=true op=0.7 z=-1
+BEAT 1.6 [~at:560,520,1.5] (sfx=fire, flash=#ffd27a)
+NARRATOR [at:560,520,1.5]: The flame leapt up, and its light fell full upon the lingam. || लौ ऊँची उठी, और उसका प्रकाश सीधे लिंग पर पड़ा।
+> gunanidhi pose=offer x=760 emo=joy t=0.8
+NARRATOR [~wide] (capPos=bottom): He grabbed the food and ran. || उसने भोजन उठाया और भाग निकला।
+
+== SCENE chase | set=city time=night music=battle amb=night trans=cut | speed=1
+@ gunanidhi x=900 y=660 s=0.92 face=1 pose=offer emo=fear walk=1
+@ guard x=200 y=660 s=0.95 face=1 pose=sword item=sword emo=rage walk=1
+BEAT 0.3 [wide] (sfx=whoosh)
+GUARD (rage, pose=point) [mid:guard] (shout): Thief! Stop him! Seize him! || चोर! रोको उसे! पकड़ो!
+> guard x=760 t=1.2
+BEAT 1.4 [wide] (sfx=boom, shake=10, flash=#c8281e, bang=THWACK!|धप्प!, bangPos=900,170)
+NARRATOR [wide] (tint=#5a0a0a,0.3, capPos=bottom): The city guards caught him and killed him. He never ate a single bite of the stolen food. || नगर के पहरेदारों ने उसे पकड़कर मार डाला। चुराए भोजन का एक कौर भी वह नहीं खा सका।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=Yama's Men and Shiva's Men | title_hi=यमदूत और शिवदूत
+
+== SCENE tug | set=hell music=tension amb=fire trans=ink
+@ gunanidhi x=640 y=660 s=0.85 face=1 pose=fear emo=fear o=0.75
+@ yamadoot x=340 y=660 s=1.0 face=1 pose=hold item=noose emo=rage
++ vim kind=vimana x=1040 y=300 s=0.8 anim=right inDur=1 in=1
+@ shivadoot x=1000 y=660 s=0.95 face=-1 pose=trident item=trishul emo=calm anim=materialize in=1
+BEAT 0.6 [wide] (sfx=roar)
+YAMADOOT (rage) [mid:yamadoot]: This one is ours! He comes to Yama's city, bound in our nooses! || यह हमारा है! यह हमारे पाशों में बँधकर यमपुरी चलेगा!
+BEAT 1 [wide] (sfx=sparkle)
+SHIVADOOT (calm, pose=halt) [mid:shivadoot]: Release him. He is devoted to dharma. All his sins have been burned away. || इसे छोड़ दो। यह धर्मनिष्ठ है। इसके सारे पाप जल चुके हैं।
+YAMADOOT (shock, pose=point) [two:yamadoot,gunanidhi]: Devoted? He gambled, lied, stole, and even stole the food offered to Shiva! || धर्मनिष्ठ? इसने जुआ खेला, झूठ बोला, चोरी की, और शिव का भोग तक चुराया!
+SHIVADOOT (smile) [mid:shivadoot]: Shiva's dharma is subtle. You see only the gross. Listen. || शिव का धर्म सूक्ष्म है। तुम केवल स्थूल देखते हो। सुनो।
+SHIVADOOT (calm, pose=bless) [close:shivadoot]: When the lingam was in shadow, he tore his own cloth to make a wick. He fasted all night. He heard Shiva's names, and watched his worship. || जब लिंग अँधेरे में था, उसने अपना वस्त्र फाड़कर बत्ती बनाई। उसने रात भर उपवास किया। उसने शिव के नाम सुने, और उनकी पूजा देखी।
+SHIVADOOT (calm) [two:shivadoot,gunanidhi]: It was the night of Shivaratri. He comes with us. || वह शिवरात्रि की रात थी। यह हमारे साथ चलेगा।
+- yamadoot
+NARRATOR [~wide] (sfx=magic, capPos=bottom): Yama's messengers bowed and left. And Yama told them: never bring anyone who wears Shiva's ash or rudraksha. || यमदूत सिर झुकाकर लौट गए। और यमराज ने उनसे कहा, जो शिव की भस्म या रुद्राक्ष धारण करे, उसे कभी मत लाना।
+
+# ------------------------------------------------------------ King Dama
+== SCENE dama | set=temple music=joy amb=temple trans=wipe | caption=Many years later, in Kalinga | caption_hi=कई वर्ष बाद, कलिंग में
++ ling kind=lingam x=640 y=600 s=1.0
++ l1 kind=lamp x=420 y=600 s=0.8
++ l2 kind=lamp x=860 y=600 s=0.8
++ l3 kind=lamp x=300 y=610 s=0.7
++ l4 kind=lamp x=980 y=610 s=0.7
+@ dama x=1100 y=660 s=0.92 face=-1 pose=lamp item=lamp emo=serene
+BEAT 0.6 [wide] (sfx=bells)
+NARRATOR [wide]: After a time in Shiva's world, he was born again, as Dama, prince of Kalinga. Even as a boy, he loved Shiva. || शिवलोक में कुछ समय बिताकर, उसने फिर जन्म लिया, कलिंग के राजकुमार दम के रूप में। बचपन से ही उसे शिव से प्रेम था।
+DAMA (calm, pose=point) [mid:dama]: Let a lamp burn in every Shiva temple in my kingdom. Every single one. Every night. || मेरे राज्य के हर शिव मंदिर में दीपक जले। हर एक में। हर रात।
+NARRATOR [~wide] (capPos=bottom): And so they did. King Dama lit a thousand lamps, for the one he had lit by accident. || और ऐसा ही हुआ। राजा दम ने हज़ार दीपक जलवाए, उस एक के बदले जो उसने अनजाने में जलाया था।
+
+== CHAPTER | kicker=Part Four | kicker_hi=चौथा भाग | title=The Lord of Wealth | title_hi=धन का स्वामी
+
+# ------------------------------------------------------------ Kashi and Kubera
+== SCENE kashi | set=kashi time=dawn music=shiva amb=river trans=ink | caption=Kashi, in another age | caption_hi=काशी, एक और युग में
+@ kubera fig=kuberaTapas x=640 y=660 s=0.92 face=1 pose=namaste emo=meditate seat=lotus
+BEAT 0.6 [wide] (sfx=om)
+NARRATOR [wide]: In another age, the same soul came to Kashi, and meditated for so long that he became skin and bone. || एक और युग में, वही आत्मा काशी आई, और इतने समय तक तप किया कि शरीर केवल हड्डियों का ढाँचा रह गया।
++ glow kind=glow x=900 y=420 r=420 z=-2
+@ shiva x=920 y=650 s=0.95 face=-1 pose=bless emo=smile anim=materialize inDur=1.5
+@ uma fig=parvati x=1130 y=650 s=0.85 face=-1 pose=namaste emo=calm anim=materialize inDur=1.5
+BEAT 2 [wide] (sfx=om,swell, flash)
+SHIVA (smile, pose=bless) [mid:shiva]: Open your eyes, my devotee. I am pleased. Ask for a boon. || आँखें खोलो, मेरे भक्त। मैं प्रसन्न हूँ। वर माँगो।
+> kubera emo=shock t=0.3
+KUBERA (shock) [close:kubera] (think): Who is this lady beside Shiva? What austerities did she do, to sit so close to him? || शिव के पास बैठी ये देवी कौन हैं? इन्होंने ऐसा कौन-सा तप किया कि इनके इतने निकट बैठी हैं?
+BEAT 1.2 [ecu:kubera] (sfx=crack, flash, shake=6, bang=KRAK!|चट!, bangPos=980,170)
+NARRATOR [mid:kubera] (capPos=bottom): He stared, and stared again. And his left eye burst. || वह देखता रहा, बार-बार देखता रहा। और उसकी बाईं आँख फूट गई।
+UMA (angry, pose=point) [mid:uma]: Why does this ascetic keep staring at me? || यह तपस्वी मुझे बार-बार क्यों घूर रहा है?
+SHIVA (smile, pose=bless) [two:shiva,uma]: Uma, he is your son. He looks at you with a child's wonder, not with wicked eyes. || उमा, यह तुम्हारा पुत्र है। यह तुम्हें बालक की तरह विस्मय से देख रहा है, बुरी दृष्टि से नहीं।
+> uma emo=smile pose=bless t=0.6
+> kubera fig=kubera seat=none t=0.01
+BEAT 1 [wide] (sfx=sparkle, flash)
+SHIVA (calm, pose=bless) [mid:shiva]: Be Kubera, lord of all treasure. Rule Alaka. Since your eye is yellow, they will call you Ekapinga. And I will be your friend. || तुम कुबेर बनो, समस्त धन के स्वामी। अलका पर राज करो। तुम्हारी आँख पीली है, इसलिए लोग तुम्हें एकपिंग कहेंगे। और मैं तुम्हारा मित्र रहूँगा।
+SHIVA (smile) [close:shiva]: I will make my home on Kailasa, right beside your city. || मैं कैलास पर अपना निवास बनाऊँगा, तुम्हारे नगर के ठीक पास।
+
+== SCENE close | set=forest time=night music=dawn amb=night trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
++ lamp kind=lamp x=575 y=640 s=0.8
+BEAT 0.4 [wide]
+SUTA (smile, pose=bless) [mid:suta]: A thief, a fast he never chose, and one torn piece of cloth. Even the smallest thing done for Shiva bears fruit. || एक चोर, एक उपवास जो उसने चुना भी नहीं, और कपड़े का एक फटा टुकड़ा। शिव के लिए किया गया छोटा-सा काम भी फल देता है।
+RISHI (calm) [mid:rishi]: And is there a story of a woman saved by Shiva's tale? || और क्या किसी स्त्री की कथा है, जो शिव कथा सुनकर तर गई?
+SUTA (calm) [close:suta]: There is. Her name was Chanchula. || है। उसका नाम था चंचुला।
+
+== NEXT | dur=8 | title=Chanchula | title_hi=चंचुला | sub=A wife, a ghost, and the power of a story | sub_hi=एक पत्नी, एक प्रेत, और कथा की शक्ति
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Three: The Thief and the Lamp | sub_hi=तीसरा अंक: चोर और दीपक | credits=Adapted from the Shiva Purana, Rudra Samhita;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

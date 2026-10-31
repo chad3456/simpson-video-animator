@@ -1,0 +1,1434 @@
+{
+ "meta": {
+  "series": "Shiva Purana",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "Tales of Mahadeva",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "en",
+  "title": "The Wedding of Shiva",
+  "title_hi": "शिव विवाह",
+  "episode": "10",
+  "slug": "e10-wedding-of-shiva",
+  "kicker": "Issue Ten",
+  "kicker_hi": "दसवाँ अंक",
+  "sub": "The strangest groom the world has ever seen",
+  "sub_hi": "संसार का सबसे अनोखा दूल्हा",
+  "logline": "Mena waits on the palace roof to see her famous son-in-law. Every god who arrives is more dazzling than the last, and none of them is Shiva. Then Shiva arrives.",
+  "logline_hi": "मेना अपने प्रसिद्ध दामाद को देखने महल की छत पर प्रतीक्षा करती हैं। हर आने वाला देवता पिछले से अधिक तेजस्वी है, और उनमें से कोई शिव नहीं। फिर शिव आते हैं।",
+  "source": "Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 43 to 55 (tr. Bibek Debroy)",
+  "num": "10"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "bm_george:0.55+bm_fable:0.25+hm_omega:0.2",
+   "speed": 0.95,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "bm_lewis:0.7+hm_psi:0.3",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "rishi": {
+   "label": "Sage",
+   "label_hi": "ऋषि",
+   "fig": "rishi",
+   "voice": "bm_daniel:0.7+hm_omega:0.3",
+   "speed": 0.95,
+   "fx": "room"
+  },
+  "shiva": {
+   "label": "Shiva",
+   "label_hi": "शिव",
+   "fig": "shiva",
+   "divine": true,
+   "voice": "am_onyx:0.7+hm_omega:0.3",
+   "speed": 0.9,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "vishnu": {
+   "label": "Vishnu",
+   "label_hi": "विष्णु",
+   "fig": "vishnu",
+   "divine": true,
+   "voice": "am_michael:0.75+hm_omega:0.25",
+   "speed": 0.94,
+   "fx": "divine"
+  },
+  "narad": {
+   "label": "Narada",
+   "label_hi": "नारद",
+   "fig": "narad",
+   "voice": "am_puck:0.7+hm_psi:0.3",
+   "speed": 1.05,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "kama": {
+   "label": "Kama",
+   "label_hi": "कामदेव",
+   "fig": "kama",
+   "voice": "am_puck:0.6+am_adam:0.4",
+   "speed": 1.04,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "rati": {
+   "label": "Rati",
+   "label_hi": "रति",
+   "fig": "rati",
+   "voice": "af_aoede:0.7+hf_beta:0.3",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "parvati": {
+   "label": "Parvati",
+   "label_hi": "पार्वती",
+   "fig": "parvati",
+   "voice": "af_heart:0.7+hf_beta:0.3",
+   "speed": 0.97,
+   "fx": "room"
+  },
+  "mena": {
+   "label": "Mena",
+   "label_hi": "मेना",
+   "fig": "mena",
+   "voice": "af_sarah:0.6+af_nicole:0.4",
+   "speed": 1.0,
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "parvatiBride,shivafair,mena"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "joy",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "suta",
+     "text": "The seven sages carried the proposal. The day was fixed. And from every corner of the universe, the wedding guests set out for the Himalaya.",
+     "text_hi": "सप्तर्षि प्रस्ताव लेकर गए। दिन तय हुआ। और ब्रह्मांड के हर कोने से बाराती हिमालय की ओर चल पड़े।",
+     "cam": "mid:suta"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Ten",
+   "kicker_hi": "दसवाँ अंक",
+   "title": "The Wedding of Shiva",
+   "title_hi": "शिव विवाह",
+   "sub": "The strangest groom the world has ever seen",
+   "sub_hi": "संसार का सबसे अनोखा दूल्हा",
+   "figs": "shivafair,parvatiBride",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "Is That Him?",
+   "title_hi": "क्या यही हैं?",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "roof",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "mena",
+     "x": 300,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "chest",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "13": [
+       {
+        "emo": "joy",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 120,
+     "y": 665,
+     "s": 0.85,
+     "face": 1,
+     "pose": "veena",
+     "item": "veena",
+     "emo": "sly",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ],
+      "12": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "deva",
+     "x": 1400,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "in": 2,
+     "keys": {
+      "2": [
+       {
+        "x": 900,
+        "t": 1.6,
+        "walk": 1
+       }
+      ]
+     },
+     "out": 5
+    },
+    {
+     "id": "agni",
+     "x": 1400,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "raise",
+     "emo": "smile",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "x": 900,
+        "t": 1.2,
+        "walk": 1
+       }
+      ]
+     },
+     "out": 8
+    },
+    {
+     "id": "indra",
+     "x": 1400,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "hold",
+     "item": "vajra",
+     "emo": "smile",
+     "in": 8,
+     "keys": {
+      "8": [
+       {
+        "x": 900,
+        "t": 1.2,
+        "walk": 1
+       }
+      ]
+     },
+     "out": 10
+    },
+    {
+     "id": "vishnu",
+     "x": 1400,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "vishnu",
+     "emo": "smile",
+     "in": 10,
+     "keys": {
+      "10": [
+       {
+        "x": 900,
+        "t": 1.6,
+        "walk": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 900,
+     "y": 420,
+     "r": 380,
+     "z": -2,
+     "in": 10
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "nagara"
+    },
+    {
+     "who": "mena",
+     "text": "Narada, I must see him first. What kind of man is he, that my daughter did such tapas for him?",
+     "text_hi": "नारद, मुझे पहले उन्हें देखना है। वे कैसे पुरुष हैं, जिनके लिए मेरी बेटी ने ऐसा तप किया?",
+     "cam": "mid:mena"
+    },
+    {
+     "who": "narrator",
+     "text": "First came the gandharvas, singing, in sparkling clothes, and the radiant Vasus.",
+     "text_hi": "सबसे पहले गंधर्व आए, गाते हुए, चमकते वस्त्रों में, और तेजस्वी वसु।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "mena",
+     "text": "Is that him? That must be Shiva!",
+     "text_hi": "क्या यही हैं? यही शिव होंगे!",
+     "cam": "two:mena,deva"
+    },
+    {
+     "who": "narad",
+     "text": "No. Those are only his attendants.",
+     "text_hi": "नहीं। वे तो बस उनके सेवक हैं।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narrator",
+     "text": "Then came Agni, twice as bright. Then Yama, then Varuna, then Vayu, then Kubera, each brighter than the last.",
+     "text_hi": "फिर आए अग्नि, दुगने तेजस्वी। फिर यम, फिर वरुण, फिर वायु, फिर कुबेर, हर एक पिछले से अधिक तेजस्वी।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "mena",
+     "text": "That one! Surely that is Rudra!",
+     "text_hi": "वह! निश्चय ही वही रुद्र हैं!",
+     "cam": "mid:mena"
+    },
+    {
+     "who": "narad",
+     "text": "No.",
+     "text_hi": "नहीं।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narrator",
+     "text": "Indra, lord of the gods. Then the Moon. Then the Sun. Then Brahma himself, praised by the sages.",
+     "text_hi": "देवराज इंद्र। फिर चंद्रमा। फिर सूर्य। फिर स्वयं ब्रह्मा, ऋषियों से वंदित।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "narad",
+     "text": "No, no, and no.",
+     "text_hi": "नहीं, नहीं, और नहीं।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "narrator",
+     "text": "And then came Vishnu, dark as a rain cloud, in yellow silk, with conch and discus, more beautiful than a crore of Kamas.",
+     "text_hi": "और फिर आए विष्णु, वर्षा के बादल जैसे साँवले, पीतांबर में, शंख और चक्र लिए, करोड़ों कामदेवों से भी सुंदर।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "mena",
+     "text": "That is Shiva! There can be no doubt!",
+     "text_hi": "यही शिव हैं! इसमें कोई संदेह नहीं!",
+     "cam": "close:mena"
+    },
+    {
+     "who": "narad",
+     "text": "That is Vishnu, who is loved by Shiva. Shiva is greater still. I cannot even describe him.",
+     "text_hi": "यह विष्णु हैं, जो शिव को प्रिय हैं। शिव इनसे भी बड़े हैं। मैं उनका वर्णन भी नहीं कर सकता।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "mena",
+     "text": "If all these are his servants, how fortunate my daughter is!",
+     "text_hi": "यदि ये सब उनके सेवक हैं, तो मेरी बेटी कितनी भाग्यशाली है!",
+     "cam": "mid:mena"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink",
+   "caption": "The roof of Himavan's palace",
+   "caption_hi": "हिमवान के महल की छत"
+  },
+  {
+   "type": "scene",
+   "id": "ganas",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "mena",
+     "x": 300,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "chest",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "shock",
+        "pose": "fear",
+        "t": 0.3
+       }
+      ],
+      "5": [
+       {
+        "seat": "kneel",
+        "pose": "grief",
+        "emo": "sad",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 120,
+     "y": 665,
+     "s": 0.85,
+     "face": 1,
+     "pose": "point",
+     "emo": "sly",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana",
+     "x": 1300,
+     "y": 665,
+     "s": 0.95,
+     "face": -1,
+     "pose": "raise",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 1000,
+        "t": 2.5,
+        "walk": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana2",
+     "x": 1450,
+     "y": 670,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "joy",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 1130,
+        "t": 2.5,
+        "walk": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana3",
+     "x": 1600,
+     "y": 665,
+     "s": 0.92,
+     "face": -1,
+     "pose": "raise",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 760,
+        "t": 2.5,
+        "walk": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "shiva",
+     "x": 1800,
+     "y": 660,
+     "s": 1.0,
+     "face": -1,
+     "pose": "trident",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 920,
+        "t": 3,
+        "walk": 1
+       }
+      ],
+      "2": [
+       {
+        "walk": 0,
+        "t": 0.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "nandi",
+     "x": 1900,
+     "y": 665,
+     "s": 0.9,
+     "face": -1,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 1100,
+        "t": 3
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.3,
+     "cam": "wide",
+     "sfx": "damaru"
+    },
+    {
+     "who": "narrator",
+     "text": "And then came Shiva's own army. Ghosts and goblins. Some with no heads, some with many heads. Some riding backwards, some blowing horns, beating drums, howling.",
+     "text_hi": "और फिर आई शिव की अपनी सेना। भूत-प्रेत। किसी का सिर नहीं, किसी के कई सिर। कोई उल्टा सवार, कोई सींग बजाता, ढोल पीटता, चिल्लाता।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "narad",
+     "text": "Look, Mena. There is Shiva.",
+     "text_hi": "देखिए, मेना। वह रहे शिव।",
+     "cam": "two:mena,shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "Ash-smeared, wearing a tiger skin, snakes coiled around his neck, a skull in his hand, riding a bull.",
+     "text_hi": "भस्म रमाए, बाघम्बर पहने, गले में लिपटे साँप, हाथ में खोपड़ी, बैल पर सवार।",
+     "cam": "mid:shiva",
+     "capPos": "bottom"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "ecu:mena",
+     "sfx": "crack",
+     "shake": 6,
+     "bang": "THUD!|धम्म!",
+     "bangPos": "980,170"
+    },
+    {
+     "who": "narrator",
+     "text": "Mena fell to the ground in a faint, like a creeper struck by the wind.",
+     "text_hi": "मेना हवा से गिरी लता की तरह बेहोश होकर धरती पर गिर पड़ीं।",
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter6",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "Mena's Rage",
+   "title_hi": "मेना का क्रोध",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "refuse",
+   "set": "court",
+   "ctx": {
+    "col": "#3a2a6a"
+   },
+   "els": [
+    {
+     "id": "mena",
+     "x": 640,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "point",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "narad",
+     "x": 980,
+     "y": 660,
+     "s": 0.88,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "sad",
+     "in": 0
+    },
+    {
+     "id": "himavan",
+     "x": 260,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "beg",
+     "emo": "sad",
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "fig": "parvatiBride",
+     "x": 1180,
+     "y": 660,
+     "s": 0.88,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "right",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vishnu",
+     "x": -150,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "bless",
+     "emo": "calm",
+     "in": 4,
+     "keys": {
+      "4": [
+       {
+        "x": 120,
+        "t": 1.4,
+        "walk": 1
+       },
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "mena",
+     "text": "I have been deceived! Narada, you wicked sage, you and your prophecies! I will not give my daughter to that ghost!",
+     "text_hi": "मेरे साथ छल हुआ है! नारद, दुष्ट ऋषि, तुम और तुम्हारी भविष्यवाणियाँ! मैं अपनी बेटी उस भूत को नहीं दूँगी!",
+     "cam": "mid:mena"
+    },
+    {
+     "who": "mena",
+     "text": "I would rather take her and throw myself off this mountain!",
+     "text_hi": "इससे अच्छा तो मैं उसे लेकर इस पर्वत से कूद जाऊँ!",
+     "cam": "close:mena"
+    },
+    {
+     "who": "parvati",
+     "text": "Mother, I chose him with my whole heart, by my own tapas. I will marry Shiva, or no one at all.",
+     "text_hi": "माँ, मैंने उन्हें पूरे हृदय से, अपने तप से चुना है। मैं शिव से विवाह करूँगी, या किसी से नहीं।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "vishnu",
+     "text": "Mena, you are seeing only one of his forms. He is beyond all forms. And he can take any form he likes.",
+     "text_hi": "मेना, आप उनका केवल एक रूप देख रही हैं। वे सभी रूपों से परे हैं। और वे जैसा चाहें, वैसा रूप ले सकते हैं।",
+     "cam": "mid:vishnu"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "beautiful",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 640,
+     "y": 380,
+     "n": 26,
+     "r": 900,
+     "col": "#fff3a0",
+     "op": 0.45,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 640,
+     "y": 420,
+     "r": 520,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "fig": "shivafair",
+     "x": 640,
+     "y": 670,
+     "s": 1.05,
+     "face": 1,
+     "pose": "bless",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 2,
+     "halo": true,
+     "in": 0
+    },
+    {
+     "id": "mena",
+     "x": 1060,
+     "y": 665,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "joy",
+     "anim": "right",
+     "in": 2,
+     "keys": {
+      "2": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 2.4,
+     "cam": "wide",
+     "sfx": "om",
+     "swell": true,
+     "flash": true,
+     "bang": "AAAH!|अहा!",
+     "bangPos": "980,160",
+     "bangCol": "#ffd22e"
+    },
+    {
+     "who": "narrator",
+     "text": "So Shiva, for Mena's sake, took his most beautiful form. Fair as the moon, in silk and jewels, with a crown of crescent moon, smiling.",
+     "text_hi": "तब शिव ने मेना के लिए अपना सबसे सुंदर रूप धारण किया। चंद्रमा जैसे गौर, रेशम और रत्नों में, मस्तक पर अर्धचंद्र, मुस्कुराते हुए।",
+     "cam": "wide"
+    },
+    {
+     "who": "mena",
+     "text": "Forgive me, lord. I did not know you. My daughter is blessed. I am blessed.",
+     "text_hi": "क्षमा करें, प्रभु। मैंने आपको पहचाना नहीं। मेरी बेटी धन्य है। मैं धन्य हूँ।",
+     "cam": "mid:mena"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "wind"
+   ],
+   "trans": "flash"
+  },
+  {
+   "type": "card",
+   "id": "chapter9",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "The Wedding",
+   "title_hi": "विवाह",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "wedding",
+   "set": "yajna",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 640,
+     "y": 650,
+     "size": 0.8,
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "fig": "shivafair",
+     "x": 860,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "fig": "parvatiBride",
+     "x": 420,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "garland",
+     "item": "varmala",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "x": 680,
+        "t": 1.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "himavan",
+     "x": 180,
+     "y": 665,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "brahma",
+     "x": 1100,
+     "y": 665,
+     "s": 0.85,
+     "face": -1,
+     "pose": "brahma",
+     "emo": "smile",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 0,
+     "n": 60,
+     "w": 1280,
+     "z": 50,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "conch",
+     "bells": true
+    },
+    {
+     "who": "narrator",
+     "text": "And so the wedding was held. Himavan gave his daughter away, and Brahma himself was the priest.",
+     "text_hi": "और फिर विवाह हुआ। हिमवान ने कन्यादान किया, और स्वयं ब्रह्मा पुरोहित बने।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "Parvati placed the garland around Shiva's neck, and they walked around the sacred fire together.",
+     "text_hi": "पार्वती ने शिव के गले में वरमाला डाली, और दोनों ने साथ मिलकर पवित्र अग्नि के फेरे लिए।",
+     "cam": "two:parvati,shiva",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "The gods sang, the apsaras danced, and the ganas danced worst of all, and loudest.",
+     "text_hi": "देवता गाए, अप्सराएँ नाचीं, और गण सबसे बेढंगे, सबसे ज़ोर से नाचे।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "kama",
+   "set": "himalaya",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "fig": "shivafair",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.4
+       },
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "parvati",
+     "fig": "parvatiBride",
+     "x": 1090,
+     "y": 665,
+     "s": 0.88,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "rati",
+     "x": 360,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "beg",
+     "emo": "sad",
+     "seat": "kneel",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "beg",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "seat": "none",
+        "pose": "namaste",
+        "emo": "joy",
+        "t": 0.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "ash",
+     "kind": "ash",
+     "x": 560,
+     "y": 660,
+     "s": 1.0,
+     "in": 0,
+     "out": 3,
+     "od": 0.3
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 560,
+     "y": 480,
+     "r": 300,
+     "z": -1,
+     "in": 3
+    },
+    {
+     "id": "kama",
+     "x": 560,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "anim": "materialize",
+     "inDur": 1.8,
+     "in": 3,
+     "keys": {
+      "5": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide"
+    },
+    {
+     "who": "rati",
+     "text": "Lord, today everyone is happy except me. My husband burned so that this wedding could happen. Give him back to me.",
+     "text_hi": "प्रभु, आज मेरे सिवा सब प्रसन्न हैं। मेरे पति इसी विवाह के लिए जले थे। उन्हें मुझे लौटा दीजिए।",
+     "cam": "mid:rati"
+    },
+    {
+     "who": "shiva",
+     "text": "So be it, Rati.",
+     "text_hi": "ऐसा ही हो, रति।",
+     "cam": "mid:shiva"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "swell",
+     "sparkle": true,
+     "flash": true
+    },
+    {
+     "who": "narrator",
+     "text": "With a single glance, Kama rose from his own ashes, as handsome as before.",
+     "text_hi": "एक दृष्टि से कामदेव अपनी ही भस्म से उठ खड़े हुए, पहले जैसे सुंदर।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "kama",
+     "text": "Lord, I bow to you. I shot at you, and you have given me back my life.",
+     "text_hi": "प्रभु, आपको प्रणाम। मैंने आप पर बाण चलाया, और आपने मुझे जीवन लौटा दिया।",
+     "cam": "mid:kama"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "return",
+   "set": "kailash",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "x": 760,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "x": 980,
+     "y": 650,
+     "s": 0.88,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0
+    },
+    {
+     "id": "nandi",
+     "x": 330,
+     "y": 665,
+     "s": 0.9,
+     "face": 1,
+     "in": 0
+    },
+    {
+     "id": "gana",
+     "x": 150,
+     "y": 665,
+     "s": 0.85,
+     "face": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 0,
+     "n": 40,
+     "w": 1280,
+     "z": 50,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "conch",
+     "damaru": true
+    },
+    {
+     "who": "narrator",
+     "text": "Then Shiva and Parvati returned to Kailasa, with Nandi and all the ganas. The goddess who had been Sati was by Shiva's side once more.",
+     "text_hi": "फिर शिव और पार्वती नंदी और सभी गणों के साथ कैलास लौट आए। जो देवी कभी सती थीं, वे फिर से शिव के साथ थीं।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "In time, their son Kartikeya would be born, and he would destroy the asura Taraka. But that is a story for another day.",
+     "text_hi": "समय आने पर उनके पुत्र कार्तिकेय जन्म लेंगे, और वे तारकासुर का वध करेंगे। पर वह कथा फिर कभी।",
+     "cam": "two:shiva,parvati",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "title",
+   "amb": [
+    "wind"
+   ],
+   "trans": "ink",
+   "caption": "Kailasa",
+   "caption_hi": "कैलास"
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "lamp",
+     "kind": "lamp",
+     "x": 575,
+     "y": 640,
+     "s": 0.8,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "A pillar of fire with no end. A proud sage with a monkey's face. A thief with a lamp. A goddess who gave her life, and came back.",
+     "text_hi": "अनंत अग्नि-स्तंभ। बंदर के मुँह वाला अभिमानी ऋषि। दीपक वाला चोर। एक देवी जिसने प्राण दिए, और लौट आई।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "suta",
+     "text": "Whoever hears these stories with love, Shiva is pleased with them. That is the Shiva Purana.",
+     "text_hi": "जो इन कथाओं को प्रेम से सुनता है, शिव उससे प्रसन्न होते हैं। यही है शिव पुराण।",
+     "cam": "close:suta"
+    },
+    {
+     "who": "rishi",
+     "text": "Om Namah Shivaya.",
+     "text_hi": "ॐ नमः शिवाय।",
+     "cam": "mid:rishi"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "end14",
+   "style": "end",
+   "lines": [],
+   "dur": 12,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Ten: The Wedding of Shiva",
+   "sub_hi": "दसवाँ अंक: शिव विवाह",
+   "credits": [
+    "Adapted from the Shiva Purana, Rudra Samhita, Parvati Khanda",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code",
+    "Thank you for reading"
+   ],
+   "credits_hi": [
+    "शिव पुराण, रुद्र संहिता, पार्वती खंड पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने",
+    "पढ़ने के लिए धन्यवाद"
+   ]
+  }
+ ]
+}

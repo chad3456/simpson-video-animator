@@ -1,0 +1,1302 @@
+{
+ "meta": {
+  "series": "शिव पुराण",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "महादेव की कथाएँ",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "hi",
+  "title": "बिन बुलाए",
+  "title_hi": "बिन बुलाए",
+  "episode": "6",
+  "slug": "e06-the-uninvited",
+  "kicker": "छठा अंक",
+  "kicker_hi": "छठा अंक",
+  "sub": "दक्ष का महायज्ञ, और वह अतिथि जिसे उन्होंने ठुकराया",
+  "sub_hi": "दक्ष का महायज्ञ, और वह अतिथि जिसे उन्होंने ठुकराया",
+  "logline": "दक्ष संसार का सबसे बड़ा यज्ञ करते हैं और शिव को छोड़कर सबको बुलाते हैं। सती फिर भी जाती हैं।",
+  "logline_hi": "दक्ष संसार का सबसे बड़ा यज्ञ करते हैं और शिव को छोड़कर सबको बुलाते हैं। सती फिर भी जाती हैं।",
+  "source": "Shiva Purana, Rudra Samhita, Sati Khanda, chapters 26 to 31 (tr. Bibek Debroy)",
+  "num": "6"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "hm_psi:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "rishi": {
+   "label": "Sage",
+   "label_hi": "ऋषि",
+   "fig": "rishi",
+   "voice": "hm_omega:0.7+bm_daniel:0.3",
+   "speed": 0.95,
+   "fx": "room"
+  },
+  "shiva": {
+   "label": "Shiva",
+   "label_hi": "शिव",
+   "fig": "shiva",
+   "divine": true,
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.9,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "daksha": {
+   "label": "Daksha",
+   "label_hi": "दक्ष",
+   "fig": "daksha",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 1.0,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "sati": {
+   "label": "Sati",
+   "label_hi": "सती",
+   "fig": "sati",
+   "voice": "hf_alpha:0.6+af_aoede:0.4",
+   "speed": 0.97,
+   "fx": "room"
+  },
+  "nandi": {
+   "label": "Nandi",
+   "label_hi": "नंदी",
+   "fig": "nandigana",
+   "voice": "hm_omega:0.6+am_adam:0.4",
+   "speed": 0.96,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "dadhichi": {
+   "label": "Dadhichi",
+   "label_hi": "दधीचि",
+   "fig": "dadhichi",
+   "voice": "hm_omega:0.55+bm_george:0.45",
+   "speed": 0.9,
+   "pitch": -2,
+   "fx": "elder"
+  },
+  "ganas": {
+   "label": "Shiva's Ganas",
+   "label_hi": "शिवगण",
+   "fig": "gana",
+   "voice": "hm_omega:0.5+am_fenrir:0.5",
+   "speed": 1.02,
+   "pitch": -2,
+   "fx": "chorus"
+  },
+  "vijaya": {
+   "label": "Vijaya",
+   "label_hi": "विजया",
+   "fig": "vijaya",
+   "voice": "hf_beta:0.6+af_nova:0.4",
+   "speed": 1.02,
+   "fx": "room"
+  },
+  "skyvoice": {
+   "label": "A Voice from the Sky",
+   "label_hi": "आकाशवाणी",
+   "divine": true,
+   "voice": "hm_omega:0.7+am_onyx:0.3",
+   "speed": 0.92,
+   "pitch": -2,
+   "fx": "divine_big"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "daksha,sati,shiva"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "sad",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "suta",
+     "text": "दक्ष ने अपने दामाद को कभी पसंद नहीं किया। उनकी नज़र में शिव एक भिखारी थे, जो भस्म और खोपड़ियाँ पहनते और प्रेतों के बीच रहते थे।",
+     "text_hi": "दक्ष ने अपने दामाद को कभी पसंद नहीं किया। उनकी नज़र में शिव एक भिखारी थे, जो भस्म और खोपड़ियाँ पहनते और प्रेतों के बीच रहते थे।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "suta",
+     "text": "शुरुआत एक छोटी-सी बात से हुई। शिव खड़े नहीं हुए।",
+     "text_hi": "शुरुआत एक छोटी-सी बात से हुई। शिव खड़े नहीं हुए।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Six",
+   "kicker_hi": "छठा अंक",
+   "title": "The Uninvited",
+   "title_hi": "बिन बुलाए",
+   "sub": "Daksha's great sacrifice, and the guest he refused",
+   "sub_hi": "दक्ष का महायज्ञ, और वह अतिथि जिसे उन्होंने ठुकराया",
+   "figs": "daksha,sati",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "The Insult at Prayaga",
+   "title_hi": "प्रयाग में अपमान",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "prayaga",
+   "set": "yajna",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 640,
+     "y": 650,
+     "size": 0.6,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "shiva",
+     "x": 980,
+     "y": 650,
+     "s": 0.92,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "6": [
+       {
+        "emo": "calm",
+        "pose": "halt",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "brahma",
+     "x": 1160,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "brahma",
+     "emo": "calm",
+     "seat": "lotus",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "rishi",
+     "x": 150,
+     "y": 665,
+     "s": 0.8,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "daksha",
+     "x": -150,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "stand",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 420,
+        "t": 2.2,
+        "walk": 1
+       }
+      ],
+      "2": [
+       {
+        "walk": 0,
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.4
+       },
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "nandi",
+     "fig": "nandigana",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "point",
+     "emo": "rage",
+     "anim": "right",
+     "in": 5,
+     "keys": {
+      "5": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "gong"
+    },
+    {
+     "who": "narrator",
+     "text": "जब दक्ष महासभा में आए, हर ऋषि और देवता उनके सम्मान में खड़ा हो गया। हर एक, सिवाय उनके पिता ब्रह्मा और शिव के।",
+     "text_hi": "जब दक्ष महासभा में आए, हर ऋषि और देवता उनके सम्मान में खड़ा हो गया। हर एक, सिवाय उनके पिता ब्रह्मा और शिव के।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "daksha",
+     "text": "देखो इसे! मेरा दामाद, जिसे मेरे पुत्र जैसा होना चाहिए, मेरे लिए उठा तक नहीं!",
+     "text_hi": "देखो इसे! मेरा दामाद, जिसे मेरे पुत्र जैसा होना चाहिए, मेरे लिए उठा तक नहीं!",
+     "cam": "mid:daksha"
+    },
+    {
+     "who": "daksha",
+     "text": "यह श्मशानों में प्रेतों के साथ घूमता है, भस्म लगाता है, और इसमें कोई शिष्टाचार नहीं। इसे किसी यज्ञ में भाग नहीं मिलेगा!",
+     "text_hi": "यह श्मशानों में प्रेतों के साथ घूमता है, भस्म लगाता है, और इसमें कोई शिष्टाचार नहीं। इसे किसी यज्ञ में भाग नहीं मिलेगा!",
+     "cam": "close:daksha"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने कुछ नहीं कहा। वे पर्वत की तरह स्थिर बैठे रहे।",
+     "text_hi": "शिव ने कुछ नहीं कहा। वे पर्वत की तरह स्थिर बैठे रहे।",
+     "cam": "mid:shiva",
+     "capPos": "bottom"
+    },
+    {
+     "who": "nandi",
+     "text": "तुम मेरे स्वामी को शाप देते हो? तो मेरी भी सुनो! तुम और तुम्हारे अनुयायी सच्चा ज्ञान खो देंगे। और तुम, दक्ष, बकरे का मुँह पाओगे!",
+     "text_hi": "तुम मेरे स्वामी को शाप देते हो? तो मेरी भी सुनो! तुम और तुम्हारे अनुयायी सच्चा ज्ञान खो देंगे। और तुम, दक्ष, बकरे का मुँह पाओगे!",
+     "cam": "mid:nandi"
+    },
+    {
+     "who": "shiva",
+     "text": "नंदी। बस। क्रोध ज्ञान नहीं है। चलो।",
+     "text_hi": "नंदी। बस। क्रोध ज्ञान नहीं है। चलो।",
+     "cam": "mid:shiva"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink",
+   "caption": "A gathering of sages at Prayaga",
+   "caption_hi": "प्रयाग में ऋषियों की सभा"
+  },
+  {
+   "type": "card",
+   "id": "chapter5",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "Everyone But Shiva",
+   "title_hi": "शिव के सिवा सब",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "kanakhala",
+   "set": "yajna",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 640,
+     "y": 650,
+     "size": 1.0,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "crowd",
+     "kind": "crowd",
+     "x": 640,
+     "y": 560,
+     "n": 12,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "daksha",
+     "x": 380,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "raise",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "bhrigu",
+     "x": 880,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "offer",
+     "emo": "calm",
+     "in": 0
+    },
+    {
+     "id": "vishnu",
+     "x": 1100,
+     "y": 665,
+     "s": 0.85,
+     "face": -1,
+     "pose": "vishnu",
+     "emo": "calm",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "dadhichi",
+     "x": -120,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "point",
+     "emo": "angry",
+     "in": 3,
+     "keys": {
+      "3": [
+       {
+        "x": 180,
+        "t": 1.6,
+        "walk": 1
+       },
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "face": -1,
+        "x": -200,
+        "t": 2,
+        "walk": 1
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "conch",
+     "bells": true
+    },
+    {
+     "who": "narrator",
+     "text": "दक्ष ने कनखल में संसार का सबसे बड़ा यज्ञ आरंभ किया। भृगु मुख्य पुरोहित थे। विष्णु आए, ब्रह्मा आए, इंद्र और सभी देवता आए।",
+     "text_hi": "दक्ष ने कनखल में संसार का सबसे बड़ा यज्ञ आरंभ किया। भृगु मुख्य पुरोहित थे। विष्णु आए, ब्रह्मा आए, इंद्र और सभी देवता आए।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "सबको बुलाया गया। सिवाय शिव के। और सिवाय सती के।",
+     "text_hi": "सबको बुलाया गया। सिवाय शिव के। और सिवाय सती के।",
+     "cam": "mid:daksha",
+     "capPos": "bottom"
+    },
+    {
+     "who": "dadhichi",
+     "text": "दक्ष! शिव कहाँ हैं? उनके बिना यह यज्ञ एक शव है। इसका अंत विनाश में होगा!",
+     "text_hi": "दक्ष! शिव कहाँ हैं? उनके बिना यह यज्ञ एक शव है। इसका अंत विनाश में होगा!",
+     "cam": "mid:dadhichi"
+    },
+    {
+     "who": "daksha",
+     "text": "मेरे पास यज्ञ के स्वामी विष्णु हैं। मुझे उस भटकने वाले की क्या ज़रूरत?",
+     "text_hi": "मेरे पास यज्ञ के स्वामी विष्णु हैं। मुझे उस भटकने वाले की क्या ज़रूरत?",
+     "cam": "mid:daksha"
+    },
+    {
+     "who": "dadhichi",
+     "text": "तो मैं इसे जलते देखने के लिए नहीं रुकूँगा।",
+     "text_hi": "तो मैं इसे जलते देखने के लिए नहीं रुकूँगा।",
+     "cam": "close:dadhichi"
+    },
+    {
+     "who": "narrator",
+     "text": "वृद्ध ऋषि चले गए। कुछ और भी उनके पीछे चले गए। दक्ष हँस पड़े।",
+     "text_hi": "वृद्ध ऋषि चले गए। कुछ और भी उनके पीछे चले गए। दक्ष हँस पड़े।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "fire"
+   ],
+   "trans": "ink",
+   "caption": "Kanakhala, Daksha's great sacrifice",
+   "caption_hi": "कनखल, दक्ष का महायज्ञ"
+  },
+  {
+   "type": "scene",
+   "id": "kailash",
+   "set": "kailash",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "sati",
+     "x": 360,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "point",
+     "emo": "shock",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "shock",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "vijaya",
+     "x": 150,
+     "y": 665,
+     "s": 0.82,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "moon",
+     "kind": "vimana",
+     "x": 1000,
+     "y": 200,
+     "s": 0.6,
+     "z": -3,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "कैलास पर सती ने चंद्रमा और उनकी पत्नियों को अपने विमान में उड़ते देखा, सब सजे-धजे।",
+     "text_hi": "कैलास पर सती ने चंद्रमा और उनकी पत्नियों को अपने विमान में उड़ते देखा, सब सजे-धजे।",
+     "cam": "wide"
+    },
+    {
+     "who": "sati",
+     "text": "विजया, सब कहाँ जा रहे हैं?",
+     "text_hi": "विजया, सब कहाँ जा रहे हैं?",
+     "cam": "mid:sati"
+    },
+    {
+     "who": "vijaya",
+     "text": "आपके पिता के महायज्ञ में, देवी। क्या आपको पता नहीं?",
+     "text_hi": "आपके पिता के महायज्ञ में, देवी। क्या आपको पता नहीं?",
+     "cam": "mid:vijaya"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "wipe",
+   "caption": "Mount Kailasa",
+   "caption_hi": "कैलास पर्वत"
+  },
+  {
+   "type": "scene",
+   "id": "ask",
+   "set": "kailash",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "x": 900,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "abhaya",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "sati",
+     "x": 420,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "angry",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "sati",
+     "text": "प्रभु, मेरे पिता महायज्ञ कर रहे हैं, और मेरी सब बहनें जा रही हैं। चलिए, हम भी चलें।",
+     "text_hi": "प्रभु, मेरे पिता महायज्ञ कर रहे हैं, और मेरी सब बहनें जा रही हैं। चलिए, हम भी चलें।",
+     "cam": "mid:sati"
+    },
+    {
+     "who": "shiva",
+     "text": "हमें बुलाया नहीं गया, सती। जो घर तुमसे घृणा करे, वहाँ बिन बुलाए जाना मृत्यु से भी बुरा है।",
+     "text_hi": "हमें बुलाया नहीं गया, सती। जो घर तुमसे घृणा करे, वहाँ बिन बुलाए जाना मृत्यु से भी बुरा है।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "sati",
+     "text": "वे मेरे पिता हैं! बेटी को पिता के घर जाने के लिए निमंत्रण नहीं चाहिए। और मुझे उनसे पूछना है कि उन्होंने आपका अपमान क्यों किया।",
+     "text_hi": "वे मेरे पिता हैं! बेटी को पिता के घर जाने के लिए निमंत्रण नहीं चाहिए। और मुझे उनसे पूछना है कि उन्होंने आपका अपमान क्यों किया।",
+     "cam": "close:sati"
+    },
+    {
+     "who": "shiva",
+     "text": "तो जाओ, यदि जाना ही है। नंदी को ले जाओ, और मेरे गणों को।",
+     "text_hi": "तो जाओ, यदि जाना ही है। नंदी को ले जाओ, और मेरे गणों को।",
+     "cam": "close:shiva"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "card",
+   "id": "chapter9",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "The Empty Seat",
+   "title_hi": "खाली आसन",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "arrival",
+   "set": "yajna",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 640,
+     "y": 650,
+     "size": 1.0,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "crowd",
+     "kind": "crowd",
+     "x": 640,
+     "y": 560,
+     "n": 12,
+     "z": -3,
+     "in": 0
+    },
+    {
+     "id": "daksha",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "hips",
+     "emo": "angry",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "asikni",
+     "x": 1100,
+     "y": 665,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "sad",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "sati",
+     "x": -100,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "rest",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 330,
+        "t": 2.2,
+        "walk": 1
+       }
+      ],
+      "2": [
+       {
+        "walk": 0,
+        "t": 0.3
+       }
+      ],
+      "3": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.5
+       },
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "rage",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "nandi",
+     "x": -300,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 100,
+        "t": 2.2
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.3,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "सती नंदी पर सवार होकर पहुँचीं। माँ और बहनों ने उन्हें गले लगाया। पर पिता ने मुँह फेर लिया।",
+     "text_hi": "सती नंदी पर सवार होकर पहुँचीं। माँ और बहनों ने उन्हें गले लगाया। पर पिता ने मुँह फेर लिया।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर उन्होंने आहुतियाँ देखीं। विष्णु का भाग। ब्रह्मा का भाग। हर देवता का भाग। और शिव का कोई भाग नहीं।",
+     "text_hi": "फिर उन्होंने आहुतियाँ देखीं। विष्णु का भाग। ब्रह्मा का भाग। हर देवता का भाग। और शिव का कोई भाग नहीं।",
+     "cam": "at:640,560,1.6",
+     "capPos": "bottom"
+    },
+    {
+     "who": "sati",
+     "text": "पिताजी! शिव का भाग कहाँ है? उनके बिना यह यज्ञ हो ही कैसे सकता है?",
+     "text_hi": "पिताजी! शिव का भाग कहाँ है? उनके बिना यह यज्ञ हो ही कैसे सकता है?",
+     "cam": "mid:sati"
+    },
+    {
+     "who": "daksha",
+     "text": "तुम बिन बुलाए क्यों आईं? तुम्हारा पति प्रेतों का स्वामी है, एक अमंगल भिखारी। यहाँ उसे कोई भाग नहीं मिलेगा।",
+     "text_hi": "तुम बिन बुलाए क्यों आईं? तुम्हारा पति प्रेतों का स्वामी है, एक अमंगल भिखारी। यहाँ उसे कोई भाग नहीं मिलेगा।",
+     "cam": "mid:daksha"
+    },
+    {
+     "who": "sati",
+     "text": "विष्णु, ब्रह्मा, आप यहाँ बैठकर यह सुन रहे हैं? जिसकी आप पूजा करते हैं, उसका अपमान हो रहा है, और आप चुप हैं?",
+     "text_hi": "विष्णु, ब्रह्मा, आप यहाँ बैठकर यह सुन रहे हैं? जिसकी आप पूजा करते हैं, उसका अपमान हो रहा है, और आप चुप हैं?",
+     "cam": "close:sati"
+    },
+    {
+     "who": "sati",
+     "text": "यह शरीर तुमसे मिला है, दक्ष। मुझे इस पर लज्जा है। मैं इसे अब एक पल भी नहीं रखूँगी।",
+     "text_hi": "यह शरीर तुमसे मिला है, दक्ष। मुझे इस पर लज्जा है। मैं इसे अब एक पल भी नहीं रखूँगी।",
+     "cam": "ecu:sati"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "fire"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "yogafire",
+   "set": "yajna",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "sati",
+     "x": 640,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0,
+     "out": 4,
+     "od": 0.2
+    },
+    {
+     "id": "yf",
+     "kind": "yogafire",
+     "x": 640,
+     "y": 660,
+     "z": 40,
+     "growT": 3,
+     "in": 2
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "वे धरती पर बैठ गईं, आँखें मूँद लीं। उन्होंने केवल एक ही चीज़ का ध्यान किया। अपने पति के चरणों का।",
+     "text_hi": "वे धरती पर बैठ गईं, आँखें मूँद लीं। उन्होंने केवल एक ही चीज़ का ध्यान किया। अपने पति के चरणों का।",
+     "camMove": true,
+     "cam": "full:sati"
+    },
+    {
+     "text": "",
+     "dur": 3.0,
+     "camMove": true,
+     "cam": "at:640,420,1.4",
+     "sfx": "fire",
+     "swell": true,
+     "flash": "#ffb43a"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने अपनी प्राणवायु को ऊपर उठाया, और भीतर से एक अग्नि उठी। और सती चली गईं।",
+     "text_hi": "उन्होंने अपनी प्राणवायु को ऊपर उठाया, और भीतर से एक अग्नि उठी। और सती चली गईं।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    }
+   ],
+   "tint": [
+    "#3a0a0a",
+    0.15
+   ],
+   "music": "sorrow",
+   "amb": [
+    "fire"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "ribhus",
+   "set": "yajna",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 640,
+     "y": 650,
+     "size": 1.2,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "gana",
+     "x": 300,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "strike",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": -200,
+        "t": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "gana2",
+     "x": 160,
+     "y": 665,
+     "s": 0.86,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "x": -300,
+        "t": 1.6
+       }
+      ]
+     }
+    },
+    {
+     "id": "bhrigu",
+     "x": 900,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "offer",
+     "emo": "angry",
+     "in": 0
+    },
+    {
+     "id": "ribhu",
+     "kind": "burst",
+     "x": 760,
+     "y": 420,
+     "r": 260,
+     "col": "#ff8a1e",
+     "z": 55,
+     "in": 3,
+     "out": 4
+    },
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 640,
+     "y": 0,
+     "n": 20,
+     "r": 700,
+     "col": "#fff3a0",
+     "op": 0.35,
+     "z": -2,
+     "in": 5
+    },
+    {
+     "id": "daksha",
+     "x": 1000,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "fear",
+     "emo": "fear",
+     "anim": "right",
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "ganas",
+     "text": "वे नहीं रहीं! दक्ष को मारो! यज्ञ नष्ट कर दो!",
+     "text_hi": "वे नहीं रहीं! दक्ष को मारो! यज्ञ नष्ट कर दो!",
+     "cam": "two:gana,gana2"
+    },
+    {
+     "who": "narrator",
+     "text": "भृगु ने यजुर्वेद के मंत्र पढ़ते हुए अग्नि में आहुति डाली। और ज्वालाओं से अग्निमय योद्धाओं की एक सेना उठी, ऋभु।",
+     "text_hi": "भृगु ने यजुर्वेद के मंत्र पढ़ते हुए अग्नि में आहुति डाली। और ज्वालाओं से अग्निमय योद्धाओं की एक सेना उठी, ऋभु।",
+     "cam": "mid:bhrigu"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "boom",
+     "flash": true,
+     "shake": 10,
+     "bang": "WHOOOSH!|धधक!",
+     "bangPos": "900,160"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव के गण खदेड़ दिए गए। कई तो सती के शोक में पहले ही प्राण दे चुके थे।",
+     "text_hi": "शिव के गण खदेड़ दिए गए। कई तो सती के शोक में पहले ही प्राण दे चुके थे।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "skyvoice",
+     "text": "दक्ष, मूर्ख! तुमने न जगन्माता सती का सम्मान किया, न जगत्पिता शिव का। तुम्हारा यज्ञ नष्ट होगा। अब देवता भी तुम्हें नहीं बचा सकते।",
+     "text_hi": "दक्ष, मूर्ख! तुमने न जगन्माता सती का सम्मान किया, न जगत्पिता शिव का। तुम्हारा यज्ञ नष्ट होगा। अब देवता भी तुम्हें नहीं बचा सकते।",
+     "cam": "wide",
+     "sky": true,
+     "sfx": "thunder"
+    },
+    {
+     "who": "narrator",
+     "text": "और दूर कैलास पर, नारद शिव को यह सब बताने पहुँचे।",
+     "text_hi": "और दूर कैलास पर, नारद शिव को यह सब बताने पहुँचे।",
+     "cam": "mid:daksha",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "fire"
+   ],
+   "trans": "cut",
+   "speed": 1
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "sad",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "grief",
+     "emo": "sad",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "अहंकार हमें अपने ही बच्चों के प्रति क्रूर बना देता है। दक्ष के पास सब कुछ था, और उन्होंने सब आग में झोंक दिया।",
+     "text_hi": "अहंकार हमें अपने ही बच्चों के प्रति क्रूर बना देता है। दक्ष के पास सब कुछ था, और उन्होंने सब आग में झोंक दिया।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "rishi",
+     "text": "और शिव? शिव ने क्या किया?",
+     "text_hi": "और शिव? शिव ने क्या किया?",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "उन्होंने अपनी जटा से एक लट उखाड़ ली।",
+     "text_hi": "उन्होंने अपनी जटा से एक लट उखाड़ ली।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next14",
+   "style": "next",
+   "lines": [],
+   "dur": 8,
+   "title": "Virabhadra",
+   "title_hi": "वीरभद्र",
+   "sub": "The wrath of Shiva",
+   "sub_hi": "शिव का प्रकोप",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end15",
+   "style": "end",
+   "lines": [],
+   "dur": 10,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Six: The Uninvited",
+   "sub_hi": "छठा अंक: बिन बुलाए",
+   "credits": [
+    "Adapted from the Shiva Purana, Rudra Samhita, Sati Khanda",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code"
+   ],
+   "credits_hi": [
+    "शिव पुराण, रुद्र संहिता, सती खंड पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने"
+   ]
+  }
+ ]
+}

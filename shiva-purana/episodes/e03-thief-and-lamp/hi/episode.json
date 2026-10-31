@@ -1,0 +1,1662 @@
+{
+ "meta": {
+  "series": "शिव पुराण",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "महादेव की कथाएँ",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "hi",
+  "title": "चोर और दीपक",
+  "title_hi": "चोर और दीपक",
+  "episode": "3",
+  "slug": "e03-thief-and-lamp",
+  "kicker": "तीसरा अंक",
+  "kicker_hi": "तीसरा अंक",
+  "sub": "एक जुआरी, एक मंदिर, और शिव की रात",
+  "sub_hi": "एक जुआरी, एक मंदिर, और शिव की रात",
+  "logline": "एक जुआरी शिवरात्रि पर मंदिर से भोग चुराता है और दीपक तेज़ करने के लिए अपना वस्त्र फाड़ देता है। वही एक लौ उसे तीन जन्मों के पार, कैलास तक ले जाती है।",
+  "logline_hi": "एक जुआरी शिवरात्रि पर मंदिर से भोग चुराता है और दीपक तेज़ करने के लिए अपना वस्त्र फाड़ देता है। वही एक लौ उसे तीन जन्मों के पार, कैलास तक ले जाती है।",
+  "source": "Shiva Purana, Rudra Samhita, Srishti Khanda, chapters 17 to 19 (tr. Bibek Debroy)",
+  "num": "3"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "hm_psi:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "rishi": {
+   "label": "Sage",
+   "label_hi": "ऋषि",
+   "fig": "rishi",
+   "voice": "hm_omega:0.7+bm_daniel:0.3",
+   "speed": 0.95,
+   "fx": "room"
+  },
+  "shiva": {
+   "label": "Shiva",
+   "label_hi": "शिव",
+   "fig": "shiva",
+   "divine": true,
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.9,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "gunanidhi": {
+   "label": "Gunanidhi",
+   "label_hi": "गुणनिधि",
+   "fig": "gunanidhi",
+   "voice": "hm_psi:0.7+am_echo:0.3",
+   "speed": 1.05,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "yajnadatta": {
+   "label": "Yajnadatta",
+   "label_hi": "यज्ञदत्त",
+   "fig": "yajnadatta",
+   "voice": "hm_omega:0.65+bm_daniel:0.35",
+   "speed": 0.95,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "mother": {
+   "label": "Mother",
+   "label_hi": "माँ",
+   "fig": "mother",
+   "voice": "hf_alpha:0.7+af_sarah:0.3",
+   "speed": 0.98,
+   "fx": "room"
+  },
+  "guard": {
+   "label": "Guard",
+   "label_hi": "पहरेदार",
+   "fig": "guard",
+   "voice": "hm_omega:0.6+am_adam:0.4",
+   "speed": 1.04,
+   "pitch": -2,
+   "fx": "room"
+  },
+  "yamadoot": {
+   "label": "Yama's Messenger",
+   "label_hi": "यमदूत",
+   "fig": "yamadoot",
+   "voice": "hm_omega:0.5+am_fenrir:0.5",
+   "speed": 0.94,
+   "pitch": -5,
+   "formant": "shifted",
+   "fx": "growl"
+  },
+  "shivadoot": {
+   "label": "Shiva's Messenger",
+   "label_hi": "शिवदूत",
+   "fig": "shivadoot",
+   "voice": "hm_psi:0.6+am_michael:0.4",
+   "speed": 1.0,
+   "fx": "divine"
+  },
+  "kubera": {
+   "label": "Kubera",
+   "label_hi": "कुबेर",
+   "fig": "kubera",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 0.98,
+   "fx": "room"
+  },
+  "uma": {
+   "label": "Uma",
+   "label_hi": "उमा",
+   "fig": "parvati",
+   "divine": true,
+   "voice": "hf_beta:0.7+af_heart:0.3",
+   "speed": 0.97,
+   "fx": "divine"
+  },
+  "gambler": {
+   "label": "Gambler",
+   "label_hi": "जुआरी",
+   "fig": "gambler",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 1.06,
+   "pitch": -1,
+   "fx": "room"
+  },
+  "dama": {
+   "label": "King Dama",
+   "label_hi": "राजा दम",
+   "fig": "dama",
+   "voice": "hm_psi:0.6+am_echo:0.4",
+   "speed": 0.98,
+   "fx": "room"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "gunanidhi,shiva,kubera"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "smile",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "rishi",
+     "text": "सूत जी, शिव कैलास पर, धन के स्वामी कुबेर के पास, कैसे रहने लगे?",
+     "text_hi": "सूत जी, शिव कैलास पर, धन के स्वामी कुबेर के पास, कैसे रहने लगे?",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "एक दीपक के कारण। और एक ऐसे चोर के कारण, जिसने उसे जलाने का इरादा भी नहीं किया था।",
+     "text_hi": "एक दीपक के कारण। और एक ऐसे चोर के कारण, जिसने उसे जलाने का इरादा भी नहीं किया था।",
+     "cam": "mid:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Three",
+   "kicker_hi": "तीसरा अंक",
+   "title": "The Thief and the Lamp",
+   "title_hi": "चोर और दीपक",
+   "sub": "A gambler, a temple, and the night of Shiva",
+   "sub_hi": "एक जुआरी, एक मंदिर, और शिव की रात",
+   "figs": "gunanidhi,kubera",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "The Worst Gambler on Earth",
+   "title_hi": "धरती का सबसे बुरा जुआरी",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "home",
+   "set": "court",
+   "ctx": {
+    "col": "#6a4a2a"
+   },
+   "els": [
+    {
+     "id": "yajnadatta",
+     "x": 330,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "mala",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "mother",
+     "x": 640,
+     "y": 660,
+     "s": 0.86,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gunanidhi",
+     "x": 1060,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "rest",
+     "emo": "sly",
+     "in": 0,
+     "out": 5
+    },
+    {
+     "id": "fire",
+     "kind": "fire",
+     "x": 180,
+     "y": 650,
+     "size": 0.6,
+     "z": -1,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "काम्पिल्य में यज्ञदत्त नाम के एक विद्वान पुरोहित रहते थे, जिनका राजा भी आदर करते थे। उनका एक ही पुत्र था, गुणनिधि, चंद्रमा जैसा सुंदर।",
+     "text_hi": "काम्पिल्य में यज्ञदत्त नाम के एक विद्वान पुरोहित रहते थे, जिनका राजा भी आदर करते थे। उनका एक ही पुत्र था, गुणनिधि, चंद्रमा जैसा सुंदर।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "पर गुणनिधि का एक रहस्य था। वह जुआ खेलता था। और हारता था। हर दिन।",
+     "text_hi": "पर गुणनिधि का एक रहस्य था। वह जुआ खेलता था। और हारता था। हर दिन।",
+     "cam": "mid:gunanidhi"
+    },
+    {
+     "who": "yajnadatta",
+     "text": "हमारा पुत्र कहाँ है? मैं उसे कभी घर पर नहीं देखता।",
+     "text_hi": "हमारा पुत्र कहाँ है? मैं उसे कभी घर पर नहीं देखता।",
+     "cam": "mid:yajnadatta"
+    },
+    {
+     "who": "mother",
+     "text": "अभी-अभी पढ़ने गया है, दो-तीन मित्रों के साथ।",
+     "text_hi": "अभी-अभी पढ़ने गया है, दो-तीन मित्रों के साथ।",
+     "cam": "mid:mother"
+    },
+    {
+     "who": "narrator",
+     "text": "वह अपने इकलौते बेटे से प्रेम करती थी, इसलिए बार-बार झूठ बोलती रही। और गुणनिधि बर्तन, कपड़े और गहने उठाकर जुआघरों में ले जाता रहा।",
+     "text_hi": "वह अपने इकलौते बेटे से प्रेम करती थी, इसलिए बार-बार झूठ बोलती रही। और गुणनिधि बर्तन, कपड़े और गहने उठाकर जुआघरों में ले जाता रहा।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "court",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink",
+   "caption": "The city of Kampilya",
+   "caption_hi": "काम्पिल्य नगर"
+  },
+  {
+   "type": "scene",
+   "id": "den",
+   "set": "city",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "dice",
+     "kind": "dice",
+     "x": 640,
+     "y": 640,
+     "s": 1.1,
+     "z": 5,
+     "in": 0
+    },
+    {
+     "id": "gunanidhi",
+     "x": 420,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "offer",
+     "emo": "joy",
+     "seat": "kneel",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "pose": "offer",
+        "t": 0.4
+       },
+       {
+        "emo": "joy",
+        "pose": "offer",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "pose": "grief",
+        "t": 0.4
+       }
+      ]
+     }
+    },
+    {
+     "id": "gambler",
+     "x": 870,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "point",
+     "emo": "sly",
+     "seat": "kneel",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "coins",
+     "kind": "coins",
+     "x": 640,
+     "y": 600,
+     "z": 10,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "gambler",
+     "text": "पिछले हफ़्ते तुम्हारी माँ का वस्त्र। और आज?",
+     "text_hi": "पिछले हफ़्ते तुम्हारी माँ का वस्त्र। और आज?",
+     "cam": "mid:gambler"
+    },
+    {
+     "who": "gunanidhi",
+     "text": "मेरे पिता की अंगूठी! रत्नों से जड़ी! फेंको पासे!",
+     "text_hi": "मेरे पिता की अंगूठी! रत्नों से जड़ी! फेंको पासे!",
+     "cam": "mid:gunanidhi"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "two:gunanidhi,gambler",
+     "sfx": "clash",
+     "bang": "CLATTER!|खड़खड़!",
+     "bangPos": "980,170"
+    },
+    {
+     "who": "narrator",
+     "text": "वह हार गया। धरती पर उससे बुरा जुआरी कोई नहीं था।",
+     "text_hi": "वह हार गया। धरती पर उससे बुरा जुआरी कोई नहीं था।",
+     "cam": "mid:gunanidhi",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "night"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "ring",
+   "set": "city",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "gambler",
+     "x": 840,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "hold",
+     "emo": "sly",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "yajnadatta",
+     "x": 380,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "point",
+     "emo": "angry",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "pose": "head",
+        "emo": "sad",
+        "t": 0.6
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "yajnadatta",
+     "text": "वह मेरी अंगूठी है! तुम्हें यह कहाँ से मिली, चोर?",
+     "text_hi": "वह मेरी अंगूठी है! तुम्हें यह कहाँ से मिली, चोर?",
+     "cam": "mid:yajnadatta"
+    },
+    {
+     "who": "gambler",
+     "text": "चोर? यह तो तुम्हारे बेटे ने दी है, पुरोहित जी। वह आधा घर हमें दे चुका है। आपको पता नहीं था?",
+     "text_hi": "चोर? यह तो तुम्हारे बेटे ने दी है, पुरोहित जी। वह आधा घर हमें दे चुका है। आपको पता नहीं था?",
+     "cam": "mid:gambler"
+    },
+    {
+     "who": "narrator",
+     "text": "यज्ञदत्त ने लज्जा से सिर ढक लिया और घर लौट आए।",
+     "text_hi": "यज्ञदत्त ने लज्जा से सिर ढक लिया और घर लौट आए।",
+     "cam": "close:yajnadatta",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "court"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "disown",
+   "set": "court",
+   "ctx": {
+    "col": "#6a4a2a"
+   },
+   "els": [
+    {
+     "id": "yajnadatta",
+     "x": 380,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "halt",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "halt",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "mother",
+     "x": 820,
+     "y": 660,
+     "s": 0.86,
+     "face": -1,
+     "pose": "grief",
+     "emo": "sad",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.3,
+     "cam": "wide"
+    },
+    {
+     "who": "yajnadatta",
+     "text": "तुमने इतने वर्षों तक मुझसे यह छिपाया! ऐसा पुत्र होने से तो पुत्र न होना ही अच्छा!",
+     "text_hi": "तुमने इतने वर्षों तक मुझसे यह छिपाया! ऐसा पुत्र होने से तो पुत्र न होना ही अच्छा!",
+     "cam": "mid:yajnadatta"
+    },
+    {
+     "who": "yajnadatta",
+     "text": "जल और तिल लाओ। मैं उसका तर्पण करूँगा। आज से मेरा कोई पुत्र नहीं।",
+     "text_hi": "जल और तिल लाओ। मैं उसका तर्पण करूँगा। आज से मेरा कोई पुत्र नहीं।",
+     "cam": "close:yajnadatta"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "court"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "tree",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "gunanidhi",
+     "x": 640,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "grief",
+     "emo": "sad",
+     "seat": "kneel",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "narrator",
+     "text": "गुणनिधि ने यह सुना, और नगर छोड़कर भाग गया। न विद्या थी, न धन, न मित्र।",
+     "text_hi": "गुणनिधि ने यह सुना, और नगर छोड़कर भाग गया। न विद्या थी, न धन, न मित्र।",
+     "cam": "wide"
+    },
+    {
+     "who": "gunanidhi",
+     "text": "अब कहाँ जाऊँ? अब मुझे कौन खिलाएगा? हर सुबह माँ मुझे मीठा भोजन खिलाती थी।",
+     "text_hi": "अब कहाँ जाऊँ? अब मुझे कौन खिलाएगा? हर सुबह माँ मुझे मीठा भोजन खिलाती थी।",
+     "cam": "close:gunanidhi"
+    },
+    {
+     "who": "narrator",
+     "text": "वह भूखा एक पेड़ के नीचे बैठ गया, और सूरज डूब गया। वह शिवरात्रि की रात थी।",
+     "text_hi": "वह भूखा एक पेड़ के नीचे बैठ गया, और सूरज डूब गया। वह शिवरात्रि की रात थी।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "chapter9",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "One Night, One Lamp",
+   "title_hi": "एक रात, एक दीपक",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "temple",
+   "set": "temple",
+   "ctx": {},
+   "els": [
+    {
+     "id": "ling",
+     "kind": "lingam",
+     "x": 640,
+     "y": 600,
+     "s": 1.1,
+     "in": 0
+    },
+    {
+     "id": "plat",
+     "kind": "platter",
+     "x": 820,
+     "y": 600,
+     "s": 0.9,
+     "in": 0
+    },
+    {
+     "id": "lamp",
+     "kind": "lamp",
+     "x": 470,
+     "y": 600,
+     "s": 0.9,
+     "in": 0
+    },
+    {
+     "id": "devotee",
+     "x": 1040,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "serene",
+     "in": 0
+    },
+    {
+     "id": "gunanidhi",
+     "x": 150,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "rest",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sly",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव का एक भक्त अपने परिवार के साथ वहाँ से गुज़रा, मंदिर के लिए भोग लिए हुए। उन्होंने दिन भर उपवास किया था।",
+     "text_hi": "शिव का एक भक्त अपने परिवार के साथ वहाँ से गुज़रा, मंदिर के लिए भोग लिए हुए। उन्होंने दिन भर उपवास किया था।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "रात भर उन्होंने शिव के नाम गाए और लिंग की पूजा की।",
+     "text_hi": "रात भर उन्होंने शिव के नाम गाए और लिंग की पूजा की।",
+     "cam": "mid:devotee"
+    },
+    {
+     "who": "gunanidhi",
+     "text": "उस भोजन की सुगंध कितनी अच्छी है। जब ये सो जाएँगे, तब यह मेरा होगा।",
+     "text_hi": "उस भोजन की सुगंध कितनी अच्छी है। जब ये सो जाएँगे, तब यह मेरा होगा।",
+     "cam": "mid:gunanidhi"
+    },
+    {
+     "who": "narrator",
+     "text": "तो वह मंदिर के द्वार पर भूखा बैठा रहा, और रात भर शिव के नाम सुनता रहा।",
+     "text_hi": "तो वह मंदिर के द्वार पर भूखा बैठा रहा, और रात भर शिव के नाम सुनता रहा।",
+     "camMove": true,
+     "cam": "close:gunanidhi"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "temple"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "wick",
+   "set": "temple",
+   "ctx": {},
+   "els": [
+    {
+     "id": "ling",
+     "kind": "lingam",
+     "x": 640,
+     "y": 600,
+     "s": 1.1,
+     "in": 0
+    },
+    {
+     "id": "plat",
+     "kind": "platter",
+     "x": 820,
+     "y": 600,
+     "s": 0.9,
+     "in": 0
+    },
+    {
+     "id": "lamp",
+     "kind": "lamp",
+     "x": 470,
+     "y": 600,
+     "s": 0.5,
+     "in": 0,
+     "out": 4,
+     "od": 0.01
+    },
+    {
+     "id": "gunanidhi",
+     "x": 320,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "reach",
+     "emo": "sly",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "pose": "hold",
+        "t": 0.5
+       }
+      ],
+      "6": [
+       {
+        "pose": "offer",
+        "x": 760,
+        "emo": "joy",
+        "t": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "lamp2",
+     "kind": "lamp",
+     "x": 470,
+     "y": 600,
+     "s": 1.1,
+     "anim": "grow",
+     "in": 4
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 600,
+     "y": 480,
+     "r": 380,
+     "warm": true,
+     "op": 0.7,
+     "z": -1,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "heartbeat"
+    },
+    {
+     "who": "narrator",
+     "text": "जब सब सो गए, वह चुपके से भीतर घुसा। दीपक बुझने वाला था। उसे भोजन ठीक से दिख भी नहीं रहा था।",
+     "text_hi": "जब सब सो गए, वह चुपके से भीतर घुसा। दीपक बुझने वाला था। उसे भोजन ठीक से दिख भी नहीं रहा था।",
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "mid:gunanidhi",
+     "sfx": "crack",
+     "bang": "RRRIP!|चर्र!",
+     "bangPos": "300,180"
+    },
+    {
+     "who": "narrator",
+     "text": "तो उसने अपने वस्त्र से एक पट्टी फाड़ी और उसे बटकर नई बत्ती बना दी।",
+     "text_hi": "तो उसने अपने वस्त्र से एक पट्टी फाड़ी और उसे बटकर नई बत्ती बना दी।",
+     "cam": "mid:gunanidhi",
+     "capPos": "bottom"
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "camMove": true,
+     "cam": "at:560,520,1.5",
+     "sfx": "fire",
+     "flash": "#ffd27a"
+    },
+    {
+     "who": "narrator",
+     "text": "लौ ऊँची उठी, और उसका प्रकाश सीधे लिंग पर पड़ा।",
+     "text_hi": "लौ ऊँची उठी, और उसका प्रकाश सीधे लिंग पर पड़ा।",
+     "cam": "at:560,520,1.5"
+    },
+    {
+     "who": "narrator",
+     "text": "उसने भोजन उठाया और भाग निकला।",
+     "text_hi": "उसने भोजन उठाया और भाग निकला।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "tint": [
+    "#0a0a2a",
+    0.35
+   ],
+   "music": "tension",
+   "amb": [
+    "night"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "chase",
+   "set": "city",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "gunanidhi",
+     "x": 900,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "offer",
+     "emo": "fear",
+     "walk": 1,
+     "in": 0
+    },
+    {
+     "id": "guard",
+     "x": 200,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "sword",
+     "item": "sword",
+     "emo": "rage",
+     "walk": 1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "x": 760,
+        "t": 1.2
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.3,
+     "cam": "wide",
+     "sfx": "whoosh"
+    },
+    {
+     "who": "guard",
+     "text": "चोर! रोको उसे! पकड़ो!",
+     "text_hi": "चोर! रोको उसे! पकड़ो!",
+     "cam": "mid:guard"
+    },
+    {
+     "text": "",
+     "dur": 1.4,
+     "cam": "wide",
+     "sfx": "boom",
+     "shake": 10,
+     "flash": "#c8281e",
+     "bang": "THWACK!|धप्प!",
+     "bangPos": "900,170"
+    },
+    {
+     "who": "narrator",
+     "text": "नगर के पहरेदारों ने उसे पकड़कर मार डाला। चुराए भोजन का एक कौर भी वह नहीं खा सका।",
+     "text_hi": "नगर के पहरेदारों ने उसे पकड़कर मार डाला। चुराए भोजन का एक कौर भी वह नहीं खा सका।",
+     "cam": "wide",
+     "tint": "#5a0a0a,0.3",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "night"
+   ],
+   "trans": "cut",
+   "speed": 1
+  },
+  {
+   "type": "card",
+   "id": "chapter13",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "Yama's Men and Shiva's Men",
+   "title_hi": "यमदूत और शिवदूत",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "tug",
+   "set": "hell",
+   "ctx": {},
+   "els": [
+    {
+     "id": "vim",
+     "kind": "vimana",
+     "x": 1040,
+     "y": 300,
+     "s": 0.8,
+     "anim": "right",
+     "inDur": 1,
+     "in": 1
+    },
+    {
+     "id": "shivadoot",
+     "x": 1000,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "trident",
+     "item": "trishul",
+     "emo": "calm",
+     "anim": "materialize",
+     "in": 1,
+     "keys": {
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "halt",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "gunanidhi",
+     "x": 640,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "o": 0.75,
+     "in": 0
+    },
+    {
+     "id": "yamadoot",
+     "x": 340,
+     "y": 660,
+     "s": 1.0,
+     "face": 1,
+     "pose": "hold",
+     "item": "noose",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "shock",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     },
+     "out": 8
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "roar"
+    },
+    {
+     "who": "yamadoot",
+     "text": "यह हमारा है! यह हमारे पाशों में बँधकर यमपुरी चलेगा!",
+     "text_hi": "यह हमारा है! यह हमारे पाशों में बँधकर यमपुरी चलेगा!",
+     "cam": "mid:yamadoot"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "shivadoot",
+     "text": "इसे छोड़ दो। यह धर्मनिष्ठ है। इसके सारे पाप जल चुके हैं।",
+     "text_hi": "इसे छोड़ दो। यह धर्मनिष्ठ है। इसके सारे पाप जल चुके हैं।",
+     "cam": "mid:shivadoot"
+    },
+    {
+     "who": "yamadoot",
+     "text": "धर्मनिष्ठ? इसने जुआ खेला, झूठ बोला, चोरी की, और शिव का भोग तक चुराया!",
+     "text_hi": "धर्मनिष्ठ? इसने जुआ खेला, झूठ बोला, चोरी की, और शिव का भोग तक चुराया!",
+     "cam": "two:yamadoot,gunanidhi"
+    },
+    {
+     "who": "shivadoot",
+     "text": "शिव का धर्म सूक्ष्म है। तुम केवल स्थूल देखते हो। सुनो।",
+     "text_hi": "शिव का धर्म सूक्ष्म है। तुम केवल स्थूल देखते हो। सुनो।",
+     "cam": "mid:shivadoot"
+    },
+    {
+     "who": "shivadoot",
+     "text": "जब लिंग अँधेरे में था, उसने अपना वस्त्र फाड़कर बत्ती बनाई। उसने रात भर उपवास किया। उसने शिव के नाम सुने, और उनकी पूजा देखी।",
+     "text_hi": "जब लिंग अँधेरे में था, उसने अपना वस्त्र फाड़कर बत्ती बनाई। उसने रात भर उपवास किया। उसने शिव के नाम सुने, और उनकी पूजा देखी।",
+     "cam": "close:shivadoot"
+    },
+    {
+     "who": "shivadoot",
+     "text": "वह शिवरात्रि की रात थी। यह हमारे साथ चलेगा।",
+     "text_hi": "वह शिवरात्रि की रात थी। यह हमारे साथ चलेगा।",
+     "cam": "two:shivadoot,gunanidhi"
+    },
+    {
+     "who": "narrator",
+     "text": "यमदूत सिर झुकाकर लौट गए। और यमराज ने उनसे कहा, जो शिव की भस्म या रुद्राक्ष धारण करे, उसे कभी मत लाना।",
+     "text_hi": "यमदूत सिर झुकाकर लौट गए। और यमराज ने उनसे कहा, जो शिव की भस्म या रुद्राक्ष धारण करे, उसे कभी मत लाना।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "magic",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "fire"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "dama",
+   "set": "temple",
+   "ctx": {},
+   "els": [
+    {
+     "id": "ling",
+     "kind": "lingam",
+     "x": 640,
+     "y": 600,
+     "s": 1.0,
+     "in": 0
+    },
+    {
+     "id": "l1",
+     "kind": "lamp",
+     "x": 420,
+     "y": 600,
+     "s": 0.8,
+     "in": 0
+    },
+    {
+     "id": "l2",
+     "kind": "lamp",
+     "x": 860,
+     "y": 600,
+     "s": 0.8,
+     "in": 0
+    },
+    {
+     "id": "l3",
+     "kind": "lamp",
+     "x": 300,
+     "y": 610,
+     "s": 0.7,
+     "in": 0
+    },
+    {
+     "id": "l4",
+     "kind": "lamp",
+     "x": 980,
+     "y": 610,
+     "s": 0.7,
+     "in": 0
+    },
+    {
+     "id": "dama",
+     "x": 1100,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "lamp",
+     "item": "lamp",
+     "emo": "serene",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "शिवलोक में कुछ समय बिताकर, उसने फिर जन्म लिया, कलिंग के राजकुमार दम के रूप में। बचपन से ही उसे शिव से प्रेम था।",
+     "text_hi": "शिवलोक में कुछ समय बिताकर, उसने फिर जन्म लिया, कलिंग के राजकुमार दम के रूप में। बचपन से ही उसे शिव से प्रेम था।",
+     "cam": "wide"
+    },
+    {
+     "who": "dama",
+     "text": "मेरे राज्य के हर शिव मंदिर में दीपक जले। हर एक में। हर रात।",
+     "text_hi": "मेरे राज्य के हर शिव मंदिर में दीपक जले। हर एक में। हर रात।",
+     "cam": "mid:dama"
+    },
+    {
+     "who": "narrator",
+     "text": "और ऐसा ही हुआ। राजा दम ने हज़ार दीपक जलवाए, उस एक के बदले जो उसने अनजाने में जलाया था।",
+     "text_hi": "और ऐसा ही हुआ। राजा दम ने हज़ार दीपक जलवाए, उस एक के बदले जो उसने अनजाने में जलाया था।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "temple"
+   ],
+   "trans": "wipe",
+   "caption": "Many years later, in Kalinga",
+   "caption_hi": "कई वर्ष बाद, कलिंग में"
+  },
+  {
+   "type": "card",
+   "id": "chapter16",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Four",
+   "kicker_hi": "चौथा भाग",
+   "title": "The Lord of Wealth",
+   "title_hi": "धन का स्वामी",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "kashi",
+   "set": "kashi",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "kubera",
+     "fig": "kuberaTapas",
+     "x": 640,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "shock",
+        "t": 0.3
+       },
+       {
+        "emo": "shock",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "fig": "kubera",
+        "seat": "none",
+        "t": 0.01
+       }
+      ]
+     }
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 900,
+     "y": 420,
+     "r": 420,
+     "z": -2,
+     "in": 2
+    },
+    {
+     "id": "shiva",
+     "x": 920,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "anim": "materialize",
+     "inDur": 1.5,
+     "in": 2,
+     "keys": {
+      "3": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "8": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "10": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "11": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "uma",
+     "fig": "parvati",
+     "x": 1130,
+     "y": 650,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "calm",
+     "anim": "materialize",
+     "inDur": 1.5,
+     "in": 2,
+     "keys": {
+      "7": [
+       {
+        "emo": "angry",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "9": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.6
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "एक और युग में, वही आत्मा काशी आई, और इतने समय तक तप किया कि शरीर केवल हड्डियों का ढाँचा रह गया।",
+     "text_hi": "एक और युग में, वही आत्मा काशी आई, और इतने समय तक तप किया कि शरीर केवल हड्डियों का ढाँचा रह गया।",
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 2.0,
+     "cam": "wide",
+     "sfx": "om",
+     "swell": true,
+     "flash": true
+    },
+    {
+     "who": "shiva",
+     "text": "आँखें खोलो, मेरे भक्त। मैं प्रसन्न हूँ। वर माँगो।",
+     "text_hi": "आँखें खोलो, मेरे भक्त। मैं प्रसन्न हूँ। वर माँगो।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "kubera",
+     "text": "शिव के पास बैठी ये देवी कौन हैं? इन्होंने ऐसा कौन-सा तप किया कि इनके इतने निकट बैठी हैं?",
+     "text_hi": "शिव के पास बैठी ये देवी कौन हैं? इन्होंने ऐसा कौन-सा तप किया कि इनके इतने निकट बैठी हैं?",
+     "cam": "close:kubera"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "ecu:kubera",
+     "sfx": "crack",
+     "flash": true,
+     "shake": 6,
+     "bang": "KRAK!|चट!",
+     "bangPos": "980,170"
+    },
+    {
+     "who": "narrator",
+     "text": "वह देखता रहा, बार-बार देखता रहा। और उसकी बाईं आँख फूट गई।",
+     "text_hi": "वह देखता रहा, बार-बार देखता रहा। और उसकी बाईं आँख फूट गई।",
+     "cam": "mid:kubera",
+     "capPos": "bottom"
+    },
+    {
+     "who": "uma",
+     "text": "यह तपस्वी मुझे बार-बार क्यों घूर रहा है?",
+     "text_hi": "यह तपस्वी मुझे बार-बार क्यों घूर रहा है?",
+     "cam": "mid:uma"
+    },
+    {
+     "who": "shiva",
+     "text": "उमा, यह तुम्हारा पुत्र है। यह तुम्हें बालक की तरह विस्मय से देख रहा है, बुरी दृष्टि से नहीं।",
+     "text_hi": "उमा, यह तुम्हारा पुत्र है। यह तुम्हें बालक की तरह विस्मय से देख रहा है, बुरी दृष्टि से नहीं।",
+     "cam": "two:shiva,uma"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "sparkle",
+     "flash": true
+    },
+    {
+     "who": "shiva",
+     "text": "तुम कुबेर बनो, समस्त धन के स्वामी। अलका पर राज करो। तुम्हारी आँख पीली है, इसलिए लोग तुम्हें एकपिंग कहेंगे। और मैं तुम्हारा मित्र रहूँगा।",
+     "text_hi": "तुम कुबेर बनो, समस्त धन के स्वामी। अलका पर राज करो। तुम्हारी आँख पीली है, इसलिए लोग तुम्हें एकपिंग कहेंगे। और मैं तुम्हारा मित्र रहूँगा।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "मैं कैलास पर अपना निवास बनाऊँगा, तुम्हारे नगर के ठीक पास।",
+     "text_hi": "मैं कैलास पर अपना निवास बनाऊँगा, तुम्हारे नगर के ठीक पास।",
+     "cam": "close:shiva"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "river"
+   ],
+   "trans": "ink",
+   "caption": "Kashi, in another age",
+   "caption_hi": "काशी, एक और युग में"
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "lamp",
+     "kind": "lamp",
+     "x": 575,
+     "y": 640,
+     "s": 0.8,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "एक चोर, एक उपवास जो उसने चुना भी नहीं, और कपड़े का एक फटा टुकड़ा। शिव के लिए किया गया छोटा-सा काम भी फल देता है।",
+     "text_hi": "एक चोर, एक उपवास जो उसने चुना भी नहीं, और कपड़े का एक फटा टुकड़ा। शिव के लिए किया गया छोटा-सा काम भी फल देता है।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "rishi",
+     "text": "और क्या किसी स्त्री की कथा है, जो शिव कथा सुनकर तर गई?",
+     "text_hi": "और क्या किसी स्त्री की कथा है, जो शिव कथा सुनकर तर गई?",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "है। उसका नाम था चंचुला।",
+     "text_hi": "है। उसका नाम था चंचुला।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "night"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next19",
+   "style": "next",
+   "lines": [],
+   "dur": 8,
+   "title": "Chanchula",
+   "title_hi": "चंचुला",
+   "sub": "A wife, a ghost, and the power of a story",
+   "sub_hi": "एक पत्नी, एक प्रेत, और कथा की शक्ति",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end20",
+   "style": "end",
+   "lines": [],
+   "dur": 10,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Three: The Thief and the Lamp",
+   "sub_hi": "तीसरा अंक: चोर और दीपक",
+   "credits": [
+    "Adapted from the Shiva Purana, Rudra Samhita",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code"
+   ],
+   "credits_hi": [
+    "शिव पुराण, रुद्र संहिता पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने"
+   ]
+  }
+ ]
+}

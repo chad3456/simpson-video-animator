@@ -1,0 +1,153 @@
+title: The Wedding of Shiva
+title_hi: शिव विवाह
+episode: 10
+slug: e10-wedding-of-shiva
+kicker: Issue Ten
+kicker_hi: दसवाँ अंक
+sub: The strangest groom the world has ever seen
+sub_hi: संसार का सबसे अनोखा दूल्हा
+logline: Mena waits on the palace roof to see her famous son-in-law. Every god who arrives is more dazzling than the last, and none of them is Shiva. Then Shiva arrives.
+logline_hi: मेना अपने प्रसिद्ध दामाद को देखने महल की छत पर प्रतीक्षा करती हैं। हर आने वाला देवता पिछले से अधिक तेजस्वी है, और उनमें से कोई शिव नहीं। फिर शिव आते हैं।
+source: Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 43 to 55 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=parvatiBride,shivafair,mena
+
+== SCENE frame | set=forest time=day music=joy amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+SUTA (joy, pose=raise) [mid:suta]: The seven sages carried the proposal. The day was fixed. And from every corner of the universe, the wedding guests set out for the Himalaya. || सप्तर्षि प्रस्ताव लेकर गए। दिन तय हुआ। और ब्रह्मांड के हर कोने से बाराती हिमालय की ओर चल पड़े।
+
+== TITLE | dur=7 | kicker=Issue Ten | kicker_hi=दसवाँ अंक | title=The Wedding of Shiva | title_hi=शिव विवाह | sub=The strangest groom the world has ever seen | sub_hi=संसार का सबसे अनोखा दूल्हा | figs=shivafair,parvatiBride | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=Is That Him? | title_hi=क्या यही हैं?
+
+== SCENE roof | set=himalaya time=day music=joy amb=court trans=ink | caption=The roof of Himavan's palace | caption_hi=हिमवान के महल की छत
+@ mena x=300 y=660 s=0.92 face=1 pose=chest emo=joy
+@ narad x=120 y=665 s=0.85 face=1 pose=veena item=veena emo=sly z=-1
+BEAT 0.4 [wide] (sfx=nagara)
+MENA (joy) [mid:mena]: Narada, I must see him first. What kind of man is he, that my daughter did such tapas for him? || नारद, मुझे पहले उन्हें देखना है। वे कैसे पुरुष हैं, जिनके लिए मेरी बेटी ने ऐसा तप किया?
+@ deva x=1400 y=660 s=0.92 face=-1 pose=namaste emo=smile
+> deva x=900 t=1.6 walk=1
+NARRATOR [~wide]: First came the gandharvas, singing, in sparkling clothes, and the radiant Vasus. || सबसे पहले गंधर्व आए, गाते हुए, चमकते वस्त्रों में, और तेजस्वी वसु।
+MENA (joy, pose=point) [two:mena,deva]: Is that him? That must be Shiva! || क्या यही हैं? यही शिव होंगे!
+NARAD (sly) [mid:narad]: No. Those are only his attendants. || नहीं। वे तो बस उनके सेवक हैं।
+- deva
+@ agni x=1400 y=660 s=0.92 face=-1 pose=raise emo=smile
+> agni x=900 t=1.2 walk=1
+NARRATOR [~wide] (capPos=bottom): Then came Agni, twice as bright. Then Yama, then Varuna, then Vayu, then Kubera, each brighter than the last. || फिर आए अग्नि, दुगने तेजस्वी। फिर यम, फिर वरुण, फिर वायु, फिर कुबेर, हर एक पिछले से अधिक तेजस्वी।
+MENA (joy) [mid:mena]: That one! Surely that is Rudra! || वह! निश्चय ही वही रुद्र हैं!
+NARAD (sly) [mid:narad]: No. || नहीं।
+- agni
+@ indra x=1400 y=660 s=0.92 face=-1 pose=hold item=vajra emo=smile
+> indra x=900 t=1.2 walk=1
+NARRATOR [~wide] (capPos=bottom): Indra, lord of the gods. Then the Moon. Then the Sun. Then Brahma himself, praised by the sages. || देवराज इंद्र। फिर चंद्रमा। फिर सूर्य। फिर स्वयं ब्रह्मा, ऋषियों से वंदित।
+NARAD (sly) [mid:narad]: No, no, and no. || नहीं, नहीं, और नहीं।
+- indra
+@ vishnu x=1400 y=660 s=0.95 face=-1 pose=vishnu emo=smile
+> vishnu x=900 t=1.6 walk=1
++ glow kind=glow x=900 y=420 r=380 z=-2
+NARRATOR [~wide] (sfx=sparkle): And then came Vishnu, dark as a rain cloud, in yellow silk, with conch and discus, more beautiful than a crore of Kamas. || और फिर आए विष्णु, वर्षा के बादल जैसे साँवले, पीतांबर में, शंख और चक्र लिए, करोड़ों कामदेवों से भी सुंदर।
+MENA (joy, pose=namaste) [close:mena]: That is Shiva! There can be no doubt! || यही शिव हैं! इसमें कोई संदेह नहीं!
+NARAD (smile, pose=bless) [mid:narad]: That is Vishnu, who is loved by Shiva. Shiva is greater still. I cannot even describe him. || यह विष्णु हैं, जो शिव को प्रिय हैं। शिव इनसे भी बड़े हैं। मैं उनका वर्णन भी नहीं कर सकता।
+MENA (joy) [mid:mena]: If all these are his servants, how fortunate my daughter is! || यदि ये सब उनके सेवक हैं, तो मेरी बेटी कितनी भाग्यशाली है!
+
+== SCENE ganas | set=himalaya time=day music=battle amb=storm trans=cut
+@ mena x=300 y=660 s=0.92 face=1 pose=chest emo=joy
+@ narad x=120 y=665 s=0.85 face=1 pose=point emo=sly z=-1
+@ gana x=1300 y=665 s=0.95 face=-1 pose=raise emo=joy
+@ gana2 x=1450 y=670 s=0.9 face=-1 pose=strike emo=joy z=-1
+@ gana3 x=1600 y=665 s=0.92 face=-1 pose=raise emo=rage
+@ shiva x=1800 y=660 s=1.0 face=-1 pose=trident emo=calm
+@ nandi x=1900 y=665 s=0.9 face=-1 z=-1
+BEAT 0.3 [wide] (sfx=damaru)
+> gana x=1000 t=2.5 walk=1
+> gana2 x=1130 t=2.5 walk=1
+> gana3 x=760 t=2.5 walk=1
+> shiva x=920 t=3 walk=1
+> nandi x=1100 t=3
+NARRATOR [~wide] (sfx=roar): And then came Shiva's own army. Ghosts and goblins. Some with no heads, some with many heads. Some riding backwards, some blowing horns, beating drums, howling. || और फिर आई शिव की अपनी सेना। भूत-प्रेत। किसी का सिर नहीं, किसी के कई सिर। कोई उल्टा सवार, कोई सींग बजाता, ढोल पीटता, चिल्लाता।
+> shiva walk=0 t=0.3
+NARAD (sly, pose=point) [two:mena,shiva]: Look, Mena. There is Shiva. || देखिए, मेना। वह रहे शिव।
+NARRATOR [mid:shiva] (capPos=bottom): Ash-smeared, wearing a tiger skin, snakes coiled around his neck, a skull in his hand, riding a bull. || भस्म रमाए, बाघम्बर पहने, गले में लिपटे साँप, हाथ में खोपड़ी, बैल पर सवार।
+> mena emo=shock pose=fear t=0.3
+BEAT 1 [ecu:mena] (sfx=crack, shake=6, bang=THUD!|धम्म!, bangPos=980,170)
+> mena seat=kneel pose=grief emo=sad t=0.6
+NARRATOR [wide] (capPos=bottom): Mena fell to the ground in a faint, like a creeper struck by the wind. || मेना हवा से गिरी लता की तरह बेहोश होकर धरती पर गिर पड़ीं।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=Mena's Rage | title_hi=मेना का क्रोध
+
+== SCENE refuse | set=court col=#3a2a6a music=curse amb=court trans=ink
+@ mena x=640 y=660 s=0.95 face=1 pose=point emo=rage
+@ narad x=980 y=660 s=0.88 face=-1 pose=namaste emo=sad
+@ himavan x=260 y=660 s=0.92 face=1 pose=beg emo=sad
+BEAT 0.4 [wide]
+MENA (rage, pose=point) [mid:mena] (shout): I have been deceived! Narada, you wicked sage, you and your prophecies! I will not give my daughter to that ghost! || मेरे साथ छल हुआ है! नारद, दुष्ट ऋषि, तुम और तुम्हारी भविष्यवाणियाँ! मैं अपनी बेटी उस भूत को नहीं दूँगी!
+MENA (rage) [close:mena]: I would rather take her and throw myself off this mountain! || इससे अच्छा तो मैं उसे लेकर इस पर्वत से कूद जाऊँ!
+@ parvati fig=parvatiBride x=1180 y=660 s=0.88 face=-1 pose=namaste emo=calm anim=right
+PARVATI (calm, pose=namaste) [mid:parvati]: Mother, I chose him with my whole heart, by my own tapas. I will marry Shiva, or no one at all. || माँ, मैंने उन्हें पूरे हृदय से, अपने तप से चुना है। मैं शिव से विवाह करूँगी, या किसी से नहीं।
+@ vishnu x=-150 y=660 s=0.92 face=1 pose=bless emo=calm
+> vishnu x=120 t=1.4 walk=1
+VISHNU (calm, pose=bless) [mid:vishnu]: Mena, you are seeing only one of his forms. He is beyond all forms. And he can take any form he likes. || मेना, आप उनका केवल एक रूप देख रही हैं। वे सभी रूपों से परे हैं। और वे जैसा चाहें, वैसा रूप ले सकते हैं।
+
+== SCENE beautiful | set=himalaya time=day music=wonder amb=wind trans=flash
++ rays kind=rays x=640 y=380 n=26 r=900 col=#fff3a0 op=0.45 z=-3
++ glow kind=glow x=640 y=420 r=520 z=-2
+@ shiva fig=shivafair x=640 y=670 s=1.05 face=1 pose=bless emo=smile anim=materialize inDur=2 halo=true
+BEAT 2.4 [wide] (sfx=om,swell, flash, bang=AAAH!|अहा!, bangPos=980,160, bangCol=#ffd22e)
+NARRATOR [wide]: So Shiva, for Mena's sake, took his most beautiful form. Fair as the moon, in silk and jewels, with a crown of crescent moon, smiling. || तब शिव ने मेना के लिए अपना सबसे सुंदर रूप धारण किया। चंद्रमा जैसे गौर, रेशम और रत्नों में, मस्तक पर अर्धचंद्र, मुस्कुराते हुए।
+@ mena x=1060 y=665 s=0.9 face=-1 pose=namaste emo=joy anim=right
+MENA (joy, pose=namaste) [mid:mena]: Forgive me, lord. I did not know you. My daughter is blessed. I am blessed. || क्षमा करें, प्रभु। मैंने आपको पहचाना नहीं। मेरी बेटी धन्य है। मैं धन्य हूँ।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Wedding | title_hi=विवाह
+
+== SCENE wedding | set=yajna time=dusk music=joy amb=court trans=ink
++ fire kind=fire x=640 y=650 size=0.8
+@ shiva fig=shivafair x=860 y=660 s=0.95 face=-1 pose=bless emo=smile
+@ parvati fig=parvatiBride x=420 y=660 s=0.9 face=1 pose=garland item=varmala emo=joy
+@ himavan x=180 y=665 s=0.85 face=1 pose=namaste emo=joy z=-1
+@ brahma x=1100 y=665 s=0.85 face=-1 pose=brahma emo=smile z=-1
++ petals kind=petals x=640 y=0 n=60 w=1280 z=50
+BEAT 0.8 [wide] (sfx=conch,bells)
+NARRATOR [wide]: And so the wedding was held. Himavan gave his daughter away, and Brahma himself was the priest. || और फिर विवाह हुआ। हिमवान ने कन्यादान किया, और स्वयं ब्रह्मा पुरोहित बने।
+> parvati x=680 t=1.4
+NARRATOR [two:parvati,shiva] (sfx=sparkle): Parvati placed the garland around Shiva's neck, and they walked around the sacred fire together. || पार्वती ने शिव के गले में वरमाला डाली, और दोनों ने साथ मिलकर पवित्र अग्नि के फेरे लिए।
+NARRATOR [~wide] (capPos=bottom): The gods sang, the apsaras danced, and the ganas danced worst of all, and loudest. || देवता गाए, अप्सराएँ नाचीं, और गण सबसे बेढंगे, सबसे ज़ोर से नाचे।
+
+== SCENE kama | set=himalaya time=night music=devi amb=wind trans=wipe
+@ shiva fig=shivafair x=880 y=660 s=0.95 face=-1 pose=bless emo=calm
+@ parvati fig=parvatiBride x=1090 y=665 s=0.88 face=-1 pose=namaste emo=smile z=-1
+@ rati x=360 y=660 s=0.9 face=1 pose=beg emo=sad seat=kneel
++ ash kind=ash x=560 y=660 s=1.0
+BEAT 0.6 [wide]
+RATI (sad, pose=beg) [mid:rati]: Lord, today everyone is happy except me. My husband burned so that this wedding could happen. Give him back to me. || प्रभु, आज मेरे सिवा सब प्रसन्न हैं। मेरे पति इसी विवाह के लिए जले थे। उन्हें मुझे लौटा दीजिए।
+> shiva emo=smile t=0.4
+SHIVA (smile, pose=bless) [mid:shiva]: So be it, Rati. || ऐसा ही हो, रति।
+- ash od=0.3
++ glow kind=glow x=560 y=480 r=300 z=-1
+@ kama x=560 y=660 s=0.92 face=1 pose=namaste emo=joy anim=materialize inDur=1.8
+BEAT 2 [wide] (sfx=swell,sparkle, flash)
+NARRATOR [wide] (capPos=bottom): With a single glance, Kama rose from his own ashes, as handsome as before. || एक दृष्टि से कामदेव अपनी ही भस्म से उठ खड़े हुए, पहले जैसे सुंदर।
+> rati seat=none pose=namaste emo=joy t=0.6
+KAMA (joy, pose=namaste) [mid:kama]: Lord, I bow to you. I shot at you, and you have given me back my life. || प्रभु, आपको प्रणाम। मैंने आप पर बाण चलाया, और आपने मुझे जीवन लौटा दिया।
+
+== SCENE return | set=kailash time=dawn music=title amb=wind trans=ink | caption=Kailasa | caption_hi=कैलास
+@ shiva x=760 y=650 s=0.95 face=-1 pose=bless emo=smile seat=lotus
+@ parvati x=980 y=650 s=0.88 face=-1 pose=namaste emo=smile seat=lotus
+@ nandi x=330 y=665 s=0.9 face=1
+@ gana x=150 y=665 s=0.85 face=1 pose=raise emo=joy z=-1
++ petals kind=petals x=640 y=0 n=40 w=1280 z=50
+BEAT 0.8 [wide] (sfx=conch,damaru)
+NARRATOR [wide]: Then Shiva and Parvati returned to Kailasa, with Nandi and all the ganas. The goddess who had been Sati was by Shiva's side once more. || फिर शिव और पार्वती नंदी और सभी गणों के साथ कैलास लौट आए। जो देवी कभी सती थीं, वे फिर से शिव के साथ थीं।
+NARRATOR [two:shiva,parvati] (capPos=bottom): In time, their son Kartikeya would be born, and he would destroy the asura Taraka. But that is a story for another day. || समय आने पर उनके पुत्र कार्तिकेय जन्म लेंगे, और वे तारकासुर का वध करेंगे। पर वह कथा फिर कभी।
+
+== SCENE close | set=forest time=night music=dawn amb=night trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
++ lamp kind=lamp x=575 y=640 s=0.8
+BEAT 0.4 [wide]
+SUTA (smile, pose=bless) [mid:suta]: A pillar of fire with no end. A proud sage with a monkey's face. A thief with a lamp. A goddess who gave her life, and came back. || अनंत अग्नि-स्तंभ। बंदर के मुँह वाला अभिमानी ऋषि। दीपक वाला चोर। एक देवी जिसने प्राण दिए, और लौट आई।
+SUTA (calm) [close:suta]: Whoever hears these stories with love, Shiva is pleased with them. That is the Shiva Purana. || जो इन कथाओं को प्रेम से सुनता है, शिव उससे प्रसन्न होते हैं। यही है शिव पुराण।
+RISHI (joy, pose=namaste) [mid:rishi]: Om Namah Shivaya. || ॐ नमः शिवाय।
+
+== END | dur=12 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Ten: The Wedding of Shiva | sub_hi=दसवाँ अंक: शिव विवाह | credits=Adapted from the Shiva Purana, Rudra Samhita, Parvati Khanda;English translation by Bibek Debroy;Voices, art and music made in code;Thank you for reading | credits_hi=शिव पुराण, रुद्र संहिता, पार्वती खंड पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने;पढ़ने के लिए धन्यवाद

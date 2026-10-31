@@ -1,0 +1,1266 @@
+{
+ "meta": {
+  "series": "शिव पुराण",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "महादेव की कथाएँ",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "hi",
+  "title": "कामदेव का दहन",
+  "title_hi": "कामदेव का दहन",
+  "episode": "8",
+  "slug": "e08-burning-of-kama",
+  "kicker": "आठवाँ अंक",
+  "kicker_hi": "आठवाँ अंक",
+  "sub": "प्रेम के देवता का सामना तीसरे नेत्र से",
+  "sub_hi": "प्रेम के देवता का सामना तीसरे नेत्र से",
+  "logline": "सती पार्वती के रूप में फिर जन्म लेती हैं, एक असुर को केवल शिव का पुत्र मार सकता है, और शिव आँखें नहीं खोलते। तब देवता प्रेम के देवता को भेजते हैं।",
+  "logline_hi": "सती पार्वती के रूप में फिर जन्म लेती हैं, एक असुर को केवल शिव का पुत्र मार सकता है, और शिव आँखें नहीं खोलते। तब देवता प्रेम के देवता को भेजते हैं।",
+  "source": "Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 6 to 19 (tr. Bibek Debroy)",
+  "num": "8"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "hm_psi:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "shiva": {
+   "label": "Shiva",
+   "label_hi": "शिव",
+   "fig": "shiva",
+   "divine": true,
+   "voice": "hm_omega:0.6+am_onyx:0.4",
+   "speed": 0.9,
+   "pitch": -3,
+   "fx": "cave"
+  },
+  "narad": {
+   "label": "Narada",
+   "label_hi": "नारद",
+   "fig": "narad",
+   "voice": "hm_psi:0.72+am_puck:0.28",
+   "speed": 1.05,
+   "pitch": 2,
+   "formant": "shifted",
+   "fx": "bright"
+  },
+  "indra": {
+   "label": "Indra",
+   "label_hi": "इंद्र",
+   "fig": "indra",
+   "voice": "hm_psi:0.65+am_liam:0.35",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "kama": {
+   "label": "Kama",
+   "label_hi": "कामदेव",
+   "fig": "kama",
+   "voice": "hm_psi:0.6+am_puck:0.4",
+   "speed": 1.04,
+   "pitch": 1,
+   "fx": "room"
+  },
+  "rati": {
+   "label": "Rati",
+   "label_hi": "रति",
+   "fig": "rati",
+   "voice": "hf_beta:0.6+af_aoede:0.4",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "parvati": {
+   "label": "Parvati",
+   "label_hi": "पार्वती",
+   "fig": "parvati",
+   "voice": "hf_beta:0.7+af_heart:0.3",
+   "speed": 0.97,
+   "fx": "room"
+  },
+  "mena": {
+   "label": "Mena",
+   "label_hi": "मेना",
+   "fig": "mena",
+   "voice": "hf_alpha:0.6+af_sarah:0.4",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "taraka": {
+   "label": "Taraka",
+   "label_hi": "तारकासुर",
+   "fig": "taraka",
+   "voice": "hm_omega:0.5+am_onyx:0.5",
+   "speed": 0.92,
+   "pitch": -5,
+   "formant": "shifted",
+   "fx": "growl"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "kama,shiva,parvati"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "suta",
+     "text": "पर्वतराज हिमवान और उनकी रानी मेना को देवी ने एक वरदान दिया। वे फिर से जन्मीं, उनकी पुत्री बनकर।",
+     "text_hi": "पर्वतराज हिमवान और उनकी रानी मेना को देवी ने एक वरदान दिया। वे फिर से जन्मीं, उनकी पुत्री बनकर।",
+     "cam": "mid:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Eight",
+   "kicker_hi": "आठवाँ अंक",
+   "title": "The Burning of Kama",
+   "title_hi": "कामदेव का दहन",
+   "sub": "The god of love meets the third eye",
+   "sub_hi": "प्रेम के देवता का सामना तीसरे नेत्र से",
+   "figs": "kama,rati",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "The Daughter of the Mountain",
+   "title_hi": "पर्वत की पुत्री",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "birth",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "himavan",
+     "x": 360,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "bless",
+     "emo": "joy",
+     "in": 0
+    },
+    {
+     "id": "mena",
+     "x": 860,
+     "y": 660,
+     "s": 0.88,
+     "face": -1,
+     "pose": "offer",
+     "emo": "joy",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "shock",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 860,
+     "y": 420,
+     "r": 260,
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 0,
+     "n": 30,
+     "w": 1280,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "narad",
+     "x": -120,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "veena",
+     "item": "veena",
+     "emo": "smile",
+     "in": 2,
+     "keys": {
+      "2": [
+       {
+        "x": 150,
+        "t": 1.6,
+        "walk": 1
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "parvati",
+     "x": 640,
+     "y": 665,
+     "s": 0.75,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "in": 3,
+     "keys": {
+      "6": [
+       {
+        "emo": "joy",
+        "t": 0.4
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "sparkle",
+     "conch": true
+    },
+    {
+     "who": "narrator",
+     "text": "मेना और हिमवान के घर एक पुत्री जन्मी, नीलकमल की तरह साँवली और दमकती। उन्होंने उसका नाम पार्वती रखा, पर्वत की पुत्री। कुछ उसे काली कहते, कुछ उमा।",
+     "text_hi": "मेना और हिमवान के घर एक पुत्री जन्मी, नीलकमल की तरह साँवली और दमकती। उन्होंने उसका नाम पार्वती रखा, पर्वत की पुत्री। कुछ उसे काली कहते, कुछ उमा।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "जब वह बालिका थी, नारद मिलने आए, और हिमवान ने उनसे उसका हाथ देखने को कहा।",
+     "text_hi": "जब वह बालिका थी, नारद मिलने आए, और हिमवान ने उनसे उसका हाथ देखने को कहा।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narad",
+     "text": "इसका पति एक योगी होगा। उसके न माता होंगे, न पिता। वह सुंदर वस्त्र नहीं पहनेगा, और बिना घर के रहेगा।",
+     "text_hi": "इसका पति एक योगी होगा। उसके न माता होंगे, न पिता। वह सुंदर वस्त्र नहीं पहनेगा, और बिना घर के रहेगा।",
+     "cam": "mid:narad"
+    },
+    {
+     "who": "mena",
+     "text": "यह मेरी पुत्री के लिए कैसा पति हुआ?",
+     "text_hi": "यह मेरी पुत्री के लिए कैसा पति हुआ?",
+     "cam": "mid:mena"
+    },
+    {
+     "who": "narad",
+     "text": "दुखी मत होइए। मैंने जो भी लक्षण बताए, वे सब शिव के हैं। यह उनकी पत्नी बनेगी, जैसे पहले थी।",
+     "text_hi": "दुखी मत होइए। मैंने जो भी लक्षण बताए, वे सब शिव के हैं। यह उनकी पत्नी बनेगी, जैसे पहले थी।",
+     "cam": "close:narad"
+    },
+    {
+     "who": "narrator",
+     "text": "और उस दिन से पार्वती का हृदय शिव का हो गया।",
+     "text_hi": "और उस दिन से पार्वती का हृदय शिव का हो गया।",
+     "cam": "close:parvati",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "ink",
+   "caption": "The palace of Himavan",
+   "caption_hi": "हिमवान का महल"
+  },
+  {
+   "type": "scene",
+   "id": "serve",
+   "set": "himalaya",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0
+    },
+    {
+     "id": "parvati",
+     "x": 380,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "offer",
+     "emo": "serene",
+     "in": 0
+    },
+    {
+     "id": "fl",
+     "kind": "platter",
+     "x": 560,
+     "y": 640,
+     "s": 0.8,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ध्यान करने हिमालय आए थे। पिता की अनुमति से पार्वती रोज़ उनकी सेवा करने लगीं। वे फूल, जल और फल लातीं।",
+     "text_hi": "शिव ध्यान करने हिमालय आए थे। पिता की अनुमति से पार्वती रोज़ उनकी सेवा करने लगीं। वे फूल, जल और फल लातीं।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव ने कभी आँखें नहीं खोलीं।",
+     "text_hi": "शिव ने कभी आँखें नहीं खोलीं।",
+     "cam": "mid:shiva",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "river"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "card",
+   "id": "chapter6",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "Taraka",
+   "title_hi": "तारकासुर",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "taraka",
+   "set": "hell",
+   "ctx": {},
+   "els": [
+    {
+     "id": "taraka",
+     "x": 640,
+     "y": 680,
+     "s": 1.1,
+     "face": 1,
+     "pose": "raise",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "joy",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "asura",
+     "x": 260,
+     "y": 665,
+     "s": 0.9,
+     "face": 1,
+     "pose": "strike",
+     "emo": "rage",
+     "z": -1,
+     "in": 0
+    },
+    {
+     "id": "asura2",
+     "fig": "asura",
+     "x": 1020,
+     "y": 665,
+     "s": 0.9,
+     "face": -1,
+     "pose": "strike",
+     "emo": "rage",
+     "z": -1,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "इस बीच तारक नाम के एक असुर ने घोर तपस्या की, और ब्रह्मा से वर माँगा।",
+     "text_hi": "इस बीच तारक नाम के एक असुर ने घोर तपस्या की, और ब्रह्मा से वर माँगा।",
+     "cam": "wide"
+    },
+    {
+     "who": "taraka",
+     "text": "मुझे कोई न मार सके। कोई नहीं, सिवाय शिव से जन्मे पुत्र के।",
+     "text_hi": "मुझे कोई न मार सके। कोई नहीं, सिवाय शिव से जन्मे पुत्र के।",
+     "cam": "mid:taraka"
+    },
+    {
+     "who": "taraka",
+     "text": "और शिव एक योगी हैं जो कभी विवाह नहीं करेंगे! मैं अमर हूँ!",
+     "text_hi": "और शिव एक योगी हैं जो कभी विवाह नहीं करेंगे! मैं अमर हूँ!",
+     "cam": "low:taraka"
+    },
+    {
+     "who": "narrator",
+     "text": "तारक ने तीनों लोक जीत लिए। उसने देवताओं को स्वर्ग से निकाल दिया, और उनका धन और उनके पद छीन लिए।",
+     "text_hi": "तारक ने तीनों लोक जीत लिए। उसने देवताओं को स्वर्ग से निकाल दिया, और उनका धन और उनके पद छीन लिए।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom",
+     "sfx": "boom",
+     "shake": 8
+    }
+   ],
+   "music": "battle",
+   "amb": [
+    "fire"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "council",
+   "set": "court",
+   "ctx": {
+    "col": "#1a3a7a"
+   },
+   "els": [
+    {
+     "id": "indra",
+     "x": 420,
+     "y": 660,
+     "s": 0.95,
+     "face": 1,
+     "pose": "chest",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "kama",
+     "x": 880,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bow",
+     "item": "bow",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "smile",
+        "pose": "bow",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rati",
+     "x": 1080,
+     "y": 665,
+     "s": 0.85,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "fear",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "indra",
+     "text": "तारक को केवल शिव का पुत्र मार सकता है। और शिव ध्यान में बैठे हैं, पार्वती की ओर देखते तक नहीं।",
+     "text_hi": "तारक को केवल शिव का पुत्र मार सकता है। और शिव ध्यान में बैठे हैं, पार्वती की ओर देखते तक नहीं।",
+     "cam": "mid:indra"
+    },
+    {
+     "who": "indra",
+     "text": "कामदेव, तुम ही हमारी एकमात्र आशा हो। शिव के हृदय में कामना जगाओ।",
+     "text_hi": "कामदेव, तुम ही हमारी एकमात्र आशा हो। शिव के हृदय में कामना जगाओ।",
+     "cam": "close:indra"
+    },
+    {
+     "who": "rati",
+     "text": "स्वामी, वे शिव हैं। संहारक। कृपया मत जाइए।",
+     "text_hi": "स्वामी, वे शिव हैं। संहारक। कृपया मत जाइए।",
+     "cam": "mid:rati"
+    },
+    {
+     "who": "kama",
+     "text": "मैं कभी असफल नहीं हुआ, रति। आओ, वसंत। चलो वसंत ऋतु लाएँ।",
+     "text_hi": "मैं कभी असफल नहीं हुआ, रति। आओ, वसंत। चलो वसंत ऋतु लाएँ।",
+     "cam": "mid:kama"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "court"
+   ],
+   "trans": "wipe",
+   "caption": "The exiled gods",
+   "caption_hi": "निर्वासित देवता"
+  },
+  {
+   "type": "card",
+   "id": "chapter9",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "Spring Out of Season",
+   "title_hi": "बेमौसम वसंत",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "spring",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "x": 880,
+     "y": 660,
+     "s": 0.95,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "calm",
+        "t": 0.3
+       }
+      ],
+      "5": [
+       {
+        "emo": "angry",
+        "t": 0.4
+       },
+       {
+        "emo": "angry",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "seat": "none",
+        "pose": "trident",
+        "emo": "rage",
+        "t": 0.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "parvati",
+     "x": 560,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "offer",
+     "emo": "serene",
+     "in": 0
+    },
+    {
+     "id": "kama",
+     "x": 180,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "bow",
+     "item": "bow",
+     "emo": "sly",
+     "o": 0.85,
+     "in": 0
+    },
+    {
+     "id": "vasanta",
+     "x": -200,
+     "y": 665,
+     "s": 0.8,
+     "face": 1,
+     "pose": "offer",
+     "emo": "joy",
+     "z": -1,
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "x": 60,
+        "t": 1.5,
+        "walk": 1
+       }
+      ]
+     }
+    },
+    {
+     "id": "petals",
+     "kind": "petals",
+     "x": 640,
+     "y": 0,
+     "n": 60,
+     "w": 1280,
+     "z": 50,
+     "in": 0
+    },
+    {
+     "id": "arrow",
+     "kind": "beam",
+     "x": 280,
+     "y": 380,
+     "dx": 560,
+     "dy": -20,
+     "col": "#f59ab8",
+     "w": 10,
+     "z": 55,
+     "in": 3,
+     "out": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "अचानक, बेमौसम, जमे हुए पर्वत पर वसंत आ गया। पेड़ फूलों से लद गए। भौंरे गुनगुनाने लगे। ठंडी सुगंधित हवा चलने लगी।",
+     "text_hi": "अचानक, बेमौसम, जमे हुए पर्वत पर वसंत आ गया। पेड़ फूलों से लद गए। भौंरे गुनगुनाने लगे। ठंडी सुगंधित हवा चलने लगी।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "कामदेव पेड़ों के बीच छिप गए और भौंरों की डोरी वाला अपना गन्ने का धनुष ताना।",
+     "text_hi": "कामदेव पेड़ों के बीच छिप गए और भौंरों की डोरी वाला अपना गन्ने का धनुष ताना।",
+     "cam": "mid:kama",
+     "capPos": "bottom"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "sfx": "whoosh",
+     "bang": "THWIPP!|सर्र!",
+     "bangPos": "520,170"
+    },
+    {
+     "who": "narrator",
+     "text": "एक पल के लिए, बस एक पल, शिव का मन डोला। उन्होंने आँखें खोलीं और पार्वती को देखा।",
+     "text_hi": "एक पल के लिए, बस एक पल, शिव का मन डोला। उन्होंने आँखें खोलीं और पार्वती को देखा।",
+     "cam": "mid:shiva"
+    },
+    {
+     "who": "shiva",
+     "text": "मैं गहरे ध्यान में था। यह किसने किया? किसने मेरा मन विचलित किया?",
+     "text_hi": "मैं गहरे ध्यान में था। यह किसने किया? किसने मेरा मन विचलित किया?",
+     "cam": "close:shiva"
+    },
+    {
+     "who": "narrator",
+     "text": "उन्होंने चारों ओर देखा, और बाईं ओर कामदेव को धनुष ताने, फिर से बाण चलाने को तैयार पाया।",
+     "text_hi": "उन्होंने चारों ओर देखा, और बाईं ओर कामदेव को धनुष ताने, फिर से बाण चलाने को तैयार पाया।",
+     "cam": "two:shiva,kama",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "joy",
+   "amb": [
+    "birds"
+   ],
+   "trans": "ink"
+  },
+  {
+   "type": "scene",
+   "id": "eye",
+   "set": "himalaya",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "shiva",
+     "x": 880,
+     "y": 660,
+     "s": 1.0,
+     "face": -1,
+     "pose": "trident",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "third": 1,
+        "t": 0.3
+       }
+      ],
+      "5": [
+       {
+        "emo": "calm",
+        "pose": "rest",
+        "t": 1
+       }
+      ]
+     },
+     "out": 5,
+     "od": 1
+    },
+    {
+     "id": "kama",
+     "x": 300,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "bow",
+     "item": "bow",
+     "emo": "fear",
+     "in": 0,
+     "out": 3,
+     "od": 0.3
+    },
+    {
+     "id": "beam",
+     "kind": "beam",
+     "x": 880,
+     "y": 262,
+     "dx": -560,
+     "dy": 60,
+     "w": 40,
+     "col": "#ff6a1a",
+     "t": 0.6,
+     "z": 55,
+     "in": 2,
+     "out": 3
+    },
+    {
+     "id": "yf",
+     "kind": "yogafire",
+     "x": 300,
+     "y": 660,
+     "z": 56,
+     "growT": 0.8,
+     "in": 2,
+     "out": 4
+    },
+    {
+     "id": "ash",
+     "kind": "ash",
+     "x": 300,
+     "y": 660,
+     "s": 1.2,
+     "in": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "ecu:shiva",
+     "sfx": "heartbeat"
+    },
+    {
+     "text": "",
+     "dur": 1.2,
+     "cam": "ecu:shiva",
+     "sfx": "rumble",
+     "shake": 6,
+     "flash": "#ff8a1e"
+    },
+    {
+     "text": "",
+     "dur": 1.8,
+     "cam": "wide",
+     "sfx": "fire",
+     "boom": true,
+     "flash": true,
+     "shake": 14,
+     "bang": "FWOOOOM!|भस्म!",
+     "bangPos": "640,170"
+    },
+    {
+     "text": "",
+     "dur": 1.6,
+     "cam": "wide",
+     "sfx": "fire"
+    },
+    {
+     "who": "narrator",
+     "text": "शिव के तीसरे नेत्र से अग्नि निकली। देवता क्षमा की पुकार भी नहीं लगा पाए, और कामदेव भस्म हो गए।",
+     "text_hi": "शिव के तीसरे नेत्र से अग्नि निकली। देवता क्षमा की पुकार भी नहीं लगा पाए, और कामदेव भस्म हो गए।",
+     "cam": "wide",
+     "capPos": "bottom"
+    },
+    {
+     "who": "narrator",
+     "text": "फिर शिव पर्वत से अंतर्धान हो गए। पार्वती, पीली पड़ी और काँपती, अपनी सखियों के साथ घर लौट गईं।",
+     "text_hi": "फिर शिव पर्वत से अंतर्धान हो गए। पार्वती, पीली पड़ी और काँपती, अपनी सखियों के साथ घर लौट गईं।",
+     "camMove": true,
+     "cam": "wide"
+    }
+   ],
+   "tint": [
+    "#5a0a0a",
+    0.1
+   ],
+   "music": "battle",
+   "amb": [
+    "storm"
+   ],
+   "trans": "cut"
+  },
+  {
+   "type": "scene",
+   "id": "rati",
+   "set": "himalaya",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "ash",
+     "kind": "ash",
+     "x": 640,
+     "y": 660,
+     "s": 1.2,
+     "in": 0
+    },
+    {
+     "id": "rati",
+     "x": 640,
+     "y": 665,
+     "s": 0.9,
+     "face": 1,
+     "pose": "grief",
+     "emo": "sad",
+     "seat": "kneel",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "sad",
+        "pose": "grief",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "pose": "namaste",
+        "emo": "calm",
+        "t": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "id": "indra",
+     "x": 1000,
+     "y": 660,
+     "s": 0.88,
+     "face": -1,
+     "pose": "bless",
+     "emo": "sad",
+     "in": 2,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rays",
+     "kind": "rays",
+     "x": 640,
+     "y": 0,
+     "n": 18,
+     "r": 700,
+     "col": "#fff3a0",
+     "op": 0.3,
+     "z": -2,
+     "in": 3
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "wind"
+    },
+    {
+     "who": "rati",
+     "text": "देवताओं ने यह क्या किया? उन्होंने मेरे पति को यहाँ बुलाया, और वे उनके लिए जल गए! कामदेव, आप मुझे अपने प्राणों से भी प्रिय थे!",
+     "text_hi": "देवताओं ने यह क्या किया? उन्होंने मेरे पति को यहाँ बुलाया, और वे उनके लिए जल गए! कामदेव, आप मुझे अपने प्राणों से भी प्रिय थे!",
+     "cam": "mid:rati"
+    },
+    {
+     "who": "indra",
+     "text": "रति, उनकी भस्म सँभालकर रखो। शिव बिना कारण दुख नहीं देते। वे तुम्हारे पति को लौटाएँगे।",
+     "text_hi": "रति, उनकी भस्म सँभालकर रखो। शिव बिना कारण दुख नहीं देते। वे तुम्हारे पति को लौटाएँगे।",
+     "cam": "mid:indra"
+    },
+    {
+     "who": "shiva",
+     "text": "मेरे क्रोध ने जो किया, वह लौट नहीं सकता। कामदेव बिना शरीर के जीवित रहेंगे, अनंग बनकर। और जब धरती पर कृष्ण जन्म लेंगे, कामदेव उनके पुत्र बनकर फिर जन्मेंगे।",
+     "text_hi": "मेरे क्रोध ने जो किया, वह लौट नहीं सकता। कामदेव बिना शरीर के जीवित रहेंगे, अनंग बनकर। और जब धरती पर कृष्ण जन्म लेंगे, कामदेव उनके पुत्र बनकर फिर जन्मेंगे।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "और इस तरह प्रेम संसार में जीवित है, हर जगह, और अदृश्य।",
+     "text_hi": "और इस तरह प्रेम संसार में जीवित है, हर जगह, और अदृश्य।",
+     "camMove": true,
+     "cam": "mid:rati",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "sorrow",
+   "amb": [
+    "wind"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "scene",
+   "id": "resolve",
+   "set": "himalaya",
+   "ctx": {
+    "time": "night"
+   },
+   "els": [
+    {
+     "id": "parvati",
+     "x": 640,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "chest",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "serene",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "snow",
+     "kind": "snow",
+     "x": 640,
+     "y": 0,
+     "n": 50,
+     "w": 1280,
+     "z": 50,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide"
+    },
+    {
+     "who": "parvati",
+     "text": "मेरी सुंदरता उन्हें नहीं जीत पाई। मेरी सेवा उन्हें नहीं जीत पाई। तो मैं उन्हें उसी तरह जीतूँगी जो वे सबसे अच्छी तरह जानते हैं।",
+     "text_hi": "मेरी सुंदरता उन्हें नहीं जीत पाई। मेरी सेवा उन्हें नहीं जीत पाई। तो मैं उन्हें उसी तरह जीतूँगी जो वे सबसे अच्छी तरह जानते हैं।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "तपस्या से।",
+     "text_hi": "तपस्या से।",
+     "cam": "close:parvati"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "2": [
+       {
+        "emo": "smile",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "काम शिव को नहीं डिगा सका। केवल भक्ति डिगा सकती थी।",
+     "text_hi": "काम शिव को नहीं डिगा सका। केवल भक्ति डिगा सकती थी।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "suta",
+     "text": "और पार्वती की भक्ति तीनों लोकों को हिलाने वाली थी।",
+     "text_hi": "और पार्वती की भक्ति तीनों लोकों को हिलाने वाली थी।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next15",
+   "style": "next",
+   "lines": [],
+   "dur": 8,
+   "title": "Parvati's Penance",
+   "title_hi": "पार्वती की तपस्या",
+   "sub": "The austerity that won the unwinnable",
+   "sub_hi": "वह तप जिसने अजेय को जीता",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end16",
+   "style": "end",
+   "lines": [],
+   "dur": 10,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Eight: The Burning of Kama",
+   "sub_hi": "आठवाँ अंक: कामदेव का दहन",
+   "credits": [
+    "Adapted from the Shiva Purana, Rudra Samhita, Parvati Khanda",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code"
+   ],
+   "credits_hi": [
+    "शिव पुराण, रुद्र संहिता, पार्वती खंड पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने"
+   ]
+  }
+ ]
+}

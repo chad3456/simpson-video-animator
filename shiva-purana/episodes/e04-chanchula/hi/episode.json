@@ -1,0 +1,1120 @@
+{
+ "meta": {
+  "series": "शिव पुराण",
+  "series_hi": "शिव पुराण",
+  "seriesSub": "महादेव की कथाएँ",
+  "seriesSub_hi": "महादेव की कथाएँ",
+  "fps": 24,
+  "captions": true,
+  "lang": "hi",
+  "title": "चंचुला",
+  "title_hi": "चंचुला",
+  "episode": "4",
+  "slug": "e04-chanchula",
+  "kicker": "चौथा अंक",
+  "kicker_hi": "चौथा अंक",
+  "sub": "एक पत्नी, एक प्रेत, और कथा की शक्ति",
+  "sub_hi": "एक पत्नी, एक प्रेत, और कथा की शक्ति",
+  "logline": "व्यर्थ जीवन बिताने वाली एक स्त्री शिव कथा के कुछ शब्द सुनकर बदल जाती है। फिर वह अपने उस पति को बचाने लौटती है जो प्रेत बन गया था।",
+  "logline_hi": "व्यर्थ जीवन बिताने वाली एक स्त्री शिव कथा के कुछ शब्द सुनकर बदल जाती है। फिर वह अपने उस पति को बचाने लौटती है जो प्रेत बन गया था।",
+  "source": "Shiva Purana, Shiva Purana Mahatmya, chapters 3 to 5 (tr. Bibek Debroy)",
+  "num": "4"
+ },
+ "cast": {
+  "narrator": {
+   "label": "Narrator",
+   "label_hi": "कथावाचक",
+   "narrator": true,
+   "voice": "hm_omega:0.62+bm_george:0.38",
+   "speed": 0.93,
+   "pitch": -1,
+   "fx": "storyteller"
+  },
+  "suta": {
+   "label": "Suta",
+   "label_hi": "सूत",
+   "fig": "suta",
+   "voice": "hm_psi:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "rishi": {
+   "label": "Sage",
+   "label_hi": "ऋषि",
+   "fig": "rishi",
+   "voice": "hm_omega:0.7+bm_daniel:0.3",
+   "speed": 0.95,
+   "fx": "room"
+  },
+  "parvati": {
+   "label": "Parvati",
+   "label_hi": "पार्वती",
+   "fig": "parvati",
+   "voice": "hf_beta:0.7+af_heart:0.3",
+   "speed": 0.97,
+   "fx": "room"
+  },
+  "chanchula": {
+   "label": "Chanchula",
+   "label_hi": "चंचुला",
+   "fig": "chanchula",
+   "voice": "hf_alpha:0.6+af_bella:0.4",
+   "speed": 0.98,
+   "fx": "room"
+  },
+  "binduga": {
+   "label": "Binduga",
+   "label_hi": "बिंदुग",
+   "fig": "binduga",
+   "voice": "hm_psi:0.6+am_eric:0.4",
+   "speed": 1.0,
+   "fx": "room"
+  },
+  "kathavachak": {
+   "label": "The Reciter",
+   "label_hi": "कथावाचक ब्राह्मण",
+   "fig": "kathavachak",
+   "voice": "hm_omega:0.6+bm_lewis:0.4",
+   "speed": 0.95,
+   "fx": "elder"
+  },
+  "tumburu": {
+   "label": "Tumburu",
+   "label_hi": "तुम्बुरु",
+   "fig": "tumburu",
+   "voice": "hm_psi:0.6+am_michael:0.4",
+   "speed": 1.0,
+   "pitch": 1,
+   "fx": "bright"
+  }
+ },
+ "sequence": [
+  {
+   "type": "card",
+   "id": "open0",
+   "style": "open",
+   "lines": [],
+   "dur": 8,
+   "figs": "chanchula,parvati,tumburu"
+  },
+  {
+   "type": "scene",
+   "id": "frame",
+   "set": "forest",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "raise",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "rishi",
+     "text": "सूत जी, आप कहते हैं कि शिव कथा सुनने भर से मनुष्य मुक्त हो सकता है। पापी भी?",
+     "text_hi": "सूत जी, आप कहते हैं कि शिव कथा सुनने भर से मनुष्य मुक्त हो सकता है। पापी भी?",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "पापी भी। चंचुला और उसके पति बिंदुग की कथा सुनिए।",
+     "text_hi": "पापी भी। चंचुला और उसके पति बिंदुग की कथा सुनिए।",
+     "cam": "mid:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade",
+   "caption": "Naimisha forest",
+   "caption_hi": "नैमिषारण्य"
+  },
+  {
+   "type": "card",
+   "id": "title2",
+   "style": "title",
+   "lines": [],
+   "dur": 7,
+   "kicker": "Issue Four",
+   "kicker_hi": "चौथा अंक",
+   "title": "Chanchula",
+   "title_hi": "चंचुला",
+   "sub": "A wife, a ghost, and the power of a story",
+   "sub_hi": "एक पत्नी, एक प्रेत, और कथा की शक्ति",
+   "figs": "chanchula,binduga",
+   "sfx": "conch"
+  },
+  {
+   "type": "card",
+   "id": "chapter3",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part One",
+   "kicker_hi": "पहला भाग",
+   "title": "The Village of Bashkala",
+   "title_hi": "बाष्कल गाँव",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "village",
+   "set": "city",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "binduga",
+     "x": 360,
+     "y": 660,
+     "s": 0.92,
+     "face": 1,
+     "pose": "hips",
+     "emo": "sly",
+     "in": 0,
+     "keys": {
+      "4": [
+       {
+        "emo": "sly",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "chanchula",
+     "x": 880,
+     "y": 660,
+     "s": 0.88,
+     "face": -1,
+     "pose": "chest",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "pose": "chest",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "समुद्र के पास बाष्कल नाम का एक गाँव था, जहाँ लोग छल करते, झगड़ते, और भोग के सिवा किसी चीज़ की परवाह नहीं करते थे।",
+     "text_hi": "समुद्र के पास बाष्कल नाम का एक गाँव था, जहाँ लोग छल करते, झगड़ते, और भोग के सिवा किसी चीज़ की परवाह नहीं करते थे।",
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "वहाँ बिंदुग नाम का एक ब्राह्मण रहता था। उसने अपनी पतिव्रता पत्नी चंचुला को छोड़ दिया और एक वेश्या के साथ दिन बिताने लगा।",
+     "text_hi": "वहाँ बिंदुग नाम का एक ब्राह्मण रहता था। उसने अपनी पतिव्रता पत्नी चंचुला को छोड़ दिया और एक वेश्या के साथ दिन बिताने लगा।",
+     "cam": "mid:binduga"
+    },
+    {
+     "who": "chanchula",
+     "text": "तुम दिन-ब-दिन मुझे छोड़कर दूसरी स्त्री के पास जाते हो। मैं इस घर में अकेली क्या करूँ?",
+     "text_hi": "तुम दिन-ब-दिन मुझे छोड़कर दूसरी स्त्री के पास जाते हो। मैं इस घर में अकेली क्या करूँ?",
+     "cam": "mid:chanchula"
+    },
+    {
+     "who": "binduga",
+     "text": "जो चाहो करो। अपना साथ खुद ढूँढ लो। बस पैसा मुझे ला देना।",
+     "text_hi": "जो चाहो करो। अपना साथ खुद ढूँढ लो। बस पैसा मुझे ला देना।",
+     "cam": "mid:binduga"
+    },
+    {
+     "who": "narrator",
+     "text": "और इस तरह, वर्षों तक, दोनों बिना लाज, बिना धर्म के, भोग और धन के पीछे भागते रहे।",
+     "text_hi": "और इस तरह, वर्षों तक, दोनों बिना लाज, बिना धर्म के, भोग और धन के पीछे भागते रहे।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "court"
+   ],
+   "trans": "ink",
+   "caption": "Bashkala, by the sea",
+   "caption_hi": "बाष्कल, समुद्र के पास"
+  },
+  {
+   "type": "scene",
+   "id": "death",
+   "set": "hell",
+   "ctx": {},
+   "els": [
+    {
+     "id": "binduga",
+     "fig": "pishacha",
+     "x": 640,
+     "y": 660,
+     "s": 1.0,
+     "face": 1,
+     "pose": "fear",
+     "emo": "fear",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 6
+    },
+    {
+     "who": "narrator",
+     "text": "बिंदुग मर गया। नरक में लंबी यातनाएँ भोगकर, वह विंध्य पर्वत पर भटकने वाला एक भयानक पिशाच बना।",
+     "text_hi": "बिंदुग मर गया। नरक में लंबी यातनाएँ भोगकर, वह विंध्य पर्वत पर भटकने वाला एक भयानक पिशाच बना।",
+     "cam": "wide",
+     "tint": "#3a0a0a,0.25"
+    }
+   ],
+   "music": "curse",
+   "amb": [
+    "fire"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "card",
+   "id": "chapter6",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Two",
+   "kicker_hi": "दूसरा भाग",
+   "title": "A Few Words at Gokarna",
+   "title_hi": "गोकर्ण में कुछ शब्द",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "gokarna",
+   "set": "temple",
+   "ctx": {},
+   "els": [
+    {
+     "id": "ling",
+     "kind": "lingam",
+     "x": 640,
+     "y": 600,
+     "s": 0.9,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "kathavachak",
+     "x": 900,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "raise",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "7": [
+       {
+        "emo": "calm",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "chanchula",
+     "x": 330,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "rest",
+     "emo": "neutral",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "fear",
+        "pose": "fear",
+        "t": 0.5
+       }
+      ],
+      "4": [
+       {
+        "x": 620,
+        "pose": "beg",
+        "seat": "kneel",
+        "emo": "sad",
+        "t": 1.2
+       },
+       {
+        "emo": "sad",
+        "pose": "beg",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "crowd",
+     "kind": "crowd",
+     "x": 600,
+     "y": 650,
+     "n": 6,
+     "z": -1,
+     "in": 0,
+     "out": 4
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "bells"
+    },
+    {
+     "who": "narrator",
+     "text": "वर्षों बाद, जब जवानी ढल चुकी थी, चंचुला अपने संबंधियों के साथ तीर्थ गोकर्ण गई। एक मंदिर में एक ब्राह्मण शिव पुराण सुना रहे थे।",
+     "text_hi": "वर्षों बाद, जब जवानी ढल चुकी थी, चंचुला अपने संबंधियों के साथ तीर्थ गोकर्ण गई। एक मंदिर में एक ब्राह्मण शिव पुराण सुना रहे थे।",
+     "cam": "wide"
+    },
+    {
+     "who": "kathavachak",
+     "text": "जो सुख के लिए अपना धर्म छोड़ देते हैं, अंत में उनका सामना यमदूतों से होता है। और वहाँ जो उनकी प्रतीक्षा करता है, वह भयानक है।",
+     "text_hi": "जो सुख के लिए अपना धर्म छोड़ देते हैं, अंत में उनका सामना यमदूतों से होता है। और वहाँ जो उनकी प्रतीक्षा करता है, वह भयानक है।",
+     "cam": "mid:kathavachak"
+    },
+    {
+     "who": "narrator",
+     "text": "चंचुला काँपने लगी।",
+     "text_hi": "चंचुला काँपने लगी।",
+     "cam": "close:chanchula",
+     "capPos": "bottom"
+    },
+    {
+     "who": "chanchula",
+     "text": "ब्राह्मण देवता, मुझे बचाइए! मैंने अपनी सारी जवानी व्यर्थ गँवा दी। जब यमदूत आएँगे, तब मुझे कौन बचाएगा?",
+     "text_hi": "ब्राह्मण देवता, मुझे बचाइए! मैंने अपनी सारी जवानी व्यर्थ गँवा दी। जब यमदूत आएँगे, तब मुझे कौन बचाएगा?",
+     "cam": "two:chanchula,kathavachak"
+    },
+    {
+     "who": "chanchula",
+     "text": "आप ही मेरे गुरु हैं, मेरी माता, मेरे पिता। मैं आपकी शरण में हूँ।",
+     "text_hi": "आप ही मेरे गुरु हैं, मेरी माता, मेरे पिता। मैं आपकी शरण में हूँ।",
+     "cam": "close:chanchula"
+    },
+    {
+     "who": "kathavachak",
+     "text": "डरो मत। शिव की कृपा से तुम्हारी बुद्धि सही समय पर जाग गई है।",
+     "text_hi": "डरो मत। शिव की कृपा से तुम्हारी बुद्धि सही समय पर जाग गई है।",
+     "cam": "mid:kathavachak"
+    },
+    {
+     "who": "kathavachak",
+     "text": "पश्चाताप ही सबसे बड़ा प्रायश्चित है। और शिव कथा मन को ऐसे साफ़ करती है, जैसे कपड़ा दर्पण को।",
+     "text_hi": "पश्चाताप ही सबसे बड़ा प्रायश्चित है। और शिव कथा मन को ऐसे साफ़ करती है, जैसे कपड़ा दर्पण को।",
+     "cam": "close:kathavachak"
+    }
+   ],
+   "music": "shiva",
+   "amb": [
+    "temple"
+   ],
+   "trans": "ink",
+   "caption": "Gokarna, years later",
+   "caption_hi": "गोकर्ण, वर्षों बाद"
+  },
+  {
+   "type": "scene",
+   "id": "listen",
+   "set": "temple",
+   "ctx": {},
+   "els": [
+    {
+     "id": "ling",
+     "kind": "lingam",
+     "x": 640,
+     "y": 600,
+     "s": 0.9,
+     "z": -2,
+     "in": 0
+    },
+    {
+     "id": "kathavachak",
+     "x": 900,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "raise",
+     "emo": "calm",
+     "seat": "lotus",
+     "in": 0
+    },
+    {
+     "id": "chanchula",
+     "fig": "chanchulaTapas",
+     "x": 380,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "serene",
+     "seat": "lotus",
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.6,
+     "cam": "wide",
+     "sfx": "om"
+    },
+    {
+     "who": "narrator",
+     "text": "तो वह वहीं रुक गई, उनकी सेवा करती रही, और सुनती रही। दिन-प्रतिदिन, पूरा शिव पुराण।",
+     "text_hi": "तो वह वहीं रुक गई, उनकी सेवा करती रही, और सुनती रही। दिन-प्रतिदिन, पूरा शिव पुराण।",
+     "camMove": true,
+     "cam": "wide"
+    },
+    {
+     "who": "narrator",
+     "text": "उसका मन शांत हो गया। वह शिव के रूप का ध्यान करने लगी, जटाओं में चंद्रमा और हाथ में त्रिशूल।",
+     "text_hi": "उसका मन शांत हो गया। वह शिव के रूप का ध्यान करने लगी, जटाओं में चंद्रमा और हाथ में त्रिशूल।",
+     "camMove": true,
+     "cam": "full:chanchula",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "temple"
+   ],
+   "trans": "wipe"
+  },
+  {
+   "type": "scene",
+   "id": "ascent",
+   "set": "sky",
+   "ctx": {
+    "time": "dawn"
+   },
+   "els": [
+    {
+     "id": "shivadoot",
+     "x": 1050,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "anim": "materialize",
+     "in": 1
+    },
+    {
+     "id": "chanchula",
+     "fig": "chanchulaTapas",
+     "x": 500,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "meditate",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "fig": "chanchulaDivine",
+        "seat": "none",
+        "pose": "namaste",
+        "emo": "joy",
+        "t": 0.01
+       }
+      ],
+      "3": [
+       {
+        "y": 360,
+        "x": 860,
+        "t": 3
+       }
+      ]
+     }
+    },
+    {
+     "id": "vim",
+     "kind": "vimana",
+     "x": 900,
+     "y": 360,
+     "s": 0.9,
+     "anim": "right",
+     "inDur": 1.5,
+     "in": 0
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 1.5,
+     "cam": "wide",
+     "sfx": "sparkle"
+    },
+    {
+     "who": "narrator",
+     "text": "जब उसका समय आया, कोई यमदूत नहीं आया। उसकी जगह शिवलोक से एक चमकता विमान उतरा।",
+     "text_hi": "जब उसका समय आया, कोई यमदूत नहीं आया। उसकी जगह शिवलोक से एक चमकता विमान उतरा।",
+     "cam": "wide"
+    },
+    {
+     "text": "",
+     "dur": 1.0,
+     "cam": "wide",
+     "flash": true,
+     "sfx": "magic"
+    },
+    {
+     "who": "narrator",
+     "text": "उसका शरीर दिव्य हो गया। और वह शिव के गणों के साथ शिव और पार्वती के लोक को चली गई।",
+     "text_hi": "उसका शरीर दिव्य हो गया। और वह शिव के गणों के साथ शिव और पार्वती के लोक को चली गई।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom"
+    }
+   ],
+   "music": "wonder",
+   "amb": [
+    "wind"
+   ],
+   "trans": "flash"
+  },
+  {
+   "type": "card",
+   "id": "chapter10",
+   "style": "chapter",
+   "lines": [],
+   "kicker": "Part Three",
+   "kicker_hi": "तीसरा भाग",
+   "title": "The Ghost of the Vindhyas",
+   "title_hi": "विंध्य का प्रेत",
+   "dur": 4.6
+  },
+  {
+   "type": "scene",
+   "id": "shivaloka",
+   "set": "kailash",
+   "ctx": {
+    "time": "day"
+   },
+   "els": [
+    {
+     "id": "parvati",
+     "x": 860,
+     "y": 650,
+     "s": 0.95,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "3": [
+       {
+        "emo": "sad",
+        "t": 0.45
+       }
+      ],
+      "5": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "6": [
+       {
+        "face": 1,
+        "t": 0.3
+       },
+       {
+        "emo": "calm",
+        "pose": "point",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "chanchula",
+     "fig": "chanchulaDivine",
+     "x": 380,
+     "y": 660,
+     "s": 0.88,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "sad",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "emo": "sad",
+        "pose": "beg",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "tumburu",
+     "x": 1120,
+     "y": 660,
+     "s": 0.9,
+     "face": -1,
+     "pose": "namaste",
+     "emo": "smile",
+     "anim": "materialize",
+     "in": 6
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.5,
+     "cam": "wide",
+     "sfx": "bell"
+    },
+    {
+     "who": "narrator",
+     "text": "चंचुला ने प्रेम से देवी पार्वती की सेवा की। पर एक बात उसे सताती रही।",
+     "text_hi": "चंचुला ने प्रेम से देवी पार्वती की सेवा की। पर एक बात उसे सताती रही।",
+     "cam": "wide"
+    },
+    {
+     "who": "chanchula",
+     "text": "माँ, मेरे पति बिंदुग अब कहाँ हैं? उनका क्या हुआ?",
+     "text_hi": "माँ, मेरे पति बिंदुग अब कहाँ हैं? उनका क्या हुआ?",
+     "cam": "mid:chanchula"
+    },
+    {
+     "who": "parvati",
+     "text": "उसने नरक में बहुत समय कष्ट भोगा। अब वह विंध्य पर्वत में एक पिशाच है, हवा पीकर जीता है, यातना में।",
+     "text_hi": "उसने नरक में बहुत समय कष्ट भोगा। अब वह विंध्य पर्वत में एक पिशाच है, हवा पीकर जीता है, यातना में।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "chanchula",
+     "text": "वह जैसा भी था, मेरा पति था। माँ, क्या उसे बचाने का कोई उपाय नहीं?",
+     "text_hi": "वह जैसा भी था, मेरा पति था। माँ, क्या उसे बचाने का कोई उपाय नहीं?",
+     "cam": "close:chanchula"
+    },
+    {
+     "who": "parvati",
+     "text": "है। वही, जिससे तुम बचीं। उसे शिव कथा सुननी होगी।",
+     "text_hi": "है। वही, जिससे तुम बचीं। उसे शिव कथा सुननी होगी।",
+     "cam": "mid:parvati"
+    },
+    {
+     "who": "parvati",
+     "text": "तुम्बुरु, गायकों में सबसे मधुर। इसके साथ विंध्य जाओ, और उसे शिव पुराण सुनाओ।",
+     "text_hi": "तुम्बुरु, गायकों में सबसे मधुर। इसके साथ विंध्य जाओ, और उसे शिव पुराण सुनाओ।",
+     "cam": "two:parvati,tumburu"
+    }
+   ],
+   "music": "devi",
+   "amb": [
+    "wind"
+   ],
+   "trans": "ink",
+   "caption": "Shiva's world",
+   "caption_hi": "शिवलोक"
+  },
+  {
+   "type": "scene",
+   "id": "vindhya",
+   "set": "vindhya",
+   "ctx": {},
+   "els": [
+    {
+     "id": "binduga",
+     "fig": "pishacha",
+     "x": 880,
+     "y": 660,
+     "s": 1.0,
+     "face": -1,
+     "pose": "fear",
+     "emo": "rage",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "rage",
+        "t": 0.45
+       }
+      ],
+      "4": [
+       {
+        "seat": "kneel",
+        "pose": "namaste",
+        "emo": "sad",
+        "t": 1
+       }
+      ],
+      "5": [
+       {
+        "fig": "bindugaDivine",
+        "seat": "none",
+        "emo": "joy",
+        "t": 0.01
+       }
+      ],
+      "6": [
+       {
+        "emo": "joy",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "tumburu",
+     "x": 360,
+     "y": 660,
+     "s": 0.9,
+     "face": 1,
+     "pose": "veena",
+     "item": "veena",
+     "emo": "calm",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "pose": "veena",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "chanchula",
+     "fig": "chanchulaDivine",
+     "x": 170,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "sad",
+     "in": 0,
+     "keys": {
+      "7": [
+       {
+        "emo": "smile",
+        "pose": "namaste",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "glow",
+     "kind": "glow",
+     "x": 880,
+     "y": 480,
+     "r": 380,
+     "z": -1,
+     "in": 5
+    },
+    {
+     "id": "vim",
+     "kind": "vimana",
+     "x": 640,
+     "y": 280,
+     "s": 0.9,
+     "anim": "right",
+     "inDur": 1.5,
+     "z": -1,
+     "in": 8
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.8,
+     "cam": "wide",
+     "sfx": "roar",
+     "shake": 6,
+     "bang": "GRAAARGH!|हुआँ!",
+     "bangPos": "980,160"
+    },
+    {
+     "who": "binduga",
+     "text": "यहाँ आने का साहस किसने किया? भाग जाओ!",
+     "text_hi": "यहाँ आने का साहस किसने किया? भाग जाओ!",
+     "cam": "mid:binduga"
+    },
+    {
+     "who": "tumburu",
+     "text": "बैठो, बिंदुग। मैं लड़ने नहीं आया। गाने आया हूँ।",
+     "text_hi": "बैठो, बिंदुग। मैं लड़ने नहीं आया। गाने आया हूँ।",
+     "cam": "mid:tumburu"
+    },
+    {
+     "who": "narrator",
+     "text": "तुम्बुरु ने वीणा बजाई और शिव की कथा सुनाई। अग्नि-स्तंभ की, चोर और दीपक की, शिव की अनंत करुणा की।",
+     "text_hi": "तुम्बुरु ने वीणा बजाई और शिव की कथा सुनाई। अग्नि-स्तंभ की, चोर और दीपक की, शिव की अनंत करुणा की।",
+     "camMove": true,
+     "cam": "wide",
+     "sfx": "veena"
+    },
+    {
+     "who": "narrator",
+     "text": "और धीरे-धीरे, प्रेत ने गुर्राना बंद कर दिया, घुटने टेके, और सुनने लगा।",
+     "text_hi": "और धीरे-धीरे, प्रेत ने गुर्राना बंद कर दिया, घुटने टेके, और सुनने लगा।",
+     "cam": "mid:binduga",
+     "capPos": "bottom"
+    },
+    {
+     "text": "",
+     "dur": 1.8,
+     "cam": "mid:binduga",
+     "sfx": "swell",
+     "flash": true,
+     "bang": "OM|ॐ",
+     "bangPos": "640,150",
+     "bangCol": "#ffd22e"
+    },
+    {
+     "who": "binduga",
+     "text": "चंचुला। तुम मेरे लिए लौट आईं। सब कुछ होने के बाद भी।",
+     "text_hi": "चंचुला। तुम मेरे लिए लौट आईं। सब कुछ होने के बाद भी।",
+     "cam": "mid:binduga"
+    },
+    {
+     "who": "chanchula",
+     "text": "हम दोनों को शिव कथा ने बचाया। चलो।",
+     "text_hi": "हम दोनों को शिव कथा ने बचाया। चलो।",
+     "cam": "two:chanchula,binduga"
+    },
+    {
+     "who": "narrator",
+     "text": "अपने प्रेत शरीर से मुक्त होकर, बिंदुग उनके साथ दिव्य विमान में शिव के चरणों तक गया।",
+     "text_hi": "अपने प्रेत शरीर से मुक्त होकर, बिंदुग उनके साथ दिव्य विमान में शिव के चरणों तक गया।",
+     "camMove": true,
+     "cam": "wide",
+     "capPos": "bottom",
+     "sfx": "sparkle"
+    }
+   ],
+   "music": "tension",
+   "amb": [
+    "storm"
+   ],
+   "trans": "ink",
+   "caption": "The Vindhya mountains",
+   "caption_hi": "विंध्य पर्वत"
+  },
+  {
+   "type": "scene",
+   "id": "close",
+   "set": "forest",
+   "ctx": {
+    "time": "dusk"
+   },
+   "els": [
+    {
+     "id": "suta",
+     "x": 820,
+     "y": 660,
+     "s": 0.92,
+     "face": -1,
+     "pose": "bless",
+     "emo": "smile",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "1": [
+       {
+        "emo": "smile",
+        "pose": "bless",
+        "t": 0.45
+       }
+      ],
+      "3": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    },
+    {
+     "id": "rishi",
+     "x": 330,
+     "y": 660,
+     "s": 0.85,
+     "face": 1,
+     "pose": "namaste",
+     "emo": "joy",
+     "seat": "lotus",
+     "in": 0,
+     "keys": {
+      "2": [
+       {
+        "emo": "calm",
+        "t": 0.45
+       }
+      ]
+     }
+    }
+   ],
+   "lines": [
+    {
+     "text": "",
+     "dur": 0.4,
+     "cam": "wide"
+    },
+    {
+     "who": "suta",
+     "text": "इसीलिए हम ये कथाएँ सुनाते हैं। सही समय पर कुछ शब्द चंचुला तक पहुँचे, और सब बदल गया।",
+     "text_hi": "इसीलिए हम ये कथाएँ सुनाते हैं। सही समय पर कुछ शब्द चंचुला तक पहुँचे, और सब बदल गया।",
+     "cam": "mid:suta"
+    },
+    {
+     "who": "rishi",
+     "text": "अब स्वयं शिव की कथा सुनाइए, सूत जी। उनकी पहली पत्नी, सती की।",
+     "text_hi": "अब स्वयं शिव की कथा सुनाइए, सूत जी। उनकी पहली पत्नी, सती की।",
+     "cam": "mid:rishi"
+    },
+    {
+     "who": "suta",
+     "text": "दक्ष की पुत्री। हाँ। वह प्रेम की कथा है, और अग्नि की।",
+     "text_hi": "दक्ष की पुत्री। हाँ। वह प्रेम की कथा है, और अग्नि की।",
+     "cam": "close:suta"
+    }
+   ],
+   "music": "dawn",
+   "amb": [
+    "birds"
+   ],
+   "trans": "fade"
+  },
+  {
+   "type": "card",
+   "id": "next14",
+   "style": "next",
+   "lines": [],
+   "dur": 8,
+   "title": "Daksha's Daughter",
+   "title_hi": "दक्ष की पुत्री",
+   "sub": "How Sati won Shiva, and how she tested him",
+   "sub_hi": "सती ने शिव को कैसे पाया, और उनकी परीक्षा कैसे ली",
+   "els": []
+  },
+  {
+   "type": "card",
+   "id": "end15",
+   "style": "end",
+   "lines": [],
+   "dur": 10,
+   "title": "Shiva Purana",
+   "title_hi": "शिव पुराण",
+   "sub": "Issue Four: Chanchula",
+   "sub_hi": "चौथा अंक: चंचुला",
+   "credits": [
+    "Adapted from the Shiva Purana Mahatmya",
+    "English translation by Bibek Debroy",
+    "Voices, art and music made in code"
+   ],
+   "credits_hi": [
+    "शिव पुराण माहात्म्य पर आधारित",
+    "अंग्रेज़ी अनुवाद: बिबेक देबरॉय",
+    "आवाज़ें, चित्र और संगीत कोड से बने"
+   ]
+  }
+ ]
+}

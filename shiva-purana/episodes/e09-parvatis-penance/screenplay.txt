@@ -1,0 +1,123 @@
+title: Parvati's Penance
+title_hi: पार्वती की तपस्या
+episode: 9
+slug: e09-parvatis-penance
+kicker: Issue Nine
+kicker_hi: नौवाँ अंक
+sub: The austerity that won the unwinnable
+sub_hi: वह तप जिसने अजेय को जीता
+logline: Parvati gives up her silks for bark and her food for leaves, then even leaves. Seven sages try to talk her out of it, and then a strange young ascetic tries harder.
+logline_hi: पार्वती रेशम छोड़कर वल्कल पहनती हैं, भोजन छोड़कर पत्ते खाती हैं, फिर पत्ते भी छोड़ देती हैं। सप्तर्षि उन्हें समझाने आते हैं, और फिर एक विचित्र युवा तपस्वी उससे भी ज़्यादा कोशिश करता है।
+source: Shiva Purana, Rudra Samhita, Parvati Khanda, chapters 22 to 30 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=parvatiTapas,shiva,jatila
+
+== SCENE frame | set=forest time=day music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 0.8 [wide] (sfx=bell)
+SUTA (calm, pose=raise) [mid:suta]: Kama was ash. Shiva was gone. And Parvati made up her mind. || कामदेव भस्म हो चुके थे। शिव जा चुके थे। और पार्वती ने मन बना लिया।
+
+== TITLE | dur=7 | kicker=Issue Nine | kicker_hi=नौवाँ अंक | title=Parvati's Penance | title_hi=पार्वती की तपस्या | sub=The austerity that won the unwinnable | sub_hi=वह तप जिसने अजेय को जीता | figs=parvatiTapas,jatila | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=O, Do Not! | title_hi=उ मा!
+
+== SCENE leave | set=himalaya time=day music=devi amb=wind trans=ink | caption=The palace of Himavan | caption_hi=हिमवान का महल
+@ mena x=880 y=660 s=0.9 face=-1 pose=beg emo=sad
+@ parvati x=400 y=660 s=0.9 face=1 pose=namaste emo=calm
+BEAT 0.5 [wide]
+PARVATI (calm, pose=namaste) [mid:parvati]: Mother, Father has agreed. Tomorrow morning I will go to the forest and do tapas, until I win Shiva. || माँ, पिताजी मान गए हैं। कल सुबह मैं वन जाऊँगी और तप करूँगी, जब तक शिव को पा न लूँ।
+MENA (sad, pose=beg) [mid:mena]: Your body is so delicate, child. Do your tapas here at home. All the gods are here, all the holy places. U... ma! Oh, do not go! || तेरा शरीर इतना कोमल है, बेटी। यहीं घर पर तप कर ले। सब देवता यहीं हैं, सब तीर्थ यहीं हैं। उ... मा! अरी, मत जा!
+NARRATOR [~two:parvati,mena] (capPos=bottom): "U ma." Oh, do not. And that is how she came to be called Uma. || "उ मा।" अरी, मत जा। और इसी से उनका नाम पड़ा उमा।
+> mena pose=bless emo=calm t=0.8
+NARRATOR [wide]: But Mena saw how her daughter suffered, and at last she let her go. || पर मेना ने देखा कि बेटी कितनी दुखी है, और अंततः उन्होंने उसे जाने दिया।
+
+== SCENE tapas | set=himalaya time=day music=dawn amb=river trans=wipe | caption=Gaurishikhara | caption_hi=गौरीशिखर
+@ parvati fig=parvatiTapas x=640 y=660 s=0.92 face=1 pose=namaste emo=meditate seat=lotus
+BEAT 0.6 [wide] (sfx=om)
+NARRATOR [wide]: She put away her jewels and silks, and wore bark and deerskin. She went to the very slope where Shiva had burned Kama. || उन्होंने गहने और रेशम उतार दिए, और वल्कल और मृगचर्म पहन लिया। वे उसी ढलान पर गईं जहाँ शिव ने कामदेव को भस्म किया था।
++ f1 kind=fire x=420 y=650 size=0.5 z=-1
++ f2 kind=fire x=860 y=650 size=0.5 z=-1
++ sun kind=glow x=640 y=120 r=200 warm=true z=-3
+BEAT 1 [wide] (sfx=fire, tint=#ff6a0a,0.12)
+NARRATOR [wide] (capPos=bottom): In summer she sat between blazing fires under the burning sun. || गर्मी में वे जलती धूप में धधकती अग्नियों के बीच बैठीं।
+- f1
+- f2
+- sun
++ snow kind=snow x=640 y=0 n=70 w=1280 z=50
+BEAT 1 [wide] (sfx=wind, tint=#a8c8f0,0.15)
+NARRATOR [wide] (capPos=bottom): In winter she stood in icy water through the night. || सर्दी में वे रात भर बर्फ़ीले पानी में खड़ी रहीं।
+NARRATOR [~full:parvati]: First she ate fruit. Then only leaves. Then she gave up even leaves. So the world called her Aparna, the one without even a leaf. || पहले उन्होंने फल खाए। फिर केवल पत्ते। फिर पत्ते भी छोड़ दिए। तब संसार ने उन्हें अपर्णा कहा, जिसने पत्ता भी नहीं खाया।
++ glow kind=glow x=640 y=480 r=520 warm=true op=0.6 z=-2
+BEAT 1.2 [wide] (sfx=swell)
+NARRATOR [wide] (capPos=bottom): Her tapas burned so fiercely that the three worlds grew hot, and the gods ran to Shiva. || उनका तप इतना प्रचंड था कि तीनों लोक तपने लगे, और देवता दौड़कर शिव के पास गए।
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=The Seven Sages | title_hi=सप्तर्षि
+
+== SCENE sages | set=himalaya time=dusk music=court amb=wind trans=ink
+@ parvati fig=parvatiTapas x=880 y=660 s=0.92 face=-1 pose=namaste emo=calm
+@ vasishtha x=380 y=660 s=0.9 face=1 pose=point emo=calm
+@ rishi x=200 y=665 s=0.85 face=1 pose=rest emo=calm z=-1
+@ rishi2 fig=rishi2 x=80 y=670 s=0.82 face=1 pose=rest emo=calm z=-2
+BEAT 0.5 [wide]
+NARRATOR [wide]: Shiva sent the seven great sages to test her. || शिव ने उनकी परीक्षा लेने सात महर्षियों को भेजा।
+VASISHTHA (calm, pose=point) [mid:vasishtha]: Daughter, why torment yourself for Shiva? He is a wandering beggar. He burned Kama for nothing. He left Sati to die. || बेटी, शिव के लिए स्वयं को क्यों सताती हो? वह भटकता भिखारी है। उसने बिना कारण कामदेव को जला दिया। उसने सती को मरने दिया।
+VASISHTHA (smile) [close:vasishtha]: Marry Vishnu instead. He is handsome, he is kind, he lives in Vaikuntha. || उसकी जगह विष्णु से विवाह कर लो। वे सुंदर हैं, दयालु हैं, वैकुंठ में रहते हैं।
+PARVATI (calm) [mid:parvati]: Sages, you say what you believe. But I will marry Shiva, or no one. Even if he refuses me, I will do tapas for a thousand lives. || ऋषियो, आप जो मानते हैं, वह कहते हैं। पर मैं शिव से विवाह करूँगी, या किसी से नहीं। यदि वे मुझे अस्वीकार भी करें, तो मैं हज़ार जन्मों तक तप करूँगी।
+> vasishtha pose=namaste emo=joy t=0.6
+VASISHTHA (joy, pose=namaste) [mid:vasishtha]: Then you are the mother of the universe, and we bow to you. || तब आप ही जगन्माता हैं, और हम आपको प्रणाम करते हैं।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Young Ascetic | title_hi=युवा तपस्वी
+
+== SCENE jatila | set=himalaya time=day music=tension amb=river trans=ink
+@ parvati fig=parvatiTapas x=880 y=660 s=0.92 face=-1 pose=namaste emo=calm
+@ vijaya x=1110 y=665 s=0.82 face=-1 pose=rest emo=calm z=-1
+@ jatila x=-120 y=660 s=0.9 face=1 pose=rest emo=smile item=danda
+BEAT 0.4 [wide]
+> jatila x=380 t=2 walk=1
+NARRATOR [~wide]: Then one day, a young brahmachari came by, with matted hair and a staff, glowing with his own tapas. || फिर एक दिन एक युवा ब्रह्मचारी आया, जटाधारी, हाथ में दंड, अपने तप से दमकता हुआ।
+> jatila walk=0 t=0.3
+JATILA (smile, pose=point) [mid:jatila]: Such hard tapas, so young! What do you want, lady? Heaven? Wealth? A husband? || इतनी कठोर तपस्या, इतनी कम उम्र में! क्या चाहती हो, देवी? स्वर्ग? धन? पति?
+VIJAYA (calm) [mid:vijaya]: She wants Shiva for her husband. || वे शिव को पति के रूप में चाहती हैं।
+JATILA (joy) [mid:jatila] (bang=HA!|हा!, bangPos=300,170): Shiva? Ha! He has no family, no house, no clothes. He rides a bull and smears himself with ash from the cremation ground. || शिव? हा! उसका न कुल है, न घर, न वस्त्र। वह बैल पर चढ़ता है और श्मशान की भस्म मलता है।
+JATILA (sly, pose=point) [close:jatila]: Snakes around his neck. Ghosts for friends. Imagine the wedding! You in silk, and him in a tiger skin. || गले में साँप। मित्र प्रेत। सोचो विवाह कैसा होगा! तुम रेशम में, और वह बाघ की खाल में।
+> parvati emo=rage pose=halt t=0.4
+PARVATI (rage, pose=halt) [mid:parvati] (shout): Enough! You know nothing of Shiva. He is beyond qualities. The gods themselves wear the ash you mock! || बस! तुम शिव के बारे में कुछ नहीं जानते। वे गुणों से परे हैं। जिस भस्म का तुम उपहास करते हो, उसे स्वयं देवता धारण करते हैं!
+PARVATI (angry) [close:parvati]: Whoever hears Shiva insulted shares the sin. Vijaya, come. I will not stay here another moment. || जो शिव की निंदा सुनता है, वह भी पाप का भागी होता है। विजया, चलो। मैं यहाँ एक पल भी नहीं रुकूँगी।
+> parvati face=1 x=1100 t=1 walk=1
+BEAT 0.8 [wide]
+
+== SCENE reveal | set=himalaya time=day music=shiva amb=wind trans=flash
++ glow kind=glow x=380 y=420 r=540 z=-2
+@ shiva fig=shivafair x=380 y=660 s=1.0 face=1 pose=reach emo=smile anim=materialize inDur=1.5
+@ parvati fig=parvatiTapas x=900 y=660 s=0.92 face=1 pose=rest emo=angry
+BEAT 1.8 [wide] (sfx=om,swell, flash, bang=OM|ॐ, bangPos=640,150, bangCol=#ffd22e)
+SHIVA (smile, pose=reach) [mid:shiva]: Where will you go, leaving me behind, Parvati? || मुझे छोड़कर कहाँ जाओगी, पार्वती?
+> parvati face=-1 emo=shock t=0.4
+NARRATOR [two:shiva,parvati] (capPos=bottom): The young ascetic was gone. Shiva himself stood in his place, smiling. || युवा तपस्वी कहीं नहीं था। उसकी जगह स्वयं शिव खड़े थे, मुस्कुराते हुए।
+SHIVA (calm, pose=bless) [close:shiva]: I tested you, and you did not waver. I am yours, bought by your tapas. Ask me for anything. || मैंने तुम्हारी परीक्षा ली, और तुम नहीं डिगीं। तुम्हारे तप ने मुझे मोल ले लिया है। मैं तुम्हारा हूँ। जो चाहो माँगो।
+> parvati emo=joy pose=namaste t=0.6
+PARVATI (joy, pose=namaste) [mid:parvati]: Then ask my father for my hand, lord. Let the world see you marry me properly. || तो मेरे पिता से मेरा हाथ माँगिए, प्रभु। संसार देखे कि आप विधिपूर्वक मुझसे विवाह करते हैं।
+SHIVA (joy) [two:shiva,parvati]: So be it. || ऐसा ही हो।
++ petals kind=petals x=640 y=0 n=60 w=1280 z=50
+BEAT 1.4 [wide] (sfx=sparkle,conch)
+
+== SCENE home | set=himalaya time=dusk music=joy amb=court trans=wipe
+@ himavan x=380 y=660 s=0.95 face=1 pose=raise emo=joy
+@ mena x=600 y=660 s=0.88 face=1 pose=offer emo=joy
+@ parvati x=920 y=660 s=0.9 face=-1 pose=namaste emo=joy anim=right
+BEAT 0.6 [wide] (sfx=conch,bells)
+NARRATOR [wide]: Parvati came home in triumph, and the whole mountain kingdom celebrated. || पार्वती विजयी होकर घर लौटीं, और पूरे पर्वत राज्य में उत्सव मनाया गया।
+NARRATOR [~two:himavan,mena] (capPos=bottom): But not everyone was happy. Shiva wanted to test Mena's heart, too. || पर सब प्रसन्न नहीं थे। शिव मेना के मन की भी परीक्षा लेना चाहते थे।
+
+== SCENE close | set=forest time=dusk music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
+BEAT 0.4 [wide]
+SUTA (smile, pose=bless) [mid:suta]: The one who could not be moved by beauty or by desire, was won by steadfastness. || जिसे न सुंदरता डिगा सकी, न काम, उसे दृढ़ता ने जीत लिया।
+RISHI (joy) [mid:rishi]: And the wedding, Suta! Tell us about the wedding! || और विवाह, सूत जी! विवाह के बारे में बताइए!
+SUTA (sly) [close:suta]: Ah. The wedding. That was where Mena fainted. || अहा। विवाह। वहीं तो मेना बेहोश हो गई थीं।
+
+== NEXT | dur=8 | title=The Wedding of Shiva | title_hi=शिव विवाह | sub=The strangest groom the world has ever seen | sub_hi=संसार का सबसे अनोखा दूल्हा
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Nine: Parvati's Penance | sub_hi=नौवाँ अंक: पार्वती की तपस्या | credits=Adapted from the Shiva Purana, Rudra Samhita, Parvati Khanda;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता, पार्वती खंड पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने

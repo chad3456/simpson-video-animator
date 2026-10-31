@@ -1,0 +1,203 @@
+title: Narada's Pride
+title_hi: नारद का अभिमान
+episode: 2
+slug: e02-naradas-pride
+kicker: Issue Two
+kicker_hi: दूसरा अंक
+sub: The sage who wanted to marry a princess
+sub_hi: वह ऋषि जो राजकुमारी से विवाह करना चाहता था
+logline: Narada defeats desire, and then boasts about it. So Vishnu builds him a city, a princess and a very surprising face.
+logline_hi: नारद काम को जीत लेते हैं, और फिर उसका बखान करते हैं। तब विष्णु उनके लिए एक नगर, एक राजकुमारी और एक बड़ा अनोखा चेहरा रचते हैं।
+source: Shiva Purana, Rudra Samhita, Srishti Khanda, chapters 2 to 4 (tr. Bibek Debroy)
+
+== OPEN | dur=8 | figs=narad,shiva,vishnu
+
+== SCENE frame | set=forest time=dawn music=dawn amb=birds trans=fade | caption=Naimisha forest | caption_hi=नैमिषारण्य
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=calm seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=calm seat=lotus
+BEAT 1 [wide] (sfx=bell)
+SUTA (smile) [mid:suta]: Narada is the wisest of sages. He wanders the three worlds singing Vishnu's name. || नारद ऋषियों में सबसे ज्ञानी हैं। वे विष्णु का नाम गाते हुए तीनों लोकों में घूमते हैं।
+SUTA (sly, pose=point) [close:suta]: And yet, once, even Narada was fooled. Not by a demon. By himself. || फिर भी, एक बार नारद भी धोखा खा गए। किसी राक्षस से नहीं। स्वयं से।
+
+== TITLE | dur=7 | kicker=Issue Two | kicker_hi=दूसरा अंक | title=Narada's Pride | title_hi=नारद का अभिमान | sub=The sage who wanted to marry a princess | sub_hi=वह ऋषि जो राजकुमारी से विवाह करना चाहता था | figs=narad,shrimati | sfx=conch
+
+== CHAPTER | kicker=Part One | kicker_hi=पहला भाग | title=The Sage Who Beat Desire | title_hi=काम को जीतने वाला ऋषि
+
+# ------------------------------------------------------------ the cave
+== SCENE cave | set=himalaya time=day music=dawn amb=river | caption=A cave in the Himalaya | caption_hi=हिमालय की एक गुफा
+@ narad x=640 y=660 s=0.95 face=1 pose=namaste emo=meditate seat=lotus item=none
++ glow kind=glow x=640 y=520 r=260 op=0.5 z=-1
+BEAT 1.2 [wide] (sfx=om)
+NARRATOR [wide]: Beside the heavenly river, in a beautiful Himalayan cave, Narada sat still and silent, deep in meditation. || स्वर्गीय नदी के किनारे, हिमालय की एक सुंदर गुफा में, नारद मौन और स्थिर होकर गहरे ध्यान में बैठे थे।
+NARRATOR [~full:narad]: His austerities grew so strong that, far away in heaven, Indra began to worry. || उनकी तपस्या इतनी प्रबल हो गई कि दूर स्वर्ग में इंद्र को चिंता होने लगी।
+
+== SCENE indra | set=court col=#1a3a7a music=court amb=court trans=wipe | caption=Indra's court | caption_hi=इंद्र की सभा
+@ indra x=420 y=660 s=0.95 face=1 pose=hold item=vajra emo=angry
+@ kama x=900 y=660 s=0.92 face=-1 pose=bow emo=smile
+@ rati x=1080 y=660 s=0.85 face=-1 pose=namaste emo=smile
+BEAT 0.6 [wide]
+INDRA (angry, pose=point) [mid:indra]: That sage wants my throne, Kama. I am sure of it. He will ask Brahma for my kingdom. || वह ऋषि मेरा सिंहासन चाहता है, कामदेव। मुझे पूरा विश्वास है। वह ब्रह्मा से मेरा राज्य माँग लेगा।
+INDRA (sly) [close:indra]: You have broken the pride of many ascetics. Go and break his. || तुमने कई तपस्वियों का अभिमान तोड़ा है। जाओ, उसका भी तोड़ो।
+KAMA (smile, pose=bow) [mid:kama]: With Vasanta and his spring beside me, no sage can resist. || वसंत और उसकी बहार मेरे साथ हो, तो कोई ऋषि नहीं टिक सकता।
+
+== SCENE attack | set=himalaya time=day music=joy amb=birds trans=wipe
+@ narad x=760 y=660 s=0.95 face=-1 pose=namaste emo=meditate seat=lotus
+@ kama x=260 y=660 s=0.92 face=1 pose=bow emo=sly
+@ vasanta x=110 y=660 s=0.8 face=1 pose=offer emo=joy
++ petals kind=petals x=640 y=0 n=40 w=1280 z=50
+BEAT 1 [wide] (sfx=sparkle)
+NARRATOR [wide]: Spring burst over the mountain. Flowers bloomed, cuckoos sang, and Kama drew his flowered bow. || पर्वत पर वसंत छा गया। फूल खिल उठे, कोयलें गाने लगीं, और कामदेव ने अपना पुष्प-धनुष ताना।
++ arrow kind=beam x=360 y=380 dx=300 dy=0 col=#f59ab8 w=10 z=55
+BEAT 1.2 [wide] (sfx=whoosh, bang=TWANG!|टंकार!, bangPos=420,180)
+- arrow
+NARRATOR [mid:narad] (capPos=bottom): Nothing happened. Narada did not even open his eyes. || कुछ नहीं हुआ। नारद ने आँखें तक नहीं खोलीं।
+KAMA (shock) [mid:kama]: My arrows... they have no power here! || मेरे बाण... यहाँ उनमें कोई शक्ति नहीं!
+NARRATOR [wide] (capPos=bottom): For this was the very spot where Shiva had once burned Kama to ashes, and Shiva had declared that Kama's tricks would never work here. || क्योंकि यह वही स्थान था जहाँ शिव ने कभी कामदेव को भस्म किया था, और शिव ने कहा था कि यहाँ काम की कोई चाल कभी नहीं चलेगी।
+NARRATOR [~full:narad]: Narada knew none of this. When he opened his eyes, he believed he had beaten desire all by himself. || नारद यह सब नहीं जानते थे। जब उन्होंने आँखें खोलीं, तो उन्हें लगा कि उन्होंने अपने बल पर काम को जीत लिया है।
+> narad emo=smile pose=chest seat=none t=0.8
+NARAD (joy, pose=chest) [close:narad] (think): I have conquered Kama himself! || मैंने स्वयं कामदेव को जीत लिया!
+
+# ------------------------------------------------------------ the boasting
+== SCENE boast1 | set=kailash time=day music=shiva amb=wind trans=wipe | caption=Mount Kailasa | caption_hi=कैलास पर्वत
+@ shiva x=900 y=650 s=0.95 face=-1 pose=abhaya emo=calm seat=lotus
+@ narad x=380 y=660 s=0.92 face=1 pose=veena item=veena emo=joy
+BEAT 0.5 [wide] (sfx=veena)
+NARAD (joy, pose=chest) [mid:narad]: Mahadeva! Kama came to tempt me, with spring itself. And I did not move! I defeated him! || महादेव! कामदेव मुझे लुभाने आया, वसंत को साथ लेकर। और मैं टस से मस नहीं हुआ! मैंने उसे हरा दिया!
+SHIVA (smile, pose=bless) [mid:shiva]: You are blessed, Narada. But listen to me. Do not tell this to anyone else. || तुम धन्य हो, नारद। पर मेरी बात सुनो। यह बात किसी और से मत कहना।
+SHIVA (calm) [close:shiva]: Above all, do not tell it to Vishnu. Keep it a secret. I say this because I love you. || सबसे बढ़कर, विष्णु से मत कहना। इसे गुप्त रखना। मैं यह इसलिए कहता हूँ क्योंकि तुम मुझे प्रिय हो।
+NARRATOR [~wide] (capPos=bottom): But Narada was already lost in Shiva's maya. He heard the words, and did not listen. || पर नारद तो शिव की माया में खो चुके थे। उन्होंने बात सुनी, पर मानी नहीं।
+
+== SCENE boast2 | set=vaikuntha music=vishnu amb=ocean trans=wipe | caption=Vaikuntha | caption_hi=वैकुंठ
+@ vishnu x=880 y=660 s=0.95 face=-1 pose=bless emo=smile
+@ narad x=380 y=660 s=0.92 face=1 pose=chest item=veena emo=joy
+BEAT 0.5 [wide] (sfx=sparkle)
+NARRATOR [wide]: He went to Brahma and boasted. Then he went straight to Vishnu. || वे ब्रह्मा के पास गए और डींग मारी। फिर सीधे विष्णु के पास पहुँचे।
+NARAD (joy, pose=chest) [two:narad,vishnu]: Lord, I sat in the Himalaya, and Kama himself could not shake me! || प्रभु, मैं हिमालय में बैठा था, और स्वयं कामदेव मुझे डिगा नहीं सका!
+> vishnu emo=calm t=0.5
+VISHNU (calm) [close:vishnu] (think): Mahadeva, your maya is blessed. It fools everyone. || महादेव, आपकी माया धन्य है। यह सबको मोह लेती है।
+VISHNU (smile, pose=bless) [mid:vishnu]: Desire troubles only those without devotion. How could it ever touch you? || काम केवल उन्हें सताता है जिनमें भक्ति नहीं। वह आपको कैसे छू सकता है?
+NARAD (sly, pose=namaste) [mid:narad]: As long as you are kind to me, lord, what power has Kama over me? || जब तक आपकी कृपा है, प्रभु, कामदेव की मुझ पर क्या चलेगी?
+
+== CHAPTER | kicker=Part Two | kicker_hi=दूसरा भाग | title=A City Made of Maya | title_hi=माया का नगर
+
+# ------------------------------------------------------------ the city and Shrimati
+== SCENE city | set=city time=day music=joy amb=court trans=ink
+@ narad x=-120 y=660 s=0.9 face=1 pose=veena item=veena emo=smile walk=1
+BEAT 0.4 [wide]
+> narad x=420 t=3 walk=1
+NARRATOR [~wide]: On Narada's road, Vishnu raised a city out of nothing. A hundred yojanas wide, more beautiful than heaven. || नारद के मार्ग में, विष्णु ने शून्य से एक नगर रच दिया। सौ योजन चौड़ा, स्वर्ग से भी सुंदर।
+> narad walk=0 t=0.3
+NARRATOR [mid:narad]: There, King Shilanidhi was holding a svayamvara for his daughter. Princes had come from every direction. || वहाँ राजा शीलनिधि अपनी पुत्री का स्वयंवर कर रहे थे। हर दिशा से राजकुमार आए थे।
+
+== SCENE palace | set=court col=#7a1a3a music=court amb=court trans=wipe | caption=King Shilanidhi's palace | caption_hi=राजा शीलनिधि का महल
+@ shilanidhi x=900 y=660 s=0.95 face=-1 pose=namaste emo=smile
+@ narad x=360 y=660 s=0.92 face=1 pose=bless emo=calm item=veena
+@ shrimati x=1120 y=660 s=0.85 face=-1 pose=namaste emo=smile anim=right d=0.3
+BEAT 0.5 [wide]
+SHILANIDHI (smile, pose=namaste) [mid:shilanidhi]: Great sage, this is my daughter, Shrimati. Tell me her fortune. What kind of husband will she have? || महान ऋषि, यह मेरी पुत्री श्रीमती है। इसका भाग्य बताइए। इसे कैसा पति मिलेगा?
+> shrimati x=620 t=1.5
+NARRATOR [two:narad,shrimati]: Narada looked at the princess. And the sage who had beaten desire forgot everything. || नारद ने राजकुमारी को देखा। और काम को जीतने वाला ऋषि सब कुछ भूल गया।
+NARAD (smile, pose=point) [mid:narad]: Her husband will be a lord of everything. Unconquerable. Like Shiva. One who has conquered Kama! || इसका पति सबका स्वामी होगा। अजेय। शिव के समान। जिसने कामदेव को जीता हो!
+NARAD (sly) [close:narad] (think): One who has conquered Kama... that is me! But will she choose me, among all these princes? || जिसने कामदेव को जीता हो... वह तो मैं हूँ! पर क्या इतने राजकुमारों में वह मुझे चुनेगी?
+NARAD (sly, pose=pointUp) [ecu:narad] (think): Women love beauty. And who is more beautiful than Vishnu? || सुंदरता सबको भाती है। और विष्णु से सुंदर कौन है?
+
+== SCENE ask | set=vaikuntha music=vishnu amb=ocean trans=wipe
+@ vishnu x=880 y=660 s=0.95 face=-1 pose=vishnu emo=calm
+@ narad x=380 y=660 s=0.92 face=1 pose=beg emo=smile
+BEAT 0.4 [wide]
+NARAD (smile, pose=beg) [mid:narad]: Lord, I want to marry Shrimati. Give me your form, so that she places the garland around my neck! || प्रभु, मैं श्रीमती से विवाह करना चाहता हूँ। मुझे अपना रूप दे दीजिए, ताकि वह वरमाला मेरे गले में डाले!
+> vishnu emo=smile t=0.3
+VISHNU (smile) [close:vishnu]: Go, sage. I will do what is good for you. Just as a physician treats a patient. || जाओ, ऋषि। मैं वही करूँगा जो तुम्हारे लिए हितकर है। जैसे वैद्य रोगी का उपचार करता है।
++ m kind=sparkle x=380 y=380 n=30 r=200 z=60
+BEAT 1.4 [mid:narad] (sfx=magic, flash)
+NARRATOR [wide] (capPos=bottom): And Vishnu gave Narada... the face of a monkey. Then he vanished. || और विष्णु ने नारद को दिया... बंदर का चेहरा। फिर वे अंतर्धान हो गए।
+
+== CHAPTER | kicker=Part Three | kicker_hi=तीसरा भाग | title=The Svayamvara | title_hi=स्वयंवर
+
+# ------------------------------------------------------------ the svayamvara
+== SCENE hall | set=court col=#7a1a3a music=joy amb=court trans=ink
++ crowd kind=crowd x=640 y=560 n=10 z=-3
+@ narad fig=naradmonkey x=420 y=660 s=0.92 face=1 pose=chest emo=joy
+@ prince x=860 y=660 s=0.85 face=-1 pose=stand emo=calm
+@ gana fig=ganadisguise x=150 y=660 s=0.85 face=1 pose=point emo=joy
+@ gana2 fig=ganadisguise x=260 y=665 s=0.8 face=1 pose=chest emo=joy z=-1
+BEAT 0.5 [wide]
+NARRATOR [wide]: Narada sat proudly in the hall, sure he looked like Vishnu. Everyone else saw only the old Narada. || नारद गर्व से सभा में बैठे, इस विश्वास में कि वे विष्णु जैसे दिखते हैं। बाकी सबको तो पुराने नारद ही दिखाई दिए।
+NARRATOR [two:gana,gana2]: But two of Shiva's ganas, disguised as brahmins, could see the truth. || पर ब्राह्मण वेश में आए शिव के दो गण सच्चाई देख सकते थे।
+GANA (joy, pose=point) [two:gana,gana2]: Look at Narada! Vishnu's body, and a monkey's face! || नारद को देखो! शरीर विष्णु का, और मुँह बंदर का!
+GANA2 (joy) [mid:gana2]: And he hopes to win the princess! Ha ha ha! || और ये राजकुमारी को जीतने की आशा रखते हैं! हा हा हा!
+NARAD (smile) [close:narad] (think): Let them laugh. They are jealous. || हँसने दो। ये जलते हैं।
+
+== SCENE garland | set=court col=#7a1a3a music=joy amb=court trans=cut
+@ shrimati x=-100 y=660 s=0.88 face=1 pose=garland item=varmala emo=smile walk=1
+@ narad fig=naradmonkey x=520 y=660 s=0.92 face=-1 pose=chest emo=joy
+@ vishnu fig=vishnuking x=1050 y=660 s=0.95 face=-1 pose=stand emo=smile anim=materialize d=0 in=3
+BEAT 0.3 [wide]
+> shrimati x=360 t=2.5 walk=1
+NARRATOR [~wide]: Shrimati entered with a golden garland, searching the hall for her husband. || श्रीमती सोने की वरमाला लिए आईं, सभा में अपने पति को खोजती हुई।
+> shrimati walk=0 emo=angry t=0.3
+SHRIMATI (angry) [two:shrimati,narad]: A monkey's face? || बंदर का चेहरा?
+> shrimati face=-1 t=0.3
+NARRATOR [mid:narad] (capPos=bottom): She turned away in disgust. Narada was stunned. || वह घृणा से मुँह फेरकर आगे बढ़ गईं। नारद हक्के-बक्के रह गए।
+> shrimati x=880 face=1 walk=1 t=2.5
+NARRATOR [~wide]: Then a new king appeared in the hall. It was Vishnu himself, in disguise. || तभी सभा में एक नया राजा प्रकट हुआ। स्वयं विष्णु, वेश बदलकर।
+> shrimati walk=0 emo=joy t=0.3
+NARRATOR [two:shrimati,vishnu] (sfx=sparkle): Her face bloomed like a lotus. She placed the garland around his neck, and the two of them vanished. || उनका मुख कमल की तरह खिल उठा। उन्होंने वरमाला उनके गले में डाल दी, और दोनों अंतर्धान हो गए।
+- shrimati od=0.4
+- vishnu od=0.4
++ sp kind=sparkle x=960 y=400 n=30 r=200 z=60
+BEAT 1.2 [wide] (sfx=magic)
+
+== SCENE mirror | set=court col=#7a1a3a music=curse amb=court trans=cut
+@ narad fig=naradmonkey x=640 y=660 s=0.95 face=1 pose=beg emo=sad
+@ gana fig=ganadisguise x=200 y=660 s=0.85 face=1 pose=point emo=joy
+@ gana2 fig=ganadisguise x=320 y=665 s=0.8 face=1 pose=chest emo=joy z=-1
+BEAT 0.4 [wide]
+GANA (joy, pose=point) [two:gana,gana2]: Narada, your desire was wasted. Look at your own face. It is a monkey's! || नारद, आपका मोह व्यर्थ गया। अपना चेहरा तो देखिए। बंदर का है!
++ mirror kind=mirror x=820 y=400 s=1.2 z=55
+> narad face=1 t=0.3
+BEAT 1.2 [mid:narad] (sfx=crack)
+> narad emo=rage pose=point t=0.3
+NARAD (rage, pose=point) [close:narad] (shake=8, bang=WHAT?!|क्या?!, bangPos=980,160): You laughed at me! Then be born as brahmins, with the bodies of rakshasas! || तुमने मेरी हँसी उड़ाई! तो जाओ, ब्राह्मण कुल में जन्म लो, पर राक्षसों के शरीर के साथ!
+NARRATOR [two:gana,gana2] (capPos=bottom): The ganas did not curse him back. They knew he was not himself. They went away quietly, praising Shiva. || गणों ने बदले में शाप नहीं दिया। वे जानते थे कि नारद अपने आप में नहीं हैं। वे शिव की स्तुति करते हुए चुपचाप चले गए।
+
+== CHAPTER | kicker=Part Four | kicker_hi=चौथा भाग | title=The Curse on Vishnu | title_hi=विष्णु को शाप
+
+# ------------------------------------------------------------ the curse
+== SCENE curse | set=vaikuntha music=battle amb=storm trans=ink | tint=#5a0a0a,0.12
+@ vishnu x=880 y=660 s=0.95 face=-1 pose=namaste emo=calm
+@ narad fig=naradmonkey x=380 y=660 s=0.92 face=1 pose=point emo=rage
+BEAT 0.4 [wide] (sfx=thunder)
+NARAD (rage, pose=point) [mid:narad]: Hari, you deceiver! You trick the whole world! You took Mohini's form and cheated the asuras of the nectar! || हरि, छलिया! तुम सारे संसार को छलते हो! तुमने मोहिनी बनकर असुरों से अमृत छीन लिया था!
+NARAD (rage, pose=strike) [close:narad] (shout, shake=6): You tricked me over a woman. So in a human body you will suffer. You will lose your wife, and only monkeys will help you! || तुमने एक स्त्री के लिए मुझे छला। इसलिए मनुष्य देह में तुम दुख भोगोगे। तुम्हारी पत्नी तुमसे बिछड़ेगी, और केवल बंदर तुम्हारी सहायता करेंगे!
++ flash kind=burst x=640 y=380 r=400 col=#ffffff z=-1
+BEAT 1.2 [wide] (sfx=boom, flash)
+- flash
+VISHNU (calm, pose=namaste) [mid:vishnu]: I accept your curse, sage. It comes from Shiva's will. || मैं आपका शाप स्वीकार करता हूँ, ऋषि। यह शिव की इच्छा से आया है।
+NARRATOR [wide] (capPos=bottom, sfx=sparkle): And in that moment, Shiva lifted the maya. Narada's mind cleared, like a sky after rain. || और उसी क्षण शिव ने माया हटा ली। नारद का मन ऐसे साफ़ हो गया, जैसे वर्षा के बाद आकाश।
+> narad fig=narad t=0.01
+> narad pose=beg emo=sad seat=kneel t=0.8
+NARAD (sad, pose=beg) [close:narad]: Lord, what have I done? I spoke wicked words. I cursed you! Let the curse be false! || प्रभु, यह मैंने क्या कर दिया? मैंने दुर्वचन कहे। मैंने आपको शाप दे दिया! यह शाप झूठा हो जाए!
+VISHNU (smile, pose=bless) [mid:vishnu]: Do not grieve. It was Shiva's play, to break your pride. The curse will come true, and it will be for the good of the world. || दुखी मत हो। यह शिव की लीला थी, तुम्हारा अभिमान तोड़ने के लिए। शाप सत्य होगा, और वह संसार के कल्याण के लिए होगा।
+VISHNU (calm, pose=bless) [close:vishnu]: Go to Kashi. Sing the names of Shiva, and your heart will be at peace. || काशी जाओ। शिव के नाम गाओ, तुम्हारा मन शांत हो जाएगा।
+NARRATOR [~wide] (capPos=bottom): Ages later, Vishnu was born as Rama. He lost Sita, and an army of monkeys helped him win her back. || युगों बाद विष्णु ने राम के रूप में जन्म लिया। सीता उनसे बिछड़ीं, और वानरों की सेना ने उन्हें वापस पाने में सहायता की।
+
+== SCENE forgiven | set=himalaya time=dusk music=dawn amb=river trans=fade
+@ narad x=640 y=660 s=0.92 face=-1 pose=bless emo=calm item=veena
+@ gana fig=ganadisguise x=200 y=660 s=0.85 face=1 pose=namaste emo=sad
+@ gana2 fig=ganadisguise x=320 y=665 s=0.8 face=1 pose=namaste emo=sad z=-1
+BEAT 0.4 [wide]
+GANA (sad, pose=namaste) [mid:gana]: Sage, we only laughed. Will you free us from your curse? || ऋषिवर, हमने तो केवल हँसी की थी। क्या आप हमें शाप से मुक्त करेंगे?
+NARAD (calm, pose=bless) [mid:narad]: A curse cannot be taken back. You will be born as mighty rakshasa kings. But you will die by Vishnu's own hand, and you will be free. || शाप वापस नहीं लिया जा सकता। तुम पराक्रमी राक्षस राजा बनोगे। पर विष्णु के हाथों मरोगे, और मुक्त हो जाओगे।
+
+== SCENE close | set=forest time=dusk music=dawn amb=birds trans=fade
+@ suta x=820 y=660 s=0.92 face=-1 pose=bless emo=smile seat=lotus
+@ rishi x=330 y=660 s=0.85 face=1 pose=namaste emo=joy seat=lotus
+BEAT 0.4 [wide]
+SUTA (smile, pose=bless) [mid:suta]: So, the moment you think you have beaten desire, that is when it has beaten you. || तो, जिस क्षण आपको लगे कि आपने काम को जीत लिया, उसी क्षण उसने आपको जीत लिया होता है।
+RISHI (joy) [mid:rishi]: Tell us another, Suta! Is there a story of Shiva's mercy? || एक और सुनाइए, सूत जी! क्या शिव की करुणा की कोई कथा है?
+SUTA (sly) [close:suta]: There is. It is about a thief. || है। एक चोर की।
+
+== NEXT | dur=8 | title=The Thief and the Lamp | title_hi=चोर और दीपक | sub=A gambler, a temple, and the night of Shiva | sub_hi=एक जुआरी, एक मंदिर, और शिव की रात
+
+== END | dur=10 | title=Shiva Purana | title_hi=शिव पुराण | sub=Issue Two: Narada's Pride | sub_hi=दूसरा अंक: नारद का अभिमान | credits=Adapted from the Shiva Purana, Rudra Samhita;English translation by Bibek Debroy;Voices, art and music made in code | credits_hi=शिव पुराण, रुद्र संहिता पर आधारित;अंग्रेज़ी अनुवाद: बिबेक देबरॉय;आवाज़ें, चित्र और संगीत कोड से बने
