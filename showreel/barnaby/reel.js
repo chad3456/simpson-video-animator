@@ -195,7 +195,7 @@
   // 3. Quick photo cuts with a white mascot standing on them
   const photoCut = (key, label, pose, mx, my, ms) => t => photo(key, label, 0, 0, W, H, `transform:scale(${1.04 + t * 0.03})`) +
     mascot({ t, x: mx, y: my, s: ms, mono: true, pose, style: 'filter:drop-shadow(0 10px 30px rgba(0,0,0,.25))' });
-  scene(1.1, photoCut('burger', 'plant-based burger close-up', 'stand', 1420, 980, 0.9));
+  scene(1.1, photoCut('burger', 'plant-based burger close-up', 'stand', 330, 1010, 0.8));
   scene(1.0, photoCut('ingredients', 'fresh vegetables', 'wave', 520, 960, 0.75));
   scene(1.2, photoCut('field', 'green field / crops', 'tada', 1300, 930, 0.6));
 
@@ -217,8 +217,8 @@
   });
 
   // 5. More photo cuts with the white mascot
-  scene(1.3, photoCut('street', 'city street / storefront', 'serve', 1450, 1000, 0.8));
-  scene(1.2, photoCut('hands', 'burger held in hands', 'wave', 480, 1000, 0.7));
+  scene(1.3, photoCut('street', 'city street / storefront', 'serve', 330, 1010, 0.8));
+  scene(1.2, photoCut('hands', 'burger held in hands', 'wave', 960, 1040, 0.6));
   scene(1.4, photoCut('friends', 'friends at a table', 'bow', 1500, 990, 0.75));
 
   // 6. Mascot studio UI (like the 3D tool in the reference)
@@ -332,7 +332,7 @@
       <div class="mono" style="position:absolute;left:20px;top:16px;font-size:16px;color:${C.pep}">MERCH · TEE / TOTE</div>
       ${typer(['Your ', { w: 'burger', icon: 'burger', color: C.tomato }, ' is ready, sir.'], t, { size: 34, x: 20, y: 120, w: 340, align: 'left', cps: 22 })}</div>`);
   scene(2.2, t => photo('wall', 'billboard / blank wall', 0, 0, W, H) +
-    `<div style="position:absolute;left:560px;top:250px;width:800px;height:520px;background:${C.tomato};transform:perspective(1600px) rotateY(${-8 + t * 2}deg);box-shadow:0 20px 50px rgba(0,0,0,.35);overflow:hidden">
+    `<div style="position:absolute;left:560px;top:250px;width:800px;height:520px;background:${C.tomato};transform:scale(${1 + t * 0.01});box-shadow:0 14px 30px rgba(0,0,0,.3);overflow:hidden">
       ${mascot({ t, x: 600, y: 520, s: 0.82, pose: 'wave' })}<div class="type" style="left:40px;top:60px;width:440px;text-align:left;font-size:72px;color:#fff;line-height:.95">Ring the bell for seconds.</div></div>`);
 
   // 12. Sign-off
@@ -348,6 +348,15 @@
       h += mono('placeholder brand · mockup only', 0, 1010, 18, '#9a8f99', `width:${W}px;text-align:center`);
     }
     return h;
+  });
+
+  // 13. Photo credits (CC BY and CC BY-SA photos must be credited)
+  scene(3.2, t => {
+    const list = Object.values(PHOTOS);
+    const rows = list.map(p => `<div style="margin:6px 0">${escape(p.title || p.key)} — ${escape(p.author)} — ${escape(p.license)}</div>`).join('');
+    return bg(C.pep) + mono('PHOTOS', 160, 150, 26, C.mustard) +
+      `<div class="mono" style="left:160px;top:210px;font-size:24px;color:${C.bun};line-height:1.5;white-space:normal;width:1600px;opacity:${prog(t, 0, .4)}">${rows || 'Photo slots: no photos added yet.'}</div>` +
+      mono('Photos via Wikimedia Commons. Barnaby is a placeholder brand; mockup only.', 160, 920, 22, '#9a8f99');
   });
 
   let total = 0; const starts = S.map(s => { const a = total; total += s.dur; return a; });

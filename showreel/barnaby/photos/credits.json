@@ -1,0 +1,79 @@
+[
+  {
+    "key": "burger",
+    "file": "burger.jpg",
+    "title": "Veggie burger on plate (Unsplash)",
+    "author": "Markus Spiske (@markusspiske, via Unsplash)",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Veggie_burger_on_plate_(Unsplash).jpg",
+    "width": 1920,
+    "height": 1280
+  },
+  {
+    "key": "ingredients",
+    "file": "ingredients.jpg",
+    "title": "Fresh From the Market (Unsplash)",
+    "author": "Anne Preble (@annepreble, via Unsplash)",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Fresh_From_the_Market_(Unsplash).jpg",
+    "width": 1920,
+    "height": 1333
+  },
+  {
+    "key": "field",
+    "file": "field.jpg",
+    "title": "Lettuce crop, Offenham - geograph.org.uk - 2004660",
+    "author": "Philip Halling (via Geograph Britain and Ireland)",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Lettuce_crop,_Offenham_-_geograph.org.uk_-_2004660.jpg",
+    "width": 1920,
+    "height": 1277
+  },
+  {
+    "key": "street",
+    "file": "street.jpg",
+    "title": "Ho Chi Minh City, Vietnam (Unsplash 5oRaXQqV6CM)",
+    "author": "Tao Xanh Kim (@taoxanhkim, via Unsplash)",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City,_Vietnam_(Unsplash_5oRaXQqV6CM).jpg",
+    "width": 1920,
+    "height": 1280
+  },
+  {
+    "key": "hands",
+    "file": "hands.jpg",
+    "title": "Vegan burger (6026639568)",
+    "author": "Nacho Pintos from Barcelona (via Flickr)",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Vegan_burger_(6026639568).jpg",
+    "width": 1920,
+    "height": 1281
+  },
+  {
+    "key": "friends",
+    "file": "friends.jpg",
+    "title": "Friends eating lunch in diner (Unsplash)",
+    "author": "Dan Gold (@danielcgold, via Unsplash)",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:Friends_eating_lunch_in_diner_(Unsplash).jpg",
+    "width": 1920,
+    "height": 1440
+  },
+  {
+    "key": "wall",
+    "file": "wall.jpg",
+    "title": "White and blue brick wall (Unsplash)",
+    "author": "Patrick Tomasso (@impatrickt, via Unsplash)",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source_page_url": "https://commons.wikimedia.org/wiki/File:White_and_blue_brick_wall_(Unsplash).jpg",
+    "width": 1920,
+    "height": 1440
+  }
+]
