@@ -1,0 +1,65 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Swagat showreel</title>
+<style>
+@font-face{font-family:Rozha;src:url(fonts/Rozha.ttf)}
+@font-face{font-family:Tiro;src:url(fonts/Tiro.ttf)}
+@font-face{font-family:Insta;src:url(fonts/InstrumentSans-Regular.ttf)}
+@font-face{font-family:DMM;src:url(fonts/DMMono-Regular.ttf)}
+html,body{margin:0;background:#111}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:#FBF3DF;transform-origin:0 0}
+#stage *{box-sizing:border-box}
+.bg{position:absolute;inset:0}
+.wd{position:absolute;overflow:visible}
+.type{position:absolute;text-align:center;font-family:Rozha,Tiro;letter-spacing:-.01em;line-height:1.12}
+.hi{position:absolute;font-family:Rozha,Tiro;text-align:center;line-height:1.2}
+.icw{display:inline-block;vertical-align:-.12em;transform-origin:50% 60%}
+.ic{display:block}
+.cur{display:inline-block;width:.06em;height:.85em;vertical-align:-.08em;margin-left:.04em}
+.mono{position:absolute;font-family:DMM;white-space:nowrap}
+.ph{position:absolute;overflow:hidden;transform-origin:50% 50%}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.slot{background:repeating-linear-gradient(45deg,#1C2A5E 0 40px,#22306a 40px 80px);display:flex;align-items:center;justify-content:center}
+.slot span{font-family:DMM;color:#F0A020;font-size:30px;border:2px dashed #F0A020;padding:18px 28px;position:absolute;top:60px;left:60px}
+.grid{position:absolute;inset:0;background-image:linear-gradient(#F0A02066 1px,transparent 1px),linear-gradient(90deg,#F0A02066 1px,transparent 1px);background-size:60px 60px}
+.wm2{position:absolute;left:0;top:560px;width:1920px;text-align:center;font-family:Rozha;font-size:300px;letter-spacing:-.02em;color:#2A160C;line-height:1}
+.panel{position:absolute;left:0;top:0;width:480px;height:1080px}
+.canvas{position:absolute;left:520px;top:60px;width:1340px;height:680px;background:#fff;border:1px solid #ddd}
+.plus{position:absolute;font-family:DMM;font-size:30px;color:#2A160C;transform:translate(-50%,-50%)}
+.tools{position:absolute;left:520px;top:770px;width:1340px;height:270px;background:#fff;border:1px solid #ddd}
+.sl{position:absolute;width:320px}
+.sll{font-family:DMM;font-size:16px;color:#2A160C}
+.slt{position:relative;height:4px;background:#ddd;margin-top:22px}
+.slk{position:absolute;top:-10px;width:24px;height:24px;border-radius:50%;background:#F0A020;border:3px solid #2A160C;transform:translateX(-50%)}
+.sw{position:absolute;width:48px;height:48px;border-radius:8px}
+.btn{position:absolute;left:1600px;top:912px;width:230px;height:64px;font-family:DMM;font-size:22px;color:#2A160C;display:flex;align-items:center;justify-content:center;border-radius:6px}
+.pp{position:absolute;font-family:DMM;font-size:15px;color:#c9c3dc;padding:8px 12px;border:1px solid #3a4680;border-radius:20px}
+.huge{position:absolute;font-family:Rozha;font-size:620px;white-space:nowrap;letter-spacing:-.03em;line-height:1}
+.spec{position:absolute;left:100px;top:130px;right:100px;bottom:60px;text-align:center;overflow:hidden}
+.stripe{position:absolute;top:0;height:1080px}
+.sn{position:absolute;left:16px;bottom:150px;font-family:Rozha;font-size:31px;white-space:nowrap}
+.sh{position:absolute;left:22px;bottom:70px;font-family:DMM;font-size:18px;line-height:1.5}
+.cell{position:absolute;width:124px;height:104px;border-radius:14px;display:flex;align-items:center;justify-content:center;border:2px solid #efe4cc}
+.chip{display:inline-block;position:relative;width:180px;height:120px;border-radius:60px;overflow:hidden;vertical-align:-.18em;border:5px solid #E0A92A}
+.chip img{width:100%;height:100%;object-fit:cover}
+.p3{position:absolute;width:0;height:0}
+.r3{position:absolute;left:0;top:0;transform-style:preserve-3d}
+.face{position:absolute;left:0;top:0;overflow:hidden}
+.shade{position:absolute;inset:0}
+.pk{position:absolute;left:0;width:100%;text-align:center;font-family:Rozha}
+.shadow{position:absolute;border-radius:50%;background:radial-gradient(closest-side,rgba(42,22,12,.35),rgba(42,22,12,0))}
+</style></head>
+<body><div id="stage"></div>
+<script src="lib/figures.js"></script><script src="lib/sets.js"></script><script src="art.js"></script><script src="reel.js"></script>
+<script>
+(async () => {
+  try { const r = await fetch('photos/credits.json'); if (r.ok) { const list = await r.json(); const m = {}; for (const p of list) m[p.key] = p; Reel.setPhotos(m); } } catch (e) {}
+  const q = new URLSearchParams(location.search);
+  await document.fonts.load('100px Rozha'); await document.fonts.load('100px Tiro'); await document.fonts.load('20px DMM'); await document.fonts.load('20px Insta');
+  await Art.init();
+  if (q.get('render')) { Reel.renderAt(0); window.__ready = true; return; }
+  const st = document.getElementById('stage');
+  const fit = () => { st.style.transform = `scale(${Math.min(innerWidth / 1920, innerHeight / 1080)})`; }; fit(); addEventListener('resize', fit);
+  const t0 = performance.now() - (Number(q.get('t')) || 0) * 1000; const loop = () => { Reel.renderAt(((performance.now() - t0) / 1000) % Reel.duration); requestAnimationFrame(loop); }; loop();
+  window.__ready = true;
+})();
+</script></body></html>
