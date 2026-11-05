@@ -71,7 +71,7 @@
     {
      "n": 120,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust"
@@ -137,7 +137,7 @@
     {
      "n": 40,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "embers"
@@ -322,7 +322,7 @@
     {
      "n": 80,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust"
@@ -420,7 +420,7 @@
     {
      "n": 80,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust",
@@ -486,7 +486,7 @@
     {
      "n": 60,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "embers"

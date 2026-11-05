@@ -62,7 +62,7 @@
     {
      "n": 120,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust"
@@ -319,7 +319,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -361,7 +361,7 @@
     {
      "n": 60,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "sparkle",
@@ -493,7 +493,7 @@
     {
      "n": "fx_wheel",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "wheel",
@@ -624,7 +624,7 @@
     {
      "n": "fx_glow",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "glow",
@@ -686,19 +686,39 @@
      "b": "add"
     },
     {
+     "n": "arms",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvaArms",
+     "args": {
+      "mv": {
+       "s": [
+        0.6,
+        1.0
+       ],
+       "t": [
+        0,
+        5
+       ],
+       "ax": 800,
+       "ay": 480,
+       "ease": "out"
+      }
+     }
+    },
+    {
      "n": "form",
      "k": "plate",
      "d": 1.0,
      "draw": "vishvarupa",
      "args": {
-      "mv": null,
       "stage": 1
      }
     },
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -890,7 +910,7 @@
     {
      "n": 140,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "embers",
@@ -902,7 +922,7 @@
     {
      "n": "fx_glow",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "glow",
@@ -982,6 +1002,18 @@
      "d": 0.6,
      "set": "cosmos",
      "galaxies": 4
+    },
+    {
+     "n": "armsfade",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvaArms",
+     "args": {
+      "t": [
+       0,
+       5.0
+      ]
+     }
     },
     {
      "n": "formfade",
@@ -1095,7 +1127,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",

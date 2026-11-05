@@ -195,7 +195,7 @@
     {
      "n": 50,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "embers",
@@ -419,7 +419,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -586,7 +586,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -700,7 +700,7 @@
     {
      "n": 70,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "embers"

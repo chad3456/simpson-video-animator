@@ -556,7 +556,7 @@
     {
      "n": 80,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust",
@@ -614,7 +614,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -800,7 +800,7 @@
     {
      "n": 60,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "petals"

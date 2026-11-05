@@ -52,7 +52,7 @@
     {
      "n": 90,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "sparkle",
@@ -147,7 +147,7 @@
     {
      "n": 70,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "sparkle",
@@ -341,7 +341,7 @@
     {
      "n": 60,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "sparkle",
@@ -410,7 +410,7 @@
     {
      "n": 60,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust",
@@ -495,7 +495,7 @@
     {
      "n": 50,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "sparkle",
@@ -644,7 +644,7 @@
     {
      "n": 180,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rain"
@@ -706,7 +706,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -834,7 +834,7 @@
     {
      "n": 50,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust",

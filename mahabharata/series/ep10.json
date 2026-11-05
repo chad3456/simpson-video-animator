@@ -73,7 +73,7 @@
     {
      "n": 100,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust"
@@ -336,7 +336,7 @@
     {
      "n": 80,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "dust"
@@ -610,7 +610,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -694,7 +694,7 @@
     {
      "n": 50,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "petals"
@@ -801,7 +801,7 @@
     {
      "n": 200,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "snow"
@@ -938,7 +938,7 @@
     {
      "n": "fx_rays",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "rays",
@@ -980,7 +980,7 @@
     {
      "n": 90,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "petals"
@@ -1036,7 +1036,7 @@
     {
      "n": "fx_wheel",
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "wheel",
@@ -1051,7 +1051,7 @@
     {
      "n": 120,
      "k": "anim",
-     "every": 2,
+     "every": 3,
      "d": 1.0,
      "fx": {
       "kind": "stars"

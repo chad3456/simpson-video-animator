@@ -88,51 +88,61 @@ PIECES.dog = (P, t, a) => { const x = a.x || 700, y = a.y || 860, s = (a.s || 1)
 
 // ---------- the Vishvarupa ----------
 PIECES.thousandSuns = (P, t, a) => { const r = mulberry(31); for (let i = 0; i < 60; i++) { const t0 = r() * 8, x = r() * 1600, y = r() * 900, k = clamp01((t - t0) / 1.5); if (k <= 0) continue; const R0 = (20 + r() * 60) * ease(k); P.dot(x, y, R0 * 0.25, '#fff8e0', 255); P.wash(circlePts(x, y, R0, 20), '#ffd890', 70, 0.04, 0.3, 0.2); } };
-PIECES.cosmicHalo = (P, t, a) => { const x = 800, y = 400; for (let i = 0; i < 6; i++) { const R = 260 + i * 70, rot = t * (i % 2 ? 9 : -7) * (1 + i * 0.2); P.line(arcPts(x, y, R, 0, 360, 96), i % 2 ? '#ffe08a' : '#c0a0ff', 1.6, 'gold', 0.5); const n = 12 + i * 6; for (let q = 0; q < n; q++) { const an = (rot + q * 360 / n) * D2R; P.dot(x + Math.cos(an) * R, y + Math.sin(an) * R, 2.6 + (q % 3), i % 2 ? '#fff0b0' : '#d8c0ff', 220); } } for (let i = 0; i < 40; i++) { const an = (t * 4 + i * 9) * D2R, L = 560 + 60 * Math.sin(t * 2 + i); P.line([[x + Math.cos(an) * 220, y + Math.sin(an) * 220], [x + Math.cos(an) * L, y + Math.sin(an) * L]], i % 2 ? '#ff9a40' : '#ffd060', 1.6, 'dry', 0); } };
-PIECES.vishvaArms = (P, t, a) => { // a wheel of arms behind the form, each holding a weapon or emblem
-  P.solid = true; P.noSilhouette(); const skin = '#3a6cb4', x = 800, y = 560, items = ['chakra', 'conch', 'mace', 'lotus', 'bow', 'sword', 'fire', 'chakra', 'lotus', 'conch', 'mace', 'bow'];
-  for (let side = -1; side <= 1; side += 2) for (let i = 0; i < 9; i++) {
-    const ang = (-170 + i * 18) * D2R, dir = [Math.cos(ang) * side * -1, Math.sin(ang)], sh = [x + side * 140, y - 150];
-    const el = [sh[0] + dir[0] * 190, sh[1] + dir[1] * 150], wr = [el[0] + dir[0] * 170 + side * 10, el[1] + dir[1] * 120 - 30];
-    P.shape(capsule(sh, el, 30, 24), shade(skin, -0.1 + i * 0.02), 235, INK, 1.3); P.shape(capsule(el, wr, 24, 18), shade(skin, -0.05 + i * 0.02), 235, INK, 1.3);
-    P.line([lerp2(el, wr, 0.85), lerp2(el, wr, 0.9)], GOLD, 6, 'gold'); P.line([lerp2(sh, el, 0.4), lerp2(sh, el, 0.45)], GOLD, 7, 'gold');
-    P.circle(wr[0], wr[1], 22, skin, 240, INK, 1.2);
-    const it = items[(i + (side > 0 ? 3 : 0)) % items.length];
-    if (it === 'chakra') { P.circle(wr[0], wr[1] - 44, 38, GOLD2, 245, '#7a4a10', 1.4); for (let q = 0; q < 12; q++) { const aa = q * 30 * D2R; P.line([[wr[0], wr[1] - 44], [wr[0] + Math.cos(aa) * 36, wr[1] - 44 + Math.sin(aa) * 36]], '#7a4a10', 1.4, 'ink', 0); } P.dot(wr[0], wr[1] - 44, 8, '#b3202a'); }
-    if (it === 'conch') P.shape(chaikin(circlePts(wr[0], wr[1] - 34, 32, 14, 1.3, 0.8), 1), '#f4efe0', 245, INK, 1.2);
-    if (it === 'mace') { P.line([wr, [wr[0], wr[1] - 150]], '#5a3416', 5, 'ink', 0); P.circle(wr[0], wr[1] - 160, 34, GOLD, 245, INK, 1.4); }
-    if (it === 'lotus') lotus(P, wr[0], wr[1] - 20, 40, '#f08aa0');
-    if (it === 'bow') P.line(arcPts(wr[0], wr[1], 110, -150, -30, 16), '#5a3416', 4, 'ink', 0.5);
-    if (it === 'sword') { P.shape([[wr[0] - 6, wr[1]], [wr[0] + 6, wr[1]], [wr[0] + 4, wr[1] - 170], [wr[0], wr[1] - 190], [wr[0] - 4, wr[1] - 170]], '#e8e8e8', 245, INK, 1); }
-    if (it === 'fire') { flames(P, wr[0], wr[1] - 10, 60, 90, 0); }
+PIECES.cosmicHalo = (P, t, a) => { const x = 800, y = 420; for (let i = 0; i < 6; i++) { const R = 330 + i * 70, rot = t * (i % 2 ? 9 : -7) * (1 + i * 0.2); P.line(arcPts(x, y, R, 0, 360, 96), i % 2 ? '#ffe08a' : '#c0a0ff', 1.6, 'gold', 0.5); const n = 12 + i * 6; for (let q = 0; q < n; q++) { const an = (rot + q * 360 / n) * D2R; P.dot(x + Math.cos(an) * R, y + Math.sin(an) * R, 2.6 + (q % 3), i % 2 ? '#fff0b0' : '#d8c0ff', 220); } } for (let i = 0; i < 40; i++) { const an = (t * 4 + i * 9) * D2R, L = 560 + 60 * Math.sin(t * 2 + i); P.line([[x + Math.cos(an) * 220, y + Math.sin(an) * 220], [x + Math.cos(an) * L, y + Math.sin(an) * L]], i % 2 ? '#ff9a40' : '#ffd060', 1.6, 'dry', 0); } };
+PIECES.vishvaArms = (P, t, a) => { // a peacock-wheel of arms fanning out from the shoulders, each holding a weapon or emblem
+  P.solid = true; P.noSilhouette(); const skin = '#3a6cb4', items = ['chakra', 'conch', 'mace', 'lotus', 'bow', 'sword', 'fire', 'chakra', 'lotus', 'conch', 'mace', 'bow'];
+  for (let side = -1; side <= 1; side += 2) for (let i = 8; i >= 0; i--) {
+    const ang = (22 + i * 17) * D2R, dir = [side * Math.sin(ang), -Math.cos(ang)];
+    const sh = [800 + side * 190, 480], up = 175 + (i % 2) * 25, fo = 150;
+    const el = [sh[0] + dir[0] * up, sh[1] + dir[1] * up];
+    const a2 = ang - 0.45, d2 = [side * Math.sin(a2), -Math.cos(a2)];
+    const wr = [el[0] + d2[0] * fo, el[1] + d2[1] * fo];
+    const tone = shade(skin, -0.18 + i * 0.025);
+    P.shape(capsule(sh, el, 30, 25), tone, 240, INK, 1.3); P.shape(capsule(el, wr, 25, 19), tone, 240, INK, 1.3);
+    P.line([lerp2(sh, el, 0.35), lerp2(sh, el, 0.4)], GOLD, 7, 'gold'); P.line([lerp2(el, wr, 0.82), lerp2(el, wr, 0.88)], GOLD, 6, 'gold');
+    P.circle(wr[0], wr[1], 21, tone, 245, INK, 1.2);
+    const h = [wr[0] + d2[0] * 46, wr[1] + d2[1] * 46], it = items[(i + (side > 0 ? 3 : 0)) % items.length];
+    if (it === 'chakra') { P.circle(h[0], h[1], 34, GOLD2, 248, '#7a4a10', 1.4); for (let q = 0; q < 12; q++) { const aa = q * 30 * D2R; P.line([h, [h[0] + Math.cos(aa) * 32, h[1] + Math.sin(aa) * 32]], '#7a4a10', 1.4, 'ink', 0); } P.dot(h[0], h[1], 7, '#b3202a'); }
+    if (it === 'conch') P.shape(chaikin(circlePts(h[0], h[1], 28, 14, 1.3, 0.8), 1), '#f4efe0', 248, INK, 1.2);
+    if (it === 'mace') { const e = [wr[0] + d2[0] * 130, wr[1] + d2[1] * 130]; P.line([wr, e], '#5a3416', 5, 'ink', 0); P.circle(e[0], e[1], 30, GOLD, 248, INK, 1.4); }
+    if (it === 'lotus') lotus(P, h[0], h[1], 36, '#f08aa0');
+    if (it === 'bow') P.line(arcPts(wr[0], wr[1], 90, Math.atan2(d2[1], d2[0]) / D2R - 70, Math.atan2(d2[1], d2[0]) / D2R + 70, 16), '#5a3416', 4, 'ink', 0.5);
+    if (it === 'sword') { const e = [wr[0] + d2[0] * 170, wr[1] + d2[1] * 170]; P.shape([[wr[0] - 6, wr[1]], [wr[0] + 6, wr[1]], [e[0] + 4, e[1]], [e[0], e[1]], [e[0] - 4, e[1]]], '#e8e8e8', 245, INK, 1); P.line([wr, e], '#e8e8e8', 6, 'ink', 0); }
+    if (it === 'fire') flames(P, h[0], h[1] + 20, 50, 80, 0);
   }
   P.solid = false;
 };
 PIECES.vishvarupa = (P, t, a) => {
-  // the universal form: a colossal body whose chest opens onto the cosmos, a central face, a crown of eleven heads
-  P.solid = true; P.noSilhouette(); const skin = '#3a6cb4', x = 800, y = 560;
-  // aureole of flame behind
-  for (let i = 0; i < 44; i++) { const an = (-200 + i * (220 / 43)) * D2R, R0 = 330, R1 = 420 + (i % 2) * 60; P.shape([[x + Math.cos(an - 0.05) * R0, y - 140 + Math.sin(an - 0.05) * R0], [x + Math.cos(an) * R1, y - 140 + Math.sin(an) * R1], [x + Math.cos(an + 0.05) * R0, y - 140 + Math.sin(an + 0.05) * R0]], i % 2 ? '#f08a24' : '#fbd56a', 230, '#7a2a08', 1); }
-  // torso
-  const tor = chaikin([[x - 260, 920], [x - 250, y + 40], [x - 300, y - 150], [x - 200, y - 230], [x - 70, y - 250], [x + 70, y - 250], [x + 200, y - 230], [x + 300, y - 150], [x + 250, y + 40], [x + 260, 920]], 2);
-  P.shape(tor, skin, 240, INK, 1.8);
+  // the universal form: a colossal body whose chest opens onto the cosmos, a central face crowned with a ring of heads
+  P.solid = true; P.noSilhouette(); const skin = '#3a6cb4', X = 800, HY = 255, HR = 100;
+  // aureole of flame behind head and shoulders
+  for (let i = 0; i < 48; i++) { const an = (-210 + i * (240 / 47)) * D2R, R0 = 300, R1 = 380 + (i % 2) * 55, cx = X, cy = 400; P.shape([[cx + Math.cos(an - 0.05) * R0, cy + Math.sin(an - 0.05) * R0], [cx + Math.cos(an) * R1, cy + Math.sin(an) * R1], [cx + Math.cos(an + 0.05) * R0, cy + Math.sin(an + 0.05) * R0]], i % 2 ? '#f08a24' : '#fbd56a', 235, '#7a2a08', 1); }
+  P.line(arcPts(X, 400, 300, -210, 30, 60), GOLD, 4, 'gold', 0.5);
+  // ring of heads behind the central face
+  const heads = [[-200, 70, 52, '#5a8a5a'], [200, 70, 52, '#a8784e'], [-175, -40, 58, '#c99a5a'], [175, -40, 58, '#7d8fa8'], [-110, -120, 62, '#d0a27a'], [110, -120, 62, '#c8a07e']];
+  for (const [dx, dy, R0, sk] of heads) frontFace(P, X + dx, HY + dy, R0, { skin: sk, W: 0.72, crownH: 1.7, smile: 0.02, third: Math.abs(dx) > 190 });
+  // neck, shoulders, torso
+  const torso = chaikin([[X - 60, HY + 70], [X + 60, HY + 70], [X + 70, 450], [X + 230, 470], [X + 270, 560], [X + 200, 760], [X + 230, 940], [X - 230, 940], [X - 200, 760], [X - 270, 560], [X - 230, 470], [X - 70, 450]], 2);
+  P.flat(torso, shade(skin, -0.12));
+  P.shape(chaikin([[X - 60, HY + 70], [X + 60, HY + 70], [X + 70, 450], [X + 230, 470], [X + 270, 560], [X + 200, 760], [X + 230, 940], [X - 230, 940], [X - 200, 760], [X - 270, 560], [X - 230, 470], [X - 70, 450]], 2), skin, 245, INK, 1.8);
+  P.wash(chaikin([[X - 270, 560], [X - 180, 520], [X - 150, 760], [X - 200, 760]], 1), shade(skin, -0.3), 110, 0.03);
+  P.wash(chaikin([[X + 270, 560], [X + 180, 520], [X + 150, 760], [X + 200, 760]], 1), shade(skin, -0.3), 110, 0.03);
   // the chest is a window onto the universe
-  const win = chaikin(circlePts(x, y - 40, 170, 24, 1, 1.15), 1); P.shape(win, '#06041a', 250, GOLD, 3);
-  stars(P, 0, '#fff'); for (let i = 0; i < 90; i++) { const an = P.r(0, 6.28), rr = P.r(0, 160); P.dot(x + Math.cos(an) * rr, y - 40 + Math.sin(an) * rr * 1.1, P.r(0.8, 2.6), ['#fff8e0', '#c8d8ff', '#ffd0a0'][i % 3], 240); }
-  galaxy(P, x, y - 40, 110, '#d8c0ff', 3, 40);
-  // pitambara, garland, jewels
-  P.shape(chaikin([[x - 260, y + 140], [x + 260, y + 140], [x + 300, 920], [x - 300, 920]], 1), '#e9b52f', 245, INK, 1.6);
-  for (let i = 0; i < 5; i++) P.line([[x - 220 + i * 110, y + 150], [x - 240 + i * 120, 900]], '#b8862a', 1.2, 'ink', 0.4);
-  P.line([[x - 260, y + 140], [x, y + 160], [x + 260, y + 140]], GOLD, 10, 'gold', 0.4);
-  const gcols = ['#f2efe2', '#e04a6a', '#f2b23a', '#e9e0c0', '#c7362b']; for (let i = 0; i <= 40; i++) { const an = (10 + i * 160 / 40) * D2R; P.dot(x + Math.cos(an) * 250, y - 220 + Math.sin(an) * 370, 13, gcols[i % 5], 252); }
-  for (let i = 0; i < 3; i++) P.line(arcPts(x, y - 250, 120 + i * 30, 20, 160, 24), i === 1 ? '#f6f1e4' : GOLD, 7 - i, 'gold', 0.5);
-  // crown of heads: gods and beings on either side of the central face
-  const heads = [[-330, -470, 70, '#c99a5a'], [330, -470, 70, '#7d8fa8'], [-250, -560, 78, '#d0a27a'], [250, -560, 78, '#c8a07e'], [-150, -620, 82, '#b9814f'], [150, -620, 82, '#9a6440'], [-400, -380, 60, '#5a8a5a'], [400, -380, 60, '#a8784e']];
-  for (const [dx, dy, R0, sk] of heads) frontFace(P, x + dx, y + dy, R0, { skin: sk, W: 0.72, crownH: 1.9, smile: 0.02, third: Math.abs(dx) > 300 });
-  frontFace(P, x, y - 470, 130, { skin, W: 0.76, crownH: 2.6, smile: 0.045, sheen: '#9cc6ff' });
-  if (a.stage === 3) { /* the form gathers back into Krishna: painted the same, faded by the compositor */ }
+  const cy = 590; P.flat(chaikin(circlePts(X, cy, 125, 24, 1, 1.12), 1), '#06041a'); P.shape(chaikin(circlePts(X, cy, 125, 24, 1, 1.12), 1), '#06041a', 252, GOLD, 3.5);
+  for (let i = 0; i < 110; i++) { const an = P.r(0, 6.28), rr = Math.sqrt(P.r(0, 1)) * 118; P.dot(X + Math.cos(an) * rr, cy + Math.sin(an) * rr * 1.1, P.r(0.8, 2.4), ['#fff8e0', '#c8d8ff', '#ffd0a0'][i % 3], 240); }
+  galaxy(P, X, cy, 70, '#d8c0ff', 2, 26);
+  // jewels, garland, sacred thread, pitambara
+  for (let i = 0; i < 3; i++) P.line(arcPts(X, 440, 90 + i * 26, 25, 155, 24), i === 1 ? '#f6f1e4' : GOLD, 8 - i * 1.5, 'gold', 0.5);
+  const gcols = ['#f2efe2', '#e04a6a', '#f2b23a', '#e9e0c0', '#c7362b']; for (let i = 0; i <= 44; i++) { const an = (8 + i * 164 / 44) * D2R; P.dot(X + Math.cos(an) * 215, 450 + Math.sin(an) * 360, 12, gcols[i % 5], 252); }
+  P.flat(chaikin([[X - 210, 780], [X + 210, 780], [X + 250, 960], [X - 250, 960]], 1), '#e2a826');
+  P.shape(chaikin([[X - 210, 780], [X + 210, 780], [X + 250, 960], [X - 250, 960]], 1), '#e9b52f', 248, INK, 1.6);
+  P.line([[X - 210, 780], [X, 800], [X + 210, 780]], GOLD, 10, 'gold', 0.4);
+  // armlets on the two front shoulders
+  for (const sd of [-1, 1]) P.line([[X + sd * 245, 520], [X + sd * 262, 560]], GOLD, 9, 'gold', 0.3);
+  // central face
+  frontFace(P, X, HY, HR, { skin, W: 0.76, crownH: 2.0, smile: 0.045, sheen: '#9cc6ff' });
   P.solid = false;
 };
-PIECES.universeWithin = (P, t, a) => { const x = 800, y = 520; for (let i = 0; i < 70; i++) { const an = t * 0.5 + i * 0.37, rr = (i * 7 + t * 20) % 160; P.dot(x + Math.cos(an) * rr, y + Math.sin(an) * rr * 1.1, 1.5 + (i % 3), ['#fff8e0', '#c8d8ff', '#ffd0a0'][i % 3], 200); } for (let i = 0; i < 5; i++) { const an = t * 0.4 + i * 1.26, rr = 60 + i * 22; P.dot(x + Math.cos(an) * rr, y + Math.sin(an) * rr, 7 + i * 1.5, ['#f6c060', '#6ab0ff', '#e05a3a', '#a0e0a0', '#f0e0ff'][i], 230); } };
+PIECES.universeWithin = (P, t, a) => { const x = 800, y = 590; for (let i = 0; i < 70; i++) { const an = t * 0.5 + i * 0.37, rr = (i * 7 + t * 20) % 160; P.dot(x + Math.cos(an) * rr, y + Math.sin(an) * rr * 1.1, 1.5 + (i % 3), ['#fff8e0', '#c8d8ff', '#ffd0a0'][i % 3], 200); } for (let i = 0; i < 5; i++) { const an = t * 0.4 + i * 1.26, rr = 60 + i * 22; P.dot(x + Math.cos(an) * rr, y + Math.sin(an) * rr, 7 + i * 1.5, ['#f6c060', '#6ab0ff', '#e05a3a', '#a0e0a0', '#f0e0ff'][i], 230); } };
 PIECES.kalaFaces = (P, t, a) => { P.solid = true; frontFace(P, 800, 420, 220, { skin: '#2a4a8a', fierce: 1, third: 1, W: 0.8, crownH: 2.0, crownCol: '#c98a2a' }); for (const [dx, dy, R0] of [[-420, 60, 140], [420, 60, 140], [-700, 160, 100], [700, 160, 100]]) frontFace(P, 800 + dx, 420 + dy, R0, { skin: '#2a3a7a', fierce: 1, third: 1, W: 0.78, crownH: 1.8, crownCol: '#b0782a' }); P.solid = false; };
 PIECES.warriorStreams = (P, t, a) => { P.fast = true; const r = mulberry(23); const mouths = [[800, 610], [380, 600], [1220, 600], [100, 650], [1500, 650]]; for (let i = 0; i < 90; i++) { const m = mouths[i % mouths.length], ph = (r() + t * 0.18) % 1, sx = r() * 1600, sy = 900; const x = sx + (m[0] - sx) * ph, y = sy + (m[1] - sy) * ph, s = 26 * (1 - ph * 0.8); P.dot(x, y - s * 1.2, s * 0.32, '#160f19'); P.shape([[x - s * 0.3, y - s], [x + s * 0.3, y - s], [x + s * 0.2, y], [x - s * 0.2, y]], '#160f19', 255, null); P.line([[x + s * 0.3, y - s], [x + s * 0.5, y - s * 2]], '#160f19', 1.2, 'ink', 0); } };

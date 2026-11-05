@@ -14,7 +14,7 @@ def anim(n, every=2, add=True, d=1.0, **spec):
     L = dict(n=n, k='anim', every=every, d=d, **spec)
     if add: L['b'] = 'add'
     return L
-def fx(kind, every=2, d=1.0, n=None, **o):
+def fx(kind, every=3, d=1.0, n=None, **o):
     return anim(n or ('fx_' + kind), every, kind not in ('petals', 'leaves'), d, fx=dict(kind=kind, **o))
 def face(who, x=800, y=430, R=190, f=1, expr=None, rim=None, glow=None, n='face', d=1.0, **o):
     p = dict(who=who, x=x, y=y, R=R, f=f, **o)
@@ -457,7 +457,7 @@ EP(8, 'The Song of God', 'भगवद्गीता', 'Between two armies, tim
     cam=[[620, 470, 1.1], [1100, 440, 1.08]], amb='wind', sfx=[dict(n='swell', at=7.0)]),
   S('e8_vishva1', 'vishva', [
       ln('NAR', 'And Arjuna saw. If a thousand suns were to rise at once in the sky, their light would not equal that light.', 'और अर्जुन ने देखा। यदि आकाश में एक साथ हज़ार सूर्य उदय हों, तो भी उनका प्रकाश उस प्रकाश के बराबर न हो।', at=3.2)],
-    [bg(set='cosmos', galaxies=6), piece('suns', 'thousandSuns', k='anim', every=2, add=True), piece('form', 'vishvarupa', d=1.0, mv=None, stage=1), fx('rays', x=800, y=360, r0=200, r1=1100, col='#fff0c0', spin=3),
+    [bg(set='cosmos', galaxies=6), piece('suns', 'thousandSuns', k='anim', every=2, add=True), piece('arms', 'vishvaArms', d=1.0, mv=dict(s=[0.6, 1.0], t=[0, 5], ax=800, ay=480, ease='out')), piece('form', 'vishvarupa', d=1.0, stage=1), fx('rays', x=800, y=360, r0=200, r1=1100, col='#fff0c0', spin=3),
      figs('arjuna', [fig('arjuna', 800, 905, 150, 1, 'vow')], d=1.0, sil=True)],
     cam=[[800, 700, 1.6], [800, 440, 1.0]], amb='void', sfx=[dict(n='boom', at=0.2), dict(n='swell', at=0.4), dict(n='om', at=2.0)], tin='flash', min=14),
   S('e8_vishva2', 'vishva', [
@@ -471,7 +471,7 @@ EP(8, 'The Song of God', 'भगवद्गीता', 'Between two armies, tim
     text=[dict(t0=1.0, t1=7, en='kālo \'smi', hi='कालोऽस्मि', f='deva', sz=110, y=0.8, c='#ffcf6a')]),
   S('e8_bow', 'wonder', [
       ln('ARJUNA', 'Forgive me, Lord. I called you friend, I joked with you, not knowing who you were. Show me again your gentle form.', 'क्षमा करें, प्रभु। मैं आपको सखा कहता रहा, आपसे हँसी करता रहा, बिना जाने कि आप कौन हैं। मुझे फिर से अपना सौम्य रूप दिखाइए।')],
-    [bg(set='cosmos', galaxies=4), piece('formfade', 'vishvarupa', d=1.0, stage=3, t=[0, 6.0]), face('krishna', 800, 440, 200, 1, 'smile', rim=RIM_GOLD, glow=['#a0c8ff', 30, 0.4], halo=1, t=[5.5, 99]),
+    [bg(set='cosmos', galaxies=4), piece('armsfade', 'vishvaArms', d=1.0, t=[0, 5.0]), piece('formfade', 'vishvarupa', d=1.0, stage=3, t=[0, 6.0]), face('krishna', 800, 440, 200, 1, 'smile', rim=RIM_GOLD, glow=['#a0c8ff', 30, 0.4], halo=1, t=[5.5, 99]),
      figs('arjuna', [fig('arjuna', 380, 900, 420, 1, 'despair')], rim=RIM_GOLD)],
     cam=push(700, 470, 1.0, 1.06), amb='temple', sfx=[dict(n='descend', at=5.0), dict(n='flute', at=6.0, v=0.6)]),
   S('e8_rise', 'heroic', [
