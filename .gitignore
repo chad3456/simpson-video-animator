@@ -5,3 +5,5 @@ still-*.png
 .style-study/
 explainer/episodes/_*/
 __pycache__/
+mahabharata/build/
+mahabharata/engine/node_modules

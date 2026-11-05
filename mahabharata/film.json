@@ -1,0 +1,2101 @@
+{
+ "title": "Mahabharata: Dharma Above All Bonds",
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "cast": {
+  "NARRATOR": {
+   "voice": "bm_george",
+   "speed": 0.86,
+   "pitch": -1.5,
+   "fx": "storyteller"
+  },
+  "KRISHNA": {
+   "voice": "am_michael:2+bm_fable:1",
+   "speed": 0.84,
+   "pitch": -0.5,
+   "fx": "divine"
+  },
+  "KRISHNA_TIME": {
+   "voice": "am_onyx:2+am_michael:1",
+   "speed": 0.8,
+   "pitch": -3.5,
+   "fx": "divine_big"
+  },
+  "ARJUNA": {
+   "voice": "am_liam:2+am_adam:1",
+   "speed": 0.92,
+   "pitch": 0,
+   "fx": "room"
+  },
+  "DURYODHANA": {
+   "voice": "am_fenrir",
+   "speed": 0.86,
+   "pitch": -2,
+   "fx": "growl"
+  }
+ },
+ "shots": [
+  {
+   "id": "s01_ink",
+   "min": 7,
+   "music": "open",
+   "tin": "fade",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Long ago, on a field called Kurukshetra, one family went to war with itself.",
+     "at": 1.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bloom",
+     "k": "anim",
+     "b": "add",
+     "every": 3
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.12
+    ]
+   ],
+   "text": [
+    {
+     "s": "धर्मक्षेत्रे कुरुक्षेत्रे",
+     "f": "deva",
+     "sz": 54,
+     "x": 0.5,
+     "y": 0.44,
+     "c": "#f3cf6a",
+     "t0": 1.0,
+     "t1": 6.6
+    },
+    {
+     "s": "on the field of dharma, the field of the Kurus",
+     "f": "ital",
+     "sz": 30,
+     "x": 0.5,
+     "y": 0.55,
+     "c": "#e9dcc0",
+     "t0": 1.8,
+     "t1": 6.6
+    }
+   ],
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s02_field",
+   "min": 9,
+   "music": "open",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Two armies. One bloodline. Cousins and brothers, teachers and sons, facing each other across the dust.",
+     "at": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.85
+    },
+    {
+     "n": "dust",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.0,
+     "a": 0.7
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.02
+    ],
+    [
+     820,
+     520,
+     1.22
+    ]
+   ],
+   "g": {
+    "tint": "#3a1208",
+    "k": 0.08
+   },
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.3
+    },
+    {
+     "n": "wind",
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "id": "s03_title",
+   "min": 7.5,
+   "music": "title",
+   "tin": "flash",
+   "lines": [],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate"
+    },
+    {
+     "n": "rays",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "a": 0.85
+    },
+    {
+     "n": "swipe",
+     "k": "plate",
+     "wipe": [
+      0.3,
+      1.3
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.08
+    ],
+    [
+     800,
+     450,
+     1.0
+    ]
+   ],
+   "text": [
+    {
+     "s": "महाभारत",
+     "f": "deva",
+     "sz": 60,
+     "x": 0.5,
+     "y": 0.33,
+     "c": "#f3cf6a",
+     "t0": 0.9,
+     "t1": 7.3
+    },
+    {
+     "s": "MAHABHARATA",
+     "f": "deco",
+     "sz": 96,
+     "x": 0.5,
+     "y": 0.5,
+     "c": "#f6dd8a",
+     "t0": 0.5,
+     "t1": 7.3,
+     "fx": "track"
+    },
+    {
+     "s": "dharma above all bonds",
+     "f": "ital",
+     "sz": 36,
+     "x": 0.5,
+     "y": 0.64,
+     "c": "#efe4cb",
+     "t0": 1.8,
+     "t1": 7.3
+    }
+   ],
+   "sfx": [
+    {
+     "n": "boom",
+     "at": 0.0
+    },
+    {
+     "n": "conch",
+     "at": 0.4
+    },
+    {
+     "n": "swell",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "id": "h_bhishma",
+   "min": 7,
+   "music": "heroes",
+   "tin": "flash",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Bhishma, son of the river Ganga. He swore never to marry and never to rule, and to guard the throne until his last breath.",
+     "at": 0.9
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "bolt",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#bfe0ff",
+      -10,
+      -6,
+      1.2
+     ],
+     "mv": {
+      "dy": [
+       70,
+       0
+      ],
+      "s": [
+       0.96,
+       1.0
+      ],
+      "ax": 760,
+      "ay": 880,
+      "t": [
+       0,
+       1.2
+      ]
+     }
+    },
+    {
+     "n": "spray",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.15,
+     "a": 0.8
+    }
+   ],
+   "cam": [
+    [
+     760,
+     470,
+     1.05
+    ],
+    [
+     740,
+     400,
+     1.15
+    ]
+   ],
+   "name": {
+    "en": "BHISHMA",
+    "hi": "भीष्म",
+    "ep": "the terrible vow",
+    "side": 1
+   },
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 0.2
+    },
+    {
+     "n": "splash",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "id": "h_yudhi",
+   "min": 6.5,
+   "music": "heroes",
+   "tin": "cut",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Yudhishthira, eldest of the five Pandava brothers. Son of Dharma, the man who would not lie.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "wheel",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 0.6,
+     "a": 0.8
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#ffe7a8",
+      9,
+      -6,
+      1.0
+     ],
+     "mv": {
+      "dx": [
+       -60,
+       0
+      ],
+      "t": [
+       0,
+       1.4
+      ]
+     }
+    },
+    {
+     "n": "motes",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.2,
+     "a": 0.7
+    }
+   ],
+   "cam": [
+    [
+     820,
+     430,
+     1.05
+    ],
+    [
+     800,
+     410,
+     1.15
+    ]
+   ],
+   "name": {
+    "en": "YUDHISHTHIRA",
+    "hi": "युधिष्ठिर",
+    "ep": "son of dharma",
+    "side": -1
+   },
+   "sfx": [
+    {
+     "n": "bell",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": "h_bhima",
+   "min": 6.5,
+   "music": "heroes",
+   "tin": "flash",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Bhima, son of the Wind, with the strength of ten thousand elephants.",
+     "at": 0.7
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#ffd3a0",
+      10,
+      -4,
+      1.1
+     ],
+     "mv": {
+      "s": [
+       1.12,
+       1.0
+      ],
+      "ax": 800,
+      "ay": 880,
+      "t": [
+       0,
+       0.5
+      ]
+     }
+    },
+    {
+     "n": "wind",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.1,
+     "a": 0.85
+    }
+   ],
+   "cam": [
+    [
+     800,
+     430,
+     1.15
+    ],
+    [
+     800,
+     420,
+     1.04
+    ]
+   ],
+   "shake": [
+    [
+     0.45,
+     9
+    ]
+   ],
+   "name": {
+    "en": "BHIMA",
+    "hi": "भीम",
+    "ep": "son of the wind",
+    "side": 1
+   },
+   "sfx": [
+    {
+     "n": "boom",
+     "at": 0.4
+    },
+    {
+     "n": "wind",
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "id": "h_arjuna",
+   "min": 7.5,
+   "music": "heroes",
+   "tin": "cut",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Arjuna, son of Indra. The archer who saw nothing but the eye of the bird.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#9fe8ff",
+      10,
+      -5,
+      1.1
+     ],
+     "t": [
+      0,
+      3.6
+     ]
+    },
+    {
+     "n": "hero2",
+     "k": "plate",
+     "rim": [
+      "#9fe8ff",
+      10,
+      -5,
+      1.1
+     ],
+     "t": [
+      3.6,
+      99
+     ]
+    },
+    {
+     "n": "arrow",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 1.0
+    }
+   ],
+   "cam": [
+    [
+     620,
+     420,
+     1.2
+    ],
+    [
+     900,
+     420,
+     1.05
+    ]
+   ],
+   "name": {
+    "en": "ARJUNA",
+    "hi": "अर्जुन",
+    "ep": "the peerless archer",
+    "side": 1
+   },
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 3.6
+    },
+    {
+     "n": "crack",
+     "at": 4.1
+    }
+   ]
+  },
+  {
+   "id": "h_draupadi",
+   "min": 7,
+   "music": "heroes",
+   "tin": "flash",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Draupadi, born from the sacrificial fire. Queen of the Pandavas, who would never let a wrong be forgotten.",
+     "at": 0.7
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "fireback",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 0.85
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#ffb070",
+      0,
+      -8,
+      1.3
+     ],
+     "mv": {
+      "dy": [
+       160,
+       0
+      ],
+      "ax": 800,
+      "ay": 880,
+      "t": [
+       0,
+       2.2
+      ]
+     }
+    },
+    {
+     "n": "embers",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.15
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.15
+    ],
+    [
+     800,
+     400,
+     1.22
+    ]
+   ],
+   "name": {
+    "en": "DRAUPADI",
+    "hi": "द्रौपदी",
+    "ep": "born of fire",
+    "side": -1
+   },
+   "sfx": [
+    {
+     "n": "fire",
+     "at": 0.0
+    },
+    {
+     "n": "swell",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": "h_karna",
+   "min": 7,
+   "music": "heroes",
+   "tin": "cut",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Karna, son of the Sun, born in golden armour. The most generous of men, bound by loyalty to the wrong side.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.5
+    },
+    {
+     "n": "sunrays",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 0.5,
+     "a": 0.9
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#fff0b0",
+      0,
+      -9,
+      1.5
+     ],
+     "glow": [
+      "#f6c94a",
+      26,
+      0.25
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     440,
+     1.2
+    ],
+    [
+     800,
+     430,
+     1.08
+    ]
+   ],
+   "name": {
+    "en": "KARNA",
+    "hi": "कर्ण",
+    "ep": "son of the sun",
+    "side": 1
+   },
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 0.1
+    },
+    {
+     "n": "bells",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "id": "h_duryo",
+   "min": 7,
+   "music": "villain",
+   "tin": "flash",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Duryodhana, eldest of the hundred Kaurava princes, who wanted the whole kingdom and would share none of it.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "bolt",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#ff6a4a",
+      -10,
+      -5,
+      1.2
+     ],
+     "mv": {
+      "dx": [
+       90,
+       0
+      ],
+      "t": [
+       0,
+       1.6
+      ]
+     }
+    }
+   ],
+   "cam": [
+    [
+     780,
+     420,
+     1.0
+    ],
+    [
+     790,
+     430,
+     1.1
+    ]
+   ],
+   "g": {
+    "tint": "#400808",
+    "k": 0.12
+   },
+   "name": {
+    "en": "DURYODHANA",
+    "hi": "दुर्योधन",
+    "ep": "the prince who would not yield",
+    "side": -1
+   },
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 0.1
+    },
+    {
+     "n": "rumble",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "id": "h_krishna",
+   "min": 8,
+   "music": "krishna",
+   "tin": "fade",
+   "hero": 1,
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "And Krishna. Cowherd, prince and friend. In the war to come, he swore he would not lift a single weapon.",
+     "at": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "glow": [
+      "#7fb0ff",
+      30,
+      0.35
+     ],
+     "rim": [
+      "#dff0ff",
+      8,
+      -5,
+      0.9
+     ]
+    },
+    {
+     "n": "flies",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.15
+    }
+   ],
+   "cam": [
+    [
+     820,
+     420,
+     1.0
+    ],
+    [
+     840,
+     400,
+     1.12
+    ]
+   ],
+   "name": {
+    "en": "KRISHNA",
+    "hi": "कृष्ण",
+    "ep": "the charioteer",
+    "side": -1
+   },
+   "sfx": [
+    {
+     "n": "veena",
+     "at": 0.3
+    }
+   ]
+  },
+  {
+   "id": "e_dice",
+   "min": 9,
+   "music": "tension",
+   "tin": "fade",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Then came the game of dice. Shakuni's dice could not lose. Yudhishthira staked his kingdom, his brothers, himself, and at last, Draupadi.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.8
+    },
+    {
+     "n": "players",
+     "k": "plate",
+     "d": 0.95
+    },
+    {
+     "n": "dice",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     560,
+     1.4
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "drumroll",
+     "at": 1.0
+    },
+    {
+     "n": "clash",
+     "at": 3.0
+    },
+    {
+     "n": "clash",
+     "at": 6.0
+    },
+    {
+     "n": "heartbeat",
+     "at": 7.0
+    }
+   ]
+  },
+  {
+   "id": "e_sari",
+   "min": 9.5,
+   "music": "sorrow",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "They dragged her into the court to shame her. The elders looked away. She called out to Krishna, and her sari had no end.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.8
+    },
+    {
+     "n": "people",
+     "k": "plate",
+     "d": 0.95
+    },
+    {
+     "n": "sari",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0
+    },
+    {
+     "n": "light",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 1.0
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.1
+    ],
+    [
+     800,
+     380,
+     1.3
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 5.0
+    },
+    {
+     "n": "magic",
+     "at": 5.6
+    }
+   ]
+  },
+  {
+   "id": "e_exile",
+   "min": 8,
+   "music": "exile",
+   "tin": "fade",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Thirteen years of exile in the forest. When they came back, they asked for only five villages.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "walkers",
+     "k": "plate",
+     "d": 1.0,
+     "mv": {
+      "dx": [
+       -140,
+       140
+      ],
+      "t": [
+       0,
+       9
+      ]
+     }
+    },
+    {
+     "n": "leaves",
+     "k": "anim",
+     "every": 3,
+     "d": 1.2
+    }
+   ],
+   "cam": [
+    [
+     760,
+     470,
+     1.15
+    ],
+    [
+     860,
+     470,
+     1.15
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "wind",
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "id": "e_refuse",
+   "min": 6.5,
+   "music": "villain",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Krishna himself went to ask for peace. Duryodhana answered:",
+     "at": 0.4
+    },
+    {
+     "who": "DURYODHANA",
+     "text": "Not even as much land as the point of a needle.",
+     "gap": 0.3
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.85
+    },
+    {
+     "n": "court",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#ffc080",
+      0,
+      -6,
+      0.6
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.05
+    ],
+    [
+     980,
+     420,
+     1.35
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "rumble",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "e_armies",
+   "min": 8,
+   "music": "march",
+   "tin": "flash",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "So eighteen armies gathered at Kurukshetra. And the conches sounded.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.75
+    },
+    {
+     "n": "host",
+     "k": "plate",
+     "d": 1.0
+    },
+    {
+     "n": "dust",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.15,
+     "a": 0.8
+    }
+   ],
+   "cam": [
+    [
+     650,
+     470,
+     1.25
+    ],
+    [
+     950,
+     470,
+     1.25
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 3.6
+    },
+    {
+     "n": "conch",
+     "at": 4.3
+    },
+    {
+     "n": "drumroll",
+     "at": 4.8
+    }
+   ]
+  },
+  {
+   "id": "g_chariot",
+   "min": 6.5,
+   "music": "dawn",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "text": "Krishna, take my chariot between the two armies. Let me see whom I must fight.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "car",
+     "k": "plate",
+     "d": 1.0,
+     "mv": {
+      "dx": [
+       -220,
+       0
+      ],
+      "t": [
+       0,
+       6
+      ],
+      "ease": "out"
+     }
+    },
+    {
+     "n": "horses",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "mv": {
+      "dx": [
+       -220,
+       0
+      ],
+      "t": [
+       0,
+       6
+      ],
+      "ease": "out"
+     }
+    },
+    {
+     "n": "dust",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.1,
+     "a": 0.6
+    }
+   ],
+   "cam": [
+    [
+     760,
+     480,
+     1.12
+    ],
+    [
+     800,
+     470,
+     1.18
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "rumble",
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "id": "g_despair",
+   "min": 9,
+   "music": "sorrow",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "text": "My grandfather. My teacher. My own blood. How can I kill them? I will not fight, Krishna.",
+     "at": 0.7
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#ffd8a0",
+      -8,
+      -5,
+      0.7
+     ]
+    },
+    {
+     "n": "bow",
+     "k": "plate",
+     "mv": {
+      "dy": [
+       0,
+       220
+      ],
+      "r": [
+       0,
+       50
+      ],
+      "ax": 520,
+      "ay": 560,
+      "t": [
+       5.4,
+       6.4
+      ],
+      "ease": "in"
+     }
+    }
+   ],
+   "cam": [
+    [
+     700,
+     440,
+     1.3
+    ],
+    [
+     640,
+     420,
+     1.45
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 1.5
+    },
+    {
+     "n": "clash",
+     "at": 6.3
+    }
+   ]
+  },
+  {
+   "id": "g_krishna",
+   "min": 10,
+   "music": "gita",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "text": "Arjuna. The soul is never born, and it never dies. You have a right to your action, but never to its fruits. Stand up, and do your duty.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "halo",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 0.9,
+     "a": 0.9
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "glow": [
+      "#8fb8ff",
+      26,
+      0.28
+     ],
+     "rim": [
+      "#fff2c0",
+      9,
+      -6,
+      0.9
+     ]
+    }
+   ],
+   "cam": [
+    [
+     860,
+     430,
+     1.2
+    ],
+    [
+     880,
+     400,
+     1.38
+    ]
+   ],
+   "text": [
+    {
+     "s": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन",
+     "f": "deva",
+     "sz": 40,
+     "x": 0.5,
+     "y": 0.86,
+     "c": "#f3cf6a",
+     "t0": 3.4,
+     "t1": 9.6
+    }
+   ],
+   "sfx": [
+    {
+     "n": "om",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "id": "g_vishva1",
+   "min": 10,
+   "music": "cosmic",
+   "tin": "flash",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Then Krishna showed Arjuna his true form. The light of a thousand suns at once. Every god, every world, every age, within one body.",
+     "at": 1.4
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.5
+    },
+    {
+     "n": "cosmos",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 0.6,
+     "a": 0.9
+    },
+    {
+     "n": "chakra",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 0.9
+    },
+    {
+     "n": "form",
+     "k": "plate",
+     "d": 0.9,
+     "glow": [
+      "#ffd27a",
+      40,
+      0.45
+     ],
+     "mv": {
+      "s": [
+       0.55,
+       1.0
+      ],
+      "a": [
+       0,
+       1
+      ],
+      "ax": 800,
+      "ay": 600,
+      "t": [
+       0,
+       3.5
+      ],
+      "ease": "out"
+     }
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.25
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.45
+    ],
+    [
+     800,
+     430,
+     1.0
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "boom",
+     "at": 0.0
+    },
+    {
+     "n": "swell",
+     "at": 0.4
+    },
+    {
+     "n": "om",
+     "at": 1.2
+    },
+    {
+     "n": "bells",
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "g_vishva2",
+   "min": 9,
+   "music": "cosmic",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "KRISHNA_TIME",
+     "text": "I am Time, the destroyer of worlds. These warriors are already slain by me. Be only my instrument, Arjuna.",
+     "at": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "streams",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 0.9
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "glow": [
+      "#ff9a40",
+      34,
+      0.4
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     400,
+     1.0
+    ],
+    [
+     800,
+     380,
+     1.3
+    ]
+   ],
+   "shake": [
+    [
+     0.6,
+     4
+    ],
+    [
+     3.0,
+     3
+    ]
+   ],
+   "text": [
+    {
+     "s": "कालोऽस्मि",
+     "f": "deva",
+     "sz": 96,
+     "x": 0.5,
+     "y": 0.8,
+     "c": "#ffcf7a",
+     "t0": 1.0,
+     "t1": 8.6
+    }
+   ],
+   "sfx": [
+    {
+     "n": "rumble",
+     "at": 0.0
+    },
+    {
+     "n": "gong",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "g_rise",
+   "min": 5,
+   "music": "battle",
+   "tin": "flash",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "And Arjuna lifted his bow.",
+     "at": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "rim": [
+      "#ffe0a0",
+      10,
+      -6,
+      1.2
+     ],
+     "t": [
+      0,
+      2.2
+     ]
+    },
+    {
+     "n": "hero2",
+     "k": "plate",
+     "rim": [
+      "#ffe0a0",
+      10,
+      -6,
+      1.4
+     ],
+     "t": [
+      2.2,
+      99
+     ]
+    },
+    {
+     "n": "dust",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.15
+    }
+   ],
+   "cam": [
+    [
+     760,
+     470,
+     1.3
+    ],
+    [
+     760,
+     430,
+     1.12
+    ]
+   ],
+   "shake": [
+    [
+     2.25,
+     8
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 2.2
+    },
+    {
+     "n": "boom",
+     "at": 2.2
+    }
+   ]
+  },
+  {
+   "id": "w_bhishma",
+   "min": 6.5,
+   "music": "battle",
+   "tin": "flash",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "For eighteen days the field burned. Bhishma fell, and lay upon a bed of arrows.",
+     "at": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "bed",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#ffb070",
+      0,
+      -6,
+      0.8
+     ]
+    },
+    {
+     "n": "embers",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.15
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.2
+    ],
+    [
+     800,
+     540,
+     1.32
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 0.2
+    },
+    {
+     "n": "fire",
+     "at": 0.0
+    }
+   ]
+  },
+  {
+   "id": "w_abhi",
+   "min": 6,
+   "music": "battle",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Young Abhimanyu broke into the wheel formation, and never came out.",
+     "at": 0.4
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "ring",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0
+    },
+    {
+     "n": "boy",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#ffe0a0",
+      0,
+      -6,
+      1.2
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     480,
+     1.25
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 1.0
+    },
+    {
+     "n": "clash",
+     "at": 2.4
+    },
+    {
+     "n": "heartbeat",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "id": "w_karna",
+   "min": 6,
+   "music": "battle",
+   "tin": "cut",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Karna's chariot wheel sank into the earth, and the Sun's son fell.",
+     "at": 0.4
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "scene",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#fff0b0",
+      0,
+      -7,
+      1.0
+     ],
+     "mv": {
+      "dy": [
+       0,
+       30
+      ],
+      "r": [
+       0,
+       4
+      ],
+      "ax": 700,
+      "ay": 820,
+      "t": [
+       0,
+       6
+      ]
+     }
+    },
+    {
+     "n": "streak",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 1.0
+    }
+   ],
+   "cam": [
+    [
+     760,
+     480,
+     1.15
+    ],
+    [
+     740,
+     500,
+     1.3
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "rumble",
+     "at": 0.3
+    },
+    {
+     "n": "whoosh",
+     "at": 4.0
+    },
+    {
+     "n": "crack",
+     "at": 4.4
+    }
+   ]
+  },
+  {
+   "id": "w_mace",
+   "min": 6.5,
+   "music": "battle",
+   "tin": "flash",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "And on the last day, by the lake, Bhima's mace brought down Duryodhana.",
+     "at": 0.4
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.7
+    },
+    {
+     "n": "duel",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#ff9a60",
+      0,
+      -7,
+      1.0
+     ],
+     "t": [
+      0,
+      3.5
+     ]
+    },
+    {
+     "n": "duel2",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#ff9a60",
+      0,
+      -7,
+      1.0
+     ],
+     "t": [
+      3.5,
+      99
+     ]
+    },
+    {
+     "n": "clash",
+     "k": "anim",
+     "b": "add",
+     "every": 2,
+     "d": 1.0
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.3
+    ],
+    [
+     800,
+     460,
+     1.12
+    ]
+   ],
+   "shake": [
+    [
+     3.5,
+     12
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 3.2
+    },
+    {
+     "n": "boom",
+     "at": 3.5
+    },
+    {
+     "n": "clash",
+     "at": 3.5
+    }
+   ]
+  },
+  {
+   "id": "f_dawn",
+   "min": 10,
+   "music": "end",
+   "tin": "fade",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "The Pandavas won. Not because the bonds of blood did not matter, but because truth mattered more.",
+     "at": 1.2
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6
+    },
+    {
+     "n": "field",
+     "k": "plate",
+     "d": 0.9
+    },
+    {
+     "n": "pair",
+     "k": "plate",
+     "d": 1.0,
+     "rim": [
+      "#ffe6b0",
+      6,
+      -6,
+      1.0
+     ]
+    },
+    {
+     "n": "motes",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "d": 1.2,
+     "a": 0.8
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.3
+    ],
+    [
+     800,
+     450,
+     1.05
+    ]
+   ],
+   "sfx": [
+    {
+     "n": "veena",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "id": "f_end",
+   "min": 9,
+   "music": "end",
+   "tin": "fade",
+   "tout": "fade",
+   "lines": [
+    {
+     "who": "NARRATOR",
+     "text": "Yato dharmas tato jayah. Where there is dharma, there is victory.",
+     "say": "Yato dharmas, tato jayah. Where there is dharma, there is victory.",
+     "at": 1.0
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate"
+    },
+    {
+     "n": "rays",
+     "k": "anim",
+     "b": "add",
+     "every": 3,
+     "a": 0.7
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.08
+    ]
+   ],
+   "text": [
+    {
+     "s": "यतो धर्मस्ततो जयः",
+     "f": "deva",
+     "sz": 66,
+     "x": 0.5,
+     "y": 0.42,
+     "c": "#f3cf6a",
+     "t0": 0.8,
+     "t1": 8.6
+    },
+    {
+     "s": "where there is dharma, there is victory",
+     "f": "ital",
+     "sz": 34,
+     "x": 0.5,
+     "y": 0.55,
+     "c": "#efe4cb",
+     "t0": 1.6,
+     "t1": 8.6
+    },
+    {
+     "s": "MAHABHARATA",
+     "f": "deco",
+     "sz": 40,
+     "x": 0.5,
+     "y": 0.72,
+     "c": "#d9a536",
+     "t0": 3.0,
+     "t1": 8.6
+    }
+   ],
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.2
+    },
+    {
+     "n": "bell",
+     "at": 5.0
+    }
+   ]
+  }
+ ]
+}
