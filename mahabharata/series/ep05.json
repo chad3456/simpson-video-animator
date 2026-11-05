@@ -1,0 +1,1135 @@
+{
+ "title": {
+  "en": "The Disrobing",
+  "hi": "चीरहरण"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 5,
+ "id": "ep05",
+ "tag": {
+  "en": "A question no one in the court dared to answer.",
+  "hi": "एक प्रश्न जिसका उत्तर देने का साहस सभा में किसी को न था।"
+ },
+ "shots": [
+  {
+   "id": "e5_open",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Dushasana was sent to bring Draupadi before the court. She refused.",
+     "hi": "दुःशासन को द्रौपदी को सभा में लाने भेजा गया। उन्होंने आने से मना कर दिया।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a0e12",
+     "moon": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dushasana",
+      "x": 540,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "hero": 1,
+   "name": {
+    "en": "DUSHASANA",
+    "hi": "दुःशासन",
+    "ep_en": "the second Kaurava",
+    "ep_hi": "दूसरा कौरव",
+    "side": 1
+   },
+   "amb": "night"
+  },
+  {
+   "id": "e5_drag",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "He dragged her by her hair into the hall of the Kurus, before her husbands and her elders.",
+     "hi": "वह उन्हें बालों से घसीटते हुए कुरुओं की सभा में ले आया, उनके पतियों और बड़ों के सामने।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1210"
+    },
+    {
+     "n": "pull",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "dushasana",
+       "x": 520,
+       "y": 880,
+       "S": 660,
+       "f": 1,
+       "pose": "charge",
+       "poseOver": {
+        "aB": [
+         -80,
+         -100
+        ]
+       }
+      },
+      {
+       "who": "draupadi",
+       "x": 1000,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "arm": [
+        150,
+        170
+       ]
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "mv": {
+      "dx": [
+       60,
+       -60
+      ],
+      "t": [
+       0,
+       8
+      ]
+     }
+    }
+   ],
+   "cam": [
+    [
+     780,
+     470,
+     1.04
+    ],
+    [
+     780,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 0.5
+    },
+    {
+     "n": "gasp",
+     "at": 1.5
+    }
+   ]
+  },
+  {
+   "id": "e5_question",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "DRAUPADI",
+     "en": "I ask this court one question. Did my husband lose himself first, or me? If he had already lost himself, what right had he to stake me?",
+     "hi": "मैं इस सभा से एक प्रश्न पूछती हूँ। मेरे पति ने पहले स्वयं को हारा, या मुझे? यदि वे स्वयं को हार चुके थे, तो उन्हें मुझे दाँव पर लगाने का क्या अधिकार था?"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a0e0c"
+    },
+    {
+     "n": 50,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "col": "#ff8040"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "draupadi",
+      "x": 800,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "wind": 1.4,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "glow": [
+      "#ff5020",
+      30,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "court"
+  },
+  {
+   "id": "e5_silence",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "The ways of dharma are subtle, daughter. I cannot answer you.",
+     "hi": "धर्म की गति सूक्ष्म है, पुत्री। मैं तुम्हें उत्तर नहीं दे सकता।",
+     "fx": "elder"
+    },
+    {
+     "who": "NAR",
+     "en": "The greatest men of the age stared at the floor.",
+     "hi": "युग के महानतम पुरुष धरती की ओर देखते रहे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#2a0a0a"
+    },
+    {
+     "n": "bhishma",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 520,
+      "y": 450,
+      "R": 170,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "drona",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 900,
+      "y": 460,
+      "R": 150,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "dhrita",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dhrita",
+      "x": 1260,
+      "y": 460,
+      "R": 150,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     520,
+     450,
+     1.15
+    ],
+    [
+     1100,
+     460,
+     1.08
+    ]
+   ],
+   "amb": "court"
+  },
+  {
+   "id": "e5_karna",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "And Karna remembered the swayamvar, and spoke the worst words of his life.",
+     "hi": "और कर्ण को स्वयंवर याद आया, और उसने अपने जीवन के सबसे बुरे शब्द कहे।"
+    },
+    {
+     "who": "KARNA",
+     "en": "A woman with five husbands has no honour to protect. Strip her.",
+     "hi": "पाँच पतियों वाली स्त्री का कैसा सम्मान? उसके वस्त्र उतार लो।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140608",
+     "glow": "#3a1010"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "gasp",
+     "at": 7.5,
+     "v": 0.6
+    }
+   ]
+  },
+  {
+   "id": "e5_pray",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Dushasana seized her sari. With no one left to turn to, Draupadi let go, raised both hands to the sky, and called on Krishna.",
+     "hi": "दुःशासन ने उनकी साड़ी पकड़ ली। जब कोई सहारा न बचा, द्रौपदी ने साड़ी छोड़ दी, दोनों हाथ आकाश की ओर उठाए, और कृष्ण को पुकारा।"
+    },
+    {
+     "who": "DRAUPADI",
+     "en": "Govinda!",
+     "hi": "हे गोविंद!",
+     "fx": "divine",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a0e0c"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": -50,
+      "r0": 40,
+      "r1": 1100,
+      "col": "#fff0c0",
+      "spin": 1.5
+     },
+     "b": "add"
+    },
+    {
+     "n": "prayer",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "draupadi",
+       "x": 800,
+       "y": 880,
+       "S": 660,
+       "f": 1,
+       "arm": [
+        175,
+        180
+       ]
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      24,
+      0.35
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     560,
+     1.15
+    ],
+    [
+     800,
+     420,
+     1.0
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bell",
+     "at": 9.0
+    },
+    {
+     "n": "om",
+     "at": 9.4,
+     "v": 0.8
+    }
+   ]
+  },
+  {
+   "id": "e5_sari",
+   "music": "wonder",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "And the sari had no end. He pulled, and pulled, and pulled, until he fell, exhausted, on a mountain of cloth.",
+     "hi": "और साड़ी का कोई अंत ही नहीं था। वह खींचता रहा, खींचता रहा, खींचता रहा, और थककर कपड़े के पहाड़ पर गिर पड़ा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a0e0c"
+    },
+    {
+     "n": "sari",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "endlessSari",
+     "args": {
+      "x": 900,
+      "y": 520
+     },
+     "every": 2
+    },
+    {
+     "n": "drau",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "draupadi",
+       "x": 900,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "arm": [
+        175,
+        180
+       ]
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      20,
+      0.3
+     ]
+    },
+    {
+     "n": "dush",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "dushasana",
+       "x": 380,
+       "y": 880,
+       "S": 620,
+       "f": 1,
+       "pose": "charge",
+       "poseOver": {
+        "aB": [
+         -80,
+         -100
+        ]
+       }
+      }
+     ],
+     "mv": {
+      "dy": [
+       0,
+       120
+      ],
+      "r": [
+       0,
+       -8
+      ],
+      "t": [
+       9,
+       11
+      ],
+      "ax": 380,
+      "ay": 880,
+      "ease": "in"
+     }
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 900,
+      "y": -100,
+      "r0": 30,
+      "r1": 1000,
+      "col": "#fff0c0",
+      "spin": 2
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     460,
+     1.05
+    ],
+    [
+     700,
+     450,
+     1.0
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 1.0
+    },
+    {
+     "n": "magic",
+     "at": 3
+    },
+    {
+     "n": "magic",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "id": "e5_bhima",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "BHIMA",
+     "en": "Hear my vow! I will break Duryodhana's thigh, and on the battlefield I will drink Dushasana's blood!",
+     "hi": "मेरी प्रतिज्ञा सुनो! मैं दुर्योधन की जंघा तोड़ूँगा, और रणभूमि में दुःशासन का रक्त पियूँगा!",
+     "fx": "roar"
+    },
+    {
+     "who": "DRAUPADI",
+     "en": "And I will not tie my hair again until it is washed in that blood.",
+     "hi": "और जब तक मेरे केश उस रक्त से धुल न जाएँ, मैं इन्हें फिर नहीं बाँधूँगी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140608",
+     "glow": "#4a1010"
+    },
+    {
+     "n": "bhima",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 560,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "roar"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "draupadi",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "draupadi",
+      "x": 1170,
+      "y": 460,
+      "R": 170,
+      "f": -1,
+      "t": [
+       8.0,
+       99
+      ],
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": 70,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     620,
+     450,
+     1.1
+    ],
+    [
+     1050,
+     455,
+     1.05
+    ]
+   ],
+   "shake": [
+    [
+     1.0,
+     6
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "roar",
+     "at": 0.3,
+     "v": 0.5
+    },
+    {
+     "n": "thunder",
+     "at": 1.0,
+     "v": 0.6
+    }
+   ]
+  },
+  {
+   "id": "e5_exile",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Shaken, the blind king gave everything back. But Shakuni called one last game, and the Pandavas lost again.",
+     "hi": "भयभीत होकर अंधे राजा ने सब लौटा दिया। पर शकुनि ने एक अंतिम खेल बुलाया, और पांडव फिर हार गए।"
+    },
+    {
+     "who": "NAR",
+     "en": "The price: twelve years in the forest, and a thirteenth in hiding. If they were found, it would begin again.",
+     "hi": "शर्त थी: बारह वर्ष वनवास, और तेरहवाँ वर्ष अज्ञातवास। पकड़े गए, तो फिर से वही सब।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "season": "autumn"
+    },
+    {
+     "n": "walk",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 1100,
+       "y": 860,
+       "S": 380,
+       "f": -1,
+       "pose": "stand"
+      },
+      {
+       "who": "bhima",
+       "x": 980,
+       "y": 870,
+       "S": 420,
+       "f": -1,
+       "pose": "stand"
+      },
+      {
+       "who": "arjuna",
+       "x": 860,
+       "y": 860,
+       "S": 390,
+       "f": -1,
+       "pose": "stand",
+       "weapon": "bowRest"
+      },
+      {
+       "who": "draupadi",
+       "x": 740,
+       "y": 860,
+       "S": 370,
+       "f": -1
+      },
+      {
+       "who": "nakula",
+       "x": 630,
+       "y": 860,
+       "S": 370,
+       "f": -1,
+       "pose": "stand"
+      },
+      {
+       "who": "sahadeva",
+       "x": 520,
+       "y": 860,
+       "S": 370,
+       "f": -1,
+       "pose": "stand"
+      }
+     ],
+     "mv": {
+      "dx": [
+       200,
+       -300
+      ],
+      "t": [
+       0,
+       16
+      ]
+     }
+    },
+    {
+     "n": 40,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "leaves"
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.08
+    ]
+   ],
+   "tout": "fade",
+   "min": 12,
+   "amb": "wind"
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

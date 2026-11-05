@@ -1,0 +1,987 @@
+{
+ "title": {
+  "en": "The Fall of the Great",
+  "hi": "महारथियों का पतन"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 9,
+ "id": "ep09",
+ "tag": {
+  "en": "A grandfather, a boy, and a teacher fall.",
+  "hi": "एक पितामह, एक बालक, और एक गुरु का पतन।"
+ },
+ "shots": [
+  {
+   "id": "e9_bhishma",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "For nine days Bhishma could not be stopped. At last the Pandavas went to his tent at night, and asked how he could be defeated.",
+     "hi": "नौ दिनों तक भीष्म को कोई रोक न सका। आखिरकार पांडव रात को उनके शिविर में गए, और पूछा कि उन्हें कैसे हराया जाए।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 400,
+     "sunY": 540,
+     "dead": 1
+    },
+    {
+     "n": "bhishma",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 800,
+       "y": 900,
+       "S": 660,
+       "f": 1,
+       "pose": "release",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "volley",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2
+    },
+    {
+     "n": 120,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.1
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "battle"
+  },
+  {
+   "id": "e9_secret",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "I will not raise my bow against Shikhandi, who was born a woman. Place him before Arjuna, and I will not fight back.",
+     "hi": "मैं शिखंडी पर धनुष नहीं उठाऊँगा, जो स्त्री के रूप में जन्मा था। उसे अर्जुन के आगे रखो, मैं प्रतिकार नहीं करूँगा।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    },
+    {
+     "n": 40,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.02
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "night"
+  },
+  {
+   "id": "e9_bed",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "On the tenth day, with Shikhandi before him, Arjuna's arrows brought the grandfather down.",
+     "hi": "दसवें दिन, शिखंडी को आगे रखकर, अर्जुन के बाणों ने पितामह को गिरा दिया।"
+    },
+    {
+     "who": "NAR",
+     "en": "He lay on a bed of arrows, and chose to wait, until the sun turned north, before he would die.",
+     "hi": "वे बाणों की शय्या पर लेट गए, और उन्होंने प्रतीक्षा चुनी, जब तक सूर्य उत्तरायण न हो जाए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      1100,
+      600,
+      120
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#2a1410"
+    },
+    {
+     "n": "bed",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "arrowBed",
+     "args": {
+      "x": 800,
+      "y": 740,
+      "s": 1.0
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.0
+    ],
+    [
+     800,
+     590,
+     1.12
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 1.0,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e9_vyuha",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Drona then set the chakravyuha, a turning wheel of soldiers. Only Arjuna knew how to break it, and Arjuna had been lured away.",
+     "hi": "तब द्रोण ने चक्रव्यूह रचा, सैनिकों का घूमता हुआ पहिया। केवल अर्जुन उसे तोड़ना जानते थे, और अर्जुन को दूर भटका दिया गया था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dawn",
+     "hills": 0,
+     "ground": "#8a5a3e",
+     "hz": 0
+    },
+    {
+     "n": "ring",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "vyuhaRing",
+     "args": {
+      "x": 800,
+      "y": 450
+     },
+     "every": 2
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "drumroll",
+     "at": 2
+    },
+    {
+     "n": "conch",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "id": "e9_abhi",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "ABHI",
+     "en": "I know how to break into the wheel, uncle. I never learned the way out. But I will go.",
+     "hi": "मैं चक्रव्यूह में प्रवेश करना जानता हूँ, तात। बाहर निकलना कभी नहीं सीखा। पर मैं जाऊँगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 820,
+     "sunY": 500
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "abhi",
+      "x": 540,
+      "y": 450,
+      "R": 205,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": 80,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "ABHIMANYU",
+    "hi": "अभिमन्यु",
+    "ep_en": "son of Arjuna",
+    "ep_hi": "अर्जुनपुत्र",
+    "side": 1
+   },
+   "amb": "battle"
+  },
+  {
+   "id": "e9_wheel",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Sixteen years old, he broke in alone. Seven great warriors fell on him at once. His bow broken, his sword shattered, he fought on with a chariot wheel, until he fell.",
+     "hi": "सोलह वर्ष का वह अकेला भीतर घुस गया। सात महारथियों ने एक साथ उस पर आक्रमण किया। धनुष टूटा, तलवार टूटी, वह रथ का पहिया उठाकर लड़ता रहा, जब तक गिर न गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "crimson",
+     "hills": 0,
+     "ground": "#5a2a1e",
+     "hz": 0
+    },
+    {
+     "n": "ring",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "vyuhaRing",
+     "args": {
+      "x": 800,
+      "y": 450,
+      "close": 1
+     },
+     "every": 2
+    },
+    {
+     "n": "abhi",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "abhi",
+       "x": 800,
+       "y": 640,
+       "S": 360,
+       "f": 1,
+       "pose": "maceUp",
+       "weapon": "wheel"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "mv": {
+      "r": [
+       0,
+       0
+      ],
+      "t": [
+       0,
+       1
+      ]
+     }
+    },
+    {
+     "n": 80,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c05a3a"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.1
+    ],
+    [
+     800,
+     440,
+     1.3
+    ]
+   ],
+   "g": {
+    "tint": "#ff6040",
+    "k": 0.08
+   },
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 2
+    },
+    {
+     "n": "clash",
+     "at": 4
+    },
+    {
+     "n": "clash",
+     "at": 6.5
+    },
+    {
+     "n": "gong",
+     "at": 12,
+     "v": 0.6
+    }
+   ]
+  },
+  {
+   "id": "e9_vow",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "Jayadratha held the gate while they killed my son. If I do not kill him before sunset tomorrow, I will walk into the fire myself!",
+     "hi": "जब उन्होंने मेरे पुत्र को मारा, जयद्रथ ने द्वार रोक रखा था। यदि कल सूर्यास्त से पहले मैंने उसे नहीं मारा, तो मैं स्वयं अग्नि में प्रवेश करूँगा!"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": 60,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 800,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.02
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 6,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e9_sunset",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "The next day, as the sun sank, Krishna hid it behind his discus. Thinking the day was done, Jayadratha came out of hiding.",
+     "hi": "अगले दिन, जब सूर्य ढलने लगा, कृष्ण ने उसे अपने सुदर्शन चक्र के पीछे छिपा दिया। दिन बीता समझकर जयद्रथ छिपने की जगह से बाहर निकल आया।"
+    },
+    {
+     "who": "NAR",
+     "en": "Then the sun shone again, and Arjuna's arrow flew.",
+     "hi": "तभी सूर्य फिर चमका, और अर्जुन का बाण चल पड़ा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "hills": 1,
+     "ground": "#2a1410"
+    },
+    {
+     "n": "eclipse",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "eclipse",
+     "args": {
+      "x": 1000,
+      "y": 380
+     },
+     "every": 2
+    },
+    {
+     "n": "shot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 11.2,
+      "x0": 200,
+      "y0": 700,
+      "x1": 1300,
+      "y1": 640
+     },
+     "every": 1,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     900,
+     430,
+     1.0
+    ],
+    [
+     900,
+     420,
+     1.1
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 2
+    },
+    {
+     "n": "sparkle",
+     "at": 10.5
+    },
+    {
+     "n": "whoosh",
+     "at": 11.2
+    },
+    {
+     "n": "crack",
+     "at": 11.6
+    }
+   ]
+  },
+  {
+   "id": "e9_drona",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Drona was next. Bhima killed an elephant named Ashwatthama, the same name as Drona's beloved son.",
+     "hi": "अब द्रोण की बारी थी। भीम ने अश्वत्थामा नाम के एक हाथी को मारा, जो द्रोण के प्रिय पुत्र का भी नाम था।"
+    },
+    {
+     "who": "YUDHI",
+     "en": "Ashwatthama is dead...",
+     "hi": "अश्वत्थामा मारा गया..."
+    },
+    {
+     "who": "YUDHI",
+     "en": "...the elephant.",
+     "hi": "...हाथी।",
+     "vol": 0.35,
+     "gap": 0.15
+    },
+    {
+     "who": "NAR",
+     "en": "Krishna's conch drowned the last words. Drona laid down his weapons. And Yudhishthira's chariot, which had always floated above the earth, sank to the ground.",
+     "hi": "अंतिम शब्द कृष्ण के शंख में डूब गए। द्रोण ने शस्त्र रख दिए। और युधिष्ठिर का रथ, जो सदा धरती से ऊपर चलता था, धरती पर आ गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 560,
+     "dead": 1
+    },
+    {
+     "n": "drona",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 560,
+      "y": 460,
+      "R": 180,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "yudhi",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 1150,
+      "y": 460,
+      "R": 170,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1050,
+     460,
+     1.1
+    ],
+    [
+     620,
+     460,
+     1.1
+    ]
+   ],
+   "tout": "fade",
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 8.5,
+     "v": 1.0
+    }
+   ]
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

@@ -1,0 +1,1154 @@
+{
+ "title": {
+  "en": "Fire and the Swayamvar",
+  "hi": "लाक्षागृह और स्वयंवर"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 3,
+ "id": "ep03",
+ "tag": {
+  "en": "A palace built to burn, and a bride won by one arrow.",
+  "hi": "जलने के लिए बना महल, और एक बाण से जीती दुल्हन।"
+ },
+ "shots": [
+  {
+   "id": "e3_open",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Duryodhana built a beautiful palace for the Pandavas at Varanavata. It was made of lac, wax and oil. It was built to burn.",
+     "hi": "दुर्योधन ने वारणावत में पांडवों के लिए एक सुंदर महल बनवाया। वह लाख, मोम और तेल से बना था। वह जलने के लिए बना था।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "palace",
+     "tod": "dusk",
+     "x": 340,
+     "w": 920,
+     "h": 560,
+     "col": "#c89a6a"
+    },
+    {
+     "n": 40,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0b060"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.1
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "wind"
+  },
+  {
+   "id": "e3_vidura",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VIDURA",
+     "en": "A fire cannot burn one who has dug a way out beneath it. Remember, Yudhishthira.",
+     "hi": "जिसने नीचे से रास्ता खोद रखा हो, उसे आग नहीं जला सकती। याद रखना, युधिष्ठिर।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1810"
+    },
+    {
+     "n": "vidura",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "vidura",
+      "x": 540,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.1
+    ],
+    [
+     800,
+     450,
+     1.05
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "VIDURA",
+    "hi": "विदुर",
+    "ep_en": "the wise",
+    "ep_hi": "नीतिज्ञ",
+    "side": 1
+   },
+   "amb": "night"
+  },
+  {
+   "id": "e3_fire",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "On a moonless night the palace went up in flames. All the world thought the Pandavas were dead.",
+     "hi": "एक अमावस की रात महल धू-धू कर जल उठा। सारे संसार ने समझा कि पांडव मर गए।"
+    },
+    {
+     "who": "NAR",
+     "en": "But they had slipped away through a tunnel, with their mother.",
+     "hi": "पर वे अपनी माता के साथ सुरंग से निकल चुके थे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "palace",
+     "tod": "night",
+     "x": 340,
+     "w": 920,
+     "h": 560,
+     "col": "#4a3028",
+     "ground": "#100808"
+    },
+    {
+     "n": 120,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        500,
+        640,
+        300,
+        420
+       ],
+       [
+        800,
+        600,
+        380,
+        520
+       ],
+       [
+        1120,
+        640,
+        300,
+        420
+       ]
+      ]
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 800,
+      "y": 500,
+      "r": 600,
+      "col": "#ff7030",
+      "rate": 5
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.12
+    ]
+   ],
+   "g": {
+    "tint": "#ff9060",
+    "k": 0.12
+   },
+   "amb": "fire",
+   "sfx": [
+    {
+     "n": "fire",
+     "at": 0.5
+    },
+    {
+     "n": "boom",
+     "at": 3.0,
+     "v": 0.6
+    },
+    {
+     "n": "crack",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "id": "e3_forest",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "They lived in the forest as poor brahmins, hidden from the world, waiting.",
+     "hi": "वे निर्धन ब्राह्मणों के वेश में वन में रहने लगे, संसार से छिपकर, प्रतीक्षा करते हुए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dawn"
+    },
+    {
+     "n": "walk",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "brahmin",
+       "x": 300,
+       "y": 860,
+       "S": 420,
+       "f": 1,
+       "pose": "stand"
+      },
+      {
+       "who": "bhima",
+       "x": 520,
+       "y": 870,
+       "S": 470,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun",
+        "scarf": "#d9c9a0"
+       }
+      },
+      {
+       "who": "kunti",
+       "x": 700,
+       "y": 860,
+       "S": 400,
+       "f": 1
+      },
+      {
+       "who": "arjuna",
+       "x": 880,
+       "y": 860,
+       "S": 430,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun",
+        "scarf": "#d9c9a0"
+       }
+      },
+      {
+       "who": "nakula",
+       "x": 1040,
+       "y": 860,
+       "S": 400,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun"
+       }
+      },
+      {
+       "who": "sahadeva",
+       "x": 1190,
+       "y": 860,
+       "S": 400,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun"
+       }
+      }
+     ],
+     "mv": {
+      "dx": [
+       -120,
+       120
+      ],
+      "t": [
+       0,
+       12
+      ]
+     }
+    },
+    {
+     "n": 50,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0e0b0"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.0
+    ]
+   ],
+   "amb": "birds"
+  },
+  {
+   "id": "e3_hall",
+   "music": "court",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Then came news from Panchala. King Drupada's daughter would marry the man who could pierce the eye of a spinning fish, looking only at its reflection in a pool of oil.",
+     "hi": "तभी पांचाल से समाचार आया। राजा द्रुपद की पुत्री उससे विवाह करेगी, जो तेल के कुंड में केवल परछाई देखकर घूमती मछली की आँख भेद सके।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#5a1a30",
+     "canopy": 1
+    },
+    {
+     "n": "wheel",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "fishWheel",
+     "args": {
+      "x": 800,
+      "y": 230,
+      "s": 1.0
+     },
+     "every": 2
+    },
+    {
+     "n": "pool",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "oilPool",
+     "args": {
+      "x": 800,
+      "y": 780
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     700,
+     1.25
+    ],
+    [
+     800,
+     330,
+     1.05
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "drumroll",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "id": "e3_draupadi",
+   "music": "love",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "She was Draupadi, born from the sacred fire, and she would choose no ordinary man.",
+     "hi": "वह द्रौपदी थी, यज्ञ की अग्नि से जन्मी, और वह किसी साधारण पुरुष को नहीं चुनती।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#5a1a30"
+    },
+    {
+     "n": 60,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "col": "#ffb060"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "draupadi",
+      "x": 540,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "glow": [
+      "#ff9040",
+      26,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DRAUPADI",
+    "hi": "द्रौपदी",
+    "ep_en": "born of fire",
+    "ep_hi": "अग्नि से जन्मी",
+    "side": 1
+   },
+   "amb": "court"
+  },
+  {
+   "id": "e3_karna",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "King after king failed to even lift the bow. Then Karna stepped forward.",
+     "hi": "एक के बाद एक राजा धनुष तक न उठा सके। तब कर्ण आगे बढ़ा।"
+    },
+    {
+     "who": "DRAUPADI",
+     "en": "I will not marry a charioteer's son.",
+     "hi": "मैं सारथी के पुत्र से विवाह नहीं करूँगी।"
+    },
+    {
+     "who": "NAR",
+     "en": "Karna laid down the bow in silence, and the wound stayed with him.",
+     "hi": "कर्ण ने चुपचाप धनुष रख दिया, और वह घाव उसके साथ रह गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#5a1a30"
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 560,
+      "y": 470,
+      "R": 180,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "draupadi",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "draupadi",
+      "x": 1150,
+      "y": 440,
+      "R": 170,
+      "f": -1,
+      "expr": "stern"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1000,
+     450,
+     1.08
+    ],
+    [
+     620,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "court"
+  },
+  {
+   "id": "e3_arrow",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "A young brahmin rose from the crowd. He strung the great bow, looked down into the oil, and let fly.",
+     "hi": "भीड़ से एक युवा ब्राह्मण उठा। उसने विशाल धनुष पर प्रत्यंचा चढ़ाई, तेल में देखा, और बाण छोड़ दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#5a1a30",
+     "canopy": 1
+    },
+    {
+     "n": "wheel",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "fishWheel",
+     "args": {
+      "x": 800,
+      "y": 230,
+      "s": 1.0,
+      "hit": 7.2
+     },
+     "every": 2
+    },
+    {
+     "n": "archer",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 800,
+       "y": 900,
+       "S": 640,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn",
+       "rot": -62,
+       "style": {
+        "crown": "bun",
+        "dhoti": "#e8dcc0",
+        "scarf": "#d9c9a0"
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "shot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 7.0,
+      "x0": 860,
+      "y0": 520,
+      "x1": 800,
+      "y1": 240
+     },
+     "every": 1,
+     "b": "add"
+    },
+    {
+     "n": 80,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "t0": 7.6
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.15
+    ],
+    [
+     800,
+     360,
+     1.05
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 7.0
+    },
+    {
+     "n": "crack",
+     "at": 7.2,
+     "v": 0.6
+    },
+    {
+     "n": "cheer",
+     "at": 7.6
+    },
+    {
+     "n": "conch",
+     "at": 8.0,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e3_share",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "Mother! Come and see what we have brought home today!",
+     "hi": "माँ! आकर देखो, आज हम क्या लाए हैं!"
+    },
+    {
+     "who": "KUNTI",
+     "en": "Whatever it is, share it equally among yourselves.",
+     "hi": "जो भी है, आपस में बराबर बाँट लो।"
+    },
+    {
+     "who": "NAR",
+     "en": "A mother's word could not be taken back. Draupadi became the wife of all five brothers.",
+     "hi": "माँ का वचन लौटाया नहीं जा सकता था। द्रौपदी पाँचों भाइयों की पत्नी बनीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "hut": 1150
+    },
+    {
+     "n": "family",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 420,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "bless"
+      },
+      {
+       "who": "draupadi",
+       "x": 640,
+       "y": 880,
+       "S": 520,
+       "f": 1
+      },
+      {
+       "who": "bhima",
+       "x": 250,
+       "y": 880,
+       "S": 580,
+       "f": 1,
+       "pose": "stand"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": 40,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     460,
+     1.0
+    ],
+    [
+     700,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "birds"
+  },
+  {
+   "id": "e3_krishna",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "And among the guests, a dark prince of the Yadavas smiled. He had seen through every disguise. Krishna had come into their lives.",
+     "hi": "और अतिथियों में यादवों का एक साँवला राजकुमार मुस्कुराया। उसने हर वेश के पार देख लिया था। कृष्ण उनके जीवन में आ चुके थे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "night",
+     "hz": 600,
+     "moon": [
+      380,
+      220,
+      70
+     ]
+    },
+    {
+     "n": 70,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 1060,
+      "y": 440,
+      "R": 200,
+      "f": -1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#cfe4ff",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.35
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "hero": 1,
+   "tout": "fade",
+   "name": {
+    "en": "KRISHNA",
+    "hi": "कृष्ण",
+    "ep_en": "the dark one",
+    "ep_hi": "श्यामसुंदर",
+    "side": -1
+   },
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "flute",
+     "at": 1.0,
+     "v": 0.6
+    }
+   ]
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

@@ -1,0 +1,1173 @@
+{
+ "title": {
+  "en": "The Princes",
+  "hi": "राजकुमार"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 2,
+ "id": "ep02",
+ "tag": {
+  "en": "Envy is born, and a friendship that will cost everything.",
+  "hi": "ईर्ष्या का जन्म, और एक मित्रता जिसकी कीमत सब कुछ होगी।"
+ },
+ "shots": [
+  {
+   "id": "e2_open",
+   "music": "court",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Hastinapura had two princes. Dhritarashtra, the elder, was born blind, so the crown went to his brother Pandu.",
+     "hi": "हस्तिनापुर के दो राजकुमार थे। बड़े धृतराष्ट्र जन्म से अंधे थे, इसलिए मुकुट उनके भाई पांडु को मिला।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dhrita",
+      "x": 1060,
+      "y": 440,
+      "R": 180,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     940,
+     450,
+     1.0
+    ],
+    [
+     940,
+     440,
+     1.1
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "court"
+  },
+  {
+   "id": "e2_births",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Pandu's queens, Kunti and Madri, called on the gods and were given five sons: the Pandavas. Yudhishthira from Dharma, Bhima from the Wind, Arjuna from Indra, and the twins from the Ashvins.",
+     "hi": "पांडु की रानियों, कुंती और माद्री ने देवताओं का आह्वान किया और उन्हें पाँच पुत्र मिले: पांडव। धर्म से युधिष्ठिर, वायु से भीम, इंद्र से अर्जुन, और अश्विनीकुमारों से जुड़वाँ भाई।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#0a1030",
+     "mandala": 300,
+     "my": 420
+    },
+    {
+     "n": "lights",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "fiveLights",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kunti",
+      "x": 800,
+      "y": 470,
+      "R": 170,
+      "f": 1,
+      "expr": "awe"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.1
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "sparkle",
+     "at": 1
+    },
+    {
+     "n": "magic",
+     "at": 6
+    },
+    {
+     "n": "bell",
+     "at": 10
+    }
+   ]
+  },
+  {
+   "id": "e2_gandhari",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Gandhari, wife of the blind king, bound her own eyes so she would never see what her husband could not. She bore a hundred sons: the Kauravas.",
+     "hi": "अंधे राजा की पत्नी गांधारी ने अपनी आँखों पर पट्टी बाँध ली, ताकि वह कभी वह न देखे जो उसका पति नहीं देख सकता। उसने सौ पुत्रों को जन्म दिया: कौरव।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "gandhari",
+      "x": 760,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    },
+    {
+     "n": "jars",
+     "k": "plate",
+     "d": 0.85,
+     "draw": "jars",
+     "args": {}
+    }
+   ],
+   "cam": [
+    [
+     760,
+     460,
+     1.02
+    ],
+    [
+     760,
+     450,
+     1.14
+    ]
+   ],
+   "amb": "night"
+  },
+  {
+   "id": "e2_envy",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "The eldest Kaurava, Duryodhana, watched the Pandavas with burning envy. He fed Bhima poison and threw him into the river.",
+     "hi": "सबसे बड़े कौरव दुर्योधन पांडवों को जलन से देखते रहे। उसने भीम को विष खिलाकर नदी में फेंक दिया।"
+    },
+    {
+     "who": "NAR",
+     "en": "But Bhima came back, stronger than ever.",
+     "hi": "पर भीम लौट आए, पहले से भी अधिक बलवान।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dusk",
+     "hz": 560
+    },
+    {
+     "n": "duryo",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 560,
+      "y": 440,
+      "R": 190,
+      "f": 1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "bhima",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 1150,
+      "y": 470,
+      "R": 170,
+      "f": -1,
+      "t": [
+       7.0,
+       99
+      ],
+      "expr": "smile"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     450,
+     1.1
+    ],
+    [
+     900,
+     450,
+     1.0
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "id": "e2_drona",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "The princes learned the arts of war from the great master Drona.",
+     "hi": "राजकुमारों ने महान आचार्य द्रोण से युद्धकला सीखी।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Look at the bird on that tree. Tell me what you see.",
+     "hi": "उस पेड़ पर बैठी चिड़िया को देखो। बताओ, तुम्हें क्या दिखता है?",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 1060,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "bird",
+     "k": "plate",
+     "d": 0.8,
+     "draw": "woodBird",
+     "args": {
+      "x": 380,
+      "y": 330
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.1
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DRONA",
+    "hi": "द्रोण",
+    "ep_en": "the master",
+    "ep_hi": "आचार्य",
+    "side": -1
+   },
+   "amb": "birds"
+  },
+  {
+   "id": "e2_eye",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "YUDHI",
+     "en": "I see the tree, the branches, the leaves, the bird, my brothers...",
+     "hi": "मुझे पेड़ दिखता है, डालियाँ, पत्ते, चिड़िया, मेरे भाई..."
+    },
+    {
+     "who": "ARJUNA",
+     "en": "I see only the eye of the bird, master.",
+     "hi": "मुझे केवल चिड़िया की आँख दिखती है, गुरुदेव।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Then shoot.",
+     "hi": "तो बाण चलाओ।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day"
+    },
+    {
+     "n": "archer",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 560,
+       "y": 900,
+       "S": 660,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "bird",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "woodBird",
+     "args": {
+      "x": 1300,
+      "y": 320,
+      "s": 1.5
+     }
+    },
+    {
+     "n": "shot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 9.0,
+      "x0": 820,
+      "y0": 520,
+      "x1": 1300,
+      "y1": 330
+     },
+     "every": 1,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     470,
+     1.15
+    ],
+    [
+     1200,
+     360,
+     1.5
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 9.0
+    },
+    {
+     "n": "crack",
+     "at": 9.3,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e2_arena",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "At the great tournament, Arjuna dazzled the city. Then a stranger in golden armour stepped into the arena.",
+     "hi": "महान प्रतियोगिता में अर्जुन ने पूरे नगर को चकित कर दिया। तभी स्वर्ण कवच पहने एक अजनबी रंगभूमि में उतरा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day"
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 420,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "release",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 1200,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "pose": "stand",
+       "weapon": "bowRest"
+      }
+     ],
+     "rim": [
+      "#ffe08a",
+      -3,
+      -2,
+      0.8
+     ],
+     "glow": [
+      "#ffd060",
+      20,
+      0.35
+     ]
+    },
+    {
+     "n": 80,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     600,
+     470,
+     1.1
+    ],
+    [
+     1050,
+     460,
+     1.05
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "drumroll",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "e2_karna",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "KARNA",
+     "en": "Everything Arjuna has done, I can do. Fight me.",
+     "hi": "अर्जुन ने जो कुछ किया, वह मैं भी कर सकता हूँ। मुझसे युद्ध करो।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "sun": [
+      800,
+      380,
+      220
+     ],
+     "sunCol": "#f6b030",
+     "hills": 1,
+     "ground": "#8a5a3a"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 380,
+      "r0": 200,
+      "r1": 1000,
+      "col": "#ffe0a0",
+      "spin": 2
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 540,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "KARNA",
+    "hi": "कर्ण",
+    "ep_en": "son of the Sun",
+    "ep_hi": "सूर्यपुत्र",
+    "side": 1
+   },
+   "amb": "crowd"
+  },
+  {
+   "id": "e2_insult",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "But they asked his lineage. He had been raised by a charioteer, and the princes laughed.",
+     "hi": "पर उसका कुल पूछा गया। वह एक सारथी के घर पला था, और राजकुमार हँस पड़े।"
+    },
+    {
+     "who": "BHIMA",
+     "en": "A charioteer's son? Go back and hold the horses' reins!",
+     "hi": "सारथी का बेटा? जाओ, घोड़ों की लगाम पकड़ो!",
+     "fx": "growl"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day"
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 560,
+      "y": 470,
+      "R": 180,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "bhima",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 1150,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "cruel"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     460,
+     1.12
+    ],
+    [
+     1000,
+     450,
+     1.05
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 1.5,
+     "v": 0.6
+    }
+   ]
+  },
+  {
+   "id": "e2_anga",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "DURYO",
+     "en": "Valour has no caste! I crown you king of Anga. From today, you are my friend.",
+     "hi": "वीरता की कोई जाति नहीं होती! मैं तुम्हें अंग देश का राजा बनाता हूँ। आज से तुम मेरे मित्र हो।",
+     "fx": "growl"
+    },
+    {
+     "who": "KARNA",
+     "en": "Then my life is yours, for as long as I breathe.",
+     "hi": "तो यह जीवन तुम्हारा है, जब तक मेरी साँस है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk"
+    },
+    {
+     "n": "two",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 900,
+       "y": 880,
+       "S": 620,
+       "f": -1,
+       "pose": "bowLow"
+      },
+      {
+       "who": "duryo",
+       "x": 620,
+       "y": 880,
+       "S": 640,
+       "f": 1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": 60,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals"
+     }
+    }
+   ],
+   "cam": [
+    [
+     780,
+     450,
+     1.0
+    ],
+    [
+     780,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.3,
+     "v": 0.5
+    },
+    {
+     "n": "cheer",
+     "at": 1.0,
+     "v": 0.6
+    }
+   ]
+  },
+  {
+   "id": "e2_end",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "In the crowd, Kunti saw his golden earrings and knew him: her firstborn, the child she had set adrift on a river. She said nothing.",
+     "hi": "भीड़ में कुंती ने उसके स्वर्ण कुंडल देखे और उसे पहचान लिया: उसका पहला पुत्र, जिसे उसने नदी में बहा दिया था। वह कुछ न बोली।"
+    },
+    {
+     "who": "NAR",
+     "en": "A bond of gratitude had been forged, and it would hold Karna to the wrong side until the end.",
+     "hi": "कृतज्ञता का एक बंधन बन चुका था, जो अंत तक कर्ण को गलत पक्ष से बाँधे रखेगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kunti",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.05
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "tout": "fade",
+   "min": 10,
+   "amb": "wind"
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

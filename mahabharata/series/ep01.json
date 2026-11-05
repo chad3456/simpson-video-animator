@@ -1,0 +1,1139 @@
+{
+ "title": {
+  "en": "The Terrible Vow",
+  "hi": "भीष्म प्रतिज्ञा"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 1,
+ "id": "ep01",
+ "tag": {
+  "en": "A son gives up everything for his father.",
+  "hi": "एक पुत्र ने पिता के लिए सब कुछ त्याग दिया।"
+ },
+ "shots": [
+  {
+   "id": "e1_open",
+   "music": "river",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Long before the war of Kurukshetra, there was a river, a king, and a promise.",
+     "hi": "कुरुक्षेत्र के युद्ध से बहुत पहले, एक नदी थी, एक राजा था, और एक वचन था।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dawn",
+     "hz": 560,
+     "palace": [
+      1040,
+      360,
+      230
+     ],
+     "sun": [
+      560,
+      420,
+      90
+     ],
+     "lotus": 8,
+     "reeds": 1
+    },
+    {
+     "n": 90,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 600,
+      "y1": 900
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.1
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "river"
+  },
+  {
+   "id": "e1_ganga",
+   "music": "love",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "King Shantanu of Hastinapura fell in love with a woman he met by the Ganga. She agreed to be his queen, on one condition.",
+     "hi": "हस्तिनापुर के राजा शांतनु को गंगा के तट पर एक स्त्री से प्रेम हो गया। वह रानी बनने को तैयार हुई, पर एक शर्त पर।"
+    },
+    {
+     "who": "GANGA",
+     "en": "Never question anything I do. The day you ask, I will leave you.",
+     "hi": "मैं जो भी करूँ, कभी प्रश्न मत करना। जिस दिन पूछोगे, मैं तुम्हें छोड़ जाऊँगी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dusk",
+     "hz": 600,
+     "reeds": 1
+    },
+    {
+     "n": "king",
+     "k": "plate",
+     "d": 0.85,
+     "figs": [
+      {
+       "who": "shantanu",
+       "x": 330,
+       "y": 860,
+       "S": 560,
+       "f": 1,
+       "pose": "bless"
+      }
+     ]
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "ganga",
+      "x": 1080,
+      "y": 420,
+      "R": 180,
+      "f": -1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "glow": [
+      "#9fd8ff",
+      30,
+      0.35
+     ],
+     "breath": 1
+    },
+    {
+     "n": 70,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 620,
+      "y1": 900,
+      "col": "#dff4ff"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     880,
+     450,
+     1.0
+    ],
+    [
+     880,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "sparkle",
+     "at": 0.5,
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "e1_sons",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Seven sons were born. Seven times, at dawn, she carried the child into the river. The king kept his word, and his silence.",
+     "hi": "सात पुत्र जन्मे। सात बार, भोर में, वह बालक को नदी में ले गई। राजा ने अपना वचन निभाया, और अपना मौन भी।"
+    },
+    {
+     "who": "NAR",
+     "en": "At the eighth, he could bear it no more.",
+     "hi": "आठवें पर उनसे रहा न गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "night",
+     "hz": 560,
+     "moon": [
+      1200,
+      200,
+      60
+     ]
+    },
+    {
+     "n": "ganga",
+     "k": "plate",
+     "d": 0.9,
+     "figs": [
+      {
+       "who": "ganga",
+       "x": 820,
+       "y": 900,
+       "S": 520,
+       "f": 1,
+       "arm": [
+        70,
+        110
+       ]
+      }
+     ],
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ]
+    },
+    {
+     "n": "lamps",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "floatLamps",
+     "args": {},
+     "every": 3,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 3.0,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e1_stop",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "SHANTANU",
+     "en": "Stop! Who are you, that you drown your own children?",
+     "hi": "रुको! तुम कौन हो, जो अपने ही बच्चों को डुबो देती हो?"
+    },
+    {
+     "who": "GANGA",
+     "en": "I am Ganga. Your sons were cursed to be born as men; I set them free. This one will live. His name is Devavrata.",
+     "hi": "मैं गंगा हूँ। तुम्हारे पुत्र शापवश मनुष्य बने थे; मैंने उन्हें मुक्त किया। यह जीवित रहेगा। इसका नाम देवव्रत है।",
+     "fx": "divine"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "night",
+     "hz": 560,
+     "moon": [
+      1250,
+      180,
+      55
+     ]
+    },
+    {
+     "n": "king",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shantanu",
+      "x": 470,
+      "y": 440,
+      "R": 170,
+      "f": 1,
+      "expr": "fear"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "ganga",
+      "x": 1130,
+      "y": 430,
+      "R": 170,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "glow": [
+      "#9fd8ff",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": 60,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 620,
+      "y1": 900,
+      "col": "#dff4ff"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     450,
+     1.08
+    ],
+    [
+     920,
+     445,
+     1.1
+    ]
+   ],
+   "amb": "river"
+  },
+  {
+   "id": "e1_deva",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Devavrata grew into a prince without equal: a scholar, a warrior, the heir of Hastinapura.",
+     "hi": "देवव्रत एक अद्वितीय राजकुमार बना: विद्वान भी, योद्धा भी, हस्तिनापुर का उत्तराधिकारी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "palace",
+     "tod": "gold",
+     "x": 360,
+     "w": 880,
+     "h": 560
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "devavrata",
+      "x": 1060,
+      "y": 430,
+      "R": 200,
+      "f": -1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": 60,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DEVAVRATA",
+    "hi": "देवव्रत",
+    "ep_en": "son of Ganga",
+    "ep_hi": "गंगापुत्र",
+    "side": -1
+   },
+   "amb": "wind"
+  },
+  {
+   "id": "e1_satya",
+   "music": "love",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Years later, by the Yamuna, the king met Satyavati, a fisherman's daughter, and his heart was lost again.",
+     "hi": "बरसों बाद, यमुना के किनारे, राजा ने मछुआरे की बेटी सत्यवती को देखा, और उनका मन फिर हार गया।"
+    },
+    {
+     "who": "FISHER",
+     "en": "She will marry you, king, but only if her son becomes king after you.",
+     "hi": "वह आपसे विवाह करेगी, राजन, पर तभी जब आपके बाद उसका पुत्र राजा बने।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "mist",
+     "hz": 520,
+     "lotus": 10,
+     "reeds": 1
+    },
+    {
+     "n": "boat",
+     "k": "plate",
+     "d": 0.9,
+     "draw": "boat",
+     "args": {
+      "x": 760,
+      "y": 700,
+      "s": 1.0
+     }
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "satyavati",
+      "x": 1120,
+      "y": 430,
+      "R": 165,
+      "f": -1,
+      "expr": "calm"
+     },
+     "breath": 1
+    },
+    {
+     "n": 50,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 560,
+      "y1": 900
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     900,
+     460,
+     1.0
+    ],
+    [
+     900,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "river"
+  },
+  {
+   "id": "e1_grief",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "The king would not take the throne from his son. He said nothing, and wasted away with grief.",
+     "hi": "राजा अपने पुत्र से सिंहासन नहीं छीन सकते थे। वे कुछ न बोले, और शोक में घुलते चले गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#20101a",
+     "moon": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shantanu",
+      "x": 700,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     720,
+     460,
+     1.04
+    ],
+    [
+     720,
+     450,
+     1.16
+    ]
+   ],
+   "amb": "night"
+  },
+  {
+   "id": "e1_vow",
+   "music": "storm",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Devavrata learned the truth, and went to the fisherman himself.",
+     "hi": "देवव्रत को सच पता चला, और वे स्वयं मछुआरे के पास गए।"
+    },
+    {
+     "who": "DEVA",
+     "en": "Hear me, earth and sky! I give up the throne. And I will never marry, so that no child of mine will ever claim it.",
+     "hi": "सुनो, धरती और आकाश! मैं सिंहासन का त्याग करता हूँ। और मैं आजीवन विवाह नहीं करूँगा, ताकि मेरी कोई संतान कभी इस पर दावा न करे।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "storm",
+     "hz": 720,
+     "ground": "#1a2030"
+    },
+    {
+     "n": "hero",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "devavrata",
+       "x": 800,
+       "y": 900,
+       "S": 620,
+       "f": 1,
+       "pose": "vow"
+      }
+     ],
+     "rim": [
+      "#dfefff",
+      -3,
+      -2,
+      0.8
+     ],
+     "glow": [
+      "#a0c0ff",
+      18,
+      0.25
+     ]
+    },
+    {
+     "n": "fx_flash",
+     "k": "anim",
+     "every": 1,
+     "d": 1.0,
+     "fx": {
+      "kind": "flash",
+      "at": [
+       1.2,
+       6.5,
+       9.0
+      ],
+      "bolt": 1100
+     },
+     "b": "add"
+    },
+    {
+     "n": 180,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rain"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     500,
+     1.1
+    ],
+    [
+     800,
+     440,
+     1.0
+    ]
+   ],
+   "shake": [
+    [
+     6.5,
+     8
+    ]
+   ],
+   "amb": "storm",
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 1.2
+    },
+    {
+     "n": "thunder",
+     "at": 6.5,
+     "v": 0.9
+    }
+   ]
+  },
+  {
+   "id": "e1_bhishma",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "The heavens rained flowers. The gods called him Bhishma: he of the terrible vow. And his father gave him a boon: death would come to him only when he chose it.",
+     "hi": "आकाश से पुष्प बरसे। देवताओं ने उन्हें भीष्म कहा: भीषण प्रतिज्ञा करने वाला। और पिता ने वरदान दिया: मृत्यु उनके पास तभी आएगी जब वे स्वयं चाहेंगे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "hz": 740,
+     "hills": 1
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 120,
+      "r0": 60,
+      "r1": 1000,
+      "col": "#fff0c0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 540,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.3
+     ],
+     "breath": 1
+    },
+    {
+     "n": 110,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals"
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "BHISHMA",
+    "hi": "भीष्म",
+    "ep_en": "he of the terrible vow",
+    "ep_hi": "भीषण प्रतिज्ञा वाले",
+    "side": 1
+   },
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 0.4
+    },
+    {
+     "n": "sparkle",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "id": "e1_end",
+   "music": "title",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Love for his father had bound him to a throne he would never sit on. One day, that same vow would make him stand against dharma itself.",
+     "hi": "पिता के प्रेम ने उन्हें उस सिंहासन से बाँध दिया, जिस पर वे कभी नहीं बैठे। एक दिन यही वचन उन्हें धर्म के ही विरुद्ध खड़ा कर देगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a1210",
+     "throne": [
+      800,
+      660,
+      260
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "guard",
+     "k": "plate",
+     "d": 0.9,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 1220,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "pose": "spear",
+       "weapon": "spear"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": 50,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0b060"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.1
+    ],
+    [
+     800,
+     440,
+     1.0
+    ]
+   ],
+   "tout": "fade",
+   "min": 9,
+   "amb": "court"
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

@@ -1,0 +1,1049 @@
+{
+ "title": {
+  "en": "The Forest Years",
+  "hi": "वनवास"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 6,
+ "id": "ep06",
+ "tag": {
+  "en": "Tested by gods, the brothers keep to dharma.",
+  "hi": "देवताओं की परीक्षा में भी भाई धर्म पर अडिग रहे।"
+ },
+ "shots": [
+  {
+   "id": "e6_open",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Twelve years in the forest. They lived on roots and fruit, but they never left the path of dharma.",
+     "hi": "वन में बारह वर्ष। वे कंद-मूल पर जीते रहे, पर धर्म का मार्ग कभी नहीं छोड़ा।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dawn",
+     "hut": 1100
+    },
+    {
+     "n": 60,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#fff0c0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 1300,
+      "y": -100,
+      "r0": 50,
+      "r1": 1200,
+      "col": "#fff0c0",
+      "spin": 0.5
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     900,
+     460,
+     1.0
+    ],
+    [
+     900,
+     450,
+     1.1
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "birds"
+  },
+  {
+   "id": "e6_kirata",
+   "music": "shiva",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Arjuna climbed into the Himalayas to win divine weapons. A wild hunter challenged him over a boar they had both shot. They fought, and the hunter could not be beaten.",
+     "hi": "अर्जुन दिव्य अस्त्र पाने हिमालय गए। एक जंगली शिकारी ने उस सूअर को लेकर ललकारा, जिसे दोनों ने बाण मारा था। वे लड़े, और वह शिकारी हारा ही नहीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya"
+    },
+    {
+     "n": "duel",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 520,
+       "y": 880,
+       "S": 600,
+       "f": 1,
+       "pose": "release",
+       "weapon": "bow"
+      },
+      {
+       "who": "shiva",
+       "x": 1100,
+       "y": 880,
+       "S": 640,
+       "f": -1,
+       "pose": "charge",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ]
+    },
+    {
+     "n": 150,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.08
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 5
+    },
+    {
+     "n": "whoosh",
+     "at": 7
+    },
+    {
+     "n": "clash",
+     "at": 9
+    }
+   ]
+  },
+  {
+   "id": "e6_shiva",
+   "music": "shiva",
+   "lines": [
+    {
+     "who": "SHIVA",
+     "en": "Your courage pleases me, Arjuna. Take the Pashupata, my own weapon.",
+     "hi": "तुम्हारे साहस से मैं प्रसन्न हूँ, अर्जुन। पाशुपत लो, मेरा अपना अस्त्र।",
+     "fx": "divine_big"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya",
+     "sky": [
+      "#1a2040",
+      "#4a5a8a",
+      "#c8d0e8"
+     ]
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 800,
+      "y": 420,
+      "r": 500,
+      "col": "#a0c0ff"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shiva",
+      "x": 540,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "glow": [
+      "#a0c0ff",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": 120,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "SHIVA",
+    "hi": "शिव",
+    "ep_en": "the hunter of the mountains",
+    "ep_hi": "किरात",
+    "side": 1
+   },
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "damaru",
+     "at": 0.2
+    },
+    {
+     "n": "om",
+     "at": 1.0
+    }
+   ]
+  },
+  {
+   "id": "e6_lake",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "One day, parched with thirst, the brothers came to a still lake. A voice warned: answer my questions before you drink.",
+     "hi": "एक दिन प्यास से व्याकुल भाई एक शांत सरोवर पर पहुँचे। एक आवाज़ ने चेताया: पहले मेरे प्रश्नों का उत्तर दो, फिर जल पियो।"
+    },
+    {
+     "who": "NAR",
+     "en": "One by one, they drank, and fell.",
+     "hi": "एक-एक कर उन्होंने जल पिया, और गिर पड़े।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "mist"
+    },
+    {
+     "n": "fallen",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 450,
+       "y": 860,
+       "S": 420,
+       "f": 1,
+       "pose": "stand",
+       "rot": -90
+      },
+      {
+       "who": "arjuna",
+       "x": 900,
+       "y": 880,
+       "S": 380,
+       "f": 1,
+       "pose": "stand",
+       "rot": -88
+      },
+      {
+       "who": "nakula",
+       "x": 1250,
+       "y": 860,
+       "S": 360,
+       "f": -1,
+       "pose": "stand",
+       "rot": 90
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 640,
+      "r": 500
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 8.0,
+     "v": 0.4
+    }
+   ]
+  },
+  {
+   "id": "e6_yaksha",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "YAKSHA",
+     "en": "What is the greatest wonder in the world?",
+     "hi": "संसार का सबसे बड़ा आश्चर्य क्या है?",
+     "fx": "divine_big"
+    },
+    {
+     "who": "YUDHI",
+     "en": "Every day, people die. And yet the living go on as if they will live forever. That is the greatest wonder.",
+     "hi": "हर दिन लोग मरते हैं। फिर भी जीवित लोग ऐसे जीते हैं जैसे वे सदा रहेंगे। यही सबसे बड़ा आश्चर्य है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "mist",
+     "lotus": 6
+    },
+    {
+     "n": "yaksha",
+     "k": "plate",
+     "d": 0.9,
+     "draw": "yakshaForm",
+     "args": {
+      "x": 1050,
+      "y": 430
+     }
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 520,
+      "y": 470,
+      "R": 170,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     470,
+     1.1
+    ],
+    [
+     900,
+     440,
+     1.05
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 0.2
+    }
+   ]
+  },
+  {
+   "id": "e6_choose",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "YAKSHA",
+     "en": "You have answered well. One of your brothers may live. Choose.",
+     "hi": "तुमने ठीक उत्तर दिया। तुम्हारा एक भाई जीवित हो सकता है। चुनो।",
+     "fx": "divine_big"
+    },
+    {
+     "who": "YUDHI",
+     "en": "Nakula. My father had two wives. A son of Kunti lives, in me. Let a son of Madri live too.",
+     "hi": "नकुल। मेरे पिता की दो पत्नियाँ थीं। कुंती का एक पुत्र जीवित है, मैं। माद्री का भी एक पुत्र जीवित रहे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "mist",
+     "lotus": 6
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.02
+    ],
+    [
+     800,
+     440,
+     1.16
+    ]
+   ],
+   "amb": "river"
+  },
+  {
+   "id": "e6_dharma",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "He had chosen fairness over his own blood. The Yaksha revealed himself as Dharma, his own father, and gave all four brothers back their lives.",
+     "hi": "उन्होंने अपने रक्त से ऊपर न्याय को चुना था। यक्ष ने स्वयं को धर्मराज, उनके पिता, के रूप में प्रकट किया, और चारों भाइयों को जीवन लौटा दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "gold",
+     "lotus": 12
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 300,
+      "r0": 80,
+      "r1": 1000,
+      "col": "#fff0c0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dharma",
+      "x": 540,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.45
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DHARMA",
+    "hi": "धर्मराज",
+    "ep_en": "the Yaksha revealed",
+    "ep_hi": "यक्ष का सत्य रूप",
+    "side": 1
+   },
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 0.5
+    },
+    {
+     "n": "sparkle",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "id": "e6_virata",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "In the thirteenth year they hid in the court of King Virata: a king as a master of dice, mighty Bhima as a cook, Arjuna as a teacher of dance, and the queen Draupadi as a maid.",
+     "hi": "तेरहवें वर्ष वे राजा विराट की सभा में छिप गए: एक राजा पासों का सलाहकार बना, बलशाली भीम रसोइया, अर्जुन नृत्य-शिक्षक, और महारानी द्रौपदी एक दासी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#2a3a5a"
+    },
+    {
+     "n": "disguise",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 300,
+       "y": 880,
+       "S": 480,
+       "f": 1,
+       "pose": "dice",
+       "style": {
+        "crown": "bun",
+        "dhoti": "#e8dcc0"
+       }
+      },
+      {
+       "who": "bhima",
+       "x": 620,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "crown": "band",
+        "dhoti": "#e8dcc0"
+       }
+      },
+      {
+       "who": "draupadi",
+       "x": 1000,
+       "y": 880,
+       "S": 480,
+       "f": -1,
+       "sari": "#6a5a4a"
+      },
+      {
+       "who": "arjuna",
+       "x": 1300,
+       "y": 880,
+       "S": 500,
+       "f": -1,
+       "pose": "flute",
+       "style": {
+        "crown": "bun",
+        "dhoti": "#d870a0",
+        "scarf": "#f0c040"
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     500,
+     470,
+     1.15
+    ],
+    [
+     1100,
+     470,
+     1.15
+    ]
+   ],
+   "amb": "court"
+  },
+  {
+   "id": "e6_end",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "When the year was over, Arjuna took down the Gandiva from its hiding place in a tree. The exile had ended. Now they asked only for what was theirs.",
+     "hi": "वर्ष पूरा होते ही अर्जुन ने पेड़ में छिपाया गांडीव नीचे उतारा। वनवास समाप्त हुआ। अब वे केवल अपना अधिकार माँग रहे थे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dawn"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": -100,
+      "r0": 40,
+      "r1": 1100,
+      "col": "#fff0c0",
+      "spin": 1
+     },
+     "b": "add"
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 800,
+       "y": 900,
+       "S": 660,
+       "f": 1,
+       "pose": "vow",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      20,
+      0.3
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     560,
+     1.15
+    ],
+    [
+     800,
+     430,
+     1.0
+    ]
+   ],
+   "tout": "fade",
+   "min": 10,
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 6.5
+    }
+   ]
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

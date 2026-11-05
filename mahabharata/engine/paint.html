@@ -7,7 +7,11 @@
 <script src="lib/p5.min.js"></script>
 <script src="lib/p5.brush.js"></script>
 <script src="kit.js"></script>
+<script src="faces.js"></script>
 <script src="shots.js"></script>
+<script src="eps/test.js"></script>
+<script src="eps/lib.js"></script>
+<script src="eps/pieces.js"></script>
 <script>
 const q = new URLSearchParams(location.search);
 const W = +(q.get('w') || 1600), H = +(q.get('h') || 900);
@@ -28,13 +32,13 @@ function setup() {
 
 function draw() {
   if (!JOB) return;
-  const sh = SHOTS[JOB.shot];
-  const L = sh.layers[JOB.layer];
+  const L = JOB.spec || SHOTS[JOB.shot].layers[JOB.layer];
+  const mode = JOB.spec ? (L.b === 'add' ? 'add' : 'paint') : L.mode;
   translate(-W / 2, -H / 2);
-  const bgc = L.bg || (L.mode === 'add' ? '#000000' : PAPER);
+  const bgc = L.bg || (mode === 'add' ? '#000000' : PAPER);
   background(bgc);
-  P.begin(JOB.seed, W / 1600, L.mode);
-  L.draw(P, JOB.t || 0, JOB);
+  P.begin(JOB.seed, W / 1600, mode);
+  if (JOB.spec) drawSpec(P, L, JOB.t || 0, JOB); else L.draw(P, JOB.t || 0, JOB);
   brush.reDraw(); brush.reBlend();
   P.end();
 }

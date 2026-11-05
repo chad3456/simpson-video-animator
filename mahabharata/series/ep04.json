@@ -1,0 +1,1076 @@
+{
+ "title": {
+  "en": "The Game of Dice",
+  "hi": "द्यूत क्रीड़ा"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 4,
+ "id": "ep04",
+ "tag": {
+  "en": "A king who could not refuse a challenge.",
+  "hi": "एक राजा जो चुनौती ठुकरा न सका।"
+ },
+ "shots": [
+  {
+   "id": "e4_open",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Given a wild forest as their share of the kingdom, the Pandavas built a shining city: Indraprastha.",
+     "hi": "राज्य के हिस्से में उन्हें एक जंगली वन मिला, और पांडवों ने वहाँ एक चमकता नगर बसाया: इन्द्रप्रस्थ।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "palace",
+     "tod": "gold",
+     "x": 300,
+     "w": 1000,
+     "h": 640,
+     "col": "#e0b070"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 150,
+      "r0": 60,
+      "r1": 900,
+      "col": "#fff0c0",
+      "spin": 1
+     },
+     "b": "add"
+    },
+    {
+     "n": 50,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#ffe0a0"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.1
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "birds"
+  },
+  {
+   "id": "e4_maya",
+   "music": "court",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Its hall was built by Maya, the great architect. Floors shone like water, and water lay still as stone.",
+     "hi": "उसकी सभा महान शिल्पी मय ने बनाई थी। फर्श जल की तरह चमकते थे, और जल पत्थर जैसा स्थिर था।"
+    },
+    {
+     "who": "NAR",
+     "en": "Visiting, Duryodhana stepped into a pool, and laughter rang through the hall.",
+     "hi": "वहाँ आए दुर्योधन एक कुंड में गिर पड़े, और सभा में हँसी गूँज उठी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#1a3a4a",
+     "lamps": 1
+    },
+    {
+     "n": "pool",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "oilPool",
+     "args": {
+      "x": 800,
+      "y": 760,
+      "col": "#4a8aa8",
+      "w": 1.6
+     }
+    },
+    {
+     "n": "duryo",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "duryo",
+       "x": 800,
+       "y": 820,
+       "S": 560,
+       "f": 1,
+       "pose": "despair"
+      }
+     ],
+     "mv": {
+      "dy": [
+       -60,
+       40
+      ],
+      "t": [
+       6,
+       7.2
+      ],
+      "ease": "in"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.1
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 7.0
+    },
+    {
+     "n": "crowdlaugh",
+     "at": 7.4,
+     "v": 0.7
+    }
+   ]
+  },
+  {
+   "id": "e4_vow",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "DURYO",
+     "en": "They laughed at me. I will not rest until they have lost everything they own.",
+     "hi": "वे मुझ पर हँसे। जब तक वे अपना सब कुछ न हार जाएँ, मुझे चैन नहीं मिलेगा।",
+     "fx": "growl"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140608",
+     "glow": "#4a1010"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 800,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "glow": [
+      "#ff4020",
+      30,
+      0.25
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.02
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e4_shakuni",
+   "music": "dice",
+   "lines": [
+    {
+     "who": "SHAKUNI",
+     "en": "No war is needed, nephew. Invite Yudhishthira to a game of dice. My dice obey only me.",
+     "hi": "युद्ध की आवश्यकता नहीं, भांजे। युधिष्ठिर को द्यूत के लिए बुलाओ। मेरे पासे केवल मेरी बात मानते हैं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#0c140c",
+     "glow": "#2a3a1a"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shakuni",
+      "x": 1060,
+      "y": 450,
+      "R": 200,
+      "f": -1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#c0e080",
+      3,
+      -2,
+      0.45
+     ],
+     "breath": 1
+    },
+    {
+     "n": "dice",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "diceFloat",
+     "args": {
+      "x": 1180,
+      "y": 600
+     },
+     "every": 2
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.14
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "SHAKUNI",
+    "hi": "शकुनि",
+    "ep_en": "master of the dice",
+    "ep_hi": "पासों का स्वामी",
+    "side": -1
+   },
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "dice",
+     "at": 4.0
+    }
+   ]
+  },
+  {
+   "id": "e4_yudhi",
+   "music": "court",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Yudhishthira, who believed a king must never refuse a challenge, accepted.",
+     "hi": "युधिष्ठिर, जो मानते थे कि राजा को कभी चुनौती नहीं ठुकरानी चाहिए, ने निमंत्रण स्वीकार कर लिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "hz": 700,
+     "hills": 1,
+     "ground": "#8a6a3a"
+    },
+    {
+     "n": "fx_wheel",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "wheel",
+      "x": 820,
+      "y": 430,
+      "r": 360,
+      "spin": 6,
+      "col": "#fff0b0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 540,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "YUDHISHTHIRA",
+    "hi": "युधिष्ठिर",
+    "ep_en": "son of Dharma",
+    "ep_hi": "धर्मराज",
+    "side": 1
+   },
+   "amb": "temple"
+  },
+  {
+   "id": "e4_game",
+   "music": "dice",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "He staked his jewels, and lost. His gold. His army. His kingdom.",
+     "hi": "उन्होंने अपने रत्न दाँव पर लगाए, और हार गए। अपना सोना। अपनी सेना। अपना राज्य।"
+    },
+    {
+     "who": "SHAKUNI",
+     "en": "Won!",
+     "hi": "जीत गया!",
+     "gap": 0.6
+    },
+    {
+     "who": "SHAKUNI",
+     "en": "Won again!",
+     "hi": "फिर जीत गया!",
+     "gap": 1.4
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1210"
+    },
+    {
+     "n": "board",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "diceBoard",
+     "args": {}
+    },
+    {
+     "n": "players",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "shakuni",
+       "x": 420,
+       "y": 880,
+       "S": 640,
+       "f": 1,
+       "pose": "dice"
+      },
+      {
+       "who": "yudhi",
+       "x": 1180,
+       "y": 880,
+       "S": 640,
+       "f": -1,
+       "pose": "dice",
+       "poseOver": {
+        "aF": [
+         60,
+         40
+        ],
+        "lean": 16,
+        "head": 20
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "dice",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "diceRoll",
+     "args": {
+      "times": [
+       1.0,
+       4.0,
+       7.0,
+       10.0
+      ]
+     },
+     "every": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.1
+    ],
+    [
+     800,
+     510,
+     1.2
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "dice",
+     "at": 1.0
+    },
+    {
+     "n": "dice",
+     "at": 4.0
+    },
+    {
+     "n": "dice",
+     "at": 7.0
+    },
+    {
+     "n": "dice",
+     "at": 10.0
+    }
+   ]
+  },
+  {
+   "id": "e4_brothers",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Then he staked his brothers, one by one: Nakula, Sahadeva, Arjuna, Bhima. And then he staked himself.",
+     "hi": "फिर उन्होंने एक-एक कर अपने भाइयों को दाँव पर लगाया: नकुल, सहदेव, अर्जुन, भीम। और फिर स्वयं को।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a0e0c"
+    },
+    {
+     "n": "nakula",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "nakula",
+      "x": 200,
+      "y": 470,
+      "R": 120,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "sahadeva",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "sahadeva",
+      "x": 520,
+      "y": 480,
+      "R": 120,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 860,
+      "y": 470,
+      "R": 125,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "bhima",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 1230,
+      "y": 470,
+      "R": 135,
+      "f": 1,
+      "expr": "anger"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     300,
+     480,
+     1.25
+    ],
+    [
+     1150,
+     470,
+     1.25
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "dice",
+     "at": 2.0
+    },
+    {
+     "n": "dice",
+     "at": 4.0
+    },
+    {
+     "n": "dice",
+     "at": 6.0
+    },
+    {
+     "n": "dice",
+     "at": 8.0
+    }
+   ]
+  },
+  {
+   "id": "e4_stake",
+   "music": "dice",
+   "lines": [
+    {
+     "who": "SHAKUNI",
+     "en": "You still have one jewel left, Yudhishthira. Draupadi.",
+     "hi": "अभी एक रत्न बाकी है, युधिष्ठिर। द्रौपदी।"
+    },
+    {
+     "who": "YUDHI",
+     "en": "I stake Draupadi.",
+     "hi": "मैं द्रौपदी को दाँव पर लगाता हूँ।",
+     "gap": 1.0
+    },
+    {
+     "who": "VIDURA",
+     "en": "Stop this! This is adharma!",
+     "hi": "रोको यह! यह अधर्म है!",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140608",
+     "glow": "#3a1010"
+    },
+    {
+     "n": "shakuni",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shakuni",
+      "x": 560,
+      "y": 460,
+      "R": 180,
+      "f": 1,
+      "expr": "cruel"
+     },
+     "breath": 1
+    },
+    {
+     "n": "yudhi",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 1150,
+      "y": 460,
+      "R": 175,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     460,
+     1.12
+    ],
+    [
+     1080,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 3.5
+    }
+   ]
+  },
+  {
+   "id": "e4_lost",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "SHAKUNI",
+     "en": "Won!",
+     "hi": "जीत गया!"
+    },
+    {
+     "who": "NAR",
+     "en": "The court fell silent. Bhishma, bound by his vow to the throne, did not move.",
+     "hi": "सभा में सन्नाटा छा गया। सिंहासन के प्रति अपने वचन से बँधे भीष्म हिले तक नहीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#2a0a0a",
+     "throne": [
+      800,
+      660,
+      230
+     ]
+    },
+    {
+     "n": "diceFall",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "diceFall",
+     "args": {},
+     "every": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 1080,
+      "y": 450,
+      "R": 170,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     900,
+     460,
+     1.0
+    ],
+    [
+     900,
+     450,
+     1.14
+    ]
+   ],
+   "tout": "fade",
+   "min": 9,
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "dice",
+     "at": 0.3
+    },
+    {
+     "n": "gong",
+     "at": 1.4,
+     "v": 0.6
+    }
+   ]
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

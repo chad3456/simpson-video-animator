@@ -1,0 +1,1377 @@
+{
+ "title": {
+  "en": "Dharma Victorious",
+  "hi": "धर्म की विजय"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 10,
+ "id": "ep10",
+ "tag": {
+  "en": "The war ends. The last test is a dog at heaven's gate.",
+  "hi": "युद्ध समाप्त हुआ। अंतिम परीक्षा थी स्वर्ग के द्वार पर एक कुत्ता।"
+ },
+ "shots": [
+  {
+   "id": "e10_karna",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "On the seventeenth day, Karna faced Arjuna at last. And his chariot wheel sank into the earth, as an old curse had foretold.",
+     "hi": "सत्रहवें दिन, आखिरकार कर्ण का अर्जुन से सामना हुआ। और उनके रथ का पहिया धरती में धँस गया, जैसा एक पुराने शाप ने कहा था।",
+     "at": 4.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      1200,
+      560,
+      140
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#3a2014"
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 800,
+       "y": 880,
+       "S": 640,
+       "f": 1,
+       "pose": "dice",
+       "weapon": "wheel",
+       "poseOver": {
+        "seat": 0,
+        "lean": 30
+       }
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": 100,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.12
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "crack",
+     "at": 8.0
+    },
+    {
+     "n": "rumble",
+     "at": 8.2
+    }
+   ]
+  },
+  {
+   "id": "e10_plead",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "KARNA",
+     "en": "Arjuna, wait! Dharma forbids you to strike a man who is unarmed!",
+     "hi": "अर्जुन, रुको! धर्म निहत्थे पर वार करने से रोकता है!"
+    },
+    {
+     "who": "KRISHNA",
+     "en": "Dharma, Karna? Where was your dharma when Draupadi was dragged into the court? When Abhimanyu stood alone against seven?",
+     "hi": "धर्म, कर्ण? तब तुम्हारा धर्म कहाँ था जब द्रौपदी को सभा में घसीटा गया? जब अभिमन्यु अकेला सात के सामने खड़ा था?",
+     "fx": "divine"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      1200,
+      560,
+      140
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#3a2014"
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 540,
+      "y": 470,
+      "R": 180,
+      "f": 1,
+      "expr": "fear"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 1140,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "stern"
+     },
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     470,
+     1.1
+    ],
+    [
+     1060,
+     455,
+     1.1
+    ]
+   ],
+   "amb": "wind"
+  },
+  {
+   "id": "e10_fall",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Karna had no answer. Arjuna loosed, and the son of the Sun fell, as the sun went down.",
+     "hi": "कर्ण के पास कोई उत्तर न था। अर्जुन ने बाण छोड़ा, और सूर्यपुत्र गिर पड़ा, जैसे सूर्य अस्त हुआ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "crimson",
+     "sun": [
+      800,
+      640,
+      160
+     ],
+     "sunCol": "#e04a20",
+     "hills": 1,
+     "ground": "#2a1010"
+    },
+    {
+     "n": "shot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 2.4,
+      "x0": 100,
+      "y0": 520,
+      "x1": 820,
+      "y1": 560
+     },
+     "every": 1,
+     "b": "add"
+    },
+    {
+     "n": "sunset",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "sinkingSun",
+     "args": {
+      "x": 800,
+      "y": 640
+     },
+     "every": 3,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.0
+    ],
+    [
+     800,
+     510,
+     1.1
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 2.4
+    },
+    {
+     "n": "crack",
+     "at": 2.8
+    },
+    {
+     "n": "gong",
+     "at": 3.4,
+     "v": 0.6
+    }
+   ]
+  },
+  {
+   "id": "e10_mace",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "On the eighteenth day, only Duryodhana was left. Bhima met him by the lake, with the mace.",
+     "hi": "अठारहवें दिन, केवल दुर्योधन बचा था। भीम गदा लेकर सरोवर के किनारे उसके सामने आए।"
+    },
+    {
+     "who": "BHIMA",
+     "en": "Remember the dice, Duryodhana! Remember Draupadi!",
+     "hi": "द्यूत याद करो, दुर्योधन! द्रौपदी को याद करो!",
+     "fx": "roar"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "dusk",
+     "lotus": 4
+    },
+    {
+     "n": "duel",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 520,
+       "y": 880,
+       "S": 660,
+       "f": 1,
+       "pose": "maceUp",
+       "weapon": "mace"
+      },
+      {
+       "who": "duryo",
+       "x": 1100,
+       "y": 880,
+       "S": 640,
+       "f": -1,
+       "pose": "mace",
+       "weapon": "mace"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": 80,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.1
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 2
+    },
+    {
+     "n": "clash",
+     "at": 4.5
+    }
+   ]
+  },
+  {
+   "id": "e10_thigh",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Bhima struck his thigh, as he had sworn to thirteen years before. Duryodhana fell. The war was over.",
+     "hi": "भीम ने उसकी जंघा पर प्रहार किया, जैसी उन्होंने तेरह वर्ष पहले प्रतिज्ञा की थी। दुर्योधन गिर पड़ा। युद्ध समाप्त हो गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "crimson",
+     "lotus": 0
+    },
+    {
+     "n": "fallen",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "duryo",
+       "x": 1000,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "pose": "despair"
+      }
+     ],
+     "mv": {
+      "dy": [
+       0,
+       60
+      ],
+      "r": [
+       0,
+       14
+      ],
+      "t": [
+       1.2,
+       2.4
+      ],
+      "ax": 1000,
+      "ay": 880,
+      "ease": "in"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "bhima",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 520,
+       "y": 880,
+       "S": 660,
+       "f": 1,
+       "pose": "maceUp",
+       "weapon": "mace"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.12
+    ]
+   ],
+   "shake": [
+    [
+     1.2,
+     10
+    ]
+   ],
+   "tin": "flash",
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 1.2
+    },
+    {
+     "n": "boom",
+     "at": 1.4
+    },
+    {
+     "n": "gong",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "e10_gandhari",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "GANDHARI",
+     "en": "Krishna, you could have stopped this, and you did not. As my family was destroyed, so will yours be.",
+     "hi": "कृष्ण, तुम यह रोक सकते थे, पर तुमने नहीं रोका। जैसे मेरा कुल नष्ट हुआ, वैसे ही तुम्हारा भी होगा।",
+     "fx": "elder"
+    },
+    {
+     "who": "KRISHNA",
+     "en": "So be it, mother.",
+     "hi": "तथास्तु, माता।",
+     "fx": "divine"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 900,
+     "sunY": 560,
+     "armies": 0,
+     "dead": 1
+    },
+    {
+     "n": "gandhari",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "gandhari",
+      "x": 560,
+      "y": 460,
+      "R": 180,
+      "f": 1,
+      "expr": "anger"
+     },
+     "breath": 1
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 1130,
+      "y": 450,
+      "R": 175,
+      "f": -1,
+      "t": [
+       7.5,
+       99
+      ],
+      "expr": "sorrow"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     460,
+     1.1
+    ],
+    [
+     1050,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 6.5,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e10_teach",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "A king lives for his people, never for himself. Dharma is whatever protects all beings.",
+     "hi": "राजा अपनी प्रजा के लिए जीता है, कभी अपने लिए नहीं। धर्म वही है जो सभी प्राणियों की रक्षा करे।",
+     "fx": "elder"
+    },
+    {
+     "who": "NAR",
+     "en": "And when the sun turned north, Bhishma chose to die.",
+     "hi": "और जब सूर्य उत्तरायण हुआ, भीष्म ने स्वेच्छा से प्राण त्याग दिए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dawn",
+     "sun": [
+      1200,
+      600,
+      110
+     ],
+     "hills": 1,
+     "ground": "#3a2416"
+    },
+    {
+     "n": "bed",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "arrowBed",
+     "args": {
+      "x": 800,
+      "y": 760,
+      "s": 1.0
+     }
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 1200,
+      "y": 600,
+      "r0": 100,
+      "r1": 900,
+      "col": "#ffe0a0",
+      "spin": 1
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.05
+    ],
+    [
+     800,
+     590,
+     1.14
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 8
+    }
+   ]
+  },
+  {
+   "id": "e10_crown",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Yudhishthira was crowned king. But the victory tasted of ashes. He ruled with justice for thirty-six years.",
+     "hi": "युधिष्ठिर का राज्याभिषेक हुआ। पर विजय राख जैसी लगी। उन्होंने छत्तीस वर्ष न्याय से राज्य किया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "style": {
+       "crown": "royal"
+      },
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": 50,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals"
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "bells",
+     "at": 1
+    }
+   ]
+  },
+  {
+   "id": "e10_climb",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "At the end of their lives, the Pandavas walked into the Himalayas. One by one, they fell. Draupadi. The twins. Arjuna. Bhima.",
+     "hi": "जीवन के अंत में पांडव हिमालय की ओर चल पड़े। एक-एक कर वे गिरते गए। द्रौपदी। जुड़वाँ भाई। अर्जुन। भीम।"
+    },
+    {
+     "who": "NAR",
+     "en": "Only Yudhishthira walked on, and a dog that had followed him all the way.",
+     "hi": "केवल युधिष्ठिर चलते रहे, और एक कुत्ता जो पूरे रास्ते उनके पीछे आया था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya"
+    },
+    {
+     "n": "walker",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 900,
+       "y": 860,
+       "S": 360,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "crown": "bun",
+        "dhoti": "#e8dcc0"
+       }
+      }
+     ],
+     "mv": {
+      "dx": [
+       -300,
+       200
+      ],
+      "t": [
+       0,
+       16
+      ]
+     }
+    },
+    {
+     "n": "dog",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "dog",
+     "args": {
+      "x": 760,
+      "y": 860,
+      "s": 0.9,
+      "mv": {
+       "dx": [
+        -300,
+        200
+       ],
+       "t": [
+        0,
+        16
+       ]
+      }
+     }
+    },
+    {
+     "n": 200,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.08
+    ]
+   ],
+   "amb": "wind"
+  },
+  {
+   "id": "e10_gate",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "INDRA",
+     "en": "Come, king. Your place in heaven is waiting. But the dog cannot enter.",
+     "hi": "आओ, राजन। स्वर्ग में तुम्हारा स्थान प्रतीक्षा कर रहा है। पर यह कुत्ता भीतर नहीं आ सकता।",
+     "fx": "divine"
+    },
+    {
+     "who": "YUDHI",
+     "en": "He has been faithful to me. I will not abandon one who is faithful, not even for heaven.",
+     "hi": "यह मेरे प्रति निष्ठावान रहा है। मैं किसी निष्ठावान को नहीं छोड़ूँगा, स्वर्ग के लिए भी नहीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "heaven",
+     "gate": 1100
+    },
+    {
+     "n": "yudhi",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 500,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "bless",
+       "style": {
+        "crown": "bun",
+        "dhoti": "#e8dcc0"
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "dog",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "dog",
+     "args": {
+      "x": 330,
+      "y": 880,
+      "s": 1.3
+     }
+    },
+    {
+     "n": "indra",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "indra",
+      "x": 1100,
+      "y": 420,
+      "R": 150,
+      "f": -1,
+      "expr": "calm"
+     },
+     "glow": [
+      "#ffe0a0",
+      26,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.08
+    ]
+   ],
+   "amb": "temple"
+  },
+  {
+   "id": "e10_dharma",
+   "music": "end",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "The dog began to shine, and became Dharma himself. It had been the last test, and Yudhishthira had passed.",
+     "hi": "कुत्ता जगमगाने लगा, और स्वयं धर्मराज बन गया। यह अंतिम परीक्षा थी, और युधिष्ठिर उसमें सफल हुए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "heaven",
+     "gate": 800
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 420,
+      "r0": 60,
+      "r1": 1000,
+      "col": "#fff8d0",
+      "spin": 2
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dharma",
+      "x": 800,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "halo": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      34,
+      0.5
+     ],
+     "breath": 1
+    },
+    {
+     "n": 90,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals"
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "tin": "flash",
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "sparkle",
+     "at": 0.5
+    },
+    {
+     "n": "bells",
+     "at": 1.5
+    }
+   ]
+  },
+  {
+   "id": "e10_end",
+   "music": "end",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Bonds of blood, of friendship, of vows: every one of them was tested. In the end, only dharma remained. Where there is dharma, there is victory.",
+     "hi": "रक्त के बंधन, मित्रता के बंधन, वचनों के बंधन: सबकी परीक्षा हुई। अंत में केवल धर्म बचा। जहाँ धर्म है, वहीं विजय है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#0a1030",
+     "mandala": 330,
+     "my": 420,
+     "mcol": "#d9a536"
+    },
+    {
+     "n": "fx_wheel",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "wheel",
+      "x": 800,
+      "y": 420,
+      "r": 330,
+      "spin": 8,
+      "col": "#f6dd8a"
+     },
+     "b": "add"
+    },
+    {
+     "n": 120,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.06
+    ]
+   ],
+   "tout": "fade",
+   "min": 16,
+   "text": [
+    {
+     "t0": 10.5,
+     "t1": 16,
+     "en": "yato dharmas tato jayaḥ",
+     "hi": "यतो धर्मस्ततो जयः",
+     "f": "deva",
+     "sz": 70,
+     "y": 0.47,
+     "c": "#f6dd8a"
+    },
+    {
+     "t0": 11.5,
+     "t1": 16,
+     "en": "where there is dharma, there is victory",
+     "hi": "जहाँ धर्म है, वहाँ विजय है",
+     "f": "sub",
+     "sz": 34,
+     "y": 0.6,
+     "c": "#f1e6cc"
+    }
+   ],
+   "amb": "temple"
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}

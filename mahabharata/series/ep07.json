@@ -1,0 +1,1023 @@
+{
+ "title": {
+  "en": "Peace Refused",
+  "hi": "शांति का अंतिम प्रयास"
+ },
+ "subtitle": {
+  "en": "Dharma Above All Bonds",
+  "hi": "सब बंधनों से ऊपर धर्म"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 7,
+ "id": "ep07",
+ "tag": {
+  "en": "Krishna asks for five villages. Karna is offered a throne.",
+  "hi": "कृष्ण ने पाँच गाँव माँगे। कर्ण को सिंहासन का प्रस्ताव मिला।"
+ },
+ "shots": [
+  {
+   "id": "e7_choice",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Both sides came to Krishna for help. He offered a choice: his whole army, or himself alone, who would carry no weapon.",
+     "hi": "दोनों पक्ष सहायता माँगने कृष्ण के पास आए। उन्होंने एक विकल्प दिया: उनकी पूरी सेना, या केवल वे स्वयं, जो कोई शस्त्र नहीं उठाएँगे।",
+     "at": 4.6
+    },
+    {
+     "who": "DURYO",
+     "en": "I take the army!",
+     "hi": "मुझे सेना चाहिए!",
+     "fx": "growl"
+    },
+    {
+     "who": "ARJUNA",
+     "en": "I want only you, Keshava.",
+     "hi": "मुझे केवल आप चाहिए, केशव।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#14203a",
+     "moon": 1
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "smile"
+     },
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.3
+     ],
+     "breath": 1
+    },
+    {
+     "n": "duryo",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 300,
+      "y": 480,
+      "R": 140,
+      "f": 1,
+      "t": [
+       8,
+       99
+      ],
+      "expr": "cruel"
+     },
+     "breath": 1
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 1320,
+      "y": 480,
+      "R": 140,
+      "f": -1,
+      "t": [
+       10,
+       99
+      ],
+      "expr": "calm"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.06
+    ]
+   ],
+   "min": 11,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "night"
+  },
+  {
+   "id": "e7_envoy",
+   "music": "court",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Then Krishna himself went to Hastinapura, as a messenger of peace.",
+     "hi": "तब कृष्ण स्वयं शांतिदूत बनकर हस्तिनापुर गए।"
+    },
+    {
+     "who": "KRISHNA",
+     "en": "Give them just five villages, and there will be no war.",
+     "hi": "उन्हें केवल पाँच गाँव दे दो, और युद्ध नहीं होगा।",
+     "fx": "divine"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      1180,
+      660,
+      220
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "envoy",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "krishna",
+       "x": 520,
+       "y": 880,
+       "S": 660,
+       "f": 1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#cfe4ff",
+      -3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "duryo",
+     "k": "plate",
+     "d": 0.9,
+     "figs": [
+      {
+       "who": "duryo",
+       "x": 1180,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "pose": "mace",
+       "weapon": "mace"
+      }
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.08
+    ]
+   ],
+   "amb": "court"
+  },
+  {
+   "id": "e7_needle",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "DURYO",
+     "en": "Not even as much land as the point of a needle. Guards! Seize him!",
+     "hi": "सुई की नोक जितनी भूमि भी नहीं। सैनिको! इसे बंदी बना लो!",
+     "fx": "growl"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140608",
+     "glow": "#4a1010"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 800,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.02
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 4.5,
+     "v": 0.5
+    }
+   ]
+  },
+  {
+   "id": "e7_form",
+   "music": "cosmic",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Krishna laughed, and blazed with light. For one moment the court saw gods and worlds within him. Even the blind king saw.",
+     "hi": "कृष्ण हँसे, और प्रकाश से जगमगा उठे। एक क्षण के लिए सभा ने उनमें देवता और लोक देखे। अंधे राजा ने भी देखा।"
+    },
+    {
+     "who": "DHRITA",
+     "en": "I see... at last, I see.",
+     "hi": "मैं देख रहा हूँ... आखिरकार, मैं देख रहा हूँ।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos"
+    },
+    {
+     "n": "fx_wheel",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "wheel",
+      "x": 800,
+      "y": 380,
+      "r": 420,
+      "spin": 10,
+      "col": "#ffe0a0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 380,
+      "r0": 100,
+      "r1": 1000,
+      "col": "#fff0c0",
+      "spin": 4
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#a0c8ff",
+      40,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     440,
+     1.0
+    ],
+    [
+     800,
+     430,
+     1.14
+    ]
+   ],
+   "tin": "flash",
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "om",
+     "at": 0.2
+    },
+    {
+     "n": "swell",
+     "at": 1
+    },
+    {
+     "n": "gong",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "e7_karna",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "Karna, you are Kunti's firstborn, the eldest of the Pandavas. Come with us, and the throne of Hastinapura is yours. Draupadi too.",
+     "hi": "कर्ण, तुम कुंती के पहले पुत्र हो, पांडवों में सबसे बड़े। हमारे साथ आओ, और हस्तिनापुर का सिंहासन तुम्हारा है।",
+     "fx": "divine"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dusk",
+     "hz": 580
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 520,
+      "y": 450,
+      "R": 175,
+      "f": 1,
+      "expr": "calm"
+     },
+     "breath": 1
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 1140,
+      "y": 460,
+      "R": 180,
+      "f": -1,
+      "expr": "awe"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     450,
+     1.1
+    ],
+    [
+     1050,
+     455,
+     1.08
+    ]
+   ],
+   "amb": "river"
+  },
+  {
+   "id": "e7_refuse",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "KARNA",
+     "en": "When the whole world mocked me, Duryodhana stood by me. I cannot betray him now. Not for a kingdom. Not even for my mother.",
+     "hi": "जब सारे संसार ने मेरा उपहास किया, तब दुर्योधन मेरे साथ खड़ा था। अब मैं उसे धोखा नहीं दे सकता। राज्य के लिए भी नहीं। अपनी माँ के लिए भी नहीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      900,
+      560,
+      160
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#3a2014"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 800,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.02
+    ],
+    [
+     800,
+     440,
+     1.16
+    ]
+   ],
+   "amb": "wind"
+  },
+  {
+   "id": "e7_kunti",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "KUNTI",
+     "en": "My son...",
+     "hi": "मेरे पुत्र..."
+    },
+    {
+     "who": "KARNA",
+     "en": "Where were you, mother, when I floated down the river? ...I will not kill four of your sons. Whatever happens, you will still have five: with Arjuna, or with me.",
+     "hi": "माँ, जब मैं नदी में बह रहा था, तब तुम कहाँ थीं? ...मैं तुम्हारे चार पुत्रों को नहीं मारूँगा। जो भी हो, तुम्हारे पाँच पुत्र रहेंगे: अर्जुन के साथ, या मेरे साथ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dawn",
+     "hz": 560,
+     "sun": [
+      800,
+      500,
+      120
+     ]
+    },
+    {
+     "n": "kunti",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kunti",
+      "x": 520,
+      "y": 470,
+      "R": 165,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "breath": 1
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 1130,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     470,
+     1.12
+    ],
+    [
+     1050,
+     455,
+     1.1
+    ]
+   ],
+   "amb": "river"
+  },
+  {
+   "id": "e7_kavacha",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "And when Indra came disguised as a beggar and asked for his golden armour, Karna cut it from his own body and gave it away. He never refused a gift.",
+     "hi": "और जब इंद्र भिखारी बनकर उनका स्वर्ण कवच माँगने आए, तो कर्ण ने उसे अपने ही शरीर से काटकर दान कर दिया। उन्होंने कभी किसी को दान से मना नहीं किया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "sun": [
+      800,
+      380,
+      200
+     ],
+     "sunCol": "#f6b030",
+     "hills": 1
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 380,
+      "r0": 180,
+      "r1": 1000,
+      "col": "#ffe0a0",
+      "spin": 2
+     },
+     "b": "add"
+    },
+    {
+     "n": "give",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 640,
+       "y": 880,
+       "S": 660,
+       "f": 1,
+       "pose": "bless"
+      },
+      {
+       "who": "brahmin",
+       "x": 1060,
+       "y": 880,
+       "S": 560,
+       "f": -1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": 80,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 300,
+      "y1": 800,
+      "col": "#ffe08a"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     820,
+     460,
+     1.0
+    ],
+    [
+     820,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "magic",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "id": "e7_end",
+   "music": "march",
+   "lines": [
+    {
+     "who": "NAR",
+     "en": "Peace was dead. Eighteen great armies marched to the field of Kurukshetra.",
+     "hi": "शांति मर चुकी थी। अठारह अक्षौहिणी सेनाएँ कुरुक्षेत्र के मैदान की ओर चल पड़ीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 800,
+     "sunY": 520
+    },
+    {
+     "n": 140,
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.0
+    ],
+    [
+     800,
+     510,
+     1.1
+    ]
+   ],
+   "tout": "fade",
+   "min": 9,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 1.0
+    },
+    {
+     "n": "drumroll",
+     "at": 3
+    }
+   ]
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   }
+  }
+ }
+}
