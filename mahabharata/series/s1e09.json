@@ -1,0 +1,4344 @@
+{
+ "title": {
+  "en": "The Song of God",
+  "hi": "भगवद्गीता"
+ },
+ "subtitle": {
+  "en": "Season 1",
+  "hi": "पहला अध्याय"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 9,
+ "id": "s1e09",
+ "tag": {
+  "en": "Between two armies, time stops and God speaks. Then the grandsire falls.",
+  "hi": "दो सेनाओं के बीच समय थम जाता है और भगवान बोलते हैं। फिर पितामह गिरते हैं।"
+ },
+ "shots": [
+  {
+   "id": "s1e09_a_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The ninth night. Vyasa did not begin at once. He sat a long time with his eyes closed. Then he said: Scribe, what I tell you now is not mine. I only heard it.",
+     "hi": "नौवीं रात। व्यास ने तुरंत आरंभ नहीं किया। वे बहुत देर तक आँखें बंद किए बैठे रहे। फिर बोले: लेखक, जो मैं अब कहूँगा वह मेरा नहीं है। मैंने केवल उसे सुना है।",
+     "at": 5.0
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ]
+    },
+    {
+     "n": "vyasa",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vyasa",
+     "args": {
+      "x": 470,
+      "y": 800,
+      "S": 500,
+      "f": 1
+     }
+    },
+    {
+     "n": "ganesha",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500,
+      "hand": 0
+     }
+    },
+    {
+     "n": "hand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500
+     },
+     "every": 3
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add"
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.3
+    ],
+    [
+     800,
+     470,
+     1.05
+    ]
+   ],
+   "min": 12,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_a_chant",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "CHANT",
+     "en": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥",
+     "hi": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥"
+    },
+    {
+     "who": "VYASAC",
+     "en": "On the field of dharma, on the field of the Kurus, gathered to fight, what did my sons and the sons of Pandu do, Sanjaya? So asked the blind king. And Sanjaya told him.",
+     "hi": "धर्मक्षेत्र में, कुरुक्षेत्र में, युद्ध की इच्छा से एकत्र, मेरे पुत्रों और पांडु के पुत्रों ने क्या किया, संजय? अंधे राजा ने पूछा। और संजय ने उन्हें बताया।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e09_a_cave_bg"
+    },
+    {
+     "n": "vy_calm",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "vyasa",
+      "x": 700,
+      "y": 420,
+      "R": 190,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e09_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     430,
+     1.0
+    ],
+    [
+     700,
+     420,
+     1.1
+    ]
+   ],
+   "text": [
+    {
+     "t0": 0.5,
+     "t1": 9.0,
+     "en": "dharma-kṣetre kuru-kṣetre samavetā yuyutsavaḥ",
+     "hi": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_b_middle",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Krishna stopped the chariot between the two armies, facing Bhishma and Drona. And Arjuna looked.",
+     "hi": "कृष्ण ने रथ दोनों सेनाओं के बीच, भीष्म और द्रोण के सामने रोका। और अर्जुन ने देखा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520
+    },
+    {
+     "n": "chariot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warChariot",
+     "args": {
+      "x": 800,
+      "y": 860,
+      "s": 1.0,
+      "rider": "arjuna",
+      "driver": "krishna"
+     },
+     "every": 2
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 50
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.1
+    ]
+   ],
+   "min": 8,
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_b_sees",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He saw fathers and grandfathers. Teachers, uncles, brothers, sons, grandsons, friends, fathers-in-law. On both sides. All of them his own.",
+     "hi": "उन्होंने पिता और पितामह देखे। गुरु, मामा, भाई, पुत्र, पौत्र, मित्र, ससुर। दोनों ओर। सब उनके अपने।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 520
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 520,
+      "y": 460,
+      "R": 160,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "dr",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 1080,
+      "y": 460,
+      "R": 160,
+      "f": -1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     520,
+     470,
+     1.15
+    ],
+    [
+     1100,
+     470,
+     1.15
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_b_despair",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "Krishna, my limbs give way. My mouth is dry. My body trembles and my hair stands on end. Gandiva slips from my hand. I do not want victory, nor a kingdom, nor pleasure. What use is a kingdom bought with their blood? I will not fight.",
+     "hi": "कृष्ण, मेरे अंग शिथिल हो रहे हैं। मेरा मुख सूख रहा है। मेरा शरीर काँप रहा है और रोम खड़े हो रहे हैं। गांडीव मेरे हाथ से फिसल रहा है। मुझे न विजय चाहिए, न राज्य, न सुख। उनके रक्त से खरीदा राज्य किस काम का? मैं नहीं लड़ूँगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 520,
+     "armies": 0
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 800,
+      "y": 460,
+      "R": 210,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.02
+    ],
+    [
+     800,
+     450,
+     1.18
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 1.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_b_sink",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And he sat down on the floor of the chariot, and let fall his bow and arrows, his mind overwhelmed with grief.",
+     "hi": "और वे रथ के फ़र्श पर बैठ गए, और धनुष बाण गिरा दिए, उनका मन शोक में डूबा हुआ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 520,
+     "armies": 0
+    },
+    {
+     "n": "sit",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 800,
+       "y": 900,
+       "S": 600,
+       "f": 1,
+       "pose": "despair"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     500,
+     1.04
+    ],
+    [
+     800,
+     490,
+     1.2
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "crack",
+     "at": 5.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_smile",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And Krishna smiled, as if at a child, and there, between two armies, time stood still. And Krishna spoke.",
+     "hi": "और कृष्ण मुस्कुराए, जैसे किसी बालक पर, और वहीं, दो सेनाओं के बीच, समय थम गया। और कृष्ण बोले।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "hz": 760,
+     "hills": 1,
+     "ground": "#8a6a3a"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 300,
+      "r0": 120,
+      "r1": 1000,
+      "col": "#fff0c0",
+      "spin": 1
+     },
+     "b": "add"
+    },
+    {
+     "n": "ks",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 0,
+      "y1": 900,
+      "col": "#fff0c0",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "min": 10,
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "om",
+     "at": 0.2,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_soul",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "You grieve for those who should not be grieved for, Arjuna, and yet you speak words of wisdom. The wise grieve neither for the living nor for the dead. There was never a time when I did not exist, nor you, nor these kings. Nor will there be a time when we cease to be.",
+     "hi": "तुम उनके लिए शोक करते हो जिनके लिए शोक नहीं करना चाहिए, अर्जुन, और फिर भी ज्ञान की बातें करते हो। ज्ञानी न जीवितों के लिए शोक करते हैं, न मृतों के लिए। ऐसा कोई समय नहीं था जब मैं न था, न तुम, न ये राजा। न ऐसा कोई समय होगा जब हम नहीं रहेंगे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "hz": 760,
+     "hills": 1,
+     "ground": "#8a6a3a",
+     "src": "s1e09_c_smile_bg"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 300,
+      "r0": 120,
+      "r1": 1000,
+      "col": "#fff0c0",
+      "spin": 1
+     },
+     "b": "add"
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.1
+    ]
+   ],
+   "amb": "temple",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_unborn",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "The soul is never born, and it never dies. It is unborn, eternal, ancient. It is not killed when the body is killed. Weapons cannot cut it. Fire cannot burn it. Water cannot wet it. Wind cannot dry it. As a man throws off worn-out clothes and puts on new ones, so the soul throws off worn-out bodies and enters new ones.",
+     "hi": "आत्मा न कभी जन्म लेती है, न कभी मरती है। यह अजन्मी, नित्य, सनातन है। शरीर के मारे जाने पर यह नहीं मरती। इसे शस्त्र काट नहीं सकते। अग्नि जला नहीं सकती। जल भिगो नहीं सकता। वायु सुखा नहीं सकती। जैसे मनुष्य पुराने वस्त्र उतारकर नए पहनता है, वैसे ही आत्मा पुराने शरीर छोड़कर नए में प्रवेश करती है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#1a1030",
+     "mandala": 380,
+     "my": 440,
+     "mcol": "#f3cf6a"
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 0,
+      "y1": 900,
+      "col": "#fff0c0",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "text": [
+    {
+     "t0": 20.0,
+     "t1": 28.0,
+     "en": "nainaṁ chindanti śastrāṇi nainaṁ dahati pāvakaḥ",
+     "hi": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "temple",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_karma",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "You have a right to your action, Arjuna, but never to its fruits. Let not the fruit of action be your motive, nor let your attachment be to inaction. Act, steady in yoga, giving up attachment, the same in success and failure. That evenness is yoga.",
+     "hi": "तुम्हारा अधिकार केवल कर्म पर है, अर्जुन, उसके फल पर कभी नहीं। कर्म का फल तुम्हारा उद्देश्य न हो, न अकर्म में तुम्हारी आसक्ति हो। योग में स्थिर होकर कर्म करो, आसक्ति त्यागकर, सफलता और असफलता में समान रहकर। वही समता योग है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#1a1030",
+     "mandala": 380,
+     "my": 440,
+     "mcol": "#f3cf6a",
+     "src": "s1e09_c_unborn_bg"
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_wheel",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "wheel",
+      "x": 800,
+      "y": 440,
+      "r": 330,
+      "col": "#f3cf6a"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.05
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "text": [
+    {
+     "t0": 1.0,
+     "t1": 8.0,
+     "en": "karmaṇy evādhikāras te mā phaleṣu kadāchana",
+     "hi": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "temple",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_lamp",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "Like a lamp in a windless place that does not flicker: so is the mind of the yogi who has mastered himself. The mind is restless, Arjuna, as hard to hold as the wind. But by practice, and by letting go, it can be held.",
+     "hi": "जैसे वायुरहित स्थान में रखा दीपक नहीं हिलता: वैसा ही उस योगी का मन है जिसने स्वयं को जीत लिया। मन चंचल है, अर्जुन, वायु की तरह पकड़ने में कठिन। पर अभ्यास से, और वैराग्य से, उसे पकड़ा जा सकता है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      800
+     ]
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 800,
+      "y": 700,
+      "r": 200,
+      "col": "#ffb060"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     640,
+     1.2
+    ],
+    [
+     800,
+     630,
+     1.45
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bell",
+     "at": 0.5,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_avatar",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "Whenever dharma declines, Arjuna, and adharma rises, I bring myself forth. To protect the good, to destroy the wicked, and to establish dharma, I come into being, age after age.",
+     "hi": "जब जब धर्म की हानि होती है, अर्जुन, और अधर्म बढ़ता है, तब तब मैं स्वयं को प्रकट करता हूँ। सज्जनों की रक्षा के लिए, दुष्टों के विनाश के लिए, और धर्म की स्थापना के लिए, मैं युग युग में जन्म लेता हूँ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos",
+     "galaxies": 3
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 440,
+      "r0": 150,
+      "r1": 1000,
+      "col": "#fff0c0",
+      "spin": 2
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "text": [
+    {
+     "t0": 1.0,
+     "t1": 10.0,
+     "en": "yadā yadā hi dharmasya glānir bhavati bhārata",
+     "hi": "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 12.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_leaf",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "Whoever offers me with love a leaf, a flower, a fruit, or a little water, I accept it, offered with love by a pure heart. Whatever you do, whatever you eat, whatever you give, do it as an offering to me.",
+     "hi": "जो कोई प्रेम से मुझे एक पत्ता, एक फूल, एक फल, या थोड़ा जल अर्पित करता है, मैं उसे स्वीकार करता हूँ, शुद्ध हृदय से प्रेमपूर्वक दिया हुआ। तुम जो कुछ करो, जो कुछ खाओ, जो कुछ दो, उसे मुझे अर्पण करके करो।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "gold"
+    },
+    {
+     "n": "leaf",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "lotusLeaf",
+     "args": {
+      "at": [
+       [
+        800,
+        820,
+        140
+       ]
+      ]
+     }
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 50
+     }
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 820
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     640,
+     1.1
+    ],
+    [
+     800,
+     630,
+     1.3
+    ]
+   ],
+   "text": [
+    {
+     "t0": 1.0,
+     "t1": 9.0,
+     "en": "patraṁ puṣpaṁ phalaṁ toyaṁ yo me bhaktyā prayacchati",
+     "hi": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "temple",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_all",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "I am the taste in water, Arjuna, the light of the sun and the moon, the sacred syllable in the Vedas, the sound in the sky, the courage in men. I am the beginning, the middle and the end of all beings. Of rivers I am the Ganga. Of mountains, the Himalaya. Of warriors, Rama. Of the Pandavas, I am you.",
+     "hi": "मैं जल में रस हूँ, अर्जुन, सूर्य और चंद्रमा का प्रकाश, वेदों में ओंकार, आकाश में शब्द, मनुष्यों में पौरुष। मैं सब प्राणियों का आदि, मध्य और अंत हूँ। नदियों में मैं गंगा हूँ। पर्वतों में हिमालय। योद्धाओं में राम। पांडवों में, मैं तुम हूँ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos",
+     "galaxies": 3,
+     "src": "s1e09_c_avatar_bg"
+    },
+    {
+     "n": "within",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "universeWithin",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.16
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "om",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "bells",
+     "at": 10.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_show",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "Lord, if you think I am able to bear it, show me your imperishable self. Show me your universal form.",
+     "hi": "प्रभु, यदि आप समझते हैं कि मैं उसे सह सकता हूँ, तो मुझे अपना अविनाशी स्वरूप दिखाइए। अपना विश्वरूप दिखाइए।"
+    },
+    {
+     "who": "KRISHNA",
+     "en": "You cannot see me with these eyes. I give you divine sight. Behold.",
+     "hi": "तुम इन आँखों से मुझे नहीं देख सकते। मैं तुम्हें दिव्य दृष्टि देता हूँ। देखो।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 820,
+     "sunY": 480,
+     "armies": 0
+    },
+    {
+     "n": "ar",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "awe"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "kr",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 1080,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "divine"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     640,
+     450,
+     1.1
+    ],
+    [
+     960,
+     450,
+     1.12
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 9.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_vishva1",
+   "music": "vishva",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And Arjuna saw. If a thousand suns were to rise at once in the sky, their light would not equal the light of that great being.",
+     "hi": "और अर्जुन ने देखा। यदि आकाश में एक साथ हज़ार सूर्य उदय हों, तो उनका प्रकाश उस महात्मा के प्रकाश के बराबर न होगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos",
+     "galaxies": 6
+    },
+    {
+     "n": "suns",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "thousandSuns",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "arms",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvaArms",
+     "args": {
+      "mv": {
+       "s": [
+        0.6,
+        1.0
+       ],
+       "t": [
+        0,
+        5
+       ],
+       "ax": 800,
+       "ay": 480,
+       "ease": "out"
+      }
+     }
+    },
+    {
+     "n": "form",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvarupa",
+     "args": {
+      "stage": 1
+     }
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 420,
+      "r0": 120,
+      "r1": 1000,
+      "col": "#fff0c0",
+      "spin": 2
+     },
+     "b": "add"
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 800,
+       "y": 905,
+       "S": 150,
+       "f": 1,
+       "pose": "vow"
+      }
+     ],
+     "sil": true
+    }
+   ],
+   "cam": [
+    [
+     800,
+     700,
+     1.6
+    ],
+    [
+     800,
+     440,
+     1.0
+    ]
+   ],
+   "tin": "flash",
+   "min": 14,
+   "text": [
+    {
+     "t0": 4.0,
+     "t1": 12.0,
+     "en": "divi sūrya-sahasrasya bhaved yugapad utthitā",
+     "hi": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "boom",
+     "at": 0.2
+    },
+    {
+     "n": "swell",
+     "at": 0.4
+    },
+    {
+     "n": "om",
+     "at": 2.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_vishva2",
+   "music": "vishva",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "In that one body stood the whole universe, with all its divisions. Every god, every sage, the serpents and the seas, Brahma on his lotus, worlds without number. Arms, bellies, mouths and eyes without end. No beginning. No middle. No end.",
+     "hi": "उस एक शरीर में पूरा ब्रह्मांड खड़ा था, अपने सब विभागों के साथ। हर देवता, हर ऋषि, नाग और सागर, कमल पर ब्रह्मा, असंख्य लोक। अनंत भुजाएँ, उदर, मुख और नेत्र। न आदि। न मध्य। न अंत।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos",
+     "galaxies": 8
+    },
+    {
+     "n": "halo",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "cosmicHalo",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "arms",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvaArms",
+     "args": {
+      "mv": {
+       "r": [
+        -4,
+        4
+       ],
+       "t": [
+        0,
+        16
+       ],
+       "ax": 800,
+       "ay": 560
+      }
+     }
+    },
+    {
+     "n": "form",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvarupa",
+     "args": {
+      "stage": 2
+     }
+    },
+    {
+     "n": "within",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "universeWithin",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     420,
+     1.0
+    ],
+    [
+     800,
+     360,
+     1.25
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 2
+    },
+    {
+     "n": "gong",
+     "at": 6
+    },
+    {
+     "n": "sparkle",
+     "at": 9
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_awe",
+   "music": "vishva",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "I see all the gods in your body, O God, and all the hosts of beings. I see you everywhere, infinite in form, and I see no end, no middle, no beginning. My heart trembles. I cannot find my steadiness, or peace. Have mercy, Lord of gods, refuge of the world!",
+     "hi": "हे देव, मैं आपके शरीर में सब देवताओं को देखता हूँ, और सब प्राणियों के समूहों को। मैं आपको सर्वत्र देखता हूँ, अनंत रूप में, और न अंत देखता हूँ, न मध्य, न आदि। मेरा हृदय काँपता है। मुझे न धैर्य मिलता है, न शांति। दया कीजिए, देवों के देव, जगत के आश्रय!"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos",
+     "galaxies": 8
+    },
+    {
+     "n": "halo",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "cosmicHalo",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 800,
+      "y": 460,
+      "R": 200,
+      "f": 1,
+      "expr": "awe"
+     },
+     "rim": [
+      "#fff0c0",
+      -3,
+      -2,
+      0.9
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.16
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 1.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_time",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "KTIME",
+     "en": "I am Time, the destroyer of worlds, grown old, come here to destroy these people. Even without you, none of these warriors in these armies will survive. Arise, then! Win glory. They are already slain by me. Be only my instrument, Arjuna.",
+     "hi": "मैं काल हूँ, लोकों का नाश करने वाला, बढ़ा हुआ, यहाँ इन लोगों के नाश के लिए आया हूँ। तुम्हारे बिना भी इन सेनाओं के ये योद्धा नहीं बचेंगे। इसलिए उठो! यश प्राप्त करो। ये मेरे द्वारा पहले ही मारे जा चुके हैं। तुम केवल निमित्त बनो, अर्जुन।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140404",
+     "glow": "#6a1408",
+     "lr": 800
+    },
+    {
+     "n": "mouths",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "kalaFaces",
+     "args": {}
+    },
+    {
+     "n": "streams",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warriorStreams",
+     "args": {},
+     "every": 2
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "col": "#ff7030",
+      "vy": -70,
+      "n": 140
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 800,
+      "y": 420,
+      "r": 500,
+      "col": "#ff5020",
+      "rate": 4
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     440,
+     1.0
+    ],
+    [
+     800,
+     430,
+     1.18
+    ]
+   ],
+   "shake": [
+    [
+     4.0,
+     5.0
+    ]
+   ],
+   "text": [
+    {
+     "t0": 1.0,
+     "t1": 8.0,
+     "en": "kālo 'smi loka-kṣaya-kṛt pravṛddho",
+     "hi": "कालोऽस्मि लोकक्षयकृत्प्रवृद्धो",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "rumble",
+     "at": 0.5
+    },
+    {
+     "n": "boom",
+     "at": 4.0,
+     "v": 0.6
+    },
+    {
+     "n": "roar",
+     "at": 10.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_gentle",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Arjuna begged to see him again as he had been, with four arms, gentle, smiling. And Krishna took back the form of the universe, and was only a dark young man again, holding the reins.",
+     "hi": "अर्जुन ने विनती की कि वे उन्हें फिर से वैसे देखें जैसे वे थे, चार भुजाओं वाले, सौम्य, मुस्कुराते हुए। और कृष्ण ने विश्व का रूप समेट लिया, और फिर से बस एक साँवले युवक बन गए, लगाम थामे हुए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cosmos",
+     "galaxies": 4
+    },
+    {
+     "n": "armsfade",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvaArms",
+     "args": {
+      "t": [
+       0,
+       5.0
+      ]
+     }
+    },
+    {
+     "n": "formfade",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vishvarupa",
+     "args": {
+      "stage": 3,
+      "t": [
+       0,
+       6.0
+      ]
+     }
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "t": [
+       6.0,
+       99
+      ],
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.35
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.1
+    ],
+    [
+     800,
+     440,
+     1.0
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "swell",
+     "at": 0.5
+    },
+    {
+     "n": "flute",
+     "at": 7.0,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_refuge",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "Give up all your ideas of duty, and take refuge in me alone. I will free you from every sin. Do not grieve.",
+     "hi": "सब धर्मों को छोड़कर केवल मेरी शरण में आओ। मैं तुम्हें सब पापों से मुक्त कर दूँगा। शोक मत करो।"
+    },
+    {
+     "who": "ARJUNA",
+     "en": "My delusion is gone, Achyuta. By your grace I remember who I am. My doubts are gone. I will do as you say.",
+     "hi": "मेरा मोह नष्ट हो गया, अच्युत। आपकी कृपा से मुझे स्मरण हो आया कि मैं कौन हूँ। मेरे संदेह मिट गए। मैं वही करूँगा जो आप कहेंगे।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#1a1030",
+     "mandala": 380,
+     "my": 440,
+     "mcol": "#f3cf6a",
+     "src": "s1e09_c_unborn_bg"
+    },
+    {
+     "n": "krishna",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 60
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "text": [
+    {
+     "t0": 0.5,
+     "t1": 7.0,
+     "en": "sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja",
+     "hi": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "temple",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_rise",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And Arjuna stood up, and lifted Gandiva, and twanged its string. And the sound of it rolled across the field of Kurukshetra like thunder.",
+     "hi": "और अर्जुन उठ खड़े हुए, और गांडीव उठाया, और उसकी प्रत्यंचा टंकारी। और उसकी ध्वनि कुरुक्षेत्र के मैदान पर गर्जना की तरह गूँज उठी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1000,
+     "sunY": 480
+    },
+    {
+     "n": "arjuna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 800,
+       "y": 900,
+       "S": 640,
+       "f": 1,
+       "pose": "vow",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      22,
+      0.3
+     ]
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 1000,
+      "y": 480,
+      "r0": 60,
+      "r1": 1000,
+      "col": "#ffe0a0"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "crack",
+     "at": 6.0,
+     "v": 0.6
+    },
+    {
+     "n": "thunder",
+     "at": 6.3,
+     "v": 0.6
+    },
+    {
+     "n": "conch",
+     "at": 9.0,
+     "v": 0.8
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_d_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "GANESHA",
+     "en": "Muni. I have written the words of God.",
+     "hi": "मुनिवर। मैंने भगवान के शब्द लिखे हैं।"
+    },
+    {
+     "who": "VYASAC",
+     "en": "Seven hundred verses, scribe. And people will read them for five thousand years, and still argue about what they mean. Good. Let them argue. Let them keep reading.",
+     "hi": "सात सौ श्लोक, लेखक। और लोग इन्हें पाँच हज़ार वर्षों तक पढ़ेंगे, और फिर भी इनके अर्थ पर तर्क करेंगे। अच्छा है। उन्हें तर्क करने दो। उन्हें पढ़ते रहने दो।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e09_a_cave_bg"
+    },
+    {
+     "n": "gclose",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 820,
+      "y": 900,
+      "S": 700,
+      "hand": 0
+     }
+    },
+    {
+     "n": "ghand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 820,
+      "y": 900,
+      "S": 700
+     },
+     "every": 3
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e09_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     820,
+     430,
+     1.0
+    ],
+    [
+     820,
+     420,
+     1.1
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_e_walk",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then Yudhishthira did something no one expected. He took off his armour, laid down his weapons, and walked alone across the field to the enemy lines. His brothers ran after him. The Kauravas laughed: he is coming to surrender.",
+     "hi": "तब युधिष्ठिर ने वह किया जिसकी किसी ने अपेक्षा नहीं की थी। उन्होंने अपना कवच उतारा, अस्त्र रख दिए, और अकेले मैदान पार करके शत्रु की पंक्तियों की ओर चल पड़े। उनके भाई उनके पीछे दौड़े। कौरव हँसे: वह आत्मसमर्पण करने आ रहा है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "src": "s1e09_b_middle_bg"
+    },
+    {
+     "n": "walk",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 800,
+       "y": 860,
+       "S": 260,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#efe7d0",
+        "crown": "bun"
+       }
+      }
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.3
+    ],
+    [
+     800,
+     470,
+     1.05
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 14.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_e_bless",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "YUDHI",
+     "en": "Grandfather, give us your blessing to fight you. And tell us how you can be defeated.",
+     "hi": "पितामह, हमें आपसे लड़ने का आशीर्वाद दीजिए। और बताइए कि आपको कैसे हराया जा सकता है।"
+    },
+    {
+     "who": "BHISHMA",
+     "en": "If you had not come, child, I would have cursed you. You have my blessing: victory. As for my death, its time has not yet come. Ask me again.",
+     "hi": "यदि तुम न आते, बालक, तो मैं तुम्हें शाप देता। तुम्हें मेरा आशीर्वाद है: विजय। जहाँ तक मेरी मृत्यु की बात है, उसका समय अभी नहीं आया। फिर पूछना।",
+     "fx": "elder",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "src": "s1e09_b_middle_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.16
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_e_drona",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He went to Drona, to Kripa, to his uncle Shalya, and bowed to each, and each blessed him. Drona told him: I will lay down my weapons only when I hear terrible news, from a man whose word I trust.",
+     "hi": "वे द्रोण के पास गए, कृप के पास, अपने मामा शल्य के पास, और हर एक को प्रणाम किया, और हर एक ने उन्हें आशीर्वाद दिया। द्रोण ने उनसे कहा: मैं अपने अस्त्र तभी रखूँगा जब कोई भयानक समाचार सुनूँगा, उस व्यक्ति से जिसके वचन पर मुझे विश्वास हो।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "src": "s1e09_b_middle_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 800,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 14.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_e_yuyutsu",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then Yudhishthira turned to the Kaurava ranks and called out: whoever wishes to join us, come now. And one son of Dhritarashtra, Yuyutsu, born of a maid, crossed the field and joined the Pandavas, while his brothers jeered.",
+     "hi": "फिर युधिष्ठिर ने कौरव पंक्तियों की ओर मुड़कर पुकारा: जो हमारे साथ आना चाहे, अभी आ जाए। और धृतराष्ट्र का एक पुत्र, युयुत्सु, एक दासी से जन्मा, मैदान पार करके पांडवों से आ मिला, जबकि उसके भाई उपहास करते रहे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "src": "s1e09_b_middle_bg"
+    },
+    {
+     "n": "yy",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "vikarna",
+       "x": 800,
+       "y": 880,
+       "S": 300,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#5a6a3a"
+       }
+      }
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     1000,
+     480,
+     1.15
+    ],
+    [
+     640,
+     480,
+     1.15
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 12.0,
+     "v": 0.4
+    },
+    {
+     "n": "conch",
+     "at": 16.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_begin",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And the battle began. The two armies crashed together with a roar that shook the earth. Dust rose and hid the sun. Father did not know son, nor brother brother.",
+     "hi": "और युद्ध आरंभ हुआ। दोनों सेनाएँ ऐसी गर्जना के साथ टकराईं कि पृथ्वी काँप उठी। धूल उठी और सूर्य को ढँक लिया। पिता पुत्र को नहीं पहचानता था, न भाई भाई को।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 1,
+     "density": 1.0
+    },
+    {
+     "n": "streams",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warriorStreams",
+     "args": {},
+     "every": 2
+    },
+    {
+     "n": "rain",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 120
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.4
+    ],
+    [
+     800,
+     450,
+     1.0
+    ]
+   ],
+   "shake": [
+    [
+     1.5,
+     2.5
+    ]
+   ],
+   "min": 12,
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.3,
+     "v": 0.8
+    },
+    {
+     "n": "roar",
+     "at": 1.5
+    },
+    {
+     "n": "clash",
+     "at": 3.0
+    },
+    {
+     "n": "boom",
+     "at": 5.0,
+     "v": 0.6
+    },
+    {
+     "n": "clash",
+     "at": 7.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_bhishma",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And for nine days, Bhishma was unstoppable. He moved through the Pandava army like fire through dry grass. Every day ten thousand warriors fell to his arrows. Virata's sons Uttar and Shweta died on the first day.",
+     "hi": "और नौ दिनों तक भीष्म अजेय रहे। वे पांडव सेना में सूखी घास में आग की तरह फैलते गए। हर दिन दस हज़ार योद्धा उनके बाणों से गिरते। विराट के पुत्र उत्तर और श्वेत पहले ही दिन मारे गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 400,
+     "sunY": 540,
+     "dead": 1
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 800,
+       "y": 900,
+       "S": 620,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "volley",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 1.0
+    },
+    {
+     "n": "whoosh",
+     "at": 3.0
+    },
+    {
+     "n": "clash",
+     "at": 6.0
+    },
+    {
+     "n": "roar",
+     "at": 10.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_days",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Bhima broke the elephants of Kalinga with his mace. Abhimanyu cut through the Kaurava ranks like his father. Ghatotkacha rose into the sky at night and rained down stones. And Iravan, Arjuna's son by the serpent princess Ulupi, died on the eighth day, fighting a rakshasa.",
+     "hi": "भीम ने अपनी गदा से कलिंग के हाथियों को तोड़ दिया। अभिमन्यु अपने पिता की तरह कौरव पंक्तियों को चीरते गए। घटोत्कच रात में आकाश में उठकर पत्थर बरसाता। और इरावान, नागकन्या उलूपी से अर्जुन का पुत्र, आठवें दिन एक राक्षस से लड़ते हुए मारा गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 520
+    },
+    {
+     "n": "ch",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warChariot",
+     "args": {
+      "x": 600,
+      "y": 880,
+      "s": 0.85,
+      "rider": "abhi"
+     },
+     "every": 2
+    },
+    {
+     "n": "rain",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 90
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.1
+    ]
+   ],
+   "shake": [
+    [
+     4.0,
+     4.6
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "roar",
+     "at": 1.0
+    },
+    {
+     "n": "boom",
+     "at": 4.0,
+     "v": 0.6
+    },
+    {
+     "n": "whoosh",
+     "at": 8.0
+    },
+    {
+     "n": "clash",
+     "at": 12.0
+    },
+    {
+     "n": "gong",
+     "at": 18.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_wheel",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On the ninth day, Bhishma's arrows covered Arjuna and Krishna like a cloud, and Arjuna was holding back, because he loved the old man. Krishna leapt down from the chariot, picked up a broken chariot wheel, and ran at Bhishma, the whip still in his hand.",
+     "hi": "नौवें दिन भीष्म के बाणों ने अर्जुन और कृष्ण को बादल की तरह ढँक लिया, और अर्जुन संकोच कर रहे थे, क्योंकि वे उस वृद्ध से प्रेम करते थे। कृष्ण रथ से कूदे, एक टूटा हुआ रथ का पहिया उठाया, और चाबुक हाथ में लिए भीष्म की ओर दौड़े।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 400,
+     "sunY": 540,
+     "dead": 1
+    },
+    {
+     "n": "kw",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "krishna",
+       "x": 800,
+       "y": 900,
+       "S": 620,
+       "f": 1,
+       "pose": "charge"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.35
+     ]
+    },
+    {
+     "n": "fx_wheel",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "wheel",
+      "x": 820,
+      "y": 460,
+      "r": 180,
+      "col": "#ffe08a"
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.04
+    ],
+    [
+     800,
+     470,
+     1.18
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "roar",
+     "at": 10.0,
+     "v": 0.5
+    },
+    {
+     "n": "drumroll",
+     "at": 12.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_welcome",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "Come, lord of the world! Come, lotus-eyed one! To be killed by you is the greatest honour of my life!",
+     "hi": "आइए, जगत के स्वामी! आइए, कमलनयन! आपके हाथों मरना मेरे जीवन का सबसे बड़ा सम्मान है!",
+     "fx": "elder"
+    },
+    {
+     "who": "VYASA",
+     "en": "Krishna had sworn he would not lift a weapon. Arjuna caught him by the legs, and was dragged ten steps, and held on, and begged him to keep his vow. I will fight, Arjuna swore. I will fight properly. And Krishna turned back.",
+     "hi": "कृष्ण ने शपथ ली थी कि वे शस्त्र नहीं उठाएँगे। अर्जुन ने उनके पैर पकड़ लिए, और दस कदम घसीटे गए, और पकड़े रहे, और उनसे अपना वचन निभाने की विनती की। मैं लड़ूँगा, अर्जुन ने शपथ ली। मैं ठीक से लड़ूँगा। और कृष्ण लौट आए।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 400,
+     "sunY": 540,
+     "dead": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "glow": [
+      "#ffe0a0",
+      20,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "battle",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_g_tent",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "That night the five brothers and Krishna went to Bhishma's tent, unarmed. The old man welcomed them like children coming home.",
+     "hi": "उस रात पाँचों भाई और कृष्ण निःशस्त्र भीष्म के शिविर में गए। वृद्ध ने उनका ऐसे स्वागत किया जैसे घर लौटे बच्चों का।"
+    },
+    {
+     "who": "YUDHI",
+     "en": "Grandfather, you told us to ask again. How can you be defeated?",
+     "hi": "पितामह, आपने कहा था फिर पूछना। आपको कैसे हराया जा सकता है?",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "tent",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 600,
+       "y": 880,
+       "S": 540,
+       "f": 1,
+       "pose": "bless"
+      },
+      {
+       "who": "yudhi",
+       "x": 960,
+       "y": 880,
+       "S": 500,
+       "f": -1,
+       "pose": "stand"
+      },
+      {
+       "who": "krishna",
+       "x": 1180,
+       "y": 880,
+       "S": 500,
+       "f": -1,
+       "pose": "stand"
+      }
+     ],
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     840,
+     470,
+     1.04
+    ],
+    [
+     840,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_g_secret",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "I will not raise my bow against one who was born a woman. Put Shikhandi in front of Arjuna's chariot. When I see Shikhandi, I will lay down my bow. Then let Arjuna strike me.",
+     "hi": "मैं उसके विरुद्ध धनुष नहीं उठाऊँगा जो स्त्री के रूप में जन्मा हो। शिखंडी को अर्जुन के रथ के आगे रखो। जब मैं शिखंडी को देखूँगा, तो धनुष रख दूँगा। तब अर्जुन मुझ पर प्रहार करे।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 800,
+      "y": 450,
+      "R": 210,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 14.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_g_arjuna",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "How can I, Krishna? As a child I climbed onto his lap with dusty feet and called him father. And he said: I am not your father, child. I am your father's father.",
+     "hi": "मैं कैसे कर सकता हूँ, कृष्ण? बचपन में मैं धूल भरे पैरों से उनकी गोद में चढ़ जाता था और उन्हें पिता कहता था। और वे कहते: मैं तुम्हारा पिता नहीं, बालक। मैं तुम्हारे पिता का पिता हूँ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#cfe4ff",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_shikhandi",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On the tenth day, Shikhandi rode in front of Arjuna. Bhishma saw who it was, and smiled, and lowered his bow. Shikhandi's arrows struck him, and he did not feel them. Behind Shikhandi, Arjuna wept, and drew.",
+     "hi": "दसवें दिन शिखंडी अर्जुन के आगे चले। भीष्म ने देखा कि वह कौन है, और मुस्कुराए, और धनुष नीचे कर लिया। शिखंडी के बाण उन्हें लगे, और उन्हें पता भी नहीं चला। शिखंडी के पीछे अर्जुन रोए, और प्रत्यंचा खींची।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 400,
+     "sunY": 540,
+     "dead": 1
+    },
+    {
+     "n": "sh",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shikhandi",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 1080,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     640,
+     450,
+     1.1
+    ],
+    [
+     960,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 8.0
+    },
+    {
+     "n": "whoosh",
+     "at": 10.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_arrows",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "These arrows are not Shikhandi's. They cut like a crab's claws. They are Arjuna's.",
+     "hi": "ये बाण शिखंडी के नहीं हैं। ये केकड़े के पंजों की तरह काटते हैं। ये अर्जुन के हैं।",
+     "fx": "elder"
+    },
+    {
+     "who": "VYASA",
+     "en": "There was not two fingers' space on his body without an arrow in it. And at sunset, Bhishma fell from his chariot.",
+     "hi": "उनके शरीर पर दो उँगली जितनी जगह भी बिना बाण के नहीं बची थी। और सूर्यास्त के समय भीष्म अपने रथ से गिर पड़े।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 400,
+     "sunY": 540,
+     "dead": 1
+    },
+    {
+     "n": "volley",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.04
+    ],
+    [
+     800,
+     450,
+     1.2
+    ]
+   ],
+   "shake": [
+    [
+     12.0,
+     13.0
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 1.0
+    },
+    {
+     "n": "whoosh",
+     "at": 2.0
+    },
+    {
+     "n": "whoosh",
+     "at": 3.0
+    },
+    {
+     "n": "boom",
+     "at": 12.0,
+     "v": 0.8
+    },
+    {
+     "n": "gong",
+     "at": 13.0,
+     "v": 0.8
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_bed",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He did not touch the ground. The arrows in his body held him up, a bed of arrows between earth and sky. Both armies stopped fighting. Kauravas and Pandavas, they dropped their weapons and came, and stood around him.",
+     "hi": "वे भूमि पर नहीं गिरे। उनके शरीर में धँसे बाणों ने उन्हें थाम लिया, पृथ्वी और आकाश के बीच बाणों की एक शय्या। दोनों सेनाओं ने लड़ना बंद कर दिया। कौरव और पांडव, अस्त्र छोड़कर आए, और उनके चारों ओर खड़े हो गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      1100,
+      600,
+      120
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#2a1410"
+    },
+    {
+     "n": "bed",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "arrowBed",
+     "args": {
+      "x": 800,
+      "y": 740,
+      "s": 1.0
+     }
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e08050",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.0
+    ],
+    [
+     800,
+     590,
+     1.15
+    ]
+   ],
+   "min": 12,
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_pillow",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "My head hangs down. Give me a pillow.",
+     "hi": "मेरा सिर लटक रहा है। मुझे एक तकिया दो।",
+     "fx": "elder"
+    },
+    {
+     "who": "VYASA",
+     "en": "The Kauravas brought silk cushions. He shook his head and looked at Arjuna. Arjuna understood, and shot three arrows into the ground beneath his head, to hold it up. A warrior's pillow. The old man smiled.",
+     "hi": "कौरव रेशमी तकिए लाए। उन्होंने सिर हिलाया और अर्जुन की ओर देखा। अर्जुन समझ गए, और उनके सिर के नीचे भूमि में तीन बाण मारे, उसे थामने के लिए। एक योद्धा का तकिया। वृद्ध मुस्कुराए।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      1100,
+      600,
+      120
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#2a1410"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 800,
+      "y": 460,
+      "R": 190,
+      "f": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.04
+    ],
+    [
+     800,
+     450,
+     1.18
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 12.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_water",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then he asked for water. Arjuna drew his bow and shot an arrow into the earth beside him, and a spring of pure water leapt up, the Ganga herself, his mother, come to her son.",
+     "hi": "फिर उन्होंने जल माँगा। अर्जुन ने धनुष खींचा और उनके पास भूमि में एक बाण मारा, और शुद्ध जल का एक सोता फूट पड़ा, स्वयं गंगा, उनकी माता, अपने पुत्र के पास आई हुई।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      1100,
+      600,
+      120
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#2a1410"
+    },
+    {
+     "n": "bed",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "arrowBed",
+     "args": {
+      "x": 800,
+      "y": 760,
+      "s": 1.0
+     }
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 900,
+      "y": 820
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 600,
+      "y1": 900,
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     840,
+     640,
+     1.1
+    ],
+    [
+     840,
+     630,
+     1.3
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 5.0,
+     "v": 0.5
+    },
+    {
+     "n": "splash",
+     "at": 6.0,
+     "v": 0.6
+    },
+    {
+     "n": "bells",
+     "at": 8.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_wait",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He would not die yet. He had the boon of choosing his own death, and the sun was moving south, an unlucky time. He would lie there, on his bed of arrows, until the sun turned north again. And he asked Duryodhana, one last time, to end the war. Duryodhana would not.",
+     "hi": "वे अभी नहीं मरे। उन्हें अपनी मृत्यु स्वयं चुनने का वरदान था, और सूर्य दक्षिण की ओर जा रहा था, एक अशुभ समय। वे वहीं लेटे रहेंगे, बाणों की शय्या पर, जब तक सूर्य फिर से उत्तर की ओर न मुड़े। और उन्होंने दुर्योधन से अंतिम बार युद्ध समाप्त करने को कहा। दुर्योधन नहीं माना।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "bed",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "arrowBed",
+     "args": {
+      "x": 800,
+      "y": 760,
+      "s": 0.8
+     }
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 80
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.2
+    ],
+    [
+     800,
+     520,
+     1.05
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_karna",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "That night, when everyone had gone, Karna came alone, and fell at the old man's feet.",
+     "hi": "उस रात, जब सब चले गए, कर्ण अकेले आए, और वृद्ध के चरणों में गिर पड़े।"
+    },
+    {
+     "who": "BHISHMA",
+     "en": "I know who you are, son of Kunti. I spoke harshly to you only to keep you from fighting your brothers. I was wrong to insult you. You are as brave as any man alive. Make peace with them, even now.",
+     "hi": "मैं जानता हूँ तुम कौन हो, कुंतीपुत्र। मैंने तुमसे कठोर वचन केवल इसलिए कहे कि तुम अपने भाइयों से न लड़ो। तुम्हारा अपमान करना मेरी भूल थी। तुम किसी भी जीवित मनुष्य जितने वीर हो। अब भी उनसे संधि कर लो।",
+     "fx": "elder",
+     "gap": 0.6
+    },
+    {
+     "who": "KARNA",
+     "en": "I cannot, grandfather. Bless me to fight.",
+     "hi": "मैं नहीं कर सकता, पितामह। मुझे लड़ने का आशीर्वाद दीजिए।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#cfe4ff",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_h_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "GANESHA",
+     "en": "The grandsire has fallen. And Karna takes the field.",
+     "hi": "पितामह गिर गए। और कर्ण मैदान में उतरते हैं।"
+    },
+    {
+     "who": "VYASAC",
+     "en": "Tomorrow is the last night, scribe. A boy in a wheel of warriors. A sun that sets too early. A lie told by the most truthful man alive. And a night of fire. Then it will be over, and we will see what is left.",
+     "hi": "कल अंतिम रात है, लेखक। योद्धाओं के चक्र में एक बालक। एक सूर्य जो समय से पहले डूबता है। सबसे सत्यवादी मनुष्य का बोला एक असत्य। और आग की एक रात। फिर यह समाप्त होगा, और हम देखेंगे कि क्या बचा है।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e09_a_cave_bg"
+    },
+    {
+     "n": "vyasa",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vyasa",
+     "args": {
+      "x": 470,
+      "y": 800,
+      "S": 500,
+      "f": 1
+     },
+     "src": "s1e09_a_cave_vyasa"
+    },
+    {
+     "n": "ganesha",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500,
+      "hand": 0
+     },
+     "src": "s1e09_a_cave_ganesha"
+    },
+    {
+     "n": "hand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500
+     },
+     "every": 3,
+     "src": "s1e09_a_cave_hand"
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e09_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.05
+    ],
+    [
+     800,
+     520,
+     1.3
+    ]
+   ],
+   "tout": "fade",
+   "min": 12,
+   "amb": "night",
+   "tail": 1.8
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "VYASA": {
+    "voice": "bm_george:2+bm_fable:1",
+    "speed": 0.88,
+    "pitch": -2.5,
+    "fx": "storyteller"
+   },
+   "CHANT": {
+    "voice": "hm_omega",
+    "speed": 0.82,
+    "pitch": -2.5,
+    "fx": "cave",
+    "text_lang": "hi"
+   },
+   "BRAHMA": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "PRATIPA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "SATYAVATI": {
+    "voice": "af_heart:2+af_sky:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "AMBA": {
+    "voice": "bf_emma:2+af_nicole:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHALVA": {
+    "voice": "am_eric:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KING": {
+    "voice": "am_puck:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": 0.5
+   },
+   "DURVASA": {
+    "voice": "bm_lewis:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SURYA": {
+    "voice": "am_michael:2+am_eric:1",
+    "speed": 0.9,
+    "pitch": -1,
+    "fx": "divine"
+   },
+   "MADRI": {
+    "voice": "af_sky:2+af_bella:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "RADHA": {
+    "voice": "af_nicole:2+af_sky:1",
+    "speed": 0.98,
+    "pitch": 0
+   },
+   "VYASAC": {
+    "voice": "bm_george:2+bm_fable:1",
+    "speed": 0.88,
+    "pitch": -2.5,
+    "fx": "cave"
+   },
+   "GANESHA": {
+    "voice": "am_michael:2+am_puck:1",
+    "speed": 0.94,
+    "pitch": -1.5,
+    "fx": "cave"
+   },
+   "VASISHTHA": {
+    "voice": "bm_fable:2+bm_daniel:1",
+    "speed": 0.86,
+    "pitch": -3
+   },
+   "VASU": {
+    "voice": "am_liam:2+am_eric:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "WIFE": {
+    "voice": "af_bella:2+af_nicole:1",
+    "speed": 0.95,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DASHRAJ": {
+    "voice": "am_santa:2+bm_lewis:1",
+    "speed": 0.92,
+    "pitch": -1
+   },
+   "CHARIOT": {
+    "voice": "bm_lewis",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "GODS": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.86,
+    "pitch": -2,
+    "fx": "chorus"
+   },
+   "PARASHU": {
+    "voice": "am_fenrir:2+bm_daniel:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "growl"
+   },
+   "PANDU": {
+    "voice": "bm_daniel:2+am_eric:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "KINDAMA": {
+    "voice": "bm_lewis:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "KRIPA": {
+    "voice": "bm_fable:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -1.5
+   },
+   "EKALAVYA": {
+    "voice": "am_liam:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "DRUPADA": {
+    "voice": "am_adam:2+bm_lewis:1",
+    "speed": 0.94,
+    "pitch": -1
+   },
+   "PUROCHANA": {
+    "voice": "am_puck:2+bm_lewis:1",
+    "speed": 0.96,
+    "pitch": -0.5
+   },
+   "HIDIMBI": {
+    "voice": "af_nicole:2+af_bella:1",
+    "speed": 0.97,
+    "pitch": 0.5
+   },
+   "DHRISHTA": {
+    "voice": "am_eric:2+am_liam:1",
+    "speed": 0.96,
+    "pitch": -0.5
+   },
+   "AGNI": {
+    "voice": "am_fenrir:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "divine"
+   },
+   "MAYA": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.94,
+    "pitch": -1
+   },
+   "NARADA": {
+    "voice": "am_puck:2+bm_fable:1",
+    "speed": 0.96,
+    "pitch": 1.0,
+    "fx": "divine"
+   },
+   "JARASANDHA": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "SHISHUPALA": {
+    "voice": "am_eric:2+am_puck:1",
+    "speed": 1.02,
+    "pitch": 0
+   },
+   "DUSHASANA": {
+    "voice": "am_fenrir:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": -0.5,
+    "fx": "growl"
+   },
+   "VIKARNA": {
+    "voice": "am_liam:2+am_michael:1",
+    "speed": 0.98,
+    "pitch": 0.5
+   },
+   "KIRATA": {
+    "voice": "am_onyx:2+am_fenrir:1",
+    "speed": 0.92,
+    "pitch": -1.5
+   },
+   "URVASHI": {
+    "voice": "af_bella:2+af_sky:1",
+    "speed": 0.97,
+    "pitch": 0.5,
+    "fx": "divine"
+   },
+   "SANJAYA": {
+    "voice": "bm_george:2+bm_daniel:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "HANUMAN": {
+    "voice": "am_onyx:2+bm_lewis:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "divine"
+   },
+   "BALARAMA": {
+    "voice": "am_adam:2+am_onyx:1",
+    "speed": 0.92,
+    "pitch": -1.5
+   },
+   "SATYAKI": {
+    "voice": "am_liam:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": 0
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VYASA": {
+    "voice": "hm_omega",
+    "speed": 0.86,
+    "pitch": -2.0,
+    "fx": "storyteller"
+   },
+   "CHANT": {
+    "voice": "hm_omega",
+    "speed": 0.82,
+    "pitch": -2.5,
+    "fx": "cave"
+   },
+   "BRAHMA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "PRATIPA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "SATYAVATI": {
+    "voice": "hf_alpha:2+af_heart:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "AMBA": {
+    "voice": "hf_alpha:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHALVA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KING": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 1.0
+   },
+   "DURVASA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SURYA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": -1,
+    "fx": "divine"
+   },
+   "MADRI": {
+    "voice": "hf_beta:2+af_sky:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "RADHA": {
+    "voice": "hf_alpha:2+af_nicole:1",
+    "speed": 0.98,
+    "pitch": 0.5
+   },
+   "VYASAC": {
+    "voice": "hm_omega",
+    "speed": 0.86,
+    "pitch": -2.0,
+    "fx": "cave"
+   },
+   "GANESHA": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 0.92,
+    "pitch": -1.5,
+    "fx": "cave"
+   },
+   "VASISHTHA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3.5
+   },
+   "VASU": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "WIFE": {
+    "voice": "hf_alpha:2+af_bella:1",
+    "speed": 0.95,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DASHRAJ": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.92,
+    "pitch": -0.5
+   },
+   "CHARIOT": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "GODS": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -2.5,
+    "fx": "chorus"
+   },
+   "PARASHU": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.88,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "PANDU": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "KINDAMA": {
+    "voice": "hm_omega:2+bm_lewis:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "KRIPA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.9,
+    "pitch": -1.0
+   },
+   "EKALAVYA": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "DRUPADA": {
+    "voice": "hm_psi:2+am_adam:1",
+    "speed": 0.94,
+    "pitch": -1.5
+   },
+   "PUROCHANA": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 0.96,
+    "pitch": -0.5
+   },
+   "HIDIMBI": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.97,
+    "pitch": 1.0
+   },
+   "DHRISHTA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.96,
+    "pitch": -0.5
+   },
+   "AGNI": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "divine"
+   },
+   "MAYA": {
+    "voice": "hm_omega:2+bm_lewis:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "NARADA": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 0.96,
+    "pitch": 1.5,
+    "fx": "divine"
+   },
+   "JARASANDHA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -3.5,
+    "fx": "growl"
+   },
+   "SHISHUPALA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 1.02,
+    "pitch": 0
+   },
+   "DUSHASANA": {
+    "voice": "hm_psi:2+am_fenrir:1",
+    "speed": 1.0,
+    "pitch": -0.5,
+    "fx": "growl"
+   },
+   "VIKARNA": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.98,
+    "pitch": 1.0
+   },
+   "KIRATA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.92,
+    "pitch": -1.5
+   },
+   "URVASHI": {
+    "voice": "hf_beta:2+af_bella:1",
+    "speed": 0.97,
+    "pitch": 1.0,
+    "fx": "divine"
+   },
+   "SANJAYA": {
+    "voice": "hm_psi:2+bm_george:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "HANUMAN": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -2.0,
+    "fx": "divine"
+   },
+   "BALARAMA": {
+    "voice": "hm_omega:2+am_adam:1",
+    "speed": 0.92,
+    "pitch": -1.0
+   },
+   "SATYAKI": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 0.5
+   }
+  }
+ }
+}
