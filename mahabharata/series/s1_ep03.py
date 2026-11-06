@@ -35,7 +35,7 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'उन्हें आखेट प्रिय था। उन्हें हिमालय की ढलानों के घने साल वन प्रिय थे, जहाँ हिरण झुंडों में दौड़ते थे और कोई उन्हें राजा नहीं कहता था।')],
     [sh(bg(set='forest', tod='day'), 'forest_day'), piece('herd', 'deer', at=[[480, 870, 240, 1], [720, 890, 270, 1], [960, 860, 210, -1], [1200, 880, 250, 1]]), fx('leaves', n=40)],
     cam=pan(1000, 640, 470, 1.15), amb='birds', min=10),
-  S('b_himal', 'river', [], [sh(bg(set='himalaya'), 'himal_peaks'), fx('snow', n=40), piece('flock', 'woodBird', x=600, y=300, s=0.6)],
+  S('b_himal', 'river', [], [sh(bg(set='himalaya'), 'himal_peaks'), fx('snow', n=40)],
     cam=[[800, 520, 1.25], [800, 460, 1.0]], amb='wind', min=6),
 
   # ---------- the curse of Kindama ----------
@@ -165,7 +165,7 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
   S('f_spring', 'love', [
       ln('VYASA', 'Fifteen years passed on the mountain. Then came a spring, when the forest was in flower and the koel sang all day.',
                   'पर्वत पर पंद्रह वर्ष बीत गए। फिर एक वसंत आया, जब वन फूलों से भरा था और कोयल दिन भर गाती थी।')],
-    [sh(bg(set='forest', tod='gold'), 'forest_gold'), fx('petals', every=2, n=110), piece('kbird', 'woodBird', x=1200, y=320, s=0.8)],
+    [sh(bg(set='forest', tod='gold'), 'forest_gold'), fx('petals', every=2, n=110)],
     cam=pan(640, 1000, 460, 1.15), amb='birds', sfx=[dict(n='flute', at=1.0, v=0.4)], min=9),
   S('f_madri', 'love', [
       ln('VYASA', 'Pandu saw Madri bathing in a stream, in a thin wet garment, and he forgot the curse, and the years, and everything but her.',

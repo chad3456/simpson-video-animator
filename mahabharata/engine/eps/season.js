@@ -571,3 +571,35 @@ function boar(P, x, y, s, f = 1, t = 0, down = 0) {   // a black wild boar (the 
   P.solid = false;
 }
 PIECES.boar = (P, t, a) => { boar(P, a.x || 900, a.y || 880, a.s || 300, a.f || 1, t, a.down || 0); if (a.arrows) { P.solid = true; for (const [ax, ay, ang] of a.arrows) { P.line([[ax, ay], [ax - Math.cos(ang * D2R) * 120, ay - Math.sin(ang * D2R) * 120]], '#5a3a1a', 2.4, 'ink', 0); P.line([[ax - Math.cos(ang * D2R) * 110, ay - Math.sin(ang * D2R) * 110], [ax - Math.cos(ang * D2R) * 124, ay - Math.sin(ang * D2R) * 124]], '#f4efe2', 5, 'ink', 0); } P.solid = false; } };
+
+// ---------------------------------------------------------------- Episode 7 additions ---
+Object.assign(FACES, {
+  kichaka: { skin: '#a8784e', W: 0.86, cheek: 0.4, jaw: 0.7, chin: 1.02, nose: 'hook', eye: 0.9, brow: 'heavy', lips: '#8a2e26', stache: 'curl', beard: null, hair: '#100b08', hairStyle: 'straight', crown: 'mukutLow', tilak: 'red', ear: 'kundala', chest: 'torque', cloth: '#7a1a1a', expr: 'cruel', neck: 1.2 },
+  virata: { skin: '#c49a70', W: 0.76, jaw: 0.5, chin: 1.0, nose: 'straight', eye: 0.9, brow: 'white', lips: '#8a5048', stache: 'grey', beard: 'short', hair: '#c8c2b8', hairStyle: 'straight', crown: 'royal', tilak: 'chandan', ear: 'kundala', chest: 'pearls', cloth: '#2a5a3a', expr: 'calm', age: 1 },
+  uttar: { skin: '#c8a07e', W: 0.7, cheek: 0.5, long: 0.94, jaw: 0.15, chin: 0.95, nose: 'fine', eye: 1.08, brow: 'arch', lips: '#a04a4a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'curls', crown: 'mukutLow', tilak: 'line', ear: 'kundala', chest: 'pearls', cloth: '#2f7a6a', expr: 'fear' },
+  sudeshna: { skin: '#c8987a', W: 0.72, cheek: 0.4, jaw: 0.08, chin: 0.95, nose: 'fine', eye: 1.04, brow: 'arch', lips: '#a0303a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'woman', crown: 'tikka', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#6a2a5a', female: 1, nath: 1, expr: 'calm' },
+  yaksha: { skin: '#3a6a5a', W: 0.84, cheek: 0.4, long: 1.06, jaw: 0.5, chin: 1.02, nose: 'straight', eye: 1.08, brow: 'heavy', lips: '#4a2a2a', stache: 'full', beard: 'long', hair: '#0a1a14', hairStyle: 'wild', crown: 'jata', tilak: 'namam', ear: 'makara', chest: 'kavacha', cloth: '#1a4a3a', expr: 'divine', sheen: '#a0ffd0' },
+});
+Object.assign(CAST, {
+  kichaka: { skin: '#a8784e', dhoti: '#7a1a1a', patka: '#d2a23a', scarf: '#c7362b', crown: 'mukut', hair: '#100b08', beard: 'stache', jewel: GOLD, bulk: 1.25 },
+  virata: { skin: '#c49a70', dhoti: '#2a5a3a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#c8c2b8', beard: 'short', jewel: GOLD, age: 1 },
+  uttar: { skin: '#c8a07e', dhoti: '#2f7a6a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#1a120d', beard: null, jewel: GOLD },
+  brihannala: { skin: '#9e6a44', dhoti: '#e86aa0', patka: '#d2a23a', scarf: '#f0c040', crown: 'band', hair: '#16100c', beard: null, jewel: GOLD },
+});
+Object.assign(WOMEN, { sudeshna: { skin: '#c8987a', sari: '#6a2a5a', border: GOLD }, uttaraW: { skin: '#d8b090', sari: '#e8a040', border: GOLD }, sairandhri: { skin: '#5a3a2a', sari: '#8a6a4a', border: '#c9b57a' } });
+PIECES.monkeyTail = (P, t, a) => {   // an old monkey's tail lying across the forest path (Hanuman)
+  const y = a.y || 860, s = a.s || 1, pts = []; for (let i = 0; i <= 40; i++) { const k = i / 40; pts.push([100 + k * 1300, y - Math.sin(k * 7 + 0.4) * 40 * s - k * 30 + Math.sin(t * 1.5 + k * 4) * 4]); }
+  P.solid = true; P.shape(ribbon(pts, 26 * s, 14 * s), '#b8783a', 245, INK, 1.4); P.wash(ribbon(pts.map(p => [p[0], p[1] - 8 * s]), 8 * s, 4 * s), '#e8b070', 140, 0.02);
+  for (let i = 2; i < 40; i += 2) P.line([[pts[i][0] - 6, pts[i][1] - 22 * s], [pts[i][0] + 6, pts[i][1] - 30 * s]], '#7a4a1a', 1.2, 'ink', 0.4);
+  P.shape(circlePts(pts[40][0] + 20, pts[40][1] - 10, 30 * s, 14), '#c8883a', 245, INK, 1.2); P.solid = false;
+};
+PIECES.crane = (P, t, a) => {   // a white crane standing in the lake (the Yaksha's first form)
+  const x = a.x || 1100, y = a.y || 820, s = a.s || 1; P.solid = true;
+  P.line([[x - 10 * s, y], [x - 14 * s, y - 120 * s]], '#3a2a1a', 3 * s, 'ink', 0); P.line([[x + 10 * s, y], [x + 6 * s, y - 120 * s]], '#3a2a1a', 3 * s, 'ink', 0);
+  P.shape(chaikin([[x - 70 * s, y - 150 * s], [x - 10 * s, y - 190 * s], [x + 50 * s, y - 180 * s], [x + 60 * s, y - 140 * s], [x - 20 * s, y - 120 * s]], 2), '#f4efe2', 245, INK, 1.2);
+  P.line(chaikin([[x + 40 * s, y - 175 * s], [x + 60 * s, y - 240 * s], [x + 40 * s, y - 290 * s], [x + 60 * s, y - 310 * s]], 2, false), '#f4efe2', 9 * s, 'ink', 0.4);
+  P.shape([[x + 60 * s, y - 315 * s], [x + 130 * s, y - 300 * s], [x + 62 * s, y - 300 * s]], '#e0a030', 250, INK, 0.8); P.dot(x + 62 * s, y - 312 * s, 3 * s, INK);
+  P.shape([[x - 70 * s, y - 150 * s], [x - 110 * s, y - 140 * s], [x - 60 * s, y - 135 * s]], '#2a2a2a', 245, INK, 0.8);
+  P.solid = false;
+};
+PIECES.cattle = (P, t, a) => { for (const [x, y, s, f] of (a.at || [[600, 860, 160, 1], [820, 880, 180, -1], [1050, 860, 150, 1]])) cow(P, x + t * (a.speed || 0) * f, y, s, f, a.col || '#e8e0d0', t); };

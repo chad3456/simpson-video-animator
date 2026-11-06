@@ -4948,6 +4948,12 @@
     "voice": "bm_george:2+bm_daniel:1",
     "speed": 0.94,
     "pitch": -0.5
+   },
+   "HANUMAN": {
+    "voice": "am_onyx:2+bm_lewis:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "divine"
    }
   },
   "hi": {
@@ -5297,6 +5303,12 @@
     "voice": "hm_psi:2+bm_george:1",
     "speed": 0.94,
     "pitch": -0.5
+   },
+   "HANUMAN": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -2.0,
+    "fx": "divine"
    }
   }
  }

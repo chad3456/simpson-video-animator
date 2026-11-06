@@ -172,7 +172,7 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'विदुर ने और भी स्पष्ट कहा, और राजा ने क्रोध में उनसे कहा कि जाओ पांडवों के पास, जब तुम्हें उनसे इतना प्रेम है। विदुर चले गए। और कुछ ही दिनों में अंधे राजा को उनकी इतनी याद आई कि उन्होंने संजय को वन भेजकर उनसे लौट आने की विनती की।')],
     [sh(bg(set='forest', tod='dawn'), 'forest_dawn'), figs('vw', [fig('vidura', 820, 880, 420, 1, 'stand')]), fx('leaves', n=40)],
     cam=pan(1000, 640, 470, 1.12), amb='birds'),
-  S('g_forest', 'forest', [], [sh(bg(set='forest', tod='dawn'), 'forest_dawn'), fx('leaves', n=50), piece('birds', 'woodBird', x=1200, y=300, s=0.6)],
+  S('g_forest', 'forest', [], [sh(bg(set='forest', tod='dawn'), 'forest_dawn'), fx('leaves', n=50)],
     cam=[[800, 520, 1.25], [800, 460, 1.0]], amb='birds', min=7),
 
   # ---------- Kamyaka ----------
