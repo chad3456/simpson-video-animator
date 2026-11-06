@@ -453,3 +453,40 @@ Object.assign(PIECES, {
   // a duel seen from afar: two archers, arrows streaking between them
   duel: (P, t, a) => { const xL = a.xL || 360, xR = a.xR || 1240, y = a.y || 780, s = a.s || 160; P.fast = true; for (let i = 0; i < 14; i++) { const ph = (t * 0.9 + i / 14) % 1, dir = i % 2 ? 1 : -1, x = dir > 0 ? xL + (xR - xL) * ph : xR - (xR - xL) * ph, yy = y - s * 0.7 - Math.sin(ph * 3.14) * 120 - (i % 3) * 10; P.line([[x, yy], [x - dir * 40, yy + 4]], dir > 0 ? '#ffe0a0' : '#c0d8ff', 2, 'ink', 0); } P.fast = false; },
 });
+
+// ---------------------------------------------------------------- Episode 3 additions ---
+Object.assign(FACES, {
+  ekalavya: { skin: '#5a3a24', W: 0.74, cheek: 0.4, long: 0.98, jaw: 0.35, chin: 0.98, nose: 'broad', eye: 1.06, brow: 'heavy', lips: '#6a2e26', stache: 'thin', beard: null, hair: '#0c0808', hairStyle: 'wild', crown: 'band', tilak: 'red', ear: 'ring', chest: 'torque', cloth: '#8a6a3a', expr: 'calm' },
+  drupada: { skin: '#b8885e', W: 0.78, cheek: 0.3, jaw: 0.6, chin: 1.0, nose: 'aquiline', eye: 0.92, brow: 'heavy', lips: '#8a3e34', stache: 'curl', beard: 'short', hair: '#1a120d', hairStyle: 'straight', crown: 'royal', tilak: 'line', ear: 'kundala', chest: 'armour', cloth: '#2a4a7a', expr: 'stern' },
+  kripa: { skin: '#b08a64', W: 0.7, long: 1.06, jaw: 0.4, chin: 1.0, nose: 'straight', eye: 0.9, brow: 'white', lips: '#8a5048', stache: 'grey', beard: 'short', hair: '#a8a298', hairStyle: 'jata', crown: 'bun', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#f0e8d0', expr: 'calm', age: 1 },
+  kindama: { skin: '#a07a52', W: 0.68, long: 1.04, jaw: 0.3, chin: 1.0, nose: 'straight', eye: 0.96, brow: 'soft', lips: '#8a4a3a', stache: 'full', beard: 'long', hair: '#3a2a1e', hairStyle: 'jata', crown: 'jata', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#c08a5a', expr: 'sorrow' },
+});
+Object.assign(CAST, {
+  ekalavya: { skin: '#5a3a24', dhoti: '#8a6a3a', patka: '#5a3a1a', scarf: null, crown: 'band', hair: '#0c0808', beard: null, jewel: '#c9b57a' },
+  drupada: { skin: '#b8885e', dhoti: '#2a4a7a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#1a120d', beard: 'short', jewel: GOLD },
+  kripa: { skin: '#b08a64', dhoti: '#f0e8d0', patka: '#c9b57a', scarf: '#f4efe2', crown: 'bun', hair: '#a8a298', beard: 'short', jewel: '#cfc6a8', age: 1 },
+  clay: { skin: '#9a7a58', dhoti: '#8a6a4a', patka: '#7a5a3a', scarf: '#9a7a58', crown: 'bun', hair: '#8a6a4a', beard: 'long', jewel: '#7a5a3a' },
+});
+function deer(P, x, y, s, f = 1, t = 0, down = 0) {   // a spotted deer, standing or fallen
+  const T = (p) => { const q = down ? [p[0] * 0.98 + p[1] * 0.2, p[1] * 0.45 - 0.02] : p; return [x + q[0] * s * f, y + q[1] * s]; };
+  const pts = (a) => a.map(T); const iw = Math.max(0.7, s / 300), col = '#b0743a', lt = '#f0e0c0';
+  P.solid = true;
+  for (const [lx, ph] of [[-0.3, 0], [-0.22, 1], [0.24, 2], [0.32, 3]]) { const sw = down ? 0.12 : Math.sin(t * 2 + ph) * 0.02; P.shape(pts(capsule([lx, -0.42], [lx + sw, -0.0], 0.03, 0.018)), shade(col, -0.1), 238, INK, iw); }
+  P.shape(pts(chaikin([[-0.4, -0.44], [-0.34, -0.66], [0.2, -0.68], [0.36, -0.6], [0.34, -0.42], [-0.3, -0.38]], 2)), col, 242, INK, iw * 1.1);
+  P.wash(pts(chaikin([[-0.32, -0.44], [0.3, -0.46], [0.28, -0.4], [-0.3, -0.39]], 1)), lt, 160, 0.01);
+  for (let i = 0; i < 9; i++) P.dot(...T([-0.28 + i * 0.065, -0.6 + (i % 2) * 0.05]), s * 0.012, lt);
+  P.shape(pts(chaikin([[0.26, -0.62], [0.36, -0.86], [0.46, -0.9], [0.56, -0.84], [0.5, -0.78], [0.4, -0.72], [0.36, -0.56]], 1)), col, 242, INK, iw);
+  P.shape(pts([[0.42, -0.9], [0.4, -0.98], [0.45, -0.92]]), shade(col, -0.2), 242, INK, iw * 0.7);
+  P.line(pts([[0.44, -0.9], [0.4, -1.1], [0.34, -1.16]]), '#6a4a2a', iw * 1.6, 'ink', 0.4); P.line(pts([[0.41, -1.05], [0.48, -1.14]]), '#6a4a2a', iw * 1.4, 'ink', 0.4);
+  P.dot(...T([0.48, -0.86]), s * 0.012, INK); P.line(pts([[-0.4, -0.6], [-0.46, -0.66]]), lt, iw * 2, 'ink', 0.5);
+  P.solid = false;
+}
+PIECES.deer = (P, t, a) => {
+  for (const d of (a.at || [[a.x || 800, a.y || 860, a.s || 200, a.f || 1, a.down || 0]])) deer(P, d[0], d[1], d[2], d[3] || 1, t, d[4] || 0);
+  if (a.arrow) { const [ax, ay] = a.arrow; P.solid = true; P.line([[ax - 60, ay - 40], [ax + 10, ay + 6]], '#5a3a1a', 2.4, 'ink', 0); P.shape([[ax + 10, ay + 6], [ax - 2, ay - 6], [ax - 6, ay + 4]], '#cfd6dc', 250, INK, 0.8); P.solid = false; }
+};
+PIECES.dogSealed = (P, t, a) => {   // the dog whose mouth was filled with arrows, without wounding it
+  PIECES.dog(P, t, a); const x = a.x || 700, y = a.y || 860, s = (a.s || 1) * 100;
+  P.solid = true; for (let i = 0; i < 7; i++) { const ang = (-30 + i * 10) * D2R, cx = x + 1.08 * s, cy = y - 1.06 * s; P.line([[cx, cy], [cx + Math.cos(ang) * s * 0.7, cy + Math.sin(ang) * s * 0.7]], '#5a3a1a', 1.6, 'ink', 0); P.line([[cx + Math.cos(ang) * s * 0.6, cy + Math.sin(ang) * s * 0.6], [cx + Math.cos(ang) * s * 0.72, cy + Math.sin(ang) * s * 0.72]], '#e8e4dc', 3, 'ink', 0); } P.solid = false;
+};
+PIECES.lotusLeaf = (P, t, a) => { P.solid = true; for (const [x, y, r] of (a.at || [[800, 820, 120]])) { P.shape(circlePts(x, y, r, 20, 1, 0.35), '#3a7a4a', 235, INK, 1); P.line([[x, y], [x + r * 0.9, y - r * 0.1]], '#2a5a3a', 1, 'ink', 0); } P.solid = false; };

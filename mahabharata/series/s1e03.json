@@ -1,0 +1,7731 @@
+{
+ "title": {
+  "en": "The Princes and the Archer",
+  "hi": "राजकुमार और धनुर्धर"
+ },
+ "subtitle": {
+  "en": "Season 1",
+  "hi": "पहला अध्याय"
+ },
+ "fps": 24,
+ "w": 1280,
+ "h": 720,
+ "n": 3,
+ "id": "s1e03",
+ "tag": {
+  "en": "A cursed king, a hundred and five princes, and a teacher who asked too much.",
+  "hi": "एक शापित राजा, एक सौ पाँच राजकुमार, और एक गुरु जिसने बहुत अधिक माँगा।"
+ },
+ "shots": [
+  {
+   "id": "s1e03_a_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The third night. Snow had closed the passes below the cave, and the lamps burned low. Ganesha had filled a whole basket with leaves.",
+     "hi": "तीसरी रात। गुफा के नीचे के दर्रे बर्फ़ से बंद हो गए थे, और दीये मंद जल रहे थे। गणेश ने पत्तों से पूरी एक टोकरी भर दी थी।",
+     "at": 5.0
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ]
+    },
+    {
+     "n": "vyasa",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vyasa",
+     "args": {
+      "x": 470,
+      "y": 800,
+      "S": 500,
+      "f": 1
+     }
+    },
+    {
+     "n": "ganesha",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500,
+      "hand": 0
+     }
+    },
+    {
+     "n": "hand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500
+     },
+     "every": 3
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add"
+    },
+    {
+     "n": "fx_snow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.3
+    ],
+    [
+     800,
+     470,
+     1.05
+    ]
+   ],
+   "min": 12,
+   "eptitle": 1,
+   "tin": "fade",
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_a_ask",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "GANESHA",
+     "en": "Pandu was crowned, and the blind brother stood aside. A king with two queens and a full treasury. Where is the sorrow in that, Muni?",
+     "hi": "पांडु का राज्याभिषेक हुआ, और अंधे भाई एक ओर खड़े रहे। दो रानियों और भरे कोष वाला राजा। इसमें दुःख कहाँ है, मुनिवर?"
+    },
+    {
+     "who": "VYASAC",
+     "en": "Wait. It is coming on four hooves, through a forest.",
+     "hi": "रुको। वह चार खुरों पर आ रहा है, एक वन से होकर।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e03_a_cave_bg"
+    },
+    {
+     "n": "gclose",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 820,
+      "y": 900,
+      "S": 700,
+      "hand": 0
+     }
+    },
+    {
+     "n": "ghand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 820,
+      "y": 900,
+      "S": 700
+     },
+     "every": 3
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e03_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     820,
+     430,
+     1.0
+    ],
+    [
+     820,
+     420,
+     1.08
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_b_march",
+   "music": "march",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Pandu was a great archer. He rode out with the army of the Kurus and conquered the kingdoms of the east and the south, one after another.",
+     "hi": "पांडु एक महान धनुर्धर थे। वे कुरुओं की सेना लेकर निकले और पूर्व और दक्षिण के राज्यों को एक के बाद एक जीत लिया।",
+     "at": 1.0
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "dawn",
+     "hz": 470,
+     "city": [
+      1200,
+      260
+     ],
+     "seed": 0.0
+    },
+    {
+     "n": "army",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "riders",
+     "args": {
+      "x": 120,
+      "y": 830,
+      "s": 110,
+      "cnt": 9,
+      "speed": 70
+     },
+     "every": 2
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     470,
+     1.15
+    ],
+    [
+     1040,
+     470,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.3,
+     "v": 0.7
+    },
+    {
+     "n": "conch",
+     "at": 2.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_b_wealth",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He came home with elephants and gold and the crowns of a dozen kings, and laid them at the feet of Bhishma and his blind brother.",
+     "hi": "वे हाथियों, सोने और दर्जन भर राजाओं के मुकुटों के साथ लौटे, और उन्हें भीष्म और अपने अंधे भाई के चरणों में रख दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "city",
+     "tod": "gold",
+     "ghats": 1
+    },
+    {
+     "n": "proc",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "procession",
+     "args": {
+      "y": 820,
+      "s": 110,
+      "x0": -300,
+      "cnt": 11,
+      "speed": 40
+     },
+     "every": 3
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 60
+     }
+    }
+   ],
+   "cam": [
+    [
+     600,
+     450,
+     1.12
+    ],
+    [
+     1000,
+     450,
+     1.12
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "nagara",
+     "at": 0.4,
+     "v": 0.5
+    },
+    {
+     "n": "cheer",
+     "at": 2.5,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_b_pandu",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And then, at the height of his glory, he did a strange thing. He handed the kingdom to Dhritarashtra to rule in his name, and went to live in the forest with his two queens.",
+     "hi": "और फिर, अपने यश के शिखर पर, उन्होंने एक विचित्र काम किया। उन्होंने राज्य धृतराष्ट्र को सौंप दिया कि वे उनके नाम से शासन करें, और अपनी दोनों रानियों के साथ वन में रहने चले गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "pandu",
+      "x": 1060,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "PANDU",
+    "hi": "पांडु",
+    "ep_en": "the pale king",
+    "ep_hi": "पांडु राजा",
+    "side": -1
+   },
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_b_forest",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He loved the hunt. He loved the deep sal forests on the slopes of the Himalaya, where the deer ran in herds and no one called him king.",
+     "hi": "उन्हें आखेट प्रिय था। उन्हें हिमालय की ढलानों के घने साल वन प्रिय थे, जहाँ हिरण झुंडों में दौड़ते थे और कोई उन्हें राजा नहीं कहता था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day"
+    },
+    {
+     "n": "herd",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "deer",
+     "args": {
+      "at": [
+       [
+        480,
+        870,
+        240,
+        1
+       ],
+       [
+        720,
+        890,
+        270,
+        1
+       ],
+       [
+        960,
+        860,
+        210,
+        -1
+       ],
+       [
+        1200,
+        880,
+        250,
+        1
+       ]
+      ]
+     }
+    },
+    {
+     "n": "fx_leaves",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "leaves",
+      "n": 40
+     }
+    }
+   ],
+   "cam": [
+    [
+     1000,
+     470,
+     1.15
+    ],
+    [
+     640,
+     470,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_b_himal",
+   "music": "river",
+   "lines": [],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya"
+    },
+    {
+     "n": "fx_snow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow",
+      "n": 40
+     },
+     "b": "add"
+    },
+    {
+     "n": "flock",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "woodBird",
+     "args": {
+      "x": 600,
+      "y": 300,
+      "s": 0.6
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.25
+    ],
+    [
+     800,
+     460,
+     1.0
+    ]
+   ],
+   "min": 6,
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_deer",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "One evening he saw two deer in a clearing, a stag and his mate, lost in each other. He drew his bow, and shot.",
+     "hi": "एक संध्या उन्होंने एक खुले स्थान में दो हिरण देखे, एक मृग और उसकी संगिनी, एक दूसरे में खोए हुए। उन्होंने धनुष खींचा, और बाण चलाया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk"
+    },
+    {
+     "n": "pair",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "deer",
+     "args": {
+      "at": [
+       [
+        900,
+        890,
+        320,
+        1
+       ],
+       [
+        1130,
+        900,
+        290,
+        -1
+       ]
+      ]
+     }
+    },
+    {
+     "n": "hunter",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "pandu",
+       "x": 320,
+       "y": 900,
+       "S": 520,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "shot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 7.5,
+      "x0": 520,
+      "y0": 600,
+      "x1": 900,
+      "y1": 760
+     },
+     "every": 1,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     620,
+     480,
+     1.15
+    ],
+    [
+     880,
+     520,
+     1.3
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 7.5
+    },
+    {
+     "n": "gasp",
+     "at": 8.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_fallen",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The stag fell. And as it lay dying, it changed. It was not a deer. It was the sage Kindama, who had taken that form to be with his wife in the forest.",
+     "hi": "मृग गिर पड़ा। और मरते हुए, वह बदल गया। वह हिरण नहीं था। वह ऋषि किंदम थे, जिन्होंने वन में अपनी पत्नी के साथ रहने के लिए वह रूप लिया था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "src": "s1e03_c_deer_bg"
+    },
+    {
+     "n": "fallen",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "deer",
+     "args": {
+      "at": [
+       [
+        820,
+        900,
+        420,
+        1,
+        1
+       ]
+      ],
+      "arrow": [
+       830,
+       805
+      ]
+     }
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 860,
+      "y": 820,
+      "r": 200,
+      "col": "#ffd080"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     860,
+     600,
+     1.2
+    ],
+    [
+     860,
+     590,
+     1.35
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "magic",
+     "at": 3.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_kindama",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "KINDAMA",
+     "en": "Even a hunter does not strike creatures in love. You are a king of the Kurus, and you did not wait. Then hear me. The day you take your wife in your arms, you will die.",
+     "hi": "शिकारी भी प्रेम में डूबे जीवों पर प्रहार नहीं करता। तुम कुरुओं के राजा हो, और तुमने प्रतीक्षा नहीं की। तो सुनो। जिस दिन तुम अपनी पत्नी को बाँहों में लोगे, उसी दिन तुम्हारी मृत्यु होगी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "src": "s1e03_c_deer_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kindama",
+      "x": 540,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.16
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "KINDAMA",
+    "hi": "किंदम",
+    "ep_en": "the sage in the deer",
+    "ep_hi": "मृग रूपी ऋषि",
+    "side": 1
+   },
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_pandu",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "PANDU",
+     "en": "What have I done? A king without sons is a tree without roots. My line ends here, in the dust of this clearing.",
+     "hi": "यह मैंने क्या किया? पुत्रहीन राजा जड़ों के बिना एक पेड़ है। मेरा वंश यहीं समाप्त होता है, इस वन की धूल में।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "src": "s1e03_c_deer_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "pandu",
+      "x": 1040,
+      "y": 450,
+      "R": 190,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.04
+    ],
+    [
+     1020,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_renounce",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Pandu gave away his jewels, his silk, his chariot. He sent his servants back to Hastinapura with a message: the king would not return. He would live as an ascetic, with the sages of the mountain.",
+     "hi": "पांडु ने अपने आभूषण, अपना रेशम, अपना रथ दान कर दिया। उन्होंने सेवकों को संदेश के साथ हस्तिनापुर लौटा दिया: राजा नहीं लौटेंगे। वे पर्वत के ऋषियों के साथ तपस्वी बनकर रहेंगे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "dusk",
+     "hz": 450,
+     "seed": 2.1
+    },
+    {
+     "n": "cart",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "riders",
+     "args": {
+      "x": 300,
+      "y": 820,
+      "s": 110,
+      "cnt": 3,
+      "speed": 50
+     },
+     "every": 2
+    }
+   ],
+   "cam": [
+    [
+     1000,
+     470,
+     1.15
+    ],
+    [
+     640,
+     470,
+     1.15
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.5,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_queens",
+   "music": "love",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Kunti and Madri would not go back. They took off their own ornaments and followed him up the mountain, to the hundred peaks of Shatashringa.",
+     "hi": "कुंती और माद्री वापस नहीं गईं। उन्होंने अपने आभूषण उतार दिए और उनके पीछे पर्वत पर चल पड़ीं, शतशृंग की सौ चोटियों तक।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya",
+     "src": "s1e03_b_himal_bg"
+    },
+    {
+     "n": "three",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "pandu",
+       "x": 620,
+       "y": 880,
+       "S": 340,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun"
+       }
+      },
+      {
+       "who": "kuntiY",
+       "x": 820,
+       "y": 880,
+       "S": 320,
+       "f": 1,
+       "sari": "#e8dcc0"
+      },
+      {
+       "who": "madri",
+       "x": 980,
+       "y": 880,
+       "S": 310,
+       "f": 1,
+       "sari": "#e8dcc0"
+      }
+     ]
+    },
+    {
+     "n": "fx_snow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.2
+    ],
+    [
+     800,
+     480,
+     1.05
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_c_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "GANESHA",
+     "en": "A whole kingdom given up for one arrow.",
+     "hi": "एक बाण के लिए पूरा राज्य त्याग दिया।"
+    },
+    {
+     "who": "VYASAC",
+     "en": "Not for the arrow, scribe. For the moment before it, when he did not stop to look.",
+     "hi": "बाण के लिए नहीं, लेखक। उससे पहले के उस क्षण के लिए, जब वे देखने को नहीं रुके।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e03_a_cave_bg"
+    },
+    {
+     "n": "vyasa",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vyasa",
+     "args": {
+      "x": 470,
+      "y": 800,
+      "S": 500,
+      "f": 1
+     },
+     "src": "s1e03_a_cave_vyasa"
+    },
+    {
+     "n": "ganesha",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500,
+      "hand": 0
+     },
+     "src": "s1e03_a_cave_ganesha"
+    },
+    {
+     "n": "hand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500
+     },
+     "every": 3,
+     "src": "s1e03_a_cave_hand"
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e03_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     780,
+     560,
+     1.35
+    ],
+    [
+     780,
+     560,
+     1.42
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_ashram",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On Shatashringa the sages talked of heaven, and of the debt every man owes his ancestors. Pandu listened and grew quiet. One night he spoke to Kunti.",
+     "hi": "शतशृंग पर ऋषि स्वर्ग की बातें करते, और उस ऋण की जो हर मनुष्य पर अपने पूर्वजों का होता है। पांडु सुनते और चुप हो जाते। एक रात उन्होंने कुंती से बात की।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "ashram",
+     "tod": "dusk",
+     "huts": [
+      [
+       420,
+       1
+      ],
+      [
+       1180,
+       0.8
+      ]
+     ],
+     "fire": 1
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     470,
+     1.15
+    ],
+    [
+     1000,
+     470,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_ask",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "PANDU",
+     "en": "Kunti, there are other ways for a man to have sons. A great soul may give a child to a woman whose husband cannot. I am asking you.",
+     "hi": "कुंती, पुत्र पाने के और भी मार्ग हैं। कोई महान आत्मा उस स्त्री को संतान दे सकती है जिसका पति ऐसा न कर सके। मैं तुमसे विनती करता हूँ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "ashram",
+     "tod": "dusk",
+     "huts": [
+      [
+       420,
+       1
+      ],
+      [
+       1180,
+       0.8
+      ]
+     ],
+     "fire": 1,
+     "src": "s1e03_d_ashram_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "pandu",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     580,
+     450,
+     1.04
+    ],
+    [
+     580,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_mantra",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "KUNTI",
+     "en": "My lord, when I was a girl I served the sage Durvasa, and he gave me a mantra. With it I can call any god I choose, and he must come.",
+     "hi": "स्वामी, बचपन में मैंने ऋषि दुर्वासा की सेवा की थी, और उन्होंने मुझे एक मंत्र दिया। उससे मैं जिस देवता को चाहूँ बुला सकती हूँ, और उन्हें आना ही होगा।"
+    },
+    {
+     "who": "VYASA",
+     "en": "She did not tell him that she had used it once already, and set the child adrift on a river.",
+     "hi": "उन्होंने यह नहीं बताया कि वे उसे एक बार पहले ही प्रयोग कर चुकी थीं, और उस संतान को नदी में बहा चुकी थीं।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "ashram",
+     "tod": "dusk",
+     "huts": [
+      [
+       420,
+       1
+      ],
+      [
+       1180,
+       0.8
+      ]
+     ],
+     "fire": 1,
+     "src": "s1e03_d_ashram_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kuntiY",
+      "x": 1040,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.04
+    ],
+    [
+     1020,
+     440,
+     1.16
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_dharma",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "PANDU",
+     "en": "Then call Dharma, the god of righteousness. Let our first son be the most just man on earth.",
+     "hi": "तो धर्मराज को बुलाओ, धर्म के देवता को। हमारा पहला पुत्र पृथ्वी का सबसे न्यायप्रिय मनुष्य हो।"
+    },
+    {
+     "who": "VYASA",
+     "en": "And so Yudhishthira was born, steady in battle, and steadier in truth.",
+     "hi": "और इस प्रकार युधिष्ठिर का जन्म हुआ, युद्ध में स्थिर, और सत्य में उससे भी अधिक स्थिर।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#0a1030",
+     "mandala": 300,
+     "my": 420
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 420,
+      "r0": 80,
+      "r1": 900,
+      "col": "#fff0c0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 540,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "style": {
+       "stache": null,
+       "beard": null
+      },
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "YUDHISHTHIRA",
+    "hi": "युधिष्ठिर",
+    "ep_en": "son of Dharma",
+    "ep_hi": "धर्मपुत्र",
+    "side": 1
+   },
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bell",
+     "at": 0.5
+    },
+    {
+     "n": "om",
+     "at": 1.5,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_vayu",
+   "music": "storm",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The next year Kunti called Vayu, the wind. Her second son was so heavy that when he slipped from her lap onto a mountain rock, the rock broke into a hundred pieces, and the baby laughed.",
+     "hi": "अगले वर्ष कुंती ने वायु को बुलाया, पवनदेव को। उनका दूसरा पुत्र इतना भारी था कि जब वह उनकी गोद से पर्वत की एक चट्टान पर गिरा, तो चट्टान सौ टुकड़ों में टूट गई, और शिशु हँस पड़ा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya",
+     "src": "s1e03_b_himal_bg"
+    },
+    {
+     "n": "fx_snow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow",
+      "n": 120
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_flash",
+     "k": "anim",
+     "every": 1,
+     "d": 1.0,
+     "fx": {
+      "kind": "flash",
+      "at": [
+       9.0
+      ],
+      "bolt": 900
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 540,
+      "y": 460,
+      "R": 180,
+      "f": 1,
+      "style": {
+       "stache": null
+      },
+      "expr": "smile"
+     },
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.1
+    ]
+   ],
+   "shake": [
+    [
+     9.0,
+     9.8
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "BHIMA",
+    "hi": "भीम",
+    "ep_en": "son of the Wind",
+    "ep_hi": "पवनपुत्र",
+    "side": 1
+   },
+   "amb": "storm",
+   "sfx": [
+    {
+     "n": "wind",
+     "at": 0.5
+    },
+    {
+     "n": "crack",
+     "at": 9.0,
+     "v": 0.7
+    },
+    {
+     "n": "rumble",
+     "at": 9.3,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_indra",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "For the third son, Pandu and Kunti fasted for a year. Then she called Indra, king of the gods. When the child was born, a voice spoke out of the clear sky.",
+     "hi": "तीसरे पुत्र के लिए पांडु और कुंती ने एक वर्ष तक व्रत किया। फिर उन्होंने देवराज इंद्र को बुलाया। जब शिशु का जन्म हुआ, तो निर्मल आकाश से एक वाणी गूँजी।"
+    },
+    {
+     "who": "GODS",
+     "en": "This child will be the equal of Indra. No archer will stand before him.",
+     "hi": "यह बालक इंद्र के समान होगा। कोई धनुर्धर इसके सामने टिक नहीं पाएगा।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "hz": 740,
+     "hills": 1
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 140,
+      "r0": 60,
+      "r1": 1000,
+      "col": "#fff0c0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 90
+     }
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 540,
+      "y": 470,
+      "R": 180,
+      "f": 1,
+      "style": {
+       "stache": null
+      },
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "ARJUNA",
+    "hi": "अर्जुन",
+    "ep_en": "son of Indra",
+    "ep_hi": "इंद्रपुत्र",
+    "side": 1
+   },
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 0.6,
+     "v": 0.4
+    },
+    {
+     "n": "sparkle",
+     "at": 11.0
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_madri",
+   "music": "love",
+   "lines": [
+    {
+     "who": "MADRI",
+     "en": "Sister, you have three sons. I have none. Will you share your mantra with me, just once?",
+     "hi": "दीदी, आपके तीन पुत्र हैं। मेरा एक भी नहीं। क्या आप अपना मंत्र एक बार मुझे देंगी?"
+    },
+    {
+     "who": "VYASA",
+     "en": "Madri was clever. With one call she summoned the Ashvins, the twin physicians of heaven, and bore twins: Nakula, the most beautiful of men, and Sahadeva, the wisest.",
+     "hi": "माद्री चतुर थीं। एक ही आह्वान से उन्होंने अश्विनी कुमारों को बुलाया, स्वर्ग के जुड़वाँ वैद्य, और जुड़वाँ पुत्रों को जन्म दिया: नकुल, पुरुषों में सबसे सुंदर, और सहदेव, सबसे ज्ञानी।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "ashram",
+     "tod": "dawn",
+     "huts": [
+      [
+       420,
+       1
+      ],
+      [
+       1180,
+       0.8
+      ]
+     ],
+     "cow": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "madri",
+      "x": 560,
+      "y": 440,
+      "R": 180,
+      "f": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     580,
+     450,
+     1.04
+    ],
+    [
+     580,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_twins",
+   "music": "joy",
+   "lines": [],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#0a1030",
+     "mandala": 300,
+     "my": 420,
+     "src": "s1e03_d_dharma_bg"
+    },
+    {
+     "n": "nak",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "nakula",
+      "x": 560,
+      "y": 450,
+      "R": 160,
+      "f": 1,
+      "style": {
+       "stache": null
+      },
+      "expr": "smile"
+     },
+     "breath": 1
+    },
+    {
+     "n": "sah",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "sahadeva",
+      "x": 1040,
+      "y": 450,
+      "R": 160,
+      "f": -1,
+      "style": {
+       "stache": null
+      },
+      "expr": "calm"
+     },
+     "breath": 1
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     446,
+     1.06
+    ]
+   ],
+   "min": 6,
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_d_five",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Five sons of the gods, growing up wild among the deer and the hermits. Pandu taught them the bow. The sages taught them the Vedas. They were happy.",
+     "hi": "देवताओं के पाँच पुत्र, हिरणों और तपस्वियों के बीच उन्मुक्त बढ़ते हुए। पांडु ने उन्हें धनुष सिखाया। ऋषियों ने उन्हें वेद सिखाए। वे प्रसन्न थे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "boys",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "boy",
+       "x": 420,
+       "y": 880,
+       "S": 260,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      },
+      {
+       "who": "boy",
+       "x": 600,
+       "y": 880,
+       "S": 300,
+       "f": 1,
+       "pose": "mace",
+       "weapon": "mace",
+       "style": {
+        "dhoti": "#7a2f8a",
+        "skin": "#7e4c2e"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 780,
+       "y": 880,
+       "S": 250,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#efe7d0"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 960,
+       "y": 880,
+       "S": 220,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#2f7a6a"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 1100,
+       "y": 880,
+       "S": 220,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#c9a54a"
+       }
+      }
+     ]
+    },
+    {
+     "n": "papa",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "pandu",
+       "x": 1300,
+       "y": 880,
+       "S": 400,
+       "f": -1,
+       "pose": "bless",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun"
+       }
+      }
+     ]
+    },
+    {
+     "n": "fx_leaves",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "leaves",
+      "n": 40
+     }
+    }
+   ],
+   "cam": [
+    [
+     600,
+     470,
+     1.12
+    ],
+    [
+     1000,
+     470,
+     1.12
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 4.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_gandhari",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "In Hastinapura, Gandhari had been carrying her child for two whole years. When she heard that Kunti had borne a son first, the son who would be heir, something broke in her.",
+     "hi": "हस्तिनापुर में गांधारी दो पूरे वर्षों से गर्भवती थीं। जब उन्होंने सुना कि कुंती ने पहले पुत्र को जन्म दिया है, वह पुत्र जो उत्तराधिकारी होगा, तो उनके भीतर कुछ टूट गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "gandhari",
+      "x": 760,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     760,
+     460,
+     1.02
+    ],
+    [
+     760,
+     450,
+     1.14
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 6.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_lump",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "In her grief she struck her own womb. And what came out was not a child. It was a hard grey mass of flesh, cold as iron.",
+     "hi": "शोक में उन्होंने अपने ही गर्भ पर प्रहार किया। और जो निकला वह शिशु नहीं था। वह माँस का एक कठोर धूसर पिंड था, लोहे जैसा ठंडा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10",
+     "src": "s1e03_e_gandhari_bg"
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 800,
+      "y": 640,
+      "r": 160,
+      "col": "#8a8aa0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     560,
+     1.1
+    ],
+    [
+     800,
+     550,
+     1.3
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "boom",
+     "at": 2.5,
+     "v": 0.4
+    },
+    {
+     "n": "gasp",
+     "at": 3.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_vyasa",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "She called for me.",
+     "hi": "उन्होंने मुझे बुलाया।"
+    },
+    {
+     "who": "GANESHA",
+     "en": "You were there?",
+     "hi": "आप वहाँ थे?"
+    },
+    {
+     "who": "VYASAC",
+     "en": "I am in this story more often than you think, scribe. I had promised her a hundred sons.",
+     "hi": "मैं इस कथा में तुम्हारे विचार से कहीं अधिक हूँ, लेखक। मैंने उन्हें सौ पुत्रों का वरदान दिया था।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e03_a_cave_bg"
+    },
+    {
+     "n": "vy_calm",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "vyasa",
+      "x": 700,
+      "y": 420,
+      "R": 190,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e03_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     430,
+     1.0
+    ],
+    [
+     700,
+     420,
+     1.1
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_jars",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "I sprinkled the flesh with cold water, and it divided into a hundred and one pieces, each no bigger than a thumb. We set each one in a jar of ghee, sealed it, and waited two more years.",
+     "hi": "मैंने उस पिंड पर ठंडा जल छिड़का, और वह एक सौ एक टुकड़ों में बँट गया, हर एक अँगूठे से बड़ा नहीं। हमने हर टुकड़े को घी के एक घड़े में रखा, उसे बंद किया, और दो वर्ष और प्रतीक्षा की।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10",
+     "src": "s1e03_e_gandhari_bg"
+    },
+    {
+     "n": "jars",
+     "k": "plate",
+     "d": 0.85,
+     "draw": "jars",
+     "args": {}
+    },
+    {
+     "n": "sage",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "vyasa",
+       "x": 560,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 1250,
+      "y": 700,
+      "r": 360,
+      "col": "#ffb060"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     520,
+     1.15
+    ],
+    [
+     1000,
+     520,
+     1.15
+    ]
+   ],
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 1.5,
+     "v": 0.3
+    },
+    {
+     "n": "magic",
+     "at": 3.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_omens",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The first jar opened, and Duryodhana was born. At that moment jackals howled in the city, donkeys brayed, and fires broke out in the sky.",
+     "hi": "पहला घड़ा खुला, और दुर्योधन का जन्म हुआ। उसी क्षण नगर में सियार हुआँ हुआँ करने लगे, गधे रेंकने लगे, और आकाश में अग्नि भड़क उठी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "city",
+     "tod": "crimson",
+     "hz": 600
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 110
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_flash",
+     "k": "anim",
+     "every": 1,
+     "d": 1.0,
+     "fx": {
+      "kind": "flash",
+      "at": [
+       3.0,
+       7.0
+      ],
+      "bolt": 1100
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     1000,
+     460,
+     1.15
+    ],
+    [
+     600,
+     460,
+     1.15
+    ]
+   ],
+   "shake": [
+    [
+     3.0,
+     3.6
+    ]
+   ],
+   "amb": "storm",
+   "sfx": [
+    {
+     "n": "wind",
+     "at": 0.5
+    },
+    {
+     "n": "thunder",
+     "at": 3.0,
+     "v": 0.6
+    },
+    {
+     "n": "rumble",
+     "at": 7.0,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_vidura",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VIDURA",
+     "en": "Brother, these signs are not to be ignored. This child will bring ruin on our house. Give him up, and keep the other ninety-nine.",
+     "hi": "भ्राता, इन संकेतों को अनदेखा नहीं करना चाहिए। यह बालक हमारे कुल का विनाश करेगा। इसे त्याग दीजिए, और बाकी निन्यानवे को रखिए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a1210",
+     "throne": [
+      800,
+      660,
+      260
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "vidura",
+      "x": 560,
+      "y": 440,
+      "R": 180,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     580,
+     450,
+     1.04
+    ],
+    [
+     580,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_e_dhrita",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "DHRITA",
+     "en": "My first son. My eyes in this dark world. No, Vidura. Never.",
+     "hi": "मेरा पहला पुत्र। इस अंधेरी दुनिया में मेरी आँखें। नहीं, विदुर। कभी नहीं।"
+    },
+    {
+     "who": "VYASA",
+     "en": "The rest were born one by one: Dushasana, Vikarna, and the others, a hundred brothers, and one sister, Dushala.",
+     "hi": "बाकी एक एक कर जन्मे: दुःशासन, विकर्ण, और अन्य, सौ भाई, और एक बहन, दुःशला।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a1210",
+     "throne": [
+      800,
+      660,
+      260
+     ],
+     "canopy": 1,
+     "src": "s1e03_e_vidura_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dhritaY",
+      "x": 1040,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.04
+    ],
+    [
+     1020,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_spring",
+   "music": "love",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Fifteen years passed on the mountain. Then came a spring, when the forest was in flower and the koel sang all day.",
+     "hi": "पर्वत पर पंद्रह वर्ष बीत गए। फिर एक वसंत आया, जब वन फूलों से भरा था और कोयल दिन भर गाती थी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "gold"
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 110
+     }
+    },
+    {
+     "n": "kbird",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "woodBird",
+     "args": {
+      "x": 1200,
+      "y": 320,
+      "s": 0.8
+     }
+    }
+   ],
+   "cam": [
+    [
+     640,
+     460,
+     1.15
+    ],
+    [
+     1000,
+     460,
+     1.15
+    ]
+   ],
+   "min": 9,
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "flute",
+     "at": 1.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_madri",
+   "music": "love",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Pandu saw Madri bathing in a stream, in a thin wet garment, and he forgot the curse, and the years, and everything but her.",
+     "hi": "पांडु ने माद्री को एक धारा में स्नान करते देखा, एक पतले भीगे वस्त्र में, और वे शाप को भूल गए, वर्षों को भूल गए, उनके सिवा सब कुछ भूल गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "gold"
+    },
+    {
+     "n": "madri",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "madri",
+       "x": 900,
+       "y": 880,
+       "S": 380,
+       "f": -1
+      }
+     ]
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 900,
+      "y": 860
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 50
+     }
+    }
+   ],
+   "cam": [
+    [
+     880,
+     520,
+     1.1
+    ],
+    [
+     880,
+     510,
+     1.22
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 2.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_cry",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "MADRI",
+     "en": "No, my lord! The curse! Remember the curse!",
+     "hi": "नहीं, स्वामी! शाप! शाप याद कीजिए!"
+    },
+    {
+     "who": "VYASA",
+     "en": "He held her, and the curse of Kindama came true. The king of the Kurus died in his wife's arms.",
+     "hi": "उन्होंने उन्हें बाँहों में लिया, और किंदम का शाप सत्य हो गया। कुरुओं के राजा ने अपनी पत्नी की बाँहों में प्राण त्याग दिए।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "gold",
+     "src": "s1e03_f_madri_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "madri",
+      "x": 1040,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "fear"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.04
+    ],
+    [
+     1020,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "gasp",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "gong",
+     "at": 4.5,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_kunti",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Kunti came running with the children. She saw, and she understood.",
+     "hi": "कुंती बच्चों के साथ दौड़ती आईं। उन्होंने देखा, और समझ गईं।"
+    },
+    {
+     "who": "MADRI",
+     "en": "Sister, he died for love of me. Let me follow him. You are stronger than I am. Raise my sons as your own.",
+     "hi": "दीदी, वे मेरे प्रेम के कारण गए। मुझे उनके पीछे जाने दीजिए। आप मुझसे अधिक बलवान हैं। मेरे पुत्रों को अपना समझकर पालिए।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "dusk"
+    },
+    {
+     "n": "two",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "kuntiY",
+       "x": 640,
+       "y": 880,
+       "S": 460,
+       "f": 1,
+       "sari": "#e8dcc0"
+      },
+      {
+       "who": "madri",
+       "x": 940,
+       "y": 880,
+       "S": 440,
+       "f": -1,
+       "sari": "#e8dcc0"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    }
+   ],
+   "cam": [
+    [
+     790,
+     470,
+     1.04
+    ],
+    [
+     790,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_pyre",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Madri climbed onto her husband's pyre. The sages of the mountain chanted, and the smoke rose over the hundred peaks.",
+     "hi": "माद्री अपने पति की चिता पर चढ़ गईं। पर्वत के ऋषियों ने मंत्र पढ़े, और धुआँ सौ चोटियों के ऊपर उठा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya",
+     "src": "s1e03_b_himal_bg"
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        800,
+        820,
+        200,
+        300
+       ]
+      ]
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 110
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.4
+    ],
+    [
+     800,
+     460,
+     1.0
+    ]
+   ],
+   "amb": "fire",
+   "sfx": [
+    {
+     "n": "fire",
+     "at": 0.5,
+     "v": 0.6
+    },
+    {
+     "n": "om",
+     "at": 3.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_return",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then the sages walked down from the mountain with a widow and five boys, all the way to the gates of Hastinapura.",
+     "hi": "फिर ऋषि एक विधवा और पाँच बालकों के साथ पर्वत से उतरे, और पैदल हस्तिनापुर के द्वार तक आए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "day",
+     "hz": 430,
+     "seed": 1.2,
+     "groves": 18
+    },
+    {
+     "n": "walk",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "procession",
+     "args": {
+      "y": 840,
+      "s": 80,
+      "x0": -200,
+      "cnt": 8,
+      "speed": 30
+     },
+     "every": 3
+    }
+   ],
+   "cam": [
+    [
+     560,
+     460,
+     1.15
+    ],
+    [
+     1040,
+     460,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_f_gate",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The whole city came out to see them. Bhishma wept to hold Pandu's sons. And Dhritarashtra's hundred sons stared at their five cousins, the sons of the gods.",
+     "hi": "पूरा नगर उन्हें देखने निकल आया। पांडु के पुत्रों को गले लगाकर भीष्म रो पड़े। और धृतराष्ट्र के सौ पुत्र अपने पाँच चचेरे भाइयों को घूरते रहे, देवताओं के पुत्रों को।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "city",
+     "tod": "gold",
+     "ghats": 1,
+     "src": "s1e03_b_wealth_bg"
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 640,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "kids",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "boy",
+       "x": 900,
+       "y": 880,
+       "S": 300,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#efe7d0"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 1020,
+       "y": 880,
+       "S": 320,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#7a2f8a",
+        "skin": "#7e4c2e"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 1130,
+       "y": 880,
+       "S": 280,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#c7362b"
+       }
+      }
+     ]
+    }
+   ],
+   "cam": [
+    [
+     840,
+     470,
+     1.04
+    ],
+    [
+     840,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 0.5,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_play",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The boys grew up together, a hundred and five princes in one palace. And in every game, Bhima won. He held the Kauravas under the water until they gasped. He shook the trees they climbed until they fell like fruit.",
+     "hi": "बालक साथ साथ बड़े हुए, एक महल में एक सौ पाँच राजकुमार। और हर खेल में भीम जीतते। वे कौरवों को पानी में तब तक दबाए रखते जब तक उनकी साँस न फूल जाती। वे उन पेड़ों को हिलाते जिन पर कौरव चढ़े होते, जब तक वे फलों की तरह न गिर पड़ते।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "day",
+     "hz": 560
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 820
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_leaves",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "leaves",
+      "n": 40
+     }
+    },
+    {
+     "n": "bhimaboy",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "boy",
+       "x": 760,
+       "y": 880,
+       "S": 360,
+       "f": 1,
+       "pose": "maceUp",
+       "style": {
+        "dhoti": "#7a2f8a",
+        "skin": "#7e4c2e"
+       }
+      }
+     ]
+    }
+   ],
+   "cam": [
+    [
+     600,
+     470,
+     1.12
+    ],
+    [
+     1000,
+     470,
+     1.12
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 3.0,
+     "v": 0.5
+    },
+    {
+     "n": "splash",
+     "at": 8.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_duryo",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "DURYO",
+     "en": "He laughs at us. Every day, he laughs. One day the crown will go to his brother, and we will bow to them. Not while I live.",
+     "hi": "वह हम पर हँसता है। हर दिन, हँसता है। एक दिन मुकुट उसके भाई को जाएगा, और हम उनके आगे झुकेंगे। मेरे जीते जी नहीं।",
+     "fx": "growl"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dusk",
+     "hz": 560
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 540,
+      "y": 440,
+      "R": 190,
+      "f": 1,
+      "style": {
+       "stache": null
+      },
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DURYODHANA",
+    "hi": "दुर्योधन",
+    "ep_en": "eldest of the hundred",
+    "ep_hi": "सौ में सबसे बड़ा",
+    "side": 1
+   },
+   "amb": "river",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_feast",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He built a pleasure house on the river at Pramanakoti and held a feast for all the princes. Into Bhima's sweets he mixed the poison of serpents.",
+     "hi": "उसने प्रमाणकोटि में नदी के किनारे एक क्रीड़ा भवन बनवाया और सब राजकुमारों के लिए भोज रखा। भीम की मिठाइयों में उसने सर्पों का विष मिला दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dusk",
+     "hz": 560,
+     "palace": 1
+    },
+    {
+     "n": "lamps",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "floatLamps",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     1000,
+     470,
+     1.15
+    ],
+    [
+     600,
+     470,
+     1.15
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 1.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_drown",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Bhima ate everything, as he always did, and fell into a heavy sleep. Duryodhana bound him with vines and rolled him into the Ganga.",
+     "hi": "भीम ने सब कुछ खा लिया, जैसा वे हमेशा करते थे, और गहरी नींद में गिर पड़े। दुर्योधन ने उन्हें लताओं से बाँधा और गंगा में लुढ़का दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "night",
+     "hz": 560
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 760
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     640,
+     1.1
+    ],
+    [
+     800,
+     630,
+     1.4
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "splash",
+     "at": 6.5,
+     "v": 0.7
+    },
+    {
+     "n": "heartbeat",
+     "at": 7.5,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_naga",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He sank into the kingdom of the Nagas, the serpent people under the river. They bit him, again and again, and their venom fought the poison in his blood, and killed it.",
+     "hi": "वे नदी के नीचे नागों के लोक में डूब गए। नागों ने उन्हें बार बार डसा, और उनके विष ने भीम के रक्त में घुले विष से युद्ध किया, और उसे नष्ट कर दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#04202a",
+     "mandala": 260,
+     "my": 420,
+     "col": "#8af0d0"
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 500
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 70
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 800,
+      "y": 460,
+      "R": 170,
+      "f": 1,
+      "style": {
+       "stache": null
+      },
+      "expr": "calm"
+     },
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ],
+     "glow": [
+      "#8af0d0",
+      26,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     1.0
+    ],
+    [
+     800,
+     450,
+     1.12
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "magic",
+     "at": 1.0,
+     "v": 0.5
+    },
+    {
+     "n": "swell",
+     "at": 6.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_vasuki",
+   "music": "divine",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Vasuki, king of the serpents, knew him as the grandson of a friend. He gave Bhima eight bowls of the nectar of the Nagas, and with each bowl came the strength of a thousand elephants.",
+     "hi": "नागराज वासुकी ने उन्हें एक मित्र के वंशज के रूप में पहचाना। उन्होंने भीम को नागों के अमृत के आठ कटोरे दिए, और हर कटोरे के साथ आया एक हज़ार हाथियों का बल।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#04202a",
+     "mandala": 360,
+     "my": 420,
+     "col": "#8af0d0"
+    },
+    {
+     "n": "fx_wheel",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "wheel",
+      "x": 800,
+      "y": 420,
+      "r": 320,
+      "col": "#8af0d0"
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     440,
+     1.0
+    ],
+    [
+     800,
+     430,
+     1.15
+    ]
+   ],
+   "amb": "void",
+   "sfx": [
+    {
+     "n": "om",
+     "at": 1.0,
+     "v": 0.4
+    },
+    {
+     "n": "magic",
+     "at": 8.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_g_back",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Eight days later, Bhima walked back into Hastinapura, smiling, stronger than ever. Duryodhana smiled back at him. And began to think of fire.",
+     "hi": "आठ दिन बाद भीम मुस्कुराते हुए हस्तिनापुर लौट आए, पहले से कहीं अधिक बलवान। दुर्योधन ने भी मुस्कुराकर उन्हें देखा। और अग्नि के बारे में सोचने लगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "city",
+     "tod": "gold",
+     "ghats": 1,
+     "src": "s1e03_b_wealth_bg"
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "du",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 1060,
+      "y": 440,
+      "R": 180,
+      "f": -1,
+      "style": {
+       "stache": null
+      },
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     450,
+     1.1
+    ],
+    [
+     980,
+     450,
+     1.05
+    ]
+   ],
+   "amb": "crowd",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_kripa",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Bhishma gave the princes a teacher, the gentle Kripacharya. But he wanted more for them. He wanted a master.",
+     "hi": "भीष्म ने राजकुमारों को एक गुरु दिए, सौम्य कृपाचार्य। पर वे उनके लिए और चाहते थे। वे एक महागुरु चाहते थे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "ashram",
+     "tod": "day",
+     "huts": [
+      [
+       400,
+       1
+      ],
+      [
+       1200,
+       0.8
+      ]
+     ]
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kripa",
+      "x": 1060,
+      "y": 440,
+      "R": 180,
+      "f": -1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "KRIPA",
+    "hi": "कृप",
+    "ep_en": "first teacher of the princes",
+    "ep_hi": "राजकुमारों के प्रथम गुरु",
+    "side": -1
+   },
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_well",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "One day the princes were playing with a wooden ball, and it fell into a dry well. They stood around it, helpless, a hundred and five princes and not one idea.",
+     "hi": "एक दिन राजकुमार लकड़ी की गेंद से खेल रहे थे, और वह एक सूखे कुएँ में गिर गई। वे उसके चारों ओर असहाय खड़े रहे, एक सौ पाँच राजकुमार और एक भी उपाय नहीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "day",
+     "hz": 430,
+     "seed": 1.2,
+     "groves": 18,
+     "src": "s1e03_f_return_bg"
+    },
+    {
+     "n": "kids2",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "boy",
+       "x": 520,
+       "y": 880,
+       "S": 300,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#c7362b"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 680,
+       "y": 880,
+       "S": 280,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#7a2f8a",
+        "skin": "#7e4c2e"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 1000,
+       "y": 880,
+       "S": 300,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#3a2a5a"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 1150,
+       "y": 880,
+       "S": 290,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#1a3a2a"
+       }
+      }
+     ]
+    }
+   ],
+   "cam": [
+    [
+     820,
+     520,
+     1.05
+    ],
+    [
+     820,
+     510,
+     1.18
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_brahmin",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "A thin, dark brahmin was watching them. He laughed, picked up a blade of grass, and threw it like a spear.",
+     "hi": "एक दुबला, साँवला ब्राह्मण उन्हें देख रहा था। वह हँसा, घास का एक तिनका उठाया, और उसे भाले की तरह फेंका।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Princes of the Kurus, and you cannot fetch a ball? Watch.",
+     "hi": "कुरुओं के राजकुमार, और तुम एक गेंद नहीं निकाल सकते? देखो।",
+     "fx": "elder",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "day",
+     "hz": 430,
+     "seed": 1.2,
+     "groves": 18,
+     "src": "s1e03_f_return_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 1060,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DRONA",
+    "hi": "द्रोण",
+    "ep_en": "the master of arms",
+    "ep_hi": "शस्त्रों के आचार्य",
+    "side": -1
+   },
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_grass",
+   "music": "wonder",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The first blade pierced the ball. The second pierced the first. Blade by blade he made a chain, and drew the ball up out of the dark.",
+     "hi": "पहला तिनका गेंद में धँस गया। दूसरा पहले में। तिनके दर तिनके उसने एक श्रृंखला बनाई, और गेंद को अंधेरे से ऊपर खींच लिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "day",
+     "hz": 430,
+     "seed": 1.2,
+     "groves": 18,
+     "src": "s1e03_f_return_bg"
+    },
+    {
+     "n": "g1",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 0.8,
+      "x0": 500,
+      "y0": 500,
+      "x1": 800,
+      "y1": 820
+     },
+     "every": 1,
+     "b": "add"
+    },
+    {
+     "n": "g2",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 3.0,
+      "x0": 520,
+      "y0": 480,
+      "x1": 800,
+      "y1": 760
+     },
+     "every": 1,
+     "b": "add"
+    },
+    {
+     "n": "g3",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 5.0,
+      "x0": 540,
+      "y0": 460,
+      "x1": 800,
+      "y1": 700
+     },
+     "every": 1,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     760,
+     640,
+     1.2
+    ],
+    [
+     760,
+     630,
+     1.4
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 0.8,
+     "v": 0.4
+    },
+    {
+     "n": "whoosh",
+     "at": 3.0,
+     "v": 0.4
+    },
+    {
+     "n": "whoosh",
+     "at": 5.0,
+     "v": 0.4
+    },
+    {
+     "n": "cheer",
+     "at": 9.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_tell",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Bhishma knew at once who it was. Drona, son of the sage Bharadvaja, a brahmin who had learned every weapon from Parashurama himself. And a poor man with a wound in his heart.",
+     "hi": "भीष्म तुरंत समझ गए कि वह कौन था। द्रोण, ऋषि भरद्वाज के पुत्र, एक ब्राह्मण जिसने स्वयं परशुराम से हर अस्त्र सीखा था। और एक निर्धन, जिसके हृदय में एक घाव था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1,
+     "src": "s1e03_b_pandu_bg"
+    },
+    {
+     "n": "meet",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 600,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "bless"
+      },
+      {
+       "who": "drona",
+       "x": 1000,
+       "y": 880,
+       "S": 520,
+       "f": -1,
+       "pose": "stand"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_boys",
+   "music": "love",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Drona told his story. As boys, he and Prince Drupada of Panchala had studied in the same hermitage. They shared everything.",
+     "hi": "द्रोण ने अपनी कथा सुनाई। बचपन में वे और पांचाल के राजकुमार द्रुपद एक ही आश्रम में पढ़े थे। वे सब कुछ बाँटते थे।"
+    },
+    {
+     "who": "DRUPADA",
+     "en": "When I am king, Drona, half of my kingdom is yours. I swear it.",
+     "hi": "जब मैं राजा बनूँगा, द्रोण, मेरा आधा राज्य तुम्हारा होगा। मैं शपथ लेता हूँ।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "ashram",
+     "tod": "gold",
+     "huts": [
+      [
+       400,
+       1
+      ],
+      [
+       1200,
+       0.8
+      ]
+     ]
+    },
+    {
+     "n": "friends",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "boy",
+       "x": 680,
+       "y": 880,
+       "S": 380,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#f0e8d0",
+        "skin": "#8a5a3a"
+       }
+      },
+      {
+       "who": "boy",
+       "x": 920,
+       "y": 880,
+       "S": 380,
+       "f": -1,
+       "pose": "bless",
+       "style": {
+        "dhoti": "#2a4a7a"
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.04
+    ],
+    [
+     800,
+     470,
+     1.12
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_milk",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Years later Drona married, and had a son, Ashwatthama. They were so poor that when the boy cried for milk, his mother mixed flour in water and he drank it, and danced, thinking it was milk.",
+     "hi": "वर्षों बाद द्रोण का विवाह हुआ, और एक पुत्र हुआ, अश्वत्थामा। वे इतने निर्धन थे कि जब बालक दूध के लिए रोया, तो उसकी माँ ने पानी में आटा घोल दिया, और वह उसे पीकर नाचने लगा, यह सोचकर कि वह दूध है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10",
+     "src": "s1e03_e_gandhari_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 600,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     620,
+     460,
+     1.04
+    ],
+    [
+     620,
+     450,
+     1.16
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_court",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "So Drona went to Panchala, to his old friend, now king.",
+     "hi": "तो द्रोण पांचाल गए, अपने पुराने मित्र के पास, जो अब राजा था।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Drupada, my friend! It is me, Drona. Do you remember?",
+     "hi": "द्रुपद, मेरे मित्र! मैं हूँ, द्रोण। याद है?",
+     "gap": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#1a2a4a",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "pan",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "drupada",
+       "x": 800,
+       "y": 700,
+       "S": 300,
+       "f": 1,
+       "pose": "stand"
+      },
+      {
+       "who": "drona",
+       "x": 380,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     600,
+     470,
+     1.04
+    ],
+    [
+     600,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_insult",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "DRUPADA",
+     "en": "Friend? Friendship is between equals, brahmin. A king is not the friend of a beggar. Take a meal from my kitchen, if you are hungry, and go.",
+     "hi": "मित्र? मित्रता बराबर वालों में होती है, ब्राह्मण। राजा भिखारी का मित्र नहीं होता। भूखे हो तो मेरी रसोई से भोजन ले लो, और जाओ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#1a2a4a",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drupada",
+      "x": 1060,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.16
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "DRUPADA",
+    "hi": "द्रुपद",
+    "ep_en": "king of Panchala",
+    "ep_hi": "पांचाल नरेश",
+    "side": -1
+   },
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 6.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_vow",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "DRONA",
+     "en": "Then one day, king, I will make you my equal again. I will take half your kingdom, and give it back to you as a gift.",
+     "hi": "तो एक दिन, राजन, मैं तुम्हें फिर से अपने बराबर बनाऊँगा। मैं तुम्हारा आधा राज्य लूँगा, और उसे तुम्हें दान में लौटा दूँगा।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#1a2a4a",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 560,
+      "y": 440,
+      "R": 190,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 50
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     580,
+     450,
+     1.04
+    ],
+    [
+     580,
+     440,
+     1.16
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 0.5,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_h_hired",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "BHISHMA",
+     "en": "Stay in Hastinapura, Acharya. Teach the princes of the Kurus, and they will pay your debt.",
+     "hi": "हस्तिनापुर में रहिए, आचार्य। कुरुओं के राजकुमारों को शिक्षा दीजिए, और वे आपका ऋण चुकाएँगे।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1,
+     "src": "s1e03_b_pandu_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhishma",
+      "x": 1040,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.0
+    ],
+    [
+     1020,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_school",
+   "music": "march",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "So began the school of Drona. Every morning, before dawn, a hundred and five princes ran to the field with bows and maces and swords, and the sons of other kings came to learn beside them.",
+     "hi": "इस प्रकार द्रोण का गुरुकुल आरंभ हुआ। हर सुबह, भोर से पहले, एक सौ पाँच राजकुमार धनुष, गदा और तलवार लेकर मैदान की ओर दौड़ते, और दूसरे राजाओं के पुत्र भी उनके साथ सीखने आते।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 0
+    },
+    {
+     "n": "kids",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "folk",
+     "args": {
+      "cnt": 40,
+      "y": 800,
+      "dy": 80,
+      "s": 50,
+      "seed": 4
+     }
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 70
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.4
+    ],
+    [
+     800,
+     460,
+     1.0
+    ]
+   ],
+   "min": 10,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 3.0,
+     "v": 0.4
+    },
+    {
+     "n": "clash",
+     "at": 6.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_mace",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Bhima and Duryodhana took to the mace, and each became the other's shadow. Nakula learned the sword, Yudhishthira the spear. But one boy wanted everything Drona knew.",
+     "hi": "भीम और दुर्योधन ने गदा अपनाई, और हर एक दूसरे की छाया बन गया। नकुल ने तलवार सीखी, युधिष्ठिर ने भाला। पर एक बालक द्रोण का सब कुछ जानना चाहता था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 0,
+     "src": "s1e03_i_school_bg"
+    },
+    {
+     "n": "maces",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 520,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "maceUp",
+       "weapon": "mace"
+      },
+      {
+       "who": "duryo",
+       "x": 1080,
+       "y": 880,
+       "S": 520,
+       "f": -1,
+       "pose": "mace",
+       "weapon": "mace"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 2.0,
+     "v": 0.6
+    },
+    {
+     "n": "clash",
+     "at": 4.5,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_dark",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "One night the wind blew out the lamp while Arjuna was eating. His hand still found his mouth in the dark. And he thought: if a hand can learn the dark, so can a bow.",
+     "hi": "एक रात अर्जुन भोजन कर रहे थे जब हवा ने दीया बुझा दिया। अंधेरे में भी उनका हाथ मुँह तक पहुँचता रहा। और उन्होंने सोचा: यदि हाथ अंधेरा सीख सकता है, तो धनुष भी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "night"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 60
+     },
+     "b": "add"
+    },
+    {
+     "n": "night",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 760,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#bfe0ff",
+      -3,
+      -2,
+      0.5
+     ]
+    }
+   ],
+   "cam": [
+    [
+     780,
+     480,
+     1.04
+    ],
+    [
+     780,
+     470,
+     1.14
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 8.0,
+     "v": 0.4
+    },
+    {
+     "n": "crack",
+     "at": 8.3,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_bird",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then came the test. Drona set a wooden bird high in a tree and called his pupils one by one.",
+     "hi": "फिर परीक्षा आई। द्रोण ने एक लकड़ी की चिड़िया पेड़ पर ऊँचे रखी और अपने शिष्यों को एक एक कर बुलाया।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Aim at the bird. Tell me what you see.",
+     "hi": "चिड़िया पर निशाना साधो। बताओ, तुम्हें क्या दिखता है।",
+     "fx": "elder",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 1060,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "bird",
+     "k": "plate",
+     "d": 0.8,
+     "draw": "woodBird",
+     "args": {
+      "x": 380,
+      "y": 330
+     }
+    }
+   ],
+   "cam": [
+    [
+     900,
+     450,
+     1.0
+    ],
+    [
+     900,
+     440,
+     1.1
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_yudhi",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "YUDHI",
+     "en": "I see the tree, the branches, the leaves, the bird, my brothers, and you, Acharya.",
+     "hi": "मुझे पेड़ दिखता है, डालियाँ, पत्ते, चिड़िया, मेरे भाई, और आप, आचार्य।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Step aside.",
+     "hi": "हट जाओ।",
+     "fx": "elder",
+     "gap": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "style": {
+       "beard": null
+      },
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     580,
+     450,
+     1.04
+    ],
+    [
+     580,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_eye",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "I see only the bird. Now only its head. Now only its eye.",
+     "hi": "मुझे केवल चिड़िया दिखती है। अब केवल उसका सिर। अब केवल उसकी आँख।"
+    },
+    {
+     "who": "DRONA",
+     "en": "Then shoot.",
+     "hi": "तो बाण चलाओ।",
+     "fx": "elder",
+     "gap": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "archer",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 560,
+       "y": 900,
+       "S": 660,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "bird",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "woodBird",
+     "args": {
+      "x": 1300,
+      "y": 320,
+      "s": 1.5
+     }
+    },
+    {
+     "n": "shot",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowStreak",
+     "args": {
+      "t0": 7.5,
+      "x0": 820,
+      "y0": 520,
+      "x1": 1300,
+      "y1": 330
+     },
+     "every": 1,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     470,
+     1.15
+    ],
+    [
+     1200,
+     360,
+     1.5
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 7.5
+    },
+    {
+     "n": "crack",
+     "at": 7.8,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_i_promise",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "DRONA",
+     "en": "Arjuna, I promise you this. No archer in the world will ever be your equal.",
+     "hi": "अर्जुन, मैं तुम्हें वचन देता हूँ। संसार का कोई धनुर्धर कभी तुम्हारे बराबर नहीं होगा।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "gold",
+     "src": "s1e03_f_spring_bg"
+    },
+    {
+     "n": "gs",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "drona",
+       "x": 620,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "bless"
+      },
+      {
+       "who": "arjuna",
+       "x": 960,
+       "y": 880,
+       "S": 520,
+       "f": -1,
+       "pose": "bowLow",
+       "weapon": "bowRest"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     790,
+     470,
+     1.04
+    ],
+    [
+     790,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_eka",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "A boy came out of the forest one day, a Nishada, son of the hunter-chief Hiranyadhanu. He bowed at Drona's feet.",
+     "hi": "एक दिन वन से एक बालक आया, एक निषाद, शिकारियों के मुखिया हिरण्यधनु का पुत्र। उसने द्रोण के चरणों में प्रणाम किया।"
+    },
+    {
+     "who": "EKALAVYA",
+     "en": "Acharya, teach me the bow. I will serve you all my life.",
+     "hi": "आचार्य, मुझे धनुर्विद्या सिखाइए। मैं जीवन भर आपकी सेवा करूँगा।",
+     "gap": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "ekalavya",
+      "x": 540,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "EKALAVYA",
+    "hi": "एकलव्य",
+    "ep_en": "the Nishada prince",
+    "ep_hi": "निषाद राजकुमार",
+    "side": 1
+   },
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_refuse",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "DRONA",
+     "en": "I teach the princes of the Kurus, and only them. Go home, child.",
+     "hi": "मैं केवल कुरुओं के राजकुमारों को सिखाता हूँ। घर जाओ, बालक।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 1040,
+      "y": 440,
+      "R": 190,
+      "f": -1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.04
+    ],
+    [
+     1020,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_clay",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Ekalavya went deep into the forest. He made an image of Drona out of clay, bowed to it every morning as his teacher, and practised. Alone. For years.",
+     "hi": "एकलव्य वन में भीतर चला गया। उसने मिट्टी से द्रोण की एक प्रतिमा बनाई, हर सुबह उसे गुरु मानकर प्रणाम किया, और अभ्यास करता रहा। अकेले। वर्षों तक।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dawn"
+    },
+    {
+     "n": "statue",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "clay",
+       "x": 1040,
+       "y": 880,
+       "S": 480,
+       "f": -1,
+       "pose": "bless"
+      }
+     ]
+    },
+    {
+     "n": "archer2",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "ekalavya",
+       "x": 560,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_leaves",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "leaves",
+      "n": 40
+     }
+    }
+   ],
+   "cam": [
+    [
+     640,
+     480,
+     1.12
+    ],
+    [
+     960,
+     480,
+     1.12
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 5.0,
+     "v": 0.4
+    },
+    {
+     "n": "whoosh",
+     "at": 9.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_dog",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "One day the princes went hunting, and their dog ran ahead, barking at a dark young man in the trees. Seven arrows flew. The dog came back with its mouth filled with arrows, so that it could not bark. And it was not even scratched.",
+     "hi": "एक दिन राजकुमार आखेट पर गए, और उनका कुत्ता आगे दौड़ता हुआ पेड़ों में एक साँवले युवक पर भौंकने लगा। सात बाण चले। कुत्ता लौटा तो उसका मुँह बाणों से भरा था, कि वह भौंक न सके। और उसे एक खरोंच तक नहीं आई थी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "dog",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "dogSealed",
+     "args": {
+      "x": 760,
+      "y": 880,
+      "s": 1.8
+     }
+    }
+   ],
+   "cam": [
+    [
+     840,
+     720,
+     1.2
+    ],
+    [
+     840,
+     710,
+     1.45
+    ]
+   ],
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 6.0,
+     "v": 0.4
+    },
+    {
+     "n": "whoosh",
+     "at": 6.4,
+     "v": 0.4
+    },
+    {
+     "n": "gasp",
+     "at": 12.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_arjuna",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "ARJUNA",
+     "en": "Acharya, you promised that no archer would ever be my equal. There is one in the forest who is better.",
+     "hi": "आचार्य, आपने वचन दिया था कि कोई धनुर्धर कभी मेरे बराबर नहीं होगा। वन में एक है जो मुझसे श्रेष्ठ है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "day",
+     "src": "s1e03_b_forest_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "style": {
+       "stache": null
+      },
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     580,
+     450,
+     1.04
+    ],
+    [
+     580,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_who",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "EKALAVYA",
+     "en": "I am Ekalavya, the pupil of Drona.",
+     "hi": "मैं एकलव्य हूँ, द्रोण का शिष्य।"
+    },
+    {
+     "who": "DRONA",
+     "en": "If I am your teacher, then you owe me a teacher's fee.",
+     "hi": "यदि मैं तुम्हारा गुरु हूँ, तो तुम पर गुरु दक्षिणा का ऋण है।",
+     "fx": "elder",
+     "gap": 0.6
+    },
+    {
+     "who": "EKALAVYA",
+     "en": "Ask anything.",
+     "hi": "जो चाहें माँगिए।",
+     "gap": 0.5
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dawn",
+     "src": "s1e03_j_clay_bg"
+    },
+    {
+     "n": "meet2",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "drona",
+       "x": 1040,
+       "y": 880,
+       "S": 540,
+       "f": -1,
+       "pose": "stand"
+      },
+      {
+       "who": "ekalavya",
+       "x": 600,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "bowLow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     820,
+     470,
+     1.04
+    ],
+    [
+     820,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_thumb",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "DRONA",
+     "en": "Give me the thumb of your right hand.",
+     "hi": "मुझे अपने दाहिने हाथ का अँगूठा दे दो।",
+     "fx": "elder"
+    },
+    {
+     "who": "VYASA",
+     "en": "The boy did not hesitate. He smiled, took his knife, and cut off his thumb, and laid it at his teacher's feet. He never drew a bow the same way again.",
+     "hi": "बालक ने संकोच नहीं किया। वह मुस्कुराया, अपना चाकू लिया, और अँगूठा काटकर गुरु के चरणों में रख दिया। फिर वह कभी पहले जैसा धनुष नहीं खींच सका।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dawn",
+     "src": "s1e03_j_clay_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "ekalavya",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 1.0,
+     "v": 0.4
+    },
+    {
+     "n": "gong",
+     "at": 6.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_j_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "GANESHA",
+     "en": "Muni, was that dharma? A teacher who never taught him took the one thing he had.",
+     "hi": "मुनिवर, क्या यह धर्म था? जिस गुरु ने उसे कभी सिखाया नहीं, उसने उसकी एकमात्र संपत्ति ले ली।"
+    },
+    {
+     "who": "VYASAC",
+     "en": "Write it down exactly as it happened, scribe. Let those who read it judge Drona. And let them remember Ekalavya.",
+     "hi": "इसे ठीक वैसे ही लिखो जैसा हुआ, लेखक। जो पढ़ें, वे द्रोण का न्याय करें। और एकलव्य को याद रखें।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e03_a_cave_bg"
+    },
+    {
+     "n": "vyasa",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vyasa",
+     "args": {
+      "x": 470,
+      "y": 800,
+      "S": 500,
+      "f": 1
+     },
+     "src": "s1e03_a_cave_vyasa"
+    },
+    {
+     "n": "ganesha",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500,
+      "hand": 0
+     },
+     "src": "s1e03_a_cave_ganesha"
+    },
+    {
+     "n": "hand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500
+     },
+     "every": 3,
+     "src": "s1e03_a_cave_hand"
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e03_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     1050,
+     500,
+     1.6
+    ],
+    [
+     1050,
+     490,
+     1.7
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_arena",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "When their training was done, Drona held a great tournament, so the city could see what its princes had become. A whole arena was built for it, with stands for the king and the queens.",
+     "hi": "जब उनकी शिक्षा पूरी हुई, तो द्रोण ने एक महान प्रतियोगिता रखी, कि नगर देख सके कि उसके राजकुमार क्या बन गए हैं। उसके लिए एक पूरी रंगभूमि बनी, राजा और रानियों के लिए आसनों के साथ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day"
+    },
+    {
+     "n": "crowd",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "folk",
+     "args": {
+      "cnt": 60,
+      "y": 720,
+      "dy": 60,
+      "s": 40,
+      "seed": 7
+     }
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     600,
+     1.4
+    ],
+    [
+     800,
+     460,
+     1.0
+    ]
+   ],
+   "min": 10,
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "nagara",
+     "at": 0.4,
+     "v": 0.6
+    },
+    {
+     "n": "cheer",
+     "at": 2.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_show",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Arjuna made fire with one arrow and rain with the next. He made himself vanish and appear. He shot twenty-one arrows into the hollow of a swinging horn. The city roared.",
+     "hi": "अर्जुन ने एक बाण से अग्नि उत्पन्न की और अगले से वर्षा। वे अदृश्य हुए और प्रकट हुए। उन्होंने झूलते हुए सींग के खोखल में इक्कीस बाण मारे। पूरा नगर गरज उठा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day",
+     "src": "s1e03_k_arena_bg"
+    },
+    {
+     "n": "arj",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 620,
+       "y": 880,
+       "S": 600,
+       "f": 1,
+       "pose": "release",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        1200,
+        780,
+        120,
+        200
+       ]
+      ]
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_rain",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rain",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 1.0
+    },
+    {
+     "n": "fire",
+     "at": 1.5,
+     "v": 0.4
+    },
+    {
+     "n": "whoosh",
+     "at": 5.0
+    },
+    {
+     "n": "cheer",
+     "at": 10.0,
+     "v": 0.7
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_karna",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then a sound like thunder came from the gate. A young man walked into the arena, in golden armour that grew from his own skin, with golden earrings shining like two small suns.",
+     "hi": "तभी द्वार से बादल के गरजने जैसी ध्वनि आई। एक युवक रंगभूमि में आया, ऐसे स्वर्ण कवच में जो उसकी अपनी त्वचा से उगा था, और दो छोटे सूर्यों जैसे चमकते स्वर्ण कुंडलों के साथ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day",
+     "src": "s1e03_k_arena_bg"
+    },
+    {
+     "n": "karna",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 1100,
+       "y": 880,
+       "S": 600,
+       "f": -1,
+       "pose": "stand",
+       "weapon": "bowRest"
+      }
+     ],
+     "rim": [
+      "#ffe08a",
+      -3,
+      -2,
+      0.8
+     ],
+     "glow": [
+      "#ffd060",
+      20,
+      0.35
+     ]
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 1100,
+      "y": 420,
+      "r0": 100,
+      "r1": 900,
+      "col": "#ffe0a0",
+      "spin": 2
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     700,
+     470,
+     1.1
+    ],
+    [
+     1060,
+     460,
+     1.15
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 0.4,
+     "v": 0.6
+    },
+    {
+     "n": "gasp",
+     "at": 2.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_challenge",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "KARNA",
+     "en": "Arjuna, everything you have done today, I can do. And then I will fight you, bow to bow.",
+     "hi": "अर्जुन, आज तुमने जो कुछ किया, वह सब मैं कर सकता हूँ। और फिर मैं तुमसे युद्ध करूँगा, धनुष से धनुष।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "sun": [
+      800,
+      380,
+      220
+     ],
+     "sunCol": "#f6b030",
+     "hills": 1,
+     "ground": "#8a5a3a"
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 380,
+      "r0": 200,
+      "r1": 1000,
+      "col": "#ffe0a0",
+      "spin": 2
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 540,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.12
+    ]
+   ],
+   "hero": 1,
+   "name": {
+    "en": "KARNA",
+    "hi": "कर्ण",
+    "ep_en": "son of the Sun",
+    "ep_hi": "सूर्यपुत्र",
+    "side": 1
+   },
+   "amb": "crowd",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_equal",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And he did. Every feat, arrow for arrow. Duryodhana leapt from his seat and embraced him.",
+     "hi": "और उसने कर दिखाया। हर करतब, बाण के बदले बाण। दुर्योधन अपने आसन से उछला और उसे गले लगा लिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day",
+     "src": "s1e03_k_arena_bg"
+    },
+    {
+     "n": "kshoot",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 800,
+       "y": 880,
+       "S": 600,
+       "f": 1,
+       "pose": "release",
+       "weapon": "bow"
+      }
+     ],
+     "rim": [
+      "#ffe08a",
+      -3,
+      -2,
+      0.8
+     ],
+     "glow": [
+      "#ffd060",
+      20,
+      0.35
+     ]
+    },
+    {
+     "n": "kr",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.12
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 0.5
+    },
+    {
+     "n": "whoosh",
+     "at": 2.0
+    },
+    {
+     "n": "cheer",
+     "at": 5.0,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_kripa",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "KRIPA",
+     "en": "Young man, Arjuna is a prince of the Kurus. Tell us your father's name and your house, so he may know whether he can fight you. A prince does not duel with just anyone.",
+     "hi": "युवक, अर्जुन कुरुओं के राजकुमार हैं। अपने पिता का नाम और अपना कुल बताओ, कि वे जान सकें कि तुमसे युद्ध कर सकते हैं या नहीं। राजकुमार हर किसी से द्वंद्व नहीं करता।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day",
+     "src": "s1e03_k_arena_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kripa",
+      "x": 1040,
+      "y": 440,
+      "R": 180,
+      "f": -1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.04
+    ],
+    [
+     1020,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "crowd",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_shame",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Karna bowed his head, and said nothing. His face flushed like a lotus in the rain.",
+     "hi": "कर्ण ने सिर झुका लिया, और कुछ नहीं कहा। उसका मुख वर्षा में भीगे कमल की तरह लाल हो गया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day",
+     "src": "s1e03_k_arena_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 560,
+      "y": 470,
+      "R": 190,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     580,
+     470,
+     1.06
+    ],
+    [
+     580,
+     460,
+     1.2
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 2.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_anga",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "DURYO",
+     "en": "If Arjuna will fight only a king, then let Karna be a king! I give him the kingdom of Anga, here and now.",
+     "hi": "यदि अर्जुन केवल राजा से लड़ेंगे, तो कर्ण राजा बनें! मैं उन्हें अभी, यहीं अंग देश का राज्य देता हूँ।",
+     "fx": "growl"
+    },
+    {
+     "who": "VYASA",
+     "en": "Brahmins were called, water poured, a crown set on Karna's head, in the middle of the arena.",
+     "hi": "ब्राह्मण बुलाए गए, जल डाला गया, रंगभूमि के बीच ही कर्ण के सिर पर मुकुट रखा गया।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk"
+    },
+    {
+     "n": "two",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 900,
+       "y": 880,
+       "S": 620,
+       "f": -1,
+       "pose": "bowLow"
+      },
+      {
+       "who": "duryo",
+       "x": 620,
+       "y": 880,
+       "S": 640,
+       "f": 1,
+       "pose": "bless"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 60
+     }
+    }
+   ],
+   "cam": [
+    [
+     780,
+     450,
+     1.0
+    ],
+    [
+     780,
+     440,
+     1.12
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.3,
+     "v": 0.5
+    },
+    {
+     "n": "cheer",
+     "at": 7.0,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_friend",
+   "music": "love",
+   "lines": [
+    {
+     "who": "KARNA",
+     "en": "What can I give you in return, prince?",
+     "hi": "बदले में मैं आपको क्या दे सकता हूँ, राजकुमार?"
+    },
+    {
+     "who": "DURYO",
+     "en": "Only your friendship. Forever.",
+     "hi": "केवल तुम्हारी मित्रता। सदा के लिए।",
+     "gap": 0.6
+    },
+    {
+     "who": "KARNA",
+     "en": "Then it is yours, for as long as I breathe.",
+     "hi": "तो वह आपकी है, जब तक मेरी साँस है।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk",
+     "src": "s1e03_k_anga_bg"
+    },
+    {
+     "n": "ka",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "du",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 1060,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     640,
+     450,
+     1.1
+    ],
+    [
+     960,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "crowd",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_father",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then an old man came stumbling into the arena, sweating, his cloth slipping. Adhiratha, the charioteer. And the new king of Anga bowed down and touched his feet. My son, the old man said. My son.",
+     "hi": "तभी एक वृद्ध लड़खड़ाता हुआ रंगभूमि में आया, पसीने में, उसका वस्त्र खिसकता हुआ। अधिरथ, सारथी। और अंग के नए राजा ने झुककर उसके चरण छुए। मेरा पुत्र, वृद्ध ने कहा। मेरा पुत्र।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk",
+     "src": "s1e03_k_anga_bg"
+    },
+    {
+     "n": "fa",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "charioteer",
+       "x": 640,
+       "y": 880,
+       "S": 500,
+       "f": 1,
+       "pose": "bless",
+       "style": {
+        "hair": "#d8d4cc"
+       }
+      },
+      {
+       "who": "karna",
+       "x": 940,
+       "y": 880,
+       "S": 560,
+       "f": -1,
+       "pose": "bowLow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    }
+   ],
+   "cam": [
+    [
+     790,
+     470,
+     1.04
+    ],
+    [
+     790,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "crowd",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_bhima",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "BHIMA",
+     "en": "A charioteer's son! You are not fit to die by Arjuna's hand. Pick up a whip and go back to your horses!",
+     "hi": "सारथी का बेटा! तुम अर्जुन के हाथों मरने योग्य भी नहीं। चाबुक उठाओ और अपने घोड़ों के पास लौट जाओ!",
+     "fx": "growl"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk",
+     "src": "s1e03_k_anga_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "bhima",
+      "x": 1060,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1040,
+     450,
+     1.04
+    ],
+    [
+     1040,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 4.0,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_kunti",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "In the royal stand, Kunti saw the earrings, and the armour, and knew her firstborn. She fainted. Vidura sprinkled water on her face. When she woke, she said nothing at all.",
+     "hi": "राजकीय आसनों में कुंती ने कुंडल देखे, और कवच, और अपने पहले पुत्र को पहचान लिया। वे मूर्छित हो गईं। विदुर ने उनके मुख पर जल छिड़का। जब वे जागीं, तो उन्होंने कुछ भी नहीं कहा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "dusk",
+     "src": "s1e03_k_anga_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kunti",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.05
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 2.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_k_sunset",
+   "music": "lament",
+   "lines": [],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      900,
+      560,
+      160
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#3a2014"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e08050",
+      "n": 50
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.15
+    ],
+    [
+     800,
+     500,
+     1.0
+    ]
+   ],
+   "min": 6,
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_l_fee",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "DRONA",
+     "en": "Your training is finished. Now pay my fee. Bring me Drupada, king of Panchala, bound in chains.",
+     "hi": "तुम्हारी शिक्षा पूर्ण हुई। अब मेरी दक्षिणा चुकाओ। मेरे सामने पांचाल के राजा द्रुपद को बंदी बनाकर लाओ।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 0,
+     "src": "s1e03_i_school_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 800,
+      "y": 440,
+      "R": 200,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "nagara",
+     "at": 5.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_l_kauravas",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The Kauravas rode first, shouting, racing each other for the glory. Drupada's archers cut them to pieces and they came back in disorder.",
+     "hi": "कौरव पहले गए, चिल्लाते हुए, यश के लिए एक दूसरे से होड़ करते हुए। द्रुपद के धनुर्धरों ने उन्हें छिन्न भिन्न कर दिया और वे अस्त व्यस्त होकर लौटे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "crimson",
+     "hz": 450,
+     "seed": 3.3,
+     "groves": 8
+    },
+    {
+     "n": "charge",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "riders",
+     "args": {
+      "x": 200,
+      "y": 830,
+      "s": 110,
+      "cnt": 7,
+      "speed": 80
+     },
+     "every": 2
+    },
+    {
+     "n": "rain",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     470,
+     1.15
+    ],
+    [
+     1040,
+     470,
+     1.15
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.3
+    },
+    {
+     "n": "clash",
+     "at": 3.0
+    },
+    {
+     "n": "roar",
+     "at": 6.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_l_arjuna",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Then the five Pandavas went in. Bhima with his mace cleared a road through the elephants. Arjuna drove straight to the king's chariot, broke his bow, and leapt aboard.",
+     "hi": "फिर पाँचों पांडव गए। भीम ने गदा से हाथियों के बीच मार्ग बनाया। अर्जुन सीधे राजा के रथ तक पहुँचे, उनका धनुष तोड़ा, और उस पर कूद गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 0,
+     "src": "s1e03_i_school_bg"
+    },
+    {
+     "n": "ch",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warChariot",
+     "args": {
+      "x": 700,
+      "y": 880,
+      "s": 0.85,
+      "rider": "arjuna"
+     },
+     "every": 2
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 90
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.1
+    ]
+   ],
+   "shake": [
+    [
+     7.0,
+     7.6
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "clash",
+     "at": 1.0
+    },
+    {
+     "n": "whoosh",
+     "at": 3.0
+    },
+    {
+     "n": "crack",
+     "at": 7.0,
+     "v": 0.6
+    },
+    {
+     "n": "roar",
+     "at": 9.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_l_bound",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "DRONA",
+     "en": "Do you remember me now, king? You said a king cannot be the friend of a beggar. So now I am a king. I keep half your kingdom, north of the Ganga. The south I give back to you. Now we are equals. Now we can be friends.",
+     "hi": "अब याद आया, राजन? तुमने कहा था कि राजा भिखारी का मित्र नहीं हो सकता। तो अब मैं राजा हूँ। गंगा के उत्तर का आधा राज्य मैं रखता हूँ। दक्षिण का तुम्हें लौटाता हूँ। अब हम बराबर हैं। अब हम मित्र हो सकते हैं।",
+     "fx": "elder"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 0,
+     "src": "s1e03_i_school_bg"
+    },
+    {
+     "n": "capt",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "drona",
+       "x": 620,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "stand"
+      },
+      {
+       "who": "drupada",
+       "x": 980,
+       "y": 880,
+       "S": 480,
+       "f": -1,
+       "pose": "despair"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_l_drupada",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Drupada smiled, and bowed, and went home. And there he lit a sacrificial fire, and prayed for two things: a son who would kill Drona, and a daughter who would bring down the house of the Kurus.",
+     "hi": "द्रुपद मुस्कुराए, झुके, और घर चले गए। और वहाँ उन्होंने एक यज्ञ की अग्नि जलाई, और दो चीज़ों की प्रार्थना की: एक पुत्र जो द्रोण का वध करे, और एक पुत्री जो कुरुओं के कुल का पतन करे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#2a0608",
+     "mandala": 300,
+     "my": 440,
+     "col": "#ffb060"
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        800,
+        820,
+        260,
+        360
+       ]
+      ]
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 120
+     },
+     "b": "add"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drupada",
+      "x": 800,
+      "y": 400,
+      "R": 160,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     500,
+     1.0
+    ],
+    [
+     800,
+     490,
+     1.14
+    ]
+   ],
+   "amb": "fire",
+   "sfx": [
+    {
+     "n": "fire",
+     "at": 0.5,
+     "v": 0.6
+    },
+    {
+     "n": "om",
+     "at": 4.0,
+     "v": 0.4
+    },
+    {
+     "n": "boom",
+     "at": 11.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_m_heir",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "A year later, Dhritarashtra named Yudhishthira crown prince of Hastinapura. The people rejoiced. They said the son of Pandu would be a king like his father.",
+     "hi": "एक वर्ष बाद धृतराष्ट्र ने युधिष्ठिर को हस्तिनापुर का युवराज घोषित किया। प्रजा ने उत्सव मनाया। लोग कहते थे कि पांडु का पुत्र अपने पिता जैसा राजा होगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#4a1612",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1,
+     "src": "s1e03_b_pandu_bg"
+    },
+    {
+     "n": "crown",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 800,
+       "y": 880,
+       "S": 560,
+       "f": 1,
+       "pose": "bless",
+       "style": {
+        "beard": null
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 60
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.04
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "cheer",
+     "at": 2.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_m_shakuni",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And Duryodhana sat in the dark with his uncle Shakuni, and with his new friend Karna, and spoke very softly about a house in Varanavata, made of lac and pitch and dry hemp. A house that would burn.",
+     "hi": "और दुर्योधन अपने मामा शकुनि, और अपने नए मित्र कर्ण के साथ अंधेरे में बैठा, और बहुत धीमे स्वर में वारणावत के एक भवन की बातें करता रहा, लाख, राल और सूखे सन से बना। एक भवन जो जलेगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10",
+     "src": "s1e03_e_gandhari_bg"
+    },
+    {
+     "n": "sh",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "shakuni",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "du",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "duryo",
+      "x": 1060,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "style": {
+       "stache": null
+      },
+      "expr": "cruel"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     640,
+     460,
+     1.1
+    ],
+    [
+     960,
+     460,
+     1.1
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "heartbeat",
+     "at": 6.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e03_m_cave",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "GANESHA",
+     "en": "A house that would burn, with five brothers and their mother inside.",
+     "hi": "एक भवन जो जलेगा, भीतर पाँच भाइयों और उनकी माँ के साथ।"
+    },
+    {
+     "who": "VYASAC",
+     "en": "Tomorrow, scribe. Rest your hand. Tomorrow there is fire, a forest, a demon, and a bride.",
+     "hi": "कल, लेखक। अपने हाथ को विश्राम दो। कल अग्नि है, एक वन है, एक राक्षस है, और एक दुल्हन।",
+     "gap": 0.8
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "cave",
+     "view": "night",
+     "lamps": [
+      520,
+      1100
+     ],
+     "src": "s1e03_a_cave_bg"
+    },
+    {
+     "n": "vyasa",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "vyasa",
+     "args": {
+      "x": 470,
+      "y": 800,
+      "S": 500,
+      "f": 1
+     },
+     "src": "s1e03_a_cave_vyasa"
+    },
+    {
+     "n": "ganesha",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "ganesha",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500,
+      "hand": 0
+     },
+     "src": "s1e03_a_cave_ganesha"
+    },
+    {
+     "n": "hand",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "ganeshaHand",
+     "args": {
+      "x": 1060,
+      "y": 800,
+      "S": 500
+     },
+     "every": 3,
+     "src": "s1e03_a_cave_hand"
+    },
+    {
+     "n": "flick",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "lampFlicker",
+     "args": {
+      "at": [
+       [
+        520,
+        742,
+        1.1
+       ],
+       [
+        1100,
+        742,
+        1.1
+       ]
+      ]
+     },
+     "every": 3,
+     "b": "add",
+     "src": "s1e03_a_cave_flick"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.05
+    ],
+    [
+     800,
+     520,
+     1.3
+    ]
+   ],
+   "tout": "fade",
+   "min": 12,
+   "amb": "night",
+   "tail": 1.8
+  }
+ ],
+ "cast": {
+  "en": {
+   "NAR": {
+    "voice": "bm_george",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "am_michael:2+bm_fable:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "am_onyx:2+am_michael:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "am_liam:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "BHIMA": {
+    "voice": "am_fenrir",
+    "speed": 0.95,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "am_adam:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": 0
+   },
+   "KARNA": {
+    "voice": "am_eric:2+am_onyx:1",
+    "speed": 0.93,
+    "pitch": -0.5
+   },
+   "DURYO": {
+    "voice": "am_fenrir:2+am_onyx:1",
+    "speed": 0.95,
+    "pitch": -1,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "bm_daniel",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "bm_daniel:2+am_liam:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DRONA": {
+    "voice": "bm_fable",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "bm_lewis",
+    "speed": 0.88,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "bm_lewis:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "SHANTANU": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "am_puck:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 1.5
+   },
+   "FISHER": {
+    "voice": "am_santa",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHIVA": {
+    "voice": "am_onyx",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "am_onyx:2+bm_daniel:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "am_eric:2+am_michael:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "af_nicole:2+af_heart:1",
+    "speed": 0.92,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "af_heart:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "bf_isabella",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "bf_alice:2+bf_isabella:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "VYASA": {
+    "voice": "bm_george:2+bm_fable:1",
+    "speed": 0.88,
+    "pitch": -2.5,
+    "fx": "storyteller"
+   },
+   "CHANT": {
+    "voice": "hm_omega",
+    "speed": 0.82,
+    "pitch": -2.5,
+    "fx": "cave",
+    "text_lang": "hi"
+   },
+   "BRAHMA": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "PRATIPA": {
+    "voice": "bm_daniel:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "SATYAVATI": {
+    "voice": "af_heart:2+af_sky:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "AMBA": {
+    "voice": "bf_emma:2+af_nicole:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHALVA": {
+    "voice": "am_eric:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KING": {
+    "voice": "am_puck:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": 0.5
+   },
+   "DURVASA": {
+    "voice": "bm_lewis:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SURYA": {
+    "voice": "am_michael:2+am_eric:1",
+    "speed": 0.9,
+    "pitch": -1,
+    "fx": "divine"
+   },
+   "MADRI": {
+    "voice": "af_sky:2+af_bella:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "RADHA": {
+    "voice": "af_nicole:2+af_sky:1",
+    "speed": 0.98,
+    "pitch": 0
+   },
+   "VYASAC": {
+    "voice": "bm_george:2+bm_fable:1",
+    "speed": 0.88,
+    "pitch": -2.5,
+    "fx": "cave"
+   },
+   "GANESHA": {
+    "voice": "am_michael:2+am_puck:1",
+    "speed": 0.94,
+    "pitch": -1.5,
+    "fx": "cave"
+   },
+   "VASISHTHA": {
+    "voice": "bm_fable:2+bm_daniel:1",
+    "speed": 0.86,
+    "pitch": -3
+   },
+   "VASU": {
+    "voice": "am_liam:2+am_eric:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "WIFE": {
+    "voice": "af_bella:2+af_nicole:1",
+    "speed": 0.95,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DASHRAJ": {
+    "voice": "am_santa:2+bm_lewis:1",
+    "speed": 0.92,
+    "pitch": -1
+   },
+   "CHARIOT": {
+    "voice": "bm_lewis",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "GODS": {
+    "voice": "am_onyx:2+bm_george:1",
+    "speed": 0.86,
+    "pitch": -2,
+    "fx": "chorus"
+   },
+   "PARASHU": {
+    "voice": "am_fenrir:2+bm_daniel:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "growl"
+   },
+   "PANDU": {
+    "voice": "bm_daniel:2+am_eric:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "KINDAMA": {
+    "voice": "bm_lewis:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "KRIPA": {
+    "voice": "bm_fable:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -1.5
+   },
+   "EKALAVYA": {
+    "voice": "am_liam:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "DRUPADA": {
+    "voice": "am_adam:2+bm_lewis:1",
+    "speed": 0.94,
+    "pitch": -1
+   }
+  },
+  "hi": {
+   "NAR": {
+    "voice": "hm_omega",
+    "speed": 0.88,
+    "pitch": -1,
+    "fx": "storyteller"
+   },
+   "KRISHNA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "KTIME": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "ARJUNA": {
+    "voice": "hm_psi",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "BHIMA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "YUDHI": {
+    "voice": "hm_omega:2+hm_psi:1",
+    "speed": 0.9,
+    "pitch": 0.5
+   },
+   "KARNA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.93,
+    "pitch": -1
+   },
+   "DURYO": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.95,
+    "pitch": -1.5,
+    "fx": "growl"
+   },
+   "BHISHMA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.85,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "DEVA": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.9,
+    "pitch": -1
+   },
+   "DRONA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -2.5,
+    "fx": "elder"
+   },
+   "VIDURA": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.88,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "SHAKUNI": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 1.5
+   },
+   "SHANTANU": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -0.5
+   },
+   "DHRITA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "elder"
+   },
+   "ABHI": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 2.0
+   },
+   "FISHER": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHIVA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -3.5,
+    "fx": "divine_big"
+   },
+   "YAKSHA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.8,
+    "pitch": -4.5,
+    "fx": "divine_big"
+   },
+   "INDRA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.92,
+    "pitch": -0.5,
+    "fx": "divine"
+   },
+   "GANGA": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.9,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DRAUPADI": {
+    "voice": "hf_alpha",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KUNTI": {
+    "voice": "hf_beta",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "GANDHARI": {
+    "voice": "hf_beta:2+bf_alice:1",
+    "speed": 0.85,
+    "pitch": -2,
+    "fx": "elder"
+   },
+   "VYASA": {
+    "voice": "hm_omega",
+    "speed": 0.86,
+    "pitch": -2.0,
+    "fx": "storyteller"
+   },
+   "CHANT": {
+    "voice": "hm_omega",
+    "speed": 0.82,
+    "pitch": -2.5,
+    "fx": "cave"
+   },
+   "BRAHMA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.82,
+    "pitch": -4,
+    "fx": "divine_big"
+   },
+   "PRATIPA": {
+    "voice": "hm_omega:2+bm_daniel:1",
+    "speed": 0.84,
+    "pitch": -3,
+    "fx": "elder"
+   },
+   "SATYAVATI": {
+    "voice": "hf_alpha:2+af_heart:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "AMBA": {
+    "voice": "hf_alpha:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHALVA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KING": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 1.0
+   },
+   "DURVASA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SURYA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": -1,
+    "fx": "divine"
+   },
+   "MADRI": {
+    "voice": "hf_beta:2+af_sky:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "RADHA": {
+    "voice": "hf_alpha:2+af_nicole:1",
+    "speed": 0.98,
+    "pitch": 0.5
+   },
+   "VYASAC": {
+    "voice": "hm_omega",
+    "speed": 0.86,
+    "pitch": -2.0,
+    "fx": "cave"
+   },
+   "GANESHA": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 0.92,
+    "pitch": -1.5,
+    "fx": "cave"
+   },
+   "VASISHTHA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.84,
+    "pitch": -3.5
+   },
+   "VASU": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "WIFE": {
+    "voice": "hf_alpha:2+af_bella:1",
+    "speed": 0.95,
+    "pitch": 0,
+    "fx": "divine"
+   },
+   "DASHRAJ": {
+    "voice": "hm_omega:2+am_santa:1",
+    "speed": 0.92,
+    "pitch": -0.5
+   },
+   "CHARIOT": {
+    "voice": "hm_psi:2+bm_lewis:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "GODS": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.84,
+    "pitch": -2.5,
+    "fx": "chorus"
+   },
+   "PARASHU": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.88,
+    "pitch": -2.5,
+    "fx": "growl"
+   },
+   "PANDU": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "KINDAMA": {
+    "voice": "hm_omega:2+bm_lewis:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "KRIPA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.9,
+    "pitch": -1.0
+   },
+   "EKALAVYA": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "DRUPADA": {
+    "voice": "hm_psi:2+am_adam:1",
+    "speed": 0.94,
+    "pitch": -1.5
+   }
+  }
+ }
+}

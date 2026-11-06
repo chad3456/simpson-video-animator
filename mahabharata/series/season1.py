@@ -1009,6 +1009,10 @@ EP(2, "Amba's Curse and the Blind King", 'अंबा का शाप और �
     CAVE('night'), cam=[[800, 520, 1.3], [800, 450, 1.0]], amb='night', tout='fade', min=14),
 ])
 
+# =============================================================== EPISODE 3 ===
+import s1_ep03  # noqa: E402
+s1_ep03.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
+
 # ---------------------------------------------------------------- voices ---
 CAST = copy.deepcopy(BASE_CAST)
 CAST['en'].update({
@@ -1033,6 +1037,11 @@ CAST['en'].update({
     'CHARIOT': dict(voice='bm_lewis', speed=0.95, pitch=0),
     'GODS': dict(voice='am_onyx:2+bm_george:1', speed=0.86, pitch=-2, fx='chorus'),
     'PARASHU': dict(voice='am_fenrir:2+bm_daniel:1', speed=0.88, pitch=-2, fx='growl'),
+    'PANDU': dict(voice='bm_daniel:2+am_eric:1', speed=0.94, pitch=-0.5),
+    'KINDAMA': dict(voice='bm_lewis:2+bm_fable:1', speed=0.86, pitch=-1.5, fx='elder'),
+    'KRIPA': dict(voice='bm_fable:2+bm_george:1', speed=0.9, pitch=-1.5),
+    'EKALAVYA': dict(voice='am_liam:2+am_puck:1', speed=0.95, pitch=0.5),
+    'DRUPADA': dict(voice='am_adam:2+bm_lewis:1', speed=0.94, pitch=-1),
 })
 CAST['hi'].update({
     'VYASA': dict(voice='hm_omega', speed=0.86, pitch=-2.0, fx='storyteller'),
@@ -1056,6 +1065,11 @@ CAST['hi'].update({
     'CHARIOT': dict(voice='hm_psi:2+bm_lewis:1', speed=0.95, pitch=0),
     'GODS': dict(voice='hm_omega:2+am_onyx:1', speed=0.84, pitch=-2.5, fx='chorus'),
     'PARASHU': dict(voice='hm_omega:2+am_fenrir:1', speed=0.88, pitch=-2.5, fx='growl'),
+    'PANDU': dict(voice='hm_psi:2+bm_daniel:1', speed=0.94, pitch=-0.5),
+    'KINDAMA': dict(voice='hm_omega:2+bm_lewis:1', speed=0.86, pitch=-1.5, fx='elder'),
+    'KRIPA': dict(voice='hm_omega:2+bm_fable:1', speed=0.9, pitch=-1.0),
+    'EKALAVYA': dict(voice='hm_psi:2+am_liam:1', speed=0.95, pitch=1.0),
+    'DRUPADA': dict(voice='hm_psi:2+am_adam:1', speed=0.94, pitch=-1.5),
 })
 
 SERIES = dict(title=dict(en='Mahabharata', hi='महाभारत'), subtitle=dict(en='Season 1', hi='पहला अध्याय'), fps=24, w=1280, h=720)

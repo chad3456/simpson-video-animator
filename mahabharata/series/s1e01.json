@@ -7651,6 +7651,32 @@
     "speed": 0.88,
     "pitch": -2,
     "fx": "growl"
+   },
+   "PANDU": {
+    "voice": "bm_daniel:2+am_eric:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "KINDAMA": {
+    "voice": "bm_lewis:2+bm_fable:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "KRIPA": {
+    "voice": "bm_fable:2+bm_george:1",
+    "speed": 0.9,
+    "pitch": -1.5
+   },
+   "EKALAVYA": {
+    "voice": "am_liam:2+am_puck:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "DRUPADA": {
+    "voice": "am_adam:2+bm_lewis:1",
+    "speed": 0.94,
+    "pitch": -1
    }
   },
   "hi": {
@@ -7904,6 +7930,32 @@
     "speed": 0.88,
     "pitch": -2.5,
     "fx": "growl"
+   },
+   "PANDU": {
+    "voice": "hm_psi:2+bm_daniel:1",
+    "speed": 0.94,
+    "pitch": -0.5
+   },
+   "KINDAMA": {
+    "voice": "hm_omega:2+bm_lewis:1",
+    "speed": 0.86,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "KRIPA": {
+    "voice": "hm_omega:2+bm_fable:1",
+    "speed": 0.9,
+    "pitch": -1.0
+   },
+   "EKALAVYA": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.95,
+    "pitch": 1.0
+   },
+   "DRUPADA": {
+    "voice": "hm_psi:2+am_adam:1",
+    "speed": 0.94,
+    "pitch": -1.5
    }
   }
  }
