@@ -603,3 +603,15 @@ PIECES.crane = (P, t, a) => {   // a white crane standing in the lake (the Yaksh
   P.solid = false;
 };
 PIECES.cattle = (P, t, a) => { for (const [x, y, s, f] of (a.at || [[600, 860, 160, 1], [820, 880, 180, -1], [1050, 860, 150, 1]])) cow(P, x + t * (a.speed || 0) * f, y, s, f, a.col || '#e8e0d0', t); };
+
+// ---------------------------------------------------------------- Episode 8 additions ---
+Object.assign(FACES, {
+  balarama: { skin: '#e8dcc8', W: 0.84, cheek: 0.3, jaw: 0.7, chin: 1.02, nose: 'straight', eye: 0.96, brow: 'heavy', lips: '#a04a4a', stache: 'full', beard: null, hair: '#1a120d', hairStyle: 'curls', crown: 'mukut', tilak: 'namam', ear: 'kundala', chest: 'pearls', cloth: '#2a4a8a', expr: 'stern', neck: 1.2 },
+  satyaki: { skin: '#8a5a3a', W: 0.74, jaw: 0.5, chin: 1.0, nose: 'straight', eye: 1.0, brow: 'arch', lips: '#8a3e34', stache: 'curl', beard: null, hair: '#100b08', hairStyle: 'curls', crown: 'mukutLow', tilak: 'namam', ear: 'kundala', chest: 'armour', cloth: '#c9a54a', expr: 'anger' },
+  shalya: { skin: '#c49a70', W: 0.78, jaw: 0.6, chin: 1.02, nose: 'aquiline', eye: 0.9, brow: 'heavy', lips: '#8a4a3a', stache: 'grey', beard: 'short', hair: '#8a847a', hairStyle: 'straight', crown: 'royal', tilak: 'line', ear: 'kundala', chest: 'armour', cloth: '#5a3a1a', expr: 'stern', age: 1 },
+});
+Object.assign(CAST, {
+  balarama: { skin: '#e8dcc8', dhoti: '#2a4a8a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#1a120d', beard: 'stache', jewel: GOLD, bulk: 1.2 },
+  satyaki: { skin: '#8a5a3a', dhoti: '#c9a54a', patka: '#7a3a1a', scarf: '#c7362b', crown: 'mukut', hair: '#100b08', beard: 'stache', jewel: GOLD },
+  shalya: { skin: '#c49a70', dhoti: '#5a3a1a', patka: '#d2a23a', scarf: '#8a6a3a', crown: 'mukut', hair: '#8a847a', beard: 'short', jewel: GOLD, age: 1 },
+});

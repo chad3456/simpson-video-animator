@@ -3923,6 +3923,16 @@
     "speed": 0.9,
     "pitch": -1.5,
     "fx": "divine"
+   },
+   "BALARAMA": {
+    "voice": "am_adam:2+am_onyx:1",
+    "speed": 0.92,
+    "pitch": -1.5
+   },
+   "SATYAKI": {
+    "voice": "am_liam:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": 0
    }
   },
   "hi": {
@@ -4278,6 +4288,16 @@
     "speed": 0.9,
     "pitch": -2.0,
     "fx": "divine"
+   },
+   "BALARAMA": {
+    "voice": "hm_omega:2+am_adam:1",
+    "speed": 0.92,
+    "pitch": -1.0
+   },
+   "SATYAKI": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 1.0,
+    "pitch": 0.5
    }
   }
  }
