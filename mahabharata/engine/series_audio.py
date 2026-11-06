@@ -142,9 +142,9 @@ def say(kokoro, text, voice, speed, lang, cache):
     return s
 
 def voice_line(kokoro, ln, who, lang, cache):
-    text = ln[lang]
+    tl = who.get('text_lang', lang); text = ln[tl]
     sp = ln.get('speed', who.get('speed', 1.0))
-    raw = say(kokoro, text, who['voice'], sp, lang, cache)
+    raw = say(kokoro, text, who['voice'], sp, tl, cache)
     sh = shift(raw, who.get('pitch', 0), who.get('formant', 'preserved'), cache, f"{lang}|{who['voice']}|{sp}|{text}")
     sig = resample_poly(sh, 147, 80)
     return treat(sig, ln.get('fx', who.get('fx', 'room'))) * 0.9, len(sig) / SR
@@ -225,4 +225,4 @@ if __name__ == '__main__':
     from kokoro_onnx import Kokoro
     models = os.environ.get('KOKORO_MODELS', os.path.expanduser('~/models'))
     kokoro = Kokoro(os.path.join(models, 'kokoro-v1.0.onnx'), os.path.join(models, 'voices-v1.0.bin'))
-    for e in sys.argv[1:]: build(e, kokoro, '--no-music' not in sys.argv)
+    for e in [a for a in sys.argv[1:] if not a.startswith('--')]: build(e, kokoro, '--no-music' not in sys.argv)

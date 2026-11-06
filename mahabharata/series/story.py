@@ -15,6 +15,7 @@ def anim(n, every=2, add=True, d=1.0, **spec):
     if add: L['b'] = 'add'
     return L
 def fx(kind, every=3, d=1.0, n=None, **o):
+    if isinstance(n, int): o['n'] = n; n = None
     return anim(n or ('fx_' + kind), every, kind not in ('petals', 'leaves'), d, fx=dict(kind=kind, **o))
 def face(who, x=800, y=430, R=190, f=1, expr=None, rim=None, glow=None, n='face', d=1.0, **o):
     p = dict(who=who, x=x, y=y, R=R, f=f, **o)

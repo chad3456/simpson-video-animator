@@ -49,7 +49,7 @@ def prep_plate(shot, L):
     """Plate RGB + alpha with rim light / glow baked in. Returns dict."""
     key = ('plate', shot['id'], L['n'])
     if key in _cache: return _cache[key]
-    base = os.path.join(BUILD, 'plates', f"{shot['id']}_{L['n']}")
+    base = os.path.join(BUILD, 'plates', L.get('src') or f"{shot['id']}_{L['n']}")
     rgb = load_rgb(base + '.jpg').copy()
     is_bg = L['n'] == 'bg' or L.get('opaque')
     a = None if is_bg else load_mask(base + '.mask.png', 1.0)
@@ -69,7 +69,11 @@ def prep_plate(shot, L):
 
 def anim_frame(shot, L, t):
     ev = L.get('every', 2); i = int(t * FPS / ev + 1e-6)
-    d = os.path.join(BUILD, 'anim', f"{shot['id']}_{L['n']}")
+    d = os.path.join(BUILD, 'anim', L.get('src') or f"{shot['id']}_{L['n']}")
+    if L.get('src'):   # a borrowed animation loops over the frames its own shot painted
+        key = ('nfr', d)
+        if key not in _cache: _cache[key] = len([f for f in os.listdir(d) if f.endswith('.jpg')]) if os.path.isdir(d) else 0
+        if _cache[key]: i = i % _cache[key]
     while i >= 0:
         p = os.path.join(d, f'{i:05d}.jpg')
         if os.path.exists(p): break

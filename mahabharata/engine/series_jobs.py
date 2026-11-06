@@ -2,8 +2,9 @@
 """Paint jobs for series episodes.  python3 engine/series_jobs.py plates|anim ep01 [ep02 ...] [--only shot,shot] > jobs.json"""
 import json, os, sys, zlib
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-mode = sys.argv[1]; eps = [a for a in sys.argv[2:] if a.startswith('ep')]
-only = set(sys.argv[sys.argv.index('--only') + 1].split(',')) if '--only' in sys.argv else None
+mode = sys.argv[1]; args = sys.argv[2:]
+only = set(args[args.index('--only') + 1].split(',')) if '--only' in args else None
+eps = [a for k, a in enumerate(args) if not a.startswith('--') and (k == 0 or args[k - 1] != '--only')]
 seed = lambda *a: zlib.crc32('|'.join(map(str, a)).encode()) % 100000 + 1
 jobs = []
 for e in eps:
@@ -13,6 +14,7 @@ for e in eps:
     for s in ep['shots']:
         if only and s['id'] not in only: continue
         for L in s['layers']:
+            if L.get('src'): continue
             spec = {k: v for k, v in L.items() if k not in ('mv', 'rim', 'glow', 't', 'd', 'breath')}
             if mode == 'plates' and L['k'] == 'plate':
                 jobs.append(dict(shot=s['id'], layer=L['n'], seed=seed(s['id'], L['n']), t=0, mask=True, spec=spec, out=f"{b}/plates/{s['id']}_{L['n']}"))

@@ -1,0 +1,323 @@
+// Season 1: the frame story (Vyasa recites, Ganesha writes) and the wide landscapes of the epic.
+// Adds faces, figures, sets and pieces on top of lib.js / pieces.js.
+
+Object.assign(FACES, {
+  pratipa: { skin: '#c2916a', W: 0.72, jaw: 0.45, chin: 1.0, nose: 'straight', eye: 0.88, brow: 'white', lips: '#8a5048', stache: 'white', beard: 'long', hair: '#e8e4dc', hairStyle: 'straight', crown: 'royal', tilak: 'chandan', ear: 'kundala', chest: 'pearls', cloth: '#7a1a2a', expr: 'calm', age: 1 },
+  vyasa: { skin: '#6e4a30', W: 0.66, long: 1.1, jaw: 0.4, chin: 1.0, nose: 'aquiline', eye: 0.88, brow: 'whiteFurrow', lips: '#6a3a30', stache: 'grey', beard: 'long', hair: '#9a948a', hairStyle: 'jata', crown: 'jata', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#c8762a', expr: 'calm', age: 1 },
+  vasishtha: { skin: '#c49a70', W: 0.68, long: 1.08, jaw: 0.4, chin: 1.0, nose: 'straight', eye: 0.86, brow: 'white', lips: '#8a5048', stache: 'white', beard: 'long', hair: '#f1eee6', hairStyle: 'jata', crown: 'jata', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#f0e8d0', expr: 'calm', age: 1 },
+  parashurama: { skin: '#a8683e', W: 0.8, cheek: 0.2, long: 1.04, jaw: 0.8, chin: 1.02, nose: 'aquiline', eye: 0.9, brow: 'whiteFurrow', lips: '#7a3a2a', stache: 'full', beard: 'full', hair: '#3a2a1e', hairStyle: 'jata', crown: 'jataBand', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#a0401a', expr: 'stern' },
+  dashraj: { skin: '#7a5034', W: 0.78, cheek: 0.3, jaw: 0.6, chin: 1.0, nose: 'broad', eye: 0.88, brow: 'soft', lips: '#6a3a2a', stache: 'grey', beard: 'grey', hair: '#6a6258', hairStyle: 'straight', crown: 'turban', tilak: 'line', ear: 'kundala', chest: 'necklace', cloth: '#c8b890', expr: 'calm', age: 1 },
+  boy: { skin: '#b9875c', W: 0.76, cheek: 0.6, long: 0.9, jaw: 0.1, chin: 0.94, nose: 'fine', eye: 1.12, brow: 'arch', lips: '#9a4a3a', stache: null, beard: null, hair: '#16100c', hairStyle: 'curls', crown: 'band', tilak: 'line', ear: 'kundala', chest: 'pearls', cloth: '#ece6d6', expr: 'stern' },
+  vasu: { skin: '#e0b88a', W: 0.72, cheek: 0.4, jaw: 0.2, chin: 0.96, nose: 'fine', eye: 1.04, brow: 'arch', lips: '#a03a3a', stache: 'thin', beard: null, hair: '#1a120d', hairStyle: 'curls', crown: 'mukut', tilak: 'namam', ear: 'kundala', chest: 'necklace', cloth: '#f0c040', expr: 'smile', sheen: '#fff0b0' },
+});
+Object.assign(CAST, {
+  pratipa: { skin: '#c2916a', dhoti: '#7a1a2a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#e8e4dc', beard: 'long', jewel: GOLD, age: 1 },
+  vyasa: { skin: '#6e4a30', dhoti: '#c8762a', patka: '#8a4a1a', scarf: '#d8903a', crown: 'bun', hair: '#9a948a', beard: 'long', jewel: '#cfc6a8', age: 1 },
+  vasishtha: { skin: '#c49a70', dhoti: '#f0e8d0', patka: '#c9b57a', scarf: '#f4efe2', crown: 'bun', hair: '#f1eee6', beard: 'long', jewel: '#cfc6a8', age: 1 },
+  parashurama: { skin: '#a8683e', dhoti: '#a0401a', patka: '#6a2a10', scarf: '#c8602a', crown: 'bun', hair: '#3a2a1e', beard: 'short', jewel: '#cfc6a8', bulk: 1.15 },
+  boy: { skin: '#b9875c', dhoti: '#ece6d6', patka: '#c9b57a', scarf: '#f4efe2', crown: 'band', hair: '#16100c', beard: null, jewel: GOLD },
+  vasu: { skin: '#e0b88a', dhoti: '#f0c040', patka: '#c7362b', scarf: '#f6e6b0', crown: 'mukut', hair: '#1a120d', beard: null, jewel: GOLD },
+  courtier: { skin: '#a8784e', dhoti: '#5a2a4a', patka: '#d2a23a', scarf: '#c7362b', crown: 'turban', hair: '#16100c', beard: 'stache', jewel: GOLD },
+  charioteer: { skin: '#9a6a44', dhoti: '#4a5a3a', patka: '#a0522d', scarf: null, crown: 'turban', hair: '#16100c', beard: 'stache', jewel: '#8a7a5a' },
+});
+
+// ---------------------------------------------------------------- small helpers ---
+function shikhara(P, bx, by, bw, th, col, ink = INK) {
+  const sp = []; for (let i = 0; i <= 8; i++) { const k = i / 8; sp.push([bx - bw * (1 - Math.pow(k, 1.6) * 0.75), by - th * k]); } for (let i = 8; i >= 0; i--) { const k = i / 8; sp.push([bx + bw * (1 - Math.pow(k, 1.6) * 0.75), by - th * k]); }
+  P.shape(sp, col, 220, ink, 0.9);
+  for (let i = 1; i < 5; i++) { const k = i / 5, ww = bw * (1 - Math.pow(k, 1.6) * 0.75); P.line([[bx - ww, by - th * k], [bx + ww, by - th * k]], shade(col, -0.3), 0.6, 'ink', 0); }
+  P.shape(circlePts(bx, by - th - bw * 0.12, bw * 0.34, 12, 1, 0.45), shade(col, 0.15), 220, ink, 0.7);
+  P.line([[bx, by - th - bw * 0.2], [bx, by - th - bw * 0.9]], ink, 0.8, 'ink', 0);
+  P.wash([[bx, by - th - bw * 0.9], [bx + bw * 0.6, by - th - bw * 0.8], [bx, by - th - bw * 0.65]], '#c7362b', 220, 0.004);
+}
+function lamp(P, x, y, s = 1, t = 0) {   // a brass oil lamp with its flame
+  P.solid = true;
+  P.shape([[x - 26 * s, y], [x + 26 * s, y], [x + 12 * s, y - 10 * s], [x - 12 * s, y - 10 * s]], GOLD, 240, INK, 1);
+  P.shape([[x - 4 * s, y - 10 * s], [x + 4 * s, y - 10 * s], [x + 3 * s, y - 40 * s], [x - 3 * s, y - 40 * s]], shade(GOLD, -0.2), 240, INK, 0.8);
+  P.shape(circlePts(x, y - 44 * s, 18 * s, 16, 1, 0.4), GOLD2, 240, INK, 0.9);
+  P.solid = false;
+  flames(P, x + 10 * s, y - 48 * s, 10 * s, 30 * s, t);
+}
+function palmLeaves(P, x, y, w, n = 6, col = '#d8b878') {   // a tied bundle of palm-leaf pages
+  P.solid = true;
+  for (let i = 0; i < n; i++) { const yy = y - i * 7; P.shape([[x - w / 2, yy], [x + w / 2, yy - 2], [x + w / 2 + 4, yy - 9], [x - w / 2 + 3, yy - 8]], shade(col, (i % 2) * 0.06 - 0.04), 245, INK, 0.7); }
+  P.shape([[x - w * 0.5 - 6, y + 4], [x + w * 0.5 + 6, y + 2], [x + w * 0.5 + 8, y - 6], [x - w * 0.5 - 4, y - 4]], '#6a3a1a', 245, INK, 0.8);
+  P.shape([[x - w * 0.5 - 4, y - n * 7], [x + w * 0.5 + 6, y - n * 7 - 2], [x + w * 0.5 + 8, y - n * 7 - 10], [x - w * 0.5 - 2, y - n * 7 - 8]], '#6a3a1a', 245, INK, 0.8);
+  P.line([[x - w * 0.15, y + 4], [x - w * 0.15, y - n * 7 - 10]], '#b3202a', 1.6, 'ink', 0); P.line([[x + w * 0.15, y + 2], [x + w * 0.15, y - n * 7 - 12]], '#b3202a', 1.6, 'ink', 0);
+  P.solid = false;
+}
+function cow(P, x, y, s, f = 1, col = '#f4efe2', t = 0) {   // a gentle white cow (Nandini)
+  const T = (p) => [x + p[0] * s * f, y + p[1] * s]; const pts = (a) => a.map(T); const iw = Math.max(0.7, s / 300);
+  P.solid = true;
+  for (const [lx, ph] of [[-0.3, 0], [-0.2, 1], [0.24, 2], [0.32, 3]]) { const sw = Math.sin(t * 2 + ph) * 3; P.shape(pts(capsule([lx, -0.38], [lx + 0.01 * sw, -0.02], 0.045, 0.03)), shade(col, -0.08), 235, INK, iw); P.shape(pts(circlePts(lx + 0.01 * sw, -0.01, 0.03, 8, 1, 0.6)), '#3a2a20', 240, INK, iw); }
+  P.shape(pts(chaikin([[-0.42, -0.42], [-0.38, -0.66], [-0.1, -0.7], [0.18, -0.74], [0.3, -0.7], [0.4, -0.5], [0.34, -0.36], [-0.32, -0.34]], 2)), col, 240, INK, iw * 1.2);
+  P.shape(pts(chaikin([[0.12, -0.72], [0.2, -0.86], [0.3, -0.84], [0.32, -0.72]], 1)), col, 240, INK, iw);    // hump
+  P.shape(pts(chaikin([[0.3, -0.7], [0.44, -0.78], [0.62, -0.7], [0.66, -0.58], [0.58, -0.5], [0.44, -0.52], [0.36, -0.56]], 2)), col, 240, INK, iw * 1.1);   // head
+  P.shape(pts([[0.48, -0.78], [0.44, -0.92], [0.5, -0.94], [0.52, -0.79]]), '#cfc6a8', 240, INK, iw); P.shape(pts([[0.56, -0.77], [0.6, -0.9], [0.65, -0.9], [0.6, -0.76]]), '#cfc6a8', 240, INK, iw);
+  P.shape(pts([[0.4, -0.74], [0.32, -0.8], [0.36, -0.7]]), shade(col, -0.12), 240, INK, iw);
+  P.dot(...T([0.54, -0.66]), s * 0.012, INK); P.shape(pts(circlePts(0.64, -0.56, 0.035, 10)), '#d8a090', 240, null);
+  P.line(pts([[0.3, -0.56], [0.24, -0.46], [0.3, -0.38]]), '#b3202a', iw * 1.6, 'gold', 0.5);   // garland
+  for (let i = 0; i < 6; i++) P.dot(...T([0.3 - Math.sin(i / 5 * 3.1) * 0.06, -0.56 + i * 0.035]), s * 0.012, i % 2 ? '#f2b23a' : '#e04a6a');
+  const tail = []; for (let i = 0; i < 6; i++) { const k = i / 5; tail.push([-0.42 - k * 0.06, -0.62 + k * 0.36 + Math.sin(t * 3 + k * 2) * 0.03]); } P.line(pts(tail), shade(col, -0.25), iw * 2, 'ink', 0.5);
+  P.solid = false;
+}
+function elephant(P, x, y, s, f = 1, col = '#7a6a64', t = 0, howdah = 1) {   // a royal elephant (procession)
+  const T = (p) => [x + p[0] * s * f, y + p[1] * s]; const pts = (a) => a.map(T); const iw = Math.max(0.6, s / 300);
+  P.solid = true;
+  for (const [lx, ph] of [[-0.3, 0], [-0.18, 1.6], [0.2, 0.8], [0.32, 2.4]]) { const sw = Math.sin(t * 2.4 + ph) * 0.02; P.shape(pts([[lx - 0.07, -0.42], [lx + 0.07, -0.42], [lx + 0.07 + sw, 0], [lx - 0.07 + sw, 0]]), shade(col, -0.1), 235, INK, iw); }
+  P.shape(pts(chaikin([[-0.44, -0.4], [-0.46, -0.7], [-0.2, -0.9], [0.2, -0.92], [0.42, -0.78], [0.48, -0.5], [0.38, -0.36], [-0.36, -0.34]], 2)), col, 240, INK, iw * 1.2);
+  P.shape(pts(chaikin([[0.36, -0.86], [0.56, -0.92], [0.66, -0.74], [0.64, -0.48], [0.6, -0.2], [0.66, -0.06], [0.6, -0.04], [0.52, -0.22], [0.52, -0.5], [0.42, -0.6]], 2)), col, 240, INK, iw);
+  P.shape(pts(chaikin([[0.34, -0.84], [0.22, -0.8], [0.18, -0.58], [0.3, -0.5], [0.4, -0.6]], 1)), shade(col, -0.12), 240, INK, iw);   // ear
+  P.line(pts([[0.6, -0.56], [0.72, -0.5], [0.74, -0.44]]), '#f4efe2', iw * 2.4, 'ink', 0.5);
+  P.dot(...T([0.56, -0.76]), s * 0.012, INK);
+  P.shape(pts([[-0.3, -0.88], [0.22, -0.9], [0.26, -0.5], [-0.34, -0.5]]), '#b3202a', 235, INK, iw);   // caparison
+  for (let i = 0; i < 6; i++) P.dot(...T([-0.26 + i * 0.09, -0.52]), s * 0.016, GOLD2);
+  P.shape(pts([[0.44, -0.86], [0.64, -0.84], [0.64, -0.7], [0.5, -0.66]]), GOLD, 235, INK, iw);   // forehead plate
+  if (howdah) { P.shape(pts([[-0.24, -0.9], [0.16, -0.92], [0.12, -1.1], [-0.2, -1.1]]), GOLD, 240, INK, iw); P.shape(pts([[-0.26, -1.1], [0.18, -1.12], [-0.04, -1.3]]), '#b3202a', 240, INK, iw); }
+  P.solid = false;
+}
+function tinyFolk(P, x, y, s, col, t = 0, ph = 0, load = 0) {   // a walking villager for wide shots
+  P.fast = true; const b = Math.sin(t * 5 + ph) * s * 0.02, sw = Math.sin(t * 5 + ph) * s * 0.08;
+  P.shape([[x - s * 0.06, y - s * 0.25 + b], [x + s * 0.06, y - s * 0.25 + b], [x + s * 0.09, y - s * 0.62 + b], [x - s * 0.09, y - s * 0.62 + b]], col, 255, null);
+  P.line([[x, y - s * 0.27 + b], [x - sw, y]], '#2a1a10', Math.max(1, s * 0.03), 'ink', 0); P.line([[x, y - s * 0.27 + b], [x + sw, y]], '#2a1a10', Math.max(1, s * 0.03), 'ink', 0);
+  P.dot(x, y - s * 0.7 + b, s * 0.07, '#5a3a26');
+  if (load) P.shape([[x - s * 0.1, y - s * 0.78 + b], [x + s * 0.1, y - s * 0.78 + b], [x + s * 0.07, y - s * 0.92 + b], [x - s * 0.07, y - s * 0.92 + b]], '#b5774a', 255, null);
+  P.fast = false;
+}
+
+// ---------------------------------------------------------------- Ganesha, the scribe ---
+// (x, y) is the middle of the seat, S the seated height. hand: 0 leaves out the writing arm (it is animated separately).
+function ganesha(P, o) {
+  const x = o.x, y = o.y, S = o.S || 400, t = o.t || 0, f = o.f || 1;
+  const T = (u, v) => [x + u * S * f, y - v * S]; const TT = (a) => a.map(p => T(p[0], p[1])); const iw = Math.max(0.8, S / 360);
+  const skin = o.skin || '#e08a5e', skD = shade(skin, -0.25), skL = shade(skin, 0.2), cloth = '#e9b52f';
+  P.solid = true; P.noSilhouette();
+  // seat: a lotus pedestal
+  P.shape(TT(chaikin([[-0.52, 0.0], [0.52, 0.0], [0.46, -0.08], [-0.46, -0.08]], 1)), '#8a1c1c', 245, INK, iw);
+  for (let i = 0; i < 11; i++) { const u = -0.48 + i * 0.096; P.shape(TT([[u - 0.05, 0.0], [u, 0.06], [u + 0.05, 0.0]]), i % 2 ? '#f0a0b4' : '#e47a96', 245, INK, iw * 0.7); }
+  // upper arms behind (goad and noose)
+  const ear = Math.sin(t * 1.6) * 0.012;
+  P.shape(TT(capsule([0.2, 0.52], [0.36, 0.66], 0.045, 0.035)), skin, 245, INK, iw); P.shape(TT(capsule([0.36, 0.66], [0.38, 0.82], 0.035, 0.03)), skin, 245, INK, iw);
+  P.shape(TT(capsule([-0.2, 0.52], [-0.36, 0.66], 0.045, 0.035)), skin, 245, INK, iw); P.shape(TT(capsule([-0.36, 0.66], [-0.38, 0.82], 0.035, 0.03)), skin, 245, INK, iw);
+  P.line(TT([[-0.38, 0.76], [-0.38, 1.02]]), '#6a4a2a', iw * 2, 'ink', 0); P.line(TT([[-0.38, 1.02], [-0.33, 0.98], [-0.35, 0.93]]), GOLD, iw * 2.4, 'gold', 0.5);   // goad
+  P.line(TT(arcPts(0.4, 0.92, 0.06, 0, 360, 16).map(p => p)), GOLD, iw * 2, 'gold', 0.3);   // noose
+  P.shape(TT(circlePts(-0.38, 0.82, 0.032, 10)), skin, 250, INK, iw); P.shape(TT(circlePts(0.38, 0.82, 0.032, 10)), skin, 250, INK, iw);
+  // crossed legs and dhoti
+  P.shape(TT(chaikin([[-0.46, 0.02], [0.46, 0.02], [0.48, 0.12], [0.3, 0.2], [0.0, 0.18], [-0.3, 0.2], [-0.48, 0.12]], 2)), cloth, 245, INK, iw * 1.1);
+  P.line(TT([[-0.46, 0.04], [0.46, 0.04]]), '#b3202a', iw * 3, 'gold', 0);
+  for (const s of [-1, 1]) P.shape(TT(circlePts(s * 0.38, 0.08, 0.05, 12, 1.2, 0.7)), skin, 245, INK, iw);   // feet
+  // belly and chest
+  P.shape(TT(chaikin([[-0.22, 0.16], [0.22, 0.16], [0.28, 0.3], [0.24, 0.46], [0.2, 0.54], [-0.2, 0.54], [-0.24, 0.46], [-0.28, 0.3]], 2)), skin, 248, INK, iw * 1.1);
+  P.wash(TT([[0.1, 0.2], [0.26, 0.28], [0.22, 0.46], [0.12, 0.42]]), skD, 110, 0.03); P.wash(TT([[-0.14, 0.3], [-0.04, 0.26], [-0.06, 0.4]]), skL, 90, 0.03);
+  P.dot(...T(0.0, 0.29), S * 0.008, skD, 240);   // navel
+  P.line(TT(arcPts(0, 0.3, 0.2, 200, 340, 20).map(p => [p[0], 0.6 - p[1]])), '#2e7a3a', iw * 4, 'ink', 0.5);   // serpent belt
+  P.dot(...T(0.17, 0.18), S * 0.016, '#2e7a3a');
+  P.line(TT([[-0.18, 0.54], [-0.02, 0.36], [0.2, 0.18]]), '#f6f1e4', iw * 1.6, 'ink', 0.5);   // sacred thread
+  // lower left hand holds the palm leaf on the knee
+  P.shape(TT(capsule([-0.22, 0.48], [-0.3, 0.3], 0.045, 0.04)), skin, 248, INK, iw); P.shape(TT(capsule([-0.3, 0.3], [-0.16, 0.2], 0.04, 0.035)), skin, 248, INK, iw);
+  P.shape(TT([[-0.3, 0.2], [0.08, 0.215], [0.08, 0.245], [-0.3, 0.235]]), '#d8b878', 250, INK, iw);
+  for (let i = 0; i < 4; i++) P.line(TT([[-0.27, 0.224 + (i % 2) * 0.01], [-0.27 + 0.06 + i * 0.03, 0.226 + (i % 2) * 0.01]]), '#3a2a1a', iw * 0.6, 'ink', 0);
+  P.shape(TT(circlePts(-0.16, 0.21, 0.035, 10)), skin, 250, INK, iw);
+  // necklaces and armlets
+  for (let i = 0; i < 2; i++) P.line(TT(arcPts(0, 0.6, 0.15 + i * 0.04, 200, 340, 18).map(p => [p[0], 1.2 - p[1]])), i ? '#b3202a' : GOLD, iw * (3 - i), 'gold', 0.5);
+  // ears (fan), head, crown
+  for (const s of [-1, 1]) {
+    P.shape(TT(chaikin([[s * 0.1, 0.8], [s * 0.3, 0.86 + ear], [s * 0.38, 0.74], [s * 0.36, 0.58], [s * 0.26, 0.5 - ear], [s * 0.12, 0.6]], 2)), skin, 248, INK, iw);
+    P.shape(TT(chaikin([[s * 0.14, 0.76], [s * 0.28, 0.8 + ear], [s * 0.33, 0.72], [s * 0.3, 0.6], [s * 0.22, 0.56 - ear], [s * 0.15, 0.62]], 2)), '#f0b8a0', 220, null);
+    P.circle(...T(s * 0.32, 0.5), S * 0.02, GOLD2, 240, INK, iw * 0.6);
+  }
+  P.shape(TT(chaikin([[-0.15, 0.62], [-0.17, 0.78], [-0.1, 0.86], [0.1, 0.86], [0.17, 0.78], [0.15, 0.62], [0.08, 0.56], [-0.08, 0.56]], 2)), skin, 250, INK, iw * 1.1);
+  P.wash(TT([[0.1, 0.62], [0.16, 0.7], [0.14, 0.8], [0.08, 0.72]]), skD, 90, 0.03);
+  // trunk curling to the side, tusks (one whole, one broken)
+  const tr = [[0, 0.66], [-0.01, 0.56], [-0.04, 0.46], [-0.1, 0.4], [-0.16, 0.42], [-0.17, 0.48], [-0.13, 0.5]];
+  P.shape(TT(ribbon(chaikin(tr, 2, false), 0.05, 0.016)), skin, 252, INK, iw);
+  for (let i = 1; i < 6; i++) { const p = tr[i]; P.line(TT([[p[0] - 0.02, p[1]], [p[0] + 0.02, p[1] + 0.005]]), skD, iw * 0.6, 'ink', 0); }
+  P.shape(TT([[-0.05, 0.6], [-0.09, 0.57], [-0.12, 0.5], [-0.1, 0.5], [-0.06, 0.56], [-0.03, 0.58]]), '#f6f1e4', 252, INK, iw * 0.8);   // whole tusk
+  P.shape(TT([[0.04, 0.6], [0.07, 0.58], [0.075, 0.555], [0.05, 0.57]]), '#f6f1e4', 252, INK, iw * 0.8);   // broken stub
+  for (const s of [-1, 1]) { P.shape(TT([[s * 0.04, 0.715], [s * 0.075, 0.73], [s * 0.11, 0.715], [s * 0.075, 0.705]]), '#f6f1e4', 252, INK, iw * 0.7); P.dot(...T(s * 0.077, 0.716), S * 0.009, '#1a0e0a'); }
+  P.line(TT([[-0.06, 0.755], [-0.11, 0.765]]), INK, iw, 'ink', 0); P.line(TT([[0.06, 0.755], [0.11, 0.765]]), INK, iw, 'ink', 0);
+  P.line(TT([[0, 0.78], [0, 0.83]]), '#c1121f', iw * 2.2, 'ink', 0); for (const s of [-1, 1]) P.line(TT([[s * 0.025, 0.78], [s * 0.035, 0.83]]), '#f6f1e4', iw * 1.4, 'ink', 0);
+  // crown
+  P.shape(TT([[-0.15, 0.84], [0.15, 0.84], [0.13, 0.96], [0.08, 1.06], [0, 1.12], [-0.08, 1.06], [-0.13, 0.96]]), GOLD, 250, '#7a4a10', iw * 1.2);
+  for (let i = 0; i < 3; i++) P.line(TT([[-0.14 + i * 0.01, 0.87 + i * 0.07], [0.14 - i * 0.01, 0.87 + i * 0.07]]), '#b3202a', iw * 1.4, 'gold', 0);
+  P.dot(...T(0, 0.9), S * 0.018, '#b3202a'); P.dot(...T(0, 1.12), S * 0.014, GOLD2);
+  // lower right hand: the broken tusk as a stylus, writing
+  if (o.hand !== 0) ganeshaHand(P, o);
+  P.solid = false;
+}
+function ganeshaHand(P, o) {
+  const x = o.x, y = o.y, S = o.S || 400, t = o.t || 0, f = o.f || 1;
+  const T = (u, v) => [x + u * S * f, y - v * S]; const TT = (a) => a.map(p => T(p[0], p[1])); const iw = Math.max(0.8, S / 360);
+  const skin = o.skin || '#e08a5e';
+  const k = o.write === 0 ? 0.6 : (Math.sin(t * 2.2) * 0.5 + 0.5), ww = Math.sin(t * 17) * 0.006;
+  const hand = [-0.18 + k * 0.22, 0.25 + ww], el = [0.3, 0.32];
+  P.solid = true;
+  P.shape(TT(capsule([0.22, 0.48], el, 0.045, 0.04)), skin, 250, INK, iw); P.shape(TT(capsule(el, hand, 0.04, 0.035)), skin, 250, INK, iw);
+  P.line(TT([[el[0] - 0.02, el[1] + 0.06], [el[0] + 0.03, el[1] + 0.08]]), GOLD, iw * 2.4, 'gold', 0);
+  P.shape(TT(circlePts(hand[0], hand[1], 0.034, 10)), skin, 252, INK, iw);
+  P.line(TT([[hand[0] + 0.01, hand[1] + 0.03], [hand[0] - 0.03, hand[1] - 0.025]]), '#f6f1e4', iw * 3, 'ink', 0);   // tusk stylus
+  P.solid = false;
+}
+
+// ---------------------------------------------------------------- Vyasa seated ---
+function vyasaSeated(P, o) {
+  const x = o.x, y = o.y, S = o.S || 400, t = o.t || 0, f = o.f || 1;
+  const T = (u, v) => [x + u * S * f, y - v * S]; const TT = (a) => a.map(p => T(p[0], p[1])); const iw = Math.max(0.8, S / 360);
+  const skin = '#6e4a30', cloth = '#c8762a';
+  P.solid = true; P.noSilhouette();
+  // deer-skin mat
+  P.shape(TT(chaikin([[-0.6, 0.0], [0.6, 0.0], [0.56, -0.07], [-0.56, -0.07]], 1)), '#a07a4a', 245, INK, iw);
+  for (let i = 0; i < 14; i++) P.dot(...T(-0.5 + i * 0.075, -0.035), S * 0.008, '#f4efe2', 220);
+  // crossed legs
+  P.shape(TT(chaikin([[-0.5, 0.02], [0.5, 0.02], [0.5, 0.14], [0.3, 0.2], [-0.3, 0.2], [-0.5, 0.14]], 2)), cloth, 245, INK, iw * 1.1);
+  for (const s of [-1, 1]) P.shape(TT(circlePts(s * 0.4, 0.08, 0.05, 12, 1.2, 0.7)), skin, 245, INK, iw);
+  // torso under the bust
+  P.shape(TT(chaikin([[-0.24, 0.16], [0.24, 0.16], [0.26, 0.4], [0.18, 0.5], [-0.18, 0.5], [-0.26, 0.4]], 2)), skin, 245, INK, iw);
+  P.shape(TT([[-0.26, 0.42], [0.06, 0.52], [0.26, 0.2], [0.1, 0.16]]), cloth, 240, INK, iw);   // shoulder cloth
+  // hands: one on the knee, one raised in the teaching gesture
+  P.shape(TT(capsule([0.2, 0.42], [0.34, 0.3], 0.045, 0.04)), skin, 248, INK, iw); P.shape(TT(capsule([0.34, 0.3], [0.38, 0.14], 0.04, 0.035)), skin, 248, INK, iw);
+  P.shape(TT(circlePts(0.38, 0.13, 0.035, 10)), skin, 250, INK, iw);
+  const lift = Math.sin(t * 1.1) * 0.01;
+  P.shape(TT(capsule([-0.2, 0.42], [-0.32, 0.3], 0.045, 0.04)), skin, 248, INK, iw); P.shape(TT(capsule([-0.32, 0.3], [-0.28, 0.48 + lift], 0.04, 0.035)), skin, 248, INK, iw);
+  P.shape(TT(circlePts(-0.28, 0.5 + lift, 0.036, 10)), skin, 250, INK, iw);
+  P.dot(...T(-0.28, 0.5 + lift), S * 0.008, '#f6f1e4');
+  // rosary
+  for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2; P.dot(...T(0.38 + Math.cos(a) * 0.04, 0.08 + Math.sin(a) * 0.05), S * 0.008, '#5a2a1a'); }
+  P.solid = false;
+  // the head and bust from the portrait painter, scaled to the seated body
+  portrait(P, 'vyasa', { x: x + 0.03 * S * f, y: y - 0.7 * S, R: S * 0.125, f, expr: o.expr || 'calm', t, talk: o.talk });
+}
+
+// ---------------------------------------------------------------- sets ---
+Object.assign(SETS, {
+  // Vyasa's cave high in the Himalaya: rock arch open to the peaks, lamplight inside
+  cave(P, o) {
+    const view = o.view || 'night';
+    P.flat([[-60, -60], [1660, -60], [1660, 960], [-60, 960]], '#140c0a');
+    // the view through the mouth of the cave
+    const vx = o.mouth || 800;
+    const pal = TOD[view] || TOD.night; skyBands(P, pal, 0, 620, 6, 200);
+    if (view === 'night') { stars(P, 140, '#efe6cf', 520); P.wash(circlePts(vx + 260, 160, 60, 24), '#f2ecd0', 230, 0.02); }
+    if (view === 'dawn') sunDisc(P, vx + 160, 470, 70, '#e8703a');
+    for (let L = 0; L < 3; L++) { const base = 420 + L * 70, col = mixc(view === 'night' ? '#8aa0c8' : '#f2e6d6', view === 'night' ? '#1a2238' : '#8a6a6a', 0.2 + L * 0.3); const pts = [[-60, 760]]; for (let x2 = -60; x2 <= 1660; x2 += 50) pts.push([x2, base - Math.abs(Math.sin(x2 * 0.007 + L * 2.1)) * (200 - L * 50) - P.r(0, 20)]); pts.push([1660, 760]); P.wash(pts, col, 230, 0.01, 0.5, 0.3); }
+    cloudBank(P, 560, view === 'night' ? '#3a4a6a' : '#f6efe6', 100, 6, 40);
+    // rock frame around the mouth
+    P.solid = true;
+    const rock = '#3a2620', rk2 = '#2a1a16';
+    const rockPts = [[-60, -60], [1660, -60], [1660, 960], [vx + 520, 960], [vx + 470, 640], [vx + 420, 330], [vx + 300, 130], [vx + 80, 60], [vx - 160, 80], [vx - 360, 180], [vx - 470, 380], [vx - 520, 640], [vx - 560, 960], [-60, 960]];
+    P.flat(rockPts, rock); P.shape(rockPts, rock, 252, INK, 1.4);
+    for (let i = 0; i < 26; i++) { const ang = P.r(0, 6.28), rr = P.r(560, 900), px = vx + Math.cos(ang) * rr, py = 420 + Math.sin(ang) * rr * 0.75; P.wash(circlePts(px, py, P.r(40, 120), 12, 1.4, 0.7), i % 2 ? rk2 : shade(rock, 0.1), 90, 0.03, 0.5, 0.3); }
+    for (let i = 0; i < 18; i++) { const x0 = P.r(-60, 1660), y0 = P.r(0, 900); P.line([[x0, y0], [x0 + P.r(-80, 80), y0 + P.r(30, 140)]], '#120a08', 1, 'ink', 0.4); }
+    // floor
+    P.shape([[-60, 760], [1660, 760], [1660, 960], [-60, 960]], '#2e1e18', 250, null);
+    P.wash([[-60, 760], [1660, 760], [1660, 800], [-60, 800]], '#4a3026', 150, 0.02);
+    P.solid = false;
+    // lamplight
+    for (const lx of (o.lamps || [520, 1100])) { lampGlow(P, lx, 700, 260, '#ff9a40'); lamp(P, lx, 790, 1.1, 0); }
+    if (o.leaves !== 0) { palmLeaves(P, o.lx || 1250, 830, 150, 8); palmLeaves(P, (o.lx || 1250) + 170, 845, 130, 5); palmLeaves(P, (o.lx || 1250) - 900, 840, 120, 4); }
+  },
+  // a sweep of country: layered ranges, a river winding from the foreground into the distance, groves, perhaps a far city
+  valley(P, o) {
+    const pal = o.sky || TOD[o.tod || 'dawn'], hz = o.hz || 470;
+    sky(P, Object.assign({ hz: hz + 40 }, o));
+    for (let L = 0; L < 3; L++) { const base = hz - 40 + L * 40, col = mixc(pal[2], '#3a4a5a', 0.25 + L * 0.2); const pts = [[-60, 960]]; for (let x2 = -60; x2 <= 1660; x2 += 40) pts.push([x2, base - Math.abs(Math.sin(x2 * 0.004 + L * 1.3 + (o.seed || 0))) * (140 - L * 40)]); pts.push([1660, 960]); P.wash(pts, col, 210, 0.01, 0.5, 0.3); }
+    if (o.city) { P.solid = true; const cx = o.city[0], cw = o.city[1] || 260; for (let i = 0; i < 9; i++) shikhara(P, cx - cw / 2 + i * cw / 8, hz + 10, 8 + (i % 3) * 4, 30 + (i % 4) * 14, mixc('#c98a5a', pal[1], 0.4)); P.shape([[cx - cw / 2 - 20, hz + 14], [cx + cw / 2 + 20, hz + 14], [cx + cw / 2 + 20, hz + 2], [cx - cw / 2 - 20, hz + 2]], mixc('#a0704a', pal[1], 0.4), 230, INK, 0.6); P.solid = false; }
+    ground(P, hz + 10, mixc(o.land || '#6a7a3a', pal[1], 0.35), 230);
+    // fields as soft bands
+    for (let i = 0; i < 7; i++) { const y0 = hz + 30 + i * i * 9; P.wash([[-60, y0], [1660, y0 - 6], [1660, y0 + 6 + i * 4], [-60, y0 + 10 + i * 4]], i % 2 ? mixc('#9a9a4a', pal[1], 0.3) : mixc('#5a7a3a', pal[1], 0.3), 90, 0.02, 0.6, 0.3); }
+    // the river: narrow far away, wide in front
+    const rx = o.riverX || 900, wc = mixc('#4a86a8', pal[0], 0.3);
+    const L1 = [], R1 = []; for (let i = 0; i <= 20; i++) { const k = i / 20, yy = hz + 12 + k * k * (960 - hz), w = 6 + k * k * 380, cx = rx + Math.sin(k * 5.5 + (o.seed || 0)) * (60 + 220 * k) - k * 200; L1.push([cx - w, yy]); R1.push([cx + w, yy]); }
+    P.wash(L1.concat(R1.reverse()), wc, 225, 0.01, 0.5, 0.2);
+    P.noMask(); for (let i = 0; i < 12; i++) { const k = 0.3 + i / 16, yy = hz + 12 + k * k * (960 - hz), cx = rx + Math.sin(k * 5.5 + (o.seed || 0)) * (60 + 220 * k) - k * 200; P.line([[cx - 30 - k * 120, yy], [cx + 30 + k * 120, yy + 2]], shade(pal[0], 0.3), 0.8, 'fine', 0.2); } P.mask();
+    // groves
+    for (let i = 0; i < (o.groves ?? 14); i++) { const k = P.r(0.1, 0.9), yy = hz + 20 + k * k * 380, xx = P.r(-60, 1660), s = 8 + k * 40; for (let j = 0; j < 3; j++) P.shape(circlePts(xx + j * s * 0.8, yy - s * 0.6, s * 0.6, 10, 1.1, 0.8), mixc(['#2e5a34', '#3a6a3a', '#4a7a3a'][j], pal[1], 0.4 - k * 0.3), 220, null); }
+    if (o.mist !== 0) { P.noMask(); for (let i = 0; i < 3; i++) P.wash([[-60, hz - 10 + i * 30], [1660, hz - 20 + i * 30], [1660, hz + 20 + i * 30], [-60, hz + 30 + i * 30]], '#f2f0e8', 60, 0.04, 0.6, 0.3); P.mask(); }
+  },
+  // Hastinapura from across the Ganga: walls, gates, temple towers, palace, flags
+  city(P, o) {
+    const pal = o.sky || TOD[o.tod || 'gold'], hz = o.hz || 560;
+    sky(P, Object.assign({ hz: hz + 40 }, o));
+    hills(P, hz - 70, 40, shade(pal[2], -0.35), 150, 3);
+    P.solid = true;
+    const wall = o.col || '#c98a5a';
+    for (let i = 0; i < 22; i++) { const bx = 40 + i * 72 + P.r(-10, 10), h = P.r(60, 200) * (1 - Math.abs(i - 11) / 22); shikhara(P, bx, hz - 40, 14 + h * 0.08, h, mixc(shade(wall, P.r(-0.1, 0.12)), pal[1], 0.35)); }
+    palace(P, 520, hz - 30, 560, 320, mixc(wall, pal[1], 0.2));
+    P.shape([[-60, hz - 40], [1660, hz - 40], [1660, hz + 30], [-60, hz + 30]], shade(wall, -0.2), 245, INK, 1);
+    for (let i = 0; i < 40; i++) P.shape([[i * 42 - 40, hz - 40], [i * 42 - 20, hz - 40], [i * 42 - 20, hz - 54], [i * 42 - 40, hz - 54]], shade(wall, -0.2), 245, INK, 0.7);
+    for (const gx of [260, 800, 1340]) { P.shape([[gx - 60, hz + 30], [gx + 60, hz + 30], [gx + 60, hz - 110], [gx + 30, hz - 140], [gx - 30, hz - 140], [gx - 60, hz - 110]], shade(wall, -0.05), 245, INK, 1); P.shape([[gx - 26, hz + 30], [gx + 26, hz + 30], [gx + 26, hz - 30], [gx, hz - 50], [gx - 26, hz - 30]], '#2a1410', 250, INK, 0.8); }
+    for (let i = 0; i < 9; i++) { const fx = 120 + i * 175; P.line([[fx, hz - 54], [fx, hz - 110]], INK, 1, 'ink', 0); P.wash([[fx, hz - 110], [fx + 30, hz - 104], [fx, hz - 96]], i % 2 ? '#c7362b' : GOLD, 230, 0.004); }
+    P.solid = false;
+    // the river in front
+    const wc = mixc(pal[1], '#2a5a7a', 0.55); riverWaves(P, hz + 40, 960, wc, shade(wc, -0.4));
+    P.noMask(); for (let i = 0; i < 5; i++) { const y = hz + 50 + i * 20; P.wash([[-60, y], [1660, y - 6], [1660, y + 10], [-60, y + 14]], pal[2], 60 - i * 10, 0.03, 0.6, 0.2); } P.mask();
+    if (o.ghats) { P.solid = true; for (let i = 0; i < 6; i++) P.shape([[200 + i * 30, hz + 30 + i * 12], [1400 - i * 30, hz + 30 + i * 12], [1400 - i * 30, hz + 42 + i * 12], [200 + i * 30, hz + 42 + i * 12]], shade('#b89a7a', -i * 0.04), 245, INK, 0.7); P.solid = false; }
+  },
+  // a forest hermitage: huts, a sacred fire, a cow, a stream
+  ashram(P, o) {
+    SETS.forest(P, Object.assign({ tod: o.tod || 'day' }, o, { hut: undefined }));
+    P.solid = true;
+    for (const [hx, s] of (o.huts || [[420, 1], [1180, 0.8]])) { P.shape([[hx - 130 * s, 780], [hx + 130 * s, 780], [hx + 130 * s, 780 - 140 * s], [hx - 130 * s, 780 - 140 * s]], '#8a6a3a', 240, INK, 1); P.shape([[hx - 170 * s, 780 - 130 * s], [hx, 780 - 250 * s], [hx + 170 * s, 780 - 130 * s]], '#b8964a', 240, INK, 1.2); P.shape([[hx - 36 * s, 780], [hx + 36 * s, 780], [hx + 36 * s, 780 - 90 * s], [hx - 36 * s, 780 - 90 * s]], '#1a0e08', 245, INK, 1); }
+    const fx = o.fire || 800; P.shape([[fx - 70, 830], [fx + 70, 830], [fx + 60, 800], [fx - 60, 800]], '#8a5a3a', 245, INK, 1); P.shape([[fx - 50, 800], [fx + 50, 800], [fx + 44, 790], [fx - 44, 790]], '#5a3a26', 245, INK, 0.8);
+    P.solid = false;
+    flames(P, fx, 792, 60, 80, 0);
+    P.noMask(); for (let i = 0; i < 5; i++) P.wash(circlePts(fx + i * 18 + P.r(-10, 10), 700 - i * 70, 30 + i * 12, 14, 1.3, 0.8), '#e8e4dc', 40, 0.06, 0.6, 0.3); P.mask();
+    if (o.cow) cow(P, o.cow[0], o.cow[1], o.cow[2] || 220, o.cow[3] || 1);
+  },
+  // above the clouds, the realm of the gods
+  sky_realm(P, o) {
+    skyBands(P, o.sky || ['#3a2a6a', '#c86a8a', '#f6c890'], 0, 900, 8, 170);
+    sunDisc(P, o.sunX || 1180, o.sunY || 300, 90, '#f6d070', 230);
+    for (let i = 0; i < 7; i++) cloudBank(P, 420 + i * 70, ['#fff4e8', '#f8e0d0', '#f0c8b8', '#e8b8c0'][i % 4], 170, 7, 80);
+    if (o.peak) { const pts = [[o.peak - 420, 960], [o.peak - 120, 520], [o.peak, 420], [o.peak + 160, 540], [o.peak + 460, 960]]; P.wash(pts, '#eef2f4', 240, 0.01, 0.4, 0.3); P.line(pts.slice(1, -1), '#8aa0c0', 1, 'ink', 0.3); }
+  },
+});
+
+// ---------------------------------------------------------------- pieces ---
+Object.assign(PIECES, {
+  ganesha: (P, t, a) => ganesha(P, Object.assign({ t }, a)),
+  ganeshaHand: (P, t, a) => { P.fast = true; ganeshaHand(P, Object.assign({ t }, a)); },
+  vyasa: (P, t, a) => vyasaSeated(P, Object.assign({ t }, a)),
+  leaves: (P, t, a) => palmLeaves(P, a.x || 800, a.y || 800, a.w || 160, (a.cnt || a.n) || 6),
+  // lamp flames that flicker (additive)
+  lampFlicker: (P, t, a) => { for (const [x, y, s] of (a.at || [[520, 742, 1.1], [1100, 742, 1.1]])) { const k = 0.8 + 0.2 * Math.sin(t * 7 + x) * Math.sin(t * 3.3 + y); P.dot(x, y - 8, 9 * s * k, '#ffd070', 230); P.dot(x, y - 18 * s * k, 5 * s, '#fff0c0', 230); for (let i = 0; i < 3; i++) P.dot(x + Math.sin(t * 2 + i) * 30, y - 60 - ((t * 30 + i * 40) % 120), 2.2, '#ff9040', 120); } },
+  // text appearing on a leaf as Ganesha writes (ink strokes growing)
+  inkLines: (P, t, a) => { P.fast = true; const x = a.x, y = a.y, w = a.w || 200, n = Math.floor(t * (a.rate || 6)); for (let i = 0; i < Math.min(n, 60); i++) { const row = Math.floor(i / 12), col = i % 12; const xx = x + col * w / 12, yy = y + row * 6; P.line([[xx, yy], [xx + w / 16, yy + (i % 3 - 1)]], '#2a1a10', 1.4, 'ink', 0); } },
+  cow: (P, t, a) => cow(P, a.x || 800, a.y || 860, a.s || 300, a.f || 1, a.col || '#f4efe2', t),
+  // the eight Vasus: radiant figures in a row (sizes for wide shots)
+  vasus: (P, t, a) => { const n = (a.cnt || a.n) || 8, x0 = a.x0 || 260, x1 = a.x1 || 1340, y = a.y || 620, S = a.S || 220; P.solid = true; for (let i = 0; i < n; i++) { const x = x0 + (x1 - x0) * i / (n - 1), yy = y + Math.sin(i * 1.7) * 20; P.wash(circlePts(x, yy - S * 0.75, S * 0.35, 20), '#fff0b0', 90, 0.04, 0.3, 0.2); figure(P, { who: 'vasu', x, y: yy, S, f: i < n / 2 ? 1 : -1, pose: i === a.lead ? 'spear' : 'stand', t }); } P.solid = false; },
+  // the Ganga stopped by a wall of arrows; the boy archer on the bank
+  arrowDam: (P, t, a) => {
+    const y = a.y || 640; P.solid = true;
+    // dry riverbed below the dam, sand and stones and the last puddles
+    P.shape([[-60, y + 10], [1660, y - 10], [1660, 960], [-60, 960]], '#c8a878', 250, null);
+    P.wash([[-60, y + 10], [1660, y - 10], [1660, 960], [-60, 960]], '#a88858', 120, 0.02, 0.6, 0.3);
+    for (let i = 0; i < 40; i++) { const sx = P.r(-40, 1640), sy = P.r(y + 30, 940); P.shape(circlePts(sx, sy, P.r(6, 18), 10, 1.4, 0.7), ['#8a7a6a', '#6a5a4a', '#a09080'][i % 3], 240, INK, 0.6); }
+    for (let i = 0; i < 6; i++) { const sx = P.r(100, 1500), sy = P.r(y + 80, 900); P.shape(circlePts(sx, sy, P.r(30, 70), 14, 2.2, 0.4), '#6a9ab0', 220, null); }
+    for (let i = 0; i < 5; i++) { const sx = P.r(200, 1400), sy = P.r(y + 60, 900); P.shape([[sx - 10, sy], [sx + 14, sy - 3], [sx + 6, sy + 4]], '#c0c8d0', 240, INK, 0.5); }   // stranded fish
+    // the water held back, heaped against the dam
+    P.shape([[-60, y - 70], [1660, y - 90], [1660, y - 10], [-60, y + 10]], '#3a7a9a', 250, INK, 1);
+    for (let i = 0; i < 30; i++) { const fx = P.r(-40, 1640), fy = y - 20 - P.r(0, 40) - fx * 0.0125; P.wash(circlePts(fx, fy, P.r(10, 26), 10, 1.6, 0.6), '#e8f4f8', 200, 0.02); }
+    // the wall of arrows
+    for (let i = 0; i < 150; i++) { const x = -40 + i * 11.4 + P.r(-3, 3), yb = y + 8 - x * 0.0125, h = P.r(60, 110), lean = P.r(-10, 10); P.line([[x, yb], [x + lean, yb - h]], '#6a4a2a', 2, 'ink', 0); P.shape([[x + lean - 3, yb - h], [x + lean + 3, yb - h], [x + lean, yb - h - 10]], '#d0d0d0', 250, null); if (i % 3 === 0) P.line([[x + lean * 0.1, yb - 6], [x + lean * 0.1 - 5, yb + 4]], '#f4efe2', 1.4, 'ink', 0); }
+    P.solid = false;
+  },
+  // a royal procession crossing a wide landscape, small figures
+  procession: (P, t, a) => {
+    const y = a.y || 760, s = a.s || 120, dir = a.dir || 1, x0 = a.x0 ?? -200, sp = a.speed || 30, n = (a.cnt || a.n) || 10;
+    for (let i = 0; i < n; i++) {
+      const x = x0 + (i * s * 1.6 + t * sp) * dir, kind = i % 5;
+      if (kind === 2) elephant(P, x, y, s * 1.1, dir, '#7a6a64', t + i);
+      else if (kind === 4) horse(P, x, y, s * 0.9, dir, t + i, '#efe8da', 0.4);
+      else tinyFolk(P, x, y, s * 0.9, ['#b3202a', '#e9b52f', '#2f6f9a', '#f4efe2'][i % 4], t, i, i % 3 === 0);
+    }
+  },
+  // villagers along a riverbank (static or walking)
+  folk: (P, t, a) => { const r = mulberry(a.seed || 5); for (let i = 0; i < ((a.cnt || a.n) || 14); i++) { const x = (a.x0 || 0) + r() * (a.w || 1600) + t * (a.speed || 0) * (i % 2 ? 1 : -1), y = (a.y || 820) + r() * (a.dy || 60), s = (a.s || 60) * (0.8 + r() * 0.4); tinyFolk(P, x, y, s, ['#b3202a', '#e9b52f', '#2f6f9a', '#f4efe2', '#5a7a3a'][i % 5], a.speed ? t : 0, i, r() > 0.6); } },
+  // the boat that carries Satyavati, small and far
+  farBoat: (P, t, a) => { const x = (a.x || 800) + t * (a.speed || 0), y = (a.y || 700) + Math.sin(t * 1.4) * 3, s = a.s || 80; P.solid = true; P.shape([[x - s, y - s * 0.1], [x + s, y - s * 0.1], [x + s * 0.7, y + s * 0.18], [x - s * 0.7, y + s * 0.18]], '#6a3a1a', 245, INK, 0.8); P.line([[x, y - s * 0.1], [x, y - s * 0.9]], '#3a2a1a', 1.2, 'ink', 0); P.shape([[x + 2, y - s * 0.86], [x + s * 0.5, y - s * 0.5], [x + 2, y - s * 0.2]], '#e8dcc0', 240, INK, 0.6); tinyFolk(P, x - s * 0.4, y - s * 0.1, s * 0.7, '#2f8a6a', 0, 0); P.solid = false; },
+  // a hunting party of riders (wide shot)
+  riders: (P, t, a) => { const n = (a.cnt || a.n) || 3, y = a.y || 800, s = a.s || 160; for (let i = 0; i < n; i++) { const x = (a.x || 300) + i * s * 1.3 + t * (a.speed || 60); horse(P, x, y + i * 10, s, a.f || 1, t + i * 0.4, i ? '#cfc6ae' : '#f2ede0', 1); tinyFolk(P, x + s * 0.05, y - s * 0.62 + i * 10, s * 0.7, i ? '#2f4f8f' : '#7a1a2a', 0, 0); } },
+  // a duel seen from afar: two archers, arrows streaking between them
+  duel: (P, t, a) => { const xL = a.xL || 360, xR = a.xR || 1240, y = a.y || 780, s = a.s || 160; P.fast = true; for (let i = 0; i < 14; i++) { const ph = (t * 0.9 + i / 14) % 1, dir = i % 2 ? 1 : -1, x = dir > 0 ? xL + (xR - xL) * ph : xR - (xR - xL) * ph, yy = y - s * 0.7 - Math.sin(ph * 3.14) * 120 - (i % 3) * 10; P.line([[x, yy], [x - dir * 40, yy + 4]], dir > 0 ? '#ffe0a0' : '#c0d8ff', 2, 'ink', 0); } P.fast = false; },
+});

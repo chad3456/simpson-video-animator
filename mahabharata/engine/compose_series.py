@@ -59,12 +59,14 @@ def ep_title(frame, ep, shot, t, dur, lang):
     frame *= 1 - 0.45 * a
     if lang == 'en':
         blit(frame, text_img('MAHABHARATA', 'cinzel', 30, '#d9a536', 14), W / 2, H * 0.33, a)
-        blit(frame, text_img(f"EPISODE {ep['n']}", 'cinzel', 24, '#f1e6cc', 10), W / 2, H * 0.41, a)
+        lab = f"SEASON 1  ·  EPISODE {ep['n']}" if ep['id'].startswith('s1') else f"EPISODE {ep['n']}"
+        blit(frame, text_img(lab, 'cinzel', 24, '#f1e6cc', 10), W / 2, H * 0.41, a)
         blit(frame, text_img(ep['title']['en'], 'deco', 64, '#f6dd8a', int(lerp(16, 4, smooth((t - t0) / 2.5)))), W / 2, H * 0.52, a)
         blit(frame, text_img(ep['tag']['en'], 'ital', 32, '#f1e6cc'), W / 2, H * 0.63, a * smooth((t - t0 - 0.6) / 0.6))
     else:
         blit(frame, text_img('महाभारत', 'deva', 40, '#d9a536'), W / 2, H * 0.32, a)
-        blit(frame, text_img(f"भाग {ep['n']}", 'tiro', 30, '#f1e6cc'), W / 2, H * 0.41, a)
+        lab = f"पहला सीज़न  ·  भाग {ep['n']}" if ep['id'].startswith('s1') else f"भाग {ep['n']}"
+        blit(frame, text_img(lab, 'tiro', 30, '#f1e6cc'), W / 2, H * 0.41, a)
         blit(frame, text_img(ep['title']['hi'], 'deva', 76, '#f6dd8a'), W / 2, H * 0.52, a)
         blit(frame, text_img(ep['tag']['hi'], 'tiro', 32, '#f1e6cc'), W / 2, H * 0.64, a * smooth((t - t0 - 0.6) / 0.6))
     kr = smooth((t - t0 - 0.3) / 0.8) * a
