@@ -7677,6 +7677,21 @@
     "voice": "am_adam:2+bm_lewis:1",
     "speed": 0.94,
     "pitch": -1
+   },
+   "PUROCHANA": {
+    "voice": "am_puck:2+bm_lewis:1",
+    "speed": 0.96,
+    "pitch": -0.5
+   },
+   "HIDIMBI": {
+    "voice": "af_nicole:2+af_bella:1",
+    "speed": 0.97,
+    "pitch": 0.5
+   },
+   "DHRISHTA": {
+    "voice": "am_eric:2+am_liam:1",
+    "speed": 0.96,
+    "pitch": -0.5
    }
   },
   "hi": {
@@ -7956,6 +7971,21 @@
     "voice": "hm_psi:2+am_adam:1",
     "speed": 0.94,
     "pitch": -1.5
+   },
+   "PUROCHANA": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 0.96,
+    "pitch": -0.5
+   },
+   "HIDIMBI": {
+    "voice": "hf_beta:2+af_nicole:1",
+    "speed": 0.97,
+    "pitch": 1.0
+   },
+   "DHRISHTA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.96,
+    "pitch": -0.5
    }
   }
  }

@@ -490,3 +490,36 @@ PIECES.dogSealed = (P, t, a) => {   // the dog whose mouth was filled with arrow
   P.solid = true; for (let i = 0; i < 7; i++) { const ang = (-30 + i * 10) * D2R, cx = x + 1.08 * s, cy = y - 1.06 * s; P.line([[cx, cy], [cx + Math.cos(ang) * s * 0.7, cy + Math.sin(ang) * s * 0.7]], '#5a3a1a', 1.6, 'ink', 0); P.line([[cx + Math.cos(ang) * s * 0.6, cy + Math.sin(ang) * s * 0.6], [cx + Math.cos(ang) * s * 0.72, cy + Math.sin(ang) * s * 0.72]], '#e8e4dc', 3, 'ink', 0); } P.solid = false;
 };
 PIECES.lotusLeaf = (P, t, a) => { P.solid = true; for (const [x, y, r] of (a.at || [[800, 820, 120]])) { P.shape(circlePts(x, y, r, 20, 1, 0.35), '#3a7a4a', 235, INK, 1); P.line([[x, y], [x + r * 0.9, y - r * 0.1]], '#2a5a3a', 1, 'ink', 0); } P.solid = false; };
+
+// ---------------------------------------------------------------- Episode 4 additions ---
+Object.assign(FACES, {
+  hidimba: { skin: '#4a5a4a', W: 1.0, cheek: 0.2, long: 1.06, jaw: 1.0, chin: 1.06, nose: 'broad', eye: 0.84, brow: 'heavy', lips: '#5a1a1a', stache: 'curl', beard: 'full', hair: '#2a1a0a', hairStyle: 'wild', crown: 'band', tilak: 'red', ear: 'ring', chest: 'torque', cloth: '#5a2a1a', expr: 'cruel', neck: 1.4 },
+  baka: { skin: '#5a4a5a', W: 1.04, cheek: 0.2, long: 1.08, jaw: 1.0, chin: 1.08, nose: 'hook', eye: 0.82, brow: 'heavy', lips: '#4a1010', stache: 'curl', beard: 'full', hair: '#1a0a0a', hairStyle: 'wild', crown: 'band', tilak: 'red', ear: 'ring', chest: 'torque', cloth: '#3a1a2a', expr: 'cruel', neck: 1.4 },
+  hidimbi: { skin: '#6a7a5a', W: 0.72, cheek: 0.4, jaw: 0.1, chin: 0.96, nose: 'fine', eye: 1.14, brow: 'arch', lips: '#8a2a3a', stache: null, beard: null, hair: '#1a1008', hairStyle: 'woman', crown: 'flowers', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#3a6a3a', female: 1, expr: 'smile' },
+  dhrishta: { skin: '#c08a5a', W: 0.74, cheek: 0.3, jaw: 0.5, chin: 1.0, nose: 'straight', eye: 1.0, brow: 'arch', lips: '#9a3a30', stache: 'thin', beard: null, hair: '#1a0e08', hairStyle: 'curls', crown: 'mukut', tilak: 'red', ear: 'kundala', chest: 'kavacha', cloth: '#c04a1a', expr: 'stern', sheen: '#ffd0a0' },
+  purochana: { skin: '#a8784e', W: 0.8, cheek: 0.5, jaw: 0.4, chin: 1.0, nose: 'hook', eye: 0.86, brow: 'heavy', lips: '#7a3a2a', stache: 'curl', beard: null, hair: '#16100c', hairStyle: 'straight', crown: 'turban', tilak: 'line', ear: 'ring', chest: 'necklace', cloth: '#5a2a4a', expr: 'cruel' },
+  brahminW: { skin: '#b8885e', W: 0.7, cheek: 0.4, jaw: 0.08, chin: 0.95, nose: 'fine', eye: 1.04, brow: 'soft', lips: '#8a3a3a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'woman', crown: 'veil', tilak: 'bindi', ear: 'jhumka', chest: 'white', cloth: '#e8dcc0', female: 1, expr: 'sorrow' },
+});
+Object.assign(CAST, {
+  hidimba: { skin: '#4a5a4a', dhoti: '#5a2a1a', patka: '#2a1a0a', scarf: null, crown: 'band', hair: '#2a1a0a', beard: 'short', jewel: '#8a7a5a', bulk: 1.45 },
+  baka: { skin: '#5a4a5a', dhoti: '#3a1a2a', patka: '#2a1a0a', scarf: null, crown: 'band', hair: '#1a0a0a', beard: 'short', jewel: '#8a7a5a', bulk: 1.55 },
+  dhrishta: { skin: '#c08a5a', dhoti: '#c04a1a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#1a0e08', beard: 'stache', jewel: GOLD },
+  purochana: { skin: '#a8784e', dhoti: '#5a2a4a', patka: '#d2a23a', scarf: '#c7362b', crown: 'turban', hair: '#16100c', beard: 'stache', jewel: GOLD },
+});
+Object.assign(WOMEN, { hidimbi: { skin: '#6a7a5a', sari: '#3a6a3a', border: '#c9b57a' }, brahminW: { skin: '#b8885e', sari: '#e8dcc0', border: '#c9b57a' } });
+PIECES.foodCart = (P, t, a) => {   // a bullock cart heaped with rice and curd, for the demon
+  const x = a.x || 800, y = a.y || 860, s = a.s || 1; P.solid = true;
+  for (const wx of [-90, 90]) { P.circle(x + wx * s, y - 50 * s, 50 * s, '#6a4a2a', 245, INK, 1.2); for (let k = 0; k < 6; k++) { const an = k / 6 * Math.PI * 2 + t; P.line([[x + wx * s, y - 50 * s], [x + wx * s + Math.cos(an) * 46 * s, y - 50 * s + Math.sin(an) * 46 * s]], '#3a2a1a', 1.4, 'ink', 0); } }
+  P.shape([[x - 160 * s, y - 90 * s], [x + 160 * s, y - 90 * s], [x + 150 * s, y - 120 * s], [x - 150 * s, y - 120 * s]], '#8a5a32', 245, INK, 1.2);
+  P.shape(chaikin([[x - 140 * s, y - 120 * s], [x - 100 * s, y - 200 * s], [x, y - 230 * s], [x + 100 * s, y - 200 * s], [x + 140 * s, y - 120 * s]], 2), '#f4efe2', 245, INK, 1);
+  for (let i = 0; i < 5; i++) P.shape(circlePts(x - 100 * s + i * 50 * s, y - 130 * s, 22 * s, 12, 1, 0.8), ['#a86a3a', '#c8a050', '#8a5a2a'][i % 3], 245, INK, 0.8);
+  P.line([[x + 160 * s, y - 100 * s], [x + 300 * s, y - 110 * s]], '#5a3a1a', 3, 'ink', 0);
+  P.solid = false;
+};
+PIECES.tunnel = (P, t, a) => {   // the tunnel under the house of lac, one lamp moving through the dark
+  P.flat([[-60, -60], [1660, -60], [1660, 960], [-60, 960]], '#0a0606');
+  const pts = []; for (let i = 0; i <= 20; i++) { const a2 = Math.PI * i / 20; pts.push([800 - Math.cos(a2) * 620, 860 - Math.sin(a2) * 560]); }
+  P.wash(pts.concat([[1420, 960], [180, 960]]), '#3a2418', 230, 0.02, 0.4, 0.3);
+  for (let k = 1; k < 6; k++) { const r = 1 - k * 0.15, pp = []; for (let i = 0; i <= 20; i++) { const a2 = Math.PI * i / 20; pp.push([800 - Math.cos(a2) * 620 * r, 860 - Math.sin(a2) * 560 * r - k * 30]); } P.line(pp, '#5a3a24', 2, 'ink', 0.5); }
+  const lx = 300 + ((t * 40) % 1000); P.wash(circlePts(lx, 620, 200, 24), '#ff9040', 90, 0.02, 0.4, 0.3); P.dot(lx, 620, 10, '#ffd080', 250);
+};

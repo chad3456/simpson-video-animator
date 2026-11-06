@@ -1012,6 +1012,8 @@ EP(2, "Amba's Curse and the Blind King", 'अंबा का शाप और �
 # =============================================================== EPISODE 3 ===
 import s1_ep03  # noqa: E402
 s1_ep03.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
+import s1_ep04  # noqa: E402
+s1_ep04.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
 
 # ---------------------------------------------------------------- voices ---
 CAST = copy.deepcopy(BASE_CAST)
@@ -1042,6 +1044,9 @@ CAST['en'].update({
     'KRIPA': dict(voice='bm_fable:2+bm_george:1', speed=0.9, pitch=-1.5),
     'EKALAVYA': dict(voice='am_liam:2+am_puck:1', speed=0.95, pitch=0.5),
     'DRUPADA': dict(voice='am_adam:2+bm_lewis:1', speed=0.94, pitch=-1),
+    'PUROCHANA': dict(voice='am_puck:2+bm_lewis:1', speed=0.96, pitch=-0.5),
+    'HIDIMBI': dict(voice='af_nicole:2+af_bella:1', speed=0.97, pitch=0.5),
+    'DHRISHTA': dict(voice='am_eric:2+am_liam:1', speed=0.96, pitch=-0.5),
 })
 CAST['hi'].update({
     'VYASA': dict(voice='hm_omega', speed=0.86, pitch=-2.0, fx='storyteller'),
@@ -1070,6 +1075,9 @@ CAST['hi'].update({
     'KRIPA': dict(voice='hm_omega:2+bm_fable:1', speed=0.9, pitch=-1.0),
     'EKALAVYA': dict(voice='hm_psi:2+am_liam:1', speed=0.95, pitch=1.0),
     'DRUPADA': dict(voice='hm_psi:2+am_adam:1', speed=0.94, pitch=-1.5),
+    'PUROCHANA': dict(voice='hm_psi:2+am_puck:1', speed=0.96, pitch=-0.5),
+    'HIDIMBI': dict(voice='hf_beta:2+af_nicole:1', speed=0.97, pitch=1.0),
+    'DHRISHTA': dict(voice='hm_psi:2+am_eric:1', speed=0.96, pitch=-0.5),
 })
 
 SERIES = dict(title=dict(en='Mahabharata', hi='महाभारत'), subtitle=dict(en='Season 1', hi='पहला अध्याय'), fps=24, w=1280, h=720)
