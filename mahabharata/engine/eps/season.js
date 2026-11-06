@@ -615,3 +615,11 @@ Object.assign(CAST, {
   satyaki: { skin: '#8a5a3a', dhoti: '#c9a54a', patka: '#7a3a1a', scarf: '#c7362b', crown: 'mukut', hair: '#100b08', beard: 'stache', jewel: GOLD },
   shalya: { skin: '#c49a70', dhoti: '#5a3a1a', patka: '#d2a23a', scarf: '#8a6a3a', crown: 'mukut', hair: '#8a847a', beard: 'short', jewel: GOLD, age: 1 },
 });
+
+// ---------------------------------------------------------------- Episode 10 additions ---
+Object.assign(FACES, {
+  ghatotkacha: { skin: '#3e4e3e', W: 1.02, cheek: 0.3, long: 1.04, jaw: 0.9, chin: 1.04, nose: 'broad', eye: 0.96, brow: 'heavy', lips: '#6a2420', stache: 'curl', beard: 'short', hair: '#1a1208', hairStyle: 'wild', crown: 'band', tilak: 'red', ear: 'ring', chest: 'torque', cloth: '#6a3a1a', expr: 'roar', neck: 1.4 },
+});
+Object.assign(CAST, {
+  ghatotkacha: { skin: '#3e4e3e', dhoti: '#6a3a1a', patka: '#c9a54a', scarf: '#3a2a1a', crown: 'band', hair: '#1a1208', beard: 'short', jewel: '#c9a54a', bulk: 1.6 },
+});

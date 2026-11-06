@@ -3933,6 +3933,23 @@
     "voice": "am_liam:2+am_eric:1",
     "speed": 1.0,
     "pitch": 0
+   },
+   "ASHWA": {
+    "voice": "am_eric:2+am_fenrir:1",
+    "speed": 1.02,
+    "pitch": -0.5,
+    "fx": "growl"
+   },
+   "GHATOT": {
+    "voice": "am_onyx:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "SHALYA": {
+    "voice": "bm_george:2+am_adam:1",
+    "speed": 0.94,
+    "pitch": -1
    }
   },
   "hi": {
@@ -4298,6 +4315,23 @@
     "voice": "hm_psi:2+am_liam:1",
     "speed": 1.0,
     "pitch": 0.5
+   },
+   "ASHWA": {
+    "voice": "hm_psi:2+am_fenrir:1",
+    "speed": 1.02,
+    "pitch": -0.5,
+    "fx": "growl"
+   },
+   "GHATOT": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.9,
+    "pitch": -3,
+    "fx": "growl"
+   },
+   "SHALYA": {
+    "voice": "hm_omega:2+bm_george:1",
+    "speed": 0.94,
+    "pitch": -1
    }
   }
  }

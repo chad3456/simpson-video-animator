@@ -1024,6 +1024,8 @@ import s1_ep08  # noqa: E402
 s1_ep08.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
 import s1_ep09  # noqa: E402
 s1_ep09.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
+import s1_ep10  # noqa: E402
+s1_ep10.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
 
 # ---------------------------------------------------------------- voices ---
 CAST = copy.deepcopy(BASE_CAST)
@@ -1070,6 +1072,9 @@ CAST['en'].update({
     'HANUMAN': dict(voice='am_onyx:2+bm_lewis:1', speed=0.9, pitch=-1.5, fx='divine'),
     'BALARAMA': dict(voice='am_adam:2+am_onyx:1', speed=0.92, pitch=-1.5),
     'SATYAKI': dict(voice='am_liam:2+am_eric:1', speed=1.0, pitch=0),
+    'ASHWA': dict(voice='am_eric:2+am_fenrir:1', speed=1.02, pitch=-0.5, fx='growl'),
+    'GHATOT': dict(voice='am_onyx:2+am_fenrir:1', speed=0.9, pitch=-3, fx='growl'),
+    'SHALYA': dict(voice='bm_george:2+am_adam:1', speed=0.94, pitch=-1),
 })
 CAST['hi'].update({
     'VYASA': dict(voice='hm_omega', speed=0.86, pitch=-2.0, fx='storyteller'),
@@ -1114,6 +1119,9 @@ CAST['hi'].update({
     'HANUMAN': dict(voice='hm_omega:2+am_onyx:1', speed=0.9, pitch=-2.0, fx='divine'),
     'BALARAMA': dict(voice='hm_omega:2+am_adam:1', speed=0.92, pitch=-1.0),
     'SATYAKI': dict(voice='hm_psi:2+am_liam:1', speed=1.0, pitch=0.5),
+    'ASHWA': dict(voice='hm_psi:2+am_fenrir:1', speed=1.02, pitch=-0.5, fx='growl'),
+    'GHATOT': dict(voice='hm_omega:2+am_onyx:1', speed=0.9, pitch=-3, fx='growl'),
+    'SHALYA': dict(voice='hm_omega:2+bm_george:1', speed=0.94, pitch=-1),
 })
 
 SERIES = dict(title=dict(en='Mahabharata', hi='महाभारत'), subtitle=dict(en='Season 1', hi='पहला अध्याय'), fps=24, w=1280, h=720)
