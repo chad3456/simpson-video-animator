@@ -1016,6 +1016,8 @@ import s1_ep04  # noqa: E402
 s1_ep04.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
 import s1_ep05  # noqa: E402
 s1_ep05.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
+import s1_ep06  # noqa: E402
+s1_ep06.build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, CAVE, CAVE_V, CAVE_G, CAVE_CAM, RIM_GOLD, RIM_FIRE, RIM_COOL, RIM_LAMP)
 
 # ---------------------------------------------------------------- voices ---
 CAST = copy.deepcopy(BASE_CAST)
@@ -1054,6 +1056,11 @@ CAST['en'].update({
     'NARADA': dict(voice='am_puck:2+bm_fable:1', speed=0.96, pitch=1.0, fx='divine'),
     'JARASANDHA': dict(voice='am_fenrir:2+am_onyx:1', speed=0.9, pitch=-3, fx='growl'),
     'SHISHUPALA': dict(voice='am_eric:2+am_puck:1', speed=1.02, pitch=0),
+    'DUSHASANA': dict(voice='am_fenrir:2+am_eric:1', speed=1.0, pitch=-0.5, fx='growl'),
+    'VIKARNA': dict(voice='am_liam:2+am_michael:1', speed=0.98, pitch=0.5),
+    'KIRATA': dict(voice='am_onyx:2+am_fenrir:1', speed=0.92, pitch=-1.5),
+    'URVASHI': dict(voice='af_bella:2+af_sky:1', speed=0.97, pitch=0.5, fx='divine'),
+    'SANJAYA': dict(voice='bm_george:2+bm_daniel:1', speed=0.94, pitch=-0.5),
 })
 CAST['hi'].update({
     'VYASA': dict(voice='hm_omega', speed=0.86, pitch=-2.0, fx='storyteller'),
@@ -1090,6 +1097,11 @@ CAST['hi'].update({
     'NARADA': dict(voice='hm_psi:2+am_puck:1', speed=0.96, pitch=1.5, fx='divine'),
     'JARASANDHA': dict(voice='hm_omega:2+am_fenrir:1', speed=0.9, pitch=-3.5, fx='growl'),
     'SHISHUPALA': dict(voice='hm_psi:2+am_eric:1', speed=1.02, pitch=0),
+    'DUSHASANA': dict(voice='hm_psi:2+am_fenrir:1', speed=1.0, pitch=-0.5, fx='growl'),
+    'VIKARNA': dict(voice='hm_psi:2+am_liam:1', speed=0.98, pitch=1.0),
+    'KIRATA': dict(voice='hm_omega:2+am_onyx:1', speed=0.92, pitch=-1.5),
+    'URVASHI': dict(voice='hf_beta:2+af_bella:1', speed=0.97, pitch=1.0, fx='divine'),
+    'SANJAYA': dict(voice='hm_psi:2+bm_george:1', speed=0.94, pitch=-0.5),
 })
 
 SERIES = dict(title=dict(en='Mahabharata', hi='महाभारत'), subtitle=dict(en='Season 1', hi='पहला अध्याय'), fps=24, w=1280, h=720)

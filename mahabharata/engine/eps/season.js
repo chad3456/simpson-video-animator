@@ -547,3 +547,27 @@ PIECES.mayaHall = (P, t, a) => {   // the hall of illusions: a floor like water,
   for (let i = 0; i < 40; i++) { const x = (i * 97) % 1600, y = 80 + (i * 53) % 440, k = 0.5 + 0.5 * Math.sin(t * 2 + i); P.dot(x, y, 3 * k, '#ffffff', 200 * k); }
   P.solid = false;
 };
+
+// ---------------------------------------------------------------- Episode 6 additions ---
+Object.assign(FACES, {
+  urvashi: { skin: '#e8c8a8', W: 0.7, cheek: 0.5, jaw: 0.05, chin: 0.94, nose: 'fine', eye: 1.16, brow: 'arch', lips: '#c0304a', stache: null, beard: null, hair: '#0e0a14', hairStyle: 'woman', crown: 'goddess', tilak: 'bindi', ear: 'jhumka', chest: 'pearls', cloth: '#e86aa0', female: 1, nath: 1, expr: 'smile', sheen: '#fff0f0' },
+  vikarna: { skin: '#b8885e', W: 0.7, cheek: 0.3, jaw: 0.3, chin: 0.98, nose: 'straight', eye: 1.02, brow: 'soft', lips: '#9a3e36', stache: 'thin', beard: null, hair: '#16100c', hairStyle: 'curls', crown: 'mukutLow', tilak: 'line', ear: 'kundala', chest: 'pearls', cloth: '#3a5a7a', expr: 'sorrow' },
+  kirata: { skin: '#4a5a7a', W: 0.8, cheek: 0.3, jaw: 0.6, chin: 1.0, nose: 'straight', eye: 1.0, brow: 'heavy', lips: '#6a2a2a', stache: 'full', beard: 'short', hair: '#1a1410', hairStyle: 'wild', crown: 'band', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#6a4a2a', expr: 'smile' },
+});
+Object.assign(CAST, {
+  vikarna: { skin: '#b8885e', dhoti: '#3a5a7a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#16100c', beard: null, jewel: GOLD },
+  kirata: { skin: '#4a5a7a', dhoti: '#6a4a2a', patka: '#3a2a1a', scarf: null, crown: 'band', hair: '#1a1410', beard: 'short', jewel: '#c9b57a', bulk: 1.15 },
+});
+Object.assign(WOMEN, { urvashi: { skin: '#e8c8a8', sari: '#e86aa0', border: GOLD } });
+function boar(P, x, y, s, f = 1, t = 0, down = 0) {   // a black wild boar (the demon Muka)
+  const T = (p) => { const q = down ? [p[0], p[1] * 0.5] : p; return [x + q[0] * s * f, y + q[1] * s]; }; const pts = (a) => a.map(T); const iw = Math.max(0.8, s / 260), col = '#2a2224';
+  P.solid = true;
+  for (const [lx, ph] of [[-0.3, 0], [-0.2, 1], [0.22, 2], [0.3, 3]]) { const sw = down ? 0.1 : Math.sin(t * 6 + ph) * 0.06; P.shape(pts(capsule([lx, -0.3], [lx + sw, 0], 0.045, 0.03)), col, 245, INK, iw); }
+  P.shape(pts(chaikin([[-0.46, -0.3], [-0.42, -0.56], [-0.1, -0.68], [0.24, -0.66], [0.42, -0.5], [0.58, -0.4], [0.66, -0.3], [0.56, -0.22], [0.36, -0.24], [-0.36, -0.22]], 2)), col, 245, INK, iw * 1.2);
+  for (let i = 0; i < 12; i++) P.line(pts([[-0.36 + i * 0.05, -0.62 - Math.sin(i / 11 * 3.1) * 0.06], [-0.34 + i * 0.05, -0.74 - Math.sin(i / 11 * 3.1) * 0.08]]), '#1a1416', iw * 1.4, 'ink', 0.3);
+  P.shape(pts([[0.6, -0.32], [0.7, -0.42], [0.66, -0.3]]), '#f4efe2', 250, INK, iw * 0.7); P.dot(...T([0.46, -0.46]), s * 0.016, '#c02020');
+  P.shape(pts([[0.3, -0.6], [0.34, -0.72], [0.38, -0.6]]), col, 245, INK, iw);
+  P.line(pts([[-0.46, -0.4], [-0.54, -0.36], [-0.52, -0.3]]), col, iw * 2, 'ink', 0.5);
+  P.solid = false;
+}
+PIECES.boar = (P, t, a) => { boar(P, a.x || 900, a.y || 880, a.s || 300, a.f || 1, t, a.down || 0); if (a.arrows) { P.solid = true; for (const [ax, ay, ang] of a.arrows) { P.line([[ax, ay], [ax - Math.cos(ang * D2R) * 120, ay - Math.sin(ang * D2R) * 120]], '#5a3a1a', 2.4, 'ink', 0); P.line([[ax - Math.cos(ang * D2R) * 110, ay - Math.sin(ang * D2R) * 110], [ax - Math.cos(ang * D2R) * 124, ay - Math.sin(ang * D2R) * 124]], '#f4efe2', 5, 'ink', 0); } P.solid = false; } };

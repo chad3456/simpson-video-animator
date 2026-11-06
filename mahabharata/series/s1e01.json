@@ -7720,6 +7720,33 @@
     "voice": "am_eric:2+am_puck:1",
     "speed": 1.02,
     "pitch": 0
+   },
+   "DUSHASANA": {
+    "voice": "am_fenrir:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": -0.5,
+    "fx": "growl"
+   },
+   "VIKARNA": {
+    "voice": "am_liam:2+am_michael:1",
+    "speed": 0.98,
+    "pitch": 0.5
+   },
+   "KIRATA": {
+    "voice": "am_onyx:2+am_fenrir:1",
+    "speed": 0.92,
+    "pitch": -1.5
+   },
+   "URVASHI": {
+    "voice": "af_bella:2+af_sky:1",
+    "speed": 0.97,
+    "pitch": 0.5,
+    "fx": "divine"
+   },
+   "SANJAYA": {
+    "voice": "bm_george:2+bm_daniel:1",
+    "speed": 0.94,
+    "pitch": -0.5
    }
   },
   "hi": {
@@ -8042,6 +8069,33 @@
     "voice": "hm_psi:2+am_eric:1",
     "speed": 1.02,
     "pitch": 0
+   },
+   "DUSHASANA": {
+    "voice": "hm_psi:2+am_fenrir:1",
+    "speed": 1.0,
+    "pitch": -0.5,
+    "fx": "growl"
+   },
+   "VIKARNA": {
+    "voice": "hm_psi:2+am_liam:1",
+    "speed": 0.98,
+    "pitch": 1.0
+   },
+   "KIRATA": {
+    "voice": "hm_omega:2+am_onyx:1",
+    "speed": 0.92,
+    "pitch": -1.5
+   },
+   "URVASHI": {
+    "voice": "hf_beta:2+af_bella:1",
+    "speed": 0.97,
+    "pitch": 1.0,
+    "fx": "divine"
+   },
+   "SANJAYA": {
+    "voice": "hm_psi:2+bm_george:1",
+    "speed": 0.94,
+    "pitch": -0.5
    }
   }
  }
