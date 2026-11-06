@@ -113,57 +113,127 @@ function tinyFolk(P, x, y, s, col, t = 0, ph = 0, load = 0) {   // a walking vil
 function ganesha(P, o) {
   const x = o.x, y = o.y, S = o.S || 400, t = o.t || 0, f = o.f || 1;
   const T = (u, v) => [x + u * S * f, y - v * S]; const TT = (a) => a.map(p => T(p[0], p[1])); const iw = Math.max(0.8, S / 360);
-  const skin = o.skin || '#e08a5e', skD = shade(skin, -0.25), skL = shade(skin, 0.2), cloth = '#e9b52f';
-  P.solid = true; P.noSilhouette();
-  // seat: a lotus pedestal
-  P.shape(TT(chaikin([[-0.52, 0.0], [0.52, 0.0], [0.46, -0.08], [-0.46, -0.08]], 1)), '#8a1c1c', 245, INK, iw);
-  for (let i = 0; i < 11; i++) { const u = -0.48 + i * 0.096; P.shape(TT([[u - 0.05, 0.0], [u, 0.06], [u + 0.05, 0.0]]), i % 2 ? '#f0a0b4' : '#e47a96', 245, INK, iw * 0.7); }
-  // upper arms behind (goad and noose)
+  const skin = o.skin || '#e8906a', skD = shade(skin, -0.28), skDD = shade(skin, -0.45), skL = shade(skin, 0.22), cloth = '#f0b429', clothD = shade(cloth, -0.3), red = '#b3202a', grn = '#2e7a3a';
+  const limb = (a, b, w0, w1) => chaikin(capsule(a, b, w0, w1), 1);
   const ear = Math.sin(t * 1.6) * 0.012;
-  P.shape(TT(capsule([0.2, 0.52], [0.36, 0.66], 0.045, 0.035)), skin, 245, INK, iw); P.shape(TT(capsule([0.36, 0.66], [0.38, 0.82], 0.035, 0.03)), skin, 245, INK, iw);
-  P.shape(TT(capsule([-0.2, 0.52], [-0.36, 0.66], 0.045, 0.035)), skin, 245, INK, iw); P.shape(TT(capsule([-0.36, 0.66], [-0.38, 0.82], 0.035, 0.03)), skin, 245, INK, iw);
-  P.line(TT([[-0.38, 0.76], [-0.38, 1.02]]), '#6a4a2a', iw * 2, 'ink', 0); P.line(TT([[-0.38, 1.02], [-0.33, 0.98], [-0.35, 0.93]]), GOLD, iw * 2.4, 'gold', 0.5);   // goad
-  P.line(TT(arcPts(0.4, 0.92, 0.06, 0, 360, 16).map(p => p)), GOLD, iw * 2, 'gold', 0.3);   // noose
-  P.shape(TT(circlePts(-0.38, 0.82, 0.032, 10)), skin, 250, INK, iw); P.shape(TT(circlePts(0.38, 0.82, 0.032, 10)), skin, 250, INK, iw);
-  // crossed legs and dhoti
-  P.shape(TT(chaikin([[-0.46, 0.02], [0.46, 0.02], [0.48, 0.12], [0.3, 0.2], [0.0, 0.18], [-0.3, 0.2], [-0.48, 0.12]], 2)), cloth, 245, INK, iw * 1.1);
-  P.line(TT([[-0.46, 0.04], [0.46, 0.04]]), '#b3202a', iw * 3, 'gold', 0);
-  for (const s of [-1, 1]) P.shape(TT(circlePts(s * 0.38, 0.08, 0.05, 12, 1.2, 0.7)), skin, 245, INK, iw);   // feet
-  // belly and chest
-  P.shape(TT(chaikin([[-0.22, 0.16], [0.22, 0.16], [0.28, 0.3], [0.24, 0.46], [0.2, 0.54], [-0.2, 0.54], [-0.24, 0.46], [-0.28, 0.3]], 2)), skin, 248, INK, iw * 1.1);
-  P.wash(TT([[0.1, 0.2], [0.26, 0.28], [0.22, 0.46], [0.12, 0.42]]), skD, 110, 0.03); P.wash(TT([[-0.14, 0.3], [-0.04, 0.26], [-0.06, 0.4]]), skL, 90, 0.03);
-  P.dot(...T(0.0, 0.29), S * 0.008, skD, 240);   // navel
-  P.line(TT(arcPts(0, 0.3, 0.2, 200, 340, 20).map(p => [p[0], 0.6 - p[1]])), '#2e7a3a', iw * 4, 'ink', 0.5);   // serpent belt
-  P.dot(...T(0.17, 0.18), S * 0.016, '#2e7a3a');
-  P.line(TT([[-0.18, 0.54], [-0.02, 0.36], [0.2, 0.18]]), '#f6f1e4', iw * 1.6, 'ink', 0.5);   // sacred thread
-  // lower left hand holds the palm leaf on the knee
-  P.shape(TT(capsule([-0.22, 0.48], [-0.3, 0.3], 0.045, 0.04)), skin, 248, INK, iw); P.shape(TT(capsule([-0.3, 0.3], [-0.16, 0.2], 0.04, 0.035)), skin, 248, INK, iw);
-  P.shape(TT([[-0.3, 0.2], [0.08, 0.215], [0.08, 0.245], [-0.3, 0.235]]), '#d8b878', 250, INK, iw);
-  for (let i = 0; i < 4; i++) P.line(TT([[-0.27, 0.224 + (i % 2) * 0.01], [-0.27 + 0.06 + i * 0.03, 0.226 + (i % 2) * 0.01]]), '#3a2a1a', iw * 0.6, 'ink', 0);
-  P.shape(TT(circlePts(-0.16, 0.21, 0.035, 10)), skin, 250, INK, iw);
-  // necklaces and armlets
-  for (let i = 0; i < 2; i++) P.line(TT(arcPts(0, 0.6, 0.15 + i * 0.04, 200, 340, 18).map(p => [p[0], 1.2 - p[1]])), i ? '#b3202a' : GOLD, iw * (3 - i), 'gold', 0.5);
-  // ears (fan), head, crown
+  P.solid = true; P.noSilhouette();
+  // ---- prabhavali: a flaming arch behind him ----
+  for (let i = 0; i < 26; i++) { const a = (195 - i * 210 / 25) * D2R, r0 = 0.5, r1 = 0.56 + (i % 2) * 0.04; P.shape(TT([[Math.cos(a - 0.05) * r0, 0.62 + Math.sin(a - 0.05) * r0], [Math.cos(a) * r1, 0.62 + Math.sin(a) * r1], [Math.cos(a + 0.05) * r0, 0.62 + Math.sin(a + 0.05) * r0]]), i % 2 ? '#f08a24' : GOLD2, 235, '#7a2a08', iw * 0.6); }
+  P.shape(TT(chaikin(arcPts(0, 0.62, 0.5, -15, 195, 30).concat(arcPts(0, 0.62, 0.44, 195, -15, 30)), 1)), GOLD, 245, '#7a4a10', iw);
+  for (let i = 0; i < 15; i++) { const a = (190 - i * 200 / 14) * D2R; P.dot(...T(Math.cos(a) * 0.47, 0.62 + Math.sin(a) * 0.47), S * 0.008, i % 2 ? red : '#2a7a5a'); }
+  P.wash(TT(circlePts(0, 0.66, 0.42, 30)), '#ffe6a0', 60, 0.04, 0.3, 0.2);
+  // ---- double lotus pedestal ----
+  P.shape(TT(chaikin([[-0.56, -0.12], [0.56, -0.12], [0.5, -0.05], [-0.5, -0.05]], 1)), '#6a1414', 250, INK, iw);
+  for (let r = 0; r < 2; r++) for (let i = 0; i < 13; i++) { const u = -0.54 + i * 0.09 + r * 0.045, v0 = r ? -0.05 : -0.1, h = r ? 0.08 : -0.06; if (u > 0.55) continue; P.shape(TT(chaikin([[u - 0.05, v0], [u - 0.03, v0 + h * 0.7], [u, v0 + h], [u + 0.03, v0 + h * 0.7], [u + 0.05, v0]], 1)), r ? (i % 2 ? '#f6b8c8' : '#ec8aa8') : '#c85a7a', 245, INK, iw * 0.6); }
+  // ---- upper arms raised out past the ears: goad (left) and axe (right) ----
   for (const s of [-1, 1]) {
-    P.shape(TT(chaikin([[s * 0.1, 0.8], [s * 0.3, 0.86 + ear], [s * 0.38, 0.74], [s * 0.36, 0.58], [s * 0.26, 0.5 - ear], [s * 0.12, 0.6]], 2)), skin, 248, INK, iw);
-    P.shape(TT(chaikin([[s * 0.14, 0.76], [s * 0.28, 0.8 + ear], [s * 0.33, 0.72], [s * 0.3, 0.6], [s * 0.22, 0.56 - ear], [s * 0.15, 0.62]], 2)), '#f0b8a0', 220, null);
-    P.circle(...T(s * 0.32, 0.5), S * 0.02, GOLD2, 240, INK, iw * 0.6);
+    const sh0 = [s * 0.2, 0.5], el = [s * 0.47, 0.55], hd = [s * 0.53, 0.72];
+    P.shape(TT(limb(sh0, el, 0.055, 0.045)), skin, 248, INK, iw); P.shape(TT(limb(el, hd, 0.045, 0.035)), skin, 248, INK, iw);
+    P.wash(TT(limb([el[0], el[1] + 0.01], [hd[0] - s * 0.01, hd[1] - 0.02], 0.016, 0.012)), skD, 120, 0.03);
+    P.line(TT([[s * 0.33, 0.56], [s * 0.35, 0.5]]), GOLD, iw * 3.2, 'gold', 0); P.line(TT([[s * 0.5, 0.66], [s * 0.55, 0.66]]), GOLD, iw * 2.6, 'gold', 0);
   }
-  P.shape(TT(chaikin([[-0.15, 0.62], [-0.17, 0.78], [-0.1, 0.86], [0.1, 0.86], [0.17, 0.78], [0.15, 0.62], [0.08, 0.56], [-0.08, 0.56]], 2)), skin, 250, INK, iw * 1.1);
-  P.wash(TT([[0.1, 0.62], [0.16, 0.7], [0.14, 0.8], [0.08, 0.72]]), skD, 90, 0.03);
-  // trunk curling to the side, tusks (one whole, one broken)
-  const tr = [[0, 0.68], [-0.005, 0.6], [-0.02, 0.52], [-0.06, 0.45], [-0.12, 0.41], [-0.17, 0.43], [-0.18, 0.48], [-0.14, 0.5]];
-  P.shape(TT(ribbon(chaikin(tr, 2, false), 0.07, 0.018)), skin, 252, INK, iw);
-  for (let i = 1; i < 6; i++) { const p = tr[i]; P.line(TT([[p[0] - 0.02, p[1]], [p[0] + 0.02, p[1] + 0.005]]), skD, iw * 0.6, 'ink', 0); }
-  P.shape(TT([[-0.05, 0.6], [-0.09, 0.57], [-0.12, 0.5], [-0.1, 0.5], [-0.06, 0.56], [-0.03, 0.58]]), '#f6f1e4', 252, INK, iw * 0.8);   // whole tusk
-  P.shape(TT([[0.04, 0.6], [0.07, 0.58], [0.075, 0.555], [0.05, 0.57]]), '#f6f1e4', 252, INK, iw * 0.8);   // broken stub
-  for (const s of [-1, 1]) { P.shape(TT([[s * 0.04, 0.715], [s * 0.075, 0.73], [s * 0.11, 0.715], [s * 0.075, 0.705]]), '#f6f1e4', 252, INK, iw * 0.7); P.dot(...T(s * 0.077, 0.716), S * 0.009, '#1a0e0a'); }
-  P.line(TT([[-0.06, 0.755], [-0.11, 0.765]]), INK, iw, 'ink', 0); P.line(TT([[0.06, 0.755], [0.11, 0.765]]), INK, iw, 'ink', 0);
-  P.line(TT([[0, 0.78], [0, 0.83]]), '#c1121f', iw * 2.2, 'ink', 0); for (const s of [-1, 1]) P.line(TT([[s * 0.025, 0.78], [s * 0.035, 0.83]]), '#f6f1e4', iw * 1.4, 'ink', 0);
-  // crown
-  P.shape(TT([[-0.15, 0.84], [0.15, 0.84], [0.13, 0.96], [0.08, 1.06], [0, 1.12], [-0.08, 1.06], [-0.13, 0.96]]), GOLD, 250, '#7a4a10', iw * 1.2);
-  for (let i = 0; i < 3; i++) P.line(TT([[-0.14 + i * 0.01, 0.87 + i * 0.07], [0.14 - i * 0.01, 0.87 + i * 0.07]]), '#b3202a', iw * 1.4, 'gold', 0);
-  P.dot(...T(0, 0.9), S * 0.018, '#b3202a'); P.dot(...T(0, 1.12), S * 0.014, GOLD2);
+  // goad (ankusha) in the left hand: a gold shaft with a hooked tip
+  P.line(TT([[-0.54, 0.62], [-0.53, 1.0]]), '#7a4a1a', iw * 2.6, 'ink', 0); P.line(TT([[-0.54, 0.62], [-0.53, 1.0]]), GOLD, iw * 1, 'gold', 0);
+  P.shape(TT(chaikin([[-0.545, 0.98], [-0.53, 1.1], [-0.515, 0.98]], 1)), GOLD2, 252, '#7a4a10', iw * 0.8);
+  P.line(TT(chaikin([[-0.53, 1.0], [-0.49, 1.02], [-0.47, 0.99], [-0.49, 0.96]], 2, false)), GOLD2, iw * 2.4, 'gold', 0.3);
+  // axe (parashu) in the right hand: a wooden haft with a steel crescent blade
+  P.line(TT([[0.54, 0.6], [0.53, 1.02]]), '#6a3a1a', iw * 2.8, 'ink', 0);
+  P.shape(TT(chaikin([[0.535, 0.98], [0.6, 1.04], [0.65, 1.0], [0.655, 0.93], [0.62, 0.88], [0.535, 0.92]], 1)), '#cdd6de', 252, INK, iw * 0.9);
+  P.line(TT(chaikin([[0.6, 1.03], [0.645, 0.99], [0.65, 0.93], [0.62, 0.89]], 2, false)), '#f6fafc', iw * 1.6, 'ink', 0.3);
+  P.shape(TT([[0.52, 0.91], [0.55, 0.91], [0.55, 0.99], [0.52, 0.99]]), GOLD, 252, '#7a4a10', iw * 0.6);
+  // the raised hands, palms forward
+  for (const s of [-1, 1]) { P.shape(TT(chaikin(circlePts(s * 0.535, 0.72, 0.04, 10, 0.9, 1.1), 1)), skin, 252, INK, iw); for (let i = 0; i < 3; i++) P.line(TT([[s * 0.515 + i * 0.016, 0.745], [s * 0.515 + i * 0.016, 0.7]]), skD, iw * 0.7, 'ink', 0); }
+  // ---- crossed legs, dhoti with border and folds ----
+  P.shape(TT(chaikin([[-0.5, -0.04], [0.5, -0.04], [0.52, 0.1], [0.32, 0.2], [0.0, 0.17], [-0.32, 0.2], [-0.52, 0.1]], 2)), cloth, 248, INK, iw * 1.1);
+  P.wash(TT([[-0.5, -0.02], [0.5, -0.02], [0.48, 0.04], [-0.48, 0.04]]), clothD, 110, 0.02);
+  P.line(TT([[-0.5, -0.02], [0.5, -0.02]]), red, iw * 3.5, 'gold', 0); P.line(TT([[-0.5, 0.0], [0.5, 0.0]]), GOLD, iw * 1.2, 'gold', 0);
+  for (let i = 0; i < 6; i++) P.line(TT([[-0.42 + i * 0.16, 0.03], [-0.36 + i * 0.15, 0.15]]), clothD, iw * 0.7, 'ink', 0.4);
+  // the front pleats fan
+  P.shape(TT([[-0.04, 0.16], [0.04, 0.16], [0.09, -0.06], [-0.09, -0.06]]), shade(cloth, 0.08), 250, INK, iw); for (let i = 0; i < 4; i++) P.line(TT([[-0.02 + i * 0.013, 0.15], [-0.07 + i * 0.045, -0.05]]), clothD, iw * 0.6, 'ink', 0);
+  P.line(TT([[-0.09, -0.06], [0.09, -0.06]]), red, iw * 2.5, 'gold', 0);
+  // the visible foot with red alta and an anklet
+  P.shape(TT(chaikin([[0.18, 0.04], [0.36, 0.06], [0.42, 0.1], [0.36, 0.13], [0.2, 0.1]], 2)), skin, 250, INK, iw);
+  P.line(TT([[0.38, 0.06], [0.42, 0.1], [0.37, 0.13]]), '#c1121f', iw * 1.6, 'ink', 0.5); for (let i = 0; i < 5; i++) P.dot(...T(0.2 + i * 0.012, 0.06 + i * 0.008), S * 0.006, GOLD2);
+  // ---- belly and chest ----
+  P.shape(TT(chaikin([[-0.22, 0.16], [0.22, 0.16], [0.3, 0.28], [0.27, 0.44], [0.21, 0.54], [-0.21, 0.54], [-0.27, 0.44], [-0.3, 0.28]], 2)), skin, 250, INK, iw * 1.1);
+  P.wash(TT(chaikin([[0.12, 0.18], [0.29, 0.28], [0.26, 0.44], [0.14, 0.4], [0.18, 0.28]], 1)), skD, 120, 0.03);
+  P.wash(TT(chaikin([[-0.2, 0.26], [-0.08, 0.22], [-0.04, 0.34], [-0.14, 0.38]], 1)), skL, 100, 0.03);
+  P.wash(TT(chaikin([[-0.2, 0.5], [0.2, 0.5], [0.16, 0.44], [-0.16, 0.44]], 1)), skD, 70, 0.03);   // chest fold
+  P.shape(TT(circlePts(0.0, 0.27, 0.014, 10, 1, 0.7)), skDD, 240, null);   // navel
+  // serpent belt with a raised hood
+  const belt = arcPts(0, 0.3, 0.24, 200, 340, 24).map(p => [p[0], 0.6 - p[1]]);
+  P.line(belt, grn, iw * 5, 'ink', 0.5); P.line(belt.map(p => [p[0], p[1] + 0.004]), '#7ac07a', iw * 1.2, 'ink', 0.5);
+  P.line(TT(belt), grn, iw * 5, 'ink', 0.5); P.line(TT(belt.map(p => [p[0], p[1] + 0.004])), '#8ad08a', iw * 1.2, 'ink', 0.5);
+  P.shape(TT(chaikin([[0.2, 0.17], [0.24, 0.2], [0.26, 0.26], [0.22, 0.27], [0.19, 0.22]], 1)), grn, 252, INK, iw * 0.8); P.dot(...T(0.235, 0.24), S * 0.005, '#f6dc7a');
+  // sacred thread and the orange shawl over one shoulder
+  P.line(TT([[-0.19, 0.53], [-0.04, 0.38], [0.16, 0.2]]), '#f6f1e4', iw * 1.8, 'ink', 0.5);
+  P.shape(TT(chaikin([[0.14, 0.54], [0.28, 0.52], [0.36, 0.42], [0.38, 0.24], [0.33, 0.24], [0.3, 0.4], [0.2, 0.47]], 1)), '#d8501a', 245, INK, iw); P.line(TT([[0.33, 0.24], [0.38, 0.24]]), GOLD, iw * 2, 'gold', 0);
+  // ---- lower left hand holds the palm leaf on the knee ----
+  P.shape(TT(limb([-0.22, 0.48], [-0.31, 0.31], 0.05, 0.045)), skin, 250, INK, iw); P.shape(TT(limb([-0.31, 0.31], [-0.17, 0.21], 0.045, 0.036)), skin, 250, INK, iw);
+  P.line(TT([[-0.33, 0.33], [-0.28, 0.3]]), GOLD, iw * 3, 'gold', 0);
+  P.shape(TT([[-0.32, 0.2], [0.08, 0.215], [0.08, 0.25], [-0.32, 0.235]]), '#e0c080', 252, INK, iw);
+  P.line(TT([[-0.32, 0.2], [0.08, 0.215]]), shade('#e0c080', -0.25), iw * 0.8, 'ink', 0);
+  for (let i = 0; i < 6; i++) P.line(TT([[-0.29, 0.222 + (i % 2) * 0.01], [-0.29 + 0.05 + i * 0.03, 0.224 + (i % 2) * 0.01]]), '#3a2a1a', iw * 0.6, 'ink', 0);
+  P.shape(TT(chaikin([[-0.2, 0.2], [-0.13, 0.205], [-0.12, 0.235], [-0.19, 0.24]], 1)), skin, 252, INK, iw);   // palm under the leaf
+  for (let i = 0; i < 3; i++) P.line(TT([[-0.19 + i * 0.022, 0.24], [-0.19 + i * 0.022, 0.255]]), skD, iw * 0.8, 'ink', 0);
+  // a bowl of modaks on the seat
+  P.shape(TT(chaikin([[-0.52, 0.0], [-0.38, 0.0], [-0.4, 0.06], [-0.5, 0.06]], 1)), GOLD, 250, '#7a4a10', iw);
+  for (const [mu, mv] of [[-0.48, 0.08], [-0.44, 0.085], [-0.46, 0.115]]) P.shape(TT(chaikin([[mu - 0.022, mv - 0.01], [mu + 0.022, mv - 0.01], [mu + 0.006, mv + 0.035], [mu, mv + 0.045], [mu - 0.006, mv + 0.035]], 1)), '#f2e2b8', 252, INK, iw * 0.7);
+  // the mouse, his mount
+  P.shape(TT(chaikin([[0.42, -0.04], [0.56, -0.04], [0.6, 0.0], [0.56, 0.05], [0.46, 0.05], [0.42, 0.01]], 2)), '#8a8088', 250, INK, iw);
+  P.shape(TT(circlePts(0.57, 0.05, 0.02, 10)), '#d8a0a8', 250, INK, iw * 0.6); P.dot(...T(0.59, 0.02), S * 0.005, INK); P.line(TT([[0.42, 0.0], [0.36, -0.03], [0.33, 0.0]]), '#8a8088', iw * 1.2, 'ink', 0.5);
+  P.shape(TT(chaikin([[0.6, -0.01], [0.64, -0.01], [0.63, 0.02], [0.61, 0.025]], 1)), '#f2e2b8', 252, INK, iw * 0.6);
+  // ---- necklaces and a garland of marigold and jasmine ----
+  P.line(TT(arcPts(0, 0.6, 0.12, 200, 340, 18).map(p => [p[0], 1.2 - p[1]])), GOLD, iw * 3, 'gold', 0.5);
+  P.line(TT(arcPts(0, 0.6, 0.16, 200, 340, 18).map(p => [p[0], 1.2 - p[1]])), red, iw * 2, 'gold', 0.5);
+  P.shape(TT(chaikin([[0, 0.43], [0.03, 0.46], [0, 0.49], [-0.03, 0.46]], 1)), GOLD2, 252, '#7a4a10', iw * 0.7); P.dot(...T(0, 0.46), S * 0.01, red);
+  for (let i = 0; i <= 30; i++) { const a = (205 + i * 130 / 30) * D2R; P.dot(...T(Math.cos(a) * 0.23, 0.58 + Math.sin(a) * 0.33), S * 0.013, i % 3 === 2 ? '#f6f1e4' : i % 3 ? '#f08a24' : '#f2b23a', 252); }
+  // ---- ears with painted borders ----
+  for (const s of [-1, 1]) {
+    const E = [[s * 0.1, 0.8], [s * 0.3, 0.88 + ear], [s * 0.4, 0.76], [s * 0.39, 0.6], [s * 0.3, 0.5 - ear], [s * 0.2, 0.52], [s * 0.12, 0.6]];
+    P.shape(TT(chaikin(E, 2)), skin, 250, INK, iw);
+    P.shape(TT(chaikin([[s * 0.15, 0.77], [s * 0.29, 0.83 + ear], [s * 0.35, 0.74], [s * 0.34, 0.62], [s * 0.28, 0.55 - ear], [s * 0.18, 0.58]], 2)), '#f4b8a0', 230, null);
+    P.line(TT(chaikin([[s * 0.16, 0.79], [s * 0.3, 0.855 + ear], [s * 0.375, 0.75], [s * 0.37, 0.61], [s * 0.3, 0.525 - ear]], 2, false)), red, iw * 2.2, 'ink', 0.5);
+    for (let i = 0; i < 7; i++) { const k = i / 6, p = [s * (0.2 + 0.15 * Math.sin(k * 2.6)), 0.82 - k * 0.27]; P.dot(...T(p[0], p[1]), S * 0.009, i % 2 ? GOLD2 : '#2a7a5a'); }
+    P.wash(TT(chaikin([[s * 0.14, 0.62], [s * 0.22, 0.58], [s * 0.18, 0.7]], 1)), skD, 80, 0.03);
+    P.circle(...T(s * 0.31, 0.5), S * 0.024, GOLD2, 245, '#7a4a10', iw * 0.6); P.dot(...T(s * 0.31, 0.5), S * 0.01, red);
+  }
+  // ---- head: domed brow with two bumps ----
+  P.shape(TT(chaikin([[-0.17, 0.6], [-0.2, 0.74], [-0.16, 0.84], [-0.08, 0.89], [0, 0.865], [0.08, 0.89], [0.16, 0.84], [0.2, 0.74], [0.17, 0.6], [0.09, 0.54], [-0.09, 0.54]], 2)), skin, 252, INK, iw * 1.1);
+  P.wash(TT(chaikin([[0.08, 0.6], [0.16, 0.66], [0.16, 0.78], [0.1, 0.72]], 1)), skD, 100, 0.03);
+  P.wash(TT(chaikin([[-0.12, 0.76], [-0.04, 0.8], [-0.06, 0.84], [-0.13, 0.81]], 1)), skL, 90, 0.03);
+  // mouth under the trunk, a small smile
+  P.shape(TT(chaikin([[-0.06, 0.58], [0.06, 0.58], [0.04, 0.555], [-0.04, 0.555]], 1)), '#b04a4a', 245, INK, iw * 0.7);
+  // eyes: almond, lidded, lined with kohl
+  for (const s of [-1, 1]) {
+    const E = [[s * 0.035, 0.715], [s * 0.07, 0.733], [s * 0.11, 0.722], [s * 0.12, 0.712], [s * 0.075, 0.703]];
+    P.shape(TT(chaikin(E, 1)), '#fbf4e6', 252, null);
+    P.circle(...T(s * 0.077, 0.716), S * 0.011, '#3a2412', 252); P.dot(...T(s * 0.077, 0.716), S * 0.006, '#0a0605', 255); P.dot(...T(s * 0.074, 0.72), S * 0.003, '#ffffff', 255);
+    P.line(TT([[s * 0.03, 0.716], [s * 0.07, 0.736], [s * 0.115, 0.725], [s * 0.135, 0.73]]), INK, iw * 1.6, 'ink', 0.5);
+    P.line(TT([[s * 0.035, 0.712], [s * 0.075, 0.701], [s * 0.12, 0.71]]), INK, iw * 0.7, 'ink', 0.5);
+    P.line(TT([[s * 0.04, 0.752], [s * 0.08, 0.762], [s * 0.12, 0.755]]), skDD, iw * 1.2, 'ink', 0.5);   // brow fold
+  }
+  // tilak: three white lines with a red mark
+  for (let i = 0; i < 3; i++) P.line(TT([[-0.07, 0.785 + i * 0.016], [0.07, 0.785 + i * 0.016]]), '#f6f1e4', iw * 1.5, 'ink', 0.2);
+  P.shape(TT(chaikin([[0, 0.77], [0.015, 0.8], [0, 0.835], [-0.015, 0.8]], 1)), '#c1121f', 252, null);
+  // ---- trunk: tapering, ringed, curling with a modak at its tip ----
+  const tr = chaikin([[0, 0.7], [-0.004, 0.62], [-0.016, 0.54], [-0.05, 0.47], [-0.1, 0.42], [-0.16, 0.42], [-0.19, 0.46], [-0.17, 0.5], [-0.13, 0.5]], 2, false);
+  P.shape(TT(ribbon(tr, 0.058, 0.018)), skin, 252, INK, iw);
+  P.wash(TT(ribbon(tr.slice(0, Math.floor(tr.length * 0.6)).map(p => [p[0] + 0.03, p[1]]), 0.025, 0.01)), skD, 110, 0.02);
+  for (let i = 2; i < tr.length - 3; i += 2) { const a = tr[i], b = tr[i + 1], dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1, w = (0.058 + (0.018 - 0.058) * i / (tr.length - 1)) * 0.9; P.line(TT([[a[0] - dy / l * w, a[1] + dx / l * w], [a[0] + dx * 0.4, a[1] + dy * 0.4 - 0.004], [a[0] + dy / l * w, a[1] - dx / l * w]]), skDD, iw * 0.7, 'ink', 0.6); }
+  P.shape(TT(chaikin([[-0.15, 0.49], [-0.11, 0.49], [-0.12, 0.53], [-0.13, 0.54], [-0.14, 0.53]], 1)), '#f2e2b8', 252, INK, iw * 0.7);   // modak in the trunk
+  // tusks: the whole one curving out, the broken stub
+  P.shape(TT(chaikin([[-0.045, 0.6], [-0.08, 0.585], [-0.115, 0.535], [-0.11, 0.525], [-0.075, 0.56], [-0.035, 0.58]], 1)), '#fbf4e6', 252, INK, iw * 0.8);
+  P.shape(TT(chaikin([[0.04, 0.6], [0.07, 0.585], [0.078, 0.565], [0.05, 0.575]], 1)), '#fbf4e6', 252, INK, iw * 0.8);
+  // ---- crown: tiered kirita with jewels, side flares and a pearl string ----
+  P.shape(TT([[-0.16, 0.84], [0.16, 0.84], [0.15, 0.9], [-0.15, 0.9]]), GOLD, 252, '#7a4a10', iw * 1.1);
+  for (let i = 0; i < 9; i++) P.dot(...T(-0.14 + i * 0.035, 0.87), S * 0.008, i % 2 ? red : '#2a7a5a');
+  P.shape(TT(chaikin([[-0.14, 0.9], [0.14, 0.9], [0.12, 0.99], [0.08, 1.07], [0.03, 1.13], [0, 1.16], [-0.03, 1.13], [-0.08, 1.07], [-0.12, 0.99]], 1)), GOLD2, 252, '#7a4a10', iw * 1.2);
+  for (let i = 0; i < 3; i++) { const v = 0.94 + i * 0.06, w = 0.13 - i * 0.03; P.line(TT([[-w, v], [w, v]]), shade(GOLD, -0.2), iw * 1.2, 'gold', 0); for (let k = -2; k <= 2; k++) P.dot(...T(k * w / 2.5, v + 0.02), S * 0.006, k % 2 ? red : GOLD); }
+  P.shape(TT(chaikin([[0, 0.92], [0.03, 0.96], [0, 1.0], [-0.03, 0.96]], 1)), red, 252, '#7a4a10', iw * 0.8); P.dot(...T(0, 0.96), S * 0.008, '#f6f1e4');
+  for (const s of [-1, 1]) P.shape(TT(chaikin([[s * 0.15, 0.86], [s * 0.24, 0.92], [s * 0.22, 0.98], [s * 0.16, 0.94]], 1)), GOLD, 250, '#7a4a10', iw * 0.8);
+  P.shape(TT(chaikin([[-0.012, 1.15], [0.012, 1.15], [0, 1.21]], 1)), GOLD2, 252, '#7a4a10', iw * 0.6); P.dot(...T(0, 1.2), S * 0.008, red);
+  for (let i = 0; i < 9; i++) P.dot(...T(-0.12 + i * 0.03, 0.835 - Math.sin(i / 8 * Math.PI) * 0.02), S * 0.006, '#f6f1e4');
   // lower right hand: the broken tusk as a stylus, writing
   if (o.hand !== 0) ganeshaHand(P, o);
   P.solid = false;
@@ -171,14 +241,16 @@ function ganesha(P, o) {
 function ganeshaHand(P, o) {
   const x = o.x, y = o.y, S = o.S || 400, t = o.t || 0, f = o.f || 1;
   const T = (u, v) => [x + u * S * f, y - v * S]; const TT = (a) => a.map(p => T(p[0], p[1])); const iw = Math.max(0.8, S / 360);
-  const skin = o.skin || '#e08a5e';
+  const skin = o.skin || '#e8906a', skD = shade(skin, -0.28);
   const k = o.write === 0 ? 0.6 : (Math.sin(t * 2.2) * 0.5 + 0.5), ww = Math.sin(t * 17) * 0.006;
-  const hand = [-0.18 + k * 0.22, 0.25 + ww], el = [0.3, 0.32];
+  const hand = [-0.18 + k * 0.22, 0.26 + ww], el = [0.31, 0.32];
   P.solid = true;
-  P.shape(TT(capsule([0.22, 0.48], el, 0.045, 0.04)), skin, 250, INK, iw); P.shape(TT(capsule(el, hand, 0.04, 0.035)), skin, 250, INK, iw);
-  P.line(TT([[el[0] - 0.02, el[1] + 0.06], [el[0] + 0.03, el[1] + 0.08]]), GOLD, iw * 2.4, 'gold', 0);
-  P.shape(TT(circlePts(hand[0], hand[1], 0.034, 10)), skin, 252, INK, iw);
-  P.line(TT([[hand[0] + 0.01, hand[1] + 0.03], [hand[0] - 0.03, hand[1] - 0.025]]), '#f6f1e4', iw * 3, 'ink', 0);   // tusk stylus
+  P.shape(TT(chaikin(capsule([0.22, 0.48], el, 0.05, 0.045), 1)), skin, 250, INK, iw); P.shape(TT(chaikin(capsule(el, hand, 0.045, 0.036), 1)), skin, 250, INK, iw);
+  P.line(TT([[el[0] - 0.03, el[1] + 0.06], [el[0] + 0.035, el[1] + 0.07]]), GOLD, iw * 3, 'gold', 0);
+  const bx = hand[0] + (el[0] - hand[0]) * 0.18, by = hand[1] + (el[1] - hand[1]) * 0.18; P.line(TT([[bx - 0.015, by + 0.03], [bx + 0.02, by - 0.01]]), GOLD, iw * 2.4, 'gold', 0);   // bangle
+  P.shape(TT(chaikin(circlePts(hand[0], hand[1], 0.036, 10, 1.1, 0.9), 1)), skin, 252, INK, iw);
+  for (let i = 0; i < 3; i++) P.line(TT([[hand[0] - 0.03 + i * 0.018, hand[1] + 0.025], [hand[0] - 0.034 + i * 0.018, hand[1] - 0.005]]), skD, iw * 0.7, 'ink', 0);
+  P.shape(TT(chaikin([[hand[0] + 0.012, hand[1] + 0.045], [hand[0] + 0.022, hand[1] + 0.04], [hand[0] - 0.03, hand[1] - 0.03], [hand[0] - 0.036, hand[1] - 0.032]], 1)), '#fbf4e6', 252, INK, iw * 0.7);   // tusk stylus
   P.solid = false;
 }
 
@@ -188,24 +260,55 @@ function vyasaSeated(P, o) {
   const T = (u, v) => [x + u * S * f, y - v * S]; const TT = (a) => a.map(p => T(p[0], p[1])); const iw = Math.max(0.8, S / 360);
   const skin = '#6e4a30', cloth = '#c8762a';
   P.solid = true; P.noSilhouette();
-  // deer-skin mat
-  P.shape(TT(chaikin([[-0.6, 0.0], [0.6, 0.0], [0.56, -0.07], [-0.56, -0.07]], 1)), '#a07a4a', 245, INK, iw);
-  for (let i = 0; i < 14; i++) P.dot(...T(-0.5 + i * 0.075, -0.035), S * 0.008, '#f4efe2', 220);
-  // crossed legs
-  P.shape(TT(chaikin([[-0.5, 0.02], [0.5, 0.02], [0.5, 0.14], [0.3, 0.2], [-0.3, 0.2], [-0.5, 0.14]], 2)), cloth, 245, INK, iw * 1.1);
-  for (const s of [-1, 1]) P.shape(TT(circlePts(s * 0.4, 0.08, 0.05, 12, 1.2, 0.7)), skin, 245, INK, iw);
-  // torso under the bust
-  P.shape(TT(chaikin([[-0.24, 0.16], [0.24, 0.16], [0.26, 0.4], [0.18, 0.5], [-0.18, 0.5], [-0.26, 0.4]], 2)), skin, 245, INK, iw);
-  P.shape(TT([[-0.26, 0.42], [0.06, 0.52], [0.26, 0.2], [0.1, 0.16]]), cloth, 240, INK, iw);   // shoulder cloth
-  // hands: one on the knee, one raised in the teaching gesture
-  P.shape(TT(capsule([0.2, 0.42], [0.34, 0.3], 0.045, 0.04)), skin, 248, INK, iw); P.shape(TT(capsule([0.34, 0.3], [0.38, 0.14], 0.04, 0.035)), skin, 248, INK, iw);
-  P.shape(TT(circlePts(0.38, 0.13, 0.035, 10)), skin, 250, INK, iw);
+  const skD = shade(skin, -0.3), skL = shade(skin, 0.18), clD = shade(cloth, -0.3), clL = shade(cloth, 0.15), bark = '#8a5a32';
+  const limb = (a, b, w0, w1) => chaikin(capsule(a, b, w0, w1), 1);
+  // deer-skin mat with its spots, the head and legs trailing
+  P.shape(TT(chaikin([[-0.66, 0.0], [-0.5, 0.03], [0.5, 0.03], [0.66, 0.0], [0.7, -0.05], [0.6, -0.09], [-0.6, -0.09], [-0.7, -0.05]], 2)), '#b08450', 245, INK, iw);
+  P.wash(TT([[-0.6, -0.06], [0.6, -0.06], [0.6, -0.09], [-0.6, -0.09]]), '#7a5430', 120, 0.02);
+  for (let i = 0; i < 16; i++) P.dot(...T(-0.56 + i * 0.075 + (i % 2) * 0.02, -0.03 - (i % 3) * 0.015), S * 0.009, '#f4efe2', 220);
+  P.shape(TT(chaikin([[0.66, 0.0], [0.78, 0.01], [0.82, -0.03], [0.74, -0.06], [0.68, -0.05]], 1)), '#9a7040', 245, INK, iw * 0.8);
+  // wooden water pot (kamandalu)
+  P.shape(TT(chaikin([[0.5, 0.02], [0.62, 0.02], [0.66, 0.08], [0.62, 0.15], [0.5, 0.15], [0.46, 0.08]], 2)), '#5a3a20', 250, INK, iw); P.wash(TT(chaikin([[0.52, 0.05], [0.56, 0.05], [0.56, 0.12], [0.52, 0.12]], 1)), '#8a6040', 120, 0.02);
+  P.line(TT(chaikin([[0.6, 0.15], [0.62, 0.22], [0.54, 0.24], [0.52, 0.16]], 2, false)), '#3a2412', iw * 1.6, 'ink', 0.3); P.line(TT([[0.64, 0.12], [0.7, 0.16]]), '#5a3a20', iw * 2.2, 'ink', 0);
+  // crossed legs in bark-coloured ochre cloth, with folds and a hem
+  P.shape(TT(chaikin([[-0.52, 0.02], [0.52, 0.02], [0.54, 0.12], [0.36, 0.21], [0.0, 0.18], [-0.36, 0.21], [-0.54, 0.12]], 2)), cloth, 245, INK, iw * 1.1);
+  P.wash(TT([[-0.52, 0.03], [0.52, 0.03], [0.5, 0.08], [-0.5, 0.08]]), clD, 110, 0.02);
+  P.line(TT([[-0.52, 0.04], [0.52, 0.04]]), bark, iw * 3, 'ink', 0); P.line(TT([[-0.52, 0.06], [0.52, 0.06]]), '#e8c070', iw * 1, 'gold', 0);
+  for (let i = 0; i < 6; i++) P.line(TT([[-0.44 + i * 0.17, 0.08], [-0.38 + i * 0.16, 0.17]]), clD, iw * 0.7, 'ink', 0.4);
+  // the upturned sole of one foot on the thigh
+  P.shape(TT(chaikin([[-0.34, 0.12], [-0.2, 0.14], [-0.14, 0.17], [-0.2, 0.2], [-0.32, 0.18]], 2)), skin, 250, INK, iw); P.wash(TT(chaikin([[-0.3, 0.14], [-0.2, 0.155], [-0.21, 0.18]], 1)), '#a0705a', 140, 0.02);
+  for (let i = 0; i < 4; i++) P.dot(...T(-0.15 - i * 0.012, 0.185 - i * 0.004), S * 0.006, skD);
+  // torso: lean chest, ribs and the line of the belly
+  P.shape(TT(chaikin([[-0.23, 0.16], [0.23, 0.16], [0.25, 0.3], [0.24, 0.44], [0.17, 0.52], [-0.17, 0.52], [-0.24, 0.44], [-0.25, 0.3]], 2)), skin, 245, INK, iw);
+  P.wash(TT(chaikin([[0.1, 0.18], [0.24, 0.3], [0.22, 0.46], [0.12, 0.4]], 1)), skD, 120, 0.03); P.wash(TT(chaikin([[-0.2, 0.3], [-0.08, 0.28], [-0.06, 0.42], [-0.18, 0.44]], 1)), skL, 90, 0.03);
+  for (let i = 0; i < 3; i++) P.line(TT(chaikin([[-0.16, 0.42 - i * 0.04], [-0.09, 0.4 - i * 0.04], [-0.04, 0.41 - i * 0.04]], 1, false)), skD, iw * 0.7, 'ink', 0.5);
+  P.line(TT([[0, 0.3], [0, 0.36]]), skD, iw * 0.8, 'ink', 0.5);
+  // sacred thread and rudraksha mala
+  P.line(TT([[-0.17, 0.51], [-0.02, 0.36], [0.18, 0.18]]), '#f6f1e4', iw * 1.6, 'ink', 0.5);
+  for (let i = 0; i <= 22; i++) { const k = i / 22, a = Math.PI * (1.08 + k * 0.84); P.dot(...T(Math.cos(a) * 0.15, 0.53 + Math.sin(a) * 0.24), S * 0.011, '#6a2a1a'); }
+  // the upper cloth draped over the left shoulder, with a dark border and folds
+  const dr = chaikin([[-0.25, 0.44], [-0.12, 0.54], [0.04, 0.52], [0.26, 0.24], [0.25, 0.16], [0.1, 0.16], [-0.04, 0.3], [-0.2, 0.36]], 2);
+  P.shape(TT(dr), cloth, 245, INK, iw); P.wash(TT(chaikin([[0.04, 0.5], [0.24, 0.24], [0.18, 0.2], [0.02, 0.4]], 1)), clD, 120, 0.03);
+  P.wash(TT(chaikin([[-0.2, 0.42], [-0.08, 0.5], [-0.06, 0.45], [-0.16, 0.38]], 1)), clL, 110, 0.03);
+  P.line(TT(chaikin([[-0.2, 0.36], [-0.04, 0.3], [0.1, 0.16]], 1, false)), bark, iw * 2.6, 'ink', 0.4);
+  for (let i = 0; i < 4; i++) P.line(TT([[-0.1 + i * 0.07, 0.48 - i * 0.07], [-0.02 + i * 0.07, 0.36 - i * 0.06]]), clD, iw * 0.7, 'ink', 0.5);
+  // right arm: resting on the knee, holding the rosary
+  P.shape(TT(limb([0.2, 0.46], [0.33, 0.3], 0.05, 0.042)), skin, 248, INK, iw); P.shape(TT(limb([0.33, 0.3], [0.38, 0.15], 0.042, 0.034)), skin, 248, INK, iw);
+  P.wash(TT(limb([0.25, 0.42], [0.33, 0.31], 0.015, 0.012)), skD, 110, 0.03);
+  P.line(TT([[0.35, 0.21], [0.4, 0.2]]), '#3a2412', iw * 2.2, 'ink', 0);   // rudraksha bracelet
+  P.shape(TT(chaikin([[0.35, 0.16], [0.42, 0.16], [0.44, 0.12], [0.4, 0.09], [0.35, 0.1]], 2)), skin, 250, INK, iw);
+  for (let i = 0; i < 3; i++) P.line(TT([[0.37 + i * 0.02, 0.15], [0.375 + i * 0.02, 0.1]]), skD, iw * 0.7, 'ink', 0);
+  for (let i = 0; i < 20; i++) { const a = i / 20 * Math.PI * 2; P.dot(...T(0.4 + Math.cos(a) * 0.045, 0.06 + Math.sin(a) * 0.055), S * 0.009, '#5a2a1a'); }
+  // left hand raised in the teaching mudra, thumb and finger joined
   const lift = Math.sin(t * 1.1) * 0.01;
-  P.shape(TT(capsule([-0.2, 0.42], [-0.32, 0.3], 0.045, 0.04)), skin, 248, INK, iw); P.shape(TT(capsule([-0.32, 0.3], [-0.28, 0.48 + lift], 0.04, 0.035)), skin, 248, INK, iw);
-  P.shape(TT(circlePts(-0.28, 0.5 + lift, 0.036, 10)), skin, 250, INK, iw);
-  P.dot(...T(-0.28, 0.5 + lift), S * 0.008, '#f6f1e4');
-  // rosary
-  for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2; P.dot(...T(0.38 + Math.cos(a) * 0.04, 0.08 + Math.sin(a) * 0.05), S * 0.008, '#5a2a1a'); }
+  P.shape(TT(limb([-0.2, 0.46], [-0.33, 0.31], 0.05, 0.042)), skin, 248, INK, iw); P.shape(TT(limb([-0.33, 0.31], [-0.29, 0.46 + lift], 0.042, 0.034)), skin, 248, INK, iw);
+  P.wash(TT(limb([-0.26, 0.42], [-0.32, 0.33], 0.015, 0.012)), skD, 110, 0.03);
+  P.line(TT([[-0.33, 0.4 + lift], [-0.27, 0.41 + lift]]), '#3a2412', iw * 2.2, 'ink', 0);
+  const hx = -0.29, hy = 0.5 + lift;
+  P.shape(TT(chaikin([[hx - 0.035, hy - 0.035], [hx + 0.03, hy - 0.035], [hx + 0.035, hy + 0.02], [hx - 0.035, hy + 0.02]], 2)), skin, 250, INK, iw);
+  for (let i = 0; i < 3; i++) P.shape(TT(limb([hx - 0.012 + i * 0.022, hy + 0.015], [hx - 0.014 + i * 0.024, hy + 0.07 - Math.abs(i - 1) * 0.01], 0.011, 0.009)), skin, 252, INK, iw * 0.7);
+  P.circle(...T(hx - 0.04, hy + 0.01), S * 0.014, skin, 252, INK, iw * 0.7); P.dot(...T(hx - 0.04, hy + 0.01), S * 0.005, skD);
+  P.dot(...T(hx, hy - 0.01), S * 0.008, '#c1121f');
   P.solid = false;
   // the head and bust from the portrait painter, scaled to the seated body
   portrait(P, 'vyasa', { x: x + 0.03 * S * f, y: y - 0.7 * S, R: S * 0.125, f, expr: o.expr || 'calm', t, talk: o.talk });
