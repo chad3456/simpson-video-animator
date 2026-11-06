@@ -523,3 +523,27 @@ PIECES.tunnel = (P, t, a) => {   // the tunnel under the house of lac, one lamp 
   for (let k = 1; k < 6; k++) { const r = 1 - k * 0.15, pp = []; for (let i = 0; i <= 20; i++) { const a2 = Math.PI * i / 20; pp.push([800 - Math.cos(a2) * 620 * r, 860 - Math.sin(a2) * 560 * r - k * 30]); } P.line(pp, '#5a3a24', 2, 'ink', 0.5); }
   const lx = 300 + ((t * 40) % 1000); P.wash(circlePts(lx, 620, 200, 24), '#ff9040', 90, 0.02, 0.4, 0.3); P.dot(lx, 620, 10, '#ffd080', 250);
 };
+
+// ---------------------------------------------------------------- Episode 5 additions ---
+Object.assign(FACES, {
+  jarasandha: { skin: '#8a5a3a', W: 0.96, cheek: 0.2, long: 1.04, jaw: 0.95, chin: 1.04, nose: 'broad', eye: 0.84, brow: 'heavy', lips: '#6a2a20', stache: 'curl', beard: 'full', hair: '#100b08', hairStyle: 'wild', crown: 'royal', tilak: 'tripundra', ear: 'ring', chest: 'torque', cloth: '#4a1a3a', expr: 'cruel', neck: 1.3 },
+  shishupala: { skin: '#b07a50', W: 0.74, cheek: 0.3, jaw: 0.45, chin: 1.0, nose: 'hook', eye: 0.94, brow: 'arch', lips: '#8a2e26', stache: 'curl', beard: null, hair: '#16100c', hairStyle: 'straight', crown: 'mukut', tilak: 'red', ear: 'kundala', chest: 'pearls', cloth: '#6a1a5a', expr: 'cruel' },
+  maya: { skin: '#5a4a6a', W: 0.78, cheek: 0.4, jaw: 0.5, chin: 1.0, nose: 'broad', eye: 1.02, brow: 'heavy', lips: '#5a2a3a', stache: 'full', beard: 'short', hair: '#1a1020', hairStyle: 'curls', crown: 'band', tilak: 'red', ear: 'ring', chest: 'torque', cloth: '#3a4a7a', expr: 'awe' },
+  narada: { skin: '#e0c8a0', W: 0.68, long: 1.04, jaw: 0.2, chin: 0.98, nose: 'fine', eye: 1.04, brow: 'arch', lips: '#a04a4a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'jata', crown: 'bun', tilak: 'namam', ear: 'kundala', chest: 'rudraksha', cloth: '#f4efe2', expr: 'smile', sheen: '#fff0d0' },
+  agni: { skin: '#d8603a', W: 0.76, cheek: 0.4, jaw: 0.4, chin: 1.0, nose: 'straight', eye: 1.0, brow: 'arch', lips: '#8a1a1a', stache: 'full', beard: 'full', hair: '#f0a020', hairStyle: 'wild', crown: 'jata', tilak: 'red', ear: 'kundala', chest: 'kavacha', cloth: '#c02a10', expr: 'divine', sheen: '#ffd060' },
+});
+Object.assign(CAST, {
+  jarasandha: { skin: '#8a5a3a', dhoti: '#4a1a3a', patka: '#d2a23a', scarf: null, crown: 'mukut', hair: '#100b08', beard: 'short', jewel: GOLD, bulk: 1.35 },
+  shishupala: { skin: '#b07a50', dhoti: '#6a1a5a', patka: '#d2a23a', scarf: '#c7362b', crown: 'mukut', hair: '#16100c', beard: 'stache', jewel: GOLD },
+  maya: { skin: '#5a4a6a', dhoti: '#3a4a7a', patka: '#c9b57a', scarf: null, crown: 'band', hair: '#1a1020', beard: 'short', jewel: '#c9b57a' },
+});
+PIECES.mayaHall = (P, t, a) => {   // the hall of illusions: a floor like water, water like a floor, pillars of crystal
+  P.solid = true; const g = '#cfe8f0';
+  P.flat([[-60, 560], [1660, 560], [1660, 960], [-60, 960]], '#4a6a7a');
+  for (let i = 0; i < 9; i++) for (let j = 0; j < 4; j++) { const x = -40 + i * 200 + (j % 2) * 100, y = 600 + j * 90; P.shape([[x, y], [x + 100, y - 20], [x + 200, y], [x + 100, y + 20]], j % 2 ? '#6a9aaa' : '#8ab8c4', 200, '#2a4a5a', 0.6); }
+  P.wash(circlePts(800, 780, 300, 30, 1, 0.3), '#3a7aa0', 160, 0.02, 0.3, 0.2);
+  for (const x of [180, 460, 1140, 1420]) { P.shape([[x - 34, 560], [x + 34, 560], [x + 30, 40], [x - 30, 40]], g, 150, '#6a9aaa', 1); P.line([[x - 10, 520], [x - 6, 80]], '#ffffff', 2, 'ink', 0.2); P.shape([[x - 50, 60], [x + 50, 60], [x + 40, 20], [x - 40, 20]], GOLD, 220, INK, 0.8); }
+  P.shape(chaikin([[300, 30], [800, -60], [1300, 30], [1300, 70], [800, -10], [300, 70]], 2), GOLD2, 220, INK, 1);
+  for (let i = 0; i < 40; i++) { const x = (i * 97) % 1600, y = 80 + (i * 53) % 440, k = 0.5 + 0.5 * Math.sin(t * 2 + i); P.dot(x, y, 3 * k, '#ffffff', 200 * k); }
+  P.solid = false;
+};
