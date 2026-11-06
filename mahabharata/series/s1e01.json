@@ -608,8 +608,8 @@
      "draw": "ganesha",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300,
+      "y": 900,
+      "S": 700,
       "hand": 0
      }
     },
@@ -620,8 +620,8 @@
      "draw": "ganeshaHand",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300
+      "y": 900,
+      "S": 700
      },
      "every": 3
     },
@@ -985,8 +985,8 @@
      "draw": "ganesha",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300,
+      "y": 900,
+      "S": 700,
       "hand": 0
      },
      "src": "s1e01_a_cond1_gclose"
@@ -998,8 +998,8 @@
      "draw": "ganeshaHand",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300
+      "y": 900,
+      "S": 700
      },
      "every": 3,
      "src": "s1e01_a_cond1_ghand"
@@ -6388,8 +6388,8 @@
      "draw": "ganesha",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300,
+      "y": 900,
+      "S": 700,
       "hand": 0
      },
      "src": "s1e01_a_cond1_gclose"
@@ -6401,8 +6401,8 @@
      "draw": "ganeshaHand",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300
+      "y": 900,
+      "S": 700
      },
      "every": 3,
      "src": "s1e01_a_cond1_ghand"
@@ -7088,8 +7088,8 @@
      "draw": "ganesha",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300,
+      "y": 900,
+      "S": 700,
       "hand": 0
      },
      "src": "s1e01_a_cond1_gclose"
@@ -7101,8 +7101,8 @@
      "draw": "ganeshaHand",
      "args": {
       "x": 820,
-      "y": 1420,
-      "S": 1300
+      "y": 900,
+      "S": 700
      },
      "every": 3,
      "src": "s1e01_a_cond1_ghand"
@@ -7565,6 +7565,43 @@
     "speed": 0.95,
     "pitch": 0
    },
+   "AMBA": {
+    "voice": "bf_emma:2+af_nicole:1",
+    "speed": 0.95,
+    "pitch": 0
+   },
+   "SHALVA": {
+    "voice": "am_eric:2+am_adam:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KING": {
+    "voice": "am_puck:2+am_eric:1",
+    "speed": 1.0,
+    "pitch": 0.5
+   },
+   "DURVASA": {
+    "voice": "bm_lewis:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SURYA": {
+    "voice": "am_michael:2+am_eric:1",
+    "speed": 0.9,
+    "pitch": -1,
+    "fx": "divine"
+   },
+   "MADRI": {
+    "voice": "af_sky:2+af_bella:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "RADHA": {
+    "voice": "af_nicole:2+af_sky:1",
+    "speed": 0.98,
+    "pitch": 0
+   },
    "VYASAC": {
     "voice": "bm_george:2+bm_fable:1",
     "speed": 0.88,
@@ -7780,6 +7817,43 @@
     "voice": "hf_alpha:2+af_heart:1",
     "speed": 0.95,
     "pitch": 0
+   },
+   "AMBA": {
+    "voice": "hf_alpha:2+bf_emma:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "SHALVA": {
+    "voice": "hm_psi:2+am_eric:1",
+    "speed": 0.95,
+    "pitch": -0.5
+   },
+   "KING": {
+    "voice": "hm_psi:2+am_puck:1",
+    "speed": 1.0,
+    "pitch": 1.0
+   },
+   "DURVASA": {
+    "voice": "hm_omega:2+am_fenrir:1",
+    "speed": 0.9,
+    "pitch": -1.5,
+    "fx": "elder"
+   },
+   "SURYA": {
+    "voice": "hm_psi:2+am_michael:1",
+    "speed": 0.9,
+    "pitch": -1,
+    "fx": "divine"
+   },
+   "MADRI": {
+    "voice": "hf_beta:2+af_sky:1",
+    "speed": 0.95,
+    "pitch": 0.5
+   },
+   "RADHA": {
+    "voice": "hf_alpha:2+af_nicole:1",
+    "speed": 0.98,
+    "pitch": 0.5
    },
    "VYASAC": {
     "voice": "hm_omega",

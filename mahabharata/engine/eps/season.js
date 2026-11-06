@@ -1,7 +1,25 @@
 // Season 1: the frame story (Vyasa recites, Ganesha writes) and the wide landscapes of the epic.
 // Adds faces, figures, sets and pieces on top of lib.js / pieces.js.
 
+Object.assign(WOMEN, {
+  amba: { skin: '#b07a52', sari: '#8a1c3a', border: GOLD }, ambika: { skin: '#c8987a', sari: '#d27a2a', border: GOLD },
+  ambalika: { skin: '#d8b090', sari: '#6a4a9a', border: GOLD }, kuntiY: { skin: '#b88a62', sari: '#c7362b', border: GOLD },
+  gandhariY: { skin: '#c4946a', sari: '#7a5a2a', border: GOLD }, maid: { skin: '#7a4c32', sari: '#e8dcc0', border: '#c9b57a' },
+});
 Object.assign(FACES, {
+  amba: { skin: '#b07a52', W: 0.7, cheek: 0.4, jaw: 0.08, chin: 0.95, nose: 'fine', eye: 1.12, brow: 'arch', lips: '#a3283a', stache: null, beard: null, hair: '#0e0a08', hairStyle: 'woman', crown: 'tikka', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#8a1c3a', female: 1, nath: 1, expr: 'stern' },
+  ambika: { skin: '#c8987a', W: 0.72, cheek: 0.5, jaw: 0.05, chin: 0.94, nose: 'fine', eye: 1.08, brow: 'arch', lips: '#b0404a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'woman', crown: 'flowers', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#d27a2a', female: 1, expr: 'fear' },
+  ambalika: { skin: '#d8b090', W: 0.68, cheek: 0.4, jaw: 0.05, chin: 0.94, nose: 'fine', eye: 1.1, brow: 'arch', lips: '#b05060', stache: null, beard: null, hair: '#2a1a12', hairStyle: 'woman', crown: 'tikka', tilak: 'bindi', ear: 'jhumka', chest: 'pearls', cloth: '#6a4a9a', female: 1, expr: 'fear' },
+  kuntiY: { skin: '#b88a62', W: 0.7, cheek: 0.4, jaw: 0.06, chin: 0.95, nose: 'fine', eye: 1.12, brow: 'arch', lips: '#a0303a', stache: null, beard: null, hair: '#120d0a', hairStyle: 'woman', crown: 'tikka', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#c7362b', female: 1, nath: 1, expr: 'calm' },
+  madri: { skin: '#c8a07e', W: 0.7, cheek: 0.5, jaw: 0.05, chin: 0.94, nose: 'fine', eye: 1.12, brow: 'arch', lips: '#b02a3a', stache: null, beard: null, hair: '#0e0a08', hairStyle: 'woman', crown: 'flowers', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#5a2a6a', female: 1, nath: 1, expr: 'smile' },
+  gandhariY: { skin: '#c4946a', W: 0.67, jaw: 0.1, chin: 0.95, nose: 'fine', eye: 1.1, brow: 'arch', lips: '#a0303a', stache: null, beard: null, hair: '#2a201a', hairStyle: 'woman', crown: 'tikka', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#7a5a2a', female: 1, nath: 1, expr: 'calm' },
+  pandu: { skin: '#d8c0a8', W: 0.72, long: 1.02, jaw: 0.4, chin: 1.0, nose: 'straight', eye: 0.96, brow: 'soft', lips: '#9a5050', stache: 'thin', beard: null, hair: '#2a1a12', hairStyle: 'straight', crown: 'royal', tilak: 'line', ear: 'kundala', chest: 'pearls', cloth: '#f0e8d8', expr: 'calm' },
+  dhritaY: { skin: '#b68a64', W: 0.8, cheek: 0.3, jaw: 0.55, chin: 1.0, nose: 'straight', eye: 0.9, brow: 'soft', lips: '#8a3e34', stache: 'full', beard: 'short', hair: '#1a120d', hairStyle: 'straight', crown: 'royal', tilak: 'chandan', ear: 'kundala', chest: 'pearls', cloth: '#6a1a2a', blind: 1, expr: 'calm' },
+  vichitra: { skin: '#c49a78', W: 0.68, cheek: 0.3, long: 0.98, jaw: 0.15, chin: 0.96, nose: 'fine', eye: 1.0, brow: 'soft', lips: '#a04a4a', stache: 'thin', beard: null, hair: '#1a120d', hairStyle: 'curls', crown: 'mukut', tilak: 'line', ear: 'kundala', chest: 'pearls', cloth: '#2f6f9a', expr: 'calm' },
+  shalva: { skin: '#a8784e', W: 0.74, jaw: 0.55, chin: 1.0, nose: 'aquiline', eye: 0.94, brow: 'arch', lips: '#8a3e34', stache: 'full', beard: null, hair: '#16100c', hairStyle: 'straight', crown: 'mukutLow', tilak: 'line', ear: 'kundala', chest: 'armour', cloth: '#3a5a2a', expr: 'stern' },
+  surya: { skin: '#e8a860', W: 0.76, cheek: 0.4, jaw: 0.3, chin: 0.98, nose: 'straight', eye: 1.02, brow: 'arch', lips: '#b0402a', stache: 'thin', beard: null, hair: '#3a1a0a', hairStyle: 'curls', crown: 'sun', tilak: 'namam', ear: 'makara', chest: 'kavacha', cloth: '#f0a020', expr: 'divine', sheen: '#fff0b0' },
+  durvasa: { skin: '#9a6a44', W: 0.66, long: 1.12, jaw: 0.4, chin: 1.04, nose: 'hook', eye: 0.9, brow: 'whiteFurrow', lips: '#7a3a2a', stache: 'grey', beard: 'grey', hair: '#bdb6aa', hairStyle: 'wild', crown: 'jata', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#b06a2a', expr: 'anger', age: 1 },
+  maid: { skin: '#7a4c32', W: 0.7, cheek: 0.4, jaw: 0.08, chin: 0.95, nose: 'fine', eye: 1.08, brow: 'soft', lips: '#8a3a3a', stache: null, beard: null, hair: '#0c0808', hairStyle: 'woman', crown: 'flowers', tilak: 'bindi', ear: 'jhumka', chest: 'white', cloth: '#e8dcc0', female: 1, expr: 'calm' },
   pratipa: { skin: '#c2916a', W: 0.72, jaw: 0.45, chin: 1.0, nose: 'straight', eye: 0.88, brow: 'white', lips: '#8a5048', stache: 'white', beard: 'long', hair: '#e8e4dc', hairStyle: 'straight', crown: 'royal', tilak: 'chandan', ear: 'kundala', chest: 'pearls', cloth: '#7a1a2a', expr: 'calm', age: 1 },
   vyasa: { skin: '#6e4a30', W: 0.66, long: 1.1, jaw: 0.4, chin: 1.0, nose: 'aquiline', eye: 0.88, brow: 'whiteFurrow', lips: '#6a3a30', stache: 'grey', beard: 'long', hair: '#9a948a', hairStyle: 'jata', crown: 'jata', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#c8762a', expr: 'calm', age: 1 },
   vasishtha: { skin: '#c49a70', W: 0.68, long: 1.08, jaw: 0.4, chin: 1.0, nose: 'straight', eye: 0.86, brow: 'white', lips: '#8a5048', stache: 'white', beard: 'long', hair: '#f1eee6', hairStyle: 'jata', crown: 'jata', tilak: 'tripundra', ear: 'rudra', chest: 'rudraksha', cloth: '#f0e8d0', expr: 'calm', age: 1 },
@@ -11,6 +29,11 @@ Object.assign(FACES, {
   vasu: { skin: '#e0b88a', W: 0.72, cheek: 0.4, jaw: 0.2, chin: 0.96, nose: 'fine', eye: 1.04, brow: 'arch', lips: '#a03a3a', stache: 'thin', beard: null, hair: '#1a120d', hairStyle: 'curls', crown: 'mukut', tilak: 'namam', ear: 'kundala', chest: 'necklace', cloth: '#f0c040', expr: 'smile', sheen: '#fff0b0' },
 });
 Object.assign(CAST, {
+  pandu: { skin: '#d8c0a8', dhoti: '#f0e8d8', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#2a1a12', beard: 'stache', jewel: GOLD },
+  dhritaY: { skin: '#b68a64', dhoti: '#6a1a2a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#1a120d', beard: 'short', jewel: GOLD },
+  vichitra: { skin: '#c49a78', dhoti: '#2f6f9a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#1a120d', beard: null, jewel: GOLD },
+  shalva: { skin: '#a8784e', dhoti: '#3a5a2a', patka: '#d2a23a', scarf: '#6a4a2a', crown: 'mukut', hair: '#16100c', beard: 'stache', jewel: GOLD },
+  king: { skin: '#a8784e', dhoti: '#6a2a4a', patka: '#d2a23a', scarf: '#2f6f9a', crown: 'mukut', hair: '#16100c', beard: 'stache', jewel: GOLD },
   pratipa: { skin: '#c2916a', dhoti: '#7a1a2a', patka: '#d2a23a', scarf: '#e0a43a', crown: 'mukut', hair: '#e8e4dc', beard: 'long', jewel: GOLD, age: 1 },
   vyasa: { skin: '#6e4a30', dhoti: '#c8762a', patka: '#8a4a1a', scarf: '#d8903a', crown: 'bun', hair: '#9a948a', beard: 'long', jewel: '#cfc6a8', age: 1 },
   vasishtha: { skin: '#c49a70', dhoti: '#f0e8d0', patka: '#c9b57a', scarf: '#f4efe2', crown: 'bun', hair: '#f1eee6', beard: 'long', jewel: '#cfc6a8', age: 1 },
@@ -77,12 +100,12 @@ function elephant(P, x, y, s, f = 1, col = '#7a6a64', t = 0, howdah = 1) {   // 
   P.solid = false;
 }
 function tinyFolk(P, x, y, s, col, t = 0, ph = 0, load = 0) {   // a walking villager for wide shots
-  P.fast = true; const b = Math.sin(t * 5 + ph) * s * 0.02, sw = Math.sin(t * 5 + ph) * s * 0.08;
+  const wasFast = P.fast; P.fast = true; const b = Math.sin(t * 5 + ph) * s * 0.02, sw = Math.sin(t * 5 + ph) * s * 0.08;
   P.shape([[x - s * 0.06, y - s * 0.25 + b], [x + s * 0.06, y - s * 0.25 + b], [x + s * 0.09, y - s * 0.62 + b], [x - s * 0.09, y - s * 0.62 + b]], col, 255, null);
   P.line([[x, y - s * 0.27 + b], [x - sw, y]], '#2a1a10', Math.max(1, s * 0.03), 'ink', 0); P.line([[x, y - s * 0.27 + b], [x + sw, y]], '#2a1a10', Math.max(1, s * 0.03), 'ink', 0);
   P.dot(x, y - s * 0.7 + b, s * 0.07, '#5a3a26');
   if (load) P.shape([[x - s * 0.1, y - s * 0.78 + b], [x + s * 0.1, y - s * 0.78 + b], [x + s * 0.07, y - s * 0.92 + b], [x - s * 0.07, y - s * 0.92 + b]], '#b5774a', 255, null);
-  P.fast = false;
+  P.fast = wasFast;
 }
 
 // ---------------------------------------------------------------- Ganesha, the scribe ---
@@ -129,8 +152,8 @@ function ganesha(P, o) {
   P.shape(TT(chaikin([[-0.15, 0.62], [-0.17, 0.78], [-0.1, 0.86], [0.1, 0.86], [0.17, 0.78], [0.15, 0.62], [0.08, 0.56], [-0.08, 0.56]], 2)), skin, 250, INK, iw * 1.1);
   P.wash(TT([[0.1, 0.62], [0.16, 0.7], [0.14, 0.8], [0.08, 0.72]]), skD, 90, 0.03);
   // trunk curling to the side, tusks (one whole, one broken)
-  const tr = [[0, 0.66], [-0.01, 0.56], [-0.04, 0.46], [-0.1, 0.4], [-0.16, 0.42], [-0.17, 0.48], [-0.13, 0.5]];
-  P.shape(TT(ribbon(chaikin(tr, 2, false), 0.05, 0.016)), skin, 252, INK, iw);
+  const tr = [[0, 0.68], [-0.005, 0.6], [-0.02, 0.52], [-0.06, 0.45], [-0.12, 0.41], [-0.17, 0.43], [-0.18, 0.48], [-0.14, 0.5]];
+  P.shape(TT(ribbon(chaikin(tr, 2, false), 0.07, 0.018)), skin, 252, INK, iw);
   for (let i = 1; i < 6; i++) { const p = tr[i]; P.line(TT([[p[0] - 0.02, p[1]], [p[0] + 0.02, p[1] + 0.005]]), skD, iw * 0.6, 'ink', 0); }
   P.shape(TT([[-0.05, 0.6], [-0.09, 0.57], [-0.12, 0.5], [-0.1, 0.5], [-0.06, 0.56], [-0.03, 0.58]]), '#f6f1e4', 252, INK, iw * 0.8);   // whole tusk
   P.shape(TT([[0.04, 0.6], [0.07, 0.58], [0.075, 0.555], [0.05, 0.57]]), '#f6f1e4', 252, INK, iw * 0.8);   // broken stub
@@ -275,6 +298,12 @@ Object.assign(SETS, {
 
 // ---------------------------------------------------------------- pieces ---
 Object.assign(PIECES, {
+  // a reed basket carrying a baby down the river, golden light inside
+  basket: (P, t, a) => { P.fast = true; const x = (a.x || 800) + t * (a.speed || 18), y = (a.y || 720) + Math.sin(t * 1.3) * 4, s = a.s || 1; P.solid = true;
+    P.wash(circlePts(x, y - 30 * s, 90 * s, 20), '#ffd890', 70, 0.04); P.shape([[x - 70 * s, y - 20 * s], [x + 70 * s, y - 20 * s], [x + 54 * s, y + 18 * s], [x - 54 * s, y + 18 * s]], '#b8964a', 250, INK, 1);
+    for (let i = 0; i < 7; i++) P.line([[x - 62 * s + i * 20 * s, y - 18 * s], [x - 50 * s + i * 17 * s, y + 16 * s]], '#7a5a2a', 1, 'ink', 0);
+    P.shape(circlePts(x, y - 26 * s, 34 * s, 16, 1.3, 0.5), '#f0c040', 250, INK, 0.8); P.circle(x + 18 * s, y - 34 * s, 12 * s, '#c8925c', 250, INK, 0.7); P.dot(x + 14 * s, y - 34 * s, 5 * s, GOLD2);
+    P.solid = false; },
   ganesha: (P, t, a) => ganesha(P, Object.assign({ t }, a)),
   ganeshaHand: (P, t, a) => { P.fast = true; ganeshaHand(P, Object.assign({ t }, a)); },
   vyasa: (P, t, a) => vyasaSeated(P, Object.assign({ t }, a)),
@@ -304,7 +333,7 @@ Object.assign(PIECES, {
   },
   // a royal procession crossing a wide landscape, small figures
   procession: (P, t, a) => {
-    const y = a.y || 760, s = a.s || 120, dir = a.dir || 1, x0 = a.x0 ?? -200, sp = a.speed || 30, n = (a.cnt || a.n) || 10;
+    P.fast = true; const y = a.y || 760, s = a.s || 120, dir = a.dir || 1, x0 = a.x0 ?? -200, sp = a.speed || 30, n = (a.cnt || a.n) || 10;
     for (let i = 0; i < n; i++) {
       const x = x0 + (i * s * 1.6 + t * sp) * dir, kind = i % 5;
       if (kind === 2) elephant(P, x, y, s * 1.1, dir, '#7a6a64', t + i);
@@ -315,9 +344,9 @@ Object.assign(PIECES, {
   // villagers along a riverbank (static or walking)
   folk: (P, t, a) => { const r = mulberry(a.seed || 5); for (let i = 0; i < ((a.cnt || a.n) || 14); i++) { const x = (a.x0 || 0) + r() * (a.w || 1600) + t * (a.speed || 0) * (i % 2 ? 1 : -1), y = (a.y || 820) + r() * (a.dy || 60), s = (a.s || 60) * (0.8 + r() * 0.4); tinyFolk(P, x, y, s, ['#b3202a', '#e9b52f', '#2f6f9a', '#f4efe2', '#5a7a3a'][i % 5], a.speed ? t : 0, i, r() > 0.6); } },
   // the boat that carries Satyavati, small and far
-  farBoat: (P, t, a) => { const x = (a.x || 800) + t * (a.speed || 0), y = (a.y || 700) + Math.sin(t * 1.4) * 3, s = a.s || 80; P.solid = true; P.shape([[x - s, y - s * 0.1], [x + s, y - s * 0.1], [x + s * 0.7, y + s * 0.18], [x - s * 0.7, y + s * 0.18]], '#6a3a1a', 245, INK, 0.8); P.line([[x, y - s * 0.1], [x, y - s * 0.9]], '#3a2a1a', 1.2, 'ink', 0); P.shape([[x + 2, y - s * 0.86], [x + s * 0.5, y - s * 0.5], [x + 2, y - s * 0.2]], '#e8dcc0', 240, INK, 0.6); tinyFolk(P, x - s * 0.4, y - s * 0.1, s * 0.7, '#2f8a6a', 0, 0); P.solid = false; },
+  farBoat: (P, t, a) => { P.fast = true; const x = (a.x || 800) + t * (a.speed || 0), y = (a.y || 700) + Math.sin(t * 1.4) * 3, s = a.s || 80; P.solid = true; P.shape([[x - s, y - s * 0.1], [x + s, y - s * 0.1], [x + s * 0.7, y + s * 0.18], [x - s * 0.7, y + s * 0.18]], '#6a3a1a', 245, INK, 0.8); P.line([[x, y - s * 0.1], [x, y - s * 0.9]], '#3a2a1a', 1.2, 'ink', 0); P.shape([[x + 2, y - s * 0.86], [x + s * 0.5, y - s * 0.5], [x + 2, y - s * 0.2]], '#e8dcc0', 240, INK, 0.6); tinyFolk(P, x - s * 0.4, y - s * 0.1, s * 0.7, '#2f8a6a', 0, 0); P.solid = false; },
   // a hunting party of riders (wide shot)
-  riders: (P, t, a) => { const n = (a.cnt || a.n) || 3, y = a.y || 800, s = a.s || 160; for (let i = 0; i < n; i++) { const x = (a.x || 300) + i * s * 1.3 + t * (a.speed || 60); horse(P, x, y + i * 10, s, a.f || 1, t + i * 0.4, i ? '#cfc6ae' : '#f2ede0', 1); tinyFolk(P, x + s * 0.05, y - s * 0.62 + i * 10, s * 0.7, i ? '#2f4f8f' : '#7a1a2a', 0, 0); } },
+  riders: (P, t, a) => { P.fast = true; const n = (a.cnt || a.n) || 3, y = a.y || 800, s = a.s || 160; for (let i = 0; i < n; i++) { const x = (a.x || 300) + i * s * 1.3 + t * (a.speed || 60); horse(P, x, y + i * 10, s, a.f || 1, t + i * 0.4, i ? '#cfc6ae' : '#f2ede0', 1); tinyFolk(P, x + s * 0.05, y - s * 0.62 + i * 10, s * 0.7, i ? '#2f4f8f' : '#7a1a2a', 0, 0); } },
   // a duel seen from afar: two archers, arrows streaking between them
   duel: (P, t, a) => { const xL = a.xL || 360, xR = a.xR || 1240, y = a.y || 780, s = a.s || 160; P.fast = true; for (let i = 0; i < 14; i++) { const ph = (t * 0.9 + i / 14) % 1, dir = i % 2 ? 1 : -1, x = dir > 0 ? xL + (xR - xL) * ph : xR - (xR - xL) * ph, yy = y - s * 0.7 - Math.sin(ph * 3.14) * 120 - (i % 3) * 10; P.line([[x, yy], [x - dir * 40, yy + 4]], dir > 0 ? '#ffe0a0' : '#c0d8ff', 2, 'ink', 0); } P.fast = false; },
 });

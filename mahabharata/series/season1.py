@@ -27,8 +27,8 @@ def CAVE_V(expr='calm'):   # Vyasa close: portrait against the dark cave
             sh(piece('flick', 'lampFlicker', k='anim', every=3, add=True, at=[[520, 742, 1.1], [1100, 742, 1.1]]), 'cave_flick')]
 def CAVE_G():              # Ganesha close: the scribe and his leaf
     return [sh(bg(set='cave', view='night', lamps=[520, 1100]), 'cave_bg_night'),
-            sh(piece('gclose', 'ganesha', x=820, y=1420, S=1300, hand=0), 'ganesha_close'),
-            sh(piece('ghand', 'ganeshaHand', k='anim', every=3, x=820, y=1420, S=1300), 'ganesha_close_hand'),
+            sh(piece('gclose', 'ganesha', x=820, y=900, S=700, hand=0), 'ganesha_close'),
+            sh(piece('ghand', 'ganeshaHand', k='anim', every=3, x=820, y=900, S=700), 'ganesha_close_hand'),
             sh(piece('flick', 'lampFlicker', k='anim', every=3, add=True, at=[[520, 742, 1.1], [1100, 742, 1.1]]), 'cave_flick')]
 CAVE_CAM = dict(wide=[[800, 470, 1.0], [800, 470, 1.06]], two=[[780, 560, 1.35], [780, 560, 1.42]], vy=[[520, 520, 1.7], [520, 510, 1.8]],
                 ga=[[1050, 500, 1.6], [1050, 490, 1.7]], hand=[[980, 650, 2.4], [1000, 650, 2.6]])
@@ -549,6 +549,466 @@ EP(1, 'The Scribe and the Vow', 'लेखक और प्रतिज्ञा
     CAVE('night'), cam=[[800, 520, 1.3], [800, 450, 1.0]], amb='night', tout='fade', min=12),
 ])
 
+# =============================================================== EPISODE 2 ===
+EP(2, "Amba's Curse and the Blind King", 'अंबा का शाप और अंधा राजा', 'A wronged princess, and the three sons of Hastinapura.', 'एक अपमानित राजकुमारी, और हस्तिनापुर के तीन पुत्र।', [
+  S('a_cave', 'mystery', [
+      ln('VYASA', 'The lamps were refilled. The scribe had sharpened his broken tusk. And the old sage began again.',
+                  'दीये फिर भरे गए। लेखक ने अपना टूटा दाँत फिर से तीखा किया। और वृद्ध ऋषि ने फिर से आरंभ किया।', at=5.0)],
+    CAVE('night'), cam=[[800, 520, 1.3], [800, 470, 1.05]], amb='night', min=12, eptitle=1, tin='fade'),
+  S('a_recall', 'krishna', [
+      ln('GANESHA', 'You left us with a vow, Muni. A prince who gave up everything, standing behind a child on a throne.',
+                    'आपने हमें एक प्रतिज्ञा पर छोड़ा था, मुनिवर। एक राजकुमार जिसने सब त्याग दिया, सिंहासन पर बैठे एक बालक के पीछे खड़ा।'),
+      ln('VYASAC', 'And a vow is a seed, scribe. Tonight you will see what grows from it.', 'और प्रतिज्ञा एक बीज है, लेखक। आज रात तुम देखोगे कि उससे क्या उगता है।', gap=0.8)],
+    CAVE_G(), cam=push(820, 430, 1.0, 1.08), amb='night'),
+
+  # ---------- the gandharva and the weak king ----------
+  S('b_city', 'court', [
+      ln('VYASA', 'Chitrangada grew into a proud young king. So proud that when a gandharva, a sky-singer who bore the same name, challenged him, he would not refuse.',
+                  'चित्रांगद एक अभिमानी युवा राजा बने। इतने अभिमानी कि जब उसी नाम के एक गंधर्व ने उन्हें ललकारा, तो उन्होंने मना नहीं किया।', at=1.5)],
+    [sh(bg(set='city', tod='gold', ghats=1), 'city_gold'), fx('dust', col='#f0c070', n=50)],
+    cam=pan(560, 1040, 440, 1.15), amb='court', tin='fade', min=10),
+  S('b_crown', 'court', [
+      ln('VYASA', 'Chitrangada was crowned king while still a youth. He had his father\'s courage and none of his patience. He believed no one on earth, or above it, could defeat him.',
+                  'चित्रांगद का राज्याभिषेक युवावस्था में ही हुआ। उनमें पिता का साहस था, पर धैर्य नहीं। उन्हें विश्वास था कि धरती पर, या उसके ऊपर, कोई उन्हें हरा नहीं सकता।')],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), figs('young', [fig('vichitra', 800, 700, 300, 1, 'spear', weapon='spear', style=dict(dhoti='#c7362b')), fig('bhishma', 1220, 880, 560, -1, 'stand')], rim=RIM_GOLD)],
+    cam=push(800, 450, 1.05, 1.15), amb='court'),
+  S('b_duel', 'battle', [
+      ln('VYASA', 'They fought for three years on the banks of the Saraswati. And the king of Hastinapura fell.',
+                  'सरस्वती के तट पर वे तीन वर्षों तक लड़ते रहे। और हस्तिनापुर का राजा गिर पड़ा।')],
+    [sh(bg(set='valley', tod='crimson', hz=450, seed=3.3, groves=8), 'valley_crimson'), figs('gduel', [fig('vichitra', 420, 840, 280, 1, 'draw', weapon='bowDrawn', style=dict(dhoti='#c7362b')), fig('indra', 1180, 840, 280, -1, 'draw', weapon='bowDrawn')]),
+     piece('arrows', 'duel', k='anim', every=2, add=True, xL=460, xR=1140, y=840, s=260), fx('embers', n=50)],
+    cam=pan(700, 900, 500, 1.1), amb='wind', sfx=[dict(n='clash', at=1.5, v=0.5), dict(n='boom', at=6.0, v=0.5)]),
+  S('b_vichitra', 'sorrow', [
+      ln('VYASA', 'Bhishma crowned the younger brother, Vichitravirya. He was gentle, and sickly, and still a boy. He would need a queen, and a strong house behind him.',
+                  'भीष्म ने छोटे भाई विचित्रवीर्य का राज्याभिषेक किया। वे कोमल थे, रोगी थे, और अभी बालक ही थे। उन्हें एक रानी चाहिए थी, और पीछे एक मज़बूत कुल।')],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), face('vichitra', 1000, 430, 180, -1, 'calm', rim=RIM_GOLD)],
+    cam=push(980, 450, 1.0, 1.1), amb='court', hero=1, name=name('VICHITRAVIRYA', 'विचित्रवीर्य', 'the young king', 'युवा राजा', -1)),
+  S('b_kashi', 'tension', [
+      ln('VYASA', 'Word came that the king of Kashi was holding a swayamvar for his three daughters, Amba, Ambika and Ambalika. Every prince of Bharata was invited. Hastinapura was not.',
+                  'समाचार आया कि काशी के राजा अपनी तीन पुत्रियों, अंबा, अंबिका और अंबालिका का स्वयंवर कर रहे हैं। भारत के हर राजकुमार को बुलाया गया। हस्तिनापुर को नहीं।')],
+    [sh(bg(set='city', tod='dawn', hz=600, col='#d8a07a'), 'kashi_dawn'), fx('sparkle', y0=650, y1=900, n=50)],
+    cam=pan(1000, 640, 460, 1.18), amb='river', sfx=[dict(n='bells', at=2.0, v=0.4)]),
+  S('b_rides', 'march', [
+      ln('VYASA', 'So Bhishma went alone. One chariot, one old warrior, riding to a festival of young men.',
+                  'इसलिए भीष्म अकेले गए। एक रथ, एक वृद्ध योद्धा, युवाओं के उत्सव की ओर।')],
+    [sh(bg(set='valley', tod='dawn', hz=470, city=[1200, 260], seed=0.0), 'valley_dawn'), piece('chariot', 'warChariot', k='anim', every=2, x=400, y=860, s=0.6)],
+    cam=pan(600, 900, 480, 1.15), amb='wind', sfx=[dict(n='hooves', at=0.3, v=0.7)]),
+
+  # ---------- the swayamvar ----------
+  S('c_sisters', 'love', [
+      ln('VYASA', 'The three princesses of Kashi walked into the hall with garlands in their hands. Amba, the eldest, proud and clear-eyed. Ambika, gentle. Ambalika, the youngest, still half a child.',
+                  'काशी की तीन राजकुमारियाँ वरमाला हाथ में लिए सभा में आईं। सबसे बड़ी अंबा, गर्वीली और स्पष्ट दृष्टि वाली। अंबिका, कोमल। सबसे छोटी अंबालिका, अभी आधी बालिका।')],
+    [sh(bg(set='court', tone='#6a2a1a', canopy=1), 'kashi_hall'), figs('sis2', [dict(who='amba', x=560, y=880, S=480, f=1), dict(who='ambika', x=800, y=880, S=460, f=1), dict(who='ambalika', x=1030, y=880, S=440, f=-1)], rim=RIM_GOLD), fx('petals', every=2, n=50)],
+    cam=pan(650, 950, 470, 1.15), amb='crowd', sfx=[dict(n='bells', at=0.6, v=0.4)]),
+  S('c_kashiking', 'court', [
+      ln('KING', 'Kings of Bharata, my daughters will choose. Let the bravest and the best be chosen.', 'भारत के राजाओं, मेरी पुत्रियाँ चुनेंगी। जो सबसे वीर और श्रेष्ठ हो, वही चुना जाए।')],
+    [sh(bg(set='court', tone='#6a2a1a', canopy=1), 'kashi_hall'), face('pratipa', 1040, 430, 180, -1, 'calm', rim=RIM_GOLD, style=dict(cloth='#2a5a3a'))],
+    cam=push(1020, 450, 1.04, 1.12), amb='crowd'),
+  S('c_hall', 'court', [
+      ln('VYASA', 'The hall of Kashi was full of kings in silk and gold. When the old man in white walked in, they laughed.',
+                  'काशी की सभा रेशम और सोने में सजे राजाओं से भरी थी। जब श्वेत वस्त्रों में वह वृद्ध भीतर आया, तो वे हँस पड़े।')],
+    [sh(bg(set='court', tone='#6a2a1a', canopy=1), 'kashi_hall'), figs('kings', [fig('king', 260, 880, 380, 1, 'stand'), fig('shalva', 470, 880, 400, 1, 'stand'), fig('king', 1130, 880, 390, -1, 'stand', style=dict(dhoti='#2a5a3a')), fig('king', 1340, 880, 380, -1, 'stand', style=dict(dhoti='#7a3a6a'))]),
+     figs('bh', [fig('bhishma', 800, 880, 460, 1, 'stand')], rim=RIM_GOLD)],
+    cam=[[800, 470, 1.0], [800, 470, 1.08]], amb='crowd', sfx=[dict(n='crowdlaugh', at=4.5, v=0.6)]),
+  S('c_mock', 'tension', [
+      ln('KING', 'Has the great celibate come to marry, at his age? So much for the terrible vow!', 'क्या महान ब्रह्मचारी इस आयु में विवाह करने आए हैं? हो गई भीषण प्रतिज्ञा!'),
+      ln('VYASA', 'Bhishma did not answer them. He lifted the three princesses into his chariot.', 'भीष्म ने उन्हें उत्तर नहीं दिया। उन्होंने तीनों राजकुमारियों को अपने रथ में उठा लिया।', gap=0.8)],
+    [sh(bg(set='court', tone='#6a2a1a', canopy=1), 'kashi_hall'), face('shalva', 560, 440, 180, 1, 'cruel', rim=RIM_FIRE)],
+    cam=push(580, 450, 1.04, 1.12), amb='crowd'),
+  S('c_claim', 'heroic', [
+      ln('BHISHMA', 'The wise say a bride may be won by gifts, by consent, or by strength. I take these three for my brother, by strength. Stop me, if you can.',
+                    'ज्ञानी कहते हैं कि वधू उपहार से, सहमति से, या बल से जीती जाती है। मैं इन तीनों को अपने भाई के लिए बल से ले जाता हूँ। रोक सको तो रोक लो।', fx='elder')],
+    [sh(bg(set='court', tone='#6a2a1a', canopy=1), 'kashi_hall'), face('bhishma', 1040, 440, 190, -1, 'stern', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.04, 1.14), amb='crowd', sfx=[dict(n='nagara', at=0.4, v=0.6)]),
+  S('c_battle', 'battle', [
+      ln('VYASA', 'Every king in the hall drew his sword and followed him out. And one old man fought them all at once.',
+                  'सभा का हर राजा तलवार खींचकर उनके पीछे निकला। और एक वृद्ध ने सबसे एक साथ युद्ध किया।')],
+    [sh(bg(set='field', sunX=1100, sunY=520, armies=0), 'field_empty'), piece('chariot2', 'warChariot', k='anim', every=2, x=700, y=880, s=0.85), piece('rain', 'arrowRain', k='anim', every=2, add=True)],
+    cam=push(800, 480, 1.0, 1.1), amb='battle', sfx=[dict(n='clash', at=0.5), dict(n='whoosh', at=2.0), dict(n='clash', at=4.0), dict(n='roar', at=6.0, v=0.5)], shake=[[4.0, 4.6]]),
+  S('c_skill', 'battle', [
+      ln('VYASA', 'They say he cut a hundred arrows from the air with each of his own. They say he fought facing forward and backward at once. When the dust settled, the kings of Bharata were running.',
+                  'कहते हैं उन्होंने अपने हर बाण से हवा में सौ बाण काट दिए। कहते हैं वे एक साथ आगे और पीछे दोनों ओर लड़े। जब धूल बैठी, भारत के राजा भाग रहे थे।')],
+    [sh(bg(set='field', sunX=1100, sunY=520, armies=0), 'field_empty'), figs('bfight', [fig('bhishma', 800, 880, 520, 1, 'draw', weapon='bowDrawn')], rim=RIM_FIRE), piece('rain4', 'arrowRain', k='anim', every=2, add=True)],
+    cam=push(800, 470, 1.04, 1.14), amb='battle', sfx=[dict(n='whoosh', at=0.5), dict(n='whoosh', at=1.8), dict(n='clash', at=3.5), dict(n='roar', at=7.0, v=0.4)]),
+  S('c_wide', 'battle', [], [sh(bg(set='field', sunX=1100, sunY=520, armies=0), 'field_empty'), piece('rain2', 'arrowRain', k='anim', every=2, add=True), fx('dust', col='#c07a4a', n=90)],
+    cam=[[800, 600, 1.5], [800, 450, 1.0]], amb='battle', sfx=[dict(n='boom', at=1.0, v=0.6)], min=6),
+  S('c_shalva', 'battle', [
+      ln('VYASA', 'Last of all came Shalva, king of Saubha, who loved the eldest princess. He fought bravely. Bhishma broke his bow, killed his horses, and let him live.',
+                  'सबसे अंत में आया सौभ का राजा शाल्व, जो सबसे बड़ी राजकुमारी से प्रेम करता था। वह वीरता से लड़ा। भीष्म ने उसका धनुष तोड़ा, उसके घोड़े मारे, और उसे जीवित छोड़ दिया।')],
+    [sh(bg(set='field', sunX=1100, sunY=520, armies=0), 'field_empty'), face('shalva', 600, 440, 180, 1, 'fear', rim=RIM_FIRE), fx('embers', n=60)],
+    cam=push(620, 450, 1.04, 1.14), amb='battle', hero=1, name=name('SHALVA', 'शाल्व', 'king of Saubha', 'सौभ के राजा', 1)),
+
+  # ---------- Amba ----------
+  S('d_home', 'court', [
+      ln('VYASA', 'Bhishma brought the three sisters home to Hastinapura, and the wedding was prepared. Then the eldest stepped forward.',
+                  'भीष्म तीनों बहनों को हस्तिनापुर ले आए, और विवाह की तैयारी हुई। तब सबसे बड़ी आगे बढ़ी।')],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'),
+     figs('sisters', [dict(who='amba', x=560, y=880, S=500, f=1), dict(who='ambika', x=800, y=880, S=480, f=1), dict(who='ambalika', x=1020, y=880, S=470, f=-1)], rim=RIM_GOLD)],
+    cam=push(800, 470, 1.04, 1.12), amb='court'),
+  S('d_amba', 'tension', [
+      ln('AMBA', 'Son of Ganga, you know dharma better than any man alive. My heart was already given to Shalva. Would you marry me to a man I do not love?',
+                 'गंगापुत्र, आप धर्म को किसी भी जीवित मनुष्य से अधिक जानते हैं। मेरा हृदय पहले ही शाल्व को दिया जा चुका है। क्या आप मेरा विवाह उससे करेंगे जिससे मैं प्रेम नहीं करती?')],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'), face('amba', 1040, 430, 190, -1, 'stern', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.0, 1.12), amb='court', hero=1, name=name('AMBA', 'अंबा', 'eldest princess of Kashi', 'काशी की ज्येष्ठ राजकुमारी', -1)),
+  S('d_free', 'sorrow', [
+      ln('BHISHMA', 'No. Go to him, with my blessing and an escort of honour.', 'नहीं। उसके पास जाओ, मेरे आशीर्वाद और सम्मान के साथ।', fx='elder')],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'), face('bhishma', 560, 440, 180, 1, 'calm', rim=RIM_GOLD)],
+    cam=push(580, 450, 1.04, 1.12), amb='court'),
+  S('d_road', 'love', [
+      ln('VYASA', 'Amba rode to the city of Saubha with her heart full of hope.', 'अंबा आशा से भरे हृदय के साथ सौभ नगर की ओर चल पड़ी।')],
+    [sh(bg(set='valley', tod='day', hz=430, seed=1.2, groves=18), 'valley_day'), piece('ambaride', 'riders', k='anim', every=2, x=200, y=820, s=140, cnt=1, speed=60)],
+    cam=pan(600, 1000, 460, 1.15), amb='wind', sfx=[dict(n='hooves', at=0.3, v=0.6)]),
+  S('d_plead', 'love', [
+      ln('AMBA', 'Shalva, I have come back to you. Bhishma himself has set me free. I never chose anyone but you.', 'शाल्व, मैं तुम्हारे पास लौट आई हूँ। स्वयं भीष्म ने मुझे मुक्त किया है। मैंने तुम्हारे सिवा कभी किसी को नहीं चुना।')],
+    [bg(set='palace', tod='dusk', x=360, w=880, h=560, col='#8a7a5a'), face('amba', 600, 430, 190, 1, 'calm', rim=RIM_FIRE)],
+    cam=push(620, 450, 1.04, 1.12), amb='wind'),
+  S('d_reject', 'lament', [
+      ln('SHALVA', 'Bhishma carried you off in front of every king in Bharata. You were won by another man. I will not take back what was taken from me.',
+                   'भीष्म तुम्हें भारत के हर राजा के सामने उठा ले गए। तुम्हें किसी और ने जीता। जो मुझसे छीन लिया गया, उसे मैं वापस नहीं लूँगा।')],
+    [bg(set='palace', tod='dusk', x=360, w=880, h=560, col='#8a7a5a'), face('shalva', 1040, 440, 180, -1, 'cruel', rim=RIM_FIRE)],
+    cam=push(1020, 450, 1.04, 1.12), amb='wind'),
+  S('d_back', 'lament', [
+      ln('VYASA', 'She went back to Hastinapura. But Vichitravirya would not marry a woman who loved another.',
+                  'वह हस्तिनापुर लौट आई। पर विचित्रवीर्य उस स्त्री से विवाह नहीं करेंगे जो किसी और से प्रेम करती थी।'),
+      ln('AMBA', 'Then you marry me, Bhishma. You took me. I am yours by your own law.',
+                 'तो आप मुझसे विवाह कीजिए, भीष्म। आप मुझे लाए। आपके ही नियम से मैं आपकी हूँ।', gap=0.8)],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), face('amba', 600, 430, 190, 1, 'anger', rim=RIM_FIRE)],
+    cam=push(620, 450, 1.04, 1.14), amb='court'),
+  S('d_vow', 'sorrow', [
+      ln('BHISHMA', 'I cannot. I swore before earth and sky. I will not break my word, not even for you.',
+                    'मैं नहीं कर सकता। मैंने धरती और आकाश के सामने शपथ ली है। मैं अपना वचन नहीं तोड़ूँगा, तुम्हारे लिए भी नहीं।', fx='elder')],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), face('bhishma', 1040, 440, 190, -1, 'sorrow', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.04, 1.14), amb='court'),
+  S('d_cave', 'mystery', [
+      ln('GANESHA', 'His vow saved his father\'s happiness. Now it is destroying hers.', 'उनकी प्रतिज्ञा ने पिता की प्रसन्नता बचाई। अब वही उसका जीवन नष्ट कर रही है।'),
+      ln('VYASAC', 'Every vow has two faces, scribe. Write down both of them.', 'हर प्रतिज्ञा के दो चेहरे होते हैं, लेखक। दोनों लिखना।', gap=0.8)],
+    CAVE(), cam=CAVE_CAM['two'], amb='night'),
+  S('d_wander', 'lament', [
+      ln('VYASA', 'For six years Amba wandered from court to court, asking any king to fight Bhishma for her. Not one dared.',
+                  'छह वर्षों तक अंबा एक राजसभा से दूसरी में भटकती रही, हर राजा से कहती कि उसके लिए भीष्म से लड़े। एक ने भी साहस नहीं किया।')],
+    [sh(bg(set='valley', tod='dusk', hz=450, seed=2.1), 'valley_dusk'), figs('ambawalk', [dict(who='amba', x=980, y=860, S=300, f=-1)])],
+    cam=pan(1000, 700, 470, 1.15), amb='wind', min=10),
+
+  # ---------- Parashurama against Bhishma ----------
+  S('d_grand', 'forest', [
+      ln('VYASA', 'In a forest hermitage she met an old ascetic, Hotravahana, who turned out to be her own mother\'s father. He wept at her story, and sent her to his friend, the only man Bhishma had ever bowed to.',
+                  'वन के एक आश्रम में उसे एक वृद्ध तपस्वी मिले, होत्रवाहन, जो उसकी माँ के पिता निकले। उसकी कथा सुनकर वे रो पड़े, और उसे अपने मित्र के पास भेजा, उस एकमात्र व्यक्ति के पास जिसके आगे भीष्म ने कभी सिर झुकाया था।')],
+    [sh(bg(set='ashram', tod='dusk', huts=[[400, 1], [1200, 0.8]]), 'ashram_dusk'), figs('grandpa', [fig('vasishtha', 600, 880, 460, 1, 'bless'), dict(who='amba', x=960, y=880, S=460, f=-1)], rim=RIM_FIRE)],
+    cam=push(780, 470, 1.04, 1.12), amb='birds'),
+  S('e_parashu', 'battle', [
+      ln('VYASA', 'At last she reached the hermitage of Parashurama, the warrior sage who had taught Bhishma the bow.',
+                  'अंत में वह परशुराम के आश्रम पहुँची, उस योद्धा ऋषि के, जिन्होंने भीष्म को धनुर्विद्या सिखाई थी।'),
+      ln('PARASHU', 'He was my student. He will obey me. Marry her, Bhishma, or face me in battle.',
+                    'वह मेरा शिष्य था। वह मेरी बात मानेगा। भीष्म, इससे विवाह करो, या मुझसे युद्ध करो।', gap=0.6)],
+    [bg(set='sky', tod='crimson', hz=740, hills=1), face('parashurama', 800, 430, 200, 1, 'anger', rim=RIM_FIRE), fx('embers', n=70)],
+    cam=push(800, 440, 1.0, 1.12), amb='wind', sfx=[dict(n='clash', at=1.0, v=0.5)]),
+  S('e_refuse', 'heroic', [
+      ln('BHISHMA', 'Guru, I bow at your feet. Ask me for my life and I will give it. But I will not break my vow, even for you.',
+                    'गुरुदेव, मैं आपके चरणों में नमन करता हूँ। मेरे प्राण माँगिए, मैं दे दूँगा। पर मैं अपनी प्रतिज्ञा नहीं तोड़ूँगा, आपके लिए भी नहीं।', fx='elder')],
+    [bg(set='sky', tod='crimson', hz=740, hills=1), face('bhishma', 800, 440, 200, 1, 'stern', rim=RIM_FIRE)],
+    cam=push(800, 450, 1.04, 1.14), amb='wind'),
+  S('e_bow', 'heroic', [
+      ln('VYASA', 'Before the battle, Bhishma walked to his teacher on foot, laid down his bow, and touched his feet.',
+                  'युद्ध से पहले, भीष्म पैदल अपने गुरु के पास गए, अपना धनुष रखा, और उनके चरण छुए।'),
+      ln('PARASHU', 'Fight well, my son. I would be ashamed of you if you did not.', 'अच्छे से लड़ना, पुत्र। यदि तुम नहीं लड़े, तो मुझे तुम पर लज्जा होगी।', gap=0.8)],
+    [sh(bg(set='field', sunX=820, sunY=520, armies=0), 'field_empty2'), figs('touch', [fig('parashurama', 640, 880, 520, 1, 'bless'), fig('bhishma', 960, 880, 480, -1, 'bowLow')], rim=RIM_FIRE)],
+    cam=push(800, 470, 1.04, 1.12), amb='wind'),
+  S('e_kuru', 'battle', [
+      ln('VYASA', 'They met at Kurukshetra, the field where one day a far greater war would be fought. Teacher against student.',
+                  'वे कुरुक्षेत्र में मिले, उसी मैदान में जहाँ एक दिन कहीं बड़ा युद्ध लड़ा जाएगा। गुरु के विरुद्ध शिष्य।')],
+    [sh(bg(set='field', sunX=820, sunY=520, armies=0), 'field_empty2'), figs('foes', [fig('parashurama', 340, 840, 300, 1, 'draw', weapon='bowDrawn'), fig('bhishma', 1260, 840, 300, -1, 'draw', weapon='bowDrawn')]),
+     piece('arrows3', 'duel', k='anim', every=2, add=True, xL=380, xR=1220, y=840, s=300)],
+    cam=pan(650, 950, 500, 1.1), amb='battle', sfx=[dict(n='conch', at=0.5, v=0.6), dict(n='clash', at=4.0, v=0.5)]),
+  S('e_days', 'battle', [
+      ln('VYASA', 'They fought for twenty three days. Arrows hid the sun. The earth itself began to shake.',
+                  'वे तेईस दिनों तक लड़े। बाणों ने सूर्य को ढक लिया। स्वयं धरती काँपने लगी।')],
+    [sh(bg(set='field', sunX=820, sunY=520, armies=0), 'field_empty2'), piece('rain3', 'arrowRain', k='anim', every=2, add=True), fx('flash', every=1, at=[2.0, 5.5], bolt=900)],
+    cam=push(800, 450, 1.0, 1.12), amb='battle', sfx=[dict(n='thunder', at=2.0, v=0.8), dict(n='boom', at=5.5, v=0.6)], shake=[[2.0, 3.0], [5.5, 6.2]]),
+  S('e_ganga', 'river', [
+      ln('VYASA', 'On the twenty third night, Ganga herself rose before her son and begged him to stop. He would not. He reached for a weapon that could put even Parashurama to sleep.',
+                  'तेईसवीं रात, स्वयं गंगा अपने पुत्र के सामने प्रकट हुईं और रुकने की विनती की। वे नहीं रुके। उन्होंने ऐसा अस्त्र उठाया जो परशुराम को भी सुला सकता था।')],
+    [sh(bg(set='field', sunX=820, sunY=520, armies=0), 'field_empty2'), face('ganga', 800, 430, 190, 1, 'sorrow', rim=RIM_COOL, glow=['#9fd8ff', 30, 0.4]), fx('sparkle', y0=300, y1=900, n=60, col='#dff4ff')],
+    cam=push(800, 440, 1.04, 1.12), amb='wind'),
+  S('e_gods', 'divine', [
+      ln('VYASA', 'At last the gods themselves came down and stopped it. Neither could win. Parashurama laid down his bow.',
+                  'अंत में स्वयं देवता उतरे और युद्ध रोका। कोई भी जीत नहीं सकता था। परशुराम ने अपना धनुष रख दिया।'),
+      ln('PARASHU', 'I have done all I can, child. Go to Bhishma\'s mercy. There is no other way.', 'मैं जो कर सकता था, कर चुका, पुत्री। भीष्म की शरण में जाओ। और कोई मार्ग नहीं।', gap=0.6)],
+    [sh(bg(set='sky', tod='gold', hz=740, hills=1), 'gold_sky'), fx('rays', x=800, y=120, r0=60, r1=1000, col='#fff0c0', n='fx_rays'), fx('petals', every=2, n=60)],
+    cam=[[800, 300, 1.3], [800, 420, 1.0]], amb='temple', sfx=[dict(n='bells', at=0.4, v=0.5)]),
+  S('e_mercy', 'storm', [
+      ln('AMBA', 'Mercy? I do not want his mercy. I want his death.', 'शरण? मुझे उनकी दया नहीं चाहिए। मुझे उनकी मृत्यु चाहिए।')],
+    [sh(bg(set='sky', tod='storm', hz=720), 'storm_sky'), face('amba', 800, 430, 200, 1, 'anger', rim=['#dfefff', -3, -2, 0.8]), fx('flash', every=1, at=[3.0], bolt=1100)],
+    cam=push(800, 440, 1.0, 1.15), amb='storm', sfx=[dict(n='thunder', at=3.0)]),
+
+  # ---------- Amba's penance ----------
+  S('f_penance', 'shiva', [
+      ln('VYASA', 'She went into the Himalaya, and stood on one foot in the snow, eating nothing, for years. Until Shiva himself appeared before her.',
+                  'वह हिमालय चली गई, और बर्फ़ में एक पैर पर खड़ी रही, कुछ न खाकर, वर्षों तक। तब तक, जब तक स्वयं शिव उसके सामने प्रकट न हुए।')],
+    [sh(bg(set='himalaya', tod='snow'), 'himal_snow'), figs('tapas', [dict(who='amba', x=800, y=860, S=320, f=1, arm=[170, 175])]), fx('snow', n=160)],
+    cam=[[800, 600, 1.6], [800, 450, 1.0]], amb='wind', sfx=[dict(n='damaru', at=8.0, v=0.5)]),
+  S('f_river', 'lament', [
+      ln('VYASA', 'They say her penance was so fierce that half her body became a river, the Amba, that runs crooked and dry half the year, like a grief that cannot settle.',
+                  'कहते हैं उसकी तपस्या इतनी कठोर थी कि उसका आधा शरीर एक नदी बन गया, अंबा नदी, जो टेढ़ी बहती है और आधे वर्ष सूखी रहती है, उस दुःख की तरह जो कभी शांत नहीं होता।')],
+    [sh(bg(set='valley', tod='ash', hz=450, seed=5.0, groves=4, land='#8a7a5a'), 'gandhara'), fx('snow', n=50)],
+    cam=pan(700, 900, 500, 1.2), amb='wind', min=10),
+  S('f_shiva', 'shiva', [
+      ln('SHIVA', 'You will have what you ask. Not in this life, but in the next. You will be born again, and you will be the cause of Bhishma\'s death.',
+                  'तुम्हें वह मिलेगा जो तुम माँगती हो। इस जन्म में नहीं, अगले में। तुम फिर जन्म लोगी, और भीष्म की मृत्यु का कारण बनोगी।')],
+    [sh(bg(set='himalaya', tod='snow'), 'himal_snow'), face('shiva', 800, 430, 200, 1, 'divine', glow=['#c8e0ff', 34, 0.45]), fx('snow', n=120)],
+    cam=push(800, 440, 1.0, 1.12), amb='wind', sfx=[dict(n='om', at=0.3, v=0.6)], hero=1, name=name('SHIVA', 'शिव', 'the great god', 'महादेव', 1)),
+  S('f_fire', 'lament', [
+      ln('AMBA', 'Then let this life end now, so the next can begin.', 'तो यह जीवन अभी समाप्त हो, ताकि अगला आरंभ हो सके।'),
+      ln('VYASA', 'She built a pyre on the bank of the Yamuna and stepped into the flames, with one name on her lips.',
+                  'उसने यमुना के तट पर चिता बनाई और ज्वालाओं में उतर गई, होंठों पर एक ही नाम लिए।', gap=0.8)],
+    [sh(bg(set='river', tod='night', hz=560, moon=[1200, 200, 60]), 'river_night'), fx('fire', at=[[800, 840, 320, 380]]), fx('embers', n=90)],
+    cam=push(800, 500, 1.0, 1.12), amb='river', sfx=[dict(n='fire', at=0.5, v=0.8)]),
+  S('f_name', 'lament', [
+      ln('AMBA', 'Bhishma.', 'भीष्म।', fx='divine')],
+    [sh(bg(set='river', tod='night', hz=560, moon=[1200, 200, 60]), 'river_night'), face('amba', 800, 430, 190, 1, 'sorrow', rim=RIM_FIRE), fx('embers', n=70)],
+    cam=push(800, 440, 1.1, 1.2), amb='river', min=5),
+  S('f_cave', 'mystery', [
+      ln('GANESHA', 'Muni, will she truly come back?', 'मुनिवर, क्या वह सचमुच लौटेगी?'),
+      ln('VYASAC', 'She will. As a child of King Drupada, named Shikhandi. Remember that name, scribe. The greatest warrior of the age will lower his bow before it.',
+                   'लौटेगी। राजा द्रुपद की संतान बनकर, शिखंडी नाम से। यह नाम याद रखना, लेखक। युग का सबसे महान योद्धा इसके सामने अपना धनुष झुकाएगा।', gap=0.8)],
+    CAVE_V('sorrow'), cam=push(700, 440, 1.0, 1.12), amb='night'),
+
+  # ---------- an empty throne ----------
+  S('g_wed', 'love', [
+      ln('VYASA', 'In Hastinapura, Vichitravirya married the younger sisters, Ambika and Ambalika. He loved them both. But his body was weak.',
+                  'हस्तिनापुर में, विचित्रवीर्य ने छोटी बहनों, अंबिका और अंबालिका से विवाह किया। वे दोनों से प्रेम करते थे। पर उनका शरीर दुर्बल था।', at=1.0)],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'),
+     figs('wed2', [dict(who='ambika', x=560, y=880, S=480, f=1), fig('vichitra', 800, 880, 500, 1, 'bless'), dict(who='ambalika', x=1040, y=880, S=470, f=-1)], rim=RIM_GOLD), fx('petals', every=2, n=60)],
+    cam=push(800, 470, 1.04, 1.12), amb='court', tin='fade', sfx=[dict(n='bells', at=0.5, v=0.4)]),
+  S('g_dies', 'lament', [
+      ln('VYASA', 'Seven years later, he died of consumption, and left no son. The throne of the Kurus stood empty. The line of Shantanu was about to end.',
+                  'सात वर्ष बाद, वे क्षय रोग से चल बसे, और कोई पुत्र नहीं छोड़ा। कुरुओं का सिंहासन ख़ाली पड़ा था। शांतनु का वंश समाप्त होने वाला था।')],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), fx('dust', col='#f0b060', n=40)],
+    cam=[[800, 420, 1.3], [800, 450, 1.0]], amb='wind', min=10),
+  S('g_grief', 'lament', [
+      ln('VYASA', 'Satyavati had lost a husband, and now both her sons. She sat in the empty palace and looked at the empty throne, and then at the one man who could fill it.',
+                  'सत्यवती ने पति खोया था, और अब दोनों पुत्र भी। वे सूने महल में बैठीं ख़ाली सिंहासन को देखती रहीं, और फिर उस एक मनुष्य को, जो उसे भर सकता था।')],
+    [bg(set='chamber', tone='#2a1418'), figs('widow', [dict(who='satyavati', x=560, y=880, S=480, f=1, sari='#f2ede0'), fig('bhishma', 1040, 880, 500, -1, 'stand')], rim=RIM_LAMP)],
+    cam=push(800, 470, 1.04, 1.12), amb='night'),
+  S('g_ask', 'sorrow', [
+      ln('SATYAVATI', 'Bhishma, my son. The kingdom needs a king. Take the throne. Marry the widows, as the law allows, and save your father\'s line.',
+                      'भीष्म, मेरे पुत्र। राज्य को राजा चाहिए। सिंहासन लो। विधि के अनुसार विधवाओं से विवाह करो, और अपने पिता का वंश बचाओ।')],
+    [bg(set='chamber', tone='#2a1418'), face('satyavati', 600, 430, 180, 1, 'sorrow', style=dict(cloth='#f2ede0'), rim=RIM_LAMP)],
+    cam=push(620, 450, 1.04, 1.12), amb='night'),
+  S('g_no', 'heroic', [
+      ln('BHISHMA', 'Mother, I could give up the three worlds, or the kingdom of the gods. But I will never give up the truth. The sun may lose its light, the moon its coolness. I will not break my word.',
+                    'माता, मैं तीनों लोक त्याग सकता हूँ, देवताओं का राज्य त्याग सकता हूँ। पर सत्य कभी नहीं त्यागूँगा। सूर्य अपना प्रकाश खो दे, चंद्रमा अपनी शीतलता। मैं अपना वचन नहीं तोड़ूँगा।', fx='elder')],
+    [bg(set='chamber', tone='#2a1418'), face('bhishma', 1040, 440, 190, -1, 'stern', rim=RIM_LAMP)],
+    cam=push(1020, 450, 1.04, 1.14), amb='night'),
+  S('g_secret', 'mystery', [
+      ln('SATYAVATI', 'Then there is one other. Before I married your father, I bore a son to the sage Parashara. He lives in the forests now, a great seer. I will call him.',
+                      'तो एक और है। तुम्हारे पिता से विवाह से पहले, मैंने ऋषि पराशर के पुत्र को जन्म दिया था। वह अब वनों में रहता है, एक महान ऋषि। मैं उसे बुलाऊँगी।')],
+    [bg(set='chamber', tone='#2a1418'), face('satyavati', 600, 430, 180, 1, 'calm', style=dict(cloth='#f2ede0'), rim=RIM_LAMP)],
+    cam=push(620, 450, 1.04, 1.14), amb='night'),
+  S('g_me', 'krishna', [
+      ln('GANESHA', 'Muni... she called you.', 'मुनिवर... उन्होंने आपको बुलाया।'),
+      ln('VYASAC', 'She did. A mother called, and I came. And what I did that night, scribe, made everything you will write after it.',
+                   'हाँ। माँ ने बुलाया, और मैं आया। और उस रात मैंने जो किया, लेखक, उसी से वह सब बना जो तुम इसके बाद लिखोगे।', gap=0.8)],
+    CAVE(), cam=[[880, 560, 1.3], [880, 560, 1.38]], amb='night'),
+
+  # ---------- three sons ----------
+  S('h_forest', 'mystery', [
+      ln('VYASA', 'I came out of the forest as I was: dark, matted, smelling of ash and smoke, my eyes burning from years of penance.',
+                  'मैं वन से वैसे ही निकला जैसा था: साँवला, जटाधारी, राख और धुएँ की गंध लिए, वर्षों की तपस्या से जलती आँखों के साथ।')],
+    [sh(bg(set='forest', tod='night'), 'forest_night'), figs('vyw', [fig('vyasa', 800, 880, 520, 1, 'stand')], rim=RIM_FIRE), fx('fireflies', n=50)],
+    cam=[[800, 600, 1.4], [800, 470, 1.05]], amb='night', tin='fade'),
+  S('h_meet', 'krishna', [
+      ln('SATYAVATI', 'My son. You came.', 'मेरे पुत्र। तुम आ गए।'),
+      ln('VYASAC', 'You called, mother. I promised you on the island that I would always come.', 'आपने बुलाया, माता। मैंने उस द्वीप पर वचन दिया था कि मैं सदा आऊँगा।', gap=0.6),
+      ln('SATYAVATI', 'The line of the Kurus is dying. Give the widows of your brother sons, by the old law. Save this house.', 'कुरुओं का वंश मिट रहा है। पुरानी विधि से अपने भाई की विधवाओं को पुत्र दो। इस कुल को बचाओ।', gap=0.6)],
+    [bg(set='chamber', tone='#2a1418'), figs('mother', [dict(who='satyavati', x=520, y=880, S=480, f=1, sari='#f2ede0'), fig('vyasa', 1000, 880, 520, -1, 'bless')], rim=RIM_LAMP)],
+    cam=push(780, 470, 1.04, 1.12), amb='night'),
+  S('h_ambika', 'tension', [
+      ln('VYASA', 'The first queen, Ambika, saw my face by lamplight, and in her fear she shut her eyes.',
+                  'पहली रानी, अंबिका, ने दीये की रोशनी में मेरा चेहरा देखा, और डर के मारे उसने आँखें बंद कर लीं।')],
+    [sh(bg(set='chamber', tone='#2a1418'), 'chamber_red'), face('ambika', 1040, 430, 180, -1, 'fear', rim=RIM_LAMP, exprOver=dict(eo=0.05))],
+    cam=push(1020, 450, 1.04, 1.14), amb='night'),
+  S('h_blind', 'sorrow', [
+      ln('VYASAC', 'Mother, the child will be as strong as ten thousand elephants. But because she closed her eyes, he will be born blind.',
+                   'माता, बालक दस हज़ार हाथियों जितना बलवान होगा। पर क्योंकि उसने आँखें बंद कीं, वह जन्म से अंधा होगा।')],
+    CAVE_V('sorrow'), cam=push(700, 440, 1.04, 1.12), amb='night'),
+  S('h_ambalika', 'tension', [
+      ln('VYASA', 'The second queen, Ambalika, did not close her eyes. But she turned pale with fear.', 'दूसरी रानी, अंबालिका, ने आँखें बंद नहीं कीं। पर डर से उसका चेहरा पीला पड़ गया।'),
+      ln('VYASAC', 'Her son will be pale, too. Pandu, the pale one. A great king, but not a long-lived one.', 'उसका पुत्र भी पीला होगा। पांडु, पीले वर्ण वाला। एक महान राजा, पर दीर्घायु नहीं।', gap=0.8)],
+    [sh(bg(set='chamber', tone='#2a1418'), 'chamber_red'), face('ambalika', 1040, 430, 180, -1, 'fear', rim=RIM_LAMP, style=dict(skin='#e8d8c8'))],
+    cam=push(1020, 450, 1.04, 1.14), amb='night'),
+  S('h_maid', 'love', [
+      ln('VYASA', 'Satyavati asked for one more child. But the queen sent her maid in her place. The maid was not afraid. She bowed, and welcomed the sage with respect.',
+                  'सत्यवती ने एक और संतान माँगी। पर रानी ने अपनी जगह अपनी दासी को भेज दिया। दासी डरी नहीं। उसने नमन किया, और ऋषि का आदर से स्वागत किया।')],
+    [sh(bg(set='chamber', tone='#2a1418'), 'chamber_red'), face('maid', 1040, 430, 180, -1, 'smile', rim=RIM_LAMP)],
+    cam=push(1020, 450, 1.04, 1.14), amb='night'),
+  S('h_vidura', 'krishna', [
+      ln('VYASAC', 'Her son will be the wisest man of his age. Dharma himself will be born in him. But because his mother was a servant, he will never be king.',
+                   'उसका पुत्र अपने युग का सबसे बुद्धिमान मनुष्य होगा। स्वयं धर्म उसमें जन्म लेगा। पर क्योंकि उसकी माँ दासी थी, वह कभी राजा नहीं बनेगा।')],
+    CAVE_V('calm'), cam=push(700, 440, 1.04, 1.12), amb='night'),
+  S('h_mandavya', 'mystery', [
+      ln('VYASA', 'Long before, a sage named Mandavya had been wrongly impaled as a thief. When he asked Yama, the god of justice, why, Yama said: as a child you pierced a dragonfly with a blade of grass.',
+                  'बहुत पहले, माण्डव्य नाम के एक ऋषि को चोर समझकर ग़लती से शूली पर चढ़ा दिया गया था। जब उन्होंने न्याय के देवता यम से कारण पूछा, यम ने कहा: बचपन में तुमने घास की एक सींक से एक पतंगे को छेदा था।')],
+    [sh(bg(set='dark', glow='#2a1a3a'), 'dark_violet'), face('dharma', 800, 430, 190, 1, 'stern', rim=['#9a7ab0', -3, -2, 0.6])],
+    cam=push(800, 440, 1.04, 1.14), amb='night'),
+  S('h_curse2', 'mystery', [
+      ln('VASISHTHA', 'For a child\'s mistake you gave a man\'s punishment? Then you yourself will be born as a man, the son of a servant, and know what it is to be judged unfairly.',
+                      'एक बालक की भूल का दंड तुमने एक पुरुष को दिया? तो तुम स्वयं मनुष्य बनकर जन्म लोगे, एक दासी के पुत्र बनकर, और जानोगे कि अन्याय से परखा जाना क्या होता है।', fx='elder'),
+      ln('VYASA', 'And so Dharma himself was born as Vidura.', 'और इस तरह स्वयं धर्म विदुर बनकर जन्मे।', gap=0.8)],
+    [sh(bg(set='dark', glow='#2a1a3a'), 'dark_violet'), fx('flash', every=1, at=[0.5], bolt=1100)],
+    cam=push(800, 450, 1.0, 1.1), amb='storm', sfx=[dict(n='thunder', at=0.5, v=0.6)]),
+  S('h_three', 'joy', [
+      ln('VYASA', 'And so three sons were born to Hastinapura. Dhritarashtra, the blind. Pandu, the pale. And Vidura, the wise.',
+                  'और इस तरह हस्तिनापुर में तीन पुत्र जन्मे। धृतराष्ट्र, जो अंधे थे। पांडु, जो पीले थे। और विदुर, जो ज्ञानी थे।')],
+    [sh(bg(set='palace', tod='gold', x=360, w=880, h=560), 'palace_gold'), figs('sons', [fig('dhritaY', 520, 880, 440, 1, 'stand'), fig('pandu', 800, 880, 440, 1, 'spear', weapon='bow'), fig('vidura', 1080, 880, 420, -1, 'bless', style=dict(dhoti='#e8dcc0', hair='#1a120d'))], rim=RIM_GOLD),
+     fx('dust', col='#f0c070', n=50)],
+    cam=pan(650, 950, 470, 1.12), amb='wind', sfx=[dict(n='bells', at=0.5, v=0.4)]),
+  S('h_raise', 'heroic', [
+      ln('VYASA', 'Bhishma raised them as his own. He taught them the bow and the scriptures and the duties of kings. Hastinapura grew rich and peaceful once more.',
+                  'भीष्म ने उन्हें अपने पुत्रों की तरह पाला। उन्होंने उन्हें धनुष, शास्त्र और राजाओं के कर्तव्य सिखाए। हस्तिनापुर फिर समृद्ध और शांत हुआ।')],
+    [sh(bg(set='valley', tod='gold', hz=480, city=[1250, 300], seed=0.6), 'valley_gold'), figs('teach', [fig('bhishma', 560, 860, 300, 1, 'bless'), fig('pandu', 800, 860, 230, -1, 'draw', weapon='bowDrawn'), fig('dhritaY', 960, 860, 240, -1, 'mace', weapon='mace')], rim=RIM_GOLD)],
+    cam=pan(700, 900, 480, 1.15), amb='birds'),
+  S('h_strength', 'heroic', [
+      ln('VYASA', 'Dhritarashtra grew so strong that he could crush an iron statue in his arms. Pandu became the finest archer of his age. And Vidura knew the law better than the priests who taught it.',
+                  'धृतराष्ट्र इतने बलवान हुए कि अपनी भुजाओं में लोहे की मूर्ति को चूर कर दें। पांडु अपने युग के सबसे श्रेष्ठ धनुर्धर बने। और विदुर धर्मशास्त्र को उन पुरोहितों से अधिक जानते थे जो उसे पढ़ाते थे।')],
+    [sh(bg(set='arena', tod='day'), 'arena_day'), figs('youths', [fig('dhritaY', 460, 880, 460, 1, 'maceUp', weapon='mace'), fig('pandu', 800, 880, 460, 1, 'draw', weapon='bowDrawn'), fig('vidura', 1140, 880, 440, -1, 'bless', style=dict(dhoti='#e8dcc0', hair='#1a120d'))], rim=RIM_GOLD)],
+    cam=pan(650, 950, 470, 1.12), amb='crowd', sfx=[dict(n='cheer', at=3.0, v=0.4)]),
+  S('h_crown', 'court', [
+      ln('VYASA', 'When it was time to crown a king, the elder brother could not see. The crown went to Pandu. Dhritarashtra said nothing. But he never forgot.',
+                  'जब राजा चुनने का समय आया, बड़े भाई देख नहीं सकते थे। मुकुट पांडु को मिला। धृतराष्ट्र कुछ न बोले। पर वे कभी भूले नहीं।')],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'), face('dhritaY', 600, 430, 190, 1, 'sorrow', rim=RIM_GOLD)],
+    cam=push(620, 450, 1.04, 1.14), amb='court', hero=1, name=name('DHRITARASHTRA', 'धृतराष्ट्र', 'the blind prince', 'अंधे राजकुमार', 1)),
+  S('h_pandu', 'heroic', [
+      ln('VYASA', 'Pandu was a warrior king. He rode out and conquered the lands around, and brought their treasure home to his brother.',
+                  'पांडु एक योद्धा राजा थे। उन्होंने चारों ओर के राज्य जीते, और उनका धन अपने भाई के पास ले आए।')],
+    [bg(set='palace', tod='gold', x=360, w=880, h=560), face('pandu', 1040, 430, 190, -1, 'stern', rim=RIM_GOLD), fx('dust', col='#f0c070', n=40)],
+    cam=push(1020, 450, 1.0, 1.12), amb='wind', hero=1, name=name('PANDU', 'पांडु', 'the pale king', 'पांडु राजा', -1)),
+
+  # ---------- Gandhari ----------
+  S('i_gandhara', 'mystery', [
+      ln('VYASA', 'For the blind prince, Bhishma sought the princess of Gandhara, far in the northwest, where the mountains are bare and the winds are cold.',
+                  'अंधे राजकुमार के लिए भीष्म ने गांधार की राजकुमारी को चुना, सुदूर उत्तर-पश्चिम में, जहाँ पहाड़ नंगे हैं और हवाएँ ठंडी।', at=1.0)],
+    [sh(bg(set='valley', tod='ash', hz=450, seed=5.0, groves=4, land='#8a7a5a'), 'gandhara'), piece('caravan', 'procession', k='anim', every=3, y=800, s=100, x0=1700, cnt=8, speed=30, dir=-1)],
+    cam=pan(1000, 700, 470, 1.15), amb='wind', tin='fade', min=10),
+  S('i_wed', 'joy', [
+      ln('VYASA', 'King Subala of Gandhara agreed. Hastinapura was the greatest kingdom in Bharata. How could he refuse it, even for a blind son-in-law?',
+                  'गांधार के राजा सुबल मान गए। हस्तिनापुर भारत का सबसे बड़ा राज्य था। वे उसे कैसे मना कर सकते थे, भले ही दामाद अंधा हो?')],
+    [sh(bg(set='palace', tod='dusk', x=360, w=880, h=560, col='#a08a6a'), 'gandhara_palace'), face('pratipa', 600, 440, 180, 1, 'calm', rim=RIM_GOLD, style=dict(cloth='#5a4a2a', hair='#4a4038'))],
+    cam=push(620, 450, 1.04, 1.12), amb='wind'),
+  S('i_gandhari', 'love', [
+      ln('VYASA', 'Her name was Gandhari. She had prayed to Shiva and been promised a hundred sons.', 'उनका नाम गांधारी था। उन्होंने शिव की आराधना की थी और उन्हें सौ पुत्रों का वरदान मिला था।')],
+    [sh(bg(set='palace', tod='dusk', x=360, w=880, h=560, col='#a08a6a'), 'gandhara_palace'), face('gandhariY', 1040, 430, 180, -1, 'calm', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.0, 1.1), amb='wind', hero=1, name=name('GANDHARI', 'गांधारी', 'princess of Gandhara', 'गांधार की राजकुमारी', -1)),
+  S('i_learns', 'sorrow', [
+      ln('VYASA', 'When she learned that her husband would be blind, she said not a word. She took a strip of cloth, folded it, and tied it over her own eyes.',
+                  'जब उन्हें पता चला कि उनके पति अंधे होंगे, उन्होंने एक शब्द न कहा। उन्होंने कपड़े की एक पट्टी ली, उसे मोड़ा, और अपनी ही आँखों पर बाँध ली।')],
+    [sh(bg(set='palace', tod='dusk', x=360, w=880, h=560, col='#a08a6a'), 'gandhara_palace'), face('gandhariY', 800, 430, 200, 1, 'sorrow', rim=RIM_GOLD)],
+    cam=push(800, 440, 1.04, 1.18), amb='wind', min=10),
+  S('i_blind', 'lament', [
+      ln('GANDHARI', 'If my husband cannot see the world, then neither will I.', 'यदि मेरे पति संसार नहीं देख सकते, तो मैं भी नहीं देखूँगी।')],
+    [sh(bg(set='palace', tod='dusk', x=360, w=880, h=560, col='#a08a6a'), 'gandhara_palace'), face('gandhari', 800, 430, 200, 1, 'calm', rim=RIM_GOLD)],
+    cam=push(800, 440, 1.08, 1.18), amb='wind', sfx=[dict(n='swell', at=0.3, v=0.4)]),
+  S('i_shakuni', 'tension', [
+      ln('VYASA', 'Her brother Shakuni came with her to Hastinapura. He watched his sister walk into a stranger\'s house with her eyes bound, and something in him turned cold.',
+                  'उनका भाई शकुनि उनके साथ हस्तिनापुर आया। उसने अपनी बहन को आँखों पर पट्टी बाँधे एक पराए घर में जाते देखा, और उसके भीतर कुछ ठंडा पड़ गया।')],
+    [sh(bg(set='court', tone='#2a1a2a'), 'court_shadow'), face('shakuni', 1040, 430, 180, -1, 'cruel', rim=['#9a7ab0', -3, -2, 0.6])],
+    cam=push(1020, 450, 1.04, 1.14), amb='court', hero=1, name=name('SHAKUNI', 'शकुनि', 'prince of Gandhara', 'गांधार के राजकुमार', -1)),
+  S('i_cave', 'mystery', [
+      ln('GANESHA', 'She chose to share his darkness. Is that devotion, or is it a second blindness?', 'उन्होंने उनका अंधकार बाँटना चुना। यह भक्ति है, या एक दूसरा अंधापन?'),
+      ln('VYASAC', 'A blind king needs eyes beside him, scribe. She gave him a wife. She did not give him a guide.', 'अंधे राजा को अपने पास आँखें चाहिए, लेखक। उन्होंने उन्हें एक पत्नी दी। मार्गदर्शक नहीं दिया।', gap=0.8)],
+    CAVE_G(), cam=push(820, 430, 1.0, 1.08), amb='night'),
+
+  # ---------- Kunti and the sun ----------
+  S('j_kunti', 'love', [
+      ln('VYASA', 'Far to the south, in the house of King Kuntibhoja, lived a young princess named Pritha, whom everyone called Kunti.',
+                  'दूर दक्षिण में, राजा कुंतिभोज के घर, एक युवा राजकुमारी रहती थी, पृथा, जिसे सब कुंती कहते थे।', at=1.0)],
+    [sh(bg(set='lake', tod='day', lotus=12), 'lake_day'), face('kuntiY', 1040, 430, 180, -1, 'smile', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.0, 1.1), amb='birds', tin='fade', hero=1, name=name('KUNTI', 'कुंती', 'princess of the Bhojas', 'भोज राजकुमारी', -1)),
+  S('j_durvasa', 'tension', [
+      ln('VYASA', 'Once the sage Durvasa came to stay, the most short-tempered sage who ever lived. For a whole year she served him without a single fault.',
+                  'एक बार ऋषि दुर्वासा ठहरने आए, जो सबसे क्रोधी ऋषि थे। पूरे एक वर्ष तक उसने बिना एक भी चूक के उनकी सेवा की।')],
+    [sh(bg(set='ashram', tod='day', huts=[[400, 1], [1200, 0.8]]), 'ashram_day2'), face('durvasa', 600, 440, 180, 1, 'anger', rim=RIM_FIRE)],
+    cam=push(620, 450, 1.04, 1.12), amb='birds', hero=1, name=name('DURVASA', 'दुर्वासा', 'the wrathful sage', 'क्रोधी ऋषि', 1)),
+  S('j_mantra', 'mystery', [
+      ln('DURVASA', 'Take this mantra, child. With it you may call any god you choose, and he will give you a son.',
+                    'यह मंत्र लो, पुत्री। इससे तुम किसी भी देवता को बुला सकोगी, और वह तुम्हें पुत्र देगा।', fx='elder')],
+    [sh(bg(set='ashram', tod='day', huts=[[400, 1], [1200, 0.8]]), 'ashram_day2'), fx('glow', x=800, y=500, r=260, col='#ffe0a0'), fx('sparkle', y0=300, y1=800, n=60)],
+    cam=push(800, 480, 1.0, 1.12), amb='temple', sfx=[dict(n='magic', at=1.0, v=0.5)]),
+  S('j_test', 'wonder', [
+      ln('VYASA', 'She was young, and curious. One morning at sunrise she stood on the palace roof, looked at the sun, and spoke the words, just to see.',
+                  'वह युवा थी, और जिज्ञासु। एक सुबह सूर्योदय पर वह महल की छत पर खड़ी हुई, सूर्य को देखा, और बस देखने के लिए मंत्र बोल दिया।')],
+    [sh(bg(set='sky', tod='dawn', hz=740, hills=1, sun=[800, 300, 110]), 'sunrise'), figs('roof', [dict(who='kuntiY', x=800, y=880, S=360, f=1, arm=[150, 160])], rim=RIM_GOLD)],
+    cam=[[800, 600, 1.4], [800, 450, 1.0]], amb='wind'),
+  S('j_surya', 'divine', [
+      ln('SURYA', 'You called, and I have come. I cannot go back with nothing. You will have a son, born in armour, wearing earrings of gold.',
+                  'तुमने बुलाया, और मैं आ गया। मैं ख़ाली हाथ नहीं लौट सकता। तुम्हें एक पुत्र होगा, कवच पहने जन्मा, सोने के कुंडल धारण किए।', fx='divine')],
+    [sh(bg(set='sky', tod='gold', hz=740, hills=1), 'gold_sky'), fx('rays', x=800, y=300, r0=80, r1=1000, col='#fff0c0', n='fx_rays'), face('surya', 800, 430, 200, 1, 'divine', glow=['#ffe0a0', 34, 0.45])],
+    cam=push(800, 440, 1.0, 1.12), amb='temple', sfx=[dict(n='swell', at=0.3, v=0.6)], hero=1, name=name('SURYA', 'सूर्य', 'the sun god', 'सूर्य देव', 1)),
+  S('j_born', 'love', [
+      ln('VYASA', 'And so it was. A boy shining like the morning, with a golden breastplate grown into his skin.',
+                  'और ऐसा ही हुआ। सुबह की तरह चमकता एक बालक, जिसकी त्वचा में ही एक सुनहरा कवच उगा था।')],
+    [sh(bg(set='chamber', tone='#2a1418'), 'chamber_red'), fx('glow', x=800, y=600, r=240, col='#ffd890'), fx('sparkle', y0=400, y1=800, n=50)],
+    cam=push(800, 520, 1.0, 1.12), amb='night', sfx=[dict(n='bells', at=0.5, v=0.4)]),
+  S('j_river', 'lament', [
+      ln('VYASA', 'But she was unmarried, and afraid of what the world would say. So she laid her son in a basket, and gave him to the river.',
+                  'पर वह अविवाहित थी, और संसार के कहने से डरती थी। इसलिए उसने अपने पुत्र को एक टोकरी में रखा, और नदी को सौंप दिया।')],
+    [sh(bg(set='river', tod='dawn', hz=560, reeds=1, lotus=8), 'river_dawn'), piece('basket', 'basket', k='anim', every=3, x=600, y=740, s=1.0, speed=22), fx('ripples', x=640, y=760, n=4)],
+    cam=pan(700, 900, 500, 1.2), amb='river', sfx=[dict(n='splash', at=1.0, v=0.4)]),
+  S('j_kuntiface', 'lament', [
+      ln('KUNTI', 'Forgive me, child. May the river be kinder to you than I was.', 'मुझे क्षमा करना, पुत्र। नदी तुम्हारे प्रति मुझसे अधिक दयालु हो।')],
+    [sh(bg(set='river', tod='dawn', hz=560, reeds=1, lotus=8), 'river_dawn'), face('kuntiY', 600, 430, 190, 1, 'sorrow', rim=RIM_GOLD)],
+    cam=push(620, 450, 1.04, 1.16), amb='river'),
+  S('j_drift', 'river', [
+      ln('VYASA', 'The basket floated down the river for many days, until a charioteer named Adhiratha pulled it from the water, and took the child home to his wife Radha.',
+                  'टोकरी कई दिनों तक नदी में बहती रही, जब तक अधिरथ नाम के एक सारथी ने उसे जल से नहीं निकाला, और बालक को अपनी पत्नी राधा के पास ले गया।')],
+    [sh(bg(set='valley', tod='day', hz=430, seed=1.2, groves=18), 'valley_day'), piece('basket2', 'basket', k='anim', every=3, x=700, y=860, s=0.6, speed=10)],
+    cam=[[700, 700, 1.8], [800, 470, 1.1]], amb='river'),
+  S('j_radha', 'joy', [
+      ln('RADHA', 'A son! The river has given us a son! Look, husband, he shines like the morning.', 'एक पुत्र! नदी ने हमें पुत्र दिया है! देखिए स्वामी, यह सुबह की तरह चमक रहा है।'),
+      ln('VYASA', 'They named him Vasusena, born with wealth. The world would know him by another name.', 'उन्होंने उसका नाम वसुषेण रखा, जो धन के साथ जन्मा। संसार उसे दूसरे नाम से जानेगा।', gap=0.8)],
+    [sh(bg(set='river', tod='gold', hz=520, reeds=1), 'river_gold'), figs('parents', [dict(who='maid', x=820, y=880, S=480, f=-1), fig('charioteer', 560, 880, 500, 1, 'bless')], rim=RIM_GOLD), fx('sparkle', y0=600, y1=900, n=50)],
+    cam=push(700, 470, 1.04, 1.12), amb='river'),
+  S('j_cave', 'krishna', [
+      ln('GANESHA', 'Muni, that child...', 'मुनिवर, वह बालक...'),
+      ln('VYASAC', 'Karna. The eldest son of Kunti, who will grow up as a charioteer\'s son, and never know who he is until it is too late.',
+                   'कर्ण। कुंती का सबसे बड़ा पुत्र, जो एक सारथी के पुत्र के रूप में बड़ा होगा, और कभी नहीं जानेगा कि वह कौन है, जब तक बहुत देर न हो जाए।', gap=0.8)],
+    CAVE_V('sorrow'), cam=push(700, 440, 1.0, 1.12), amb='night'),
+
+  # ---------- two queens ----------
+  S('k_swayam', 'joy', [
+      ln('VYASA', 'Years later, at her swayamvar, Kunti placed the garland around the neck of King Pandu. And Bhishma, for the good of the kingdom, found him a second wife, Madri, princess of the Madras.',
+                  'वर्षों बाद, अपने स्वयंवर में, कुंती ने राजा पांडु के गले में वरमाला डाली। और भीष्म ने, राज्य के हित में, उनके लिए दूसरी पत्नी भी ढूँढी, माद्री, मद्र देश की राजकुमारी।', at=1.0)],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'),
+     figs('pwed', [dict(who='kuntiY', x=540, y=880, S=480, f=1), fig('pandu', 800, 880, 500, 1, 'bless'), dict(who='madri', x=1060, y=880, S=470, f=-1)], rim=RIM_GOLD), fx('petals', every=2, n=80)],
+    cam=push(800, 470, 1.04, 1.12), amb='court', tin='fade', sfx=[dict(n='bells', at=0.5, v=0.5), dict(n='conch', at=1.5, v=0.4)]),
+  S('k_madri', 'love', [
+      ln('MADRI', 'I will be a sister to you, Kunti, not a rival.', 'मैं तुम्हारी बहन बनकर रहूँगी, कुंती, सौतन बनकर नहीं।')],
+    [sh(bg(set='court', tone='#5a1a16', throne=[800, 660, 240], canopy=1), 'court_red'), face('madri', 1040, 430, 180, -1, 'smile', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.04, 1.12), amb='court', hero=1, name=name('MADRI', 'माद्री', 'princess of Madra', 'मद्र राजकुमारी', -1)),
+  S('k_conquest', 'march', [
+      ln('VYASA', 'Pandu rode out with his armies to the east and the west, to Magadha and Videha and Kashi, and the kings of the earth paid him tribute.',
+                  'पांडु अपनी सेनाओं के साथ पूर्व और पश्चिम गए, मगध, विदेह और काशी तक, और पृथ्वी के राजाओं ने उन्हें कर दिया।')],
+    [bg(set='field', sunX=820, sunY=520), piece('chariot3', 'warChariot', k='anim', every=2, x=500, y=880, s=0.7, driver='charioteer', rider='pandu')],
+    cam=pan(650, 950, 480, 1.1), amb='battle', sfx=[dict(n='conch', at=0.5, v=0.5), dict(n='hooves', at=1.0, v=0.6)]),
+  S('k_land', 'heroic', [], [sh(bg(set='valley', tod='gold', hz=480, city=[1250, 300], seed=0.6), 'valley_gold'), fx('dust', col='#f0c070', n=40)],
+    cam=pan(600, 1000, 470, 1.2), amb='birds', min=7),
+  S('k_vidura', 'court', [
+      ln('VYASA', 'Vidura, the wise son of the maid, was made chief minister. He could see what the kings could not. And he would spend his whole life saying it, and not being heard.',
+                  'दासी के ज्ञानी पुत्र विदुर को महामंत्री बनाया गया। वे वह देख सकते थे जो राजा नहीं देख पाते थे। और वे जीवन भर वह कहते रहेंगे, और कोई नहीं सुनेगा।')],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), face('vidura', 1040, 430, 180, -1, 'calm', rim=RIM_GOLD, style=dict(hair='#2a201a'))],
+    cam=push(1020, 450, 1.0, 1.12), amb='court', hero=1, name=name('VIDURA', 'विदुर', 'the wise minister', 'ज्ञानी महामंत्री', -1)),
+  S('k_kingdom', 'heroic', [
+      ln('VYASA', 'So it stood. A pale king on the throne, with two queens. A blind brother beside him, with a blindfolded wife. A wise man who was never heard. A bitter prince from Gandhara. And somewhere down the river, a charioteer\'s son, who was not a charioteer\'s son at all.',
+                  'तो ऐसा था। सिंहासन पर एक पीला राजा, दो रानियों के साथ। उनके पास एक अंधा भाई, आँखों पर पट्टी बाँधे पत्नी के साथ। एक ज्ञानी जिसकी कोई नहीं सुनता था। गांधार का एक कड़वा राजकुमार। और नदी के नीचे कहीं, एक सारथी का पुत्र, जो सारथी का पुत्र था ही नहीं।')],
+    [sh(bg(set='city', tod='dusk', ghats=1), 'city_dusk'), fx('fireflies', n=40)],
+    cam=pan(1000, 640, 450, 1.15), amb='river', min=14),
+  S('k_answer', 'mystery', [
+      ln('GANESHA', 'All the pieces are on the board.', 'सारे मोहरे बिसात पर हैं।'),
+      ln('VYASAC', 'Not yet, scribe. Tomorrow, a curse in the forest, a king who may not touch his wives, and five sons born of gods.',
+                   'अभी नहीं, लेखक। कल, वन में एक शाप, एक राजा जो अपनी पत्नियों को छू नहीं सकता, और देवताओं से जन्मे पाँच पुत्र।', gap=0.8),
+      ln('GANESHA', 'My pen is ready, Muni.', 'मेरी लेखनी तैयार है, मुनिवर।', gap=0.8)],
+    CAVE('night'), cam=[[800, 520, 1.3], [800, 450, 1.0]], amb='night', tout='fade', min=14),
+])
+
 # ---------------------------------------------------------------- voices ---
 CAST = copy.deepcopy(BASE_CAST)
 CAST['en'].update({
@@ -557,6 +1017,13 @@ CAST['en'].update({
     'BRAHMA': dict(voice='am_onyx:2+bm_george:1', speed=0.84, pitch=-3.5, fx='divine_big'),
     'PRATIPA': dict(voice='bm_daniel:2+bm_fable:1', speed=0.86, pitch=-2.5, fx='elder'),
     'SATYAVATI': dict(voice='af_heart:2+af_sky:1', speed=0.95, pitch=0),
+    'AMBA': dict(voice='bf_emma:2+af_nicole:1', speed=0.95, pitch=0),
+    'SHALVA': dict(voice='am_eric:2+am_adam:1', speed=0.95, pitch=-0.5),
+    'KING': dict(voice='am_puck:2+am_eric:1', speed=1.0, pitch=0.5),
+    'DURVASA': dict(voice='bm_lewis:2+am_fenrir:1', speed=0.9, pitch=-1.5, fx='elder'),
+    'SURYA': dict(voice='am_michael:2+am_eric:1', speed=0.9, pitch=-1, fx='divine'),
+    'MADRI': dict(voice='af_sky:2+af_bella:1', speed=0.95, pitch=0.5),
+    'RADHA': dict(voice='af_nicole:2+af_sky:1', speed=0.98, pitch=0),
     'VYASAC': dict(voice='bm_george:2+bm_fable:1', speed=0.88, pitch=-2.5, fx='cave'),
     'GANESHA': dict(voice='am_michael:2+am_puck:1', speed=0.94, pitch=-1.5, fx='cave'),
     'VASISHTHA': dict(voice='bm_fable:2+bm_daniel:1', speed=0.86, pitch=-3),
@@ -573,6 +1040,13 @@ CAST['hi'].update({
     'BRAHMA': dict(voice='hm_omega:2+am_onyx:1', speed=0.82, pitch=-4, fx='divine_big'),
     'PRATIPA': dict(voice='hm_omega:2+bm_daniel:1', speed=0.84, pitch=-3, fx='elder'),
     'SATYAVATI': dict(voice='hf_alpha:2+af_heart:1', speed=0.95, pitch=0),
+    'AMBA': dict(voice='hf_alpha:2+bf_emma:1', speed=0.95, pitch=0.5),
+    'SHALVA': dict(voice='hm_psi:2+am_eric:1', speed=0.95, pitch=-0.5),
+    'KING': dict(voice='hm_psi:2+am_puck:1', speed=1.0, pitch=1.0),
+    'DURVASA': dict(voice='hm_omega:2+am_fenrir:1', speed=0.9, pitch=-1.5, fx='elder'),
+    'SURYA': dict(voice='hm_psi:2+am_michael:1', speed=0.9, pitch=-1, fx='divine'),
+    'MADRI': dict(voice='hf_beta:2+af_sky:1', speed=0.95, pitch=0.5),
+    'RADHA': dict(voice='hf_alpha:2+af_nicole:1', speed=0.98, pitch=0.5),
     'VYASAC': dict(voice='hm_omega', speed=0.86, pitch=-2.0, fx='cave'),
     'GANESHA': dict(voice='hm_psi:2+am_puck:1', speed=0.92, pitch=-1.5, fx='cave'),
     'VASISHTHA': dict(voice='hm_omega:2+bm_fable:1', speed=0.84, pitch=-3.5),
