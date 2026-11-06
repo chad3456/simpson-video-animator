@@ -39,3 +39,38 @@ python3 mahabharata/engine/make_script.py                           # script.md
 - `engine/audio.py`: Kokoro voices (narrator, Krishna, Krishna as Time, Arjuna, Duryodhana) and the score, reusing the Mahagatha synthesiser in `mahagatha/engine/build_audio.py`.
 - `engine/lib/`: p5.js 1.11.13 and p5.brush 1.1.4 (MIT).
 - `engine/fonts/`: Cinzel, Cinzel Decorative, Cormorant Garamond, Rozha One (all OFL).
+
+## The series: ten episodes in English and Hindi
+
+`series/story.py` holds the whole series as data: 10 episodes, 101 shots, and every line in English and Hindi. Run it to write `series/epNN.json`.
+
+| # | Episode | Hindi |
+|---|---------|-------|
+| 1 | The Terrible Vow | भीष्म प्रतिज्ञा |
+| 2 | The Princes | राजकुमार |
+| 3 | Fire and the Swayamvar | लाक्षागृह और स्वयंवर |
+| 4 | The Game of Dice | द्यूत क्रीड़ा |
+| 5 | The Disrobing | चीरहरण |
+| 6 | The Forest Years | वनवास |
+| 7 | Peace Refused | शांति का अंतिम प्रयास |
+| 8 | The Song of God | भगवद्गीता |
+| 9 | The Fall of the Great | महारथियों का पतन |
+| 10 | Dharma Victorious | धर्म की विजय |
+
+What the series adds over the short:
+
+- **Faces** (`engine/faces.js`). There are 28 characters, each with its own face shape, nose, eyes, brows, facial hair, hair, crown, tilak and skin tone. `portrait()` draws a three-quarter head that can blink, talk, look around and change expression.
+- **Sets, effects and story pieces** (`engine/eps/lib.js`, `engine/eps/pieces.js`). There are 15 painted sets and 15 effects, plus pieces such as the dice game, the endless sari, the bed of arrows, the chakravyuha and the eclipse. Krishna's **Vishvarupa** is built in layers: a flame aureole, a ring of god heads, a wheel of eighteen armed hands, a chest that opens onto the cosmos, the mouths of Time and streams of warriors.
+- **Sound** (`engine/series_audio.py`). Each character has their own voice blend in both languages. Each scene has its own music cue (court, sorrow, dice, battle, gita, vishva, kala and others), plus ambience beds and sound effects.
+
+Build steps, run from `engine/`, with `EP` as the episode id (for example `ep08`):
+
+```
+python3 ../series/story.py
+python3 series_audio.py ep01 ep02 ...              # writes timeline.json, en.wav and hi.wav
+python3 series_jobs.py plates EP > plates.json && node paint.mjs plates.json
+python3 series_jobs.py anim EP > anim.json && node paint.mjs anim.json
+python3 compose_series.py EP                         # writes EP_en.mp4 and EP_hi.mp4
+python3 make_series_script.py                        # writes series/script.md
+python3 series_poster.py                             # writes the key art in both languages
+```
