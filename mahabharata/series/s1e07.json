@@ -209,6 +209,96 @@
    "tail": 1.8
   },
   {
+   "id": "s1e07_a_hermitage",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "In the Dvaita forest they lived like hermits. Before dawn the brahmins chanted by the lake. Bhima hunted, the twins gathered roots and fruit, Arjuna practised with his bow until his arms ached, and Yudhishthira listened to the sages tell the old stories, of Nala, of Savitri, of Rama.",
+     "hi": "द्वैत वन में वे तपस्वियों की तरह रहे। भोर से पहले ब्राह्मण झील किनारे वेद पढ़ते। भीम आखेट करते, जुड़वाँ भाई कंद मूल फल बटोरते, अर्जुन तब तक धनुष का अभ्यास करते जब तक भुजाएँ दुखने न लगें, और युधिष्ठिर ऋषियों से पुरानी कथाएँ सुनते, नल की, सावित्री की, राम की।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "dawn"
+    },
+    {
+     "n": "leaves",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "lotusLeaf",
+     "args": {
+      "at": [
+       [
+        500,
+        820,
+        90
+       ],
+       [
+        1100,
+        830,
+        100
+       ]
+      ]
+     }
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 840
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 20
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.2
+    ],
+    [
+     800,
+     460,
+     1.0
+    ]
+   ],
+   "min": 12,
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "om",
+     "at": 2.0,
+     "v": 0.3
+    },
+    {
+     "n": "bell",
+     "at": 10.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e07_b_durvasa",
    "music": "tension",
    "lines": [
@@ -650,6 +740,64 @@
    "tail": 1.8
   },
   {
+   "id": "s1e07_c_lake",
+   "music": "forest",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The seasons kept turning. The brothers grew lean and brown and quiet. Their beards grew long. Draupadi learned the names of every bird in the forest. And every evening Yudhishthira counted: so many years gone, so many left.",
+     "hi": "ऋतुएँ बदलती रहीं। भाई दुबले, साँवले और शांत होते गए। उनकी दाढ़ियाँ लंबी हो गईं। द्रौपदी ने वन के हर पक्षी का नाम सीख लिया। और हर साँझ युधिष्ठिर गिनते: इतने वर्ष बीते, इतने बचे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "dusk"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 40
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 840
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     0.98
+    ],
+    [
+     800,
+     540,
+     1.15
+    ]
+   ],
+   "min": 12,
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
    "id": "s1e07_d_lotus",
    "music": "river",
    "lines": [
@@ -722,6 +870,80 @@
    ],
    "min": 11,
    "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e07_d_climb",
+   "music": "wonder",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He climbed through forests of deodar and fields of snow, past waterfalls that fell from the clouds. Lions fled from him. Elephants stepped aside. He roared for the joy of it, and the mountain roared back.",
+     "hi": "वे देवदार के वनों और हिम के मैदानों से होकर चढ़े, बादलों से गिरते झरनों के पास से। सिंह उनसे भागे। हाथी रास्ते से हट गए। वे आनंद में गरजे, और पर्वत ने भी गर्जना की।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "himalaya",
+     "src": "s1e07_c_vow_bg"
+    },
+    {
+     "n": "tiny",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 760,
+       "y": 820,
+       "S": 130,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#8a6a3a",
+        "crown": "bun",
+        "scarf": "#7a5a2a",
+        "jewel": "#8a7a5a"
+       }
+      }
+     ]
+    },
+    {
+     "n": "fx_snow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "snow",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     0.98
+    ],
+    [
+     800,
+     540,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "roar",
+     "at": 12.0,
+     "v": 0.4
+    }
+   ],
    "tail": 1.8
   },
   {
@@ -1989,6 +2211,96 @@
    "tail": 1.8
   },
   {
+   "id": "s1e07_g_q3",
+   "music": "cosmic",
+   "lines": [
+    {
+     "who": "YAKSHA",
+     "en": "What is heavier than the earth? What is higher than the sky?",
+     "hi": "पृथ्वी से भारी क्या है? आकाश से ऊँचा क्या है?",
+     "fx": "divine"
+    },
+    {
+     "who": "YUDHI",
+     "en": "A mother is heavier than the earth. A father is higher than the sky.",
+     "hi": "माता पृथ्वी से भारी है। पिता आकाश से ऊँचा है।",
+     "gap": 0.6
+    },
+    {
+     "who": "YAKSHA",
+     "en": "What is the enemy that cannot be conquered? What is the disease that never ends?",
+     "hi": "वह कौन सा शत्रु है जिसे जीता नहीं जा सकता? वह कौन सा रोग है जो कभी समाप्त नहीं होता?",
+     "fx": "divine",
+     "gap": 0.8
+    },
+    {
+     "who": "YUDHI",
+     "en": "Anger is the enemy that cannot be conquered. Greed is the disease that never ends.",
+     "hi": "क्रोध वह शत्रु है जिसे जीता नहीं जा सकता। लोभ वह रोग है जो कभी समाप्त नहीं होता।",
+     "gap": 0.6
+    },
+    {
+     "who": "YAKSHA",
+     "en": "Who is truly happy?",
+     "hi": "सच में सुखी कौन है?",
+     "fx": "divine",
+     "gap": 0.8
+    },
+    {
+     "who": "YUDHI",
+     "en": "The one who owes nothing, who is not in exile, and who cooks a few vegetables in his own home at the end of the day.",
+     "hi": "वह जिस पर कोई ऋण नहीं, जो प्रवास में नहीं, और जो दिन ढले अपने घर में थोड़ा सा साग पकाता है।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "mist",
+     "src": "s1e07_g_lake_bg"
+    },
+    {
+     "n": "form",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "yakshaForm",
+     "args": {
+      "x": 1050,
+      "y": 430
+     }
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 1050,
+      "y": 800
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     900,
+     450,
+     1.0
+    ],
+    [
+     900,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "void",
+   "tail": 1.8
+  },
+  {
    "id": "s1e07_g_choice",
    "music": "sorrow",
    "lines": [
@@ -2080,7 +2392,8 @@
      "k": "plate",
      "d": 0.6,
      "set": "lake",
-     "tod": "dawn"
+     "tod": "dawn",
+     "src": "s1e07_a_hermitage_bg"
     },
     {
      "n": "face",
@@ -2144,6 +2457,186 @@
     {
      "n": "om",
      "at": 4.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e07_g_wake",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The four brothers sat up by the water, as if from sleep, and could not understand why Yudhishthira was weeping and laughing at once. And the brahmin's fire-sticks lay on the grass beside them, returned.",
+     "hi": "चारों भाई पानी के पास ऐसे उठ बैठे जैसे नींद से, और समझ नहीं पाए कि युधिष्ठिर एक साथ रो और हँस क्यों रहे हैं। और ब्राह्मण की अरणि उनके पास घास पर पड़ी थी, लौटाई हुई।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "dawn",
+     "src": "s1e07_a_hermitage_bg"
+    },
+    {
+     "n": "wake",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "nakula",
+       "x": 480,
+       "y": 880,
+       "S": 400,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#8a6a3a",
+        "crown": "bun",
+        "scarf": "#7a5a2a",
+        "jewel": "#8a7a5a"
+       }
+      },
+      {
+       "who": "sahadeva",
+       "x": 680,
+       "y": 880,
+       "S": 400,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#8a6a3a",
+        "crown": "bun",
+        "scarf": "#7a5a2a",
+        "jewel": "#8a7a5a"
+       }
+      },
+      {
+       "who": "arjuna",
+       "x": 900,
+       "y": 880,
+       "S": 420,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#8a6a3a",
+        "crown": "bun",
+        "scarf": "#7a5a2a",
+        "jewel": "#8a7a5a"
+       }
+      },
+      {
+       "who": "bhima",
+       "x": 1130,
+       "y": 880,
+       "S": 460,
+       "f": -1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#8a6a3a",
+        "crown": "bun",
+        "scarf": "#7a5a2a",
+        "jewel": "#8a7a5a"
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     500,
+     1.1
+    ]
+   ],
+   "amb": "birds",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e07_g_shami",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Before they entered the city of Virata, they wrapped their weapons in hides, Gandiva and Bhima's mace and the swords of the twins, and tied the bundle high in a shami tree near the burning ground, and hung a corpse beside it, so no one would go near.",
+     "hi": "विराट नगर में प्रवेश करने से पहले उन्होंने अपने अस्त्र खालों में लपेटे, गांडीव और भीम की गदा और जुड़वाँ भाइयों की तलवारें, और गठरी को श्मशान के पास एक शमी के पेड़ पर ऊँचा बाँध दिया, और उसके पास एक शव लटका दिया, कि कोई पास न जाए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "season": "autumn"
+    },
+    {
+     "n": "fx_leaves",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "leaves",
+      "n": 40
+     }
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#806050",
+      "n": 20
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 10,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "wind",
+     "at": 1.0,
      "v": 0.4
     }
    ],
@@ -2392,6 +2885,121 @@
      "n": "bells",
      "at": 1.0,
      "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e07_h_wrestle",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "At the great festival of Brahma, a wrestler named Jimuta came to Matsya and challenged every man in the kingdom. No one would face him. Then the cook, Ballava, rolled up his sleeves, and lifted Jimuta over his head, and whirled him round a hundred times, and threw him down.",
+     "hi": "ब्रह्मा के महोत्सव में जीमूत नाम का एक पहलवान मत्स्य आया और राज्य के हर पुरुष को ललकारा। कोई उसके सामने नहीं आया। तब रसोइये बल्लव ने आस्तीनें चढ़ाईं, और जीमूत को सिर के ऊपर उठाकर सौ बार घुमाया, और पटक दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "arena",
+     "tod": "day"
+    },
+    {
+     "n": "wr",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 640,
+       "y": 900,
+       "S": 620,
+       "f": 1,
+       "pose": "charge",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "band"
+       }
+      },
+      {
+       "who": "soldier",
+       "x": 960,
+       "y": 900,
+       "S": 600,
+       "f": -1,
+       "pose": "charge"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "folk",
+     "k": "plate",
+     "d": 1.0,
+     "draw": "folk",
+     "args": {
+      "cnt": 20,
+      "y": 640,
+      "dy": 30,
+      "s": 34,
+      "seed": 44
+     }
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c08a5a",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.14
+    ]
+   ],
+   "shake": [
+    [
+     16.0,
+     16.5
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "cheer",
+     "at": 1.0,
+     "v": 0.4
+    },
+    {
+     "n": "boom",
+     "at": 16.0,
+     "v": 0.6
+    },
+    {
+     "n": "cheer",
+     "at": 17.0,
+     "v": 0.6
     }
    ],
    "tail": 1.8
@@ -2656,6 +3264,110 @@
     {
      "n": "gong",
      "at": 15.0,
+     "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e07_h_pyre",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Kichaka's hundred brothers blamed Sairandhri. They tied her to his funeral bier, to burn her with him. But a giant came over the city wall in the dark, with a whole tree torn up by the roots, and the hundred brothers did not live to light the fire.",
+     "hi": "कीचक के सौ भाइयों ने सैरंध्री को दोषी ठहराया। उन्होंने उन्हें उसकी अर्थी से बाँध दिया, कि उन्हें उसके साथ जला दें। पर अँधेरे में एक दैत्याकार पुरुष नगर की दीवार लाँघकर आया, जड़ से उखाड़ा हुआ पूरा पेड़ लिए, और सौ भाई आग लगाने तक जीवित नहीं रहे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "dark",
+     "base": "#140608",
+     "glow": "#5a1a10"
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        800,
+        860,
+        260,
+        300
+       ]
+      ],
+      "n": 80
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 80
+     },
+     "b": "add"
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 800,
+       "y": 900,
+       "S": 640,
+       "f": 1,
+       "pose": "maceUp",
+       "sil": true
+      }
+     ]
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "shake": [
+    [
+     14.0,
+     14.5
+    ]
+   ],
+   "amb": "fire",
+   "sfx": [
+    {
+     "n": "fire",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "roar",
+     "at": 12.0,
+     "v": 0.5
+    },
+    {
+     "n": "boom",
+     "at": 14.0,
      "v": 0.5
     }
    ],
@@ -3007,6 +3719,101 @@
    "tail": 1.8
   },
   {
+   "id": "s1e07_i_gandiva",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He unwrapped Gandiva and strung it, and plucked the string once. The sound rolled across the plain like thunder, and the horses of the Kuru army reared, and far away, Bhishma lifted his head and listened.",
+     "hi": "उन्होंने गांडीव खोला और उस पर प्रत्यंचा चढ़ाई, और एक बार डोरी खींची। वह ध्वनि मैदान में बादलों की गड़गड़ाहट की तरह लुढ़की, और कुरु सेना के घोड़े पिछले पैरों पर खड़े हो गए, और दूर, भीष्म ने सिर उठाकर सुना।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "gold",
+     "hz": 740,
+     "hills": 1,
+     "src": "s1e07_d_hanuman_bg"
+    },
+    {
+     "n": "bow",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "arjuna",
+       "x": 800,
+       "y": 900,
+       "S": 640,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn",
+       "style": {
+        "dhoti": "#e86aa0"
+       }
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 800,
+      "y": 300,
+      "r0": 100,
+      "r1": 900,
+      "col": "#fff0c0"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     480,
+     1.0
+    ],
+    [
+     800,
+     470,
+     1.14
+    ]
+   ],
+   "shake": [
+    [
+     5.0,
+     5.6
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "thunder",
+     "at": 5.0,
+     "v": 0.6
+    },
+    {
+     "n": "hooves",
+     "at": 7.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e07_i_devadatta",
    "music": "battle",
    "lines": [
@@ -3120,6 +3927,63 @@
     ],
     [
      1020,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "battle",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e07_i_drona",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Drona looked at the single chariot coming towards the whole Kuru army, and smiled like a proud father. Karna boasted that he would kill Arjuna alone. Kripa told him he talked too much. Ashwatthama told him he would run. And they argued among themselves while Arjuna came on.",
+     "hi": "द्रोण ने पूरी कुरु सेना की ओर आते उस एक रथ को देखा, और एक गर्वित पिता की तरह मुस्कुराए। कर्ण ने डींग मारी कि वह अकेला अर्जुन को मार देगा। कृप ने कहा कि वह बहुत बोलता है। अश्वत्थामा ने कहा कि वह भाग जाएगा। और वे आपस में झगड़ते रहे जबकि अर्जुन बढ़ते आए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 1,
+     "density": 0.8
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drona",
+      "x": 800,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
      440,
      1.14
     ]

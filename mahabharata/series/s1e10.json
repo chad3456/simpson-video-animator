@@ -366,6 +366,85 @@
    "tail": 1.8
   },
   {
+   "id": "s1e10_b_uttara",
+   "music": "love",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Before he rode out, he went to his young wife Uttara, Virata's daughter, who was carrying his child. She asked him to come back before evening. He laughed and said he would bring her the banners of the Kaurava kings to make dresses for her dolls.",
+     "hi": "निकलने से पहले वे अपनी युवा पत्नी उत्तरा के पास गए, विराट की पुत्री, जो उनके शिशु को गर्भ में लिए थीं। उन्होंने उनसे साँझ से पहले लौट आने को कहा। वे हँसे और बोले कि वे उनकी गुड़ियों के वस्त्रों के लिए कौरव राजाओं के ध्वज ले आएँगे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "two",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "abhi",
+       "x": 680,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "stand"
+      },
+      {
+       "who": "uttaraW",
+       "x": 980,
+       "y": 880,
+       "S": 460,
+       "f": -1
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 20
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     820,
+     480,
+     1.0
+    ],
+    [
+     820,
+     470,
+     1.12
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 1.0,
+     "v": 0.2
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e10_b_in",
    "music": "battle",
    "lines": [
@@ -619,6 +698,92 @@
     {
      "n": "crack",
      "at": 12
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e10_b_alone",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Outside the wheel, Bhima and Satyaki and the twins hurled themselves at Jayadratha again and again, and were thrown back again and again. They could hear the boy fighting inside. They could not reach him.",
+     "hi": "चक्र के बाहर भीम और सात्यकि और जुड़वाँ भाई बार बार जयद्रथ पर टूट पड़े, और बार बार लौटा दिए गए। वे भीतर बालक को लड़ते सुन सकते थे। वे उस तक पहुँच नहीं सके।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 560,
+     "dead": 1,
+     "src": "s1e10_b_jaya_bg"
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 800,
+       "y": 880,
+       "S": 620,
+       "f": 1,
+       "pose": "maceUp",
+       "weapon": "mace"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 90
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "roar",
+     "at": 1.0,
+     "v": 0.4
+    },
+    {
+     "n": "clash",
+     "at": 4.0
+    },
+    {
+     "n": "clash",
+     "at": 8.0
     }
    ],
    "tail": 1.8
@@ -887,6 +1052,76 @@
      "v": 0.5
     }
    ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e10_c_daruka",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "That night Krishna did not sleep. He called his charioteer Daruka and said: harness my own chariot tomorrow, with my weapons in it. If Arjuna cannot reach Jayadratha by sunset, I will break my vow and fight myself. I cannot live in a world without Arjuna.",
+     "hi": "उस रात कृष्ण नहीं सोए। उन्होंने अपने सारथी दारुक को बुलाकर कहा: कल मेरा अपना रथ जोतना, मेरे अस्त्रों के साथ। यदि सूर्यास्त तक अर्जुन जयद्रथ तक नहीं पहुँच पाए, तो मैं अपनी प्रतिज्ञा तोड़कर स्वयं लड़ूँगा। मैं अर्जुन के बिना संसार में नहीं रह सकता।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp",
+     "src": "s1e10_c_vow_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#cfe4ff",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.3
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "night",
    "tail": 1.8
   },
   {
@@ -1916,6 +2151,107 @@
    "tail": 1.8
   },
   {
+   "id": "s1e10_e_narayana",
+   "music": "storm",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "When Ashwatthama heard how his father had been tricked, he went mad with grief, and loosed the Narayana weapon. The sky filled with fire. Then Krishna shouted to the whole army: get down from your chariots, put down your weapons, bow your heads. It strikes only those who resist. They all lay down, all except Bhima, who roared and charged, until Krishna and Arjuna dragged him down. And the fire passed over them.",
+     "hi": "जब अश्वत्थामा ने सुना कि उनके पिता को कैसे छला गया, वे शोक से पागल हो गए, और नारायण अस्त्र छोड़ा। आकाश आग से भर गया। तब कृष्ण ने पूरी सेना से चिल्लाकर कहा: रथों से उतरो, अस्त्र रख दो, सिर झुकाओ। यह केवल विरोध करने वालों पर गिरता है। सब लेट गए, भीम को छोड़कर, जो गरजकर आगे बढ़े, जब तक कृष्ण और अर्जुन ने उन्हें खींचकर नीचे नहीं गिराया। और आग उनके ऊपर से गुज़र गई।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "crimson",
+     "hills": 0,
+     "ground": "#5a2a1e",
+     "hz": 0,
+     "src": "s1e10_b_seven_bg"
+    },
+    {
+     "n": "volley",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 140
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_flash",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "flash",
+      "at": [
+       3.0
+      ]
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     0.98
+    ],
+    [
+     800,
+     520,
+     1.12
+    ]
+   ],
+   "g": {
+    "tint": "#ff5020",
+    "k": 0.1
+   },
+   "shake": [
+    [
+     3.0,
+     4.0
+    ]
+   ],
+   "amb": "storm",
+   "sfx": [
+    {
+     "n": "magic",
+     "at": 2.0
+    },
+    {
+     "n": "thunder",
+     "at": 3.0
+    },
+    {
+     "n": "roar",
+     "at": 20.0,
+     "v": 0.5
+    },
+    {
+     "n": "swell",
+     "at": 28.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e10_f_bhima",
    "music": "storm",
    "lines": [
@@ -2444,6 +2780,75 @@
    "tail": 1.8
   },
   {
+   "id": "s1e10_f_night",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Yudhishthira knelt by the body of the brother he had never known, and cursed all women: from this day, he said, no woman will ever be able to keep a secret. And then he wept until morning.",
+     "hi": "युधिष्ठिर उस भाई के शव के पास घुटनों पर बैठे जिसे वे कभी नहीं जान पाए, और सब स्त्रियों को शाप दिया: आज से, उन्होंने कहा, कोई स्त्री कभी कोई रहस्य छिपाकर नहीं रख पाएगी। और फिर वे भोर तक रोते रहे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 900,
+     "sunY": 560,
+     "armies": 0,
+     "dead": 1,
+     "src": "s1e10_f_kunti2_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "yudhi",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#cfe4ff",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
    "id": "s1e10_g_lake",
    "music": "mystery",
    "lines": [
@@ -2775,6 +3180,76 @@
      "n": "swell",
      "at": 16.0,
      "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e10_g_flowers",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And when he had finished speaking, flowers fell from the sky onto the broken king, and the gandharvas played music in the air, and the gods praised him. The Pandavas looked at one another, and were ashamed. Krishna said: he spoke the truth. We could not have won any other way.",
+     "hi": "और जब उन्होंने बोलना समाप्त किया, तो आकाश से टूटे हुए राजा पर फूल बरसे, और गंधर्वों ने हवा में संगीत बजाया, और देवताओं ने उनकी प्रशंसा की। पांडवों ने एक दूसरे की ओर देखा, और लज्जित हुए। कृष्ण ने कहा: उन्होंने सत्य कहा। हम और किसी तरह नहीं जीत सकते थे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "crimson",
+     "lotus": 0,
+     "src": "s1e10_g_thigh_bg"
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 80
+     }
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 10,
+   "amb": "temple",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 2.0,
+     "v": 0.4
+    },
+    {
+     "n": "flute",
+     "at": 6.0,
+     "v": 0.3
     }
    ],
    "tail": 1.8
@@ -3399,6 +3874,75 @@
    "tail": 1.8
   },
   {
+   "id": "s1e10_j_ganga",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Before the crowning, they went down to the Ganga to offer water to the dead. Kunti asked them to offer it for Karna too, as their eldest brother. Thousands of lamps floated down the river that night, one for every soul, and the river was full of light from bank to bank.",
+     "hi": "राज्याभिषेक से पहले वे मृतकों को जल देने गंगा तट पर गए। कुंती ने उनसे कर्ण के लिए भी, उनके सबसे बड़े भाई के रूप में, जल देने को कहा। उस रात हज़ारों दीप नदी में बहे, हर आत्मा के लिए एक, और नदी किनारे से किनारे तक प्रकाश से भर गई।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "dusk",
+     "src": "s1e10_h_gem_bg"
+    },
+    {
+     "n": "lamps",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "floatLamps",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 820
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     0.98
+    ],
+    [
+     800,
+     540,
+     1.15
+    ]
+   ],
+   "min": 12,
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "bell",
+     "at": 2.0,
+     "v": 0.3
+    },
+    {
+     "n": "om",
+     "at": 10.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e10_j_city",
    "music": "sorrow",
    "lines": [
@@ -3443,6 +3987,96 @@
    ],
    "min": 9,
    "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e10_j_iron",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "When the brothers came to bow to the blind king, he asked to embrace Bhima, who had killed his sons. Krishna pushed forward an iron statue of Bhima instead. The old man crushed it to powder in his arms, and then wept, thinking he had killed him. Krishna said: it was iron, king. Let your anger die with it.",
+     "hi": "जब भाई अंधे राजा को प्रणाम करने आए, उन्होंने भीम को गले लगाना चाहा, जिसने उनके पुत्रों को मारा था। कृष्ण ने भीम के स्थान पर लोहे की एक मूर्ति आगे कर दी। वृद्ध ने उसे अपनी भुजाओं में कुचलकर चूर्ण कर दिया, और फिर रोने लगे, यह सोचकर कि उन्होंने भीम को मार डाला। कृष्ण ने कहा: वह लोहा था, राजन। अपने क्रोध को भी उसके साथ मर जाने दीजिए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a1210",
+     "throne": [
+      800,
+      660,
+      260
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dhrita",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "anger"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#808080",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.2
+    ]
+   ],
+   "shake": [
+    [
+     9.0,
+     9.6
+    ]
+   ],
+   "amb": "court",
+   "sfx": [
+    {
+     "n": "crack",
+     "at": 9.0,
+     "v": 0.7
+    },
+    {
+     "n": "rumble",
+     "at": 9.2,
+     "v": 0.4
+    }
+   ],
    "tail": 1.8
   },
   {

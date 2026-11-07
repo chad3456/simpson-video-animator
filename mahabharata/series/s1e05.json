@@ -282,6 +282,94 @@
    "tail": 1.8
   },
   {
+   "id": "s1e05_b_friends",
+   "music": "krishna",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "They were more than cousins, those two. They had the same age and the same laugh. People said that Arjuna was Krishna's shadow, and Krishna was Arjuna's mind. They swam, and wrestled, and lay in the shade talking until the sun went down.",
+     "hi": "वे दोनों भाइयों से बढ़कर थे। उनकी आयु एक थी और हँसी भी एक। लोग कहते थे कि अर्जुन कृष्ण की छाया हैं, और कृष्ण अर्जुन का मन। वे तैरते, कुश्ती लड़ते, और छाँव में लेटे बातें करते रहते जब तक सूरज न ढल जाता।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "river",
+     "tod": "day",
+     "hz": 560,
+     "src": "s1e05_b_yamuna_bg"
+    },
+    {
+     "n": "kr",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#7ab0ff",
+      26,
+      0.35
+     ],
+     "breath": 1
+    },
+    {
+     "n": "ar",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 1060,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     640,
+     450,
+     1.1
+    ],
+    [
+     960,
+     450,
+     1.1
+    ]
+   ],
+   "amb": "river",
+   "sfx": [
+    {
+     "n": "flute",
+     "at": 1.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e05_b_agni",
    "music": "fire",
    "lines": [
@@ -575,6 +663,123 @@
    "tail": 1.8
   },
   {
+   "id": "s1e05_b_flee",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The birds rose in clouds and fell back burning. Deer ran in circles. Elephants trumpeted and turned and turned again. And around the whole forest, Krishna and Arjuna drove their chariots, round and round, and let nothing out.",
+     "hi": "पक्षी झुंडों में उड़े और जलते हुए गिर पड़े। हिरण चक्कर काटते रहे। हाथी चिंघाड़ते, मुड़ते और फिर मुड़ते। और पूरे वन के चारों ओर कृष्ण और अर्जुन अपने रथ दौड़ाते रहे, गोल गोल, और किसी को बाहर नहीं जाने दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "forest",
+     "tod": "dusk",
+     "season": "autumn",
+     "src": "s1e05_b_burn_bg"
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        200,
+        780,
+        260,
+        420
+       ],
+       [
+        1400,
+        780,
+        260,
+        420
+       ]
+      ],
+      "n": 100
+     },
+     "b": "add"
+    },
+    {
+     "n": "ch",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warChariot",
+     "args": {
+      "x": 300,
+      "y": 880,
+      "s": 0.55,
+      "rider": "arjuna",
+      "driver": "krishna"
+     },
+     "every": 2
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 80
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_glow",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "glow",
+      "x": 800,
+      "y": 600,
+      "r": 700,
+      "col": "#ff6020",
+      "rate": 4
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     480,
+     1.1
+    ],
+    [
+     1040,
+     480,
+     1.1
+    ]
+   ],
+   "g": {
+    "tint": "#ff9060",
+    "k": 0.1
+   },
+   "amb": "fire",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "fire",
+     "at": 1.0,
+     "v": 0.6
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e05_b_indra",
    "music": "storm",
    "lines": [
@@ -740,6 +945,68 @@
      600,
      470,
      1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e05_b_takshaka",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Takshaka, king of the serpents, had been away that day. When he came home, the forest was ash and his family was gone. He went down into the earth, and waited. Generations later, he would bite Arjuna's grandson, King Parikshit, and the serpent sacrifice at which this whole story was first told would begin.",
+     "hi": "नागराज तक्षक उस दिन दूर थे। जब वे लौटे, वन राख था और उनका परिवार जा चुका था। वे धरती में उतर गए, और प्रतीक्षा करने लगे। पीढ़ियों बाद वे अर्जुन के पौत्र राजा परीक्षित को डसेंगे, और वह सर्प यज्ञ आरंभ होगा जिसमें यह पूरी कथा पहली बार सुनाई गई।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "dusk",
+     "hz": 450,
+     "seed": 6.1,
+     "groves": 0,
+     "col": "#3a2a24"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#6a6a6a",
+      "n": 60
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 20
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
     ]
    ],
    "min": 10,
@@ -993,6 +1260,75 @@
      "n": "cheer",
      "at": 4.0,
      "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e05_c_life",
+   "music": "joy",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Merchants came from every country. Scholars came to debate in its halls, and craftsmen to build its temples. Yudhishthira ruled with such justice that, it was said, the rain came on time, and no child died before his father.",
+     "hi": "हर देश से व्यापारी आए। विद्वान उसकी सभाओं में शास्त्रार्थ करने आए, और शिल्पी उसके मंदिर बनाने। युधिष्ठिर ने ऐसे न्याय से राज किया कि, कहते हैं, वर्षा समय पर होती थी, और कोई बालक अपने पिता से पहले नहीं मरता था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "city",
+     "tod": "gold",
+     "ghats": 1,
+     "col": "#f0e6d0",
+     "src": "s1e05_c_city_bg"
+    },
+    {
+     "n": "trib",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "procession",
+     "args": {
+      "y": 820,
+      "s": 90,
+      "x0": -300,
+      "cnt": 9,
+      "speed": 30
+     },
+     "every": 3
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 30
+     }
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     520,
+     1.12
+    ]
+   ],
+   "min": 10,
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 2.0,
+     "v": 0.3
     }
    ],
    "tail": 1.8
@@ -1274,6 +1610,64 @@
    ],
    "min": 10,
    "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e05_c_sea",
+   "music": "love",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He bathed in the sacred rivers and slept under strange stars. In the land of the Nagas, Ulupi pulled him down into the river and asked him to love her, and he did. In Manipur, Chitrangada met him with a sword in her hand, and he fell in love with her for it.",
+     "hi": "उन्होंने पवित्र नदियों में स्नान किया और अनजाने तारों के नीचे सोए। नागों के देश में उलूपी उन्हें नदी में खींच ले गईं और प्रेम माँगा, और उन्होंने दिया। मणिपुर में चित्रांगदा हाथ में तलवार लिए उनसे मिलीं, और इसी कारण वे उनसे प्रेम कर बैठे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "dusk"
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 780
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.0
+    ],
+    [
+     800,
+     600,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "river",
    "tail": 1.8
   },
   {
@@ -2226,6 +2620,67 @@
    "tail": 1.8
   },
   {
+   "id": "s1e05_e_karna",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "In Hastinapura, Karna listened to the news of each new conquest, and said nothing. Then he too rode out, alone, and made his own conquest of the world for Duryodhana, as if to say: there are two emperors in Bharata, and the other one is mine.",
+     "hi": "हस्तिनापुर में कर्ण हर नई विजय का समाचार सुनते रहे, और कुछ नहीं बोले। फिर वे भी अकेले निकल पड़े, और दुर्योधन के लिए अपनी दिग्विजय की, जैसे कहना चाहते हों: भारत में दो सम्राट हैं, और दूसरा मेरा है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "dusk",
+     "hz": 450,
+     "seed": 2.1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "glow": [
+      "#ffd080",
+      22,
+      0.25
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
    "id": "s1e05_f_yajna",
    "music": "divine",
    "lines": [
@@ -2370,6 +2825,82 @@
     ]
    ],
    "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e05_f_gifts",
+   "music": "wonder",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "They brought blankets woven from the hair of mountain goats, and cloth so fine it could be drawn through a ring. Swords from the west, horses from the north as swift as thought, sandalwood, saffron, and cups of gold so many that the servants stopped counting.",
+     "hi": "वे पहाड़ी बकरियों के बालों से बुने कंबल लाए, और ऐसा महीन वस्त्र जो अँगूठी में से निकल जाए। पश्चिम से तलवारें, उत्तर से विचार जितने तेज़ घोड़े, चंदन, केसर, और इतने सोने के प्याले कि सेवकों ने गिनना छोड़ दिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#1a3a4a",
+     "lamps": 1,
+     "src": "s1e05_c_hall_bg"
+    },
+    {
+     "n": "hall",
+     "k": "plate",
+     "d": 0.8,
+     "draw": "mayaHall",
+     "args": {},
+     "src": "s1e05_c_hall_hall"
+    },
+    {
+     "n": "trib",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "procession",
+     "args": {
+      "y": 840,
+      "s": 90,
+      "x0": -300,
+      "cnt": 9,
+      "speed": 35
+     },
+     "every": 3
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     470,
+     1.1
+    ],
+    [
+     1040,
+     470,
+     1.1
+    ]
+   ],
+   "amb": "crowd",
+   "sfx": [
+    {
+     "n": "bells",
+     "at": 1.0,
+     "v": 0.3
+    }
+   ],
    "tail": 1.8
   },
   {
@@ -3522,7 +4053,8 @@
      "set": "valley",
      "tod": "dusk",
      "hz": 450,
-     "seed": 2.1
+     "seed": 2.1,
+     "src": "s1e05_e_karna_bg"
     },
     {
      "n": "ch",
@@ -3758,6 +4290,80 @@
    "tail": 1.8
   },
   {
+   "id": "s1e05_i_road",
+   "music": "sorrow",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Vidura drove the road from Hastinapura to Indraprastha with a heavy heart. The fields were green and the river was full, and all the way he thought: this is the last time I will see this land at peace.",
+     "hi": "विदुर भारी मन से हस्तिनापुर से इंद्रप्रस्थ का मार्ग चले। खेत हरे थे और नदी भरी थी, और पूरे रास्ते वे सोचते रहे: यह अंतिम बार है जब मैं इस भूमि को शांत देख रहा हूँ।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "gold",
+     "hz": 480,
+     "city": [
+      1250,
+      300
+     ],
+     "seed": 0.6,
+     "src": "s1e05_c_elope_bg"
+    },
+    {
+     "n": "ch",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warChariot",
+     "args": {
+      "x": 300,
+      "y": 860,
+      "s": 0.5,
+      "rider": "vidura"
+     },
+     "every": 2
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     470,
+     1.12
+    ],
+    [
+     1040,
+     470,
+     1.12
+    ]
+   ],
+   "min": 10,
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.3,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e05_i_yudhi",
    "music": "sorrow",
    "lines": [
@@ -3846,6 +4452,92 @@
     ]
    ],
    "amb": "court",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e05_i_arrive",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "So the Pandavas came to Hastinapura with Draupadi and their mother. Dhritarashtra embraced them. Gandhari held Draupadi's hands in her own and blessed her. They slept that night in the palace where they had been children. In the morning, they went to the hall.",
+     "hi": "तो पांडव द्रौपदी और अपनी माता के साथ हस्तिनापुर आए। धृतराष्ट्र ने उन्हें गले लगाया। गांधारी ने द्रौपदी के हाथ अपने हाथों में लेकर आशीर्वाद दिया। उस रात वे उसी महल में सोए जहाँ वे बच्चे थे। सुबह वे सभा में गए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "palace",
+     "tod": "dusk",
+     "x": 300,
+     "w": 1000,
+     "h": 600
+    },
+    {
+     "n": "arrive",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 560,
+       "y": 880,
+       "S": 420,
+       "f": 1,
+       "pose": "stand"
+      },
+      {
+       "who": "bhima",
+       "x": 740,
+       "y": 880,
+       "S": 460,
+       "f": 1,
+       "pose": "stand"
+      },
+      {
+       "who": "arjuna",
+       "x": 920,
+       "y": 880,
+       "S": 420,
+       "f": 1,
+       "pose": "stand"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 10,
+   "amb": "night",
    "tail": 1.8
   },
   {

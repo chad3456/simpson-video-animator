@@ -23,11 +23,21 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'जीत लिया! द्रौपदी हमारी है! जाओ, उसे ले आओ, कुरुओं की नई दासी। उसे आकर दूसरी दासियों के साथ यह सभा बुहारने दो।', fx='growl')],
     [DARK(), face('duryo', 800, 440, 210, 1, 'cruel', rim=RIM_FIRE), fx('embers', n=50)],
     cam=push(800, 450, 1.0, 1.16), amb='court', sfx=[dict(n='crowdlaugh', at=6.0, v=0.4)]),
+  S('b_stunned', 'lament', [
+      ln('VYASA', 'The five brothers sat without moving. They had lost their crowns, their cities, their weapons, and their names. Bhima\'s hands gripped the edge of his seat until the wood cracked. Arjuna stared at the floor. Yudhishthira did not seem to breathe.',
+                  'पाँचों भाई बिना हिले बैठे रहे। उन्होंने अपने मुकुट, अपने नगर, अपने अस्त्र, और अपने नाम खो दिए थे। भीम के हाथों ने आसन का किनारा ऐसे जकड़ा कि लकड़ी चटक गई। अर्जुन फ़र्श को घूरते रहे। युधिष्ठिर जैसे साँस भी नहीं ले रहे थे।')],
+    [HALL(), figs('five', [fig('yudhi', 420, 880, 380, 1, 'despair'), fig('bhima', 620, 880, 420, 1, 'despair'), fig('arjuna', 820, 880, 380, 1, 'despair'), fig('nakula', 1000, 880, 360, -1, 'despair'), fig('sahadeva', 1160, 880, 360, -1, 'despair')], rim=RIM_LAMP), fx('dust', col='#c08a5a', n=30)],
+    cam=[[800, 470, 0.98], [800, 520, 1.12]], amb='court', sfx=[dict(n='crack', at=9.0, v=0.4), dict(n='heartbeat', at=12.0, v=0.4)], min=10),
   S('b_chamber', 'tension', [
       ln('VYASA', 'A servant went to the women\'s quarters. Draupadi was alone, in a single garment, as women were during the days of their monthly impurity. She listened to him, and did not move.',
                   'एक सेवक अंतःपुर गया। द्रौपदी अकेली थीं, एक ही वस्त्र में, जैसे स्त्रियाँ अपने मासिक धर्म के दिनों में रहती थीं। उन्होंने उसकी बात सुनी, और हिलीं नहीं।')],
     [sh(bg(set='chamber', tone='#2a0e12', moon=1), 'dr_chamber'), face('draupadi', 1040, 440, 200, -1, 'stern', rim=RIM_LAMP)],
     cam=push(1020, 450, 1.0, 1.14), amb='night'),
+  S('b_corridor', 'tension', [
+      ln('VYASA', 'The servant stood at her door and did not know where to look. He told her what had happened in the hall, all of it, the kingdom, the brothers, the king himself. And then he told her that she too had been staked, and lost.',
+                  'सेवक उनके द्वार पर खड़ा था और समझ नहीं पा रहा था कि कहाँ देखे। उसने उन्हें बताया कि सभा में क्या हुआ, सब कुछ, राज्य, भाई, स्वयं राजा। और फिर उसने बताया कि उन्हें भी दाँव पर लगाया गया, और हार दिया गया।')],
+    [sh(bg(set='chamber', tone='#2a0e12', moon=1), 'dr_chamber'), fx('dust', col='#a07a5a', n=20)],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='night', sfx=[dict(n='heartbeat', at=12.0, v=0.4)], min=10),
   S('b_question', 'tension', [
       ln('DRAUPADI', 'Go back and ask the gambler this. Did he lose himself first, or me? If he had already lost himself, what right did a slave have to stake his wife? Ask the elders of the Kurus. I will wait for their answer.',
                      'जाओ और उस जुआरी से यह पूछो। उसने पहले स्वयं को हारा, या मुझे? यदि वह पहले ही स्वयं को हार चुका था, तो एक दास को अपनी पत्नी को दाँव पर लगाने का क्या अधिकार था? कुरुओं के वृद्धों से पूछो। मैं उनके उत्तर की प्रतीक्षा करूँगी।')],
@@ -60,6 +70,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('VYASA', 'Drona looked at the floor. Kripa looked at the floor. The blind king said nothing at all. Yudhishthira sat like a dead man.', 'द्रोण ने फ़र्श की ओर देखा। कृप ने फ़र्श की ओर देखा। अंधे राजा ने कुछ भी नहीं कहा। युधिष्ठिर मृत व्यक्ति की तरह बैठे रहे।')],
     [HALL(), face('drona', 500, 460, 160, 1, 'sorrow', n='dr'), face('dhrita', 1100, 460, 160, -1, 'sorrow', n='dh'), fx('dust', col='#c08a5a', n=30)],
     cam=[[600, 460, 1.1], [1000, 460, 1.1]], amb='court'),
+  S('c_vidura', 'tension', [
+      ln('VIDURA', 'A question asked in an assembly must be answered. Whoever knows the answer and stays silent shares the sin of the liar. Kings, elders, you have heard her. Answer her, or the shame of this hall will follow you to the next world.',
+                   'सभा में पूछे गए प्रश्न का उत्तर दिया जाना चाहिए। जो उत्तर जानकर भी चुप रहता है, वह झूठे के पाप का भागी है। राजाओं, वृद्धों, आपने उन्हें सुना है। उन्हें उत्तर दीजिए, वरना इस सभा की लज्जा परलोक तक आपका पीछा करेगी।', fx='elder')],
+    [HALL(), face('vidura', 800, 450, 200, 1, 'anger', rim=RIM_LAMP)],
+    cam=push(800, 450, 1.04, 1.18), amb='court'),
   S('c_vikarna', 'heroic', [
       ln('VIKARNA', 'Then I will answer, since my elders will not! She was staked by a man who had already lost himself. She was not his to stake. She was not won. This is adharma, and I will not be silent.',
                     'तो मैं उत्तर दूँगा, क्योंकि मेरे बड़े नहीं देंगे! उन्हें उस व्यक्ति ने दाँव पर लगाया जो पहले ही स्वयं को हार चुका था। वे उसकी नहीं थीं जो दाँव पर लगतीं। वे जीती नहीं गईं। यह अधर्म है, और मैं चुप नहीं रहूँगा।')],
@@ -102,6 +117,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('VYASA', 'At last Dushasana fell back, exhausted, sweating, ashamed, onto the heap of cloth. Draupadi stood in the middle of the hall, untouched.', 'अंत में दुःशासन थककर, पसीने में, लज्जित होकर, वस्त्रों के ढेर पर पीछे गिर पड़ा। द्रौपदी सभा के बीच अछूती खड़ी थीं।')],
     [HALL(), figs('stand', [dict(who='draupadi', x=800, y=900, S=620, f=1)], rim=RIM_GOLD, glow=['#ffe0a0', 26, 0.3]), fx('petals', every=2, n=60)],
     cam=push(800, 470, 1.04, 1.14), amb='court', sfx=[dict(n='gasp', at=1.0, v=0.6), dict(n='conch', at=6.0, v=0.4)]),
+  S('d_hush', 'lament', [
+      ln('VYASA', 'No one in the hall could speak. Some of the kings wept openly. Some looked away. Bhishma\'s face was wet. And the heap of cloth lay on the crystal floor, red and gold and blue, higher than a man.',
+                  'सभा में कोई बोल न सका। कुछ राजा खुलकर रोए। कुछ ने मुँह फेर लिया। भीष्म का मुख भीगा हुआ था। और वस्त्रों का ढेर फ़र्श पर पड़ा था, लाल और सुनहरा और नीला, एक मनुष्य से भी ऊँचा।')],
+    [HALL(), face('bhishma', 800, 450, 200, 1, 'sorrow', rim=RIM_LAMP), fx('dust', col='#c08a5a', n=20)],
+    cam=push(800, 450, 1.04, 1.18), amb='court'),
 
   # ---------- Bhima's vows ----------
   S('e_vow1', 'fire', [
@@ -118,6 +138,16 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('DRAUPADI', 'And I will not tie up this hair again until it is washed in the blood of Dushasana.', 'और मैं ये केश तब तक नहीं बाँधूँगी जब तक वे दुःशासन के रक्त से न धुलें।')],
     [HALL(), face('draupadi', 800, 450, 210, 1, 'anger', rim=RIM_FIRE, glow=['#ff5020', 30, 0.3], wind=1.6)],
     cam=push(800, 450, 1.04, 1.22), amb='court', sfx=[dict(n='gong', at=5.0, v=0.6)]),
+  S('e_arjuna', 'fire', [
+      ln('ARJUNA', 'And I swear it here, before the gods: Karna, who called her a harlot, will die by my arrows. If the Himalaya moves, if the sun grows cold, this will not change.',
+                   'और मैं यहाँ, देवताओं के सामने शपथ लेता हूँ: कर्ण, जिसने उन्हें वेश्या कहा, मेरे बाणों से मरेगा। हिमालय हिल जाए, सूर्य ठंडा पड़ जाए, यह नहीं बदलेगा।')],
+    [HALL(), face('arjuna', 800, 450, 200, 1, 'anger', rim=RIM_FIRE), fx('embers', n=60)],
+    cam=push(800, 450, 1.04, 1.2), amb='court', sfx=[dict(n='thunder', at=9.0, v=0.4)]),
+  S('e_twins', 'fire', [
+      ln('VYASA', 'Then Sahadeva, the quietest of them, stood and swore that Shakuni, who had thrown the dice, would die by his hand. And Nakula swore to kill Shakuni\'s sons. The hall had heard five vows that day. Every one would be kept.',
+                  'फिर सहदेव, उनमें सबसे शांत, खड़े हुए और शपथ ली कि पासे फेंकने वाला शकुनि उनके हाथों मरेगा। और नकुल ने शकुनि के पुत्रों को मारने की शपथ ली। उस दिन सभा ने पाँच प्रतिज्ञाएँ सुनीं। हर एक पूरी हुई।')],
+    [HALL(), face('sahadeva', 560, 450, 180, 1, 'stern', n='sa', rim=RIM_FIRE), face('nakula', 1060, 450, 180, -1, 'stern', n='na', rim=RIM_FIRE)],
+    cam=[[640, 450, 1.1], [960, 450, 1.1]], amb='court', sfx=[dict(n='gong', at=14.0, v=0.5)]),
   S('e_omens', 'storm', [
       ln('VYASA', 'At that moment a jackal howled in the king\'s sacrificial chamber. Donkeys brayed. Birds of prey screamed over the palace. The blind king heard them, and was afraid at last.',
                   'उसी क्षण राजा के यज्ञशाला में एक सियार हुआँ हुआँ करने लगा। गधे रेंकने लगे। महल के ऊपर शिकारी पक्षी चीखने लगे। अंधे राजा ने उन्हें सुना, और आख़िरकार डर गए।')],
@@ -151,6 +181,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'वे मृगछाला पहनकर हस्तिनापुर से निकले। युधिष्ठिर मुख ढँककर चले, कि उनकी क्रोधित दृष्टि नगर को न जला दे। भीम अपनी विशाल भुजाएँ फैलाते हुए चले। अर्जुन चलते हुए रेत बिखेरते गए, जैसे एक दिन उनके बाण बरसेंगे। जुड़वाँ भाइयों ने मुख पर धूल मल ली। और द्रौपदी खुले केशों में, रोती हुई चलीं।')],
     [sh(bg(set='valley', tod='dusk', hz=450, seed=2.1), 'valley_dusk'), figs('exile', [fig('yudhi', 380, 880, 340, 1, 'stand', style=BARK), fig('bhima', 520, 880, 370, 1, 'stand', style=BARK), fig('arjuna', 660, 880, 340, 1, 'stand', style=BARK), fig('nakula', 790, 880, 320, 1, 'stand', style=BARK), fig('sahadeva', 910, 880, 320, 1, 'stand', style=BARK), dict(who='draupadi', x=1060, y=880, S=330, f=1)], mv=dict(dx=[-60, 160], t=[0, 20])), fx('dust', col='#e08050', n=60)],
     cam=pan(560, 1040, 470, 1.12), amb='wind', min=12),
+  S('g_people', 'lament', [
+      ln('VYASA', 'The people of the city followed them out of the gates, thousands of them, weeping, saying: where they go, we go. At the bank of the Ganga, Yudhishthira turned and begged them to go home. Most did. Some brahmins would not, and followed them into the forest.',
+                  'नगर के लोग द्वार से उनके पीछे निकले, हज़ारों, रोते हुए, कहते हुए: जहाँ वे जाएँगे, हम जाएँगे। गंगा के तट पर युधिष्ठिर मुड़े और उनसे घर लौट जाने की विनती की। अधिकतर लौट गए। कुछ ब्राह्मण नहीं लौटे, और उनके पीछे वन चले गए।')],
+    [sh(bg(set='river', tod='dusk', hz=560), 'river_dusk6'), piece('folk', 'procession', k='anim', every=3, y=840, s=80, x0=-300, cnt=12, speed=25), fx('dust', col='#e08050', n=30)],
+    cam=[[800, 470, 0.98], [800, 520, 1.1]], amb='river', min=10),
   S('g_kunti', 'lament', [
       ln('VYASA', 'Kunti was too old for the forest. She stayed in Hastinapura, in Vidura\'s house. She held each of her sons, and then Draupadi, for a long time.',
                   'कुंती वन के लिए बहुत वृद्ध थीं। वे हस्तिनापुर में विदुर के घर रुकीं। उन्होंने अपने हर पुत्र को, और फिर द्रौपदी को, बहुत देर तक गले लगाए रखा।')],
@@ -174,6 +209,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
     cam=pan(1000, 640, 470, 1.12), amb='birds'),
   S('g_forest', 'forest', [], [sh(bg(set='forest', tod='dawn'), 'forest_dawn'), fx('leaves', n=50)],
     cam=[[800, 520, 1.25], [800, 460, 1.0]], amb='birds', min=7),
+  S('g_ganga', 'river', [
+      ln('VYASA', 'They crossed the Ganga at dusk, and the river was the colour of copper. On the far bank, Yudhishthira turned and looked back at Hastinapura for the last time, its towers small against the evening sky. Then he turned his face to the forest, and did not look back again.',
+                  'उन्होंने साँझ को गंगा पार की, और नदी ताँबे के रंग की थी। दूसरे तट पर युधिष्ठिर मुड़े और अंतिम बार हस्तिनापुर की ओर देखा, उसकी मीनारें साँझ के आकाश में छोटी सी। फिर उन्होंने अपना मुख वन की ओर किया, और फिर पीछे नहीं देखा।')],
+    [sh(bg(set='river', tod='dusk', hz=560), 'river_dusk6'), fx('ripples', x=800, y=820), fx('sparkle', y0=650, y1=900, n=30)],
+    cam=[[800, 470, 0.98], [800, 540, 1.15]], amb='river', min=12),
 
   # ---------- Kamyaka ----------
   S('h_kamyaka', 'forest', [
@@ -181,11 +221,26 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'उन्होंने कमलों से भरी एक झील के किनारे काम्यक वन में अपना घर बनाया। प्रेमवश हज़ारों ब्राह्मण उनके पीछे वहाँ आए। युधिष्ठिर ने सूर्य से प्रार्थना की, और उन्हें एक ताम्र पात्र मिला जो हर दिन सबको भोजन देता, जब तक द्रौपदी भोजन न कर लें।')],
     [sh(bg(set='lake', tod='day'), 'lake_day'), piece('leaves', 'lotusLeaf', at=[[500, 820, 90], [760, 860, 120], [1100, 830, 100]]), fx('sparkle', y0=700, y1=900, n=40), fx('ripples', x=800, y=840)],
     cam=pan(560, 1040, 470, 1.12), amb='birds', min=10),
+  S('h_seasons', 'forest', [
+      ln('VYASA', 'The years turned. The monsoon came and filled the lakes, and the brothers sheltered under bark roofs. Winter came, and they gathered wood. Spring came, and the forest was full of flowers, and for a little while, sometimes, they were happy.',
+                  'वर्ष बीतते गए। वर्षा आई और झीलें भर गईं, और भाई छाल की छतों के नीचे शरण लेते रहे। शीत आई, और उन्होंने लकड़ी बटोरी। वसंत आया, और वन फूलों से भर गया, और कुछ समय के लिए, कभी कभी, वे सुखी थे।')],
+    [sh(bg(set='forest', tod='day'), 'forest_rain6'), fx('rain', n=120), fx('ripples', x=800, y=860)],
+    cam=[[800, 520, 1.2], [800, 460, 1.0]], amb='storm', sfx=[dict(n='thunder', at=2.0, v=0.3), dict(n='flute', at=14.0, v=0.3)], min=10),
+  S('h_deer', 'forest', [
+      ln('VYASA', 'One night Yudhishthira dreamed that the deer of the forest came to him, trembling, and said: king, your brothers hunt us every day, and only a few of us are left. Move on, so that we may live. In the morning they packed their things and went to the Dvaita forest.',
+                  'एक रात युधिष्ठिर ने सपना देखा कि वन के हिरण काँपते हुए उनके पास आए, और बोले: राजन, आपके भाई हर दिन हमारा आखेट करते हैं, और हममें से थोड़े ही बचे हैं। आगे बढ़ जाइए, कि हम जी सकें। सुबह उन्होंने अपना सामान बाँधा और द्वैत वन चले गए।')],
+    [sh(bg(set='forest', tod='night'), 'forest_night6'), piece('deer', 'deer', at=[[600, 860, 1.1, 1, 0], [900, 870, 1.2, -1, 0], [1150, 860, 1.0, -1, 0]]), fx('fireflies', n=50), fx('stars', n=40)],
+    cam=push(860, 600, 1.0, 1.15), amb='night', min=10),
   S('h_anger', 'tension', [
       ln('DRAUPADI', 'You sit here in deerskin, king, calm as a sage, while the man who dragged me by the hair sleeps on silk. Where is your anger? A kshatriya without anger is a lamp without oil.',
                      'आप यहाँ मृगछाला में बैठे हैं, राजन, ऋषि की तरह शांत, जबकि मुझे केशों से घसीटने वाला रेशम पर सोता है। आपका क्रोध कहाँ है? क्रोध के बिना क्षत्रिय तेल के बिना दीये जैसा है।')],
     [sh(bg(set='lake', tod='day'), 'lake_day'), face('draupadi', 560, 440, 190, 1, 'anger', rim=RIM_GOLD)],
     cam=push(580, 450, 1.04, 1.16), amb='birds'),
+  S('h_debate', 'sorrow', [
+      ln('YUDHI', 'Anger destroys the one who feels it before it touches anyone else, Panchali. The earth is patient, and so are the wise. If I strike when I should forgive, the world will have no forgiveness left in it. Let them break their word. We will keep ours.',
+                  'क्रोध दूसरे को छूने से पहले उसी को नष्ट करता है जो उसे अनुभव करता है, पांचाली। पृथ्वी धैर्यवान है, और ज्ञानी भी। यदि मैं क्षमा के समय प्रहार करूँ, तो संसार में कोई क्षमा नहीं बचेगी। उन्हें अपना वचन तोड़ने दो। हम अपना निभाएँगे।')],
+    [sh(bg(set='lake', tod='day'), 'lake_day'), face('yudhi', 1040, 450, 190, -1, 'calm', rim=RIM_GOLD)],
+    cam=push(1020, 450, 1.0, 1.14), amb='birds'),
   S('h_bhima', 'tension', [
       ln('BHIMA', 'She is right, brother! Thirteen years? Count each month as a year, and we have already served our time. Let us march on Hastinapura tomorrow!', 'वे सही हैं, भ्राता! तेरह वर्ष? हर महीने को एक वर्ष गिनिए, और हम अपना समय पूरा कर चुके। कल ही हस्तिनापुर पर चढ़ाई करें!', fx='growl'),
       ln('YUDHI', 'I gave my word, Bhima. If I break it, I am no better than Shakuni. Forgiveness is the strength of the strong. We will wait.', 'मैंने वचन दिया है, भीम। यदि मैं उसे तोड़ूँ, तो मैं शकुनि से बेहतर नहीं। क्षमा बलवानों का बल है। हम प्रतीक्षा करेंगे।', gap=0.6)],
@@ -215,6 +270,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'अर्जुन अकेले उत्तर गए, हिमालय में, इंद्रकील नामक पर्वत पर। वहाँ वे एक पैर पर खड़े रहे, भुजाएँ उठाए, केवल पत्ते खाते हुए, फिर केवल वायु पर, शिव की प्रार्थना करते हुए।')],
     [sh(bg(set='himalaya'), 'himal_peaks'), figs('tapas', [fig('arjuna', 800, 880, 420, 1, 'vow', style=BARK)], rim=RIM_COOL), fx('snow', n=80)],
     cam=[[800, 520, 1.3], [800, 470, 1.05]], amb='wind', min=11),
+  S('i_snows', 'wonder', [
+      ln('VYASA', 'He crossed rivers of ice and slept in caves. The air grew thin and the silence grew deep. Eagles circled below him. He was alone with the mountains, and the mountains were alone with God.',
+                  'उन्होंने हिम की नदियाँ पार कीं और गुफाओं में सोए। वायु पतली होती गई और मौन गहरा। चीलें उनके नीचे मँडराती थीं। वे पर्वतों के साथ अकेले थे, और पर्वत ईश्वर के साथ अकेले।')],
+    [bg(set='valley', tod='dawn', hz=420, seed=7.2, groves=6, mist=1), figs('tiny', [fig('arjuna', 700, 820, 110, 1, 'stand', weapon='bowRest')]), fx('snow', n=60)],
+    cam=[[800, 460, 0.98], [800, 520, 1.15]], amb='wind', min=10),
   S('i_boar', 'battle', [
       ln('VYASA', 'One day a great black boar came charging down the mountain at him. Arjuna shot it. At the same moment, another arrow struck it from the other side. A hunter, a Kirata, stepped out of the trees with a bow, and his wife behind him.',
                   'एक दिन एक विशाल काला सूअर पर्वत से उन पर झपटा। अर्जुन ने उसे बाण मारा। उसी क्षण दूसरी ओर से एक और बाण उसे लगा। एक शिकारी, एक किरात, धनुष लिए पेड़ों से निकला, और उसके पीछे उसकी पत्नी।')],
@@ -251,6 +311,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('ARJUNA', 'Lady, you were the wife of Pururavas, the father of my line. You are a mother to me. I bow to you.', 'देवी, आप पुरूरवा की पत्नी थीं, मेरे वंश के आदिपुरुष की। आप मेरे लिए माता समान हैं। मैं आपको प्रणाम करता हूँ।', gap=0.6)],
     [bg(set='heaven', gate=1), face('urvashi', 560, 440, 190, 1, 'smile', n='ur', rim=RIM_GOLD), face('arjuna', 1080, 450, 180, -1, 'calm', n='ar', rim=RIM_GOLD)],
     cam=[[640, 450, 1.1], [960, 450, 1.1]], amb='temple', sfx=[dict(n='bells', at=0.5, v=0.3)], hero=1, name=name('URVASHI', 'उर्वशी', 'dancer of heaven', 'स्वर्ग की अप्सरा', 1)),
+  S('j_music', 'joy', [
+      ln('VYASA', 'In Amaravati the rivers ran with light and the trees bore jewels. Arjuna sat at the feet of the gandharva Chitrasena and learned the drum and the dance, the rhythm of the feet and the language of the hands. It seemed a strange thing for a warrior to learn. It was not.',
+                  'अमरावती में नदियाँ प्रकाश बनकर बहतीं और पेड़ों पर रत्न लगते। अर्जुन गंधर्व चित्रसेन के चरणों में बैठे और मृदंग और नृत्य सीखा, पैरों की ताल और हाथों की भाषा। एक योद्धा के लिए यह विचित्र शिक्षा लगती थी। ऐसी थी नहीं।')],
+    [bg(set='heaven', gate=1), fx('petals', every=2, n=50), fx('sparkle', n=40)],
+    cam=[[800, 520, 1.15], [800, 460, 1.0]], amb='temple', sfx=[dict(n='bells', at=1.0, v=0.4), dict(n='flute', at=6.0, v=0.4)], min=10),
   S('j_curse', 'kala', [
       ln('URVASHI', 'You refuse me? Then live as a eunuch among women, without honour, a dancer and a singer!', 'तुम मुझे ठुकराते हो? तो स्त्रियों के बीच नपुंसक बनकर रहो, बिना सम्मान के, एक नर्तक और गायक!'),
       ln('VYASA', 'Indra softened the curse. It would last only one year, whichever year Arjuna chose. And Arjuna would choose very carefully.', 'इंद्र ने शाप को कोमल कर दिया। वह केवल एक वर्ष रहेगा, जो वर्ष अर्जुन चुनें। और अर्जुन बहुत सोच समझकर चुनेंगे।', gap=0.8)],

@@ -16,12 +16,23 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('CHANT', 'धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥', 'धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय॥'),
       ln('VYASAC', 'On the field of dharma, on the field of the Kurus, gathered to fight, what did my sons and the sons of Pandu do, Sanjaya? So asked the blind king. And Sanjaya told him.', 'धर्मक्षेत्र में, कुरुक्षेत्र में, युद्ध की इच्छा से एकत्र, मेरे पुत्रों और पांडु के पुत्रों ने क्या किया, संजय? अंधे राजा ने पूछा। और संजय ने उन्हें बताया।', gap=0.8)],
     CAVE_V('calm'), cam=push(700, 430, 1.0, 1.1), amb='night', text=V(0.5, 9.0, 'dharma-kṣetre kuru-kṣetre samavetā yuyutsavaḥ', 'धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः')),
+  S('a_sanjaya', 'mystery', [
+      ln('VYASA', 'Before the war, I had offered my son sight, so that he could watch it. He refused. He did not want to see his sons die. So I gave the sight to Sanjaya instead, his charioteer, so that he could sit beside the king in Hastinapura and see everything on the field, even the thoughts in men\'s hearts, and tell him.',
+                  'युद्ध से पहले मैंने अपने पुत्र को दृष्टि देनी चाही थी, कि वे उसे देख सकें। उन्होंने मना कर दिया। वे अपने पुत्रों को मरते नहीं देखना चाहते थे। तो मैंने वह दृष्टि संजय को दी, उनके सारथी को, कि वे हस्तिनापुर में राजा के पास बैठकर रणभूमि की हर बात देख सकें, मनुष्यों के मन के विचार तक, और उन्हें बता सकें।'),
+      ln('SANJAYA', 'Listen, my king. I see the field of Kurukshetra as clearly as I see you.', 'सुनिए, महाराज। मैं कुरुक्षेत्र का मैदान उतनी ही स्पष्टता से देखता हूँ जितना आपको।', gap=0.6)],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark'), face('courtier', 1040, 450, 180, -1, 'awe', rim=RIM_LAMP, style=dict(cloth='#e8dcc0'), glow=['#cfe4ff', 24, 0.3])],
+    cam=push(1020, 450, 1.0, 1.14), amb='night', sfx=[dict(n='magic', at=12.0, v=0.4)]),
 
   # ---------- Arjuna's despair ----------
   S('b_middle', 'tension', [
       ln('VYASA', 'Krishna stopped the chariot between the two armies, facing Bhishma and Drona. And Arjuna looked.', 'कृष्ण ने रथ दोनों सेनाओं के बीच, भीष्म और द्रोण के सामने रोका। और अर्जुन ने देखा।')],
     [FIELD(), piece('chariot', 'warChariot', k='anim', every=2, d=1.0, x=800, y=860, s=1.0, rider='arjuna', driver='krishna'), fx('dust', col='#e0b070', n=50)],
     cam=push(800, 470, 1.0, 1.1), amb='wind', min=8),
+  S('b_wide', 'tension', [
+      ln('VYASA', 'On either side the armies stretched to the edge of the sky. A forest of banners. Elephants in painted armour. Chariots by the thousand, their horses stamping. And in the silence before the first arrow, a single bird crossed the field.',
+                  'दोनों ओर सेनाएँ आकाश के छोर तक फैली थीं। ध्वजों का एक वन। रंगे कवचों में हाथी। हज़ारों रथ, उनके घोड़े पैर पटकते हुए। और पहले बाण से पहले के सन्नाटे में, एक अकेला पक्षी मैदान के पार उड़ा।')],
+    [bg(set='field', sunX=1100, sunY=520, armies=1, density=1.0), fx('dust', col='#e0b070', n=40)],
+    cam=[[800, 450, 0.96], [800, 470, 1.06]], amb='wind', sfx=[dict(n='wind', at=1.0, v=0.4)], min=12),
   S('b_sees', 'lament', [
       ln('VYASA', 'He saw fathers and grandfathers. Teachers, uncles, brothers, sons, grandsons, friends, fathers-in-law. On both sides. All of them his own.', 'उन्होंने पिता और पितामह देखे। गुरु, मामा, भाई, पुत्र, पौत्र, मित्र, ससुर। दोनों ओर। सब उनके अपने।')],
     [bg(set='field', sunX=1200, sunY=520), face('bhishma', 520, 460, 160, 1, 'calm', n='bh', rim=RIM_GOLD), face('drona', 1080, 460, 160, -1, 'calm', n='dr', rim=RIM_GOLD)],
@@ -56,11 +67,21 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                     'तुम्हारा अधिकार केवल कर्म पर है, अर्जुन, उसके फल पर कभी नहीं। कर्म का फल तुम्हारा उद्देश्य न हो, न अकर्म में तुम्हारी आसक्ति हो। योग में स्थिर होकर कर्म करो, आसक्ति त्यागकर, सफलता और असफलता में समान रहकर। वही समता योग है।')],
     [GITA(), KFACE(), fx('wheel', x=800, y=440, r=330, col='#f3cf6a')],
     cam=push(800, 450, 1.05, 1.14), amb='temple', text=V(1.0, 8.0, 'karmaṇy evādhikāras te mā phaleṣu kadāchana', 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन')),
+  S('c_paths', 'gita', [
+      ln('KRISHNA', 'Some reach me by knowledge, Arjuna, some by selfless action, some by love. All paths lead to me. The one who sees me in everything, and everything in me, is never lost to me, and I am never lost to him.',
+                    'कुछ मुझे ज्ञान से पाते हैं, अर्जुन, कुछ निष्काम कर्म से, कुछ प्रेम से। सब मार्ग मुझ तक आते हैं। जो मुझे सबमें देखता है, और सबको मुझमें, वह मुझसे कभी नहीं खोता, और मैं उससे कभी नहीं खोता।')],
+    [GITA(), KFACE('smile', 'ks'), fx('sparkle', y0=0, y1=900, n=60, col='#fff0c0')],
+    cam=push(800, 450, 1.04, 1.14), amb='temple', text=V(14.0, 22.0, 'yo māṁ paśyati sarvatra sarvaṁ ca mayi paśyati', 'यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति')),
   S('c_lamp', 'gita', [
       ln('KRISHNA', 'Like a lamp in a windless place that does not flicker: so is the mind of the yogi who has mastered himself. The mind is restless, Arjuna, as hard to hold as the wind. But by practice, and by letting go, it can be held.',
                     'जैसे वायुरहित स्थान में रखा दीपक नहीं हिलता: वैसा ही उस योगी का मन है जिसने स्वयं को जीत लिया। मन चंचल है, अर्जुन, वायु की तरह पकड़ने में कठिन। पर अभ्यास से, और वैराग्य से, उसे पकड़ा जा सकता है।')],
     [sh(bg(set='cave', view='night', lamps=[800]), 'gita_lamp'), fx('glow', x=800, y=700, r=200, col='#ffb060')],
     cam=push(800, 640, 1.2, 1.45), amb='temple', sfx=[dict(n='bell', at=0.5, v=0.4)]),
+  S('c_steady', 'gita', [
+      ln('KRISHNA', 'The one who is not shaken by sorrow, nor greedy for pleasure, who is free from desire, fear and anger, him I call a sage of steady mind. He moves among the things of the world, but they do not move him. As the ocean takes in all the rivers and stays full and still, so is he.',
+                    'जो दुःख से विचलित नहीं होता, न सुख का लोभी है, जो कामना, भय और क्रोध से मुक्त है, उसे मैं स्थितप्रज्ञ मुनि कहता हूँ। वह संसार की वस्तुओं के बीच चलता है, पर वे उसे नहीं हिलातीं। जैसे सागर सब नदियों को समा लेता है और भरा और शांत रहता है, वैसा ही वह है।')],
+    [sh(bg(set='lake', tod='gold'), 'gita_lake'), fx('ripples', x=800, y=820), fx('sparkle', y0=650, y1=900, n=40)],
+    cam=[[800, 520, 1.1], [800, 600, 1.25]], amb='temple', min=12),
   S('c_avatar', 'gita', [
       ln('KRISHNA', 'Whenever dharma declines, Arjuna, and adharma rises, I bring myself forth. To protect the good, to destroy the wicked, and to establish dharma, I come into being, age after age.',
                     'जब जब धर्म की हानि होती है, अर्जुन, और अधर्म बढ़ता है, तब तब मैं स्वयं को प्रकट करता हूँ। सज्जनों की रक्षा के लिए, दुष्टों के विनाश के लिए, और धर्म की स्थापना के लिए, मैं युग युग में जन्म लेता हूँ।')],
@@ -130,6 +151,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'तब युधिष्ठिर ने वह किया जिसकी किसी ने अपेक्षा नहीं की थी। उन्होंने अपना कवच उतारा, अस्त्र रख दिए, और अकेले मैदान पार करके शत्रु की पंक्तियों की ओर चल पड़े। उनके भाई उनके पीछे दौड़े। कौरव हँसे: वह आत्मसमर्पण करने आ रहा है।')],
     [FIELD(), figs('walk', [fig('yudhi', 800, 860, 260, 1, 'stand', style=dict(dhoti='#efe7d0', crown='bun'))]), fx('dust', col='#e0b070', n=40)],
     cam=[[800, 600, 1.3], [800, 470, 1.05]], amb='wind', sfx=[dict(n='crowdlaugh', at=14.0, v=0.4)]),
+  S('e_armies', 'tension', [
+      ln('VYASA', 'Both armies watched him go, a king without armour walking alone across the empty ground between them. The Kauravas laughed: he has lost his nerve, he has come to beg. The Pandavas held their breath. Bhishma lowered his bow, and waited.',
+                  'दोनों सेनाओं ने उन्हें जाते देखा, बिना कवच का एक राजा उनके बीच की खाली भूमि पर अकेला चलता हुआ। कौरव हँसे: इसका साहस टूट गया, यह भीख माँगने आया है। पांडवों ने साँस रोक ली। भीष्म ने धनुष नीचे किया, और प्रतीक्षा की।')],
+    [bg(set='field', sunX=1100, sunY=520, armies=1, density=1.0), figs('walker', [fig('yudhi', 800, 860, 200, 1, 'stand', style=dict(dhoti='#e8dcc0', crown='bun'))]), fx('dust', col='#e0b070', n=30)],
+    cam=[[800, 460, 0.98], [800, 560, 1.15]], amb='wind', min=12, sfx=[dict(n='crowdlaugh', at=8.0, v=0.3)]),
   S('e_bless', 'sorrow', [
       ln('YUDHI', 'Grandfather, give us your blessing to fight you. And tell us how you can be defeated.', 'पितामह, हमें आपसे लड़ने का आशीर्वाद दीजिए। और बताइए कि आपको कैसे हराया जा सकता है।'),
       ln('BHISHMA', 'If you had not come, child, I would have cursed you. You have my blessing: victory. As for my death, its time has not yet come. Ask me again.', 'यदि तुम न आते, बालक, तो मैं तुम्हें शाप देता। तुम्हें मेरा आशीर्वाद है: विजय। जहाँ तक मेरी मृत्यु की बात है, उसका समय अभी नहीं आया। फिर पूछना।', fx='elder', gap=0.6)],
@@ -152,16 +178,36 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'और युद्ध आरंभ हुआ। दोनों सेनाएँ ऐसी गर्जना के साथ टकराईं कि पृथ्वी काँप उठी। धूल उठी और सूर्य को ढँक लिया। पिता पुत्र को नहीं पहचानता था, न भाई भाई को।')],
     [bg(set='field', sunX=1100, sunY=520, armies=1, density=1.0), piece('streams', 'warriorStreams', k='anim', every=2, add=False), piece('rain', 'arrowRain', k='anim', every=2, add=True), fx('dust', col='#c07a4a', n=120)],
     cam=[[800, 600, 1.4], [800, 450, 1.0]], amb='battle', sfx=[dict(n='conch', at=0.3, v=0.8), dict(n='roar', at=1.5), dict(n='clash', at=3.0), dict(n='boom', at=5.0, v=0.6), dict(n='clash', at=7.0)], shake=[[1.5, 2.5]], min=12),
+  S('f_uttar', 'lament', [
+      ln('VYASA', 'On the first day, young Uttar, the prince of Matsya who had run from the Kuru army and then driven Arjuna\'s chariot, rode an elephant against Shalya, and Shalya killed him. The Pandavas lost more men than the Kauravas that day. That night, Yudhishthira did not sleep.',
+                  'पहले दिन युवा उत्तर, मत्स्य के राजकुमार जो कुरु सेना से भागे थे और फिर अर्जुन का रथ हाँका था, हाथी पर शल्य के विरुद्ध गए, और शल्य ने उन्हें मार डाला। उस दिन पांडवों ने कौरवों से अधिक योद्धा खोए। उस रात युधिष्ठिर सो नहीं सके।')],
+    [sh(bg(set='sky', tod='crimson', sun=[800, 640, 160], sunCol='#e04a20', hills=1, ground='#2a1010'), 'sky_crimson_sun'), face('uttar', 800, 450, 190, 1, 'stern', rim=RIM_FIRE)],
+    cam=push(800, 450, 1.0, 1.14), amb='wind'),
   S('f_bhishma', 'battle', [
       ln('VYASA', 'And for nine days, Bhishma was unstoppable. He moved through the Pandava army like fire through dry grass. Every day ten thousand warriors fell to his arrows. Virata\'s sons Uttar and Shweta died on the first day.',
                   'और नौ दिनों तक भीष्म अजेय रहे। वे पांडव सेना में सूखी घास में आग की तरह फैलते गए। हर दिन दस हज़ार योद्धा उनके बाणों से गिरते। विराट के पुत्र उत्तर और श्वेत पहले ही दिन मारे गए।')],
     [bg(set='field', sunX=400, sunY=540, dead=1), figs('bh', [fig('bhishma', 800, 900, 620, 1, 'draw', weapon='bowDrawn')], rim=RIM_FIRE), piece('volley', 'arrowRain', k='anim', every=2, add=False), fx('embers', n=60)],
     cam=push(800, 470, 1.04, 1.14), amb='battle', sfx=[dict(n='whoosh', at=1.0), dict(n='whoosh', at=3.0), dict(n='clash', at=6.0), dict(n='roar', at=10.0, v=0.4)]),
+  S('f_banner', 'battle', [
+      ln('VYASA', 'His banner was a golden palm tree with five stars, and wherever it moved, the Pandava army broke. He was old, and white-haired, and he fought like a young man of twenty, and every night his own grandsons counted their dead.',
+                  'उनका ध्वज पाँच तारों वाला एक सुनहरा ताड़ का पेड़ था, और वह जहाँ भी जाता, पांडव सेना टूट जाती। वे वृद्ध थे, श्वेत केश वाले, और वे बीस वर्ष के युवक की तरह लड़ते, और हर रात उनके अपने पौत्र अपने मृतकों को गिनते।')],
+    [bg(set='field', sunX=1200, sunY=520), figs('bh', [fig('bhishma', 800, 880, 620, 1, 'draw', weapon='bowDrawn')], rim=RIM_FIRE), piece('rain', 'arrowRain', k='anim', every=2, add=True), fx('dust', col='#c07a4a', n=80)],
+    cam=push(800, 470, 1.0, 1.14), amb='battle', sfx=[dict(n='whoosh', at=2.0), dict(n='whoosh', at=4.0)]),
   S('f_days', 'battle', [
       ln('VYASA', 'Bhima broke the elephants of Kalinga with his mace. Abhimanyu cut through the Kaurava ranks like his father. Ghatotkacha rose into the sky at night and rained down stones. And Iravan, Arjuna\'s son by the serpent princess Ulupi, died on the eighth day, fighting a rakshasa.',
                   'भीम ने अपनी गदा से कलिंग के हाथियों को तोड़ दिया। अभिमन्यु अपने पिता की तरह कौरव पंक्तियों को चीरते गए। घटोत्कच रात में आकाश में उठकर पत्थर बरसाता। और इरावान, नागकन्या उलूपी से अर्जुन का पुत्र, आठवें दिन एक राक्षस से लड़ते हुए मारा गया।')],
     [bg(set='field', sunX=1200, sunY=520), piece('ch', 'warChariot', k='anim', every=2, x=600, y=880, s=0.85, rider='abhi'), piece('rain', 'arrowRain', k='anim', every=2, add=True), fx('dust', col='#c07a4a', n=90)],
     cam=push(800, 480, 1.0, 1.1), amb='battle', sfx=[dict(n='roar', at=1.0), dict(n='boom', at=4.0, v=0.6), dict(n='whoosh', at=8.0), dict(n='clash', at=12.0), dict(n='gong', at=18.0, v=0.5)], shake=[[4.0, 4.6]]),
+  S('f_iravan', 'lament', [
+      ln('VYASA', 'On the eighth day, Iravan fell, the son of Arjuna and Ulupi, the Naga princess Arjuna had loved in his years of wandering. He had come up out of the underworld to fight for a father he had met only once. Arjuna wept for him on the field, and then fought on.',
+                  'आठवें दिन इरावान गिरे, अर्जुन और नागकन्या उलूपी के पुत्र, जिनसे अर्जुन ने अपनी यात्रा के वर्षों में प्रेम किया था। वे पाताल से एक ऐसे पिता के लिए लड़ने आए थे जिनसे वे केवल एक बार मिले थे। अर्जुन रणभूमि में उनके लिए रोए, और फिर लड़ते रहे।')],
+    [sh(bg(set='field', sunX=1200, sunY=560, dead=1), 'field_dead9'), face('arjuna', 800, 450, 200, 1, 'sorrow', rim=RIM_FIRE)],
+    cam=push(800, 450, 1.04, 1.18), amb='wind'),
+  S('f_nights', 'lament', [
+      ln('VYASA', 'And every night the fighting stopped, and the two camps lit their fires a mile apart. The wounded cried out in the dark. Women came looking for their men with torches. And sometimes, across that mile of dead ground, a man in one camp would hear his cousin singing in the other.',
+                  'और हर रात युद्ध रुकता, और दोनों शिविर एक कोस की दूरी पर अपनी आग जलाते। घायल अँधेरे में कराहते। स्त्रियाँ मशालें लेकर अपने पुरुषों को खोजने आतीं। और कभी कभी, उस एक कोस की मृत भूमि के पार, एक शिविर का कोई पुरुष दूसरे शिविर में अपने भाई को गाते सुनता।')],
+    [sh(bg(set='camp'), 'war_camp9'), fx('fire', at=[[200, 860, 100, 140], [600, 860, 80, 120], [1100, 860, 80, 120], [1450, 860, 100, 140]]), fx('stars', n=80), fx('fireflies', n=30)],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='night', min=12),
   S('f_wheel', 'fire', [
       ln('VYASA', 'On the ninth day, Bhishma\'s arrows covered Arjuna and Krishna like a cloud, and Arjuna was holding back, because he loved the old man. Krishna leapt down from the chariot, picked up a broken chariot wheel, and ran at Bhishma, the whip still in his hand.',
                   'नौवें दिन भीष्म के बाणों ने अर्जुन और कृष्ण को बादल की तरह ढँक लिया, और अर्जुन संकोच कर रहे थे, क्योंकि वे उस वृद्ध से प्रेम करते थे। कृष्ण रथ से कूदे, एक टूटा हुआ रथ का पहिया उठाया, और चाबुक हाथ में लिए भीष्म की ओर दौड़े।')],

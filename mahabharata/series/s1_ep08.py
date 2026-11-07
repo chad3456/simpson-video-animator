@@ -31,12 +31,22 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('SATYAKI', 'Humbly? They were cheated, and their queen was dragged by the hair! If Duryodhana will not give back the kingdom, we will take it, and his head with it!', 'विनम्रता से? उनके साथ छल हुआ, और उनकी रानी को केशों से घसीटा गया! यदि दुर्योधन राज्य नहीं लौटाएगा, तो हम ले लेंगे, और उसका सिर भी!')],
     [VCOURT(), face('satyaki', 1040, 440, 190, -1, 'anger', rim=RIM_FIRE)],
     cam=push(1020, 450, 1.04, 1.16), amb='court', sfx=[dict(n='clash', at=6.0, v=0.3)], hero=1, name=name('SATYAKI', 'सात्यकि', 'Krishna\'s kinsman', 'कृष्ण के बंधु', -1)),
+  S('b_drupada', 'court', [
+      ln('DRUPADA', 'Satyaki is right, and Krishna is right. Let us send my own priest to Hastinapura, a wise old man who knows how to speak. And while he speaks, let us send messengers to every king on earth. Whoever asks first will get their armies.',
+                    'सात्यकि सही हैं, और कृष्ण भी सही हैं। मेरे अपने पुरोहित को हस्तिनापुर भेजें, एक बुद्धिमान वृद्ध जो बोलना जानते हैं। और जब वे बोलें, तब पृथ्वी के हर राजा के पास दूत भेजें। जो पहले माँगेगा, उसे उनकी सेनाएँ मिलेंगी।')],
+    [VCOURT(), face('drupada', 800, 450, 200, 1, 'stern', rim=RIM_GOLD)],
+    cam=push(800, 450, 1.0, 1.14), amb='court'),
 
   # ---------- the choice at Dwaraka ----------
   S('c_dwaraka', 'river', [
       ln('VYASA', 'Both sides began to gather allies. And both Arjuna and Duryodhana rode to Dwaraka on the same day, to ask for Krishna\'s help.', 'दोनों पक्ष मित्र जुटाने लगे। और अर्जुन और दुर्योधन दोनों एक ही दिन कृष्ण की सहायता माँगने द्वारका पहुँचे।')],
     [DWARAKA(), fx('sparkle', y0=650, y1=900, n=50), fx('ripples', x=800, y=860)],
     cam=[[800, 600, 1.35], [800, 460, 1.0]], amb='river', sfx=[dict(n='bells', at=2.0, v=0.3)], min=10),
+  S('c_sea', 'river', [
+      ln('VYASA', 'Dwaraka stood on the edge of the western sea, white walls rising out of the water, its harbour full of ships. The sea breeze smelled of salt and sandalwood. It was the most beautiful city on earth, and Krishna had built it out of the ocean.',
+                  'द्वारका पश्चिमी सागर के किनारे खड़ी थी, जल से उठती श्वेत प्राचीरें, उसका बंदरगाह जहाज़ों से भरा। समुद्री हवा में नमक और चंदन की गंध थी। वह पृथ्वी का सबसे सुंदर नगर था, और कृष्ण ने उसे समुद्र से निकालकर बनाया था।')],
+    [DWARAKA(), fx('ripples', x=800, y=860), fx('sparkle', y0=700, y1=900, n=40)],
+    cam=[[800, 470, 0.98], [800, 540, 1.15]], amb='river', min=12),
   S('c_sleep', 'krishna', [
       ln('VYASA', 'Krishna was asleep. Duryodhana came in first, and sat on a fine seat at the head of the bed. Arjuna came in after him, and stood at Krishna\'s feet, with his hands joined.',
                   'कृष्ण सो रहे थे। दुर्योधन पहले आया, और पलंग के सिरहाने एक सुंदर आसन पर बैठ गया। अर्जुन उसके बाद आए, और हाथ जोड़कर कृष्ण के चरणों के पास खड़े हो गए।')],
@@ -71,6 +81,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'बलराम न अपने शिष्य दुर्योधन के विरुद्ध लड़ना चाहते थे, न अपने भाई कृष्ण के विरुद्ध। वे अपना हल लेकर सरस्वती के किनारे तीर्थयात्रा पर चले गए, यह कहकर कि जब यह सब समाप्त होगा तब लौटेंगे।')],
     [bg(set='river', tod='dawn', hz=560), figs('bal', [fig('balarama', 820, 860, 300, 1, 'stand')]), fx('ripples', x=800, y=820)],
     cam=pan(1000, 640, 470, 1.15), amb='river', min=9),
+  S('c_gather', 'march', [
+      ln('VYASA', 'From every corner of Bharata the armies came. From the mountains and the deserts, from the river kingdoms of the east and the sea kingdoms of the west. The roads were dark with marching men for a month. The dust they raised hid the sun.',
+                  'भारत के हर कोने से सेनाएँ आईं। पर्वतों और मरुस्थलों से, पूर्व के नदी राज्यों और पश्चिम के सागर राज्यों से। एक महीने तक मार्ग चलते सैनिकों से काले रहे। उनकी उड़ाई धूल ने सूर्य को ढक लिया।')],
+    [sh(bg(set='valley', tod='dusk', hz=450, seed=2.1), 'valley_dusk8'), piece('rd', 'riders', k='anim', every=2, x=-200, y=830, s=100, cnt=8, speed=50), piece('trib', 'procession', k='anim', every=3, y=860, s=80, x0=-300, cnt=12, speed=30), fx('dust', col='#e08050', n=100)],
+    cam=[[800, 460, 0.98], [800, 520, 1.12]], amb='battle', sfx=[dict(n='hooves', at=0.5, v=0.5), dict(n='nagara', at=6.0, v=0.4)], min=12),
   S('d_sanjaya', 'court', [
       ln('VYASA', 'The blind king sent Sanjaya to the Pandavas. He brought sweet words, and no kingdom. Peace is better than war, he said. It would be a sin for you to kill your own kin.',
                   'अंधे राजा ने संजय को पांडवों के पास भेजा। वह मीठे शब्द लाया, और कोई राज्य नहीं। युद्ध से शांति अच्छी है, उसने कहा। अपने ही बंधुओं को मारना आपके लिए पाप होगा।')],
@@ -81,6 +96,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'तो मेरे ज्येष्ठ पिता से यह कहना, संजय। मैं इंद्रप्रस्थ नहीं माँगता। हमें पाँच गाँव दे दें। कुशस्थल, वृकस्थल, माकंदी, वारणावत, और एक और, जो भी वे चाहें। पाँच भाइयों के लिए पाँच गाँव। और शांति होगी।')],
     [VCOURT(), face('yudhi', 800, 450, 210, 1, 'calm', rim=RIM_GOLD)],
     cam=push(800, 450, 1.04, 1.18), amb='court', sfx=[dict(n='bell', at=16.0, v=0.4)]),
+  S('d_night', 'mystery', [
+      ln('VYASA', 'When Sanjaya came back with that message, the blind king could not sleep. He sent for Vidura in the middle of the night, and Vidura sat by his bed until dawn and taught him what a wise king does. He who does not envy, who forgives, who is not proud in good times nor broken in bad, he is wise. The king listened all night. In the morning, he did nothing.',
+                  'जब संजय यह संदेश लेकर लौटे, अंधे राजा सो नहीं सके। उन्होंने आधी रात विदुर को बुलाया, और विदुर भोर तक उनके पलंग के पास बैठकर उन्हें सिखाते रहे कि बुद्धिमान राजा क्या करता है। जो ईर्ष्या नहीं करता, जो क्षमा करता है, जो सुख में घमंड नहीं करता और दुःख में टूटता नहीं, वही बुद्धिमान है। राजा पूरी रात सुनते रहे। सुबह उन्होंने कुछ नहीं किया।')],
+    [sh(bg(set='chamber', tone='#2a1a10'), 'chamber_dark'), face('vidura', 560, 450, 180, 1, 'calm', n='vi', rim=RIM_LAMP), face('dhrita', 1080, 450, 180, -1, 'sorrow', n='dh', rim=RIM_LAMP)],
+    cam=[[640, 450, 1.1], [960, 450, 1.1]], amb='night', min=10),
   S('d_villages', 'river', [], [bg(set='valley', tod='gold', hz=440, seed=8.8, groves=14), sh(piece('folk', 'folk', cnt=8, y=780, s=50, seed=3), 'valley_folk8'), fx('dust', col='#f0c070', n=30)],
     cam=[[800, 520, 1.3], [800, 460, 1.0]], amb='birds', min=7),
 
@@ -102,6 +122,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('VYASA', 'Krishna set out at dawn, in his chariot with the eagle banner, under a clear autumn sky. Sages lined the road to see him pass.', 'कृष्ण गरुड़ध्वज वाले अपने रथ में भोर को निकले, शरद के निर्मल आकाश के नीचे। उन्हें गुज़रते देखने के लिए ऋषि मार्ग के किनारे खड़े थे।')],
     [sh(bg(set='valley', tod='dawn', hz=470, city=[1200, 260], seed=0.0), 'valley_dawn'), piece('ch', 'warChariot', k='anim', every=2, x=300, y=860, s=0.6, rider='krishna'), fx('rays', x=1200, y=200, r0=60, r1=1000, col='#fff0c0')],
     cam=pan(560, 1040, 470, 1.15), amb='wind', sfx=[dict(n='hooves', at=0.3, v=0.6), dict(n='conch', at=6.0, v=0.4)], min=10),
+  S('e_fields', 'river', [
+      ln('VYASA', 'He passed through villages where the harvest was in, and the threshing floors were heaped with grain. People ran out of their houses to see him go by. Women threw flowers. Children ran alongside the horses. He smiled at all of them, and his eyes were sad.',
+                  'वे उन गाँवों से गुज़रे जहाँ फ़सल कट चुकी थी, और खलिहानों में अनाज के ढेर लगे थे। लोग उन्हें जाते देखने घरों से दौड़ आए। स्त्रियों ने फूल बरसाए। बच्चे घोड़ों के साथ दौड़े। वे सबको देखकर मुस्कुराए, और उनकी आँखें उदास थीं।')],
+    [sh(bg(set='valley', tod='gold', hz=480, city=[1250, 300], seed=0.6), 'valley_gold8'), piece('ch', 'warChariot', k='anim', every=2, x=300, y=860, s=0.55, rider='krishna'), fx('petals', every=2, n=40), fx('dust', col='#f0c070', n=30)],
+    cam=pan(560, 1040, 470, 1.12), amb='birds', sfx=[dict(n='hooves', at=0.3, v=0.4), dict(n='flute', at=6.0, v=0.3)], min=10),
   S('e_vidura', 'krishna', [
       ln('VYASA', 'In Hastinapura, Duryodhana had prepared a feast fit for a god. Krishna would not eat it. Food is eaten out of love, or out of need, he said. You have no love for me, and I am not in need. He went to Vidura\'s house, and ate plain rice, and was happy.',
                   'हस्तिनापुर में दुर्योधन ने देवताओं जैसा भोज तैयार किया था। कृष्ण ने उसे नहीं खाया। भोजन प्रेम से खाया जाता है, या आवश्यकता से, उन्होंने कहा। तुम्हें मुझसे प्रेम नहीं, और मुझे आवश्यकता नहीं। वे विदुर के घर गए, और सादा भात खाया, और प्रसन्न रहे।')],
@@ -113,12 +138,22 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('KUNTI', 'Tell him: the time has come for which a kshatriya mother bears a son.', 'उससे कहना: वह समय आ गया है जिसके लिए क्षत्रिय माता पुत्र को जन्म देती है।', gap=0.6)],
     [sh(bg(set='chamber', tone='#2a1a10'), 'chamber_dark'), face('kunti', 800, 450, 200, 1, 'stern', rim=RIM_LAMP)],
     cam=push(800, 450, 1.04, 1.16), amb='night'),
+  S('e_vidula', 'fire', [
+      ln('KUNTI', 'Tell my sons the story of Vidula, Keshava. Her son lay in bed after a defeat, and would not get up. She said to him: better to blaze for a moment like a torch of tinduka wood than to smoulder for years like a heap of chaff. Get up. Tell them that.',
+                  'मेरे पुत्रों को विदुला की कथा सुनाना, केशव। हार के बाद उसका पुत्र पलंग पर पड़ा रहा, और उठा नहीं। उसने उससे कहा: वर्षों तक भूसे के ढेर की तरह सुलगने से अच्छा है तिंदुक की लकड़ी की मशाल की तरह एक क्षण धधक उठना। उठो। उनसे यही कहना।')],
+    [sh(bg(set='city', tod='dusk', hz=600, col='#d8a07a'), 'city_dusk4'), face('kunti', 800, 450, 200, 1, 'stern', rim=RIM_FIRE), fx('embers', n=40)],
+    cam=push(800, 450, 1.04, 1.18), amb='night'),
 
   # ---------- the court ----------
   S('f_court', 'court', [
       ln('VYASA', 'The next morning Krishna walked into the hall of the Kurus. Every king rose to his feet. Even Bhishma. Even Drona. Even, for a moment, Duryodhana.', 'अगली सुबह कृष्ण कुरुओं की सभा में आए। हर राजा उठ खड़ा हुआ। भीष्म भी। द्रोण भी। एक क्षण के लिए, दुर्योधन भी।')],
     [KURU(), figs('kenter', [fig('krishna', 800, 900, 600, 1, 'bless')], rim=RIM_GOLD, glow=KGLOW)],
     cam=[[800, 600, 1.3], [800, 470, 1.04]], amb='court', sfx=[dict(n='conch', at=0.5, v=0.5)], min=10),
+  S('f_hall_wide', 'court', [
+      ln('VYASA', 'The hall was the same hall where the dice had been thrown, thirteen years before. The same pillars. The same floor where Draupadi had stood. Krishna looked at it for a long moment before he spoke.',
+                  'सभा वही सभा थी जहाँ तेरह वर्ष पहले पासे फेंके गए थे। वही स्तंभ। वही फ़र्श जहाँ द्रौपदी खड़ी हुई थीं। कृष्ण ने बोलने से पहले बहुत देर तक उसे देखा।')],
+    [KURU(), fx('dust', col='#c08a5a', n=20)],
+    cam=[[800, 520, 1.2], [800, 470, 1.0]], amb='court', min=10),
   S('f_speech', 'krishna', [
       ln('KRISHNA', 'King, I have come to make peace between the Kurus and the Pandavas, without the death of a single warrior. Give your nephews what is theirs. Make them your sons again, and you will rule the whole earth with them at your side. Refuse, and you will see your hundred sons die, and the earth emptied of kings.',
                     'राजन, मैं कुरुओं और पांडवों के बीच शांति कराने आया हूँ, बिना किसी एक भी योद्धा की मृत्यु के। अपने भतीजों को उनका भाग दीजिए। उन्हें फिर से अपना पुत्र बनाइए, और उन्हें साथ लेकर आप पूरी पृथ्वी पर राज करेंगे। मना करेंगे, तो अपने सौ पुत्रों को मरते देखेंगे, और पृथ्वी को राजाओं से खाली।')],
@@ -177,6 +212,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'और एक बात। युधिष्ठिर को मत बताना। यदि उन्हें पता चला कि मैं उनका बड़ा भाई हूँ, तो वे राज्य मुझे दे देंगे, और मैं दुर्योधन को दे दूँगा। उन्हें राजा रहने दो। मैंने युद्ध देखा है, कृष्ण। मैंने उसका स्वप्न देखा है। पृथ्वी एक वेदी है, और हम सब आहुति हैं।')],
     [sh(bg(set='sky', tod='dusk', sun=[900, 560, 160], sunCol='#e05a2a', hills=1, ground='#3a2014'), 'sky_dusk'), piece('sunset', 'sinkingSun', k='anim', every=3, add=True, x=800, y=640)],
     cam=[[800, 470, 1.15], [800, 520, 1.0]], amb='wind', sfx=[dict(n='gong', at=20.0, v=0.4)]),
+  S('g_dream', 'kala', [
+      ln('KARNA', 'I had a dream, Krishna. I saw Yudhishthira climbing a white mountain, and sitting on a throne of gold, and eating rice and ghee from a golden bowl. And I saw myself, and Duryodhana, riding south on a cart pulled by camels, towards the land of Yama. I know how this ends.',
+                  'मैंने एक स्वप्न देखा, कृष्ण। मैंने युधिष्ठिर को एक श्वेत पर्वत पर चढ़ते, और सोने के सिंहासन पर बैठते, और सोने की थाली से घी चावल खाते देखा। और मैंने स्वयं को, और दुर्योधन को, ऊँटों की गाड़ी पर दक्षिण की ओर, यमलोक की ओर जाते देखा। मैं जानता हूँ इसका अंत कैसे होगा।')],
+    [sh(bg(set='valley', tod='dusk', hz=450, seed=2.1), 'valley_dusk8'), face('karna', 800, 450, 200, 1, 'sorrow', rim=RIM_FIRE)],
+    cam=push(800, 450, 1.04, 1.18), amb='wind', sfx=[dict(n='gong', at=20.0, v=0.4)]),
 
   # ---------- Kunti and Karna ----------
   S('h_ganga', 'river', [
@@ -194,6 +234,10 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'पर मैं आपको कुछ दूँगा, क्योंकि मेरे पास से कभी कोई खाली हाथ नहीं गया। मैं युधिष्ठिर, भीम, नकुल या सहदेव को नहीं मारूँगा, चाहे वे मेरे वश में हों। केवल अर्जुन। हम दोनों में से एक मरेगा। जो भी हो, माँ, आपके पाँच पुत्र रहेंगे।')],
     [bg(set='river', tod='gold', hz=520), face('karna', 800, 450, 210, 1, 'sorrow', rim=RIM_SUN, glow=['#ffd060', 20, 0.3])],
     cam=push(800, 450, 1.04, 1.2), amb='river', sfx=[dict(n='gong', at=16.0, v=0.4)]),
+  S('h_alone', 'lament', [
+      ln('VYASA', 'Kunti walked back to the city. Karna stood in the river until the sun went down, and then for a long time after, alone, in the dark water.', 'कुंती नगर लौट गईं। कर्ण सूर्यास्त तक नदी में खड़े रहे, और उसके बाद भी बहुत देर तक, अकेले, अँधेरे जल में।')],
+    [sh(bg(set='sky', tod='dusk', sun=[900, 560, 160], sunCol='#e05a2a', hills=1, ground='#3a2014'), 'sky_dusk'), piece('sunset', 'sinkingSun', k='anim', every=3, add=True, x=900, y=600), figs('k', [fig('karna', 700, 860, 200, 1, 'stand', sil=True)]), fx('ripples', x=700, y=860)],
+    cam=[[800, 500, 1.0], [760, 560, 1.15]], amb='river', min=10),
 
   # ---------- the armies ----------
   S('i_march', 'march', [
@@ -201,6 +245,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'और इस प्रकार सेनाएँ कुरुक्षेत्र की ओर चलीं, कुरुओं का क्षेत्र, एक पवित्र मैदान जहाँ कभी देवताओं ने यज्ञ किए थे। पांडवों की सात अक्षौहिणी सेनाएँ। कौरवों की ग्यारह। हाथी, रथ, घोड़े और पैदल सैनिक, अनगिनत, क्षितिज तक फैले।')],
     [bg(set='field', sunX=1100, sunY=520, armies=1, density=1.0), piece('streams', 'warriorStreams', k='anim', every=2, add=False), fx('dust', col='#c07a4a', n=90)],
     cam=[[800, 600, 1.4], [800, 450, 1.0]], amb='battle', sfx=[dict(n='nagara', at=0.4, v=0.7), dict(n='conch', at=4.0, v=0.6), dict(n='hooves', at=6.0, v=0.5)], min=12),
+  S('i_rules', 'court', [
+      ln('VYASA', 'Before the battle, the commanders agreed on rules. Fighting would stop at sunset. Equals would fight equals: chariot against chariot, horse against horse. No one would strike a man who was unarmed, or fleeing, or had surrendered, or was fighting someone else. No one would harm the charioteers, or the drummers, or the animals. Remember these rules, scribe. Every one of them would be broken.',
+                  'युद्ध से पहले सेनापतियों ने नियमों पर सहमति की। सूर्यास्त पर युद्ध रुकेगा। बराबर वाले बराबर से लड़ेंगे: रथी रथी से, घुड़सवार घुड़सवार से। कोई निहत्थे पर, या भागते पर, या आत्मसमर्पण करने वाले पर, या किसी और से लड़ते पर वार नहीं करेगा। कोई सारथियों, ढोल बजाने वालों, या पशुओं को हानि नहीं पहुँचाएगा। ये नियम याद रखना, लेखक। इनमें से हर एक टूटा।')],
+    [sh(bg(set='camp'), 'war_camp'), fx('fire', at=[[300, 860, 100, 140], [1300, 860, 100, 140]]), fx('stars', n=60)],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='night', sfx=[dict(n='gong', at=28.0, v=0.4)], min=12),
   S('i_dhrishta', 'heroic', [
       ln('VYASA', 'The Pandavas chose Dhrishtadyumna, born from the fire to kill Drona, as their commander. Abhimanyu, Arjuna\'s son, sixteen years old, rode beside his father. Draupadi\'s five sons rode behind. And Ghatotkacha came out of the forest with his rakshasas, as he had promised long ago.',
                   'पांडवों ने धृष्टद्युम्न को, जो द्रोण के वध के लिए अग्नि से जन्मे थे, अपना सेनापति चुना। अर्जुन का पुत्र अभिमन्यु, सोलह वर्ष का, अपने पिता के साथ था। द्रौपदी के पाँचों पुत्र पीछे थे। और घटोत्कच अपने राक्षसों के साथ वन से निकल आया, जैसा उसने बहुत पहले वचन दिया था।')],
@@ -208,6 +257,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
     cam=[[640, 450, 1.1], [960, 450, 1.1]], amb='night', sfx=[dict(n='conch', at=1.0, v=0.4), dict(n='roar', at=16.0, v=0.4)], hero=1, name=name('ABHIMANYU', 'अभिमन्यु', 'son of Arjuna', 'अर्जुनपुत्र', -1)),
   S('i_night', 'mystery', [], [bg(set='camp'), fx('fireflies', n=60), fx('stars', n=80)],
     cam=[[800, 500, 1.3], [800, 460, 1.0]], amb='night', min=7),
+  S('i_eve', 'mystery', [
+      ln('VYASA', 'On the eve of battle, a strange quiet fell over the field. Men who would kill each other in the morning bathed in the same river. They sharpened their swords and wrote to their wives. Some prayed. Some sang. Most just looked at the stars.',
+                  'युद्ध की पूर्व संध्या पर रणभूमि पर एक विचित्र शांति छा गई। जो पुरुष सुबह एक दूसरे को मारेंगे, उन्होंने एक ही नदी में स्नान किया। उन्होंने अपनी तलवारें तेज़ कीं और अपनी पत्नियों को संदेश भेजे। कुछ ने प्रार्थना की। कुछ ने गाया। अधिकतर ने बस तारों को देखा।')],
+    [sh(bg(set='camp'), 'war_camp'), fx('stars', n=100), fx('fireflies', n=30)],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='night', min=12),
   S('i_bhishma', 'heroic', [
       ln('VYASA', 'Duryodhana made Bhishma his commander. The old man agreed, on two conditions. He would kill ten thousand warriors every day, but he would not kill a single son of Pandu. And he would not fight Shikhandi, who had been born a woman.',
                   'दुर्योधन ने भीष्म को अपना सेनापति बनाया। वृद्ध ने दो शर्तों पर स्वीकार किया। वे हर दिन दस हज़ार योद्धाओं को मारेंगे, पर पांडु के एक भी पुत्र को नहीं मारेंगे। और वे शिखंडी से नहीं लड़ेंगे, जो स्त्री के रूप में जन्मा था।')],
@@ -231,6 +285,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'और भोर में दोनों सेनाएँ कुरुक्षेत्र के मैदान में आमने सामने खड़ी थीं। शंख बजे। पहले भीष्म का, सिंह की तरह गरजता। फिर कृष्ण का, पांचजन्य। फिर अर्जुन का, देवदत्त।')],
     [bg(set='field', sunX=1000, sunY=480), fx('rays', x=1000, y=480, r0=60, r1=1000, col='#ffe0a0'), fx('dust', col='#e0b070', n=80)],
     cam=[[800, 600, 1.4], [800, 460, 1.0]], amb='battle', sfx=[dict(n='conch', at=4.0, v=0.9), dict(n='conch', at=8.0, v=0.9), dict(n='conch', at=11.0, v=0.9), dict(n='nagara', at=12.0, v=0.7)], min=14),
+  S('i_conches', 'heroic', [
+      ln('VYASA', 'Bhima blew Paundra, the great conch, and it shook the earth. Yudhishthira blew Anantavijaya. Nakula and Sahadeva blew Sughosha and Manipushpaka. Drupada, and the sons of Draupadi, and Abhimanyu blew theirs, and the sound filled the sky and the earth, and tore the hearts of the sons of Dhritarashtra.',
+                  'भीम ने पौंड्र, विशाल शंख, बजाया, और धरती काँप उठी। युधिष्ठिर ने अनंतविजय बजाया। नकुल और सहदेव ने सुघोष और मणिपुष्पक बजाए। द्रुपद, और द्रौपदी के पुत्रों, और अभिमन्यु ने अपने बजाए, और उस ध्वनि ने आकाश और पृथ्वी भर दिए, और धृतराष्ट्र के पुत्रों के हृदय विदीर्ण कर दिए।')],
+    [bg(set='field', sunX=1000, sunY=480), figs('conch', [fig('bhima', 520, 880, 520, 1, 'vow'), fig('yudhi', 800, 880, 480, 1, 'vow'), fig('abhi', 1060, 880, 460, -1, 'vow')], rim=RIM_GOLD), fx('rays', x=1000, y=480, r0=60, r1=1000, col='#ffe0a0')],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='battle', sfx=[dict(n='conch', at=1.0, v=0.9), dict(n='conch', at=5.0, v=0.8), dict(n='conch', at=10.0, v=0.8), dict(n='rumble', at=14.0, v=0.5)], shake=[[1.0, 1.8]]),
   S('i_between', 'krishna', [
       ln('ARJUNA', 'Achyuta, drive my chariot between the two armies. I want to see who I must fight.', 'अच्युत, मेरा रथ दोनों सेनाओं के बीच ले चलिए। मैं देखना चाहता हूँ कि मुझे किससे लड़ना है।'),
       ln('VYASA', 'And Krishna smiled, and drove.', 'और कृष्ण मुस्कुराए, और रथ ले चले।', gap=0.8)],

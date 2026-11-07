@@ -449,6 +449,67 @@
    "tail": 1.8
   },
   {
+   "id": "s1e08_b_drupada",
+   "music": "court",
+   "lines": [
+    {
+     "who": "DRUPADA",
+     "en": "Satyaki is right, and Krishna is right. Let us send my own priest to Hastinapura, a wise old man who knows how to speak. And while he speaks, let us send messengers to every king on earth. Whoever asks first will get their armies.",
+     "hi": "सात्यकि सही हैं, और कृष्ण भी सही हैं। मेरे अपने पुरोहित को हस्तिनापुर भेजें, एक बुद्धिमान वृद्ध जो बोलना जानते हैं। और जब वे बोलें, तब पृथ्वी के हर राजा के पास दूत भेजें। जो पहले माँगेगा, उसे उनकी सेनाएँ मिलेंगी।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#1a3a2a",
+     "throne": [
+      800,
+      660,
+      240
+     ],
+     "canopy": 1,
+     "src": "s1e08_b_council_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "drupada",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "court",
+   "tail": 1.8
+  },
+  {
    "id": "s1e08_c_dwaraka",
    "music": "river",
    "lines": [
@@ -517,6 +578,71 @@
      "v": 0.3
     }
    ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_c_sea",
+   "music": "river",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Dwaraka stood on the edge of the western sea, white walls rising out of the water, its harbour full of ships. The sea breeze smelled of salt and sandalwood. It was the most beautiful city on earth, and Krishna had built it out of the ocean.",
+     "hi": "द्वारका पश्चिमी सागर के किनारे खड़ी थी, जल से उठती श्वेत प्राचीरें, उसका बंदरगाह जहाज़ों से भरा। समुद्री हवा में नमक और चंदन की गंध थी। वह पृथ्वी का सबसे सुंदर नगर था, और कृष्ण ने उसे समुद्र से निकालकर बनाया था।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "palace",
+     "tod": "day",
+     "x": 300,
+     "w": 1000,
+     "h": 600,
+     "col": "#f0e6d0",
+     "src": "s1e08_c_dwaraka_bg"
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 860
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 700,
+      "y1": 900,
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     0.98
+    ],
+    [
+     800,
+     540,
+     1.15
+    ]
+   ],
+   "min": 12,
+   "amb": "river",
    "tail": 1.8
   },
   {
@@ -957,6 +1083,95 @@
    "tail": 1.8
   },
   {
+   "id": "s1e08_c_gather",
+   "music": "march",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "From every corner of Bharata the armies came. From the mountains and the deserts, from the river kingdoms of the east and the sea kingdoms of the west. The roads were dark with marching men for a month. The dust they raised hid the sun.",
+     "hi": "भारत के हर कोने से सेनाएँ आईं। पर्वतों और मरुस्थलों से, पूर्व के नदी राज्यों और पश्चिम के सागर राज्यों से। एक महीने तक मार्ग चलते सैनिकों से काले रहे। उनकी उड़ाई धूल ने सूर्य को ढक लिया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "dusk",
+     "hz": 450,
+     "seed": 2.1
+    },
+    {
+     "n": "rd",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "riders",
+     "args": {
+      "x": -200,
+      "y": 830,
+      "s": 100,
+      "cnt": 8,
+      "speed": 50
+     },
+     "every": 2
+    },
+    {
+     "n": "trib",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "procession",
+     "args": {
+      "y": 860,
+      "s": 80,
+      "x0": -300,
+      "cnt": 12,
+      "speed": 30
+     },
+     "every": 3
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e08050",
+      "n": 100
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     0.98
+    ],
+    [
+     800,
+     520,
+     1.12
+    ]
+   ],
+   "min": 12,
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.5,
+     "v": 0.5
+    },
+    {
+     "n": "nagara",
+     "at": 6.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e08_d_sanjaya",
    "music": "court",
    "lines": [
@@ -1086,6 +1301,81 @@
      "v": 0.4
     }
    ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_d_night",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "When Sanjaya came back with that message, the blind king could not sleep. He sent for Vidura in the middle of the night, and Vidura sat by his bed until dawn and taught him what a wise king does. He who does not envy, who forgives, who is not proud in good times nor broken in bad, he is wise. The king listened all night. In the morning, he did nothing.",
+     "hi": "जब संजय यह संदेश लेकर लौटे, अंधे राजा सो नहीं सके। उन्होंने आधी रात विदुर को बुलाया, और विदुर भोर तक उनके पलंग के पास बैठकर उन्हें सिखाते रहे कि बुद्धिमान राजा क्या करता है। जो ईर्ष्या नहीं करता, जो क्षमा करता है, जो सुख में घमंड नहीं करता और दुःख में टूटता नहीं, वही बुद्धिमान है। राजा पूरी रात सुनते रहे। सुबह उन्होंने कुछ नहीं किया।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "chamber",
+     "tone": "#2a1a10"
+    },
+    {
+     "n": "vi",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "vidura",
+      "x": 560,
+      "y": 450,
+      "R": 180,
+      "f": 1,
+      "expr": "calm"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    },
+    {
+     "n": "dh",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "dhrita",
+      "x": 1080,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     640,
+     450,
+     1.1
+    ],
+    [
+     960,
+     450,
+     1.1
+    ]
+   ],
+   "min": 10,
+   "amb": "night",
    "tail": 1.8
   },
   {
@@ -1381,6 +1671,94 @@
    "tail": 1.8
   },
   {
+   "id": "s1e08_e_fields",
+   "music": "river",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "He passed through villages where the harvest was in, and the threshing floors were heaped with grain. People ran out of their houses to see him go by. Women threw flowers. Children ran alongside the horses. He smiled at all of them, and his eyes were sad.",
+     "hi": "वे उन गाँवों से गुज़रे जहाँ फ़सल कट चुकी थी, और खलिहानों में अनाज के ढेर लगे थे। लोग उन्हें जाते देखने घरों से दौड़ आए। स्त्रियों ने फूल बरसाए। बच्चे घोड़ों के साथ दौड़े। वे सबको देखकर मुस्कुराए, और उनकी आँखें उदास थीं।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "gold",
+     "hz": 480,
+     "city": [
+      1250,
+      300
+     ],
+     "seed": 0.6
+    },
+    {
+     "n": "ch",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "warChariot",
+     "args": {
+      "x": 300,
+      "y": 860,
+      "s": 0.55,
+      "rider": "krishna"
+     },
+     "every": 2
+    },
+    {
+     "n": "fx_petals",
+     "k": "anim",
+     "every": 2,
+     "d": 1.0,
+     "fx": {
+      "kind": "petals",
+      "n": 40
+     }
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#f0c070",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     560,
+     470,
+     1.12
+    ],
+    [
+     1040,
+     470,
+     1.12
+    ]
+   ],
+   "min": 10,
+   "amb": "birds",
+   "sfx": [
+    {
+     "n": "hooves",
+     "at": 0.3,
+     "v": 0.4
+    },
+    {
+     "n": "flute",
+     "at": 6.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e08_e_vidura",
    "music": "krishna",
    "lines": [
@@ -1396,7 +1774,8 @@
      "k": "plate",
      "d": 0.6,
      "set": "chamber",
-     "tone": "#2a1a10"
+     "tone": "#2a1a10",
+     "src": "s1e08_d_night_bg"
     },
     {
      "n": "vk",
@@ -1466,7 +1845,7 @@
      "d": 0.6,
      "set": "chamber",
      "tone": "#2a1a10",
-     "src": "s1e08_e_vidura_bg"
+     "src": "s1e08_d_night_bg"
     },
     {
      "n": "face",
@@ -1499,6 +1878,73 @@
      800,
      440,
      1.16
+    ]
+   ],
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_e_vidula",
+   "music": "fire",
+   "lines": [
+    {
+     "who": "KUNTI",
+     "en": "Tell my sons the story of Vidula, Keshava. Her son lay in bed after a defeat, and would not get up. She said to him: better to blaze for a moment like a torch of tinduka wood than to smoulder for years like a heap of chaff. Get up. Tell them that.",
+     "hi": "मेरे पुत्रों को विदुला की कथा सुनाना, केशव। हार के बाद उसका पुत्र पलंग पर पड़ा रहा, और उठा नहीं। उसने उससे कहा: वर्षों तक भूसे के ढेर की तरह सुलगने से अच्छा है तिंदुक की लकड़ी की मशाल की तरह एक क्षण धधक उठना। उठो। उनसे यही कहना।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "city",
+     "tod": "dusk",
+     "hz": 600,
+     "col": "#d8a07a"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "kunti",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_embers",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "embers",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
     ]
    ],
    "amb": "night",
@@ -1577,6 +2023,60 @@
      "v": 0.5
     }
    ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_f_hall_wide",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "The hall was the same hall where the dice had been thrown, thirteen years before. The same pillars. The same floor where Draupadi had stood. Krishna looked at it for a long moment before he spoke.",
+     "hi": "सभा वही सभा थी जहाँ तेरह वर्ष पहले पासे फेंके गए थे। वही स्तंभ। वही फ़र्श जहाँ द्रौपदी खड़ी हुई थीं। कृष्ण ने बोलने से पहले बहुत देर तक उसे देखा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a1210",
+     "throne": [
+      800,
+      660,
+      260
+     ],
+     "canopy": 1,
+     "src": "s1e08_d_bhishma_bg"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c08a5a",
+      "n": 20
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.2
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 10,
+   "amb": "court",
    "tail": 1.8
   },
   {
@@ -2532,6 +3032,70 @@
    "tail": 1.8
   },
   {
+   "id": "s1e08_g_dream",
+   "music": "kala",
+   "lines": [
+    {
+     "who": "KARNA",
+     "en": "I had a dream, Krishna. I saw Yudhishthira climbing a white mountain, and sitting on a throne of gold, and eating rice and ghee from a golden bowl. And I saw myself, and Duryodhana, riding south on a cart pulled by camels, towards the land of Yama. I know how this ends.",
+     "hi": "मैंने एक स्वप्न देखा, कृष्ण। मैंने युधिष्ठिर को एक श्वेत पर्वत पर चढ़ते, और सोने के सिंहासन पर बैठते, और सोने की थाली से घी चावल खाते देखा। और मैंने स्वयं को, और दुर्योधन को, ऊँटों की गाड़ी पर दक्षिण की ओर, यमलोक की ओर जाते देखा। मैं जानता हूँ इसका अंत कैसे होगा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "valley",
+     "tod": "dusk",
+     "hz": 450,
+     "seed": 2.1,
+     "src": "s1e08_c_gather_bg"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "karna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 20.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e08_h_ganga",
    "music": "river",
    "lines": [
@@ -2761,6 +3325,90 @@
    "tail": 1.8
   },
   {
+   "id": "s1e08_h_alone",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Kunti walked back to the city. Karna stood in the river until the sun went down, and then for a long time after, alone, in the dark water.",
+     "hi": "कुंती नगर लौट गईं। कर्ण सूर्यास्त तक नदी में खड़े रहे, और उसके बाद भी बहुत देर तक, अकेले, अँधेरे जल में।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "dusk",
+     "sun": [
+      900,
+      560,
+      160
+     ],
+     "sunCol": "#e05a2a",
+     "hills": 1,
+     "ground": "#3a2014",
+     "src": "s1e08_g_reveal_bg"
+    },
+    {
+     "n": "sunset",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "sinkingSun",
+     "args": {
+      "x": 900,
+      "y": 600
+     },
+     "every": 3,
+     "b": "add"
+    },
+    {
+     "n": "k",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "karna",
+       "x": 700,
+       "y": 860,
+       "S": 200,
+       "f": 1,
+       "pose": "stand",
+       "sil": true
+      }
+     ]
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 700,
+      "y": 860
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     500,
+     1.0
+    ],
+    [
+     760,
+     560,
+     1.15
+    ]
+   ],
+   "min": 10,
+   "amb": "river",
+   "tail": 1.8
+  },
+  {
    "id": "s1e08_i_march",
    "music": "march",
    "lines": [
@@ -2831,6 +3479,82 @@
      "n": "hooves",
      "at": 6.0,
      "v": 0.5
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_i_rules",
+   "music": "court",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Before the battle, the commanders agreed on rules. Fighting would stop at sunset. Equals would fight equals: chariot against chariot, horse against horse. No one would strike a man who was unarmed, or fleeing, or had surrendered, or was fighting someone else. No one would harm the charioteers, or the drummers, or the animals. Remember these rules, scribe. Every one of them would be broken.",
+     "hi": "युद्ध से पहले सेनापतियों ने नियमों पर सहमति की। सूर्यास्त पर युद्ध रुकेगा। बराबर वाले बराबर से लड़ेंगे: रथी रथी से, घुड़सवार घुड़सवार से। कोई निहत्थे पर, या भागते पर, या आत्मसमर्पण करने वाले पर, या किसी और से लड़ते पर वार नहीं करेगा। कोई सारथियों, ढोल बजाने वालों, या पशुओं को हानि नहीं पहुँचाएगा। ये नियम याद रखना, लेखक। इनमें से हर एक टूटा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        300,
+        860,
+        100,
+        140
+       ],
+       [
+        1300,
+        860,
+        100,
+        140
+       ]
+      ]
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 12,
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "gong",
+     "at": 28.0,
+     "v": 0.4
     }
    ],
    "tail": 1.8
@@ -2975,6 +3699,63 @@
     ]
    ],
    "min": 7,
+   "amb": "night",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_i_eve",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On the eve of battle, a strange quiet fell over the field. Men who would kill each other in the morning bathed in the same river. They sharpened their swords and wrote to their wives. Some prayed. Some sang. Most just looked at the stars.",
+     "hi": "युद्ध की पूर्व संध्या पर रणभूमि पर एक विचित्र शांति छा गई। जो पुरुष सुबह एक दूसरे को मारेंगे, उन्होंने एक ही नदी में स्नान किया। उन्होंने अपनी तलवारें तेज़ कीं और अपनी पत्नियों को संदेश भेजे। कुछ ने प्रार्थना की। कुछ ने गाया। अधिकतर ने बस तारों को देखा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp",
+     "src": "s1e08_i_rules_bg"
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 100
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 12,
    "amb": "night",
    "tail": 1.8
   },
@@ -3361,6 +4142,121 @@
      "n": "nagara",
      "at": 12.0,
      "v": 0.7
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e08_i_conches",
+   "music": "heroic",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Bhima blew Paundra, the great conch, and it shook the earth. Yudhishthira blew Anantavijaya. Nakula and Sahadeva blew Sughosha and Manipushpaka. Drupada, and the sons of Draupadi, and Abhimanyu blew theirs, and the sound filled the sky and the earth, and tore the hearts of the sons of Dhritarashtra.",
+     "hi": "भीम ने पौंड्र, विशाल शंख, बजाया, और धरती काँप उठी। युधिष्ठिर ने अनंतविजय बजाया। नकुल और सहदेव ने सुघोष और मणिपुष्पक बजाए। द्रुपद, और द्रौपदी के पुत्रों, और अभिमन्यु ने अपने बजाए, और उस ध्वनि ने आकाश और पृथ्वी भर दिए, और धृतराष्ट्र के पुत्रों के हृदय विदीर्ण कर दिए।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1000,
+     "sunY": 480
+    },
+    {
+     "n": "conch",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhima",
+       "x": 520,
+       "y": 880,
+       "S": 520,
+       "f": 1,
+       "pose": "vow"
+      },
+      {
+       "who": "yudhi",
+       "x": 800,
+       "y": 880,
+       "S": 480,
+       "f": 1,
+       "pose": "vow"
+      },
+      {
+       "who": "abhi",
+       "x": 1060,
+       "y": 880,
+       "S": 460,
+       "f": -1,
+       "pose": "vow"
+      }
+     ],
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ]
+    },
+    {
+     "n": "fx_rays",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "rays",
+      "x": 1000,
+      "y": 480,
+      "r0": 60,
+      "r1": 1000,
+      "col": "#ffe0a0"
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "shake": [
+    [
+     1.0,
+     1.8
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "conch",
+     "at": 1.0,
+     "v": 0.9
+    },
+    {
+     "n": "conch",
+     "at": 5.0,
+     "v": 0.8
+    },
+    {
+     "n": "conch",
+     "at": 10.0,
+     "v": 0.8
+    },
+    {
+     "n": "rumble",
+     "at": 14.0,
+     "v": 0.5
     }
    ],
    "tail": 1.8

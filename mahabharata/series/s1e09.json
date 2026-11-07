@@ -227,6 +227,87 @@
    "tail": 1.8
   },
   {
+   "id": "s1e09_a_sanjaya",
+   "music": "mystery",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Before the war, I had offered my son sight, so that he could watch it. He refused. He did not want to see his sons die. So I gave the sight to Sanjaya instead, his charioteer, so that he could sit beside the king in Hastinapura and see everything on the field, even the thoughts in men's hearts, and tell him.",
+     "hi": "युद्ध से पहले मैंने अपने पुत्र को दृष्टि देनी चाही थी, कि वे उसे देख सकें। उन्होंने मना कर दिया। वे अपने पुत्रों को मरते नहीं देखना चाहते थे। तो मैंने वह दृष्टि संजय को दी, उनके सारथी को, कि वे हस्तिनापुर में राजा के पास बैठकर रणभूमि की हर बात देख सकें, मनुष्यों के मन के विचार तक, और उन्हें बता सकें।"
+    },
+    {
+     "who": "SANJAYA",
+     "en": "Listen, my king. I see the field of Kurukshetra as clearly as I see you.",
+     "hi": "सुनिए, महाराज। मैं कुरुक्षेत्र का मैदान उतनी ही स्पष्टता से देखता हूँ जितना आपको।",
+     "gap": 0.6
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "court",
+     "tone": "#3a1210",
+     "throne": [
+      800,
+      660,
+      260
+     ],
+     "canopy": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "courtier",
+      "x": 1040,
+      "y": 450,
+      "R": 180,
+      "f": -1,
+      "style": {
+       "cloth": "#e8dcc0"
+      },
+      "expr": "awe"
+     },
+     "rim": [
+      "#ffb060",
+      3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#cfe4ff",
+      24,
+      0.3
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     1020,
+     450,
+     1.0
+    ],
+    [
+     1020,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "night",
+   "sfx": [
+    {
+     "n": "magic",
+     "at": 12.0,
+     "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e09_b_middle",
    "music": "tension",
    "lines": [
@@ -286,6 +367,63 @@
    ],
    "min": 8,
    "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_b_wide",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On either side the armies stretched to the edge of the sky. A forest of banners. Elephants in painted armour. Chariots by the thousand, their horses stamping. And in the silence before the first arrow, a single bird crossed the field.",
+     "hi": "दोनों ओर सेनाएँ आकाश के छोर तक फैली थीं। ध्वजों का एक वन। रंगे कवचों में हाथी। हज़ारों रथ, उनके घोड़े पैर पटकते हुए। और पहले बाण से पहले के सन्नाटे में, एक अकेला पक्षी मैदान के पार उड़ा।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 1,
+     "density": 1.0
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     0.96
+    ],
+    [
+     800,
+     470,
+     1.06
+    ]
+   ],
+   "min": 12,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "wind",
+     "at": 1.0,
+     "v": 0.4
+    }
+   ],
    "tail": 1.8
   },
   {
@@ -846,6 +984,94 @@
    "tail": 1.8
   },
   {
+   "id": "s1e09_c_paths",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "Some reach me by knowledge, Arjuna, some by selfless action, some by love. All paths lead to me. The one who sees me in everything, and everything in me, is never lost to me, and I am never lost to him.",
+     "hi": "कुछ मुझे ज्ञान से पाते हैं, अर्जुन, कुछ निष्काम कर्म से, कुछ प्रेम से। सब मार्ग मुझ तक आते हैं। जो मुझे सबमें देखता है, और सबको मुझमें, वह मुझसे कभी नहीं खोता, और मैं उससे कभी नहीं खोता।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "void",
+     "base": "#1a1030",
+     "mandala": 380,
+     "my": 440,
+     "mcol": "#f3cf6a",
+     "src": "s1e09_c_unborn_bg"
+    },
+    {
+     "n": "ks",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "krishna",
+      "x": 800,
+      "y": 440,
+      "R": 210,
+      "f": 1,
+      "halo": 1,
+      "expr": "smile"
+     },
+     "rim": [
+      "#ffd890",
+      -3,
+      -2,
+      0.55
+     ],
+     "glow": [
+      "#ffe0a0",
+      30,
+      0.4
+     ],
+     "breath": 1
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 0,
+      "y1": 900,
+      "col": "#fff0c0",
+      "n": 60
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "text": [
+    {
+     "t0": 14.0,
+     "t1": 22.0,
+     "en": "yo māṁ paśyati sarvatra sarvaṁ ca mayi paśyati",
+     "hi": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति",
+     "f": "verse",
+     "y": 0.86
+    }
+   ],
+   "amb": "temple",
+   "tail": 1.8
+  },
+  {
    "id": "s1e09_c_lamp",
    "music": "gita",
    "lines": [
@@ -901,6 +1127,66 @@
      "v": 0.4
     }
    ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_c_steady",
+   "music": "gita",
+   "lines": [
+    {
+     "who": "KRISHNA",
+     "en": "The one who is not shaken by sorrow, nor greedy for pleasure, who is free from desire, fear and anger, him I call a sage of steady mind. He moves among the things of the world, but they do not move him. As the ocean takes in all the rivers and stays full and still, so is he.",
+     "hi": "जो दुःख से विचलित नहीं होता, न सुख का लोभी है, जो कामना, भय और क्रोध से मुक्त है, उसे मैं स्थितप्रज्ञ मुनि कहता हूँ। वह संसार की वस्तुओं के बीच चलता है, पर वे उसे नहीं हिलातीं। जैसे सागर सब नदियों को समा लेता है और भरा और शांत रहता है, वैसा ही वह है।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "lake",
+     "tod": "gold"
+    },
+    {
+     "n": "fx_ripples",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "ripples",
+      "x": 800,
+      "y": 820
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_sparkle",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "sparkle",
+      "y0": 650,
+      "y1": 900,
+      "n": 40
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.1
+    ],
+    [
+     800,
+     600,
+     1.25
+    ]
+   ],
+   "min": 12,
+   "amb": "temple",
    "tail": 1.8
   },
   {
@@ -1012,7 +1298,8 @@
      "k": "plate",
      "d": 0.6,
      "set": "lake",
-     "tod": "gold"
+     "tod": "gold",
+     "src": "s1e09_c_steady_bg"
     },
     {
      "n": "leaf",
@@ -2099,6 +2386,82 @@
    "tail": 1.8
   },
   {
+   "id": "s1e09_e_armies",
+   "music": "tension",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "Both armies watched him go, a king without armour walking alone across the empty ground between them. The Kauravas laughed: he has lost his nerve, he has come to beg. The Pandavas held their breath. Bhishma lowered his bow, and waited.",
+     "hi": "दोनों सेनाओं ने उन्हें जाते देखा, बिना कवच का एक राजा उनके बीच की खाली भूमि पर अकेला चलता हुआ। कौरव हँसे: इसका साहस टूट गया, यह भीख माँगने आया है। पांडवों ने साँस रोक ली। भीष्म ने धनुष नीचे किया, और प्रतीक्षा की।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1100,
+     "sunY": 520,
+     "armies": 1,
+     "density": 1.0
+    },
+    {
+     "n": "walker",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "yudhi",
+       "x": 800,
+       "y": 860,
+       "S": 200,
+       "f": 1,
+       "pose": "stand",
+       "style": {
+        "dhoti": "#e8dcc0",
+        "crown": "bun"
+       }
+      }
+     ]
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#e0b070",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     460,
+     0.98
+    ],
+    [
+     800,
+     560,
+     1.15
+    ]
+   ],
+   "min": 12,
+   "amb": "wind",
+   "sfx": [
+    {
+     "n": "crowdlaugh",
+     "at": 8.0,
+     "v": 0.3
+    }
+   ],
+   "tail": 1.8
+  },
+  {
    "id": "s1e09_e_bless",
    "music": "sorrow",
    "lines": [
@@ -2400,6 +2763,68 @@
    "tail": 1.8
   },
   {
+   "id": "s1e09_f_uttar",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On the first day, young Uttar, the prince of Matsya who had run from the Kuru army and then driven Arjuna's chariot, rode an elephant against Shalya, and Shalya killed him. The Pandavas lost more men than the Kauravas that day. That night, Yudhishthira did not sleep.",
+     "hi": "पहले दिन युवा उत्तर, मत्स्य के राजकुमार जो कुरु सेना से भागे थे और फिर अर्जुन का रथ हाँका था, हाथी पर शल्य के विरुद्ध गए, और शल्य ने उन्हें मार डाला। उस दिन पांडवों ने कौरवों से अधिक योद्धा खोए। उस रात युधिष्ठिर सो नहीं सके।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "sky",
+     "tod": "crimson",
+     "sun": [
+      800,
+      640,
+      160
+     ],
+     "sunCol": "#e04a20",
+     "hills": 1,
+     "ground": "#2a1010"
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "uttar",
+      "x": 800,
+      "y": 450,
+      "R": 190,
+      "f": 1,
+      "expr": "stern"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.0
+    ],
+    [
+     800,
+     440,
+     1.14
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
    "id": "s1e09_f_bhishma",
    "music": "battle",
    "lines": [
@@ -2491,6 +2916,94 @@
      "n": "roar",
      "at": 10.0,
      "v": 0.4
+    }
+   ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_banner",
+   "music": "battle",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "His banner was a golden palm tree with five stars, and wherever it moved, the Pandava army broke. He was old, and white-haired, and he fought like a young man of twenty, and every night his own grandsons counted their dead.",
+     "hi": "उनका ध्वज पाँच तारों वाला एक सुनहरा ताड़ का पेड़ था, और वह जहाँ भी जाता, पांडव सेना टूट जाती। वे वृद्ध थे, श्वेत केश वाले, और वे बीस वर्ष के युवक की तरह लड़ते, और हर रात उनके अपने पौत्र अपने मृतकों को गिनते।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 520
+    },
+    {
+     "n": "bh",
+     "k": "plate",
+     "d": 1.0,
+     "figs": [
+      {
+       "who": "bhishma",
+       "x": 800,
+       "y": 880,
+       "S": 620,
+       "f": 1,
+       "pose": "draw",
+       "weapon": "bowDrawn"
+      }
+     ],
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ]
+    },
+    {
+     "n": "rain",
+     "k": "anim",
+     "d": 1.0,
+     "draw": "arrowRain",
+     "args": {},
+     "every": 2,
+     "b": "add"
+    },
+    {
+     "n": "fx_dust",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "dust",
+      "col": "#c07a4a",
+      "n": 80
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     470,
+     1.0
+    ],
+    [
+     800,
+     460,
+     1.14
+    ]
+   ],
+   "amb": "battle",
+   "sfx": [
+    {
+     "n": "whoosh",
+     "at": 2.0
+    },
+    {
+     "n": "whoosh",
+     "at": 4.0
     }
    ],
    "tail": 1.8
@@ -2592,6 +3105,154 @@
      "v": 0.5
     }
    ],
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_iravan",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "On the eighth day, Iravan fell, the son of Arjuna and Ulupi, the Naga princess Arjuna had loved in his years of wandering. He had come up out of the underworld to fight for a father he had met only once. Arjuna wept for him on the field, and then fought on.",
+     "hi": "आठवें दिन इरावान गिरे, अर्जुन और नागकन्या उलूपी के पुत्र, जिनसे अर्जुन ने अपनी यात्रा के वर्षों में प्रेम किया था। वे पाताल से एक ऐसे पिता के लिए लड़ने आए थे जिनसे वे केवल एक बार मिले थे। अर्जुन रणभूमि में उनके लिए रोए, और फिर लड़ते रहे।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "field",
+     "sunX": 1200,
+     "sunY": 560,
+     "dead": 1
+    },
+    {
+     "n": "face",
+     "k": "plate",
+     "d": 1.0,
+     "portrait": {
+      "who": "arjuna",
+      "x": 800,
+      "y": 450,
+      "R": 200,
+      "f": 1,
+      "expr": "sorrow"
+     },
+     "rim": [
+      "#ff9050",
+      3,
+      -2,
+      0.6
+     ],
+     "breath": 1
+    }
+   ],
+   "cam": [
+    [
+     800,
+     450,
+     1.04
+    ],
+    [
+     800,
+     440,
+     1.18
+    ]
+   ],
+   "amb": "wind",
+   "tail": 1.8
+  },
+  {
+   "id": "s1e09_f_nights",
+   "music": "lament",
+   "lines": [
+    {
+     "who": "VYASA",
+     "en": "And every night the fighting stopped, and the two camps lit their fires a mile apart. The wounded cried out in the dark. Women came looking for their men with torches. And sometimes, across that mile of dead ground, a man in one camp would hear his cousin singing in the other.",
+     "hi": "और हर रात युद्ध रुकता, और दोनों शिविर एक कोस की दूरी पर अपनी आग जलाते। घायल अँधेरे में कराहते। स्त्रियाँ मशालें लेकर अपने पुरुषों को खोजने आतीं। और कभी कभी, उस एक कोस की मृत भूमि के पार, एक शिविर का कोई पुरुष दूसरे शिविर में अपने भाई को गाते सुनता।"
+    }
+   ],
+   "layers": [
+    {
+     "n": "bg",
+     "k": "plate",
+     "d": 0.6,
+     "set": "camp"
+    },
+    {
+     "n": "fx_fire",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fire",
+      "at": [
+       [
+        200,
+        860,
+        100,
+        140
+       ],
+       [
+        600,
+        860,
+        80,
+        120
+       ],
+       [
+        1100,
+        860,
+        80,
+        120
+       ],
+       [
+        1450,
+        860,
+        100,
+        140
+       ]
+      ]
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_stars",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "stars",
+      "n": 80
+     },
+     "b": "add"
+    },
+    {
+     "n": "fx_fireflies",
+     "k": "anim",
+     "every": 3,
+     "d": 1.0,
+     "fx": {
+      "kind": "fireflies",
+      "n": 30
+     },
+     "b": "add"
+    }
+   ],
+   "cam": [
+    [
+     800,
+     520,
+     1.15
+    ],
+    [
+     800,
+     470,
+     1.0
+    ]
+   ],
+   "min": 12,
+   "amb": "night",
    "tail": 1.8
   },
   {

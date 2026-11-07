@@ -15,6 +15,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('GANESHA', 'Twelve years in the forest. What happens in twelve years, Muni, to men who were kings?', 'वन में बारह वर्ष। बारह वर्षों में क्या होता है, मुनिवर, उन पुरुषों का जो राजा थे?'),
       ln('VYASAC', 'They are tested. By hunger, by demons, by gods in disguise. And by their own anger, most of all.', 'उनकी परीक्षा होती है। भूख से, राक्षसों से, वेश बदले देवताओं से। और सबसे अधिक, अपने ही क्रोध से।', gap=0.8)],
     CAVE_G(), cam=push(820, 430, 1.0, 1.08), amb='night'),
+  S('a_hermitage', 'forest', [
+      ln('VYASA', 'In the Dvaita forest they lived like hermits. Before dawn the brahmins chanted by the lake. Bhima hunted, the twins gathered roots and fruit, Arjuna practised with his bow until his arms ached, and Yudhishthira listened to the sages tell the old stories, of Nala, of Savitri, of Rama.',
+                  'द्वैत वन में वे तपस्वियों की तरह रहे। भोर से पहले ब्राह्मण झील किनारे वेद पढ़ते। भीम आखेट करते, जुड़वाँ भाई कंद मूल फल बटोरते, अर्जुन तब तक धनुष का अभ्यास करते जब तक भुजाएँ दुखने न लगें, और युधिष्ठिर ऋषियों से पुरानी कथाएँ सुनते, नल की, सावित्री की, राम की।')],
+    [sh(bg(set='lake', tod='dawn'), 'lake_dawn'), piece('leaves', 'lotusLeaf', at=[[500, 820, 90], [1100, 830, 100]]), fx('ripples', x=800, y=840), fx('fireflies', n=20)],
+    cam=[[800, 520, 1.2], [800, 460, 1.0]], amb='birds', sfx=[dict(n='om', at=2.0, v=0.3), dict(n='bell', at=10.0, v=0.3)], min=12),
 
   # ---------- Durvasa and the grain of rice ----------
   S('b_durvasa', 'tension', [
@@ -50,6 +55,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'दुःशला के कारण युधिष्ठिर ने उसे छोड़ दिया। जयद्रथ हिमालय गया और शिव की प्रार्थना की, और एक ही चीज़ माँगी: एक दिन के लिए युद्ध में पाँचों पांडवों को रोक सकूँ। शिव ने यह दिया, अर्जुन को छोड़कर। एक दिन, वह पर्याप्त होगा।')],
     [sh(bg(set='himalaya'), 'himal_peaks'), face('jayadratha', 560, 450, 180, 1, 'anger', rim=RIM_COOL), fx('snow', n=60)],
     cam=push(580, 450, 1.04, 1.14), amb='wind', sfx=[dict(n='damaru', at=8.0, v=0.4)]),
+  S('c_lake', 'forest', [
+      ln('VYASA', 'The seasons kept turning. The brothers grew lean and brown and quiet. Their beards grew long. Draupadi learned the names of every bird in the forest. And every evening Yudhishthira counted: so many years gone, so many left.',
+                  'ऋतुएँ बदलती रहीं। भाई दुबले, साँवले और शांत होते गए। उनकी दाढ़ियाँ लंबी हो गईं। द्रौपदी ने वन के हर पक्षी का नाम सीख लिया। और हर साँझ युधिष्ठिर गिनते: इतने वर्ष बीते, इतने बचे।')],
+    [sh(bg(set='lake', tod='dusk'), 'lake_dusk7'), fx('fireflies', n=40), fx('ripples', x=800, y=840)],
+    cam=[[800, 470, 0.98], [800, 540, 1.15]], amb='night', min=12),
 
   # ---------- Bhima and Hanuman ----------
   S('d_lotus', 'river', [
@@ -57,6 +67,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'बदरी के निकट पर्वतों में, हवा ने हज़ार पंखुड़ियों वाला एक सुनहरा कमल द्रौपदी के चरणों में ला डाला। उसकी सुगंध पृथ्वी की किसी चीज़ जैसी नहीं थी। उन्होंने भीम से और ढूँढने को कहा। वे तुरंत चल पड़े, पर्वत पर, हाथी की तरह वन को चीरते हुए।')],
     [bg(set='valley', tod='dawn', hz=420, seed=7.2, groves=6, mist=1), piece('lotus', 'lotusLeaf', at=[[800, 860, 120]]), fx('petals', every=2, n=60), fx('sparkle', n=40)],
     cam=pan(560, 1040, 470, 1.15), amb='wind', min=11),
+  S('d_climb', 'wonder', [
+      ln('VYASA', 'He climbed through forests of deodar and fields of snow, past waterfalls that fell from the clouds. Lions fled from him. Elephants stepped aside. He roared for the joy of it, and the mountain roared back.',
+                  'वे देवदार के वनों और हिम के मैदानों से होकर चढ़े, बादलों से गिरते झरनों के पास से। सिंह उनसे भागे। हाथी रास्ते से हट गए। वे आनंद में गरजे, और पर्वत ने भी गर्जना की।')],
+    [sh(bg(set='himalaya'), 'himal_peaks'), figs('tiny', [fig('bhima', 760, 820, 130, 1, 'stand', style=BARK)]), fx('snow', n=40)],
+    cam=[[800, 470, 0.98], [800, 540, 1.15]], amb='wind', sfx=[dict(n='roar', at=12.0, v=0.4)], min=10),
   S('d_tail', 'mystery', [
       ln('VYASA', 'On a narrow path through a banana grove, an old monkey lay asleep, and his tail lay across the path.', 'केलों के एक उपवन से होकर जाते संकरे मार्ग पर एक बूढ़ा वानर सो रहा था, और उसकी पूँछ मार्ग पर फैली थी।'),
       ln('BHIMA', 'Move your tail, old one. I am in a hurry.', 'अपनी पूँछ हटाओ, बूढ़े। मुझे जल्दी है।', fx='growl', gap=0.6),
@@ -152,6 +167,15 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'तर्क कहीं नहीं ले जाते। शास्त्र भिन्न भिन्न कहते हैं। कोई ऐसा ऋषि नहीं जिसका वचन अंतिम हो। धर्म का सत्य गुफा में छिपा है। मार्ग वही है जिस पर महापुरुष चले हैं।', gap=0.6)],
     [sh(bg(set='lake', tod='mist'), 'lake_mist'), face('yudhi', 800, 450, 200, 1, 'calm', rim=RIM_COOL, glow=['#e0f0ff', 20, 0.2])],
     cam=push(800, 450, 1.04, 1.16), amb='void'),
+  S('g_q3', 'cosmic', [
+      ln('YAKSHA', 'What is heavier than the earth? What is higher than the sky?', 'पृथ्वी से भारी क्या है? आकाश से ऊँचा क्या है?', fx='divine'),
+      ln('YUDHI', 'A mother is heavier than the earth. A father is higher than the sky.', 'माता पृथ्वी से भारी है। पिता आकाश से ऊँचा है।', gap=0.6),
+      ln('YAKSHA', 'What is the enemy that cannot be conquered? What is the disease that never ends?', 'वह कौन सा शत्रु है जिसे जीता नहीं जा सकता? वह कौन सा रोग है जो कभी समाप्त नहीं होता?', fx='divine', gap=0.8),
+      ln('YUDHI', 'Anger is the enemy that cannot be conquered. Greed is the disease that never ends.', 'क्रोध वह शत्रु है जिसे जीता नहीं जा सकता। लोभ वह रोग है जो कभी समाप्त नहीं होता।', gap=0.6),
+      ln('YAKSHA', 'Who is truly happy?', 'सच में सुखी कौन है?', fx='divine', gap=0.8),
+      ln('YUDHI', 'The one who owes nothing, who is not in exile, and who cooks a few vegetables in his own home at the end of the day.', 'वह जिस पर कोई ऋण नहीं, जो प्रवास में नहीं, और जो दिन ढले अपने घर में थोड़ा सा साग पकाता है।', gap=0.6)],
+    [sh(bg(set='lake', tod='mist'), 'lake_mist'), piece('form', 'yakshaForm', k='plate', x=1050, y=430), fx('ripples', x=1050, y=800)],
+    cam=push(900, 450, 1.0, 1.14), amb='void'),
   S('g_choice', 'sorrow', [
       ln('YAKSHA', 'You have answered well. I will give you back one of your brothers. Choose.', 'तुमने अच्छे उत्तर दिए। मैं तुम्हें तुम्हारे भाइयों में से एक लौटाऊँगा। चुनो।', fx='divine'),
       ln('YUDHI', 'Nakula.', 'नकुल।', gap=0.8),
@@ -164,6 +188,16 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'यक्ष हँसा, और स्वयं धर्म बन गया, युधिष्ठिर के अपने पिता। उन्होंने चारों भाइयों को फिर से जीवित किया, और उन्हें आशीर्वाद दिया: आने वाले वर्ष में कोई उन्हें पहचान नहीं पाएगा।')],
     [sh(bg(set='lake', tod='dawn'), 'lake_dawn'), face('dharma', 800, 440, 210, 1, 'smile', rim=RIM_GOLD, glow=['#fff0c0', 30, 0.35]), fx('rays', x=800, y=200, r0=60, r1=900, col='#fff0c0')],
     cam=push(800, 450, 1.0, 1.14), amb='temple', sfx=[dict(n='bells', at=0.5), dict(n='om', at=4.0, v=0.4)]),
+  S('g_wake', 'joy', [
+      ln('VYASA', 'The four brothers sat up by the water, as if from sleep, and could not understand why Yudhishthira was weeping and laughing at once. And the brahmin\'s fire-sticks lay on the grass beside them, returned.',
+                  'चारों भाई पानी के पास ऐसे उठ बैठे जैसे नींद से, और समझ नहीं पाए कि युधिष्ठिर एक साथ रो और हँस क्यों रहे हैं। और ब्राह्मण की अरणि उनके पास घास पर पड़ी थी, लौटाई हुई।')],
+    [sh(bg(set='lake', tod='dawn'), 'lake_dawn'), figs('wake', [fig('nakula', 480, 880, 400, 1, 'stand', style=BARK), fig('sahadeva', 680, 880, 400, 1, 'stand', style=BARK), fig('arjuna', 900, 880, 420, -1, 'stand', style=BARK), fig('bhima', 1130, 880, 460, -1, 'stand', style=BARK)], rim=RIM_GOLD), fx('sparkle', n=30)],
+    cam=[[800, 480, 1.0], [800, 500, 1.1]], amb='birds'),
+  S('g_shami', 'mystery', [
+      ln('VYASA', 'Before they entered the city of Virata, they wrapped their weapons in hides, Gandiva and Bhima\'s mace and the swords of the twins, and tied the bundle high in a shami tree near the burning ground, and hung a corpse beside it, so no one would go near.',
+                  'विराट नगर में प्रवेश करने से पहले उन्होंने अपने अस्त्र खालों में लपेटे, गांडीव और भीम की गदा और जुड़वाँ भाइयों की तलवारें, और गठरी को श्मशान के पास एक शमी के पेड़ पर ऊँचा बाँध दिया, और उसके पास एक शव लटका दिया, कि कोई पास न जाए।')],
+    [sh(bg(set='forest', tod='dusk', season='autumn'), 'forest_autumn7'), fx('leaves', n=40), fx('dust', col='#806050', n=20)],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='wind', sfx=[dict(n='wind', at=1.0, v=0.4)], min=10),
 
   # ---------- Virata ----------
   S('h_virata', 'court', [
@@ -180,6 +214,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'और अर्जुन, पृथ्वी के सबसे महान धनुर्धर, ने उर्वशी के शाप के लिए यही वर्ष चुना। वे बृहन्नला बने, स्त्री के वस्त्रों और कंगनों में, राजकुमारी उत्तरा के नृत्य शिक्षक।')],
     [VCOURT(), figs('dance', [fig('brihannala', 640, 880, 560, 1, 'flute'), dict(who='uttaraW', x=980, y=880, S=440, f=-1)], rim=RIM_GOLD), fx('petals', every=2, n=40)],
     cam=push(800, 470, 1.04, 1.12), amb='court', sfx=[dict(n='bells', at=1.0, v=0.4)], hero=1, name=name('BRIHANNALA', 'बृहन्नला', 'the dancing teacher', 'नृत्य शिक्षक', 1)),
+  S('h_wrestle', 'battle', [
+      ln('VYASA', 'At the great festival of Brahma, a wrestler named Jimuta came to Matsya and challenged every man in the kingdom. No one would face him. Then the cook, Ballava, rolled up his sleeves, and lifted Jimuta over his head, and whirled him round a hundred times, and threw him down.',
+                  'ब्रह्मा के महोत्सव में जीमूत नाम का एक पहलवान मत्स्य आया और राज्य के हर पुरुष को ललकारा। कोई उसके सामने नहीं आया। तब रसोइये बल्लव ने आस्तीनें चढ़ाईं, और जीमूत को सिर के ऊपर उठाकर सौ बार घुमाया, और पटक दिया।')],
+    [bg(set='arena', tod='day'), figs('wr', [fig('bhima', 640, 900, 620, 1, 'charge', style=dict(dhoti='#e8dcc0', crown='band')), fig('soldier', 960, 900, 600, -1, 'charge')], rim=RIM_GOLD), piece('folk', 'folk', cnt=20, y=640, dy=30, s=34, seed=44), fx('dust', col='#c08a5a', n=80)],
+    cam=push(800, 480, 1.0, 1.14), amb='crowd', sfx=[dict(n='cheer', at=1.0, v=0.4), dict(n='boom', at=16.0, v=0.6), dict(n='cheer', at=17.0, v=0.6)], shake=[[16.0, 16.5]]),
   S('h_kichaka', 'kala', [
       ln('VYASA', 'The queen\'s brother, Kichaka, commander of Virata\'s army, saw Sairandhri, and wanted her. When she refused him, he kicked her in front of the court. Kanka, the king\'s dice-player, looked at the floor.',
                   'रानी के भाई कीचक, विराट की सेना के सेनापति, ने सैरंध्री को देखा, और उसे चाहा। जब उन्होंने मना किया, तो उसने भरी सभा में उन्हें लात मारी। कंक, राजा का पासे खेलने वाला, फ़र्श की ओर देखता रहा।')],
@@ -196,6 +235,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'कीचक सुगंधित और माला पहने अंधेरी शाला में आया, और पलंग पर लेटी आकृति की ओर हाथ बढ़ाया। वे भीम थे। वे अंधेरे में दो साँडों की तरह लड़े। सुबह कीचक मिला, माँस के एक गोले में कुचला हुआ, उसके हाथ पैर उसके शरीर में धँसे हुए।')],
     [bg(set='dark', base='#140608', glow='#3a1010'), figs('kfight', [fig('bhima', 620, 900, 620, 1, 'charge', style=dict(dhoti='#e8dcc0', crown='band')), fig('kichaka', 960, 900, 600, -1, 'charge')], rim=RIM_LAMP), fx('dust', col='#6a4a3a', n=60)],
     cam=push(800, 480, 1.04, 1.16), amb='night', sfx=[dict(n='roar', at=6.0, v=0.4), dict(n='boom', at=8.0, v=0.6), dict(n='crack', at=11.0, v=0.6), dict(n='gong', at=15.0, v=0.5)], shake=[[8.0, 8.6]]),
+  S('h_pyre', 'fire', [
+      ln('VYASA', 'Kichaka\'s hundred brothers blamed Sairandhri. They tied her to his funeral bier, to burn her with him. But a giant came over the city wall in the dark, with a whole tree torn up by the roots, and the hundred brothers did not live to light the fire.',
+                  'कीचक के सौ भाइयों ने सैरंध्री को दोषी ठहराया। उन्होंने उन्हें उसकी अर्थी से बाँध दिया, कि उन्हें उसके साथ जला दें। पर अँधेरे में एक दैत्याकार पुरुष नगर की दीवार लाँघकर आया, जड़ से उखाड़ा हुआ पूरा पेड़ लिए, और सौ भाई आग लगाने तक जीवित नहीं रहे।')],
+    [bg(set='dark', base='#140608', glow='#5a1a10'), fx('fire', at=[[800, 860, 260, 300]], n=80), fx('embers', n=80), figs('bh', [fig('bhima', 800, 900, 640, 1, 'maceUp', sil=True)])],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='fire', sfx=[dict(n='fire', at=0.5, v=0.5), dict(n='roar', at=12.0, v=0.5), dict(n='boom', at=14.0, v=0.5)], shake=[[14.0, 14.5]]),
 
   # ---------- the cattle raid ----------
   S('i_raid', 'battle', [
@@ -220,6 +264,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('ARJUNA', 'I am Arjuna, prince. Now you drive, and I will fight.', 'मैं अर्जुन हूँ, राजकुमार। अब तुम रथ हाँको, और मैं युद्ध करूँगा।', gap=0.6)],
     [bg(set='forest', tod='dusk', season='autumn'), figs('reveal', [fig('arjuna', 800, 900, 640, 1, 'bowLow', weapon='bowRest', style=dict(dhoti='#e86aa0'))], rim=RIM_GOLD, glow=['#ffe0a0', 20, 0.3]), fx('leaves', n=50)],
     cam=push(800, 470, 1.04, 1.16), amb='wind', sfx=[dict(n='sparkle', at=10.0), dict(n='conch', at=13.0, v=0.6)]),
+  S('i_gandiva', 'heroic', [
+      ln('VYASA', 'He unwrapped Gandiva and strung it, and plucked the string once. The sound rolled across the plain like thunder, and the horses of the Kuru army reared, and far away, Bhishma lifted his head and listened.',
+                  'उन्होंने गांडीव खोला और उस पर प्रत्यंचा चढ़ाई, और एक बार डोरी खींची। वह ध्वनि मैदान में बादलों की गड़गड़ाहट की तरह लुढ़की, और कुरु सेना के घोड़े पिछले पैरों पर खड़े हो गए, और दूर, भीष्म ने सिर उठाकर सुना।')],
+    [sh(bg(set='sky', tod='gold', hz=740, hills=1), 'sky_gold'), figs('bow', [fig('arjuna', 800, 900, 640, 1, 'draw', weapon='bowDrawn', style=dict(dhoti='#e86aa0'))], rim=RIM_GOLD), fx('rays', x=800, y=300, r0=100, r1=900, col='#fff0c0')],
+    cam=push(800, 480, 1.0, 1.14), amb='wind', sfx=[dict(n='thunder', at=5.0, v=0.6), dict(n='hooves', at=7.0, v=0.4)], shake=[[5.0, 5.6]]),
   S('i_devadatta', 'battle', [
       ln('VYASA', 'He blew his conch, Devadatta, and the Kuru army knew that sound. Drona smiled. Karna gripped his bow. Duryodhana laughed: we have found them, and the year is not over!',
                   'उन्होंने अपना शंख, देवदत्त, फूँका, और कुरु सेना वह ध्वनि पहचानती थी। द्रोण मुस्कुराए। कर्ण ने अपना धनुष कसकर पकड़ा। दुर्योधन हँसा: हमने उन्हें खोज लिया, और वर्ष अभी पूरा नहीं हुआ!')],
@@ -230,6 +279,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                     'तुम गलत हो, दुर्योधन। चंद्र और सूर्य दोनों की गणना से, तेरह वर्ष कल ही पूरे हो गए। उन्होंने अपना वचन निभाया है, दिन तक।', fx='elder')],
     [bg(set='field', sunX=1100, sunY=520, armies=1, density=0.8), face('bhishma', 1040, 440, 190, -1, 'calm', rim=RIM_GOLD)],
     cam=push(1020, 450, 1.0, 1.14), amb='battle'),
+  S('i_drona', 'court', [
+      ln('VYASA', 'Drona looked at the single chariot coming towards the whole Kuru army, and smiled like a proud father. Karna boasted that he would kill Arjuna alone. Kripa told him he talked too much. Ashwatthama told him he would run. And they argued among themselves while Arjuna came on.',
+                  'द्रोण ने पूरी कुरु सेना की ओर आते उस एक रथ को देखा, और एक गर्वित पिता की तरह मुस्कुराए। कर्ण ने डींग मारी कि वह अकेला अर्जुन को मार देगा। कृप ने कहा कि वह बहुत बोलता है। अश्वत्थामा ने कहा कि वह भाग जाएगा। और वे आपस में झगड़ते रहे जबकि अर्जुन बढ़ते आए।')],
+    [bg(set='field', sunX=1100, sunY=520, armies=1, density=0.8), face('drona', 800, 450, 190, 1, 'smile', rim=RIM_GOLD)],
+    cam=push(800, 450, 1.0, 1.14), amb='battle'),
   S('i_fight', 'battle', [
       ln('VYASA', 'Then Arjuna fought all of them, alone. He broke Karna\'s bow and drove him from the field. He bowed to Drona with two arrows at his feet, and fought him. And at the end he released the weapon of sleep, and the whole Kuru army fell unconscious where it stood.',
                   'फिर अर्जुन ने उन सबसे अकेले युद्ध किया। उन्होंने कर्ण का धनुष तोड़ा और उसे मैदान से खदेड़ दिया। उन्होंने द्रोण के चरणों में दो बाण चलाकर प्रणाम किया, और उनसे लड़े। और अंत में उन्होंने सम्मोहन अस्त्र छोड़ा, और पूरी कुरु सेना जहाँ खड़ी थी वहीं अचेत होकर गिर पड़ी।')],

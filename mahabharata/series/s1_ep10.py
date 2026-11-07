@@ -30,6 +30,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                  'मैं जानता हूँ, तात। जब मैं माँ के गर्भ में था, तब मैंने पिता को माँ से यह कहते सुना था। मैं भीतर जाने का मार्ग जानता हूँ। बाहर निकलने का मार्ग बताने से पहले माँ सो गईं। पर मेरे पीछे रास्ता खोलिए, और मैं जाऊँगा।', gap=0.6)],
     [bg(set='field', sunX=820, sunY=500), face('abhi', 800, 450, 205, 1, 'stern', rim=RIM_GOLD), fx('dust', n=80)],
     cam=push(800, 450, 1.0, 1.14), amb='battle', hero=1, name=name('ABHIMANYU', 'अभिमन्यु', 'son of Arjuna, sixteen years old', 'अर्जुनपुत्र, सोलह वर्ष का', 1)),
+  S('b_uttara', 'love', [
+      ln('VYASA', 'Before he rode out, he went to his young wife Uttara, Virata\'s daughter, who was carrying his child. She asked him to come back before evening. He laughed and said he would bring her the banners of the Kaurava kings to make dresses for her dolls.',
+                  'निकलने से पहले वे अपनी युवा पत्नी उत्तरा के पास गए, विराट की पुत्री, जो उनके शिशु को गर्भ में लिए थीं। उन्होंने उनसे साँझ से पहले लौट आने को कहा। वे हँसे और बोले कि वे उनकी गुड़ियों के वस्त्रों के लिए कौरव राजाओं के ध्वज ले आएँगे।')],
+    [sh(bg(set='camp'), 'war_camp_dawn'), figs('two', [fig('abhi', 680, 880, 520, 1, 'stand'), dict(who='uttaraW', x=980, y=880, S=460, f=-1)], rim=RIM_GOLD), fx('fireflies', n=20)],
+    cam=push(820, 480, 1.0, 1.12), amb='night', sfx=[dict(n='bells', at=1.0, v=0.2)]),
   S('b_in', 'battle', [
       ln('VYASA', 'He broke in like fire into dry grass. But behind him Jayadratha, king of Sindhu, held the gap, and threw back every Pandava who tried to follow. The wheel closed. The boy was alone inside.',
                   'वह ऐसे घुसा जैसे सूखी घास में आग। पर उसके पीछे सिंधु के राजा जयद्रथ ने दरार रोक ली, और उसके पीछे आने वाले हर पांडव को लौटा दिया। चक्र बंद हो गया। बालक भीतर अकेला था।')],
@@ -45,6 +50,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'सात महारथियों ने उसे घेर लिया: द्रोण, कृप, कर्ण, अश्वत्थामा, दुर्योधन, शकुनि, दुःशासन का पुत्र। कर्ण ने पीछे से उसकी प्रत्यंचा काट दी। उन्होंने उसके घोड़े और सारथी मार डाले। उसकी तलवार टूट गई। और फिर भी वह लड़ता रहा, सिर पर रथ का पहिया उठाए।')],
     [CRIMSON(), piece('ring', 'vyuhaRing', k='anim', every=2, add=False, x=800, y=450, close=1), figs('abhi', [fig('abhi', 800, 640, 360, 1, 'maceUp', weapon='wheel')], rim=RIM_GOLD), fx('dust', n=80, col='#c05a3a')],
     cam=push(800, 450, 1.1, 1.32), amb='battle', g=dict(tint='#ff6040', k=0.08), sfx=[dict(n='clash', at=2), dict(n='clash', at=4), dict(n='clash', at=6.5), dict(n='clash', at=9), dict(n='crack', at=12)]),
+  S('b_alone', 'lament', [
+      ln('VYASA', 'Outside the wheel, Bhima and Satyaki and the twins hurled themselves at Jayadratha again and again, and were thrown back again and again. They could hear the boy fighting inside. They could not reach him.',
+                  'चक्र के बाहर भीम और सात्यकि और जुड़वाँ भाई बार बार जयद्रथ पर टूट पड़े, और बार बार लौटा दिए गए। वे भीतर बालक को लड़ते सुन सकते थे। वे उस तक पहुँच नहीं सके।')],
+    [FIELD(), figs('bh', [fig('bhima', 800, 880, 620, 1, 'maceUp', weapon='mace')], rim=RIM_FIRE), fx('dust', col='#c07a4a', n=90)],
+    cam=push(800, 470, 1.0, 1.14), amb='battle', sfx=[dict(n='roar', at=1.0, v=0.4), dict(n='clash', at=4.0), dict(n='clash', at=8.0)]),
   S('b_fall', 'lament', [
       ln('VYASA', 'And when the wheel too was broken, Dushasana\'s son struck him with a mace as he rose from the ground. Abhimanyu fell, and the sun went down on the thirteenth day.',
                   'और जब पहिया भी टूट गया, तो जैसे ही वह भूमि से उठा, दुःशासन के पुत्र ने उस पर गदा से प्रहार किया। अभिमन्यु गिर पड़ा, और तेरहवें दिन का सूर्य डूब गया।')],
@@ -60,6 +70,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
       ln('ARJUNA', 'Jayadratha held the gate while they killed my son. Hear me, all of you! If I do not kill him before the sun sets tomorrow, I will walk into the fire myself!', 'जब उन्होंने मेरे पुत्र को मारा, जयद्रथ ने द्वार रोक रखा था। सब सुनो! यदि कल सूर्यास्त से पहले मैंने उसे नहीं मारा, तो मैं स्वयं अग्नि में प्रवेश करूँगा!')],
     [NIGHTCAMP(), fx('embers', n=60), face('arjuna', 800, 450, 210, 1, 'anger', rim=RIM_FIRE)],
     cam=push(800, 450, 1.02, 1.2), amb='night', sfx=[dict(n='thunder', at=8, v=0.5), dict(n='conch', at=10, v=0.5)]),
+  S('c_daruka', 'krishna', [
+      ln('VYASA', 'That night Krishna did not sleep. He called his charioteer Daruka and said: harness my own chariot tomorrow, with my weapons in it. If Arjuna cannot reach Jayadratha by sunset, I will break my vow and fight myself. I cannot live in a world without Arjuna.',
+                  'उस रात कृष्ण नहीं सोए। उन्होंने अपने सारथी दारुक को बुलाकर कहा: कल मेरा अपना रथ जोतना, मेरे अस्त्रों के साथ। यदि सूर्यास्त तक अर्जुन जयद्रथ तक नहीं पहुँच पाए, तो मैं अपनी प्रतिज्ञा तोड़कर स्वयं लड़ूँगा। मैं अर्जुन के बिना संसार में नहीं रह सकता।')],
+    [NIGHTCAMP(), face('krishna', 800, 450, 200, 1, 'stern', rim=RIM_MOON, glow=KGLOW), fx('stars', n=60)],
+    cam=push(800, 450, 1.04, 1.18), amb='night'),
   S('c_hide', 'battle', [
       ln('VYASA', 'The whole Kaurava army formed a wall around Jayadratha. All day Arjuna cut his way through it, mile after mile, until his horses were too tired to run, and Krishna unyoked them and let them drink in the middle of the battle, while Arjuna held off the army alone.',
                   'पूरी कौरव सेना ने जयद्रथ के चारों ओर दीवार बना ली। दिन भर अर्जुन उसे काटते हुए आगे बढ़े, कोस दर कोस, जब तक उनके घोड़े दौड़ने से थक नहीं गए, और कृष्ण ने युद्ध के बीचों बीच उन्हें खोलकर पानी पिलाया, जबकि अर्जुन ने अकेले सेना को रोके रखा।')],
@@ -122,6 +137,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'द्रोण ने धनुष रख दिया और अपने रथ में बैठ गए, और आँखें बंद कर लीं, और उनका मन शरीर से बाहर चला गया। और धृष्टद्युम्न, जो उन्हें मारने के लिए अग्नि से जन्मा था, ने उस मनुष्य का सिर काट दिया जो पहले ही जा चुका था।')],
     [FIELD(), figs('drona', [fig('drona', 800, 880, 560, 1, 'despair')], rim=RIM_GOLD), fx('rays', x=800, y=300, r0=60, r1=700, col='#fff0c0'), fx('sparkle', y0=200, y1=600, n=40)],
     cam=push(800, 500, 1.04, 1.2), amb='wind', sfx=[dict(n='om', at=4.0, v=0.4), dict(n='gong', at=14.0, v=0.5)]),
+  S('e_narayana', 'storm', [
+      ln('VYASA', 'When Ashwatthama heard how his father had been tricked, he went mad with grief, and loosed the Narayana weapon. The sky filled with fire. Then Krishna shouted to the whole army: get down from your chariots, put down your weapons, bow your heads. It strikes only those who resist. They all lay down, all except Bhima, who roared and charged, until Krishna and Arjuna dragged him down. And the fire passed over them.',
+                  'जब अश्वत्थामा ने सुना कि उनके पिता को कैसे छला गया, वे शोक से पागल हो गए, और नारायण अस्त्र छोड़ा। आकाश आग से भर गया। तब कृष्ण ने पूरी सेना से चिल्लाकर कहा: रथों से उतरो, अस्त्र रख दो, सिर झुकाओ। यह केवल विरोध करने वालों पर गिरता है। सब लेट गए, भीम को छोड़कर, जो गरजकर आगे बढ़े, जब तक कृष्ण और अर्जुन ने उन्हें खींचकर नीचे नहीं गिराया। और आग उनके ऊपर से गुज़र गई।')],
+    [CRIMSON(), piece('volley', 'arrowRain', k='anim', every=2, add=True), fx('embers', n=140), fx('flash', at=[3.0])],
+    cam=[[800, 460, 0.98], [800, 520, 1.12]], amb='storm', g=dict(tint='#ff5020', k=0.1), sfx=[dict(n='magic', at=2.0), dict(n='thunder', at=3.0), dict(n='roar', at=20.0, v=0.5), dict(n='swell', at=28.0, v=0.4)], shake=[[3.0, 4.0]]),
 
   # ---------- Karna ----------
   S('f_bhima', 'storm', [
@@ -154,6 +174,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'उस रात कुंती रणभूमि में गईं और कर्ण के शव के पास बैठीं, और ऐसे रोईं जैसे वे किसी के लिए नहीं रोई थीं। और पांडवों को बहुत देर से पता चला कि उन्होंने किसे मारा था: अपने सबसे बड़े भाई को।')],
     [ASHES(), figs('kunti', [fig('kunti', 800, 880, 520, 1, 'despair', sil=True)]), fx('stars', n=60), fx('fireflies', n=30)],
     cam=push(800, 560, 1.06, 1.2), amb='night'),
+  S('f_night', 'lament', [
+      ln('VYASA', 'Yudhishthira knelt by the body of the brother he had never known, and cursed all women: from this day, he said, no woman will ever be able to keep a secret. And then he wept until morning.',
+                  'युधिष्ठिर उस भाई के शव के पास घुटनों पर बैठे जिसे वे कभी नहीं जान पाए, और सब स्त्रियों को शाप दिया: आज से, उन्होंने कहा, कोई स्त्री कभी कोई रहस्य छिपाकर नहीं रख पाएगी। और फिर वे भोर तक रोते रहे।')],
+    [ASHES(), face('yudhi', 800, 450, 200, 1, 'sorrow', rim=RIM_MOON), fx('stars', n=40)],
+    cam=push(800, 450, 1.04, 1.18), amb='night'),
 
   # ---------- Duryodhana ----------
   S('g_lake', 'mystery', [
@@ -176,6 +201,11 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'तुम नियमों की बात करने वाले कौन हो, ग्वाले? मैंने पृथ्वी पर राज किया। मैं राजा की तरह जिया, मैंने वह सब भोगा जो राजा भोगते हैं, और मैं शत्रुओं का सामना करते हुए मरता हूँ। तुममें से कौन यह कह सकता है? मैं अपने भाइयों के साथ स्वर्ग जाता हूँ। तुम पीछे रहो, राख के बीच।')],
     [sh(bg(set='lake', tod='crimson', lotus=0), 'lake_crimson'), face('duryo', 800, 460, 200, 1, 'anger', rim=RIM_FIRE)],
     cam=push(800, 460, 1.04, 1.18), amb='wind', sfx=[dict(n='swell', at=16.0, v=0.4)]),
+  S('g_flowers', 'mystery', [
+      ln('VYASA', 'And when he had finished speaking, flowers fell from the sky onto the broken king, and the gandharvas played music in the air, and the gods praised him. The Pandavas looked at one another, and were ashamed. Krishna said: he spoke the truth. We could not have won any other way.',
+                  'और जब उन्होंने बोलना समाप्त किया, तो आकाश से टूटे हुए राजा पर फूल बरसे, और गंधर्वों ने हवा में संगीत बजाया, और देवताओं ने उनकी प्रशंसा की। पांडवों ने एक दूसरे की ओर देखा, और लज्जित हुए। कृष्ण ने कहा: उन्होंने सत्य कहा। हम और किसी तरह नहीं जीत सकते थे।')],
+    [sh(bg(set='lake', tod='crimson', lotus=0), 'lake_crimson'), fx('petals', every=2, n=80), fx('sparkle', n=40)],
+    cam=[[800, 520, 1.15], [800, 470, 1.0]], amb='temple', sfx=[dict(n='bells', at=2.0, v=0.4), dict(n='flute', at=6.0, v=0.3)], min=10),
 
   # ---------- the night of fire ----------
   S('h_owl', 'mystery', [
@@ -218,10 +248,20 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
                   'हस्तिनापुर में युधिष्ठिर का राज्याभिषेक हुआ। धृतराष्ट्र ने अपने अंधे हाथों से उनके सिर पर मुकुट रखा। शंख बजे। और नए राजा का रोना रुक नहीं रहा था।')],
     [sh(bg(set='court', tone='#4a1612', throne=[800, 660, 240], canopy=1), 'court_crown'), face('yudhi', 800, 450, 200, 1, 'sorrow', rim=RIM_GOLD, style=dict(crown='royal')), fx('petals', n=50)],
     cam=push(800, 450, 1.0, 1.12), amb='court', sfx=[dict(n='conch', at=0.5, v=0.5), dict(n='bells', at=1)]),
+  S('j_ganga', 'lament', [
+      ln('VYASA', 'Before the crowning, they went down to the Ganga to offer water to the dead. Kunti asked them to offer it for Karna too, as their eldest brother. Thousands of lamps floated down the river that night, one for every soul, and the river was full of light from bank to bank.',
+                  'राज्याभिषेक से पहले वे मृतकों को जल देने गंगा तट पर गए। कुंती ने उनसे कर्ण के लिए भी, उनके सबसे बड़े भाई के रूप में, जल देने को कहा। उस रात हज़ारों दीप नदी में बहे, हर आत्मा के लिए एक, और नदी किनारे से किनारे तक प्रकाश से भर गई।')],
+    [sh(bg(set='river', tod='dusk'), 'river_dusk'), piece('lamps', 'floatLamps', k='anim', every=2, add=True), fx('ripples', x=800, y=820)],
+    cam=[[800, 470, 0.98], [800, 540, 1.15]], amb='river', sfx=[dict(n='bell', at=2.0, v=0.3), dict(n='om', at=10.0, v=0.3)], min=12),
   S('j_city', 'sorrow', [
       ln('VYASA', 'Eighteen armies had gone onto that field. Ten men came back. The city was full of widows, and the fields had no one to plough them.', 'उस रणभूमि में अठारह अक्षौहिणी सेनाएँ गई थीं। दस पुरुष लौटे। नगर विधवाओं से भरा था, और खेतों को जोतने वाला कोई न था।')],
     [sh(bg(set='city', tod='dusk'), 'city_dusk'), fx('dust', n=40, col='#c0a080')],
     cam=[[800, 470, 1.0], [800, 470, 1.08]], amb='wind', min=9),
+  S('j_iron', 'tension', [
+      ln('VYASA', 'When the brothers came to bow to the blind king, he asked to embrace Bhima, who had killed his sons. Krishna pushed forward an iron statue of Bhima instead. The old man crushed it to powder in his arms, and then wept, thinking he had killed him. Krishna said: it was iron, king. Let your anger die with it.',
+                  'जब भाई अंधे राजा को प्रणाम करने आए, उन्होंने भीम को गले लगाना चाहा, जिसने उनके पुत्रों को मारा था। कृष्ण ने भीम के स्थान पर लोहे की एक मूर्ति आगे कर दी। वृद्ध ने उसे अपनी भुजाओं में कुचलकर चूर्ण कर दिया, और फिर रोने लगे, यह सोचकर कि उन्होंने भीम को मार डाला। कृष्ण ने कहा: वह लोहा था, राजन। अपने क्रोध को भी उसके साथ मर जाने दीजिए।')],
+    [sh(bg(set='court', tone='#3a1210', throne=[800, 660, 260], canopy=1), 'court_dark10'), face('dhrita', 800, 450, 200, 1, 'anger', rim=RIM_LAMP), fx('dust', col='#808080', n=40)],
+    cam=push(800, 450, 1.04, 1.2), amb='court', sfx=[dict(n='crack', at=9.0, v=0.7), dict(n='rumble', at=9.2, v=0.4)], shake=[[9.0, 9.6]]),
   S('j_teach', 'gita', [
       ln('VYASA', 'Krishna took Yudhishthira to the bed of arrows, where the grandsire still lay waiting for the sun to turn. And for many days Bhishma taught him: how to rule, how to be just, how to live, how to die.',
                   'कृष्ण युधिष्ठिर को बाणों की शय्या के पास ले गए, जहाँ पितामह अब भी सूर्य के मुड़ने की प्रतीक्षा में लेटे थे। और कई दिनों तक भीष्म ने उन्हें सिखाया: कैसे राज करें, कैसे न्यायी हों, कैसे जियें, कैसे मरें।'),
