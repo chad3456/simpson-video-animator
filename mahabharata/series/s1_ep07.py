@@ -245,7 +245,7 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
   S('i_raid', 'battle', [
       ln('VYASA', 'News of Kichaka\'s death reached Hastinapura. Only Bhima, or Balarama, or Shalya, could kill a man like that, said Duryodhana. The Pandavas must be in Matsya. And the thirteenth year was almost over. So the Kauravas raided Virata\'s cattle, to draw them out.',
                   'कीचक की मृत्यु का समाचार हस्तिनापुर पहुँचा। दुर्योधन ने कहा, केवल भीम, या बलराम, या शल्य ही ऐसे व्यक्ति को मार सकते हैं। पांडव मत्स्य में ही होंगे। और तेरहवाँ वर्ष लगभग समाप्त था। तो कौरवों ने उन्हें बाहर निकालने के लिए विराट की गायें लूटीं।')],
-    [sh(bg(set='valley', tod='day', hz=430, seed=1.2, groves=18), 'valley_day'), piece('herd', 'cattle', k='anim', every=2, speed=40, at=[[300, 860, 140, 1], [480, 880, 160, 1], [660, 860, 130, 1], [820, 875, 150, 1]]), piece('rd', 'riders', k='anim', every=2, x=-200, y=830, s=110, cnt=6, speed=60), fx('dust', col='#e0b070', n=80)],
+    [sh(bg(set='valley', tod='day', hz=430, seed=1.2, groves=18), 'valley_day'), piece('herd', 'cattle', d=1.0, mv=dict(dx=[0, 160], t=[0, 20]), at=[[300, 860, 140, 1], [480, 880, 160, 1], [660, 860, 130, 1], [820, 875, 150, 1]]), piece('rd', 'riders', k='anim', every=2, x=-200, y=830, s=110, cnt=6, speed=60), fx('dust', col='#e0b070', n=80)],
     cam=pan(560, 1040, 470, 1.15), amb='battle', sfx=[dict(n='hooves', at=0.3, v=0.7), dict(n='roar', at=6.0, v=0.4)]),
   S('i_uttar', 'tension', [
       ln('VYASA', 'The king and his army were away in the south. Only the young prince Uttar was left, and he boasted to the women that he would beat the whole Kuru army alone, if only he had a charioteer.',
