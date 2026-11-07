@@ -498,7 +498,7 @@ Object.assign(FACES, {
   hidimbi: { skin: '#6a7a5a', W: 0.72, cheek: 0.4, jaw: 0.1, chin: 0.96, nose: 'fine', eye: 1.14, brow: 'arch', lips: '#8a2a3a', stache: null, beard: null, hair: '#1a1008', hairStyle: 'woman', crown: 'flowers', tilak: 'bindi', ear: 'jhumka', chest: 'necklace', cloth: '#3a6a3a', female: 1, expr: 'smile' },
   dhrishta: { skin: '#c08a5a', W: 0.74, cheek: 0.3, jaw: 0.5, chin: 1.0, nose: 'straight', eye: 1.0, brow: 'arch', lips: '#9a3a30', stache: 'thin', beard: null, hair: '#1a0e08', hairStyle: 'curls', crown: 'mukut', tilak: 'red', ear: 'kundala', chest: 'kavacha', cloth: '#c04a1a', expr: 'stern', sheen: '#ffd0a0' },
   purochana: { skin: '#a8784e', W: 0.8, cheek: 0.5, jaw: 0.4, chin: 1.0, nose: 'hook', eye: 0.86, brow: 'heavy', lips: '#7a3a2a', stache: 'curl', beard: null, hair: '#16100c', hairStyle: 'straight', crown: 'turban', tilak: 'line', ear: 'ring', chest: 'necklace', cloth: '#5a2a4a', expr: 'cruel' },
-  brahminW: { skin: '#b8885e', W: 0.7, cheek: 0.4, jaw: 0.08, chin: 0.95, nose: 'fine', eye: 1.04, brow: 'soft', lips: '#8a3a3a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'woman', crown: 'veil', tilak: 'bindi', ear: 'jhumka', chest: 'white', cloth: '#e8dcc0', female: 1, expr: 'sorrow' },
+  brahminW: { skin: '#b8885e', W: 0.7, cheek: 0.4, jaw: 0.08, chin: 0.95, nose: 'fine', eye: 1.04, brow: 'soft', lips: '#8a3a3a', stache: null, beard: null, hair: '#1a120d', hairStyle: 'woman', crown: 'veil', veil: '#e8dcc0', tilak: 'bindi', ear: 'jhumka', chest: 'white', cloth: '#e8dcc0', female: 1, expr: 'sorrow' },
 });
 Object.assign(CAST, {
   hidimba: { skin: '#4a5a4a', dhoti: '#5a2a1a', patka: '#2a1a0a', scarf: null, crown: 'band', hair: '#2a1a0a', beard: 'short', jewel: '#8a7a5a', bulk: 1.45 },
