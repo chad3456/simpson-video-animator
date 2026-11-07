@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Ramayana",
+    "subtitle": "A pop-up storybook",
+    "fps": 30,
+    "voice": "bm_george:0.55+hm_omega:0.45",
+    "speed": 0.94,
+    "turn": 1.7,
+    "gap": 0.45
+  },
+  "scenes": [
+    {
+      "id": "ayodhya", "cue": "vishnu",
+      "lines": [
+        {"label": "Ayodhya, on the river Sarayu.", "text": "Long ago, on the banks of the river Sarayu, stood Ayodhya, a city of gold and gardens."},
+        {"label": "Four princes are born.", "text": "Its king, Dasharatha, prayed for sons, and four were born: Rama, Bharata, Lakshmana and Shatrughna."}
+      ]
+    },
+    {
+      "id": "bow", "cue": "joy", "sfx": [[1, 0.35, "crack"]],
+      "lines": [
+        {"label": "The great bow of Shiva.", "text": "In Mithila, King Janaka set a challenge. Whoever could string the great bow of Shiva would marry his daughter, Sita."},
+        {"label": "Rama breaks the bow.", "text": "Prince after prince failed. Then Rama lifted it, drew it, and the bow snapped in two. Rama and Sita were married."}
+      ]
+    },
+    {
+      "id": "exile", "cue": "sorrow",
+      "lines": [
+        {"label": "Two old promises.", "text": "But back home, Queen Kaikeyi claimed two old promises from the king. Her son Bharata would rule, and Rama would live in the forest for fourteen years."},
+        {"label": "Fourteen years in the forest.", "text": "Rama left without a word of anger. Sita and his brother Lakshmana went with him."},
+        {"label": "Sandals on the throne.", "text": "Bharata refused the crown. He placed Rama's sandals on the throne, and waited."}
+      ]
+    },
+    {
+      "id": "deer", "cue": "dawn",
+      "lines": [
+        {"label": "A golden deer.", "text": "Deep in the Panchavati forest, a golden deer appeared. Sita longed for it, and Rama gave chase."},
+        {"label": "It was a trap.", "text": "But the deer was a demon in disguise, and the chase was a trap."}
+      ]
+    },
+    {
+      "id": "abduction", "cue": "tension", "sfx": [[0, 0.1, "roar"], [1, 0.4, "whoosh"]],
+      "lines": [
+        {"label": "Ravana of Lanka.", "text": "Ravana, the ten-headed king of Lanka, seized Sita and carried her south in his flying chariot."},
+        {"label": "Brave Jatayu.", "text": "The old vulture Jatayu flew up to stop him, fought bravely, and fell."}
+      ]
+    },
+    {
+      "id": "hanuman", "cue": "court",
+      "lines": [
+        {"label": "Hanuman and Sugriva.", "text": "Searching for Sita, the brothers met Hanuman, and the vanara king Sugriva."},
+        {"label": "An army of vanaras.", "text": "Sugriva called his people, and a great army of vanaras gathered to help."}
+      ]
+    },
+    {
+      "id": "leap", "cue": "joy", "sfx": [[0, 0.6, "whoosh"], [2, 0.6, "fire"]],
+      "lines": [
+        {"label": "One leap across the sea.", "text": "Hanuman grew huge, and leapt across the ocean to Lanka."},
+        {"label": "Rama's ring.", "text": "In the Ashoka grove he found Sita, and gave her Rama's ring, so she would know help was coming."},
+        {"label": "Lanka in flames.", "text": "Caught by the guards, he let them set his tail alight, and leapt from roof to roof until Lanka burned."}
+      ]
+    },
+    {
+      "id": "bridge", "cue": "vishnu", "sfx": [[0, 1.5, "splash"]],
+      "lines": [
+        {"label": "A bridge of floating stones.", "text": "To reach Lanka, the army built a bridge across the sea, from stones that floated."},
+        {"label": "Every stone says Rama.", "text": "Each one carried Rama's name."}
+      ]
+    },
+    {
+      "id": "battle", "cue": "battle", "sfx": [[0, 0.3, "clash"], [0, 2.4, "clash"], [1, 1.4, "whoosh"], [1, 2.4, "boom"]],
+      "lines": [
+        {"label": "The great war.", "text": "The war was long and fierce."},
+        {"label": "One arrow.", "text": "At last, Rama loosed a single arrow, and Ravana fell."}
+      ]
+    },
+    {
+      "id": "return", "cue": "joy", "sfx": [[1, 0.2, "bells"], [2, 0.2, "sparkle"]],
+      "lines": [
+        {"label": "Home to Ayodhya.", "text": "Rama, Sita and Lakshmana flew home to Ayodhya, in the flying chariot."},
+        {"label": "A festival of lamps.", "text": "The people lit rows and rows of lamps to light their way."},
+        {"label": "Rama is crowned.", "text": "And Rama was crowned king."}
+      ]
+    },
+    {
+      "id": "end", "cue": "end", "hold": 4.5, "sfx": [[0, 3.0, "sparkle"]],
+      "lines": [
+        {"label": "", "text": "Those lamps are still lit every year, for a story of duty, love and courage. The Ramayana."}
+      ]
+    }
+  ]
+}

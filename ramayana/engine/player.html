@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ramayana pop-up book</title>
+<style>
+  @font-face { font-family: 'Nunito'; src: url('Nunito.ttf'); font-weight: 200 1000; }
+  @font-face { font-family: 'Rozha'; src: url('Rozha.ttf'); }
+  html, body { margin: 0; background: #111; }
+  canvas { display: block; width: 1280px; height: 720px; }
+  #ui { position: fixed; bottom: 8px; left: 8px; color: #ccc; font: 12px sans-serif; }
+</style>
+</head>
+<body>
+<canvas id="cv" width="1280" height="720"></canvas>
+<div id="ui"></div>
+<script src="popup.js"></script>
+<script>
+(async () => {
+  const q = new URLSearchParams(location.search);
+  const ep = q.get('ep') || '../episode';
+  const [epi, tl] = await Promise.all([fetch(ep + '/episode.json').then(r => r.json()), fetch(ep + '/timeline.json').then(r => r.json())]);
+  await Promise.all([new FontFace('Nunito', 'url(Nunito.ttf)', { weight: '200 1000' }).load().then(f => document.fonts.add(f)),
+                     new FontFace('Rozha', 'url(Rozha.ttf)').load().then(f => document.fonts.add(f))]);
+  const cv = document.getElementById('cv');
+  window.Toon = Popup.init(cv, epi, tl);
+  window.__ready = true;
+  if (!q.get('render')) {
+    const audio = new Audio(ep + '/episode.wav');
+    const ui = document.getElementById('ui');
+    ui.textContent = 'click to play';
+    document.body.onclick = () => { audio.paused ? audio.play() : audio.pause(); };
+    const t0 = Number(q.get('t') || 0); audio.currentTime = t0;
+    const loop = () => { Toon.renderAt(audio.currentTime); ui.textContent = audio.currentTime.toFixed(2); requestAnimationFrame(loop); };
+    loop();
+  }
+})();
+</script>
+</body>
+</html>
