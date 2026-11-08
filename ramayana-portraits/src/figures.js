@@ -566,7 +566,7 @@
         face: { eyes: 'fierce', brow: 'furrow', mouth: 'grim', tilak: 'vaishnava', gaze: [1, 0] },
       }, o));
       const [bx, by] = r.handR;
-      K.bowAt([bx + h * 0.026, by], h * 0.72, -1.52, { w: h * 0.021, pull: r.handL, flip: true, color: o.bowColor });
+      K.bowAt([bx - h * 0.01, by], h * 0.72, -1.52, { w: h * 0.021, pull: r.handL, flip: false, color: o.bowColor });
       if (o.arrow !== false) K.arrow(r.handL[0], r.handL[1], bx + h * 0.16, by, { w: h * 0.009, head: h * 0.04, tip: o.tip || '#fff6d0', fletch: '#ff2a3a' });
       if (o.glow) K.overlay((pen) => { pen.dab(bx + h * 0.2, by, h * 0.05, o.glow, 0.9); for (let k = 0; k < 14; k++) { const a = k / 14 * 6.283; pen.line([[bx + h * 0.2, by], [bx + h * 0.2 + Math.cos(a) * h * 0.12, by + Math.sin(a) * h * 0.12]], { w: h * 0.008, color: '#fff6c0', taper: 1 }); } });
       r.bow = [bx, by];
@@ -584,6 +584,135 @@
       if (r.hc) { const up = (o.rot || 0); K.overlay((pen) => { for (const sd of [-1, 1]) { const b = [r.hc[0] + sd * r.s * 0.55 * Math.cos(up) + r.s * 0.7 * Math.sin(up), r.hc[1] + sd * r.s * 0.55 * Math.sin(up) - r.s * 0.7 * Math.cos(up)]; pen.line([b, [b[0] + sd * r.s * 0.5 * Math.cos(up) + r.s * 0.7 * Math.sin(up), b[1] + sd * r.s * 0.5 * Math.sin(up) - r.s * 0.7 * Math.cos(up)]], { w: r.s * 0.3, color: '#f4e8c8', taper: 1 }); } }); }
       if (o.weapon !== false) { const [hx, hy] = r.handL; K.overlay((pen) => { pen.line([[hx, hy + h * 0.15], [hx + h * 0.05, hy - h * 0.35]], { w: h * 0.015, color: '#3a2a2a', taper: 0 }); pen.fill(K.poly([[hx + h * 0.05, hy - h * 0.45], [hx + h * 0.08, hy - h * 0.34], [hx + h * 0.02, hy - h * 0.34]]), '#e8eef8'); }); }
       return r;
+    };
+
+    // ---- silhouettes: flat ink shapes painted into the reference, with an optional rim of light
+    K.sil = {};
+    const inkFill = (p, ink) => { K.fill(p, ink); K.focus(p, 0.95); };
+    // Rama (or any archer) in profile, drawing the bow; d = 1 faces right
+    K.sil.archer = (x, y, h, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820', d = o.dir || 1;
+      const P = (u, v) => [x + u * h * d, y - v * h];
+      const L = (a, b, w0, w1) => inkFill(K.limbPath(P(...a), P(...b), w0 * h, w1 * h), ink);
+      L([-0.02, 0.5], [-0.12, 0.26], 0.05, 0.04); L([-0.12, 0.26], [-0.24, 0.01], 0.04, 0.03);
+      L([0.04, 0.5], [0.16, 0.27], 0.05, 0.04); L([0.16, 0.27], [0.2, 0.01], 0.04, 0.03);
+      inkFill(K.path([P(-0.09, 0.56), P(0.1, 0.56), P(0.14, 0.36), P(-0.14, 0.34)]), ink);
+      inkFill(K.path([P(-0.07, 0.52), P(0.07, 0.52), P(0.08, 0.66), P(0.09, 0.79), P(-0.06, 0.8), P(-0.08, 0.66)]), ink);
+      inkFill(K.limbPath(P(0.01, 0.79), P(0.015, 0.86), 0.035 * h, 0.035 * h), ink);
+      inkFill(K.ell(...P(0.02, 0.9), 0.05 * h, 0.06 * h), ink);
+      if (o.crown !== false) inkFill(K.path([P(-0.03, 0.93), P(-0.02, 1.0), P(0.01, 1.06), P(0.03, 1.0), P(0.05, 0.93)]), ink);
+      else inkFill(K.ell(...P(-0.01, 0.97), 0.035 * h, 0.04 * h), ink);
+      // quiver on the back
+      inkFill(K.limbPath(P(-0.1, 0.62), P(-0.02, 0.92), 0.035 * h, 0.03 * h), ink);
+      // bow arm out, draw hand at the chin
+      L([0.05, 0.77], [0.4, 0.8], 0.032, 0.026);
+      L([-0.04, 0.77], [-0.12, 0.74], 0.03, 0.026); L([-0.12, 0.74], [0.03, 0.83], 0.026, 0.022);
+      const gx = 0.42, tips = [P(gx - 0.12, 1.2), P(gx - 0.03, 1.02), P(gx, 0.8), P(gx - 0.03, 0.58), P(gx - 0.12, 0.4)];
+      const bow = RP.sampleCurve(tips, 6);
+      K.strokeRef(bow, 0.022 * h, ink);
+      // scarf streaming behind
+      inkFill(K.path([P(-0.04, 0.78), P(-0.2, 0.74), P(-0.36, 0.78), P(-0.48, 0.7), P(-0.34, 0.72), P(-0.2, 0.69), P(-0.05, 0.72)]), ink);
+      K.overlay((pen) => {
+        pen.line(bow, { w: 0.022 * h, color: ink, taper: 0.5 });
+        pen.line([tips[0], P(0.03, 0.83), tips[4]], { w: Math.max(2, h * 0.003), color: o.string || '#fff4d8', alpha: 0.9, taper: 0 });
+        pen.line([P(0.03, 0.83), P(gx + 0.12, 0.81)], { w: Math.max(3, h * 0.006), color: ink, taper: 0 });
+        if (o.rim) { pen.line([P(0.02, 1.06), P(0.08, 0.92), P(0.09, 0.79), P(0.12, 0.56), P(0.16, 0.28), P(0.21, 0.02)], { w: h * 0.006, color: o.rim, alpha: 0.85, taper: 0.5 }); pen.line(bow.slice(0, 7), { w: h * 0.005, color: o.rim, alpha: 0.8, taper: 0.5 }); }
+      });
+      return { tip: P(gx + 0.12, 0.81), head: P(0.02, 0.9) };
+    };
+    // Rama standing frontal, bow upright in one hand, the other raised in blessing (abhaya)
+    K.sil.standing = (x, y, h, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820';
+      const P = (u, v) => [x + u * h, y - v * h];
+      const L = (a, b, w0, w1) => inkFill(K.limbPath(P(...a), P(...b), w0 * h, w1 * h), ink);
+      L([-0.04, 0.5], [-0.055, 0.02], 0.042, 0.026); L([0.04, 0.5], [0.055, 0.02], 0.042, 0.026);
+      inkFill(K.path([P(-0.085, 0.56), P(0.085, 0.56), P(0.105, 0.3), P(0.02, 0.27), P(-0.02, 0.27), P(-0.105, 0.3)]), ink);
+      inkFill(K.path([P(-0.065, 0.55), P(0.065, 0.55), P(0.075, 0.66), P(0.112, 0.78), P(0.06, 0.82), P(-0.06, 0.82), P(-0.112, 0.78), P(-0.075, 0.66)]), ink);
+      inkFill(K.limbPath(P(0, 0.8), P(0, 0.86), 0.03 * h, 0.03 * h), ink);
+      inkFill(K.ell(...P(0, 0.9), 0.044 * h, 0.054 * h), ink);
+      if (o.crown !== false) inkFill(K.path([P(-0.04, 0.93), P(-0.028, 0.99), P(0, 1.05), P(0.028, 0.99), P(0.04, 0.93)]), ink);
+      else inkFill(K.ell(...P(0, 0.97), 0.03 * h, 0.035 * h), ink);
+      L([-0.1, 0.78], [-0.15, 0.63], 0.028, 0.022); L([-0.15, 0.63], [-0.17, 0.5], 0.022, 0.018);
+      if (o.bless !== false) { L([0.1, 0.78], [0.17, 0.64], 0.028, 0.022); L([0.17, 0.64], [0.18, 0.78], 0.022, 0.018); inkFill(K.patch(...P(0.183, 0.805), 0.016 * h, 0.027 * h, 0), ink); }
+      else { L([0.1, 0.78], [0.15, 0.63], 0.028, 0.022); L([0.15, 0.63], [0.17, 0.5], 0.022, 0.018); }
+      // a stole falling from the shoulders
+      inkFill(K.path([P(-0.1, 0.78), P(-0.13, 0.62), P(-0.12, 0.4), P(-0.105, 0.42), P(-0.11, 0.62), P(-0.085, 0.74)]), ink);
+      const bow = RP.sampleCurve([P(-0.12, 1.02), P(-0.19, 0.78), P(-0.21, 0.5), P(-0.19, 0.22), P(-0.12, -0.02)], 6);
+      K.strokeRef(bow, 0.018 * h, ink);
+      K.overlay((pen) => {
+        pen.line(bow, { w: 0.018 * h, color: ink, taper: 0.4 });
+        pen.line([bow[0], bow[bow.length - 1]], { w: Math.max(2, h * 0.003), color: o.string || '#fff4d8', alpha: 0.8, taper: 0 });
+        if (o.rim) pen.line([P(0.0, 1.05), P(0.045, 0.92), P(0.112, 0.78), P(0.075, 0.66), P(0.105, 0.3), P(0.055, 0.02)], { w: h * 0.005, color: o.rim, alpha: 0.8, taper: 0.4 });
+      });
+      return { head: P(0, 0.9) };
+    };
+    // Sita: veiled, palms joined
+    K.sil.sita = (x, y, h, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820';
+      const P = (u, v) => [x + u * h, y - v * h];
+      inkFill(K.path([P(-0.05, 0.82), P(0.05, 0.82), P(0.07, 0.7), P(0.05, 0.56), P(0.08, 0.4), P(0.14, 0.0), P(-0.14, 0.0), P(-0.09, 0.4), P(-0.06, 0.56), P(-0.07, 0.7)]), ink);
+      inkFill(K.ell(...P(0, 0.89), 0.042 * h, 0.052 * h), ink);
+      inkFill(K.path([P(-0.05, 0.93), P(0, 0.96), P(0.05, 0.92), P(0.065, 0.8), P(0.1, 0.62), P(0.12, 0.45), P(0.08, 0.5), P(0.05, 0.75)]), ink);
+      inkFill(K.limbPath(P(-0.06, 0.78), P(-0.02, 0.66), 0.022 * h, 0.018 * h), ink);
+      inkFill(K.limbPath(P(-0.02, 0.66), P(0.0, 0.76), 0.018 * h, 0.014 * h), ink);
+      inkFill(K.path([P(-0.012, 0.74), P(0.002, 0.82), P(0.012, 0.74)]), ink);
+    };
+    // a vanara kneeling in devotion, palms joined; d = 1 faces right
+    K.sil.kneel = (x, y, h, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820', d = o.dir || 1;
+      const P = (u, v) => [x + u * h * d, y - v * h];
+      inkFill(K.path([P(-0.22, 0.0), P(0.2, 0.0), P(0.18, 0.18), P(0.06, 0.24), P(0.1, 0.5), P(0.04, 0.66), P(-0.1, 0.62), P(-0.14, 0.4), P(-0.06, 0.22), P(-0.2, 0.16)]), ink);
+      inkFill(K.ell(...P(0.05, 0.75), 0.08 * h, 0.09 * h), ink);
+      inkFill(K.ell(...P(0.12, 0.72), 0.05 * h, 0.04 * h), ink);
+      inkFill(K.limbPath(P(0.06, 0.6), P(0.2, 0.52), 0.04 * h, 0.03 * h), ink);
+      inkFill(K.limbPath(P(0.2, 0.52), P(0.2, 0.68), 0.03 * h, 0.022 * h), ink);
+      inkFill(K.limbPath(P(-0.2, 0.08), P(-0.42, 0.2), 0.03 * h, 0.022 * h), ink);
+      inkFill(K.limbPath(P(-0.42, 0.2), P(-0.46, 0.52), 0.022 * h, 0.014 * h), ink);
+      inkFill(K.limbPath(P(-0.46, 0.52), P(-0.38, 0.64), 0.014 * h, 0.01 * h), ink);
+    };
+    // a warrior in silhouette: vanara (tail) or rakshasa (horns), running with a raised weapon; d = 1 runs right
+    K.sil.warrior = (x, y, h, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820', d = o.dir || 1, lean = o.lean == null ? 0.12 : o.lean;
+      const P = (u, v) => [x + (u + lean * v) * h * d, y - v * h];
+      const L = (a, b, w0, w1) => inkFill(K.limbPath(P(...a), P(...b), w0 * h, w1 * h), ink);
+      const st = o.stride == null ? 1 : o.stride;
+      L([0, 0.48], [0.14 * st, 0.25], 0.06, 0.045); L([0.14 * st, 0.25], [0.12 * st, 0.0], 0.045, 0.035);
+      L([0, 0.48], [-0.1 * st, 0.26], 0.06, 0.045); L([-0.1 * st, 0.26], [-0.22 * st, 0.06], 0.045, 0.035);
+      inkFill(K.path([P(-0.09, 0.46), P(0.09, 0.46), P(0.1, 0.62), P(0.12, 0.78), P(-0.1, 0.8), P(-0.11, 0.62)]), ink);
+      inkFill(K.ell(...P(0.03, 0.88), 0.06 * h, 0.065 * h), ink);
+      if (o.kind === 'rakshasa') { inkFill(K.path([P(-0.02, 0.93), P(-0.06, 1.02), P(0.0, 0.95)]), ink); inkFill(K.path([P(0.05, 0.94), P(0.1, 1.03), P(0.08, 0.93)]), ink); }
+      else { inkFill(K.ell(...P(-0.03, 0.9), 0.025 * h, 0.03 * h), ink); }
+      if (o.kind !== 'rakshasa') inkFill(K.limbPath(P(-0.08, 0.5), P(-0.3, 0.62), 0.025 * h, 0.012 * h), ink), inkFill(K.limbPath(P(-0.3, 0.62), P(-0.36, 0.86), 0.012 * h, 0.01 * h), ink);
+      L([0.08, 0.76], [0.2, 0.92], 0.035, 0.03); L([0.2, 0.92], [0.24, 1.08], 0.03, 0.026);
+      L([-0.08, 0.76], [-0.18, 0.62], 0.035, 0.03); L([-0.18, 0.62], [-0.1, 0.52], 0.03, 0.026);
+      const wpn = o.weapon || 'mace', hand = P(0.24, 1.08);
+      if (wpn === 'mace') { inkFill(K.limbPath(hand, P(0.3, 1.3), 0.02 * h, 0.02 * h), ink); inkFill(K.ell(...P(0.32, 1.36), 0.07 * h, 0.08 * h), ink); }
+      if (wpn === 'spear') { inkFill(K.limbPath(P(0.16, 0.8), P(0.34, 1.5), 0.012 * h, 0.012 * h), ink); inkFill(K.path([P(0.31, 1.48), P(0.36, 1.66), P(0.39, 1.5)]), ink); }
+      if (wpn === 'rock') inkFill(K.patch(...P(0.26, 1.2), 0.13 * h, 0.1 * h, 0.3), ink);
+      if (wpn === 'tree') { inkFill(K.limbPath(hand, P(0.4, 1.6), 0.025 * h, 0.015 * h), ink); for (let k = 0; k < 4; k++) inkFill(K.patch(...P(0.36 + K.R(-0.12, 0.12), 1.55 + K.R(-0.1, 0.1)), 0.1 * h, 0.08 * h, 0), ink); }
+    };
+    // a war chariot in silhouette with banner; d = 1 faces right
+    K.sil.chariot = (x, y, w, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820', d = o.dir || 1;
+      const P = (u, v) => [x + u * w * d, y - v * w];
+      inkFill(K.path([P(-0.5, 0.35), P(0.5, 0.35), P(0.42, 0.8), P(0.1, 0.9), P(-0.42, 0.78)]), ink);
+      inkFill(K.ell(...P(-0.05, 0.32), 0.32 * w, 0.32 * w), ink);
+      inkFill(K.limbPath(P(0.4, 0.42), P(1.1, 0.5), 0.03 * w, 0.025 * w), ink);
+      inkFill(K.limbPath(P(-0.42, 0.78), P(-0.42, 1.9), 0.02 * w, 0.02 * w), ink);
+      inkFill(K.path([P(-0.42, 1.9), P(-0.86, 1.78), P(-0.42, 1.62)]), ink);
+      if (o.rim) K.overlay((pen) => pen.line(RP.sampleCurve([P(-0.05 + 0.32, 0.32), P(-0.05, 0.64), P(-0.05 - 0.32, 0.32), P(-0.05, 0)], 6, true).concat([P(0.27, 0.32)]), { w: w * 0.012, color: o.rim, alpha: 0.8, taper: 0 }));
+    };
+    K.sil.horse = (x, y, L, o) => {
+      o = o || {}; const ink = o.ink || '#0e0820', d = o.dir || 1;
+      const P = (u, v) => [x + u * L * d, y - v * L];
+      const f = (p) => inkFill(p, ink);
+      f(K.ell(...P(0, 0.72), L * 0.4, L * 0.15));
+      f(K.limbPath(P(0.28, 0.76), P(0.46, 1.08), L * 0.14, L * 0.08));
+      f(K.limbPath(P(0.46, 1.08), P(0.7, 0.92), L * 0.085, L * 0.04));
+      f(K.path([P(0.42, 1.12), P(0.44, 1.22), P(0.48, 1.12)]));
+      f(K.path([P(0.24, 0.84), P(0.36, 1.1), P(0.46, 1.16), P(0.3, 0.9)]));
+      for (const [a, k, b] of [[[-0.3, 0.62], [-0.46, 0.36], [-0.5, 0.02]], [[-0.24, 0.62], [-0.22, 0.32], [-0.3, 0.02]], [[0.28, 0.62], [0.46, 0.5], [0.58, 0.62]], [[0.3, 0.62], [0.36, 0.32], [0.3, 0.02]]]) { f(K.limbPath(P(...a), P(...k), L * 0.06, L * 0.04)); f(K.limbPath(P(...k), P(...b), L * 0.04, L * 0.028)); }
+      f(K.path([P(-0.38, 0.78), P(-0.66, 0.6), P(-0.6, 0.4), P(-0.4, 0.68)]));
     };
 
     K.sparks = (n, region, cols) => {

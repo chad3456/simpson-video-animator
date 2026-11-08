@@ -33,18 +33,22 @@ Fifteen painterly portraits from the Ramayana, generated procedurally with plain
 
 ## Events (landscape, 1800×1200)
 
-Twenty-one narrative scenes (17–22 add Rama's feats of valour: the Yajna, Parashurama, Khara's army, the seven sala trees, the ocean and Kumbhakarna) plus a Diwali finale (16) from the Valmiki Ramayana live in `src/events/` and render to `out-events/` (see `out-events/contact-sheet.jpg`). Each file's header comment cites its kanda and context. They share the engine, kit and `src/figures.js` (full figures, vanaras, elephant, chariot, palaces, crowds, waves).
+There are 26 scenes from the Valmiki Ramayana in `src/events/`, numbered in story order. They render to `out-events/`, and `out-events/contact-sheet.jpg` shows all of them. Each file's header comment cites its kanda and gives the context.
+
+The run goes from the yajna of Vishvamitra (01) to the coronation (24), then the Diwali scene (25) and Maryada Purushottama (26). Four of the scenes are silhouettes: 13, 16, 19 and 26.
+
+The scenes share the engine, the kit and `src/figures.js`. That file holds the full figures, the archer (`K.archer`), vanaras, rakshasas, the elephant, chariots, palaces and crowds. It also holds the silhouette set: `K.sil.archer`, `standing`, `sita`, `kneel`, `warrior`, `chariot` and `horse`.
 
 ```
-node render.js --set=events            # all 15
-node render.js 08-lanka-burns --set=events
+node render.js --set=events            # all 26
+node render.js 12-lanka-burns --set=events
 ```
 
-Note on scene 14: in Valmiki, Rama enters Ayodhya on a chariot and Sugriva rides the elephant Shatrunjaya; the royal-elephant procession follows the popular retelling as requested.
+A note on scene 23: in Valmiki, Rama enters Ayodhya on a chariot and Sugriva rides the elephant Shatrunjaya. The royal-elephant procession follows the popular retelling, as requested.
 
 ## Video reel
 
-`video/ramayana-reel.mp4` (1920×1080, about 3 minutes) is set to a Shree Ram Stuti recording that the user supplied. That audio is not part of the repo. The reel shows the event paintings in story order, from the Yajna to the coronation, with slow pans across each one. It ends on the Diwali finale.
+`video/ramayana-reel.mp4` (1920×1080, about 3 minutes) is set to a Shree Ram Stuti recording that the user supplied. That audio is not part of the repo. The reel shows the event paintings in story order with slow pans across each one. It then shows Happy Diwali and closes on Rama's vow of refuge (Yuddha Kanda 18.33).
 
 ```
 node video/reel.js $PWD video/ramayana-reel.mp4 path/to/stuti-audio
