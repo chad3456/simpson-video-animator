@@ -33,7 +33,7 @@ Fifteen painterly portraits from the Ramayana, generated procedurally with plain
 
 ## Events (landscape, 1800×1200)
 
-Fifteen narrative scenes from the Valmiki Ramayana live in `src/events/` and render to `out-events/` (see `out-events/contact-sheet.jpg`). Each file's header comment cites its kanda and context. They share the engine, kit and `src/figures.js` (full figures, vanaras, elephant, chariot, palaces, crowds, waves).
+Fifteen narrative scenes plus a Diwali finale (16) from the Valmiki Ramayana live in `src/events/` and render to `out-events/` (see `out-events/contact-sheet.jpg`). Each file's header comment cites its kanda and context. They share the engine, kit and `src/figures.js` (full figures, vanaras, elephant, chariot, palaces, crowds, waves).
 
 ```
 node render.js --set=events            # all 15
@@ -41,3 +41,16 @@ node render.js 08-lanka-burns --set=events
 ```
 
 Note on scene 14: in Valmiki, Rama enters Ayodhya on a chariot and Sugriva rides the elephant Shatrunjaya; the royal-elephant procession follows the popular retelling as requested.
+
+## Video reel
+
+`video/ramayana-reel.mp4` (1920×1080, about 93 s) pans slowly across each event painting, with the Shri Ramachandra Kripalu stuti (Tulsidas) as Devanagari captions. It ends on the Diwali finale.
+
+The music is an original instrumental in raga Yaman, synthesized in `video/music.py`. It has a tanpura drone, a bansuri-style melody, santoor, a keherwa tabla pattern, bells and manjira. It is not a sung recording.
+
+```
+python3 video/music.py                      # writes video/music.wav
+node video/reel.js $PWD video/ramayana-reel.mp4
+```
+
+The fonts are Tiro Devanagari Hindi and Cinzel Decorative, both under the SIL Open Font License.

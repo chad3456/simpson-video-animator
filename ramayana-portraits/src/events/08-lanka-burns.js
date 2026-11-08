@@ -10,43 +10,44 @@
     turbulence: 0.9,
     draw(K) {
       const { W, H } = K;
-      K.bg(K.lin(0, 0, 0, H, ['#140a3a', '#4a0a4a', '#c0102a', '#ff6a1a', '#ffc22a']));
-      K.blob(400, 200, 400, '#2a1a8a', 0.6);
-      // the golden city: towers and palaces
-      for (let i = 0; i < 9; i++) {
-        const x = 90 + i * 205 + K.R(-30, 30), h = K.R(260, 520), w = K.R(150, 200);
-        K.palace(x, 1200, w, h, { roof: i % 2 ? 'shikhara' : 'dome', colors: ['#fff3a0', '#ffc22a', '#c86a1a', '#5a1a1a'], window: '#3a0a1a', lit: true, flag: '#3a1a6a', focus: 0.3 });
-      }
-      // flames climbing the city
-      // flames climbing between the towers
-      for (let i = 0; i < 16; i++) K.flame(60 + i * 115 + K.R(-30, 30), 1220, K.R(90, 170), K.R(260, 560), null, K.R(-50, 50));
-      // Hanuman mid-leap across the rooftops, blazing tail streaming behind
-      const tail = [[1080, 640], [1250, 700], [1420, 600], [1560, 470], [1700, 420]];
-      K.strokeRef(tail, 34, '#e8701a');
-      K.flowStroke(tail, 60);
-      K.blob(1700, 420, 200, '#ffd23a', 0.9);
+      K.bg(K.lin(0, 0, 0, H, ['#0e0a3a', '#2a0a5a', '#7a0a4a', '#e0401a', '#ffb02a']));
+      K.blob(1500, 180, 380, '#1a1a7a', 0.7);
+      K.blob(250, 120, 300, '#3a1a8a', 0.6);
+      // smoke rolling up from the city
+      [[600, 560, 260], [1100, 500, 300], [1500, 560, 240]].forEach(([x, y, r]) => K.blob(x, y, r, '#3a1a3a', 0.55));
+      // Mount Trikuta, the dark hill Lanka stands on
+      K.mountain([[-50, 1200], [-50, 900], [300, 860], [700, 840], [1100, 850], [1500, 830], [1850, 880], [1850, 1200]], ['#5a1a6a', '#3a0a4a', '#1a0630', '#0a0418'], 0.3);
+      // the golden city of Lanka: gilded towers, domes and mansions, back row then front row
+      const gold = ['#fffbd8', '#ffe04a', '#e8a818', '#7a4a08'];
+      for (let i = 0; i < 11; i++) K.palace(80 + i * 165 + K.R(-20, 20), 900, K.R(100, 130), K.R(150, 230), { roof: i % 2 ? 'shikhara' : 'dome', colors: gold, roofColors: gold, window: '#5a1a0a', flag: '#ff2a3a', focus: 0.5 });
+      for (let i = 0; i < 9; i++) K.palace(150 + i * 195 + K.R(-20, 20), 1080, K.R(150, 190), K.R(130, 200), { roof: i % 3 === 1 ? 'shikhara' : 'dome', colors: gold, roofColors: gold, window: '#4a0a0a', flag: '#ff2a3a', focus: 0.55 });
+      K.fill(K.poly([[0, 1080], [W, 1080], [W, H], [0, H]]), K.lin(0, 1080, 0, H, ['#ffd23a', '#c8701a', '#5a1a0a']));
+      // red fire bursting from the mansions
+      const fire = ['#fff0a0', '#ff8a1a', '#e8201a', '#8a0a2a', 'rgba(60,8,40,0.5)'];
+      [[230, 900], [610, 1080], [830, 900], [1180, 1080], [1420, 900], [1650, 1080], [60, 1080], [1000, 900]].forEach(([x, y], i) => K.flame(x + K.R(-20, 20), y - K.R(60, 140), K.R(110, 170), K.R(240, 380), fire, K.R(-50, 30)));
+      // Hanuman flying high above the burning city, his blazing tail streaming behind
+      const tail = [[470, 400], [340, 450], [220, 400], [150, 300], [200, 210]];
+      K.strokeRef(tail, 26, '#e8701a');
+      K.flowStroke(tail, 50);
       const han = K.vanara({
-        x: 900, y: 980, h: 760, rot: -0.35, turn: -0.4, gaze: -1, brow: 1, tilak: true, crownSmall: true,
-        pose: { legs: 'leap', armL: [2.6, 0.2], armR: [1.2, 0.8] }, tail: false,
-        fur: ['#ffc85a', '#f07a1a', '#b0301a', '#4a1020'], cloth: ['#ff4a3a', '#d0101a', '#7a0a2a', '#2a0a1a'],
+        x: 480, y: 420, h: 620, rot: 1.3, turn: 0.3, gaze: 1, tilak: true, crownSmall: true, tail: false,
+        pose: { legs: 'fly', armL: [2.9, 0.05], armR: [2.6, 0.2] },
+        fur: ['#ffc85a', '#f07a1a', '#b0301a', '#4a1020'], cloth: ['#ff4a3a', '#d0101a', '#7a0a2a', '#2a0a1a'], scarf: ['#fff27a', '#ffc21a', '#ff8a10', '#c0401a'],
       });
-      // the gada raised in his hand
-      const [hx, hy] = han.handL;
-      K.strokeRef([[hx + 30, hy + 60], [hx - 40, hy - 120]], 18, '#a0501a');
-      K.fill(K.ell(hx - 55, hy - 160, 60, 70, -0.4), K.rad(hx - 70, hy - 180, 5, 80, ['#fff8c0', '#ffc22a', '#c0601a', '#5a2010']));
-      K.focus(K.ell(hx - 55, hy - 160, 60, 70, -0.4), 0.8);
       K.overlay((pen) => {
-        const tp = RP.sampleCurve(tail, 3); for (let i = 0; i < tp.length; i += 2) { const p = tp[i]; pen.line([p, [p[0] - K.R(10, 50), p[1] - K.R(50, 110) * (0.4 + i / tp.length)]], { w: K.R(14, 28), color: K.pick(['#fff3a0', '#ffd23a', '#ff7a1a']), taper: 1, alpha: 0.9 }); }
-        // rakshasas fleeing on the rooftops
-        for (let k = 0; k < 9; k++) {
-          const x = K.R(80, 1750), y = K.R(820, 1000);
-          if (Math.abs(x - 900) < 260) continue;
+        const tp = RP.sampleCurve(tail, 12);
+        for (let i = 0; i < tp.length; i++) { const p = tp[i], f = 0.5 + i / tp.length; pen.line([[p[0] + K.R(-8, 8), p[1] + 6], [p[0] + K.R(-40, 20), p[1] - K.R(50, 110) * f], [p[0] + K.R(-60, 10), p[1] - K.R(90, 170) * f]], { w: K.R(16, 30), color: K.pick(['#fff3a0', '#ffd23a', '#ff7a1a', '#ff3a1a']), taper: 1, alpha: 0.9 }); }
+        // embers trailing his flight
+        for (let k = 0; k < 40; k++) pen.dab(K.R(100, 900), K.R(150, 600), K.R(3, 7), K.pick(['#fff3a0', '#ffb02a', '#ff5a1a']), 0.9);
+        // rakshasas fleeing along the rooftops
+        for (let k = 0; k < 10; k++) {
+          const x = K.R(80, 1750), y = K.R(1100, 1170);
           pen.line([[x, y], [x + 8, y - 34]], { w: 12, color: '#2a0a3a', taper: 0.4 });
           pen.dab(x + 9, y - 44, 9, '#3a5a3a');
           pen.line([[x + 8, y - 30], [x + 26, y - 50]], { w: 5, color: '#2a0a3a' });
         }
       });
-      K.sparks(160, [0, 200, W, H]);
+      K.sparks(140, [0, 500, W, H]);
     },
   };
 })();
