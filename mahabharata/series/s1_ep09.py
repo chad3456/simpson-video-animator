@@ -128,7 +128,7 @@ def build(EP, S, ln, bg, face, figs, fig, piece, fx, name, push, pan, hold, sh, 
   S('d_awe', 'vishva', [
       ln('ARJUNA', 'I see all the gods in your body, O God, and all the hosts of beings. I see you everywhere, infinite in form, and I see no end, no middle, no beginning. My heart trembles. I cannot find my steadiness, or peace. Have mercy, Lord of gods, refuge of the world!',
                    'हे देव, मैं आपके शरीर में सब देवताओं को देखता हूँ, और सब प्राणियों के समूहों को। मैं आपको सर्वत्र देखता हूँ, अनंत रूप में, और न अंत देखता हूँ, न मध्य, न आदि। मेरा हृदय काँपता है। मुझे न धैर्य मिलता है, न शांति। दया कीजिए, देवों के देव, जगत के आश्रय!')],
-    [bg(set='cosmos', galaxies=8), piece('halo', 'cosmicHalo', k='anim', every=2, add=True), face('arjuna', 800, 460, 200, 1, 'awe', rim=['#fff0c0', -3, -2, 0.9], glow=['#ffe0a0', 30, 0.4])],
+    [bg(set='cosmos', galaxies=8), piece('halo', 'cosmicHalo', d=1.0, add=True, mv=dict(r=[0, 10], t=[0, 25], ax=800, ay=420)), face('arjuna', 800, 460, 200, 1, 'awe', rim=['#fff0c0', -3, -2, 0.9], glow=['#ffe0a0', 30, 0.4])],
     cam=push(800, 460, 1.0, 1.16), amb='void', sfx=[dict(n='heartbeat', at=1.0, v=0.5)]),
   S('d_time', 'kala', [
       ln('KTIME', 'I am Time, the destroyer of worlds, grown old, come here to destroy these people. Even without you, none of these warriors in these armies will survive. Arise, then! Win glory. They are already slain by me. Be only my instrument, Arjuna.',
