@@ -18,11 +18,9 @@
       K.horse(330, 1000, 300, { dir: 1, colors: ['#ffffff', '#e0e8ff', '#9aa8d8', '#3a4a8a'] });
       K.horse(230, 1040, 300, { dir: 1, colors: ['#ffffff', '#e0e8ff', '#9aa8d8', '#3a4a8a'] });
       K.chariot(520, 1060, 380, { dir: 1, flag: '#ffd23a', colors: ['#ffffff', '#ffe68a', '#d0a03a', '#6a4a1a'] });
-      const rama = K.figure({ x: 520, y: 1000, h: 760, skin: ['#9ef0ff', '#3fa8f0', '#2a52c8', '#22167a'], head: 'crown', turn: 0.45,
-        cloth: ['#fff27a', '#ffc21a', '#ff8a10', '#c0401a'], scarf: ['#fff27a', '#ffc21a', '#ff8a10', '#c0401a'],
-        pose: { legs: 'hidden', armL: [1.6, 0.05], armR: [1.35, -1.9] }, face: { eyes: 'fierce', brow: 'furrow', mouth: 'grim', tilak: 'vaishnava', gaze: [1, 0] } });
-      const [bx, by] = rama.handL;
-      K.bowAt([bx + 20, by], 620, -1.52, { w: 16, pull: rama.handR, flip: true });
+      const rama = K.archer({ x: 520, y: 1000, h: 760, legs: 'hidden', arrow: false, tip: '#fff6c0' });
+      const [bx, by] = rama.bow;
+      rama.handR = rama.handL;
       // Ravana's chariot and its ten heads, recoiling
       K.chariot(1430, 1060, 420, { dir: -1, flag: '#3a0a3a', colors: ['#c8a0ff', '#7a3aa0', '#3a1a5a', '#140828'] });
       const rav = K.figure({ x: 1440, y: 1000, h: 820, skin: ['#ffc05a', '#e86a2a', '#5a2a8a', '#1a0a3a'], head: 'crown', crown: { h: 1.1 }, turn: -0.4, mustache: '#100816', curl: 0.5,

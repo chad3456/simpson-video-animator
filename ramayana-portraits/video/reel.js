@@ -1,8 +1,15 @@
 // Renders the Ramayana reel: Ken Burns over each painting, stuti captions, Diwali finale. Frames are piped to ffmpeg.
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path'), { spawn } = require('child_process');
-const ROOT = process.argv[2], OUT = process.argv[3], FPS = 30, DUR = 93, W = 1920, H = 1080;
-const ev = fs.readdirSync(path.join(ROOT, 'out-events')).filter(f => /^\d\d-.*\.jpg$/.test(f)).sort();
+// usage: node reel.js <project root> <out.mp4> <audio file> [preview times]
+const ROOT = process.argv[2], OUT = process.argv[3], AUDIO = process.argv[4], FPS = 25, W = 1920, H = 1080;
+const DUR = Math.round(+require('child_process').execSync(`ffprobe -v error -show_entries format=duration -of csv=p=0 "${AUDIO}"`).toString());
+// story order (Valmiki), ending on the Diwali finale
+const ORDER = ['17-rama-guards-the-yajna', '01-breaking-shivas-bow', '18-rama-humbles-parashurama', '02-crossing-the-ganga', '19-rama-against-khara',
+  '03-the-golden-deer', '04-jatayu-fights-ravana', '05-rama-meets-hanuman', '20-seven-sala-trees', '06-leap-across-the-ocean', '07-hanuman-meets-sita',
+  '08-lanka-burns', '21-rama-commands-the-ocean', '09-building-the-bridge', '22-rama-fells-kumbhakarna', '10-hanuman-lifts-the-mountain',
+  '11-rama-slays-ravana', '12-agni-pariksha', '13-pushpaka-vimana', '14-return-to-ayodhya', '15-coronation', '16-happy-diwali'];
+const ev = ORDER.map(n => n + '.jpg');
 const titles = ev.map(f => { const m = fs.readFileSync(path.join(ROOT, 'src/events', f.replace('.jpg', '.js')), 'utf8').match(/title: (['"])(.*?)\1/); return m[2]; });
 const b64 = (p) => 'data:image/jpeg;base64,' + fs.readFileSync(p).toString('base64');
 const font = (p) => 'data:font/ttf;base64,' + fs.readFileSync(p).toString('base64');
@@ -28,9 +35,9 @@ const data = { imgs: ev.map(f => b64(path.join(ROOT, 'out-events', f))), titles,
       'सिर मुकुट कुंडल तिलक चारु उदारु अंग विभूषणम्', 'आजानु भुज शर चाप धर संग्राम जित खरदूषणम्',
       'इति वदति तुलसीदास शंकर शेष मुनि मन रंजनम्', 'मम हृदय कंज निवास कुरु कामादि खल दल गंजनम्'];
     const ease = (t) => t < 0 ? 0 : t > 1 ? 1 : t * t * (3 - 2 * t);
-    const segs = [{ s: 0, d: 7, kind: 'intro' }];
-    IM.forEach((im, i) => segs.push({ s: 6 + i * 5, d: 6, im, i, kind: i === 15 ? 'finale' : 'ev' }));
-    segs[16].s = 81; segs[16].d = 12;
+    const FIN = DUR - 18, NEV = IM.length - 1, STEP = (FIN + 1 - 7) / NEV;
+    const segs = [{ s: 0, d: 8, kind: 'intro' }];
+    IM.forEach((im, i) => segs.push(i === NEV ? { s: FIN, d: 18, im, i, kind: 'finale' } : { s: 7 + i * STEP, d: STEP + 1, im, i, kind: 'ev' }));
     const kb = (im, u, i) => {  // Ken Burns: cover, slow zoom and drift
       const cover = Math.max(W / im.width, H / im.height);
       const zin = i % 2 === 0; const z = cover * (zin ? 1 + 0.08 * u : 1.08 - 0.08 * u);
@@ -66,22 +73,14 @@ const data = { imgs: ev.map(f => b64(path.join(ROOT, 'out-events', f))), titles,
             const ta = a * ease((t - g.s - 0.8) / 0.8) * ease((g.s + g.d - 0.9 - t) / 0.8);
             x.save(); x.globalAlpha = ta; x.font = '30px Cinzel'; x.textAlign = 'left'; x.textBaseline = 'middle';
             x.shadowColor = 'rgba(0,0,0,0.9)'; x.shadowBlur = 12; x.fillStyle = '#fff1d0';
-            x.fillText(String(g.i + 1).padStart(2, '0') + '  ·  ' + TT[g.i], 60, 70); x.restore();
+            x.fillText(TT[g.i], 60, 70); x.restore();
           }
         }
       }
       x.globalAlpha = 1;
-      // stuti captions, one half-line every 7.5 s through the paintings
-      if (t >= 6 && t < 81) {
-        const k = Math.floor((t - 6) / 7.5), lt = (t - 6) - k * 7.5;
-        const ca = ease(lt / 0.7) * ease((7.5 - lt) / 0.7);
-        const gr = x.createLinearGradient(0, H - 230, 0, H); gr.addColorStop(0, 'rgba(10,4,20,0)'); gr.addColorStop(1, 'rgba(10,4,20,0.75)');
-        x.fillStyle = gr; x.fillRect(0, H - 230, W, 230);
-        text(STUTI[k], 54, 'Tiro', H - 95, ca, '#ffe7a8', 'rgba(0,0,0,0.95)');
-      }
       // Diwali finale: twinkles, greetings, fade to black
-      if (t >= 81) {
-        const ft = t - 81;
+      if (t >= FIN) {
+        const ft = t - FIN;
         x.save(); x.globalCompositeOperation = 'lighter';
         for (let k = 0; k < 90; k++) {
           const px = R(k) * W, py = R(k + 50) * H * 0.75, tw = 0.5 + 0.5 * Math.sin(ft * (2 + R(k + 9) * 4) + k);
@@ -100,12 +99,12 @@ const data = { imgs: ev.map(f => b64(path.join(ROOT, 'out-events', f))), titles,
       return c.toDataURL('image/jpeg', 0.9);
     };
   }, { W, H, DUR });
-  if (process.argv[4]) {  // preview stills: comma-separated times
-    for (const t of process.argv[4].split(',')) { const d = await p.evaluate((t) => frame(t), +t); fs.writeFileSync(`${__dirname}/still-${t}.jpg`, Buffer.from(d.split(',')[1], 'base64')); }
+  if (process.argv[5]) {  // preview stills: comma-separated times
+    for (const t of process.argv[5].split(',')) { const d = await p.evaluate((t) => frame(t), +t); fs.writeFileSync(`${__dirname}/still-${t}.jpg`, Buffer.from(d.split(',')[1], 'base64')); }
     await b.close(); return;
   }
-  const ff = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-', '-i', path.join(__dirname, 'music.wav'),
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', '21', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', OUT], { stdio: ['pipe', 'inherit', 'inherit'] });
+  const ff = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'mjpeg', '-i', '-', '-i', AUDIO,
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', '24', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '160k', '-shortest', '-movflags', '+faststart', OUT], { stdio: ['pipe', 'inherit', 'inherit'] });
   const n = DUR * FPS;
   for (let i = 0; i < n; i++) {
     const d = await p.evaluate((t) => frame(t), i / FPS);

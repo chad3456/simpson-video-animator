@@ -552,6 +552,40 @@
       });
     };
 
+    // Rama as the archer: stride, bow drawn to the ear, arrow nocked. Faces right.
+    K.ramaSkin = ['#9ef0ff', '#3fa8f0', '#2a52c8', '#22167a'];
+    K.archer = (o) => {
+      const h = o.h;
+      const forest = o.forest;
+      const r = K.figure(Object.assign({
+        skin: o.skin || K.ramaSkin, head: forest ? 'jata' : 'crown', turn: 0.45, ascetic: forest, earrings: !forest,
+        hairColors: ['#3a2a7a', '#22164a', '#120a2a', '#06030e'],
+        cloth: forest ? ['#e8a04a', '#b0602a', '#6a2a2a', '#2a0a1a'] : ['#fff27a', '#ffc21a', '#ff8a10', '#c0401a'],
+        scarf: forest ? ['#e8a04a', '#b0602a', '#6a2a2a', '#2a0a1a'] : ['#fff27a', '#ffc21a', '#ff8a10', '#c0401a'],
+        pose: { legs: o.legs || 'stride', armR: [1.6, 0.05], armL: o.pull || [1.4, -2.7] },
+        face: { eyes: 'fierce', brow: 'furrow', mouth: 'grim', tilak: 'vaishnava', gaze: [1, 0] },
+      }, o));
+      const [bx, by] = r.handR;
+      K.bowAt([bx + h * 0.026, by], h * 0.72, -1.52, { w: h * 0.021, pull: r.handL, flip: true, color: o.bowColor });
+      if (o.arrow !== false) K.arrow(r.handL[0], r.handL[1], bx + h * 0.16, by, { w: h * 0.009, head: h * 0.04, tip: o.tip || '#fff6d0', fletch: '#ff2a3a' });
+      if (o.glow) K.overlay((pen) => { pen.dab(bx + h * 0.2, by, h * 0.05, o.glow, 0.9); for (let k = 0; k < 14; k++) { const a = k / 14 * 6.283; pen.line([[bx + h * 0.2, by], [bx + h * 0.2 + Math.cos(a) * h * 0.12, by + Math.sin(a) * h * 0.12]], { w: h * 0.008, color: '#fff6c0', taper: 1 }); } });
+      r.bow = [bx, by];
+      return r;
+    };
+    // a rakshasa warrior: dark skin, wild hair, weapon raised
+    K.rakshasa = (x, y, h, o) => {
+      o = o || {};
+      const skins = [['#a07aff', '#6a3ac0', '#3a1a7a', '#140830'], ['#7ad0a0', '#3a8a6a', '#1a4a4a', '#0a1a20'], ['#ff8a6a', '#c03a3a', '#6a1a3a', '#200818']];
+      const r = K.figure({ x, y, h, rot: o.rot || 0, skin: o.skin || K.pick(skins), head: 'long', turn: o.turn == null ? -0.4 : o.turn,
+        hairColors: ['#3a1a2a', '#1a0a14', '#0a0408', '#000000'], mustache: h > 500 ? '#100816' : undefined,
+        cloth: o.cloth || K.pick([['#7a2a3a', '#4a1a2a', '#2a0a1a', '#0a0408'], ['#3a2a5a', '#2a1a3a', '#140a20', '#05030a']]),
+        pose: { legs: o.legs || 'walk', armL: o.armL || [2.4, 0.3], armR: o.armR || [0.6, 0.5] },
+        face: { eyes: 'wide', brow: 'angry', mouth: 'roar', gaze: [-1, 0] } });
+      if (r.hc) { const up = (o.rot || 0); K.overlay((pen) => { for (const sd of [-1, 1]) { const b = [r.hc[0] + sd * r.s * 0.55 * Math.cos(up) + r.s * 0.7 * Math.sin(up), r.hc[1] + sd * r.s * 0.55 * Math.sin(up) - r.s * 0.7 * Math.cos(up)]; pen.line([b, [b[0] + sd * r.s * 0.5 * Math.cos(up) + r.s * 0.7 * Math.sin(up), b[1] + sd * r.s * 0.5 * Math.sin(up) - r.s * 0.7 * Math.cos(up)]], { w: r.s * 0.3, color: '#f4e8c8', taper: 1 }); } }); }
+      if (o.weapon !== false) { const [hx, hy] = r.handL; K.overlay((pen) => { pen.line([[hx, hy + h * 0.15], [hx + h * 0.05, hy - h * 0.35]], { w: h * 0.015, color: '#3a2a2a', taper: 0 }); pen.fill(K.poly([[hx + h * 0.05, hy - h * 0.45], [hx + h * 0.08, hy - h * 0.34], [hx + h * 0.02, hy - h * 0.34]]), '#e8eef8'); }); }
+      return r;
+    };
+
     K.sparks = (n, region, cols) => {
       K.overlay((pen) => {
         for (let k = 0; k < n; k++) {

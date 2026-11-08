@@ -33,7 +33,7 @@ Fifteen painterly portraits from the Ramayana, generated procedurally with plain
 
 ## Events (landscape, 1800×1200)
 
-Fifteen narrative scenes plus a Diwali finale (16) from the Valmiki Ramayana live in `src/events/` and render to `out-events/` (see `out-events/contact-sheet.jpg`). Each file's header comment cites its kanda and context. They share the engine, kit and `src/figures.js` (full figures, vanaras, elephant, chariot, palaces, crowds, waves).
+Twenty-one narrative scenes (17–22 add Rama's feats of valour: the Yajna, Parashurama, Khara's army, the seven sala trees, the ocean and Kumbhakarna) plus a Diwali finale (16) from the Valmiki Ramayana live in `src/events/` and render to `out-events/` (see `out-events/contact-sheet.jpg`). Each file's header comment cites its kanda and context. They share the engine, kit and `src/figures.js` (full figures, vanaras, elephant, chariot, palaces, crowds, waves).
 
 ```
 node render.js --set=events            # all 15
@@ -44,13 +44,12 @@ Note on scene 14: in Valmiki, Rama enters Ayodhya on a chariot and Sugriva rides
 
 ## Video reel
 
-`video/ramayana-reel.mp4` (1920×1080, about 93 s) pans slowly across each event painting, with the Shri Ramachandra Kripalu stuti (Tulsidas) as Devanagari captions. It ends on the Diwali finale.
-
-The music is an original instrumental in raga Yaman, synthesized in `video/music.py`. It has a tanpura drone, a bansuri-style melody, santoor, a keherwa tabla pattern, bells and manjira. It is not a sung recording.
+`video/ramayana-reel.mp4` (1920×1080, about 3 minutes) is set to a Shree Ram Stuti recording that the user supplied. That audio is not part of the repo. The reel shows the event paintings in story order, from the Yajna to the coronation, with slow pans across each one. It ends on the Diwali finale.
 
 ```
-python3 video/music.py                      # writes video/music.wav
-node video/reel.js $PWD video/ramayana-reel.mp4
+node video/reel.js $PWD video/ramayana-reel.mp4 path/to/stuti-audio
 ```
+
+The reel's length follows the audio file. `video/music.py` is the original synthesized raga Yaman instrumental used in the first cut.
 
 The fonts are Tiro Devanagari Hindi and Cinzel Decorative, both under the SIL Open Font License.
