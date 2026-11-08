@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramayana Portraits</title>
+<style>
+  body { margin: 0; background: #14101c; color: #eee6d4; font: 15px/1.5 Georgia, serif; }
+  header { padding: 24px 16px 8px; text-align: center; }
+  select, button { font: inherit; padding: 6px 10px; margin: 4px; }
+  #stage { display: flex; justify-content: center; padding: 16px; }
+  canvas { max-width: min(100%, 720px); height: auto; box-shadow: 0 10px 40px #000a; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Ramayana Portraits</h1>
+  <p>Painted live in your browser with plain JavaScript and Canvas 2D.</p>
+  <select id="pick"></select><button id="go">Paint</button>
+</header>
+<div id="stage"></div>
+<script src="src/engine.js"></script>
+<script src="src/kit.js"></script>
+<script src="src/scenes/01-rama.js"></script>
+<script src="src/scenes/02-sita-ashoka-vatika.js"></script>
+<script src="src/scenes/03-lakshmana.js"></script>
+<script src="src/scenes/04-hanuman.js"></script>
+<script src="src/scenes/05-ravana.js"></script>
+<script src="src/scenes/06-jatayu.js"></script>
+<script src="src/scenes/07-valmiki.js"></script>
+<script src="src/scenes/08-bharata.js"></script>
+<script src="src/scenes/09-shabari.js"></script>
+<script src="src/scenes/10-kumbhakarna.js"></script>
+<script src="src/scenes/11-surpanakha.js"></script>
+<script src="src/scenes/12-dasharatha.js"></script>
+<script src="src/scenes/13-kaikeyi.js"></script>
+<script src="src/scenes/14-mandodari.js"></script>
+<script src="src/scenes/15-agni-pariksha.js"></script>
+<script>
+  const pick = document.getElementById('pick');
+  Object.keys(RP.scenes).sort().forEach((id) => {
+    const o = document.createElement('option'); o.value = id; o.textContent = RP.scenes[id].title; pick.appendChild(o);
+  });
+  function paint() {
+    const stage = document.getElementById('stage');
+    stage.textContent = 'Painting…';
+    setTimeout(() => { stage.textContent = ''; stage.appendChild(RP.paint(RP.scenes[pick.value])); }, 30);
+  }
+  document.getElementById('go').onclick = paint;
+  paint();
+</script>
+</body>
+</html>
