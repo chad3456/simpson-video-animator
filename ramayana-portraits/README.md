@@ -30,3 +30,14 @@ Fifteen painterly portraits from the Ramayana, generated procedurally with plain
 
 * Open `index.html` in a browser to paint any portrait live.
 * `node render.js` renders all 15 to `out/*.jpg` (1200×1500) with headless Chromium via Playwright. `node render.js 05-ravana --ref` also saves the hidden reference.
+
+## Events (landscape, 1800×1200)
+
+Fifteen narrative scenes from the Valmiki Ramayana live in `src/events/` and render to `out-events/` (see `out-events/contact-sheet.jpg`). Each file's header comment cites its kanda and context. They share the engine, kit and `src/figures.js` (full figures, vanaras, elephant, chariot, palaces, crowds, waves).
+
+```
+node render.js --set=events            # all 15
+node render.js 08-lanka-burns --set=events
+```
+
+Note on scene 14: in Valmiki, Rama enters Ayodhya on a chariot and Sugriva rides the elephant Shatrunjaya; the royal-elephant procession follows the popular retelling as requested.

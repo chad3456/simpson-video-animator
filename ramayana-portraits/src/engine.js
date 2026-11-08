@@ -165,7 +165,7 @@
   // ---------- the painter ----------
   RP.paint = function (scene, opts) {
     opts = opts || {};
-    const W = opts.W || 1200, H = opts.H || 1500;
+    const W = opts.W || scene.W || 1200, H = opts.H || scene.H || 1500;
     const quality = opts.quality == null ? 1 : opts.quality;
     const rand = RP.rng(scene.seed || 7);
     const noise = RP.perlin(rand);
