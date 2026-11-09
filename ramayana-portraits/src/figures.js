@@ -99,6 +99,7 @@
       else if (legs === 'kneel') { kneeL = [-0.05, -0.22]; footL = [0.08, -0.24]; kneeR = [0.15, -0.42]; footR = [0.17, -0.22]; }
       else if (legs === 'sit') { kneeL = [-0.12, -0.46]; footL = [-0.12, -0.02]; kneeR = [0.12, -0.46]; footR = [0.13, -0.02]; }
       else if (legs === 'lotus') { kneeL = [-0.22, -0.46]; footL = [0.06, -0.47]; kneeR = [0.22, -0.46]; footR = [-0.06, -0.47]; }
+      else if (legs === 'dance') { kneeL = [-0.12, -0.26]; footL = [-0.06, -0.02]; kneeR = [-0.08, -0.42]; footR = [-0.3, -0.3]; }
       else if (legs === 'fly' || legs === 'leap') { kneeL = [-0.02, -0.3]; footL = [-0.02, -0.06]; kneeR = [0.08, -0.36]; footR = [0.2, -0.2]; }
       const legW = F ? 0.055 : 0.065;
       if (legs !== 'hidden') {
@@ -169,6 +170,7 @@
         });
         return T(hd[0] + Math.sin(a2) * 0.035, hd[1] + Math.cos(a2) * 0.035);
       };
+      const hands2 = o.arms2 ? [arm(-1, o.arms2[0]), arm(1, o.arms2[1])] : null;
       const handL = arm(-1, pose.armL), handR = arm(1, pose.armR);
       // uttariya / scarf across the shoulder
       if (o.scarf) {
@@ -236,7 +238,7 @@
         K.smallHead(hc[0], hc[1], s, { skin: sk, turn: o.turn, tilak: o.face && o.face.tilak && o.face.tilak !== 'bindi', hairColor: (o.hairColors || ['#1a1030'])[2] || '#1a1030' });
         if (headType === 'crown') K.overlay((pen) => pen.dab(...T(0, -1.0), 0.01 * h, '#e0102a'));
       }
-      return { handL, handR, headF, T, hc, s };
+      return { handL, handR, hands2, headF, T, hc, s };
     };
 
     // monkey (vanara) head: fur ruff, pale muzzle, round ears

@@ -63,3 +63,9 @@ The fonts are Tiro Devanagari Hindi and Cinzel Decorative, both under the SIL Op
 The love story from the first glance in Janaka's garden to the last morning at Panchavati before the golden deer. Fifteen are landscape (1800×1200) and fifteen are vertical (1200×1800). The scenes follow Valmiki, with the garden meeting, Gauri prayer and varamala from the Ramcharitmanas and the forest swing from folk song. The mood takes inspiration from animated Ramayana films, but the compositions and style are original.
 
 Render with `node render.js --set=ramsita` (or pass ids, space separated). `out-ramsita/contact-sheet.jpg` shows all thirty.
+
+## Lord Shiva: 15 paintings (`src/shiva/`, `src/deities.js`, rendered to `out-shiva/`)
+
+Three close portraits (Mahadeva, Neelakantha, Rudra), five vertical scenes (the Yogi of Kailash, Nataraja, the Descent of the Ganga, the Pillar of Light, Dakshinamurti) and seven landscapes (He Drinks the Poison, Shiva and Parvati on Kailash, the Family of Kailash, Rudra Tandava, Nandi Waits, Mahashivaratri, Lord of Kashi). `src/deities.js` holds the iconography: the jata with the Ganga and crescent moon, the third eye over the tripundra, Vasuki, rudraksha, tiger skin, trishul with damaru, Nandi, the lingam, Parvati and Ganesha.
+
+Render with `node render.js --set=shiva`.

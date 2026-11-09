@@ -1,5 +1,5 @@
 // Render Ramayana portraits to JPEG with headless Chromium (Playwright).
-// Usage: node render.js [sceneId ...] [--set=scenes|events|ramsita] [--ref] [--quality=0.5]
+// Usage: node render.js [sceneId ...] [--set=scenes|events|ramsita|shiva] [--ref] [--quality=0.5]
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
@@ -19,7 +19,7 @@ const path = require('path');
   page.on('console', (m) => console.log('[page]', m.text()));
   page.on('pageerror', (e) => console.error('[pageerror]', e));
   await page.setContent('<html><body></body></html>');
-  for (const f of ['engine.js', 'kit.js', 'figures.js']) await page.addScriptTag({ path: path.join(src, f) });
+  for (const f of ['engine.js', 'kit.js', 'figures.js', 'deities.js']) await page.addScriptTag({ path: path.join(src, f) });
   for (const f of sceneFiles) await page.addScriptTag({ path: path.join(src, set, f) });
   let ids = args.filter((a) => !a.startsWith('--'));
   if (!ids.length) ids = await page.evaluate((reg) => Object.keys(RP[reg]).sort(), reg);
