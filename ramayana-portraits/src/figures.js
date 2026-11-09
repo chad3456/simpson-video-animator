@@ -513,7 +513,7 @@
       o = o || {};
       const d = o.dir || 1;
       const P = (u, v) => [x + u * L * d, y + v * L];
-      const c = ['#fff6b0', '#ffd23a', '#e0901a', '#7a3a10'];
+      const c = o.colors || ['#fff6b0', '#ffd23a', '#e0901a', '#7a3a10'];
       for (const [a, b] of [[[-0.3, -0.55], [-0.42, 0]], [[0.25, -0.55], [0.36, 0]], [[-0.22, -0.55], [-0.15, -0.02]], [[0.3, -0.55], [0.2, -0.02]]]) { const p = K.limbPath(P(...a), P(...b), L * 0.06, L * 0.035); K.fill(p, c[2]); K.focus(p, 0.7); }
       const body = K.ell(...P(0, -0.62), L * 0.38, L * 0.15); K.fill(body, K.split(x - L * 0.4, y, x + L * 0.4, y, c)); K.focus(body, 0.85);
       const neck = K.limbPath(P(0.28, -0.66), P(0.42, -0.98), L * 0.12, L * 0.08); K.fill(neck, c[1]); K.focus(neck, 0.85);
@@ -524,7 +524,7 @@
         pen.dab(...P(0.5, -0.98), L * 0.014, '#140a20');
         pen.dab(...P(0.5, -0.98), L * 0.03, '#ffffff', 0.4);
         // the shimmer of the magic deer
-        for (let k = 0; k < 18; k++) { const a = K.R(0, 6.28), r = L * K.R(0.5, 0.75); const c0 = P(0.05, -0.7); pen.line([[c0[0] + Math.cos(a) * r, c0[1] + Math.sin(a) * r * 0.7], [c0[0] + Math.cos(a) * (r + L * 0.08), c0[1] + Math.sin(a) * (r + L * 0.08) * 0.7]], { w: 2.5, color: '#fff6c0', taper: 1, alpha: 0.8 }); }
+        if (!o.plain) for (let k = 0; k < 18; k++) { const a = K.R(0, 6.28), r = L * K.R(0.5, 0.75); const c0 = P(0.05, -0.7); pen.line([[c0[0] + Math.cos(a) * r, c0[1] + Math.sin(a) * r * 0.7], [c0[0] + Math.cos(a) * (r + L * 0.08), c0[1] + Math.sin(a) * (r + L * 0.08) * 0.7]], { w: 2.5, color: '#fff6c0', taper: 1, alpha: 0.8 }); }
       });
     };
     K.mountain = (pts, colors, foc) => {
@@ -713,6 +713,76 @@
       f(K.path([P(0.24, 0.84), P(0.36, 1.1), P(0.46, 1.16), P(0.3, 0.9)]));
       for (const [a, k, b] of [[[-0.3, 0.62], [-0.46, 0.36], [-0.5, 0.02]], [[-0.24, 0.62], [-0.22, 0.32], [-0.3, 0.02]], [[0.28, 0.62], [0.46, 0.5], [0.58, 0.62]], [[0.3, 0.62], [0.36, 0.32], [0.3, 0.02]]]) { f(K.limbPath(P(...a), P(...k), L * 0.06, L * 0.04)); f(K.limbPath(P(...k), P(...b), L * 0.04, L * 0.028)); }
       f(K.path([P(-0.38, 0.78), P(-0.66, 0.6), P(-0.6, 0.4), P(-0.4, 0.68)]));
+    };
+
+    // ---- Rama and Sita, in their three looks
+    const RS = {
+      ramaSkin: ['#9ef0ff', '#3fa8f0', '#2a52c8', '#22167a'],
+      sitaSkin: ['#ffeccc', '#f6b080', '#c8607a', '#4a1a5a'],
+      hair: ['#3a2a7a', '#22164a', '#120a2a', '#06030e'],
+      pitambar: ['#fff27a', '#ffc21a', '#ff8a10', '#c0401a'],
+      bark: ['#f0b860', '#c07a3a', '#7a3a2a', '#2a0a1a'],
+      red: ['#ff6a4a', '#e8182a', '#9a0a3a', '#4a0a3a'],
+      ochre: ['#ffe0a0', '#f0a050', '#b0503a', '#4a1a2a'],
+      pink: ['#ffb0c8', '#ff5a8a', '#b01a5a', '#4a0a3a'],
+    };
+    K.RS = RS;
+    K.rama = (o) => {
+      const look = o.look || 'prince';
+      const forest = look === 'forest';
+      const base = {
+        skin: RS.ramaSkin, head: forest ? 'jata' : 'crown', hairColors: RS.hair, ascetic: forest, earrings: !forest,
+        cloth: forest ? RS.bark : RS.pitambar, scarf: forest ? RS.bark : look === 'groom' ? RS.red : RS.pitambar,
+        face: Object.assign({ eyes: 'soft', mouth: 'smile', tilak: 'vaishnava', gaze: [o.turn > 0 ? 0.6 : -0.6, 0] }, o.face || {}),
+      };
+      const r = K.figure(Object.assign(base, o, { face: base.face }));
+      if (look === 'groom' && r.headF) K.overlay((pen) => { const T = r.headF.T; for (let k = 0; k < 9; k++) { const t = k / 8; pen.line([T(-1 + 2 * t, -1.5), T(-1 + 2 * t, -1.0 + 0.15 * Math.sin(t * 3.14))], { w: r.s * 0.05, color: '#fff3c0', alpha: 0.8, taper: 0 }); } });
+      return r;
+    };
+    K.sita = (o) => {
+      const look = o.look || 'princess';
+      const c = look === 'forest' ? RS.ochre : look === 'bride' ? RS.red : (o.saree || RS.pink);
+      const base = {
+        female: true, skin: RS.sitaSkin, head: 'veil', veil: o.veil || c, veilBorder: '#ffd23a', top: c, cloth: c, long: true,
+        hairColors: ['#2a1a3a', '#1a0a2a', '#0a0414', '#000000'],
+        face: Object.assign({ eyes: 'soft', mouth: 'smile', tilak: 'bindi', lashes: true, gaze: [o.turn > 0 ? 0.6 : -0.6, 0.1] }, o.face || {}),
+      };
+      const r = K.figure(Object.assign(base, o, { face: base.face }));
+      if (o.necklace !== false && r.headF) { const T = r.T; K.necklace([T(-0.06, -0.83), T(-0.03, -0.79), T(0, -0.775), T(0.03, -0.79), T(0.06, -0.83)], { w: o.h * 0.008 }); }
+      return r;
+    };
+    K.moon = (x, y, r, col) => { K.blob(x, y, r * 2.4, col || '#c8d0ff', 0.35); K.fill(K.ell(x, y, r, r), K.rad(x - r * 0.3, y - r * 0.3, r * 0.1, r, ['#ffffff', '#fffbe8', '#f0e8c8'])); K.focus(K.ell(x, y, r, r), 0.6); };
+    K.river = (pts, w, colors) => {
+      const top = pts.map(([x, y]) => [x, y - w / 2]), bot = pts.slice().reverse().map(([x, y]) => [x, y + w / 2]);
+      const p = K.path(top.concat(bot)); K.fill(p, K.lin(0, pts[0][1] - w, 0, pts[0][1] + w, colors || ['#c8f4ff', '#5ad0ff', '#2a7ad0', '#0a3a8a'])); K.flow(p, 0.0); K.focus(p, 0.3);
+      return p;
+    };
+    K.hut = (x, base, w, o) => {
+      o = o || {};
+      const roof = K.path([[x - w * 0.62, base - w * 0.42], [x - w * 0.1, base - w * 0.95], [x + w * 0.1, base - w * 0.95], [x + w * 0.62, base - w * 0.42], [x, base - w * 0.5]]);
+      const wall = K.poly([[x - w * 0.45, base], [x - w * 0.45, base - w * 0.48], [x + w * 0.45, base - w * 0.48], [x + w * 0.45, base]]);
+      K.fill(wall, K.split(x - w / 2, 0, x + w / 2, 0, ['#e8c890', '#b08a5a', '#6a4a2a', '#2a1a10'])); K.focus(wall, 0.45);
+      K.fill(roof, K.split(x - w * 0.6, 0, x + w * 0.6, 0, o.roof || ['#ffe08a', '#d0a04a', '#8a6a2a', '#3a2a10'])); K.focus(roof, 0.5);
+      K.fill(K.poly([[x - w * 0.1, base], [x - w * 0.1, base - w * 0.32], [x + w * 0.1, base - w * 0.32], [x + w * 0.1, base]]), '#2a1008');
+      K.overlay((pen) => { for (let k = 0; k < 12; k++) { const t = k / 11; pen.line([[x - w * 0.6 + t * w * 0.5, base - w * 0.44 - t * w * 0.48], [x - w * 0.5 + t * w * 0.5, base - w * 0.4 - t * w * 0.4]], { w: w * 0.012, color: '#8a5a2a', alpha: 0.5, taper: 1 }); } });
+    };
+    K.peacock = (x, y, s, o) => {
+      o = o || {}; const d = o.dir || 1;
+      const P = (u, v) => [x + u * s * d, y - v * s];
+      if (o.fan) { const fan = K.path(Array.from({ length: 13 }, (_, k) => { const a = Math.PI * (0.05 + 0.9 * k / 12); return P(-0.2 + Math.cos(a) * 1.1 * -1, 0.5 + Math.sin(a) * 1.0); }).concat([P(-0.2, 0.3)])); K.fill(fan, K.rad(...P(-0.2, 0.4), s * 0.1, s * 1.1, ['#3ad0a0', '#1a8a6a', '#0a4a5a', '#ffd23a'])); K.focus(fan, 0.6); K.overlay((pen) => { for (let k = 0; k < 26; k++) { const a = Math.PI * (0.08 + 0.84 * K.rand()), r = K.R(0.6, 1.0); const q = P(-0.2 - Math.cos(a) * r, 0.5 + Math.sin(a) * r * 0.95); pen.dab(q[0], q[1], s * 0.05, '#1a3aa0'); pen.dab(q[0], q[1], s * 0.022, '#3affd0'); } }); }
+      else { const tail = K.path([P(-0.15, 0.32), P(-1.1, 0.12), P(-1.2, 0.05), P(-0.1, 0.22)]); K.fill(tail, K.lin(...P(0, 0.2), ...P(-1.2, 0.1), ['#3ad0a0', '#1a8a6a', '#0a4a5a'])); K.focus(tail, 0.6); }
+      const body = K.ell(...P(0, 0.32), s * 0.2, s * 0.14, -0.3 * d); K.fill(body, K.split(x - s * 0.2, 0, x + s * 0.2, 0, ['#5ab0ff', '#1a5ad0', '#0a2a8a', '#06103a'])); K.focus(body, 0.8);
+      const neck = K.limbPath(P(0.08, 0.38), P(0.16, 0.7), s * 0.07, s * 0.045); K.fill(neck, '#1a6ae0'); K.focus(neck, 0.85);
+      K.overlay((pen) => { pen.dab(...P(0.17, 0.72), s * 0.05, '#1a5ad0'); for (let k = 0; k < 3; k++) pen.line([P(0.16, 0.76), P(0.13 + k * 0.03, 0.88)], { w: s * 0.012, color: '#1a5ad0', taper: 0.2 }); pen.line([P(0.2, 0.72), P(0.27, 0.7)], { w: s * 0.02, color: '#e8d8a0', taper: 1 }); pen.dab(...P(0.18, 0.73), s * 0.012, '#ffffff'); pen.line([P(0.0, 0.2), P(-0.02, 0.0)], { w: s * 0.02, color: '#c08a5a' }); pen.line([P(0.06, 0.2), P(0.08, 0.0)], { w: s * 0.02, color: '#c08a5a' }); });
+    };
+    K.swing = (x, top, y, w, colors) => {
+      K.overlay((pen) => { for (const sd of [-1, 1]) pen.line([[x + sd * w * 0.45, top], [x + sd * w * 0.45, y]], { w: 5, color: '#c8f0a0', taper: 0 }); for (let k = 0; k < 14; k++) { const t = k / 13; pen.dab(x - w * 0.45, top + (y - top) * t, 7, K.pick(['#ff6ab0', '#ffd23a', '#ffffff'])); pen.dab(x + w * 0.45, top + (y - top) * t, 7, K.pick(['#ff6ab0', '#ffd23a', '#ffffff'])); } pen.line([[x - w * 0.55, y], [x + w * 0.55, y]], { w: 16, color: '#8a5a2a', taper: 0 }); });
+    };
+    K.altar = (x, y, s) => {
+      const base = K.poly([[x - s, y], [x + s, y], [x + s * 0.8, y - s * 0.4], [x - s * 0.8, y - s * 0.4]]);
+      K.fill(base, K.split(x - s, 0, x + s, 0, ['#ffe0a0', '#d08a4a', '#7a3a2a', '#2a0a1a'])); K.focus(base, 0.7);
+      K.flame(x, y - s * 0.35, s * 1.1, s * 2.2);
+      K.blob(x, y - s, s * 2.2, '#ffb02a', 0.45);
     };
 
     K.sparks = (n, region, cols) => {

@@ -57,3 +57,9 @@ node video/reel.js $PWD video/ramayana-reel.mp4 path/to/stuti-audio
 The reel's length follows the audio file. `video/music.py` is the original synthesized raga Yaman instrumental used in the first cut.
 
 The fonts are Tiro Devanagari Hindi and Cinzel Decorative, both under the SIL Open Font License.
+
+## Rama and Sita: 30 paintings (`src/ramsita/`, rendered to `out-ramsita/`)
+
+The love story from the first glance in Janaka's garden to the last morning at Panchavati before the golden deer. Fifteen are landscape (1800×1200) and fifteen are vertical (1200×1800). The scenes follow Valmiki, with the garden meeting, Gauri prayer and varamala from the Ramcharitmanas and the forest swing from folk song. The mood takes inspiration from animated Ramayana films, but the compositions and style are original.
+
+Render with `node render.js --set=ramsita` (or pass ids, space separated). `out-ramsita/contact-sheet.jpg` shows all thirty.
