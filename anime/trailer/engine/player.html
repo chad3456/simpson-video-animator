@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Pop-collage trailer player</title>
+<style>
+@font-face { font-family: Bangers; src: url(../fonts/Bangers-Regular.ttf); }
+@font-face { font-family: Anton; src: url(../fonts/Anton-Regular.ttf); }
+@font-face { font-family: Abril; src: url(../fonts/AbrilFatface-Regular.ttf); }
+@font-face { font-family: RubikMono; src: url(../fonts/RubikMonoOne-Regular.ttf); }
+@font-face { font-family: Marker; src: url(../fonts/PermanentMarker-Regular.ttf); }
+html, body { margin: 0; background: #111; }
+canvas { display: block; width: 1280px; height: 720px; }
+#ui { color: #ddd; font: 14px sans-serif; padding: 8px; }
+</style></head>
+<body>
+<canvas id="c" width="1280" height="720"></canvas>
+<div id="ui"></div>
+<script src="core.js"></script>
+<script src="cast.js"></script>
+<script src="scenes.js"></script>
+<script>
+(async function () {
+  const q = new URLSearchParams(location.search);
+  const ep = q.get('ep') || '../beautiful-idiot';
+  const render = q.get('render') === '1';
+  const ctx = document.getElementById('c').getContext('2d');
+  const tl = await (await fetch(ep + '/timeline.json')).json();
+  await Promise.all(['Bangers', 'Anton', 'Abril', 'RubikMono', 'Marker'].map(f => document.fonts.load(`40px ${f}`)));
+  await document.fonts.load('700 27px Inter');
+  window.Toon = {
+    duration: tl.total,
+    renderAt(t) { Scenes.draw(ctx, tl, t); }
+  };
+  window.__ready = true;
+  if (!render) {
+    let audio = new Audio(ep + '/episode.wav'), t0 = performance.now(), start = Number(q.get('t') || 0);
+    document.getElementById('ui').textContent = 'click to play with sound';
+    document.body.onclick = () => { audio.currentTime = start; audio.play(); };
+    (function loop() { const t = audio.paused ? start : audio.currentTime; Toon.renderAt(t); requestAnimationFrame(loop); })();
+  }
+})();
+</script>
+</body></html>

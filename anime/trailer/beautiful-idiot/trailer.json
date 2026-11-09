@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "Beautiful Idiot",
+    "slug": "beautiful-idiot",
+    "sub": "A trailer. Loosely adapted from Dostoevsky's The Idiot.",
+    "bpm": 120,
+    "fps": 24,
+    "gap": 0.18,
+    "lead": 0.35,
+    "tail": 0.45
+  },
+  "cast": {
+    "narr":   {"name": "Narrator", "voice": "am_onyx:0.55+am_fenrir:0.45", "speed": 0.98},
+    "haru":   {"name": "Haru", "voice": "am_puck", "speed": 1.0},
+    "nana":   {"name": "Nana", "voice": "af_bella:0.7+af_nicole:0.3", "speed": 1.06},
+    "ryuji":  {"name": "Ryuji", "voice": "bm_lewis", "speed": 0.95},
+    "boss":   {"name": "Interviewer", "voice": "bm_daniel", "speed": 1.05},
+    "friends":{"name": "The Glitter Four", "voice": "af_nova:0.5+af_sky:0.5", "speed": 1.15}
+  },
+  "shots": [
+    {"id": "cold_city", "min": 4, "music": "intro", "lines": [
+      {"who": "narr", "text": "This city has fourteen million people."}]},
+    {"id": "one_idiot", "min": 3.5, "music": "intro", "sfx": [{"line": 0, "frac": 0.72, "name": "boom"}], "lines": [
+      {"who": "narr", "text": "And exactly one idiot."}]},
+    {"id": "haru_intro", "min": 5, "music": "haru", "sfx": [{"at": 0, "name": "pop"}], "lines": [
+      {"who": "haru", "text": "Oh! Hello! Lovely weather. Is it Tuesday?"}]},
+    {"id": "haru_list", "min": 6, "music": "haru", "sfx": [
+      {"line": 0, "frac": 0.02, "name": "stamp"}, {"line": 0, "frac": 0.17, "name": "stamp"},
+      {"line": 0, "frac": 0.38, "name": "stamp"}, {"line": 0, "frac": 0.62, "name": "riser"}, {"line": 0, "frac": 0.95, "name": "ding"}], "lines": [
+      {"who": "narr", "text": "No job. No girlfriend. Ever. No money. And somehow, the happiest man in Tokyo."}]},
+    {"id": "haru_back", "min": 6, "music": "haru", "sfx": [{"line": 0, "frac": 0.86, "name": "faint"}], "lines": [
+      {"who": "narr", "text": "Raised in a lighthouse by his grandmother, he read three thousand books, and fainted at anything too beautiful."},
+      {"who": "haru", "text": "Sunsets, mostly. And one very handsome goat."}]},
+    {"id": "haru_jobs", "min": 5, "music": "haru", "sfx": [
+      {"line": 1, "frac": 1.0, "off": 0.15, "name": "stamp"}, {"line": 1, "frac": 1.0, "off": 0.45, "name": "stamp"}, {"line": 1, "frac": 1.0, "off": 0.7, "name": "stamp"}], "lines": [
+      {"who": "boss", "text": "Where do you see yourself in five years?"},
+      {"who": "haru", "text": "Alive, I hope! Is that too ambitious?"}], "pad": 1.2},
+    {"id": "haru_content", "min": 5, "music": "haru", "lines": [
+      {"who": "haru", "text": "I have a window, a library card, and Lev. What else does a person need?"}]},
+    {"id": "meanwhile", "min": 2, "music": "fill", "sfx": [{"at": 0.05, "name": "whoosh"}], "lines": []},
+    {"id": "nana_intro", "min": 5, "music": "nana", "sfx": [{"at": 0, "name": "hit"}], "lines": [
+      {"who": "narr", "text": "Nana Kurosaki. Raised in a hotel penthouse by forty-two staff, and zero parents."}]},
+    {"id": "nana_friends", "min": 4, "music": "nana", "sfx": [
+      {"line": 1, "frac": 0.6, "name": "shutter"}, {"line": 1, "frac": 0.9, "name": "shutter"}], "lines": [
+      {"who": "narr", "text": "Two million followers. Four best friends."},
+      {"who": "friends", "text": "Nana! Selfie!"}]},
+    {"id": "nana_alone", "min": 4, "music": "soft", "lines": [
+      {"who": "narr", "text": "And nobody to call at three in the morning."}], "pad": 0.8},
+    {"id": "nana_sass", "min": 3.5, "music": "nana", "sfx": [{"at": 0, "name": "hit"}], "lines": [
+      {"who": "nana", "text": "Darling, I'm not lonely. I'm exclusive."}]},
+    {"id": "one_fine_day", "min": 3, "music": "riser", "sfx": [{"at": 0, "name": "riser"}], "lines": [
+      {"who": "narr", "text": "Then, one fine day..."}]},
+    {"id": "crash", "min": 3, "music": "stop", "sfx": [{"at": 1.4, "name": "crash"}, {"at": 0.1, "name": "whoosh"}], "lines": []},
+    {"id": "who_am_i", "min": 4, "music": "stop", "lines": [
+      {"who": "nana", "text": "Do you have any idea who I am?"},
+      {"who": "haru", "text": "No. Do you?"}], "pad": 0.6},
+    {"id": "faint", "min": 4, "music": "haru", "sfx": [{"at": 0, "name": "hit"}, {"line": 0, "frac": 1.0, "off": 0.25, "name": "faint"}], "lines": [
+      {"who": "haru", "text": "Oh no. You're beautiful."},
+      {"who": "nana", "text": "Did he just... faint?", "gap": 0.9}]},
+    {"id": "montage_shop", "min": 3.5, "music": "montage", "sfx": [{"line": 1, "frac": 1.0, "off": 0.1, "name": "ding"}], "lines": [
+      {"who": "nana", "text": "Pick anything. My treat."},
+      {"who": "haru", "text": "This umbrella! It's a very good umbrella."}]},
+    {"id": "montage_bus", "min": 3.5, "music": "montage", "lines": [
+      {"who": "nana", "text": "People just... sit here? Together?"}]},
+    {"id": "montage_badge", "min": 4, "music": "montage", "lines": [
+      {"who": "friends", "text": "Who is that idiot?"},
+      {"who": "haru", "text": "Me! It's a good name. Nobody expects me to lie."}]},
+    {"id": "nana_heart", "min": 4, "music": "soft", "lines": [
+      {"who": "nana", "text": "He's nobody. So why can't I stop thinking about nobody?"}], "pad": 0.6},
+    {"id": "ryuji", "min": 3.5, "music": "drama", "sfx": [{"at": 0, "name": "hit"}], "lines": [
+      {"who": "ryuji", "text": "A hundred million yen says she's mine."}]},
+    {"id": "fire", "min": 4, "music": "drama", "sfx": [{"line": 0, "frac": 1.0, "off": 0.1, "name": "fire"}], "lines": [
+      {"who": "nana", "text": "You want to buy me? Watch your price burn."}], "pad": 1.0},
+    {"id": "haru_serious", "min": 4, "music": "soft", "lines": [
+      {"who": "haru", "text": "Nana. You don't have to prove anything. Not to them. Not to me."}], "pad": 0.5},
+    {"id": "rapid", "min": 5, "music": "full", "sfx": [{"at": 0, "name": "hit"}], "lines": [
+      {"who": "narr", "text": "He has nothing."},
+      {"who": "narr", "text": "She has everything."},
+      {"who": "narr", "text": "Together, they might finally have... enough."}]},
+    {"id": "together", "min": 4, "music": "full", "lines": [
+      {"who": "nana", "text": "You're an idiot. You know that?"},
+      {"who": "haru", "text": "I know! Isn't it wonderful?"}]},
+    {"id": "title", "min": 8, "music": "title", "sfx": [{"at": 0, "name": "hit"}, {"at": 0.6, "name": "stamp"}], "lines": [
+      {"who": "narr", "text": "Beautiful Idiot.", "at": 0.7},
+      {"who": "haru", "text": "Coming soon. Probably. Is it Tuesday?", "gap": 1.2}], "pad": 1.6}
+  ]
+}
