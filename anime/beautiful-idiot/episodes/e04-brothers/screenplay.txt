@@ -1,0 +1,202 @@
+title: Brothers
+episode: 4
+slug: e04-brothers
+sub: in which two lonely men swap presents and two strong women meet
+logline: Haru visits Ryuji and they become brothers. Aya reads The Idiot overnight and takes Haru to the Tanabata festival. At Café Pochi, Aya and Nana collide, and Haru can't lie.
+next: Beautiful Idiot
+
+== SCENE cold_open | set=den time=night music=soft
+@ nana x=640 expr=sad look=down
+BEAT 1.5 [wide] {GOZEN TOWER · 3:00 AM|label}
+NANA (sad, thought) [close:nana]: Ryuji's tower has sixty floors. From the top you can see my hotel. It looks small from here. Like a toy.
+BEAT 1 [insert:phone:Are you awake?]
+NANA (sad, thought) [close:nana]: Delete. Delete. He's an idiot. He's asleep. He's definitely asleep.
+BEAT 1 [insert:phone:Message deleted] (sfx=tick)
+NANA (sad, thought) [close:nana] {DELETED|stamp}: Good night, Haru.
+
+== OP
+
+== TITLE
+
+== SCENE letter | set=room_haru music=haru amb=room
+@ haru x=420 expr=sad
+@ kobayashi x=860 expr=smile
+KOBAYASHI (smile) [two]: Mister Mishima! A letter for you. From the island. I read it by accident. Your grandmother says hello, and the goat ate the doormat.
+HARU (smile) [close:haru]: Professor eats a doormat every spring. It's how he knows it's spring.
+KOBAYASHI (serious) [close:kobayashi]: You didn't sleep.
+HARU (sad) [close:haru]: I kept my phone on all night, in case it rang at three. It didn't.
+@ kenta x=640 expr=smirk walk=left
+KENTA (smirk) [close:kenta] {INFORMATION|label}: Free information, this time only. She's at Gozen Tower. The top floor. My cousin delivered sushi.
+HARU (serious) [close:haru]: Then I'll go to Gozen Tower.
+KENTA (wow) [close:kenta]: To get her back?
+HARU (smile) [close:haru]: No. To visit Ryuji. He looked very lonely at the party. Somebody should visit him.
+KOBAYASHI (wow) [close:kobayashi] {WHAT?!|comic}: You want to visit your rival? With what, a cactus?
+HARU (smile) [close:haru]: With rice balls. Lev can come too, if he wants.
+KENTA (smirk) [close:kenta]: You're going to bring a cactus to a crypto king's tower.
+HARU (smile) [close:haru]: Lev has never seen sixty floors. It'll be very educational for him.
+KOBAYASHI (smile) [close:kobayashi] {GOOD LUCK, LEV|label}: Good luck, Lev.
+
+== CARD | text=GOZEN TOWER | sub=floor 60 | c1=#141010 | c2=#3a1a1a | music=drama
+
+== SCENE den | set=den music=drama
+@ ryuji x=420 expr=smirk
+@ haru x=860 expr=smile
+@ prop cactus x=1040 y=560 s=0.8
+BEAT 1.5 [wide] (sfx=door)
+RYUJI (angry) [close:ryuji] {YOU AGAIN|label}: You've got some nerve, cardigan. She's not here. She went shopping. With my card.
+HARU (smile) [close:haru]: That's all right. I came to see you. I brought rice balls. Salmon and tuna mayonnaise. I didn't know which kind of person you are.
+RYUJI (wow) [close:ryuji]: ...Tuna mayonnaise. Obviously.
+BEAT 2 [two] {RICE BALLS|label}
+RYUJI (serious) [close:ryuji]: Why are you being nice to me? I tried to buy the woman you love. I asked how much you cost.
+HARU (smile) [close:haru]: You told her you counted her lights. For twenty years. That isn't a buying thing. That's a lonely thing.
+RYUJI (sad) [close:ryuji]: My mother cleaned rooms at the Hotel Kurosaki. We lived across the street in one room with no window. I used to stand outside and look up.
+HARU (serious) [close:haru]: I lived in a lighthouse with a window that was mostly lamp. I kept it on all night, because I was scared of the dark.
+RYUJI (wow) [close:ryuji] {SAME|stamp}: So we're the same. Two idiots keeping lights on.
+HARU (smile) [close:haru]: Then we should swap something. Grandma says that's what brothers do.
+HARU (smile) [insert:keychain] {LIGHTHOUSE|label}: Here. My lighthouse keychain. It's the only thing I own that isn't a cactus.
+RYUJI (serious) [insert:medallion] {¥|comic}: And this. My first gold. I bought it with my first million. Take it.
+HARU (wow) [close:haru]: It's very heavy. Is it heavy for you, too?
+RYUJI (sad) [close:ryuji]: Every day.
+RYUJI (serious) [close:ryuji] {BROTHERS|ransom}: Brothers, then. But listen, brother. If she chooses you, I don't know what I'll do. I really don't.
+HARU (smile) [close:haru]: Then if that happens, come to my room, and we'll talk about it over rice balls.
+RYUJI (laugh) [close:ryuji]: You really are an idiot.
+HARU (laugh) [close:haru]: Everyone keeps saying that like it's news!
+@ nana x=640 expr=wow walk=left
+NANA (wow) [close:nana] {...!|comic}: Haru? What are you doing here? Why are you eating rice balls with Ryuji?
+HARU (smile) [close:haru]: We're brothers now. We swapped presents. I got the heavy one.
+NANA (wow) [close:nana]: You came to the house of the man I ran away with... to make friends with him?
+HARU (smile) [close:haru]: He was lonely. And so were you. I thought if two lonely people lived in the same tower, someone should check on both of them.
+NANA (smirk) [close:nana]: You are the strangest person in Tokyo.
+RYUJI (smirk) [close:ryuji]: He's the strangest person in Japan. I've checked.
+
+== SCENE gossip | set=penthouse music=nana
+@ mika x=200 expr=wow
+@ rin x=500 expr=laugh
+@ taku x=800 expr=smirk
+@ sora x=1080 expr=smirk
+BEAT 1.2 [wide] {GLITTER FOUR GROUP CHAT|label}
+MIKA (wow) [close:mika]: Okay, emergency meeting. Nana's been at Gozen Tower for three days. She posted zero photos. Zero!
+RIN (laugh) [close:rin]: Maybe she's happy! People who are happy don't post.
+SORA (smirk) [close:sora]: People who are happy post constantly, Rin. That's how you know they're not.
+TAKU (smirk) [close:taku] {CANDY MAN|label}: Candy man went to see Gozen. With rice balls. My cousin drives for Gozen. He says they're brothers now.
+MIKA (wow) [close:mika]: Brothers? With the man who stole his girlfriend?
+SORA (smirk) [close:sora]: She was never his girlfriend. That's the tragedy. Or the comedy. I can't tell with him.
+RIN (wow) [close:rin]: Should we do something? Like, as best friends?
+SORA (serious) [close:sora]: For once, maybe we should stop betting on her and start helping her.
+TAKU (smile) [close:taku] {FRIENDS|ransom}: I'm in. I owe the candy man a song.
+
+ == CARD | text=MEANWHILE... | sub=at Ishida Books | c1=#19b3a6 | c2=#e9d9b8 | music=soft
+
+== SCENE bookshop | set=bookshop music=soft
+@ aya x=420 expr=angry
+@ haru x=860 expr=smile walk=right
+BEAT 1.2 [wide] (sfx=door)
+AYA (angry) [close:aya] {THE IDIOT|label}: I read it. Your book. The whole thing, last night. I didn't sleep.
+HARU (wow) [close:haru]: You read all of it? In one night? It's seven hundred pages!
+AYA (angry) [close:aya]: And the ending is terrible! Everyone loses! The kind prince ends up worse than when he started! Why would you read that eleven times?
+HARU (smile) [close:haru]: Because for six hundred pages, he's kind anyway. Even when it doesn't work. I wanted to learn how to do that.
+AYA (sad) [close:aya]: ...That's the stupidest, nicest reason I've ever heard.
+AYA (smirk) [close:aya]: Tonight is the Tanabata festival. The shop has a stall. I need someone to carry boxes. You'll do. Don't read anything into it.
+HARU (smile) [close:haru] {TANABATA|ransom}: I love carrying boxes! I'll bring Lev.
+AYA (smirk) [close:aya]: Leave the cactus.
+HARU (smile) [close:haru]: Aya, do you want to know my favourite part of the book?
+AYA (smirk) [close:aya]: Not really. Tell me anyway.
+HARU (smile) [close:haru]: When the prince says that beauty will save the world. Everyone laughs at him. But he means it. I think he means beauty in people. The kind that's hard to see.
+AYA (sad) [close:aya]: And who do you see it in, prince?
+HARU (smile) [close:haru]: Everyone, a little. Some people a lot. You, for example. You hide it under the dictionary throwing.
+AYA (wow) [close:aya] {...!|comic}: Who told you about the dictionary?
+HARU (smile) [close:haru]: Mister Kobayashi. By accident.
+
+== SCENE festival | set=street time=night music=montage amb=party sign=TANABATA ★
+@ aya x=420 expr=smile
+@ haru x=860 expr=smile
+BEAT 1.5 [wide] (sfx=sparkle) {TANABATA|comic}
+AYA (smile) [two]: You write a wish on a paper strip and hang it on the bamboo. Then you pretend you don't care if it comes true.
+HARU (smile) [close:haru]: What did you wish for?
+AYA (smirk) [close:aya] {SECRET|stamp}: That's a secret. Wishes are like books: you don't tell people the ending.
+HARU (smile) [close:haru]: I wished that everyone I know sleeps well tonight. It's a big wish. It covers a lot of people.
+AYA (smile) [close:aya]: ...Does it cover me?
+HARU (smile) [close:haru]: It covers you first. You didn't sleep last night because of my book.
+AYA (smile) [close:aya]: My father used to bring me here. He wrote the same wish every year: more customers. He never got them. He didn't mind.
+HARU (smile) [close:haru]: What would he wish for now?
+AYA (sad) [close:aya]: That I stop pretending the shop is enough. That's what he'd wish. He was annoying like that. Like you.
+BEAT 2 [two] (smile) {★|comic}
+@ nana x=640 expr=angry walk=left
+@ aya x=300
+@ haru x=980
+NANA (angry) [close:nana] {...|comic}: Well. Look who's at the festival. With a bookshop.
+AYA (smirk) [close:aya]: And look who's at the festival with a credit card that isn't hers.
+@ kobayashi x=640 expr=wow
+KOBAYASHI (wow) [close:kobayashi] {TOMATOES ¥100|label}: Tomatoes! Award-winning tomatoes! Oh dear. Oh no. I'm going to need a bigger notebook.
+@ kobayashi hide
+NANA (smirk) [close:nana]: Haru. Café Pochi. Tomorrow at three. Bring the bookshop.
+
+== CARD | text=CAFÉ POCHI | sub=3:00 PM | c1=#e5322a | c2=#ffe9c2 | music=drama
+
+== SCENE showdown | set=cafe music=drama amb=cafe
+@ nana x=300 expr=smirk
+@ haru x=640 expr=wow
+@ aya x=980 expr=smirk
+@ prop table x=640 y=560 s=1.3
+@ prop cup x=560 y=560 s=1
+@ prop cup x=720 y=560 s=1
+BEAT 2 [wide] {ROUND ONE|stamp}
+NANA (smirk) [close:nana]: So. You're the bookshop.
+AYA (smirk) [close:aya]: And you're the girl who set fire to a hundred million yen to get attention.
+NANA (angry) [close:nana]: It was a statement.
+AYA (smirk) [close:aya]: Statements are cheaper in writing. I sell paper, if you'd like some.
+HARU (wow) [close:haru] {HELP|label}: Should I order cake? I feel like this needs cake.
+NANA (angry) [close:nana] {CHOOSE|comic}: No cake. Choose, Haru. Her or me. Right now. You're honest. Be honest.
+AYA (serious) [close:aya]: Yes. Be honest. It's your one talent.
+BEAT 3 [close:haru] (sad)
+HARU (serious) [close:haru]: I love Nana. Because she's sad, and pretends not to be, and I want to sit with her at three in the morning for the rest of my life.
+NANA (wow) [close:nana] {!!!|comic}: ...
+HARU (serious) [close:haru]: And I like Aya very much. Because she's kind, and pretends not to be, and she read seven hundred pages in one night because I said a book made me less alone.
+AYA (sad) [close:aya]: So you love her. And you like me "very much".
+HARU (sad) [close:haru]: I'm sorry. You asked me to be honest. I'm not good at being anything else.
+BEAT 2.5 [close:aya] (sad) {...|comic}
+NANA (sad) [close:nana]: Don't apologise. That's worse. An honest man apologising is like a sunset saying sorry for being orange.
+AYA (angry) [close:aya] {GOODBYE|label}: You know what the worst part is? The prince in your book said the exact same thing. And I still hated him for it.
+@ aya hide
+BEAT 1.5 [wide] (sfx=door)
+NANA (sad) [close:nana]: You should have lied, Haru. Just once. Everybody lies once.
+HARU (sad) [close:haru]: If I lie to you once, how would you know when I'm not lying?
+NANA (sad) [close:nana]: ...That's exactly why I'm scared of you.
+@ nana hide
+BEAT 2 [wide] {TABLE FOR ONE|label}
+@ taku x=860 expr=sad walk=left
+TAKU (sad) [two]: I saw both of them leave. One crying, one angry. Man. You really don't do anything halfway.
+HARU (sad) [close:haru]: I told the truth, Taku. Why does the truth make everyone cry?
+TAKU (smile) [close:taku]: Because nobody tells it. We're not used to it. It's like spicy food. You cry the first time.
+HARU (smile) [close:haru]: Does it get better?
+TAKU (smile) [close:taku] {SPICY|comic}: Eventually you start ordering it.
+
+== SCENE sunday | set=rooftop time=night music=soft amb=night
+@ haru x=640 expr=sad
+BEAT 1 [insert:phone:GRANDMA\ncalling...] (sfx=phone)
+GRANDMA (smile, phone) [close:grandma] {SUNDAY|label}: It's Sunday, Haru. You sound sad.
+HARU (sad) [close:haru]: I told the truth to two people, Grandma, and they both walked away.
+GRANDMA (serious, phone) [close:grandma]: Haru. Kindness isn't a plan. It's a way of walking. But sometimes, you still have to choose a direction.
+HARU (sad) [close:haru]: What if I choose, and it hurts someone?
+GRANDMA (smile, phone) [close:grandma]: It will. That's how you know it was a real choice. Then you go and make the person you hurt a cup of tea.
+HARU (smile) [close:haru]: Aya doesn't like tea. She likes books with terrible endings.
+GRANDMA (laugh, phone) [close:grandma]: Then find her a book with a good one.
+HARU (smile) [close:haru]: Grandma, how did you know Grandpa was the one?
+GRANDMA (smile, phone) [close:grandma]: He fell asleep on my shoulder on the ferry, and I didn't move for two hours, and my arm went numb, and I was happy. That's how.
+HARU (smile) [close:haru] {THE FERRY|label}: I'll remember that. Numb arm. Happy.
+GRANDMA (serious, phone) [close:grandma]: And Haru? Eat something green. You always forget the green.
+HARU (smile) [close:haru]: I had a cucumber on Thursday. Lev ate half.
+GRANDMA (laugh, phone) [close:grandma]: That cactus eats better than you. Goodnight, my beautiful boy.
+BEAT 2 [wide] (sfx=phone)
+HARU (smile, thought) [mcu:haru]: Two people walked away. But the city is still lit up, and somebody is still awake in every window.
+HARU (smile, thought) [mcu:haru]: Maybe one of them is Nana. Maybe one of them is Aya. Maybe they're both looking at the same moon and feeling silly about it.
+BEAT 2 [ext] {MOON|label}
+@ kobayashi x=330 expr=sad
+@ kenta x=950 expr=sad
+KENTA (sad) [two]: Haru. Bad information. Really bad.
+KOBAYASHI (sad) [close:kobayashi]: I didn't read it by accident this time, Mister Mishima. I read it on purpose. I'm sorry.
+KENTA (sad) [close:kenta] {NEWS|stamp}: It's on every screen. Nana Kurosaki and Ryuji Gozen. The wedding is next Saturday.
+BEAT 3 [close:haru] (wow) {SATURDAY|comic}
+
+== ED
+HARU (smile): Next time, on the last episode of Beautiful Idiot: a wedding, a runaway bride, a ferry, my grandmother, and a sunset. I think I'm going to faint. Beautiful Idiot. Bring tissues. And Lev.

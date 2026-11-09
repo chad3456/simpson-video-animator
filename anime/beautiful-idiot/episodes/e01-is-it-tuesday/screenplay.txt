@@ -1,0 +1,230 @@
+title: Is It Tuesday?
+episode: 1
+slug: e01-is-it-tuesday
+sub: in which a happy man comes to the city
+logline: Haru leaves his grandmother's lighthouse for Tokyo, fails three job interviews, crashes into an heiress on a zebra crossing, faints, and ends up with her phone.
+next: The ¥100 Umbrella
+
+== SCENE cold_open | set=lighthouse music=intro amb=sea
+@ grandma x=420 expr=smile
+@ haru x=780 expr=smile
+BEAT 2 [ext] {A LIGHTHOUSE|label}
+NARR [ext]: On a small island with one lighthouse, one goat, and three thousand donated books, lived a very happy man.
+GRANDMA [two]: Ferry's here. Have you got everything?
+HARU (smile) [two]: One suitcase, one cactus, one library card. And my umbrella. Probably.
+GRANDMA (serious) [close:grandma]: Haru. The city is very big, and very beautiful in places. Try not to faint at it.
+HARU (laugh) [close:haru] {I'LL TRY}: I'll try, Grandma. I'll only look at the ugly parts.
+GRANDMA (smile) [close:grandma]: And phone me on Sundays.
+HARU (smile) [close:haru]: Is it Sunday today?
+GRANDMA (laugh) [two] {TUESDAY!|ransom}: It's Tuesday, you silly boy. Go.
+BEAT 1.5 [insert:goat] (sfx=ferry) {GOODBYE PROFESSOR|label}
+
+== OP
+
+== TITLE
+
+== SCENE apartment | set=room_haru music=haru amb=room
+@ kobayashi x=360 expr=smile
+@ haru x=800 expr=wow walk=right
+BEAT 1.5 [wide] (sfx=door) {ROOM 3B|label}
+KOBAYASHI [wide]: And this is your room! Six tatami, one window, no furniture, very cheap.
+HARU (wow, act=bounce) [close:haru] {A WINDOW!}: It has a window! A whole window!
+KOBAYASHI (smirk) [two]: Most rooms do, young man.
+HARU (smile) [close:haru]: Not in a lighthouse. In a lighthouse the window has a very big lamp in it and you're not allowed to touch it.
+KOBAYASHI (wow) [close:kobayashi]: A lighthouse? You grew up in a lighthouse? Hm. I'm writing that down.
+@ kenta x=1060 expr=smirk
+KENTA (smirk) [close:kenta] {KENTA, 11|label}: Mister Kobayashi writes everything down. He also reads your mail.
+KOBAYASHI (wow, act=shake) [close:kobayashi]: By accident! It only happens by accident!
+KENTA [two]: Every day. By accident.
+HARU (smile) [two]: Hello! I'm Haru. This is Lev. He's a cactus.
+KENTA (wow) [close:kenta]: Why does your cactus have a face?
+HARU (smile) [close:haru]: Why does yours not?
+KENTA (serious) [close:kenta] {GOOD QUESTION|label}: Huh.
+KOBAYASHI (serious) [close:kobayashi]: Rent is due on the first. Do you have a job, Mister Mishima?
+HARU (smile) [close:haru]: Not yet. I'll get one tomorrow. Today I'm going to look out of the window.
+KENTA (smirk) [two] {BET YOU WON'T|stamp}: Bet you won't get one.
+HARU (laugh) [close:haru]: Bet I will! What are we betting?
+KENTA (smirk) [close:kenta]: Your cactus.
+HARU (wow, act=shake) [close:haru] {NOT LEV!}: Never mind. Let's bet candy.
+
+== CARD | text=THAT NIGHT | sub=on the roof | c1=#1d2a4a | c2=#24365f | music=soft
+
+== SCENE roof | set=rooftop music=soft amb=night
+@ kobayashi x=380 expr=smile
+@ haru x=860 expr=smile
+BEAT 1.5 [wide] {TOMATOES|label}
+KOBAYASHI [two]: Nobody comes up here but me and the tomatoes. You can see the whole city.
+HARU (swoon, act=swoon) [close:haru]: Oh. Oh no. It's very beautiful. Hold my cactus.
+KOBAYASHI (wow) [close:kobayashi]: Are you... fainting? At Tokyo?
+HARU (smile) [close:haru] {ALMOST|stamp}: Almost. I've got it now. It helps if I count the ugly buildings.
+KOBAYASHI (smile) [two]: So you really faint at beautiful things. Is that a medical condition?
+HARU (smile) [close:haru]: The doctor called it a very sensitive nervous system. Grandma calls it being paid attention to by the world.
+HARU (serious) [close:haru]: When I was little I fainted so often they sent me to the island. Grandma kept the lighthouse. The library sent us their old books, three thousand of them, and I read every one. Twice.
+KOBAYASHI (wow) [close:kobayashi] {3,000 BOOKS|comic}: Three thousand books, and you still came to Tokyo with no job?
+HARU (laugh) [close:haru]: None of the books were about jobs. They were mostly about people being kind to each other, and then not.
+KOBAYASHI (serious) [close:kobayashi]: Let me tell you something about this city, Mister Mishima. A man who always tells the truth here is either a saint or an idiot.
+HARU (smile) [close:haru]: Which one am I?
+KOBAYASHI (smirk) [close:kobayashi] {IDIOT|stamp}: Ask me again on the first of the month.
+
+== CARD | text=THE NEXT DAY | sub=job hunting
+
+== SCENE interviews | set=office music=haru
+@ boss x=330 expr=neutral
+@ haru x=900 expr=smile
+@ prop desk x=330 y=520 s=1
+BOSS [two] {INTERVIEW #39|label}: Why do you want to work at Sunrise Insurance?
+HARU (smile) [close:haru]: I don't, really. But Mister Kobayashi says rent is due on the first.
+BEAT 0.8 [close:boss] (sfx=stamp) {REJECTED|stamp}
+BOSS [two] {INTERVIEW #40|label}: What is your greatest weakness?
+HARU (smile) [close:haru]: I faint at beautiful things. Sunsets, mostly. Once a very handsome goat.
+BEAT 0.8 [close:boss] (sfx=stamp) {REJECTED|stamp}
+BOSS [two] {INTERVIEW #41|label}: Where do you see yourself in five years?
+HARU (laugh) [close:haru]: Alive, I hope! Is that too ambitious?
+BEAT 1.2 [two] (sfx=stamp) {REJECTED ×41|stamp}
+HARU (smile) [close:haru] {41!}: Forty-one interviews! That's a lot of very nice people who don't want me.
+NARR [wide]: Haru Mishima. No job. No girlfriend, ever. No money. And somehow, the happiest man in Tokyo.
+
+== SCENE sunday_call | set=room_haru time=night music=soft amb=room
+@ haru x=640 expr=smile
+BEAT 1 [insert:phone:GRANDMA\ncalling...] (sfx=phone)
+HARU (smile) [close:haru] {GRANDMA|label}: Grandma! Is it Sunday?
+GRANDMA (smile, phone) [close:grandma]: No, it's Tuesday. I worried. Did you faint?
+HARU (smile) [close:haru]: Only a little, on a roof. And I went to three interviews. Everybody was very polite and nobody wanted me.
+GRANDMA (laugh, phone) [close:grandma]: Did you tell them the truth again?
+HARU (smile) [close:haru]: I tried to tell them a lie once, but it came out as the truth halfway through.
+GRANDMA (smile, phone) [close:grandma]: Then don't change, Haru. The right door will open for the wrong reasons. It usually does.
+HARU (smile) [close:haru]: Give Professor a carrot from me.
+GRANDMA (smile, phone) [close:grandma] {PROFESSOR SAYS HI|label}: He's eating my slipper. I'll tell him you said hello.
+
+== CARD | text=MEANWHILE... | c1=#ff3e8f | c2=#ffd1e3
+
+== SCENE penthouse | set=penthouse music=nana
+@ mika x=180 expr=smile
+@ rin x=400 expr=laugh
+@ nana x=640 expr=smirk
+@ taku x=880 expr=smirk
+@ sora x=1100 expr=smirk
+BEAT 1.5 [wide] (sfx=shutter) {HOTEL KUROSAKI · 52F|label}
+NARR [wide]: Fifty-two floors up, in a penthouse with forty-two staff and zero parents, lived Nana Kurosaki.
+MIKA (wow) [close:mika] {2,000,000|comic}: Nana! You just hit two million followers!
+RIN (laugh) [close:rin]: Two million! That's like, a whole city of people who love you!
+NANA (smirk) [close:nana]: Darling, two million people love my shoes. It's different.
+RIN (wow) [close:rin]: Did your dad call for your birthday?
+NANA (smirk) [close:nana] {¥¥¥|comic}: He sent a car. A whole car, with a bow on it. He's very consistent. He sends a car instead of a phone call every year.
+SORA (smirk) [close:sora]: You have nine cars, Nana.
+NANA (smirk) [close:nana]: Ten. I'm saving up for a parking garage.
+TAKU (smirk) [close:taku]: Party's at your place Friday, right? Your birthday. Twenty-five. Ancient.
+SORA (smirk) [close:sora]: Say it louder, Taku. The doorman didn't hear.
+FRIENDS (laugh) [close:friends] {SELFIE!|ransom}: Selfie! Everybody, selfie!
+BEAT 1 [wide] (sfx=shutter)
+@ togashi x=640 expr=serious walk=right
+@ nana x=360
+TOGASHI (serious) [wide] {MR. TOGASHI|label}: Good evening, ladies. Gentleman. Nana, a word.
+NANA (smirk) [close:nana]: Mister Togashi. My guardian. My accountant. My weather forecast. What's the forecast?
+TOGASHI (serious) [close:togashi]: At your party on Friday, the board would like you to consider a proposal.
+NANA (wow) [close:nana]: A proposal. Like a business proposal?
+TOGASHI (serious) [close:togashi] {RYUJI GOZEN|label}: Like a marriage proposal. From Mister Ryuji Gozen. He is very rich and very interested.
+NANA (angry) [close:nana]: Is he interested in me, or in the hotel?
+TOGASHI (serious) [close:togashi]: Is there a difference, my dear?
+BEAT 1.5 [close:nana] (sad)
+NANA (smirk) [close:nana] {EXCLUSIVE|comic}: Tell the board I'm exclusive. Good night, Mister Togashi.
+
+== CARD | text=3:00 AM | c1=#1d2a4a | c2=#24365f | music=soft
+
+== SCENE alone | set=penthouse time=night music=soft
+@ nana x=640 expr=sad look=down
+BEAT 2 [wide] {NO NEW MESSAGES|label}
+NANA (sad, thought) [close:nana]: Two million followers. Four best friends. Forty-two staff. And I can't think of one person to call.
+BEAT 1.5 [insert:phone:3:00 AM\nNo new messages]
+NANA (smirk, thought) [close:nana]: Tomorrow I'll buy something enormous. That always helps. For about an hour.
+
+== CARD | text=ONE FINE DAY... | c1=#2e7fe0 | c2=#7cc4ff | music=riser
+
+== SCENE crash | set=crossing music=stop amb=city
+@ haru x=520 expr=smile walk=right
+@ nana x=760 expr=neutral walk=left look=down
+BEAT 1.6 [wide] (sfx=whoosh)
+BEAT 1.4 [wide] (sfx=crash) {CRASH!}
+@ haru expr=wow
+@ nana expr=angry
+NANA (angry) [close:nana] {WATCH IT!|comic}: Hey! Watch where you're walking! Do you have any idea who I am?
+HARU (smile) [close:haru]: No. Do you?
+BEAT 1.5 [close:nana] (wow) {?|comic}
+NANA (wow) [close:nana]: Excuse me?
+HARU (wow) [close:haru]: Oh no.
+NANA (angry) [close:nana]: Oh no, what?
+HARU (swoon, act=faint) [close:haru] {BEAUTIFUL|comic}: You're beautiful.
+BEAT 1.2 [close:nana] (wow, sfx=faint) {THUD.|comic}
+NANA (wow) [two]: Did he just... faint? On a zebra crossing?
+NANA (smirk) [close:nana]: Wow. I've had men fall for me, but never literally.
+NARR [wide]: She stepped over him and went to buy something enormous. She did not notice that her phone had landed in his cardigan pocket.
+
+== SCENE gossip | set=room_haru time=night music=haru amb=room
+@ haru x=640 expr=wow
+@ kenta x=330 expr=wow
+@ kobayashi x=960 expr=wow
+BEAT 1 [insert:phone:47 missed calls\nMIKA: where r u lol] (sfx=phone)
+KENTA (wow) [close:kenta] {NANA KUROSAKI!|comic}: That's Nana Kurosaki's phone! The Nana Kurosaki! You stole the most famous phone in Tokyo!
+HARU (wow) [close:haru]: I didn't steal it. It fell into my pocket while I was unconscious.
+KOBAYASHI (smirk) [close:kobayashi] {GOSSIP|label}: Nana Kurosaki. Heiress of Hotel Kurosaki. Mother gone, father in Singapore, raised by the staff. Engaged, they say, to a crypto king.
+KENTA (smirk) [close:kenta]: How do you know all that?
+KOBAYASHI (smile) [close:kobayashi]: Magazines. And her doorman's mail. By accident.
+HARU (serious) [close:haru]: She looked very tired. Like someone who'd been crying at three in the morning.
+KENTA (smirk) [two]: She looked rich, Haru.
+HARU (smile) [close:haru]: You can be both. I'll take it back to her tomorrow.
+KOBAYASHI (wow) [close:kobayashi]: To the Hotel Kurosaki? Dressed like that? They'll throw you out.
+HARU (laugh) [close:haru] {WORTH A TRY|label}: Then I'll have been thrown out of a very nice hotel. That's a new experience!
+
+== SCENE lobby | set=lobby music=nana
+@ doorman x=420 expr=serious
+@ haru x=860 expr=smile
+BEAT 1.2 [wide] (sfx=chime) {HOTEL KUROSAKI|label}
+DOORMAN (serious) [two]: Deliveries are round the back, sir.
+HARU (smile) [close:haru]: I'm not a delivery. Well, I'm delivering a phone. So maybe I am a delivery.
+DOORMAN (serious) [close:doorman]: Miss Kurosaki does not receive visitors in cardigans.
+@ nana x=640 expr=smirk walk=left
+NANA (smirk) [wide]: Let him up, Kenji. I want to see what a man who faints at women looks like when he's conscious.
+@ doorman hide
+@ haru x=420
+@ nana x=860
+HARU (smile) [two]: Here's your phone. Forty-seven missed calls. And a message that says, where are you, L-O-L.
+NANA (smirk) [close:nana]: Thank you. What do you want? Money? A selfie? A job?
+HARU (smile) [close:haru]: Oh, no. I just wanted to give it back. And to ask if you're all right.
+NANA (wow) [close:nana]: If I'm... all right?
+HARU (serious) [close:haru]: Yesterday you looked like you hadn't slept. Like you'd been awake at three in the morning with nobody to call.
+BEAT 2.5 [close:nana] (wow) {...|comic}
+NANA (serious) [close:nana]: Who told you that?
+HARU (smile) [close:haru]: Your face did. Faces are very honest. It's the mouths that tell lies.
+@ mika x=150 expr=wow
+@ taku x=1130 expr=smirk
+TAKU (smirk) [close:taku] {WHO IS THIS GUY?|label}: Nana! Who's the guy in the grandpa cardigan?
+MIKA (laugh) [close:mika]: He looks like a lost sheep!
+SORA (smirk) [close:sora] {IDIOT|stamp}: He looks like an idiot.
+HARU (laugh) [close:haru]: I probably am! My grandma says so too, but nicely.
+BEAT 1.5 [close:nana] (smirk)
+NANA (smirk) [close:nana] {YOU'RE HIRED|comic}: You know what? You're hired. My personal assistant. For one week.
+HARU (wow, act=bounce) [close:haru]: A job? I have a job! Kenta owes me candy!
+NANA (smirk) [close:nana] {THE RULES|label}: Rules. One: you carry my bags. Two: you never fall in love with me. Three: you never faint in public. It's embarrassing.
+HARU (smile) [close:haru]: One, yes. Three, I'll do my best. Two, I can't promise. I haven't decided yet.
+NANA (wow) [close:nana]: You haven't... decided?
+HARU (smile) [close:haru]: It seems like a big decision. I'll let you know on Friday.
+TAKU (laugh) [close:taku] {HAHAHA|ransom}: He's perfect. Nana, he's perfect. I'll give him three days before he cries.
+NANA (smirk) [two]: Don't get excited. It's a joke for my friends. You're the joke.
+HARU (smile) [close:haru]: That's all right. I like jokes. Is it Tuesday?
+NANA (laugh) [close:nana] {WEDNESDAY!|ransom}: It's Wednesday, idiot.
+HARU (laugh) [close:haru]: Oh, good. I like Wednesdays.
+
+== CARD | text=3:00 AM | sub=again | c1=#1d2a4a | c2=#24365f | music=soft
+
+== SCENE text | set=penthouse time=night music=soft
+@ nana x=640 expr=neutral look=down
+BEAT 1 [insert:phone:NEW MESSAGE\nfrom: IDIOT] (sfx=chime)
+HARU (smile, thought) [insert:letter:Good night!\nIs it Thursday tomorrow?\n- Haru (your assistant)]: Good night! Is it Thursday tomorrow? From Haru, your assistant.
+BEAT 1.5 [close:nana] (smile)
+NANA (smile, thought) [close:nana] {IDIOT|label}: It's Thursday tomorrow, idiot.
+NANA (smirk, thought) [close:nana]: I'm not going to answer him. I'm absolutely not going to answer him.
+BEAT 1.5 [insert:phone:Yes. Thursday.\nGo to sleep.] (sfx=tick)
+NARR [ext]: She answered him. And for the first time in a long time, at three in the morning, Nana Kurosaki fell asleep.
+
+== ED
+HARU (smile): Next time on Beautiful Idiot: my first day as an assistant! I carry bags, I ride a bus, and I buy a very good umbrella. The Hundred Yen Umbrella. Is it raining?

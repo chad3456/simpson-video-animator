@@ -1,0 +1,203 @@
+title: The ¥100 Umbrella
+episode: 2
+slug: e02-the-100-yen-umbrella
+sub: in which an assistant does everything wrong
+logline: Haru's first week as Nana's assistant: too many bags, a bus, a konbini, a prank that backfires, a bookshop owner who mocks him, and a ¥100 umbrella in the rain.
+next: A Hundred Million Yen
+
+== SCENE cold_open | set=room_haru music=haru amb=room
+@ kenta x=380 expr=angry
+@ haru x=860 expr=laugh
+BEAT 1 [wide] (sfx=door) {THURSDAY|label}
+KENTA (angry) [close:kenta]: Fine. A bet's a bet. One bag of candy. You got a job in one day. Nobody gets a job in one day.
+HARU (laugh) [close:haru] {CANDY!|comic}: Thank you, Kenta! Do you want half?
+KENTA (wow) [close:kenta]: You're supposed to gloat. Winners gloat.
+HARU (smile) [close:haru]: I don't know how. I'll eat it slowly instead. That's like gloating, but quieter.
+@ kobayashi x=640 expr=smile walk=right
+KOBAYASHI (smile) [wide]: Mister Mishima! An assistant needs a tie. This was mine, in nineteen eighty-two.
+HARU (wow) [close:haru] {A TIE!}: It has ducks on it.
+KOBAYASHI (smile) [close:kobayashi]: Serious ducks. Business ducks. Go and make your rent.
+
+== OP
+
+== TITLE
+
+== SCENE morning | set=penthouse music=nana
+@ nana x=420 expr=smirk
+@ haru x=860 expr=smile
+BEAT 1.2 [wide] (sfx=chime) {DAY ONE|label}
+NANA (smirk) [two]: You're late. And what is that tie?
+HARU (smile) [close:haru]: Ducks. Serious business ducks. Mister Kobayashi says they mean I'm reliable.
+NANA (smirk) [close:nana] {TO DO|label}: Today's duties. Carry my bags. Hold my coffee. Don't speak unless I'm bored. Don't faint.
+HARU (smile) [close:haru]: How will I know when you're bored?
+NANA (smirk) [close:nana]: You'll know. I sigh. It's very expensive-sounding.
+@ mika x=150 expr=laugh
+@ taku x=1130 expr=smirk
+TAKU (smirk) [close:taku] {THE BET|stamp}: Okay, okay. Ten thousand yen says the duck man cries before Friday.
+MIKA (laugh) [close:mika]: Twenty says he cries before lunch!
+HARU (smile) [close:haru]: I'd like to bet too, please. I bet I don't cry. I don't have twenty thousand yen, but I have half a bag of candy.
+TAKU (laugh) [close:taku]: Deal. Candy man is in.
+@ sora x=640 expr=smirk
+SORA (smirk) [close:sora] {SORA|label}: Can I ask you something, candy man? Why are you really here?
+HARU (smile) [close:haru]: Because Nana hired me. And because Mister Kobayashi says rent is due on the first.
+SORA (smirk) [close:sora]: Everybody who comes up here wants something from her. Money. Followers. A selfie for their mother.
+HARU (smile) [close:haru]: I'd like a selfie for my grandmother, actually. She's never seen a penthouse. She'll think it's a very tall lighthouse.
+SORA (wow) [close:sora]: ...Fine. That's weirdly acceptable.
+
+== CARD | text=SHOPPING | sub=10:00 AM | c1=#ffd21c | c2=#fffaf0
+
+== SCENE boutique | set=street music=montage sign=ÉLAN · LUXE · MODE
+@ nana x=420 expr=smirk
+@ haru x=860 expr=wow
+@ prop sign x=640 y=470 text=SALE? NEVER.
+BEAT 1.5 [wide] {14 BAGS|comic}
+HARU (wow, act=shake) [close:haru]: Nana, I can't see. I think I'm wearing a shoe box.
+NANA (smirk) [close:nana]: Assistants don't see. Assistants carry.
+HARU (serious) [close:haru]: The lady in the shop has been standing on high heels for nine hours. She hides it, but her feet hurt. Can we buy her a chair?
+NANA (wow) [close:nana] {A CHAIR?|label}: You want me to buy the shop girl a chair?
+HARU (smile) [close:haru]: Just a small chair. You're buying everything else.
+BEAT 2 [close:nana] (smirk)
+NANA (smirk) [close:nana]: Fine. Buy her a chair. Put it on my card. And don't tell anyone I did that.
+HARU (laugh) [close:haru] {SECRET CHAIR|stamp}: A secret chair! The best kind.
+NANA (smirk) [two]: Pick anything you want for yourself. My treat.
+HARU (smile) [close:haru]: I already have a cardigan.
+
+== SCENE car | set=street music=haru amb=city
+@ nana x=420 expr=angry
+@ haru x=860 expr=smile
+NANA (angry) [close:nana] {NO CAR?!|comic}: Where is my car? Where is my driver?
+HARU (smile) [close:haru]: Mister Sato? His daughter has a piano recital at eleven. I told him I'd make sure you got home.
+NANA (angry, act=shake) [close:nana]: You gave my driver the day off? You've worked for me for two hours!
+HARU (smile) [close:haru]: She's playing Chopin. She practised for six months. He was going to miss it for your shoes.
+BEAT 2.5 [close:nana] (wow)
+NANA (sad) [close:nana]: ...How do we get home, then?
+HARU (laugh) [close:haru] {THE BUS!|ransom}: The bus! It's very exciting. It has a bell.
+
+== SCENE bus | set=bus music=montage amb=city
+@ nana x=430 expr=wow
+@ haru x=850 expr=smile
+BEAT 1.5 [two] (sfx=bell) {FIRST BUS RIDE · AGE 25|label}
+NANA (wow) [close:nana]: People just... sit here? Together? With strangers?
+HARU (smile) [close:haru]: That's the best part. Everybody's going somewhere different, but for twenty minutes we're all going the same way.
+NANA (smirk) [close:nana]: That's the most ridiculous thing I've ever heard.
+HARU (smile) [close:haru]: Look, the man in the hat is going to the hospital, with flowers. The girl with the cello is late for a lesson. And that lady is asleep, and she'll wake up exactly at her stop. They always do.
+NANA (wow) [close:nana]: How do you know all that?
+HARU (smile) [close:haru]: I don't. I'm guessing. It's the best game on a bus. You try.
+NANA (smirk) [close:nana] {THE BUS GAME|label}: Fine. That man is going to buy a very ugly cardigan. Because he saw yours and got jealous.
+HARU (smile) [close:haru] {PRESS THE BELL|label}: You can press the bell when it's our stop. It's the most important job on the bus.
+BEAT 1.5 [close:nana] (smile, sfx=bell) {DING!|comic}
+NANA (laugh) [close:nana]: I pressed it! Haru, I pressed it! It went ding!
+@ grandma x=640 expr=smile
+GRANDMA (smile) [close:grandma] {CANDY?|label}: Young lady, you pressed that bell beautifully. Have a candy. My grandson used to love pressing it too.
+NANA (wow) [close:nana]: A stranger gave me a candy. On a bus. Haru, is this normal?
+HARU (smile) [close:haru]: On buses it is. It's the law of buses.
+@ grandma hide
+HARU (laugh) [close:haru]: You were perfect. A very professional ding.
+NARR [wide]: It was, the bus driver said later, the most excited anyone had ever been about his bell.
+
+== SCENE konbini | set=konbini music=haru amb=rain
+@ haru x=420 expr=smile
+@ nana x=860 expr=wow
+BEAT 1.2 [wide] (sfx=chime) {IRASSHAIMASE!|ransom}
+NANA (wow) [close:nana]: What is this place? Everything is so small and bright. Is this a museum?
+HARU (laugh) [close:haru]: It's a konbini. It's open twenty-four hours. If you're awake at three in the morning, it's awake with you.
+NANA (wow) [close:nana] {HOT FOOD?!|comic}: There's hot food in a glass box! Who thought of that? Give them a medal!
+HARU (smile) [close:haru]: Two rice balls, please. Salmon for me, and tuna mayonnaise for the lady, because she seems like a tuna mayonnaise person.
+NANA (smirk) [close:nana]: How dare you. ...I am, though.
+BEAT 1 [ext] (sfx=splash)
+HARU (wow) [close:haru]: Oh, it's raining. Wait here!
+HARU (smile) [insert:umbrella] {¥100|stamp}: One umbrella, please. The clear kind. It's a hundred yen.
+NANA (smirk) [two]: You bought the cheapest umbrella in Japan.
+HARU (smile) [close:haru]: It's a very good umbrella. You can see the rain through it. Expensive umbrellas hide the sky.
+BEAT 2 [two] (sfx=splash) {EAT-IN CORNER|label}
+NANA (neutral) [two]: Haru. Where are your parents? You talk about your grandmother, and a goat, and never about them.
+HARU (smile) [close:haru]: They're very busy people in Osaka. They make bridges. When I kept fainting, they said the island would be good for me, and that they'd visit in the summer.
+NANA (sad) [close:nana]: Did they?
+HARU (smile) [close:haru]: They sent postcards. Every summer, a postcard of a bridge. I have twenty-one bridges. They're very good bridges.
+NANA (sad) [close:nana] {POSTCARDS|label}: Mine send cars. Every birthday, a car with a bow on it.
+HARU (smile) [close:haru]: Then we're the same. We both got a lot of transport and not very much visiting.
+BEAT 2.5 [close:nana] (sad)
+NANA (smile) [close:nana]: That's the saddest thing anyone's ever said to me in a konbini. Pass the tuna mayonnaise.
+HARU (smile) [close:haru]: It's your tuna mayonnaise. I bought it for you.
+NANA (smirk) [close:nana]: I know. I just wanted you to pass me something.
+
+== CARD | text=FRIDAY | sub=the prank | c1=#a8e330 | c2=#141010
+
+== SCENE prank | set=cafe music=nana amb=cafe
+@ taku x=420 expr=smirk
+@ haru x=860 expr=smile
+@ prop table x=640 y=560 s=1
+TAKU (smirk) [two] {TALENT SCOUT|label}: Mister Mishima! I'm a talent scout. I've got a job for you. Modelling. For a catalogue of... idiots.
+HARU (wow) [close:haru]: Taku? Is that you in sunglasses?
+TAKU (smirk) [close:taku]: No. I'm Mister Tanaka. Professional scout. Do you want the job or not?
+HARU (smile) [close:haru]: That's very kind of you, Mister Tanaka. But I already have a job, and I'm not very good at it, so I should keep trying.
+HARU (smile) [close:haru]: Also, I heard your music on Nana's phone. The slow song at the end, with the rain in it. It was sad and very good. You should make more like that.
+BEAT 3 [close:taku] (wow) {...|comic}
+TAKU (sad) [close:taku]: Nobody listens to the end of that one. Everybody skips it.
+HARU (smile) [close:haru]: I didn't. I listened to it four times.
+TAKU (sad) [close:taku] {PRANK FAILED|stamp}: ...Man. I can't prank you. That's not fair.
+
+== SCENE report | set=rooftop music=haru amb=night
+@ kenta x=330 expr=smirk
+@ haru x=640 expr=smile
+@ kobayashi x=950 expr=smile
+KOBAYASHI (smile) [two]: So? How was day three of the assistant? Any crying?
+HARU (smile) [close:haru]: Taku cried, and I won twenty thousand yen. I also bought a chair for a shop lady and gave a driver the day off.
+KOBAYASHI (wow) [close:kobayashi] {FIRED?|stamp}: And you weren't fired?
+HARU (smile) [close:haru]: Not yet. Nana pressed the bell on the bus. She was very good at it.
+KENTA (smirk) [close:kenta] {INFORMATION|label}: I've got information. About the birthday party. It costs one rice ball.
+HARU (smile) [close:haru]: Here. Salmon.
+KENTA (smirk) [close:kenta]: The crypto guy, Ryuji Gozen. My cousin parks cars at the hotel. He says Gozen asked about you. He says Gozen asked how much you cost.
+KOBAYASHI (serious) [close:kobayashi]: A man like that thinks everything has a price, Mister Mishima. Be careful.
+HARU (smile) [close:haru]: That's all right. I'm very cheap. Nine hundred yen, plus a bow.
+
+
+== SCENE bookshop | set=bookshop music=soft
+@ haru x=420 expr=smile
+@ aya x=860 expr=smirk
+BEAT 1.2 [wide] (sfx=door) {ISHIDA BOOKS|label}
+AYA (smirk) [close:aya] {AYA ISHIDA|label}: We're closing. Also, cardigans that old belong in a museum, not in my shop.
+HARU (smile) [close:haru]: That's all right. I like museums. I'm looking for a present for a friend's birthday. I have one thousand yen.
+AYA (smirk) [close:aya]: A thousand yen. For a girl?
+HARU (smile) [close:haru]: For Nana. She has everything, so I thought she might like a book. Books are the only things you can have twice: once when you read them, and once when you remember them.
+AYA (wow) [close:aya]: ...Did you read that somewhere?
+HARU (smile) [close:haru]: No, I just thought it. Is it wrong?
+AYA (smirk) [close:aya] {ANNOYING|stamp}: It's annoyingly right. Fine. Over here. A photo book of sunsets, slightly damaged. Nine hundred yen.
+HARU (swoon, act=swoon) [insert:lighthouse] {SUNSETS|comic}: Oh no. Oh, they're so beautiful.
+AYA (wow) [close:aya]: Are you fainting? In my shop? Over a damaged book?
+HARU (swoon) [close:haru]: Only a little. Could you wrap it? With a bow? I'll pay you the other hundred yen for the bow.
+AYA (smirk) [close:aya]: You're ridiculous.
+HARU (smile) [close:haru]: You have a book by Dostoevsky in the window. The Idiot. Have you read it?
+AYA (smirk) [close:aya]: It's a shop, not a library. I sell them, I don't read them.
+HARU (smile) [close:haru]: It's about a prince who is so kind that everybody decides he must be stupid. I read it eleven times. It made me feel less alone.
+AYA (wow) [close:aya]: A prince who's so kind everyone thinks he's an idiot? Sounds like nobody I know.
+BEAT 1.5 [close:aya] (smile)
+AYA (smile, thought) [close:aya] {RIDICULOUS|label}: He's ridiculous. I'm going to read that book about the prince he mentioned. Not because of him. For the shop.
+
+== SCENE rain | set=park time=night weather=rain music=soft amb=rain
+@ nana x=520 expr=neutral
+@ haru x=760 expr=smile
+@ prop umbrella x=640 y=260 s=0.9
+BEAT 2 [wide] {UNDER ONE UMBRELLA|label}
+NANA (neutral) [two]: Taku says you made him cry. He says it was your fault.
+HARU (wow) [close:haru]: Oh no! Does that mean I lost the bet?
+NANA (smirk) [close:nana]: The bet was that you would cry, idiot. You won. You won twenty thousand yen and half a bag of candy.
+HARU (laugh) [close:haru]: I'll buy everyone rice balls!
+NANA (sad) [close:nana]: My birthday's tomorrow. Twenty-five. Mister Togashi will stand up with a microphone and sell me to a man with a gold tooth.
+HARU (serious) [close:haru]: You don't have to say yes to anybody.
+NANA (sad) [close:nana]: In my family, nobody says no. We say, let me think about it, and then we say yes.
+HARU (smile) [close:haru]: Then practise with me. Say no to something. Say no to this umbrella.
+NANA (smirk) [close:nana]: That's stupid.
+HARU (smile) [close:haru]: Go on.
+NANA (smile) [close:nana] {NO!|comic}: No. ...No! No to your hundred yen umbrella!
+HARU (laugh) [close:haru]: That was a beautiful no. Again!
+NANA (laugh) [close:nana] {NO! NO! NO!|ransom}: No! No to Mister Togashi! No to the board! No to ducks on ties!
+HARU (wow) [close:haru]: Not the ducks!
+BEAT 2 [two] (laugh)
+NARR [wide]: It was the first time in a very long time that Nana Kurosaki had laughed without checking who was watching.
+@ ryuji x=1120 expr=smirk
+RYUJI (smirk) [close:ryuji] {RYUJI GOZEN|label}: Who is that idiot under her umbrella?
+RYUJI (smirk) [close:ryuji]: Tomorrow I'll find out what he costs.
+
+== ED
+HARU (smile): Next time on Beautiful Idiot: Nana's birthday party! There's cake, a fireplace, a very large briefcase, and a game where everyone confesses their worst thing. A Hundred Million Yen. I'll bring the sunsets.

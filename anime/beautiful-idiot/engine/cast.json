@@ -1,0 +1,18 @@
+{
+  "narr":      {"name": "Narrator", "voice": "am_onyx:0.55+am_fenrir:0.45", "speed": 1.0},
+  "haru":      {"name": "Haru", "voice": "am_puck", "speed": 1.0},
+  "nana":      {"name": "Nana", "voice": "af_bella:0.7+af_nicole:0.3", "speed": 1.05},
+  "ryuji":     {"name": "Ryuji", "voice": "bm_lewis", "speed": 0.97},
+  "aya":       {"name": "Aya", "voice": "bf_isabella:0.6+af_kore:0.4", "speed": 1.04},
+  "kobayashi": {"name": "Mr. Kobayashi", "voice": "am_santa", "speed": 0.98},
+  "kenta":     {"name": "Kenta", "voice": "af_river:0.5+af_sky:0.5", "speed": 1.12},
+  "togashi":   {"name": "Mr. Togashi", "voice": "bm_george", "speed": 0.92},
+  "grandma":   {"name": "Grandma Fumi", "voice": "bf_emma:0.6+af_sarah:0.4", "speed": 0.88},
+  "mika":      {"name": "Mika", "voice": "af_nova", "speed": 1.1},
+  "rin":       {"name": "Rin", "voice": "af_sky", "speed": 1.12},
+  "taku":      {"name": "Taku", "voice": "am_echo", "speed": 1.05},
+  "sora":      {"name": "Sora", "voice": "af_aoede", "speed": 1.0},
+  "friends":   {"name": "The Glitter Four", "voice": "af_nova:0.5+af_sky:0.5", "speed": 1.12},
+  "boss":      {"name": "Interviewer", "voice": "bm_daniel", "speed": 1.05},
+  "doorman":   {"name": "Doorman", "voice": "am_adam", "speed": 0.98}
+}

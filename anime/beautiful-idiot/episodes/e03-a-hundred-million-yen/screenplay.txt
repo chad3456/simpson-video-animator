@@ -1,0 +1,207 @@
+title: A Hundred Million Yen
+episode: 3
+slug: e03-a-hundred-million-yen
+sub: in which a birthday party catches fire
+logline: Nana's 25th birthday. Haru sneaks in with a ¥900 book, everyone confesses their worst deed, Ryuji arrives with ¥100,000,000, and the money goes into the fire.
+next: Brothers
+
+== SCENE cold_open | set=den time=night music=drama
+@ ryuji x=640 expr=smirk
+BEAT 1.5 [wide] {¥100,000,000|comic}
+NARR [wide]: Twenty years ago, a poor boy lived across the street from the Hotel Kurosaki. Every night he looked up at the fifty-second floor, where a little girl sat in the window, alone.
+RYUJI (smirk) [close:ryuji]: I counted her lights. When her light went off, I went to sleep. Twenty years.
+RYUJI (smirk) [insert:briefcase] {ONE HUNDRED MILLION|label}: A hundred million yen. In cash. Women like to see it. Boards like to see it.
+RYUJI (serious) [close:ryuji]: Tonight I stop looking up at her window.
+
+== OP
+
+== TITLE
+
+== SCENE dressing | set=penthouse music=nana
+@ sora x=420 expr=smirk
+@ nana x=860 expr=sad
+BEAT 1.2 [wide] {6:00 PM|label}
+SORA (smirk) [two]: You've changed dresses four times. You never change dresses. You buy a dress and then you're right about it.
+NANA (sad) [close:nana]: Mister Togashi is going to stand up tonight and announce me. Like a new restaurant.
+SORA (smirk) [close:sora]: And the cardigan? The candy man? His week ended yesterday. Is he coming?
+NANA (smirk) [close:nana] {NOT INVITED|stamp}: He's not invited. He's staff. Was staff.
+SORA (smirk) [close:sora]: Then why do you keep checking your phone?
+NANA (sad) [close:nana]: He sent me a message at three in the morning. It said, good luck tomorrow, I'm awake. That's all. That's the whole message.
+SORA (smile) [close:sora]: That's a pretty good message, Nana.
+NANA (sad, thought) [close:nana]: It's the best message I've ever got. That's what scares me.
+
+== SCENE getting_ready | set=room_haru music=haru amb=room
+@ kobayashi x=330 expr=smile
+@ haru x=640 expr=wow
+@ kenta x=950 expr=smirk
+BEAT 1.2 [wide] {PARTY PREP|label}
+KOBAYASHI (smile) [two]: My wedding jacket! Nineteen seventy-nine. A little wide in the shoulders.
+HARU (wow) [close:haru]: I think I could fit Kenta in here with me.
+KENTA (smirk) [close:kenta]: Don't put me in the jacket. I'm the getaway plan.
+HARU (wow) [close:haru]: Why do I need a getaway plan? It's a birthday party.
+KENTA (smirk) [close:kenta] {THE PLAN|stamp}: Because you weren't invited, genius. You were hired, and then the week ended. My cousin works in the hotel kitchen. Back door, nine o'clock.
+HARU (smile) [insert:book:SUNSETS\nof the world] {¥900|label}: I wrapped her present. Aya at the bookshop made the bow.
+KOBAYASHI (wow) [close:kobayashi]: Aya Ishida made you a bow? She once threw a dictionary at a customer.
+HARU (smile) [close:haru]: She was very nice. She only called me ridiculous twice.
+KENTA (smirk) [close:kenta] {QUESTION|label}: Haru. Real question. Do you love her?
+HARU (smile) [close:haru]: Nana asked me to decide by Friday. Today is Friday.
+KENTA (wow) [close:kenta]: And?
+HARU (serious) [close:haru]: I think love is when you notice someone is tired before they notice it themselves. I noticed on Wednesday. So I think I decided on Wednesday, and I just found out today.
+KOBAYASHI (wow) [close:kobayashi]: I'm writing that down.
+KENTA (smirk) [close:kenta]: He's writing it down. That means it's good.
+
+== SCENE back_door | set=lobby time=night music=montage
+@ doorman x=400 expr=serious
+@ kenta x=760 expr=smirk
+@ haru x=1000 expr=smile
+DOORMAN (serious) [two]: Invitations only. You again. The cardigan.
+KENTA (smirk) [close:kenta] {DISTRACTION|label}: Excuse me, sir! I have information. Your wife's birthday is today, and you forgot.
+DOORMAN (wow, act=shake) [close:doorman]: ...Is it the ninth? It's the ninth! Oh no.
+KENTA (smirk) [close:kenta]: Konbini on the corner sells flowers. Go. I'll watch the door.
+@ doorman hide
+HARU (wow) [close:haru]: Kenta, is it really his wife's birthday?
+KENTA (smirk) [close:kenta]: It's somebody's birthday. Go!
+@ doorman hide
+@ kenta hide
+@ haru x=640 expr=wow
+BEAT 1.5 [wide] {THE KITCHEN|label}
+HARU (wow) [close:haru]: Oh. Oh no. Six hundred croquettes. And a cake shaped like a swan. And a fountain of chocolate.
+HARU (swoon, act=swoon) [close:haru] {TOO BEAUTIFUL|comic}: I have to count something ugly. The bins. One bin, two bins. Thank you, bins.
+NARR [wide]: The kitchen staff later agreed that it was the first time anyone had thanked the bins.
+
+== CARD | text=HAPPY BIRTHDAY | sub=Nana, 25 | c1=#3a1240 | c2=#2a0f2a | music=nana
+
+== SCENE party | set=party music=nana amb=party
+@ mika x=150 expr=laugh
+@ rin x=380 expr=laugh
+@ nana x=640 expr=smirk
+@ taku x=900 expr=smirk
+@ sora x=1130 expr=smirk
+BEAT 1.5 [insert:cake] (sfx=sparkle) {25!|comic}
+FRIENDS (laugh) [close:friends] {HAPPY BIRTHDAY!|ransom}: Happy birthday, Nana!
+NANA (smirk) [close:nana]: Thank you, thank you. Twenty-five. Practically a fossil.
+@ haru x=640 expr=smile walk=right
+@ nana x=420
+@ taku x=1080
+@ sora hide
+@ rin hide
+TAKU (laugh) [close:taku] {CANDY MAN!|comic}: Candy man! He came! I told you he'd come!
+NANA (wow) [close:nana]: Haru? How did you get in? Your week finished yesterday.
+HARU (smile) [close:haru]: Through the kitchen. The chef gave me a croquette. I brought you a present. It's a book of sunsets. It's slightly damaged.
+NANA (smirk) [close:nana]: Everyone else brought jewellery. Mika brought a pony. An actual pony. It's in the elevator.
+HARU (smile) [close:haru]: Then the pony and I have both made an effort.
+NANA (smile) [close:nana]: ...Thank you. I'll read it at three in the morning.
+RIN (laugh) [close:rin] {A PONY!|comic}: The pony ate a curtain! Nana, the pony ate a whole curtain!
+NANA (smirk) [close:nana]: Charge it to Mika. It's her pony.
+MIKA (wow) [close:mika]: It's your pony! It's a present!
+HARU (smile) [close:haru]: Does the pony have a name? Everyone should have a name at a birthday party.
+NANA (laugh) [close:nana]: Fine. His name is Mister Togashi Junior. He eats paperwork.
+@ togashi x=640 expr=serious
+TOGASHI (serious) [wide] {MR. TOGASHI|label}: Ladies and gentlemen. Before the cake, the board has an announcement about Nana's future.
+NANA (smirk) [close:nana]: Not yet, Mister Togashi. First, a game. My birthday, my rules.
+TOGASHI (serious) [close:togashi]: Nana. The board has waited a long time. Mister Gozen is on his way.
+NANA (smirk) [close:nana]: The board can wait one more game. It's good for them. Builds character.
+NANA (smirk) [close:nana] {THE GAME|stamp}: Everybody confesses the worst thing they've ever done. Honestly. If you lie, you leave.
+
+== SCENE confessions | set=party music=soft amb=party
+@ mika x=150 expr=wow
+@ taku x=380 expr=sad
+@ nana x=640 expr=smirk
+@ haru x=900 expr=smile
+@ togashi x=1130 expr=serious
+MIKA (wow) [close:mika] {CONFESSION #1|label}: Okay, me first. I bought half of my followers. Forty thousand of them are bots in a basement somewhere.
+TAKU (sad) [close:taku] {CONFESSION #2|label}: I once deleted a song my best friend wrote, because it was better than mine. He never knew.
+@ sora x=380 expr=sad
+SORA (sad) [close:sora] {CONFESSION #3|label}: When we were fourteen, I told a magazine that Nana's mother left. For money. For a pair of shoes.
+NANA (smirk) [close:nana]: I know, Sora. I forgave you at sixteen. They were very good shoes.
+SORA (sad) [close:sora]: ...You never said.
+NANA (smile) [close:nana]: You never asked.
+TOGASHI (serious) [close:togashi]: I decline to play. Confession is not a business practice.
+NANA (smirk) [close:nana]: Then you'll leave, Mister Togashi?
+TOGASHI (serious) [close:togashi]: ...I once told the board your father called on your birthday. He didn't. He hasn't for nine years.
+BEAT 3 [close:nana] (sad) {...|comic}
+NANA (sad) [close:nana]: I know. I always knew. Haru, your turn.
+HARU (smile) [close:haru] {CONFESSION #4|label}: When I was nine, I told Grandma I wasn't scared of the dark anymore, so she wouldn't worry.
+HARU (serious) [close:haru]: But I was. Every night. So I left the lighthouse lamp on all night, and told her it was for the ships. Really it was for me.
+HARU (smile) [close:haru]: That's my worst thing. I lied to my grandmother, for six years, and saved several ships by accident.
+TAKU (wow) [close:taku]: That's your worst thing? That's the nicest worst thing I've ever heard.
+NANA (sad) [close:nana] {MY TURN|label}: My worst thing is that I say yes. To everything. I say yes, and then I hate whoever made me say it.
+BEAT 2 [close:haru] (serious)
+HARU (serious) [close:haru]: That's not your worst thing, Nana. That's somebody else's worst thing, that happened to you.
+NANA (wow) [close:nana]: ...What?
+HARU (smile) [close:haru]: The people who made you say yes. That's their worst thing. You were just very polite about it for twenty-five years.
+RIN (wow) [close:rin]: Oh my god. Is anyone else crying? I'm crying. My lashes are falling off.
+
+== SCENE briefcase | set=party music=drama amb=party fire=0.2
+@ nana x=420 expr=sad
+@ haru x=860 expr=smile
+@ ryuji x=640 expr=smirk walk=right
+BEAT 1.5 [wide] (sfx=hit) {RYUJI GOZEN|label}
+RYUJI (smirk) [wide]: Sorry I'm late. I was counting. Happy birthday, Nana.
+@ ryuji x=640
+@ prop briefcase x=640 y=560 s=0.6 open=1
+RYUJI (smirk) [insert:briefcase] {¥100,000,000|comic}: One hundred million yen. Cash. For you, and the board. Say yes, and it's yours.
+RYUJI (smirk) [close:ryuji] {AND YOU?|label}: And you. The cardigan. How much to walk out that door and never come back?
+HARU (smile) [close:haru]: Usually nine hundred yen, plus a bow. But I'm not for sale today. It's her birthday.
+RYUJI (wow) [close:ryuji]: Everyone is for sale.
+HARU (smile) [close:haru]: Then you must be very lonely, Mister Gozen. Buying things is a lonely way to have company.
+TOGASHI (serious) [close:togashi]: A very generous proposal. The board approves.
+NANA (smirk) [close:nana]: And you, Haru? What's your offer? A hundred yen umbrella?
+HARU (serious) [close:haru]: I don't have an offer. I have a window and a cactus and a library card.
+HARU (smile) [close:haru] {3:00 AM|label}: But if you're ever awake at three in the morning, with nobody to call, I'm usually awake too. You can call me. That's all. That's my whole offer.
+BEAT 3 [close:nana] (wow) {...|comic}
+RYUJI (angry) [close:ryuji]: That's not an offer. That's a phone number.
+NANA (smirk) [close:nana]: No. It's the only offer tonight that isn't a price.
+BEAT 2 [two] (sad)
+MIKA (wow) [close:mika]: Did the cardigan just... propose? With a phone number?
+SORA (smirk) [close:sora]: Shut up, Mika. It's the best proposal I've ever heard and I've heard nine.
+
+== SCENE fire | set=party music=drama amb=party fire=0.8
+@ nana x=420 expr=angry
+@ ryuji x=860 expr=smirk
+@ prop money x=1070 y=520 s=1
+NANA (angry) [close:nana]: You want to buy me, Ryuji? Watch your price burn.
+BEAT 2 [insert:briefcase] (sfx=fire) {BURN|comic}
+BEAT 2 [wide] (sfx=whoosh) {¥100,000,000 → ¥0|stamp}
+TOGASHI (wow, act=shake) [close:togashi]: Nana! That was a hundred million yen!
+RYUJI (laugh) [close:ryuji] {HAHAHA|ransom}: Let it burn! I have more. That's the most beautiful thing I've ever seen a woman do.
+HARU (serious) [close:haru]: Nana. You don't have to prove anything. Not to them. Not to me.
+NANA (sad) [close:nana]: That's the problem, Haru. You're the only one here who didn't want to buy me. You'd want to keep me. Gently. Every day.
+NANA (sad) [close:nana] {GOODBYE|label}: And I'd ruin you. An idiot deserves better than me.
+@ haru hide
+@ nana x=640
+RYUJI (smirk) [close:ryuji]: Car's outside.
+NANA (smirk) [close:nana]: Then let's go before I change my mind. Happy birthday to me.
+BEAT 2 [wide] (sfx=door) {SHE LEFT WITH HIM|label}
+
+== SCENE after | set=party time=night music=soft fire=0.1
+@ sora x=420 expr=sad
+@ haru x=860 expr=sad look=down
+BEAT 2 [wide]
+SORA (sad) [two]: You okay, candy man?
+HARU (sad) [close:haru]: I think so. I think I just haven't fainted yet. It's coming.
+SORA (smile) [close:sora]: For what it's worth, I've known her eleven years. I've never seen her burn anything except a bridge.
+HARU (smile) [close:haru]: Is it still her birthday?
+SORA (smile) [close:sora] {23:57|label}: For three more minutes.
+@ taku x=640 expr=sad
+TAKU (sad) [close:taku]: She'll come back, man. She always comes back. She's dramatic, not stupid.
+HARU (smile) [close:haru]: I know. I'm not worried about her coming back. I'm worried about her being alone in a car with a man who counted her lights for twenty years.
+SORA (wow) [close:sora]: How do you know that?
+HARU (serious) [close:haru]: He looked at her the way I look at sunsets. Except I let sunsets leave.
+HARU (smile) [close:haru]: Then I'd like to stand by the window for three minutes.
+HARU (smile, thought) [close:haru] {HAPPY BIRTHDAY|ransom}: Happy birthday, Nana. I'm awake. Just in case.
+
+== ED
+== SCENE roof_news | set=rooftop time=night music=soft amb=night
+@ kobayashi x=330 expr=sad
+@ haru x=640 expr=sad
+@ kenta x=950 expr=sad
+BEAT 1.5 [wide] {1:00 AM|label}
+KENTA (sad) [two]: My cousin saw them leave. She got in his car. She didn't look back.
+KOBAYASHI (sad) [close:kobayashi]: I'm sorry, Mister Mishima. I'm not even writing it down.
+HARU (smile) [close:haru]: That's all right. She took the book of sunsets with her. She held it the whole way to the car. Kenta's cousin said so.
+KENTA (wow) [close:kenta]: He did say that. How did you know?
+HARU (smile) [close:haru]: I didn't. I hoped. Hoping is like knowing, but earlier.
+KOBAYASHI (smile) [close:kobayashi] {WRITING IT DOWN|label}: All right. That one I'm writing down.
+
+HARU (smile): Next time on Beautiful Idiot: I visit Ryuji, because he looked lonely, and we swap presents. Aya takes me to a festival. Then two very strong women meet in a café, and it doesn't go well. Brothers. I'm bringing Lev for moral support.

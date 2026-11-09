@@ -1,0 +1,199 @@
+title: Beautiful Idiot
+episode: 5
+slug: e05-beautiful-idiot
+sub: in which an idiot is best man, and a bride says no
+logline: Ryuji asks Haru to be his best man. At the altar, Nana finally says no. Ryuji lets her go, Aya points the way, and on a ferry to a lighthouse, at sunset, Haru faints and Nana catches him.
+next:
+
+== SCENE cold_open | set=penthouse music=soft
+@ togashi x=420 expr=serious
+@ nana x=860 expr=sad
+BEAT 1.5 [wide] {THE DRESS|label}
+TOGASHI (serious) [two]: The dress fits. The press release is ready. The board is delighted. Hotel Kurosaki and Gozen Capital. A very beautiful merger.
+NANA (sad) [close:nana]: You keep saying merger, Mister Togashi. The word is wedding.
+TOGASHI (serious) [close:togashi]: In our family, my dear, those words have always meant the same thing.
+NANA (sad, thought) [close:nana] {LET ME THINK ABOUT IT|label}: Let me think about it. And then say yes. That's what we do.
+
+== OP
+
+== TITLE
+
+== SCENE best_man | set=room_haru music=haru amb=room
+@ haru x=420 expr=sad
+@ ryuji x=860 expr=serious walk=left
+BEAT 1.2 [wide] (sfx=door) {ROOM 3B|label}
+RYUJI (serious) [two]: Brother. I brought rice balls. Tuna mayonnaise. You said, come to your room and talk.
+HARU (smile) [close:haru]: I did say that. Come in. Lev, this is Ryuji. Ryuji, this is Lev.
+RYUJI (smirk) [close:ryuji]: Your cactus is judging me.
+HARU (smile) [close:haru]: He judges everyone. It's not personal.
+RYUJI (serious) [close:ryuji] {BEST MAN?|comic}: I want you to be my best man. On Saturday. Stand next to me at the altar.
+HARU (wow) [close:haru]: Me? Why me?
+RYUJI (sad) [close:ryuji]: Because you're the only person who'll tell me the truth. If she looks at you during the vows, I'll know. I want to know.
+HARU (serious) [close:haru]: And if she does look at me?
+RYUJI (sad) [close:ryuji]: Then I've been counting the wrong window for twenty years.
+HARU (smile) [close:haru]: I'll be there. I'll wear the duck tie.
+RYUJI (laugh) [close:ryuji]: God help us all.
+
+== SCENE dressing | set=room_haru music=haru amb=room
+@ kobayashi x=330 expr=smile
+@ haru x=640 expr=smile
+@ kenta x=950 expr=smirk
+BEAT 1.2 [wide] {SATURDAY · 9:00 AM|label}
+KOBAYASHI (smile) [two]: The wedding jacket again. Second wedding this jacket has been to. The first one went very well, for thirty-one years.
+HARU (smile) [close:haru]: Was Mrs. Kobayashi happy?
+KOBAYASHI (smile) [close:kobayashi]: She said I talked too much and listened too little. Then she married me anyway. That's love, Mister Mishima. Somebody knows your worst thing and stays.
+KENTA (smirk) [close:kenta] {FREE INFORMATION|label}: Free information. Last time ever. The bride has not slept in three days. My cousin does the hotel laundry. She's been sleeping with a book of sunsets.
+HARU (serious) [close:haru]: Kenta, that's not information. That's a secret.
+KENTA (smirk) [close:kenta]: Same thing, if you're eleven.
+KOBAYASHI (serious) [close:kobayashi]: Whatever happens at that wedding, you come home after. The rent can wait.
+HARU (wow) [close:haru]: The rent can wait? Mister Kobayashi, are you all right?
+KOBAYASHI (smile) [close:kobayashi] {DON'T TELL ANYONE|stamp}: Don't tell anyone. I'm writing it down so I remember I said it.
+
+== SCENE apology | set=bookshop music=soft
+@ haru x=420 expr=smile
+@ aya x=860 expr=smirk
+AYA (smirk) [two]: We're closed. For you, especially.
+HARU (smile) [insert:book:The Happy Ending\ncollected stories] {GOOD ENDINGS ONLY|label}: I brought you a book. Every story in it ends well. I checked. It took me all night.
+AYA (wow) [close:aya]: You read a whole book of happy endings to apologise to me?
+HARU (smile) [close:haru]: Grandma said, find her a book with a good ending. I couldn't find one, so I found twelve.
+AYA (sad) [close:aya]: You're impossible.
+AYA (smile) [close:aya] {MY WISH|label}: Do you want to know what I wished for, at Tanabata? I wished that you'd be happy. It's a stupid wish. It's working against me.
+HARU (sad) [close:haru]: I'm sorry, Aya.
+AYA (smile) [close:aya]: Don't be. Somebody should get what they wish for. Now go away. I have twelve happy endings to read.
+HARU (smile) [close:haru]: Aya. Will you come to the island one day? Grandma has three thousand books. Most of them have terrible endings. You'd love them.
+AYA (smirk) [close:aya] {MAYBE|stamp}: Maybe. If the goat behaves.
+HARU (laugh) [close:haru]: The goat never behaves. That's his best quality.
+AYA (smile, thought) [close:aya]: Beauty will save the world. Idiot. It might, at that.
+
+== CARD | text=SATURDAY | sub=the wedding | c1=#f7c6d8 | c2=#fffaf0 | music=soft
+
+== SCENE wedding | set=chapel music=soft
+@ togashi x=640 expr=serious
+@ ryuji x=420 expr=serious
+@ haru x=200 expr=smile
+@ nana x=860 expr=sad walk=left
+BEAT 2 [wide] (sfx=bell) {THE WEDDING|ransom}
+NARR [wide]: The chapel had four thousand roses, a string quartet, two hundred guests, eleven cameras, and one best man in a borrowed jacket and a tie with ducks on it.
+SORA (smirk) [close:sora] {THE BET|stamp}: Okay. Last bet. Ten thousand yen says she bolts.
+MIKA (sad) [close:mika]: I'm not betting. I'm just hoping.
+TAKU (smile) [close:taku]: I wrote a song for the getaway. Just in case. It's fast.
+RIN (wow) [close:rin]: Look at the best man. He's smiling. Why is he smiling? His girlfriend is marrying someone else!
+SORA (smile) [close:sora]: Because he isn't thinking about himself. He never is. That's what makes him dangerous.
+@ mika x=1100 expr=sad
+TOGASHI (serious) [close:togashi]: Ryuji Gozen. Do you take Nana Kurosaki, and the associated assets, as your lawful wife?
+RYUJI (serious) [close:ryuji]: I do.
+BEAT 1.5 [close:nana] (sad, look=left)
+NARR [mcu:nana]: She looked at the best man.
+TOGASHI (serious) [close:togashi]: Nana Kurosaki. Do you take Ryuji Gozen?
+NANA (sad) [close:nana] {LET ME THINK...|label}: Let me think about it.
+BEAT 3 [close:haru] (smile)
+HARU (smile, thought) [close:haru]: Practise with me. Say no to something.
+NANA (serious) [close:nana]: ...No.
+TOGASHI (wow, act=shake) [close:togashi] {NO?!|comic}: I beg your pardon?
+NANA (angry) [close:nana] {NO!|ransom}: No! No to the merger! No to the board! No to the dress, it itches! No, no, no!
+NANA (laugh) [close:nana]: Oh my god. I said it. I said no. In a church!
+TAKU (laugh) [close:taku] {GETAWAY SONG|ransom}: That's my cue! Hit it!
+SORA (laugh) [close:sora]: Pay up, everybody! Ten thousand yen! I told you she'd bolt!
+@ nana hide
+BEAT 1.5 [wide] (sfx=whoosh) {SHE RAN|stamp}
+
+== SCENE let_her_go | set=chapel music=drama
+@ togashi x=640 expr=angry
+@ ryuji x=420 expr=sad
+@ haru x=860 expr=wow
+TOGASHI (angry) [close:togashi]: Security! Bring her back! There are contracts!
+RYUJI (serious) [close:ryuji] {LET HER GO|label}: Let her go, Togashi.
+TOGASHI (wow) [close:togashi]: Mister Gozen, the merger...
+RYUJI (sad) [close:ryuji]: I wanted someone to stay. I thought if I paid enough, she'd stay. That's not the same as love. Brother here taught me that over rice balls.
+RYUJI (serious) [close:ryuji]: Go on, Haru. Go and find her. Before I change my mind.
+HARU (wow) [close:haru]: Are you sure?
+RYUJI (smirk) [close:ryuji]: No. Go.
+HARU (smile) [close:haru] {THANK YOU|label}: Thank you, brother. Keep the lighthouse. I'll keep the gold. It's heavy, but I'm getting used to it.
+@ ryuji hide
+@ haru hide
+@ togashi x=640 expr=sad
+BEAT 1.5 [close:togashi] (sad)
+TOGASHI (sad, phone) [close:togashi] {SINGAPORE|label}: Hello. Yes, it's Togashi. Your daughter said no. To everything. In a church. ...No, sir. I'm not calling to complain. I'm calling because I think, for the first time, she's going to be fine. Perhaps you'd like to call her. On her birthday. Next year. It's in March.
+
+== SCENE station | set=station music=riser amb=city
+@ haru x=640 expr=wow walk=right
+HARU (wow) [wide]: Nana! Nana! Has anyone seen a bride? She's probably angry and very fast.
+@ aya x=980 expr=smirk walk=left
+AYA (smirk) [two] {AYA!|comic}: She ran past my shop ten minutes ago. In a wedding dress. Holding her shoes. She went to the ferry terminal.
+HARU (wow) [close:haru]: Aya! Why are you helping me?
+AYA (smile) [close:aya]: Because I read twelve happy endings last night, and I'd like to see one in real life. Go. Make it a good one.
+HARU (smile) [close:haru] {GO!|ransom}: Thank you, Aya! You're the kindest person who pretends not to be!
+AYA (smile, thought) [close:aya]: Idiot.
+
+== SCENE ferry | set=ferry time=sunset music=soft amb=sea
+@ nana x=420 expr=sad
+@ haru x=860 expr=smile walk=right
+BEAT 1.5 [ext] (sfx=ferry) {THE LAST FERRY|label}
+NANA (wow) [two]: Haru? How did you... you ran? In that jacket?
+HARU (smile) [close:haru]: Aya told me. Ryuji let me go. Kenta probably knows already. Mister Kobayashi will read about it by accident.
+NANA (sad) [close:nana]: I said no, Haru. To everything. I don't have a hotel or a board or a plan. Where am I even going?
+HARU (smile) [close:haru]: Where would you like to go?
+NANA (sad) [close:nana]: Somewhere nobody can buy me.
+HARU (smile) [close:haru] {I KNOW A PLACE|label}: I know a lighthouse. The rent is free, the goat is handsome, and my grandmother makes terrible tea.
+NANA (smile) [close:nana]: ...That sounds like the best place in the world.
+BEAT 2 [two] {...|comic}
+NANA (smirk) [close:nana]: You know I set fire to a hundred million yen and ran out of my own wedding. In one month.
+HARU (smile) [close:haru]: You also pressed a bus bell, ate tuna mayonnaise, bought a secret chair and said no in a church. It's been a very full month.
+NANA (laugh) [close:nana]: When you say it like that, I sound wonderful.
+HARU (smile) [close:haru]: I always say it like that. It's the same month either way. I just tell it from the good end.
+NANA (sad) [close:nana]: Haru. Why did you never try to buy me? Not even with a book.
+HARU (serious) [close:haru]: Because you're not a thing, Nana. You're a person who's tired. You don't buy tired people. You sit next to them until they can sleep.
+BEAT 2.5 [close:nana] (sad) {...|comic}
+NANA (smile) [close:nana]: Then sit next to me. It's a long ferry.
+
+== CARD | text=THE ISLAND | sub=one lighthouse · one goat · 3,000 books | c1=#ff6a3d | c2=#ffb347 | music=soft
+
+== SCENE lighthouse | set=lighthouse time=sunset music=soft amb=sea
+@ grandma x=330 expr=smile
+@ haru x=640 expr=smile
+@ nana x=950 expr=wow
+@ prop goat x=180 y=600 s=0.5
+GRANDMA (smile) [two] {GRANDMA FUMI|label}: Welcome home, Haru. And who is this? She's wearing a wedding dress and no shoes.
+NANA (smile) [close:nana]: Nana Kurosaki. I'm... his former employer. I fired myself.
+GRANDMA (laugh) [close:grandma]: Then you'll need a job. Do you know how to feed a goat?
+NANA (wow) [close:nana]: I've never fed anything. I had staff for that.
+GRANDMA (smile) [close:grandma]: You hold out your hand and you stand very still and you let it come to you. It's the same with most things.
+NANA (wow) [insert:goat] {PROFESSOR|label}: He's coming. He's coming! He's eating my veil. Is that allowed?
+GRANDMA (laugh) [close:grandma]: He's very handsome. He's allowed almost anything.
+NANA (laugh) [close:nana]: Haru, your goat is eating my wedding dress and I've never been happier.
+HARU (smile) [close:haru]: That's the law of goats.
+@ grandma hide
+@ haru x=500
+@ nana x=780
+BEAT 2 [wide] {SUNSET|comic}
+NANA (sad) [two]: Haru. I don't know how to be happy. I never learned. Everyone always bought it for me.
+HARU (smile) [close:haru]: Neither did I, at first. You practise. Like saying no. Then one day you notice you're doing it without trying.
+NANA (smile) [close:nana]: Will you practise with me?
+HARU (smile) [close:haru] {EVERY DAY|label}: Every day. At three in the morning, if you like. I'll be awake.
+BEAT 2 [insert:lighthouse] (sfx=swell) {BEAUTIFUL|comic}
+HARU (swoon, act=faint) [close:haru]: Oh no. The sunset. And you. Both at once. That's too much beautiful.
+BEAT 1.5 [close:nana] (wow, sfx=faint) {CAUGHT HIM!|ransom}
+NANA (laugh) [two]: Got you. I've got you, idiot.
+HARU (swoon) [close:haru]: Nana. Is it Tuesday?
+NANA (smile) [close:nana]: You fainted, idiot. In front of a sunset and a goat and your grandmother.
+HARU (swoon) [close:haru]: It was worth it. Did I miss anything?
+NANA (smile) [close:nana]: Only me, saying something I've never said to anyone.
+HARU (wow) [close:haru]: Oh no. Say it again. I wasn't conscious.
+NANA (laugh) [close:nana] {LATER|stamp}: Later. At three in the morning. If you're awake.
+NANA (smile) [close:nana] {ANY DAY|ransom}: It's whatever day you want.
+
+== SCENE epilogue | set=blank music=haru
+BEAT 1 [ext] {AND AFTERWARDS...|ransom}
+NARR [close:taku]: Taku released the slow song with the rain in it. Nobody skipped the ending.
+NARR [close:sora]: Sora won ten thousand yen, and spent it on a ferry ticket to visit a lighthouse.
+NARR [close:togashi]: Mister Togashi took his first holiday in thirty years. He did not enjoy it, but he tried.
+NARR [close:mika]: Mika deleted forty thousand bots and lost forty thousand followers, and slept better.
+NARR [close:kobayashi]: Mister Kobayashi's tomatoes won second prize, and he wrote everything down.
+NARR [close:kenta]: Kenta started charging two rice balls for information. Inflation.
+NARR [close:aya]: Aya Ishida put a new sign in her window: happy endings, half price.
+NARR [close:ryuji]: Ryuji Gozen bought a cactus. He named it Brother.
+NARR [close:nana]: And on a small island with one lighthouse, a very handsome goat, and three thousand and one books, lived a very happy woman.
+NARR [close:haru] {THE END|ransom}: And a very happy idiot.
+
+== ED
+HARU (smile): Thank you for watching Beautiful Idiot. Grandma says hello. Professor says nothing, he's eating a doormat. And Lev says... Lev is a cactus. But he looks happy. Is it Tuesday? Good night!
