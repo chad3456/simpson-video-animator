@@ -116,7 +116,7 @@
     P.sky(R.burst(800, 330, 200, { seed: 3, col: C.gold, n: 70, len: 2.6, w: 9 }));
     [420, 560, 1040, 1180].forEach((x) => P.bg(R.pillar(x, 740, 600, 54, C.gold, C.red)));
     P.bg(R.throne(800, 760, 1.9, { col: C.maroon }) + R.steps(800, 760, 520, 4, C.gold, C.red));
-    put(P, 'mid', 'ravana', { x: 800, y: 760, s: 1.5, front: 1, heads: 10, arms: 9, pose: ['throne', { aR: [50, 110], aL: [-50, -110], lL: [-30, 6], lR: [30, -6] }], hs: 1.05, head: { eye: 'angry', gear: 'crown' }, ny: -150 }, 'Ten-necked, twenty-armed; he lifted Kailasa and made the three worlds wail, which is what “Ravana” means.');
+    put(P, 'mid', 'ravana', { x: 800, y: 770, s: 1.62, front: 1, heads: 10, arms: 9, armItems: false, pose: ['throne', { aR: [50, 110], aL: [-50, -110], lL: [-30, 6], lR: [30, -6] }], hs: 1.3, head: { eye: 'angry', gear: 'crown' }, headMoods: [{ skin: C.sGreen, mouth: 'fang' }, { skin: C.sPurple, eye: 'wide' }, { skin: C.sRed, mouth: 'fang' }, { skin: C.slate, eye: 'closed' }, { skin: C.olive, mouth: 'frown' }, { skin: C.sPurple, mouth: 'fang' }, { skin: C.sRed, eye: 'wide' }, { skin: C.sGreen, mouth: 'smile' }, { skin: C.slate, mouth: 'fang' }], cape: null, ny: -190 }, 'Ten-necked, twenty-armed; he lifted Kailasa and made the three worlds wail, which is what “Ravana” means.');
     put(P, 'mid', 'shurpanakha', { x: 330, y: 850, s: 1.26, pose: ['point', { aR: [110, 120] }], head: { eye: 'angry', mouth: 'open' } }, 'Earless and noseless, she tells it her own way: “I tried to bring her to you.”');
     P.mid(F('rakshasi', { x: 150, y: 760, s: 0.9, pose: ['stand', { aR: [60, 150] }], hold: { R: { k: 'chamara' } } }) + F('rakshasi', { x: 1450, y: 760, s: 0.9, face: -1, pose: ['stand', { aR: [60, 150] }], hold: { R: { k: 'chamara' } }, args: [C.sGreen, C.plum] }));
     P.fg(R.crowd({ x0: 1000, x1: 1540, y: 990, n: 5, s: 0.9, kinds: ['rakshasa'], poses: ['namaste', 'stand'], face: -1, seed: 6, each: () => ({ hold: {} }) }) + R.lampHang(300, -40, 150, 1.6) + R.lampHang(1300, -40, 150, 1.6));
@@ -141,7 +141,7 @@
     ];
     let body = path('M420,900 C440,700 600,600 800,600 C1000,600 1160,700 1180,900 Z', pat('scale', C.crimson, C.gold, 1.4), { stroke: C.maroon, 'stroke-width': 4 }) + line('M560,640 Q800,820 1040,640', C.gold, 12) + circ(800, 742, 22, C.red, { stroke: C.gold, 'stroke-width': 5 });
     P.mid(body);
-    const slots = [[60, 690, 1.3], [200, 520, 1.55], [360, 380, 1.8], [560, 290, 2.05], [1040, 290, 2.05], [800, 400, 2.9], [1240, 380, 1.8], [1400, 520, 1.55], [1540, 690, 1.3]];
+    const slots = [[120, 640, 1.3], [230, 500, 1.55], [360, 380, 1.8], [560, 290, 2.05], [1040, 290, 2.05], [800, 400, 2.9], [1240, 380, 1.8], [1370, 500, 1.55], [1480, 640, 1.3]];
     // eight flanking heads, lust rising above the crown, ego in the centre
     const draw = (vi, x, y, k, rot) => { const v = V[vi], h = R.headF({ skin: v[1], eye: v[2], mouth: v[3], must: 1, gear: 'crown', gem: vi % 2 ? C.aqua : C.red, sclera: C.straw, hair: 'long' }); P.mid(g(h.back + h.front, `translate(${x},${y}) rotate(${rot}) scale(${k})`)); P.note(x, y - 64 * k, v[0], v[4]); };
     [[0, 0, -30], [1, 1, -22], [2, 2, -14], [3, 3, -6], [9, 4, 6], [6, 6, 14], [7, 7, 22], [8, 8, 30]].forEach((q) => draw(q[0], slots[q[1]][0], slots[q[1]][1], slots[q[1]][2], q[2]));

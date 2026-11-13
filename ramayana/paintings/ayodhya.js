@@ -45,8 +45,8 @@
     P.bg(R.lampHang(1380, 80, 220, 1.6));
     put(P, 'mid', 'kaikeyi', { x: 860, y: 790, s: 1.66, face: 1, pose: ['stand', { aR: [150, 178], aL: [-16, -6] }], head: { eye: 'angry', gear: 0, hair: 'long' }, neck: 0, bangle: false, ny: -90 }, 'Hair loose, jewels off, two fingers raised.');
     P.mid(g(circ(-9, 0, 7, C.sFair) + circ(9, 0, 7, C.sFair), 'translate(986,318)') + R.ring(968, 250, 26, C.gold, 5) + R.ring(1030, 262, 26, C.gold, 5));
-    put(P, 'mid', 'dasharatha', { x: 1420, y: 800, s: 1.5, face: -1, rot: 90, pose: ['lie', { aR: [120, 150], aL: [40, 80] }], head: { eye: 'closed', gear: 0 }, nx: -200, ny: 300 }, '“Take my life. Do not ask for this.”');
-    P.mid(g(R.item('crown'), 'translate(1110,850) rotate(70) scale(1.4)'));
+    put(P, 'mid', 'dasharatha', { x: 1090, y: 800, s: 1.5, face: -1, rot: 90, pose: ['lie', { aR: [120, 150], aL: [40, 80] }], head: { eye: 'closed', gear: 0 }, nx: -200, ny: 300 }, '“Take my life. Do not ask for this.”');
+    P.mid(g(R.item('crown'), 'translate(1010,860) rotate(70) scale(1.4)'));
     let strew = ''; const f = R.rng(9); for (let i = 0; i < 16; i++) strew += f() < 0.5 ? R.ring(f.r(560, 1100), f.r(800, 880), f.r(8, 16), C.gold, 4) : circ(f.r(560, 1100), f.r(800, 880), f.r(4, 7), f.pick([C.red, C.white, C.gold]));
     P.mid(strew); P.note(700, 800, 'Her ornaments', 'Thrown off, like planets scattered at dawn.');
     P.fx.tint = [C.pale, 0.3]; P.glow(1380, 330, 230, C.saffron, 0.6).glow(1000, 260, 90, C.gold, 0.5);
@@ -118,9 +118,9 @@
     put(P, 'mid', 'kausalya', { x: 470, y: 800, s: 1.04, pose: ['run', { aR: [80, 80], aL: [70, 86], both: 1 }], head: { eye: 'sad', mouth: 'open' } }, 'She runs like a cow after her tethered calf.');
     put(P, 'mid', 'dasharatha', { x: 640, y: 806, s: 1.14, pose: ['reach', { lean: 30, lL: [-40, -70], lR: [50, 30] }], head: { eye: 'sad', mouth: 'open', gear: 0 } }, '“As long as I can see the dust of his chariot.” He watches till it is gone, then falls.');
     const riders = F('sumantra', { x: 62, y: -78, s: 0.6, pose: ['reach', { lean: 4 }] }) + F('lakshmanaX', mix(BARK, { x: -58, y: -78, s: 0.62, pose: 'stand', hold: { R: { k: 'bow', len: 70, rot: 4 } } })) + F('sitaX', { x: -18, y: -78, s: 0.58, face: -1, pose: 'grief' }) + F('ramaX', mix(BARK, { x: 22, y: -78, s: 0.66, face: -1, pose: 'namaste', head: { eye: 'sad' } }));
-    P.mid(R.chariot(1060, 812, 1.36, { gallop: 1, team: 3, riders, col: C.crimson, flag: C.gold }));
-    P.note(1090, 560, 'Rama', 'He joins his palms to the people and cannot bear to look at his parents.').note(1034, 590, 'Sita').note(980, 560, 'Lakshmana').note(1150, 570, 'Sumantra', 'The king’s charioteer, told “Stop” and “Drive” in the same breath.');
-    P.fg(R.crowd({ x0: 40, x1: 900, y: 990, n: 10, s: 0.92, kinds: ['man', 'woman', 'girl', 'man', 'soldier'], poses: ['reach', 'run', 'plead', 'grief'], face: 1, eye: 'sad', seed: 27, jy: 20 }) + R.crowd({ x0: 1020, x1: 1560, y: 1020, n: 5, s: 0.9, kinds: ['man', 'woman'], poses: ['reach', 'armsUp'], face: 1, eye: 'sad', seed: 9 }));
+    P.mid(R.chariot(1080, 800, 1.62, { gallop: 1, team: 3, riders, col: C.crimson, flag: C.gold }));
+    P.note(1118, 500, 'Rama', 'He joins his palms to the people and cannot bear to look at his parents.').note(1050, 540, 'Sita').note(986, 500, 'Lakshmana').note(1186, 510, 'Sumantra', 'The king’s charioteer, told “Stop” and “Drive” in the same breath.');
+    P.fg(R.crowd({ x0: 40, x1: 820, y: 1050, n: 9, s: 0.92, kinds: ['man', 'woman', 'girl', 'man', 'soldier'], poses: ['reach', 'run', 'plead', 'grief'], face: 1, eye: 'sad', seed: 27, jy: 20 }) + '');
     P.fx.tint = [C.peach, 0.18]; P.glow(1400, 230, 220, C.gold, 0.4).rays(1400, 230, 0.45, C.straw);
   });
 
@@ -202,8 +202,8 @@
     P.bg(R.hut(250, 706, 0.9) + F('lakshmanaX', { x: 380, y: 706, s: 0.6, pose: ['carry', {}], hold: { R: { k: 'staff', rot: 70 } } }));
     P.note(380, 560, 'Lakshmana', 'He builds the leaf-thatched hut and offers the first oblation.');
     P.mid(path('M520,860 C560,790 1120,780 1180,860 C1100,900 600,900 520,860 Z', pat('stone', C.sand, C.cream, 1.2), { stroke: C.tan, 'stroke-width': 3 }));
-    put(P, 'mid', 'ramaX', { x: 730, y: 836, s: 1.86, pose: ['throne', { aR: { t: [84, -128], bend: -1 }, aL: [-16, 30] }], head: { eye: 'soft', mouth: 'smile' }, hold: { R: { k: 'flower', col: C.vermilion, s: 1.5 } }, ny: -60 }, 'He tucks a forest flower into her hair.');
-    put(P, 'mid', 'sitaX', { x: 1000, y: 836, s: 1.74, face: -1, pose: ['throne', { aR: [50, 120], aL: [-14, 40], head: 8 }], head: { eye: 'bliss', mouth: 'smile' }, ny: -50 }, 'Happier here, she says, than on any palace roof.');
+    put(P, 'mid', 'ramaX', { x: 690, y: 836, s: 1.86, pose: ['throne', { aR: { t: [92, -124], bend: -1 }, aL: [-16, 30] }], head: { eye: 'soft', mouth: 'smile' }, hold: { R: { k: 'flower', col: C.vermilion, s: 1.5 } }, ny: -60 }, 'He tucks a forest flower into her hair.');
+    put(P, 'mid', 'sitaX', { x: 1040, y: 836, s: 1.74, face: -1, pose: ['throne', { aR: [50, 120], aL: [-14, 40], head: 8 }], head: { eye: 'bliss', mouth: 'smile' }, ny: -50 }, 'Happier here, she says, than on any palace roof.');
     P.mid(R.swan(1300, 800, 1.1, { flip: -1 }) + R.swan(1400, 826, 1) + R.deer(1380, 720, 0.9, { flip: -1, look: -1 }) + R.deer(1470, 716, 0.7, { flip: -1 }));
     P.note(1350, 690, 'Mandakini', 'Swans and cranes on the sandbanks; the trees shed flowers into the current.');
     P.fg(R.lotusPad(180, 850, 1.5) + R.lotusPad(420, 884, 1.1, C.white) + R.lotusPad(1500, 880, 1.3) + R.petals(9, [300, 100, 1500, 760], 36, [C.white, C.pink, C.vermilion]) + R.fronds(5, 'T', { n: 5, s: 0.8, cols: [C.leaf, C.green] }) + R.parrots(4, [700, 120, 1200, 300], 5));
