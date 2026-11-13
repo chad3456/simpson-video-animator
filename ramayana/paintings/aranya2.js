@@ -39,13 +39,13 @@
     R.water(P, 'bg', 800, H, { seed: 4, bands: 4, curls: 6 });
     P.bg(R.grove(4, -60, W + 60, 800, 10, { kinds: ['tier', 'round', 'bloom', 'sal'], cols: [C.forest, C.green, C.moss], s0: 0.9, s1: 1.3 }) + R.hut(170, 800, 0.9));
     P.bg(R.deer(700, 806, 0.8, { look: -1 }) + R.deer(800, 812, 0.7) + R.deer(1240, 810, 0.75, { flip: -1 }));
-    const riders = F('ravana', { x: 20, y: -78, s: 0.92, heads: 10, face: 1, pose: ['hug', { aR: { t: [-40, -70], bend: -1 }, aL: { t: [-50, -30], bend: -1 } }], head: { eye: 'angry', mouth: 'smile' }, hs: 0.95 }) + F('sitaX', { x: -76, y: -96, s: 0.74, face: -1, rot: -24, pose: ['reach', { aR: [110, 130], aL: [96, 140], lean: 20 }], head: { eye: 'fear', mouth: 'open' } });
-    P.mid(g([0, 1, 2, 3].map((i) => R.spiral(-200 + i * 150, 40 + (i % 2) * 20, 40, C.cream, 9, 1.7, i % 2 ? 1 : -1, 2)).join('') + R.chariot(0, 0, 1, { beast: 'mule', team: 2, gallop: 1, col: C.gold, flag: C.crimson, riders }), 'translate(1020,520) rotate(-16) scale(1.2)'));
-    P.note(1050, 130, 'Ravana', 'One hand in her hair, the other under her thighs.').note(880, 250, 'Sita', 'She calls on every tree by name.').note(1380, 330, 'Mules with pishacha faces');
+    const riders = F('ravana', { x: 20, y: -78, s: 0.92, heads: 10, face: 1, pose: ['hug', { aR: { t: [-40, -70], bend: -1 }, aL: { t: [-50, -30], bend: -1 } }], head: { eye: 'angry', mouth: 'smile' }, hs: 0.95 }) + F('sitaX', { x: -84, y: -100, s: 0.86, face: -1, rot: -24, pose: ['reach', { aR: [110, 130], aL: [96, 140], lean: 20 }], head: { eye: 'fear', mouth: 'open' } });
+    P.mid(g([0, 1, 2, 3].map((i) => R.spiral(-200 + i * 150, 40 + (i % 2) * 20, 40, C.cream, 9, 1.7, i % 2 ? 1 : -1, 2)).join('') + R.chariot(0, 0, 1, { beast: 'mule', team: 2, gallop: 1, col: C.gold, flag: C.crimson, riders }), 'translate(960,560) rotate(-16) scale(1.5)'));
+    P.note(1040, 70, 'Ravana', 'One hand in her hair, the other under her thighs.').note(800, 220, 'Sita', 'She calls on every tree by name.').note(1440, 300, 'Mules with pishacha faces');
     const f = R.rng(3); let trail = '';
-    for (let i = 0; i < 26; i++) { const t = i / 26, x = 880 - t * 520 + f.r(-30, 30), y = 440 + t * t * 330 + f.r(-20, 20); trail += f() < 0.3 ? R.ring(x, y, f.r(5, 9), C.gold, 3) : f() < 0.5 ? circ(x, y, 4, C.red) : g(R.item('flower', { col: f.pick([C.white, C.vermilion, C.pink]) }), `translate(${x},${y}) scale(${f.r(0.6, 1.1)})`); }
-    P.mid(trail + g(R.ring(0, 0, 14, C.gold, 6) + circ(0, -14, 5, C.red), 'translate(470,640)'));
-    P.note(470, 600, 'Her anklet', 'Flowers, pearls and a jewelled anklet fall along the way.');
+    for (let i = 0; i < 26; i++) { const t = i / 26, x = 760 - t * 460 + f.r(-30, 30), y = 470 + t * t * 300 + f.r(-20, 20); trail += f() < 0.3 ? R.ring(x, y, f.r(5, 9), C.gold, 3) : f() < 0.5 ? circ(x, y, 4, C.red) : g(R.item('flower', { col: f.pick([C.white, C.vermilion, C.pink]) }), `translate(${x},${y}) scale(${f.r(0.6, 1.1)})`); }
+    P.mid(trail + g(R.ring(0, 0, 14, C.gold, 6) + circ(0, -14, 5, C.red), 'translate(330,700)'));
+    P.note(330, 660, 'Her anklet', 'Flowers, pearls and a jewelled anklet fall along the way.');
     P.fg(R.fronds(5, 'L', { n: 4 }) + R.fronds(6, 'R', { n: 3 }));
     P.glow(300, 250, 200, C.straw, 0.35);
   });
