@@ -202,8 +202,8 @@
     P.bg(R.hut(250, 706, 0.9) + F('lakshmanaX', { x: 380, y: 706, s: 0.6, pose: ['carry', {}], hold: { R: { k: 'staff', rot: 70 } } }));
     P.note(380, 560, 'Lakshmana', 'He builds the leaf-thatched hut and offers the first oblation.');
     P.mid(path('M520,860 C560,790 1120,780 1180,860 C1100,900 600,900 520,860 Z', pat('stone', C.sand, C.cream, 1.2), { stroke: C.tan, 'stroke-width': 3 }));
-    put(P, 'mid', 'ramaX', { x: 690, y: 836, s: 1.86, pose: ['throne', { aR: { t: [92, -124], bend: -1 }, aL: [-16, 30] }], head: { eye: 'soft', mouth: 'smile' }, hold: { R: { k: 'flower', col: C.vermilion, s: 1.5 } }, ny: -60 }, 'He tucks a forest flower into her hair.');
-    put(P, 'mid', 'sitaX', { x: 1040, y: 836, s: 1.74, face: -1, pose: ['throne', { aR: [50, 120], aL: [-14, 40], head: 8 }], head: { eye: 'bliss', mouth: 'smile' }, ny: -50 }, 'Happier here, she says, than on any palace roof.');
+    put(P, 'mid', 'ramaX', { x: 740, y: 850, s: 1.86, pose: ['sit', { aR: { t: [84, -122], bend: -1 }, aL: [-16, 30], lean: 6 }], head: { eye: 'soft', mouth: 'smile' }, hold: { R: { k: 'flower', col: C.vermilion, s: 1.6 } } }, 'He tucks a forest flower into her hair.');
+    put(P, 'mid', 'sitaX', { x: 1000, y: 850, s: 1.74, face: -1, pose: ['sit', { aR: [40, 110], aL: [-14, 40], head: 8, lean: 4 }], head: { eye: 'bliss', mouth: 'smile' } }, 'Happier here, she says, than on any palace roof.');
     P.mid(R.swan(1300, 800, 1.1, { flip: -1 }) + R.swan(1400, 826, 1) + R.deer(1380, 720, 0.9, { flip: -1, look: -1 }) + R.deer(1470, 716, 0.7, { flip: -1 }));
     P.note(1350, 690, 'Mandakini', 'Swans and cranes on the sandbanks; the trees shed flowers into the current.');
     P.fg(R.lotusPad(180, 850, 1.5) + R.lotusPad(420, 884, 1.1, C.white) + R.lotusPad(1500, 880, 1.3) + R.petals(9, [300, 100, 1500, 760], 36, [C.white, C.pink, C.vermilion]) + R.fronds(5, 'T', { n: 5, s: 0.8, cols: [C.leaf, C.green] }) + R.parrots(4, [700, 120, 1200, 300], 5));
