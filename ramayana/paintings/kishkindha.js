@@ -92,13 +92,13 @@
     R.sky(P, { time: 'dusk', seed: 417, bands: 7, motes: 6, disc: [1300, 300, 90, C.vermilion, C.crimson] });
     P.sky(R.peak(300, 780, 900, 520, C.plum, { c2: C.violet, step: 0.12 }));
     P.bg(R.grove(3, -60, 760, 740, 5, { kinds: ['sal', 'tier', 'bare'], cols: [C.forest, C.moss, C.ink], s0: 1, s1: 1.4 }) + R.ground(730, C.clay, { stripes: 3, tufts: 8, c2: C.brown, c3: C.ochre }));
-    put(P, 'mid', 'vali', { x: 560, y: 830, s: 1.8, rot: -78, pose: ['lie', { aR: [70, 110], head: -20 }], head: { eye: 'sad', mouth: 'open' }, nx: 420, ny: 90 }, 'He dies a king, settling his affairs.');
-    P.mid(g(R.item('arrow', { len: 150, tip: C.gold, fl: C.vermilion }), 'translate(800,560) rotate(196)') + circ(812, 716, 10, C.crimson) + circ(790, 740, 6, C.crimson));
-    put(P, 'mid', 'tara', { x: 1010, y: 860, s: 1.44, face: -1, pose: ['kneel', { aR: [96, 80], aL: [84, 90], both: 1, lean: 26, head: 12 }], head: { eye: 'closed' }, ny: 30 }, '“You did not listen. Now Sugriva has what he wanted, and I have this.”');
-    put(P, 'mid', 'angada', { x: 1170, y: 860, s: 0.96, face: -1, pose: 'kneelGrief', hs: 1.15, head: { eye: 'closed' } }, 'Still a boy. “Treat him as your own,” Vali tells Sugriva.');
-    put(P, 'mid', 'sugriva', { x: 1360, y: 850, s: 1.34, face: -1, pose: 'grief', head: { eye: 'closed' } }, 'The victory tastes of ash; he asks to enter the fire himself.');
-    put(P, 'mid', 'ramaX', { x: 230, y: 850, s: 1.6, pose: ['stand', { aR: [40, 110] }], hold: { L: { k: 'bow', len: 104, rot: -6 } }, head: { eye: 'sad' }, ny: -90 }, '“The younger brother’s wife is as a daughter. For that, the king’s punishment.”');
-    P.fg(R.fronds(8, 'L', { n: 3, cols: [C.forest, C.ink] }) + R.crowd({ x0: 1300, x1: 1580, y: 990, n: 3, s: 0.84, kinds: ['vanara'], poses: ['grief', 'kneelGrief'], face: -1, seed: 4 }));
+    put(P, 'mid', 'vali', { x: 940, y: 836, s: 1.8, rot: -78, pose: ['lie', { aR: [70, 110], head: -20 }], head: { eye: 'sad', mouth: 'open' }, nx: -420, ny: 330 }, 'He dies a king, settling his affairs.');
+    P.mid(g(R.item('arrow', { len: 150, tip: C.gold, fl: C.vermilion }), 'translate(560,560) rotate(196)') + circ(548, 716, 10, C.crimson) + circ(570, 736, 6, C.crimson));
+    put(P, 'mid', 'tara', { x: 1100, y: 870, s: 1.44, face: -1, pose: ['kneel', { aR: [96, 80], aL: [84, 90], both: 1, lean: 26, head: 12 }], head: { eye: 'closed' }, ny: 30 }, '“You did not listen. Now Sugriva has what he wanted, and I have this.”');
+    put(P, 'mid', 'angada', { x: 1260, y: 870, s: 0.96, face: -1, pose: 'kneelGrief', hs: 1.15, head: { eye: 'closed' } }, 'Still a boy. “Treat him as your own,” Vali tells Sugriva.');
+    put(P, 'mid', 'sugriva', { x: 1440, y: 850, s: 1.34, face: -1, pose: 'grief', head: { eye: 'closed' } }, 'The victory tastes of ash; he asks to enter the fire himself.');
+    put(P, 'mid', 'ramaX', { x: 190, y: 850, s: 1.5, pose: ['stand', { aR: [40, 110] }], hold: { L: { k: 'bow', len: 104, rot: -6 } }, head: { eye: 'sad' }, ny: -90 }, '“The younger brother’s wife is as a daughter. For that, the king’s punishment.”');
+    P.fg(R.fronds(8, 'L', { n: 3, cols: [C.forest, C.ink] }) + '');
     P.fx.tint = [C.peach, 0.2]; P.glow(1300, 300, 220, C.vermilion, 0.4);
   });
 
@@ -178,7 +178,7 @@
     P.note(1400, 560, 'Mount Mahendra');
     P.bg(circ(210, 210, 150, C.navy) + R.ring(210, 210, 150, C.gold, 6) + circ(290, 150, 50, C.vermilion) + R.burst(290, 150, 44, { seed: 3, col: C.saffron, n: 20, len: 1.7, w: 4 }) + F('hanuman', { x: 150, y: 300, s: 0.44, rot: 40, pose: 'fly', hs: 1.5, head: { gear: 0 } }) + R.bolt(360, 80, 90, C.white, 3));
     P.note(210, 30, 'The child and the sun', 'He took it for a ripe fruit. Indra’s thunderbolt struck his jaw: hanu.');
-    put(P, 'mid', 'hanuman', { x: 900, y: 980, s: 3, pose: ['stand', { aR: [150, 170], aL: [-30, -100], lL: [-14, -8], lR: [16, 8] }], head: { mouth: 'open', eye: 'wide' }, tail: [[-12, -4], [-70, 10], [-120, -50], [-110, -150], [-60, -210], [-20, -180], [-40, -150]], ny: -420 }, '“I can leap beyond the sea and back, and pull up Lanka by the roots.”');
+    put(P, 'mid', 'hanuman', { x: 900, y: 980, s: 3, pose: ['stand', { aR: [118, 150], aL: [-30, -100], lL: [-14, -8], lR: [16, 8] }], head: { mouth: 'open', eye: 'wide' }, tail: [[-12, -4], [-70, 10], [-120, -50], [-110, -150], [-60, -210], [-20, -180], [-40, -150]], ny: -420 }, '“I can leap beyond the sea and back, and pull up Lanka by the roots.”');
     put(P, 'mid', 'jambavan', { x: 420, y: 880, s: 1.26, pose: ['point', { aR: [130, 140] }] }, '“Rise, tiger among monkeys. The whole army is looking at you.”');
     put(P, 'mid', 'angada', { x: 250, y: 890, s: 1.1, pose: 'cheer' });
     P.fg(R.crowd({ x0: 1240, x1: 1580, y: 940, n: 4, s: 0.84, kinds: ['vanara'], poses: ['cheer', 'armsUp', 'namaste'], face: -1, seed: 6 }) + R.crowd({ x0: 30, x1: 180, y: 960, n: 2, s: 0.8, kinds: ['vanara'], poses: ['armsUp'], face: 1, seed: 9 }));
