@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramayana: one hundred paintings</title>
+<style>
+  @font-face { font-family: Rozha; src: url(../mahagatha/engine/fonts/Rozha.ttf); }
+  @font-face { font-family: Garamond; src: url(../anime/engine/fonts/EBGaramond.ttf); font-weight: 400 800; }
+  @font-face { font-family: Garamond; src: url(../anime/engine/fonts/EBGaramond-Italic.ttf); font-style: italic; font-weight: 400 800; }
+  :root { --bg: #14101d; --panel: #1d1830; --fg: #f6ecd3; --muted: #b9ac8f; --gold: #f6be2c; --red: #dd4a2b; --line: #3a3154; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 400 18px/1.5 Garamond, Georgia, serif; }
+  body.still { overflow: hidden; }
+  body.still header, body.still footer, body.still #panel, body.still #notes, body.still #load { display: none !important; }
+  body.still #stage { width: 100vw; height: 100vh; max-width: none; border: 0; border-radius: 0; box-shadow: none; }
+  .wrap { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: 10px; padding: 10px 16px 16px; max-width: 1500px; margin: 0 auto; }
+  body.still .wrap { padding: 0; display: block; max-width: none; }
+  header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  header a { color: var(--muted); text-decoration: none; font-size: 16px; }
+  header a:hover { color: var(--gold); }
+  header .count { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .kanda { font: 400 15px/1 Garamond, serif; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+  #frame { display: grid; place-items: center; min-height: 0; }
+  #stage { position: relative; width: min(100%, calc((100vh - 250px) * 16 / 9)); min-width: min(100%, 320px); aspect-ratio: 16/9; border: 3px solid #2b2340; border-radius: 6px; overflow: hidden; box-shadow: 0 18px 60px #0009, 0 0 0 1px #0008; background: #1d2756; touch-action: pan-y; }
+  #stage:fullscreen { width: 100vw; height: 100vh; border: 0; border-radius: 0; display: grid; place-items: center; background: #000; }
+  #stage:fullscreen canvas { width: min(100vw, calc(100vh * 16 / 9)); height: auto; aspect-ratio: 16/9; position: static; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #notes { position: absolute; inset: 0; pointer-events: none; }
+  .pin { position: absolute; transform: translate(-50%, -100%); pointer-events: auto; cursor: default; display: grid; justify-items: center; gap: 2px; opacity: 0; transition: opacity .25s; }
+  #stage.guide .pin { opacity: 1; }
+  .pin b { font: 400 15px/1 Rozha, Georgia, serif; letter-spacing: .03em; background: #14101de0; color: var(--fg); padding: 5px 9px 6px; border-radius: 4px; border: 1px solid var(--gold); white-space: nowrap; }
+  .pin i { width: 9px; height: 9px; background: var(--gold); border: 2px solid #14101d; border-radius: 50%; }
+  .pin span { display: none; position: absolute; bottom: 100%; margin-bottom: 6px; width: 240px; font: 400 15px/1.35 Garamond, serif; background: #14101df2; padding: 8px 10px; border-radius: 4px; border: 1px solid var(--line); }
+  .pin:hover span:not(:empty) { display: block; }
+  #load { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-style: italic; background: #14101d; transition: opacity .4s; }
+  #load.gone { opacity: 0; pointer-events: none; }
+  footer { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; align-items: start; }
+  h1 { font: 400 clamp(26px, 3.4vw, 40px)/1.08 Rozha, Georgia, serif; margin: 4px 0 6px; letter-spacing: .01em; }
+  #text { margin: 0; max-width: 78ch; color: #e9dfc6; }
+  #src { margin: 6px 0 0; color: var(--muted); font-size: 15px; font-style: italic; }
+  .btns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; max-width: 430px; }
+  button, .btn { font: 400 16px/1 Garamond, serif; padding: 9px 13px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); cursor: pointer; text-decoration: none; }
+  button:hover, .btn:hover { border-color: var(--gold); }
+  button[aria-pressed="true"] { background: var(--gold); color: #1a1430; border-color: var(--gold); }
+  button.nav { font-size: 20px; padding: 6px 16px; }
+  #panel { position: fixed; right: 16px; bottom: 16px; width: 270px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; box-shadow: 0 12px 40px #000a; display: none; z-index: 5; }
+  #panel.open { display: block; }
+  #panel h2 { font: 400 18px/1 Rozha, serif; margin: 0 0 8px; color: var(--gold); }
+  #panel label { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 16px; cursor: pointer; }
+  #panel input { accent-color: var(--gold); width: 16px; height: 16px; }
+  @media (max-width: 760px) { footer { grid-template-columns: 1fr; } .btns { justify-content: flex-start; } #stage { width: 100%; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><a href="index.html">&larr; All one hundred</a><span class="kanda" id="kanda"></span><span class="count" id="count"></span></header>
+  <div id="frame"><div id="stage"><canvas id="c"></canvas><div id="notes"></div><div id="load">mixing the paints&hellip;</div></div></div>
+  <footer>
+    <div><h1 id="title"></h1><p id="text"></p><p id="src"></p></div>
+    <div class="btns">
+      <button class="nav" id="prev" aria-label="Previous painting">&larr;</button><button class="nav" id="next" aria-label="Next painting">&rarr;</button>
+      <button id="guide" aria-pressed="false">Who&rsquo;s who</button><button id="shbtn" aria-pressed="false">Shaders</button>
+      <button id="full">Fullscreen</button><a class="btn" id="save" download>Save image</a>
+    </div>
+  </footer>
+</div>
+<div id="panel"><h2>Shader stack</h2><div id="toggles"></div></div>
+<script src="engine/kit.js"></script><script src="engine/figures.js"></script><script src="engine/world.js"></script><script src="engine/beasts.js"></script><script src="engine/sets.js"></script><script src="engine/shader.js"></script>
+<script src="paintings/bala.js"></script><script src="paintings/ayodhya.js"></script><script src="paintings/aranya.js"></script><script src="paintings/aranya2.js"></script><script src="paintings/kishkindha.js"></script><script src="paintings/sundara.js"></script><script src="paintings/yuddha.js"></script>
+<script>
+(async function () {
+  const R = window.R, q = new URLSearchParams(location.search), still = q.has('still');
+  const list = R.paintings.slice().sort((a, b) => a.n - b.n);
+  let idx = Math.max(0, list.findIndex((p) => String(p.n) === q.get('p') || p.slug === q.get('p')));
+  const $ = (id) => document.getElementById(id), stageEl = $('stage'), canvas = $('c');
+  if (still) document.body.classList.add('still');
+  let stage; try { stage = new R.Stage(canvas); } catch (e) { $('load').textContent = 'This painting needs WebGL.'; return; }
+  const mouse = [0.5, 0.5], target = [0.5, 0.5]; let P = null, t0 = performance.now(), pins = [];
+  if (q.get('off')) q.get('off').split(',').forEach((k) => (stage.on[k] = 0));
+  const pad = (n) => String(n).padStart(3, '0');
+  function px() { const r = stageEl.getBoundingClientRect(), dpr = still ? window.devicePixelRatio : Math.min(window.devicePixelRatio || 1, 2); let w = Math.round(r.width * dpr), h = Math.round((r.width * dpr * 9) / 16); if (document.fullscreenElement) { const cw = canvas.getBoundingClientRect().width; w = Math.round(cw * dpr); h = Math.round((w * 9) / 16); } const cap = 2560; if (w > cap) { h = Math.round((h * cap) / w); w = cap; } return [w, h]; }
+  async function show(i, push) {
+    idx = (i + list.length) % list.length; const m = list[idx]; window.__ready = false;
+    $('load').classList.remove('gone');
+    P = R.Painting(m); m.draw(P);
+    const [w, h] = px(); stage.size(w, h); await stage.load(P, w, h);
+    $('kanda').textContent = m.kanda; $('count').textContent = `${m.n} / ${list.length}`; $('title').textContent = m.title; $('text').textContent = m.text; $('src').textContent = m.ref ? 'Valmiki Ramayana (tr. Bibek Debroy), ' + m.ref + (m.aside ? ' · ' + m.aside : '') : m.aside || '';
+    document.title = m.title + ' · Ramayana in one hundred paintings';
+    $('save').href = `images/${pad(m.n)}-${m.slug}.jpg`; $('save').download = `${pad(m.n)}-${m.slug}.jpg`;
+    const box = $('notes'); box.innerHTML = ''; pins = P.notes.map((nt) => { const el = document.createElement('div'); el.className = 'pin'; const b = document.createElement('b'); b.textContent = nt.name; const s = document.createElement('span'); s.textContent = nt.text || ''; el.append(s, b, document.createElement('i')); box.append(el); return { el, nt }; });
+    if (push) history.replaceState(null, '', '?p=' + m.n);
+    t0 = performance.now(); frame(true); $('load').classList.add('gone');
+    requestAnimationFrame(() => requestAnimationFrame(() => (window.__ready = true)));
+  }
+  function frame(once) {
+    if (!P) return;
+    mouse[0] += (target[0] - mouse[0]) * 0.07; mouse[1] += (target[1] - mouse[1]) * 0.07;
+    const t = still ? 3.7 : (performance.now() - t0) / 1000 + 3;
+    stage.draw(t, still ? [0.5, 0.5] : mouse, { still });
+    if (!still) pins.forEach(({ el, nt }) => { const uv = stage.toUv(nt.x, nt.y, R.DEPTH[nt.layer] || 0.72, stage.par, stage.zoom); el.style.left = uv[0] * 100 + '%'; el.style.top = (1 - uv[1]) * 100 + '%'; });
+    if (!once && !still) requestAnimationFrame(() => frame());
+  }
+  if (!still) {
+    stageEl.addEventListener('pointermove', (e) => { const r = canvas.getBoundingClientRect(); target[0] = (e.clientX - r.left) / r.width; target[1] = (e.clientY - r.top) / r.height; });
+    stageEl.addEventListener('pointerleave', () => { target[0] = 0.5; target[1] = 0.5; });
+    window.addEventListener('deviceorientation', (e) => { if (e.gamma == null) return; target[0] = 0.5 + Math.max(-1, Math.min(1, e.gamma / 30)) * 0.5; target[1] = 0.5 + Math.max(-1, Math.min(1, (e.beta - 45) / 30)) * 0.5; });
+    $('prev').onclick = () => show(idx - 1, true); $('next').onclick = () => show(idx + 1, true);
+    addEventListener('keydown', (e) => { if (e.key === 'ArrowLeft') show(idx - 1, true); if (e.key === 'ArrowRight') show(idx + 1, true); if (e.key === 'g') $('guide').click(); });
+    $('guide').onclick = (e) => { const on = stageEl.classList.toggle('guide'); e.currentTarget.setAttribute('aria-pressed', on); };
+    $('shbtn').onclick = (e) => { const on = $('panel').classList.toggle('open'); e.currentTarget.setAttribute('aria-pressed', on); };
+    $('full').onclick = () => (document.fullscreenElement ? document.exitFullscreen() : stageEl.requestFullscreen && stageEl.requestFullscreen());
+    R.SHADERS.forEach(([k, name]) => { const l = document.createElement('label'), c = document.createElement('input'); c.type = 'checkbox'; c.checked = !!stage.on[k]; c.onchange = () => (stage.on[k] = c.checked ? 1 : 0); l.append(c, name); $('toggles').append(l); });
+    let rz; const redo = () => { clearTimeout(rz); rz = setTimeout(() => show(idx), 220); }; addEventListener('resize', redo); document.addEventListener('fullscreenchange', redo);
+    let sx = null; stageEl.addEventListener('touchstart', (e) => (sx = e.touches[0].clientX), { passive: true }); stageEl.addEventListener('touchend', (e) => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 60) show(idx + (dx < 0 ? 1 : -1), true); sx = null; });
+  }
+  await show(idx); if (!still) frame();
+})();
+</script>
+</body>
+</html>
