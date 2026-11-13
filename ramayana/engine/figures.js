@@ -378,7 +378,7 @@
     if (o.heads) {
       const mk = (hh, tf) => { const X = (o.front ? R.headF : R.headP)(Object.assign({}, hd, hh)); return g(X.back + X.front, tf); };
       const moods = o.headMoods || [];
-      if (o.front) { for (let k = 4; k >= 0; k--) [-1, 1].forEach((sd) => { if (sd > 0 && k === 4 && o.heads < 10) return; const idx = sd < 0 ? k : 5 + k; if (sd > 0 && k > 3) return; const dx = sd * (46 + k * 44) * hs, dy = (k * k * 2.2 + 4) * hs, sc = hs * (0.93 - k * 0.045); xheads += mk(Object.assign({ halo: 0 }, moods[idx] || {}), `translate(${n(hx + dx)},${n(hy + dy)}) rotate(${sd * (k + 1) * 4.5}) scale(${n(sc)})`); }); }
+      if (o.front) { for (let k = 4; k >= 0; k--) [-1, 1].forEach((sd) => { if (sd > 0 && k === 4 && o.heads < 10) return; const idx = sd < 0 ? k : 5 + k; if (sd > 0 && k > 3) return; const dx = sd * (52 + k * 50) * hs, dy = (k * k * 2.6 + 4) * hs, sc = hs * (0.93 - k * 0.045); xheads += mk(Object.assign({ halo: 0, hair: 'none' }, moods[idx] || {}), `translate(${n(hx + dx)},${n(hy + dy)}) rotate(${sd * (k + 1) * 4.5}) scale(${n(sc)})`); }); }
       else { for (let k = 0; k < 9; k++) { const t = k / 8, a = -150 + t * 150, r = 58 + 10 * Math.sin(t * 3.14); const idx = k; xheads += mk(Object.assign({ halo: 0 }, moods[idx] || {}), `translate(${n(hx - 6 + Math.cos(rad(a)) * r * hs)},${n(hy + 6 + Math.sin(rad(a)) * r * hs)}) rotate(${n((a + 20) * 0.38)}) scale(${n(hs * 0.8)})`); } }
     }
 
