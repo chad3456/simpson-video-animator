@@ -101,9 +101,9 @@
     P.sky(R.motes(4, [520, 150, 1080, 700], 16, [C.gold, C.cream], { kind: 'star', min: 8, max: 20 }) + g(R.vimana(0, 0, 1, { win: C.maroon, wall: C.straw, inner: C.rose }), 'translate(800,560) scale(.74)'));
     P.note(800, 150, 'The Pushpaka', 'Yoked with swans, hung with bells, bright as a hill of gold.');
     P.mid(R.bed(520, 800, 1.7, C.crimson));
-    put(P, 'mid', 'ravana', { x: 250, y: 652, s: 1.4, rot: -90, heads: 10, pose: ['lie', { aR: [60, 120] }], head: { eye: 'closed', mouth: 'neutral' }, cape: null, nx: 330, ny: 190 }, 'Asleep after love and wine, his arms like Indra’s banners, scarred by the thunderbolt.');
+    put(P, 'mid', 'ravana', { x: 770, y: 652, s: 1.4, rot: -90, heads: 10, pose: ['lie', { aR: [60, 120] }], head: { eye: 'closed', mouth: 'neutral' }, cape: null, nx: -300, ny: 250 }, 'Asleep after love and wine, his arms like Indra’s banners, scarred by the thunderbolt.');
     P.mid(R.bed(1220, 820, 1.2, C.teal));
-    put(P, 'mid', 'mandodari', { x: 1400, y: 716, s: 1.1, rot: 90, face: -1, pose: 'lie', head: { eye: 'closed' }, nx: -170, ny: 190 }, 'Ravana’s queen. For one breath Hanuman takes her for Sita.');
+    put(P, 'mid', 'mandodari', { x: 1040, y: 716, s: 1.1, rot: 90, face: -1, pose: 'lie', head: { eye: 'closed' }, nx: 250, ny: 200 }, 'Ravana’s queen. For one breath Hanuman takes her for Sita.');
     let sl = ''; const f = R.rng(6); [[120, 880], [700, 890], [900, 870], [1060, 890], [1480, 880]].forEach((q, i) => { const c1 = f.pick([C.pink, C.aqua, C.magenta, C.gold]); sl += F('woman', { x: q[0], y: q[1], s: 0.72, rot: i % 2 ? 90 : -90, face: i % 2 ? -1 : 1, pose: 'lie', head: { eye: 'closed', gear: 0 }, args: [c1, C.gold, f.pick([C.sFair, C.sWheat, C.sTan])] }); });
     P.fg(sl + g(R.item('veena'), 'translate(980,880) rotate(70) scale(.9)') + g(R.item('pot', { col: C.gold }), 'translate(380,884) rotate(80) scale(1.4)') + g(R.item('bowl'), 'translate(1300,890) scale(1)'));
     P.mid(R.pillar(950, 760, 620, 50, C.gold, C.aqua));
@@ -161,7 +161,7 @@
   R.add({ n: 83, slug: 'the-ring-is-given', kanda: K, ref: 'Sundara 29–34', title: 'Hanuman gives her the ring',
     text: 'How to speak without frightening her? From the branch, softly, in human speech, he tells the story of Dasharatha’s son: the exile, the deer, the search. She looks up and sees a small monkey the colour of ashoka flowers, and fears another trick of Ravana’s. He comes down, palms joined, and describes Rama mark by mark. Then: “See, this ring bears his name.” She takes it, and it is as if she had her husband’s hand.' }, (P) => {
     grove(P, { seed: 534, gy: 750, sky: { bands: 5, moon: [260, 170, 56] } });
-    P.bg(R.tree('banyan', 1250, 780, 2.5, { c: C.olive, c2: C.gold, tc: C.umber }) + R.burst(820, 500, 90, { seed: 3, col: C.gold, n: 40, len: 2.6 }));
+    P.bg(R.tree('banyan', 1250, 780, 2.5, { c: C.olive, c2: C.gold, tc: C.umber }) + R.burst(820, 560, 50, { seed: 3, col: C.gold, n: 30, len: 2.4, w: 4 }));
     P.bg(R.sil(F('rakshasi', { x: 200, y: 760, s: 0.9, rot: -90, pose: 'lie' }) + F('rakshasi', { x: 430, y: 750, s: 0.86, pose: 'sitGrief' }), C.navy, 0.75));
     P.note(300, 620, 'The guards doze', 'It is the dead hour before dawn.');
     put(P, 'mid', 'sitaL', { x: 1080, y: 900, s: 2.1, face: -1, pose: ['sit', { aR: { t: [92, -66] }, aL: { t: [96, -56] }, both: 1, lean: 8 }], head: { eye: 'soft', mouth: 'smile' }, ny: -80 }, 'Joy and grief at once: “He has not forgotten me. But why has he not come?”');
@@ -169,7 +169,7 @@
     P.note(820, 470, 'Rama’s ring', 'She presses it to her head, then to her heart.');
     put(P, 'mid', 'hanuman', { x: 560, y: 900, s: 1.6, pose: ['kneelOne', { aR: { t: [128, -64] }, aL: { t: [120, -52] }, both: 1, lean: 8 }], head: { eye: 'soft', mouth: 'smile' }, ny: -20 }, '“He does not sleep; if he sleeps he wakes saying ‘Sita’. He will come. I have seen the sea, and it can be crossed.”');
     P.fg(R.petals(6, [200, 100, 1500, 800], 30, [C.vermilion, C.saffron, C.white]) + R.fronds(7, 'L', { n: 3, cols: [C.forest, C.navy] }) + R.vine(1500, -20, 380, C.leaf, 3, C.vermilion) + R.vine(1400, -40, 260, C.leaf, 7, C.vermilion));
-    P.fx.tint = [C.pale, 0.24]; P.glow(820, 560, 230, C.gold, 0.65).glow(260, 170, 140, C.cream, 0.4);
+    P.fx.tint = [C.pale, 0.24]; P.glow(820, 560, 170, C.gold, 0.4).glow(260, 170, 140, C.cream, 0.4);
   });
 
   R.add({ n: 84, slug: 'the-crest-jewel', kanda: K, ref: 'Sundara 35–38', title: 'The crest-jewel',
