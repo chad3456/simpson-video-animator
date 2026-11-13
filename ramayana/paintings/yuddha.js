@@ -10,9 +10,9 @@
     text: 'Kicked from the council for saying “Give her back”, Vibhishana crosses the sea with four companions and hangs in the sky above the monkey camp: “I am Ravana’s brother. I have left sons and wife; I come to Rama for refuge.” Sugriva wants him killed as a spy. Rama hears everyone, then: “If a man comes to me once and says ‘I am yours’, I give him safety from all beings. That is my vow. Even if it were Ravana.”' }, (P) => {
     S.sea(P, { seed: 611, hy: 420, time: 'dusk', sky: { bands: 6, motes: 10, disc: [1330, 320, 70, C.cream, C.gold] } });
     P.bg(path('M-80,620 C300,560 800,600 1700,700 L1700,960 L-80,960 Z', C.sand) + path('M-80,660 C300,600 800,640 1700,740 L1700,960 L-80,960 Z', pat('dots', C.paper, C.sand, 1.5)));
-    P.bg(R.cloud(1180, 300, 2.2, C.rose, C.pink));
-    put(P, 'mid', 'vibhishana', { x: 1180, y: 300, s: 1.2, face: -1, pose: 'namaste', head: { eye: 'sad' }, ny: 30 }, 'He keeps his distance in the air until he is told he may come down.');
-    P.mid(F('rakshasa', { x: 1030, y: 316, s: 0.8, face: -1, pose: 'namaste', args: [C.sRak, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }) + F('rakshasa', { x: 1320, y: 310, s: 0.8, face: -1, pose: 'namaste', args: [C.sPurple, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }) + F('rakshasa', { x: 1420, y: 320, s: 0.74, face: -1, pose: 'namaste', args: [C.sGreen, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }) + F('rakshasa', { x: 940, y: 324, s: 0.74, face: -1, pose: 'namaste', args: [C.slate, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }));
+    P.bg(R.cloud(1180, 400, 2.2, C.rose, C.pink));
+    put(P, 'mid', 'vibhishana', { x: 1180, y: 400, s: 1.1, face: -1, pose: 'namaste', head: { eye: 'sad' }, ny: 30 }, 'He keeps his distance in the air until he is told he may come down.');
+    P.mid(F('rakshasa', { x: 1030, y: 412, s: 0.8, face: -1, pose: 'namaste', args: [C.sRak, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }) + F('rakshasa', { x: 1320, y: 408, s: 0.8, face: -1, pose: 'namaste', args: [C.sPurple, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }) + F('rakshasa', { x: 1420, y: 416, s: 0.74, face: -1, pose: 'namaste', args: [C.sGreen, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }) + F('rakshasa', { x: 940, y: 420, s: 0.74, face: -1, pose: 'namaste', args: [C.slate, C.teal], head: { horns: 0, mouth: 'neutral', eye: 'open' } }));
     put(P, 'mid', 'ramaX', { x: 640, y: 880, s: 2, pose: 'bless', hold: { L: { k: 'bow', len: 106, rot: -6 } }, head: { eye: 'soft', mouth: 'smile' }, ny: -130 }, 'The raised palm: abhaya, “do not fear”. He consecrates him king of Lanka on the spot, with sea water.');
     put(P, 'mid', 'sugriva', { x: 330, y: 880, s: 1.44, pose: ['point', { aR: [120, 130] }], head: { eye: 'angry', mouth: 'open' } }, '“A brother who deserts his brother in danger: whom will he not betray?”');
     put(P, 'mid', 'hanuman', { x: 150, y: 884, s: 1.3, pose: 'namaste' }, '“I watched his face and voice. There is no deceit in him.”');
@@ -58,11 +58,11 @@
   R.add({ n: 92, slug: 'angadas-embassy', kanda: K, ref: 'Yuddha 31', title: 'Angada’s last warning',
     text: 'Before the first arrow, Rama follows the law of kings and sends an envoy. Angada leaps the wall into Ravana’s hall: “I am Vali’s son. Give back Vaidehi and bow to Rama, or the world will be without rakshasas and Vibhishana will rule here.” Four guards seize his arms. He lets them hang on, springs to the palace roof, shakes them off like birds, kicks down the golden pinnacle, shouts his name and is gone.' }, (P) => {
     R.sky(P, { time: 'dusk', seed: 631, bands: 7, motes: 0 });
-    P.sky(R.speed(760, 240, { seed: 4, n: 50, col: C.cream, r0: 220, w: 7 }));
+    P.sky(R.speed(760, 330, { seed: 4, n: 50, col: C.cream, r0: 220, w: 7 }));
     P.bg(R.palace(800, 960, 1300, 520, { tiers: 2, domes: 0, wall: C.gold, trim: C.crimson, roof: C.gold, win: C.maroon, aw: 110, lamps: 1 }) + R.dome(380, 440, 1.3) + R.dome(1220, 440, 1.3));
-    P.bg(g(R.dome(0, 0, 1.5), 'translate(900,380) rotate(34)') + R.impact(790, 430, 110, [C.white, C.gold, C.white], 5, 13) + R.rocks(4, 600, 1000, 470, 5, C.amber, 26));
+    P.bg(g(R.dome(0, 0, 1.5), 'translate(900,380) rotate(34)') + R.impact(790, 600, 110, [C.white, C.gold, C.white], 5, 13) + R.rocks(4, 600, 1000, 470, 5, C.amber, 26));
     P.note(940, 180, 'The palace pinnacle', 'It comes down like a Himalayan peak struck by the thunderbolt.');
-    put(P, 'mid', 'angada', { x: 760, y: 420, s: 1.9, pose: ['leap', { aR: [150, 176], aL: [-140, -170] }], tail: TAIL, head: { eye: 'angry', mouth: 'open' }, ny: 30 }, 'Young, quick-tempered, and his father’s son.');
+    put(P, 'mid', 'angada', { x: 760, y: 600, s: 1.5, pose: ['leap', { aR: [150, 176], aL: [-140, -170] }], tail: TAIL, head: { eye: 'angry', mouth: 'open' }, ny: 10 }, 'Young, quick-tempered, and his father’s son.');
     P.mid(F('rakshasa', { x: 540, y: 330, s: 0.8, rot: -120, pose: 'fall', args: [C.sGreen, C.ink] }) + F('rakshasa', { x: 1010, y: 300, s: 0.8, rot: 130, pose: 'fall', args: [C.sPurple, C.plum] }) + F('rakshasa', { x: 470, y: 560, s: 0.76, rot: -70, pose: 'fall', args: [C.sRed, C.ink] }) + F('rakshasa', { x: 1090, y: 520, s: 0.76, rot: 80, pose: 'fall', args: [C.slate, C.olive] }));
     P.note(1010, 240, 'Four guards', 'They held on a moment too long.');
     put(P, 'fg', 'ravana', { x: 1330, y: 1010, s: 1.6, face: -1, heads: 10, pose: ['strike', { aR: [130, 160], aL: [60, 120] }], head: { eye: 'angry', mouth: 'open' }, ny: -160 }, '“Seize him! Kill him!”');
@@ -154,13 +154,13 @@
     text: 'The arrow Brahma made, with the wind in its feathers and the sun in its tip, enters Ravana’s heart, passes through, and returns to the quiver. The bow drops from his hand. Mandodari comes: “You conquered the three worlds, and then your own senses conquered you.” Vibhishana hesitates to perform the rites for such a man. Rama: “Hostility ends at death. Our purpose is done. He is now as much mine as yours.”' }, (P) => {
     S.field(P, { seed: 697, gy: 740, time: 'dusk', lx: 1300, ls: 0.74, sky: { bands: 7, motes: 10, disc: [300, 300, 90, C.cream, C.gold] } });
     P.bg(flipX(g(R.wheel(0, 0, 60, C.gold, C.crimson), 'translate(1250,760) rotate(24)') + rect(1160, 700, 200, 60, pat('flower', C.ink, C.gold, 0.9), { rx: 8, transform: 'rotate(-12 1260 730)' }), 1300));
-    put(P, 'mid', 'ravana', { x: 1140, y: 840, s: 1.7, rot: 90, face: -1, heads: 10, pose: ['lie', { aR: [120, 160], aL: [40, 60] }], head: { eye: 'closed', mouth: 'neutral' }, cape: null, nx: 330, ny: 420 }, 'He falls like Vritra under the thunderbolt, and the earth shakes.');
-    P.mid(g(R.item('arrow', { len: 150, tip: C.gold, fl: C.gold }), 'translate(1500,560) rotate(190)') + g(R.item('bow', { len: 90 }), 'translate(1040,890) rotate(80)'));
-    put(P, 'mid', 'mandodari', { x: 1030, y: 800, s: 1.3, pose: ['kneel', { aR: [96, 80], aL: [84, 90], both: 1, lean: 24, head: 10 }], head: { eye: 'closed' }, ny: 30 }, '“It was not Rama. It was the day you looked at Sita.”');
-    put(P, 'mid', 'vibhishana', { x: 800, y: 850, s: 1.4, pose: 'grief', head: { eye: 'closed' } }, 'He weeps for the brother who threw him out.');
+    put(P, 'mid', 'ravana', { x: 860, y: 780, s: 1.7, rot: 90, face: -1, heads: 10, pose: ['lie', { aR: [120, 160], aL: [40, 60] }], head: { eye: 'closed', mouth: 'neutral' }, cape: null, nx: 420, ny: 300 }, 'He falls like Vritra under the thunderbolt, and the earth shakes.');
+    P.mid(g(R.item('arrow', { len: 150, tip: C.gold, fl: C.gold }), 'translate(1262,580) rotate(184)') + g(R.item('bow', { len: 90 }), 'translate(1000,900) rotate(80)'));
+    put(P, 'mid', 'mandodari', { x: 1500, y: 850, s: 1.3, face: -1, pose: ['kneel', { aR: [96, 80], aL: [84, 90], both: 1, lean: 24, head: 10 }], head: { eye: 'closed' }, ny: 30 }, '“It was not Rama. It was the day you looked at Sita.”');
+    put(P, 'mid', 'vibhishana', { x: 730, y: 860, s: 1.4, pose: 'grief', head: { eye: 'closed' } }, 'He weeps for the brother who threw him out.');
     put(P, 'mid', 'ramaX', { x: 420, y: 880, s: 2, pose: ['stand', { aR: [70, 100], aL: [-10, 0] }], hold: { L: { k: 'bow', len: 110, rot: -8 } }, head: { eye: 'soft' }, ny: -130 }, 'No triumph in his face. He asks that the rites be done properly.');
     put(P, 'mid', 'lakshmanaX', { x: 200, y: 890, s: 1.5, pose: 'stand', hold: { R: { k: 'bow', len: 96, rot: 6 } } });
-    P.fg(R.petals(5, [100, 60, 1500, 700], 40, [C.white, C.gold, C.pink]) + R.crowd({ x0: 1300, x1: 1580, y: 990, n: 3, s: 0.9, kinds: ['woman'], poses: ['kneelGrief', 'grief'], face: -1, seed: 97, each: () => ({ head: { gear: 0, hair: 'long' } }) }));
+    P.fg(R.petals(5, [100, 60, 1500, 700], 40, [C.white, C.gold, C.pink]) + '');
     P.note(800, 200, 'Flowers fall', 'The gods’ drums sound; a cool wind rises.');
     P.fx.tint = [C.peach, 0.16]; P.glow(300, 300, 240, C.cream, 0.4).rays(300, 300, 0.5, C.cream);
   });

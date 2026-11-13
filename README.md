@@ -13,6 +13,8 @@ Three shows share one pipeline (Kokoro voices, numpy score and SFX, headless Chr
 
 - **Dostoevsky at the Coin Laundry** (`anime/`): a quiet, hand-painted-look anime in twelve 15-minute episodes. A shy 28-year-old proofreader and a teasing 17-year-old who inherited her grandfather's Dostoevsky books meet every Thursday night in a 24-hour coin laundry by a canal, and talk about one book or character per episode, from *White Nights* to the last page of *The Brothers Karamazov*. Original story, designs and score; the friendship stays tender and unspoken. See `anime/SERIES.md` (bible), `anime/STYLE.md` and `anime/SKILL.md`. Episodes are written as `anime/episodes/<slug>/screenplay.txt` and built with `anime/engine/screenplay.py` and `anime/engine/build_audio.py`, then rendered with `node engine/render.mjs anime/episodes/<slug> --player anime/engine/player.html`.
 
+- **Ramayana in one hundred paintings** (`ramayana/`): the Valmiki Ramayana, after Bibek Debroy's translation, as a hundred interactive paintings in an Indian folk-gouache style. Each is drawn live as layered SVG and finished by a WebGL shader stack (paper, pigment, gold leaf, water, fire, depth parallax). Open `ramayana/index.html`; stills are in `ramayana/images/` and `ramayana/ramayana-100-paintings.zip`. See `ramayana/SKILL.md`.
+
 - `SKILL.md`: the full workflow (ingest, study, brainstorm, script, fairness guardrails, production).
 - `engine/`: the renderer and pipeline.
 - `index.html`: the episode gallery (static, deploys to Vercel with zero config).

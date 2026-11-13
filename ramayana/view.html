@@ -39,17 +39,17 @@
   h1 { font: 400 clamp(26px, 3.4vw, 40px)/1.08 Rozha, Georgia, serif; margin: 4px 0 6px; letter-spacing: .01em; }
   #text { margin: 0; max-width: 78ch; color: #e9dfc6; }
   #src { margin: 6px 0 0; color: var(--muted); font-size: 15px; font-style: italic; }
-  .btns { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; max-width: 430px; }
+  .btns { position: relative; display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; max-width: 430px; }
   button, .btn { font: 400 16px/1 Garamond, serif; padding: 9px 13px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); cursor: pointer; text-decoration: none; }
   button:hover, .btn:hover { border-color: var(--gold); }
   button[aria-pressed="true"] { background: var(--gold); color: #1a1430; border-color: var(--gold); }
   button.nav { font-size: 20px; padding: 6px 16px; }
-  #panel { position: fixed; right: 16px; bottom: 16px; width: 270px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; box-shadow: 0 12px 40px #000a; display: none; z-index: 5; }
+  #panel { position: absolute; right: 0; bottom: calc(100% + 8px); width: 270px; max-height: 70vh; overflow: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; box-shadow: 0 12px 40px #000a; display: none; z-index: 5; }
   #panel.open { display: block; }
   #panel h2 { font: 400 18px/1 Rozha, serif; margin: 0 0 8px; color: var(--gold); }
   #panel label { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 16px; cursor: pointer; }
   #panel input { accent-color: var(--gold); width: 16px; height: 16px; }
-  @media (max-width: 760px) { footer { grid-template-columns: 1fr; } .btns { justify-content: flex-start; } #stage { width: 100%; } }
+  @media (max-width: 760px) { footer { grid-template-columns: 1fr; } .btns { justify-content: flex-start; } #panel { right: auto; left: 0; } #stage { width: 100%; } }
 </style>
 </head>
 <body>
@@ -62,10 +62,10 @@
       <button class="nav" id="prev" aria-label="Previous painting">&larr;</button><button class="nav" id="next" aria-label="Next painting">&rarr;</button>
       <button id="guide" aria-pressed="false">Who&rsquo;s who</button><button id="shbtn" aria-pressed="false">Shaders</button>
       <button id="full">Fullscreen</button><a class="btn" id="save" download>Save image</a>
+      <div id="panel"><h2>Shader stack</h2><div id="toggles"></div></div>
     </div>
   </footer>
 </div>
-<div id="panel"><h2>Shader stack</h2><div id="toggles"></div></div>
 <script src="engine/kit.js"></script><script src="engine/figures.js"></script><script src="engine/world.js"></script><script src="engine/beasts.js"></script><script src="engine/sets.js"></script><script src="engine/shader.js"></script>
 <script src="paintings/bala.js"></script><script src="paintings/ayodhya.js"></script><script src="paintings/aranya.js"></script><script src="paintings/aranya2.js"></script><script src="paintings/kishkindha.js"></script><script src="paintings/sundara.js"></script><script src="paintings/yuddha.js"></script>
 <script>

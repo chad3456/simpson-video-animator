@@ -401,6 +401,11 @@
     const lower = tail + drawLeg(legs[0], 0) + drawLeg(legs[1], 1) + hull + pleat;
     const body = g(lower + g(upper, `rotate(${n(lean)})`) + g(belt, `rotate(${n(lean * 0.4)})`), `translate(0,${n(hipY)})`);
     const f = o.face === -1 ? -1 : 1;
+    { // remember where the top of the head ended up, in scene space, for guide pins
+      const top = hy - (hd.gear === 'mukut' ? 100 : hd.gear ? 62 : 46) * hs, lr = rad(lean), ux = hx * Math.cos(lr) - top * Math.sin(lr), uy = hx * Math.sin(lr) + top * Math.cos(lr) + hipY;
+      const sc = o.s || 1, rr = rad(o.rot || 0), px = ux * sc * f, py = uy * sc;
+      R._head = [(o.x || 0) + px * Math.cos(rr) - py * Math.sin(rr), (o.y || 0) + px * Math.sin(rr) + py * Math.cos(rr)];
+    }
     return g(body, R.tf(o.x || 0, o.y || 0, o.s || 1, o.rot || 0, f), o.op != null ? { opacity: o.op } : null);
   };
   R.headTop = (o) => { const s = o.s || 1; return [(o.x || 0), (o.y || 0) - s * 290]; };
@@ -480,7 +485,7 @@
     const base = CAST[name](...(o.args || []));
     P[layer](R.fig(merge(base, o)));
     const lab = o.label || base.label;
-    if (lab && o.note !== false) { const s = o.s || 1; const up = o.rot ? 150 : 250; P.note((o.x || 0) + (o.nx || 0), (o.y || 0) - s * up + (o.ny || 0), lab, text || '', layer); }
+    if (lab && o.note !== false) P.note(Math.max(70, Math.min(R.W - 70, R._head[0])), Math.max(56, Math.min(R.H - 30, R._head[1] - 6)), lab, text || '', layer);
     return P;
   };
   // a crowd row of townsfolk / soldiers / vanaras / rakshasas
