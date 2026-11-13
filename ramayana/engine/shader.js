@@ -163,7 +163,7 @@ void main(){
     self.toUv = (x, y, depth, par, zoom) => [((x / R.W - 0.5 - par[0] * depth) * zoom + 0.5), ((1 - y / R.H - 0.5 - par[1] * depth) * zoom + 0.5)];
     self.draw = function (t, mouse, o = {}) {
       const w = canvas.width, h = canvas.height, on = self.on, fx = self.fx || { glow: [], fire: [] };
-      const zoom = o.still ? 1 : 1.035, k = on.parallax && !o.still ? 1 : 0;
+      const zoom = o.zoom || (o.still ? 1 : 1.035), k = (on.parallax && !o.still ? 1 : 0) * (o.parK || 1);
       const par = [-(mouse[0] - 0.5) * 0.022 * k, (mouse[1] - 0.5) * 0.014 * k];
       self.par = par; self.zoom = zoom;
       gl.viewport(0, 0, w, h);
@@ -178,7 +178,7 @@ void main(){
       gl.uniform2f(B.u.uRes, w, h); gl.uniform2f(B.u.uMouse, mouse[0], 1 - mouse[1]); gl.uniform1f(B.u.uT, t); gl.uniform1f(B.u.uAsp, w / h);
       const U = (n, v) => gl.uniform1f(B.u[n], v);
       U('uGrain', on.grain ? 1 : 0); U('uGouache', on.gouache ? 1 : 0); U('uEdge', on.edge ? 1 : 0); U('uFoil', on.foil ? 1 : 0); U('uRaysOn', on.rays ? 1 : 0);
-      U('uGlowOn', on.glow ? 1 : 0); U('uFireOn', on.fire ? 1 : 0); U('uMotes', on.motes ? (fx.motes != null ? fx.motes : 1) : 0); U('uVig', on.vig ? 1 : 0); U('uLantern', on.lantern && !o.still ? 1 : 0); U('uFlow', on.flow ? 1 : 0);
+      U('uGlowOn', on.glow ? 1 : 0); U('uFireOn', on.fire ? 1 : 0); U('uMotes', on.motes ? (fx.motes != null ? fx.motes : 1) : 0); U('uVig', on.vig ? 1 : 0); U('uLantern', on.lantern && !o.still && !o.film ? 1 : 0); U('uFlow', on.flow ? 1 : 0);
       const gp = new Float32Array(16), gc = new Float32Array(12), fp = new Float32Array(16);
       fx.glow.forEach((g, i) => { const uv = self.toUv(g[0], g[1], DEPTH.mid, par, zoom); gp.set([uv[0], uv[1], g[2] / R.H, g[3]], i * 4); gc.set(R.rgb(g[4]), i * 3); });
       fx.fire.forEach((f, i) => { const uv = self.toUv(f[0], f[1], DEPTH.mid, par, zoom); fp.set([uv[0], uv[1], f[2] / R.H, f[3]], i * 4); });

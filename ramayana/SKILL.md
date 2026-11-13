@@ -28,6 +28,15 @@ python3 ramayana/tools/package.py             # thumbnails + the zip
 python3 ramayana/tools/sheet.py <dir> out.jpg 3   # contact sheet
 ```
 
+## The film
+
+`ramayana-film.mp4` (10 min, 720p) moves a slow camera through every painting with the shaders running live. `view.html?film=1` exposes `window.__film.load(n)` and `.draw(u, secs)`; `tools/film.mjs` steps it frame by frame into ffmpeg and `tools/score.py` synthesises the score (tanpura drone, a flute line in Bhupali, a frame drum for the war) in numpy.
+
+```bash
+node ramayana/tools/film.mjs --from 1 --to 25 --title --out seg1.mp4   # run slices in parallel, then concat
+python3 ramayana/tools/score.py score.wav 607
+```
+
 ## Fidelity notes
 
 - Captions are our own retelling; `ref` gives kanda and sarga in the Critical Edition numbering Debroy uses.

@@ -13,6 +13,7 @@
   html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 400 18px/1.5 Garamond, Georgia, serif; }
   body.still { overflow: hidden; }
   body.still header, body.still footer, body.still #panel, body.still #notes, body.still #load { display: none !important; }
+  body.film header, body.film footer, body.film #notes { display: none !important; } body.film { overflow: hidden; } body.film .wrap { padding: 0; display: block; max-width: none; } body.film #stage { width: 100vw; height: 100vh; max-width: none; border: 0; border-radius: 0; }
   body.still #stage { width: 100vw; height: 100vh; max-width: none; border: 0; border-radius: 0; box-shadow: none; }
   .wrap { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: 10px; padding: 10px 16px 16px; max-width: 1500px; margin: 0 auto; }
   body.still .wrap { padding: 0; display: block; max-width: none; }
@@ -49,13 +50,20 @@
   #panel h2 { font: 400 18px/1 Rozha, serif; margin: 0 0 8px; color: var(--gold); }
   #panel label { display: flex; align-items: center; gap: 8px; padding: 3px 0; font-size: 16px; cursor: pointer; }
   #panel input { accent-color: var(--gold); width: 16px; height: 16px; }
+  body.film #cap { display: grid; }
+  #cap { display: none; position: absolute; left: 0; right: 0; bottom: 0; padding: 5% 4% 2.6%; gap: .4vw; background: linear-gradient(#14101d00, #14101dc8 70%); pointer-events: none; z-index: 2; }
+  #cap small { font: 400 1.1vw/1.3 Garamond, serif; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+  #cap b { font: 400 2.5vw/1.05 Rozha, Georgia, serif; text-shadow: 0 2px 20px #000c; }
+  #cap.big { top: 0; align-content: center; justify-items: center; text-align: center; background: #14101d70; padding: 0 8%; }
+  #cap.big b { font-size: 6.6vw; } #cap.big small { font-size: 1.7vw; }
+  #fade { position: absolute; inset: 0; background: #0b0812; opacity: 0; pointer-events: none; z-index: 3; }
   @media (max-width: 760px) { footer { grid-template-columns: 1fr; } .btns { justify-content: flex-start; } #panel { right: auto; left: 0; } #stage { width: 100%; } }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header><a href="index.html">&larr; All one hundred</a><span class="kanda" id="kanda"></span><span class="count" id="count"></span></header>
-  <div id="frame"><div id="stage"><canvas id="c"></canvas><div id="notes"></div><div id="load">mixing the paints&hellip;</div></div></div>
+  <div id="frame"><div id="stage"><canvas id="c"></canvas><div id="notes"></div><div id="cap"><small id="capk"></small><b id="capt"></b></div><div id="fade"></div><div id="load">mixing the paints&hellip;</div></div></div>
   <footer>
     <div><h1 id="title"></h1><p id="text"></p><p id="src"></p></div>
     <div class="btns">
@@ -75,6 +83,13 @@
   let idx = Math.max(0, list.findIndex((p) => String(p.n) === q.get('p') || p.slug === q.get('p')));
   const $ = (id) => document.getElementById(id), stageEl = $('stage'), canvas = $('c');
   if (still) document.body.classList.add('still');
+  const film = q.has('film'); if (film) document.body.classList.add('film');
+  // film mode: the renderer loads a painting, then asks for any moment u (0..1) of its shot
+  window.__film = {
+    async load(n, big) { idx = list.findIndex((p) => p.n === n); const m = list[idx]; P = R.Painting(m); m.draw(P); const [w, h] = px(); stage.size(w, h); await stage.load(P, w, h); $('cap').className = big ? 'big' : ''; $('capk').textContent = big ? 'The Valmiki Ramayana · after the translation of Bibek Debroy' : `${m.n} · ${m.kanda} · ${m.ref}`; $('capt').textContent = big || m.title; this.n = n; this.big = big; },
+    draw(u, secs) { const d = this.n % 2 ? 1 : -1, e = u * u * (3 - 2 * u), kind = this.n % 3; const mx = 0.5 + d * (e - 0.5) * 0.9, my = 0.5 + (kind === 1 ? (e - 0.5) * 0.7 : Math.sin(u * 3.14) * 0.25 - 0.1), zoom = kind === 2 ? 1.12 - e * 0.065 : 1.055 + e * 0.065; stage.draw(3 + u * secs, [mx, my], { film: 1, zoom, parK: 2.4 }); $('fade').style.opacity = Math.max(0, 1 - u / 0.07, (u - 0.93) / 0.07); $('cap').style.opacity = this.big ? Math.min(1, u / 0.15, (1 - u) / 0.12) : Math.max(0, Math.min(1, (u - 0.06) / 0.08, (0.9 - u) / 0.08)); },
+  };
+
   let stage; try { stage = new R.Stage(canvas); } catch (e) { $('load').textContent = 'This painting needs WebGL.'; return; }
   const mouse = [0.5, 0.5], target = [0.5, 0.5]; let P = null, t0 = performance.now(), pins = [];
   if (q.get('off')) q.get('off').split(',').forEach((k) => (stage.on[k] = 0));
@@ -114,6 +129,7 @@
     let rz; const redo = () => { clearTimeout(rz); rz = setTimeout(() => show(idx), 220); }; addEventListener('resize', redo); document.addEventListener('fullscreenchange', redo);
     let sx = null; stageEl.addEventListener('touchstart', (e) => (sx = e.touches[0].clientX), { passive: true }); stageEl.addEventListener('touchend', (e) => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 60) show(idx + (dx < 0 ? 1 : -1), true); sx = null; });
   }
+  if (film) { $('load').style.display = 'none'; window.__ready = true; return; }
   await show(idx); if (!still) frame();
 })();
 </script>
