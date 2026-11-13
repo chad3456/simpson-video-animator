@@ -78,6 +78,8 @@
     return `url(#${id})`;
   };
 
+  // flatten any drawing to a single colour (shadows, apparitions, distant armies)
+  R.sil = function (inner, col, op = 1) { const id = 'f' + pid++; defs.push(`<filter id="${id}" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feFlood flood-color="${col}"/><feComposite in2="SourceAlpha" operator="in"/></filter>`); return `<g filter="url(#${id})" opacity="${op}">${inner}</g>`; };
   // ---------- svg string helpers ----------
   const at = (o) => (o ? Object.keys(o).map((k) => ` ${k}="${o[k]}"`).join('') : '');
   R.path = (d, fill, o) => `<path d="${d}" fill="${fill || 'none'}"${at(o)}/>`;

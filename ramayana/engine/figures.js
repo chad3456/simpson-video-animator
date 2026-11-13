@@ -190,6 +190,7 @@
       case 'garland': return Array.from({ length: 14 }, (_, i) => { const a = (i / 14) * Math.PI * 2; return circ(Math.cos(a) * 22, 26 + Math.sin(a) * 30, 5.6, i % 2 ? C.white : o.col || C.vermilion); }).join('');
       case 'flag': return line('M0,60 L0,-200', C.umber, 5) + path('M0,-200 L70,-186 L40,-170 L72,-150 L0,-146 Z', o.col || C.red) + circ(30, -174, 6, gd);
       case 'shield': return circ(0, 0, 34, o.col || C.crimson, ol(C.maroon)) + R.ring(0, 0, 26, gd, 3) + circ(0, 0, 7, gd);
+      case 'crown': return g(crownP(o), 'translate(2,60)');
       case 'grass': return line('M0,10 Q-2,-14 3,-34', C.lime, 2.6);
       case 'letter': return rect(-10, -16, 20, 26, C.cream, { rx: 2 });
       case 'conch': return path('M-10,10 C-22,-4 -10,-28 8,-26 C22,-22 22,0 6,12 Z', C.white, ol(C.ash)) + R.spiral(2, -8, 9, C.ash, 1.6, 1.6);
