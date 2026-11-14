@@ -1,0 +1,30 @@
+import { createRequire } from 'module'; const { chromium } = createRequire(import.meta.url)('playwright');
+import path from 'path';
+const f = 'file://' + path.resolve('dist/lamplight-standalone.html');
+const b = await chromium.launch({ args: ['--autoplay-policy=no-user-gesture-required'] });
+const pg = await b.newPage({ viewport: { width: 1280, height: 800 } });
+const errs = []; pg.on('pageerror', e => errs.push(e.message)); pg.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
+await pg.goto(f); await pg.waitForTimeout(1500);
+await pg.screenshot({ path: '/tmp/claude-0/live0.jpg', quality: 80 });
+await pg.click('#start'); await pg.waitForTimeout(1000);
+const box = await pg.locator('#stage').boundingBox();
+const at = (x, y) => [box.x + box.width * x, box.y + box.height * y];
+await pg.mouse.move(...at(0.5, 0.5));
+await pg.waitForTimeout(16000);
+await pg.screenshot({ path: '/tmp/claude-0/live1.jpg', quality: 80 });
+await pg.mouse.click(...at(0.5, 0.5)); await pg.waitForTimeout(3000);
+await pg.screenshot({ path: '/tmp/claude-0/live2.jpg', quality: 80 });
+// jump to the leap and hold the lamp close
+for (let i = 0; i < 5; i++) { await pg.keyboard.press('ArrowRight'); await pg.waitForTimeout(150); }
+await pg.waitForTimeout(500);
+const st = await pg.evaluate(() => 0);
+await pg.waitForTimeout(36000);
+await pg.mouse.move(...at(0.45, 0.85)); await pg.mouse.down(); await pg.waitForTimeout(5000);
+await pg.screenshot({ path: '/tmp/claude-0/live3.jpg', quality: 80 });
+await pg.mouse.up();
+await pg.keyboard.press('b'); await pg.waitForTimeout(400);
+await pg.screenshot({ path: '/tmp/claude-0/live4.jpg', quality: 80 });
+await pg.setViewportSize({ width: 400, height: 800 }); await pg.keyboard.press('b'); await pg.waitForTimeout(600);
+await pg.screenshot({ path: '/tmp/claude-0/live5.jpg', quality: 80 });
+console.log('errors:', errs.slice(0, 5));
+await b.close();

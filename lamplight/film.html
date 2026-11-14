@@ -1,0 +1,74 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Lamplight film</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head><body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="kit.js"></script>
+<script src="engine.js"></script>
+<script src="story.js"></script>
+<script>
+const q = new URLSearchParams(location.search);
+const Wd = +(q.get('w') || 1920), Hd = Math.round(Wd * 9 / 16);
+const cv = document.getElementById('c');
+const th = new LL.Theatre(cv);
+th.resize(Wd, Hd);
+window.ready = (async () => {
+  await Promise.all([
+    document.fonts.load('600 40px "Cormorant Garamond"'),
+    document.fonts.load('italic 500 40px "Cormorant Garamond"'),
+    document.fonts.load('40px "Tiro Devanagari Sanskrit"', 'राम'),
+  ]);
+  return true;
+})();
+window.setup = (durs, opt) => { window.S = LL.schedule(LL.ACTS, durs || {}, opt || {}); return window.S; };
+window.renderAt = (t) => {
+  const S = window.S;
+  const { act, p } = LL.pAt(S, t);
+  const A = LL.ACTS[act];
+  const L = LL.filmLamp(A, p, t);
+  L.on = A.lampOn ? A.lampOn(p) : 1;
+  const sc = Object.assign({ lamp: L, t, items: [], fx: [] }, A.draw(p, t, L));
+  if (A.backstage && A.backstage.some(([a, b]) => p >= a && p < b)) sc.view = 'back';
+  const line = S.lines.find((l) => t >= l.t && t < l.t + l.dur + 0.4);
+  if (line && q.get('captions') !== '0') {
+    sc.caption = line.text;
+    sc.captionA = Math.min(LL.seg(t, line.t - 0.05, line.t + 0.25), 1 - LL.seg(t, line.t + line.dur + 0.1, line.t + line.dur + 0.4));
+  }
+  th.render(sc);
+  const ar = S.acts[act];
+  const fade = Math.min(LL.seg(t, ar.start - 0.01, ar.start + 0.7), act === S.acts.length - 1 ? 1 - LL.seg(t, S.total - 1.5, S.total) : 1 - LL.seg(t, ar.end - 0.6, ar.end));
+  if (fade < 1) {
+    const g = th.g; g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = 'source-over';
+    g.fillStyle = `rgba(0,0,0,${1 - fade})`; g.fillRect(0, 0, cv.width, cv.height);
+  }
+  return { act, p };
+};
+window.renderAudio = async () => {
+  const S = window.S, sr = 48000;
+  const ctx = new OfflineAudioContext(2, Math.ceil(sr * S.total), sr);
+  const snd = new LL.Sound(ctx);
+  for (const a of S.acts) {
+    const A = LL.ACTS[a.i];
+    for (let t0 = a.start; t0 < a.end; t0 += 0.5) {
+      const p = LL.pAt(S, t0 + 0.25).p;
+      snd.music_(t0, Math.min(a.end + (a.i === S.acts.length - 1 ? 1.5 : 0), t0 + 0.5), A.mood ? A.mood(p) : {});
+    }
+  }
+  for (const s of S.sfx) snd.sfx(s.t, s.name);
+  for (const l of S.lines) {
+    const r = await fetch(`build/voice/${l.act}.${l.i}.wav`);
+    const buf = await ctx.decodeAudioData(await r.arrayBuffer());
+    snd.voiceAt(l.t, buf, 1.0);
+  }
+  const out = await ctx.startRendering();
+  const L = out.getChannelData(0), R = out.getChannelData(1);
+  const n = L.length, i16 = new Int16Array(n * 2);
+  for (let i = 0; i < n; i++) { i16[2 * i] = Math.max(-1, Math.min(1, L[i])) * 32767; i16[2 * i + 1] = Math.max(-1, Math.min(1, R[i])) * 32767; }
+  window._pcm = new Uint8Array(i16.buffer);
+  return window._pcm.length;
+};
+window.pcmChunk = (off, len) => { const u = window._pcm.subarray(off, off + len); let s = ''; for (let i = 0; i < u.length; i += 8192) s += String.fromCharCode.apply(null, u.subarray(i, i + 8192)); return btoa(s); };
+window.frameJPEG = (t, qual) => { window.renderAt(t); return cv.toDataURL('image/jpeg', qual || 0.9); };
+</script>
+</body></html>
