@@ -12,7 +12,7 @@
    node genstyle/homecoming/draw.js [scale] [out.png]     scale 1 = 1920x1080, 2 = 3840x2160 (default 2) */
 'use strict';
 (function (root) {
-  function makeArt(S, log) {
+  function makeArt(S, log, tick) {
     const W = Math.round(1920 * S), H = Math.round(1080 * S), N = W * H;
     const C = new Float32Array(N * 3), tooth = new Float32Array(N), wax = new Float32Array(N), reserve = new Uint8Array(N);
     log = log || function () {};
@@ -63,6 +63,7 @@
     };
     // one touch of a tool on the paper. Pigment catches on the peaks of the tooth first; pressure and built-up wax push it into the valleys.
     function dab(cx, cy, r, col, press, tool, z, clip) {
+      if (tick) tick(r);   // lets a recorder watch the drawing happen
       const x0 = Math.max(0, Math.floor(cx - r)), x1 = Math.min(W - 1, Math.ceil(cx + r)), y0 = Math.max(0, Math.floor(cy - r)), y1 = Math.min(H - 1, Math.ceil(cy + r));
       const r2 = r * r, ir = 1 / Math.max(r, 0.5), op = tool.op, c0 = col[0], c1 = col[1], c2 = col[2], zz = z == null ? 255 : z;
       const base = press * tool.bite - tool.thresh, fl = press * tool.flow;

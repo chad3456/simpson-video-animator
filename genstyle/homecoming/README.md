@@ -24,3 +24,9 @@ node genstyle/homecoming/draw.js 1 out.png  # 1920x1080 (about 10 s)
 Needs only Node (the PNG is written with the built-in zlib). `index.html` shows the drawing and can redraw it in
 the browser stage by stage. `scene.js` holds the sky's neighbours (palace, city, river, terrace frame) and
 `foreground.js` the terrace objects and birds.
+
+`timelapse.js` films the drawing being made, by running the same code and handing ffmpeg a frame every so many marks:
+
+```bash
+node genstyle/homecoming/timelapse.js out.mp4 46 score.wav
+```
