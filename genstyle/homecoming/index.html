@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homecoming</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #14112b; color: #f6efdc; font: 17px/1.55 Georgia, 'Times New Roman', serif; }
+  main { max-width: 1500px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+  img, canvas { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 16px 60px #0009; background: #f6efdc; }
+  h1 { font-size: clamp(26px, 4vw, 44px); font-weight: 400; margin: 6px 0 0; }
+  p { margin: 0; max-width: 70ch; color: #d9cfe8; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  button, a.btn { font: inherit; padding: 9px 15px; border-radius: 6px; border: 1px solid #5b3fae; background: #221f66; color: inherit; cursor: pointer; text-decoration: none; }
+  button:hover, a.btn:hover { border-color: #ffe680; }
+  #log { color: #ffcf96; font-style: italic; min-height: 1.5em; }
+</style>
+</head>
+<body>
+<main>
+  <img id="still" src="homecoming.png" alt="A flying palace descends through a violet and rose sunset toward a city lit with thousands of lamps; on a terrace in front, a pair of golden sandals rests on a red throne under a white parasol, beside a brass lamp, a rangoli, a peacock, a quiver and a great bow.">
+  <canvas id="c" width="1920" height="1080" hidden></canvas>
+  <h1>Homecoming</h1>
+  <p>The night Ayodhya lit its lamps. Drawn only with JavaScript: no canvas drawing calls, no SVG, no images. Each mark is a simulated soft pastel, wax colour pencil, indigo drawing pencil, white chalk pencil or paper stump, dragged across simulated paper tooth one dab at a time.</p>
+  <div class="row"><button id="go">Watch it being drawn (1920 × 1080, in your browser)</button><a class="btn" href="homecoming.png" download>Download the 4K drawing</a><span id="log"></span></div>
+</main>
+<script src="scene.js"></script><script src="foreground.js"></script><script src="draw.js"></script>
+<script>
+document.getElementById('go').onclick = function () {
+  const btn = this, log = document.getElementById('log'), cv = document.getElementById('c'), ctx = cv.getContext('2d');
+  btn.disabled = true; document.getElementById('still').hidden = true; cv.hidden = false;
+  const art = makeArt(1), img = ctx.createImageData(art.W, art.H);
+  const show = () => { img.data.set(art.pixels()); ctx.putImageData(img, 0, 0); };
+  let i = -1;
+  (function next() {
+    if (i < 0) { log.textContent = 'stretching the paper…'; setTimeout(() => { art.paper(); show(); i = 0; next(); }, 30); return; }
+    if (i >= art.steps.length) { log.textContent = 'done.'; btn.disabled = false; return; }
+    log.textContent = 'drawing: ' + art.steps[i][0] + '…';
+    setTimeout(() => { art.steps[i][1](); show(); i++; next(); }, 30);
+  })();
+};
+</script>
+</body>
+</html>
