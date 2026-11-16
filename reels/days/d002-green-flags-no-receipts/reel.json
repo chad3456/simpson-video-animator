@@ -1,35 +1,293 @@
 {
- "day": 2, "slug": "d002-green-flags-no-receipts", "format": "green-flag list", "lesson_id": "no-grudges",
- "title": "Green flags, Valmiki edition", "voice": "af_heart", "speed": 1.08, "bpm": 140, "raga": "desh", "seed": 11,
- "verse": {"kanda": "ayodhya", "sarga": 1, "shloka": 11,
+ "day": 2,
+ "slug": "d002-green-flags-no-receipts",
+ "format": "green-flag list",
+ "lesson_id": "no-grudges",
+ "title": "Green flags, Valmiki edition",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "desh",
+ "seed": 11,
+ "verse": {
+  "kanda": "ayodhya",
+  "sarga": 1,
+  "shloka": 11,
   "sanskrit": "कथञ्चिदुपकारेण कृतेनैकेन तुष्यति ।\nन स्मरत्यपकाराणां शतमप्यात्मवत्तया ॥",
   "iast": "kathañcid upakāreṇa kṛtenaikena tuṣyati |\nna smaraty apakārāṇāṃ śatam apy ātmavattayā ||",
-  "translation": "He is pleased by a single kindness, however it was done, and, being self-possessed, he does not remember even a hundred wrongs."},
- "art": {"rama": {"lib": "rama_panchayan"}, "exile": {"lib": "exile_orchha"}, "milap": {"lib": "bharat_milap"},
-         "chaos": {"lib": "battle_mewar"}, "coronation": {"lib": "coronation_kangra"}},
+  "translation": "He is pleased by a single kindness, however it was done, and, being self-possessed, he does not remember even a hundred wrongs."
+ },
+ "art": {
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "exile": {
+   "lib": "exile_orchha",
+   "path": "art/exile.jpg"
+  },
+  "milap": {
+   "lib": "bharat_milap",
+   "path": "art/milap.jpg"
+  },
+  "chaos": {
+   "lib": "battle_mewar",
+   "path": "art/chaos.jpg"
+  },
+  "coronation": {
+   "lib": "coronation_kangra",
+   "path": "art/coronation.jpg"
+  }
+ },
  "beats": [
-  {"kind": "hook", "art": "rama", "cam": [[0.43, 0.3, 1.5], [0.43, 0.32, 1.2]], "top": "Green flags:", "title": "VALMIKI EDITION", "hl": "VALMIKI",
+  {
+   "kind": "hook",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.5
+    ],
+    [
+     0.43,
+     0.32,
+     1.2
+    ]
+   ],
+   "top": "Green flags:",
+   "title": "VALMIKI EDITION",
+   "hl": "VALMIKI",
    "vo": "Valmiki literally wrote down Rama's green flags. And honestly? The bar is in heaven.",
-   "pops": [{"at": "flags", "sticker": "✅"}, {"at": "heaven", "sticker": "😇"}], "sfx": ["boom"], "fx": ["flash", "rays"]},
-  {"kind": "story", "art": "exile", "cam": [[0.5, 0.2, 1.05], [0.38, 0.42, 1.35]], "badge": {"text": "Green flag 1", "emoji": "✅", "color": "green", "ref": "Ayodhya Kanda 1.10"},
+   "pops": [
+    {
+     "at": "flags",
+     "sticker": "✅"
+    },
+    {
+     "at": "heaven",
+     "sticker": "😇"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "exile",
+   "cam": [
+    [
+     0.5,
+     0.2,
+     1.05
+    ],
+    [
+     0.38,
+     0.42,
+     1.35
+    ]
+   ],
+   "badge": {
+    "text": "Green flag 1",
+    "emoji": "✅",
+    "color": "green",
+    "ref": "Ayodhya Kanda 1.10"
+   },
    "vo": "He speaks gently first. And even when someone's harsh to him, he doesn't clap back.",
-   "pops": [{"at": "clap", "sticker": "🤐"}], "fx": ["ink"]},
-  {"kind": "story", "art": "milap", "cam": [[0.5, 0.4, 1.1], [0.5, 0.5, 1.3]], "badge": {"text": "Green flag 2", "emoji": "✅", "color": "green", "ref": "Ayodhya Kanda 1.11"},
+   "pops": [
+    {
+     "at": "clap",
+     "sticker": "🤐"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "milap",
+   "cam": [
+    [
+     0.5,
+     0.4,
+     1.1
+    ],
+    [
+     0.5,
+     0.5,
+     1.3
+    ]
+   ],
+   "badge": {
+    "text": "Green flag 2",
+    "emoji": "✅",
+    "color": "green",
+    "ref": "Ayodhya Kanda 1.11"
+   },
    "vo": "Do him one favour, he's happy. Do him a hundred wrongs? He's not keeping the receipts.",
-   "pops": [{"at": "favour", "sticker": "🤝"}, {"at": "receipts", "sticker": "🧾"}], "fx": ["ink"], "sfx": ["riser"]},
-  {"kind": "verse", "art": "coronation", "cam": [[0.5, 0.5, 1.2], [0.5, 0.45, 1.35]],
-   "vo": "One kindness, and he's pleased. A hundred wrongs, and he doesn't even remember them.", "sfx": ["bell"]},
-  {"kind": "twist", "art": "chaos", "cam": [[0.3, 0.5, 1.2], [0.7, 0.5, 1.4]], "badge": {"text": "Red flag", "emoji": "🚩", "color": "red"},
+   "pops": [
+    {
+     "at": "favour",
+     "sticker": "🤝"
+    },
+    {
+     "at": "receipts",
+     "sticker": "🧾"
+    }
+   ],
+   "fx": [
+    "ink"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "coronation",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.2
+    ],
+    [
+     0.5,
+     0.45,
+     1.35
+    ]
+   ],
+   "vo": "One kindness, and he's pleased. A hundred wrongs, and he doesn't even remember them.",
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "chaos",
+   "cam": [
+    [
+     0.3,
+     0.5,
+     1.2
+    ],
+    [
+     0.7,
+     0.5,
+     1.4
+    ]
+   ],
+   "badge": {
+    "text": "Red flag",
+    "emoji": "🚩",
+    "color": "red"
+   },
    "vo": "Meanwhile us: still holding screenshots of an argument from 2019.",
-   "pops": [{"at": "screenshots", "sticker": "📸"}, {"at": "2019", "sticker": "💀"}], "sfx": ["scratch"], "fx": ["glitch", "shake"]},
-  {"kind": "lesson", "art": "rama", "cam": [[0.43, 0.3, 1.25], [0.43, 0.27, 1.6]], "title": "Keep the kindness. Delete the grudges.", "hl": "KINDNESS|GRUDGES",
+   "pops": [
+    {
+     "at": "screenshots",
+     "sticker": "📸"
+    },
+    {
+     "at": "2019",
+     "sticker": "💀"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "shake"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.25
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "title": "Keep the kindness. Delete the grudges.",
+   "hl": "KINDNESS|GRUDGES",
    "vo": "Not a doormat. Rama fought when it mattered. He just didn't let small stuff live rent free in his head.",
-   "pops": [{"at": "doormat", "sticker": "🙅"}, {"at": "rent", "sticker": "🏠"}], "sfx": ["boom"], "fx": ["flash", "rays"]},
-  {"kind": "cta", "art": "rama", "cam": [[0.5, 0.5, 1.0], [0.5, 0.5, 1.08]], "title": "Day 2 of learning from Rama",
+   "pops": [
+    {
+     "at": "doormat",
+     "sticker": "🙅"
+    },
+    {
+     "at": "rent",
+     "sticker": "🏠"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 2 of learning from Rama",
    "vo": "Day two of learning from Rama. Send this to the friend who forgives too fast.",
-   "pops": [{"at": "Send", "sticker": "📩"}], "sfx": ["shankh"], "fx": ["embers"], "min": 3.2}
+   "pops": [
+    {
+     "at": "Send",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
  ],
- "music_suggestions": ["A soft flute or bansuri lo-fi from Instagram's library", "Any trending 'green flag' audio"],
+ "music_suggestions": [
+  "A soft flute or bansuri lo-fi from Instagram's library",
+  "Any trending 'green flag' audio"
+ ],
  "caption": "Rama's green flags, straight from Valmiki ✅\n\n“कथञ्चिदुपकारेण कृतेनैकेन तुष्यति । न स्मरत्यपकाराणां शतमप्यात्मवत्तया ॥”\nHe is pleased by a single kindness and does not remember even a hundred wrongs. (Valmiki Ramayana, Ayodhya Kanda 1.11)\n\nKeep the kindness. Delete the grudges.",
- "hashtags": ["#Ramayana", "#Valmiki", "#ShriRam", "#GreenFlags", "#LifeLessons", "#Sanatan", "#Reels", "#SanskritShloka"]
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#GreenFlags",
+  "#LifeLessons",
+  "#Sanatan",
+  "#Reels",
+  "#SanskritShloka"
+ ]
 }

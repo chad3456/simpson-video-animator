@@ -174,7 +174,7 @@ const Reel = (() => {
     const a = Math.min(1, out / 0.2);
     ctx.save(); ctx.globalAlpha = Math.max(0, a); ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
     let y = 330;
-    if (B.top) { const s = spring(tin / 0.5); ctx.font = '84px Marker'; ctx.save(); ctx.translate(W / 2 - 300, y); ctx.rotate(-0.08); ctx.scale(s, s); stroked(B.top, 0, 0, C.gold, C.ink, 14); ctx.restore(); y += 40; }
+    if (B.top) { const s = spring(tin / 0.5); ctx.font = '84px Marker'; ctx.save(); ctx.translate(110, y); ctx.rotate(-0.06); ctx.scale(s, s); ctx.textAlign = 'left'; stroked(B.top, 0, 0, C.gold, C.ink, 14); ctx.restore(); y += 40; }
     const lines = wrap(B.title.toUpperCase(), '120px Anton', 900);
     lines.forEach((ln, j) => {
       const s = spring((tin - 0.12 - j * 0.12) / 0.55); if (s <= 0) return;
@@ -239,7 +239,7 @@ const Reel = (() => {
         const w = words.find(w => w.b === bi && w.w.toLowerCase().includes(p.at.toLowerCase())); if (!w) return;
         const age = t - w.s; if (age < 0 || age > 1.6) return;
         const r = rng(bi * 31 + j * 7), side = (j + bi) % 2 ? 1 : -1;
-        const x = W / 2 + side * (220 + r() * 120) - 40, y = 820 + r() * 220, s = spring(age / 0.45) * (age > 1.3 ? 1 - (age - 1.3) / 0.3 : 1);
+        const x = W / 2 + side * (220 + r() * 120) - 40, y = (B.kind === 'cta' ? 640 : 820) + r() * (B.kind === 'cta' ? 60 : 220), s = spring(age / 0.45) * (age > 1.3 ? 1 - (age - 1.3) / 0.3 : 1);
         ctx.save(); ctx.translate(x, y); ctx.rotate(side * (0.12 + r() * 0.15)); ctx.scale(s, s);
         ctx.font = '190px "Noto Color Emoji", sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
         ctx.shadowColor = 'rgba(0,0,0,0.45)'; ctx.shadowBlur = 24; ctx.shadowOffsetY = 10; ctx.fillText(p.sticker, 0, 0); ctx.restore();

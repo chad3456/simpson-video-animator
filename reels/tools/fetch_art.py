@@ -107,9 +107,9 @@ def library(only=None):
     lib = json.load(open(os.path.join(LIB, "library.json"), encoding="utf-8"))
     os.makedirs(os.path.join(LIB, "img"), exist_ok=True)
     changed = False
-    for key, e in lib.items():
-        if only and key not in only:
-            continue
+    keys = [k for k in only if k in lib] if only else list(lib)
+    for key in keys:
+        e = lib[key]
         dst = os.path.join(LIB, "img", key + ".jpg")
         if os.path.exists(dst) and e.get("license"):
             continue

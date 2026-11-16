@@ -41,59 +41,115 @@
  },
  "sarayu": {
   "file": "File:Raja Ravi Varma, Sree Rama Crossing Sarayu river.jpg",
-  "scene": "Rama, Sita, Lakshmana crossing the river by boat (Ravi Varma)"
+  "scene": "Rama, Sita, Lakshmana crossing the river by boat (Ravi Varma)",
+  "artist": "Raja Ravi Varma",
+  "date": "Unknown date",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Raja_Ravi_Varma,_Sree_Rama_Crossing_Sarayu_river.jpg"
  },
  "bharat_milap": {
   "file": "File:Raja Ravi Varma, Bharat Milap (Lithographic Print).jpg",
-  "scene": "Bharata meets Rama in the forest (Ravi Varma)"
+  "scene": "Bharata meets Rama in the forest (Ravi Varma)",
+  "artist": "Raja Ravi Varma",
+  "date": "before 1910date QS:P571,+1910-00-00T00:00:00Z/7,P1326,+1910-",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Raja_Ravi_Varma,_Bharat_Milap_(Lithographic_Print).jpg"
  },
  "bharata_procession": {
   "file": "File:Clevelandart 2018.119.jpg",
-  "scene": "Bharata and Shatrughna set out from Ayodhya to find Rama, Kangra"
+  "scene": "Bharata and Shatrughna set out from Ayodhya to find Rama, Kangra",
+  "artist": "anonymous",
+  "date": "1775date QS:P571,+1775-00-00T00:00:00Z/9",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Clevelandart_2018.119.jpg"
  },
  "bow_breaking": {
   "file": "File:Ravi Varma-Rama-breaking-bow.jpg",
-  "scene": "Rama breaks Shiva's bow at Sita's swayamvara (Ravi Varma)"
+  "scene": "Rama breaks Shiva's bow at Sita's swayamvara (Ravi Varma)",
+  "artist": "Raja Ravi Varma",
+  "date": "Unknown date",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Ravi_Varma-Rama-breaking-bow.jpg"
  },
  "jatayu": {
   "file": "File:Raja Ravi Varma, Jatayu vadha, 1906.jpg",
-  "scene": "Ravana strikes Jatayu (Ravi Varma)"
+  "scene": "Ravana strikes Jatayu (Ravi Varma)",
+  "artist": "Raja Ravi Varma",
+  "date": "1906date QS:P571,+1906-00-00T00:00:00Z/9",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Raja_Ravi_Varma,_Jatayu_vadha,_1906.jpg"
  },
  "ravana_sita_jatayu": {
   "file": "File:Ravi Varma-Ravana Sita Jathayu.jpg",
-  "scene": "Sita horrified as Ravana cuts Jatayu's wing (Ravi Varma)"
+  "scene": "Sita horrified as Ravana cuts Jatayu's wing (Ravi Varma)",
+  "artist": "Raja Ravi Varma",
+  "date": "1895date QS:P571,+1895-00-00T00:00:00Z/9",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Ravi_Varma-Ravana_Sita_Jathayu.jpg"
  },
  "golden_deer": {
   "file": "File:Sita longs for the golden deer, in a print from the Ravi Varma Press, c.1910's.jpg",
-  "scene": "Sita longs for the golden deer"
+  "scene": "Sita longs for the golden deer",
+  "artist": "Ravi Varma Press",
+  "date": "circa 1910date QS:P,+1910-00-00T00:00:00Z/9,P1480,Q5727902",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Sita_longs_for_the_golden_deer,_in_a_print_from_the_Ravi_Varma_Press,_c.1910%27s.jpg"
  },
  "ahalya": {
   "file": "File:Rama releasing Ahalya from curse.jpg",
-  "scene": "Rama frees Ahalya; Lakshmana and Vishvamitra watch"
+  "scene": "Rama frees Ahalya; Lakshmana and Vishvamitra watch",
+  "artist": "Raja Ravi Varma",
+  "date": "before 1910date QS:P571,+1910-00-00T00:00:00Z/7,P1326,+1910-",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Rama_releasing_Ahalya_from_curse.jpg"
  },
  "bridge": {
   "file": "File:Building of Rama's Bridge.jpg",
-  "scene": "The vanaras build the bridge to Lanka (1914 illustration)"
+  "scene": "The vanaras build the bridge to Lanka (1914 illustration)",
+  "artist": "K. Venkatappa",
+  "date": "1914date QS:P571,+1914-00-00T00:00:00Z/9",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Building_of_Rama%27s_Bridge.jpg"
  },
  "setubandha": {
   "file": "File:Setubandha - Rama and Lakshmana crossing the bridge to Lanka with the Monkey Army.jpg",
-  "scene": "Rama and Lakshmana cross the bridge with the army, Pahari"
+  "scene": "Rama and Lakshmana cross the bridge with the army, Pahari",
+  "artist": "Attributed to a Master of the First generation after Manaku and Nainsukh",
+  "date": "circa 1770date QS:P571,+1770-00-00T00:00:00Z/9,P1480,Q572790",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Setubandha_-_Rama_and_Lakshmana_crossing_the_bridge_to_Lanka_with_the_Monkey_Army.jpg"
  },
  "battle_mewar": {
   "file": "File:Battle at Lanka, Ramayana, Udaipur, 1649-53.jpg",
-  "scene": "Battle at Lanka, Mewar Ramayana by Sahib Din"
+  "scene": "Battle at Lanka, Mewar Ramayana by Sahib Din",
+  "artist": "Sahibdin",
+  "date": "from 1649 until 1653date QS:P571,+1650-00-00T00:00:00Z/7,P58",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Battle_at_Lanka,_Ramayana,_Udaipur,_1649-53.jpg"
  },
  "kumbhakarna": {
   "file": "File:The Demon Kumbhakarna Is Defeated by Rama and Lakshmana.jpg",
-  "scene": "Rama and Lakshmana defeat Kumbhakarna"
+  "scene": "Rama and Lakshmana defeat Kumbhakarna",
+  "artist": "painter from India (Madhya Pradesh, Malwa)",
+  "date": "circa 1670date QS:P,+1670-00-00T00:00:00Z/9,P1480,Q5727902",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Demon_Kumbhakarna_Is_Defeated_by_Rama_and_Lakshmana.jpg"
  },
  "vibhishana_camp": {
   "file": "File:Vibhishana shows Rama the two spies who have been caught in their camp.jpg",
-  "scene": "Vibhishana with Rama in camp, Guler"
+  "scene": "Vibhishana with Rama in camp, Guler",
+  "artist": "Manaku",
+  "date": "circa 1725date QS:P571,+1725-00-00T00:00:00Z/9,P1480,Q572790",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Vibhishana_shows_Rama_the_two_spies_who_have_been_caught_in_their_camp.jpg"
  },
  "vishvamitra": {
   "file": "File:Vishwamitra brings Rama and Lakshmana to his hermitage.jpg",
-  "scene": "Vishvamitra brings Rama and Lakshmana to his hermitage, Mughal"
+  "scene": "Vishvamitra brings Rama and Lakshmana to his hermitage, Mughal",
+  "artist": "",
+  "date": "circa 1594date QS:P571,+1594-00-00T00:00:00Z/9,P1480,Q572790",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Vishwamitra_brings_Rama_and_Lakshmana_to_his_hermitage.jpg"
  },
  "celestial_chariot": {
   "file": "File:The Celestial Chariot (6124515635).jpg",
