@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Reel player</title>
+<style>
+html,body{margin:0;background:#000;overflow:hidden}
+canvas{display:block;width:1080px;height:1920px}
+body:not(.render) canvas{width:auto;height:96vh;margin:2vh auto}
+#ui{position:fixed;left:8px;top:8px;color:#fff;font:14px sans-serif}
+body.render #ui{display:none}
+</style></head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div id="ui"><button id="play">play</button> <span id="tm"></span></div>
+<script src="reel.js"></script>
+<script>
+const q = new URLSearchParams(location.search);
+if (q.get('render')) document.body.classList.add('render');
+Reel.load(q.get('ep')).then(() => {
+  window.Toon = { renderAt: t => Reel.draw(t), duration: Reel.duration };
+  window.__ready = true;
+  if (q.get('render')) return;
+  const audio = new Audio(q.get('ep') + '/reel.wav');
+  document.getElementById('play').onclick = () => { audio.currentTime = 0; audio.play(); };
+  const loop = () => { Reel.draw(audio.currentTime || 0); document.getElementById('tm').textContent = (audio.currentTime || 0).toFixed(1); requestAnimationFrame(loop); };
+  loop();
+});
+</script>
+</body></html>

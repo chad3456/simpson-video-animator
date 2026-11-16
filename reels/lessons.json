@@ -1,0 +1,291 @@
+{
+ "about": "Lesson bank for the daily reel. Each verse is in the IIT Kanpur numbering and passes reels/tools/verse.py verify. 'used' marks lessons already made; the daily run takes the first unused one, or adds a new verified entry when the bank runs low.",
+ "lessons": [
+  {
+   "slug": "equanimity",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 19,
+    "shloka": 33,
+    "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुन्धराम् ।\nसर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया ॥",
+    "translation": "Setting out for the forest, giving up the whole earth, he showed no sign of inner turmoil, like one who has risen above all the worlds."
+   },
+   "context": "Exiled on the eve of his coronation, Rama's face doesn't change (19.32 moon simile, 19.36).",
+   "lesson": "Keep your peace when you lose.",
+   "used": "used"
+  },
+  {
+   "slug": "no-grudges",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 1,
+    "shloka": 11,
+    "sanskrit": "कथञ्चिदुपकारेण कृतेनैकेन तुष्यति ।\nन स्मरत्यपकाराणां शतमप्यात्मवत्तया ॥",
+    "translation": "He is pleased by a single kindness, however it was done, and, being self-possessed, he does not remember even a hundred wrongs."
+   },
+   "context": "Valmiki's portrait of Rama in the opening of the Ayodhya Kanda.",
+   "lesson": "Remember kindness, drop grudges.",
+   "used": "used"
+  },
+  {
+   "slug": "kaccit-checklist",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 100,
+    "shloka": 20,
+    "sanskrit": "कच्चिदर्थं विनिश्चित्य लघुमूलं महोदयम् ।\nक्षिप्रमारभसे कर्तुं न दीर्घयसि राघव ॥",
+    "translation": "Having settled on a goal that costs little and yields much, do you start on it quickly and not drag it out, Raghava?"
+   },
+   "context": "Rama questions Bharata at Chitrakuta (sarga 100 is a whole checklist: 100.18 sleep, 100.19 counsel).",
+   "lesson": "Don't procrastinate on high-value tasks.",
+   "used": "used"
+  },
+  {
+   "slug": "sportsmanship",
+   "verse": {
+    "kanda": "yuddha",
+    "sarga": 59,
+    "shloka": 143,
+    "sanskrit": "गच्छानुजानामि रणार्दितस्त्वं प्रविश्य रात्रिंचरराज लङ्काम् ।\nआश्वास्य निर्याहि रथी च धन्वी तदा बलं द्रक्ष्यसि मे रथस्थः ॥",
+    "translation": "Go, I let you go, worn out by battle as you are. Enter Lanka, king of the night-rangers, catch your breath, then come out again with chariot and bow; then, from your chariot, you will see my strength."
+   },
+   "context": "First duel: Rama cuts Ravana's bow and crown, then lets him go (59.139-144).",
+   "lesson": "Win fair.",
+   "used": "used"
+  },
+  {
+   "slug": "word-is-final",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 18,
+    "shloka": 30,
+    "sanskrit": "तद्ब्रूहि वचनं देवि राज्ञो यदभिकाङ्क्षितम् ।\nकरिष्ये प्रतिजाने च रामो द्विर्नाभिभाषते ॥",
+    "translation": "Tell me, queen, what the king wants. I will do it, I promise. Rama does not say things twice."
+   },
+   "context": "Before he even hears the demand, Rama tells Kaikeyi he will do it.",
+   "lesson": "Your word should be enough.",
+   "used": ""
+  },
+  {
+   "slug": "gentle-speech",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 1,
+    "shloka": 10,
+    "sanskrit": "स च नित्यं प्रशान्तात्मा मृदुपूर्वं तु भाषते ।\nउच्यमानोऽपि परुषं नोत्तरं प्रतिपद्यते ॥",
+    "translation": "Always calm, he speaks gently first; even when spoken to harshly, he does not answer back."
+   },
+   "context": "Valmiki's portrait of Rama.",
+   "lesson": "Don't clap back.",
+   "used": ""
+  },
+  {
+   "slug": "smile-first",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 2,
+    "shloka": 42,
+    "sanskrit": "स्मितपूर्वाभिभाषी च धर्मं सर्वात्मना श्रितः ।\nसम्यग्योक्ता श्रेयसां च न विगृह्य कथारुचिः ॥",
+    "translation": "He speaks first, with a smile; he holds to dharma with his whole being; he pursues what is good in the right way, and has no taste for quarrelsome talk."
+   },
+   "context": "Dasharatha's council describes the prince.",
+   "lesson": "Start conversations kindly; skip the arguments.",
+   "used": ""
+  },
+  {
+   "slug": "festival-joy",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 2,
+    "shloka": 41,
+    "sanskrit": "उत्सवेषु च सर्वेषु पितेव परितुष्यति ।\nसत्यवादी महेष्वासो वृद्धसेवी जितेन्द्रियः ॥",
+    "translation": "At every festival he rejoices like a father. He speaks the truth, is a great archer, serves his elders, and masters his senses."
+   },
+   "context": "The people's view of Rama (2.40 says he grieves deeply at others' misfortunes).",
+   "lesson": "Be happy for other people.",
+   "used": ""
+  },
+  {
+   "slug": "no-enmity-after-death",
+   "verse": {
+    "kanda": "yuddha",
+    "sarga": 112,
+    "shloka": 26,
+    "sanskrit": "मरणान्तानि वैराणि निर्वृत्तं नः प्रयोजनम् ।\nक्रियतामस्य संस्कारो ममाप्येष यथा तव ॥",
+    "translation": "Enmity ends with death. Our purpose is done. Let his last rites be performed; he is as much mine as yours."
+   },
+   "context": "Rama tells Vibhishana to give Ravana full funeral honours.",
+   "lesson": "Let it end when it ends.",
+   "used": ""
+  },
+  {
+   "slug": "truth-is-god",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 109,
+    "shloka": 13,
+    "sanskrit": "सत्यमेवेश्वरो लोके सत्यं पद्मा श्रिता सदा ।\nसत्यमूलानि सर्वाणि सत्यान्नास्ति परं पदम् ॥",
+    "translation": "Truth alone is the lord in this world; prosperity always rests on truth. Truth is the root of everything; there is nothing higher than truth."
+   },
+   "context": "Rama answers Jabali, who urged him to break his word and go home.",
+   "lesson": "Truth is the root.",
+   "used": ""
+  },
+  {
+   "slug": "impermanence",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 105,
+    "shloka": 16,
+    "sanskrit": "सर्वे क्षयान्ता निचयाः पतनान्ताः समुच्छ्रयाः ।\nसंयोगा विप्रयोगान्ता मरणान्तं च जीवितम् ॥",
+    "translation": "Every hoard ends in loss, every rise ends in a fall, every meeting ends in parting, and life ends in death."
+   },
+   "context": "Rama consoles grieving Bharata after Dasharatha's death.",
+   "lesson": "Nothing lasts, so hold things lightly.",
+   "used": ""
+  },
+  {
+   "slug": "logs-on-the-ocean",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 105,
+    "shloka": 26,
+    "sanskrit": "यथा काष्ठं च काष्ठं च समेयातां महार्णवे ।\nसमेत्य च व्यपेयातां कालमासाद्य कञ्चन ॥",
+    "translation": "As one log meets another on the great ocean, and after some time they drift apart again..."
+   },
+   "context": "Rama to Bharata: family, friends and wealth meet us and part from us like this (105.27).",
+   "lesson": "People drift; love them while they are here.",
+   "used": ""
+  },
+  {
+   "slug": "sleep-schedule",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 100,
+    "shloka": 18,
+    "sanskrit": "कच्चिन्निद्रावशं नैषि कच्चित्काले प्रबुध्यसे ।\nकच्चिच्चापररात्रेषु चिन्तयस्यर्थनैपुणम् ॥",
+    "translation": "I hope you are not ruled by sleep, and wake at the right time? And in the last hours of the night, do you think about how to do things well?"
+   },
+   "context": "Chitrakuta checklist.",
+   "lesson": "Own your mornings.",
+   "used": ""
+  },
+  {
+   "slug": "keep-plans-close",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 100,
+    "shloka": 19,
+    "sanskrit": "कच्चिन्मन्त्रयसे नैकः कच्चिन्न बहुभिः सह ।\nकच्चित्ते मन्त्रितो मन्त्रो राष्ट्रं न परिधावति ॥",
+    "translation": "Do you take counsel neither alone nor with too many? And does your plan not run all over the kingdom before it is carried out?"
+   },
+   "context": "Chitrakuta checklist.",
+   "lesson": "Don't overshare plans.",
+   "used": ""
+  },
+  {
+   "slug": "friendship",
+   "verse": {
+    "kanda": "kishkindha",
+    "sarga": 8,
+    "shloka": 21,
+    "sanskrit": "उपकारफलं मित्रम् अपकारोऽरिलक्षणम् ।\nअद्यैव तं वधिष्यामि तव भार्यापहारिणम् ॥",
+    "translation": "Help is the fruit of friendship; harm is the mark of an enemy. This very day I will slay the one who took your wife."
+   },
+   "context": "Rama's pact with Sugriva.",
+   "lesson": "Real friends show up.",
+   "used": ""
+  },
+  {
+   "slug": "dharma-in-person",
+   "verse": {
+    "kanda": "aranya",
+    "sarga": 37,
+    "shloka": 13,
+    "sanskrit": "रामो विग्रहवान् धर्मः साधुः सत्यपराक्रमः ।\nराजा सर्वस्य लोकस्य देवानामिव वासवः ॥",
+    "translation": "Rama is dharma in bodily form, good, truly valiant, the king of the whole world as Indra is of the gods."
+   },
+   "context": "Maricha, on Ravana's side, warns Ravana about Rama.",
+   "lesson": "Be someone even your rivals respect.",
+   "used": ""
+  },
+  {
+   "slug": "ocean-and-himalaya",
+   "verse": {
+    "kanda": "bala",
+    "sarga": 1,
+    "shloka": 17,
+    "sanskrit": "स च सर्वगुणोपेतः कौसल्यानन्दवर्धनः ।\nसमुद्र इव गाम्भीर्ये धैर्येण हिमवानिव ॥",
+    "translation": "Endowed with every virtue, he deepens Kausalya's joy; deep as the ocean, steady as the Himalaya."
+   },
+   "context": "Narada describes Rama to Valmiki.",
+   "lesson": "Be deep and steady.",
+   "used": ""
+  },
+  {
+   "slug": "who-is-the-goat",
+   "verse": {
+    "kanda": "bala",
+    "sarga": 1,
+    "shloka": 2,
+    "sanskrit": "कोन्वस्मिन्साम्प्रतं लोके गुणवान्कश्च वीर्यवान् ।\nधर्मज्ञश्च कृतज्ञश्च सत्यवाक्यो दृढव्रतः ॥",
+    "translation": "Who in this world today is virtuous and also valiant, knows dharma, is grateful, truthful and firm in his vows?"
+   },
+   "context": "Valmiki's question to Narada that starts the whole epic.",
+   "lesson": "Character is the real flex.",
+   "used": ""
+  },
+  {
+   "slug": "compassion",
+   "verse": {
+    "kanda": "yuddha",
+    "sarga": 116,
+    "shloka": 44,
+    "sanskrit": "पापानां वा शुभानां वा वधार्हाणां प्लवङ्गम ।\nकार्यं करुणमार्येण न कश्चिन्नापराध्यति ॥",
+    "translation": "Whether they are wicked or good, or even deserve to die, O monkey, a noble person should act with compassion; there is no one who never does wrong."
+   },
+   "context": "Sita stops Hanuman from punishing the rakshasis who guarded her.",
+   "lesson": "Mercy is strength (a lesson from Sita).",
+   "used": ""
+  },
+  {
+   "slug": "never-lose-heart",
+   "verse": {
+    "kanda": "sundara",
+    "sarga": 12,
+    "shloka": 10,
+    "sanskrit": "अनिर्वेदः श्रियो मूलमनिर्वेदः परं सुखम् ।\nअनिर्वेदो हि सततं सर्वार्थेषु प्रवर्तकः ॥",
+    "translation": "Not losing heart is the root of success; not losing heart is the highest happiness. Not losing heart is what always drives us in every task."
+   },
+   "context": "Hanuman, failing to find Sita in Lanka, refuses to give up.",
+   "lesson": "Don't quit (a lesson from Hanuman's search for Rama's wife).",
+   "used": ""
+  },
+  {
+   "slug": "dont-blame-mom",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 104,
+    "shloka": 17,
+    "sanskrit": "न दोषं त्वयि पश्यामि सूक्ष्ममप्यरिसूदन ।\nन चापि जननीं बाल्यात्त्वं विगर्हितुमर्हसि ॥",
+    "translation": "I don't see the slightest fault in you, slayer of foes. Nor should you, out of childishness, blame your mother."
+   },
+   "context": "Rama defends Kaikeyi to Bharata.",
+   "lesson": "Defend people even when they hurt you.",
+   "used": ""
+  },
+  {
+   "slug": "promise-to-protect",
+   "verse": {
+    "kanda": "aranya",
+    "sarga": 10,
+    "shloka": 18,
+    "sanskrit": "मुनीनामन्यथा कर्तुं सत्यमिष्टं हि मे सदा ।\nअप्यहं जीवितं जह्यां त्वां वा सीते सलक्ष्मणाम् ॥",
+    "translation": "...to go back on my word to the sages: truth is always dear to me. I could give up my life, or you, Sita, with Lakshmana (but never a promise, 10.19)."
+   },
+   "context": "Sita questions Rama's vow to protect the forest sages.",
+   "lesson": "A promise is a promise.",
+   "used": ""
+  }
+ ]
+}

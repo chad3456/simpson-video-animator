@@ -1,0 +1,308 @@
+{
+ "day": 1,
+ "slug": "d001-lost-a-kingdom-kept-the-vibe",
+ "lesson_id": "equanimity",
+ "title": "Lost a kingdom. Kept the vibe.",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "bhairavi",
+ "seed": 7,
+ "verse": {
+  "kanda": "ayodhya",
+  "sarga": 19,
+  "shloka": 33,
+  "sanskrit": "न वनं गन्तुकामस्य त्यजतश्च वसुन्धराम् ।\nसर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया ॥",
+  "iast": "na vanaṃ gantukāmasya tyajataś ca vasundharām |\nsarvalokātigasyeva lakṣyate cittavikriyā ||",
+  "translation": "Setting out for the forest, giving up the whole earth, he showed no sign of inner turmoil, like one who has risen above all the worlds."
+ },
+ "art": {
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "coronation": {
+   "lib": "coronation_kangra",
+   "path": "art/coronation.jpg"
+  },
+  "kaikeyi": {
+   "lib": "kaikeyi_dasharatha",
+   "path": "art/kaikeyi.jpg"
+  },
+  "leaving": {
+   "lib": "exile_orchha",
+   "path": "art/leaving.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "coronation",
+   "cam": [
+    [
+     0.45,
+     0.45,
+     1.0
+    ],
+    [
+     0.45,
+     0.4,
+     1.3
+    ]
+   ],
+   "top": "POV:",
+   "title": "you're getting crowned king TOMORROW",
+   "vo": "You're getting crowned king tomorrow. The whole city is decorating. Main character energy, fully loaded.",
+   "pops": [
+    {
+     "at": "crowned",
+     "sticker": "👑"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "embers"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "kaikeyi",
+   "cam": [
+    [
+     0.45,
+     0.75,
+     1.15
+    ],
+    [
+     0.55,
+     0.35,
+     1.35
+    ]
+   ],
+   "title": "PLOT TWIST",
+   "vo": "Then Queen Kaikeyi cashes in two old wishes. Her son gets the throne. You get fourteen years in the forest.",
+   "pops": [
+    {
+     "at": "throne",
+     "sticker": "🪑"
+    },
+    {
+     "at": "forest",
+     "sticker": "💀",
+     "sfx": "boom"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "shake",
+    "desat"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "leaving",
+   "cam": [
+    [
+     0.5,
+     0.15,
+     1.0
+    ],
+    [
+     0.35,
+     0.45,
+     1.35
+    ]
+   ],
+   "vo": "Anyone else would rage-quit. Lakshmana is literally fuming. But Rama bows to his father, bows to Kaikeyi too, and walks out.",
+   "pops": [
+    {
+     "at": "fuming",
+     "sticker": "😤"
+    },
+    {
+     "at": "Kaikeyi",
+     "sticker": "🙏"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "leaving",
+   "cam": [
+    [
+     0.3,
+     0.42,
+     1.6
+    ],
+    [
+     0.36,
+     0.4,
+     2.0
+    ]
+   ],
+   "vo": "And Valmiki says nobody could see any change in his face. Losing a kingdom dimmed him about as much as night dims the moon.",
+   "pops": [
+    {
+     "at": "face",
+     "sticker": "😐"
+    },
+    {
+     "at": "moon",
+     "sticker": "🌕"
+    }
+   ],
+   "fx": [
+    "moon"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "coronation",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.2
+    ],
+    [
+     0.5,
+     0.45,
+     1.35
+    ]
+   ],
+   "vo": "Leaving for the forest, giving up the whole earth, he showed no sign of inner turmoil.",
+   "sfx": [
+    "bell"
+   ],
+   "fx": [
+    "scroll"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.3
+    ],
+    [
+     0.43,
+     0.28,
+     1.7
+    ]
+   ],
+   "title": "Your peace is NOT up for grabs",
+   "vo": "That's the real flex. Not never losing. Losing, and still being you.",
+   "pops": [
+    {
+     "at": "flex",
+     "sticker": "💪"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "leaving",
+   "cam": [
+    [
+     0.5,
+     0.85,
+     1.3
+    ],
+    [
+     0.5,
+     0.7,
+     1.3
+    ]
+   ],
+   "vo": "Didn't get the role? Results came back mid? Feel it. Then walk out like Rama. No drama, no grudge, still kind.",
+   "pops": [
+    {
+     "at": "mid",
+     "sticker": "📉"
+    },
+    {
+     "at": "drama",
+     "sticker": "🚫"
+    },
+    {
+     "at": "kind",
+     "sticker": "🫶"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 1 of learning from Rama",
+   "vo": "Day one of learning from Rama. Follow for day two.",
+   "pops": [
+    {
+     "at": "Follow",
+     "sticker": "🏹"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "Ram Siya Ram (Adipurush), from Instagram's music library, for a devotional build",
+  "Any trending slowed + reverb bhajan-trap edit in Instagram's library"
+ ],
+ "caption": "Lost a kingdom overnight. Kept the vibe. 🏹\n\nThe night before his coronation, Rama is sent to the forest for 14 years. Valmiki says no one could see any change in his face.\n\n“न वनं गन्तुकामस्य त्यजतश्च वसुन्धराम् । सर्वलोकातिगस्येव लक्ष्यते चित्तविक्रिया ॥”\nValmiki Ramayana, Ayodhya Kanda 19.33\n\nYour peace is not up for grabs. Day 1 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#JaiShriRam",
+  "#Sanatan",
+  "#IndianMythology",
+  "#LifeLessons",
+  "#GenZ",
+  "#Reels",
+  "#Dharma",
+  "#SanskritShloka"
+ ]
+}

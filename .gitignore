@@ -5,3 +5,10 @@ still-*.png
 .style-study/
 explainer/episodes/_*/
 __pycache__/
+
+# reels: rebuilt per run; finished videos live in the project's shared folder
+reels/days/*/.cache/
+reels/days/*/*.wav
+reels/days/*/*.mp4
+reels/days/*/art/
+reels/days/*/still-*.jpg
