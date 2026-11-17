@@ -153,15 +153,27 @@
  },
  "celestial_chariot": {
   "file": "File:The Celestial Chariot (6124515635).jpg",
-  "scene": "The Pushpaka chariot, c.1650"
+  "scene": "The Pushpaka chariot, c.1650",
+  "artist": "thesandiegomuseumofartcollection",
+  "date": "2011-09-06 14:08:18",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Celestial_Chariot_(6124515635).jpg"
  },
  "dasharatha_death": {
   "file": "File:The Death of King Dasharatha.jpg",
-  "scene": "Death of King Dasharatha"
+  "scene": "Death of King Dasharatha",
+  "artist": "Unknown authorUnknown author",
+  "date": "circa 1605date QS:P571,+1605-00-00T00:00:00Z/9,P1480,Q572790",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Death_of_King_Dasharatha.jpg"
  },
  "kaikeyi_chamber": {
   "file": "File:King Dasharatha Approaches the Sulking Kaikeyi's Chamber (6125133208).jpg",
-  "scene": "Dasharatha approaches Kaikeyi's chamber"
+  "scene": "Dasharatha approaches Kaikeyi's chamber",
+  "artist": "Nainsukh",
+  "date": "last quarter 18th century",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:King_Dasharatha_Approaches_the_Sulking_Kaikeyi%27s_Chamber_(6125133208).jpg"
  },
  "coronation_sita": {
   "file": "File:The Coronation of Rama and Sita.jpg",
