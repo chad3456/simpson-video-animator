@@ -1,6 +1,8 @@
 # Assemble the three paintings into a titled triptych poster.
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
-import os
+import os, sys
+OUT = sys.argv[1] if len(sys.argv) > 1 else 'out'
+NAME = 'dune-oil-triptych.jpg' if OUT == 'out-oil' else 'dune-triptych.jpg'
 here = os.path.dirname(os.path.abspath(__file__))
 F = os.path.join(here, '..', 'ramayana-portraits', 'video', 'fonts', 'cinzel.ttf')
 G = os.path.join(here, '..', 'anime', 'engine', 'fonts', 'EBGaramond-Italic.ttf')
@@ -20,12 +22,12 @@ def ctext(x, y, t, f, fill):
 ctext(W / 2, 90, 'D U N E', big, '#f0d8b0')
 ctext(W / 2, 205, 'a triptych after Frank Herbert', sub, '#b89a80')
 for i, (fn, t1, t2, q) in enumerate(panels):
-    im = Image.open(os.path.join(here, 'out', fn + '.jpg')).resize((pw, ph), Image.LANCZOS)
+    im = Image.open(os.path.join(here, OUT, fn + '.jpg')).resize((pw, ph), Image.LANCZOS)
     x = mx + i * (pw + gap); y = 300
     S.paste(im, (x, y))
     d.rectangle([x - 2, y - 2, x + pw + 1, y + ph + 1], outline='#3a2a24', width=2)
     ctext(x + pw / 2, y + ph + 40, t1, mid, '#e8c8a0')
     ctext(x + pw / 2, y + ph + 100, t2, sub, '#d0b090')
     ctext(x + pw / 2, y + ph + 160, q, small, '#8a7466')
-S.save(os.path.join(here, 'out', 'dune-triptych.jpg'), quality=90)
+S.save(os.path.join(here, OUT, NAME), quality=90)
 print(S.size)
