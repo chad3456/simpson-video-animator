@@ -16,8 +16,8 @@ v = r["verse"]
 out = [r["caption"], "", " ".join(r.get("hashtags", [])), "",
        f"Verse: Valmiki Ramayana, {v['kanda'].title()} Kanda {v['sarga']}.{v['shloka']} (check it at valmiki.iitk.ac.in). English rendering ours: {v['translation']}",
        "", "Art (public domain / open licence, given a paint-and-ink treatment):", *art, "",
-       "Music: original score made for this reel (no copyright claims). The file reel_nomusic.mp4 has voice only,",
-       "if you'd rather add a track from Instagram's music library when posting. Suggestions:",
+       "Music: original score made for this reel (no copyright claims). A voice-only cut can be made on request",
+       "if you want to add a track from Instagram's music library when posting. Suggestions:",
        *[f"• {m}" for m in r.get("music_suggestions", [])]]
 open(os.path.join(d, "caption.txt"), "w", encoding="utf-8").write("\n".join(out) + "\n")
 print("\n".join(out))

@@ -17,9 +17,9 @@ mkdir -p ~/models && cd ~/models && \
 reels/tools/make_reel.sh reels/days/<slug>        # verify, art, paint, audio, stills, render, caption, deliver
 ```
 
-Outputs in `reels/days/<slug>/`: `reel.mp4` (with the original score), `reel_nomusic.mp4` (voice and effects only,
+Outputs in `reels/days/<slug>/`: `reel.mp4` (with the original score), `reel_nomusic.mp4` (voice and effects only, kept local only and not delivered, to save shared storage;
 for adding a track from Instagram's music library), `poster.jpg`, `caption.txt` (caption, hashtags, verse
-reference, art credits, music suggestions), `still-*.jpg`. `make_reel.sh` copies the four deliverables to
+reference, art credits, music suggestions), `still-*.jpg`. `make_reel.sh` copies reel.mp4, poster.jpg and caption.txt to
 `/mnt/project-files/ramayana-reels/<slug>/` when that folder exists.
 
 ## The daily routine
