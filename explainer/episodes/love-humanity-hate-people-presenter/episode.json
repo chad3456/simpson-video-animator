@@ -1,0 +1,3321 @@
+{
+ "meta": {
+  "show": "LUMEN",
+  "episode": "Explainer",
+  "title": "Love Humanity, Hate People (presenter cut)",
+  "format": "explainer",
+  "look": "collage",
+  "category": "Literature: Dostoevsky",
+  "rating": "teen",
+  "content_note": "Discusses murder, political violence and terror from the novels and from history. Nothing graphic is shown.",
+  "music": "collage",
+  "narrator": "narrator",
+  "fps": 30,
+  "gap": 0.34,
+  "captions": false,
+  "logline": "Why do people who set out to free humanity end up despising humans? A diagram-driven explainer on Dostoevsky's five types of rebel (the formula, the spite, the gatekeepers, the benevolent master and the theorist), the modern versions of each, the case against him, and his answer.",
+  "source": "Dostoevsky (Garnett translations; A Writer's Diary, trans. Lantz); Joseph Frank; Gary Saul Morson; Albert Camus; Aleksandr Solzhenitsyn; Mikhail Bakhtin; Sean Illing.",
+  "disclaimer": "Original animation. Portraits are invented drawings. Not affiliated with any publisher, channel or estate.",
+  "width": 1280,
+  "height": 720
+ },
+ "cast": {
+  "narrator": {
+   "name": "Presenter",
+   "voice": "af_heart:0.6+bf_isabella:0.4",
+   "speed": 1.08
+  },
+  "zosima": {
+   "name": "Zosima",
+   "voice": "bm_lewis",
+   "speed": 0.92
+  },
+  "student": {
+   "name": "Student",
+   "voice": "am_puck:0.7+bm_fable:0.3",
+   "speed": 1.05
+  },
+  "raskolnikov": {
+   "name": "Raskolnikov",
+   "voice": "bm_daniel",
+   "speed": 0.98
+  },
+  "underground": {
+   "name": "Underground Man",
+   "voice": "am_fenrir:0.6+bm_fable:0.4",
+   "speed": 1.02
+  },
+  "shigalyov": {
+   "name": "Shigalyov",
+   "voice": "am_onyx",
+   "speed": 0.9
+  },
+  "pyotr": {
+   "name": "Pyotr",
+   "voice": "am_puck:0.7+bm_fable:0.3",
+   "speed": 1.08
+  },
+  "inquisitor": {
+   "name": "Inquisitor",
+   "voice": "bm_george:0.6+am_onyx:0.4",
+   "speed": 0.88
+  },
+  "ivan": {
+   "name": "Ivan",
+   "voice": "bm_fable:0.6+am_michael:0.4",
+   "speed": 0.98
+  },
+  "smerdyakov": {
+   "name": "Smerdyakov",
+   "voice": "am_echo",
+   "speed": 0.95
+  }
+ },
+ "sequence": [
+  {
+   "type": "scene",
+   "id": "open-doctor",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "doc",
+     "type": "cut",
+     "who": "student",
+     "x": 300,
+     "y": 330,
+     "w": 270,
+     "h": 320,
+     "rot": -2,
+     "color": "#b0a8c8",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "face": {
+      "hair": "short",
+      "hairC": "grey",
+      "beard": "none",
+      "mous": 1,
+      "brow": 0.3,
+      "eyes": "calm",
+      "coat": "#2c2f36",
+      "tie": "bow",
+      "face": 1.02,
+      "glasses": 1,
+      "mouth": 0
+     },
+     "name": "The doctor",
+     "role": "a story told by Father Zosima"
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 830,
+     "y": 300,
+     "text": "‘I love humanity,’ he said, ‘but I wonder at myself.\nThe more I love [[humanity in general]],\nthe less I love [[man in particular]].’",
+     "size": 28,
+     "card": "#fbf7ee",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Brothers Karamazov, Book II, ch. 4",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "t",
+     "type": "headline",
+     "x": 870,
+     "y": 560,
+     "text": "TWO DAYS",
+     "size": 40,
+     "bg": "#d23a2e",
+     "color": "#f4ecdc",
+     "in": 2,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book II, ch. 4, 'A Lady of Little Faith'",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In The Brothers Karamazov, an old monk named Zosima tells a story about a doctor who once confessed something strange to him."
+    },
+    {
+     "text": "‘I love humanity,’ he said, ‘but I wonder at myself. The more I love humanity in general, the less I love man in particular.’",
+     "who": "zosima"
+    },
+    {
+     "text": "He dreamed of serving mankind. Yet he could not share a room with anyone for two days without starting to hate them."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "open-question",
+   "bg": {
+    "kind": "paperc",
+    "pal": "ink",
+    "grid": false,
+    "dash": true,
+    "scraps": 0
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q1",
+     "type": "headline",
+     "x": 640,
+     "y": 200,
+     "text": "WHY DO PEOPLE WHO SET OUT\nTO FREE HUMANITY",
+     "size": 40,
+     "bg": null,
+     "color": "#f4ecdc",
+     "in": 0,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "whoosh",
+     "vol": 0.3
+    },
+    {
+     "id": "q2",
+     "type": "headline",
+     "x": 640,
+     "y": 330,
+     "text": "END UP DESPISING HUMANS?",
+     "size": 52,
+     "bg": "#ffd23f",
+     "color": "#1d1b19",
+     "in": 0,
+     "d": 2.0,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "q3",
+     "type": "headline",
+     "x": 640,
+     "y": 500,
+     "text": "WHY DO THE LOUDEST MORALISTS\nSO OFTEN BELIEVE IN NOTHING?",
+     "size": 34,
+     "bg": "#f4ecdc",
+     "color": "#1d1b19",
+     "in": 1,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "fd",
+     "type": "cut",
+     "who": "dostoevsky",
+     "x": 1120,
+     "y": 560,
+     "w": 170,
+     "h": 200,
+     "rot": 4,
+     "color": "#c98f7a",
+     "in": 2,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "nameSize": 16,
+     "roleSize": 13,
+     "name": "Dostoevsky",
+     "role": "1821-1881"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Dostoevsky wrote that almost a hundred and fifty years ago. You have probably met this person."
+    },
+    {
+     "text": "Why do so many people who set out to free humanity end up despising actual humans? Why do the loudest guardians of morality so often turn out to believe in nothing?"
+    },
+    {
+     "text": "Dostoevsky spent his whole career on that question, and he had a reason. He had once been one of them."
+    },
+    {
+     "text": "Across his books he built a kind of field guide: five types of rebel, five ways a good cause goes bad. Let's take them apart."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "title",
+   "style": "ctitle",
+   "kicker": "A LUMEN explainer",
+   "title": "LOVE HUMANITY,\nHATE PEOPLE",
+   "size": 92,
+   "sub": "Dostoevsky's field guide to rebels, saviours and moral gatekeepers",
+   "by": "Crime and Punishment · Notes from Underground · Demons · The Brothers Karamazov · A Writer's Diary",
+   "dur": 6.0,
+   "sfx": "swell"
+  },
+  {
+   "type": "card",
+   "id": "ch1",
+   "style": "cchapter",
+   "num": 1,
+   "kicker": "Part one",
+   "title": "The man who\nhad been there",
+   "sub": "St Petersburg, 1849. The Diary, 1873.",
+   "who": "dostoevsky",
+   "whoColor": "#c98f7a",
+   "color": "#d23a2e",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {}
+  },
+  {
+   "type": "scene",
+   "id": "p1-circle",
+   "bg": {
+    "kind": "paperc",
+    "pal": "news",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tl",
+     "type": "ptl",
+     "x": 640,
+     "y": 480,
+     "in": 0,
+     "d": 0.3,
+     "s": 1.0,
+     "w": 900,
+     "shown": 0,
+     "events": [
+      {
+       "year": "1846",
+       "text": "Poor Folk: a star at 24"
+      },
+      {
+       "year": "1847",
+       "text": "joins a socialist circle"
+      },
+      {
+       "year": "1848",
+       "text": "a secret inner group"
+      },
+      {
+       "year": "1849",
+       "text": "arrest, mock execution"
+      },
+      {
+       "year": "1850-54",
+       "text": "Siberian prison camp"
+      }
+     ],
+     "keys": {
+      "0": {
+       "shown": 2,
+       "d": 0.6,
+       "t": 1.4
+      },
+      "1": {
+       "shown": 3,
+       "d": 0.2,
+       "t": 0.6
+      },
+      "2": {
+       "shown": 5,
+       "d": 0.2,
+       "t": 1.4
+      }
+     },
+     "anim": "fade"
+    },
+    {
+     "id": "d",
+     "type": "cut",
+     "who": "dostoevsky",
+     "x": 330,
+     "y": 230,
+     "w": 230,
+     "h": 270,
+     "rot": -3,
+     "color": "#c98f7a",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "name": "Fyodor Dostoevsky",
+     "role": "aged 27"
+    },
+    {
+     "id": "s",
+     "type": "hl",
+     "x": 860,
+     "y": 220,
+     "text": "Kept secret all his life.\nRevealed only in [[1922]].",
+     "size": 30,
+     "card": "#fff3b0",
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise",
+     "rot": 1
+    },
+    {
+     "id": "src1",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Joseph Frank, 'Inflamed', London Review of Books, vol. 15 no. 23, 2 December 1993",
+     "in": 1,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In 1849, Dostoevsky was a rising young novelist in a St Petersburg socialist circle, and in a secret group inside it that planned to print illegal propaganda."
+    },
+    {
+     "text": "His biographer Joseph Frank calls it a genuine underground conspiracy. That fact stayed hidden until 1922."
+    },
+    {
+     "text": "He was arrested, put through a mock execution, and sent to a Siberian prison camp for four years."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p1-diary",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "sh",
+     "type": "sheet",
+     "x": 330,
+     "y": 360,
+     "w": 420,
+     "h": 520,
+     "kind": "page",
+     "kicker": "THE CITIZEN, 1873",
+     "head": "A WRITER'S\nDIARY",
+     "text": "‘perhaps I could have become’\na Nechaevist ‘in the days\nof my [[youth]].’",
+     "size": 21,
+     "fill": 6,
+     "rot": -2,
+     "tape": true,
+     "in": 0,
+     "d": 0.3,
+     "anim": "rise",
+     "sfx": "paper",
+     "vol": 0.7
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 860,
+     "y": 330,
+     "text": "the possibility of considering oneself –\nand sometimes even being, in fact –\nan [[honorable person]] while committing\n[[obvious and undeniable villainy]] –\nthat is our whole affliction today!",
+     "size": 25,
+     "card": "#fbf7ee",
+     "in": 1,
+     "d": 0.6,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Dostoevsky, A Writer's Diary (1873), trans. Kenneth Lantz",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "n",
+     "type": "hl",
+     "x": 860,
+     "y": 610,
+     "text": "Not monsters. [[Good people]], doing\nmonstrous things, [[feeling good]] about it.",
+     "size": 24,
+     "card": "#fff3b0",
+     "in": 3,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Dostoevsky, A Writer's Diary (1873), trans. Kenneth Lantz (1993), as quoted by Joseph Frank, LRB 1993",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Twenty-four years later, in A Writer's Diary, he looked back."
+    },
+    {
+     "text": "He could probably never have been Nechayev, the ruthless revolutionary of his day. But a follower? Perhaps, he wrote, in the days of his youth."
+    },
+    {
+     "text": "Then he named the disease he had seen from the inside: the possibility of considering oneself, and sometimes even being, in fact, an honorable person while committing obvious and undeniable villainy. That is our whole affliction today."
+    },
+    {
+     "text": "Not monsters. Good people doing monstrous things, and feeling good about it. Every type in this field guide is a variation on that sentence."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch2",
+   "style": "cchapter",
+   "num": 2,
+   "kicker": "Type one",
+   "title": "The man with\na formula",
+   "sub": "Crime and Punishment, 1866",
+   "who": "student",
+   "whoColor": "#c9a27a",
+   "color": "#c9772e",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {
+    "hair": "shaggy",
+    "hairC": "dark",
+    "beard": "none",
+    "brow": -0.4,
+    "eyes": "deep",
+    "coat": "#3d3a35",
+    "tie": "none",
+    "face": 0.95,
+    "gaunt": 1,
+    "young": 1,
+    "mouth": -0.2
+   }
+  },
+  {
+   "type": "scene",
+   "id": "p2-arith",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "r",
+     "type": "cut",
+     "who": "student",
+     "x": 240,
+     "y": 320,
+     "w": 250,
+     "h": 300,
+     "rot": -2,
+     "color": "#c9a27a",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "face": {
+      "hair": "shaggy",
+      "hairC": "dark",
+      "beard": "none",
+      "brow": -0.4,
+      "eyes": "deep",
+      "coat": "#3d3a35",
+      "tie": "none",
+      "face": 0.95,
+      "gaunt": 1,
+      "young": 1,
+      "mouth": -0.2
+     },
+     "name": "Raskolnikov",
+     "role": "ex-student, St Petersburg"
+    },
+    {
+     "id": "eq",
+     "type": "veq",
+     "x": 790,
+     "y": 250,
+     "in": 1,
+     "d": 0.2,
+     "size": 50,
+     "shown": 0,
+     "parts": [
+      {
+       "text": "1 DEATH"
+      },
+      {
+       "text": "="
+      },
+      {
+       "text": "100 LIVES",
+       "bg": "#ffd23f"
+      }
+     ],
+     "keys": {
+      "1": {
+       "shown": 3,
+       "d": 0.4,
+       "t": 1.6
+      },
+      "3": {
+       "strikeDraw": 1,
+       "d": 0.4,
+       "t": 0.6
+      }
+     },
+     "strike": 0,
+     "strikeDraw": 0
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 790,
+     "y": 470,
+     "text": "One death, and a hundred lives in exchange\n– it's [[simple arithmetic]]!",
+     "size": 28,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "a student in a tavern, Part I, ch. 6",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "n",
+     "type": "hl",
+     "x": 820,
+     "y": 640,
+     "text": "who counts as the ‘one’?",
+     "size": 24,
+     "card": false,
+     "in": 3,
+     "d": 0.3,
+     "anim": "rise",
+     "font": "mark",
+     "color": "#d23a2e",
+     "weight": 400
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Crime and Punishment (1866), trans. Constance Garnett (1914), Part I, ch. 6",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Type one is the man with a formula. Rodion Raskolnikov is a poor ex-student in St Petersburg: proud, hungry, and brilliant."
+    },
+    {
+     "text": "In a tavern he overhears a student make the case for killing a cruel old pawnbroker and spending her money on the poor."
+    },
+    {
+     "text": "One death, and a hundred lives in exchange. It's simple arithmetic!",
+     "who": "student"
+    },
+    {
+     "text": "It sounds almost noble. The question the arithmetic never asks is who gets to decide which life counts as the one."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p2-table",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.03
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tb",
+     "type": "vtable",
+     "x": 640,
+     "y": 320,
+     "in": 0,
+     "d": 0.3,
+     "w": 980,
+     "size": 24,
+     "shown": 0,
+     "title": "RASKOLNIKOV'S TWO KINDS OF PEOPLE",
+     "titleSize": 24,
+     "cols": [
+      "",
+      "Ordinary",
+      "Extraordinary"
+     ],
+     "colW": [
+      200,
+      360,
+      420
+     ],
+     "rows": [
+      [
+       "Role",
+       "obey the law",
+       "make new law"
+      ],
+      [
+       "Morality",
+       "handed down",
+       "decided ‘in conscience’"
+      ],
+      [
+       "Blood",
+       "forbidden",
+       "permitted ‘if essential’"
+      ],
+      [
+       "Examples",
+       "everyone else",
+       "Lycurgus, Solon, Napoleon"
+      ]
+     ],
+     "keys": {
+      "0": {
+       "shown": 1.0,
+       "d": 0.6,
+       "t": 0.8
+      },
+      "1": {
+       "shown": 3,
+       "d": 0.3,
+       "t": 2.0
+      },
+      "2": {
+       "shown": 4,
+       "d": 0.3,
+       "t": 0.6
+      }
+     },
+     "anim": "rise",
+     "sfx": "paper"
+    },
+    {
+     "id": "f",
+     "type": "hl",
+     "x": 640,
+     "y": 590,
+     "text": "The theory doesn't just permit the crime.\nIt [[flatters the man]] who commits it.",
+     "size": 26,
+     "card": "#fff3b0",
+     "in": 3,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Crime and Punishment (1866), trans. Constance Garnett (1914), Part III, ch. 5",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Raskolnikov already has a theory. In a magazine article, he split humanity into two kinds: the ordinary, who must obey, and the extraordinary, who make new laws."
+    },
+    {
+     "text": "An extraordinary man, he argues, has an inner right to decide in his own conscience to overstep certain obstacles, if his idea requires it."
+    },
+    {
+     "text": "Lycurgus, Solon, Napoleon: by the old law, he says, they were all criminals."
+    },
+    {
+     "text": "Notice the trick. The theory doesn't just permit the crime. It flatters the man who commits it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p2-confess",
+   "bg": {
+    "kind": "paperc",
+    "pal": "night",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.02,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "li",
+     "type": "cut",
+     "who": "student",
+     "x": 250,
+     "y": 300,
+     "w": 220,
+     "h": 260,
+     "rot": -3,
+     "color": "#d8c39a",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "gray": true,
+     "face": {
+      "hair": "scarf",
+      "hairC": "dark",
+      "scarfC": "#8a7a5a",
+      "female": 1,
+      "brow": 0.6,
+      "eyes": "soft",
+      "coat": "#6a5f50",
+      "tie": "none",
+      "face": 1.0,
+      "mouth": 0.1
+     },
+     "name": "Lizaveta",
+     "role": "not in any column"
+    },
+    {
+     "id": "q1",
+     "type": "hl",
+     "x": 800,
+     "y": 220,
+     "text": "I wanted to become a [[Napoleon]],\nthat is why I killed her....",
+     "size": 32,
+     "card": false,
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Raskolnikov to Sonia, Part V, ch. 4",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "q2",
+     "type": "hl",
+     "x": 800,
+     "y": 450,
+     "text": "Did I murder the old woman?\n[[I murdered myself]], not her!",
+     "size": 32,
+     "card": false,
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Part V, ch. 4",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "m",
+     "type": "hl",
+     "x": 640,
+     "y": 645,
+     "text": "MODERN MIRROR: any cause that sorts people into\nthose who [[may]] break the rules and those who [[must]] obey",
+     "size": 21,
+     "card": "#fbf7ee",
+     "in": 4,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Crime and Punishment (1866), trans. Constance Garnett (1914), Part V, ch. 4",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "He kills the pawnbroker with an axe, and then her gentle sister Lizaveta, who walks in at the wrong moment. The formula had no column for her."
+    },
+    {
+     "text": "Later, confessing to Sonia, he drops the arithmetic altogether."
+    },
+    {
+     "text": "I wanted to become a Napoleon, that is why I killed her.",
+     "who": "raskolnikov"
+    },
+    {
+     "text": "Did I murder the old woman? I murdered myself, not her!",
+     "who": "raskolnikov"
+    },
+    {
+     "text": "It was never about the hundred lives. It was about proving he was the kind of man allowed to take one."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch3",
+   "style": "cchapter",
+   "num": 3,
+   "kicker": "Type two",
+   "title": "The rebel\nagainst the plan",
+   "sub": "Notes from Underground, 1864",
+   "who": "student",
+   "whoColor": "#a9b4a0",
+   "color": "#5b7a5a",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {
+    "hair": "flat",
+    "hairC": "dark",
+    "beard": "short",
+    "beardC": "dark",
+    "brow": -0.6,
+    "eyes": "narrow",
+    "coat": "#4a463e",
+    "tie": "scarf",
+    "scarfC": "#6b5a48",
+    "face": 0.96,
+    "mouth": 0.3,
+    "smirk": 1,
+    "gaunt": 1
+   }
+  },
+  {
+   "type": "scene",
+   "id": "p3-palace",
+   "bg": {
+    "kind": "paperc",
+    "pal": "sage",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "u",
+     "type": "cut",
+     "who": "student",
+     "x": 230,
+     "y": 320,
+     "w": 250,
+     "h": 300,
+     "rot": 2,
+     "color": "#a9b4a0",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "face": {
+      "hair": "flat",
+      "hairC": "dark",
+      "beard": "short",
+      "beardC": "dark",
+      "brow": -0.6,
+      "eyes": "narrow",
+      "coat": "#4a463e",
+      "tie": "scarf",
+      "scarfC": "#6b5a48",
+      "face": 0.96,
+      "mouth": 0.3,
+      "smirk": 1,
+      "gaunt": 1
+     },
+     "name": "The Underground Man",
+     "role": "retired clerk, aged 40"
+    },
+    {
+     "id": "mp",
+     "type": "vmap",
+     "x": 0,
+     "y": 0,
+     "in": 1,
+     "d": 0.2,
+     "size": 22,
+     "draw": 0,
+     "keys": {
+      "1": {
+       "draw": 0.62,
+       "d": 0.2,
+       "t": 3.0
+      },
+      "2": {
+       "draw": 1,
+       "d": 2.0,
+       "t": 1.4
+      }
+     },
+     "nodes": [
+      {
+       "id": "a",
+       "x": 560,
+       "y": 170,
+       "text": "Reason"
+      },
+      {
+       "id": "b",
+       "x": 900,
+       "y": 170,
+       "text": "your true\ninterest"
+      },
+      {
+       "id": "c",
+       "x": 1110,
+       "y": 330,
+       "text": "you behave\nwell"
+      },
+      {
+       "id": "d",
+       "x": 840,
+       "y": 480,
+       "text": "THE CRYSTAL PALACE",
+       "color": "#cfe6f0",
+       "shape": "box",
+       "size": 26
+      },
+      {
+       "id": "e",
+       "x": 520,
+       "y": 590,
+       "text": "human will",
+       "color": "#d23a2e",
+       "fg": "#f4ecdc"
+      }
+     ],
+     "edges": [
+      [
+       "a",
+       "b"
+      ],
+      [
+       "b",
+       "c"
+      ],
+      [
+       "c",
+       "d",
+       "",
+       0.15
+      ],
+      [
+       "e",
+       "d",
+       "smash it",
+       -0.15,
+       "#d23a2e",
+       true
+      ]
+     ],
+     "lsize": 26
+    },
+    {
+     "id": "src1",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Chernyshevsky, What Is to Be Done? (1863); Joseph Frank, Dostoevsky: The Stir of Liberation (1986)",
+     "in": 1,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Type two is the rebel against the planners. He has no name. He is a bitter retired clerk of forty, and he narrates Notes from Underground."
+    },
+    {
+     "text": "Dostoevsky wrote it as an answer to a hugely popular radical novel, Chernyshevsky's What Is to Be Done?, which promised that people who understood their true interest would simply behave well."
+    },
+    {
+     "text": "The symbol of that perfectly calculated society was a building of glass and iron, the Crystal Palace. The Underground Man wants to stick his tongue out at it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p3-quotes",
+   "bg": {
+    "kind": "paperc",
+    "pal": "night",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q1",
+     "type": "hl",
+     "x": 640,
+     "y": 190,
+     "text": "what do I care for the laws of nature and arithmetic,\nwhen, for some reason I dislike those laws\nand the fact that [[twice two makes four]]?",
+     "size": 27,
+     "card": false,
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Part I, section III",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "q2",
+     "type": "hl",
+     "x": 640,
+     "y": 420,
+     "text": "man is a frivolous and incongruous creature,\nand perhaps, like a chess player, loves\nthe [[process of the game]], not the end of it.",
+     "size": 27,
+     "card": false,
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Part I, section IX",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "p",
+     "type": "hl",
+     "x": 640,
+     "y": 610,
+     "text": "people are not [[piano-keys]]",
+     "size": 30,
+     "card": "#fbf7ee",
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise",
+     "rot": -1
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Notes from Underground (1864), trans. Constance Garnett (1918), Part I, sections III, VII and IX",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Merciful Heavens! but what do I care for the laws of nature and arithmetic, when, for some reason I dislike those laws and the fact that twice two makes four?",
+     "who": "underground"
+    },
+    {
+     "text": "He is right about the planners. Treat people like piano keys, he says, and they will play a wrong note just to prove they are people."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p3-spite",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "bars",
+     "type": "vbars",
+     "x": 620,
+     "y": 330,
+     "in": 0,
+     "d": 0.3,
+     "w": 420,
+     "size": 24,
+     "shown": 0,
+     "title": "THE UNDERGROUND MAN, MEASURED",
+     "items": [
+      {
+       "label": "sees through utopias",
+       "v": 0.92,
+       "color": "#5b7a5a"
+      },
+      {
+       "label": "defends free will",
+       "v": 0.88,
+       "color": "#5b7a5a"
+      },
+      {
+       "label": "envy and resentment",
+       "v": 0.95,
+       "color": "#d23a2e"
+      },
+      {
+       "label": "kindness to Liza",
+       "v": 0.06,
+       "color": "#d23a2e",
+       "note": "he humiliates her"
+      }
+     ],
+     "keys": {
+      "0": {
+       "shown": 2,
+       "d": 0.3,
+       "t": 1.4
+      },
+      "1": {
+       "shown": 4,
+       "d": 0.3,
+       "t": 1.6
+      }
+     },
+     "anim": "rise"
+    },
+    {
+     "id": "m",
+     "type": "hl",
+     "x": 640,
+     "y": 620,
+     "text": "MODERN MIRROR: the [[utopia]] that forgets freedom,\nand the [[freedom]] that curdles into spite",
+     "size": 22,
+     "card": "#fbf7ee",
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Notes from Underground (1864), trans. Constance Garnett (1918), Part II",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "But look closely at him. The same man is bitter, envious, and cruel to the one person who is kind to him, a young woman named Liza."
+    },
+    {
+     "text": "Dostoevsky shows both halves: the utopia that forgets freedom, and the freedom that has curdled into spite. Any modern comment section has plenty of both."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch4",
+   "style": "cchapter",
+   "num": 4,
+   "kicker": "Type three",
+   "title": "The moral\ngatekeepers",
+   "sub": "Demons, 1871-72",
+   "who": "pyotr",
+   "whoColor": "#d9a441",
+   "color": "#b0892a",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {}
+  },
+  {
+   "type": "scene",
+   "id": "p4-shame",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "p",
+     "type": "cut",
+     "who": "pyotr",
+     "x": 250,
+     "y": 320,
+     "w": 250,
+     "h": 300,
+     "rot": -2,
+     "color": "#d9a441",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "name": "Pyotr Verkhovensky",
+     "role": "the organiser"
+    },
+    {
+     "id": "crowd",
+     "type": "crowdp",
+     "x": 820,
+     "y": 450,
+     "in": 1,
+     "d": 0.3,
+     "n": 9,
+     "w": 620,
+     "s": 0.8,
+     "anim": "fade"
+    },
+    {
+     "id": "a",
+     "type": "hl",
+     "x": 820,
+     "y": 160,
+     "text": "Recruit with [[shame]], not argument.",
+     "size": 30,
+     "card": true,
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "b",
+     "type": "hl",
+     "x": 820,
+     "y": 280,
+     "text": "Nobody wants to look [[backward]]\nin front of the others.",
+     "size": 26,
+     "card": "#fff3b0",
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "dis",
+     "type": "headline",
+     "x": 820,
+     "y": 600,
+     "text": "‘THE RIGHT TO DISHONOUR’",
+     "size": 34,
+     "bg": "#d23a2e",
+     "color": "#f4ecdc",
+     "in": 2,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Possessed / Demons (1871-72), trans. Constance Garnett (1916), Part II, chs. 6-7. Full story: LUMEN, 'Demons: The Revolution That Ate Its Own'",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Type three is what most people mean by moral gatekeepers. Our Demons episode tells the full story; here is just the mechanism."
+    },
+    {
+     "text": "Pyotr Verkhovensky builds a revolutionary cell out of provincial idealists, and he recruits them with shame rather than argument."
+    },
+    {
+     "text": "Behind the fine words about justice he offers his recruits something more tempting: in a phrase from the novel, the right to dishonour."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p4-funnel",
+   "bg": {
+    "kind": "paperc",
+    "pal": "ink",
+    "grid": false,
+    "dash": true,
+    "scraps": 0
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "mp",
+     "type": "vmap",
+     "x": 0,
+     "y": 0,
+     "in": 0,
+     "d": 0.3,
+     "size": 23,
+     "draw": 0,
+     "keys": {
+      "1": {
+       "draw": 1,
+       "d": 0.2,
+       "t": 5.0
+      }
+     },
+     "arrow": "#ffd23f",
+     "lcolor": "#f4ecdc",
+     "nodes": [
+      {
+       "id": "a",
+       "x": 220,
+       "y": 200,
+       "text": "unlimited\nfreedom",
+       "color": "#f4ecdc"
+      },
+      {
+       "id": "b",
+       "x": 560,
+       "y": 160,
+       "text": "perfect\nequality",
+       "color": "#f4ecdc"
+      },
+      {
+       "id": "c",
+       "x": 920,
+       "y": 210,
+       "text": "no one may\nstand out",
+       "color": "#f4ecdc"
+      },
+      {
+       "id": "dd",
+       "x": 1060,
+       "y": 420,
+       "text": "everyone spies\non everyone",
+       "color": "#f4ecdc"
+      },
+      {
+       "id": "e",
+       "x": 660,
+       "y": 470,
+       "text": "UNLIMITED DESPOTISM",
+       "color": "#d23a2e",
+       "fg": "#f4ecdc",
+       "shape": "box",
+       "size": 30
+      }
+     ],
+     "edges": [
+      [
+       "a",
+       "b"
+      ],
+      [
+       "b",
+       "c"
+      ],
+      [
+       "c",
+       "dd"
+      ],
+      [
+       "dd",
+       "e"
+      ]
+     ]
+    },
+    {
+     "id": "s",
+     "type": "cut",
+     "who": "shigalyov",
+     "x": 170,
+     "y": 420,
+     "w": 180,
+     "h": 210,
+     "rot": 3,
+     "color": "#d4b0a4",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "nameSize": 18,
+     "roleSize": 14,
+     "name": "Shigalyov",
+     "role": "the theorist"
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 720,
+     "y": 590,
+     "text": "Starting from [[unlimited freedom]], I arrive at [[unlimited despotism]].",
+     "size": 24,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Shigalyov, Part II, ch. 7",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Possessed / Demons (1871-72), trans. Constance Garnett (1916), Part II, chs. 7-8",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Then there is the theorist, Shigalyov, who reads out his plan for the perfect society and admits the problem himself."
+    },
+    {
+     "text": "Starting from unlimited freedom, I arrive at unlimited despotism.",
+     "who": "shigalyov"
+    },
+    {
+     "text": "Pyotr loves it, and explains how it works in practice:"
+    },
+    {
+     "text": "Every member of the society spies on the others, and it's his duty to inform against them.",
+     "who": "pyotr"
+    },
+    {
+     "text": "That is the gatekeeper's machine: a group that polices its own members harder than its enemies. Every century since has had its version: the purge, the struggle session, the online pile-on."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch5",
+   "style": "cchapter",
+   "num": 5,
+   "kicker": "Type four",
+   "title": "The benevolent\nmaster",
+   "sub": "The Brothers Karamazov, 1880",
+   "who": "student",
+   "whoColor": "#c47a6a",
+   "color": "#8a2a2a",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {
+    "hair": "bald",
+    "hairC": "white",
+    "beard": "none",
+    "brow": -0.5,
+    "eyes": "deep",
+    "coat": "#3a1414",
+    "tie": "none",
+    "face": 1.06,
+    "long": 1.12,
+    "gaunt": 1,
+    "mouth": -0.4
+   }
+  },
+  {
+   "type": "scene",
+   "id": "p5-cell",
+   "bg": {
+    "kind": "paperc",
+    "pal": "night",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "gi",
+     "type": "cut",
+     "who": "student",
+     "x": 280,
+     "y": 320,
+     "w": 260,
+     "h": 310,
+     "rot": -2,
+     "color": "#c47a6a",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "face": {
+      "hair": "bald",
+      "hairC": "white",
+      "beard": "none",
+      "brow": -0.5,
+      "eyes": "deep",
+      "coat": "#3a1414",
+      "tie": "none",
+      "face": 1.06,
+      "long": 1.12,
+      "gaunt": 1,
+      "mouth": -0.4
+     },
+     "name": "The Grand Inquisitor",
+     "role": "Seville, 16th century"
+    },
+    {
+     "id": "cd",
+     "type": "candle",
+     "x": 280,
+     "y": 640,
+     "in": 0,
+     "d": 0.3,
+     "s": 0.7,
+     "anim": "fade"
+    },
+    {
+     "id": "q1",
+     "type": "hl",
+     "x": 830,
+     "y": 210,
+     "text": "In the end they will lay their freedom\nat our feet, and say to us,\n“[[Make us your slaves, but feed us.]]”",
+     "size": 28,
+     "card": false,
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Book V, ch. 5",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "q2",
+     "type": "hl",
+     "x": 830,
+     "y": 460,
+     "text": "We have corrected Thy work and have founded it\nupon [[miracle, mystery and authority]].",
+     "size": 26,
+     "card": false,
+     "in": 3,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Book V, ch. 5",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book V, ch. 5, 'The Grand Inquisitor'",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Type four is the most dangerous, because he is not cynical at all. He is the Grand Inquisitor."
+    },
+    {
+     "text": "In The Brothers Karamazov, Ivan invents a story. Christ returns to sixteenth-century Seville, and a cardinal, almost ninety, has Him arrested."
+    },
+    {
+     "text": "That night the old man explains. People cannot bear freedom, so the church has quietly taken it from them, for their own good."
+    },
+    {
+     "text": "In the end they will lay their freedom at our feet, and say to us, Make us your slaves, but feed us.",
+     "who": "inquisitor"
+    },
+    {
+     "text": "We have corrected Thy work and have founded it upon miracle, mystery and authority.",
+     "who": "inquisitor"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p5-table",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.03
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tb",
+     "type": "vtable",
+     "x": 640,
+     "y": 330,
+     "in": 0,
+     "d": 0.3,
+     "w": 1060,
+     "size": 23,
+     "shown": 0,
+     "title": "THE INQUISITOR'S BARGAIN",
+     "titleSize": 26,
+     "cols": [
+      "He offers",
+      "What you get",
+      "What you give up",
+      "Modern costume"
+     ],
+     "colW": [
+      200,
+      270,
+      260,
+      330
+     ],
+     "rows": [
+      [
+       "Bread",
+       "security",
+       "freedom",
+       "‘obey and you'll be provided for’"
+      ],
+      [
+       "Miracle",
+       "proof that it works",
+       "judgement",
+       "spectacle and results"
+      ],
+      [
+       "Mystery",
+       "an answer for everything",
+       "questions",
+       "doctrine you may not doubt"
+      ],
+      [
+       "Authority",
+       "someone to keep\nyour conscience",
+       "responsibility",
+       "the leader, the party,\nthe consensus"
+      ]
+     ],
+     "keys": {
+      "0": {
+       "shown": 1,
+       "d": 0.4,
+       "t": 0.8
+      },
+      "1": {
+       "shown": 4,
+       "d": 0.2,
+       "t": 3.2
+      }
+     },
+     "anim": "rise",
+     "sfx": "paper"
+    },
+    {
+     "id": "m",
+     "type": "hl",
+     "x": 640,
+     "y": 650,
+     "text": "Offered by [[every side]], left and right, sacred and secular.",
+     "size": 24,
+     "card": "#fff3b0",
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book V, ch. 5",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Lay out the Inquisitor's offer and it is a trade. You get bread, proof, answers and someone to carry your conscience. You give up freedom, judgement, questions and responsibility."
+    },
+    {
+     "text": "Every side of politics offers some version of this bargain, and the people who offer it often mean it."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p5-morson",
+   "bg": {
+    "kind": "paperc",
+    "pal": "news",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 640,
+     "y": 250,
+     "text": "The revolutionaries in The Possessed are despicable,\nbut the Inquisitor, on the contrary,\nis [[entirely selfless]].",
+     "size": 32,
+     "card": "#fbf7ee",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Gary Saul Morson, 'Fyodor Dostoevsky: philosopher of freedom', The New Criterion, January 2021",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "c",
+     "type": "hl",
+     "x": 640,
+     "y": 520,
+     "text": "His love has [[contempt]] in it:\nhe believes people are too weak to be free.",
+     "size": 28,
+     "card": "#fff3b0",
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise",
+     "rot": -1
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Gary Saul Morson, The New Criterion, vol. 39 no. 5, January 2021",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "The scholar Gary Saul Morson puts it sharply: the revolutionaries in The Possessed are despicable, but the Inquisitor, on the contrary, is entirely selfless."
+    },
+    {
+     "text": "He takes our freedom out of love, but his love hides contempt: he believes people are too weak to be free."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch6",
+   "style": "cchapter",
+   "num": 6,
+   "kicker": "Type five",
+   "title": "The theorist\nwho never acts",
+   "sub": "The Brothers Karamazov, 1880",
+   "who": "student",
+   "whoColor": "#9fb0c8",
+   "color": "#2443c9",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {
+    "hair": "parted",
+    "hairC": "brown",
+    "beard": "none",
+    "brow": -0.2,
+    "eyes": "calm",
+    "coat": "#2a2c33",
+    "tie": "cravat",
+    "face": 1.0,
+    "mouth": -0.1
+   }
+  },
+  {
+   "type": "scene",
+   "id": "p6-ticket",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "iv",
+     "type": "cut",
+     "who": "student",
+     "x": 260,
+     "y": 320,
+     "w": 250,
+     "h": 300,
+     "rot": -2,
+     "color": "#9fb0c8",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "face": {
+      "hair": "parted",
+      "hairC": "brown",
+      "beard": "none",
+      "brow": -0.2,
+      "eyes": "calm",
+      "coat": "#2a2c33",
+      "tie": "cravat",
+      "face": 1.0,
+      "mouth": -0.1
+     },
+     "name": "Ivan Karamazov",
+     "role": "the brilliant brother"
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 820,
+     "y": 270,
+     "text": "It's not God that I don't accept, Alyosha,\nonly I most respectfully\n[[return Him the ticket]].",
+     "size": 30,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Ivan, Book V, ch. 4, 'Rebellion'",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "n",
+     "type": "hl",
+     "x": 820,
+     "y": 560,
+     "text": "The strongest argument in the novel.\nDostoevsky [[never refutes it]] in debate.",
+     "size": 24,
+     "card": "#fff3b0",
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book V, ch. 4, 'Rebellion'",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Type five never lifts a finger. Ivan Karamazov is the brilliant brother, and his rebellion is the strongest argument in the book."
+    },
+    {
+     "text": "He collects newspaper stories of children tortured by adults, and he refuses any heaven that would be built on their suffering."
+    },
+    {
+     "text": "It's not God that I don't accept, Alyosha, only I most respectfully return Him the ticket.",
+     "who": "ivan"
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p6-myth",
+   "bg": {
+    "kind": "paperc",
+    "pal": "ink",
+    "grid": false,
+    "dash": true,
+    "scraps": 0
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "myth",
+     "type": "headline",
+     "x": 640,
+     "y": 220,
+     "text": "“IF THERE IS NO GOD,\nEVERYTHING IS PERMITTED”",
+     "size": 40,
+     "bg": null,
+     "color": "#f4ecdc",
+     "in": 0,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "whoosh",
+     "vol": 0.3
+    },
+    {
+     "id": "st",
+     "type": "stampc",
+     "x": 640,
+     "y": 335,
+     "text": "NOT IN THE BOOK",
+     "size": 40,
+     "rot": -6,
+     "in": 1,
+     "d": 0.3,
+     "anim": "none",
+     "sfx": "thump",
+     "vol": 0.6
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 640,
+     "y": 480,
+     "text": "nothing then would be immoral,\n[[everything would be lawful]], even cannibalism.",
+     "size": 32,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Ivan's argument, as reported by Miüsov, Book II, ch. 6",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book II, ch. 6",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "But Ivan also has a slogan, and you have probably heard it: If there is no God, everything is permitted."
+    },
+    {
+     "text": "Those exact words are not in the novel."
+    },
+    {
+     "text": "What the book has is Ivan's argument, reported in a monastery: without belief in immortality, nothing then would be immoral, everything would be lawful, even cannibalism. After that, it travels as a slogan."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p6-map",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.03
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "mp",
+     "type": "vmap",
+     "x": 0,
+     "y": 0,
+     "in": 0,
+     "d": 0.3,
+     "size": 22,
+     "draw": 0,
+     "keys": {
+      "0": {
+       "draw": 0.45,
+       "d": 0.3,
+       "t": 2.6
+      },
+      "1": {
+       "draw": 0.8,
+       "d": 0.2,
+       "t": 2.0
+      },
+      "3": {
+       "draw": 1,
+       "d": 0.2,
+       "t": 1.0
+      }
+     },
+     "nodes": [
+      {
+       "id": "a",
+       "x": 200,
+       "y": 170,
+       "text": "no God"
+      },
+      {
+       "id": "b",
+       "x": 470,
+       "y": 170,
+       "text": "no immortality"
+      },
+      {
+       "id": "c",
+       "x": 780,
+       "y": 170,
+       "text": "‘all things\nare lawful’",
+       "color": "#ffd23f"
+      },
+      {
+       "id": "iv",
+       "x": 520,
+       "y": 380,
+       "text": "IVAN talks",
+       "color": "#9fb0c8",
+       "shape": "box"
+      },
+      {
+       "id": "sm",
+       "x": 960,
+       "y": 380,
+       "text": "SMERDYAKOV acts",
+       "color": "#d23a2e",
+       "fg": "#f4ecdc",
+       "shape": "box"
+      },
+      {
+       "id": "f",
+       "x": 960,
+       "y": 560,
+       "text": "their father,\nmurdered",
+       "color": "#1d1b19",
+       "fg": "#f4ecdc"
+      }
+     ],
+     "edges": [
+      [
+       "a",
+       "b"
+      ],
+      [
+       "b",
+       "c"
+      ],
+      [
+       "c",
+       "iv",
+       "",
+       0.1
+      ],
+      [
+       "iv",
+       "sm",
+       "listens",
+       -0.35
+      ],
+      [
+       "sm",
+       "f"
+      ]
+     ],
+     "lsize": 24
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 330,
+     "y": 590,
+     "text": "‘all things are lawful.’ That was quite right\nwhat you taught me",
+     "size": 24,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Smerdyakov to Ivan, Book XI, ch. 8",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book XI, ch. 8",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Follow the arrows: no God, no immortality, all things are lawful. Ivan says it to provoke."
+    },
+    {
+     "text": "His half-brother Smerdyakov, the family's sullen servant, takes it literally, and murders their father."
+    },
+    {
+     "text": "I did dream of it, chiefly because all things are lawful. That was quite right what you taught me, for you talked a lot to me about that.",
+     "who": "smerdyakov"
+    },
+    {
+     "text": "The theorist talks. Someone else acts. And Ivan, appalled, discovers he is not innocent, and breaks down."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p6-history",
+   "bg": {
+    "kind": "paperc",
+    "pal": "night",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.02,
+     1.0
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tb",
+     "type": "vtable",
+     "x": 430,
+     "y": 340,
+     "in": 0,
+     "d": 0.3,
+     "w": 560,
+     "size": 24,
+     "shown": 0,
+     "cols": [
+      "Revolution",
+      "Brings"
+     ],
+     "colW": [
+      240,
+      320
+     ],
+     "paper": "#f4ecdc",
+     "rows": [
+      [
+       "1789",
+       "Napoleon"
+      ],
+      [
+       "1848",
+       "Napoleon III"
+      ],
+      [
+       "1917",
+       "Stalin"
+      ],
+      [
+       "1920s Italy",
+       "Mussolini"
+      ],
+      [
+       "Weimar",
+       "Hitler"
+      ]
+     ],
+     "keys": {
+      "0": {
+       "shown": 5,
+       "d": 0.6,
+       "t": 3.0
+      }
+     },
+     "anim": "rise",
+     "sfx": "paper"
+    },
+    {
+     "id": "q1",
+     "type": "hl",
+     "x": 960,
+     "y": 200,
+     "text": "All modern revolutions have ended\nin a [[reinforcement of the power\nof the State]].",
+     "size": 24,
+     "card": false,
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Camus, The Rebel (1951)",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "q2",
+     "type": "hl",
+     "x": 960,
+     "y": 480,
+     "text": "Ideology—that is what gives evildoing\nits [[long-sought justification]] and gives\nthe evildoer the necessary steadfastness\nand determination.",
+     "size": 22,
+     "card": false,
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Solzhenitsyn, The Gulag Archipelago, vol. 1 (1973)",
+     "byColor": "#c9bca6"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Camus, The Rebel, trans. Bower; Solzhenitsyn, The Gulag Archipelago 1918-1956, vol. 1, trans. Thomas P. Whitney (1974)",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "In the twentieth century, two writers saw Dostoevsky's pattern in the wreckage. Camus wrote that all modern revolutions have ended in a reinforcement of the power of the State."
+    },
+    {
+     "text": "And Aleksandr Solzhenitsyn, who survived the Soviet camps, explained why: ideology, that is what gives evildoing its long-sought justification and gives the evildoer the necessary steadfastness and determination."
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "ch7",
+   "style": "cchapter",
+   "num": 7,
+   "kicker": "Part seven",
+   "title": "The line-up,\nand the case against",
+   "sub": "What the five have in common, and where Dostoevsky goes wrong",
+   "who": "dostoevsky",
+   "whoColor": "#c98f7a",
+   "color": "#d23a2e",
+   "dur": 4.2,
+   "sfx": "chime",
+   "whoFace": {}
+  },
+  {
+   "type": "scene",
+   "id": "p7-lineup",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.02
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "tb",
+     "type": "vtable",
+     "x": 640,
+     "y": 320,
+     "in": 0,
+     "d": 0.3,
+     "w": 1180,
+     "size": 21,
+     "shown": 0,
+     "title": "THE FIELD GUIDE",
+     "titleSize": 26,
+     "cols": [
+      "Type",
+      "Loves",
+      "Despises",
+      "Licence",
+      "Who pays"
+     ],
+     "colW": [
+      250,
+      200,
+      210,
+      280,
+      240
+     ],
+     "rows": [
+      [
+       "The formula\nRaskolnikov",
+       "humanity, in theory",
+       "the ‘ordinary’",
+       "simple arithmetic",
+       "Lizaveta"
+      ],
+      [
+       "The spite\nUnderground Man",
+       "his own freedom",
+       "everyone",
+       "spite beats reason",
+       "Liza"
+      ],
+      [
+       "The gatekeepers\nPyotr, Shigalyov",
+       "the cause",
+       "doubters",
+       "equality by spying",
+       "Shatov"
+      ],
+      [
+       "The master\nGrand Inquisitor",
+       "mankind",
+       "human weakness",
+       "bread for freedom",
+       "everyone's conscience"
+      ],
+      [
+       "The theorist\nIvan",
+       "justice",
+       "God's world",
+       "all things are lawful",
+       "his father"
+      ]
+     ],
+     "keys": {
+      "0": {
+       "shown": 5,
+       "d": 0.3,
+       "t": 4.5
+      },
+      "1": {
+       "hi": 0,
+       "hiDraw": 1,
+       "d": 0.2,
+       "t": 0.1
+      }
+     },
+     "hi": -1,
+     "anim": "rise",
+     "sfx": "paper"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Summary by LUMEN of the works cited",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Put the five side by side and the common thread jumps out. Each one loves something large and abstract: humanity, freedom, the cause, mankind, justice."
+    },
+    {
+     "text": "Each one holds real, particular people in some contempt. Each has an idea that gives him permission. And in every case, someone else pays."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p7-against",
+   "bg": {
+    "kind": "paperc",
+    "pal": "oxblood",
+    "grid": false,
+    "dash": false,
+    "scraps": 1
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "h",
+     "type": "headline",
+     "x": 640,
+     "y": 80,
+     "text": "THE CASE AGAINST DOSTOEVSKY",
+     "size": 40,
+     "bg": "#f4ecdc",
+     "color": "#1d1b19",
+     "in": 0,
+     "d": 0.3,
+     "anim": "pop",
+     "sfx": "thump",
+     "vol": 0.3
+    },
+    {
+     "id": "a",
+     "type": "hl",
+     "x": 640,
+     "y": 200,
+     "text": "1  [[Caricature.]] Many radicals were brave,\nself-sacrificing, and right about serfdom and censorship.",
+     "size": 23,
+     "card": true,
+     "in": 1,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "b",
+     "type": "hl",
+     "x": 640,
+     "y": 320,
+     "text": "2  [[His own politics.]] Monarchist, nationalist, and at times\nantisemitic in A Writer's Diary. His cure was a program too.",
+     "size": 23,
+     "card": true,
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "c",
+     "type": "hl",
+     "x": 640,
+     "y": 440,
+     "text": "3  [[Rebellion is not the disease.]] Camus:\n‘I rebel – therefore we exist.’",
+     "size": 23,
+     "card": true,
+     "in": 3,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "d",
+     "type": "hl",
+     "x": 640,
+     "y": 565,
+     "text": "4  [[He gave the rebels the best lines.]] Bakhtin: ‘a plurality\nof independent and unmerged voices and consciousnesses’",
+     "size": 21,
+     "card": true,
+     "in": 4,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Morson, 'Why Dostoevsky loved humanity and hated the Jews', Mosaic (2023); Camus, The Rebel, part 1; Bakhtin, Problems of Dostoevsky's Poetics, trans. Caryl Emerson (1984), p. 6",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Now, the case against Dostoevsky."
+    },
+    {
+     "text": "One: caricature. Many radicals of his time were brave and self-sacrificing, and right that serfdom and censorship were worth fighting."
+    },
+    {
+     "text": "Two: his own politics. He was a monarchist and a nationalist, and A Writer's Diary contains ugly antisemitic passages. His cure for Russia was a political program too."
+    },
+    {
+     "text": "Three: rebellion itself is not the disease. Camus argued that saying no to injustice is how we discover what we share: I rebel, therefore we exist."
+    },
+    {
+     "text": "And four: he argued against himself. The critic Mikhail Bakhtin described his novels as a plurality of independent and unmerged voices and consciousnesses. The rebels speak at full strength."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "p7-shared",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "bal",
+     "type": "balance",
+     "x": 640,
+     "y": 420,
+     "in": 0,
+     "d": 0.3,
+     "tilt": 0,
+     "left": "wanting justice",
+     "right": "permission to\nstop seeing people",
+     "s": 1.0,
+     "keys": {
+      "0": {
+       "tilt": 0.7,
+       "d": 0.3,
+       "t": 1.4
+      }
+     },
+     "anim": "fade"
+    },
+    {
+     "id": "s",
+     "type": "hl",
+     "x": 640,
+     "y": 120,
+     "text": "SHARED GROUND",
+     "size": 30,
+     "card": "#ffd23f",
+     "in": 0,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "LUMEN",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Shared ground: the problem was never wanting justice. It's when a cause lets you stop seeing the person in front of you."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "end-plague",
+   "bg": {
+    "kind": "paperc",
+    "pal": "night",
+    "grid": false,
+    "dash": false
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.06
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "crowd",
+     "type": "crowdp",
+     "x": 640,
+     "y": 520,
+     "in": 0,
+     "d": 0.3,
+     "n": 14,
+     "s": 0.9,
+     "riot": 0,
+     "keys": {
+      "1": {
+       "riot": 1,
+       "d": 0.3,
+       "t": 2.0
+      }
+     },
+     "anim": "fade"
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 640,
+     "y": 190,
+     "text": "never had men considered themselves\nso intellectual and so completely\nin [[possession of the truth]]",
+     "size": 30,
+     "card": false,
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#f4ecdc",
+     "hcolor": "#b8302a",
+     "by": "Crime and Punishment, Epilogue, ch. 2",
+     "byColor": "#c9bca6",
+     "out": 3
+    },
+    {
+     "id": "e",
+     "type": "hl",
+     "x": 640,
+     "y": 380,
+     "text": "Each thought that [[he alone had the truth]].",
+     "size": 26,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise",
+     "out": 3
+    },
+    {
+     "id": "so",
+     "type": "cut",
+     "who": "student",
+     "x": 640,
+     "y": 330,
+     "w": 230,
+     "h": 270,
+     "rot": 2,
+     "color": "#b8c9a0",
+     "in": 3,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "face": {
+      "hair": "scarf",
+      "hairC": "brown",
+      "scarfC": "#5d7a6a",
+      "female": 1,
+      "brow": 0.4,
+      "eyes": "soft",
+      "coat": "#56604f",
+      "tie": "none",
+      "face": 0.9,
+      "mouth": 0.2,
+      "young": 1
+     },
+     "name": "Sonia",
+     "role": "outside the prison gate"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Crime and Punishment (1866), trans. Constance Garnett (1914), Epilogue, ch. 2",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Crime and Punishment ends in Siberia. In the prison hospital, Raskolnikov dreams that a strange plague has swept the world."
+    },
+    {
+     "text": "Its victims go mad, yet never had men considered themselves so intellectual and so completely in possession of the truth as these sufferers."
+    },
+    {
+     "text": "Each thought that he alone had the truth, and whole towns turn on each other. When Raskolnikov wakes, what saves him is not a better theory."
+    },
+    {
+     "text": "It is a person: Sonia, who has followed him to Siberia and waits for him outside the prison gate."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "end-zosima",
+   "bg": {
+    "kind": "paperc",
+    "pal": "cream",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.05
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "z",
+     "type": "cut",
+     "who": "tikhon",
+     "x": 260,
+     "y": 330,
+     "w": 250,
+     "h": 300,
+     "rot": -2,
+     "color": "#c9b893",
+     "in": 0,
+     "d": 0.3,
+     "anim": "drop",
+     "sfx": "paper",
+     "vol": 0.7,
+     "name": "Father Zosima",
+     "role": "the monk from the opening"
+    },
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 830,
+     "y": 230,
+     "text": "love in action is a [[harsh and dreadful thing]]\ncompared with love in dreams.",
+     "size": 28,
+     "card": "#fbf7ee",
+     "in": 1,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Zosima, Book II, ch. 4",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "d",
+     "type": "hl",
+     "x": 830,
+     "y": 430,
+     "text": "Love in dreams: quick, in [[the sight of all]],\napplauded [[as though on the stage]].",
+     "size": 24,
+     "card": "#fff3b0",
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "a",
+     "type": "hl",
+     "x": 830,
+     "y": 590,
+     "text": "Active love: [[labor and fortitude]].",
+     "size": 28,
+     "card": true,
+     "in": 3,
+     "d": 0.3,
+     "anim": "rise"
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "The Brothers Karamazov (1880), trans. Constance Garnett (1912), Book II, ch. 4",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "Remember the doctor who loved humanity and hated people? Zosima has advice for exactly that person."
+    },
+    {
+     "text": "love in action is a harsh and dreadful thing compared with love in dreams.",
+     "who": "zosima"
+    },
+    {
+     "text": "Love in dreams, he says, wants something quick, in the sight of all, applauded as though on the stage. Sound like anything you scrolled past today?"
+    },
+    {
+     "text": "Active love, he says, is labor and fortitude. Unglamorous, one person at a time."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "id": "end-line",
+   "bg": {
+    "kind": "paperc",
+    "pal": "news",
+    "grid": false,
+    "dash": true
+   },
+   "cam": {
+    "zoom": [
+     1.0,
+     1.07
+    ],
+    "pan": [
+     [
+      0,
+      0
+     ],
+     [
+      16,
+      -6
+     ]
+    ]
+   },
+   "els": [
+    {
+     "id": "q",
+     "type": "hl",
+     "x": 640,
+     "y": 230,
+     "text": "the line dividing good and evil cuts through\nthe [[heart of every human being]].",
+     "size": 32,
+     "card": "#fbf7ee",
+     "in": 0,
+     "d": 0.4,
+     "anim": "rise",
+     "font": "serif",
+     "italic": true,
+     "weight": 700,
+     "color": "#1d1b19",
+     "hcolor": "#ffd23f",
+     "by": "Aleksandr Solzhenitsyn, The Gulag Archipelago, vol. 1 (1973), trans. Thomas P. Whitney",
+     "byColor": "#6b6255"
+    },
+    {
+     "id": "t",
+     "type": "hl",
+     "x": 640,
+     "y": 500,
+     "text": "Do I love the [[person in front of me]], or only humanity?\nWho pays for [[my arithmetic]]?\nWould my rules be fair if [[I were outside the gate]]?",
+     "size": 26,
+     "card": "#fbf7ee",
+     "in": 2,
+     "d": 0.3,
+     "anim": "rise",
+     "tape": true
+    },
+    {
+     "id": "src0",
+     "type": "cite",
+     "x": 0,
+     "y": 0,
+     "text": "Solzhenitsyn, The Gulag Archipelago 1918-1956, vol. 1, part I, ch. 4",
+     "in": 0,
+     "d": 0.8,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "text": "A century later, Solzhenitsyn put Dostoevsky's lesson in one line: the line dividing good and evil cuts through the heart of every human being."
+    },
+    {
+     "text": "That is the real warning in these books. Not 'beware of rebels'. Beware the moment you are certain that the line runs between you and them."
+    },
+    {
+     "text": "So fold the field guide into three questions. Do I love the person in front of me, or only humanity? Who pays for my arithmetic? Would my rules still be fair if I were the one outside the gate?"
+    },
+    {
+     "text": "Ask them of your opponents if you like. Dostoevsky's advice is to ask them of yourself first."
+    },
+    {
+     "text": "",
+     "dur": 2.6,
+     "sfx": "swell"
+    }
+   ]
+  },
+  {
+   "type": "card",
+   "id": "end",
+   "style": "cend",
+   "title": "LOVE HUMANITY, HATE PEOPLE",
+   "dur": 18,
+   "credits": [
+    "# Dostoevsky (quoted from Constance Garnett's public-domain translations)",
+    "The Brothers Karamazov (1880), trans. 1912: Book II ch. 4; Book V chs. 4-5; Book XI chs. 4, 8",
+    "Crime and Punishment (1866), trans. 1914: Part I ch. 6; Part III ch. 5; Part V ch. 4; Epilogue ch. 2",
+    "Notes from Underground (1864), trans. 1918: Part I sections III, VII, IX",
+    "The Possessed / Demons (1871-72), trans. 1916: Part II chs. 6-8",
+    "A Writer's Diary (1873), trans. Kenneth Lantz (Northwestern, 1993)",
+    "# Scholars and writers",
+    "Joseph Frank, 'Inflamed', London Review of Books 15:23 (1993)",
+    "Gary Saul Morson, 'Fyodor Dostoevsky: philosopher of freedom', The New Criterion (Jan 2021)",
+    "Gary Saul Morson, 'Why Dostoevsky loved humanity and hated the Jews', Mosaic (Dec 2023)",
+    "Albert Camus, The Rebel (1951), trans. Anthony Bower",
+    "Aleksandr Solzhenitsyn, The Gulag Archipelago, vol. 1 (1973), trans. Thomas P. Whitney",
+    "Mikhail Bakhtin, Problems of Dostoevsky's Poetics, trans. Caryl Emerson (1984)",
+    "Sean Illing, 'The Logic of Political Murder', Substack (Aug 2025)",
+    "N. G. Chernyshevsky, What Is to Be Done? (1863)",
+    "# Made with",
+    "Kokoro open-weight voices, an original numpy score,",
+    "hand-coded SVG collage and diagrams, headless Chromium and ffmpeg",
+    "",
+    "Original animation. All portraits are invented drawings, not likenesses.",
+    "Not affiliated with any publisher, channel or estate."
+   ]
+  }
+ ]
+}

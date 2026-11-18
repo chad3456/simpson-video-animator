@@ -1,0 +1,666 @@
+[
+{
+"seg": "open-doctor",
+"idx": 0,
+"who": "narrator",
+"start": 0.4,
+"end": 7.532,
+"text": "In The Brothers Karamazov, an old monk named Zosima tells a story about a doctor who once confessed something strange to him."
+},
+{
+"seg": "open-doctor",
+"idx": 1,
+"who": "zosima",
+"start": 7.872,
+"end": 16.955,
+"text": "\u2018I love humanity,\u2019 he said, \u2018but I wonder at myself. The more I love humanity in general, the less I love man in particular.\u2019"
+},
+{
+"seg": "open-doctor",
+"idx": 2,
+"who": "narrator",
+"start": 17.295,
+"end": 23.156,
+"text": "He dreamed of serving mankind. Yet he could not share a room with anyone for two days without starting to hate them."
+},
+{
+"seg": "open-question",
+"idx": 0,
+"who": "narrator",
+"start": 23.496,
+"end": 28.355,
+"text": "Dostoevsky wrote that almost a hundred and fifty years ago. You have probably met this person."
+},
+{
+"seg": "open-question",
+"idx": 1,
+"who": "narrator",
+"start": 28.695,
+"end": 38.252,
+"text": "Why do so many people who set out to free humanity end up despising actual humans? Why do the loudest guardians of morality so often turn out to believe in nothing?"
+},
+{
+"seg": "open-question",
+"idx": 2,
+"who": "narrator",
+"start": 38.592,
+"end": 43.88,
+"text": "Dostoevsky spent his whole career on that question, and he had a reason. He had once been one of them."
+},
+{
+"seg": "open-question",
+"idx": 3,
+"who": "narrator",
+"start": 44.22,
+"end": 51.357,
+"text": "Across his books he built a kind of field guide: five types of rebel, five ways a good cause goes bad. Let's take them apart."
+},
+{
+"seg": "p1-circle",
+"idx": 0,
+"who": "narrator",
+"start": 62.577,
+"end": 73.249,
+"text": "In 1849, Dostoevsky was a rising young novelist in a St Petersburg socialist circle, and in a secret group inside it that planned to print illegal propaganda."
+},
+{
+"seg": "p1-circle",
+"idx": 1,
+"who": "narrator",
+"start": 73.589,
+"end": 81.358,
+"text": "His biographer Joseph Frank calls it a genuine underground conspiracy. That fact stayed hidden until 1922."
+},
+{
+"seg": "p1-circle",
+"idx": 2,
+"who": "narrator",
+"start": 81.698,
+"end": 87.055,
+"text": "He was arrested, put through a mock execution, and sent to a Siberian prison camp for four years."
+},
+{
+"seg": "p1-diary",
+"idx": 0,
+"who": "narrator",
+"start": 87.395,
+"end": 90.63,
+"text": "Twenty-four years later, in A Writer's Diary, he looked back."
+},
+{
+"seg": "p1-diary",
+"idx": 1,
+"who": "narrator",
+"start": 90.97,
+"end": 98.527,
+"text": "He could probably never have been Nechayev, the ruthless revolutionary of his day. But a follower? Perhaps, he wrote, in the days of his youth."
+},
+{
+"seg": "p1-diary",
+"idx": 2,
+"who": "narrator",
+"start": 98.867,
+"end": 112.245,
+"text": "Then he named the disease he had seen from the inside: the possibility of considering oneself, and sometimes even being, in fact, an honorable person while committing obvious and undeniable villainy. That is our whole affliction today."
+},
+{
+"seg": "p1-diary",
+"idx": 3,
+"who": "narrator",
+"start": 112.585,
+"end": 120.339,
+"text": "Not monsters. Good people doing monstrous things, and feeling good about it. Every type in this field guide is a variation on that sentence."
+},
+{
+"seg": "p2-arith",
+"idx": 0,
+"who": "narrator",
+"start": 125.219,
+"end": 132.889,
+"text": "Type one is the man with a formula. Rodion Raskolnikov is a poor ex-student in St Petersburg: proud, hungry, and brilliant."
+},
+{
+"seg": "p2-arith",
+"idx": 1,
+"who": "narrator",
+"start": 133.229,
+"end": 139.756,
+"text": "In a tavern he overhears a student make the case for killing a cruel old pawnbroker and spending her money on the poor."
+},
+{
+"seg": "p2-arith",
+"idx": 2,
+"who": "student",
+"start": 140.096,
+"end": 143.832,
+"text": "One death, and a hundred lives in exchange. It's simple arithmetic!"
+},
+{
+"seg": "p2-arith",
+"idx": 3,
+"who": "narrator",
+"start": 144.172,
+"end": 150.79,
+"text": "It sounds almost noble. The question the arithmetic never asks is who gets to decide which life counts as the one."
+},
+{
+"seg": "p2-table",
+"idx": 0,
+"who": "narrator",
+"start": 151.13,
+"end": 160.701,
+"text": "Raskolnikov already has a theory. In a magazine article, he split humanity into two kinds: the ordinary, who must obey, and the extraordinary, who make new laws."
+},
+{
+"seg": "p2-table",
+"idx": 1,
+"who": "narrator",
+"start": 161.041,
+"end": 169.104,
+"text": "An extraordinary man, he argues, has an inner right to decide in his own conscience to overstep certain obstacles, if his idea requires it."
+},
+{
+"seg": "p2-table",
+"idx": 2,
+"who": "narrator",
+"start": 169.444,
+"end": 173.917,
+"text": "Lycurgus, Solon, Napoleon: by the old law, he says, they were all criminals."
+},
+{
+"seg": "p2-table",
+"idx": 3,
+"who": "narrator",
+"start": 174.257,
+"end": 179.181,
+"text": "Notice the trick. The theory doesn't just permit the crime. It flatters the man who commits it."
+},
+{
+"seg": "p2-confess",
+"idx": 0,
+"who": "narrator",
+"start": 179.521,
+"end": 187.236,
+"text": "He kills the pawnbroker with an axe, and then her gentle sister Lizaveta, who walks in at the wrong moment. The formula had no column for her."
+},
+{
+"seg": "p2-confess",
+"idx": 1,
+"who": "narrator",
+"start": 187.576,
+"end": 191.323,
+"text": "Later, confessing to Sonia, he drops the arithmetic altogether."
+},
+{
+"seg": "p2-confess",
+"idx": 2,
+"who": "raskolnikov",
+"start": 191.663,
+"end": 194.843,
+"text": "I wanted to become a Napoleon, that is why I killed her."
+},
+{
+"seg": "p2-confess",
+"idx": 3,
+"who": "raskolnikov",
+"start": 195.183,
+"end": 198.29,
+"text": "Did I murder the old woman? I murdered myself, not her!"
+},
+{
+"seg": "p2-confess",
+"idx": 4,
+"who": "narrator",
+"start": 198.63,
+"end": 203.761,
+"text": "It was never about the hundred lives. It was about proving he was the kind of man allowed to take one."
+},
+{
+"seg": "p3-palace",
+"idx": 0,
+"who": "narrator",
+"start": 208.641,
+"end": 216.228,
+"text": "Type two is the rebel against the planners. He has no name. He is a bitter retired clerk of forty, and he narrates Notes from Underground."
+},
+{
+"seg": "p3-palace",
+"idx": 1,
+"who": "narrator",
+"start": 216.568,
+"end": 227.023,
+"text": "Dostoevsky wrote it as an answer to a hugely popular radical novel, Chernyshevsky's What Is to Be Done?, which promised that people who understood their true interest would simply behave well."
+},
+{
+"seg": "p3-palace",
+"idx": 2,
+"who": "narrator",
+"start": 227.363,
+"end": 236.366,
+"text": "The symbol of that perfectly calculated society was a building of glass and iron, the Crystal Palace. The Underground Man wants to stick his tongue out at it."
+},
+{
+"seg": "p3-quotes",
+"idx": 0,
+"who": "underground",
+"start": 236.706,
+"end": 245.618,
+"text": "Merciful Heavens! but what do I care for the laws of nature and arithmetic, when, for some reason I dislike those laws and the fact that twice two makes four?"
+},
+{
+"seg": "p3-quotes",
+"idx": 1,
+"who": "narrator",
+"start": 245.958,
+"end": 252.551,
+"text": "He is right about the planners. Treat people like piano keys, he says, and they will play a wrong note just to prove they are people."
+},
+{
+"seg": "p3-spite",
+"idx": 0,
+"who": "narrator",
+"start": 252.891,
+"end": 260.427,
+"text": "But look closely at him. The same man is bitter, envious, and cruel to the one person who is kind to him, a young woman named Liza."
+},
+{
+"seg": "p3-spite",
+"idx": 1,
+"who": "narrator",
+"start": 260.767,
+"end": 269.603,
+"text": "Dostoevsky shows both halves: the utopia that forgets freedom, and the freedom that has curdled into spite. Any modern comment section has plenty of both."
+},
+{
+"seg": "p4-shame",
+"idx": 0,
+"who": "narrator",
+"start": 274.483,
+"end": 281.722,
+"text": "Type three is what most people mean by moral gatekeepers. Our Demons episode tells the full story; here is just the mechanism."
+},
+{
+"seg": "p4-shame",
+"idx": 1,
+"who": "narrator",
+"start": 282.062,
+"end": 289.528,
+"text": "Pyotr Verkhovensky builds a revolutionary cell out of provincial idealists, and he recruits them with shame rather than argument."
+},
+{
+"seg": "p4-shame",
+"idx": 2,
+"who": "narrator",
+"start": 289.868,
+"end": 297.192,
+"text": "Behind the fine words about justice he offers his recruits something more tempting: in a phrase from the novel, the right to dishonour."
+},
+{
+"seg": "p4-funnel",
+"idx": 0,
+"who": "narrator",
+"start": 297.532,
+"end": 303.929,
+"text": "Then there is the theorist, Shigalyov, who reads out his plan for the perfect society and admits the problem himself."
+},
+{
+"seg": "p4-funnel",
+"idx": 1,
+"who": "shigalyov",
+"start": 304.269,
+"end": 308.578,
+"text": "Starting from unlimited freedom, I arrive at unlimited despotism."
+},
+{
+"seg": "p4-funnel",
+"idx": 2,
+"who": "narrator",
+"start": 308.918,
+"end": 312.059,
+"text": "Pyotr loves it, and explains how it works in practice:"
+},
+{
+"seg": "p4-funnel",
+"idx": 3,
+"who": "pyotr",
+"start": 312.399,
+"end": 317.088,
+"text": "Every member of the society spies on the others, and it's his duty to inform against them."
+},
+{
+"seg": "p4-funnel",
+"idx": 4,
+"who": "narrator",
+"start": 317.428,
+"end": 328.279,
+"text": "That is the gatekeeper's machine: a group that polices its own members harder than its enemies. Every century since has had its version: the purge, the struggle session, the online pile-on."
+},
+{
+"seg": "p5-cell",
+"idx": 0,
+"who": "narrator",
+"start": 333.159,
+"end": 338.419,
+"text": "Type four is the most dangerous, because he is not cynical at all. He is the Grand Inquisitor."
+},
+{
+"seg": "p5-cell",
+"idx": 1,
+"who": "narrator",
+"start": 338.759,
+"end": 347.365,
+"text": "In The Brothers Karamazov, Ivan invents a story. Christ returns to sixteenth-century Seville, and a cardinal, almost ninety, has Him arrested."
+},
+{
+"seg": "p5-cell",
+"idx": 2,
+"who": "narrator",
+"start": 347.705,
+"end": 354.432,
+"text": "That night the old man explains. People cannot bear freedom, so the church has quietly taken it from them, for their own good."
+},
+{
+"seg": "p5-cell",
+"idx": 3,
+"who": "inquisitor",
+"start": 354.772,
+"end": 360.664,
+"text": "In the end they will lay their freedom at our feet, and say to us, Make us your slaves, but feed us."
+},
+{
+"seg": "p5-cell",
+"idx": 4,
+"who": "inquisitor",
+"start": 361.004,
+"end": 366.383,
+"text": "We have corrected Thy work and have founded it upon miracle, mystery and authority."
+},
+{
+"seg": "p5-table",
+"idx": 0,
+"who": "narrator",
+"start": 366.723,
+"end": 376.422,
+"text": "Lay out the Inquisitor's offer and it is a trade. You get bread, proof, answers and someone to carry your conscience. You give up freedom, judgement, questions and responsibility."
+},
+{
+"seg": "p5-table",
+"idx": 1,
+"who": "narrator",
+"start": 376.762,
+"end": 381.967,
+"text": "Every side of politics offers some version of this bargain, and the people who offer it often mean it."
+},
+{
+"seg": "p5-morson",
+"idx": 0,
+"who": "narrator",
+"start": 382.307,
+"end": 391.48,
+"text": "The scholar Gary Saul Morson puts it sharply: the revolutionaries in The Possessed are despicable, but the Inquisitor, on the contrary, is entirely selfless."
+},
+{
+"seg": "p5-morson",
+"idx": 1,
+"who": "narrator",
+"start": 391.82,
+"end": 397.49,
+"text": "He takes our freedom out of love, but his love hides contempt: he believes people are too weak to be free."
+},
+{
+"seg": "p6-ticket",
+"idx": 0,
+"who": "narrator",
+"start": 402.37,
+"end": 409.678,
+"text": "Type five never lifts a finger. Ivan Karamazov is the brilliant brother, and his rebellion is the strongest argument in the book."
+},
+{
+"seg": "p6-ticket",
+"idx": 1,
+"who": "narrator",
+"start": 410.018,
+"end": 416.614,
+"text": "He collects newspaper stories of children tortured by adults, and he refuses any heaven that would be built on their suffering."
+},
+{
+"seg": "p6-ticket",
+"idx": 2,
+"who": "ivan",
+"start": 416.954,
+"end": 422.438,
+"text": "It's not God that I don't accept, Alyosha, only I most respectfully return Him the ticket."
+},
+{
+"seg": "p6-myth",
+"idx": 0,
+"who": "narrator",
+"start": 422.778,
+"end": 428.608,
+"text": "But Ivan also has a slogan, and you have probably heard it: If there is no God, everything is permitted."
+},
+{
+"seg": "p6-myth",
+"idx": 1,
+"who": "narrator",
+"start": 428.948,
+"end": 431.066,
+"text": "Those exact words are not in the novel."
+},
+{
+"seg": "p6-myth",
+"idx": 2,
+"who": "narrator",
+"start": 431.406,
+"end": 443.24,
+"text": "What the book has is Ivan's argument, reported in a monastery: without belief in immortality, nothing then would be immoral, everything would be lawful, even cannibalism. After that, it travels as a slogan."
+},
+{
+"seg": "p6-map",
+"idx": 0,
+"who": "narrator",
+"start": 443.58,
+"end": 449.103,
+"text": "Follow the arrows: no God, no immortality, all things are lawful. Ivan says it to provoke."
+},
+{
+"seg": "p6-map",
+"idx": 1,
+"who": "narrator",
+"start": 449.443,
+"end": 454.783,
+"text": "His half-brother Smerdyakov, the family's sullen servant, takes it literally, and murders their father."
+},
+{
+"seg": "p6-map",
+"idx": 2,
+"who": "smerdyakov",
+"start": 455.123,
+"end": 462.403,
+"text": "I did dream of it, chiefly because all things are lawful. That was quite right what you taught me, for you talked a lot to me about that."
+},
+{
+"seg": "p6-map",
+"idx": 3,
+"who": "narrator",
+"start": 462.743,
+"end": 468.653,
+"text": "The theorist talks. Someone else acts. And Ivan, appalled, discovers he is not innocent, and breaks down."
+},
+{
+"seg": "p6-history",
+"idx": 0,
+"who": "narrator",
+"start": 468.993,
+"end": 478.953,
+"text": "In the twentieth century, two writers saw Dostoevsky's pattern in the wreckage. Camus wrote that all modern revolutions have ended in a reinforcement of the power of the State."
+},
+{
+"seg": "p6-history",
+"idx": 1,
+"who": "narrator",
+"start": 479.293,
+"end": 492.575,
+"text": "And Aleksandr Solzhenitsyn, who survived the Soviet camps, explained why: ideology, that is what gives evildoing its long-sought justification and gives the evildoer the necessary steadfastness and determination."
+},
+{
+"seg": "p7-lineup",
+"idx": 0,
+"who": "narrator",
+"start": 497.455,
+"end": 506.628,
+"text": "Put the five side by side and the common thread jumps out. Each one loves something large and abstract: humanity, freedom, the cause, mankind, justice."
+},
+{
+"seg": "p7-lineup",
+"idx": 1,
+"who": "narrator",
+"start": 506.968,
+"end": 514.753,
+"text": "Each one holds real, particular people in some contempt. Each has an idea that gives him permission. And in every case, someone else pays."
+},
+{
+"seg": "p7-against",
+"idx": 0,
+"who": "narrator",
+"start": 515.093,
+"end": 516.91,
+"text": "Now, the case against Dostoevsky."
+},
+{
+"seg": "p7-against",
+"idx": 1,
+"who": "narrator",
+"start": 517.25,
+"end": 524.928,
+"text": "One: caricature. Many radicals of his time were brave and self-sacrificing, and right that serfdom and censorship were worth fighting."
+},
+{
+"seg": "p7-against",
+"idx": 2,
+"who": "narrator",
+"start": 525.268,
+"end": 535.635,
+"text": "Two: his own politics. He was a monarchist and a nationalist, and A Writer's Diary contains ugly antisemitic passages. His cure for Russia was a political program too."
+},
+{
+"seg": "p7-against",
+"idx": 3,
+"who": "narrator",
+"start": 535.975,
+"end": 544.874,
+"text": "Three: rebellion itself is not the disease. Camus argued that saying no to injustice is how we discover what we share: I rebel, therefore we exist."
+},
+{
+"seg": "p7-against",
+"idx": 4,
+"who": "narrator",
+"start": 545.214,
+"end": 556.419,
+"text": "And four: he argued against himself. The critic Mikhail Bakhtin described his novels as a plurality of independent and unmerged voices and consciousnesses. The rebels speak at full strength."
+},
+{
+"seg": "p7-shared",
+"idx": 0,
+"who": "narrator",
+"start": 556.759,
+"end": 562.882,
+"text": "Shared ground: the problem was never wanting justice. It's when a cause lets you stop seeing the person in front of you."
+},
+{
+"seg": "end-plague",
+"idx": 0,
+"who": "narrator",
+"start": 563.222,
+"end": 570.686,
+"text": "Crime and Punishment ends in Siberia. In the prison hospital, Raskolnikov dreams that a strange plague has swept the world."
+},
+{
+"seg": "end-plague",
+"idx": 1,
+"who": "narrator",
+"start": 571.026,
+"end": 578.837,
+"text": "Its victims go mad, yet never had men considered themselves so intellectual and so completely in possession of the truth as these sufferers."
+},
+{
+"seg": "end-plague",
+"idx": 2,
+"who": "narrator",
+"start": 579.177,
+"end": 586.96,
+"text": "Each thought that he alone had the truth, and whole towns turn on each other. When Raskolnikov wakes, what saves him is not a better theory."
+},
+{
+"seg": "end-plague",
+"idx": 3,
+"who": "narrator",
+"start": 587.3,
+"end": 593.067,
+"text": "It is a person: Sonia, who has followed him to Siberia and waits for him outside the prison gate."
+},
+{
+"seg": "end-zosima",
+"idx": 0,
+"who": "narrator",
+"start": 593.407,
+"end": 599.328,
+"text": "Remember the doctor who loved humanity and hated people? Zosima has advice for exactly that person."
+},
+{
+"seg": "end-zosima",
+"idx": 1,
+"who": "zosima",
+"start": 599.668,
+"end": 604.822,
+"text": "love in action is a harsh and dreadful thing compared with love in dreams."
+},
+{
+"seg": "end-zosima",
+"idx": 2,
+"who": "narrator",
+"start": 605.162,
+"end": 612.848,
+"text": "Love in dreams, he says, wants something quick, in the sight of all, applauded as though on the stage. Sound like anything you scrolled past today?"
+},
+{
+"seg": "end-zosima",
+"idx": 3,
+"who": "narrator",
+"start": 613.188,
+"end": 618.027,
+"text": "Active love, he says, is labor and fortitude. Unglamorous, one person at a time."
+},
+{
+"seg": "end-line",
+"idx": 0,
+"who": "narrator",
+"start": 618.367,
+"end": 626.677,
+"text": "A century later, Solzhenitsyn put Dostoevsky's lesson in one line: the line dividing good and evil cuts through the heart of every human being."
+},
+{
+"seg": "end-line",
+"idx": 1,
+"who": "narrator",
+"start": 627.017,
+"end": 634.089,
+"text": "That is the real warning in these books. Not 'beware of rebels'. Beware the moment you are certain that the line runs between you and them."
+},
+{
+"seg": "end-line",
+"idx": 2,
+"who": "narrator",
+"start": 634.429,
+"end": 645.224,
+"text": "So fold the field guide into three questions. Do I love the person in front of me, or only humanity? Who pays for my arithmetic? Would my rules still be fair if I were the one outside the gate?"
+},
+{
+"seg": "end-line",
+"idx": 3,
+"who": "narrator",
+"start": 645.564,
+"end": 650.619,
+"text": "Ask them of your opponents if you like. Dostoevsky's advice is to ask them of yourself first."
+}
+]
