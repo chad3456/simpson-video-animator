@@ -1,0 +1,279 @@
+{
+ "day": 6,
+ "slug": "d006-it-ends-when-it-ends",
+ "format": "storytime: the move after the win",
+ "lesson_id": "no-enmity-after-death",
+ "title": "The move after the W",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "darbari",
+ "seed": 53,
+ "verse": {
+  "kanda": "yuddha",
+  "sarga": 112,
+  "shloka": 26,
+  "sanskrit": "मरणान्तानि वैराणि निर्वृत्तं नः प्रयोजनम् ।\nक्रियतामस्य संस्कारो ममाप्येष यथा तव ॥",
+  "iast": "maraṇāntāni vairāṇi nirvṛttaṃ naḥ prayojanam |\nkriyatām asya saṃskāro mamāpy eṣa yathā tava ||",
+  "translation": "Enmity ends with death. Our purpose is done. Let his last rites be performed; he is as much mine as yours."
+ },
+ "art": {
+  "battle": {
+   "lib": "battle_mewar",
+   "path": "art/battle.jpg"
+  },
+  "camp": {
+   "lib": "vibhishana_camp",
+   "path": "art/camp.jpg"
+  },
+  "pushpaka": {
+   "lib": "celestial_chariot",
+   "path": "art/pushpaka.jpg"
+  },
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "milap": {
+   "lib": "bharat_milap",
+   "path": "art/milap.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "battle",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.2
+    ],
+    [
+     0.55,
+     0.45,
+     1.5
+    ]
+   ],
+   "top": "Storytime:",
+   "title": "the move AFTER the win",
+   "hl": "AFTER",
+   "vo": "The war is over. Ravana has fallen. Rama just won the biggest W in the whole epic.",
+   "pops": [
+    {
+     "at": "over",
+     "sticker": "🏁"
+    },
+    {
+     "at": "W",
+     "sticker": "🏆"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "embers",
+    "shake"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "battle",
+   "cam": [
+    [
+     0.13,
+     0.5,
+     2.0
+    ],
+    [
+     0.14,
+     0.45,
+     2.4
+    ]
+   ],
+   "title": "now what?",
+   "vo": "Now's the moment for the victory lap. The trash talk. The posting on main.",
+   "pops": [
+    {
+     "at": "lap",
+     "sticker": "🏃"
+    },
+    {
+     "at": "main",
+     "sticker": "📱"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "desat"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "camp",
+   "cam": [
+    [
+     0.66,
+     0.62,
+     1.6
+    ],
+    [
+     0.72,
+     0.62,
+     2.0
+    ]
+   ],
+   "vo": "Instead, Ravana's brother Vibhishana is grieving. He says: he was my brother, let me give him his last rites. And Rama says yes. Fully.",
+   "pops": [
+    {
+     "at": "grieving",
+     "sticker": "🥀"
+    },
+    {
+     "at": "yes",
+     "sticker": "🤍"
+    }
+   ],
+   "fx": [
+    "ink"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "pushpaka",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.2
+    ],
+    [
+     0.5,
+     0.45,
+     1.35
+    ]
+   ],
+   "vo": "Enmity ends with death. Our purpose is done. Give him his rites. He is as much mine as yours.",
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.25
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "title": "When it's over, let it be over",
+   "hl": "OVER",
+   "vo": "That's the real flex. Win the fight, then drop the beef.",
+   "pops": [
+    {
+     "at": "beef",
+     "sticker": "🥩"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "milap",
+   "cam": [
+    [
+     0.5,
+     0.3,
+     1.2
+    ],
+    [
+     0.5,
+     0.5,
+     1.3
+    ]
+   ],
+   "vo": "The match is done, the argument's settled, the breakup is old news? Stop re-fighting it in your head. Rama didn't.",
+   "pops": [
+    {
+     "at": "settled",
+     "sticker": "✅"
+    },
+    {
+     "at": "head",
+     "sticker": "🧠"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 6 of learning from Rama",
+   "vo": "Day six of learning from Rama. Follow for day seven.",
+   "pops": [
+    {
+     "at": "Follow",
+     "sticker": "🏹"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "A slow, emotional flute or shehnai track from Instagram's library",
+  "Any trending 'aftermath' or sad-cinematic audio"
+ ],
+ "caption": "Rama's move after winning the war? Not a victory lap. 🤍\n\nWhen Vibhishana grieved for his brother Ravana, Rama told him to give Ravana full last rites.\n\n“मरणान्तानि वैराणि निर्वृत्तं नः प्रयोजनम् । क्रियतामस्य संस्कारो ममाप्येष यथा तव ॥”\nValmiki Ramayana, Yuddha Kanda 112.26\n\nWhen it's over, let it be over. Day 6 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#JaiShriRam",
+  "#LetItGo",
+  "#LifeLessons",
+  "#Sanatan",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
