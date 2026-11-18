@@ -535,7 +535,7 @@
     s += `<g transform="translate(330 360) rotate(-4) scale(${f1(a * 100) / 100})">` + drop(torn(300, 300, 'cn' + c.id, 6, 12), 0.3) + `<path d="${torn(300, 300, 'cn' + c.id, 6, 12)}" fill="${col}"/>` + T(String(c.num || ''), 0, 10, 210, { font: 'head', weight: 400, fill: '#f6f1e6' }) + `</g>`;
     s += `<g opacity="${f1(ti)}" transform="translate(${f1(540 + 20 * (1 - easeOut(ti)))} 0)">` + T((c.kicker || '').toUpperCase(), 0, 270, 22, { anchor: 'start', weight: 700, ls: 6, fill: mix(col, '#000', 0.2) }) + T(c.title, 0, 350 + (String(c.title).split('\n').length - 1) * 30, c.size || 62, { font: 'head', weight: 400, anchor: 'start', lh: 1.05 }) + `</g>`;
     if (c.sub) s += `<g opacity="${f1(clamp((age - 0.8) / 0.6))}">` + T(c.sub, 540, 470 + (String(c.title).split('\n').length - 1) * 50, 24, { anchor: 'start', weight: 500, italic: true, fill: '#4c443a' }) + `</g>`;
-    if (c.who) s += `<g transform="translate(1110 560) rotate(5) scale(0.6)" opacity="${f1(clamp((age - 0.6) / 0.5))}">` + cut({ who: c.who, w: 240, h: 280, color: c.whoColor || '#c9b893' }, t, 'chw' + c.id, age) + `</g>`;
+    if (c.who) s += `<g transform="translate(1110 560) rotate(5) scale(0.6)" opacity="${f1(clamp((age - 0.6) / 0.5))}">` + cut({ who: c.who, face: c.whoFace, w: 240, h: 280, color: c.whoColor || '#c9b893' }, t, 'chw' + c.id, age) + `</g>`;
     return s;
   };
   X.CARDS.cquote = (c, t, age, dur) => {
