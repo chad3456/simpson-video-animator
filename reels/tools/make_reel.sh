@@ -14,6 +14,6 @@ node reels/engine/render.mjs "$D"
 python3 reels/tools/caption.py "$D" > /dev/null
 if [ -d "$(dirname "$OUT")" ]; then
   S=$(basename "$D"); mkdir -p "$OUT/$S"
-  cp "$D"/reel.mp4 "$D"/reel_nomusic.mp4 "$D"/poster.jpg "$D"/caption.txt "$OUT/$S/"
+  cp "$D"/reel.mp4 "$D"/poster.jpg "$D"/caption.txt "$OUT/$S/"   # voice-only cut stays local to save shared storage
   echo "delivered to $OUT/$S"
 fi
