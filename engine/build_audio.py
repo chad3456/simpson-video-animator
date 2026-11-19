@@ -323,12 +323,12 @@ def _pluck_piano(f, dur=1.6, amp=0.1, bright=0.5):
     sig = sum(np.sin(2 * np.pi * f * h * t * (1 + 0.0004 * h)) * (bright ** (h - 1)) * np.exp(-t * (1.8 + h * 0.9)) for h in range(1, 7))
     return sig * np.minimum(1, t / 0.003) * amp
 
-def collage_bed(total, seed=5):
+def collage_bed(total, seed=5, bpm=96, kick=0.1):
     """Original score: a soft eighth-note piano ostinato over a low pad, D minor (Dm, Bb, F, C, then Gm, A), with a
     muted kick on the beat and a felt bass. It keeps a steady documentary pulse without competing with the narrator."""
     rng = np.random.default_rng(seed)
     n = int((total + 3) * SR); out = np.zeros(n)
-    beat = 60 / 96; bar = beat * 4
+    beat = 60 / bpm; bar = beat * 4
     prog = [(50, 53, 57, 62), (46, 50, 53, 58), (41, 45, 48, 53), (48, 52, 55, 60), (43, 46, 50, 55), (45, 49, 52, 57), (50, 53, 57, 62), (45, 49, 52, 57)]
     pattern = [0, 2, 1, 3, 2, 1, 3, 2]
     b = 0
@@ -347,7 +347,7 @@ def collage_bed(total, seed=5):
         for k in range(4):
             if b % 8 < 2:
                 continue
-            th = sfx_thump() * 0.1; ok = o + int(k * beat * SR); out[ok:ok + len(th)] += th[: max(0, n - ok)]
+            th = sfx_thump() * kick; ok = o + int(k * beat * SR); out[ok:ok + len(th)] += th[: max(0, n - ok)]
         b += 1
     for d, g in ((0.25, 0.25), (0.5, 0.12)):
         kk = int(d * SR); out[kk:] += out[:-kk] * g
@@ -475,8 +475,8 @@ def main():
         mix[o:o + len(sig)] += sig[: len(mix) - o]
     music = ep["meta"].get("music")
     if music:
-        ambient = music in ("ambient", "cinema", "collage")
-        bed = (collage_bed(total) if music == "collage" else cinema_bed(total) if music == "cinema" else ambient_bed(total) if ambient else music_bed(total))[: len(mix)]
+        ambient = music in ("ambient", "cinema", "collage", "pulse")
+        bed = (collage_bed(total, bpm=108, kick=0.16) if music == "pulse" else collage_bed(total) if music == "collage" else cinema_bed(total) if music == "cinema" else ambient_bed(total) if ambient else music_bed(total))[: len(mix)]
         gain = np.full(len(mix), 0.75 if ambient else 0.55)
         for sh in shots:
             a, b = int(sh["start"] * SR), int(sh["end"] * SR)

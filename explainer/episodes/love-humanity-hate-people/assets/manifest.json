@@ -1,0 +1,134 @@
+{
+ "ambrose": {
+  "src": "assets/ambrose.jpg",
+  "w": 1280,
+  "h": 899,
+  "mode": "print"
+ },
+ "camus": {
+  "src": "assets/camus.png",
+  "w": 644,
+  "h": 916,
+  "mode": "cut"
+ },
+ "crystal": {
+  "src": "assets/crystal.jpg",
+  "w": 1280,
+  "h": 848,
+  "mode": "print"
+ },
+ "crystal_in": {
+  "src": "assets/crystal_in.jpg",
+  "w": 1280,
+  "h": 805,
+  "mode": "print"
+ },
+ "dost_1872": {
+  "src": "assets/dost_1872.jpg",
+  "w": 1122,
+  "h": 1400,
+  "mode": "print"
+ },
+ "dost_1879": {
+  "src": "assets/dost_1879.png",
+  "w": 467,
+  "h": 496,
+  "mode": "cut"
+ },
+ "dost_perov": {
+  "src": "assets/dost_perov.jpg",
+  "w": 1120,
+  "h": 1400,
+  "mode": "print"
+ },
+ "dost_photo": {
+  "src": "assets/dost_photo.png",
+  "w": 724,
+  "h": 960,
+  "mode": "cut"
+ },
+ "dost_young": {
+  "src": "assets/dost_young.jpg",
+  "w": 536,
+  "h": 720,
+  "mode": "print"
+ },
+ "inquisitor": {
+  "src": "assets/inquisitor.jpg",
+  "w": 894,
+  "h": 1400,
+  "mode": "print"
+ },
+ "napoleon": {
+  "src": "assets/napoleon.jpg",
+  "w": 1175,
+  "h": 1400,
+  "mode": "print"
+ },
+ "notebook": {
+  "src": "assets/notebook.jpg",
+  "w": 410,
+  "h": 264,
+  "mode": "print"
+ },
+ "solzh": {
+  "src": "assets/solzh.png",
+  "w": 853,
+  "h": 960,
+  "mode": "cut"
+ },
+ "bastille": {
+  "src": "assets/bastille.jpg",
+  "w": 500,
+  "h": 380,
+  "mode": "print"
+ },
+ "berruguete": {
+  "src": "assets/berruguete.jpg",
+  "w": 500,
+  "h": 821,
+  "mode": "print"
+ },
+ "cp_cover": {
+  "src": "assets/cp_cover.jpg",
+  "w": 441,
+  "h": 613,
+  "mode": "print"
+ },
+ "klodt": {
+  "src": "assets/klodt.jpg",
+  "w": 906,
+  "h": 1100,
+  "mode": "print"
+ },
+ "petrograd": {
+  "src": "assets/petrograd.jpg",
+  "w": 1400,
+  "h": 909,
+  "mode": "print"
+ },
+ "rask_1881": {
+  "src": "assets/rask_1881.jpg",
+  "w": 379,
+  "h": 489,
+  "mode": "print"
+ },
+ "bk_cover": {
+  "src": "assets/bk_cover.jpg",
+  "w": 322,
+  "h": 500,
+  "mode": "print"
+ },
+ "nechayev": {
+  "src": "assets/nechayev.jpg",
+  "w": 734,
+  "h": 1050,
+  "mode": "print"
+ },
+ "robespierre": {
+  "src": "assets/robespierre.jpg",
+  "w": 500,
+  "h": 325,
+  "mode": "print"
+ }
+}
