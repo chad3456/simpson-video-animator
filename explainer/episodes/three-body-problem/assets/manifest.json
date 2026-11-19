@@ -1,0 +1,92 @@
+{
+ "arecibo": {
+  "src": "assets/arecibo.jpg",
+  "w": 757,
+  "h": 600,
+  "mode": "print"
+ },
+ "arecibo_msg": {
+  "src": "assets/arecibo_msg.jpg",
+  "w": 466,
+  "h": 1400,
+  "mode": "print"
+ },
+ "carson": {
+  "src": "assets/carson.jpg",
+  "w": 1105,
+  "h": 1400,
+  "mode": "print"
+ },
+ "golden": {
+  "src": "assets/golden.jpg",
+  "w": 1400,
+  "h": 1400,
+  "mode": "print"
+ },
+ "hawking": {
+  "src": "assets/hawking.jpg",
+  "w": 1122,
+  "h": 1400,
+  "mode": "print"
+ },
+ "hobbes": {
+  "src": "assets/hobbes.jpg",
+  "w": 1158,
+  "h": 1400,
+  "mode": "print"
+ },
+ "hudf": {
+  "src": "assets/hudf.jpg",
+  "w": 1400,
+  "h": 1400,
+  "mode": "print"
+ },
+ "leviathan": {
+  "src": "assets/leviathan.jpg",
+  "w": 907,
+  "h": 1400,
+  "mode": "print"
+ },
+ "pioneer": {
+  "src": "assets/pioneer.jpg",
+  "w": 1400,
+  "h": 1109,
+  "mode": "print"
+ },
+ "alphacen": {
+  "src": "assets/alphacen.jpg",
+  "w": 640,
+  "h": 418,
+  "mode": "print"
+ },
+ "columbus": {
+  "src": "assets/columbus.jpg",
+  "w": 1024,
+  "h": 842,
+  "mode": "print"
+ },
+ "darwin": {
+  "src": "assets/darwin.jpg",
+  "w": 839,
+  "h": 1024,
+  "mode": "print"
+ },
+ "greenbank": {
+  "src": "assets/greenbank.jpg",
+  "w": 1400,
+  "h": 933,
+  "mode": "print"
+ },
+ "paleblue": {
+  "src": "assets/paleblue.jpg",
+  "w": 1400,
+  "h": 1385,
+  "mode": "print"
+ },
+ "sun": {
+  "src": "assets/sun.jpg",
+  "w": 640,
+  "h": 360,
+  "mode": "print"
+ }
+}

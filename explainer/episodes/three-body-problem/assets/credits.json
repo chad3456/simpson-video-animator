@@ -1,0 +1,92 @@
+{
+ "hudf": {
+  "title": "Hubble ultra deep field.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hubble_ultra_deep_field.jpg",
+  "license": "Public domain",
+  "artist": "NASA and the European Space Agency."
+ },
+ "arecibo": {
+  "title": "Arecibo Observatory Aerial View.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Arecibo_Observatory_Aerial_View.jpg",
+  "license": "CC BY 4.0",
+  "artist": "H. Schweiker/WIYN and NOAO/AURA/NSF"
+ },
+ "arecibo_msg": {
+  "title": "Arecibo message.svg",
+  "page": "https://commons.wikimedia.org/wiki/File:Arecibo_message.svg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Arne Nordmann (norro)"
+ },
+ "pioneer": {
+  "title": "Pioneer10-plaque.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pioneer10-plaque.jpg",
+  "license": "Public domain",
+  "artist": "Designed by Carl Sagan and Frank Drake.  Artwork prepared by Linda Salzman Sagan.\n\nPhotograph by NASA Ames Research Center (NASA-ARC)"
+ },
+ "golden": {
+  "title": "The Sounds of Earth Record Cover - GPN-2000-001978.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Sounds_of_Earth_Record_Cover_-_GPN-2000-001978.jpg",
+  "license": "Public domain",
+  "artist": "NASA/JPL"
+ },
+ "hawking": {
+  "title": "Stephen Hawking NASA 50th 200804210001HQ.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Stephen_Hawking_NASA_50th_200804210001HQ.jpg",
+  "license": "Public domain",
+  "artist": "NASA/Paul E. Alers"
+ },
+ "leviathan": {
+  "title": "Leviathan frontispiece cropped British Museum.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Leviathan_frontispiece_cropped_British_Museum.jpg",
+  "license": "Public domain",
+  "artist": "Abraham Bosse"
+ },
+ "hobbes": {
+  "title": "Thomas Hobbes by John Michael Wright (2).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Thomas_Hobbes_by_John_Michael_Wright_(2).jpg",
+  "license": "Public domain",
+  "artist": "John Michael Wright"
+ },
+ "carson": {
+  "title": "Rachel-Carson.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Rachel-Carson.jpg",
+  "license": "Public domain",
+  "artist": "U.S. Fish and Wildlife Service"
+ },
+ "sun": {
+  "title": "SDO/AIA full-disk view of the Sun.jpg",
+  "license": "Public domain (NASA/GSFC)",
+  "page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002069",
+  "artist": "NASA/SDO"
+ },
+ "alphacen": {
+  "title": "Hubble's Best Image of Alpha Centauri A and B.jpg",
+  "license": "Public domain (NASA/ESA)",
+  "page": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000214",
+  "artist": "ESA/Hubble & NASA"
+ },
+ "paleblue": {
+  "title": "Pale Blue Dot Revisited (PIA23645).jpg",
+  "license": "Public domain (NASA/JPL-Caltech)",
+  "page": "https://images.nasa.gov/details/PIA23645",
+  "artist": "NASA/JPL-Caltech"
+ },
+ "columbus": {
+  "title": "Landing of Columbus, lithograph.jpg",
+  "license": "Library of Congress, no known restrictions",
+  "page": "https://www.loc.gov/item/2003679785/",
+  "artist": ""
+ },
+ "darwin": {
+  "title": "Portrait of Charles Darwin.jpg",
+  "license": "Library of Congress, no known restrictions",
+  "page": "https://www.loc.gov/item/2004674431/",
+  "artist": ""
+ },
+ "greenbank": {
+  "title": "Radio telescope at Green Bank, West Virginia, Carol M. Highsmith.jpg",
+  "license": "Public domain (Library of Congress)",
+  "page": "https://www.loc.gov/item/2015634500/",
+  "artist": "Carol M. Highsmith"
+ }
+}
