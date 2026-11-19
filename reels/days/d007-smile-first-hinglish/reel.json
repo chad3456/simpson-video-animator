@@ -1,0 +1,322 @@
+{
+ "day": 7,
+ "slug": "d007-smile-first-hinglish",
+ "format": "Hinglish storytime",
+ "lesson_id": "smile-first",
+ "title": "Rama ki asli rizz",
+ "tag": "RAM SE SEEKH",
+ "cta_sub": "KAL AGLA EPISODE",
+ "voice_hi": "hm_psi",
+ "speed_hi": 1.05,
+ "bpm": 140,
+ "raga": "yaman",
+ "seed": 61,
+ "verse": {
+  "kanda": "ayodhya",
+  "sarga": 2,
+  "shloka": 42,
+  "sanskrit": "स्मितपूर्वाभिभाषी च धर्मं सर्वात्मना श्रितः ।\nसम्यग्योक्ता श्रेयसां च न विगृह्य कथारुचिः ॥",
+  "iast": "smitapūrvābhibhāṣī ca dharmaṃ sarvātmanā śritaḥ |\nsamyag yoktā śreyasāṃ ca na vigṛhya kathāruciḥ ||",
+  "translation": "He speaks first, with a smile; he holds to dharma with his whole being; he pursues what is good in the right way, and has no taste for quarrelsome talk."
+ },
+ "art": {
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "coronation": {
+   "lib": "coronation_kangra",
+   "path": "art/coronation.jpg"
+  },
+  "palace": {
+   "lib": "exile_orchha",
+   "path": "art/palace.jpg"
+  },
+  "sarayu": {
+   "lib": "sarayu",
+   "path": "art/sarayu.jpg"
+  },
+  "milap": {
+   "lib": "bharat_milap",
+   "path": "art/milap.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.6
+    ],
+    [
+     0.43,
+     0.3,
+     1.25
+    ]
+   ],
+   "top": "Rama ki",
+   "title": "asli rizz",
+   "hl": "RIZZ",
+   "lines": [
+    {
+     "hi": "राम की असली रिज़ क्या थी? ना बाइसेप्स, ना डायलॉगबाज़ी.",
+     "cap": "Rama ki asli rizz kya thi? Na biceps, na dialoguebaazi."
+    }
+   ],
+   "pops": [
+    {
+     "at": "rizz",
+     "sticker": "😎"
+    },
+    {
+     "at": "biceps",
+     "sticker": "💪"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "coronation",
+   "cam": [
+    [
+     0.5,
+     0.6,
+     1.3
+    ],
+    [
+     0.45,
+     0.4,
+     1.5
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "राजा दशरथ पूरी सभा से पूछते हैं: राम को युवराज बनाएँ?",
+     "cap": "Raja Dasharatha poori sabha se poochte hain: Rama ko yuvraj banayein?"
+    },
+    {
+     "hi": "और सब एक साथ बोलते हैं: हाँ!",
+     "cap": "Aur sab ek saath bolte hain: HAAN!"
+    }
+   ],
+   "pops": [
+    {
+     "at": "yuvraj",
+     "sticker": "👑"
+    },
+    {
+     "at": "HAAN",
+     "sticker": "🙌",
+     "sfx": "boom"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "shake"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "palace",
+   "cam": [
+    [
+     0.5,
+     0.75,
+     1.4
+    ],
+    [
+     0.5,
+     0.6,
+     1.5
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "फिर लोग गिनाते हैं कि राम में ख़ास क्या है. और एक लाइन सीधे दिल पे लगती है.",
+     "cap": "Phir log ginaate hain ki Rama mein khaas kya hai. Aur ek line seedhe dil pe lagti hai."
+    }
+   ],
+   "pops": [
+    {
+     "at": "khaas",
+     "sticker": "🤔"
+    },
+    {
+     "at": "dil",
+     "sticker": "❤️"
+    }
+   ],
+   "sfx": [
+    "riser"
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "sarayu",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.2
+    ],
+    [
+     0.5,
+     0.5,
+     1.35
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "वो मुस्कुरा के पहले खुद बात करते हैं, पूरे मन से धर्म पर चलते हैं, और झगड़े वाली बातों में उन्हें कोई रुचि नहीं.",
+     "cap": "Wo muskura ke pehle khud baat karte hain, poore mann se dharm par chalte hain, aur jhagde wali baaton mein unhe koi ruchi nahi."
+    }
+   ],
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.25
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "title": "Smile first. Skip the drama.",
+   "hl": "SMILE|DRAMA",
+   "lines": [
+    {
+     "hi": "पहले हेलो बोलो. ईगो का वेट मत करो.",
+     "cap": "Pehle hello bolo. Ego ka wait mat karo."
+    }
+   ],
+   "pops": [
+    {
+     "at": "hello",
+     "sticker": "👋"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "milap",
+   "cam": [
+    [
+     0.5,
+     0.3,
+     1.2
+    ],
+    [
+     0.5,
+     0.5,
+     1.3
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "नई क्लास हो, नया ऑफिस, या फैमिली फंक्शन. सब वेट करते हैं कि सामने वाला पहले बोले.",
+     "cap": "Nayi class ho, naya office, ya family function. Sab wait karte hain ki saamne wala pehle bole."
+    },
+    {
+     "hi": "राम वाला मूव? तुम पहले बोलो, मुस्कुरा के.",
+     "cap": "Rama wala move? Tum pehle bolo, muskura ke."
+    }
+   ],
+   "pops": [
+    {
+     "at": "office",
+     "sticker": "💼"
+    },
+    {
+     "at": "muskura",
+     "sticker": "😊"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Ram se seekh: Day 7",
+   "lines": [
+    {
+     "hi": "राम से सीख, दिन सात. उस दोस्त को भेजो जो हमेशा पहले हेलो बोलता है.",
+     "cap": "Ram se seekh, Day 7. Us dost ko bhejo jo hamesha pehle hello bolta hai."
+    }
+   ],
+   "pops": [
+    {
+     "at": "bhejo",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "A light, happy flute or santoor track from Instagram's library",
+  "Any trending 'main character energy' audio"
+ ],
+ "caption": "Rama ki asli rizz? Muskura ke pehle baat karna 😊\n\nWhen King Dasharatha asked his court whether Rama should be crowned heir, the whole assembly said yes and listed what made him special.\n\n“स्मितपूर्वाभिभाषी च धर्मं सर्वात्मना श्रितः । सम्यग्योक्ता श्रेयसां च न विगृह्य कथारुचिः ॥”\nValmiki Ramayana, Ayodhya Kanda 2.42\n\nSmile first. Skip the drama. Day 7 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#JaiShriRam",
+  "#Hinglish",
+  "#RamSeSeekh",
+  "#LifeLessons",
+  "#Sanatan",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
