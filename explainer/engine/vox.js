@@ -211,5 +211,44 @@
     return s;
   }
 
-  Object.assign(X.DRAW, { vtable, vmap, vbars, veq, photo, note });
+
+  // ---------- space: star field and orbit trails ----------
+  /* A field of pinpoint stars over w x h (centred), twinkling. n, seed, color; lit: [{i, color, r, label}] marks star i
+     with a ring; dark 0..1 dims every unlit star (the "lights going out" beat); flash: index of a star that flares
+     and dies as flashT goes 0..1. */
+  function stars(p, t, seed, age) {
+    const n = p.n || 160, w = p.w || W, h = p.h || H, r = rng('st' + (p.seed || seed)), lit = p.lit || [];
+    let s = '';
+    const pts = []; for (let i = 0; i < n; i++) pts.push([(r() - 0.5) * w, (r() - 0.5) * h, 0.6 + r() * 1.8, r() * 6.28, 0.6 + r() * 1.6]);
+    pts.forEach(([x, y, rr, ph, sp], i) => {
+      if (lit.some(l => l.i === i)) return;
+      const tw = 0.55 + 0.45 * Math.sin(t * sp + ph), o = (1 - (p.dark || 0) * 0.92) * tw;
+      s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(rr)}" fill="${p.color || '#f4ecdc'}" opacity="${f1(o)}"/>`;
+    });
+    lit.forEach(l => {
+      const q = pts[l.i % n], x = l.x != null ? l.x - (p.x || 0) : q[0], y = l.y != null ? l.y - (p.y || 0) : q[1]  /* lit x, y are canvas coords */, c = l.color || YEL, rr = l.r || 5;
+      s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(rr * 3)}" fill="${c}" opacity="0.25"/><circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(rr)}" fill="${c}"/>`;
+      if (l.ring) s += `<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(rr * 4)}" fill="none" stroke="${c}" stroke-width="3" stroke-dasharray="6 6"/>`;
+      if (l.label) s += T(l.label, x + (l.lx || 0), y + (l.ly == null ? -rr * 5 : l.ly), l.size || 20, { font: 'mark', weight: 400, fill: l.lcolor || c });
+    });
+    if (p.flash != null && p.flashT > 0) {
+      const q = pts[p.flash % n], k = clamp(p.flashT), big = Math.sin(Math.PI * k) * 60;
+      s += `<circle cx="${f1(q[0])}" cy="${f1(q[1])}" r="${f1(big)}" fill="#fff6dc" opacity="${f1(0.9 * (1 - k * 0.6))}"/><circle cx="${f1(q[0])}" cy="${f1(q[1])}" r="${f1(big * 2)}" fill="${RED}" opacity="${f1(0.35 * (1 - k))}"/>`;
+    }
+    return s;
+  }
+
+  /* Orbit trails: paths [[[x,y],...], ...] (relative), colors [], draw 0..1 reveals each trail; heads glow. */
+  function trails(p, t, seed, age) {
+    const paths = p.paths || [], d = p.draw != null ? p.draw : 1, cols = p.colors || [YEL, RED, '#7fc8ff'];
+    let s = '';
+    paths.forEach((pts, i) => {
+      const m = Math.max(2, Math.floor(pts.length * clamp(d))), tail = p.tail || pts.length, a = Math.max(0, m - tail), c = cols[i % cols.length];
+      s += `<path d="M${pts.slice(a, m).map(q => f1(q[0]) + ' ' + f1(q[1])).join('L')}" stroke="${c}" stroke-width="${p.sw || 3}" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>`;
+      const hd = pts[m - 1]; s += `<circle cx="${f1(hd[0])}" cy="${f1(hd[1])}" r="${(p.hr || 12) * 2.2}" fill="${c}" opacity="0.22"/><circle cx="${f1(hd[0])}" cy="${f1(hd[1])}" r="${p.hr || 12}" fill="${c}"/>`;
+    });
+    return s;
+  }
+
+  Object.assign(X.DRAW, { vtable, vmap, vbars, veq, photo, note, stars, trails });
 })();

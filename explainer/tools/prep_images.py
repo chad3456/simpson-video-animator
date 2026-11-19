@@ -7,6 +7,9 @@ from PIL import Image, ImageFilter, ImageOps, ImageEnhance
 SRC, OUT = sys.argv[1], sys.argv[2]
 CUT = {"dost_1879", "dost_photo", "camus", "solzh"}
 GRAY_PRINT = {"ambrose", "rask_1881", "nechayev", "liu1967", "shanghai1967", "petrograd", "redguards"}
+# Other episodes override the sets: LUMEN_CUT="a,b" LUMEN_GRAY="c,d" python3 prep_images.py <src> <out>
+if "LUMEN_CUT" in os.environ: CUT = set(filter(None, os.environ["LUMEN_CUT"].split(",")))
+if "LUMEN_GRAY" in os.environ: GRAY_PRINT = set(filter(None, os.environ["LUMEN_GRAY"].split(",")))
 os.makedirs(OUT, exist_ok=True)
 man = json.load(open(os.path.join(OUT, "manifest.json"))) if os.path.exists(os.path.join(OUT, "manifest.json")) else {}
 sess = None
