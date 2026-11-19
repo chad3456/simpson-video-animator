@@ -45,6 +45,9 @@
     await document.fonts.load('800 40px Nunito'); await document.fonts.load('900 40px Nunito');
     if (ep.meta.look === 'cinema' || ep.meta.look === 'collage') await Promise.all((Toon.ext.fonts || []).map(f => document.fonts.load(f)));
     Toon.ext.base = dir + '/';
+    const srcs = [...new Set([...JSON.stringify(ep).matchAll(/"src":"([^"]+)"/g)].map(m => m[1]))];
+    Toon.ext.imgs = {};
+    await Promise.all(srcs.map(src => new Promise(res => { const im = new Image(); im.onload = () => { (im.decode ? im.decode() : Promise.resolve()).catch(() => {}).then(res); }; im.onerror = res; im.src = dir + '/' + src; Toon.ext.imgs[src] = im; })));
     const svg = document.getElementById('stage');
     Toon.load(ep, tl, svg); Toon.renderAt(0);
     window.__ready = true;

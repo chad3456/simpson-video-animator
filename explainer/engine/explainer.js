@@ -882,13 +882,21 @@
   // ---------- scenes ----------
   function drawScene(g, T) {
     const sc = g.seg, dur = g.end - g.start, age = T - g.start, u = ease(clamp(age / dur));
-    const cam0 = sc.cam || {}, z = cam0.zoom ? lerp(cam0.zoom[0], cam0.zoom[1], u) : lerp(1, 1.04, u);
-    const pan = cam0.pan ? [lerp(cam0.pan[0][0], cam0.pan[1][0], u), lerp(cam0.pan[0][1], cam0.pan[1][1], u)] : [0, 0];
-    const settle = 1 + 0.05 * (1 - easeOut(clamp(age / 0.8)));
-    const cam = { px: pan[0], py: pan[1] };
     const lineAbs = k => (g.lines[k] ? g.lines[k].start : (k >= g.lines.length ? g.end : g.start));
+    const cam0 = sc.cam || {};
+    let z = cam0.zoom ? lerp(cam0.zoom[0], cam0.zoom[1], u) : lerp(1, 1.04, u);
+    const pan = cam0.pan ? [lerp(cam0.pan[0][0], cam0.pan[1][0], u), lerp(cam0.pan[0][1], cam0.pan[1][1], u)] : [0, 0];
+    // punch-ins: {line: [zoom, panX, panY, delay]} snap the camera to a new framing on a line (Vox-style push)
+    for (const k of Object.keys(cam0.punch || {}).map(Number).sort((a, b) => a - b)) {
+      const v = cam0.punch[k], at = lineAbs(k) + (v[3] || 0); if (T < at) continue;
+      const q = easeOut(clamp((T - at) / (v[4] || 0.45))); z = lerp(z, v[0] * (1 + 0.012 * clamp((T - at) / 4)), q); pan[0] = lerp(pan[0], v[1] || 0, q); pan[1] = lerp(pan[1], v[2] || 0, q);
+    }
+    const settle = 1 + (EP.meta.trans === 'cut' ? 0.08 : 0.05) * (1 - easeOut(clamp(age / (EP.meta.trans === 'cut' ? 0.5 : 0.8))));
+    const cam = { px: pan[0], py: pan[1] };
     let s = `<g transform="translate(${W / 2} ${H / 2}) scale(${f1((1 + (z * settle - 1) * 0.35) * 1000) / 1000}) translate(${-W / 2} ${-H / 2})">${background(sc.bg, T, cam)}</g>`;
-    s += `<g transform="translate(${W / 2} ${H / 2}) scale(${f1(z * settle * 1000) / 1000}) translate(${f1(-W / 2 - pan[0])} ${f1(-H / 2 - pan[1])})">`;
+    const camOpen = `<g transform="translate(${W / 2} ${H / 2}) scale(${f1(z * settle * 1000) / 1000}) translate(${f1(-W / 2 - pan[0])} ${f1(-H / 2 - pan[1])})">`;
+    const bgEnd = s.length; let plates = '';
+    s += camOpen;
     for (const el of sc.els || []) {
       const appear = lineAbs(el.in || 0) + (el.d || 0) + (el.in ? 0 : 0.15);
       if (T < appear) continue;
@@ -915,17 +923,20 @@
       if (el.float) dy += Math.sin(T * 1.4 + hash(el.id) % 7) * el.float;
       const fn = DRAW[el.type]; if (!fn) continue;
       const body = fn(p, T, sc.id + el.id, a);
+      if (el.mode === 'full') { plates += `<g transform="translate(${W / 2} ${H / 2}) scale(${f1((1 + (z * settle - 1) * 0.5) * 1000) / 1000}) translate(${-W / 2} ${-H / 2})"><g transform="translate(${f1(p.x)} ${f1(p.y)})" opacity="${f1(op * (p.o == null ? 1 : p.o) * 100) / 100}">${body}</g></g>`; continue; }
       s += `<g transform="translate(${f1(p.x + dx)} ${f1(p.y + dy)}) scale(${f1((p.s || 1) * sc2 * 1000) / 1000})${p.rot ? ` rotate(${f1(p.rot)})` : ''}" opacity="${f1(op * (p.o == null ? 1 : p.o) * 100) / 100}">${body}</g>`;
     }
     s += `</g>`;
+    if (plates) s = s.slice(0, bgEnd) + plates + s.slice(bgEnd);
     if (EP.meta.captions) {
       const ln = g.lines.findIndex(l => l && T >= l.start && T <= l.end + 0.2);
       const L = ln >= 0 && sc.lines[ln].text;
       if (L) s += `<rect x="140" y="${H - 74}" width="${W - 280}" height="50" rx="12" fill="#050818" opacity="0.55"/>` + text(L.length > 95 ? L.slice(0, 92) + '...' : L, W / 2, H - 49, 22, { weight: 700 });
     }
-    const fin = clamp(age / 0.3), fout = clamp((g.end - T) / 0.22);
+    const hard = EP.meta.trans === 'cut' && !sc.dip;
+    const fin = clamp(age / (hard ? 0.06 : 0.3)), fout = hard ? 1 : clamp((g.end - T) / 0.22);
     const dip = Math.min(fin, fout);
-    if (dip < 1) s += `<rect width="${W}" height="${H}" fill="${(EXT.dip && EXT.dip()) || '#050818'}" opacity="${f1((1 - dip) * 100) / 100}"/>`;
+    if (dip < 1) s += `<rect width="${W}" height="${H}" fill="${hard ? '#f6f1e6' : ((EXT.dip && EXT.dip()) || '#050818')}" opacity="${f1((1 - dip) * (hard ? 50 : 100)) / 100}"/>`;
     return s;
   }
 

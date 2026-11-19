@@ -148,5 +148,68 @@
     return s;
   }
 
-  Object.assign(X.DRAW, { vtable, vmap, vbars, veq });
+
+  // ---------- real photographs ----------
+  /* A real archival image. src (relative to the episode dir), iw/ih natural size.
+     mode 'print': torn white-bordered print, image covers w x h (focus fx, fy).  mode 'cut': a background-removed
+     cut-out PNG (sticker edge baked in) drawn at w x h, optional coloured torn backing (back, bw, bh, bx, by).
+     mode 'full': full-bleed plate behind everything, dim overlay (dim, dimColor).
+     kb: slow push-in amount over kbT seconds; drift [dx, dy]; tint: multiply colour; ring {x,y,rx,ry} marker circle;
+     name/role strips as on cut-outs; cross: red X drawn 0..1; tape (default true for print). */
+  function photo(p, t, seed, age) {
+    const CL = X.cl, mode = p.mode || 'print', href = esc((X.base || '') + p.src);
+    const kq = clamp((age || 0) / (p.kbT || 9)), z = 1 + (p.kb == null ? 0.06 : p.kb) * kq, dr = p.drift || [0, 0];
+    let s = '';
+    if (mode === 'cut') {
+      const w = p.w, h = p.h;
+      if (p.back) { const bw = p.bw || w * 0.9, bh = p.bh || h * 0.8, e = torn(bw, bh, seed + 'bk', 6, 12); s += `<g transform="translate(${f1(p.bx || 0)} ${f1(p.by == null ? h * 0.06 : p.by)}) rotate(${f1(p.brot == null ? -3 : p.brot)})">` + drop(e, 0.25) + `<path d="${e}" fill="${p.back}"/>`;
+        if (p.backHT !== false) { const [ht, def] = CL.halftone(mix(p.back, '#000', 0.22), 9, 2.4); s += def + `<path d="${e}" fill="url(#${ht})" opacity="0.6"/>`; }
+        s += `</g>`; }
+      s += `<g transform="translate(${f1(dr[0] * kq)} ${f1(dr[1] * kq)}) scale(${f1(z * 1000) / 1000})"><image href="${href}" x="${f1(-w / 2)}" y="${f1(-h / 2)}" width="${f1(w)}" height="${f1(h)}"/>`;
+      s += `</g>`;
+    } else {
+      const full = mode === 'full', w = full ? W + 8 : p.w, h = full ? H + 8 : p.h, bd = full ? 0 : (p.border == null ? 12 : p.border);
+      const cl = nid('ph'), inner = full ? `M${-w / 2} ${-h / 2}H${w / 2}V${h / 2}H${-w / 2}Z` : torn(w, h, seed + 'in', p.jag == null ? 3 : p.jag, 10);
+      if (!full) { const e = torn(w + bd * 2, h + bd * 2, seed, 5, 11); s += drop(e, 0.3, 6, 9) + `<path d="${e}" fill="${p.paper || '#f4efe4'}"/>`; }
+      const iw = p.iw || w, ih = p.ih || h, sc = Math.max(w / iw, h / ih) * z, dw = iw * sc, dh = ih * sc;
+      const x = -w / 2 - (dw - w) * (p.fx == null ? 0.5 : p.fx) + dr[0] * kq, y = -h / 2 - (dh - h) * (p.fy == null ? 0.5 : p.fy) + dr[1] * kq;
+      s += `<clipPath id="${cl}"><path d="${inner}"/></clipPath><g clip-path="url(#${cl})"><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" fill="#2a2620"/><image href="${href}" x="${f1(x)}" y="${f1(y)}" width="${f1(dw)}" height="${f1(dh)}" preserveAspectRatio="none"/>`;
+      if (p.tint) s += `<rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" fill="${p.tint}" style="mix-blend-mode:multiply" opacity="${p.tintO == null ? 0.85 : p.tintO}"/>`;
+      if (p.dim) s += `<rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" fill="${p.dimColor || '#0d0b09'}" opacity="${p.dim}"/>`;
+      if (!full && p.vig !== false) { const g = nid('pv'); s += `<radialGradient id="${g}" cx="0.5" cy="0.5" r="0.75"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#1a1208" stop-opacity="0.38"/></radialGradient><rect x="${-w / 2}" y="${-h / 2}" width="${w}" height="${h}" fill="url(#${g})"/>`; }
+      s += `</g>`;
+      if (!full && p.tape !== false) s += CL.tape(-w * 0.3, -h / 2 - bd + 4, -18, 70, seed + 'a') + CL.tape(w * 0.3, -h / 2 - bd + 4, 16, 70, seed + 'b');
+    }
+    if (p.ring) { const r = p.ring, d = r.draw != null ? r.draw : clamp(((age || 0) - (r.delay || 0.8)) / 0.7), pts = [];
+      for (let i = 0; i <= 40; i++) { const a = -2.2 + i / 40 * Math.PI * 2.15; pts.push([r.x + Math.cos(a) * r.rx * (1 + 0.04 * Math.sin(i)), r.y + Math.sin(a) * r.ry]); }
+      s += `<path d="${CL.polyD(CL.wob(pts, seed + 'ring', 3), d)}" stroke="${r.color || RED}" stroke-width="${r.sw || 7}" stroke-linecap="round" fill="none"/>`; }
+    if (p.cross != null) { const d = clamp(p.cross), w = p.w || 300, h = p.h || 300; s += `<path d="${CL.polyD(CL.wob([[-w * 0.42, -h * 0.4], [w * 0.42, h * 0.38]], seed + 'x1', 6), d * 2)}" stroke="${RED}" stroke-width="12" stroke-linecap="round" fill="none"/><path d="${CL.polyD(CL.wob([[w * 0.42, -h * 0.4], [-w * 0.42, h * 0.38]], seed + 'x2', 6), clamp(d * 2 - 1))}" stroke="${RED}" stroke-width="12" stroke-linecap="round" fill="none"/>`; }
+    if (p.name) {
+      const fs = p.nameSize || 24, nw = TW(p.name.toUpperCase(), fs, 400, 'head') + 30, ny = p.nameY != null ? p.nameY : (p.h || 300) / 2 - 6;
+      const nk = clamp(((age || 0) - (p.nameDelay || 0.4)) / 0.35);
+      s += `<g transform="translate(${f1(p.nameX || 0)} ${f1(ny)}) rotate(${f1(p.nameRot == null ? -2 : p.nameRot)}) scale(${f1(back(nk))})"><path d="${torn(nw, fs * 1.7, seed + 'n', 2, 8)}" fill="${p.nameBg || INK}"/>${T(p.name.toUpperCase(), 0, 1, fs, { font: 'head', fill: p.nameColor || '#f6f1e6', weight: 400 })}</g>`;
+      if (p.role) { const rs = p.roleSize || 17, rw = TW(p.role, rs, 650) + 24, rk = clamp(((age || 0) - (p.nameDelay || 0.4) - 0.2) / 0.35); s += `<g transform="translate(${f1(p.nameX || 0)} ${f1(ny + fs * 1.6)}) rotate(1.5) scale(${f1(back(rk))})"><path d="${torn(rw, rs * 1.8, seed + 'r', 2, 8)}" fill="${p.roleColor || YEL}"/>${T(p.role, 0, 1, rs, { weight: 650, fill: INK })}</g>`; }
+    }
+    return s;
+  }
+
+  /* A handwritten note on lined or graph paper (marker or ink hand), written out line by line. */
+  function note(p, t, seed, age) {
+    const lines = String(p.text).split('\n'), size = p.size || 30, lh = size * 1.45, w = p.w || 460, h = p.h || lines.length * lh + size * 2.2;
+    const e = torn(w, h, seed, 4, 11), font = p.font || MARK, d = p.draw != null ? p.draw : clamp(((age || 0) - (p.delay || 0.3)) / (p.speed || lines.length * 0.7));
+    let s = drop(e, 0.25) + `<path d="${e}" fill="${p.paper || '#fbf6e2'}"/>`;
+    const y0 = -h / 2 + size * 1.25;
+    for (let y = y0 + lh * 0.45; y < h / 2 - 6; y += lh) s += `<path d="M${-w / 2 + 6} ${f1(y)}H${w / 2 - 6}" stroke="#9fb6d8" stroke-width="1.1" opacity="0.7"/>`;
+    if (p.margin !== false) s += `<path d="M${-w / 2 + 44} ${-h / 2 + 4}V${h / 2 - 4}" stroke="#e08b8b" stroke-width="1.4" opacity="0.8"/>`;
+    const total = lines.reduce((a, l) => a + l.length, 0); let left = d * total;
+    const cl = nid('nt'); s += `<defs><clipPath id="${cl}">`;
+    lines.forEach((l, i) => { const lw = TW(l, size, 400, font), q = Math.max(0, Math.min(1, left / Math.max(1, l.length))); left -= l.length; s += `<rect x="${-w / 2 + 56}" y="${f1(y0 + i * lh - size)}" width="${f1(lw * q + 4)}" height="${f1(size * 1.4)}"/>`; });
+    s += `</clipPath></defs><g clip-path="url(#${cl})">`;
+    lines.forEach((l, i) => { s += T(l, -w / 2 + 56, y0 + i * lh, size, { font, weight: 400, anchor: 'start', fill: (p.colors && p.colors[i]) || p.color || '#1f2d6b' }); });
+    s += `</g>`;
+    if (p.tape !== false) s += X.cl.tape(0, -h / 2 + 2, -4, 90, seed + 't');
+    return s;
+  }
+
+  Object.assign(X.DRAW, { vtable, vmap, vbars, veq, photo, note });
 })();

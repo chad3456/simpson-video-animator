@@ -66,6 +66,35 @@ The Demons documentary told one novel's story (Nechayev, the cell of five, Stavr
 
 Cited but not quoted: Gary Saul Morson, "Why Dostoevsky loved humanity and hated the Jews", *Mosaic* (Dec 2023), for the case against; N. G. Chernyshevsky, *What Is to Be Done?* (1863).
 
+## Archival image ledger (real people and places)
+
+Every real person and place on screen is an archival image from Wikimedia Commons, public domain or CC0. Fictional characters (the doctor, Sonia, Pyotr when no photo applies) stay drawn. Images are cut out with background removal or used as torn prints; processing script: `explainer/tools/prep_images.py`.
+
+| Key | Commons file | License | Used as |
+|---|---|---|---|
+| ambrose | [Russischer Photograph - Vater Ambrosij, persönlicher Ratgeber prominenter Schriftsteller des späten 19 Jh. (Zeno Fotografie).jpg](https://commons.wikimedia.org/wiki/File:Russischer_Photograph_-_Vater_Ambrosij,_pers%C3%B6nlicher_Ratgeber_prominenter_Schriftsteller_des_sp%C3%A4ten_19_Jh._(Zeno_Fotografie).jpg) | Public domain | print |
+| camus | [Albert Camus, gagnant de prix Nobel, portrait en buste, posé au bureau, faisant face à gauche, cigarette de tabagisme.jpg](https://commons.wikimedia.org/wiki/File:Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_pos%C3%A9_au_bureau,_faisant_face_%C3%A0_gauche,_cigarette_de_tabagisme.jpg) | Public domain | cut |
+| crystal | [The Crystal Palace in Hyde Park for Grand International Exhibition of 1851.jpg](https://commons.wikimedia.org/wiki/File:The_Crystal_Palace_in_Hyde_Park_for_Grand_International_Exhibition_of_1851.jpg) | Public domain | print |
+| crystal_in | [Crystal Palace - interior.jpg](https://commons.wikimedia.org/wiki/File:Crystal_Palace_-_interior.jpg) | Public domain | print |
+| dost_1872 | [Dostoevsky 1872.jpg](https://commons.wikimedia.org/wiki/File:Dostoevsky_1872.jpg) | Public domain | print |
+| dost_1879 | [Dostoevsky 1879.jpg](https://commons.wikimedia.org/wiki/File:Dostoevsky_1879.jpg) | Public domain | cut |
+| dost_perov | [Vasily Perov - Портрет Ф.М.Достоевского - Google Art Project.jpg](https://commons.wikimedia.org/wiki/File:Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg) | Public domain | print |
+| dost_photo | [Dostoevsky.jpg](https://commons.wikimedia.org/wiki/File:Dostoevsky.jpg) | Public domain | cut |
+| dost_young | [Trutovsky 004.jpg](https://commons.wikimedia.org/wiki/File:Trutovsky_004.jpg) | Public domain | print |
+| inquisitor | [Cardinal Fernando Niño de Guevara (1541–1609) MET DT854.jpg](https://commons.wikimedia.org/wiki/File:Cardinal_Fernando_Ni%C3%B1o_de_Guevara_(1541%E2%80%931609)_MET_DT854.jpg) | CC0 | print |
+| napoleon | [Jacques-Louis David - Napoleon Crossing the Alps - Kunsthistorisches Museum.jpg](https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_Napoleon_Crossing_the_Alps_-_Kunsthistorisches_Museum.jpg) | Public domain | print |
+| notebook | [Page of notebook Dostoevsky.jpg](https://commons.wikimedia.org/wiki/File:Page_of_notebook_Dostoevsky.jpg) | Public domain | print |
+| solzh | [Aleksandr Solzhenitsyn 1974crop.jpg](https://commons.wikimedia.org/wiki/File:Aleksandr_Solzhenitsyn_1974crop.jpg) | CC0 | cut |
+| bastille | [Prise de la Bastille.jpg](https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg) | Public domain | print |
+| berruguete | [Pedro Berruguete Saint Dominic Presiding over an Auto-da-fe 1495.jpg](https://commons.wikimedia.org/wiki/File:Pedro_Berruguete_Saint_Dominic_Presiding_over_an_Auto-da-fe_1495.jpg) | Public domain | print |
+| cp_cover | [Cover of the first edition of Crime and Punishment.jpg](https://commons.wikimedia.org/wiki/File:Cover_of_the_first_edition_of_Crime_and_Punishment.jpg) | Public domain | print |
+| klodt | [Klodt Michail Petrovich - Raskolnikov and Marmeladov.jpg](https://commons.wikimedia.org/wiki/File:Klodt_Michail_Petrovich_-_Raskolnikov_and_Marmeladov.jpg) | Public domain | print |
+| petrograd | [19170704 Riot on Nevsky prosp Petrograd.jpg](https://commons.wikimedia.org/wiki/File:19170704_Riot_on_Nevsky_prosp_Petrograd.jpg) | Public domain | print |
+| rask_1881 | [Raskolnikov i meshanin 1881.jpg](https://commons.wikimedia.org/wiki/File:Raskolnikov_i_meshanin_1881.jpg) | Public domain | print |
+| bk_cover | [The Brothers Karamazov first edition cover page.JPG](https://commons.wikimedia.org/wiki/File:The_Brothers_Karamazov_first_edition_cover_page.JPG) | Public domain | print |
+| nechayev | [Нечаев в 1860-е.png](https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B5%D1%87%D0%B0%D0%B5%D0%B2_%D0%B2_1860-%D0%B5.png) | Public domain | print |
+| robespierre | [Execution robespierre, saint just....jpg](https://commons.wikimedia.org/wiki/File:Execution_robespierre,_saint_just....jpg) | Public domain | print |
+
 ## The case against (given its own scene)
 
 1. Caricature: many radicals were brave, self-sacrificing and right about serfdom and censorship.
@@ -78,7 +107,7 @@ Cited but not quoted: Gary Saul Morson, "Why Dostoevsky loved humanity and hated
 ## Fairness notes
 
 - Modern mirrors are named in neutral, cross-partisan terms (purge, struggle session, online pile-on; "offered by every side"), never acted out by stand-ins for real groups.
-- Portraits are invented procedural drawings. Scholars appear only as quote cards.
+- Real people appear only in public-domain/CC0 archival images, captioned. Fictional characters are drawn or shown in period illustrations. Living scholars appear only as quote cards.
 
 ## Production
 
