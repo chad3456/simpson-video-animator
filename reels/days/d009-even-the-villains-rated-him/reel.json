@@ -1,0 +1,318 @@
+{
+ "day": 9,
+ "slug": "d009-even-the-villains-rated-him",
+ "format": "villain's side admits it",
+ "lesson_id": "dharma-in-person",
+ "title": "Even the villain's side rated him",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "darbari",
+ "seed": 67,
+ "verse": {
+  "kanda": "aranya",
+  "sarga": 37,
+  "shloka": 13,
+  "sanskrit": "रामो विग्रहवान् धर्मः साधुः सत्यपराक्रमः ।\nराजा सर्वस्य लोकस्य देवानामिव वासवः ॥",
+  "iast": "rāmo vigrahavān dharmaḥ sādhuḥ satyaparākramaḥ |\nrājā sarvasya lokasya devānām iva vāsavaḥ ||",
+  "translation": "Rama is dharma in bodily form, good, truly valiant, the king of the whole world as Indra is of the gods."
+ },
+ "art": {
+  "battle": {
+   "lib": "battle_mewar",
+   "path": "art/battle.jpg"
+  },
+  "deer": {
+   "lib": "golden_deer",
+   "path": "art/deer.jpg"
+  },
+  "sage": {
+   "lib": "vishvamitra",
+   "path": "art/sage.jpg"
+  },
+  "young": {
+   "lib": "bow_breaking",
+   "path": "art/young.jpg"
+  },
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "chariot": {
+   "lib": "exile_chariot",
+   "path": "art/chariot.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "battle",
+   "cam": [
+    [
+     0.27,
+     0.42,
+     2.2
+    ],
+    [
+     0.29,
+     0.4,
+     1.9
+    ]
+   ],
+   "top": "Villain's side:",
+   "title": "even the bad guys rated him 10/10",
+   "hl": "10/10",
+   "vo": "Fans hyping you up? Easy. Rivals hyping you up? That's the real review.",
+   "pops": [
+    {
+     "at": "fans",
+     "sticker": "📣"
+    },
+    {
+     "at": "review",
+     "sticker": "⭐",
+     "sfx": "pop"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "shake"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "deer",
+   "cam": [
+    [
+     0.22,
+     0.65,
+     2.4
+    ],
+    [
+     0.25,
+     0.62,
+     2.0
+    ]
+   ],
+   "title": "PLOT TWIST",
+   "vo": "Ravana wants to carry off Sita, and he asks the demon Maricha to help. Maricha, a total villain himself, says: bro, no.",
+   "pops": [
+    {
+     "at": "Maricha",
+     "sticker": "🦌"
+    },
+    {
+     "at": "no",
+     "sticker": "🙅",
+     "sfx": "scratch"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "desat"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "young",
+   "cam": [
+    [
+     0.25,
+     0.4,
+     1.7
+    ],
+    [
+     0.25,
+     0.35,
+     2.0
+    ]
+   ],
+   "vo": "Because he's been there. Years ago he stormed a sage's ritual, saw young Rama, and thought: just a kid. One arrow later, he was flying a hundred yojanas into the ocean.",
+   "pops": [
+    {
+     "at": "kid",
+     "sticker": "🧒"
+    },
+    {
+     "at": "arrow",
+     "sticker": "🏹",
+     "sfx": "whoosh"
+    },
+    {
+     "at": "ocean",
+     "sticker": "🌊",
+     "sfx": "boom"
+    }
+   ],
+   "fx": [
+    "ink"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "sage",
+   "cam": [
+    [
+     0.25,
+     0.65,
+     2.2
+    ],
+    [
+     0.3,
+     0.6,
+     1.8
+    ]
+   ],
+   "vo": "And Rama didn't even want to kill him. So Maricha tells Ravana: Rama is not harsh. He is not ignorant. He is not ruled by his impulses.",
+   "pops": [
+    {
+     "at": "kill",
+     "sticker": "🕊️"
+    },
+    {
+     "at": "impulses",
+     "sticker": "🧘"
+    }
+   ],
+   "fx": [
+    "rays"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.35,
+     1.2
+    ],
+    [
+     0.43,
+     0.3,
+     1.4
+    ]
+   ],
+   "vo": "Rama is dharma in human form. Good, truly brave, the king of the whole world.",
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.3
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "badge": {
+    "text": "Respected by rivals",
+    "emoji": "🤝",
+    "color": "gold",
+    "ref": "Aranya Kanda 37.13"
+   },
+   "vo": "Anyone can get likes from their fans. Real ones get respect from the other side.",
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "chariot",
+   "cam": [
+    [
+     0.3,
+     0.5,
+     1.4
+    ],
+    [
+     0.42,
+     0.55,
+     1.7
+    ]
+   ],
+   "vo": "So play it so fair that even the people who lose to you can't talk trash about you.",
+   "pops": [
+    {
+     "at": "fair",
+     "sticker": "⚖️"
+    },
+    {
+     "at": "trash",
+     "sticker": "🗑️"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 9 of learning from Rama",
+   "vo": "Day nine of learning from Rama. Send this to the rival who secretly respects you.",
+   "pops": [
+    {
+     "at": "Send",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "A dark, slowed villain-theme or tabla-trap track from Instagram's library",
+  "Any trending 'even my haters agree' audio"
+ ],
+ "caption": "Even the villain's side rated him 10/10 🦌\n\nWhen Ravana asked Maricha to help him carry off Sita, Maricha refused. He remembered young Rama sending him flying a hundred yojanas into the ocean with one arrow, and sparing his life. His verdict on Rama:\n\n“रामो विग्रहवान् धर्मः साधुः सत्यपराक्रमः । राजा सर्वस्य लोकस्य देवानामिव वासवः ॥”\nValmiki Ramayana, Aranya Kanda 37.13 (the flashback is in 38.15–20)\n\nBe someone even your rivals respect. Day 9 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#JaiShriRam",
+  "#Respect",
+  "#Integrity",
+  "#LifeLessons",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
