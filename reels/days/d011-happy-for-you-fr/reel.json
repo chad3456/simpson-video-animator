@@ -1,0 +1,292 @@
+{
+ "day": 11,
+ "slug": "d011-happy-for-you-fr",
+ "format": "green flag / red flag",
+ "lesson_id": "festival-joy",
+ "title": "Happy for you, fr",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "desh",
+ "seed": 79,
+ "verse": {
+  "kanda": "ayodhya",
+  "sarga": 2,
+  "shloka": 41,
+  "sanskrit": "उत्सवेषु च सर्वेषु पितेव परितुष्यति ।\nसत्यवादी महेष्वासो वृद्धसेवी जितेन्द्रियः ॥",
+  "iast": "utsaveṣu ca sarveṣu piteva parituṣyati |\nsatyavādī maheṣvāso vṛddhasevī jitendriyaḥ ||",
+  "translation": "At every festival he rejoices like a father. He speaks the truth, is a great archer, serves his elders, and masters his senses."
+ },
+ "art": {
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "crowd": {
+   "lib": "exile_orchha",
+   "path": "art/crowd.jpg"
+  },
+  "milap": {
+   "lib": "bharat_milap",
+   "path": "art/milap.jpg"
+  },
+  "fest": {
+   "lib": "coronation_kangra",
+   "path": "art/fest.jpg"
+  },
+  "chaos": {
+   "lib": "battle_mewar",
+   "path": "art/chaos.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.6
+    ],
+    [
+     0.43,
+     0.3,
+     1.25
+    ]
+   ],
+   "top": "Green flags:",
+   "title": "the friend who's HAPPY for you",
+   "hl": "HAPPY",
+   "vo": "The citizens of Ayodhya literally listed Rama's green flags. Two of them hit different.",
+   "pops": [
+    {
+     "at": "listed",
+     "sticker": "📝"
+    },
+    {
+     "at": "different",
+     "sticker": "🫨",
+     "sfx": "pop"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "milap",
+   "cam": [
+    [
+     0.45,
+     0.35,
+     1.5
+    ],
+    [
+     0.45,
+     0.3,
+     1.8
+    ]
+   ],
+   "badge": {
+    "text": "Green flag 1",
+    "emoji": "✅",
+    "color": "green",
+    "ref": "Ayodhya Kanda 2.40"
+   },
+   "vo": "When anyone in the city is going through it, he hurts deeply, like it happened to him.",
+   "pops": [
+    {
+     "at": "through",
+     "sticker": "🫂"
+    }
+   ],
+   "fx": [
+    "ink"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "fest",
+   "cam": [
+    [
+     0.5,
+     0.55,
+     1.5
+    ],
+    [
+     0.5,
+     0.45,
+     1.3
+    ]
+   ],
+   "badge": {
+    "text": "Green flag 2",
+    "emoji": "✅",
+    "color": "green",
+    "ref": "Ayodhya Kanda 2.41"
+   },
+   "vo": "And at every festival, every celebration, he's happy like a proud dad. Not jealous. Not low key salty. Happy.",
+   "pops": [
+    {
+     "at": "dad",
+     "sticker": "🥹"
+    },
+    {
+     "at": "salty",
+     "sticker": "🧂"
+    },
+    {
+     "at": "Happy",
+     "sticker": "🎉",
+     "sfx": "sparkle"
+    }
+   ],
+   "fx": [
+    "embers"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "crowd",
+   "cam": [
+    [
+     0.5,
+     0.6,
+     1.3
+    ],
+    [
+     0.5,
+     0.55,
+     1.5
+    ]
+   ],
+   "vo": "At every festival he rejoices like a father. Truthful, a great archer, serves his elders, masters his senses.",
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "chaos",
+   "cam": [
+    [
+     0.27,
+     0.42,
+     2.2
+    ],
+    [
+     0.29,
+     0.4,
+     1.9
+    ]
+   ],
+   "badge": {
+    "text": "Red flag",
+    "emoji": "🚩",
+    "color": "red"
+   },
+   "vo": "Meanwhile us: friend gets the internship. We type congrats, no emoji, and go stare at the ceiling.",
+   "pops": [
+    {
+     "at": "congrats",
+     "sticker": "😐",
+     "sfx": "scratch"
+    },
+    {
+     "at": "ceiling",
+     "sticker": "🫠"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "desat"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.25
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "top": "Their pain, your pain.",
+   "title": "Their W = your W",
+   "hl": "W",
+   "vo": "Feel their pain like it's yours. Celebrate their win like it's yours. That's the whole vibe.",
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 11 of learning from Rama",
+   "vo": "Day eleven of learning from Rama. Send this to the friend who hypes your wins the loudest.",
+   "pops": [
+    {
+     "at": "Send",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "An upbeat dhol or festive Bollywood-style track from Instagram's library",
+  "Any trending 'so proud of you' audio"
+ ],
+ "caption": "Green flag: the friend who's actually happy for you ✅🎉\n\nWhen Dasharatha asked the people of Ayodhya about Rama, they said he grieves deeply when anyone is in trouble, and at every festival he rejoices like a father.\n\n“उत्सवेषु च सर्वेषु पितेव परितुष्यति । सत्यवादी महेष्वासो वृद्धसेवी जितेन्द्रियः ॥”\nValmiki Ramayana, Ayodhya Kanda 2.41 (with 2.40)\n\nTheir pain, your pain. Their win, your win. Day 11 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#JaiShriRam",
+  "#GreenFlags",
+  "#Friendship",
+  "#LifeLessons",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
