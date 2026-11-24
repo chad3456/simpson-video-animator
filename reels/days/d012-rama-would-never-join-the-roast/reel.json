@@ -1,0 +1,289 @@
+{
+ "day": 12,
+ "slug": "d012-rama-would-never-join-the-roast",
+ "format": "Rama would never",
+ "lesson_id": "dont-blame-mom",
+ "title": "Rama would never join the roast",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "bhairav",
+ "seed": 83,
+ "verse": {
+  "kanda": "ayodhya",
+  "sarga": 104,
+  "shloka": 17,
+  "sanskrit": "न दोषं त्वयि पश्यामि सूक्ष्ममप्यरिसूदन ।\nन चापि जननीं बाल्यात्त्वं विगर्हितुमर्हसि ॥",
+  "iast": "na doṣaṃ tvayi paśyāmi sūkṣmam apy arisūdana |\nna cāpi jananīṃ bālyāt tvaṃ vigarhitum arhasi ||",
+  "translation": "I don't see the slightest fault in you, slayer of foes. Nor should you, out of childishness, blame your mother."
+ },
+ "art": {
+  "kaikeyi": {
+   "lib": "kaikeyi_dasharatha",
+   "path": "art/kaikeyi.jpg"
+  },
+  "chamber": {
+   "lib": "kaikeyi_chamber",
+   "path": "art/chamber.jpg"
+  },
+  "milap": {
+   "lib": "bharat_milap",
+   "path": "art/milap.jpg"
+  },
+  "palace": {
+   "lib": "exile_orchha",
+   "path": "art/palace.jpg"
+  },
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "chariot": {
+   "lib": "exile_chariot",
+   "path": "art/chariot.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "kaikeyi",
+   "cam": [
+    [
+     0.5,
+     0.3,
+     1.3
+    ],
+    [
+     0.5,
+     0.25,
+     1.05
+    ]
+   ],
+   "top": "Rama would never:",
+   "title": "join the roast",
+   "hl": "ROAST",
+   "vo": "Someone hurts you. The group chat starts roasting them. And honestly? We're adding fire emojis.",
+   "pops": [
+    {
+     "at": "roasting",
+     "sticker": "🔥"
+    },
+    {
+     "at": "emojis",
+     "sticker": "🍿",
+     "sfx": "pop"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "desat"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "chamber",
+   "cam": [
+    [
+     0.25,
+     0.65,
+     2.0
+    ],
+    [
+     0.2,
+     0.62,
+     2.4
+    ]
+   ],
+   "title": "PLOT TWIST",
+   "vo": "Queen Kaikeyi is the reason Rama lost the throne and got fourteen years in the forest. Now her own son Bharata shows up there, blaming her.",
+   "pops": [
+    {
+     "at": "throne",
+     "sticker": "🪑"
+    },
+    {
+     "at": "blaming",
+     "sticker": "😤",
+     "sfx": "boom"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "shake"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "milap",
+   "cam": [
+    [
+     0.45,
+     0.35,
+     1.5
+    ],
+    [
+     0.45,
+     0.3,
+     1.8
+    ]
+   ],
+   "vo": "Free roast, served on a plate. Instead, Rama hugs his brother and says: someone like you would never do wrong for a kingdom.",
+   "pops": [
+    {
+     "at": "plate",
+     "sticker": "🍽️"
+    },
+    {
+     "at": "hugs",
+     "sticker": "🫂"
+    }
+   ],
+   "fx": [
+    "ink"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "palace",
+   "cam": [
+    [
+     0.5,
+     0.45,
+     1.3
+    ],
+    [
+     0.5,
+     0.4,
+     1.5
+    ]
+   ],
+   "vo": "I don't see the slightest fault in you. And you shouldn't blame your mother out of childishness.",
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.25
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "badge": {
+    "text": "Rama did",
+    "emoji": "✅",
+    "color": "green",
+    "ref": "Ayodhya Kanda 104.17, 104.21"
+   },
+   "vo": "Then he adds: respect her as much as you respected our father. About the person who sent him into exile.",
+   "pops": [
+    {
+     "at": "exile",
+     "sticker": "🤯",
+     "sfx": "boom"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "chariot",
+   "cam": [
+    [
+     0.3,
+     0.5,
+     1.4
+    ],
+    [
+     0.42,
+     0.55,
+     1.7
+    ]
+   ],
+   "vo": "So next time the roast starts, be the one who says: nah, let's not. The hurt is real. The hate is optional.",
+   "pops": [
+    {
+     "at": "nah",
+     "sticker": "✋"
+    },
+    {
+     "at": "optional",
+     "sticker": "🕊️"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 12 of learning from Rama",
+   "vo": "Day twelve of learning from Rama. Send this to the friend who never joins the roast.",
+   "pops": [
+    {
+     "at": "Send",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "A calm, slowed flute or sitar lofi track from Instagram's library",
+  "Any trending 'be the bigger person' audio"
+ ],
+ "caption": "Rama would never join the roast 🔥🙅\n\nKaikeyi was the reason Rama lost the throne and went into exile. When her son Bharata came to the forest blaming her, Rama hugged him, said he saw no fault in him, and told him not to blame his mother. Then he asked Bharata to respect her as much as their father.\n\n“न दोषं त्वयि पश्यामि सूक्ष्ममप्यरिसूदन । न चापि जननीं बाल्यात्त्वं विगर्हितुमर्हसि ॥”\nValmiki Ramayana, Ayodhya Kanda 104.17 (with 104.15–21)\n\nThe hurt is real. The hate is optional. Day 12 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#JaiShriRam",
+  "#Forgiveness",
+  "#BeTheBiggerPerson",
+  "#LifeLessons",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
