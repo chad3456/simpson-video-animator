@@ -194,5 +194,13 @@
  "wedding_mewar": {
   "file": "File:The Wedding Procession of Rama, From the Mewar Ramayana.jpg",
   "scene": "Rama's wedding procession, Mewar Ramayana"
+ },
+ "sugriva_alliance": {
+  "file": "File:Indian - Sugriva's Farewell - Walters W868.jpg",
+  "scene": "Rama with Sugriva after their alliance (Walters Art Museum)",
+  "artist": "",
+  "date": "between 1700 and 1725date QS:P571,+1750-00-00T00:00:00Z/7,P1",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Indian_-_Sugriva%27s_Farewell_-_Walters_W868.jpg"
  }
 }
