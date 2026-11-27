@@ -36,7 +36,7 @@ if (stills) {
 }
 const out = path.join(dir, 'reel.mp4');
 const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-c:v', 'mjpeg', '-i', '-',
-  '-i', path.join(dir, 'reel.wav'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', String(opt('crf', 24)),
+  '-i', path.join(dir, 'reel.wav'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', String(opt('crf', 28)),
   '-profile:v', 'high', '-r', String(fps), '-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-shortest', '-movflags', '+faststart', out], { stdio: ['pipe', 'inherit', 'inherit'] });
 const frames = Math.ceil(duration * fps), t0 = Date.now();
 for (let f = 0; f < frames; f++) {

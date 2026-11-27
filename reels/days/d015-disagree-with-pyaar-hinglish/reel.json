@@ -1,0 +1,337 @@
+{
+ "day": 15,
+ "slug": "d015-disagree-with-pyaar-hinglish",
+ "format": "Hinglish storytime",
+ "lesson_id": "promise-to-protect",
+ "title": "Disagree with pyaar",
+ "tag": "RAM SE SEEKH",
+ "cta_sub": "KAL AGLA EPISODE",
+ "voice_hi": "hm_psi",
+ "speed_hi": 1.08,
+ "bpm": 136,
+ "raga": "yaman",
+ "seed": 101,
+ "verse": {
+  "kanda": "aranya",
+  "sarga": 10,
+  "shloka": 18,
+  "sanskrit": "मुनीनामन्यथा कर्तुं सत्यमिष्टं हि मे सदा ।\nअप्यहं जीवितं जह्यां त्वां वा सीते सलक्ष्मणाम् ॥",
+  "iast": "munīnām anyathā kartuṃ satyam iṣṭaṃ hi me sadā |\napy ahaṃ jīvitaṃ jahyāṃ tvāṃ vā sīte salakṣmaṇām ||",
+  "translation": "...(I cannot) go back on my word to the sages: truth is always dear to me. I could give up my life, or even you, Sita, with Lakshmana (but not a promise, 10.19)."
+ },
+ "art": {
+  "forest": {
+   "lib": "golden_deer",
+   "path": "art/forest.jpg"
+  },
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  },
+  "sages": {
+   "lib": "vishvamitra",
+   "path": "art/sages.jpg"
+  },
+  "exile": {
+   "lib": "exile_orchha",
+   "path": "art/exile.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "forest",
+   "cam": [
+    [
+     0.5,
+     0.38,
+     1.5
+    ],
+    [
+     0.5,
+     0.35,
+     1.25
+    ]
+   ],
+   "top": "Couple goals:",
+   "title": "disagree with pyaar",
+   "hl": "PYAAR",
+   "lines": [
+    {
+     "hi": "जंगल में सीता राम से बहस करती हैं. और राम? गुस्सा नहीं, थैंक यू बोलते हैं.",
+     "cap": "Jungle mein Sita Rama se behes karti hain. Aur Rama? Gussa nahi, thank you bolte hain."
+    }
+   ],
+   "pops": [
+    {
+     "at": "behes",
+     "sticker": "🗣️"
+    },
+    {
+     "at": "thank",
+     "sticker": "🥹",
+     "sfx": "pop"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "forest",
+   "cam": [
+    [
+     0.6,
+     0.35,
+     2.2
+    ],
+    [
+     0.6,
+     0.32,
+     2.6
+    ]
+   ],
+   "title": "PLOT TWIST",
+   "lines": [
+    {
+     "hi": "सीता कहती हैं: बिना दुश्मनी किसी से लड़ना ठीक नहीं. कहाँ जंगल की तपस्या, कहाँ हथियार?",
+     "cap": "Sita kehti hain: bina dushmani kisi se ladna theek nahi. Kahan jungle ki tapasya, kahan hathiyaar?"
+    }
+   ],
+   "pops": [
+    {
+     "at": "tapasya",
+     "sticker": "🧘",
+     "sfx": "scratch"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.32,
+     1.4
+    ],
+    [
+     0.43,
+     0.28,
+     1.7
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "राम कहते हैं: तुमने प्यार से, मेरे भले के लिए कहा. जिसकी परवाह न हो, उसे कोई समझाता ही नहीं.",
+     "cap": "Rama kehte hain: tumne pyaar se, mere bhale ke liye kaha. Jiski parvaah na ho, use koi samjhaata hi nahi."
+    }
+   ],
+   "pops": [
+    {
+     "at": "parvaah",
+     "sticker": "🫶"
+    }
+   ],
+   "fx": [
+    "rays"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "sages",
+   "cam": [
+    [
+     0.28,
+     0.62,
+     2.0
+    ],
+    [
+     0.3,
+     0.6,
+     1.7
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "पर जंगल के ऋषि खुद मेरी शरण में आए थे. और मैं उनसे वादा कर चुका हूँ.",
+     "cap": "Par jungle ke rishi khud meri sharan mein aaye the. Aur main unse vaada kar chuka hoon."
+    }
+   ],
+   "pops": [
+    {
+     "at": "sharan",
+     "sticker": "🛡️"
+    },
+    {
+     "at": "vaada",
+     "sticker": "🤝",
+     "sfx": "boom"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "sages",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.15
+    ],
+    [
+     0.5,
+     0.5,
+     1.3
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "सच मुझे हमेशा प्यारा है. मैं अपनी जान छोड़ सकता हूँ, पर ऋषियों से किया वादा नहीं.",
+     "cap": "Sach mujhe hamesha pyaara hai. Main apni jaan chhod sakta hoon, par rishiyon se kiya vaada nahi."
+    }
+   ],
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "rama",
+   "cam": [
+    [
+     0.43,
+     0.3,
+     1.25
+    ],
+    [
+     0.43,
+     0.27,
+     1.6
+    ]
+   ],
+   "badge": {
+    "text": "Suno pyaar se. Vaada nibhao.",
+    "emoji": "🤝",
+    "color": "saffron",
+    "ref": "Aranya Kanda 10.18–21"
+   },
+   "lines": [
+    {
+     "hi": "सबकी सुनो, प्यार से. पर वादा मत तोड़ो.",
+     "cap": "Sabki suno, pyaar se. Par vaada mat todo."
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "exile",
+   "cam": [
+    [
+     0.45,
+     0.4,
+     1.4
+    ],
+    [
+     0.4,
+     0.42,
+     1.2
+    ]
+   ],
+   "lines": [
+    {
+     "hi": "बहस जीतना ज़रूरी नहीं. थैंक यू बोलना, और अपनी बात पे टिके रहना, दोनों साथ हो सकते हैं.",
+     "cap": "Behes jeetna zaroori nahi. Thank you bolna, aur apni baat pe tike rehna, dono saath ho sakte hain."
+    }
+   ],
+   "pops": [
+    {
+     "at": "zaroori",
+     "sticker": "🏆"
+    },
+    {
+     "at": "dono",
+     "sticker": "✌️"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Ram se seekh #15",
+   "lines": [
+    {
+     "hi": "राम से सीख, दिन पंद्रह. उसे भेजो जो प्यार से बहस करता है.",
+     "cap": "Ram se seekh, Day 15. Use bhejo jo pyaar se behes karta hai."
+    }
+   ],
+   "pops": [
+    {
+     "at": "bhejo",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "A soft romantic Hindi lofi or flute track from Instagram's library",
+  "Any trending 'healthy relationship' audio"
+ ],
+ "caption": "Disagree with pyaar 🫶\n\nIn the Dandaka forest, Sita questioned Rama's vow to protect the sages: why fight without enmity? Rama thanked her, said she spoke out of love for his good, and explained that the sages had come to him for refuge and he had given his word.\n\n“मुनीनामन्यथा कर्तुं सत्यमिष्टं हि मे सदा । अप्यहं जीवितं जह्यां त्वां वा सीते सलक्ष्मणाम् ॥”\nValmiki Ramayana, Aranya Kanda 10.18 (with Aranya 9 and 10.2–21)\n\nSabki suno, pyaar se. Par vaada mat todo. Day 15 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#ShriRam",
+  "#SitaRam",
+  "#RamSeSeekh",
+  "#CoupleGoals",
+  "#Promise",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
