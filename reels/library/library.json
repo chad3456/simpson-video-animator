@@ -202,5 +202,21 @@
   "date": "between 1700 and 1725date QS:P571,+1750-00-00T00:00:00Z/7,P1",
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Indian_-_Sugriva%27s_Farewell_-_Walters_W868.jpg"
+ },
+ "sita_ashoka_ring": {
+  "file": "File:Hanuman finds Sita in the ashoka grove, and shows her Rama's ring.jpg",
+  "scene": "Hanuman meets Sita in the ashoka grove",
+  "artist": "MV Sharma printed by Anant Shivaji Desai",
+  "date": "before 1945date QS:P,+1945-00-00T00:00:00Z/7,P1326,+1945-00-",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Hanuman_finds_Sita_in_the_ashoka_grove,_and_shows_her_Rama%27s_ring.jpg"
+ },
+ "sita_ashoka": {
+  "file": "File:Sita at ashokavana.jpg",
+  "scene": "Sita in the ashoka grove with the rakshasi guards",
+  "artist": "Unknown authorUnknown author",
+  "date": "16th centurydate QS:P,+1550-00-00T00:00:00Z/7",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Sita_at_ashokavana.jpg"
  }
 }

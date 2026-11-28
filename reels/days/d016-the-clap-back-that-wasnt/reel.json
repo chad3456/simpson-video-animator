@@ -1,0 +1,266 @@
+{
+ "day": 16,
+ "slug": "d016-the-clap-back-that-wasnt",
+ "format": "POV storytime",
+ "lesson_id": "compassion",
+ "title": "The clap back that wasn't",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "bpm": 140,
+ "raga": "bhairavi",
+ "seed": 107,
+ "verse": {
+  "kanda": "yuddha",
+  "sarga": 116,
+  "shloka": 44,
+  "sanskrit": "पापानां वा शुभानां वा वधार्हाणां प्लवङ्गम ।\nकार्यं करुणमार्येण न कश्चिन्नापराध्यति ॥",
+  "iast": "pāpānāṃ vā śubhānāṃ vā vadhārhāṇāṃ plavaṅgama |\nkāryaṃ karuṇam āryeṇa na kaścin nāparādhyati ||",
+  "translation": "Whether they are wicked or good, or even deserve to die, O monkey, a noble person should act with compassion; there is no one who never does wrong."
+ },
+ "art": {
+  "grove": {
+   "lib": "sita_ashoka",
+   "path": "art/grove.jpg"
+  },
+  "ring": {
+   "lib": "sita_ashoka_ring",
+   "path": "art/ring.jpg"
+  },
+  "rama": {
+   "lib": "rama_panchayan",
+   "path": "art/rama.jpg"
+  }
+ },
+ "beats": [
+  {
+   "kind": "hook",
+   "art": "grove",
+   "cam": [
+    [
+     0.62,
+     0.6,
+     1.6
+    ],
+    [
+     0.6,
+     0.58,
+     1.35
+    ]
+   ],
+   "top": "POV:",
+   "title": "you finally get to CLAP BACK",
+   "hl": "CLAP|BACK",
+   "vo": "The war is over. The people who scared you every single day are right in front of you. And it's your call.",
+   "pops": [
+    {
+     "at": "scared",
+     "sticker": "😨"
+    },
+    {
+     "at": "call",
+     "sticker": "⚖️",
+     "sfx": "boom"
+    }
+   ],
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "desat"
+   ]
+  },
+  {
+   "kind": "twist",
+   "art": "ring",
+   "cam": [
+    [
+     0.3,
+     0.6,
+     1.8
+    ],
+    [
+     0.3,
+     0.55,
+     2.1
+    ]
+   ],
+   "title": "PLOT TWIST",
+   "vo": "Hanuman brings Sita the news: Ravana is gone. Then he asks: just say the word, and I'll punish every guard who threatened you.",
+   "pops": [
+    {
+     "at": "gone",
+     "sticker": "🏁"
+    },
+    {
+     "at": "word",
+     "sticker": "👊",
+     "sfx": "scratch"
+    }
+   ],
+   "sfx": [
+    "scratch"
+   ],
+   "fx": [
+    "glitch",
+    "shake"
+   ]
+  },
+  {
+   "kind": "story",
+   "art": "ring",
+   "cam": [
+    [
+     0.72,
+     0.42,
+     1.8
+    ],
+    [
+     0.72,
+     0.38,
+     2.1
+    ]
+   ],
+   "vo": "Sita says no. They were just following Ravana's orders. With him gone, they won't scare anyone again.",
+   "pops": [
+    {
+     "at": "no",
+     "sticker": "✋"
+    },
+    {
+     "at": "orders",
+     "sticker": "📜"
+    }
+   ],
+   "fx": [
+    "rays"
+   ],
+   "sfx": [
+    "riser"
+   ]
+  },
+  {
+   "kind": "verse",
+   "art": "grove",
+   "cam": [
+    [
+     0.7,
+     0.45,
+     1.2
+    ],
+    [
+     0.75,
+     0.42,
+     1.4
+    ]
+   ],
+   "vo": "Wicked or good, even those who deserve punishment, a noble person acts with compassion. No one never makes mistakes.",
+   "sfx": [
+    "bell"
+   ]
+  },
+  {
+   "kind": "lesson",
+   "art": "ring",
+   "cam": [
+    [
+     0.65,
+     0.45,
+     1.3
+    ],
+    [
+     0.68,
+     0.4,
+     1.6
+    ]
+   ],
+   "badge": {
+    "text": "Mercy > revenge",
+    "emoji": "🕊️",
+    "color": "gold",
+    "ref": "Yuddha Kanda 116.44"
+   },
+   "vo": "Mercy isn't weak. It's what the strongest person in the room chooses.",
+   "sfx": [
+    "boom"
+   ],
+   "fx": [
+    "flash",
+    "rays"
+   ]
+  },
+  {
+   "kind": "flex",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.4,
+     1.3
+    ],
+    [
+     0.55,
+     0.35,
+     1.6
+    ]
+   ],
+   "vo": "So when the bully, the toxic coworker, or the ex finally slips up, you don't have to pile on. Win, then let it go.",
+   "pops": [
+    {
+     "at": "go",
+     "sticker": "🎈"
+    }
+   ],
+   "fx": [
+    "ink"
+   ]
+  },
+  {
+   "kind": "cta",
+   "art": "rama",
+   "cam": [
+    [
+     0.5,
+     0.5,
+     1.0
+    ],
+    [
+     0.5,
+     0.5,
+     1.08
+    ]
+   ],
+   "title": "Day 16 of learning from Rama",
+   "vo": "Day sixteen of learning from Rama, and Sita. Send this to the kindest person you know.",
+   "pops": [
+    {
+     "at": "Send",
+     "sticker": "📩"
+    }
+   ],
+   "sfx": [
+    "shankh"
+   ],
+   "fx": [
+    "embers"
+   ],
+   "min": 3.2
+  }
+ ],
+ "music_suggestions": [
+  "A gentle, slowed flute or veena track from Instagram's library",
+  "Any trending 'choose peace' audio"
+ ],
+ "caption": "POV: you finally get to clap back… and you don't 🕊️\n\nAfter the war, Hanuman asked Sita for permission to punish the guards who had threatened her in Lanka. Sita said no: they were only following Ravana's orders, and no one never does wrong.\n\n“पापानां वा शुभानां वा वधार्हाणां प्लवङ्गम । कार्यं करुणमार्येण न कश्चिन्नापराध्यति ॥”\nValmiki Ramayana, Yuddha Kanda 116.44 (with 116.30–42)\n\nToday's lesson comes from Sita. Mercy > revenge. Day 16 of learning from Rama.",
+ "hashtags": [
+  "#Ramayana",
+  "#Valmiki",
+  "#SitaRam",
+  "#JaiShriRam",
+  "#Compassion",
+  "#Mercy",
+  "#LifeLessons",
+  "#Reels",
+  "#SanskritShloka"
+ ]
+}
