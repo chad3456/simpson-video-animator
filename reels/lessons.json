@@ -286,6 +286,58 @@
    "context": "Sita questions Rama's vow to protect the forest sages.",
    "lesson": "A promise is a promise.",
    "used": "d015-disagree-with-pyaar-hinglish"
+  },
+  {
+   "slug": "conduct-is-the-bio",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 109,
+    "shloka": 4,
+    "sanskrit": "कुलीनमकुलीनं वा वीरं पुरुषमानिनम् ।\nचारित्रमेव व्याख्याति शुचिं वा यदि वाऽशुचिम् ॥",
+    "translation": "Whether a man is well-born or not, a true hero or one who only thinks himself one, pure or impure: his conduct alone reveals it."
+   },
+   "context": "Rama answering Jabali at Chitrakuta (same sarga as d008, different verse).",
+   "lesson": "Your conduct is your real bio.",
+   "used": ""
+  },
+  {
+   "slug": "patient-as-the-earth",
+   "verse": {
+    "kanda": "bala",
+    "sarga": 1,
+    "shloka": 18,
+    "sanskrit": "विष्णुना सदृशो वीर्ये सोमवत्प्रियदर्शनः ।\nकालाग्निसदृशः क्रोधे क्षमया पृथ्वीसमः ॥",
+    "translation": "Like Vishnu in valour, lovely to see as the moon; like the fire at the end of time in anger, like the earth in patience."
+   },
+   "context": "Narada describing Rama to Valmiki (follows 1.17, ocean and Himalaya).",
+   "lesson": "Strong enough to burn, patient as the earth.",
+   "used": ""
+  },
+  {
+   "slug": "no-strength-like-utsaha",
+   "verse": {
+    "kanda": "kishkindha",
+    "sarga": 1,
+    "shloka": 121,
+    "sanskrit": "उत्साहो बलवानार्य नास्त्युत्साहात्परं बलम् ।\nसोत्साहस्य हि लोकेषु न किञ्चिदपि दुर्लभम् ॥",
+    "translation": "Enthusiasm is mighty, noble one; there is no strength greater than enthusiasm. For one who has it, nothing in the world is out of reach."
+   },
+   "context": "Lakshmana lifting grieving Rama at Pampa lake after Sita is taken (1.120: lost things are not regained without effort).",
+   "lesson": "Hype your people when they're down.",
+   "used": ""
+  },
+  {
+   "slug": "cant-imagine-life-without",
+   "verse": {
+    "kanda": "ayodhya",
+    "sarga": 12,
+    "shloka": 33,
+    "sanskrit": "क्षमा यस्मिन्दमस्त्यागः सत्यं धर्मः कृतज्ञता ।\nअप्यहिंसा च भूतानां तमृते का गतिर्मम ॥",
+    "translation": "In him are forgiveness, self-control, generosity, truth, dharma, gratitude, and harmlessness to all beings. Without him, what refuge do I have?"
+   },
+   "context": "Dasharatha pleading with Kaikeyi not to send Rama away (12.32: Rama has never spoken an unkind word).",
+   "lesson": "Be the person people can't imagine life without.",
+   "used": ""
   }
  ]
 }
